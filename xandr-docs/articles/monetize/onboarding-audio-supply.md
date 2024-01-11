@@ -10,7 +10,7 @@ This page explains how to modify placement settings to accept audio creatives an
 
 ## Onboarding audio placements
 
-In the **Placement Details** tab, select the Audio media type(s) to include the following:
+In the **Placement Details** tab, select the **Audio** media type(s) to include the following:
 
 ## Export placement tag
 
@@ -29,12 +29,12 @@ The following placement tag parameters are highly recommended. You should append
 
 | Parameter | Type | Description |
 |---|---|---|
-| appid | string | This string is used to identify a mobile app running on Android or iOS devices.<br>On Android, this is the app's package name. It's formatted as `com.example.helloworld`.<br>On iOS, this is the app's iTunes ID. It's formatted as `123456789`.<br>Many buyers set campaign targeting and reporting based on `appid`. Failing to supply a correct `appid` will make your inventory unattractive to these buyers. Therefore, passing this field is **strongly recommended** when `supply_type` is set to `mobile_app`.<br>**Note**: This is what our Mobile SDKs do when they request an ad.<br>To find the `appid` for a particular Android or iOS app, find the app's detail page in Google Playstore or App Store. The easiest way is to do a web search. The URL of the app store's detail page will show the `appid`. |
-| idfa | string | The Apple advertising identifier for iOS devices. |
-| aaid | string | The Google advertising identifier for Android devices as retrieved from Google Playstore. |
-| adid | string | The Windows advertising identifier for Windows devices. |
-| ip | string | IP address of the device making the ad request, e.g., `207.237.150.246`.<br>If not specified for `/ptv` calls, the IP address passed via HTTP headers is used for geo detection. |
-| loc | string | The user's location expressed in latitude and longitude, in the format: `snnn.ddddddddddddd,snnn.ddddddddddddd`. Up to 13 decimal places of precision are allowed. |
+| `appid` | string | This string is used to identify a mobile app running on Android or iOS devices.<br> - On Android, this is the app's package name. It's formatted as `com.example.helloworld`.<br> - On iOS, this is the app's iTunes ID. It's formatted as `123456789`.<br>Many buyers set campaign targeting and reporting based on `appid`. Failing to supply a correct `appid` will make your inventory unattractive to these buyers. Therefore, passing this field is **strongly recommended** when `supply_type` is set to `mobile_app`.<br>**Note**: This is what our Mobile SDKs do when they request an ad.<br>To find the `appid` for a particular Android or iOS app, find the app's detail page in Google Playstore or App Store. The easiest way is to do a web search. The URL of the app store's detail page will show the `appid`. |
+| `idfa` | string | The Apple advertising identifier for iOS devices. |
+| `aaid` | string | The Google advertising identifier for Android devices as retrieved from Google Playstore. |
+| `adid` | string | The Windows advertising identifier for Windows devices. |
+| `ip` | string | IP address of the device making the ad request, e.g., `207.237.150.246`.<br>If not specified for `/ptv` calls, the IP address passed via HTTP headers is used for geo detection. |
+| `loc` | string | The user's location expressed in latitude and longitude, in the format: `snnn.ddddddddddddd,snnn.ddddddddddddd`. Up to 13 decimal places of precision are allowed. |
 
 **Example of a placement tag**:
 
@@ -48,8 +48,7 @@ If you do not have access to a test page, you can use an online VAST validator t
 
 ## Recording impressions
 
-VAST impressions are recorded after the first frame serves, per the [IAB guidelines](https://www.iab.com/guidelines/iab-new-ad-portfolio/). If you test VAST by
-loading the URL in a browser, no impressions will be recorded. It is only when the VAST response is parsed by an audio player and the VAST impression trackers are called that the impression is recorded.
+VAST impressions are recorded after the first frame serves, per the [IAB guidelines](https://www.iab.com/guidelines/iab-new-ad-portfolio/). If you test VAST by loading the URL in a browser, no impressions will be recorded. It is only when the VAST response is parsed by an audio player and the VAST impression trackers are called that the impression is recorded.
 
 ## Related topics
 

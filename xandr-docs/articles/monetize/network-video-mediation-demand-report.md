@@ -1,5 +1,5 @@
 ---
-title: Network Video Mediation Demand Report
+title: Network Video Mediation Demand Report    
 description: The articles shows Network Video Mediation Demand Report that can be used to view video mediation demand metrics across multiple buyers and publishers.
 ms.date: 10/28/2023
 ---
@@ -62,7 +62,7 @@ Data in this report is retained for 45 days.
 | Publisher | Yes | The publisher on whose inventory this impression occurred. |
 | Placement Group | Yes | The placement group (simply a collection of placements) which includes the placement through which this impression occurred. |
 | Mediated Bid | Yes | The name and ID of the mediated bid under a mediated network. |
-| Placement | Yes | The placement through which this impression occurred.<br>Note: For impressions older than 100 days, placements will be aggregated into one row with -1 as the ID and a generic name. |
+| Placement | Yes | The placement through which this impression occurred.<br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with -1 as the ID and a generic name. |
 | Call Type | No | The type of handler that was used to send the impression to Xandr (e.g., ttj, ut, mob, ptv, openrtb). |
 | Mediated Network | Yes | The name and ID of the mediated network under which mediated bids are present. |
 | Device Type | Yes | Different device types on which the video impression will be rendered. For example, Desktops & Laptops, Mobile Phones, Tablets, TV, Game Consoles , Media Players , Set Top Box, etc. |
@@ -113,20 +113,17 @@ Follow these steps to run your report.
 1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
 
    > [!WARNING]
-   >  The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using
-   >  only the dimensions you need.
+   >  The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
 1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
-   - **Run now, show results in screen**: For smaller amounts of data,  you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
-   - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
+    - **Run now, show results in screen**: For smaller amounts of data,  you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
+    - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
 
-     > [!TIP]
-     > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and
-     > Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service
-     > (The limit here is 10 million rows).
+      > [!TIP]
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
-     - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
-     - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under Name this report (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
-     - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
-     - **Name this report**: Give this report with its current settings a name for future reference.
-     - Click **Run report** to send your report request.
+    - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
+    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
+    - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
+    - **Name this report**: Give this report with its current settings a name for future reference.
+1. Click **Run report** to send your report request.

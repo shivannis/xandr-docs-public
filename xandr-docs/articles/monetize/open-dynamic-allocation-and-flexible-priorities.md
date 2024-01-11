@@ -1,6 +1,6 @@
 ---
 title: Open Dynamic Allocation and Flexible Priorities
-description: The article explores open dynamic allocation and flexible priorities, encompassing ad-serving strategies that dynamically adapt, optimize resource allocation, and adjust priority levels based on changing conditions or predefined rules.
+description: The article delves into open dynamic allocation, flexible priorities, and adaptive ad-serving strategies for optimized resource allocation.
 ms.date: 10/28/2023
 ---
 
@@ -58,10 +58,9 @@ In this scenario, one of the priority 12 guaranteed delivery line items will be 
 
 **Scenario 2**
 
-In this scenario we have three guaranteed delivery line items, two with a priority of 16, one with priority 10. We also have three standard line items: two at priority 16, one at priority 5. We determine the highest priority from each tier; in this case that's priority 16 for both guaranteed and standard line items. As in Scenario 1, the highest line
-item priority (16) is higher than the reselling priority (6), so we don't compete against RTB. Unlike the first scenario, we have standard line items that are at the same priority as the highest guaranteed line item. So for guaranteed delivery, we select one of the line items at priority 16. We also select both priority 16 standard line items, and send all three to compete in the auction.
+In this scenario we have three guaranteed delivery line items, two with a priority of 16, one with priority 10. We also have three standard line items: two at priority 16, one at priority 5. We determine the highest priority from each tier; in this case that's priority 16 for both guaranteed and standard line items. As in Scenario 1, the highest line item priority (16) is higher than the reselling priority (6), so we don't compete against RTB. Unlike the first scenario, we have standard line items that are at the same priority as the highest guaranteed line item. So for guaranteed delivery, we select one of the line items at priority 16. We also select both priority 16 standard line items, and send all three to compete in the auction.
 
-:::image type="content" source="media/priority-scenario-b.png" alt-text= "The diagram illustrates a process for guaranteed delivery, involving the selection of a priority 16 line item along with both priority 16 standard line items, all of which are then sent to compete in the auction.":::
+:::image type="content" source="media/priority-scenario-b.png" alt-text= "Diagram that shows guaranteed delivery process prioritize a 16 line item along with standard 16 line items that is sent to compete in auction.":::
 
 **Scenario 3**
 
@@ -70,15 +69,15 @@ following examples demonstrate different possibilities in this scenario:
 
 *Example 1:* One guaranteed delivery line item at priority 12 and all priority 12 standard line items are submitted to auction to compete with RTB.
 
-:::image type="content" source="media/priority-scenario-c.png" alt-text= "The diagram illustrates guaranteed delivery line item at priority 12 and all priority 12 standard line items are submitted to auction to compete with RTB.":::
+:::image type="content" source="media/priority-scenario-c.png" alt-text= "Diagram that illustrates guaranteed delivery line item at priority 12 and all priority 12 standard line items are submitted to auction to compete with RTB.":::
 
 *Example 2:* One guaranteed delivery line item at priority 10 and all priority 12 standard line items are submitted to auction to compete with RTB.
 
-:::image type="content" source="media/priority-scenario-d.png" alt-text= "The diagram showcases the inclusion of a guaranteed delivery line item set at priority 10, alongside the submission of all priority 12 standard line items to an auction for competition with RTB.":::
+:::image type="content" source="media/priority-scenario-d.png" alt-text= "Diagram that showcases Priority 10 guaranteed delivery and all the Priority 12 standard line items submitted to auction for RTB competition.":::
 
 *Example 3:* One guaranteed delivery line item at priority 12 and all priority 10 standard line items are submitted to auction to compete with RTB.
 
-:::image type="content" source="media/priority-scenario-e.png" alt-text= "The diagram demonstrates a guaranteed delivery line item at priority 12, with the additional submission of all priority 10 standard line items to an auction for competition with RTB.":::
+:::image type="content" source="media/priority-scenario-e.png" alt-text= "Diagram that demonstrates Priority 12 guaranteed delivery and  all the Priority 10 standard line items submitted for RTB competition.":::
 
 ## Implementation recommendations
 
@@ -90,13 +89,13 @@ Priorities at and above reselling priority can then be used to exempt certain gu
 - A line item is part of an insertion order for a sensitive client relationship, and it's worth the impact to overall revenue to ensure the line item meets its goals.
 - You know inventory availability is scarce for a line item, so you prioritize it *at or above* reselling priority to give it the best chance of delivering in full.
 
-**Standard Line Item Priorities:** Standard line items are generally prioritized below guaranteed line items. Avoid spreading standard line items across many priority tiers, as this adversely affects yield. Similar to how most guaranteed demand is set up on a single tier, so should most standard lines be set up on a single priority tier. Example
-for why you would want to prioritize certain standard line items over others include:
+**Standard Line Item Priorities:** Standard line items are generally prioritized below guaranteed line items. Avoid spreading standard line items across many priority tiers, as this adversely affects yield. Similar to how most guaranteed demand is set up on a single tier, so should most standard lines be set up on a single priority tier. Example for why you would want to prioritize certain standard line items over others include:
 
 - You want to ensure that important performance demand is given preference over mediated demand.
 - You want to traffic house ads at a lower priority, as it is difficult to determine a CPM value for these line items.
 
-The mechanics behind guaranteed delivery continue to work to help ensure that you reach your delivery goals, even when competing against standard line items. See [Guaranteed Delivery Auction Mechanics](guaranteed-delivery-auction-mechanics.md).
+  > [!NOTE]
+  > The mechanics behind guaranteed delivery continue to work to help ensure that you reach your delivery goals, even when competing against standard line items. See [Guaranteed Delivery Auction Mechanics](guaranteed-delivery-auction-mechanics.md).
 
 ## Related topics
 

@@ -1,6 +1,6 @@
 ---
 title: Optimization levers
-description: The article explains optimization levers.
+description: The article guides you on optimizing legacy line item. For augmented line item (ALI), users can override learn bids using Optimization levers.
 ms.date: 10/28/2023
 ---
 
@@ -16,10 +16,10 @@ Certain users have the ability to override their learn bids through the use of l
 In the **Buying Strategies** section, click **Edit** under **OTHER OPTIONS**.
 
 > [!NOTE]
-> The OTHER OPTIONS section (which includes the **Edit** option) is only visible if you have selected a buying strategy against which optimization levers can be applied:
+> The **OTHER OPTIONS** section (which includes the **Edit** option) is only visible if you have selected a buying strategy against which optimization levers can be applied:
 >
 > - When you set a **Performance Goal** on a Line Item. For more information, see [Add a Performance Goal to a Line Item](add-a-performance-goal-to-a-line-item.md).
-> - When you optimize to a Predicted CPC or CPA goal.
+> - When you optimize to a **Predicted CPC** or **CPA** goal.
 
 ## Defer to Line Item revenue with a \_ % margin
 
@@ -37,8 +37,8 @@ The results of a campaign can be thought of as a funnel, with the top level havi
 - The user can then click on a link to get an email with additional information about this bike. This is a type of success event and it fires **conversion pixel** **\#3**.
 - The user can then purchase a bike, which is an acquisition. This is the line item level, which fires **conversion pixel \#4**.
 
-Your campaign is set for a CPA goal of $4 for **conversion \#2**. When you decide to use the Defer to Line Item... setting, you must establish a line item CPA goal of $20
-for **conversion pixel \#4**.
+  Your campaign is set for a CPA goal of $4 for **conversion \#2**. When you decide to use the **Defer to Line Item**... setting, you must establish a line item CPA goal of $20
+  for **conversion pixel \#4**.
 
 1. The system achieves 33 success events (pixel fires) against **conversion pixel \#2**. At that point, we are optimized to this level. We designate a bid value based on that CPA goal (1000 \* $4 \* pixel \#2 conversion rate). We have reached an optimization level, but with less accurate data, so while the system can now  determine our bid value with greater accuracy, it is not accurate enough.
 1. At the same time, the system continues to receive and count success events against **conversion pixel \#4** (just at a slower rate, as more users click for info as opposed to buying a bike). Even after **conversion pixel \#2** is optimized, this count continues
@@ -52,25 +52,25 @@ ensure that the margin amount is retained as profit by the network.
 These options allow you to override the learn bid amounts that the system has come up with via standard optimization procedures. These options are viable if you wish to change your learn bid to win more impressions, or if you have information regarding this campaign that the optimization engine does not possess (e.g., a similar offer was executed
 on a different system, and the data from that campaign indicates a different bid price). There are three override modes in the drop-down list:
 
-Each of the following options requires you to set the Override up to amount. This is the number of impressions that you want to win per venue using these settings. After this threshold has been exceeded, the settings will revert to the standard optimization engine learn bid (i.e., any Learn Override settings are cancelled). It is important to
-set this accurately so that you do not collect so much data at the modified learn rate that you skew the results (i.e., the smaller your anticipated statistical sample, the lower this threshold should be set). The default is **40,000**.
+> [!NOTE]
+> Each of the following options requires you to set the **Override up to** amount. This is the number of impressions that you want to win per venue using these settings. After this threshold has been exceeded, the settings will revert to the standard optimization engine learn bid (i.e., any Learn Override settings are cancelled). It is important to
+> set this accurately so that you do not collect so much data at the modified learn rate that you skew the results (i.e., the smaller your anticipated statistical sample, the lower this threshold should be set). The default is **40,000**.
 
-- **Average RPM Bid** - Select this option to use the average winning bid amount as your bid in each venue. This option is best used when you have very little knowledge of the range of bids for this inventory, as it allows you to start with a bid that is appropriate for this venue. If you wish to further adjust your learn bids, you can
-  use the Multiply bid field to modify the learn bid amount by a factor ranging from **0.5** (one-half of the current bid) to **5** (five times the current bid), thus altering the cost and number of impressions won.
+- **Average RPM Bid** - Select this option to use the average winning bid amount as your bid in each venue. This option is best used when you have very little knowledge of the range of bids for this inventory, as it allows you to start with a bid that is appropriate for this venue. If you wish to further adjust your learn bids, you can use the **Multiply bid** field to modify the learn bid amount by a factor ranging from **0.5** (one-half of the current bid) to **5** (five times the current bid), thus altering the cost and number of impressions won.
 
-:::image type="content" source="media/learn-override-avg-rpm.png" alt-text= "The diagram illustrates how you override the learn bid amounts.":::
+  :::image type="content" source="media/learn-override-avg-rpm.png" alt-text= "The diagram illustrates how you override the learn bid amounts.":::
 
-- **Base CPM Bid** - You can specify the CPM bid amount and use that amount for all learn bids in all venues. If you select this option, the Bid a Base $ field appears, allowing you to enter the desired CPM amount. This option is best used when you have information which indicates a bid price different than that suggested by the standard optimization engine.
+- **Base CPM Bid** - You can specify the CPM bid amount and use that amount for all learn bids in all venues. If you select this option, the **Bid a Base $** field appears, allowing you to enter the desired CPM amount. This option is best used when you have information which indicates a bid price different than that suggested by the standard optimization engine.
 
-:::image type="content" source="media/learn-override-base-rpm.png" alt-text= "The diagram illustrates base CPM bid amount.":::
+  :::image type="content" source="media/learn-override-base-rpm.png" alt-text= "Diagram that illustrates base CPM bid amount.":::
 
-- **Bid Multiplier** - You can multiply the optimization-determined learn bids for all venues by a factor between **0.5** (one-half of the learn bid) to **5** (five times the learn bid). If you select this option, the Bid Multiplier field appears, where you can choose the multiplication factor from the drop-down list.
+- **Bid Multiplier** - You can multiply the optimization-determined learn bids for all venues by a factor between **0.5** (one-half of the learn bid) to **5** (five times the learn bid). If you select this option, the **Bid Multiplier** field appears, where you can choose the multiplication factor from the drop-down list.
 
-:::image type="content" source="media/learn-override-bid-multiplier.png" alt-text= "The diagram illustrates bid multiplier fields.":::
+  :::image type="content" source="media/learn-override-bid-multiplier.png" alt-text= "The diagram illustrates bid multiplier fields.":::
 
-> [!WARNING]
-> The more data you acquire, the greater the range of learn bid amounts. Therefore, you may not wish to use this setting when you have a lot of data, as you may not know the entire range of learn bid amounts that you are multiplying.
-> For example, if you have one venue using a learn bid of `$.30`, and another venue using a bid of `$2.50`, and you select a multiplier of `3.0`, the first venue will bid `$.90`(which may be acceptable), and the second venue will bid `$7.50` (which may be too high). Therefore, the more data you have accumulated, the more likely it is that applying the Bid Multiplier could result in extremely high (or low) learn bids. Upon reaching this point, you should use either the **Venue Average bid** or the **Base CPM bid** option to adjust your learn bid.
+  > [!WARNING]
+  > The more data you acquire, the greater the range of learn bid amounts. Therefore, you may not wish to use this setting when you have a lot of data, as you may not know the entire range of learn bid amounts that you are multiplying.
+  > For example, if you have one venue using a learn bid of `$.30`, and another venue using a bid of `$2.50`, and you select a multiplier of `3.0`, the first venue will bid `$.90`(which may be acceptable), and the second venue will bid `$7.50` (which may be too high). Therefore, the more data you have accumulated, the more likely it is that applying the Bid Multiplier could result in extremely high (or low) learn bids. Upon reaching this point, you should use either the **Venue Average bid** or the **Base CPM bid** option to adjust your learn bid.
 
 There are three settings in the Buy Third Party Inventory section which can limit your bid amount, regardless of which learn override control you employ:
 

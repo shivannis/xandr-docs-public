@@ -1,14 +1,13 @@
 ---
 title: Onboarding video supply
-description: The article defines onboarding video supply.
+description: The article guides learning onboarding video supply, modifying placements, updating media types for videos, and testing tags for seamless integration.
 ms.date: 10/28/2023
 ---
 
 # Onboarding video supply
 
 > [!NOTE]
-> Xandr now supports a domain, [adnxs-simple.com](http://adnxs-simple.com/), which does not send or read browser cookies on requests. Clients can leverage this cookie-free
-> domain when there is no consent to use personal data. Relevant calls initiated by Xandr will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://wiki.xandr.com/display/policies/Reinforcing+Privacy+Controls+Through+a+Cookie-Free+Domain) (login required).
+> Xandr now supports a domain, [adnxs-simple.com](http://adnxs-simple.com/), which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Xandr will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://wiki.xandr.com/display/policies/Reinforcing+Privacy+Controls+Through+a+Cookie-Free+Domain) (login required).
 
 This page explains how to modify placement settings to accept video creatives and how to export and test placement tags.
 

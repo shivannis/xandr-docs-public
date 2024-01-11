@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Offline Conversion Attribution
-description: The article defines Offline Conversion Attribution.
+description: The artcile helps you to know Offline Conversion Attribution that shifts all data processing for conversion tracking to their warehouse. 
 ms.date: 10/28/2023
 ---
 
@@ -10,18 +10,16 @@ ms.date: 10/28/2023
 
 Offline attribution provides:
 
-- **Scalability**: First and foremost, performing conversion attribution at scale is a hard problem. Attributing conversions requires sorting through immense amounts of data, very quickly, in order to find a salient conversion event. Doing so efficiently is challenging. Offline attribution removes a number of steps from the attribution process, as
-  well as removing components of our data processing infrastructure that did not scale well.
-- **Accuracy**: Offline attribution more accurately implements the "last-view/last-click" attribution model. In particular, it more accurately attributes conversions when the elapsed time between the conversion pixel firing and a view or click is very short. It also tracks conversions for impression trackers, whereas the previous
-  design did not. For more information about the "last-view/last-click" attribution model that we use, see [Conversion Attribution](conversion-attribution.md).
+- **Scalability**: First and foremost, performing conversion attribution at scale is a hard problem. Attributing conversions requires sorting through immense amounts of data, very quickly, in order to find a salient conversion event. Doing so efficiently is challenging. Offline attribution removes a number of steps from the attribution process, as well as removing components of our data processing infrastructure that did not scale well.
+- **Accuracy**: Offline attribution more accurately implements the "last-view/last-click" attribution model. In particular, it more accurately attributes conversions when the elapsed time between the conversion pixel firing and a view or click is very short. It also tracks conversions for impression trackers, whereas the previous design did not. For more information about the "last-view/last-click" attribution model that we use, see [Conversion Attribution](conversion-attribution.md).
 - **Flexibility**: This architecture provides us with more flexibility in how we implement conversion attribution models. As such, this change prepares our system to handle additional attribution models beyond "last-view/last-click."
 
-The below text and diagrams describe lower-level infrastructural details; for a higher-level overview of how we do conversion attribution, see [Conversion Attribution](conversion-attribution.md).
+  > [!IMPORTANT]
+  > The below text and diagrams describe lower-level infrastructural details; for a higher-level overview of how we do conversion attribution, see [Conversion Attribution](conversion-attribution.md).
 
 ## Conversion attribution, "online" vs. "offline"
 
-The following diagram shows the major components involved in the conversion attribution process, as well as the steps that occur between a user converting and that conversion being attributed and made available in reporting. The left side of the diagram shows the previous "online" conversion attribution process. The right side of the diagram
-shows the current "offline" process.
+The following diagram shows the major components involved in the conversion attribution process, as well as the steps that occur between a user converting and that conversion being attributed and made available in reporting. The left side of the diagram shows the previous "online" conversion attribution process. The right side of the diagram shows the current "offline" process.
 
 :::image type="content" source="media/oca.png" alt-text= "The diagram that defines the previous online conversion attribution process on your left side and the current offline process is on your right.":::
 

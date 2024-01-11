@@ -1,14 +1,12 @@
 ---
 title: Microsoft Monetize - OTT Video Creative Specifications
-description: The article describes OTT Video creative specifications.
+description: The article delves into the technical specifications of Over-the-Top (OTT) videos, focusing on the requirements for premium digital content.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - OTT video creative specifications
 
-An OTT (Over-the-Top video) creative is designed to be displayed before, after, or during in-stream video content delivered over the internet.
-Typically, OTT video content is played on a Connected TV (CTV). CTV can include a TV that is connected to the internet via an external device (for example a Blu-Ray player or a gaming console), or a Smart Television. OTT content is generally viewed by engaged users watching high-quality video content in a full-screen mode. OTT advertising is
-considered premium digital video inventory. It's the highest-quality format you can purchase programmatically, with completion rates as high as 90%. To uphold the quality of the viewing experience, creative requirements for OTT inventory are stricter than standard web-based video supply.
+An OTT (Over-the-Top video) creative is designed to be displayed before, after, or during in-stream video content delivered over the internet. Typically, OTT video content is played on a Connected TV (CTV). CTV can include a TV that is connected to the internet via an external device (for example a Blu-Ray player or a gaming console), or a Smart Television. OTT content is generally viewed by engaged users watching high-quality video content in a full-screen mode. OTT advertising is considered premium digital video inventory. It's the highest-quality format you can purchase programmatically, with completion rates as high as 90%. To uphold the quality of the viewing experience, creative requirements for OTT inventory are stricter than standard web-based video supply.
 
 ## Recommended OTT video creative specifications
 

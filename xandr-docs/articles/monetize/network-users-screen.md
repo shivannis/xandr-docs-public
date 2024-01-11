@@ -1,10 +1,10 @@
 ---
 title: Network Users Screen
-description: The article explains how the Network Users screen provides basic information about network-level users and allows users to access, edit, or activate/deactivate specific user details as needed.
+description: The article explains how the Network Users screen details network-level users, enabling access, editing, and activation/deactivation of specific user details as necessary.
 ms.date: 10/28/2023
 ---
 
-# Network users Screen
+# Network users screen
 
 The Network Users screen shows you basic information about your network-level users, provides access to additional details about specific users, and lets you edit or
 activate/deactivate specific network-level users.

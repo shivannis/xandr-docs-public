@@ -1,6 +1,6 @@
 ---
 title: Network Reporting
-description: The article covers network reports that offer a broad business overview by facilitating reporting across multiple advertisers and/or publishers, providing a global perspective on the company's network performance.
+description: The article explores network reports that provide a comprehensive business overview by facilitating cross-advertiser and cross-publisher reporting.
 ms.date: 10/28/2023
 ---
 
@@ -10,8 +10,7 @@ Network reports are designed to give you a global view of your business, allowin
 In this section of the reporting guide, you'll find documentation for all of our network-level reports.
 
 > [!IMPORTANT]
-> Conversion-related data in reports is processed asynchronously. As a result, reports are available more quickly, while some conversion-related data is still being
-> processed in the background. For more information, see **Asynchronous Conversion Attribution** on the [Availability of Reporting Data](availability-of-reporting-data.md) page.
+> Conversion-related data in reports is processed asynchronously. As a result, reports are available more quickly, while some conversion-related data is still being processed in the background. For more information, see **Asynchronous Conversion Attribution** on the [Availability of Reporting Data](availability-of-reporting-data.md) page.
 
 - [Buyer Bid Error Report](buyer-bid-error-report.md)
 - [Buyer Geo Analytics Report](buyer-geo-analytics-report.md)
@@ -37,8 +36,8 @@ In this section of the reporting guide, you'll find documentation for all of our
 - [Seller Bid Error Report](seller-bid-error-report.md)
 - [Seller Deal Metrics](seller-deal-metrics.md)
 - [Seller Detected Site Domain Report](seller-detected-site-domain-report.md)
-- [Seller Site Domain Report](seller-segment-performance-report.md)
-- [universal-content-categories-report.md](seller-site-domain-report.md)
+- [Seller Site Domain Report](seller-site-domain-report.md)
+- [universal-content-categories-report.md](universal-content-categories-report.md)
 - [Video Ad Pod Report](video-ad-pod-report.md)
 - [Video Inventory Availability Report](video-inventory-availability-report.md)
 

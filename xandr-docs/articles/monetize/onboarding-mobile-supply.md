@@ -1,14 +1,13 @@
 ---
 title: Onboarding Mobile Supply
-description: The article describes several ways of onboarding mobile supply.
+description: The article assists in defining mobile supply integration through ad calls, providing essential details for each supported integration, such as supply type and query parameters.
 ms.date: 10/28/2023
 ---
 
 # Onboarding mobile supply
 
 > [!NOTE]
-> Xandr now supports a domain, [adnxs-simple.com](http://adnxs-simple.com/), which does not send or read browser cookies on requests. Clients can leverage this cookie-free
-> domain when there is no consent to use personal data. Relevant calls initiated by Xandr will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://wiki.xandr.com/display/policies/Reinforcing+Privacy+Controls+Through+a+Cookie-Free+Domain)(login required).
+> Xandr now supports a domain, [adnxs-simple.com](http://adnxs-simple.com/), which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Xandr will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Reinforcing-Privacy-Controls-Through-a-Cookie-Free-Domain.aspx)(login required).
 
 There are several ways to onboard mobile supply. The type of mobile supply you are bringing on will determine the type of ad call your publishers need to make.
 
@@ -25,13 +24,11 @@ For both app and mobile web inventory, there are two types of ad calls that can 
 
 When an ad call comes directly from the device (client-side), the application or website calls the Xandr Impression Bus directly. This means that Xandr has direct access to important metadata such as the User Agent and IP address.
 
-On the other hand, a server-side call means that an external server calls the Xandr Impression Bus on behalf of the client (the device). In this case, Xandr does
-not have direct access to necessary metadata that would make the impression attractive to buyers such as the IP address and the User Agent. Since this data is not supplied by the server-side call, it must be appended to the request by your mobile ad tag. The instructions below show you which tags you must add to your placement tags depending on the
-type of integration.
+On the other hand, a server-side call means that an external server calls the Xandr Impression Bus on behalf of the client (the device). In this case, Xandr does not have direct access to necessary metadata that would make the impression attractive to buyers such as the IP address and the User Agent. Since this data is not supplied by the server-side call, it must be appended to the request by your mobile ad tag. The instructions below show you which tags you must add to your placement tags depending on the type of integration.
 
 This diagram shows the difference between how server-side and client-side mobile ad calls are made:
 
-:::image type="content" source="media/server-vs-client.png" alt-text= "The diagram illustrates the distinctions between server-side and client-side mobile ad call processes.":::
+:::image type="content" source="media/server-vs-client.png" alt-text= "Diagram that illustrates the distinctions between server-side and client-side mobile ad call processes.":::
 
 ## Server-side integrations
 
@@ -65,19 +62,19 @@ Even though this call will fetch an ad, it doesn't provide as much information a
 
 ### Recommended parameters for server-side ad calls
 
-We recommend that you include the following parameters (in the table below) on server-side ad calls from mobile apps. For more information about how to properly format mobile ad calls, see the [obile Ad Call Reference](mobile-ad-call-reference.md).
+We recommend that you include the following parameters (in the table below) on server-side ad calls from mobile apps. For more information about how to properly format mobile ad calls, see the [Mobile Ad Call Reference](mobile-ad-call-reference.md).
 
 > [!TIP]
 > We recommend creating separate placements for Android and iOS.
 
 | Name | Parameter | Description |
 |---|---|---|
-| App ID | appid | The app ID is a string used to identify an app running on Android or iOS. Many buyers set campaign targeting and reporting based on app ID. Failing to supply a correct appid will make your inventory unattractive to these buyers. Therefore, passing this field is strongly recommended. For more information about the appid parameter, see our Mobile Ad Call Reference. |
-| IP Address | ip | The IP address parameter provides Xandr with the geographic location of the user, as well as the carrier whose network the device is connected to. Many buyers use carrier or geo targeting. Including this information on an ad call is important in order to capture mobile demand. |
-| User Agent | ua | The User Agent parameter provides us with the device's operating system as well its make and model. Many buyers are targeting based on these parameters and not including them will restrict demand. |
-| IDFA (for iOS) | idfa | This is the user's unique identifier for iOS devices and is tied to a user ID. If you don't provide this information on the ad call, demand partners who have implemented frequency capping and/or a buying strategy that requires conversion tracking will not buy your inventory. Not providing the user's unique ID will severely restrict demand. |
-| AAID (for Android) | aaid | This is the user's unique identifier for Android devices that use Google Play Services and is tied to a user ID. If you don't provide this information on the ad call, demand partners who have implemented frequency capping and/or a buying strategy that requires conversion tracking will not buy your inventory. Not providing the user's unique ID will severely restrict demand. |
-| Unique Device ID (Android) | md5udid, sha1udid | This is the user's unique identifier for Android devices that do not use Google Play Services and is tied to a user ID. If you do not provide this information on the ad call, demand partners who have implemented frequency capping and/or a buying strategy that requires conversion tracking will not buy your inventory. Not providing the user's unique ID will severely restrict available demand. |
+| App ID | `appid` | The app ID is a string used to identify an app running on Android or iOS. Many buyers set campaign targeting and reporting based on app ID. Failing to supply a correct appid will make your inventory unattractive to these buyers. Therefore, passing this field is **strongly recommended**. For more information about the appid parameter, see our [Mobile Ad Call Reference](mobile-ad-call-reference.md). |
+| IP Address | `ip` | The IP address parameter provides Xandr with the geographic location of the user, as well as the carrier whose network the device is connected to. Many buyers use carrier or geo targeting. Including this information on an ad call is important in order to capture mobile demand. |
+| User Agent | `ua` | The User Agent parameter provides us with the device's operating system as well its make and model. Many buyers are targeting based on these parameters and not including them will restrict demand. |
+| IDFA (for iOS) | `idfa` | This is the user's unique identifier for iOS devices and is tied to a user ID. If you don't provide this information on the ad call, demand partners who have implemented frequency capping and/or a buying strategy that requires conversion tracking will not buy your inventory. Not providing the user's unique ID will severely restrict demand. |
+| AAID (for Android) | `aaid` | This is the user's unique identifier for Android devices that use Google Play Services and is tied to a user ID. If you don't provide this information on the ad call, demand partners who have implemented frequency capping and/or a buying strategy that requires conversion tracking will not buy your inventory. Not providing the user's unique ID will severely restrict demand. |
+| Unique Device ID (Android) | `md5udid`, `sha1udid` | This is the user's unique identifier for Android devices that do not use Google Play Services and is tied to a user ID. If you do not provide this information on the ad call, demand partners who have implemented frequency capping and/or a buying strategy that requires conversion tracking will not buy your inventory. Not providing the user's unique ID will severely restrict available demand. |
 
 ## Mobile web
 
@@ -104,7 +101,7 @@ We recommend that you include the following parameters on server-side ad calls f
 
 | Name | Parameter | Description |
 |---|---|---|
-| Location | loc | This is the user's location expressed in latitude and longitude, to allow geo-targeting. |
+| Location | `loc` | This is the user's location expressed in latitude and longitude, to allow geo-targeting. |
 
 > [!TIP]
 > For a complete list of the query string parameters you can pass on our `/tt` and `/ttj` calls, see [Placement Tag Parameters](placement-tag-parameters.md).
@@ -158,7 +155,7 @@ We recommend that you include the following parameters on client-side ad calls f
 
 | Name | Parameter | Description |
 |---|---|---|
-| Location | loc | This is the user's location expressed in latitude and longitude, to allow geo-targeting. |
+| Location | `loc` | This is the user's location expressed in latitude and longitude, to allow geo-targeting. |
 
 For a complete list of the query string parameters you can pass on our `/tt` and `/ttj` calls, see [Placement Tag Parameters](placement-tag-parameters.md).
 

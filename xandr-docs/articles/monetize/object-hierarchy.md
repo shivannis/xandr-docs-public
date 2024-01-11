@@ -10,11 +10,11 @@ This page introduces the main objects that you work with to buy and sell media.
 
 ## Buy-side hierarchy
 
-:::image type="content" source="media/buy-side-object-hierarchy.png" alt-text="The diagram that defines buy-side hierarchy":::
+:::image type="content" source="media/buy-side-object-hierarchy.png" alt-text="The diagram that defines buy-side hierarchy.":::
 
 ## Overview and diagram (Augmented Line Item)
 
-:::image type="content" source="media/buy-side-object-hierarchy.png" alt-text="The diagram that defines augmented line item in buy-side hierarchy":::
+:::image type="content" source="media/buy-side-object-hierarchy.png" alt-text="The diagram that defines augmented line item in buy-side hierarchy.":::
 
 Key differences of an [Augmented Line Item (ALI)](augmented-line-items-ali.md) compared to Standard Line Items:
 
@@ -95,14 +95,13 @@ You can have many impression trackers under a single advertiser.
 
 ## Click tracker
 
-A [click tracker](create-a-click-tracker.md) is used to track clicks associated with creatives that are hosted by off-platform (non-Xandr) ad servers. This is
-done by attaching the tracker as a "piggyback pixel" on the externally hosted creative.
+A [click tracker](create-a-click-tracker.md) is used to track clicks associated with creatives that are hosted by off-platform (non-Xandr) ad servers. This is done by attaching the tracker as a "piggyback pixel" on the externally hosted creative.
 
 You can have many click trackers under a single advertiser.
 
 ## Sell-side hierarchy
 
-:::image type="content" source="media/sell-side-object-hierarchy.png" alt-text="The diagram that defines sell-side hierarchy":::
+:::image type="content" source="media/sell-side-object-hierarchy.png" alt-text="The diagram that defines sell-side hierarchy.":::
 
 ## Account control and customization in the network
 
@@ -112,8 +111,7 @@ The [network](network-guide.md) represents your account as a whole. At this leve
 
 Your [network ad quality](working-with-network-ad-quality.md) restricts which creatives can serve on inventory in your network, based on creative attributes such as buyer or brand. These rules are applied to every impression across all publishers in your network.
 
-Restrictions set in a your network ad quality profile cannot be loosened at the publisher level by a [publisher template](create-a-publisher-template.md)[custom profile] or
-[custom profile](create-a-custom-profile.md); publisher-level ad quality settings may only be more strict than network ad quality, never less.
+Restrictions set in a your network ad quality profile cannot be loosened at the publisher level by a [publisher template](create-a-publisher-template.md) or [custom profile](create-a-custom-profile.md); publisher-level ad quality settings may only be more strict than network ad quality, never less.
 
 ## Content category
 
@@ -129,8 +127,7 @@ A [deal](create-a-custom-deal.md) is a one-off custom package for a specific buy
 
 ## Publisher
 
-A [publisher](working-with-publishers.md) represents a single client on whose behalf you want to sell inventory. At this level, you define your affiliation to the publisher (managed or owned & operated), whether or not the publisher will accept CPA or CPC deals from your managed advertisers as well as other trusted partners on
-the platform, how much information you want to expose in targeting and reporting when reselling the publisher's inventory, and more.
+A [publisher](working-with-publishers.md) represents a single client on whose behalf you want to sell inventory. At this level, you define your affiliation to the publisher (managed or owned & operated), whether or not the publisher will accept CPA or CPC deals from your managed advertisers as well as other trusted partners on the platform, how much information you want to expose in targeting and reporting when reselling the publisher's inventory, and more.
 
 You can have many publishers in your network.
 
@@ -143,8 +140,7 @@ rules](create-payment-rules.md) that apply to individual impressions based on ge
 
 ## Publisher ad quality
 
-A [publisher ad quality profile](working-with-publisher-ad-quality.md) restricts which creatives can serve on a specific publisher's inventory, based on creative attributes such as buyer or brand. Note that restrictions set in your [network ad quality profile](working-with-network-ad-quality.md) cannot be loosened in a publisher ad quality
-profile; publisher-level ad quality settings may only be more strict than network ad quality, never less.
+A [publisher ad quality profile](working-with-publisher-ad-quality.md) restricts which creatives can serve on a specific publisher's inventory, based on creative attributes such as buyer or brand. Note that restrictions set in your [network ad quality profile](working-with-network-ad-quality.md) cannot be loosened in a publisher ad quality profile; publisher-level ad quality settings may only be more strict than network ad quality, never less.
 
 ## Placement group
 

@@ -1,6 +1,6 @@
 ---
 title: Opt Out of Gambling Ads
-description: The article guides on blocking gambling ads on publishers' inventory where not permitted, mentioning Xandr's allowance in countries where such advertising is legal.
+description: The article guides on blocking gambling ads on publishers' inventory where not permitted, mentioning all the allowance in countries where such advertising is legal.
 ms.date: 10/28/2023
 ---
 
@@ -20,7 +20,6 @@ If you don't want to permit gambling ads to serve on any of your publishers, fol
 
 Open the network Ad Quality Manager by navigating to **Network \>  Ad Quality**.
 
-
 ### Step 2. Open the category eligibility settings dialog
 
 Locate the **Categories** section. Find and click the **Edit** button to open the **Category Eligibility Settings** dialog.
@@ -29,7 +28,7 @@ Locate the **Categories** section. Find and click the **Edit** button to open th
 
 Search for the **Gambling** category and click the **Edit** link. Then change the status to Banned, and click **Save**.
 
-:::image type="content" source="media/gambling-network-optout.png" alt-text= "The diagram explains how you can ban the gambling category.":::
+:::image type="content" source="media/gambling-network-optout.png" alt-text= "Diagram that ****explains how you can ban the gambling category.":::
 
 ## Option 3. Exclude gambling ads on a per-publisher basis
 
@@ -45,5 +44,5 @@ The Ad Quality Manager shares the same user interface for publishers and network
 
 ## Related topics
 
-- [Buy-Side Gambling Policy](https://wiki.xandr.com/display/policies/Policies+for+Buying) (login required)
-- [Sell-Side Gambling Policy](https://wiki.xandr.com/display/policies/Policies+for+Selling) (login required)
+- [Buy-Side Gambling Policy](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx) (login required)
+- [Sell-Side Gambling Policy](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Selling.aspx) (login required)

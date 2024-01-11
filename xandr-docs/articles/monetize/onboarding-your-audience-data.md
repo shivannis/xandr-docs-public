@@ -1,10 +1,10 @@
 ---
-title: Onboarding Your Audience Data
+title: Microsoft Monetize - Onboarding Your Audience Data
 description: The article describes the process for onboarding your audience data.
 ms.date: 10/28/2023
 ---
 
-# Onboarding your audience data
+# Microsoft Monetize - Onboarding your audience data
 
 There are three ways to onboard your audience data:
 

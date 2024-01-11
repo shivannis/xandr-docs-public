@@ -4,7 +4,6 @@ description: The article discusses a report aimed at presenting performance and 
 ms.date: 10/28/2023
 ---
 
-
 # Network site domain performance report
 
 This report is designed to show you performance and optimization data broken down by domain or mobile app across all of your advertisers.
@@ -13,7 +12,7 @@ This report is designed to show you performance and optimization data broken dow
 
 All dates and times are given in UTC.
 
-**Time Ranges**
+**Time ranges**
 
 Time ranges define the time period of the data extracted for the report.
 The following is a complete list of time ranges available for reports.
@@ -57,8 +56,7 @@ For more information about how quickly reporting data is processed, see [Availab
 ## Currency 2.0
 
 > [!NOTE]
-> By enabling Currency 2.0, you can select a currency for each individual report if you prefer not to use USD as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select Advertiser, click the Currency 2.0 toggle to enable it, and select Japanese Yen (JPY) from the
-> Currency menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
+> By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, click the **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency** menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.**
 
 ## Dimensions
 
@@ -77,7 +75,7 @@ For more information about how quickly reporting data is processed, see [Availab
 | Remarketing Type | Yes | Indicator of whether this is a remarketing campaign. |
 | Age | Yes | The age of the user associated with the impression. For impressions older than 100 days, the age will be "unknown". |
 | Gender | Yes | The gender of the user. For impressions older than 100 days, the gender will be "unknown". |
-| Fold Position | Yes | The fold position of the impression (i.e., where on the page the placement is located).<br>Possible values for impressions:<br>unknown<br>above<br>below |
+| Fold Position | Yes | The fold position of the impression (i.e., where on the page the placement is located).<br>Possible values for impressions:<br> - unknown<br> - above<br> - below |
 | Operating System | No | The name and ID of the operating system of the device where the impression occurred. |
 | Seller Name | No | The name of the seller member associated with the site domain. |
 | Seller ID | Yes | The ID of the seller member associated with the site domain. |
@@ -121,30 +119,30 @@ For more information about how quickly reporting data is processed, see [Availab
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    a.  Or, from the Publishers top menu, click on **Prebid Server Premium \>  Analytics \>  Prebid Server Analytics**.
+   1. Or, from the Publishers top menu, click on **Prebid Server Premium \>  Analytics \>  Prebid Server Analytics**.
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
-1. For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
-1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears.
-    a. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
+
+   > [!IMPORTANT]
+   > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
+
+1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
 1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
 
     > [!WARNING]
-    > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using
-    > only the dimensions you need.
+    > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
-5. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
+1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
     - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
     - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
 
       > [!TIP]
-      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and
-      > Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
     - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
     - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
     - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a name for future reference.
-6. Click **Run report** to send your report request.
+1. Click **Run report** to send your report request.
 
 ## Related topics
 
