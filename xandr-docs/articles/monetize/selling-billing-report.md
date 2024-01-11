@@ -124,7 +124,7 @@ for reports. However, all intervals are not available for every report.
 | Clicks | The total number of clicks. |
 | Conversions | The total number of post-view and post-click conversions. |
 | Conversions | The total number of post-view and post-click conversions. |
-| Filtered Requests | The total number of Blacklisted or Fraud impressions. |
+| Filtered Requests | The total number of Blocklisted or Fraud impressions. |
 | Gross CPM | The gross revenue per 1000 impressions. |
 | Gross Seller Revenue | The gross revenue generated through sales to buyers (before deductions). |
 | Net CPM | The total revenue per 1000 impressions. |

@@ -1,24 +1,14 @@
 ---
-Title : Sell-Side Optimization
-Description : <b>Important:</b> This guide only applies to
+title: Sell-Side Optimization
+description: Learn how optimization gives sellers several controls that can be leveraged to minimize risk and maximize return. 
 ms.date: 10/28/2023
-the legacy line item. If you are using the augmented line item (ALI),
 ---
 
 
-# Sell-Side Optimization
+# Sell-Side optimization
 
-
-
-
-
-<b>Important:</b> This guide only applies to
-the legacy line item. If you are using the augmented line item (ALI),
-see
-<a href="optimization-guide-ali.md" class="xref">Optimization Guide -
-ALI</a>.
-
-
+> [!IMPORTANT]
+> This guide only applies to the legacy line item. If you are using the augmented line item (ALI), see [Optimization Guide - ALI](optimization-guide-ali.md).
 
 The online advertising marketplace is in many ways defined by its high
 levels of uncertainty. As a seller's revenue is often linked to an ad's
@@ -51,34 +41,23 @@ Revenue** or Certain Revenue.
   accurate value from those impressions.
 
 Optimization uses an algorithm to intelligently allocate a percentage of
-total auctions to each of these two categories. The process, called
-<a href="dynamic-learn-percentage.md" class="xref">Dynamic Learn
-Percentage</a>, considers success rates before maximizing revenue from
+total auctions to each of these two categories. The process, called [Dynamic Learn Percentage](dynamic-learn-percentage.md), considers success rates before maximizing revenue from
 an expanded group of certain revenue sources.
 
-Sellers can also establish a
-<a href="give-up-price.md" class="xref">Give Up Price</a>. The give up
+Sellers can also establish a [Give Up Price](give-up-price.md). The give up
 price is a bid price threshold which determines how bid prices are
 ranked in **Learn Auctions** and **Revenue Auctions**. If all bids
 offered in the auction type are below the user specified give up price,
 the auction is opened up to all bids.
 
-Related Topics
+## Related topics
 
-- <a href="optimization-buying-strategies.md" class="xref">Optimization
-  Buying Strategies</a>
-- <a href="targeted-learn.md" class="xref">Targeted Learn</a>
-- <a href="what-is-an-optimization-node.md" class="xref">What is an
-  Optimization Node?</a>
-- <a href="learn-budget.md" class="xref">Learn Budget</a>
-- <a href="what-is-valuation.md" class="xref">What is Valuation?</a>
-- <a href="optimization-levers.md" class="xref">Optimization Levers</a>
-- <a href="cadence-modifier-and-the-chaos-factor.md"
-  class="xref">Cadence Modifier and the Chaos Factor</a>
-- <a href="dynamic-learn-percentage.md" class="xref">Dynamic Learn
-  Percentage</a>
-- <a href="give-up-price.md" class="xref">Give Up Price</a>
-
-
-
-
+- [Optimization Buying Strategies](optimization-buying-strategies.md)
+- [Targeted Learn](targeted-learn.md)
+- [What is an Optimization Node?](what-is-an-optimization-node.md)
+- [Learn Budget](learn-budget.md)
+- [What is Valuation?](what-is-valuation.md)
+- [Optimization Levers](optimization-levers.md)
+- [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md)
+- [Dynamic Learn Percentage](dynamic-learn-percentage.md)
+- [Give Up Price](give-up-price.md)

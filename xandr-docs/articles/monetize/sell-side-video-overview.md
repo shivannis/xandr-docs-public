@@ -1,7 +1,6 @@
 ---
 title: Sell-Side Video Overview
-description: In this page learn what our sell-side video products are,
-how they work, and how they help clients to succeed. 
+description: In this page learn what our sell-side video products are, how they work, and how they help clients to succeed. 
 ms.date: 10/28/2023
 ---
 
