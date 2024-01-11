@@ -2,10 +2,6 @@
   href: index.yml
 - name: Overview
   href: xcs-xandr-customer-support-home.md
-  - name: Client Services
-    href: xcs-xandr-client-services.md
-  - name: Email Communications
-    href: xcs-xandr-email-communications.md
 - name: Functionalities in Customer Support Portal
   items:
   - name: Login
