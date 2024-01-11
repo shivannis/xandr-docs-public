@@ -1,14 +1,11 @@
 ---
-Title : Segment Modifier
-Description : Segment Modifier allows you to adjust a campaign's bid at the time of
+title: Microsoft Monetize - Segment Modifier
+description: In this page learn to upload your audience and modifier segments to the Batch Segment API and associate a modifier segment with your campaign via the API.
 ms.date: 10/28/2023
-the auction using data you have about your users. This is achieved by
 ---
 
 
-# Segment Modifier
-
-
+# Microsoft Monetize - Segment modifier
 
 Segment Modifier allows you to adjust a campaign's bid at the time of
 the auction using data you have about your users. This is achieved by
@@ -25,25 +22,14 @@ users is present. There are two ways the campaign can modify the bid:
   medium-to-high budgets, with long or repeating flight dates, that use
   click-conversion performance metrics.
 
+> [!NOTE]
+> In this document, "an impression" is used to refer to an impression involving a user in one of your audience segments, where that audience segment is associated with a modifier segment.
 
+## Step 1. Upload your audience and modifier segments to the Batch Segment API
 
-<b>Note:</b> In this document, "an impression"
-is used to refer to an impression involving a user in one of your
-audience segments, where that audience segment is associated with a
-modifier segment.
-
-
-
-Step 1. Upload your Audience and Modifier Segments to the Batch Segment
-API
-
-Upload both your audience and modifier segments using the <a
-href="xandr-api/batch-segment-service.md"
-class="xref" target="_blank">Batch Segment Service</a>. You'll then
+Upload both your audience and modifier segments using the [Batch Segment Service](../digital-platform-api/batch-segment-service.md). You'll then
 associate each modifier segment with a campaign using the procedure
-defined in **<a
-href="segment-modifier.md#ID-000053f3__p-eeecd7e8-81bb-4ab1-af13-fb794cb95945"
-class="xref">Step 2</a>**. Note that each modifier segment may only be
+defined in **[Step 2](#step-2-associate-a-modifier-segment-with-your-campaign-via-the-api)**. Note that each modifier segment may only be
 associated with a single audience segment, whereas a single audience
 segment can be part of more than one modifier segment.
 
@@ -54,15 +40,11 @@ format only accepts integers in the `VALUE` field where you define your
 multiply your desired bid price or bid modifier by 1000. For example, to
 specify a user bid price of $0.75, write the integer `750` into the
 `VALUE` field of the segment data file. For a complete description of
-the file format, see <a
-href="xandr-api/page/batch-segment-servicehttps://xandr-prod.zoominsoftware.io/bundle/xandr-api/batch-segment-service---file-format.md"
-class="xref" target="_blank">Batch Segment Service - File Format</a>.
+the file format, see [Batch Segment Service - File Format](../bidders/initial-bss-account-setup.md).
 
-Step 2. Associate a Modifier Segment with your Campaign via the API
+## Step 2. Associate a modifier segment with your campaign via the API
 
-Using the <a
-href="xandr-api/campaign-service.md"
-class="xref" target="_blank">Campaign Service</a>, you'll need to
+Using the [Campaign Service](../digital-platform-api/campaign-service.md), you'll need to
 associate a modifier segment ID with your campaign; when creating or
 updating your campaign via the API, pass in the ID of the modifier
 segment you uploaded in one or both of the following subfields of the
@@ -82,7 +64,7 @@ between 0 and 2000, corresponding to a decimal number between 0 and 2.
 
 Here's an example of a campaign object using this format:
 
-``` pre
+``` 
 {
   "campaign": {
     "id": 123,
@@ -109,19 +91,12 @@ To achieve complete overlap, all of the cookies in your target audience
 (across one or all audience segments) should have a modifier value in
 the modifier segment.
 
+> [!NOTE]
+> Note that there are very few use cases requiring both a `segment_price_id` and `segment_modifier_id` on the same campaign.
 
+## Step 3. Set your optimization levers
 
-<b>Note:</b> Note that there are very few use
-cases requiring both a `segment_price_id` and `segment_modifier_id` on
-the same campaign.
-
-
-
-Step 3. Set your Optimization Levers
-
-Finally, the <a
-href="xandr-api/campaign-service.md"
-class="xref" target="_blank">Campaign Service</a> provides another
+Finally, the [Campaign Service](../digital-platform-api/campaign-service.md) provides another
 optimization lever you can pull in addition to the user bid price or
 user bid modifier:
 
@@ -140,11 +115,6 @@ user bid modifier:
   segment (or when no modifier segment is associated with the audience
   segment), set this field to `0`.
 
-Related Topics
+## Related topic
 
-- <a href="segment-modifier-testing-guidelines.md" class="xref">Segment
-  Modifier Testing Guidelines</a>
-
-
-
-
+[Segment Modifier Testing Guidelines](segment-modifier-testing-guidelines.md)

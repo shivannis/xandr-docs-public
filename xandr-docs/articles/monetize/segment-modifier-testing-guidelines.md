@@ -1,22 +1,16 @@
 ---
-Title : Segment Modifier Testing Guidelines
-Description : This document outlines the technical requirements, recommendations, and
+title: Microsoft Monetize - Segment Modifier Testing Guidelines
+description: In this page, learn about Technical Requirements, Analytical Requirements, recommendations and testing best practices for clients who plan to integrate with their campaigns.  
 ms.date: 10/28/2023
-testing best practices for clients who plan to integrate
-<a href="segment-modifier.md" class="xref">Segment Modifier</a> with
 ---
 
 
-# Segment Modifier Testing Guidelines
-
-
+# Microsoft Monetize - Segment modifier testing guidelines
 
 This document outlines the technical requirements, recommendations, and
-testing best practices for clients who plan to integrate
-<a href="segment-modifier.md" class="xref">Segment Modifier</a> with
-their campaigns.
+testing best practices for clients who plan to integrate [Segment Modifier](segment-modifier.md) with their campaigns.
 
-Technical Requirements
+## Technical requirements
 
 Clients wishing to use segment modifiers should be proficient with the
 tasks and concepts listed below:
@@ -27,9 +21,7 @@ tasks and concepts listed below:
 - **Batch Segment API**: Clients who are performing more robust
   integrations (requiring bulk feeds of segment data coming into
   Monetize) will benefit from a working
-  knowledge of the <a
-  href="xandr-api/batch-segment-service.md"
-  class="xref" target="_blank">Batch Segment Service</a>. For clients
+  knowledge of the [Batch Segment Service](../digital-platform-api/batch-segment-service.md). For clients
   who will be adding modifier values through pixel fires, please see
   Page Level Modifiers below.
 - **Audience Creation**: Clients are responsible for creating their own
@@ -43,15 +35,13 @@ tasks and concepts listed below:
   against our own inventory definition. Therefore, a modifier that
   attempts to take into account the domain:user combination will be
   fighting our own optimization.
-- **Log Level Data**: Clients can use <a
-  href="log-level-data/log-level-data-feeds.md"
-  class="xref" target="_blank">Log Level Data Feeds</a> to do low-level
+- **Log Level Data**: Clients can use [Log Level Data Feeds](../log-level-data/log-level-data-feeds.md) to do low-level
   analytics on the performance of their model. Since Log Level Data
   includes the individual user IDs to which the modifier is being
   applied, analyzing the exact relationship between modifier values and
   overall lift will be much easier.
 
-Analytical Requirements
+## Analytical requirements
 
 One of the key elements of segment modifier is that the client is
 responsible for creating the optimization model. As a result,
@@ -67,12 +57,10 @@ able to analyze it.
 Xandr can measure lift on a high level or guide
 performance testing best practices.
 
-Testing Best Practices
+## Testing best practices
 
 The best way to test segment modifier (or any buying strategy) is to use
-the Test/Control method, also known as
-<a href="http://en.wikipedia.org/wiki/A/B_testing" class="xref"
-target="_blank">A/B testing</a>.
+the Test/Control method, also known as [A/B testing](https://en.wikipedia.org/wiki/A/B_testing).
 
 Here are the recommendations for designing a test:
 
@@ -99,16 +87,10 @@ Here are the recommendations for designing a test:
   - Post View: 10/45/45 Test/Control, with a performance goal on each
     campaign and a PSA on the 10 user group
 
+> [!NOTE]
+> For the **Post Click** and **Post View** approaches, if the user is also targeting cookie-less users, they should set up a separate campaign targeting user group 101 with a click performance goal.
 
-
-<b>Note:</b> For the **Post Click** and **Post
-View** approaches, if the user is also targeting cookie-less users, they
-should set up a separate campaign targeting user group 101 with a click
-performance goal.
-
-
-
-Campaign Recommendations
+## Campaign recommendations
 
 Campaign setup will have a big impact on the testing process. In V7 of
 optimization, ongoing performance of campaigns under a new advertiser
@@ -128,9 +110,9 @@ for testing should have the following attributes:
   budget the better. While a minimum daily spend of $250.00 should work,
   $500.00 is recommended.
 
-Sample Application Approaches
+## Sample application approaches
 
-Page-Level Modifiers
+### Page-Level modifiers
 
 Page-level modifiers are when a modifier value is piggybacked on a
 normal on-page segment call. For example, if an advertiser has a
@@ -152,43 +134,28 @@ this will either create or update an entry in the modifier.
   valuation model into an on-page script, which will slow page execution
   and will likely not be palatable to every advertiser.
 
-Batch Segment API Modifiers
+## Batch segment API modifiers
 
 This is the most common and also the best asynchronous method by which
 you can apply segment modifier. Clients can upload their modifier
-segment using the API's <a
-href="xandr-api/batch-segment-service.md"
-class="xref" target="_blank">Batch Segment Service</a>, and apply the
+segment using the API's [Batch Segment Service](../digital-platform-api/batch-segment-service.md), and apply the
 modifier to their campaign.
 
 - **Advantages:** Since the client will be computing their optimization
   data offline, they'll have a holistic understanding of their user
   valuation model. As a result, they'll be able to measure exact
-  performance data in conjunction with <a
-  href="log-level-data/log-level-data-feeds.md"
-  class="xref" target="_blank">Log Level Data Feeds</a>. Additionally,
-  they can leverage the <a
-  href="xandr-api/batch-segment-service.md"
-  class="xref" target="_blank">Batch Segment Service</a>'s error
+  performance data in conjunction with [Log Level Data Feeds](../log-level-data/log-level-data-feeds.md). Additionally,
+  they can leverage the [Batch Segment Service](../digital-platform-api/batch-segment-service.md)'s error
   reporting feature to know whether or not their user model has been
   uploaded properly (on-page pixel fires lack this advantage).
 - **Disadvantages:** Unlike on-page pixels, we have volume restrictions
-  on batch segment API uploads. If the <a
-  href="xandr-api/batch-segment-service.md"
-  class="xref" target="_blank">Batch Segment Service</a> is used for
+  on batch segment API uploads. If the [Batch Segment Service](../digital-platform-api/batch-segment-service.md) is used for
   unnecessarily frequent uploads, the client will likely be asked to
   move towards a data provider integration approach.
 
-Related Topics
+## Related topics
 
-- <a href="segment-modifier.md" class="xref">Segment Modifier</a>
-- <a
-  href="xandr-api/batch-segment-service.md"
-  class="xref" target="_blank">Batch Segment Service</a>
-- <a
-  href="xandr-api/batch-segment-service---file-format.md"
-  class="xref" target="_blank">Batch Segment Service - File Format</a>
-
-
-
+- [Segment Modifier](segment-modifier.md)
+- [Batch Segment Service](../digital-platform-api/batch-segment-service.md)
+- [Batch Segment Service - File Format](../bidders/initial-bss-account-setup.md)
 
