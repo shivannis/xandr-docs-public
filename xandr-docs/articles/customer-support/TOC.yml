@@ -10,6 +10,8 @@
   items:
   - name: Login
     href: xcs-logging-in-to-the-customer-support-portal.md
+  - name: Report Outages
+    href: xcs-reporting-outages.md
   - name: Search the Knowledge Base
     href: xcs-searching-the-knowledge-base.md
   - name: Open a New Case
@@ -18,7 +20,4 @@
     href: xcs-updating-a-case.md
   - name: Update Profile, Settings and Password
     href: xcs-updating-my-profile.md
-  - name: Report Outages
-    href: xcs-reporting-outages.md
-- name: FAQs
-  href: xcs-customer-support-portal-faqs.md
+ 
