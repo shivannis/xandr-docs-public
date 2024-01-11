@@ -102,7 +102,7 @@ To add the VAST player version when creating a new placement:
 1. Search for an existing placement group and select from the list of results.
 1. Scroll down to the **Allowed Media** section on the **Details** tab.
 1. Select the **Other...** radio button for **Media Types**.
-1. Click the **Include link for the Video** option to add all video media types, or click the **expand** button and click the **Include link to only add a specific video** media type.
+1. Click the **Include** link for the Video option to add all video media types, or click the **expand** button and click the **Include** link to only add a specific video media type.
 1. Click the **Video Settings** tab that displays.
 1. Select the appropriate **Player Vast version** from the menu.
 1. Click the **Save** button.

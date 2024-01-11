@@ -35,7 +35,7 @@ Create a base rule to set hard and soft floors for all of the publisher's invent
 
 Select a publisher when prompted. This opens the **Floor Rule Manager**.
 
-### Step 3. Open the Create new base rule window
+### Step 3. Open the Create New Base Rule window
 
 Click **Create New** > **Base Rule** to open the **Create New Base Floor Rule** window.
 
@@ -57,7 +57,7 @@ Enter the net floor values for the base rule and select the type of bids that th
 
 - **Hard Floor** - (Required) Enter a hard floor value, which is the minimum net amount the network will accept for placing a creative. If this price is not met then no bids are accepted and the auction ends without a winner, or a default creative is served.
   
-  > [!NOTE]
+  > [!IMPORTANT]
   > If you enter a hard floor, be sure to set up a default creative for your placements. If no bid meets your hard floor, your default creative will serve. If you do not have a default creative, a PSA will serve.
 
 - **Soft Floor** - After you enter a hard floor, you can optionally enter a soft floor value, which is the lowest net price you are willing to price-reduce a bid to. In a second-price auction, the winning bidder pays the greater of the two between the soft floor price and the second bidder's bid.
@@ -80,7 +80,7 @@ Click **Advanced Settings** to enter these additional settings:
 
 - **Code** - Codes may be helpful for networks with distinct internal names/IDs, so that the names/IDs can be associated in Monetize and then extracted for reporting purposes via our API.
 - **Reserve Price Override** - Turn this feature on to enable the publisher to override the YM Rule hard floor via the ad tag query
-  string `reserve_price` field (as per [Placement Tag Parameters](placement-tag-parameters.md) and [Target Video Attributes via Query String Parameters](target-video-attributes-via-query-string-parameters.md)) or via the ad request bidfloor parameter (as per [Incoming Bid Request from SSPs](../supply-partners/incoming-bid-request-from-ssps.md)). The `reserve` parameter that publishers pass must be greater than the existing hard floor in order to override it.
+  string `reserve_price` field (as per [Placement Tag Parameters](placement-tag-parameters.md) and [Target Video Attributes via Query String Parameters](target-video-attributes-via-query-string-parameters.md)) or via the ad request `bidfloor` parameter (as per [Incoming Bid Request from SSPs](../supply-partners/incoming-bid-request-from-ssps.md)). The `reserve` parameter that publishers pass must be greater than the existing hard floor in order to override it.
 
 ### Step 7. Save the base floor rule
 

@@ -84,7 +84,7 @@ You can set the name, state, and ad type of the GDALI from the **Basic Setting
     The **Ad Size** values you choose are added to your targeting profile.
 
     > [!WARNING]
-    > The values you enter here could have an impact on delivery if they do not match the creatives associated to the line item. When you select ad sizes under **Ad Size**, you're targeting impressions of those sizes. If you then add creatives that don't match the **Ad Size** values you entered, you may be preventing your line item from serving. For example, if you select **300 x 250** as the line item’s ad size and then add a "**300 x 600**" creative to the line item, the ad call must contain both **300 x 250** and **300 x 600** as available **Ad Size** values on the ad call for your line item to be eligible to serve. To be eligible, the ad call must satisfy the targeting of the line item which includes both the ad size(s) and the creative size(s).
+    > The values you enter here could have an impact on delivery if they do not match the creatives associated to the line item. When you select ad sizes under **Ad Size**, you're targeting impressions of those sizes. If you then add creatives that don't match the **Ad Size** values you entered, you may be preventing your line item from serving. For example, if you select **300 x 250** as the line item’s ad size and then add a "300 x 600" creative to the line item, the ad call must contain both **300 x 250** and **300 x 600** as available **Ad Size** values on the ad call for your line item to be eligible to serve. To be eligible, the ad call must satisfy the targeting of the line item which includes both the ad size(s) and the creative size(s).
 
     If you enable **Roadblocking**, the **Ad Size** field will no longer be displayed and **Master Creative** and **Companion Creative** sizes selected under **Roadblocking** will be used instead of **Ad Size** values. Forecasting on roadblocks will check availability for each of the **Master Creative** and **Companion Creative** sizes and return the value of the impression availability for the creative size with the lowest availability.
 
@@ -184,7 +184,7 @@ To set up line item budgeting and scheduling:
 
 1. **System**: You can target users based on their operating systems, browsers, language, device model, or carrier. To edit system targets, click the pencil icon next to **System** to open the **System Targeting** screen. For more information, see [System Targeting](system-targeting.md).
 
-1. **Page Properties**: You can target impressions based on the position of the creative tag on the page or based on values passed in the query string of the ad call. To edit page properties, click the pencil icon next to **Page Properties** to open the Page Properties Targeting screen. For more information, see [Page Properties Targeting](page-properties-targeting.md).
+1. **Page Properties**: You can target impressions based on the position of the creative tag on the page or based on values passed in the query string of the ad call. To edit page properties, click the pencil icon next to **Page Properties** to open the **Page Properties Targeting** screen. For more information, see [Page Properties Targeting](page-properties-targeting.md).
 
 ## Audience targeting
 

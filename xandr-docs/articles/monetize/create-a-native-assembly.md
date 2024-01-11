@@ -54,7 +54,7 @@ You can easily modify native assemblies that contain pre-configured native creat
     creative asset specification at any time by clicking the **X**.
 
     > [!NOTE]
-    > If you remove a creative asset specification, the HTML code on the **Renderer** tab won't automatically reflect this change, so you'll have to manually remove the corresponding HTML from the HTML text box.
+    > If you remove a creative asset specification, the HTML code on the **Renderer** tab won't automatically reflect this change, so you'll have to manually remove the corresponding HTML from the **HTML** text box.
 
 1. Click the **Renderer** tab to add or update the HTML, CSS, and Javascript in the designated text boxes.
 

@@ -48,7 +48,7 @@ If you're using insertion orders, click **Edit** next to **Insertion Orders** to
 >
 > "There was a problem saving this line item. lifetime_budget_imps must be greater than 0 if set."
 
-Provide a descriptive Name for your line item. The name must be unique within an advertiser.
+Provide a descriptive **Name** for your line item. The name must be unique within an advertiser.
 
 Set the **State** to **Active** or **Inactive**, depending on whether you want to line item to begin delivering on the selected start date.
 
@@ -61,7 +61,7 @@ The available delivery types are:
 
 ### Impressions delivery type
 
-The **Impressions Delivery Type** sets an impression-based goal.
+The Impressions Delivery Type sets an impression-based goal.
 
 The **Pacing** slider is used to adjust the daily budget for the line item. To "front-load" delivery earlier in the flight, increase the percentage. By default, line items are configured for slightly front-loaded delivery (105%) as a precaution against under-delivery. For more information about guaranteed line item pacing and delivery, see [Guaranteed Delivery Pacing](guaranteed-delivery-pacing.md).
 
@@ -87,7 +87,7 @@ Enter the number of impressions you want to allocate to the line item in the **B
 
 ### Exclusive delivery type
 
-The **Exclusive delivery type** sets a percentage, or "share of voice", goal.
+The Exclusive delivery type sets a percentage, or "share of voice", goal.
 
 You can change the default campaign **Priority** depending on your needs. In most cases, you can just leave it at the default setting.
 
@@ -109,7 +109,7 @@ If you select the vCPM revenue type for a line item, several things happen:
 - The **Expected Delivery** column in this line item grid's stats is calculated using viewable impressions. For more information about line item stats, see [Explore Line Items](explore-line-items.md).
 - The [Guaranteed Delivery Pacing](guaranteed-delivery-pacing.md) algorithm takes viewability into account when determining how to pace this line item to meet your delivery goals.
 
-> [!NOTE]
+> [!IMPORTANT]
 > **vCPM and the exclusive delivery type**
 >
 > A line item with an **Exclusive** delivery type and a **vCPM** revenue type will not restrict itself to serving only on impressions marked as viewable. It will attempt to serve on all eligible impressions to meet its delivery goal.

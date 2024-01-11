@@ -16,7 +16,7 @@ You must have [Network-level access](getting-started-with-roles.md) to perform t
     1. Select a fee type. For more information, see [Fee Type](fee-type.md).
     1. Optionally enter a longer fee description.
 1. Define the fee calculation and click **Next**. For more information, see [Fee Calculations](fee-calculations.md).
-    1. Select **%** (percentage) or **CPM**. If you select CPM, select a currency.
+    1. Select **%** (percentage) or **CPM**. If you select **CPM**, select a currency.
 
         > [!NOTE]
         > Line item currency is inherited from the advertiser. If a fee is created in a currency other than the line item currency, then we will automatically convert the fee to the line item currency at the time of transaction.

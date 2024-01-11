@@ -96,8 +96,8 @@ To override technical attribute ad quality settings, click **Edit** in the **Tec
 To limit deals to a specific set of media types, click **Edit** in the **Media Types** section.
 
 1. On the **Media Types** tab, click the media types you want to allow for this deal. Selected media types appear in the right side of the dialog. You can deselect specific media subtypes for each of the main media types.
-2. Click the **Media Subtypes** tab to select specific media subjects (sorted by ID).
-3. Click **Set** to save your selections.
+1. Click the **Media Subtypes** tab to select specific media subjects (sorted by ID).
+1. Click **Set** to save your selections.
 
 Check **Allow deal to include private media types** to allow impressions from this package to serve on the additional media types that you have specified in the **Placement Manager**.
 
