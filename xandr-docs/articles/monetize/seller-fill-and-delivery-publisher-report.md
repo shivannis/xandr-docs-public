@@ -142,9 +142,9 @@ Follow these steps to run your report.
     appropriate top menu (depending on how your account has been
     configured).
     1. Or, from the Publishers top menu, click on
-        **Prebid Server Premium** \> **Analytics** \> **Prebid Server Analytics**
+        **Prebid Server Premium** \> **Analytics** \> **Prebid Server Analytics**.
 1. Select the relevant report from the list. The
-    Report screen shows the available
+    **Report** screen shows the available
     filters, dimensions, and delivery options for the report. The
     selections you make here will determine what report data is
     delivered to you, and how.
@@ -179,7 +179,7 @@ Follow these steps to run your report.
       view or download.
 
       > [!TIP]
-    > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
     - **Export, send results via email**: Run the report in the background and email the results to
       one or more email addresses.

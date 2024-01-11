@@ -60,8 +60,4 @@ the auction is opened up to all bids.
 - [Optimization Levers](optimization-levers.md)
 - [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md)
 - [Dynamic Learn Percentage](dynamic-learn-percentage.md)
-<<<<<<< HEAD
 - [Give Up Price](give-up-price.md)
-=======
-- [Give Up Price](give-up-price.md)
->>>>>>> 4ff01338a75618389633fcac8b2745b1e8069bd0

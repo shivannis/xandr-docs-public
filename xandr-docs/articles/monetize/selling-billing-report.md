@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Selling Billing Report
-description: In this page learn how to understand your invoice.
+description: In this page, learn to analyze your invoice.
 ms.date: 10/28/2023
 ---
 
@@ -88,7 +88,7 @@ for reports. However, all intervals are not available for every report.
 | Is Claims Activity | Yes | Is adjustment made from Invalid Trafffic (IVT) claims. |  |  |  |  |  |  |
 | Is Cross Seat Activity | Yes | Only relevant if you have more than one member/seat on the Xandr platform. If you do, this field allows you to know whether the activity was associated with transactions between members you manage and therefore simplify the reconciling of their invoices. |  |  |  |  |  |  |
 | Is Deal | Yes | Is there any deal associated with the impression. Different from 'Deal' which is the actual deal id |  |  |  |  |  |  |
-| Media Type (Billing) | Yes | The video-specific media type classification for billing only. If you don't have video-specific pricing, this field is irrelevant. Possible values are<br> - --<br> - Non-Video<br> - Video (Hosted)<br> - Video (Non-Hosted) |  |  |  |  |  |  |
+| Media Type (Billing) | Yes | The video-specific media type classification for billing only. If you don't have video-specific pricing, this field is irrelevant. Possible values are<br> - -- <br> - Non-Video<br> - Video (Hosted)<br> - Video (Non-Hosted) |  |  |  |  |  |  |
 | Publisher | Yes | The publisher on whose inventory the impression occurred. |  |  |  |  |  |  |
 | Publisher ID | Yes | The external code associated with a publisher. |  |  |  |  |  |  |
 | Selling Currency | Yes | The transaction currency used by the seller to sell this impression. Including this dimension will cause the **Resold Revenue** and **Seller Media Cost** metrics to be displayed in the selling currency. |  |  |  |  |  |  |
@@ -195,8 +195,8 @@ Follow these steps to run your report.
           view**: A popup notification will let you know when the report
           is ready to view or download.
 
-        > [!TIP]
-        > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
+          > [!TIP]
+          > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
         - **Export, send results via
           email**: Run the report in the background and email the

@@ -42,7 +42,7 @@ exceptions as follows:
 To enable sell-side caps for a publisher, select
 **Publishers** \> **All Publishers** from
 the top navigation menu. Click on one of your publishers, and then click
-Edit.
+**Edit**.
 
 In the dialog that appears, under
 **Advanced**, toggle to activate

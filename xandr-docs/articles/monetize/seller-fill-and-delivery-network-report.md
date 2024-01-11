@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Seller fill and delivery network report
 
-The Seller Fill and Delivery Report was designed as a troubleshooting
+The **Seller Fill and Delivery Report** was designed as a troubleshooting
 tool to provide sellers granular information regarding all impressions
 sent to Xandr and to help diagnose delivery
 issues all the way down to the tag and domain level. Using the new
@@ -146,7 +146,7 @@ data in a particular order.
 | Publisher | The name and ID of the publisher on whose site the impression occurred. |
 | Seller Currency | The seller currency associated with the impressions and/or activity. |
 | Site Domain | For web or mobile web impressions, the domain where the impression occurred. There is one additional value that may appear in place of a domain:<br> - `"---"`: This means that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed. |
-| Supply Type | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are `"web"`, `"mobile_app"`, and `"mobile_web"`. |
+| Supply Type | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are: <br>- `"web"` <br> - `"mobile_app"` <br> -`"mobile_web"`. |
 
 ## To run your report
 
@@ -157,7 +157,7 @@ Follow these steps to run your report.
     configured).
     1. Or, from the Publishers top menu, click on **Prebid Server Premium** \> **Analytics** \> **Prebid Server Analytics**.
 1. Select the relevant report from the list. The
-    Report screen shows the available
+    **Report** screen shows the available
     filters, dimensions, and delivery options for the report. The
     selections you make here will determine what report data is
     delivered to you, and how.
@@ -193,7 +193,7 @@ Follow these steps to run your report.
       view or download.
 
       > [!TIP]
-    > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
     - **Export, send results via email**: Run the report in the background and email the results to
       one or more email addresses.
@@ -208,4 +208,4 @@ Follow these steps to run your report.
       specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a
       name for future reference.
-1. Click **Run report**to send your report request.
+1. Click **Run report** to send your report request.

@@ -1,6 +1,6 @@
 ---
 title: Seller Video Error Report
-description: The Seller Video Error Report gives insight into video errors. their causes, and can be used to troubleshoot video settings.
+description: The Seller Video Error Report gives insights into video errors, their causes, and how they can be used to troubleshoot video settings.
 ms.date: 10/28/2023
 ---
 
@@ -196,10 +196,9 @@ Follow these steps to run your report.
       view or download.
 
       > [!TIP]
-    > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
-    - **Export, send results via
-      email**: Run the report in the background and email the results to
+    - **Export, send results via email**: Run the report in the background and email the results to
       one or more email addresses.
     - **Save as report template**: Save your selected report settings so
       that you can run this report again in the future. You can name

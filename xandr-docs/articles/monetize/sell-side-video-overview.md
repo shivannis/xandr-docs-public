@@ -106,7 +106,7 @@ to gain valuable insights into their inventory and audience. Our video
 reporting tab for publishers also provides access to important reporting
 data for video inventory.
 
-A Range of Products Suits a Range of Needs
+## A Range of products suits a range of needs
 
 > [!TIP]
 > Please explore the rest of the [Working with Video Inventory](working-with-video-inventory.md) for the latest in quickstart guides, overviews, workflows, and other helpful documentation.

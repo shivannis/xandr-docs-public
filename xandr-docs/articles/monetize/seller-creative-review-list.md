@@ -15,9 +15,9 @@ creatives in a side pane for more details.
 To access the **Seller Creative Review**
 window from any Monetize screen:
 
-- If you have a Publishers menu:
+- If you have a **Publishers** menu:
 select **Publishers** \> **Seller Creative Review**
-- If you have a Marketplace menu:
+- If you have a **Marketplace** menu:
   select **Marketplace** \> **Seller Creative Review**
 
 ## List of creatives

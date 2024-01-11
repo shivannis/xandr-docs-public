@@ -179,9 +179,9 @@ Follow these steps to run your report.
       view or download.
 
       > [!TIP]
-      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
-    -**Export, send results via email**: Run the report in the background and email the results to
+    - **Export, send results via email**: Run the report in the background and email the results to
       one or more email addresses.
     - **Save as report template**: Save your selected report settings so
       that you can run this report again in the future. You can name
@@ -196,7 +196,7 @@ Follow these steps to run your report.
       name for future reference.
 1. Click **Run report** to send your report request.
 
-## Related topics
+## Related topic
 
 [Seller CMP Analytics Report API](../digital-platform-api/seller-cmp-analytics-report.md)
 

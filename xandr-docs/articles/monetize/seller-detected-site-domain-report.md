@@ -105,12 +105,12 @@ for reports. However, all intervals are not available for every report.
 |---|---|
 | Blocked Inventory | Specifies if the impression is in a blocklist. |
 | Detected Site Domain | The actual domains that are being sold and where the impression actually occured. |
-| Detected Site Domain Audit Status | Specifies the audit status of the detected site domain .Permissible values are Audited, Blacklisted, AdServer, Unauditable, Pending, and Unaudited. |
+| Detected Site Domain Audit Status | Specifies the audit status of the detected site domain .Permissible values are Audited, blocklisted, AdServer, Unauditable, Pending, and Unaudited. |
 | Placement | The name and ID of the placement on which the impression occurred.<br>Note that a placement ID of `0` may appear for 3rd-party impression trackers. For more information about impression trackers, see [Working with Impression and Click Trackers](working-with-impression-and-click-trackers.md). |
 | Placement Group | The name and ID of the placement group where the impression occurred. |
 | Publisher | The name and ID of the publisher on whose site the impression occurred. |
-| Site Domain | The domain where the impression occurred. For mobile applications, this can be the URL of the app's location in the app store. There are two additional values that may appear in place of a domain, specifically: "deals.unknown" or "managed.unknown". These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed.<br>**Note**: In some cases, this field will be populated with a domain that is different than where the impression actually occurred, such as an ad server domain. For more information about why this happens, see [Passing Domains Across iFrames](#passing-domains-across-iframes) below. |
-| Site Domain Audit Status | Specifies the audit status of the auctioned site domain .Permissible values are Audited, Blacklisted, AdServer, Unauditable, Pending, and Unaudited. |
+| Site Domain | The domain where the impression occurred. For mobile applications, this can be the URL of the app's location in the app store. There are two additional values that may appear in place of a domain, specifically: `"deals.unknown"` or `"managed.unknown"`. These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed.<br>**Note**: In some cases, this field will be populated with a domain that is different than where the impression actually occurred, such as an ad server domain. For more information about why this happens, see [Passing Domains Across iFrames](#passing-domains-across-iframes) below. |
+| Site Domain Audit Status | Specifies the audit status of the auctioned site domain .Permissible values are Audited, blocklisted, AdServer, Unauditable, Pending, and Unaudited. |
 
 ## Passing domains across iFrames
 
@@ -159,7 +159,7 @@ Follow these steps to run your report.
     configured).
     1. Or, from the Publishers top menu, click on **Prebid Server Premium** \> **Analytics** \> **Prebid Server Analytics**.
 1. Select the relevant report from the list. The
-    Report screen shows the available
+    **Report** screen shows the available
     filters, dimensions, and delivery options for the report. The
     selections you make here will determine what report data is
     delivered to you, and how.
@@ -195,7 +195,7 @@ Follow these steps to run your report.
       view or download.
 
       > [!TIP]
-    > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
     - **Export, send results via email**: Run the report in the background and email the results to
       one or more email addresses.
