@@ -36,7 +36,7 @@ In the **Basic Setup** section, enter the basic details for the advertiser.
 
 - **Political Advertising** - If you are releasing advertisements related to an election, ballot initiative, or political candidate in the United States, you must specify that here. You must also certify that all such advertising has been paid for, or will be paid for, with U.S. currency from financial institutions in the United States, and that no portion of the payment is provided by foreign nationals or foreign principals.
 
-  If you select **I'm running political advertising** on all IOs under this advertiser, then all insertion orders will have the **Political Advertising** section enabled by default. You can optionally disable this on an individual insertion order.
+  If you select **I'm running political advertising on all IOs under this advertiser**, then all insertion orders will have the **Political Advertising** section enabled by default. You can optionally disable this on an individual insertion order.
 
   If you select **Use political advertising details template**, then all insertion orders with political advertising enabled will automatically use the political advertising details from the template you will create on the insertion order. You can optionally modify these details on an individual insertion order.
 

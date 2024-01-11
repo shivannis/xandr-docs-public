@@ -49,7 +49,7 @@ Follow these steps to restrict your configuration to be triggered only when the 
     > - If the media type is set properly, ensure you have added the Demand Partner in the **Global Settings** page under **Demand Partners**, as described in [Add or Edit a Demand Partner](add-or-edit-a-demand-partner.md).
     > - Check that the partner shows up as `Enabled` in that list.
     >
-    > You can view a full list of available Demand Partners [here](https://docs.prebid.org/dev-docs/pbs-bidders.html).
+    > You can view a full list of available Demand Partners at [Prebid](https://docs.prebid.org/dev-docs/pbs-bidders.html).
 
 1. Once you select a Demand Partner from the dropdown, new input fields will appear representing the parameters, both required and optional, that each demand partner's adapter accepts. Fill in the values of the required parameters and any desired optional parameters based on the fields in the UI. To get a broader picture of partners and their adapter schemas leverage the [Demand Partner Schema API Service](../digital-platform-api/demand-partner-schema-service.md).
 
