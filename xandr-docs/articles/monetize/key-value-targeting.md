@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Key/Value Targeting
-description: In this article, understand what key/value targeting is, how to define keys and values, how to build targeting groups, and restrictions of key/value targeting. 
+description: In this article, understand what key/value targeting is, how to define keys and values, how to build targeting groups, and restrictions for key/value targeting. 
 ms.date: 10/28/2023
 ---
 
