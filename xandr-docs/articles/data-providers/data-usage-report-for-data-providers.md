@@ -1,8 +1,8 @@
 ---
-title : Data Usage Report for Data Providers
-description : This page defines the Data Usage Report. 
-ms.custom : data-providers
-ms.date : 11/30/2023
+title: Data Usage Report for Data Providers
+description: This page defines the Data Usage Report. 
+ms.custom: data-providers
+ms.date: 11/30/2023
 ---
 
 

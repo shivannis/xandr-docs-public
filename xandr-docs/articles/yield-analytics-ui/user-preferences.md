@@ -9,7 +9,17 @@ ms.custom: yield-analytics-ui
 
 You can change your password and change the default page that loads when you log in to the system.
 
-## Related topics
+## Change your password
+You can change the password you use to log in to yield analytics:
 
-- [Change Your Password](change-your-password.md)
-- [Change Your Default Home Page](change-your-default-home-page.md)
+1. In the top right corner of any page, click your **name**, and then click **Preferences**. The **Preferences** page loads.
+1. In the **Change Password** panel, type your current password. Type your new password. Confirm your new password, and then     click **Change Password**. The new password is saved, and you are redirected to your default home page.
+
+## Change your default home Page
+
+You can change the page that loads by default when you log in to yield analytics:
+
+1. In the top right corner of any page, click your name, and then click **Preferences**. The Preferences page loads.
+1. In the Set Defaults panel, in the **Home Page** field, click the link for the current setting (e.g., Availability). Select a  different page from the drop-down list that appears.
+1. Click **Save Defaults**. The page you chose is displayed, and loads by default the next time you log in to the system.
+

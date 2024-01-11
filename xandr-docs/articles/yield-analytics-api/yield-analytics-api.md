@@ -96,7 +96,7 @@ To see all the available possible function key values for a given Analytics inst
 
 ## Data model
   
-:::image type="content" source="media/model-diagram.png" alt-text="A diagram of the Yieldex Object Model.":::
+:::image type="content" source="media/model-diagram.png" alt-text="A diagram of the Yield Analytics Object Model.":::
 
 ## Key objects
 

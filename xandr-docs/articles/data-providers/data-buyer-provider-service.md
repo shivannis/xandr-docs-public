@@ -1,8 +1,8 @@
 ---
-title : Data Buyer Provider Service
-description : Learn how using Data Buyer Provider Service you can view all activated buyers on the Data Marketplace that have access to your data and have activated data clearing with you.    
-ms.custom : data-providers
-ms.date : 11/29/2023
+title: Data Buyer Provider Service
+description: Learn how using Data Buyer Provider Service you can view all activated buyers on the Data Marketplace that have access to your data and have activated data clearing with you.    
+ms.custom: data-providers
+ms.date: 11/29/2023
 ---
 
 

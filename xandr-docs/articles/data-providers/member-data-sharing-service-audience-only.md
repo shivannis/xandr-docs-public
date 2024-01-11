@@ -1,8 +1,8 @@
 ---
-title : Member Data Sharing Service (Audience Only)
-description : Learn how Member Data Sharing Service works. 
-ms.custom : data-providers
-ms.date : 11/30/2023
+title: Member Data Sharing Service (Audience Only)
+description: Learn how Member Data Sharing Service works. 
+ms.custom: data-providers
+ms.date: 11/30/2023
 ---
 
 

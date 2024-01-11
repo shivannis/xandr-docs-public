@@ -19,3 +19,12 @@ landingContent:
             url: third-party-providers.md
           - text: Online Advertising Self-Regulatory Organizations
             url: online-advertising-self-regulatory-organizations.md
+  - title: Additional Resources
+    linkLists:
+      - linkListType: reference
+        links:            
+          - text: Customer Support Portal
+            url: https://help.xandr.com/
+          - text: Customer Support Portal Guide Book
+            url: ../customer-support/index.yml
+

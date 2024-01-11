@@ -13,13 +13,13 @@ ms.date: 10/28/2023
 The online advertising marketplace is in many ways defined by its high
 levels of uncertainty. As a seller's revenue is often linked to an ad's
 success on the seller's inventory (measured through clicks or
-conversions), optimization gives sellers several controls that can
+conversions), optimization gives sellers several controls that can be
 leveraged to minimize risk and maximize return.
 
 Publishers consider buyer auction bids to be either **Uncertain
-Revenue** or Certain Revenue.
+Revenue** or **Certain Revenue**.
 
-- **Uncertain Revenue**
+- **Uncertain revenue**
 
   When a campaign begins serving impressions on inventory in the RTB
   marketplace, it is unclear how much revenue nearly all non-managed CPC
@@ -30,7 +30,7 @@ Revenue** or Certain Revenue.
   significant number of success events have occurred to give a
   statistically valid sample (by determining the net revenue from each).
 
-- **Certain Revenue**
+- **Certain revenue**
 
   While evaluating the value of uncertain bids, sellers can also choose
   to hold auctions that maximize bids from sources designated as certain
@@ -60,4 +60,8 @@ the auction is opened up to all bids.
 - [Optimization Levers](optimization-levers.md)
 - [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md)
 - [Dynamic Learn Percentage](dynamic-learn-percentage.md)
+<<<<<<< HEAD
 - [Give Up Price](give-up-price.md)
+=======
+- [Give Up Price](give-up-price.md)
+>>>>>>> 4ff01338a75618389633fcac8b2745b1e8069bd0

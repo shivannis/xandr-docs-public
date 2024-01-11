@@ -1,8 +1,8 @@
 ---
-title : Data Sharing
-description : Learn how sharing segments is not possible between clients and third parties until a data access agreemant has been signed. 
-ms.custom : data-providers
-ms.date : 11/29/2023
+title: Data Sharing
+description: Learn how sharing segments is not possible between clients and third parties until a data access agreemant has been signed. 
+ms.custom: data-providers
+ms.date: 11/29/2023
 ---
 
 

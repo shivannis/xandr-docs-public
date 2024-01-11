@@ -1,4 +1,4 @@
-- name: Yield Analytics UI
+- name: Yield Analytics UI Documentation
   href: index.yml
 - name: Getting Started
   href: yield-analytics-overview.md
@@ -192,20 +192,12 @@
     href: interpreting-scenario-manager-results.md
 - name: Ad Servers
   items:
-  - name: Overview
-    href: ad-servers-overview.md
   - name: Freewheel Priority Values in Yield Analytics
     href: freewheel-priority-values-in-yield-analytics.md
   - name: Working With Multiple Ad Servers
     href: working-with-multiple-ad-servers.md
 - name: User Preferences
-  items:
-  - name: Overview
-    href: user-preferences.md
-  - name: Change Your Password
-    href: change-your-password.md
-  - name: Change Your Default Home Page
-    href: change-your-default-home-page.md
+  href: user-preferences.md
 - name: Administration 
   items:
   - name: Overview
@@ -218,7 +210,7 @@
     href: add-a-report-category.md
 - name: Integrations
   items:
-  - name: Working with the Yield Analytics Extension for DFP Sales Manager
+  - name: DFP sales managers Yield Analytics extension
     href: working-with-the-yield-analytics-extension-for-dfp-sales-manager.md
   - name: Ad-Juster Discrepancy
     href: frequently-asked-questions-faqs.md
@@ -232,32 +224,12 @@
   href: at-risk-management-chart-and-solution-paths.md
 - name: Availability Dashboard
   items:
-  - name: Anatomy of the Availability Dashboard Page
+  - name: Anatomy of the Availability Pages
     href: anatomy-of-the-availability-dashboard-page.md
-  - name: Anatomy of the Availability Lookup Page
-    href: anatomy-of-the-availability-lookup-page.md
-  - name: Anatomy of the View Calendar Page
-    href: anatomy-of-the-view-calendar-page.md
+  - name: Check Availability
+    href: check-availability-for-a-combination-of-targeting-attributes.md
   - name: Availability Overview (Old Workflow)
     href: availability-overview-old-workflow.md
-- name: Check Availability
-  items:
-  - name: Overview
-    href: check-availability-for-a-combination-of-targeting-attributes.md
-  - name: Save an Availability Lookup
-    href: save-an-availability-lookup.md
-  - name: Open a Saved Availability Lookup
-    href: open-a-saved-availability-lookup.md
-  - name: Create an Availability Batch Lookup
-    href: create-an-availability-batch-lookup.md
-  - name: View Availability Batch Lookups
-    href: view-availability-batch-lookups.md
-- name: View Availability
-  items:
-  - name: View Availability in a Calendar
-    href: view-availability-in-a-calendar.md
-  - name: Switch Between the Calendar and List Views
-    href: switch-between-the-calendar-and-list-views.md
 - name: Saved Availability Lookups
   items:
   - name: Working With Saved Availability Lookups
@@ -272,3 +244,63 @@
     href: delete-a-saved-lookup.md
 - name: Glossary
   href: glossary.md
+- name: Release Notes
+  items:
+  - name: Yield Analytics 8.79
+    href: yield-analytics-8-79.md
+  - name: Yield Analytics 8.76
+    href: yield-analytics-8-76.md
+  - name: Yield Analytics 8.73
+    href: yield-analytics-8-73.md
+  - name: Yield Analytics 8.72
+    href: yield-analytics-8-72.md
+  - name: Yield Analytics 8.71
+    href: yield-analytics-8-71.md
+  - name: Yield Analytics 8.70
+    href: yield-analytics-8-70.md
+  - name: Yield Analytics 8.60
+    href: yield-analytics-8-60.md
+  - name: Yield Analytics 8.56
+    href: yield-analytics-8-56.md
+  - name: Yield Analytics 8.55
+    href: yield-analytics-8-55.md
+  - name: Yield Analytics 8.48
+    href: yield-analytics-8-48.md
+  - name: Yield Analytics 8.45
+    href: yield-analytics-8-45.md
+  - name: Yield Analytics 8.44
+    href: yield-analytics-8-44.md
+  - name: Yield Analytics 8.43
+    href: yield-analytics-8-43.md
+  - name: Yield Analytics 8.40
+    href: yield-analytics-8-40.md
+  - name: Yield Analytics 8.26
+    href: yield-analytics-8-26.md
+  - name: Yield Analytics 8.16
+    href: yield-analytics-8-16.md
+  - name: Yield Analytics 8.9
+    href: yield-analytics-8-9.md
+  - name: Yield Analytics 8.1
+    href: yield-analytics-8-1.md
+  - name: Yield Analytics 8.0
+    href: yield-analytics-8-0.md
+  - name: Yield Analytics 7.26
+    href: yield-analytics-7-26.md
+  - name: Yield Analytics 7.20
+    href: yield-analytics-7-20.md
+  - name: Yield Analytics 7.17
+    href: yield-analytics-7-17.md
+  - name: Yield Analytics 7.16
+    href: yield-analytics-7-16.md
+  - name: Yield Analytics 7.15
+    href: yield-analytics-7-15.md
+  - name: Yield Analytics 7.14
+    href: yield-analytics-7-14.md
+  - name: Yield Analytics 7.13
+    href: yield-analytics-7-13.md
+  - name: Yield Analytics 7.6
+    href: yield-analytics-7-6.md
+  - name: Yield Analytics 7.3
+    href: yield-analytics-7-3.md
+  - name: Yield Analytics 7.2
+    href: yield-analytics-7-2.md
