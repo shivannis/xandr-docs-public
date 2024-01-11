@@ -1,252 +1,91 @@
 ---
-Title : Create a Programmatic Guaranteed Deal that Uses Third-Party Ad Server Pacing, Tag Integration
-Description : To create a PG deal that uses pacing in your ad server of record, you
+title: Create a Programmatic Guaranteed Deal that Uses Third-Party Ad Server Pacing, Tag Integration
+description: In this article, find information on how to create and set up a PG deal that uses pacing in your ad server of record.
 ms.date: 10/28/2023
-need to select a buyer, ad type, CPM, impression budget, flight dates,
-and a placement specifically created for the PG deal.
 ---
 
+# Create a programmatic guaranteed deal that uses third-party ad server pacing, Tag integration
 
-# Create a Programmatic Guaranteed Deal that Uses Third-Party Ad Server Pacing, Tag Integration
+To create a PG deal that uses pacing in your ad server of record, you need to select a buyer, ad type, CPM, impression budget, flight dates, and a placement specifically created for the PG deal.
 
+## Before you begin
 
+Before you begin creating a line item, make sure you've completed the following tasks:
 
-To create a PG deal that uses pacing in your ad server of record, you
-need to select a buyer, ad type, CPM, impression budget, flight dates,
-and a placement specifically created for the PG deal.
+- [Create an Advertiser](create-an-advertiser.md)
 
->
-
-Before you begin creating a line item, make sure you've completed the
-following tasks:
-
-- <a href="create-an-advertiser.md" class="xref">Create an
-  Advertiser</a>
-
-- <a href="create-an-insertion-order.md" class="xref">Create an
-  Insertion Order</a>
+- [Create an Insertion Order](create-an-insertion-order.md)
   
+  > [!NOTE]
+  > To create a PG deal, you need to create a **seamless insertion order** with no end date, no budget, and an **Impression** or **Flexible** budget type.
 
-  <b>Note:</b> To create a PG deal, you need
-  to create a **seamless insertion order** with no end date, no budget,
-  and an Impression or
-  Flexible budget type.
+- [Create a Placement for Third-Party Ad Server Pacing](create-a-placement-for-third-party-ad-server-pacing.md)
 
-  
+  It's required that you create a placement for your PG deal prior to deal creation.
 
-- <a href="create-a-placement-for-third-party-ad-server-pacing.md"
-  class="xref"
-  title="When creating a programmatic guaranteed (PG) deal that uses third-party ad server pacing, you must first create a placement that is third-party pacing compliant.">Create
-  a Placement for Third-Party Ad Server Pacing</a>
+  > [!NOTE]
+  > The placement that you choose for your PG deal must be unique and targeted only by the PG deal that you're creating. Using a placement that is already being targeted in another PG deal causes delivery issues.
 
-  It's required that you create a placement for your PG deal prior to
-  deal creation. For more information about setting up a placement for
-  third-party ad server pacing, see
-  <a href="create-a-placement-for-third-party-ad-server-pacing.md"
-  class="xref"
-  title="When creating a programmatic guaranteed (PG) deal that uses third-party ad server pacing, you must first create a placement that is third-party pacing compliant.">Create
-  a Placement for Third-Party Ad Server Pacing</a>.
-
-  
-
-  <b>Note:</b> The placement that you choose
-  for your PG deal must be unique and targeted only by the PG deal that
-  you're creating. Using a placement that is already being targeted in
-  another PG deal causes delivery issues.
-
-  
+## Setting up the programmatic guaranteed deal
 
 To set up the PG deal:
 
+1. Navigate to the PG deal pre-selection screen.
 
+    For more information on navigating to this pre-selection screen, see [Navigate to the Create New Programmatic Guaranteed Deal Screen](navigate-to-the-create-a-new-deal-line-item-screen-monetize.md).
 
->
+1. Select **Pacing in Ad Server of Record** as your pacing option.
 
-1.  Navigate to the PG deal pre-selection
-    screen.
-    
+1. Click **Next**.
 
-    For more information on navigating to this pre-selection screen, see
-    <a
-    href="navigate-to-the-create-a-new-deal-line-item-screen-monetize.md"
-    class="xref"
-    title="To create a new programmatic guaranteed (PG) deal, start by pre-selecting a pacing option for your guaranteed deal, then proceed from the Create New Programmatic Guaranteed Deal screen.">Navigate
-    to the Create New Programmatic Guaranteed Deal Screen</a>.
+1. Enter a name for your PG deal.
 
-    
-2.  Select Pacing in Ad
-    Server of Record as your pacing option.
-3.  Click
-    Next.
-4.  Enter a name for your PG deal.
-    
+    > [!NOTE]
+    > This name will also be assigned to the PG deal line item.
 
-    
+1. Select a buyer.
 
-    <b>Note:</b> This name will also be
-    assigned to the PG deal line item.
+1. **Optional:** Enter a deal code.
 
-    
+1. **Optional:** Enter a deal description.
 
-    
-5.  Select a buyer.
-6.  **Optional:** Enter a deal code.
-7.  **Optional:** Enter a deal description.
-8.  Select the ad type to be used for your deal,
-    and complete any additional steps for your selected ad type:
-    
+1. Select the ad type to be used for your deal, and complete any additional steps for your selected ad type:
 
-    
+    > [!IMPORTANT]
+    > You can currently only use banner creatives in your PG deal without Xandr representative assistance. If you'd like to use other creative types, please contact your Xandr account representative.
 
-    <b>Note:</b> You can currently only use
-    banner creatives in your PG deal without
-    Xandr representative assistance. If you'd
-    like to use other creative types, please contact your
-    Xandr account representative.
+    | Selection | Step |
+    |---|---|
+    | **Banner** | Select one or more banner sizes for your PG deal to accept. <br><br> **Note**: Click **Add Custom Size** to create and select custom banner sizes. |
+    | **Video** | Continue to **Step 6**. <br><br> **Note**: The default size selected for video creatives is **1x1**. |
+    | **Native** | Select one or more native sizes for your PG deal to accept. The default size selected for native creatives is **1x1**, but you change this through the UI. <br><br> **Note**: Click **Add Custom Size** to create and select custom native sizes. |
+    | **Audio** | Continue to **Step 6**. <br><br> **Note**: The default size selected for audio creatives is **1x1**. |
 
-    
+1. Enter a fixed CPM price to be used for your deal.
 
-    
+    The currency you chose for your advertiser will be used for your CPM price.
 
-    <table
-    id="create-a-programmatic-guaranteed-selling-line-item-ssp__choicetable_z3l_45l_gtb"
-    class="simpletable choicetable choicetableborder" data-border="1"
-    data-frame="hsides" data-rules="rows" data-cellpadding="4"
-    data-cellspacing="0" data-summary="">
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <thead class="thead">
-    <tr class="header sthead chhead">
-    <th class="stentry choptionhd" scope="col"
-    style="text-align: left; vertical-align: bottom;">Selection</th>
-    <th class="stentry chdeschd" scope="col"
-    style="text-align: left; vertical-align: bottom;">Step</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd strow chrow">
-    <th class="stentry choption" style="vertical-align: top"
-    scope="row">Banner</th>
-    <td class="stentry chdesc" style="vertical-align: top">Select one or
-    more banner sizes for your PG deal to accept.
-    <div
-    id="create-a-programmatic-guaranteed-selling-line-item-ssp__note_rxk_cvl_gtb"
-    class="note note_note">
-    <b>Note:</b> Click <span
-    class="ph uicontrol">Add Custom Size to create and select custom
-    banner sizes.
-    </td>
-    </tr>
-    <tr class="even strow chrow">
-    <th class="stentry choption" style="vertical-align: top"
-    scope="row">Video</th>
-    <td class="stentry chdesc" style="vertical-align: top">Continue to
-    <strong>step 6.</strong>
-    <div
-    id="create-a-programmatic-guaranteed-selling-line-item-ssp__note_m3k_2nw_ytb"
-    class="note note_note">
-    <b>Note:</b> The default size selected for
-    video creatives is 1x1.
-    </td>
-    </tr>
-    <tr class="odd strow chrow">
-    <th class="stentry choption" style="vertical-align: top"
-    scope="row">Native</th>
-    <td class="stentry chdesc" style="vertical-align: top">Select one or
-    more native sizes for your PG deal to accept. The default size selected
-    for native creatives is 1x1, but you change this through the UI.
-    <div
-    id="create-a-programmatic-guaranteed-selling-line-item-ssp__note_qcf_hvl_gtb"
-    class="note note_note">
-    <b>Note:</b> Click <span
-    class="ph uicontrol">Add Custom Size to create and select custom
-    native sizes.
-    </td>
-    </tr>
-    <tr class="even strow chrow">
-    <th class="stentry choption" style="vertical-align: top"
-    scope="row">Audio</th>
-    <td class="stentry chdesc" style="vertical-align: top">Continue to
-    <strong>step 6.</strong>
-    <div
-    id="create-a-programmatic-guaranteed-selling-line-item-ssp__note_rtm_3nw_ytb"
-    class="note note_note">
-    <b>Note:</b> The default size selected for
-    audio creatives is 1x1.
-    </td>
-    </tr>
-    </tbody>
-    </table>
-9.  Enter a fixed CPM price to be used for your
-    deal.
-    
+1. Set an impression budget for your deal.
 
-    The currency you chose for your advertiser will be used for your CPM
-    price.
+1. Select flight (start and end) dates for the deal.
 
-    
-10. Set an impression budget for your deal.
-11. Select flight (start and end) dates for the
-    deal.
-    
+    > [!TIP]
+    > We recommend that you only select start dates when you're confident that they won't change. Flight start dates can't be changed during an in-progress flight. End dates, however, can always be changed.
 
-    
+1. Select a unique placement to include in the deal.
 
-    <b>Note:</b> We recommend that you only
-    select start dates when you're confident that they won't change.
-    Flight start dates can't be changed during an in-progress flight.
-    End dates, however, can always be changed.
+1. **Optional:** Add reporting labels and comments to your deal.
 
-    
+    With reporting labels, you can associate a person or other metadata with your PG deals. You can then run reports that sort by the labels you've set for your deal.
 
-    
-12. Select a unique placement to include in the
-    deal.
-13. **Optional:** Add reporting labels and comments
-    to your deal.
-    
+    > [!NOTE]
+    > Comments are only for personal reference and won't affect deal performance. Deal buyers aren't able to see them.
 
-    With reporting labels, you can associate a person or other metadata
-    with your PG deals. You can then run reports that sort by the labels
-    you've set for your deal.
-    
+1. Click **Save**, located in the top-right corner, to finish.
 
-    <b>Note:</b> Comments are only for
-    personal reference and won't affect deal performance. Deal buyers
-    aren't able to see them.
+You've just created your PG deal, and both a deal line item ID and deal ID have been created. You must now locate and share the deal ID to your buyer. Alternatively, if you have **deal sync** enabled, then ID sharing will be automatically handled with your buyer.
 
-    
+Before setting your deal line item to be active, you should ensure that your deal line item is live (flight date range has begun) and your designated buyer has begun targeting the deal. Otherwise, your deal's placement tag will fire and receive no bid, but GAM will record an impression as having occurred.
 
-    
-14. Click Save,
-    located in the top-right corner, to finish.
-
-
-
->
-
-You've just created your PG deal, and both a deal line item ID and deal
-ID have been created. You must now locate and share the deal ID to your
-buyer. Alternatively, if you have **deal sync** enabled, then ID sharing
-will be automatically handled with your buyer.
-
-Before setting your deal line item to be active, you should ensure that
-your deal line item is live (flight date range has begun) and your
-designated buyer has begun targeting the deal. Otherwise, your deal's
-placement tag will fire and receive no bid, but GAM will record an
-impression as having occurred.
-
-class="note warning note_warning">
-
-<b>Warning:</b> Ensure that you're
-specifically sharing the **deal ID** to the buyer.
-
-
-
-
-
-
-
-
+> [!WARNING]
+> Ensure that you're specifically sharing the **deal ID** to the buyer.
