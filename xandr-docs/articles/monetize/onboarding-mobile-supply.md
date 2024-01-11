@@ -1,6 +1,6 @@
 ---
 title: Onboarding Mobile Supply
-description: The article assists in defining mobile supply integration through ad calls, providing essential details for each supported integration, such as supply type and query parameters.
+description: The article defines mobile supply integration via ad calls, detailing supported integrations, including supply type and query parameters.
 ms.date: 10/28/2023
 ---
 
@@ -69,7 +69,7 @@ We recommend that you include the following parameters (in the table below) on s
 
 | Name | Parameter | Description |
 |---|---|---|
-| App ID | `appid` | The app ID is a string used to identify an app running on Android or iOS. Many buyers set campaign targeting and reporting based on app ID. Failing to supply a correct appid will make your inventory unattractive to these buyers. Therefore, passing this field is **strongly recommended**. For more information about the appid parameter, see our [Mobile Ad Call Reference](mobile-ad-call-reference.md). |
+| App ID | `appid` | The app ID is a string used to identify an app running on Android or iOS. Many buyers set campaign targeting and reporting based on app ID. Failing to supply a correct `appid` will make your inventory unattractive to these buyers. Therefore, passing this field is **strongly recommended**. For more information about the `appid` parameter, see our [Mobile Ad Call Reference](mobile-ad-call-reference.md). |
 | IP Address | `ip` | The IP address parameter provides Xandr with the geographic location of the user, as well as the carrier whose network the device is connected to. Many buyers use carrier or geo targeting. Including this information on an ad call is important in order to capture mobile demand. |
 | User Agent | `ua` | The User Agent parameter provides us with the device's operating system as well its make and model. Many buyers are targeting based on these parameters and not including them will restrict demand. |
 | IDFA (for iOS) | `idfa` | This is the user's unique identifier for iOS devices and is tied to a user ID. If you don't provide this information on the ad call, demand partners who have implemented frequency capping and/or a buying strategy that requires conversion tracking will not buy your inventory. Not providing the user's unique ID will severely restrict demand. |

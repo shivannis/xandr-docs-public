@@ -1,6 +1,6 @@
 ---
 title: Optimization Buying Strategies
-description: This guide focuses on legacy line items, detailing Optimization of Buying Strategies with a focus on two main approaches, Managed and RTB.
+description: This article explains legacy line items, focusing on optimizing buying strategies through two main approaches.managed and RTB.
 ms.date: 10/28/2023
 ---
 
@@ -49,7 +49,7 @@ The following buying strategies work for buying third party inventory that utili
    > The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategy is being deprecated soon. Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, use the Performance Goals section on your line item (**Create New Line Item  \>  Basic Settings \>  Performance Goals**
    >  or **Edit Line Item  \>  Basic Settings  \>  Performance Goals**) to set a CPC or CPA performance goal. Then use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
    >
-   >  For more information, see [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md).
+   > For more information, see [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md).
    >
    > To learn about setting up **Performance Goals,** see Step 6 of [Create a Standard Line Item](create-a-standard-line-item.md).
 

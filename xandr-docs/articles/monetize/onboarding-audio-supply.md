@@ -23,7 +23,7 @@ https://ib.adnxs.com/ptv?id=1234
 
 Once you have the tag, make sure to append the placement tag with the parameters below before implementing. Make sure that you copy the URL into the audio player rather than place it directly on the page.
 
-**Append Placement Tag Parameters:**
+**Append placement tag parameters:**
 
 The following placement tag parameters are highly recommended. You should append all available parameters in order to comply with platform policies and maximize revenue opportunity.
 

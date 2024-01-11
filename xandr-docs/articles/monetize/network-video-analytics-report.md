@@ -83,7 +83,7 @@ Data in this report is retained for 420 days.
 | IO: Sales Rep (reporting label) | Yes | The sales rep associated with this insertion order. This is an insertion order reporting label. |
 | Site Domain | Yes | The domain where the impression occurred. For mobile applications, this can be the URL of the app's location in the app store. There are two additional values that may appear in place of a domain, specifically: "`deals.unknown`" or "`managed.unknown`". These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed. |
 | Application ID | No | A targetable Apple App Store ID, Google Play package name, or Windows application ID. |
-| Impression Type | Yes | See **[Impression Types](network-video-analytics-report#impression-types)** below for definitions of the different types of impressions. |
+| Impression Type | Yes | See **[Impression Types](network-video-analytics-report.md#impression-types)** below for definitions of the different types of impressions. |
 | Supply Type | Yes | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are '`web`', '`mobile_app`', and '`mobile_web`'. |
 | Video Context | Yes | When and where the video creative was served. Possible values are `Pre-roll`, `Mid-roll`, `Post-roll`, `Outstream`, and `Unknown`. |
 | Video Playback Method | Yes | The playback method for the creative, e.g, 'auto-start, sound on'. |

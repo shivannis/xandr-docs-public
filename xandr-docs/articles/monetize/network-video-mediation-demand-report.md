@@ -62,8 +62,8 @@ Data in this report is retained for 45 days.
 | Publisher | Yes | The publisher on whose inventory this impression occurred. |
 | Placement Group | Yes | The placement group (simply a collection of placements) which includes the placement through which this impression occurred. |
 | Mediated Bid | Yes | The name and ID of the mediated bid under a mediated network. |
-| Placement | Yes | The placement through which this impression occurred.<br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with -1 as the ID and a generic name. |
-| Call Type | No | The type of handler that was used to send the impression to Xandr (e.g., ttj, ut, mob, ptv, openrtb). |
+| Placement | Yes | The placement through which this impression occurred.<br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `-1` as the ID and a generic name. |
+| Call Type | No | The type of handler that was used to send the impression to Xandr (e.g., `ttj`, `ut`, `mob`, `ptv`, `openrtb`). |
 | Mediated Network | Yes | The name and ID of the mediated network under which mediated bids are present. |
 | Device Type | Yes | Different device types on which the video impression will be rendered. For example, Desktops & Laptops, Mobile Phones, Tablets, TV, Game Consoles , Media Players , Set Top Box, etc. |
 | Operating System Family | Yes | The name and ID of the supported operating system family on which the devices run. For example, Android, Apple Mac, Apple iOS, Microsoft Windows, etc. |

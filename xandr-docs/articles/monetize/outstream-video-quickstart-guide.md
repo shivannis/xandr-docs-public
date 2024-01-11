@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Quickstart guide: Set up outstream video
 
 > [!TIP]
-> Interested in Outstream Video? 
+> Interested in Outstream Video?
 > Reach out to your Xandr Account Manager for more information!
 > [!IMPORTANT]
 > You can view a demo of Xandr Outstream Video (with multiple placements) at [https://video-demo.adnxs.net/samples/outstream.html](https://video-demo.adnxs.net/samples/outstream.html).

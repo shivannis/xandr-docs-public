@@ -1,6 +1,6 @@
 ---
 title: Options for Defining Video Auction Settings
-description: The article outlines factors for successful video auctions on a placement, transitted in HTTP headers, or included in the bid request parameters through query parameters.
+description: The article outlines the key factors for successful video auctions on a placement, transitted in HTTP headers or bid request parameters via query parameters.
 ms.date: 10/28/2023
 ---
 

@@ -15,7 +15,7 @@ Networks use Microsoft Monetize to buy inventory on behalf of their advertisers.
 
 To succeed in their role as financial intermediaries, networks must be able to easily and accurately invoice their advertisers and pay their publishers for **all activity**, as well as have the tools to make sure they maintain an appropriate profit margin.
 
-:::image type="content" source="media/activity-diagram.png" alt-text="Diagram that explains efficient networks, precise invoicing, timely payments, and a balanced profit to maintain an appropriate profit margin.":::
+:::image type="content" source="media/activity-diagram.png" alt-text="Diagram that explains how the networks is able to easily and accurately invoice their advertisers.":::
 
 ## Pulling billing reports
 

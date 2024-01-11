@@ -1,6 +1,6 @@
 ---
 title: Optimization Guide
-description: The article helps you to learn the power of optimization engine with insights on benefits, process, and key components for effective utilization.
+description: The article reveals optimization engine power with insights on benefits, processes, and key components for effective use.
 ms.date: 10/28/2023
 ---
 

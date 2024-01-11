@@ -1,6 +1,6 @@
 ---
 title: Opt Out of Gambling Ads
-description: The article guides on blocking gambling ads on publishers' inventory where not permitted, mentioning all the allowance in countries where such advertising is legal.
+description: The article guides on blocking illegal gambling ads on publishers' inventory, detailing permissions in legal countries.
 ms.date: 10/28/2023
 ---
 
@@ -26,7 +26,7 @@ Locate the **Categories** section. Find and click the **Edit** button to open th
 
 ### Step 3. Ban the gambling category
 
-Search for the **Gambling** category and click the **Edit** link. Then change the status to Banned, and click **Save**.
+Search for the **Gambling** category and click the **Edit** link. Then change the status to **Banned**, and click **Save**.
 
 :::image type="content" source="media/gambling-network-optout.png" alt-text= "Diagram that ****explains how you can ban the gambling category.":::
 

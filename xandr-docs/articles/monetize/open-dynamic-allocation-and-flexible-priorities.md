@@ -69,7 +69,7 @@ following examples demonstrate different possibilities in this scenario:
 
 *Example 1:* One guaranteed delivery line item at priority 12 and all priority 12 standard line items are submitted to auction to compete with RTB.
 
-:::image type="content" source="media/priority-scenario-c.png" alt-text= "Diagram that illustrates guaranteed delivery line item at priority 12 and all priority 12 standard line items are submitted to auction to compete with RTB.":::
+:::image type="content" source="media/priority-scenario-c.png" alt-text= "Diagram that illustrates guaranteed delivery line item at priority 12 and all priority 12 standard line items are submitted to auction.":::
 
 *Example 2:* One guaranteed delivery line item at priority 10 and all priority 12 standard line items are submitted to auction to compete with RTB.
 
