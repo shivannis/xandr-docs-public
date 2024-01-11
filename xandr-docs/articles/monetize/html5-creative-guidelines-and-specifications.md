@@ -11,8 +11,8 @@ To serve on the Xandr platform and other third-party platforms, all HTML5 creati
 Adhere to these guidelines and specifications when creating HTML5 creatives:
 
 - All hosted HTML5 creatives must be uploaded in a single zip file.
-- The zip file must contain an **index.md** file that resides at the root of the zip file and not in a subfolder.
-- The **index.md** file should be a complete and valid HTML document that includes the `<html>`, `<head>`, and `<body>` entities.
+- The zip file must contain an **index.html** file that resides at the root of the zip file and not in a subfolder.
+- The **index.html** file should be a complete and valid HTML document that includes the `<html>`, `<head>`, and `<body>` entities.
 - The `clickTag` parameter must be referenced in the URL of all HTML5 creatives.
   
   > [!NOTE]

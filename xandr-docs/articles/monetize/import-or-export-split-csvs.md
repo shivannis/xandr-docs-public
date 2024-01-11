@@ -110,7 +110,7 @@ For more information, see [Introduction to Viewability](introduction-to-viewabil
 
 | Column Title | Description |
 |---|---|
-| Segment Presence/Absence | Segment presence or absence, age, and value. <br> **Example:** <br> Target the following users: <br>1. Include users that have a value of 0 that are in segment ID - 3359836 <br> 2. Include users that are either in segment ID - 1879649 or in segment ID - 39246 <br> 3. Include users that are not in segment ID - 3359827 <br> `ANY include (3359836) [value = 0], ANY include (1879649), include (39246), ANY exclude (3359827)` <br> Target the following users: <br> 1. Exclude users who have been in Segment 108 for less than two hours <br> 2. Include users who have been in Segment 109 for at least 10 minutes and Segment 110 for at least 15 minutes <br> `ALL exclude 108[age<120], ALL include 109[age>=10], include 110[age>=15]` <br> Include if Segment 110 is greater than 3 or Segment 112 is less than 4: <br> `ANY include 110[value>3], include 112[value<4]` <br> Include users who have been in Segment 110 for less than 1440 minutes and whose value is greater than 3: <br> `ANY include 110[age<1440 value>3]` <br> See [CSV Rules](#csv-rules) above for special constraints on segments. |
+| Segment Presence/Absence | Segment presence or absence, age, and value. <br> **Example:** <br> Target the following users: <br>1. Include users that have a value of 0 that are in segment ID - 3359836 <br> 2. Include users that are either in segment ID - 1879649 or in segment ID - 39246 <br> 3. Include users that are not in segment ID - 3359827 <br> `ANY include (3359836) [value = 0], ANY include (1879649), include (39246), ANY exclude (3359827)` <br> Target the following users: <br> 4. Exclude users who have been in Segment 108 for less than two hours <br> 5. Include users who have been in Segment 109 for at least 10 minutes and Segment 110 for at least 15 minutes <br> `ALL exclude 108[age<120], ALL include 109[age>=10], include 110[age>=15]` <br> Include if Segment 110 is greater than 3 or Segment 112 is less than 4: <br> `ANY include 110[value>3], include 112[value<4]` <br> Include users who have been in Segment 110 for less than 1440 minutes and whose value is greater than 3: <br> `ANY include 110[age<1440 value>3]` <br> See [CSV Rules](#csv-rules) above for special constraints on segments. |
 
 ### Frequency and recency
 
@@ -130,7 +130,7 @@ For more information, see [Frequency Targeting](frequency-and-recency-caps.md).
 
 ## Example CSV
 
-This is a [Sample Splits CSV](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28&20Dec&202023/sample-splits-csv.csv).
+This is a [Sample Splits CSV](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28%20Dec%202023/sample-splits-csv.csv).
 
 ## Related topics
 

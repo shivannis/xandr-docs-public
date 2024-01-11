@@ -28,12 +28,12 @@ To set up AMP inventory with PSP:
     </amp-ad> 
     ```
 
-> [!IMPORTANT]
-> Any publisher client with Google Ad Manager (GAM) as their ad server should ensure the following elements are in place:
->
-> - Enable the checkbox **Serve into a SafeFrame** of Prebid Universal Creatives set up in GAM. This ensures viewability tracking.
-> - All relevant ad sizes are included on the creatives in GAM.
-> - Any optional `hb_bidder` targeting must include all relevant PSP demand partners, not just Xandr.
+    > [!IMPORTANT]
+    > Any publisher client with Google Ad Manager (GAM) as their ad server should ensure the following elements are in place:
+    >
+    > - Enable the checkbox **Serve into a SafeFrame** of Prebid Universal Creatives set up in GAM. This ensures viewability tracking.
+    > - All relevant ad sizes are included on the creatives in GAM.
+    > - Any optional `hb_bidder` targeting must include all relevant PSP demand partners, not just Xandr.
 
 ## Related topics
 
