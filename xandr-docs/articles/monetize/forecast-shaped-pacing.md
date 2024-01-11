@@ -19,7 +19,7 @@ Forecast-Shaped Pacing (FSP) solves this problem by setting hourly delivery goal
 will therefore set a much lower delivery goal for the line item at 2 AM than at 2 PM. In the afternoon, FSP sets delivery targets to be higher because more supply is expected to be available than in the early morning. And if – as is often the case – inventory starts to drop again during the end of the day, the FSP-governed line item will have less
 delivery scheduled accordingly.
 
-To summarize: FSP takes into account the variability of inventory throughout the day, setting hourly delivery goals that map to high-fidelity, line-item specific forecasts powered by the [Yieldex Forecasting Engine](../yield-analytics-ui/yield-analytics-overview.md).
+To summarize: FSP takes into account the variability of inventory throughout the day, setting hourly delivery goals that map to high-fidelity, line-item specific forecasts powered by the [Yield Forecasting Engine](../yield-analytics-ui/yield-analytics-overview.md).
 
 > [!NOTE]
 > Xandr uses FSP for all impression-based Guaranteed Delivery line items. It does not apply to line items with an **Exclusive** delivery type.
