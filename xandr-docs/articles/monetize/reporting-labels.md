@@ -17,8 +17,7 @@ item.
 ## Assigning labels
 
 You assign Reporting Labels on the
-**Create/Edit** screen under Reporting
-Labels. It will take about 30 minutes for the labels to show up in
+**Create/Edit** screen under **Reporting Labels**. It will take about 30 minutes for the labels to show up in
 reporting.
 
 ## Reporting on labels

@@ -1,6 +1,6 @@
 ---
 title: Reselling Managed Inventory
-description: This page will provide an overview of reselling-related settings, as well as offer instructions for how to configure your inventory for reselling.
+description: This page provides an overview of reselling-related settings, as well as offer instructions for how to configure your inventory for reselling.
 ms.date: 10/28/2023
 ---
 

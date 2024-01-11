@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Resubmit Creatives for Google Ad Manager Auditing
-description: Learn how You can easily resubmit your rejected creative to Google Ad Manager so that it can be re-audited.
+description: Learn how you can easily resubmit your rejected creative to Google Ad Manager so that it can be re-audited.
 ms.date: 10/28/2023
 ---
 

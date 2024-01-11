@@ -25,7 +25,6 @@ There are two reports that provide insight into how your podded video
 supply is performing on Xandr:
 
 - Seller Slot Analytics Report
-
 - Seller Pod Analytics Report
 
 ## Seller pod analytics

@@ -15,6 +15,4 @@ dimensions, monitor business performance and key performance indicators
 (KPIs), such as, Revenue, Impressions, Ad Requests Fill Rate, and Win
 Rates.
 
-For more information, see:
-
-- [Monetize Insights for Total Revenue](monetize-insights-total-revenue.md)
+For more information, see [Monetize Insights for Total Revenue](monetize-insights-total-revenue.md).

@@ -1,6 +1,6 @@
 ---
 title: Sell-Side Optimization
-description: learn how optimization gives sellers several controls that can be used to minimize risk and maximize return.   
+description: Learn how optimization gives sellers several controls that can be used to minimize risk and maximize return.   
 ms.date: 10/28/2023
 ---
 
