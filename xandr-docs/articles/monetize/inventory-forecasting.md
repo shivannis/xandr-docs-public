@@ -21,11 +21,11 @@ This page describes:
 
 You can forecast on standard, guaranteed delivery, and programmatic guaranteed selling line items. When you create or edit a line item of either type, there will be a **Check Availability** button at the bottom of the **Create** or Edit screen:
 
-:::image type="content" source="media/check-availability.png" alt-text="A screenshot that shows the Check Availability button.":::
+:::image type="content" source="media/check-availability.png" alt-text="Screenshot that shows the Check Availability button.":::
 
 Click **Check Availability** to open the **Forecasting** pane. This pane shows you a chart with delivery goals and capacity for the current line item. Click on **Contending Line Items** to expand that section and see other line items that are contending for the same inventory. You can filter the contending line items based on priority.
 
-:::image type="content" source="media/gdli-availability.png" alt-text="A screenshot that shows the components of the Forecasting pane.":::
+:::image type="content" source="media/gdli-availability.png" alt-text="Screenshot that shows the components of the Forecasting pane.":::
 
 For line items with a vCPM revenue type, the availability and contention forecast numbers are based on viewable impressions. For more
 information, see [Introduction to Viewability](introduction-to-viewability.md).
@@ -41,7 +41,7 @@ Inventory forecasting provides the following information:
   > Although **Availability** is returned for standard line item forecasts, it's calculated from the perspective of a guaranteed line item. Therefore, **Availability** shouldn't be relied on as a definitive availability estimate for standard line item types.
 
 - **Contention**: The number of line items that will be competing for this same inventory given the proposed targeting and flight dates.
-- **Delivery**: Whether the line item will deliver in full. (For guaranteed delivery line items, see the **Unlikely to Deliver** filter in [Explore Global Line Items](explore-global-line-items.md).)
+- **Delivery**: Whether the line item will deliver in full. For guaranteed delivery line items, see the **Unlikely to Deliver** filter in [Explore Global Line Items](explore-global-line-items.md).
 
 ## Inventory forecasting features
 

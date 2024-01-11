@@ -79,7 +79,7 @@ If you are frequently requesting Key Value Analytics reports which include dates
 Data in this report is retained for 14 months. After 100 days, you are no longer able to report on hourly data. However, daily, monthly and cumulative intervals are still available.
 
 > [!IMPORTANT]
-> Lifetime Analytics Data Retained for 14 Months
+> **Lifetime Analytics Data is retained for 14 months.**
 >
 > In some cases Analytics reports can show delivery that does not match statistics shown elsewhere in Microsoft Monetize for a given advertiser or publisher. This is due to the fact that Analytics reporting data is purged after 14 months, whereas the data from QuickStats and Billing reports is kept indefinitely.
 
@@ -99,11 +99,11 @@ Data in this report is retained for 14 months. After 100 days, you are no longer
 | Publisher Currency | Yes | The transaction currency used by the seller to sell this impression. Including this dimension will cause most monetary metrics to be displayed in the selling currency. This dimension is available only when Currency 2.0 is disabled. |
 | Publisher | Yes | The publisher on whose inventory this impression occurred. |
 | Placement Group | Yes | The placement group (simply a collection of placements) which includes the placement through which this impression occurred. <br><br> **Note**: For impressions older than 100 days, the ID will be `0`. |
-| Placement | Yes | The placement through which this impression occurred. <br><br> **Note**: For impressions older than 100 days, placements will be aggregated into one row with -1`` as the ID and a generic name. |
+| Placement | Yes | The placement through which this impression occurred. <br><br> **Note**: For impressions older than 100 days, placements will be aggregated into one row with `-1` as the ID and a generic name. |
 | Line Item | Yes | The line item associated with this impression. |
 | Campaign | Yes | The campaign which purchased this impression. (Does not apply to all advertisers.) |
-| Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the **Split** column (if included) will be null. |
-| Creative | Yes | The creative served for the impression. <br><br> **Note**: <br> - For impressions older than 100 days, creatives will be aggregated into one row with 0 as the creative_id. <br> - For external click or impression trackers, creative_id will be "External Clicks" or "External Imps". |
+| Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the **Split** column (if included) will be `null`. |
+| Creative | Yes | The creative served for the impression. <br><br> **Note**: <br> - For impressions older than 100 days, creatives will be aggregated into one row with `0` as the `creative_id`. <br> - For external click or impression trackers, `creative_id` will be "`External Clicks`" or "`External Imps`". |
 | Size | Yes | The size of the creative (e.g., 320x50). |
 | Advertiser Currency | Yes | The transaction currency that the buyer used to purchase the impression. Including this dimension will cause most monetary metrics to be displayed in the buying currency. This dimension is available only when Currency 2.0 is disabled. |
 | Impression Type |  Yes | See the [Impression Types](#impression-types) table below for definitions of the different types of impressions. |
@@ -133,8 +133,8 @@ Data in this report is retained for 14 months. After 100 days, you are no longer
 | CTR | The click-through rate – the ratio of clicks to impressions, expressed as a percentage. |
 | Filtered Requests | Ad requests filtered pre-bid by Xandr for inventory quality. |
 | Imps | The total number of impressions. |
-| Imps (master creative) | The number of page-level roadblocks that served the master creative. <br><br> **Important**: Alpha-Beta Notice: <br> This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
-| Imps (master creative) | The number of page-level roadblocks that served the master creative. Note: This metric is in alpha testing and not available to all customers. |
+| Imps (master creative) | The number of page-level roadblocks that served the master creative. <br><br> **Important**: **Alpha-Beta Notice**: <br> This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
+| Imps (master creative) | The number of page-level roadblocks that served the master creative. <br><br> **Important**: This metric is in alpha testing and not available to all customers. |
 | Post Click Conversion Rate | The ratio of post-click conversions to impressions. |
 | Post Click Conversions | The total number of post-click conversions recorded. For more information about how we record post-click conversions, see [Conversion Attribution](conversion-attribution.md). |
 | Post View Conversion Rate | The ratio of post-view conversions to impressions. |

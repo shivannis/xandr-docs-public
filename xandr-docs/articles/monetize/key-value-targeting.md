@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Key/Value Targeting
-description: In this article, understand what key/value targeting is, how to define keys and values, how to build targeting groups, and restrictions of key/value targeting for line items and campaigns. 
+description: In this article, understand what key/value targeting is, how to define keys and values, how to build targeting groups, and restrictions of key/value targeting. 
 ms.date: 10/28/2023
 ---
 
@@ -25,7 +25,7 @@ Targeting can be set on the line item or campaign. You can set up targeting when
 > - See [Working with Line Items](working-with-line-items.md) for information on setting up your line items and campaigns.
 > - See [Buy-Side Targeting](buy-side-targeting.md) for information on various other types of targeting.
 
-(For standard line items and campaigns, use the **Targeting** section.) This will open the **Key/Value Targeting** dialog.
+For standard line items and campaigns, use the **Targeting** section. This will open the **Key/Value Targeting** dialog.
 
 ## Key/value targeting defined
 
@@ -114,7 +114,7 @@ We're going to start our key/value target from the bottom-right of our expressio
 
     Our target now looks like this:
 
-      :::image type="content" source="media/uikvtarget.png" alt-text="A screenshot of the key/value targeting dialog with the values of city and fruit from the right side group selected.":::
+      :::image type="content" source="media/uikvtarget.png" alt-text="Screenshot of the key/value targeting dialog with the values of city and fruit from the right side group selected.":::
 
     Notice the **or** between our **city** key/value set and our **fruit** key/value set. If we look at our diagram, we can see that we need this relationship to be an AND; we want city is Seattle or LA **AND** fruit is orange.
 
@@ -151,7 +151,7 @@ We're going to start our key/value target from the bottom-right of our expressio
 
     Your **Key/Value Targeting** should look like this:
 
-    :::image type="content" source="media/keyvaluedialogexp.png" alt-text="A screenshot of the key/value targeting dialog with the values of city and fruit from both the groups of the expression tree selected.":::
+    :::image type="content" source="media/keyvaluedialogexp.png" alt-text="Screenshot of the key/value targeting dialog with the values of city and fruit from both the groups of the expression tree selected.":::
 
 1. Click **Add** to save your key/value target.
 
@@ -174,7 +174,7 @@ For all options other than **one of**, you must type in a value. As you type any
 
 Here's an example of using all the preceding numeric targeting:
 
-:::image type="content" source="media/numerickvtargeting.png" alt-text="A screenshot of the key/value targeting dialog with examples of numeric targeting.":::
+:::image type="content" source="media/numerickvtargeting.png" alt-text="Screenshot of the key/value targeting dialog with examples of numeric targeting.":::
 
 ### Modifying a key/value target
 
@@ -213,7 +213,7 @@ You can enter individual values to target with the specified key. Simply type th
 
 A key can have a maximum of 999 values. To add more values to a given key, you can combine keys with the same name with `or` expressions, as shown here:
 
-:::image type="content" source="media/combine-key-values.png" alt-text="A screenshot of the key/value targeting dialog with examples of individual values to target.":::
+:::image type="content" source="media/combine-key-values.png" alt-text="Screenshot of the key/value targeting dialog with examples of individual values to target.":::
 
 ### Value name requirements
 

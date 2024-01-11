@@ -19,7 +19,7 @@ To edit a PSP configuration, do the following:
 
 1. Click on the name or row of the configuration to be edited.
 1. Click the **Edit** button in the upper right of the configuration panel.
-1. Optionally, edit the name, Status (Enabled/Disabled), or demand partners associated with the configuration.
+1. Optionally, edit the name, status (**Enabled**/**Disabled**), or demand partners associated with the configuration.
 
     > [!NOTE]
     > Partners can be removed from configurations entirely by clicking the X icon to the right of their name.

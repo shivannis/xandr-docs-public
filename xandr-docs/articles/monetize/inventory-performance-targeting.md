@@ -33,7 +33,7 @@ Another example: you're required to purchase inventory with at least a 30% Video
 
 - Under **Viewability & Environment Targeting** (**Targeting** for standard line items), target a `30%` **Video Completion Rate threshold**.
 - Under **Optimization**, set a `1%` **CTR optimization goal**.
-- Under **Goal Priority**, select **Margin** and specify `25%`. (However, if you have set your **Revenue Type** to **Cost Plus** under **Budgeting and Scheduling**, you can ignore this step.)
+- Under **Goal Priority**, select **Margin** and specify `25%`. However, if you have set your **Revenue Type** to **Cost Plus** under **Budgeting and Scheduling**, you can ignore this step.
 
 > [!NOTE]
 > Using Video Completion Rate targeting on deals could lead to under-delivery. We suggest that you don't use Video Completion Rate targeting until your deal-targeted line item or campaign has enough experience learning about the predicted completion rate.

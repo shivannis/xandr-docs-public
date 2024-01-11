@@ -107,7 +107,7 @@ Each domain or app in a list can have one of the following audit statuses:
 
 1. Go to the **Inventory Lists** screen. Select **Network** > **Inventory** > **Inventory Lists**.
 1. Locate the list(s) you want to export.
-1. Select the checkbox next to the list that you want to export. (You can select up to five lists.)
+1. Select the checkbox next to the list that you want to export. You can select up to five lists.
 1. Select **Export List** from the **Actions** menu.
 
 The list(s) you selected will be downloaded to your local drive. If you exported:
@@ -131,7 +131,7 @@ The list(s) you selected will be downloaded to your local drive. If you exported
 > Deletions are permanent. Deleted inventory lists cannot be retrieved.
 
 1. Go to the **Inventory Lists** screen. Select **Network** > **Inventory** > **Inventory Lists**.
-1. Locate the inventory list that you want to delete and select the corresponding checkbox. (You can select more than one.)
+1. Locate the inventory list that you want to delete and select the corresponding checkbox. You can select more than one.
 1. You can now do any of the following:
 
     - **Add**: Add domains/apps to the list.

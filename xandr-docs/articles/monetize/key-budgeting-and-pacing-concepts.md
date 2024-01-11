@@ -63,12 +63,11 @@ When budgeting based on CPM or impressions, budget calculation is fairly simple.
 
 When working with clicks (CPC) or acquisitions (CPA) as success events, you can specify a **look back period**. This period defines the number of minutes, hours, or days that a success event can be claimed for your campaign after the user viewed or clicked on the creative. Refer to [Create a Conversion Pixel](create-a-conversion-pixel.md) for more information.
 
-> [!NOTE]
-> Example:
->
-> User Barbara is viewing a web page and sees a creative from your campaign for **travel2antarctica.com**. The **Post Click Interval** setting is **7 days**. She is interested and clicks on the ad, but does not provide her contact information (which is the defined success event); she does, however, bookmark the web page. Four days later, she returns to the web site and fills out a form to get promotional emails from that website. Because this success event falls within the **Post Click Interval** and was directly related to her viewing the creative from your campaign, that success event is attributed to your campaign.
->
-> The problem occurs when Barbara views the creative a few hours or minutes before the end of your campaign, but provides her information (the success event) four days later. The system has been budgeting and pacing exactly as you intended. However, using this example, you have now have a success event four days after the end of your campaign. Because there is no way the system can anticipate which impressions will resolve to success events after the end of the campaign, the system paces and budgets based on the actual campaign time frame. Assuming that your campaign hit its budget just as it ended, any success events like the example above cause overspend. The problem is exacerbated when you apply a higher value in the Post Click Interval or Post View Interval, and on campaigns with a high click-through rate.
+### Example
+
+User Barbara is viewing a web page and sees a creative from your campaign for **travel2antarctica.com**. The **Post Click Interval** setting is **7 days**. She is interested and clicks on the ad, but does not provide her contact information (which is the defined success event); she does, however, bookmark the web page. Four days later, she returns to the web site and fills out a form to get promotional emails from that website. Because this success event falls within the **Post Click Interval** and was directly related to her viewing the creative from your campaign, that success event is attributed to your campaign.
+
+The problem occurs when Barbara views the creative a few hours or minutes before the end of your campaign, but provides her information (the success event) four days later. The system has been budgeting and pacing exactly as you intended. However, using this example, you have now have a success event four days after the end of your campaign. Because there is no way the system can anticipate which impressions will resolve to success events after the end of the campaign, the system paces and budgets based on the actual campaign time frame. Assuming that your campaign hit its budget just as it ended, any success events like the example above cause overspend. The problem is exacerbated when you apply a higher value in the Post Click Interval or Post View Interval, and on campaigns with a high click-through rate.
 
 ## Resolving a CPC or CPA budgeting issue
 

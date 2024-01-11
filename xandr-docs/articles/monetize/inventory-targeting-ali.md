@@ -1,10 +1,10 @@
 ---
-title: Inventory Targeting (ALI)
+title: Microsoft Monetize - Inventory Targeting (ALI)
 description: In this article, find information about inventory targeting and instructions for how to target universal and custom categories.
 ms.date: 10/28/2023
 ---
 
-# Inventory targeting (ALI)
+# Microsoft Monetize - Inventory targeting (ALI)
 
 If you selected **Managed** under **Supply Strategy** (in the **Basic Setup** section of the line item), you can target or exclude the following inventory:
 
