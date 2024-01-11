@@ -8,13 +8,20 @@ ms.date: 10/28/2023
 
 There are character specifications that you should keep in mind when uploading creatives on to the Xandr platform.
 
-Our creative fields support the following:
+For creatives, ensure that there is no invalid or unsupported character present in the VAST url as well as in the 3rd party segments attached to the creative. For example,
 
-- Letters
-- Numbers
-- All accent marks (~)
-- All punctuation marks (: ;)
-- All symbols (% #)
+- This is the set of valid VAST characters:
+
+    `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~:/?#[]@!$&'()*+,;=.`
+
+- This is a set of common invalid characters:
+
+    `|, <, >, ^, {,}.`
+
+Additionally:
+
+- If there are curly brackets `{` `}` present in the VAST url or segment, then they **must** have `$` in front of the bracket.
+- Ensure that there is no double `%` present in the VAST url or segment.
 
 The following table provides the character limit for each field that is available from the Creative screens within the UI:
 

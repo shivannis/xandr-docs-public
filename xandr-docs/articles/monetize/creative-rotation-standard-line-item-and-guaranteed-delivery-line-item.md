@@ -35,7 +35,7 @@ See the sections below to better understand how promo sizes interact with the fo
 
 ### Manually weighted
 
-Let's say your line item has the following creatives competing to serve and you've selected the Manually weight creatives option:
+Let's say your line item has the following creatives competing to serve and you've selected the **Manually weight creatives** option:
 
 - Creative A is 160x600 with a weight of 20
 - Creative B is 300x600 with a weight of 30

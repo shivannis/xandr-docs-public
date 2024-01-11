@@ -10,9 +10,9 @@ We support the use of spreadsheet templates for uploading multiple creatives sim
 
 Feel free to leverage the following spreadsheet templates:
 
-- [Xandr Third-Party Creative Template](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28&20Dec&202023/xandr-generic-template-third-party.xlsx)
-- [Xandr Hosted Creative Template](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28&20Dec&202023/xandr-generic-template-hosted.xlsx)
-- [Xandr Native Creative Template](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28&20Dec&202023/xandr-generic-template-native.xlsx)
+- [Xandr Third-Party Creative Template](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28%20Dec%202023/xandr-generic-template-third-party.xlsx)
+- [Xandr Hosted Creative Template](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28%20Dec%202023/xandr-generic-template-hosted.xlsx)
+- [Xandr Native Creative Template](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28%20Dec%202023/xandr-generic-template-native.xlsx)
 
 > [!NOTE]
 > Only XLS and XLSX file formats are supported with a file size limit of 8 MB.
