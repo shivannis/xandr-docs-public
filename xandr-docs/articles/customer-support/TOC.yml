@@ -2,7 +2,7 @@
   href: index.yml
 - name: Overview
   href: xcs-xandr-customer-support-home.md
-- name: Functionalities in Customer Support Portal
+- name: Functionalities
   items:
   - name: Login
     href: xcs-logging-in-to-the-customer-support-portal.md
