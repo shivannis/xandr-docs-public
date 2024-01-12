@@ -1,10 +1,10 @@
 ---
-title: Bidders - Domain Lists
+title: Domain Lists
 description: The article describes the lists of domain that are created by the bidder.
 ms.date: 10/28/2023
 ---
 
-# Bidders - Domain lists
+# Domain lists
 
 Domain lists are created by the bidder. This functionality allows you to select the domain lists you want, or do not want. This can be thought of as a blocklist.
 

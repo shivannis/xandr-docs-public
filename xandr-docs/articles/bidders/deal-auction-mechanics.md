@@ -27,17 +27,17 @@ When a piece of inventory included in an "open auction" deal comes up for auctio
 > - A default creative reserve price will always take priority over the placement reserve price.
 > - A dynamic floor will always take priority over the placement and default creative reserve price.
 
-## Examples (for successful deal bids and non-deal bids)
+## Examples of successful deal bid wins and non-deal bid wins
 
-**Deal bid wins**
+### Deal bid wins
 
 :::image type="content" source="media/open-auction-deal-wins-fp.png" alt-text="Flow chart tree that explains how a private auction works. It shows different scenarios of bidding and winning in a private auction, and the price that the winner pays. ":::
 
-**Case 1: non-deal bid wins**
+### Non-deal bid wins
 
 :::image type="content" source="media/open-auction-non-deal-wins-fp.png" alt-text="Flow chart that provides the details of non-Deal Bid Wins":::
 
-**Case 2: non-deal bid wins**
+### Non-deal bid wins
 
 :::image type="content" source="media/open-auction-non-deal-wins-fp-b.png" alt-text="Flow chart that provides an explanation of non-Deal Bid Wins":::
 
@@ -60,17 +60,17 @@ If none of the private deal buyers win, the auction is opened to buyers targetin
 - If a buyer targeting the deal submits a bid higher than the deal's ask price and higher than any other private auction bids, that buyer wins the auction, paying the bid price.
 - If no private auction bids clear their ask prices, the highest bid in the open auction wins, paying the bid price.
 
-## Examples (for deal bid wins in private auction)
+## Examples
 
-**Deal bid wins in private auction (no open auction held)**
+### Deal bid wins in private auction (no open auction held)
 
 :::image type="content" source="media/private-auction-deal-wins-fp.png" alt-text="Flow chart that explains the process of Private Auction Deal bid Wins when no open auctionsa are held":::
 
-**Higher priority deal bid wins in private auction (no open auction held)**
+### Higher priority deal bid wins in private auction (no open auction held)
 
 :::image type="content" source="media/private-auction-high-priority-wins-fp.png" alt-text="Flow chart that illustrates how higher priority deal bids secure wins in private auctions without open auctions.":::
 
-**Non-deal bid wins in open auction (no private auction winner)**
+### Non-deal bid wins in open auction (no private auction winner)
 
 :::image type="content" source="media/private-auction-non-deal-bid-wins-fp.png" alt-text="Flow chart that illustrates how higher priority deal bids secure wins in open auctions.":::
 
