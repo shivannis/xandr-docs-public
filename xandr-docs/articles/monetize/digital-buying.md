@@ -14,9 +14,8 @@ As a Digital Buyer, you will receive the following documents:
 - IO-level Invoice
 - Credit Memo
 - Netting Statement (if opeed into netting)
-  
-   > [!NOTE]
-   >  If you change your billing address, be sure to submit a ticket to the Xandr Client Finance team by clicking Contact Support in the [Xandr Customer Support Portal](https://help.xandr.com/s/login/).
+  > [!NOTE]
+  > If you change your billing address, be sure to submit a ticket to the Xandr Client Finance team by clicking Contact Support in the [Xandr Customer Support Portal](https://help.xandr.com/s/login/).
 
 ## Related topics
 

@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - targeting and measurement (Cross-Device)
+# Microsoft Monetize - Targeting and measurement (Cross-Device)
 
 Cross-device targeting and measurement, which can be enabled at the line
 item level, ties together events or actions for a unique individual that
