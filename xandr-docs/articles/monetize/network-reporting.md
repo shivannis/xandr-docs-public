@@ -1,110 +1,49 @@
 ---
-Title : Network Reporting
-Description : Network reports are designed to give you a
+title: Network Reporting
+description: The article explores network reports that provide a comprehensive business overview by facilitating cross-advertiser and cross-publisher reporting.
 ms.date: 10/28/2023
-global view of your business, allowing you to report across multiple
-advertisers and/or publishers.
 ---
 
+# Network reporting
 
-# Network Reporting
+Network reports are designed to give you a global view of your business, allowing you to report across multiple advertisers and/or publishers.
+In this section of the reporting guide, you'll find documentation for all of our network-level reports.
 
+> [!IMPORTANT]
+> Conversion-related data in reports is processed asynchronously. As a result, reports are available more quickly, while some conversion-related data is still being processed in the background. For more information, see **Asynchronous Conversion Attribution** on the [Availability of Reporting Data](availability-of-reporting-data.md) page.
 
+- [Buyer Bid Error Report](buyer-bid-error-report.md)
+- [Buyer Geo Analytics Report](buyer-geo-analytics-report.md)
+- [Buyer Segment Performance Report](buyer-segment-performance-report.md)
+- [Carrier Analytics Report](carrier-analytics-report.md)
+- [Curator Bid Error Report](curator-analytics-report.md)
+- [Curator Segment Performance Report](curator-segment-performance-report.md)
+- [Data Usage Report](data-usage-report.md)
+- [Device Analytics Report](device-analytics-report.md)
+- [Engagement Metrics Report](engagement-metrics-report.md)
+- [Key Value Analytics Report](key-value-analytics-report.md)
+- [Multi-Key Value Analytics Report](multi-key-value-analytics-report.md)
+- [Multi-Buyer Seller Deal Metrics](multi-buyer-seller-deal-metrics.md)
+- [Network Analytics Report](network-analytics-report.md)
+- [Network Attributed Conversions Report](member-attributed-conversions-report.md)
+- [Network Audio Analytics Report](network-audio-analytics-report.md)
+- [Network Site Domain Performance Report](network-site-domain-performance-report.md)
+- [Network Video Error Report](network-video-error-report.md)
+- [Network Video Analytics Report](network-video-analytics-report.md)
+- [Prebid Server Premium Health Analytics Report](prebid-server-premium-health-analytics-report.md)
+- [Seller Brand Review Report](seller-brand-review-report.md)
+- [Seller Fill and Delivery Network Report](seller-fill-and-delivery-network-report.md)
+- [Seller Bid Error Report](seller-bid-error-report.md)
+- [Seller Deal Metrics](seller-deal-metrics.md)
+- [Seller Detected Site Domain Report](seller-detected-site-domain-report.md)
+- [Seller Site Domain Report](seller-site-domain-report.md)
+- [universal-content-categories-report.md](universal-content-categories-report.md)
+- [Video Ad Pod Report](video-ad-pod-report.md)
+- [Video Inventory Availability Report](video-inventory-availability-report.md)
 
+## Related topics
 
-
-Network reports are designed to give you a
-global view of your business, allowing you to report across multiple
-advertisers and/or publishers.
-
-In this section of the reporting guide, you'll find documentation for
-all of our network-level reports.
-
-
-
-<b>Important:</b> Conversion-related data in
-reports is processed asynchronously. As a result, reports are available
-more quickly, while some conversion-related data is still being
-processed in the background. For more information, see **Asynchronous
-Conversion Attribution** on the
-<a href="availability-of-reporting-data.md" class="xref">Availability
-of Reporting Data</a> page.
-
-
-
-- <a href="buyer-bid-error-report.md" class="xref">Buyer Bid Error
-  Report</a>
-- <a href="buyer-geo-analytics-report.md" class="xref">Buyer Geo
-  Analytics Report</a>
-- <a href="buyer-segment-performance-report.md" class="xref">Buyer
-  Segment Performance Report</a>
-- <a href="carrier-analytics-report.md" class="xref">Carrier Analytics
-  Report</a>
-- <a href="curator-analytics-report.md" class="xref">Curator Analytics
-  Report</a>
-- <a href="curator-bid-error-report.md" class="xref">Curator Bid Error
-  Report</a>
-- <a href="curator-segment-performance-report.md" class="xref">Curator
-  Segment Performance Report</a>
-- <a href="data-usage-report.md" class="xref">Data Usage Report</a>
-- <a href="device-analytics-report.md" class="xref">Device Analytics
-  Report</a>
-- <a href="engagement-metrics-report.md" class="xref">Engagement Metrics
-  Report</a>
-- <a href="key-value-analytics-report.md" class="xref">Key Value
-  Analytics Report</a>
-- <a href="multi-key-value-analytics-report.md" class="xref">Multi-Key
-  Value Analytics Report</a>
-- <a href="multi-buyer-seller-deal-metrics.md" class="xref"
-  title="The Multi-Buyer Seller Deal Metrics report provides key information relevant to sellers about multi-buyer deal metrics, performance, and rejection reasons.">Multi-Buyer
-  Seller Deal Metrics</a>
-- <a href="network-analytics-report.md" class="xref">Network Analytics
-  Report</a>
-- <a href="member-attributed-conversions-report.md" class="xref">Network
-  Attributed Conversions Report</a>
-- <a href="network-audio-analytics-report.md" class="xref">Network Audio
-  Analytics Report</a>
-- <a href="network-site-domain-performance-report.md"
-  class="xref">Network Site Domain Performance Report</a>
-- <a href="network-video-analytics-report.md" class="xref">Network Video
-  Analytics Report</a>
-- <a href="network-video-error-report.md" class="xref">Network Video
-  Error Report</a>
-- <a href="prebid-server-premium-health-analytics-report.md"
-  class="xref">Prebid Server Premium Health Analytics Report</a>
-- <a href="prebid-server-premium-seller-analytics.md" class="xref"
-  title="The Prebid Server Premium Seller Analytics Report contains performance information on configured Prebid Server Premium (PSP) demand partners.">Prebid
-  Server Premium Seller Analytics Report</a>
-- <a href="seller-brand-review-report.md" class="xref">Seller Brand
-  Review Report</a>
-- <a href="seller-fill-and-delivery-network-report.md"
-  class="xref">Seller Fill and Delivery Network Report</a>
-- <a href="seller-bid-error-report.md" class="xref">Seller Bid Error
-  Report</a>
-- <a href="seller-deal-metrics.md" class="xref"
-  title="The Seller Deal Metrics report provides key information about deal metrics, performance, and rejection reasons that is relevant to sellers.">Seller
-  Deal Metrics</a>
-- <a href="seller-detected-site-domain-report.md" class="xref">Seller
-  Detected Site Domain Report</a>
-- <a href="seller-segment-performance-report.md" class="xref">Seller
-  Segment Performance Report</a>
-- <a href="seller-site-domain-report.md" class="xref">Seller Site Domain
-  Report</a>
-- <a href="universal-content-categories-report.md"
-  class="xref">Universal Content Categories Report</a>
-- <a href="video-ad-pod-report.md" class="xref">Video Ad Pod Report</a>
-- <a href="video-inventory-availability-report.md" class="xref">Video
-  Inventory Availability Report</a>
-
-Related Topics
-
-- <a href="reporting-guide.md" class="xref">Reporting Guide</a>
-- <a href="network-guide.md" class="xref">Network Guide</a>
-- <a href="buying-guide.md" class="xref">Buying Guide</a>
-- <a href="selling-guide.md" class="xref">Selling Guide</a>
-
-
-
-
-
-
+- [Reporting Guide](reporting-guide.md)
+- [Network Guide](network-guide.md)
+- [Buying Guide](buying-guide.md)
+- [Selling Guide](selling-guide.md)
