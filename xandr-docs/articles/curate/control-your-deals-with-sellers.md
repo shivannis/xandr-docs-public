@@ -3,7 +3,7 @@ title: Microsoft Curate - Control Your Deals with Sellers
 description: The article provides instructions on managing transactions with sellers, including accessing the deals screen, configuring deal review preferences, accepting or declining deals, and effectively managing deal statuses.
 ---
 
-# Control your deals with sellers
+# Microsoft Curate - Control your deals with sellers
 
 You can control deals received from sellers on the **Deals** screen. You can:
 

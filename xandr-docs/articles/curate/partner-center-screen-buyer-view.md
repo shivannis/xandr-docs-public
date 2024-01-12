@@ -1,16 +1,16 @@
 ---
-title: Partner Center Screen
+title: Microsoft Curate - Partner Center Screen - Buyer view
 description: The Partner Center screen allows users to access and manage preferred partners, conduct searches for all sellers, and assess impression and click statistics for individual sellers. It serves as a centralized platform for monitoring and optimizing partner-related activities.
 ms.date: 10/28/2023
 ---
 
-# Partner Center screen - buyer View
+# Microsoft Curate - Partner Center screen - Buyer view
 
 On the **Partner Center** screen you can view your preferred partners, search all sellers, and review impression and click statistics for each seller.
 
 ## Getting to the **Partner Center** screen
 
-Go to **Partners > Partner Center** to reach the **Partner Center** screen.
+Go to **Admin > Partner Center** to reach the **Partner Center** screen.
 
 ## Managing your profile
 
@@ -44,7 +44,8 @@ and then review the statistics to determine if you'd like to partner with the se
 > [!TIP]
 > **Get to Know Xandr direct**
 > Xandr Direct is a group of 100+ Xandr sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers.
-> For more information, please see [Xandr Direct](appnexus-direct-for-buyers.md) or contact [appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Xandr account manager.
+>
+>For more information, please see [Xandr Direct](appnexus-direct-for-buyers.md) or contact [appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Xandr account manager.
 
 - **Seller Group** - Shows if the seller is labeled as Xandr Direct.
 - **Eligibility** - Shows the transaction eligibility between members. A buyer may block a seller, a seller may block a buyer, or both buyer and seller may be blocked by each other. Status is indicated by the circular eligibility icon in each row, and you can mouse over the row in the **Eligibility** column for details.

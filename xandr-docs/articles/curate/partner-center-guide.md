@@ -4,7 +4,7 @@ description: The article explains how a partner Center can help you to realize y
 ms.date : 10/28/2023
 ---
 
-# Partner Center guide
+# Microsoft Curate - Partner Center guide
 
 The **Partner Center** enables you to realize your full potential with other buyers and sellers. Using the **Partner Center**, you can:
 

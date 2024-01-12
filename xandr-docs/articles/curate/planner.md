@@ -1,10 +1,10 @@
 ---
-title: Planner
+title: Microsoft Curate - Planner
 description: The article introduces the Planner, a dynamic forecasting tool for real-time reach and delivery projections. It helps assess delivery and reach possibilities for curated deals, allowing strategic adjustments with direct visual and statistical feedback during deal construction.
 ms.date : 10/28/2023
 ---
 
-# Planner
+# Microsoft Curate - Planner
 
 Planner is an interactive forecasting tool that provides reach and delivery projections in real time. Planner helps you understand the
 delivery and reach opportunities for a curated deal before constructing a deal line item, adjusting your strategy as you go based on direct visual and statistical feedback.

@@ -1,10 +1,10 @@
 ---
-title:  Microsoft Curate - Partnership Details Screen - Seller View
+title:  Microsoft Curate - Partnership Details Screen - Seller view
 description: The article outlines the features of the Partnership Details screen in Seller View, emphasizing its utility in reviewing and managing relationships with individual buyers.
 ms.date : 10/28/2023
 ---
 
-# Partnership details screen - seller view
+# Microsoft Curate - Partnership details screen - Seller view
 
 On the Partnership details screen you can review and manage your relationship with a specific buyer. You can track overall revenue
 trends, view the buyer's top brands on your inventory, view your top publishers for the buyer, view the privileges you have granted for the buyer, view active and upcoming deals, and create new deals for buyers.

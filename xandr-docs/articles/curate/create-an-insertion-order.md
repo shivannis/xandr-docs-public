@@ -2,7 +2,7 @@
 title: Microsoft Curate - Create an Insertion Order
 description: The articles provides information on how to create an insertion order.
 ---
-# Create an insertion order
+# Microsoft Curate - Create an insertion order
 
 Insertion orders enable you to better organize, track, and allocate budget to your line items. Associating your line items with insertion orders allows you to preserve historical pacing and performance data across line items under a single insertion order, and to streamline your setup for long-standing advertiser relationships.
 

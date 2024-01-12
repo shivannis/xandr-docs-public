@@ -4,7 +4,7 @@ description: The article explains political advertising relating to elections, b
 ms.date : 10/28/2023
 ---
 
-# Political advertising
+# Microsoft Curate - Political advertising
 
 Xandr permits political advertising (advertising relating to elections, ballot initiatives, or political candidates) in the United States, but requires that such advertising comply with applicable law. As required by law, you must certify certain information about the ads and the political organization that purchased them for all political advertising on the state or local level, and for political advertising on the federal level in Washington State.
 

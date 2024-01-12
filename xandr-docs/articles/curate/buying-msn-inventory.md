@@ -4,7 +4,7 @@ description: The article provides an overview of inventory, discussing its avail
 
 ---
 
-# Buying MSN inventory
+# Microsoft Curate - Buying MSN inventory
 
 ## Inventory overview
 

@@ -3,7 +3,7 @@ title: Microsoft Curate - Create a User
 description: The article describes how You can create users and assign them to various roles. 
 ---
 
-# Create a user
+# Microsoft Curate - Create a user
 
 You can create users and assign them to various roles. Each role gives the user a different level of access to your account. For each user you can personalize the formats used for decimals and large numbers. This page walks you through the process.
 

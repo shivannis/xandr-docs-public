@@ -1,10 +1,10 @@
 ---
-title: Planner Troubleshooting
+title: Microsoft Curate - Planner Troubleshooting
 description: The article discusses various troubleshooting criteria.
 ms.date : 10/28/2023
 ---
 
-# Planner troubleshooting
+# Microsoft Curate - Planner troubleshooting
 
 ## Estimated Reach = 0
 
