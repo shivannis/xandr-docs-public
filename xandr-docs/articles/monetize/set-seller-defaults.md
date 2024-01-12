@@ -1,13 +1,12 @@
 ---
 title: Microsoft Monetize - Set Seller Defaults
-description: The article helps you to set seller defaults on the Partner Center Screen. The default settings enable the establishment of default inventory trust settings for all sellers, with the option to override settings for individual sellers. 
+description: The article facilitates setting default inventory trust on the Partner Center Screen, allowing customization for individual sellers.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - Set seller defaults
 
-On the **Partner Center Screen**, the **Default Settings** option allows you to establish default inventory trust settings for all sellers. It is possible to override these
-settings for individual sellers. For details, see [Edit Seller Defaults](edit-seller-defaults.md).
+On the **Partner Center Screen**, the **Default Settings** option allows you to establish default inventory trust settings for all sellers. It is possible to override these settings for individual sellers. For details, see [Edit Seller Defaults](edit-seller-defaults.md).
 
 > [!NOTE]
 > Inventory trust settings only apply to standard line item targeting.
@@ -21,8 +20,7 @@ Go to the **Partner Center** screen (**Partners \> Partner Center**) and click o
 > [!IMPORTANT]
 > **Changes to the Partner Center**
 >
-> New sellers are eligible (that is, available for buying) by default in **Partner Center**, and we have removed the ability to set default eligibility to **Blocked**. Though
-> default eligibility options are no longer available, no **Partner Center** blocks set before March 10, 2016 have changed.
+> New sellers are eligible (that is, available for buying) by default in **Partner Center**, and we have removed the ability to set default eligibility to **Blocked**. Though default eligibility options are no longer available, no **Partner Center** blocks set before March 10, 2016 have changed.
 >
 > AppNexus Direct sellers can only be blocked using domain or campaign exclusions.
 > [!TIP]

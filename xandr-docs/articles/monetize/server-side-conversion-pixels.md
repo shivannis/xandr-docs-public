@@ -20,10 +20,9 @@ This page makes references to an attribution server. This is a server that is se
 
 ## Getting the URL for a server-side pixel call
 
-For server-side conversion pixels, you'll need to generate a URL that you can call, instead of an HTML-based pixel that is placed on a publisher's web page. To do this, consult the Explore Advanced Options section of the [Export Conversion Pixels](export-conversion-pixels.md) page. The URL that is generated when you export the pixel
-will look something like this:
+For server-side conversion pixels, you'll need to generate a URL that you can call, instead of an HTML-based pixel that is placed on a publisher's web page. To do this, consult the **Explore Advanced Options** section of the [Export Conversion Pixels](export-conversion-pixels.md) page. The URL that is generated when you export the pixel will look something like this:
 
-:::image type="content" source="media/serverside-conversion-revised.png" alt-text="The screenshot shows how to use server side conversion pixels by generating a tracking URL instead of using an HTML pixel on a publishers page.":::
+:::image type="content" source="media/serverside-conversion-revised.png" alt-text="Screenshot that shows how to Generate tracking URL for server-side conversion pixels and not HTML on publishers page.":::
 
 ## Adding parameters to an server-side pixel call
 
@@ -33,8 +32,7 @@ You can add the following parameters to any SSPX call:
 - `value`
 - `other`
 
-To use these parameters, you must insert them into the query string before the `sspdata` parameter. For more details about these parameters, see [Conversion Pixels
-Advanced](conversion-pixels-advanced.md).
+To use these parameters, you must insert them into the query string before the `sspdata` parameter. For more details about these parameters, see [Conversion Pixels Advanced](conversion-pixels-advanced.md).
 
 The following is an example of a server-side conversion pixel call with additional parameters:
 
@@ -43,7 +41,7 @@ https://sspx-router.adnxs.com/sspx?id=25619&order_id=1234&value=5678&sspdata=ams
 ```
 
 > [!NOTE]
-> The sspx handler is supported over only in secure (https://secure.adnxs.com/sspx) mode.
+> The sspx handler is supported over only in secure `https://secure.adnxs.com/sspx` mode.
 
 ## Testing a server-side pixel
 
@@ -59,12 +57,12 @@ https://sspx-router.adnxs.com/sspx?id=25619&order_id=1234&value=5678&sspdata=ams
 
    > [!NOTE]
    > - `id` is the pixel ID from Xandr
-   > - `sspdata` is the populated ${SSP_DATA} token; the length of this string is susceptible to change
+   > - `sspdata` is the populated `${SSP_DATA}` token; the length of this string is susceptible to change
 
 ## Gotchas
 
-- The sspx-router call when a user converts often includes a 302 redirect. The redirect must be followed for a conversion to be logged. When using the command line tool, cURL, be sure to include ""-L  command in the call to allow the redirect.
-- Server-side pixels cannot be used to add or remove users from segments. However, a normal, client-side pixel can add or remove users from segments; see [Conversion Pixels   Advanced](conversion-pixels-advanced.md).
+- The sspx-router call when a user converts often includes a 302 redirect. The redirect must be followed for a conversion to be logged. When using the command line tool, cURL, be sure to include `""-L` command in the call to allow the redirect.
+- Server-side pixels cannot be used to add or remove users from segments. However, a normal, client-side pixel can add or remove users from segments; see [Conversion Pixels Advanced](conversion-pixels-advanced.md).
 - The `sspdata` parameter must be the last parameter listed in the conversion call sent from the attribution server to  Xandr.
 - Server-side pixel data tokens typically have a period at the end, which must be included in calls.
 
@@ -78,7 +76,7 @@ The steps are the same as above, but in Step 4, you will add the macro to an imp
 
 :::image type="content" source="media/pixels.png" alt-text="Screenshot that describes how you will add the macro to an impression tracking pixel instead of the creatives landing page URL.":::
 
-Note that with this method, you will have an SSP_DATA token for every single impression rather than for only clicks.
+Note that with this method, you will have an `SSP_DATA` token for every single impression rather than for only clicks.
 
 ## Related topics
 

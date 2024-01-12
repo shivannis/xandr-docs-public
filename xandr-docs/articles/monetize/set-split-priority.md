@@ -1,10 +1,10 @@
 ---
-title: Set Split Priority
-description: The article shows how to prioritize programmable splits, assign a priority number to each split in the Split Details grid, where impressions are allocated to the split with the lowest priority number, ensuring unique priority assignments for each split within a line item.
+title: Microsoft Monetize - Set Split Priority
+description: The article guides prioritizing programmable splits by assigning unique priority numbers in the Split Details grid, ensuring proper impression allocation.
 ms.date: 10/28/2023
 ---
 
-# Set split priority
+# Microsoft Monetize - Set split priority
 
 If an impression applies to multiple programmable splits, the impression is assigned to the split with the lowest priority number.
 
@@ -13,4 +13,4 @@ For example, if Split A (priority 1) is targeting "domain=cnn.com", Split B (pri
 1. Go to the **Split Details** grid.
 1. Set a priority number for each of your line item's splits.
 
-The same priority number can't be set for multiple splits.
+   The same priority number can't be set for multiple splits.

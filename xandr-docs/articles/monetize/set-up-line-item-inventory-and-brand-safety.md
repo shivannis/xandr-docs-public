@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Up Line Item Inventory and Brand Safety
-description: The article facilitates the setup of line item inventory by allowing users to specify the desired supply source, content categories, web or app inventory preference, blocklists or allowlists, brand safety settings, and ads.txt targeting. 
+description: The article simplifies line item setup with supply source, content categories, inventory preferences, block/allowlists, brand safety, and ads.txt.
 ms.date: 10/28/2023
 ---
 
@@ -15,17 +15,17 @@ You can use the **Inventory & Brand Safety Targeting** section to specify the ty
    | Supply Source | Description |
    |---|---|
    | **Open Exchange** | Real-time bidding in our open exchange (also known as RTB). If you select **Open Exchange**, you can opt to pay per impression or per view. We also recommend that you apply an allowlist or a brand safety segment as well. The **Advanced Targeting** subsection displays within the **Inventory & Brand Safety Targeting** section after selecting the **Open Exchange** checkbox so that you can select specific open exchanges. |
-   | **Managed** | Select this option if you have a managed relationship. If you select this option, you must select a **Line Item Priority** from the pull-down menu to rank the line item in the auction.<br>**Note**:<br>The default line item priority is 5. When the line item's priority is ranked above the network's reselling priority, the line item will take precedence over line items with lower priorities, as well as open exchange demand. When the line item's priority is ranked below the network's reselling priority, the line item will compete with open exchange bids.<br>The network's reselling priority gives preference to its own advertisers' campaigns over campaigns run by external buyers. |
+   | **Managed** | Select this option if you have a managed relationship. If you select this option, you must select a **Line Item Priority** from the pull-down menu to rank the line item in the auction.<br>**Note**: The default line item priority is 5. When the line item's priority is ranked above the network's reselling priority, the line item will take precedence over line items with lower priorities, as well as open exchange demand. When the line item's priority is ranked below the network's reselling priority, the line item will compete with open exchange bids.<br>The network's reselling priority gives preference to its own advertisers' campaigns over campaigns run by external buyers. |
    | **Deals** | Select this option if you want to buy deals that publishers have exposed to you. You can choose to target all deals or only specific deals. If you select **Specific Deals**, you can include/exclude deals or deal lists. |
 
-2. Set your **Managed Inventory**.
+1. Set your **Managed Inventory**.
 
     This setting controls targeting inventory by universal or custom content categories, as well as how you target direct inventory.
 
     > [!NOTE]
     > This field will only appear if you have selected **Managed** in the **Supply Source** subsection.
 
-3. Set the **Inventory Type**:
+1. Set the **Inventory Type**:
     - **App & Web** - Runs on both inventory types (**default setting**).
     - **App Only** - Runs in applications installed on mobile tablets, phones, and Windows 8 devices.
     - **Web Only** - Runs on standard websites and those optimized for browsers on mobile devices.
@@ -33,14 +33,14 @@ You can use the **Inventory & Brand Safety Targeting** section to specify the ty
     > [!TIP]
     > The inventory type can also be set at the insertion order level.
 
-4. Select a member-level or advertiser-level blocklist or create a blocklist directly from the **Inventory & Brand Safety Targeting** section.
+1. Select a member-level or advertiser-level blocklist or create a blocklist directly from the **Inventory & Brand Safety Targeting** section.
 
     The inventory that has been included in your blocklists won't be bidded on. By default, the Xandr blocklist will always be applied.
   
     > [!NOTE]
     > If the **Require for all Line Items** checkbox has been selected at the Network level for a particular blocklist, it will be applied to all of your line items and can't be removed.
 
-5. Select a member-level or advertiser-level allowlist or create an allowlist directly from the **Inventory & Brand Safety Targeting** section.
+1. Select a member-level or advertiser-level allowlist or create an allowlist directly from the **Inventory & Brand Safety Targeting** section.
 
     The inventory that has been included in your allowlists will be bidded on.
 
@@ -51,7 +51,7 @@ You can use the **Inventory & Brand Safety Targeting** section to specify the ty
    > - If you selected **Open Exchange** or **Managed** as your **Supply Source**, you can only bid on inventory in the allowlist.
    > - You can view or export selected allowlists. Allowlists can also be applied at the insertion order level.
 
-6. Add brand safety segments.
+1. Add brand safety segments.
 
     Brand safety segments are pre-defined by third-party verification vendors. These segments help apply additional quality controls to the inventory that you are targeting such as exclude drugs. They are used to limit the placements/pages you will be able to target as opposed to other kinds of segments that are used to target specific
     groups of users.
@@ -62,18 +62,18 @@ You can use the **Inventory & Brand Safety Targeting** section to specify the ty
        > [!TIP]
        > To view all of your brand safety segment selections, click **Summary**.
 
-      c. Select the checkbox for each segment that you want to apply (charges will apply).
+    1. Select the checkbox for each segment that you want to apply (charges will apply).
 
-      d. Click **Save**.
+    1. Click **Save**.
 
       If you select more than one brand safety segment, a segment group will be automatically created for each one (under **Targeting \> segments**)  and they will be ANDed together.
 
-7. Expand the **Advanced Targeting** subsection and make an **Ads.txt** selection. When the **ads.txt** option is selected, the line item will only target web inventory on the open exchange that is authorized in a publisher's `ads.txt` file.
+1. Expand the **Advanced Targeting** subsection and make an **Ads.txt** selection. When the **ads.txt** option is selected, the line item will only target web inventory on the open exchange that is authorized in a publisher's `ads.txt` file.
 
     > [!NOTE]
     > The **ads.txt** targeting parameter only applies to open exchange inventory. It does not affect deal inventory targeting.
 
-8. Apply key/value targeting.
+1. Apply key/value targeting.
 
     > [!NOTE]
     > If you have **Open Exchange** selected as your **Supply Source**, you won't be able to apply the necessary key/value targeting.

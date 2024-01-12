@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Up Cross-Device Attribution
-description: The article helps you to know about attribute conversions across a multi-device consumer journey, you need to ensure your line item is correctly set up, including conversion pixels and segment targeting.
+description: Tha article guides setting up line items with conversion pixels and segment targeting for accurate attribute conversions in a multi-device consumer journey.
 ms.date: 10/28/2023
 ---
 
@@ -12,11 +12,12 @@ Set up a conversion pixel to track [Conversion Attribution](conversion-attributi
 
 In order to track conversions across devices and view associated metrics, please set the Augmented Line Item in the following way:
 
-1.  Have **Cross Device** enabled in **Basic Settings**.
-1.  Implement first/third party audience segment  targeting in **Audience Segments**. (Recommended for a CTV campaign. Optional for other campaigns).
-1.  In the **Optimization** section, select the pixels you want to track conversions against using the **Conversion Tracking** option.
-1.  You can then run the **Analytics Report** and/or the **Device Analytics** report to get the number of conversions/details on the conversion device. (See
-    a. [Cross-Device Reporting](cross-device-reporting.md)). The cross-device related metrics in these reports are as follows:
+1. Have **Cross Device** enabled in **Basic Settings**.
+1. Implement first/third party audience segment  targeting in **Audience Segments**.
+
+   (Recommended for a CTV campaign.   Optional for other campaigns).
+1. In the **Optimization** section, select the pixels you want to track conversions against using the **Conversion Tracking** option.
+1. You can then run the **Analytics Report** and/or the **Device Analytics** report to get the number of conversions/details on the conversion device. (See [Cross-Device Reporting](cross-device-reporting.md)). The cross-device related metrics in these reports are as follows:
 
     - **Advertiser Analytics** - The report has two metrics:
       - Post View Conversions Cross Device

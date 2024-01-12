@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Line Item Frequency and Recency Caps
-description: The article helps you to control the frequency and recency of creatives shown to a user by setting caps at different levels—line item, advertiser, insertion order, and creative. 
+description: The article helps manage creative display frequency/recency by setting caps at line item, advertiser, insertion order, and creative levels.
 ms.date: 10/28/2023
 ---
 

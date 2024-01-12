@@ -1,21 +1,20 @@
 ---
 title: Microsoft Monetize - Server Side Cookie Store
-description: The article explains the concept of a server-side cookie store that provides more control over cookie management and security, allowing servers to handle sensitive information and enhance web application security.
+description: The article explains the concept of a Server-side cookie store which enhances control, security for sensitive info in web apps.
 ms.date: 10/28/2023
 ---
-
 
 # Microsoft Monetize - Server side cookie store
 
 User data, such as segments and how many times a user has seen a particular creative, is a big part of the targeting and decision-making process for most campaigns. For this reason we need to maintain consistent and comprehensive data about a user no matter where, when, or how we are "seeing" them across the Internet landscape.
 
-Traditionally user data is stored in the user's browser cookie, but in many auctions, Xandr does not have access to the browser. (For example, when we are passed a server-side ad call from an exchange.) So how do we both recognize that user, and access their relevant user data across multiple sites and platforms? To do this, we
-designed the Xandr cookie store, a server-side user data storage system. With the cookie store and user syncing, we are able to:
+Traditionally user data is stored in the user's browser cookie, but in many auctions, Xandr does not have access to the browser. (For example, when we are passed a server-side ad call from an exchange.) So how do we both recognize that user, and access their relevant user data across multiple sites and platforms? To do this, we designed the Xandr cookie store, a server-side user data storage system. With the cookie store and user syncing, we are able to:
 
-- Sync user ID and frequency data across all Xandr supply partners
-- Store cookie data, both yours and ours, server side, so that it is accessible on every ad call
+- Sync user ID and frequency data across all Xandr supply partners.
+- Store cookie data, both yours and ours, server side, so that it is accessible on every ad call.
 
-For an exact listing of the cookies set by the Xandr Platform, and detailed information on what they contain, see [Cookies](http://appnexus.com/cookies).
+  > [!NOTE]
+  > For an exact listing of the cookies set by the Xandr Platform, and detailed information on what they contain, see [Cookies](http://appnexus.com/cookies).
 
 ## Mapping user IDs
 
@@ -32,8 +31,7 @@ The exact method of ID mapping differs depending on our integration partner. We 
 
 ## Cross datacenter syncing
 
-One thing we are highly focused on is making sure all user data is available in all Xandr data centers. We currently have datacenters in Los Angeles, the New York metro region,
-and Amsterdam, and users are routed to the topologically closest one. This means that users in the middle of the United States might be sometimes routed to New York and sometimes Los Angeles. Or, in the event of a networking blip at one datacenter, all traffic would be routed to the other datacenter.
+One thing we are highly focused on is making sure all user data is available in all Xandr data centers. We currently have datacenters in Los Angeles, the New York metro region, and Amsterdam, and users are routed to the topologically closest one. This means that users in the middle of the United States might be sometimes routed to New York and sometimes Los Angeles. Or, in the event of a networking blip at one datacenter, all traffic would be routed to the other datacenter.
 
 Let's say we have a user in North Dakota who sees a creative six times. Three of those times the user was routed to the New York datacenter, and three of those times they were routed to LA.
 
@@ -41,8 +39,7 @@ On the seventh impression, the user is routed to New York. We need to know that 
 
 ## Server-side segment data storage
 
-Segment data, whether passed in through a [segment](working-with-segments.md) or through an offline transfer, is stored in the Cookie Store instead of the user's
-browser. This way segment data is available across all inventory sources, third party exchanges, and inventory aggregators.
+Segment data, whether passed in through a [segment](working-with-segments.md) or through an offline transfer, is stored in the Cookie Store instead of the user's browser. This way segment data is available across all inventory sources, third party exchanges, and inventory aggregators.
 
 You can also update segment data at any time without having access to the user via our Batch Segment API.
 

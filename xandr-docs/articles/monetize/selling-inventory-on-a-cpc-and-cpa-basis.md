@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 In order to foster a stronger ecosystem on Xandr, we pioneered the ability to resell your inventory on a CPC or CPA basis in real time. Since many networks negotiate financial terms with publishers based on a revenue share per conversion or click, it makes sense that networks should be able to resell inventory in this fashion to other networks.
 
-Selling inventory in this fashion allows you to demand a larger payout for accepting more risk as the seller. We have built capabilities into Monetize to support this tradeoff.
+Selling inventory in this fashion allows you to demand a larger payout for accepting more risk as the seller. We have built capabilities into Microsoft Monetize to support this tradeoff.
 
 ## Overview
 
@@ -32,8 +32,7 @@ Based on the example, the CPA payment type will win the auction. The creative is
 
 ## Allowing payment types on a per-buyer basis
 
-Sellers can choose which buyers they will accept CPA and CPC payment types from. For instructions, see the [Edit Buyer Eligibility, Allowed Payment Types, and
-Targeting Access](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
+Sellers can choose which buyers they will accept CPA and CPC payment types from. For instructions, see the [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
 
 ## Related topics
 

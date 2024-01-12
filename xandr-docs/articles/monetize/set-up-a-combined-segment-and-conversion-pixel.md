@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Set Up a combined segment and conversion pixel
 
-Do you have an advertiser that only accepts one conversion event per user or only one conversion event per user every X minutes/hours/days? If so, you should be using segment targeting to exclude converters and increase ROI. You can create a combined Segment and Conversion pixel, so you only have to give your advertiser a single pixel to put on their
-conversion page.
+Do you have an advertiser that only accepts one conversion event per user or only one conversion event per user every X minutes/hours/days? If so, you should be using segment targeting to exclude converters and increase ROI. You can create a combined Segment and Conversion pixel, so you only have to give your advertiser a single pixel to put on their conversion page.
 
 ## Scenario
 
@@ -23,8 +22,7 @@ There are two possible approaches. Once a user has converted, you can either:
 Generally, it is recommended that you use the first approach for a couple of reasons:
 
 1. If you're constantly adding new users to your "Auto Intenders" segment, you could end up re-adding a converted user.
-1. If multiple advertisers are using your "Auto Intenders" segment, you end up removing users that didn't convert for every advertiser and
-    a. delete valuable data.
+1. If multiple advertisers are using your "Auto Intenders" segment, you end up removing users that didn't convert for every advertiser and delete valuable data.
 
 ## Setup
 

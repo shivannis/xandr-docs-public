@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Set default buyer eligibility, allowed payment types, and targeting access
 
-On the **Partner Center** screen, the **Default Settings** option allows you to establish default buyer eligibility, allowed payment types, and targeting access for all buyers.
-It is possible to override these settings for individual buyers.
+On the **Partner Center** screen, the **Default Settings** option allows you to establish default buyer eligibility, allowed payment types, and targeting access for all buyers. It is possible to override these settings for individual buyers.
 
 For details, see [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
 

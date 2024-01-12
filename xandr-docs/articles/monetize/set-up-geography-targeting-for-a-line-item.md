@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Up Geography Targeting for a Line Item
-description: The article helps you to target users effectively, choose a geographic element like country, region, city, metro code, or postal code. You can optionally, set up additional geographic inclusions or exclusions. 
+description: The article aids targeting users with geographic elements (country, region, city, metro, postal code), allowing inclusions/exclusions.
 ms.date: 10/28/2023
 ---
 

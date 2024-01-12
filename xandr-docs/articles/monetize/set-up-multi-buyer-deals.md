@@ -1,6 +1,6 @@
 ---
-title:  Set Up Multi-Buyer Deals
-description: The article helps you to set up deals with multiple buyers across different platforms or DSPs (Demand Side Platforms) and deals that include all buyers on a specific platform.
+title: Set Up Multi-Buyer Deals
+description: The article aids in setting up deals with multiple buyers across platforms/DSPs, including all buyers on a specific platform.
 ms.date: 10/28/2023
 ---
 
@@ -13,19 +13,19 @@ From the **Deal** section of the **Basic Setup** section see [Create a Deal Line
 1. Click **Edit** under **Buyers** to open the **Buyer Targeting** screen.
 
     The **Buyer Targeting** screen has the following tabs:
-    - **DSPs** – lists individual DSPs (bidders) that support bidder-wide deals. Click the “\>” after the DSP to display the list of buyers on that DSP. You can search for DSPs by name and ID. (**DSP Name** corresponds to Bidder Name. **DSP ID** corresponds to Bidder ID.)
+    - **DSPs** – lists individual DSPs (bidders) that support bidder-wide deals. Click the “**\>**” after the DSP to display the list of buyers on that DSP. You can search for DSPs by name and ID. (**DSP Name** corresponds to Bidder Name. **DSP ID** corresponds to Bidder ID.)
     - **Buyers** – corresponds to members or seats, depending on which the DSP is using (see [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md)). You can search for buyers by name and ID (for seat buyers, **Buyer Name** corresponds to Seat Name, **Buyer ID** corresponds to Seat Code, and **DSP Name** corresponds to Bidder
       Name)
 
-2. Click either the **DSP**s or **Buyers** tab to enable the following configurations:
+1. Click either the **DSP**s or **Buyers** tab to enable the following configurations:
   
-      a. To set up bidder-level deals with all buyers on a DSP, click the **DSPs** tab to display available DSPs that use their own seat IDs for buying on a deal and click the green check mark to include any.
+    1. To set up bidder-level deals with all buyers on a DSP, click the **DSPs** tab to display available DSPs that use their own seat IDs for buying on a deal and click the green check mark to include any.
 
-   b. To set up a multi-buyer deal with multiple buyers across various DSPs, you can either:
+    1. To set up a multi-buyer deal with multiple buyers across various DSPs, you can either:
      - Click the **Buyers** tab to display available buyers and click the green check mark to include any.
-     - Click the **DSP**s tab to display available DSPs, click the “\>” after the DSP to display the list of buyers on that DSP, and click the green check mark to include any.
+     - Click the **DSP**s tab to display available DSPs, click the “**\>**” after the DSP to display the list of buyers on that DSP, and click the green check mark to include any.
 
        > [!NOTE]
        > Not all DSPs or buyers will be selectable; DSPs need to be enabled by Xandr for multi-buyer deals on an individual basis based on their support for the feature. For any DSP that does not support multi-buyer deals, you can still include one buyer from that DSP on a broader multi-buyer deal. If you think a DSP you’re setting up a deal with should support multi-buyer deals, please contact your account representative.
 
-3. Click **Save**.
+1. Click **Save**.
