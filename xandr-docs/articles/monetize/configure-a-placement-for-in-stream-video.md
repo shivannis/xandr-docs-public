@@ -1,10 +1,10 @@
 ---
-title : Microsoft Monetize - Configure a Placement for In-Stream Video
-description : The article shows how to set up an in-stream video placement. 
+title: Configure a Placement for In-Stream Video
+description: The article shows how to set up an in-stream video placement. 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Configure a placement for in-stream video
+# Configure a placement for in-stream video
 
 To set up an in-stream video placement, use the [Create a Placement](create-a-placement.md) workflow, select **Allowed Media \> Media Types \> Video**, and provide the required
 information about video context, player width and height, and skippability, as well as whether the ad will be part of a group of sequential ads (ad pod). You can also use the placement to define information about duration, playback method, and mime types.
