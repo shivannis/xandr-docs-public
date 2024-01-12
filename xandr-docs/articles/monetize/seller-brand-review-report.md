@@ -145,7 +145,7 @@ Follow these steps to run your report.
     delivered to you, and how.
 
     > [!IMPORTANT]
-    > Essential information required for user success<b>Important:</b> For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
+    > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
 1. Select the relevant filters to limit the data displayed to just the
     information you want. For example, rather than running a report that

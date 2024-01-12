@@ -14,8 +14,7 @@ For a detailed discussion of booked revenue, media cost, profit, and
 using your billing report, see [Network Revenue and Billing Your Clients](network-revenue-and-billing-your-clients.md).
 
 **Use this report to understand your Invoice:** If you would like to use
-this report to analyze your invoice, see [Understanding Your Invoice](understanding-your-invoice.md)
-.
+this report to analyze your invoice, see [Understanding Your Invoice](understanding-your-invoice.md).
 
 ## Time frame
 
@@ -74,24 +73,24 @@ for reports. However, all intervals are not available for every report.
 
 | Column | Filter? | Description |  |  |  |  |  |  |
 |---|---|---|---|---|---|---|---|---|
-| Advertiser | Yes | The advertiser that purchased the impression. |  |  |  |  |  |  |
-| Auction Charges Available | Yes | Indicates if there are charges from the auction associated with the impression (2-step pricing). |  |  |  |  |  |  |
+| Advertiser | Yes | The advertiser that purchased the impression. |  
+| Auction Charges Available | Yes | Indicates if there are charges from the auction associated with the impression (2-step pricing). |  
 | Buyer Cleared | Yes | Whether or not the buyer pays the seller or curator directly for the cost of media. <br> See [Buyer Cleared Table](#buyer-cleared-table)|   
-| Buyers | Yes | The buyer of this impression. |  |  |  |  |  |  |
-| Country | Yes | Country of this impression. |  |  |  |  |  |  |
-| Curator | Yes | The curator of this impression. |  |  |  |  |  |  |
+| Buyers | Yes | The buyer of this impression. |  
+| Country | Yes | Country of this impression. |  
+| Curator | Yes | The curator of this impression. | 
 | Curator Cleared | Yes | Whether or not the seller receives the reseller revenue from Xandr or the curator.<br> See [Curator cleared Table](#curator-cleared-table)  |
-| Deal ID | Yes | The deal associated with the impression. |  |  |  |  |  |  |
-| Deal Type | Yes | The deal type associated with the impression. Possible values are:<br> - Private Marketplace<br> - First Look<br> - Programmatic Guaranteed<br> - Curated |  |  |  |  |  |  |
-| Impression Type | Yes | See [Impression Types](#impression-types) below for definitions of the different types of impressions. |  |  |  |  |  |  |
-| Insertion Order | Yes | The insertion order of this impression. |  |  |  |  |  |  |
-| Is Claims Activity | Yes | Is adjustment made from Invalid Trafffic (IVT) claims. |  |  |  |  |  |  |
-| Is Cross Seat Activity | Yes | Only relevant if you have more than one member/seat on the Xandr platform. If you do, this field allows you to know whether the activity was associated with transactions between members you manage and therefore simplify the reconciling of their invoices. |  |  |  |  |  |  |
-| Is Deal | Yes | Is there any deal associated with the impression. Different from 'Deal' which is the actual deal id |  |  |  |  |  |  |
-| Media Type (Billing) | Yes | The video-specific media type classification for billing only. If you don't have video-specific pricing, this field is irrelevant. Possible values are<br> - -- <br> - Non-Video<br> - Video (Hosted)<br> - Video (Non-Hosted) |  |  |  |  |  |  |
-| Publisher | Yes | The publisher on whose inventory the impression occurred. |  |  |  |  |  |  |
-| Publisher ID | Yes | The external code associated with a publisher. |  |  |  |  |  |  |
-| Selling Currency | Yes | The transaction currency used by the seller to sell this impression. Including this dimension will cause the **Resold Revenue** and **Seller Media Cost** metrics to be displayed in the selling currency. |  |  |  |  |  |  |
+| Deal ID | Yes | The deal associated with the impression. |  
+| Deal Type | Yes | The deal type associated with the impression. Possible values are:<br> - Private Marketplace<br> - First Look<br> - Programmatic Guaranteed<br> - Curated |  
+| Impression Type | Yes | See [Impression Types](#impression-types) below for definitions of the different types of impressions. |  
+| Insertion Order | Yes | The insertion order of this impression. |  
+| Is Claims Activity | Yes | Is adjustment made from Invalid Trafffic (IVT) claims. |  
+| Is Cross Seat Activity | Yes | Only relevant if you have more than one member/seat on the Xandr platform. If you do, this field allows you to know whether the activity was associated with transactions between members you manage and therefore simplify the reconciling of their invoices. |  
+| Is Deal | Yes | Is there any deal associated with the impression. Different from 'Deal' which is the actual deal id |  
+| Media Type (Billing) | Yes | The video-specific media type classification for billing only. If you don't have video-specific pricing, this field is irrelevant. Possible values are<br> - -- <br> - Non-Video<br> - Video (Hosted)<br> - Video (Non-Hosted) |  
+| Publisher | Yes | The publisher on whose inventory the impression occurred. |  
+| Publisher ID | Yes | The external code associated with a publisher. |  
+| Selling Currency | Yes | The transaction currency used by the seller to sell this impression. Including this dimension will cause the **Resold Revenue** and **Seller Media Cost** metrics to be displayed in the selling currency. |  
 
 ### Buyer cleared table
 
