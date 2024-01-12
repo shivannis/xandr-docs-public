@@ -139,14 +139,14 @@ for reports. However, all intervals are not available for every report.
 | Value | Name | Definition |
 |---|---|---|
 | 1 | Blank | No creative served. |
-| 4 | Default | A default creative served because no campaigns bid or no other creative was eligible. |
-| 3 | Default Error | A default creative served due to a timeout issue. |
-| 10 | External Click | A click from a click tracker. |
-| 9 | External Impression | An impression from an impression tracker. |
-| 5 | Kept | One of your managed advertisers served a creative. |
 | 2 | PSA | A public service announcement served because no other creative was eligible. |
-| 8 | PSA Error | A public service announcement served due to a timeout issue. |
+| 3 | Default Error | A default creative served due to a timeout issue. |
+| 4 | Default | A default creative served because no campaigns bid or no other creative was eligible. |
+| 5 | Kept | One of your managed advertisers served a creative. |
 | 7 | RTB | The impression was sold to a third-party buyer. |
+| 8 | PSA Error | A public service announcement served due to a timeout issue. |
+| 9 | External Impression | An impression from an impression tracker. |
+| 10 | External Click | A click from a click tracker. |
 
 ## To run your report
 
