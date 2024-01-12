@@ -1,11 +1,11 @@
 ---
-title: Industry Reference - Seller Best Practices
+title: Seller Best Practices
 description: The article provides optimal practices for Xandr sellers, guiding them on maximizing revenue and optimizing monetization strategies.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Industry Reference - Seller best practices
+# Seller best practices
 
 This table documents some best practices for Xandr sellers to maximize revenue and optimize their monetization strategies.
 

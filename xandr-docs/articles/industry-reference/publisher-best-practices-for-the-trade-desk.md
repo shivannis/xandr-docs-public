@@ -1,11 +1,11 @@
 ---
-title: Industry Reference - Publisher Best Practices for The Trade Desk
+title: Publisher Best Practices for The Trade Desk
 description: The article outlines best practices for publishers on The Trade Desk platform.
 ms.date: 10/28/2023
 ms.custom : industry-reference
 ---
 
-# Industry Reference - Publisher best practices for The Trade Desk
+# Publisher best practices for The Trade Desk
 
 > [!IMPORTANT]
 > For additional details, see [The Trade Desk Inventory Policies](https://api.thetradedesk.com/v3/portal/ssp/doc/InventoryPolicies) which are subject to change as The Trade Desk makes updates to their policies.
