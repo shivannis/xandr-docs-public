@@ -1,44 +1,33 @@
 ---
-Title : Update Splits
-Description : Edit a Split
+title: Microsoft Monetize - Update Splits
+description: In this page learn to edit, activate/deactivate, delete and remove all splits.  
 ms.date: 10/28/2023
-You can edit splits from the Edit Line
-Item screen. Expand the Programmable
 ---
 
 
-# Update Splits
+# Microsoft Monetize - Update splits
 
+## Edit a split
 
-
-Edit a Split
-
-You can edit splits from the Edit Line
-Item screen. Expand the Programmable
-Splits section. Select a split from the Splits table or click on
+You can edit splits from the **Edit Line
+Item** screen. Expand the **Programmable
+Splits** section. Select a split from the Splits table or click on
 the pencil icon next to the split name.
 
-Duplicate a Split
+## Duplicate a split
 
-1.  Select the split(s) you'd like to duplicate and click
-    Actions
-     \>  Duplicate
-    Selected.
-2.  By default, the new splits have the same names as the original
+1. Select the split(s) you'd like to duplicate and click **Actions** \> **Duplicate Selected**.
+1. By default, the new splits have the same names as the original
     splits but with "COPY" as a prefix. If necessary, update the names
     for the new splits.
 
 Once you duplicate a split, you will need to manually readjust
 allocations and priorities.
 
-Activate/Deactivate a Split
+## Activate/Deactivate a split
 
 Select the split(s) you'd like to activate or deactivate and click
-Actions 
-\>  Activate Selected or
-Actions
- \>
- Deactivate Selected.
+**Actions** \> **Activate Selected or Actions** \> **Deactivate Selected**.
 
 When you activate a split:
 
@@ -52,48 +41,27 @@ When you deactivate a split:
 - Priorities will readjust automatically.
 - The split allocation is reassigned to the line item remainder.
 
-For more information, see
-<a href="create-an-augmented-line-item-ali.md" class="xref"
-title="You create augmented line items (ALIs) to define your financial relationship with an advertiser, set up targeting for an advertising campaign, and schedule your advertisements to run.">Create
-an Augmented Line Item</a>.
+For more information, see [Create an Augmented Line Item](create-an-augmented-line-item-ali.md).
 
-Delete a Split
+## Delete a split
 
 Select the split(s) you'd like to activate or deactivate and click
-Actions 
-\>  Delete Selected.
+**Actions** \> **Delete Selected**.
 
+> [!NOTE]
+> You cannot recreate a deleted split. Deleted splits will still appear in reporting.
 
-
-<b>Note:</b> You cannot recreate a deleted
-split. Deleted splits will still appear in reporting.
-
-
-
-Remove All Splits
+## Remove all splits
 
 Select the split(s) you'd like to activate or deactivate and click
-Actions 
-\>  Remove All Splits.
+**Actions** \> **Remove All Splits**.
 
+> [!NOTE]
+> You cannot recreate a deleted split. Deleted splits will still appear in reporting.
 
+## Related topics
 
-<b>Note:</b> You cannot recreate a deleted
-split. Deleted splits will still appear in reporting.
-
-
-
-Related Topic
-
-- <a href="configure-a-programmable-split.md" class="xref"
-  title="You can use programmable splits to refine line item targeting and dynamically adjust bids, budget allocation, and creative allocation across a line item&#39;s targeted inventory. Splits are recommended if you have sophisticated targeting requirements.">Configure
-  a Programmable Split</a>
-- <a href="understanding-splits.md" class="xref">Understanding
-  Splits</a>
-- <a href="import-or-export-split-csvs.md" class="xref">Import or Export
-  Split CSVs</a>
-- <a href="explore-splits.md" class="xref">Explore Splits</a>
-
-
-
-
+- [Configure a Programmable Split](configure-a-programmable-split.md)
+- [Understanding Splits](understanding-splits.md)
+- [Import or Export Split CSVs](import-or-export-split-csvs.md)
+- [Explore Splits](explore-splits.md)
