@@ -26,7 +26,7 @@ in just two steps.
 > [!WARNING]
 > Before you proceed, please note that deleting placements is permanent and cannot be reversed.
 
-## Step 1. Get started
+## Step 1. Get started 
 
 **Publisher-only clients:** Select
 **Placements** from the
@@ -64,7 +64,7 @@ inventory categorization, and self-auditing criteria to child
 placements. This page explains how to move a placement to a new
 placement group.
 
-## Step 1. Get started
+## Step 1. Get started 
 
 **Publisher-only clients:** Select **Inventory** \> **Placements**, then select the publisher you want to work with from the **Select a Publisher** dialog. This opens the **Placement Manager**, which shows both the **Placement Group List** and the **Placement List** under each placement group for the publisher.
 
