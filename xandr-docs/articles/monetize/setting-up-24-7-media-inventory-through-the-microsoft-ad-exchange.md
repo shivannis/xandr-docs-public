@@ -4,7 +4,7 @@ description: The article provides guidance on establishing a continuous 24/7 med
 ms.date: 10/28/2023
 ---
 
-# Setting up 24/7 media inventory through the microsoft ad exchange
+# Setting up 24/7 media inventory through the Microsoft Ad exchange
 
 The Microsoft Adverting Exchange (MAX) includes Real Media Group exclusively to 24/7 Open AdStream and Global Web alliances. You canadjust your campaign and targeting settings to purchase inventory according to several different scenarios.
 
@@ -48,11 +48,11 @@ In addition to the settings listed above, you must determine the exact targeting
 - [Target all Microsoft Advertising Exchange inventory including 24/7 Media](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.md#target-all-microsoft-advertising-exchange-inventory-including-247-media)
 - [Target all Microsoft Advertising Exchange inventory but exclude 24/7 Media inventory](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.md#target-all-microsoft-advertising-exchange-inventory-but-exclude-247-media-inventory)
 - [Target specific Microsoft Ad Exchange inventory only](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.md#target-specific-microsoft-ad-exchange-inventory-only)
-- [Target only 24/7 Media inventory](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange#target-only-247-media-inventory)
-- [Target specific Microsoft Ad Exchange](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange) (including 24/7 Media)
+- [Target only 24/7 Media inventory](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.md#target-only-247-media-inventory)
+- [Target specific Microsoft Ad Exchange (including 24/7 Media)](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.md#target-specific-microsoft-ad-exchange-including-247-media)
 - [Targeting specific Microsoft Ad Exchange domains where visible (select sites and countries)](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.md#targeting-specific-microsoft-ad-exchange-domains-where-visible-select-sites-and-countries)
 
-## Target all Microsoft advertising exchange inventory including 24/7 media
+## Target all Microsoft Advertising Exchange inventory including 24/7 media
 
 1. In the **Targeting** section under **Inventory**, click edit to open the **Inventory Targeting** dialog.
 1. In the **Inventory Targeting** dialog, select **3rd Party Inventory**.
@@ -62,7 +62,7 @@ In addition to the settings listed above, you must determine the exact targeting
    > [!NOTE]
    > **Microsoft Advertsing Exchange (Seller 280)** is included by default in any non-targeted campaign, so it is not necessary to specify this targeting unless you wish to dedicate budgets specifically to this source.
 
-## Target all Microsoft advertising exchange inventory but exclude 24/7 media inventory
+## Target all Microsoft Advertising Exchange inventory but exclude 24/7 media inventory
 
 You can choose all Microsoft Ad Exchange inventory while excluding all
 24/7 Media inventory. The steps are as follows:
@@ -75,7 +75,7 @@ You can choose all Microsoft Ad Exchange inventory while excluding all
 1. In the **Custom Categories** pane, enter the term 247 in the search field. Exclude **247_Media (23204)** by clicking the red exclude icon.
 1. The selection should now appear in the **Selected Custom Categories** list as a red "exclude" item.
 
-## Target specific Microsoft Ad exchange inventory only
+## Target specific Microsoft Ad Exchange inventory only
 
 You can choose to serve on only certain portions of Microsoft Ad Exchange inventory. The steps are as follows:
 
@@ -101,7 +101,7 @@ You can choose to target only 24/7 Media inventory. The steps are as follows:
 1. In the **Custom Categories** pane,  enter the term 247 in the search field. Include **247_Media (23204)** by clicking the green checkmark icon.
 1. The selection should now appear in the Selected Custom Categories list as a green "included" item.
 
-## Target specific Microsoft Ad exchange (including 24/7 Media)
+## Target specific Microsoft Ad Exchange (including 24/7 Media)
 
 You can choose to target specific inventory including 24/7 Media inventory. The steps are as follows:
 
