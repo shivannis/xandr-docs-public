@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Up Segment Targeting on a Line Item
-description: The article details the process of setting up segment targeting on a line item, enabling advertisers to define and target specific audience segments, both internally created and from third-party data sources, for more precise advertising campaigns.
+description: The article guide on setting up segment targeting for precise ad campaigns, defining and targeting specific audience segments from various sources.
 ms.date: 10/28/2023
 ---
 
@@ -10,38 +10,38 @@ You can set up a line item to target segments that you've created, as well as se
 
 For more information, see [Segment Targeting](segment-targeting.md).
 
-1.  Go to the **Audience & Location Targeting** \> **Audience & Location Segments** subsection within the **Create New Line Item** screen or **Edit Line Item** screen.
-    The **Audience & Location Segments** subsection displays all segments belonging to the advertiser for the associated line item as well as segments defined
-    at the Network level.
+1. Go to the **Audience & Location Targeting** \> **Audience & Location Segments** subsection within the **Create New Line Item** screen or **Edit Line Item** screen.
 
-2.  Click one of the following tabs:
+   The **Audience & Location Segments** subsection displays all segments belonging to the advertiser for the associated line item as well as segments defined at the Network level.
+
+1. Click one of the following tabs:
     - **My Audience Segments**
     - **Third Party Segments**
-3.  To target users within one segment group, do the following:
+1. To target users within one segment group, do the following:
 
-    a. Drag the appropriate segments that display on the left into Segment Group 1 on the right.
-    By default, the corresponding  ✓ icon will be automatically  selected for every segment after dragging each one. You can leave the ✓ icon selected to
-    target the users within the segment. Otherwise, click the
-    icon to exclude the users within the segment from being targeted.
+   1. Drag the appropriate segments that display on the left into Segment Group 1 on the right.
 
-    b.  Select **And** or **Or** to add boolean operators between the segments.
+      By default, the corresponding  ✓ icon will be automatically  selected for every segment after dragging each one. You can leave the ✓ icon selected to target the users within the segment. Otherwise, click the icon to exclude the users within the segment from being targeted.
 
-    If you target multiple segments, the following will occur depending upon the boolean operator that you select:
+   1. Select **And** or **Or** to add boolean operators between the segments.
 
-     - Selecting **And** will automatically add an AND boolean operator between segments, which means that users must be in all the segments to be targeted. 
-     - Selecting **Or** will  automatically add an OR boolean operator between segments, which means that users can be in any one of the segments to be targeted.
+      If you target multiple segments, the following will occur depending upon the boolean operator that you select:
 
-4.  To target users within multiple segment groups, do the following:
+      - Selecting **And** will automatically add an AND boolean operator between segments, which means that users must be in all the segments to be targeted.
+      - Selecting **Or** will  automatically add an OR boolean operator between segments, which means that users can be in any one of the segments to be targeted.
 
-    a.  Drag the appropriate segments that display on the left into Segment Group 1 on the right.
+1. To target users within multiple segment groups, do the following:
 
-    b.Click **Create New Group** to add more segment groups and drag the appropriate segments into each corresponding segment group.
+   1. Drag the appropriate segments that display on the left into Segment Group 1 on the right.
 
-    By default, the corresponding  ✓ icon will be automatically selected for every segment after dragging each one. You can leave the ✓ icon selected to target the users within the segment. Otherwise, click the - icon to exclude the users within the segment from being targeted.
+   1. Click **Create New Group** to add more segment groups and drag the appropriate segments into each corresponding segment group.
 
-    c.  Select **And** or **Or** to add boolean operators between the segments and segment groups.
+      By default, the corresponding  ✓ icon will be automatically selected for every segment after dragging each one. You can leave the ✓ icon selected to target the users within the segment. Otherwise, click the - icon to exclude the users within the segment from being targeted.
 
-    If you are targeting multiple segment groups, the following will occur depending upon the boolean operator that you select:
+   1. Select **And** or **Or** to add boolean operators between the segments and segment groups.
+
+      If you are targeting multiple segment groups, the following will occur depending upon the boolean operator that you select:
+
     - Selecting **And** will automatically add an AND boolean operator between the segments within each segment group, but an OR boolean operator will be
     added between the segment groups. To be targeted, users only have to belong to at least one segment group, not all of the specified segment groups.
     - Selecting **Or** will automatically add an OR boolean operator between the segments within each segment group, but an AND boolean operator will be added between the segment groups. To be targeted, users must belong to all of the specified segment groups.
@@ -53,7 +53,7 @@ For more information, see [Segment Targeting](segment-targeting.md).
 
     A boolean expression for this scenario would look something like this: (Require A OR Require B) AND (Exclude C) AND (Exclude D).
 
-5. **Optional:** To further refine your segment targeting, hover over any of the segments and click the pencil icon:
+1. **Optional:** To further refine your segment targeting, hover over any of the segments and click the pencil icon:
 
    | Setting | Description |
    |---|---|
@@ -61,10 +61,9 @@ For more information, see [Segment Targeting](segment-targeting.md).
    | **Value** | Refines the targeting criteria for a particular segment. For example, if you want to target a subset of users within a segment who have a household income that exceeds $200,000 USD and visited a product page containing different products, you would select **Above** from the **Value** pull-down menu and enter $200,000 USD in the text field.<br>Similarly, if you want to target a subset of users who have a household income between $100,000 USD and $200,000 USD, select **Between** in the **Value** pull-down menu and enter $99,999 USD in the **Greater than** field and $199,999 USD in the **Less than** field. |
 
    > [!NOTE]
-   > The options that are available from the **Fired** and **Value** menus may vary based on the data provider's offering. Xandr has only defined these options for segments that 
-   > you've created.
+   > The options that are available from the **Fired** and **Value** menus may vary based on the data provider's offering. Xandr has only defined these options for segments that you've created.
 
-6. Click **Save**.
+1. Click **Save**.
 
 ## Related topics
 

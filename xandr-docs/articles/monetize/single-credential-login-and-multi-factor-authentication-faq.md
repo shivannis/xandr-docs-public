@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Single Credential Login and Multi-Factor Authentication FAQ
-description: The article addresses common inquiries regarding single credential login and Multi-Factor Authentication (MFA), providing answers to frequently asked questions on these topics.
+description: The article answers common questions on single credential login and Multi-Factor Authentication (MFA).
 ms.date: 10/28/2023
 ---
 
@@ -19,8 +19,12 @@ You can find answers to the most frequently asked questions about single credent
 
 A number of long-standing pain points relating to how users access Xandr’s digital platform applications are being addressed. The issues were:
 
-- Users must have a separate set of authentication credentials to access each of their user accounts. Therefore, they must create, remember and periodically reset multiple passwords.
-- Users must sign in to each user account individually. Therefore, they must sign in each time they switch between user accounts/seats in order to transact on behalf of a different member.
+- Users must have a separate set of authentication credentials to access each of their user accounts.
+  
+  Therefore, they must create, remember and periodically reset multiple passwords.
+- Users must sign in to each user account individually.
+  
+  Therefore, they must sign in each time they switch between user accounts/seats in order to transact on behalf of a different member.
 - The more usernames and passwords a user has to remember, the more likely they are to write them down. This creates a security risk for Xandr and our clients.
 - Xandr’s new Information Security Policies (XISP) require that all Xandr applications be protected by a second factor of authentication.
 - Overall, we are simplifying how users manage their accounts.

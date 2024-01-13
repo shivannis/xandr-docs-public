@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Split FAQ
-description: The article covers FAQs on split objects, including preventing spend allocation to the default split, specifying limitations, and detailing a step-by-step process for enabling optimization on a line item with prior max bids using CSV export/import.
+description: The article addresses FAQs on split objects, covering spend allocation, limitations, and optimizing line items with prior max bids using CSV export/import.
 ms.date: 10/28/2023
 ---
 
@@ -27,7 +27,7 @@ The limitations per split object are as follows:
 
 Currently, the **Optimization** toggle is disabled once you've set max bids for splits. If you'd like to enable optimization and stop using the max bid in splits, it's not possible to do that through editing the individual splits. Instead, you need to download the splits as a CSV, delete the EV information from the CSV, turn on optimization, and import the edited CSV. This creates disjointed reporting (the optimized splits will have different split IDs than the nonoptimized splits), but preserves all of your setup data.
 
-1. Go to **Line Item**\> **Programmable Splits** and click **Export CSV** under **Actions**.
+1. Go to **Line Item** \> **Programmable Splits** and click **Export CSV** under **Actions**.
 1. Click **Save** to save the CSV file.
 1. Go to **Line Item** \> **Optimization** and toggle **Optimization Method** to **Optimization enabled**.
 1. Click **Review and Save** to save your changes to the line item.

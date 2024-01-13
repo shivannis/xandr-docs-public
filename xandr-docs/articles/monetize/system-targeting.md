@@ -11,8 +11,7 @@ You can target users based on their operating systems, browsers, language, devic
 
 By default, all operating systems, browsers, and languages are targeted. On the **System** dialog, you can narrow your targeting to include or exclude specific systems.
 
-- The **OS Family** tab shows all operating system families (for example Microsoft Windows or Apple Mac) and operating systems (for example Windows 8 or 10.8 Mountain Lion)
-  available for targeting. You can either include or exclude OS families and operating systems.
+- The **OS Family** tab shows all operating system families (for example Microsoft Windows or Apple Mac) and operating systems (for example Windows 8 or 10.8 Mountain Lion) available for targeting. You can either include or exclude OS families and operating systems.
 - The **Browser** tab shows all browsers available for targeting. You can either include or exclude browsers.
   
   > [!NOTE]
@@ -28,6 +27,4 @@ By default, all operating systems, browsers, and languages are targeted. On the 
 - The **Summary** tab shows a summary of the selected targeting settings.
 
   > [!WARNING]
-  > All system targeting types can be used but with some limitations. Due to inconsistent user agent naming conventions used by app providers and mobile carriers, the device type,
-  > device make/model, and OS targeting methods for mobile apps are only available for a small portion of inventory. Targeting these items will limit reach on mobile apps.
-  > Additionally, since a significant portion of all impressions are delivered to unknown browsers, operating systems, or both, you should consider targeting **Unknown** operating systems and browsers to avoid severely restricting reach.
+  > All system targeting types can be used but with some limitations. Due to inconsistent user agent naming conventions used by app providers and mobile carriers, the device type, device make/model, and OS targeting methods for mobile apps are only available for a small portion of inventory. Targeting these items will limit reach on mobile apps. Additionally, since a significant portion of all impressions are delivered to unknown browsers, operating systems, or both, you should consider targeting **Unknown** operating systems and browsers to avoid severely restricting reach.

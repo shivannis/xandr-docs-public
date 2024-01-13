@@ -1,13 +1,12 @@
 ---
 title: Supply Type Targeting
-description: The article explains supply type targeting, which involves targeting specific supply types through the Inventory Type field in the inventory and brand safety section of the line item setup.
+description: The article details supply type targeting, focusing on specific supply types through the Inventory Type field in line item setup.
 ms.date: 10/28/2023
 ---
 
 # Supply type targeting
 
-Supply Types (**App & Web**, **App Only**, or **Web Only**) can be targeted via the **Inventory Type** field in the **Inventory and Brand Safety** section of
-the line item setup (see [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)).
+Supply Types (**App & Web**, **App Only**, or **Web Only**) can be targeted via the **Inventory Type** field in the **Inventory and Brand Safety** section of the line item setup (see [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)).
 
 To restrict the placement types where your creatives may run, select the **Set custom supply type** checkbox and set the relevant supply toggles to **OFF**:
 

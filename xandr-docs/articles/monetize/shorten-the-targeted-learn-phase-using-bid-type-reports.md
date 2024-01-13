@@ -1,10 +1,10 @@
 ---
-title: Microsoft Monetize - Shorten the Targeted Learn Phase Using Bid Type Reports
-description: The guide advises on expediting the learning phase for a new campaign's goals by using Bid Type reports, emphasizing the need for budget allocation to let Xandr's optimization engine identify optimal inventory groupings.  
+title: Shorten the Targeted Learn Phase Using Bid Type Reports
+description: The guide recommends using Bid Type reports to speed up learning for new campaign goals. 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Shorten the targeted learn phase using bid type reports
+# Shorten the targeted learn phase using bid type reports
 
 > [!IMPORTANT]
 > This guide only applies to the legacy line item. If you are using the augmented line item (ALI), see [Optimization Guide - ALI](optimization-guide-ali.md).
@@ -26,7 +26,7 @@ To perform manual optimization use the Bid Type report. This report can be run a
 The report will show you exactly which placements within a publisher are still in the learn phase by displaying **learn** in the **Bid Type** column.
 
 > [!IMPORTANT]
-> Visit the Bid Type Definitions in the [Advertiser Reporting](advertiser-reporting.md) page to learn more about **bid types** in Xandr.
+> Visit the Bid Type Definitions in the [Advertiser Reporting](advertiser-reporting.md) page to learn more about bid types in Xandr.
 
 By analyzing the performance of placements in learn phase, you can begin to derive three main criteria:
 
@@ -34,9 +34,8 @@ By analyzing the performance of placements in learn phase, you can begin to deri
 - **Placements to watch**: placements where the data points are still inconclusive and you therefore need to observe for a little longer.
 - **Placements to keep**: placements where performance is pointing in the right direction and will potentially move into optimized soon.
 
-> [!NOTE]
-> The criteria suggested above is not exhaustive. Depending on the complexity of this analysis, you might derive additional ways of classifying your data and refining the
-> selection of inventory to exclude.
+   > [!NOTE]
+   > The criteria suggested above is not exhaustive. Depending on the complexity of this analysis, you might derive additional ways of classifying your data and refining the selection of inventory to exclude.
 
 The end goal of this step is to create a list of placements to remove from your campaign targeting. The broader objectives are:
 
@@ -48,6 +47,6 @@ In some instances, you may want to aggregate reporting at the Publisher or even 
 
 ## Step 3: Exclude inventory by publisher or placement ID
 
-Now that you have that list of placements (or perhaps even publishers) you would like to exclude, select **Campaign Manager**. In your campaign under **Targeting \>  Inventory**, click **Edit**. Select **3rd Party Inventory**, switch to **text** mode, and choose to target **placement**. Enter the IDs of the placements you wish to exclude. To exclude entire **publishers** instead of just placements, select publishers from the menu.
+Now that you have that list of placements (or perhaps even publishers) you would like to exclude, select **Campaign Manager**. In your campaign under **Targeting** \>  **Inventory**, click **Edit**. Select **3rd Party Inventory**, switch to **text** mode, and choose to target **placement**. Enter the IDs of the placements you wish to exclude. To exclude entire publishers instead of just placements, select **publishers** from the menu.
 
-Click the **Exclude** button and click Add to confirm the action. **Save** your changes in the **Campaign Manager**.
+Click the **Exclude** button and click **Add** to confirm the action. **Save** your changes in the **Campaign Manager**.

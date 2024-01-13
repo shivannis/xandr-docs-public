@@ -1,5 +1,5 @@
 ---
-title: Set Up Third-Party Mobile App Install Tracking
+title: Microsoft Monetize - Set Up Third-Party Mobile App Install Tracking
 description: The article guides users through the process of implementing third-party mobile app install tracking.
 ms.date: 10/28/2023
 ---
@@ -29,8 +29,7 @@ These are examples of partners that have integrated with Xandr for app install t
 ## Set up third-party mobile app install tracking
 
 > [!NOTE]
-> The instructions given here will only work with Xandr-hosted creatives at this time. Technically, our server-side conversion attribution requires the
-> `${SSP_DATA`} macro to be populated by the creative's ad server, so any ad server that populates this macro will work. In practice, there are not any other ad servers that populate this macro at this time.
+> The instructions given here will only work with Xandr-hosted creatives at this time. Technically, our server-side conversion attribution requires the `${SSP_DATA`} macro to be populated by the creative's ad server, so any ad server that populates this macro will work. In practice, there are not any other ad servers that populate this macro at this time.
 
 ### Step 1. Create a Conversion Pixel
 
@@ -51,21 +50,18 @@ https://wetrackinstalls.com/serve?action=click&publisher_id=[publisher_id]&site_
 ```
 
 > [!NOTE]
-> The URL you get from the vendor **must** use the macro `${SSP_DATA`} as the click ID. This click ID will be used in the "post-back" call described below, which the vendor makes
-> to report a successful app install. If this macro is not included in the URL, Xandr will not be able to record the conversion.
+> The URL you get from the vendor **must** use the macro `${SSP_DATA`} as the click ID. This click ID will be used in the "post-back" call described below, which the vendor makes to report a successful app install. If this macro is not included in the URL, Xandr will not be able to record the conversion.
 
 ### Step 3. Set the creative's landing page URL to the provided install tracking vendor URL
 
-Set the landing page of the creative (also known as the click URL) to the URL provided by your tracking vendor. This process is described in [Add a Creative](add-a-creative.md) 
-and [Add Creatives in Bulk](add-creatives-in-bulk.md).
+Set the landing page of the creative (also known as the click URL) to the URL provided by your tracking vendor. This process is described in [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md).
 
 > [!NOTE]
 > Make sure you fill out the click URL with any desired [Creative Macros](creative-macros.md), as described in **Step 2** above.
 
 ### Step 4. The install tracking vendor reports conversions back to Xandr
 
-When a creative with the install tracking click URL is clicked, the install tracking vendor will make a "post-back" call to Xandr that will report a successful conversion.
-Here's an example of a post-back URL:
+When a creative with the install tracking click URL is clicked, the install tracking vendor will make a "post-back" call to Xandr that will report a successful conversion. Here's an example of a post-back URL:
 
 ```
 https://sspx-router.adnxs.com/sspx?id=[appnexus conversion pixel ID]&sspdata=[click id passed in ${SSP_DATA} on click]
@@ -76,7 +72,7 @@ You should never need to see this URL, since it's called by the install tracking
 > [!NOTE]
 > The sspx handler is supported over non-secure (`http://adnxs.com/sspx`) and secure (`https://secure.adnxs.com/sspx`) modes.
 
-## How it works
+## How it works?
 
 When your creative's landing page URL is set up correctly, the install tracking process works as follows.
 
@@ -84,16 +80,14 @@ See the diagram below for a visualization of how this process works. The numbers
 
 1. The user clicks on the creative. The landing page for the creative is the URL provided by the app install tracker as described in **Step 2** above.
 
-1. Xandr logs the click and fills in the `${SSP_DATA`{style="line-height: 1.6;"}} token, as well as any device identifiers (such as `${DEVICE_APPLE_IDA`{style="line-height:
-    a. 1.6;"}} and other [Creative Macros](creative-macros.md) before redirecting to the install tracking vendor's server. The install tracking vendor also logs the click, along with the now filled-in contents of the `${SSP_DATA`{style="line-height: 1.6;"}} token and device IDs. The install tracker then redirects the user to the app download page.
+1. Xandr logs the click and fills in the `${SSP_DATA`{style="line-height: 1.6;"}} token, as well as any device identifiers (such as `${DEVICE_APPLE_IDA`{style="line-height: 1.6;"}} and other [Creative Macros](creative-macros.md) before redirecting to the install tracking vendor's server. The install tracking vendor also logs the click, along with the now filled-in contents of the `${SSP_DATA`{style="line-height: 1.6;"}} token and device IDs. The install tracker then redirects the user to the app download page.
 1. The user installs the app from the app download page.
 
 1. The app notifies the tracking vendor of an install and sends along its device ID.
 
-1. The install tracking vendor matches the device ID provided by the app to the click it logged earlier, and then fires the Xandr server-side conversion pixel, passing
-    a. the `${SSP_DATA`{style="line-height: 1.6;"}} token. This registers the conversion with Xandr.
+1. The install tracking vendor matches the device ID provided by the app to the click it logged earlier, and then fires the Xandr server-side conversion pixel, passing the `${SSP_DATA`{style="line-height: 1.6;"}} token. This registers the conversion with Xandr.
 
-:::image type="content" source="media/third-party-app-install-tracking.png" alt-text="Screenshot that  screenshot that demonstrates the installation tracking vendor matching the device ID provided by the app. Following this match, the Xandr server-side conversion pixel is triggered.":::
+:::image type="content" source="media/third-party-app-install-tracking.png" alt-text="Screenshot thar shows tracking vendor matching apps device ID, triggering Xandr server-side conversion pixel.":::
 
 ## Related topics
 

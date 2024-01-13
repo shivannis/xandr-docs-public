@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Share Your Packages with Buyers
-description: The article offers information on how sellers can proactively market their packages by sharing links with both Xandr and external buyers. It provides a step-by-step walkthrough of the process.
+description: The article offers information for sellers to market packages by sharing links with Xandr and external buyers, with a step-by-step walkthrough.
 ms.date: 10/28/2023
 ---
 
@@ -10,7 +10,7 @@ As a seller, you can proactively commercialize your packages by sending links to
 
 ## Share packages with any buyer
 
-To generate a public link that you can send to any buyer, on Monetize or off:
+To generate a public link that you can send to any buyer, on Microsoft Monetize or off:
 
 1. Click the **Open Public Package** button.
 1. Copy the URL in the screen that opens. This is the screen the buyer will see.
@@ -20,11 +20,11 @@ To generate a public link that you can send to any buyer, on Monetize or off:
 
 If you have customized packages for a specific buyer, you can grab a unique link to send just to that buyer:
 
-1.  Click the **Preview Packages** button.
-1.  On the **Packages Preview** screen, select **Select a specific buyer**, select the buyer, and click **OK**.
-1.  Once you're viewing your packages from the buyer's perspective,  click the **Open \<Buyer's\> Catolog** button.
-1.  Copy the URL in the screen that opens.
-1.  Email it to the specific buyer.
+1. Click the **Preview Packages** button.
+1. On the **Packages Preview** screen, select **Select a specific buyer**, select the buyer, and click **OK**.
+1. Once you're viewing your packages from the buyer's perspective,  click the **Open \< Buyer's\> Catolog** button.
+1. Copy the URL in the screen that opens.
+1. Email it to the specific buyer.
 
 ## Related topics
 

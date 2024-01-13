@@ -1,14 +1,13 @@
 ---
 title: Target Inventory on the Microsoft Advertising Exchange
-description: The article provides guidance on targeting inventory within the Microsoft Advertising Exchange, detailing the process of directing campaigns to run specifically on Microsoft Advertising Exchange inventory using Microsoft Monetize.
+description: The article guides on targeting Microsoft Advertising Exchange inventory, directing campaigns effectively.
 ms.date: 10/28/2023
 ---
 
 # Target inventory on the Microsoft Advertising Exchange
 
 > [!NOTE]
-> This form of targeting is only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see
-> [Buy-Side Targeting](buy-side-targeting.md).
+> This form of targeting is only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting](buy-side-targeting.md).
 
 This page shows you how to target a campaign to run on Microsoft Advertising Exchange inventory using Microsoft Monetize Monetize. You can target:
 
@@ -16,8 +15,8 @@ This page shows you how to target a campaign to run on Microsoft Advertising Exc
 - Specific Microsoft Advertising "bins" for MSN inventory
 - Specific domains for Microsoft Advertising web inventory in Denmark, Sweden, Norway, the Netherlands, Spain, Austria, Switzerland, India and South-East Asia
 
-> [!TIP]
-> For details on how to target Outlook.com, see [Buying Microsoft Outlook.com Inventory](buying-microsoft-outlook-com-inventory.md).
+  > [!TIP]
+  > For details on how to target Outlook.com, see [Buying Microsoft Outlook.com Inventory](buying-microsoft-outlook-com-inventory.md).
 
 ## Step 1. Open your campaign
 
@@ -59,8 +58,8 @@ In the **Inventory Targeting** dialog, under **3rd Party Inventory** \> **Seller
 
 To target specific Microsoft Advertising bins, follow the steps in **Option 1**, and then click on "Seller: Microsoft Advertising Exchange (280)" to expose a list of bins - named "Content Categories" on the Xandr platform. You can then either **Include** the specific bins that you want to target or **Exclude** the specific bins that you do not want to target.
 
-For a complete list of MS Ad Exchange bins with descriptions, see [Microsoft Advertising Exchange Inventory](microsoft-advertising-exchange-inventory.md).
-
+> [!IMPORTANT]
+> For a complete list of MS Ad Exchange bins with descriptions, see [Microsoft Advertising Exchange Inventory](microsoft-advertising-exchange-inventory.md).
 > [!TIP]
 > **Targeting Microsoft Advertising and Other Third-Party Inventory**
 >

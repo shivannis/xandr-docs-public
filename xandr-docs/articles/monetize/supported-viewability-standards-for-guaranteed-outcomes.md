@@ -1,13 +1,12 @@
 ---
 title: Microsoft Monetize - Supported Viewability Standards for Guaranteed Outcomes
-description: The article defines viewability standards supported for guaranteed outcomes.
+description: The article defines viewability standards for guaranteed outcomes—buyer-specific, including media type, viewability definition, and vendor.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - Supported viewability standards for guaranteed outcomes
 
-The definition for what constitutes a viewable impression varies from buyer to buyer. A chosen standard generally comprises three components:
-the media type, the viewability definition, and the measurement technology vendor. Guaranteed Outcomes has been built to support any standard made up of those three components, with each standard represented as a generic clearing event. The following clearing events are supported today for Guaranteed Views.
+The definition for what constitutes a viewable impression varies from buyer to buyer. A chosen standard generally comprises three components: the media type, the viewability definition, and the measurement technology vendor. Guaranteed Outcomes has been built to support any standard made up of those three components, with each standard represented as a generic clearing event. The following clearing events are supported today for Guaranteed Views.
 
 | Clearing Event Name | ID | Viewability Definition | Media Type | Measurement Technology Vendor |
 |---|---|---|---|---|

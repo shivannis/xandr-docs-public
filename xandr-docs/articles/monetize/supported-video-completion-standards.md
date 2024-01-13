@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Supported Video Completion Standards
-description: In the article, supported video completion standards are defined.
+description: The article outlines video completion standards, in which Guaranteed Completes track 100% duration, a universal event in IAB VAST Standard.
 ms.date: 10/28/2023
 ---
 
@@ -10,7 +10,7 @@ Guaranteed Completes defines a complete as a video ad which has reached 100% of 
 
 | Clearing Event Name | ID | Completion Definition | Media Type | Measurement Technology Vendor |
 |---|---|---|---|---|
-| Completes – Standard Complete | 10 | 100% of ad duration | Video | Xandr |
+| Completes – Standard Complete | `1` <br> `0` | 100% of ad duration | Video | Xandr |
 
 ## Related topic
 

@@ -7,8 +7,7 @@ ms.date: 10/28/2023
 # Target inventory on the Yahoo ad exchange
 
 > [!NOTE]
-> This form of targeting is only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see
-> [Buy-Side Targeting<](buy-side-targeting.md).
+> This form of targeting is only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting<](buy-side-targeting.md).
 
 This page shows you how to set up a campaign to run on Yahoo Ad Exchange (YAX) inventory.
 
@@ -16,7 +15,6 @@ This page shows you how to set up a campaign to run on Yahoo Ad Exchange (YAX) i
 > YAX Marketplace
 >
 > Clients who have been migrated to the the latest version of the Yahoo Ad Exchange, the YAX Marketplace, can target the entire YAX seller but can no longer target "Seller Lines" or specific YAX inventory.
-
 > [!TIP]
 > If you have negotiated deals with YAX, see [Create a Deal Campaign](create-a-deal-campaign.md). For information about negotiating deals with YAX, see [Negotiate Deals with Sellers](negotiate-deals-with-sellers.md).
 
@@ -70,7 +68,7 @@ To target specific Yahoo Ad Exchange "Seller Lines", click on "Yahoo Ad Exchange
 > **Targeting Yahoo Ad Exchange "Seller Lines" and Other Third-Party Inventory**
 >
 > - If you want to target specific Yahoo Ad Exchange "Seller Lines" and **all** other third-party inventory, the best method is to **Include** the Yahoo Ad Exchange seller, then **Exclude** the "Seller Lines" that you do not want to target.
-> - If you want to target specific Yahoo Ad Exchange "Seller Lines" and **some** other third-party inventory, the best method is to **Include** "Yahoo Ad Exchange (273)" and any other seller that you do want to target and then, under Publishers & Categories, **Exclude** the specific "Seller Lines" that you do not want to target.
+> - If you want to target specific Yahoo Ad Exchange "Seller Lines" and **some** other third-party inventory, the best method is to **Include** "Yahoo Ad Exchange (273)" and any other seller that you do want to target and then, under **Publishers & Categories**, **Exclude** the specific "Seller Lines" that you do not want to target.
 
 ## Step 4. Adjust your inventory quality filtering
 
@@ -81,12 +79,10 @@ In the **Targeting** section under **Inventory Quality**, select the **Serve on 
 
 ## Step 5. Set additional targeting options
 
-In the **Targeting** section, you can further restrict your campaign to target users based on geography, segment, frequency, daypart (day of week and time of day), system
-(browser and operating system), page properties, and demographics. For more information about targeting, see [Buy-Side Targeting](buy-side-targeting.md).
+In the **Targeting** section, you can further restrict your campaign to target users based on geography, segment, frequency, daypart (day of week and time of day), system (browser and operating system), page properties, and demographics. For more information about targeting, see [Buy-Side Targeting](buy-side-targeting.md).
 
 > [!TIP]
-> Since all additional targeting is respected, please be careful not to inadvertently restrict your campaign's reach. For example, if a Yahoo Ad Exchange "Seller Line"
-> covers Yahoo! US and you then use Geography targeting to target just users in Canada, your campaign will likely not serve any impressions.
+> Since all additional targeting is respected, please be careful not to inadvertently restrict your campaign's reach. For example, if a Yahoo Ad Exchange "Seller Line" covers Yahoo! US and you then use Geography targeting to target just users in Canada, your campaign will likely not serve any impressions.
 
 ## Step 6. Review and save your campaign
 

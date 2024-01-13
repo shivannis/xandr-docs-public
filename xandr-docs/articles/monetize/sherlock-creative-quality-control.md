@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Sherlock - Creative Quality Control
-description: The article highlights Xandr's dedication to combating malware in advertising through their automated scanning system, Sherlock, an automated creative scanning system used to detect malicious content and enhance ad quality. 
+description: The article highlights dedication to combating malware in advertising through Xandr's automated scanning system, Sherlock.
 ms.date: 10/28/2023
 ---
 
@@ -8,8 +8,7 @@ ms.date: 10/28/2023
 
 Xandr takes malware extremely seriously, and we are actively working to be at the forefront of prevention in order to protect our customers.
 
-We utilize our own automated creative scanning system, Sherlock, to detect malicious content and assist our human auditors with ad quality.
-Sherlock simulates real traffic as accurately as possible. Because we do not wish to describe our methods to any potential bad actors, we are not currently disclosing details of the process in our documentation. For more information, please contact our Anti-Malvertising team. We also recommend that all our clients visit and explore
+We utilize our own automated creative scanning system, Sherlock, to detect malicious content and assist our human auditors with ad quality. Sherlock simulates real traffic as accurately as possible. Because we do not wish to describe our methods to any potential bad actors, we are not currently disclosing details of the process in our documentation. For more information, please contact our Anti-Malvertising team. We also recommend that all our clients visit and explore
  [https://www.anti-malvertising.com](https://www.anti-malvertising.com) for more information and best practices on malware prevention.
 
 > [!NOTE]
@@ -35,8 +34,7 @@ javascript that was loaded to determine a creative ID in another system.
 We build our blocklists from a variety of sources both internal and external. Our team investigates each of these domains, which remain blocklisted if we are unable to contact the owner and determine the validity. If you feel a domain has been incorrectly blocklisted, use our [Customer Support form](https://help.xandr.com/) to open a ticket. Select
 **Anti-Malvertising** as the **Request Type** and provide reasons as to why the domain should be removed from our blocklist as well as contacts for the owner of the domain. Here are some examples of the details that swe will need:
 
-- Domain owner and their main business website, business address, and
-  any other details
+- Domain owner and their main business website, business address, and any other details
 - Direct contact for the owner of the domain (email is fine)
 
 Once we have this information, we will reach out to the owner to determine if the domain can be removed from our blocklist. As a matter of policy, we blocklist as soon as we see a potential problem and then complete the investigation. This is to ensure that both your publisher relationships and reputation are protected!

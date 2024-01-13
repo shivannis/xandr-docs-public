@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Site Domain Performance
-description: The article explains how the Site Domain Performance Report allows you to view performance and optimization data by domain or mobile app for a specific advertiser.
+description: The article explains how the Site Domain Performance Report allows you to view performance and optimization data by domain or mobile app for an advertiser.
 ms.date: 10/28/2023
 ---
 
@@ -79,7 +79,7 @@ By enabling **Currency 2.0**, you can select a currency for each individual repo
 | Second-level category | No | The name and ID second-level content category associated with the domain; for example, "`Shoes (20129)`". |
 | Seller | Yes | The seller/publisher who sold the impressions in this data set. |
 | Site Domain | No | The domain where the impression occurred. For mobile applications, this can be the URL of the app's location in the app store. There are two additional values that may appear in place of a domain, specifically: "`deals.unknown`" or "`managed.unknown`". These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed. |
-| Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the Split column (if included) will be null. |
+| Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the **Split** column (if included) will be null. |
 | Supply Type | Yes | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are "`web`", "`mobile_app`", and "`mobile_web`". |
 | Top-level category | No | The name and ID of the top-level content category associated with the domain; for example, "`Shopping (19821)`". |
 
@@ -129,7 +129,7 @@ By enabling **Currency 2.0**, you can select a currency for each individual repo
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    Or, from the Publishers top menu, click on **Prebid Server Premium** \> **Analytics** \>  **Prebid Server Analytics**
+   1. Or, from the Publishers top menu, click on **Prebid Server Premium** \> **Analytics** \>  **Prebid Server Analytics**.
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
     > [!IMPORTANT]
@@ -139,8 +139,7 @@ Follow these steps to run your report.
 1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
 
    > [!WARNING]
-   >  The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using
-   >  only the dimensions you need.
+   >  The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
 1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
     - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
@@ -150,8 +149,8 @@ Follow these steps to run your report.
       > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service
       > (The limit here is 10 million rows).
 
-      **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
-    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under Name this report (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the Your **Reports** screen.
+    - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
+    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
     - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a name for future reference.
 1. Click **Run report** to send your report request.
