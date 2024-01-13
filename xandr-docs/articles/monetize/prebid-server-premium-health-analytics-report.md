@@ -116,7 +116,7 @@ Data in this report is retained for the past 33 days of activity.
 | 23 | `NEC_ERROR` | The bid was rejected during the Xandr auction process. | The bid was successfully received from Demand Partner, but the bid was rejected within the Xandr auction. Seller can use the seller bid error report to diagnose specific rejections occurring on their supply. |
 | 24 | `CREATIVE_WRONG_SIZE` | Demand Partner is bidding with a creative size that doesn't match the tag size. | Seller should review the creative size and notify Demand Partner regarding the mismatch. |
 | 70 | `MEMBER_NOT_ELIGIBLE` | Seller's settings are blocking the Buyer's member from participating in the auction. | Seller should notify the buyer that they are currently blocked from bidding. |
-| 84 | `CATEGORY_REQ_WHITELIST` | The category of the creative is sensitive and requires addition to the allowlist. | Seller should work with Buyer to determine if the creative warrants addition to the allowlist. |
+| 84 | `CATEGORY_REQ_ALLOWLIST` | The category of the creative is sensitive and requires addition to the allowlist. | Seller should work with Buyer to determine if the creative warrants addition to the allowlist. |
 | 132 | `DYN_CREATIVE_INCOMPATIBLE_TYPE` | Dynamic ad-markup bidding is not supported for certain PSP demand partners that require client-side rendering when a Seller doesn't support it. | Seller should correct their setup to align with client-side rendering requirements, on both supply and PSP sides. |
 | 150 | `SELLER_MEMBER_NO_CONTRACT` | Seller's contract isn't set up properly. | Seller should work with Xandr to remedy the contract issue. |
 
