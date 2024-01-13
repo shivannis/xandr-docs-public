@@ -50,7 +50,7 @@ In addition to the settings listed above, you must determine the exact targeting
 - [Target specific Microsoft Ad Exchange inventory only](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.md#target-specific-microsoft-ad-exchange-inventory-only)
 - [Target only 24/7 Media inventory](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange#target-only-247-media-inventory)
 - [Target specific Microsoft Ad Exchange](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange) (including 24/7 Media)
-- [Targeting specific Microsoft Ad Exchange domains where visible (select sites and countries)](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.md#targeting-specific-microsoft-ad-exchange-domains-where-visible-select-sites-and-countries) 
+- [Targeting specific Microsoft Ad Exchange domains where visible (select sites and countries)](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.md#targeting-specific-microsoft-ad-exchange-domains-where-visible-select-sites-and-countries)
 
 ## Target all Microsoft advertising exchange inventory including 24/7 media
 
