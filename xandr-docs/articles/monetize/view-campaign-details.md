@@ -1,17 +1,15 @@
 ---
 title: View Campaign Details
-description: The article helps users navigate a campaign details screen, providing insights into settings, metrics, and issues affecting performance. It also displays visualizations of performance, facilitates quick access to associated creatives, and offers overall campaign management.
+description: The article guides you through campaign details, offering insights into settings, metrics, and performance. Visualizations, quick creative access, and overall campaign management included.
 ms.date: 10/28/2023
 ---
 
 # View campaign details
 
-The Campaign Details screen shows you settings and essential metrics for a specific campaign, informs you of conditions preventing the campaign from serving, provides
-visualizations of the campaign's performance and delivery, offers quick access to the campaign's associated creatives, and more.
+The **Campaign Details** screen shows you settings and essential metrics for a specific campaign, informs you of conditions preventing the campaign from serving, provides visualizations of the campaign's performance and delivery, offers quick access to the campaign's associated creatives, and more.
 
-**Automatic archiving of objects:** Campaigns that have not served or been edited in more than 180 days and that are not scheduled to serve in the future are
-automatically archived. If a campaign is in the "archived" state, it cannot spend or be edited. However, it can still be copied, deleted or used in reports (or exported for use in an external reporting tool). In addition, once an object is archived, any child objects it may own (e.g., **Insertion Order** \> **Line Item** \> **Campaign**) will also be archived and no additional child objects may be created beneath the archived parent object. For details, see
-[Automatic Archiving of Buy-Side Objects](automatic-archiving-of-buy-side-objects.md).
+> [!IMPORTANT]
+> **Automatic archiving of objects:** Campaigns that have not served or been edited in more than 180 days and that are not scheduled to serve in the future are automatically archived. If a campaign is in the "archived" state, it cannot spend or be edited. However, it can still be copied, deleted or used in reports (or exported for use in an external reporting tool). In addition, once an object is archived, any child objects it may own (e.g., **Insertion Order** \> **Line Item** \> **Campaign**) will also be archived and no additional child objects may be created beneath the archived parent object. For details, see [Automatic Archiving of Buy-Side Objects](automatic-archiving-of-buy-side-objects.md).
 
 ## Getting to the campaign details screen
 
@@ -38,19 +36,16 @@ The **At-a-Glance** section shows you the campaign's status, state, and flight s
   - Daily cost budget has been met.
 
 > [!WARNING]
-> The "warning" icon indicates that the campaign is ineligible to serve due to conditions are are likely unintentional and that should be addressed. When a campaign shows
-> this status, hover over the icon to see exactly what conditions are preventing it from serving. The following conditions can provide this status:
+> The "warning" icon indicates that the campaign is ineligible to serve due to conditions are are likely unintentional and that should be addressed. When a campaign shows this status, hover over the icon to see exactly what conditions are preventing it from serving. The following conditions can provide this status:
 >
 > - No creatives are associated with this campaign. 
 > - All creatives associated to this campaign are either ineligible to serve (inactive, expired, prohibited) or can serve only on direct inventory and on supply partners who trust your network's self-classification (unaudited).
 
 ## Viewing quickstats
 
-The metrics on the **Campaign Details** screen help you assess the performance and delivery of your campaign at a glance. Known as "quickstats", these metrics are
-faster and more readily accessed than via standard reporting; whereas reporting requires you to submit a request and then wait for a response, quickstats are cached on a regular basis and are shown whenever you open the Campaign Details screen.
+The metrics on the **Campaign Details** screen help you assess the performance and delivery of your campaign at a glance. Known as "quickstats", these metrics are faster and more readily accessed than via standard reporting; whereas reporting requires you to submit a request and then wait for a response, quickstats are cached on a regular basis and are shown whenever you open the Campaign Details screen.
 
-Quickstats are in U.S. Eastern time and are delayed by approximately 2-3 hours. Because quickstats are dependent upon reporting data and are synched after reporting has closed for any given hour, for a small chunk of time each hour, there may be discrepancies between reporting and quickstats data. For more details, see [Availability
-of Reporting Data](availability-of-reporting-data.md).
+Quickstats are in U.S. Eastern time and are delayed by approximately 2-3 hours. Because quickstats are dependent upon reporting data and are synched after reporting has closed for any given hour, for a small chunk of time each hour, there may be discrepancies between reporting and quickstats data. For more details, see [Availability of Reporting Data](availability-of-reporting-data.md).
 
 ### Intervals
 
@@ -62,7 +57,7 @@ Use the drop-down at the top right of the screen to choose the interval for quic
 - **Lifetime** Entire lifetime of the campaign, including the current calendar day.
 
 ## Metrics
- 
+
 The following metrics are shown for the campaign. Note that the data always reflects the currently selected quickstats interval:
 
 - **Lifetime Budget** How much you have allocated to spend over the lifetime of the campaign, in money or impressions.
@@ -91,8 +86,7 @@ The following metrics are shown for the campaign. Note that the data always refl
 
 ## Pacing bars
 
-If the campaign meets certain requirements (see **Requirements for Pacing Bars** below), the **Imps** or Media Cost quickstat shows a visualization of how well the campaign is
-pacing for the selected quickstats interval.
+If the campaign meets certain requirements (see **Requirements for Pacing Bars** below), the **Imps** or Media Cost quickstat shows a visualization of how well the campaign is pacing for the selected quickstats interval.
 
 The color of the main pacing bar tells you how your impression/media cost count compares to your pacing target:
 
@@ -124,7 +118,7 @@ These metrics are in U.S. Eastern time and are delayed by approximately 2 hours,
 
 ## Viewing campaign segment performance analytics
 
-By default, the **Analytics** and Campaign Segment Performance section is collapsed. Expand the section to learn which targeted segments (both behavioral and contextual) are driving impressions, clicks and conversions within an active campaign, and to identify any segments that are over- or under-performing.
+By default, the **Analytics** and **Campaign Segment Performance** section is collapsed. Expand the section to learn which targeted segments (both behavioral and contextual) are driving impressions, clicks and conversions within an active campaign, and to identify any segments that are over- or under-performing.
 
 The Indices (CTR Index, Conversion Rate Index, Post View Conversion Rate Index, and Post Click Conversion Rate Index) are unique values made newly available in the Campaign Segment Performance Analytics table. They are calculated using the following formula:
 
@@ -151,7 +145,7 @@ You can export data by clicking the **Export to CSV** button. Choose whether you
 
 ## Viewing campaign settings
 
-In the Details section, you can click Settings to view the basic settings, buying strategies, line item settings, serving fees, and comments for the campaign.
+In the **Details** section, you can click **Settings** to view the basic settings, buying strategies, line item settings, serving fees, and comments for the campaign.
 
 ## Basic settings
 
@@ -205,19 +199,17 @@ The boolean logic between targeting types is always and (e.g., between Geography
 For more details about each type of targeting, see [create-a-campaign.md](Create a Campaign).
 
 > [!NOTE]
-> Clicking the Edit **link** next to **Targeting** opens the campaign for editing and brings you directly to the targeting settings.
+> Clicking the **Edit** link next to **Targeting** opens the campaign for editing and brings you directly to the targeting settings.
 
 ## Editing campaign targeting
 
-You can edit campaign targeting directly from the **Campaign Details** screen. To do so, simply click Targeting to reveal campaign targeting settings, then click
-Edit to be taken directly to the targeting section of the **Edit Campaign** workflow on Monetize.
+You can edit campaign targeting directly from the **Campaign Details** screen. To do so, simply click Targeting to reveal campaign targeting settings, then click **Edit** to be taken directly to the targeting section of the **Edit Campaign** workflow on Microsoft Monetize.
 
 ## Viewing associated creatives
 
 There are two ways to view the creatives associated to the campaign.
 
-In the **At-a-Glance** section, you can see the total number of active and inactive creatives associated to the campaign. You can click this number to navigate to the
-**Creative Manager** screen, which shows you the complete list of creatives with their details and quickstats. Also, you can hover over the **eye** icon to view the numbers broken down by audit status.
+In the **At-a-Glance** section, you can see the total number of active and inactive creatives associated to the campaign. You can click this number to navigate to the **Creative Manager** screen, which shows you the complete list of creatives with their details and quickstats. Also, you can hover over the **eye** icon to view the numbers broken down by audit status.
 
 In the **Details** section, you can click **Associated Creatives** to view a table listing the creatives associated with this campaign, grouped by size. At the top of the list is the value of the **Creative Rotation**. If the creative rotation is **Weighted**, an additional column will be displayed in the table that shows the **Weight** of each creative. (See [Creative Rotation](creative-rotation-ali.md) for more information.) If there is an alert on a creative you can hover over the alert to learn about possible issues. Click the creative name to navigate to its full details.
 
@@ -233,8 +225,7 @@ To change any of the campaign's settings, click the **Edit** icon at the top of 
 
 To run a report for the campaign, click the **Reporting** link on the left.
 
-This takes you to the **Advertiser Reporting** screen, where you can select to run an **Analytics**, **Site Domain Performance**, **Attributed Conversions**, or **Creative
-Frequency & Recency** report. For further information about these reports, see [Advertiser Reporting](advertiser-reporting.md).
+This takes you to the **Advertiser Reporting** screen, where you can select to run an **Analytics**, **Site Domain Performance**, **Attributed Conversions**, or **Creative Frequency & Recency** report. For further information about these reports, see [Advertiser Reporting](advertiser-reporting.md).
 
 ## Creating a new campaign
 

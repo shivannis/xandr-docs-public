@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 > [!NOTE]
 > Legacy insertion orders are required for [default insertion order](create-a-guaranteed-delivery-line-item.md). For all other line items, we recommend the use of the default insertion order.
 
-The **Insertion Order Details**  screen shows you the settings and essential metrics for a specific insertion order, provides visualizations of the insertion order's performance, offers quick access to the insertion order's child objects, and more.
+The **Insertion Order Details** screen shows you the settings and essential metrics for a specific insertion order, provides visualizations of the insertion order's performance, offers quick access to the insertion order's child objects, and more.
 
 ## Getting to the legacy insertion order details screen
 
@@ -26,7 +26,7 @@ The **At-a-Glance** section shows you the insertion order's state and the total 
 > [!NOTE]
 > **Trader Home** is currently available to a limited set of clients. If you use insertion orders and are interested in making **Trader Home** your landing page, reach out to your Xandr representative.
 
-To track this insertion order in **Trader Home**, click **Add** to Trader Home. A card displaying essential information about this insertion order will appear when you navigate to **Trader Home**.
+To track this insertion order in **Trader Home**, click **Add to Trader Home**. A card displaying essential information about this insertion order will appear when you navigate to **Trader Home**.
 
 To remove an insertion order already added to **Trader Home**, click **Remove from Trader Home**. This will remove the card from **Trader Home**, but will not delete the insertion order from the system.
 
@@ -34,9 +34,7 @@ For more information about Trader Home, see [Working with Trader Home](working-w
 
 ## Viewing visual success data
 
-Visual Success is a tool designed to help campaign managers achieve better overall performance. It provides easy access to performance,
-delivery, and other metrics for your insertion order. You can use these metrics to see how the campaigns under your insertion order are
-performing as a group, and assess for possible trouble spots.
+Visual Success is a tool designed to help campaign managers achieve better overall performance. It provides easy access to performance, delivery, and other metrics for your insertion order. You can use these metrics to see how the campaigns under your insertion order are performing as a group, and assess for possible trouble spots.
 
 **Visual Success Benefits**
 
@@ -69,9 +67,9 @@ You can view the other insertion orders under the same advertiser in the sibling
 
 ## Reporting on the insertion order
 
-To run a report for the insertion order, go to the **Advertisers** drop-down and click Reporting.
+To run a report for the insertion order, go to the **Advertisers** drop-down and click **Reporting**.
 
-This takes you to the Advertiser Reporting screen, where you can select to run an **Analytics**, **Site Domain Performance**, **Attributed Conversions**, or **Creative Frequency & Recency** report. For further information about these reports, see [Advertiser Reporting](advertiser-reporting.md).
+This takes you to the **Advertiser Reporting** screen, where you can select to run an **Analytics**, **Site Domain Performance**, **Attributed Conversions**, or **Creative Frequency & Recency** report. For further information about these reports, see [Advertiser Reporting](advertiser-reporting.md).
 
 ## Related topics
 

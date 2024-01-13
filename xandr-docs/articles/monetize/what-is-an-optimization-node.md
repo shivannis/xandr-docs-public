@@ -1,27 +1,24 @@
 ---
 title: What is an Optimization Node?
-description: The article explains the optimization node.
+description: The article explains optimizing nodes,  grouping of impressions tied to a campaign, creative, venue, and pixel for performance improvement.
 ms.date: 10/28/2023
 ---
 
-# What is an Optimization Node?
+# What is an optimization node?
 
-This guide only applies to the legacy line item. If you are using the augmented line item (ALI), see [Optimization Guide](optimization-guide-ali.md).
+> [!IMPORTANT]
+> This guide only applies to the legacy line item. If you are using the augmented line item (ALI), see [Optimization Guide](optimization-guide-ali.md).
 
-Nodes are groupings of impressions from advertisers (or networks representing advertisers) which are a combination of a campaign, a
-specific creative, the venue, and the conversion pixel. Optimization is performed against a single node.
+Nodes are groupings of impressions from advertisers (or networks representing advertisers) which are a combination of a campaign, a specific creative, the venue, and the conversion pixel. Optimization is performed against a single node.
 
-Each individual node can be in either a **Learn** phase or an **Optimized** phase. A campaign can use multiple nodes at once;
-therefore, part of a campaign could be in the Learn phase while other part is in the Optimized phase.
+Each individual node can be in either a **Learn** phase or an **Optimized** phase. A campaign can use multiple nodes at once; therefore, part of a campaign could be in the Learn phase while other part is in the Optimized phase.
 
 ## Optimization phases: learn and optimized
 
-As auctions run and information about the bids associated to a campaign is recorded, the data is parsed into one of the two possible
-optimization phases - Learn or Optimized - depending on how much data the node has accumulated.
+As auctions run and information about the bids associated to a campaign is recorded, the data is parsed into one of the two possible optimization phases - Learn or Optimized - depending on how much data the node has accumulated.
 
 > [!IMPORTANT]
-> In both phases, the valuation equation is altered to account for the limitations in the amount of data we have. This is discussed in the
-> [What is Valuation?](what-is-valuation.md) section.
+> In both phases, the valuation equation is altered to account for the limitations in the amount of data we have. This is discussed in the [What is Valuation?](what-is-valuation.md) section.
 
 ## Learn phase
 
@@ -33,15 +30,13 @@ When bidding on inventory that you are not familiar with, or if you have a new c
 
 ## Optimized phase
 
-The advertiser can establish the number of success events that are required to advance from the Learn stage to the Optimized stage. If you
-set that number appropriately, the statistical sample enables the bidder to bid an amount which wins the number of auctions you need while
-spending an amount of money on each bid to keep you profitable.
+The advertiser can establish the number of success events that are required to advance from the Learn stage to the Optimized stage. If you set that number appropriately, the statistical sample enables the bidder to bid an amount which wins the number of auctions you need while spending an amount of money on each bid to keep you profitable.
 
 For additional information on how learn and optimized work, see the [Learn Budget](learn-budget.md) section.
 
 ## Related topics
 
-- [Optimization Buying Strategies](optimization-buying-strategies.md) 
+- [Optimization Buying Strategies](optimization-buying-strategies.md)
 - [Learn Budget](learn-budget.md)
 - [Targeted Learn](targeted-learn.md)
 - [What is Valuation?](what-is-valuation.md)

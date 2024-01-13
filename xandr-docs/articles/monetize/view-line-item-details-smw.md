@@ -6,13 +6,10 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - View line item details
 
-The Line Items Details window lets you view and edit line item settings and access troubleshooting tools, essential metrics, performance
-visualizations, and associated line item objects.
+The Line Items Details window lets you view and edit line item settings and access troubleshooting tools, essential metrics, performance visualizations, and associated line item objects.
 
 > [!NOTE]
-> The Xandr Monetize Monitoring feature is in **Open Beta** and currently only supports deal line items, augmented line items
-> (ALI), and guaranteed delivery augmented line items (GDALI). It is subject to change without notice and is only available to select
-> clients.
+> The Microsoft Monetize Monitoring feature is in **Open Beta** and currently only supports deal line items, augmented line items (ALI), and guaranteed delivery augmented line items (GDALI). It is subject to change without notice and is only available to select clients.
 
 ## Access line item details
 
@@ -37,6 +34,5 @@ object.
 
 The Line Item Details window has the following tabs:
 
-- **Settings** - Displays information for the selected line item including settings, essential metrics, and performance visualizations. You can edit any line item settings that are editable by clicking Edit at the top-right of the Line Items Details window. See [Line
-  Item Settings](line-item-settings.md) for more information.
+- **Settings** - Displays information for the selected line item including settings, essential metrics, and performance visualizations. You can edit any line item settings that are editable by clicking **Edit** at the top-right of the Line Items Details window. See [Line Item Settings](line-item-settings.md) for more information.
 - **Troubleshooting** - Displays troubleshooting information for the selected line item. See [Troubleshoot Line Items](troubleshoot-line-items.md) for more information.

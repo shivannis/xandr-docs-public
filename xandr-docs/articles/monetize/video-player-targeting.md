@@ -22,8 +22,7 @@ You can target video creatives in any or all of the following ways:
 - [Target video inventory by creative duration](video-player-targeting.md#target-video-inventory-by-creative-duration)
 
   > [!NOTE]
-  > You should avoid using both VAST creatives and in-banner or interstitial video creatives within the same video campaign. An in-banner or interstitial video creative will not
-  > serve when you target by position. Setting any of the three video targeting parameters (i.e., **Playback Method**, **Player Size**, or **Position**) will restrict inventory to only those that satisfy the specified parameters and thus significantly limit your delivery potential.
+  > You should avoid using both VAST creatives and in-banner or interstitial video creatives within the same video campaign. An in-banner or interstitial video creative will not serve when you target by position. Setting any of the three video targeting parameters (i.e., **Playback Method**, **Player Size**, or **Position**) will restrict inventory to only those that satisfy the specified parameters and thus significantly limit your delivery potential.
   >
   > By default, you will target all playback methods, player sizes, roll positions, allowed creative durations, and video frameworks. However, you can narrow your targeting.
 
@@ -63,8 +62,7 @@ Player inventory is available across all supply types (web, mobile web, and app)
 - **No player width provided**
 
   > [!TIP]
-  > For maximum delivery and reach, we recommend that you include **No player width provided** in your targeting, because some inventory (such as Google Ad Manager) is not
-  > classified.
+  > For maximum delivery and reach, we recommend that you include **No player width provided** in your targeting, because some inventory (such as Google Ad Manager) is not classified.
 
 You can either click the graphic to make a selection or check the appropriate checkbox.
 

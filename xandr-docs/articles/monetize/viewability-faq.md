@@ -1,12 +1,12 @@
 ---
 title: Microsoft Monetize - Viewability FAQ
-description: The article addresses questions related to Xandr viewability data, providing information on where to find it and highlighting key metrics associated with the data.
+description: The article addresses questions related to Xandr viewability data, providing information on where to find it and highlighting key metrics.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - Viewability FAQ
 
-## Viewability Data**
+## Viewability Data
 
 The following questions address where to find Xandr viewability data and the key metrics associated with it.
 
@@ -55,12 +55,9 @@ The Xandr viewability script is currently enabled for all banner, native, and vi
 The possible causes could be:
 
 - If JavaScript is not enabled in a user's browser, the viewability script can't measure the impression.
-- The viewability script may not be able to locate the creative. If the creative cannot be located within 5 seconds, the impression is not
-  considered view-measured. To avoid this problem, make sure the script is served close to the actual creative content, particularly if you have a custom tag implementation.
-- In rare cases, some very old browsers won't support viewability measurement, for example if the ad is loaded in a cross-domain iFrame
-  configuration.
-- Finally, network latency or the user simply closing the browser too quickly can prevent the script from capturing data required for
-  measurement.
+- The viewability script may not be able to locate the creative. If the creative cannot be located within 5 seconds, the impression is not considered view-measured. To avoid this problem, make sure the script is served close to the actual creative content, particularly if you have a custom tag implementation.
+- In rare cases, some very old browsers won't support viewability measurement, for example if the ad is loaded in a cross-domain iFrame configuration.
+- Finally, network latency or the user simply closing the browser too quickly can prevent the script from capturing data required for measurement.
 
 ## What impression types are not measured by Xandr?
 

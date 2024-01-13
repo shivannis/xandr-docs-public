@@ -1,13 +1,12 @@
 ---
 title: Microsoft Monetize - View advertiser details
-description: The article explains the settings and essential metrics for a specific advertiser, provides visualizations of the advertiser's performance, and offers quick access to the advertiser's child objects.
+description: The article explains advertiser's settings, metrics, visualizations, and quick access to child objects for effective campaign management.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - View advertiser details
 
-The **Advertiser Details** screen shows you the settings and essential metrics for a specific advertiser, provides visualizations of the advertiser's performance, and offers
-quick access to the advertiser's child objects.
+The **Advertiser Details** screen shows you the settings and essential metrics for a specific advertiser, provides visualizations of the advertiser's performance, and offers quick access to the advertiser's child objects.
 
 ## Getting to the advertiser details Screen
 
@@ -47,12 +46,11 @@ Indicates whether a **Salesperson**, **Account Manager**, or **Advertiser Type**
 
 ## Billing information
 
-Displays the billing address for the advertiser. This helps you maintain all of your advertiser information in one system. Xandr does not bill advertisers for you, and
-billing information is not included in reporting.
+Displays the billing address for the advertiser. This helps you maintain all of your advertiser information in one system. Xandr does not bill advertisers for you, and billing information is not included in reporting.
 
 ## Frequency & recency
 
-Displays frequency and recency caps applied to the advertiser. For more information, see [Frequency and Recency Caps](frequency-and-recency-caps.md).>
+Displays frequency and recency caps applied to the advertiser. For more information, see [Frequency and Recency Caps](frequency-and-recency-caps.md).
 
 ## Associated insertion orders
 
@@ -66,7 +64,7 @@ Displays line items associated with the advertiser.
 
 To view child object details:
 
-1. Click the Associated Objects menu on the right of the **Details** pane.
+1. Click the **Associated Objects** menu on the right of the **Details** pane.
 1. Select the appropriate object category such as **Creatives**.
 
 ## Related topics

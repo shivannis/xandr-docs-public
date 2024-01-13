@@ -20,9 +20,9 @@ This page concerns the various player options we provide for outstream video (in
 
 | Player Type | Details | Use Cases |
 |---|---|---|
-| Flash | This option is set via the playerTechnology options when selecting Outstream Video Player Options. | desktop, depending on client settings |
-| Inline IOS/Javascript VPAID* | The inline player is automatic, unless disabled via Outstream Video Player Options or via Xandr Monetize or the API. (coming soon) | iPhone, iPad |
-| HTML5/JavaScript | This option is set via the playerTechnology options when selecting Outstream Video Player Options. | iOS/iPad and Android (HTML5), desktop |
+| Flash | This option is set via the playerTechnology options when selecting [Outstream Video Player Options](outstream-video-player-options.md). | desktop, depending on client settings |
+| Inline IOS/Javascript VPAID* | The inline player is automatic, unless disabled via [Outstream Video Player Options](outstream-video-player-options.md) or via Microsoft Monetize or the API. (coming soon) | iPhone, iPad |
+| HTML5/JavaScript | This option is set via the playerTechnology options when selecting [Outstream Video Player Options](outstream-video-player-options.md). | iOS/iPad and Android (HTML5), desktop |
 
    > [!NOTE]
    > The JavaScript VPAID player will be included in a subsequent release of Xandr video players.

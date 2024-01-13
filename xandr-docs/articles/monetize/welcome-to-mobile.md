@@ -6,10 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Welcome to mobile
 
-As the world transitions toward heavier mobile device usage, learning the ins and outs of mobile buying becomes essential. Luckily,
-advertising on mobile apps is mostly similar to traditional web advertising (and where it differs, we'll explain those differences - see
-more below). The documentation in this section is designed to provide you with a solid understanding of how advertising works on mobile apps.
-Topics we'll cover include:
+As the world transitions toward heavier mobile device usage, learning the ins and outs of mobile buying becomes essential. Luckily, advertising on mobile apps is mostly similar to traditional web advertising (and where it differs, we'll explain those differences - see more below). The documentation in this section is designed to provide you with a solid understanding of how advertising works on mobile apps. Topics we'll cover include:
 
 - The similarities and differences between mobile app and web.
 - How to buy mobile inventory from various sources.
@@ -32,8 +29,7 @@ Topics we'll cover include:
 
 - **[Buying Mobile Inventory](buying-mobile-inventory.md)**
 
-  Learn about different ways to buy: via RTB, from off-platform networks, and directly from publishers. Set up third-party app install
-  tracking, run cost-per-install offers, and manage discrepancies.
+  Learn about different ways to buy: via RTB, from off-platform networks, and directly from publishers. Set up third-party app install tracking, run cost-per-install offers, and manage discrepancies.
 
 - **[Mobile Buying FAQ](mobile-buying-faq.md)**
   Get answers to frequently asked questions about mobile.

@@ -13,11 +13,8 @@ ms.date: 10/28/2023
 
 In order to maximize the accuracy of our predictions, all of the inventory on the Xandr platform is entered into groupings of like inventory buckets called venues so that:
 
-1. Each venue can be expected to similarly impact response rates. For example, users visiting the New York Times website from the UK are
-    likely to respond differently to offers than visitors from the US. Similarly, users are likely to respond differently to a front page
-    placement on a site compared to one nested several layers deep.
-1. The venue contains enough impressions to allow us to make some determination of performance relatively quickly while still being as
-    a. uniform as possible in terms of the above characteristics.
+1. Each venue can be expected to similarly impact response rates. For example, users visiting the New York Times website from the UK are likely to respond differently to offers than visitors from the US. Similarly, users are likely to respond differently to a front page placement on a site compared to one nested several layers deep.
+1. The venue contains enough impressions to allow us to make some determination of performance relatively quickly while still being as uniform as possible in terms of the above characteristics.
 
 Venues are groupings used to categorize inventory at a high level. There are six different levels of granularity for venues:
 
@@ -34,9 +31,7 @@ of the existing venue are to the details of the current campaign, the closer the
 
 ## Venue creation
 
-We begin the process of venue creation by collecting data on combinations of the most granular level in the list of possible venue
-levels (defined above). We calculate the average of the last 14 days' worth of data to derive an average daily impression number per venue
-(e.g., the number of impressions that meet all of the criteria in a venue).
+We begin the process of venue creation by collecting data on combinations of the most granular level in the list of possible venue levels (defined above). We calculate the average of the last 14 days' worth of data to derive an average daily impression number per venue (e.g., the number of impressions that meet all of the criteria in a venue).
 
 There are two sets of criteria used to create a venue:
 
@@ -52,9 +47,7 @@ When one of these criteria are met, a venue gets created on that level, correspo
 
 Example:
 
-Assume that you have a daily average of 4,000,000 impressions, all with the same **Member - Publisher - Tag - URL**, but with 10 different
-**Geo** values (with no more than 600,000 impressions on any single **Geo**) from External inventory. The venue will be created at the
-**Member - Publisher - Tag - URL** level, because that is the most granular level with a daily average of at least 2,500,000 impressions.
+Assume that you have a daily average of 4,000,000 impressions, all with the same **Member - Publisher - Tag - URL**, but with 10 different **Geo** values (with no more than 600,000 impressions on any single **Geo**) from External inventory. The venue will be created at the **Member - Publisher - Tag - URL** level, because that is the most granular level with a daily average of at least 2,500,000 impressions.
 
 > [!IMPORTANT]
 > Remember that a venue can be created at any of the six levels described above. Venues further down in the list have greater granularity and are therefore more valuable when determining bids.
@@ -63,8 +56,7 @@ In order to avoid double-counting impressions, all impressions are counted only 
 
 ## Venue deletion
 
-Venues are deleted when the average number of daily impressions over the previous 14 days drops below 20,000 (see Venue Creation above) to
-determine the method of calculating the daily average. The impressions are then transferred up one level to the parent venue (i.e., the reverse of the process that happens when a venue is created). In most cases, the venues that get deleted are on the **Tag** level, and so the impressions are transferred back to the **Publisher** level. Venues created within the previous two days will not be deleted.
+Venues are deleted when the average number of daily impressions over the previous 14 days drops below 20,000 (see Venue Creation above) to determine the method of calculating the daily average. The impressions are then transferred up one level to the parent venue (i.e., the reverse of the process that happens when a venue is created). In most cases, the venues that get deleted are on the **Tag** level, and so the impressions are transferred back to the **Publisher** level. Venues created within the previous two days will not be deleted.
 
 ## Resurrection of a seleted venue
 
@@ -72,7 +64,7 @@ If the optimization engine creates a venue and then deletes it due to a lack of 
 
 Throughout the entire process of creation, deletion, and resurrection of venues, data is maintained and transferred between parent and child venues.
 
-## How the Bidder determines which venue to use
+## How the bidder determines which venue to use
 
 At the time of an auction, the bidder determines which venue to use by matching the current inventory to the closest venue, starting with the most-granular (since high granularity makes for a more accurate bid amount, the bidder wants to use the highest degree of granularity):
 

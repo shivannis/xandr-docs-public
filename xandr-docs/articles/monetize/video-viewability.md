@@ -8,7 +8,8 @@ ms.date: 10/28/2023
 
 This page explains the technology behind our video viewability measurement.
 
-Viewability for video creatives on Xandr is measured using OMSDK for Web and App, and if it's not available we fall back to the VPAID wrapper measurement which is avalable for Web only but not for App.
+> [!IMPORTANT]
+> Viewability for video creatives on Xandr is measured using OMSDK for Web and App, and if it's not available we fall back to the VPAID wrapper measurement which is avalable for Web only but not for App.
 
 ## What is video viewability?
 
@@ -62,14 +63,12 @@ The VPAID wrapper has the following specifications:
 - Hosted by Xandr CDN
 - Injects JavaScript code in the page to measure viewability
 - Receives the URL of the VAST document to play as a parameter
-- Downloads the VAST document, selects the media file to play, manages
-  tracking events, forwards VPAID Events
+- Downloads the VAST document, selects the media file to play, manages tracking events, forwards VPAID Events
 - Desktop web and mobile web measurement
 
 ## Reporting - UI
 
-The following metrics are now available in the Advertiser Video Analytics Report, Publisher Video Analytics Report, and Network Video Analytics Report. (See
-[Analytics Reporting](analytics-reporting.md) for more information.)
+The following metrics are now available in the Advertiser Video Analytics Report, Publisher Video Analytics Report, and Network Video Analytics Report. (See [Analytics Reporting](analytics-reporting.md) for more information.)
 
 **Viewability measurement metrics**
 
@@ -144,7 +143,7 @@ No, it will not. Xandr will serve the viewability script where applicable and th
 
 ### How can I optimize to more highly viewable inventory?
 
-Viewability measurement is included in the [Advertiser Video Analytics Report](advertiser-video-analytics-report.md), which provide reporting down to the individual
+Viewability measurement is included in the [Advertiser Video Analytics Report](advertiser-video-analytics-report.md) and [Network Video Analytics Report](network-video-analytics-report.md), which provide reporting down to the individual
 tag/placement or site domain. This enables clients to update targeting to either include or exclude high or poor performing placements.
 
 ### How does Xandr viewability compare with other third party viewability vendors such as MOAT, Integral Ad Science, and DoubleVerify?

@@ -1,14 +1,13 @@
 ---
 title: Viewing & Managing Cookie Segments
-description: The article explains how to view and manage cookie segments. It suggests that when troubleshooting issues, it is beneficial to identify the Xandr segments you belong to and override specific cookie aspects, like location details, etc.
+description: The article guides managing cookie segments, suggesting troubleshooting by identifying and overriding specific cookie aspects for better control.
 ms.date: 10/28/2023
 ---
 
 # Viewing & managing cookie segments
 
 When troubleshooting an issue, it is sometimes helpful to: (1) see what Xandr segments you belong to; and (2) override
-certain aspects of your cookie, such as what country, region, city, postal, and DMA you are in so that you can mimic different kinds of
-users. This page walks you through the process.
+certain aspects of your cookie, such as what country, region, city, postal, and DMA you are in so that you can mimic different kinds of users. This page walks you through the process.
 
 > [!NOTE]
 > All browser cookie calls must use secure https protocols. Requests made using http will not generate valid results.
@@ -47,11 +46,11 @@ The following table defines what codes are available for overriding, the corresp
 
 | Geo Code | API Service | API Field |
 |---|---|---|
-| Country | Country Service | code |
-| Region | Region Service | iso_3166_2 |
-| DMA | Designated Market Area Service | code |
-| City | City Service | name |
-| Postal Code | Postal Code Service | code |
+| Country | [Country Service](country-service.md) | code |
+| Region | [Region Service](region-service.md) | `iso_3166_2` |
+| DMA | [Designated Market Area Service](designated-market-area-service.md) | code |
+| City | [City Service](city-service.md) | name |
+| Postal Code | [Postal Code Service](postal-code-service.md) | code |
 
 ## Remove your Geo override
 

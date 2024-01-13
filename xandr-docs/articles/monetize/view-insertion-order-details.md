@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - View Insertion Order Details
-description: The article details the Insertion Order Details screen, highlighting settings, essential metrics, and performance visualizations for a specific insertion order.
+description: The article details the Insertion Order Details screen, highlighting settings, essential metrics, and performance visualizations for an insertion order.
 ms.date: 10/28/2023
 ---
 

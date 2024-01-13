@@ -1,7 +1,6 @@
 ---
 title: Viewing Your Target Limits 
-description: The article outlines Xandr's restrictions on the number of domains in a single domain list and specific targets in a profile, defining the concept of viewing target limits.
-ms.date: 10/28/2023
+description: The article details Xandr's domain list and profile target restrictions, introducing viewing target limits.
 ---
 
 # Viewing your target limits
@@ -10,7 +9,7 @@ Xandr limits the number of domains that can be used in a single domain list and 
 
 ## Target limits report
 
-The Target Limits Report section lists the types of targets that are limited and, for each, the maximum number you are allowed.
+The **Target Limits Report** section lists the types of targets that are limited and, for each, the maximum number you are allowed.
 
 ## Default limits
 
