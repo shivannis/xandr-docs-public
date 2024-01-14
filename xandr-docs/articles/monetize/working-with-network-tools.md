@@ -4,11 +4,10 @@ description: The article explains various Network Tools that helps you to manage
 ms.date: 10/28/2023
 ---
 
-
-# Working with Network Tools
+# Working with network tools
 
 Microsoft Monetize provides various tools to help you manage network-level settings.
-Select **Tools \> General** from the **Network** menu to view and modify your network-level settings with the following tools:
+Select **Tools** \> **General** from the **Network** menu to view and modify your network-level settings with the following tools:
 
 | General Tools |  |
 |---|---|

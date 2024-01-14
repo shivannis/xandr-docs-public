@@ -1,6 +1,6 @@
 ---
-Title : Working with Publishers
-Description: The article outlines sell-side hierarchy and how publishers manage Placement Groups, Placements, specifying financial terms, selling methods, payments, and ad quality.
+title : Working with Publishers
+description: The article outlines sell-side hierarchy and how publishers manage Placement Groups, Placements, specifying financial terms, selling methods, payments, and ad quality.
 ms.date: 10/28/2023
 ---
 
