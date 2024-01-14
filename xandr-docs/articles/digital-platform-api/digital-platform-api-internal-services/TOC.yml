@@ -1,110 +1,110 @@
 - name: Digital Platform API Internal Services
-  href: index.yml
+  href: ../digital-platform-api/index.yml
 - name: Access Control Policy APIs
   items:
   - name: Access Platform User Role Service
-    href: access-platform-user-role-service.md
+    href: ../digital-platform-api/access-platform-user-role-service.md
   - name: Access Policy Group Service
-    href: access-policy-group-service.md
+    href: ../digital-platform-api/../digital-platform-api/access-policy-group-service.md
   - name: Access Policy Member Config Service
-    href: access-policy-member-config-service.md
+    href: ../digital-platform-api/access-policy-member-config-service.md
   - name: Access Policy Object Team Service
-    href: access-policy-object-team-service.md
+    href: ../digital-platform-api/access-policy-object-team-service.md
   - name: Access Policy Resource Service
-    href: access-policy-resource-service.md
+    href: ../digital-platform-api/access-policy-resource-service.md
   - name: Access Policy User Service
-    href: access-policy-user-service.md
+    href: ../digital-platform-api/access-policy-user-service.md
   - name: Access Resource Dependency Service
-    href: access-resource-dependency-service.md
+    href: ../digital-platform-api/access-resource-dependency-service.md
 - name: Access Member Config Service
-  href: access-member-config-service.md
+  href: ../digital-platform-api/access-member-config-service.md
 - name: Adjustment Service
-  href: adjustment-service.md
+  href: ../digital-platform-api/adjustment-service.md
 - name: Admin Custom Report
-  href: admin-custom-report.md
+  href: ../digital-platform-api/admin-custom-report.md
 - name: Admin Log-Level Report
-  href: admin-log-level-report.md
+  href: ../digital-platform-api/admin-log-level-report.md
 - name: App Asset Service
-  href: app-asset-service.md
+  href: ../digital-platform-api/app-asset-service.md
 - name: App Contract Service
-  href: app-contract-service.md
+  href: ../digital-platform-api/app-contract-service.md
 - name: App Email Service
-  href: app-email-service.md
+  href: ../digital-platform-api/app-email-service.md
 - name: ASI Member Settings Service
-  href: asi-member-settings-service.md
+  href: ../digital-platform-api/asi-member-settings-service.md
 - name: Batch Segment Config Service
-  href: batch-segment-config-service.md
+  href: ../digital-platform-api/batch-segment-config-service.md
 - name: Batch Segment Service - Sample PHP Script
-  href: batch-segment-service-sample-php-script.md
+  href: ../digital-platform-api/batch-segment-service-sample-php-script.md
 - name: Bulk Campaign Profile Service
-  href: bulk-campaign-profile-service.md
+  href: ../digital-platform-api/bulk-campaign-profile-service.md
 - name: Buy-Side Forecasting Service
-  href: buy-side-forecasting-service.md
+  href: ../digital-platform-api/buy-side-forecasting-service.md
 - name: Campaign UI Service
-  href: campaign-ui-service.md
+  href: ../digital-platform-api/campaign-ui-service.md
 - name: Carrier Netblock Service
-  href: carrier-netblock-service.md
+  href: ../digital-platform-api/carrier-netblock-service.md
 - name: Config Platform Service
-  href: config-platform-service.md
+  href: ../digital-platform-api/config-platform-service.md
 - name: Creative Custom Request Partner Service
-  href: creative-custom-request-partner-service.md
+  href: ../digital-platform-api/creative-custom-request-partner-service.md
 - name: Creative Custom Request Template Service
-  href: creative-custom-request-template-service.md
+  href: ../digital-platform-api/creative-custom-request-template-service.md
 - name: Creative Custom Request Template Parameters
-  href: creative-custom-request-template-parameters.md
+  href: ../digital-platform-api/creative-custom-request-template-parameters.md
 - name: Creative Custom Request Template Type Service
-  href: creative-custom-request-template-type-service.md
+  href: ../digital-platform-api/creative-custom-request-template-type-service.md
 - name: Content Search Service
-  href: content-search-service.md
+  href: ../digital-platform-api/content-search-service.md
 - name: Developer Data Service
-  href: developer-data-service.md
+  href: ../digital-platform-api/developer-data-service.md
 - name: Email Template Service
-  href: email-template-service.md
+  href: ../digital-platform-api/email-template-service.md
 - name: Entitlement Type Service
-  href: entitlement-type-service.md
+  href: ../digital-platform-api/entitlement-type-service.md
 - name: Line Item Reporting Service
-  href: line-item-reporting-service.md
+  href: ../digital-platform-api/line-item-reporting-service.md
 - name: Member Contract Service
-  href: member-contract-service.md
+  href: ../digital-platform-api/member-contract-service.md
 - name: Member Currency Service
-  href: member-currency-service.md
+  href: ../digital-platform-api/member-currency-service.md
 - name: Member DC Setting Service
-  href: member-dc-setting-service.md
+  href: ../digital-platform-api/member-dc-setting-service.md
 - name: Member Multi Click Service
-  href: member-multi-click-service.md
+  href: ../digital-platform-api/member-multi-click-service.md
 - name: Member Relation Service
-  href: member-relation-service.md
+  href: ../digital-platform-api/member-relation-service.md
 - name: Report Member Access Service
-  href: report-member-access-service.md
+  href: ../digital-platform-api/report-member-access-service.md
 - name: Report Service - Internal
   items:
   - name: Advertiser Frequency Report
-    href: advertiser-frequency-report.md
+    href: ../digital-platform-api/advertiser-frequency-report.md
   - name: Buyer Untargeted Segment Performance Report
-    href: buyer-untargeted-segment-performance-report.md
+    href: ../digital-platform-api/buyer-untargeted-segment-performance-report.md
   - name: Network Creative Search
-    href: network-creative-search.md
+    href: ../digital-platform-api/network-creative-search.md
 - name: Seller Member Group Service
-  href: seller-member-group-service.md
+  href: ../digital-platform-api/seller-member-group-service.md
 - name: Sld Use Subdomain Service
-  href: sld-use-subdomain-service.md
+  href: ../digital-platform-api/sld-use-subdomain-service.md
 - name: Sync Report Service
   items:
   - name: Overview
-    href: sync-report-service.md
+    href: ../digital-platform-api/sync-report-service.md
   - name: Segment Overlap Report
-    href: segment-overlap-report.md
+    href: ../digital-platform-api/segment-overlap-report.md
   - name: Seller Report
-    href: seller-report.md
+    href: ../digital-platform-api/seller-report.md
 - name: Tango Email Service
-  href: tango-email-service.md
+  href: ../digital-platform-api/tango-email-service.md
 - name: Targeted Segment Analytics Report
-  href: targeted-segment-analytics-report.md
+  href: ../digital-platform-api/targeted-segment-analytics-report.md
 - name: Terms Service
-  href: terms-service.md
+  href: ../digital-platform-api/terms-service.md
 - name: User DRT Service
-  href: user-drt-service.md
+  href: ../digital-platform-api/user-drt-service.md
 - name: User UI Service
-  href: user-ui-service.md
+  href: ../digital-platform-api/user-ui-service.md
 - name: YM Floor Filter Service
-  href: ym-floor-filter-service.md
+  href: ../digital-platform-api/ym-floor-filter-service.md
