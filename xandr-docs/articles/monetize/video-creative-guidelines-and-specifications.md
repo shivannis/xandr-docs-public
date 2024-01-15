@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Video Creative Guidelines and Specifications
-description: Learn about the guidelines that ll video creatives must adhere. 
+description: Learn about the guidelines that all video creatives must adhere to. 
 ms.date: 10/28/2023
 ---
 

@@ -52,9 +52,7 @@ following:
 
 - **Floor Price Applies To**: The type of
   impressions, managed, third-party, or both, that the floor rule
-  applies to.
-
-  For conditional floor rules, the targeting rules are also displayed.
+  applies to.<br>For conditional floor rules, the targeting rules are also displayed.
 
 ## Editing a floor rule
 
@@ -66,7 +64,7 @@ button.
 
 ## Delete a floor rule
 
-Click the **Actions**button to delete or
+Click the **Actions** button to delete or
 one or more floor rules. Check the checkbox for each rule that you want
 to edit and click **Actions** \> **Delete**.
 

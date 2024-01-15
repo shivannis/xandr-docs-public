@@ -26,7 +26,7 @@ in just two steps.
 > [!WARNING]
 > Before you proceed, please note that deleting placements is permanent and cannot be reversed.
 
-## Step 1. Get started 
+## Step 1. Get started with placements
 
 **Publisher-only clients:** Select
 **Placements** from the
@@ -55,7 +55,7 @@ dialog. Verify that you want to delete the placement by clicking
 > [!NOTE]
 > If a managed campaign is directly targeting the placement, you will see the warning "Cannot delete placement that is targeted by campaigns. Contact Xandr support." In order to delete this placement, you will need to first remove the placement from the campaign targeting. Once this is done, you should be able to delete the placement.
 
-## Move a placement to a Different Placement Group
+## Move a placement to a different placement group
 
 A placement is an open slot on a publisher website where an advertiser
 creative with matching specifications can serve. Placement groups
@@ -64,7 +64,7 @@ inventory categorization, and self-auditing criteria to child
 placements. This page explains how to move a placement to a new
 placement group.
 
-## Step 1. Get started 
+## Step 1. Get started with moving placements
 
 **Publisher-only clients:** Select **Inventory** \> **Placements**, then select the publisher you want to work with from the **Select a Publisher** dialog. This opens the **Placement Manager**, which shows both the **Placement Group List** and the **Placement List** under each placement group for the publisher.
 
@@ -97,7 +97,7 @@ When you want to create a number of similar placements, you can save
 time by duplicating placements and editing the specific features you
 want to modify.
 
-## Step 1. Get started
+## Step 1. Get started with duplicating placements
 
 **Publisher-only clients:** Select **Inventory** \> **Placements**, then select the
 publisher you want to work with from the

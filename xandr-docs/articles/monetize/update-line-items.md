@@ -51,10 +51,10 @@ particular advertiser. For more information about object limits, see the [Viewin
 > [!WARNING]
 > Before you proceed, please note that deleting a line item deletes **all** of its child elements, including click trackers and impression trackers. The deletions are permanent and cannot be reverted. Also, although deleted objects continue to be available in reporting, you will no longer have visibility into their specific settings (e.g., revenue budget and tracking, cost budget and targeting).
 
-1. On the Line Items screen, check
+1. On the **Line Items** screen, check
     the box next to each line item that you want to delete.
 1. Click **Actions** \> **Delete**.
-1. A confirmation dialog lists the line items that you selected for deletion. Review the list carefully and then click Delete to permanently delete the line items from the system.
+1. A confirmation dialog lists the line items that you selected for deletion. Review the list carefully and then click **Delete** to permanently delete the line items from the system.
 
 ## Related topics
 

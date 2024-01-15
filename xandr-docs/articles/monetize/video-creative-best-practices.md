@@ -92,7 +92,7 @@ heavy:
 - The main thread is used for more than 60 seconds in total.
 - In any 30 second window, the main thread is used for more than 15
   seconds.
-- More than 4 MB of network bandwidth is consumed
+- More than 4 MB of network bandwidth is consumed.
 
 It is recommended that the creative is compliant with the technical
 specifications detailed above.

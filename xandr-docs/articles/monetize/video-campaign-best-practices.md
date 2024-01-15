@@ -1,6 +1,6 @@
 ---
 title: Video Campaign Best Practices
-description : This page provides you with a list of best practices to ensure maximum delivery and success for your video campaigns on the Xandr platform. 
+description: This page provides you with a list of best practices to ensure maximum delivery and success for your video campaigns on the Xandr platform. 
 ms.date: 10/28/2023
 ---
 

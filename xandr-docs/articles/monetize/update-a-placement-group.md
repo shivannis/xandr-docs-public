@@ -30,7 +30,7 @@ Manager**, which shows both the
 **Placement List** under each
 placement group for the publisher.
 
-## Move Existing placements to a different placement group
+## Move existing placements to a different placement group
 
 Check the boxes for all the placements you want to move to another new
 placement group, then click

@@ -123,7 +123,7 @@ string.) You will receive a JSONP-formatted response like this:
 ABC({"uid":1680598911678123849}) 
 ```
 
-A getUID example
+## A getUID example
 
 In most cases, it will be necessary to pass the user ID into a specified
 parameter within the query string of the URL. To accomplish this, you
@@ -193,9 +193,8 @@ https://ib.adnxs.com/mapuid?member=MEMBER_ID&user=USER_UD
 ```
 
 where the member ID is the ID assigned to your company by
-Xandr and the `USER_ID` is your company's user
-ID. If you don't know your member ID, you can find out by making a `GET`
-request to the [](../digital-platform-api/member-service.html).
+Xandr and the `USER_ID` is your company's user ID. If you don't know your member ID, you can find out by making a `GET`
+request to the [Member Service](../digital-platform-api/member-service.md).
 
 If you have more than one user ID, you can separate them with
 semicolons; for example:
@@ -203,7 +202,6 @@ semicolons; for example:
 ``` 
 https://ib.adnxs.com/mapuid?member=123&user=ABC;DEF;GHI 
 ```
-
 
 ## Expiration of mappings
 
@@ -236,7 +234,7 @@ https://ib.adnxs.com/mapuid?member=123&user=[USER_ID]&seg_code=[code1]:[code1val
 ## Sending us your segment data offline
 
 For more information about how to send us your segment data offline, see
-the API's [Batch Segment Service](/digital-platform-api/batch-segment-service.md).
+the API's [Batch Segment Service](../digital-platform-api/batch-segment-service.md).
 
 ## Related topics
 

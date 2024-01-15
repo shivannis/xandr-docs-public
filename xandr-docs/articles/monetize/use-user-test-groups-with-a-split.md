@@ -10,9 +10,7 @@ ms.date: 10/28/2023
 You can perform A/B testing with user test groups, which target distinct
 groups of users per split.
 
-1. Select the **Use User Test Groups** checkbox.
-
-    In the **User Test Group** column
+1. Select the **Use User Test Groups** checkbox.<br>In the **User Test Group** column
     that appears, line item traffic is evenly distributed to the
     existing splits (excluding the Line Item Default split).
 1. To modify a percentage, enter a new value in the **Percent** field.

@@ -20,8 +20,7 @@ the menu bar.
 
 ## Viewing payment rules information
 
-The information on the Payment
-Rules screen show the dollars that have been earned by different
+The information on the **Payment Rules** screen show the dollars that have been earned by different
 categories (publisher, network, etc.):
 
 - **ID**: The unique identification number
@@ -36,7 +35,7 @@ categories (publisher, network, etc.):
   priority and **10** being the highest priority.
 - **Revenue (USD)**: Indicates the total
   dollars earned through this payment rule.
-- Publisher Revenue (USD): Indicates
+- **Publisher Revenue (USD)**: Indicates
   the total dollars earned by the publisher through this payment rule.
 - **Network RPM (USD)**: Indicates the
   dollars earned per 1,000 impressions by the network through this
@@ -105,7 +104,7 @@ To copy one or more payment rules, check the checkbox of each payment
 rule you want to duplicate. Once at least one payment rule has been
 checked, the options in the **More
 Actions** dropdown become active. Select the
-Duplicate option. A confirmation
+**Duplicate** option. A confirmation
 dialog appears.
 
 > [!IMPORTANT]

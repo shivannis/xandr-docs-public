@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Use Cases for Cross-Device Targeting and Measurement
-description : Learn how using Cross-device Targeting and Measurement can be of advantage to advertisers. 
+description: Learn how using Cross-device Targeting and Measurement can be of advantage to advertisers. 
 ms.date: 10/28/2023
 ---
 
