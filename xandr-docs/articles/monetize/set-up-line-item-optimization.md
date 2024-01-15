@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Up Line Item Optimization
-description: The article explains how to turn on or off Xandr optimization for a line item. If enabled, users should set performance goals, priorities, and associate the line item with relevant conversion pixels.
+description: The article explains how to turn on or off optimization for a line item. If enabled, users should set performance goals, priorities, and associate the line item with relevant conversion pixels.
 ms.date: 10/28/2023
 ---
 
@@ -18,7 +18,7 @@ see the [Optimization Guide ALI](optimization-guide-ali.md).
 
    If the **Optimization Method** toggle is turned off, automatic optimization is disabled, including the algorithms for bid valuation, inventory discovery, and allocation. When optimization is off, adaptive pacing will still shade bids in response to delivery.
 
-2. Set a goal type.
+1. Set a goal type.
 
    This option is visible only if optimization is turned on.
 
@@ -33,7 +33,7 @@ see the [Optimization Guide ALI](optimization-guide-ali.md).
 
     - **CPCV**
 
-      Select this option if your advertiser wants to track and report against a goal based on video completes. A video complete requires  the video ad to play for its full duration. Set the CPCV field to the goal your advertiser has given you. This option is only available if you selected **Video** as the **Ad Type** in **Basic Settings**. When your revenue type is also CPCV, optimization will inherit the goal value from your revenue value.
+      Select this option if your advertiser wants to track and report against a goal based on video completes. A video complete requires  the video ad to play for its full duration. Set the **CPCV** field to the goal your advertiser has given you. This option is only available if you selected **Video** as the **Ad Type** in **Basic Settings**. When your revenue type is also **CPCV**, optimization will inherit the goal value from your revenue value.
 
     - **VCR**
 
@@ -56,28 +56,28 @@ see the [Optimization Guide ALI](optimization-guide-ali.md).
 
     If your advertiser wants to optimize to both post-click and post-view conversions:
 
-    a. Select **CPA** and enter the CPA amount in the text field.
+   1. Select **CPA** and enter the CPA amount in the text field.
 
-    b. If this is a retargeting line item (a line item that targets users who have already shown interest in the advertiser), select **Retargeting** and ensure that the line item targets at least one retargeting segment (a segment not in the Data Marketplace).
+   1. If this is a retargeting line item (a line item that targets users who have already shown interest in the advertiser), select **Retargeting** and ensure that the line item targets at least one retargeting segment (a segment not in the Data Marketplace).
 
-    c. If this is a prospecting line item (a line item that targets a wide spread of users who may become interested in the dadvertiser's brand), select **Prospecting**.
+   1. If this is a prospecting line item (a line item that targets a wide spread of users who may become interested in the dadvertiser's brand), select **Prospecting**.
 
       > [!NOTE]
       > CPA prospecting optimization is not recommended if you're optimizing to a rare event (an event with infrequent conversions). In that case, we recommend that you optimize to a higher-level conversion event that has more data.
 
-    d.  Attach a conversion pixel.
+   1. Attach a conversion pixel.
 
     If your advertiser wants to optimize to only post-click conversions:
 
-    a. Select **CPA** and enter a CPA amount in the text field.
-    b. Select **Post-click Only**.
-    c. Enter a CPC amount in the text field. (If your Revenue Type is **CPC**, the CPC goal is inherited automatically.)
-    d. Attach a conversion pixel.
+    1. Select **CPA** and enter a CPA amount in the text field.
+    1. Select **Post-click Only**.
+    1. Enter a CPC amount in the text field. (If your Revenue Type is **CPC**, the CPC goal is inherited automatically).
+    1. Attach a conversion pixel.
 
     > [!NOTE]
     > A CPC goal is required for [inventory discovery](discovery.md) and [bid valuation](valuation.md).
 
-3. Set the goal priority.
+1. Set the goal priority.
 
     Goal priority is used to indicate which goal should be given greater emphasis when bidding.
 
@@ -86,16 +86,16 @@ see the [Optimization Guide ALI](optimization-guide-ali.md).
     - **Margin** reduces optimized bids by your desired profit margin. Additional margin can be earned through adaptive pacing if your revenue type is **CPM**, **Dynamic CPM**, **Viewable CPM**, **CPC**, or **CPCV**.
 
       > [!NOTE]
-      > The **Margin** option will not display if you selected **Cost Plus** from the **Revenue Type** drop-down in the Basic Setup section.
+      > The **Margin** option will not display if you selected **Cost Plus** from the **Revenue Type** drop-down in the **Basic Setup** section.
 
-4. Add conversion tracking.
+1. Add conversion tracking.
 
     Click **Edit** to associate conversion tracking pixels to this line item. These pixels can be used to track the line item’s performance.
 
    > [!NOTE]
    > If you have selected CPA optimization, the targeted conversion pixel must be one of the conversion tracking pixels selected here.
 
-5. If you select a conversion pixel, an **Enable IP Attribution** toggle is displayed. When enabled, if the IP address sees an impression, and the same IP address sees a conversion pixel, a conversion is activated.
+1. If you select a conversion pixel, an **Enable IP Attribution** toggle is displayed. When enabled, if the IP address sees an impression, and the same IP address sees a conversion pixel, a conversion is activated.
 
    > [!NOTE]
    > The **IP Attribution** feature is in **Alpha**. It is subject to change without notice and is only available to select clients. Please consult your Account Manager if you'd like to be added to the alpha test.

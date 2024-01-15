@@ -1,10 +1,10 @@
 ---
-title: Set up prebid server premium
-description: The article guides helps you know about the Prebid Server Premium setup, stressing the importance of following resources in a specific order.
+title: Set up Prebid Server Premium
+description: The article helps you to know about the Prebid Server Premium setup, stressing the importance of following resources in a specific order.
 ms.date: 10/28/2023
 ---
 
-# Set up prebid server premium
+# Set up Prebid Server Premium
 
 Prebid Server Premium (PSP) setup should be completed following each of the resources below in order:
 
@@ -15,10 +15,10 @@ Prebid Server Premium (PSP) setup should be completed following each of the reso
 
 Additional guidance for PSP setup:
 
-- [Video Guidance](video-guidance.md)
-- [Price Bucket Currency](price-bucket-currency.md)
-- [Prebid Server Premium Identity & User Syncing](prebid-server-premium-identity-and-user-syncing.md)
-- [Prebid Server Premium Data Passthrough](prebid-server-premium-identity-and-user-syncing.md)
+ - [Video Guidance](video-guidance.md)
+ - [Price Bucket Currency](price-bucket-currency.md)
+ - [Prebid Server Premium Identity & User Syncing](prebid-server-premium-identity-and-user-syncing.md)
+ - [Prebid Server Premium Data Passthrough](prebid-server-premium-identity-and-user-syncing.md)
 
   > [!NOTE]
   > At this time, not all clients have access to PSP. If you would like more information, please contact your Xandr Representative.

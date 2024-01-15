@@ -4,7 +4,7 @@ description: The article simplifies line item setup with supply source, content 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Set Up line item inventory and brand safety
+# Microsoft Monetize - Set up line item inventory and brand safety
 
 You can use the **Inventory & Brand Safety Targeting** section to specify the type of inventory that you want to buy (supply source), target universal or custom content categories, specify whether to advertise on web or app inventory, create and/or apply blocklists or allowlists, define brand safety settings, and set up ads.txt targeting.
 
@@ -66,7 +66,7 @@ You can use the **Inventory & Brand Safety Targeting** section to specify the ty
 
     1. Click **Save**.
 
-      If you select more than one brand safety segment, a segment group will be automatically created for each one (under **Targeting \> segments**)  and they will be ANDed together.
+       If you select more than one brand safety segment, a segment group will be automatically created for each one (under **Targeting \> segments**)  and they will be ANDed together.
 
 1. Expand the **Advanced Targeting** subsection and make an **Ads.txt** selection. When the **ads.txt** option is selected, the line item will only target web inventory on the open exchange that is authorized in a publisher's `ads.txt` file.
 

@@ -4,7 +4,7 @@ description: The article helps you to create a unified pixel for segmentation an
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Set Up a combined segment and conversion pixel
+# Microsoft Monetize - Set up a combined segment and conversion pixel
 
 Do you have an advertiser that only accepts one conversion event per user or only one conversion event per user every X minutes/hours/days? If so, you should be using segment targeting to exclude converters and increase ROI. You can create a combined Segment and Conversion pixel, so you only have to give your advertiser a single pixel to put on their conversion page.
 

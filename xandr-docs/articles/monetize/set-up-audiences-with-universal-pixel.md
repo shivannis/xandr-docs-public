@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Up Audiences with Universal Pixel
-description: The article guides you on setting up audiences using a universal pixel.
+description: Maximize ads with a universal pixel. Effortlessly create audience segments, establish rules, and optimize targeting in line items. 
 ms.date: 10/28/2023
 ---
 
@@ -33,4 +33,5 @@ To configure an audience:
 ## Related topics
 
 - [Set Up Conversions with Universal Pixel](set-up-conversions-with-universal-pixel.md)
+- [Universal Pixel Rule Conditions](universal-pixel-rule-conditions.md)
 - [Set Up Segment Targeting on a Line Item](set-up-segment-targeting-on-a-line-item.md)

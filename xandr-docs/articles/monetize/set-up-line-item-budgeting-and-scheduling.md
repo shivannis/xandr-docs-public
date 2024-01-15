@@ -97,8 +97,7 @@ Each line item must have at least one flight. Flights are subject to the followi
 1. **Optional:** Click **+Add Subflight** to create one or more subflights that you can use to further customize flight pacing and spend.
 
     > [!NOTE]
-    >  Budget subflights are an **Alpha** feature that allow you to set custom budget and pacing settings for specific days within a line item flight. If you'd like
-    >  to gain access to them, please contact your Xandr account representative.
+    >  Budget subflights are an **Alpha** feature that allow you to set custom budget and pacing settings for specific days within a line item flight. If you'd like to gain access to them, please contact your Xandr account representative.
 
    1. Enter a name for your subflight.
    1. Select a start and end date for your subflight.
@@ -109,16 +108,16 @@ Each line item must have at least one flight. Flights are subject to the followi
        > [!NOTE]
        > Line items can use no more than one subflight for any given date.
 
-     c. Toggle **Recurring** to select certain days of the week for which your subflight will take effect.
+   1. Toggle **Recurring** to select certain days of the week for which your subflight will take effect.
 
-     d. Set subflight pacing.
+   1. Set subflight pacing.
 
       Pacing determines how much of your subflight budget is spent per day. You can set the pacing by using a subflight pacing percentage or a daily budget. For more information on flight pacing, see [Lifetime Pacing](lifetime-pacing.md) and [Adaptive Pacing](adaptive-pacing.md).
 
-    | Option | Description |
-    |---|---|
-    | **Pacing percent** | This setting dictates how your subflight relatively distributes and spends its allocated budget. Pacing percent values may be between 50%-150%.<br>If the pacing is set to 100%, the budget is split evenly over every day in the flight. If the pacing is higher than 100%, the flight spends more per day at the beginning of the flight and progressively less at the end. The reverse occurs if the pacing is lower than 100%. |
-    | **Daily budget** | The amount of budget spent per day.<br>The budget can be currency, imps, completes, or views, depending on the budget type and payment model you selected earlier.<br>**Note**: If your line item is underspending when using subflights with daily budgets, underspend catch-up settings will take effect once those subflights have ended. |
+      | Option | Description |
+      |---|---|
+      | **Pacing percent** | This setting dictates how your subflight relatively distributes and spends its allocated budget. Pacing percent values may be between 50%-150%.<br>If the pacing is set to 100%, the budget is split evenly over every day in the flight. If the pacing is higher than 100%, the flight spends more per day at the beginning of the flight and progressively less at the end. The reverse occurs if the pacing is lower than 100%. |
+      | **Daily budget** | The amount of budget spent per day.<br>The budget can be currency, imps, completes, or views, depending on the budget type and payment model you selected earlier.<br>**Note**: If your line item is underspending when using subflights with daily budgets, underspend catch-up settings will take effect once those subflights have ended. |
 
 1. Select one of the following **Underspend Catch-Up** settings to dictate how your line item distributes unspent budget throughout the remainder of a flight:
 
@@ -136,7 +135,7 @@ Each line item must have at least one flight. Flights are subject to the followi
     | Button | Description |
     |---|---|
     | **Evenly (default)** | Leave this button selected if you want the daily budget distributed evenly throughout the day based on the available impressions within a specific geographic area. |
-    | **ASAP** | Select this button if you want to spend the budget as quickly as possible. This will allow the line item to spend as impressions become available rather than following a spend curve based on available impressions for a specific geographic area. This will also result in Adaptive Pacing not bid shading impressions.<br>**Warning**: Overspend is more likely to occur when ASAP is selected. |
+    | **ASAP** | Select this button if you want to spend the budget as quickly as possible. This will allow the line item to spend as impressions become available rather than following a spend curve based on available impressions for a specific geographic area. This will also result in [Adaptive Pacing](adaptive-pacing.md) not bid shading impressions.<br>**Warning**: Overspend is more likely to occur when ASAP is selected. |
 
    1. **Optional:** If desired, click **+New** to activate **Hourly Pacing Overrides**.
 
@@ -146,10 +145,10 @@ Each line item must have at least one flight. Flights are subject to the followi
   
    1. Drag the line graph to allocate pacing percentages for certain hours, or enter percent values into hour slots' text fields.
 
-   > [!NOTE]
-   > Hourly pacing percent allocations must equal 100%.
+      > [!NOTE]
+      > Hourly pacing percent allocations must equal 100%.
 
-   d. Click **Save**.
+   1. Click **Save**.
 
 1. Use the **Budget Overview** graph to see how your lifetime budget will be distributed across the active dates in your flight.
 

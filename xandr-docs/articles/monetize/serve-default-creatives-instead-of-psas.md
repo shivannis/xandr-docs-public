@@ -14,28 +14,28 @@ If your default creative is not SSL audited and your placement is run as secure 
 
 To submit your creative for SSL audit,
 
-a. Navigate to **Publishers** \> **Placement Manager**, then select the placement to which you want to add a secure default creative by clicking anywhere in the row. This displays the placement details and any default creatives already assigned to the placement.
+1. Navigate to **Publishers** \> **Placement Manager**, then select the placement to which you want to add a secure default creative by clicking anywhere in the row. This displays the placement details and any default creatives already assigned to the placement.
 
-b. In the **Default Creatives** pane, click **Add**. This opens the **Add Default Creative** dialog. Be sure to check the **Allow SSL** box.
+1. In the **Default Creatives** pane, click **Add**. This opens the **Add Default Creative** dialog. Be sure to check the **Allow SSL** box.
 
-c. If you upload a file directly to Microsoft Monetize, ensure the creative will be eligible to serve on secure inventory.
+1. If you upload a file directly to Microsoft Monetize, ensure the creative will be eligible to serve on secure inventory.
 
-d. If you input a third-party creative, be sure to add both the standard and secure tag.
+1. If you input a third-party creative, be sure to add both the standard and secure tag.
 
-e. Once an SSL enabled creative has been uploaded it will be automatically checked to ensure it is able to serve on secure inventory. If there is an issue and the creative is not eligible for secure pages you will receive an email notification detailing the issue. If you receive such an email update the creative accordingly.
+1. Once an SSL enabled creative has been uploaded it will be automatically checked to ensure it is able to serve on secure inventory. If there is an issue and the creative is not eligible for secure pages you will receive an email notification detailing the issue. If you receive such an email update the creative accordingly.
 
 ## 2. For sizeless placements, set a default creative for every size
 
 If you have a sizeless placement and do not have a default creative set up for a particular size, then you will serve a PSA for that size. You can prevent this by uploading a default creative for all sizes that you want to use.
 
-a. To see what size creatives a sizeless placement is serving, run a Publisher or Network Analytics Report with filter by `Placement` and group by `Size` criteria.
+1. To see what size creatives a sizeless placement is serving, run a Publisher or Network Analytics Report with filter by `Placement` and group by `Size` criteria.
 
-b. Make sure the date range is at least a month to ensure you capture the most possible sizes.
+1. Make sure the date range is at least a month to ensure you capture the most possible sizes.
 
-c. Once you know all the sizes that are serving for the placement, upload default creatives for each, following the procedure outlined in Step 1 above.
+1. Once you know all the sizes that are serving for the placement, upload default creatives for each, following the procedure outlined in Step 1 above.
 
-  > [!NOTE]
-  > Full instructions for uploading default creatives can be found in [Assign a Default Creative to a Placement](assign-a-default-creative-to-a-placement.md).
+   > [!NOTE]
+   > Full instructions for uploading default creatives can be found in [Assign a Default Creative to a Placement](assign-a-default-creative-to-a-placement.md).
 
 ## 3. Set the direct advertisers trust level to maximum
 
@@ -43,13 +43,13 @@ If your publisher Ad Quality setting has a trust level other then Maximum, this 
 
 To update your Ad Quality settings in Microsoft Monetize,
 
-a. click **Publishers** and choose **Ad Quality** from the menu that appears.
+1. click **Publishers** and choose **Ad Quality** from the menu that appears.
 
-b. Select the publisher you want to work with.
+1. Select the publisher you want to work with.
 
-c. Under **Buyers** \>  **Default advertisers trust** you can see the current setting.
+1. Under **Buyers** \>  **Default advertisers trust** you can see the current setting.
 
-d. If it's set to anything other then **Maximum**, click the **pencil**, update the trust level, and apply your changes.
+1. If it's set to anything other then **Maximum**, click the **pencil**, update the trust level, and apply your changes.
 
 ## Related topics
 

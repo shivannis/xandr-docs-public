@@ -14,15 +14,15 @@ For instance, if the conversion is a user downloading and installing an app from
 
 This page makes references to an attribution server. This is a server that is set up to capture the server-side pixel token data, attribute a conversion, and notify Xandr of a successful conversion.
 
-## How server-side pixels work
+## How server-side pixels work?
 
-:::image type="content" source="media/ssp-kb-article-graphic_revised.png" alt-text="Screenshot that describes how server side conversion pixels work.":::
+:::image type="content" source="media/ssp-kb-article-graphic_revised.png" alt-text="Diagram that describes how server side conversion pixels work.":::
 
 ## Getting the URL for a server-side pixel call
 
 For server-side conversion pixels, you'll need to generate a URL that you can call, instead of an HTML-based pixel that is placed on a publisher's web page. To do this, consult the **Explore Advanced Options** section of the [Export Conversion Pixels](export-conversion-pixels.md) page. The URL that is generated when you export the pixel will look something like this:
 
-:::image type="content" source="media/serverside-conversion-revised.png" alt-text="Screenshot that shows how to Generate tracking URL for server-side conversion pixels and not HTML on publishers page.":::
+:::image type="content" source="media/serverside-conversion-revised.png" alt-text="Screenshot that shows how to generate tracking URL for server-side conversion pixels and not HTML on publishers page.":::
 
 ## Adding parameters to an server-side pixel call
 
@@ -70,13 +70,14 @@ https://sspx-router.adnxs.com/sspx?id=25619&order_id=1234&value=5678&sspdata=ams
 
 To investigate issues or discrepancies with server-side pixels, Xandr must be provided with verbose logs of the pixel fires because these calls provide the information needed to do an investigation.
 
-## Alternate use case: post-view conversions
+## Alternate use case: Post-view conversions
 
 The steps are the same as above, but in Step 4, you will add the macro to an impression tracking pixel instead of the creative's landing page URL:
 
 :::image type="content" source="media/pixels.png" alt-text="Screenshot that describes how you will add the macro to an impression tracking pixel instead of the creatives landing page URL.":::
 
-Note that with this method, you will have an `SSP_DATA` token for every single impression rather than for only clicks.
+> [!NOTE]
+> With this method, you will have an `SSP_DATA` token for every single impression rather than for only clicks.
 
 ## Related topics
 
