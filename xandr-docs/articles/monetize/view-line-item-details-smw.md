@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - View Line Item Details
-description: The article provides information about the Line Items Details window, which allows you to view and edit line item settings. 
+description: Learn about the Line Items Details window that empowers you to optimize settings, troubleshoot, and visualize performance metrics for line items. 
 ms.date: 10/28/2023
 ---
 

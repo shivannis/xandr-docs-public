@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - View Insertion Order Details
-description: The article details the Insertion Order Details screen, highlighting settings, essential metrics, and performance visualizations for an insertion order.
+description: Discover crucial settings, metrics, and performance visuals on the Insertion Order Details screen. Enhance video viewability measurement with the VPAID wrapper.
 ms.date: 10/28/2023
 ---
 
@@ -38,7 +38,7 @@ The settings that display here are read-only and can be edited by clicking **Edi
 
 To view child object details:
 
-1. Click the **Associated Objects** menu on the right of the Details pane.
+1. Click the **Associated Objects** menu on the right of the **Details** pane.
 1. Select the appropriate object category such as **Creatives**.
 
 ## Related topics

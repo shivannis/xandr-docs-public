@@ -1,6 +1,6 @@
 ---
 title: Video Players
-description: The article helps you to know more about Xandr video player offerings, ideal use cases and limitations of each video players.
+description: Explore the video player offerings, uncovering ideal use cases and limitations. Learn the difference between Instream and Outstream Video for powerful ad placements. 
 ms.date: 10/28/2023
 ---
 
@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 This page describes the Xandr video player offerings, as well as ideal use cases and limitations of each player.
 
-## Instream versus Outstream Video
+## Instream versus outstream video
 
 Instream video refers to video advertising for which publishers provide their own players (usually to house their own content).
 

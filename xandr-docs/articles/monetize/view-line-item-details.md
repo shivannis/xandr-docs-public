@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - View Line Item Details - Monitoring
-description: The article describes the Line Item Details screen, presenting settings, metrics, serving conditions, and visualizations for a specific line item.
+description: Explore Line Item Details for insights—settings, metrics, visualizations. Swiftly access child campaigns' performance.
 ms.date: 10/28/2023
 ---
 
@@ -37,7 +37,7 @@ The **Basic Settings** button shows the **Basic Setup**, **Frequency Cap**, **Ge
 
 The **All Settings** button shows these settings as well as **Commissions**, **Comments**, **Dynamic Landing Page**, and parent **Insertion Orders** (if applicable).
 
-## Basic Setup
+## Basic setup
 
 - **State**: The state of the line item (active or inactive).
 - **Lifetime Budget**: The lifetime budget for the line item (in impressions or revenue).

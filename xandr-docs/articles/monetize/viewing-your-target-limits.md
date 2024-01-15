@@ -1,6 +1,6 @@
 ---
 title: Viewing Your Target Limits 
-description: The article details Xandr's domain list and profile target restrictions, introducing viewing target limits.
+description: Explore Target Limits Report for insights into domain and target restrictions. Learn about the maximum allowed for each target type, optimizing your campaigns for success. 
 ---
 
 # Viewing your target limits

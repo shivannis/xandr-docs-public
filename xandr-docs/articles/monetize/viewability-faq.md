@@ -1,12 +1,12 @@
 ---
 title: Microsoft Monetize - Viewability FAQ
-description: The article addresses questions related to Xandr viewability data, providing information on where to find it and highlighting key metrics.
+description: Unlock Xandr Viewability insights and discover essential metrics to boost digital visibility. Learn where to find crucial info and optimize strategies.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - Viewability FAQ
 
-## Viewability Data
+## Viewability data
 
 The following questions address where to find Xandr viewability data and the key metrics associated with it.
 

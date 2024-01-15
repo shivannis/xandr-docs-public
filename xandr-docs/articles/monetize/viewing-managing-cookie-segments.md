@@ -1,6 +1,6 @@
 ---
 title: Viewing & Managing Cookie Segments
-description: The article guides managing cookie segments, suggesting troubleshooting by identifying and overriding specific cookie aspects for better control.
+description: Effortlessly manage cookie segments, troubleshoot, identify, and override for seamless control.
 ms.date: 10/28/2023
 ---
 
@@ -52,7 +52,7 @@ The following table defines what codes are available for overriding, the corresp
 | City | [City Service](../digital-platform-api/city-service.md) | name |
 | Postal Code | [Postal Code Service](../digital-platform-api/postal-code-service.md) | code |
 
-## Remove your Geo override
+## Remove your geo override
 
 You can use the following to clear all your geo overrides:
 

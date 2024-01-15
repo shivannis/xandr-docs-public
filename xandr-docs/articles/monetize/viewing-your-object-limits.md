@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Viewing Your Object Limits
-description: The article offers instructions on how to assess and monitor object limits.
+description: Efficiently manage line items, creatives, and more with the Object Limits Report. Stay ahead by monitoring platform usage and ensuring compliance with specified limits. 
 ms.date: 10/28/2023
 ---
 
@@ -18,7 +18,7 @@ Your object limits report is available under your Network Settings.
 
 ## Object limits report
 
-The Object Limits Report section lists the types of objects that are limited and provides the following data
+The **Object Limits Report** section lists the types of objects that are limited and provides the following data
 for each:
 
 - **Usage/Used** - The current number of active and inactive objects.  For creatives, this does not include expired objects.

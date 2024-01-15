@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Measurement of Video Viewability using VPAID Wrapper
-description: The article helps you understand the technology behind our video viewability measurement and how to measure video viewability using a VPAID wrapper.
+description: Learn our video viewability measurement technology, aligning with IAB guidelines. Achieve 50% in-view for 2 seconds with Xandr's VPAID-wrapped video ads. Our wrapper manages, tracks, and measures viewability.
 ms.date: 10/28/2023
 ---
 
@@ -15,13 +15,13 @@ This page explains the technology behind our video viewability measurement.
 
 The Xandr video viewability measurement is based on the IAB guidelines, which state that 50% of the surface of a video ad must be in-view for a minimum of 2 seconds.
 
-**The Xandr Video Viewability Measurement**
+### The Xandr video viewability measurement
 
 To enable viewability measurement, Xandr wraps video ads with a VPAID component which is responsible for loading and playing the ad. In addition, the VPAID wrapper manages, tracks and measures viewability by dropping the viewability measurement script on the page. The VPAID component then notifies the measurement script of any ad related events such as starts, pauses, resumes, etc.
 
 The VPAID wrapper requires that the player supports VPAID creatives. If the publisher does not support VPAID, the creative is considered non-measurable.The following is a list of all the supported and non-supported formats:
 
-**Supported formats:**
+### Supported formats
 
 - Any version of VAST
 - Any version of VPAID
@@ -29,13 +29,13 @@ The VPAID wrapper requires that the player supports VPAID creatives. If the publ
 - javascript VPAID
 - Display Inventory
 
-## AdServing
+## Ad serving
 
 When viewability is enabled, the VPAID wrapper is served by default. If the player does not support VPAID, and the original third party creative was VAST, the VAST XML will serve without the VPAID component, and viewability will not be measured. Creatives that already include VPAID components will not serve on players that do not support VPAID.
 
 The Xandr VPAID wrapper will always serve when the player is able to play VPAID creatives. At present, only desktop web and mobile web are supported. Viewability measurement on both instream and outstream positions is supported.
 
-**The AdServing lifecycle**
+### The ad serving lifecycle
 
 1. A **video tag** is embedded within a video player on a publisher's website.
 1. Consumer loads the website and the video ad tag makes a **bid request** to Xandr servers.
@@ -44,19 +44,18 @@ The Xandr VPAID wrapper will always serve when the player is able to play VPAID 
 1. The player loads, initializes, and **runs** the Xandr **VPAID viewability wrapper**.
 1. The VPAID wrapper injects the **viewability measurement javascript** on the page.
 1. The VPAID wrapper makes a call to a **third party ad server**.
-1. Third party ad server generates a **VAST document** (the original VAST creative uploaded within Monetize).
+1. Third party ad server generates a **VAST document** (the original VAST creative uploaded within Microsoft Monetize).
 1. The third party VAST document is **sent** to the **VPAID wrapper**.
 1. The VPAID wrapper **loads** the video creative.
 1. The **creative** **(ad) is displayed** in the player while the viewability javascript on the page **measures the viewability** of the creative.
 
 :::image type="content" source="media/viewability.png" alt-text="Screenshot that displays AdServing Lifecycle.":::
-![Viewability]()
 
-**VPAID wrapper functions**
+### VPAID wrapper functions
 
 In addition to viewability measurement, the VPAID wrapper is responsible for loading and parsing the VAST document by identifying creatives and collecting tracking pixels. While the video ad is being played, the wrapper calls tracking events that are specified in the VAST document, such as pause, resume, pause on click etc. The VPAID wrapper is also responsible for managing click-through URLs and adjusting the volume of the video ad according to the volume set on the player.
 
-**VPAID wrapper specifications**
+### VPAID wrapper specifications
 
 The VPAID wrapper has the following specifications:
 
@@ -66,22 +65,21 @@ The VPAID wrapper has the following specifications:
 - Downloads the VAST document, selects the media file to play, manages tracking events, forwards VPAID Events
 - Desktop web and mobile web measurement
 
-## Reporting - UI
+### Reporting - UI
 
 The following metrics are now available in the Advertiser Video Analytics Report, Publisher Video Analytics Report, and Network Video Analytics Report. (See [Analytics Reporting](analytics-reporting.md) for more information.)
 
-**Viewability measurement metrics**
+### Viewability measurement metrics
 
 | Viewability Metrics | Definition |
 |---|---|
 | `View-Measured Imps` | The total number of impressions that were measured for viewability. |
-| `Viewability Measurement Rate` | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) | 
+| `Viewability Measurement Rate` | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
 
-> [!NOTE]
-> Viewability Measurement Rate is not directly comparable to other measurement vendors since our total impression count is higher. Our measurement rate is not an indicator of
-> the technical quality of the measurement. For more information, see the [Viewability FAQ](viewability-faq.md).
+   > [!NOTE]
+   > Viewability Measurement Rate is not directly comparable to other measurement vendors since our total impression count is higher. Our measurement rate is not an indicator of the technical quality of the measurement. For more information, see the [Viewability FAQ](viewability-faq.md).
 
-**Viewability metrics**
+### Viewability metrics
 
 | Viewability Metrics | Definition |
 |---|---|
@@ -103,18 +101,16 @@ The [Video Events Feed](../log-level-data/video-events-feed.md) now has the the 
 
 | Column | Description |
 |---|---|
-| `view_result` | The Xandr viewability measurement result of the impression. Possible values:<br> - 1 = VIEW_MEASURED_VIEWABLE<br> - 2 = VIEW_MEASURED_NON_VIEWABLE<br> - 3 = VIEW_NON_MEASURED<br> For non-impression events, this will be NULL. |
-| `view_non_measurable_reason` | The reason an impression could not be measured for viewability. Possible values:<br> - 0 = N/A. The impression was measured for viewability<br> - 1 = SCRIPT_NOT_SERVED. The viewability script was not served with the creative. For example, on mobile-app inventory.<br> - 2 = NO_SCRIPT_CALLBACK. The viewability script was served with the creative, but no callback/event was received. For example, the user left the page before the creative was served.<br> - 3 = TECHNICAL_LIMITATION. The viewability script was served and loaded, but was unable to measure for a technical reason. For example, a cross-domain iframe with Flash disabled. |
+| `view_result` | The Xandr viewability measurement result of the impression. Possible values:<br> - 1 = `VIEW_MEASURED_VIEWABLE`<br> - 2 = `VIEW_MEASURED_NON_VIEWABLE`<br> - 3 = `VIEW_NON_MEASURED`<br> For non-impression events, this will be NULL. |
+| `view_non_measurable_reason` | The reason an impression could not be measured for viewability. Possible values:<br> - 0 = N/A. The impression was measured for viewability<br> - 1 = `SCRIPT_NOT_SERVED`. The viewability script was not served with the creative. For example, on mobile-app inventory.<br> - 2 = `NO_SCRIPT_CALLBACK`. The viewability script was served with the creative, but no callback/event was received. For example, the user left the page before the creative was served.<br> - 3 = `TECHNICAL_LIMITATION`. The viewability script was served and loaded, but was unable to measure for a technical reason. For example, a cross-domain iframe with Flash disabled. |
 
 ## FAQ
 
-This section lists out frequently asked questions regarding video
-viewability.
+This section lists out frequently asked questions regarding video viewability.
 
 ### Will viewability work on both Xandr hosted creatives and third-party hosted creatives?
 
-Yes, Xandr provides viewability measurement
-across all video creatives for free.
+Yes, Xandr provides viewability measurement across all video creatives for free.
 
 ### What happens if I upload a VAST creative?
 
@@ -146,6 +142,6 @@ No, it will not. Xandr will serve the viewability script where applicable and th
 Viewability measurement is included in the [Advertiser Video Analytics Report](advertiser-video-analytics-report.md) and [Network Video Analytics Report](network-video-analytics-report.md), which provide reporting down to the individual
 tag/placement or site domain. This enables clients to update targeting to either include or exclude high or poor performing placements.
 
-### How does Xandr viewability compare with other third party viewability vendors such as MOAT, Integral Ad Science, and DoubleVerify?
+### How does Xandr viewability compare with other third party viewability vendors such as MOAT, integral Ad science, and DoubleVerify?
 
 The Xandr viewability measurement aligns closely with third party vendors and should be used as a helpful proxy to help optimize for higher viewability.

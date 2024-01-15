@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - View advertiser details
-description: The article explains advertiser's settings, metrics, visualizations, and quick access to child objects for effective campaign management.
+description: Unlock advertiser insights with the Advertiser Details screen. Explore settings, metrics, and visualizations for optimal performance.
 ms.date: 10/28/2023
 ---
 

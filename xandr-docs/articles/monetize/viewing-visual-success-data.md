@@ -1,6 +1,6 @@
 ---
 title: Viewing Visual Success Data
-description: The article outlines the use of Visual Success, a tool aimed at helping campaign managers achieve enhanced overall performance.
+description: Elevate campaigns with Visual Success – a tool for efficient monitoring, issue detection, and goal tracking. Explore top-line features on Line Item Details.
 ms.date: 10/28/2023
 ---
 

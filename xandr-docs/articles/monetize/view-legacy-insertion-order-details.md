@@ -1,13 +1,13 @@
 ---
 title: View Legacy Insertion Order Details
-description: The article provides guidance on accessing and reviewing information about legacy insertion orders.
+description: Learn how to access and review information about legacy insertion orders.
 ms.date: 10/28/2023
 ---
 
 # View legacy insertion order details
 
 > [!NOTE]
-> Legacy insertion orders are required for [default insertion order](create-a-guaranteed-delivery-line-item.md). For all other line items, we recommend the use of the default insertion order.
+> Legacy insertion orders are required for [default insertion order](create-a-guaranteed-delivery-line-item.md). For all other line items, we recommend the use of the [default insertion order](create-an-insertion-order.md).
 
 The **Insertion Order Details** screen shows you the settings and essential metrics for a specific insertion order, provides visualizations of the insertion order's performance, offers quick access to the insertion order's child objects, and more.
 
@@ -36,7 +36,7 @@ For more information about Trader Home, see [Working with Trader Home](working-w
 
 Visual Success is a tool designed to help campaign managers achieve better overall performance. It provides easy access to performance, delivery, and other metrics for your insertion order. You can use these metrics to see how the campaigns under your insertion order are performing as a group, and assess for possible trouble spots.
 
-**Visual Success Benefits**
+### Visual success benefits
 
 With Visual Success, you can:
 
@@ -75,3 +75,4 @@ This takes you to the **Advertiser Reporting** screen, where you can select to r
 
 - [Explore Insertion Orders](explore-insertion-orders.md)
 - [Create an Insertion Order](create-an-insertion-order.md)
+- 

@@ -1,6 +1,6 @@
 ---
 title: View Campaign Details
-description: The article guides you through campaign details, offering insights into settings, metrics, and performance. Visualizations, quick creative access, and overall campaign management included.
+description: Navigate campaign details, gain insights on settings, metrics, and performance. Explore visualizations, creative access, and seamless campaign management for success.
 ms.date: 10/28/2023
 ---
 
@@ -35,11 +35,11 @@ The **At-a-Glance** section shows you the campaign's status, state, and flight s
   - Daily impression budget has been met.
   - Daily cost budget has been met.
 
-> [!WARNING]
-> The "warning" icon indicates that the campaign is ineligible to serve due to conditions are are likely unintentional and that should be addressed. When a campaign shows this status, hover over the icon to see exactly what conditions are preventing it from serving. The following conditions can provide this status:
->
-> - No creatives are associated with this campaign. 
-> - All creatives associated to this campaign are either ineligible to serve (inactive, expired, prohibited) or can serve only on direct inventory and on supply partners who trust your network's self-classification (unaudited).
+  > [!WARNING]
+  > The "warning" icon indicates that the campaign is ineligible to serve due to conditions are are likely unintentional and that should be addressed. When a campaign shows this status, hover over the icon to see exactly what conditions are preventing it from serving. The following conditions can provide this status:
+  >
+  > - No creatives are associated with this campaign.
+  > - All creatives associated to this campaign are either ineligible to serve (inactive, expired, prohibited) or can serve only on direct inventory and on supply partners who trust your network's self-classification (unaudited).
 
 ## Viewing quickstats
 
@@ -108,7 +108,7 @@ The exact requirements for calculating pacing depend on the quickstats interval 
 
 ## Viewing analytics graphs
 
-By default, the Analytics section is collapsed. Expand the section to view graphs that help you visualize the impressions served, media cost spent, revenue earned, and profit
+By default, the **Analytics** section is collapsed. Expand the section to view graphs that help you visualize the impressions served, media cost spent, revenue earned, and profit
 made (revenue - media cost) for this campaign over the last 14 days. When the campaign has a daily budget or a lifetime budget and a flight end date, the Impressions or Revenue graph shows you the impressions/revenue budgeted for each day so that you can compare the actual and budgeted amounts.
 
 > [!NOTE]

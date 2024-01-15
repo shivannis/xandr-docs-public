@@ -1,6 +1,6 @@
 ---
 title: Video Player Targeting
-description: The article helps you to target video inventory based on the playback method, player size, position, creative duration, and framework.
+description: Optimize your video inventory targeting with expert insights on playback methods, player size, position, creative duration, and framework. 
 ms.date: 10/28/2023
 ---
 
