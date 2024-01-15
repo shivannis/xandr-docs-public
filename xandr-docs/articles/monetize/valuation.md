@@ -1,13 +1,11 @@
 ---
-Title : Valuation
-Description : Valuation is the process by which our system determines a bid amount.
+title: Microsoft Monetize - Valuation
+description: Learn what is Valuation and how it can be used to determine bid amount.
 ms.date: 10/28/2023
 ---
 
 
-# Valuation
-
-
+# Microsoft Monetize - Valuation
 
 Valuation is the process by which our system determines a bid amount.
 Our valuation algorithms determine the appropriate price for an auction
@@ -25,14 +23,14 @@ impressions.
 The final bid submitted in an auction is further modified based on
 multiple additional factors, including:
 
-- <a href="adaptive-pacing.md" class="xref">Adaptive Pacing</a>
+- [Adaptive Pacing](adaptive-pacing.md)
 - Goal priority (performance, delivery, or margin)
 - Payment type
 - Booked revenue
 - Partner fees
 - Margin
 
-Predicting Clicks
+## Predicting clicks
 
 CPC and CTR goals optimize to clicks. The features and signals used to
 predict the likelihood of clicks are:
@@ -48,7 +46,7 @@ predict the likelihood of clicks are:
   advertiser
 - How recently the user has been served impressions from this advertiser
 
-Predicting Only Post-click Conversions
+## Predicting only post-click conversions
 
 CPA goals can be set to optimize only to post-click conversions. In that
 case, the features and signals used to predict the likelihood of
@@ -65,7 +63,7 @@ post-click conversions are:
   advertiser
 - How recently the user has been served impressions from this advertiser
 
-Predicting Post-click and Post-view Conversions
+## Predicting post-click and Post-view Conversions
 
 You can set a CPA goal that optimizes to both post-click and post-view
 conversions for both retargeting line items (line items that target
@@ -94,7 +92,7 @@ these events are:
   advertiser
 - How recently the user has been served impressions from this advertiser
 
-Predicting Views
+## Predicting views
 
 vCPM goals optimize to views. The features used to predict the
 likelihood of views are:
@@ -103,7 +101,7 @@ likelihood of views are:
 - Inventory URL
 - Operating system
 
-Predicting Video Completes
+## Predicting video completes
 
 CPCV and VCR goals optimize to video completes, which occur when a video
 is played for its entire duration. The features and signals used to
@@ -114,13 +112,8 @@ predict the likelihood of video completes are:
 - Operating system
 - Video Context, for example pre-roll, mid-roll, or post-roll
 
-Related Topics
+## Related topics
 
-- <a href="optimization-guide-ali.md" class="xref">Optimization Guide -
-  ALI</a>
-- <a href="adaptive-pacing.md" class="xref">Adaptive Pacing</a>
-- <a href="discovery.md" class="xref">Discovery</a>
-
-
-
-
+- [Optimization Guide - ALI](optimization-guide-ali.md)
+- [Adaptive Pacing](adaptive-pacing.md)
+- [discovery.md](discovery.md)

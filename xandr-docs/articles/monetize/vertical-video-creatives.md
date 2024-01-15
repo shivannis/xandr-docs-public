@@ -1,14 +1,11 @@
 ---
-Title : Vertical Video Creatives
-Description : Vertical video formats are designed for display on smartphones, and use
+title: Microsoft Monetize - Vertical Video Creatives
+description: Learn how Vertical videos can be displayed either in a "native" or full-screen mode. 
 ms.date: 10/28/2023
-an aspect ratio that can either be square, or longer than it is wide.
 ---
 
 
-# Vertical Video Creatives
-
-
+# Microsoft Monetize - Vertical video creatives
 
 Vertical video formats are designed for display on smartphones, and use
 an aspect ratio that can either be square, or longer than it is wide.
@@ -24,29 +21,8 @@ Full-screen mode shows video controls overlaid on the creative. In
 either case, the video is displayed in its true vertical aspect ratio,
 without pillarboxing or letterboxing.
 
-
-
-<b>Note:</b> When creating new line items for
-your vertical video creatives, be sure to set the
-Creative Type to
-Video and the
-Supply Strategy to
-Managed or
-Open Exchange. For more information,
-see the following:
-
-- <a href="create-an-augmented-line-item-ali.md" class="xref"
-  title="You create augmented line items (ALIs) to define your financial relationship with an advertiser, set up targeting for an advertising campaign, and schedule your advertisements to run.">Create
-  an Augmented Line Item</a>
-- <a href="add-a-creative.md" class="xref"
-  title="You can add a creative by either uploading a spreadsheet or the creative files directly from your computer. Only secure content is supported.">Add
-  a Creative</a>
-- <a href="add-creatives-in-bulk.md" class="xref"
-  title="You can add multiple third-party, hosted, and native creatives to the Creative Manager simultaneously by either uploading a spreadsheet or the creative files directly from your computer. Only secure content is supported.">Add
-  Creatives in Bulk</a>
-
-
-
-
-
-
+> [!NOTE]
+> When creating new line items for your vertical video creatives, be sure to set the **Creative Type** to Video and the Supply Strategy to Managed or Open Exchange. For more information, see the following:
+> - [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
+> - [Add a Creative](add-a-creative.md)
+> - [Add Creatives in Bulk](add-creatives-in-bulk.md)

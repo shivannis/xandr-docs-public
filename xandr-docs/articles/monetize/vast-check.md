@@ -1,34 +1,24 @@
 ---
-Title : VAST Check
-Description : When adding a third-party VAST or VPAID video creative, a series of
+title: Microsoft Monetize - VAST Check
+description: Learn about the different outputs you may see and corrective action that can be taken when adding a third-party VAST or VPAID video creative.  
 ms.date: 10/28/2023
-checks are performed on the XML. This page describes the different
 ---
 
 
-# VAST Check
-
-
+# Microsoft Monetize - VAST check
 
 When adding a third-party VAST or VPAID video creative, a series of
 checks are performed on the XML. This page describes the different
 outputs you may see and corrective action that can be taken.
 
+> [!IMPORTANT]
+> **New to VAST Check**
+> 
+> CTV Eligibility Check: Ensure that your uploaded creative meets the suggested format and quality requirements for CTV inventory.
+> 
+> Hosted Asset Scanning: Xandr-hosted video assets will now be checked in addition to third-party creatives.
 
-
-<b>Important:</b>
-
-**New to VAST Check**
-
-CTV Eligibility Check: Ensure that your uploaded creative meets the
-suggested format and quality requirements for CTV inventory.
-
-Hosted Asset Scanning: Xandr-hosted video assets
-will now be checked in addition to third-party creatives.
-
-
-
-VAST Check Elements
+## VAST check elements
 
 - Duration: A duration with format 00:00:00 is required.
 - Formats: To deliver on all player types, the following formats are
@@ -42,7 +32,7 @@ VAST Check Elements
   tracking.
 - Wrappers: A maximum of two `<Wrapper>` tags is recommended.
 
-OTT Eligibility
+## OTT eligibility
 
 OTT (over-the-top video, sometimes known as connected TV or "CTV"
 content) is TV content delivered via an internet connection, often via
@@ -61,15 +51,10 @@ Minimum recommended OTT creative specifications: 
 - minimum resolution of 1280x720
 - minimum bitrate of 2000 kbps
 
+> [!NOTE]
+> All VPAID creatives will be ineligible for OTT inventory. To serve on OTT inventory, use VAST creatives with an MP4 format.
 
-
-<b>Note:</b> All VPAID creatives will be
-ineligible for OTT inventory. To serve on OTT inventory, use VAST
-creatives with an MP4 format.
-
-
-
-Possible VAST Check Outcomes
+## Possible VAST check outcomes
 
 **Unable to run:** VAST Check cannot access the creative. The creative
 can't be saved.
@@ -90,20 +75,13 @@ not required. The creative can be saved.
 - Some adjustments are recommended.
 - All attributes are present and valid.
 
-VAST Check Unable to Run (Invalid/Inaccessible Creative)
+## VAST check unable to run (invalid/inaccessible creative)
 
-Error: No valid ad information was found
+### Error: No valid ad information was found
 
-
-
-<b>Note:</b> Full Error:
-
-Error: There was an error with the request: No valid ad information was
-found. This may occur if the tag has no content, or if it is
-specifically blocking our VAST Check Service. Please reach out to your
-third-party ad server for assistance.
-
-
+> [!NOTE]
+> Full Error:
+> Error: There was an error with the request: No valid ad information was found. This may occur if the tag has no content, or if it is specifically blocking our VAST Check Service. Please reach out to your third-party ad server for assistance.
 
 **What it means:**
 
@@ -113,10 +91,9 @@ third-party ad server for assistance.
 - The URL may lead to a rotating, deactivated, or targeting-enabled tag
   that only selectively returns a full XML response
 
-  ![Unable to Run](media/unable-to-run.png)
-  
+:::image type="content" source="media/unable-to-run.png" alt-text="Screenshot of an xml file that cant be run .":::
 
-**Actions to take:**
+ **Actions to take:**
 
 - If you paste the VAST URL into a browser and no content is returned,
   the creative is either invalid, disabled, or utilizing some sort of
@@ -137,18 +114,12 @@ third-party ad server for assistance.
   - If there isn't any XML or a blank XML response is returned, the ad
     server isn't responding to our VAST Check properly
 
-Error: We are unable to detect content from this tag
+### Error: We are unable to detect content from this tag
 
-
-
-<b>Note:</b> Full Error:
-
-Error: There was an error with the request: We are unable to detect
-content from this tag. This may occur if the tag has no content, or if
-it is specifically blocking our VAST Check Service. Please reach out to
-your third-party ad server for assistance.
-
-
+> [!NOTE]
+> Full Error:
+>
+> Error: There was an error with the request: We are unable to detect content from this tag. This may occur if the tag has no content, or if it is specifically blocking our VAST Check Service. Please reach out to your third-party ad server for assistance.
 
 **What it means:**
 
@@ -178,14 +149,14 @@ your third-party ad server for assistance.
   - If there isn't any XML or a blank XML response is returned, the ad
     server isn't responding to our VAST Check properly
 
-Failed Creative: Some Attributes Need Attention
+## Failed creative: Some attributes need attention
 
 If VAST check returns this message, the creative was scanned but
 contains errors that will prevent it from saving. Review the VAST Check
 output to see what information is missing. Below are the possible
 attributes that will cause VAST Check to fail if they are missing.
 
-Video duration is undefined
+### Video duration is undefined
 
 **What it means:**
 
@@ -197,28 +168,25 @@ Video duration is undefined
 
 **Actions to take:**
 
-- Click Run check again button to
+- Click **Run check again** button to
   initiate the re-scanning of the creative XML document.
 
-  ![Run check again](media/run-check-again.png)
+:::image type="content" source="media/run-check-again.png" alt-text="Screenshot of Run check again button":::
 
-
-  <u>This feature would address the following scenarios where</u>:
-
-  - Scanner failed to run during the upload
-  - Scanner timed out while scanning
-  - Scanner detected an issue such as missing or wrong duration, missing
+   This feature would address the following scenarios where:
+   - Scanner failed to run during the upload
+   - Scanner timed out while scanning
+   - Scanner detected an issue such as missing or wrong duration, missing
     or wrong media file format, etc.
-  - VAST XML content is updated on the ad server, but needs to be
+   - VAST XML content is updated on the ad server, but needs to be
     updated at Xandr platform and back-end.
 
 - Reach out to the tag provider to add the missing duration information
   or revise the format. For example:
 
-  ![Video duration](media/video-duration.png)
-  
+:::image type="content" source="media/video-duration.png" alt-text="Screenshot of Video duration .":::
 
-No video formats detected
+### No video formats detected
 
 **What it means:**
 
@@ -231,10 +199,9 @@ No video formats detected
 - Click Run check again button to
   initiate the re-scanning of the creative XML document.
 
-  ![Run check again](media/run-check-again.png)
+:::image type="content" source="media/run-check-again.png" alt-text="Screenshot of Run check again button .":::
 
-
-  <u>This feature would address the following scenarios where</u>:
+This feature would address the following scenarios where:
 
   - Scanner failed to run during the upload
   - Scanner timed out while scanning
@@ -245,30 +212,28 @@ No video formats detected
 
 - Reach out to the tag provider to update the creative with at least one
   of the recommended video formats.
-
   Sample XML with recommended VAST formats:
 
-  ![Video Format](media/video-formats.png)
+:::image type="content" source="media/video-formats.png" alt-text="Screenshot of Video Format .":::
 
+Sample XML with recommended VPAID formats:
 
-  Sample XML with recommended VPAID formats:
+:::image type="content" source="media/media-files.png" alt-text="Screenshot of Media files .":::
 
-  ![Media files](media/media-files.png)
-
-Some Adjustments are Recommended (Valid Creative)
+## Some adjustments are recommended (valid creative)
 
 If your VAST check returns this message, your creative is valid and can
 be saved. The VAST check will provide recommended adjustments that may
 improve the scale of your creative.
 
-Video duration is greater than 30 seconds
+### Video duration is greater than 30 seconds
 
 No corrective action is needed here. We flag long-form creatives because
 they may not be eligible to serve on Instream inventory with duration
 limits. Targeting Outstream inventory is recommended as it will
 typically not have the same duration limits as Instream.
 
-Some recommended video formats not detected
+### Some recommended video formats not detected
 
 **What it means:** The MediaFile information for the video does not
 declare all of the recommended formats for VAST or VPAID.
@@ -282,11 +247,10 @@ allows VPAID creatives to play in non-Flash environments.
 **Actions to take:** Reach out to your tag provider to update the
 creative with the recommended video formats.
 
-For sample XML snippets with the recommended formats, see the
-<a href="vast-check.md#ID-000070b8__ID-00007156" class="xref">No video
-formats detected section</a>.
+For sample XML snippets with the recommended formats, see the 
+[No video formats detected section](#no-video-formats-detected).
 
-\<Wrapper\> element(s) detected
+### \<Wrapper\> element(s) detected
 
 **What it means:** A `<Wrapper>` element indicates that the location of
 the `<InLine>` tag from which to retrieve the video creative is not
@@ -296,13 +260,8 @@ element may refer to a VAST document that contains a `<Wrapper>`
 element. Each redirect to another VAST document increases the time taken
 to reach the actual creative.
 
-
-
-<b>Note:</b> If there are more than two
-`<Wrapper>` redirects in the VAST response to a bid request, some supply
-sources (e.g., Google AdX) will reject your creative.
-
-
+> [!NOTE]
+> If there are more than two `<Wrapper>` redirects in the VAST response to a bid request, some supply sources (e.g., Google AdX) will reject your creative.
 
 **Actions to take:** Avoid multiple chained `<Wrapper>` elements in your
 VAST documents.
@@ -310,10 +269,9 @@ VAST documents.
 Excerpt of a VAST document with a `<Wrapper>` element pointing to an
 `<InLine>` tag:
 
-![wrapper vast](media/wrapper-vast.png)
+:::image type="content" source="media/wrapper-vast.png" alt-text="Screenshot of wrapper vast .":::
 
-
-All Attributes are Present and Valid (Valid Creative)
+### All attributes are present and valid (valid creative)
 
 If VAST check was successful, it means that the VAST file has satisfied
 the following requirements:
@@ -330,7 +288,3 @@ the following requirements:
 - Video creative URLs have secure prefixes - All URLs inside the VAST
   document are prefixed with https:// and can serve on secure inventory.
 - There aren't any multiple nested wrappers
-
-
-
-

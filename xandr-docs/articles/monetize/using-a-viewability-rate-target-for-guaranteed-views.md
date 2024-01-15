@@ -1,14 +1,11 @@
 ---
-Title : Using a Viewability Rate Target for Guaranteed Views
-Description : Because a vCPM campaign may still incur some impression-based costs, it
+title: Microsoft Monetize - Using a Viewability Rate Target for Guaranteed Views
+description: Learn why its important to manage the average viewability rate in this page. 
 ms.date: 10/28/2023
-may be necessary to manage the average viewability rate. Because a vCPM
 ---
 
 
-# Using a Viewability Rate Target for Guaranteed Views
-
-
+# Microsoft Monetize - Using a viewability rate target for guaranteed views
 
 Because a vCPM campaign may still incur some impression-based costs, it
 may be necessary to manage the average viewability rate. Because a vCPM
@@ -18,13 +15,7 @@ risk of very low viewability while still taking advantage of the
 viewable-only payment feature of the vCPM campaign, use a lower
 threshold (e.g. 30%).
 
-Related Topics
+## Related topics
 
-- <a href="create-an-augmented-line-item-ali.md" class="xref"
-  title="You create augmented line items (ALIs) to define your financial relationship with an advertiser, set up targeting for an advertising campaign, and schedule your advertisements to run.">Create
-  an Augmented Line Item</a>
-- <a href="guaranteed-outcomes.md" class="xref">Guaranteed Outcomes</a>
-
-
-
-
+- [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
+- [Guaranteed Outcomes](guaranteed-outcomes.md)

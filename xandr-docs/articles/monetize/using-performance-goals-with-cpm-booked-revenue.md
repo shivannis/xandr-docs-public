@@ -1,15 +1,11 @@
 ---
-Title : Using Performance Goals with CPM Booked Revenue
-Description : The purpose of this page is to illustrate how to best use
+title: Using Performance Goals with CPM Booked Revenue
+description: In this page learn how to best use Xandr optimization when your client is paying you on a CPM basis but will measure results on a CPA, CPC or CTR basis.
 ms.date: 10/28/2023
-Xandr optimization when your client is paying
-you on a CPM basis but will measure results on a CPA, CPC or CTR basis.
 ---
 
 
-# Using Performance Goals with CPM Booked Revenue
-
-
+# Using performance goals with CPM booked revenue
 
 The purpose of this page is to illustrate how to best use
 Xandr optimization when your client is paying
@@ -31,28 +27,9 @@ following scenario.
 You are responsible for trafficking the following line item from an
 insertion order with the following specifications:
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001475__entry__1" class="entry">Placement</th>
-<th id="ID-00001475__entry__2" class="entry">Flight Dates</th>
-<th id="ID-00001475__entry__3" class="entry">Rate Type</th>
-<th id="ID-00001475__entry__4" class="entry">Rate</th>
-<th id="ID-00001475__entry__5" class="entry">Units</th>
-<th id="ID-00001475__entry__6" class="entry">Net Cost</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00001475__entry__1">Creative_ABC_RON</td>
-<td class="entry" headers="ID-00001475__entry__2">5/1/14 - 5/31/14</td>
-<td class="entry" headers="ID-00001475__entry__3">CPM</td>
-<td class="entry" headers="ID-00001475__entry__4">$1.00</td>
-<td class="entry" headers="ID-00001475__entry__5">10,000,000</td>
-<td class="entry" headers="ID-00001475__entry__6">$10,000</td>
-</tr>
-</tbody>
-</table>
+| Placement | Flight Dates | Rate Type | Rate | Units | Net Cost |
+|---|---|---|---|---|---|
+| Creative_ABC_RON | 5/1/14 - 5/31/14 | CPM | $1.00 | 10,000,000 | $10,000 |
 
 Additional information:
 
@@ -64,9 +41,9 @@ Let's take a look at what this insertion order would look like if we
 trafficked it the old way using the **Optimize to a predicted CPA goal**
 campaign buying strategy.
 
-The Old Way: Optimize to a predicted CPA goal (no longer recommended)
+## The old way: Optimize to a predicted CPA goal (no longer recommended)
 
-The Setup
+### The setup
 
 First, you would set up a line item with a budget of $10,000 and a $1.00
 CPM booked revenue. Then you would set up a campaign and select the
@@ -75,10 +52,9 @@ and caps to ensure your margin.
 
 The setup would look something like this:
 
-![Optimize to CPA](media/optimize-to-cpa.png)
+:::image type="content" source="media/optimize-to-cpa.png" alt-text="Screenshot to Optimize to CPA .":::
 
-
-The Results
+### The results
 
 After setting the campaign live, you may notice positive results.
 However, behind the scenes the algorithm is buying inventory that does
@@ -92,85 +68,13 @@ can buy enough impressions to get one more conversion.
 
 Let's take a look:
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001475__entry__13" class="entry">Site</th>
-<th id="ID-00001475__entry__14" class="entry">Conversion Rate</th>
-<th id="ID-00001475__entry__15" class="entry">Bid Price (CPM) with max
-bid cap</th>
-<th id="ID-00001475__entry__16" class="entry">Advertiser's Cost
-(CPM)</th>
-<th id="ID-00001475__entry__17" class="entry">Imps bought</th>
-<th id="ID-00001475__entry__18" class="entry">Network's eCPA</th>
-<th id="ID-00001475__entry__19" class="entry">Advertiser's eCPA</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00001475__entry__13">A</td>
-<td class="entry" headers="ID-00001475__entry__14">1 conversion per
-2,500 imps</td>
-<td class="entry" headers="ID-00001475__entry__15">(1/2500) * 5 * 1000 =
-$2.00
-<p>=&gt; $0.80</p></td>
-<td class="entry" headers="ID-00001475__entry__16">$1.00</td>
-<td class="entry" headers="ID-00001475__entry__17">2,500</td>
-<td class="entry" headers="ID-00001475__entry__18">$2.00</td>
-<td class="entry" headers="ID-00001475__entry__19">$2.50</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001475__entry__13">B</td>
-<td class="entry" headers="ID-00001475__entry__14">1 conversion per
-5,000 imps</td>
-<td class="entry" headers="ID-00001475__entry__15">(1/5000) * 5 * 1000 =
-$1.00
-<p>=&gt; $0.80</p></td>
-<td class="entry" headers="ID-00001475__entry__16">$1.00</td>
-<td class="entry" headers="ID-00001475__entry__17">5,000</td>
-<td class="entry" headers="ID-00001475__entry__18">$4.00</td>
-<td class="entry" headers="ID-00001475__entry__19">$5.00</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00001475__entry__13">C</td>
-<td class="entry" headers="ID-00001475__entry__14">1 conversion per
-7,500 imps</td>
-<td class="entry" headers="ID-00001475__entry__15">(1/7500) * 5 * 1000 =
-$0.67</td>
-<td class="entry" headers="ID-00001475__entry__16">$1.00</td>
-<td class="entry" headers="ID-00001475__entry__17">7,500</td>
-<td class="entry" headers="ID-00001475__entry__18">$5.00</td>
-<td class="entry" headers="ID-00001475__entry__19">$7.50</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001475__entry__13">D</td>
-<td class="entry" headers="ID-00001475__entry__14">1 conversion per
-10,000 imps</td>
-<td class="entry" headers="ID-00001475__entry__15">(1/10000) * 5 * 1000
-= $0.50</td>
-<td class="entry" headers="ID-00001475__entry__16">$1.00</td>
-<td class="entry" headers="ID-00001475__entry__17">10,000</td>
-<td class="entry" headers="ID-00001475__entry__18">$5.00</td>
-<td class="entry" headers="ID-00001475__entry__19">$10.00</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001475__entry__13"><strong>TOTAL</strong></td>
-<td class="entry"
-headers="ID-00001475__entry__14"><strong>----------------</strong></td>
-<td class="entry"
-headers="ID-00001475__entry__15"><strong>----------------</strong></td>
-<td class="entry"
-headers="ID-00001475__entry__16"><strong>----------------</strong></td>
-<td class="entry"
-headers="ID-00001475__entry__17"><strong>25,000</strong></td>
-<td class="entry"
-headers="ID-00001475__entry__18"><strong>$4.00</strong></td>
-<td class="entry"
-headers="ID-00001475__entry__19"><strong>$6.25</strong></td>
-</tr>
-</tbody>
-</table>
+| Site | Conversion Rate | Bid Price (CPM) with max bid cap | Advertiser's Cost (CPM) | Imps bought | Network's eCPA | Advertiser's eCPA |
+|---|---|---|---|---|---|---|
+| A | 1 conversion per 2,500 imps | (1/2500) * 5 * 1000 = $2.00<br>=> $0.80 | $1.00 | 2,500 | $2.00 | $2.50 |
+| B | 1 conversion per 5,000 imps | (1/5000) * 5 * 1000 = $1.00<br>=> $0.80 | $1.00 | 5,000 | $4.00 | $5.00 |
+| C | 1 conversion per 7,500 imps | (1/7500) * 5 * 1000 = $0.67 | $1.00 | 7,500 | $5.00 | $7.50 |
+| D | 1 conversion per 10,000 imps | (1/10000) * 5 * 1000 = $0.50 | $1.00 | 10,000 | $5.00 | $10.00 |
+| **TOTAL** | **----------------** | **----------------** | **----------------** | **25,000** | **$4.00** | **$6.25** |
 
 Looking at these four optimized sites, you may see some good things: for
 instance, you're making a 44% margin and, as far as you can tell, you
@@ -178,11 +82,11 @@ are getting conversions at a $4.00 CPA.
 
 However, two things are going very poorly:
 
-1.  You are **not hitting the advertiser's performance goal.** Instead
+1. You are **not hitting the advertiser's performance goal.** Instead
     of the $3.50 CPA that you're seeing based on your media cost, the
     advertiser will see a $6.25 CPA based on their media cost (your
     booked revenue).
-2.  You have delivered **nearly 3/4 of the budget here on inventory (C
+1. You have delivered **nearly 3/4 of the budget here on inventory (C
     & D) that does not meet the advertiser's performance goals.**
 
 The main issue is that the **Optimize to a predicted CPA goal** buying
@@ -192,9 +96,9 @@ that's cheap for you but disappointing to your advertiser.
 
 A better strategy would find inventory that:
 
-1.  is priced cheaply enough to make your desired margin ($0.80 CPM in
+1. is priced cheaply enough to make your desired margin ($0.80 CPM in
     this example), and
-2.  still meets your advertiser's goal.
+1. still meets your advertiser's goal.
 
 **Performance Goals** helps do just that.
 
@@ -202,64 +106,23 @@ Now let's take a look at our four optimized sites again, but this time
 buying with a CPA performance goal on the line item and an **Optimize to
 % a margin of booked revenue** buying strategy.
 
-The New Way - Using Performance Goals (recommended)
+## The new way - Using performance goals (recommended)
 
-The Setup
+### The setup
 
-![Optimize to revenue](media/optimize-to-revenue.png)
+:::image type="content" source="media/optimize-to-margin.png" alt-text="Screenshot of Optimize to revenue .":::
 
-
-The Results
+### The results
 
 A, B, C, and D below represent the very same optimized sites, but this
 time we're buying using Performance Goals on the line item.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001475__entry__55" class="entry">Site</th>
-<th id="ID-00001475__entry__56" class="entry">Conversion Rate</th>
-<th id="ID-00001475__entry__57" class="entry">Advertiser eCPA</th>
-<th id="ID-00001475__entry__58" class="entry">Performance Goals Bid/No
-Bid Decision</th>
-<th id="ID-00001475__entry__59" class="entry">Bid</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00001475__entry__55">A</td>
-<td class="entry" headers="ID-00001475__entry__56">1 conversion per
-2,500 imps</td>
-<td class="entry" headers="ID-00001475__entry__57">$2.50</td>
-<td class="entry" headers="ID-00001475__entry__58">Bid</td>
-<td class="entry" headers="ID-00001475__entry__59">$0.80</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001475__entry__55">B</td>
-<td class="entry" headers="ID-00001475__entry__56">1 conversion per
-5,000 imps</td>
-<td class="entry" headers="ID-00001475__entry__57">$5.00</td>
-<td class="entry" headers="ID-00001475__entry__58">Bid</td>
-<td class="entry" headers="ID-00001475__entry__59">$0.80</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00001475__entry__55">C</td>
-<td class="entry" headers="ID-00001475__entry__56">1 conversion per
-7,500 imps</td>
-<td class="entry" headers="ID-00001475__entry__57">$7.50</td>
-<td class="entry" headers="ID-00001475__entry__58">No Bid</td>
-<td class="entry" headers="ID-00001475__entry__59">---</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001475__entry__55">D</td>
-<td class="entry" headers="ID-00001475__entry__56">1 conversion per
-10,000 imps</td>
-<td class="entry" headers="ID-00001475__entry__57">$10.00</td>
-<td class="entry" headers="ID-00001475__entry__58">No Bid</td>
-<td class="entry" headers="ID-00001475__entry__59">---</td>
-</tr>
-</tbody>
-</table>
+| Site | Conversion Rate | Advertiser eCPA | Performance Goals Bid/No Bid Decision | Bid |
+|---|---|---|---|---|
+| A | 1 conversion per 2,500 imps | $2.50 | Bid | $0.80 |
+| B | 1 conversion per 5,000 imps | $5.00 | Bid | $0.80 |
+| C | 1 conversion per 7,500 imps | $7.50 | No Bid | --- |
+| D | 1 conversion per 10,000 imps | $10.00 | No Bid | --- |
 
 The performance goals bid decisioning **prevents you from buying
 inventory that does not meet the advertiser's performance goal.**
@@ -268,45 +131,34 @@ The system can now allocate the budget from C & D towards buying more
 impressions from A & B and/or learning on other sites that may be likely
 to hit your performance goal.
 
-Further troubleshooting to improve delivery
+## Further troubleshooting to improve delivery
 
 If you find that you are still not on track to deliver the full budget
 for the advertiser, **performance goals give you a much greater degree
 of control by enabling you to adjust either performance or your margin
 to improve** **delivery.**
 
-Trade Performance for Delivery
+### Trade performance for delivery
 
 With the two fields in the Performance Goals section of line item setup,
 you can easily increase your no-bid threshold while still tracking
 revenue at your client's stated CPA or CPC goal. In this scenario, you
 are making a strategic tradeoff between delivery and performance.
 
-![Performance goals](performance-goals.png)
+:::image type="content" source="media/performance-goals.png" alt-text="Screenshot of Performance goals .":::
 
+### Trade margin for delivery
 
-Trade Margin For Delivery
-
-Adjusting the Optimize to a % margin of
-booked revenue field on the campaign will allow you to increase
+Adjusting the **Optimize to a % margin of
+booked revenue** field on the campaign will allow you to increase
 and decrease your bid price, changing your margin and also controlling
 the price you're bidding for inventory.
 
+> [!IMPORTANT]
+> You will soon be able to adjust your margin centrally on the line item for all associated campaigns.
 
-
-<b>Important:</b>
-
-You will soon be able to adjust your margin centrally on the line item
-for all associated campaigns.
-
-![margin](media/margin.png)
-
-
+:::image type="content" source="media/margin.png" alt-text="Screenshot of Trade Margin for Delivery ."::: 
 
 By successfully managing tradeoffs between performance, margin and
 delivery, you can manage your line item to meet your clients' goals
 while also maximizing your margin.
-
-
-
-
