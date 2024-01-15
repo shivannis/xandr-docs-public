@@ -1,7 +1,6 @@
 ---
 title: Microsoft Monetize - Video Inventory Recommendations
-description: Learn about the recommendations at the line item that identify
-performant seller/domain combinations under the Video Inventory Recommendations section.  
+description: Learn about the recommendations at the line item that identify performant seller/domain combinations under the Video Inventory Recommendations section.  
 ms.date: 10/28/2023
 ---
 
