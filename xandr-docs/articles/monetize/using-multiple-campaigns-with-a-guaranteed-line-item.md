@@ -66,7 +66,7 @@ should still deliver evenly on eligible days, such that:
 - One-third (1/3) of total delivery occurs during the 5 days of *Date
   range 2*
 
-### Execute multiple targeting strategies
+## Execute multiple targeting strategies
 
 Advertisers may wish to execute multiple targeting strategies with a
 single guaranteed line item.
@@ -79,12 +79,12 @@ As another example, an agency might provide multiple sets of creatives,
 each targeted to a different user segment: one set of creatives
 targeting male users, one targeting female users.
 
-## Setting up campaign shells
+### Setting up campaign shells
 
 Campaign shells are only available during guaranteed line item setup.
 For instructions, see [Create a Guaranteed Delivery Line Item](create-a-guaranteed-delivery-line-item.md).
 
-## Creating or editing campaigns directly
+### Creating or editing campaigns directly
 
 After a guaranteed line item that uses campaign-level settings has been
 created, settings on its child campaigns can still be edited; campaigns
@@ -98,7 +98,7 @@ item.
 
 **Method 2**: You can also navigate to the [Line Item Details](view-line-item-details.md) screen and create or edit campaigns from there.
 
-## How a campaign inherits targeting from its parent line item
+### How a campaign inherits targeting from its parent line item
 
 By default, your guaranteed line item will target all direct inventory.
 As you add targeting settings, less and less inventory will be targeted.

@@ -128,41 +128,57 @@ following fields:
 | ID | **ID** | Required. The ID of the campaign. | Campaign / `id` |
 | Name | **Name** | Required. The name of the campaign. | Campaign / `name` |
 | Status | **Status** | Required. The state of the campaign. Valid values: Active or Inactive | Campaign / `state` |
-| Budget |  |  |  |
+
+| Spreadsheet Field for Budget | Campaign Screen Field | Description | API Service / Field |
+|---|---|---|---|
 | Enable Daily Pacing | **Budget > Media Cost \| Impression > Impression** | If TRUE, the campaign's daily budgeted spend is spread out evenly throughout each day. You must also provide either a Daily Monetary Budget or Daily Impression budget. Daily Budget Pacing OR Lifetime Budget Pacing may be enabled, but not both.<br>For more details about even daily pacing, see [Daily Pacing](daily-pacing.md). | Campaign / `enable_pacing` |
 | Daily Monetary Budget | **Budget > Media Cost > Daily** | The daily budget in media cost. The currency symbol can be omitted and the default currency will be used. Enter unlimited to represent unlimited budget. | Campaign / `daily_budget` |
 | Daily Impression Budget | **Budget > Impression > Daily** | The daily budget in impressions. Enter unlimited to represent unlimited budget. | Campaign / `daily_budget_imps` |
 | Enable Lifetime Pacing | **Budget > Media Cost \| Impression > Lifetime** | If TRUE, the campaign's overall lifetime budget is spread out evenly over the campaign billing period. Daily Budget Pacing OR Lifetime Budget Pacing may be enabled, but not both.<br>For more details about lifetime pacing, see [Lifetime Pacing](lifetime-pacing.md). | Campaign / `lifetime_pacing` |
 | Lifetime Monetary Budget | **Budget > Media Cost > Lifetime** | The lifetime budget in dollars (media cost). The currency symbol can be omitted and the default currency will be used. Enter unlimited to represent unlimited budget.<br>**Warning**: If Campaign, Line Item, and Insertion Order Lifetime Budgets are all set to unlimited, severe overspend can occur. | Campaign / `lifetime_budget` |
 | Lifetime Impression Budget | **Budget > Impression > Lifetime** | The lifetime budget in impressions. Enter unlimited to represent unlimited budget. | Campaign / `lifetime_budget_imps` |
-| Buying Strategies |  |  |  |
+
+| Buying Strategies | Campaign Screen Field | Description | API Service / Field |
+|---|---|---|---|
 | Buy Direct Inventory | **Buying Strategies > Direct Inventory** | The type of inventory targeted by this campaign. If TRUE, you will target inventory managed by your network. | Campaign / `inventory_type` |
-| Campaign Priority | **Buying Strategies > Buy Direct Inventory > Campaign Priority** | For a campaign targeting direct inventory, there is no need to input a buying strategy since you have already paid for inventory. However, you can set the campaign's priority to weight the campaign against other direct campaigns within your account. The campaign with the highest priority will always win, even if a lower priority campaign bids more. For more information about managing priority, see [Bidding Priority](bidding-priority.md). | Campaign / `priority` |
+| Campaign Priority | **Buying Strategies > Buy Direct Inventory > Campaign Priority**| For a campaign targeting direct inventory, there is no need to input a buying strategy since you have already paid for inventory. However, you can set the campaign's priority to weight the campaign against other direct campaigns within your account. The campaign with the highest priority will always win, even if a lower priority campaign bids more. For more information about managing priority, see [Bidding Priority](bidding-priority.md). | Campaign / `priority` |
 | Buy Third Party Inventory | **Buying Strategies > Buy Third-Party Inventory** | The type of inventory targeted by this campaign. If TRUE, you will target all third-party inventory not managed by your network that has been enabled for reselling (including external supply partners such as Microsoft Advertising Exchange and Google Ad Manager).<br>**Warning**: Entering TRUE and a base CPM bid may overwrite existing third-party buying strategies without notice. | Campaign / `inventory_type` |
 | CPM Bid | **Buying Strategies > Buy Third-Party Inventory > Pay on a Per-Impression (CPM) basis > Bid a Media Cost CPM** | Use this strategy to bid a fixed dollar amount per thousand impressions. | Campaign / `cpm_bid_type` |
-| Targeting |  |  |  |
+
+| Spreadsheet Field for Targeting | Campaign Screen Field | Description | API Service / Field |
+|---|---|---|---|
 | Target Desktops & Laptops | **Device and Supply Type** | By default, your campaign will target all physical device types ( Desktops & Laptops , Tablets , and Phones ). To restrict the device types you are targeting, enter FALSE. | Profile / `device_type_targets` |
 | Target Tablets | **Device and Supply Type** | By default, your campaign will target all physical device types (Desktops & Laptops, Tablets, and Phones). To restrict the device types you are targeting, enter FALSE. | Profile / `device_type_targets` |
 | Target Phones | **Device and Supply Type** | By default, your campaign will target all physical device types (Desktops & Laptops, Tablets, and Phones). To restrict the device types you are targeting, enter FALSE. | Profile / `device_type_targets` |
-| Target Deal IDs | **Deals > Deals** | The deal IDs to be targeted by this campaign. A deal is an agreement between a seller and buyer that may provide the buyer preferential pricing, access to exclusive inventory, reduced competition on inventory, or other opportunities.<br>This is a comma separated list with quotations around each deal ID. For example: "ABC123", "DEF456", "GHI789" | Profile / `deal_targets |
+| Target Deal IDs | **Deals > Deals** | The deal IDs to be targeted by this campaign. A deal is an agreement between a seller and buyer that may provide the buyer preferential pricing, access to exclusive inventory, reduced competition on inventory, or other opportunities.<br>This is a comma separated list with quotations around each deal ID. For example: "ABC123", "DEF456", "GHI789" | Profile / `deal_targets` |
+
+| Spreadsheet Field | Campaign Screen Field | Description | API Service / Field |
+|---|---|---|---|
 | Include or Exclude Direct Publishers | **Inventory > Direct Inventory > Publishers** | Valid value is Include or Exclude. You can only use one value or the other. | Profile / `inventory_action` |
 | Direct Publisher IDs | **Inventory > Direct Inventory > Publishers** | Managed/direct publisher IDs to be either excluded or included in targeting.<br>This is a comma separated list. For example: 123, 456, 789 | Profile / `publisher_targets` |
 | Include or Exclude Direct Placement Groups | **Inventory > Direct Inventory > Placement Groups** | Valid value is Include or Exclude. You can only use one value or the other. | Profile / `inventory_action` |
 | Direct Placement Group IDs | **Inventory > Direct Inventory > Placement Groups** | The sites IDs to be either excluded or included in targeting.<br>This is a comma separated list. For example: 123, 456, 789 | Profile / `site_targets` |
 | Include or Exclude Direct Placements | **Inventory > Direct Inventory > Placements** | Valid value is Include or Exclude. You can only use one value or the other. | Profile / `inventory_action` |
 | Direct Placement IDs | **Inventory > Direct Inventory > Placements** | The placement IDs to be either excluded or included in targeting.<br>This is a comma separated list. For example: 123, 456, 789 | Profile / `placement_targets` |
-| Include or Exclude Third-Party Sellers | **Inventory > 3rd Party Inventory > Sellers** | Valid value is Include or Exclude. You can only use one value or the other. | Profile / member_default_action |
+| Include or Exclude Third-Party Sellers | I**nventory > 3rd Party Inventory > Sellers** | Valid value is Include or Exclude. You can only use one value or the other. | Profile / `member_default_action` |
 | Third-Party Seller IDs | **Inventory > 3rd Party Inventory > Sellers** | Seller member IDs to be either excluded or included in targeting.<br>This is a comma separated list. For example: 123, 456, 789 | Profile / `member_targets` |
 | Include or Exclude Third-Party Publishers | **Inventory > 3rd Party Inventory > Publishers & Categories** | Valid value is Include or Exclude. You can only use one value or the other. | Profile / `platform_publisher_targets`<br>Profile / `platform_content_category_targets` |
-| Third-Party Publisher IDs | **Inventory > 3rd Party Inventory > Publishers & Categories** | The third-party publisher and content category IDs to be either excluded or included in targeting.<br>This is a comma separated list. For example: 123, 456, 789 | Profile / platform_publisher_targets<br>Profile / platform_content_category_targets |
+| Third-Party Publisher IDs | **Inventory > 3rd Party Inventory > Publishers & Categories** | The third-party publisher and content category IDs to be either excluded or included in targeting.<br>This is a comma separated list. For example: 123, 456, 789 | Profile / `platform_publisher_targets`<br>Profile / `platform_content_category_targets` |
+
+| Spreadsheet Field | Campaign Screen Field | Description | API Service / Field |
+|---|---|---|---|
 | Include or Exclude Third-Party Placements |  |  |  |
 | Third-Party Placement IDs |  |  |  |
-| # of Imps over lifetime | **Frequency** | The maximum number of impressions per user. | Profile / `max_lifetime_imps` |
-| # of Imps per user per day | **Frequency** | The maximum number of impressions per user per day. | Profile / `max_day_imps` |
-| Creatives |  |  |  |
+| # of Imps over lifetime | Frequency | **The maximum number of impressions per user.** | Profile / `max_lifetime_imps` |
+| # of Imps per user per day | Frequency | **The maximum number of impressions per user per day.** | Profile / `max_day_imps` |
+
+| Spreadsheet Field for Creatives | Campaign Screen Field | Description | API Service / Field |
+|---|---|---|---|
 | Associated Creatives IDs | **Associated Creatives** | The list of creative IDs or codes associated to the campaign.<br>This is a comma separated list. For example: 123, 456, 789 | Campaign / `creatives` |
 | Landing Page URL | **Landing Page URL** | The optional landing page URL for non-3rd party image and flash creatives. | Campaign / `click_url` |
-| Comments |  |  |  |
+
+| Spreadsheet Field | Campaign Screen Field | Description | API Service / Field |
+|---|---|---|---|
 | Comments | **Comments** | Comments about the campaign. | Campaign / `comments` |
 
 ## Export a spreadsheet
@@ -183,7 +199,7 @@ template and prevent errors.
     > [!NOTE]
     > ID, Name, and Status will download by default.
     
-1. Click Download. The campaigns are downloaded into an editable Excel spreadsheet. The default spreadsheet name is `campaigns.xlsx`.
+1. Click **Download**. The campaigns are downloaded into an editable Excel spreadsheet. The default spreadsheet name is `campaigns.xlsx`.
 
 ## Edit the spreadsheet
 

@@ -81,6 +81,7 @@ not required. The creative can be saved.
 
 > [!NOTE]
 > Full Error:
+>
 > Error: There was an error with the request: No valid ad information was found. This may occur if the tag has no content, or if it is specifically blocking our VAST Check Service. Please reach out to your third-party ad server for assistance.
 
 **What it means:**
@@ -171,20 +172,19 @@ attributes that will cause VAST Check to fail if they are missing.
 - Click **Run check again** button to
   initiate the re-scanning of the creative XML document.
 
-:::image type="content" source="media/run-check-again.png" alt-text="Screenshot of Run check again button":::
+  :::image type="content" source="media/run-check-again.png" alt-text="Screenshot of Run check again button":::
 
-   This feature would address the following scenarios where:
-   - Scanner failed to run during the upload
-   - Scanner timed out while scanning
-   - Scanner detected an issue such as missing or wrong duration, missing
+This feature would address the following scenarios where:
+  - Scanner failed to run during the upload
+  - Scanner timed out while scanning
+  - Scanner detected an issue such as missing or wrong duration, missing
     or wrong media file format, etc.
-   - VAST XML content is updated on the ad server, but needs to be
+  - VAST XML content is updated on the ad server, but needs to be
     updated at Xandr platform and back-end.
-
 - Reach out to the tag provider to add the missing duration information
   or revise the format. For example:
 
-:::image type="content" source="media/video-duration.png" alt-text="Screenshot of Video duration .":::
+     :::image type="content" source="media/video-duration.png" alt-text="Screenshot of Video duration .":::
 
 ### No video formats detected
 
@@ -199,7 +199,7 @@ attributes that will cause VAST Check to fail if they are missing.
 - Click Run check again button to
   initiate the re-scanning of the creative XML document.
 
-:::image type="content" source="media/run-check-again.png" alt-text="Screenshot of Run check again button .":::
+  :::image type="content" source="media/run-check-again.png" alt-text="Screenshot of Run check again button .":::
 
 This feature would address the following scenarios where:
 
@@ -212,13 +212,14 @@ This feature would address the following scenarios where:
 
 - Reach out to the tag provider to update the creative with at least one
   of the recommended video formats.
+  
   Sample XML with recommended VAST formats:
 
-:::image type="content" source="media/video-formats.png" alt-text="Screenshot of Video Format .":::
+  :::image type="content" source="media/video-formats.png" alt-text="Screenshot of Video Format .":::
 
-Sample XML with recommended VPAID formats:
+  Sample XML with recommended VPAID formats:
 
-:::image type="content" source="media/media-files.png" alt-text="Screenshot of Media files .":::
+   :::image type="content" source="media/media-files.png" alt-text="Screenshot of Media files .":::
 
 ## Some adjustments are recommended (valid creative)
 

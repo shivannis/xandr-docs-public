@@ -44,7 +44,7 @@ vCPM bid amount by the estimated view rate for that impression.
 1. The CPM bid won the bid. The 20% estimated view rate translates to
     an eCPM for Bid 1 that is lower than the CPM bid.
 
-## Reporting on Payment Types
+## Reporting on payment types
 
 **Payment Type** is an available **Filter** and **Dimension** in
 analytics reporting.

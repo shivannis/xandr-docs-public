@@ -27,12 +27,12 @@ Video creatives can provide:
 We support the following video inventory types on our platform, which
 publishers manage directly:
 
-- **In-Stream Video**: It is played in video players on web pages, as
+- **In-Stream video**: It is played in video players on web pages, as
   well as CTVs. It can play before, in the middle of, or after other
   video content. In-stream video creatives can be served by a
   third-party ad server or hosted on a third-party ad server and served
   by Xandr.
-- **Out-Stream Video**: It is played in smart video players that expand
+- **Out-Stream video**: It is played in smart video players that expand
   when the container is in view as the consumer scrolls through the
   other content on the web page. Out-stream video is highly flexible and
   supports a variety of features such as skippability and autoplay. Some

@@ -22,7 +22,7 @@ either case, the video is displayed in its true vertical aspect ratio,
 without pillarboxing or letterboxing.
 
 > [!NOTE]
-> When creating new line items for your vertical video creatives, be sure to set the **Creative Type** to Video and the Supply Strategy to Managed or Open Exchange. For more information, see the following:
+> When creating new line items for your vertical video creatives, be sure to set the **Creative Type** to **Video** and the **Supply Strategy** to **Managed** or **Open Exchange**. For more information, see the following:
 > - [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
 > - [Add a Creative](add-a-creative.md)
 > - [Add Creatives in Bulk](add-creatives-in-bulk.md)

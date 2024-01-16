@@ -63,7 +63,7 @@ post-click conversions are:
   advertiser
 - How recently the user has been served impressions from this advertiser
 
-## Predicting post-click and Post-view Conversions
+## Predicting post-click and post-view conversions
 
 You can set a CPA goal that optimizes to both post-click and post-view
 conversions for both retargeting line items (line items that target
@@ -116,4 +116,4 @@ predict the likelihood of video completes are:
 
 - [Optimization Guide - ALI](optimization-guide-ali.md)
 - [Adaptive Pacing](adaptive-pacing.md)
-- [discovery.md](discovery.md)
+- [discovery](discovery.md)

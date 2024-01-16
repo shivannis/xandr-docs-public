@@ -68,7 +68,7 @@ However after raising the minimum margin to 25% you start to see
 delivery on the line item start to suffer and readjust downwards to 20%
 So on and so forth until you find the right balance.
 
-| Campaign A | Campaign B |  |
+|  | Campaign A |Campaign B   |
 |---|---|---|
 | Bid | $4.00 | $5.00 |
 | Buying Strategy | Prospecting campaign <br>Optimize to 20% of Booked Revenue | Re-targeting campaign <br>Bid a base of $5.00 |
