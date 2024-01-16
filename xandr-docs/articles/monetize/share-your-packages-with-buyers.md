@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Share Your Packages with Buyers
-description: The article offers information for sellers to market packages by sharing links with Xandr and external buyers, with a step-by-step walkthrough.
+description: The article offers information for sellers to market packages by sharing links with external buyers, with a step-by-step walkthrough.
 ms.date: 10/28/2023
 ---
 

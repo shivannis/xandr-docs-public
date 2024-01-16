@@ -4,7 +4,7 @@ description: The article provides guidance on establishing a continuous 24/7 med
 ms.date: 10/28/2023
 ---
 
-# Setting up 24/7 media inventory through the Microsoft Ad exchange
+# Setting up 24/7 media inventory through the Microsoft Ad Exchange
 
 The Microsoft Adverting Exchange (MAX) includes Real Media Group exclusively to 24/7 Open AdStream and Global Web alliances. You canadjust your campaign and targeting settings to purchase inventory according to several different scenarios.
 
@@ -38,8 +38,7 @@ Bins are granular buckets of web inventory, usually grouped by country or langua
 The procedure for working with bins is described in detail on the [Target Inventory on the Microsoft Advertising Exchange](target-inventory-on-the-microsoft-advertising-exchange.md).
 
 > [!NOTE]
-> bins concern the location of the inventory, not the location of the user. For example, if you target a bin of Canadian inventory, your campaign will serve only to users who
-> are looking at that Canadian inventory.
+> bins concern the location of the inventory, not the location of the user. For example, if you target a bin of Canadian inventory, your campaign will serve only to users who are looking at that Canadian inventory.
 
 ## Targeting
 
@@ -59,8 +58,8 @@ In addition to the settings listed above, you must determine the exact targeting
 1. 3rd Party Inventory pane in the Sellers view, enter the term **Microsoft** in the search field. Include **Microsoft Advertising Exchange (280)** by clicking the green checkmark icon.
 1. The selection should now appear in the **Selected 3rd Party Inventory** pane.
 
-   > [!NOTE]
-   > **Microsoft Advertsing Exchange (Seller 280)** is included by default in any non-targeted campaign, so it is not necessary to specify this targeting unless you wish to dedicate budgets specifically to this source.
+  > [!NOTE]
+  > **Microsoft Advertsing Exchange (Seller 280)** is included by default in any non-targeted campaign, so it is not necessary to specify this targeting unless you wish to dedicate budgets specifically to this source.
 
 ## Target all Microsoft Advertising Exchange inventory but exclude 24/7 media inventory
 
@@ -109,11 +108,15 @@ You can choose to target specific inventory including 24/7 Media inventory. The 
 1. In the **Inventory Targeting** dialog, select **3rd Party Inventory**.
 1. In the 3rd Party Inventory pane in the Sellers view, enter the term **Microsoft** in the search field. Include **Microsoft Advertising Exchange (280)** by clicking the green checkmark icon.
 1. The selection should now appear in the **Selected 3rd Party Inventory** list as a green "include" item.
-1. Select **Custom Categories** (also in the Inventory Targeting dialog).
+1. Select **Custom Categories** (also in the **Inventory Targeting** dialog).
 1. In the **Custom Categories** pane, enter the term 247 in the search field. Include **247_Media (23204)** by clicking the green checkmark icon.
-1. The selection should now appear in the Selected Custom Categories list as a green "included" item.
+1. The selection should now appear in the **Selected Custom Categories** list as a green "included" item.
 1. In the **3rd Party Inventory** pane in the **Sellers** view, enter the term **Microsoft** in the search field. Click on the row to expose the **Content Category** list for Microsoft Ad Exchange.
-1.  **Content Categories** on the Xandr Platform correspond to **bins** in Microsoft terminology. Choose the content categories to include by clicking the corresponding icons for those categories.
+
+   > [!NOTE]
+   > Do not click the green include icon or the red exclude icon, as this will simply include or exclude all Microsoft Ad Exchange inventory.
+
+1. **Content Categories** on the Xandr Platform correspond to **bins** in Microsoft terminology. Choose the content categories to include by clicking the corresponding icons for those categories.
 1. The bins you chose to include or exclude should now appear in the **Selected 3rd Party Inventory** list.
 
 ## Targeting specific Microsoft Ad Exchange domains where visible (select sites and countries)

@@ -1,13 +1,13 @@
 ---
 title: Target Inventory on the Yahoo Ad Exchange
-description: The article defines target inventory on the Yahoo Ad Exchange.
+description: The article explains Yahoo Ad Exchange's target inventory and provides guidance on setting up campaigns to run on YAX inventory.
 ms.date: 10/28/2023
 ---
 
 # Target inventory on the Yahoo ad exchange
 
 > [!NOTE]
-> This form of targeting is only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting<](buy-side-targeting.md).
+> This form of targeting is only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting](buy-side-targeting.md).
 
 This page shows you how to set up a campaign to run on Yahoo Ad Exchange (YAX) inventory.
 
@@ -18,7 +18,7 @@ This page shows you how to set up a campaign to run on Yahoo Ad Exchange (YAX) i
 > [!TIP]
 > If you have negotiated deals with YAX, see [Create a Deal Campaign](create-a-deal-campaign.md). For information about negotiating deals with YAX, see [Negotiate Deals with Sellers](negotiate-deals-with-sellers.md).
 
-## Before You begin
+## Before you begin
 
 ### Access to YAX
 

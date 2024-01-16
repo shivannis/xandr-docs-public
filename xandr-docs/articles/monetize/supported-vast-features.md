@@ -4,7 +4,7 @@ description: The article explains the VAST features (skipoffset, ad verification
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Supported VAST Features
+# Microsoft Monetize - Supported VAST features
 
 The Xandr platform supports a variety of VAST features such as skipoffset and ad verification. Our VAST features are compatible with certain VAST versions. VAST versions 2.0 through 4.0 support backwards feature compatibility. However, if a publisher doesn't support a particular VAST version, then implementation of certain features on that publisher's player won't be possible.
 

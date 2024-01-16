@@ -1,6 +1,6 @@
 ---
 title: Set Up Seller Creative Review
-description: The article explains the steps involved in establishing a seller creative review process.
+description: Review and approve creatives in the Political category before serving on seller inventory. Seller review will extend to additional categories.
 ms.date: 10/28/2023
 ---
 
@@ -53,5 +53,5 @@ The **Seller Creative Review** window will now display creatives for this deal t
 ## Related topics
 
 - [Seller Creative Review](seller-creative-review.md)
-- [Seller Creative Review List](approve-and-reject-creatives.md)
+- [Seller Creative Review List](seller-creative-review-list.md)
 - [Approve and Reject Creatives](approve-and-reject-creatives.md)

@@ -15,8 +15,8 @@ This page shows you how to target a campaign to run on Microsoft Advertising Exc
 - Specific Microsoft Advertising "bins" for MSN inventory
 - Specific domains for Microsoft Advertising web inventory in Denmark, Sweden, Norway, the Netherlands, Spain, Austria, Switzerland, India and South-East Asia
 
-  > [!TIP]
-  > For details on how to target Outlook.com, see [Buying Microsoft Outlook.com Inventory](buying-microsoft-outlook-com-inventory.md).
+> [!TIP]
+> For details on how to target Outlook.com, see [Buying Microsoft Outlook.com Inventory](buying-microsoft-outlook-com-inventory.md).
 
 ## Step 1. Open your campaign
 
@@ -50,13 +50,13 @@ If you target all third-party inventory, your targeting will include all Microso
 - [Option 2. Target specific Microsoft Advertising MSN](target-inventory-on-the-microsoft-advertising-exchange.md#option-2-target-specific-microsoft-advertising-msn-bins)
 - [Option 3. Target specific domains for Microsoft Advertising web inventory in Denmark, Sweden, Norway, the Netherlands, Spain, Austria, Switzerland, India and South-East Asia](target-inventory-on-the-microsoft-advertising-exchange.md#option-3-target-specific-domains-for-microsoft-advertising-web-inventory-in-denmark-sweden-norway-the-netherlands-spain-austria-switzerland-india-and-south-east-asia)
   
-## Option 1. Target all Microsoft Advertising web inventory
+### Option 1. Target all Microsoft Advertising web inventory
 
 In the **Inventory Targeting** dialog, under **3rd Party Inventory** \> **Sellers**, search for "Microsoft Advertising Exchange" seller. Include the seller **"Microsoft Advertising Exchange (280)"** by clicking on the green checkmark icon.
 
-## Option 2. Target specific Microsoft Advertising MSN "bins"
+### Option 2. Target specific Microsoft Advertising MSN "bins"
 
-To target specific Microsoft Advertising bins, follow the steps in **Option 1**, and then click on "Seller: Microsoft Advertising Exchange (280)" to expose a list of bins - named "Content Categories" on the Xandr platform. You can then either **Include** the specific bins that you want to target or **Exclude** the specific bins that you do not want to target.
+To target specific Microsoft Advertising bins, follow the steps in **Option 1**, and then click on **Seller: Microsoft Advertising Exchange (280)** to expose a list of bins - named "Content Categories" on the Xandr platform. You can then either **Include** the specific bins that you want to target or **Exclude** the specific bins that you do not want to target.
 
 > [!IMPORTANT]
 > For a complete list of MS Ad Exchange bins with descriptions, see [Microsoft Advertising Exchange Inventory](microsoft-advertising-exchange-inventory.md).
@@ -66,7 +66,7 @@ To target specific Microsoft Advertising bins, follow the steps in **Option 1**,
 > - If you want to target specific Microsoft Advertising bins and **all** other third-party inventory, the best method is to **Exclude** the specific Microsoft Advertising Exchange bins that you do not want to target (shown below).
 > - If you want to target specific Microsoft Advertising bins and **some** other third-party inventory, the best method is to **Include** the specific Microsoft Advertising Exchange bins you want to target and **Include** other inventory at the **Seller** or **Custom Categories** level.
 
-## Option 3. Target specific domains for Microsoft Advertising web inventory in Denmark, Sweden, Norway, the Netherlands, Spain, Austria, Switzerland, India and South-East Asia
+### Option 3. Target specific domains for Microsoft Advertising web inventory in Denmark, Sweden, Norway, the Netherlands, Spain, Austria, Switzerland, India and South-East Asia
 
 To target these domains, under **Targeting** in the **Inventory Targeting** section, click the **Edit** button. This opens the **Inventory Targeting** dialog. Select **Specific Domains**, enter the domains you want to target, click the Add Domains button, then use the **Include** or **Exclude** buttons as appropriate.
 

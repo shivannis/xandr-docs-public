@@ -1,6 +1,6 @@
 ---
 title: Shorten the Targeted Learn Phase Using Bid Type Reports
-description: The guide recommends using Bid Type reports to speed up learning for new campaign goals. 
+description: The guide recommends using Bid Type reports to speed up learning for new campaign goals. It only applies to the legacy line item.
 ms.date: 10/28/2023
 ---
 
@@ -34,8 +34,8 @@ By analyzing the performance of placements in learn phase, you can begin to deri
 - **Placements to watch**: placements where the data points are still inconclusive and you therefore need to observe for a little longer.
 - **Placements to keep**: placements where performance is pointing in the right direction and will potentially move into optimized soon.
 
-   > [!NOTE]
-   > The criteria suggested above is not exhaustive. Depending on the complexity of this analysis, you might derive additional ways of classifying your data and refining the selection of inventory to exclude.
+> [!NOTE]
+> The criteria suggested above is not exhaustive. Depending on the complexity of this analysis, you might derive additional ways of classifying your data and refining the selection of inventory to exclude.
 
 The end goal of this step is to create a list of placements to remove from your campaign targeting. The broader objectives are:
 

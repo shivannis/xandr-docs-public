@@ -1,6 +1,6 @@
 ---
-title: Microsoft Monetize - Set up single credential login
-description: The article provides a step-by-step guide for setting up a single credential login.
+title: Microsoft Monetize - Set up Single Credential Login
+description: Create a single credential login with this step-by-step guide. Receive a welcome email with a password setup link. Complete the process seamlessly.
 ms.date: 10/28/2023
 ---
 

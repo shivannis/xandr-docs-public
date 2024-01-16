@@ -10,7 +10,7 @@ Guaranteed Completes defines a complete as a video ad which has reached 100% of 
 
 | Clearing Event Name | ID | Completion Definition | Media Type | Measurement Technology Vendor |
 |---|---|---|---|---|
-| Completes – Standard Complete | `1` <br> `0` | 100% of ad duration | Video | Xandr |
+| Completes – Standard Complete | 1 <br> 0 | 100% of ad duration | Video | Xandr |
 
 ## Related topic
 

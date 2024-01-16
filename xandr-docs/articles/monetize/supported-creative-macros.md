@@ -1,10 +1,10 @@
 ---
-title: Supported Creative Macros
+title: Microsoft Monetize - Supported Creative Macros
 description: The article explains the creative macros that can be used for all, mobile, and video impressions. Additionally, privacy and function macros are supported as well.
 ms.date: 10/28/2023
 ---
 
-# Supported creative macros
+# Microsoft Monetize - Supported creative macros
 
 We have creative macros that can be used for all, mobile, and video impressions. We also support privacy and function macros.
 
@@ -44,11 +44,11 @@ The following macros can be used in creative third-party tags and landing page U
 | `${CREATIVE_WIDTH}` | The width of the creative served. |
 | `${CUSTOM_MODEL_ID}` | The `id` of the custom model used in the auction. When no custom model is used, this macro will return `0`.<br><br>**Note**: This custom macro will only work for APB Alpha Test clients. |
 | `${CUSTOM_MODEL_LAST_MODIFIED}` | The date and time (in Unix Epoch time) since the custom model that was used in the auction was last modified. If no model was used, this macro will return 0.<br><br>**Note**: This custom macro will only work for APB Alpha Test clients. |
-| `${CUSTOM_MODEL_LEAF_NAME}` | The `leaf_name` specified in the leaf that determined the winning bid. If no name is specified or if a model was not used, this macro will return ---. This aligns with the `leaf_name` field in the Standard Feed in Log Level Data. For more information, see Standard Feed.<br><br>**Note**: This custom macro will only work for APB Alpha Test clients. |
+| `${CUSTOM_MODEL_LEAF_NAME}` | The `leaf_name` specified in the leaf that determined the winning bid. If no name is specified or if a model was not used, this macro will return `---`. This aligns with the `leaf_name` field in the Standard Feed in Log Level Data. For more information, see [Standard Feed]().<br><br>**Note**: This custom macro will only work for APB Alpha Test clients. |
 | `${DATACENTER}` | The data center ID (1 = NYM, 2 = LAX, 3 = AMS, 4 = FRA, 5 = SIN). |
-| `${DEAL_ID}` | The Xandr Deal ID associated with the winning bid if applicable. If there is no deal, this macro will return 0. |
+| `${DEAL_ID}` | The Xandr Deal ID associated with the winning bid if applicable. If there is no deal, this macro will return `0`. |
 | `${ECP}` | The publisher-side estimated clear price (ECP) for the auction. |
-| `${GENDER}` | The gender of the user if available. Possible values include:<br> - f (female)<br> - m (male)<br> - u (unknown) |
+| `${GENDER}` | The gender of the user if available. Possible values include:<br> - `f` (female)<br> - `m` (male)<br> - `u` (unknown) |
 | `${HEIGHT}` | This is an alias for `${CREATIVE_HEIGHT}`, and behaves in the same manner. |
 | `${INV_SOURCE_ID}` | **Deprecated** |
 | `${IO_CODE}` | The insertion order code of the served impression. |
@@ -57,7 +57,7 @@ The following macros can be used in creative third-party tags and landing page U
 | `${PMT_RULE_ID}` | The ID of the payment rule used to price the impression. |
 | `${POSTAL_CODE}` | The postal code of the user. |
 | `${PRICE_PAID}` | The price paid for this impression after price reduction. This is the second price. |
-| `${PT1}`, `${PT2}`, `${PT3}`, `${PT4}`, `${PT5}`, `${PT6}`, `${PT7}`, `${PT8}`, `${PT9}` | These macros can be populated with arbitrary custom data that you send when using the following placement tag query string parameters:<br> - pt1<br> - pt2<br> - pt3<br> - pt4<br> - pt5<br> - pt6<br> - pt7<br> - pt8<br> - pt9<br>For more information, see [Create a Placement Tag Macro](create-a-placement-tag-macro.md). |
+| `${PT1}`, `${PT2}`, `${PT3}`, `${PT4}`, `${PT5}`, `${PT6}`, `${PT7}`, `${PT8}`, `${PT9}` | These macros can be populated with arbitrary custom data that you send when using the following placement tag query string parameters:<br> - `pt1`<br> - `pt2`<br> - `pt3`<br> - `pt4`<br> - `pt5`<br> - `pt6`<br> - `pt7`<br> - `pt8`<br> - `pt9`<br>For more information, see [Create a Placement Tag Macro](create-a-placement-tag-macro.md). |
 | `${PUBLISHER_CODE}` | The code of the publisher selling the impression.<br><br>**Note**: This ID is available only if the publisher uses a code and has exposed it for reporting. |
 | `${PUBLISHER_ID}` | The ID of the publisher selling the impression.<br>**Note**: This ID is available only if the publisher is exposed for reporting. |
 | `${REFERER_URL_ENC}` | The encoded referring URL if available.<br>For mobile app impressions, this macro returns the app store URL if available. |
@@ -83,7 +83,7 @@ The following macros can be used in creative third-party tags and landing page U
 | `${USER_ID}` | The Xandr 64-bit character string representing the user for the impression. |
 | `${USER_IP}` | The IP address of the user, which is truncated. |
 | `${USER_LOCALE}` | The language and dialect (aa-DD) reported by the user's device. For example, en-ZA represents English (en) used in South Africa (ZA). |
-| `${USER_STATE}` | The character string of the user's state or region.<br>**In the USA**: 2 letter abbreviation<br>**Outside of USA**: An encoded URL with the user's country followed by the user's region ID (FIPS 10-4 or Xandr-generated)For example, the region surrounding Riva, Latvia is LV%3A25 (encoding for LV:A25). |
+| `${USER_STATE}` | The character string of the user's state or region.<br> - **In the USA**: 2 letter abbreviation<br> - **Outside of USA**: An encoded URL with the user's country followed by the user's region ID (FIPS 10-4 or Xandr-generated)For example, the region surrounding Riva, Latvia is LV%3A25 (encoding for LV:A25). |
 | `${WIDTH}` | This macro is an alias for `${CREATIVE_WIDTH}`, and behaves in the same manner. |
 
 ## Creative macros for video impressions
@@ -97,14 +97,13 @@ The following macros can be used specifically for video impressions:
 | `${VIDEO_PLAYER_HEIGHT}` | The height of the video player, expressed in pixels. |
 | `${VIDEO_PLAYER_WIDTH}` | The width of the video player, expressed in pixels. |
 
-
 ## Creative macros for mobile impressions
 
 The following macros can be used specifically for mobile impressions:
 
 | Macro | Description |
 |---|---|
-| `${CARRIER_ID}` | The Xandr integer representing the mobile carrier ID. For a complete list of carrier IDs, see the Carrier Service. |
+| `${CARRIER_ID}` | The Xandr integer representing the mobile carrier ID. For a complete list of carrier IDs, see the [Carrier Service](carrier-service.md). |
 | `${DEVICE_AAID}` | The Android advertising identifier when the impression is delivered from an Android device. |
 | `${DEVICE_APPLE_IDA} `| The Apple advertising identifier when the impression is delivered from an Apple device. |
 | `${DEVICE_IFA_TYPE}` | The type of identifier represented by the `${DEVICE_IFA}`. Possible values include:<br> - AAID (Android Advertising ID/Google)<br> - IDFA (Identifier for Advertising/Apple)<br> - AFAI (Amazon Fire ID)<br> - RIDA (Roku ID)<br> - OPENUDID<br> - TIFA (Tizen Identifier for Advertising (Samsung Ad ID))<br> - VIDA (Vizio Advertising ID)<br> - LGUDID (LG Unique Device ID)<br><br> `${DEVICE_IFA_TYPE}` should be used in conjunction with `${DEVICE_IFA}`, and this setup is recommended over individual device macros specific to each IFA type. These macros are applicable to both mobile and CTV device types. |
@@ -117,10 +116,10 @@ The following macros can be used specifically for mobile impressions:
 | `${DEVICE_SHA1}` | The SHA1-encrypted unique identifier representing the mobile device. |
 | `${DEVICE_WIN_ID}` | The Windows Ad ID for the device on which this impression occurred if applicable. |
 | `${EXT_APP_ID}` | The external identifier for the application requesting the impression. This macro is only useful for mobile app impressions. |
-| `${GEO_LAT}` | The latitude of the user's location when GPS data is available from a mobile device, expressed using the `snn.ddd,snn.ddd` format such as `+12.345` or `-45.123.` South is represented as a negative in this example. To comply with privacy standards, the maximum is five decimal places of precision. |
+| `${GEO_LAT}` | The latitude of the user's location when GPS data is available from a mobile device, expressed using the `snn.ddd,snn.ddd` format such as `+12.345` or `-45.123`. South is represented as a negative in this example. To comply with privacy standards, the maximum is five decimal places of precision. |
 | `${GEO_LON}` | The longitude of the user's location when GPS data is available from a mobile device. expressed using the format `snn.ddd,snn.ddd`. For example: `+12.345` or `-45.123`. West is represented as a negative in this example. To comply with privacy standards, the maximum is five decimal places of precision. |
-| `${IS_PREVIEW}` | A flag can be passed to the third-party server so that production impressions don't get counted in the total number of impressions when previewing creatives. Possible values include:<br>`0` for no<br>`1` for yes |
-| `${SUPPLY_TYPE}` | This macro will be populated with a numeric value that denotes the supply type of the impression. Allowed values include:<br>0: web<br>1: mobile web<br>2: mobile app<br>4: toolbar |
+| `${IS_PREVIEW}` | A flag can be passed to the third-party server so that production impressions don't get counted in the total number of impressions when previewing creatives. Possible values include:<br> - `0` for no<br> - `1` for yes |
+| `${SUPPLY_TYPE}` | This macro will be populated with a numeric value that denotes the supply type of the impression. Allowed values include:<br> - 0: web<br> - 1: mobile web<br> - 2: mobile app<br> - 4: toolbar |
 
 ## Privacy macros
 
@@ -128,13 +127,13 @@ In order for our clients to meet their transparency, notice, and choice/consent 
 
 | Macro | Description |
 |---|---|
-| `${GDPR_APPLIES`} | Designates whether GDPR regulations are applied. It specifically indicates whether the user is located in a GDPR impacted country, or if we have a GDPR-required signal passed with the request. Possible values include:<br>`0` for no<br>`1` for yes<br>**Note**: `0` may be received from an EEA country. It is the publisher's choice to signal in this manner. |
+| `${GDPR_APPLIES`} | Designates whether GDPR regulations are applied. It specifically indicates whether the user is located in a GDPR impacted country, or if we have a GDPR-required signal passed with the request. Possible values include:<br> - `0` for no<br> - `1` for yes<br>**Note**: `0` may be received from an EEA country. It is the publisher's choice to signal in this manner. |
 | `${GDPR_CONSENT_STRING}` | This macro specifies the IAB GDPR consent string. If the GDPR applies, it will contain a list of user-approved vendors based on the IAB GDPR Transparency and Consent Framework. For more information, see [IAB GDPR Transparency and Consent Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework). |
 | `${GDPR_CONSENT}` | This macro is an alias for `${GDPR_CONSENT_STRING}`, and behaves in the same manner. |
 | `${GDPR}` | This is an alias for `${GDPR_APPLIES}`, and behaves in the same manner. |
 | `${GPP_SID}` | Designates whether a section (i.e. regulatory framework) of the [Global Privacy Platform](https://iabtechlab.com/gpp) should be applied. Specifically, it indicates whether the user is located in a country affected by legislation covered by the GPP. |
-| ${GPP_STRING_XXXXX*} | This is the IAB [Global Privacy Platform]() (GPP) string. If a section of the GPP applies, then this will contain framework-dependent information reflecting the consent elections of the user.<br>**Note**: * XXXXX can represent any numerical id |
-| `${XANDR_DOMAIN}` | Dynamically retrieves the appropriate Xandr domain based on the cookie consent settings included in the TCF string. If the user has cookies enabled from their browser settings but has:<br>not given consent for their cookies to be included in the TCF string, the adnxs-simple.com domain will be used to prevent the browser from attaching cookies to subsequent ad calls.<br>given consent for their cookies to be included in the TCF string, the adnxs.com domain will be used to pass cookies in the header of each ad call.<br>**Note**: This macro should only be used if you plan on serving impressions in countries that require consent for cookies. |
+| `${GPP_STRING_XXXXX*}` | This is the IAB [Global Privacy Platform](https://iabtechlab.com/gpp) (GPP) string. If a section of the GPP applies, then this will contain framework-dependent information reflecting the consent elections of the user.<br>**Note**: * `XXXXX` can represent any numerical id |
+| `${XANDR_DOMAIN}` | Dynamically retrieves the appropriate Xandr domain based on the cookie consent settings included in the TCF string. If the user has cookies enabled from their browser settings but has:<br> - not given consent for their cookies to be included in the TCF string, the [adnxs-simple.com](https://adnxs-simple.com/) domain will be used to prevent the browser from attaching cookies to subsequent ad calls.<br> - given consent for their cookies to be included in the TCF string, the [adnxs.com](https://adnxs.com/) domain will be used to pass cookies in the header of each ad call.<br>**Note**: This macro should only be used if you plan on serving impressions in countries that require consent for cookies. |
 
 ## Function macros
 
@@ -145,7 +144,7 @@ Xandr currently supports the `{$URL_ENC}` function macro, which can be used for 
 This function macro takes the following form:
 
 ```
-`${URL_ENC(${MACRO_NAME},#)}`
+${URL_ENC(${MACRO_NAME},#)}
 ```
 
 `${MACRO_NAME}` is the macro to be encoded and `#` is the integer representing the number of times to encode the contents. Possible values include:

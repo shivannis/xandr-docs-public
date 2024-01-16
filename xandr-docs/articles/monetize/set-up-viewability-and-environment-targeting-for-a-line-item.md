@@ -35,7 +35,7 @@ To find more detailed instructions for each type of targeting, see the individua
 
 1. If you want to target inventory by operating system, browser, language, device model, or carrier, apply the appropriate system settings to create a list of inventory to include or exclude. If you don't apply specific **System** targeting settings to the line item, all operating systems, browsers, languages, device models, and carriers will be targeted.
 1. If you want to target inventory by **page property** (query strings within an ad request) and tag position, apply the appropriate page property targeting settings.
-1. If you want to reach users on positioning of the video, playback method, or player's width, select the appropriate settings under **Video Player Targeting**.
+1. If you want to reach users on positioning of the video, playback method, or player's width, select the appropriate settings under **Video Player** targeting.
 1. If you want to reach users on program type, content duration and content rating, genre, network or delivery type, select the appropriate settings under **Video Content** targeting.
 
 ## Ad type - Native

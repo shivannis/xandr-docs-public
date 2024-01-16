@@ -21,7 +21,7 @@ For more information, see [Segment Targeting](segment-targeting.md).
 
    1. Drag the appropriate segments that display on the left into Segment Group 1 on the right.
 
-      By default, the corresponding  ✓ icon will be automatically  selected for every segment after dragging each one. You can leave the ✓ icon selected to target the users within the segment. Otherwise, click the icon to exclude the users within the segment from being targeted.
+      By default, the corresponding  ✓ icon will be automatically  selected for every segment after dragging each one. You can leave the ✓ icon selected to target the users within the segment. Otherwise, click the **-** icon to exclude the users within the segment from being targeted.
 
    1. Select **And** or **Or** to add boolean operators between the segments.
 

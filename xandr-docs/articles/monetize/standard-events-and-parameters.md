@@ -12,7 +12,7 @@ The following table shows the standard events you can track using the universal 
 |---|---|
 | `AddPaymentInfo` | Track when payment information is added in the checkout flow (e.g., landing page on billing info) |
 | `AddToCart` | Track when items are added to a shopping cart (for example, by visiting a landing page from an **Add to Cart** button) |
-| InitiateCheckout | Track when users enter the checkout flow (for example, by visiting a landing page from a **Checkout** button) |
+| `InitiateCheckout` | Track when users enter the checkout flow (for example, by visiting a landing page from a **Checkout** button) |
 | `ItemView` | Track key page views (for example, product page or article) |
 | `LandingPage` | Track landing page views |
 | `Lead` | Track when users express interest in an offering (for example, submit a form, sign up for a trial, or register) |
@@ -26,7 +26,7 @@ The following table shows the standard query parameters you can pass as part of 
 | `item_id` | `ii` | String | True | The item id associated with the event, for example, the product or catalog id |
 | `item_name` | `in` | String | True | The name of the page or product |
 | `item_type` | `itp` | String | True | The category of the page or product |
-| `value` | va | `Float` | False | The numerical value associated with the event, for example, the price or cart value. |
+| `value` | `va` | Float | False | The numerical value associated with the event, for example, the price or cart value. |
 
 ## Related topic
 
