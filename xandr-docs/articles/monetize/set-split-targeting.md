@@ -1,5 +1,5 @@
 ---
-title: Microsoft Monetize - Set split targeting
+title: Microsoft Monetize - Set Split Targeting
 description: The page provides instructions on how to define a split by specifying targeting goals. 
 ms.date: 10/28/2023
 ---
