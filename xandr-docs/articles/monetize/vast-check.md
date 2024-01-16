@@ -92,7 +92,7 @@ not required. The creative can be saved.
 - The URL may lead to a rotating, deactivated, or targeting-enabled tag
   that only selectively returns a full XML response
 
-:::image type="content" source="media/unable-to-run.png" alt-text="Screenshot of an xml file that cant be run .":::
+  :::image type="content" source="media/unable-to-run.png" alt-text="Screenshot of an xml file that cant be run .":::
 
  **Actions to take:**
 
