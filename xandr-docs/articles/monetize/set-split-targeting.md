@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Split Targeting
-description: The page provides instructions on how to define a split by specifying targeting goals. 
+description: Discover Set Split Targeting - define splits, set bid multipliers, apply targeting goals, customize categories, toggle between inclusion and exclusion.
 ms.date: 10/28/2023
 ---
 

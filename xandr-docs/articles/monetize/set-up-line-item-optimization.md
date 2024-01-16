@@ -28,8 +28,7 @@ see the [Optimization Guide ALI](optimization-guide-ali.md).
 
     - **Viewable CPM**
 
-      Select this option if your advertiser wants to track and report against a goal based on viewable impressions. Set the **Viewable CPM** field to the goal
-      your advertiser has given you. This option is not available when your revenue type is **CPC**.
+      Select this option if your advertiser wants to track and report against a goal based on viewable impressions. Set the **Viewable CPM** field to the goal your advertiser has given you. This option is not available when your revenue type is **CPC**.
 
     - **CPCV**
 
@@ -69,10 +68,10 @@ see the [Optimization Guide ALI](optimization-guide-ali.md).
 
     If your advertiser wants to optimize to only post-click conversions:
 
-    1. Select **CPA** and enter a CPA amount in the text field.
-    1. Select **Post-click Only**.
-    1. Enter a CPC amount in the text field. (If your Revenue Type is **CPC**, the CPC goal is inherited automatically).
-    1. Attach a conversion pixel.
+      1. Select **CPA** and enter a CPA amount in the text field.
+      1. Select **Post-click Only**.
+      1. Enter a CPC amount in the text field. (If your Revenue Type is **CPC**, the CPC goal is inherited automatically).
+      1. Attach a conversion pixel.
 
     > [!NOTE]
     > A CPC goal is required for [inventory discovery](discovery.md) and [bid valuation](valuation.md).
