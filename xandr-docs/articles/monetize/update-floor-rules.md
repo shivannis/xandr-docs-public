@@ -1,6 +1,6 @@
 ---
 title: Update Floor Rules
-description: Learn how to view, edit and delete from the Floor Rules screen .
+description: Learn how to view, edit and delete from the Floor Rules screen.
 ms.date: 10/28/2023
 ---
 

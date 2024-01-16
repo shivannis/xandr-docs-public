@@ -1,6 +1,6 @@
 ---
 title: Update a Placement
-description: This page learn how to edit, delete, duplicate, and move placements. 
+description: In this page learn how to edit, delete, duplicate, and move placements. 
 ms.date: 10/28/2023
 ---
 

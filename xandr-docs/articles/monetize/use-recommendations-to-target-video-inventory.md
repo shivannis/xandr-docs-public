@@ -32,5 +32,5 @@ To leverage your recommendations:
    | Task | Steps |  |
    |---|---|---|
    | **To download all recommendations for later analysis** | Click **Download** to export a CSV-formatted list of your recommendations. You can then review these with your inventory manager. |  |
-   | **To create an allow list from specific recommendations** | Select one or more recommendations and click **Add to Line Item Allowlist** to create a new allowlist with this inventory.Then click **Create Allowlist**. |  |
+   | **To create an allow list from specific recommendations** | Select one or more recommendations and click **Add to Line Item Allowlist** to create a new allowlist with this inventory.Then click **Create Allowlist**.|  |
    
