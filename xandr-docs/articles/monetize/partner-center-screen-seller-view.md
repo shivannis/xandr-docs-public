@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 On the Partner Center screen you can view your partners, search all buyers, manage your profile, manage your default buyer settings, and review impression and click statistics for each buyer.
 
-## Getting to the Partner Center Screen
+## Getting to the Partner Center screen
 
 **Publisher clients:** Select **Marketplace** > **Partner Center**.
 

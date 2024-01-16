@@ -88,7 +88,7 @@ Select the time zone for the report.
 | 9 | External Impression | An impression from an impression tracker. |
 | 10 | External Click | A click from a click tracker. |
 
-## How To Run Your Report
+## How to run your report
 
 Follow these steps to run your report.
 

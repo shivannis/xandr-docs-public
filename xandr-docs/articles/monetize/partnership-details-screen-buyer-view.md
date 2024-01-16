@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 On the Partnership details screen you can review and manage your relationship with a specific seller. You can track overall spend trends, view your top brands on the seller's inventory, view the seller's top publishers from whom you have purchased inventory, view active and pending deals, and communicate with the seller to negotiate a deal.
 
-## Getting to the Partnership Details Screen
+## Getting to the Partnership Details screen
 
 To reach this screen, select **Partners** > **Partner Center**.
 
