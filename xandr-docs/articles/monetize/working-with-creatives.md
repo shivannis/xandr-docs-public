@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Working with creatives
 
-You can traffic a wide range of creative types, from banners to increasingly pervasive rich media types, through the
-Xandr platform. Only secure content is supported.
+You can traffic a wide range of creative types, from banners to increasingly pervasive rich media types, through the Xandr platform. Only secure content is supported.
 
 ## Hosted creatives
 

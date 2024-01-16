@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Working with impression and click trackers
 
-Impression and click trackers are used to track impressions and clicks associated with creatives that are hosted by off-platform (non-Xandr) ad servers. This is done by attaching the tracker as a "piggyback pixel" on the externally hosted
-creative. This lets you report on impressions and clicks on these creatives as if they were hosted by Xandr.
+Impression and click trackers are used to track impressions and clicks associated with creatives that are hosted by off-platform (non-Xandr) ad servers. This is done by attaching the tracker as a "piggyback pixel" on the externally hosted creative. This lets you report on impressions and clicks on these creatives as if they were hosted by Xandr.
 
 There are several reasons why you might want to use an impression or click tracker. For example:
 

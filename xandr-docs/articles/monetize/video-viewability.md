@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Measurement of Video Viewability using VPAID Wrapper
-description: Learn our video viewability measurement technology, aligning with IAB guidelines. Achieve 50% in-view for 2 seconds with Xandr's VPAID-wrapped video ads. Our wrapper manages, tracks, and measures viewability.
+description: Check IAB standards for viewability. Aim for 50% in-view for 2s with VPAID-wrapped video ads. Use a wrapper to track and measure viewability.
 ms.date: 10/28/2023
 ---
 

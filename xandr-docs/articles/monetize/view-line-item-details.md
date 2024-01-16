@@ -77,8 +77,7 @@ If you have associated multiple creatives to a single landing page, this section
 
 ## Comments
 
-This section shows any comments that have been recorded with the line item. Comments are for reference only and do not affect line item
-delivery.
+This section shows any comments that have been recorded with the line item. Comments are for reference only and do not affect line item delivery.
 
 ## Viewing sibling line items
 
@@ -104,7 +103,7 @@ You can also edit campaign settings directly from the **Line Item Details** scre
 
 Clicking the pencil icon next to the campaign name at the top of the pane will take you to the full **Edit Campaign** screen. Clicking the pencil icon in the **Inventory**, **Geography**, or **System Targeting** or **Associated Creatives** sections will open an editing dialog for that setting/feature.
 
-Reporting on the Line Item
+## Reporting on the line item
 
 To run a report for the line item, click **Advertisers** and select **Reporting** from the menu that appears.
 

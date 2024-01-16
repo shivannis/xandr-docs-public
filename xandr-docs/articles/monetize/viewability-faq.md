@@ -18,7 +18,7 @@ Our reporting is based on the IAB standard definition: 50% of the area of the cr
 
 Adserver clients can now use the Engagement Metrics report to access a wide variety of metrics. We are focused on making the most actionable viewability data widely and easily available.
 
-## Xandr Viewability Script Functionality**
+## Xandr Viewability Script Functionality
 
 The following questions address the Xandr viewability script, how it works, what it measures, and its limitations.
 
@@ -82,7 +82,7 @@ Checks are applied to all platform inventory before an impression is auctioned, 
 The script will however check for inactive users. If there is no keyboard, mouse, scroll or other activity for 60 seconds, then the
 script considers the user to be inactive. Any ads served, for example by an auto-refresh placement, will be considered non-viewable until an activity event is detected.
 
-## **Viewability Rate Results**
+## Viewability rate results
 
 The following questions address how to interpret your reported viewability rates in Microsoft Monetize.
 

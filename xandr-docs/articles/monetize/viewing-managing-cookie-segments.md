@@ -1,6 +1,6 @@
 ---
 title: Viewing & Managing Cookie Segments
-description: Effortlessly manage cookie segments, troubleshoot, identify, and override for seamless control.
+description: Troubleshoot efficiently by viewing/managing segments & customizing cookie details. Learn how to mimic diverse user profiles effortlessly.
 ms.date: 10/28/2023
 ---
 
@@ -29,8 +29,7 @@ When you navigate to the cookie viewer, you will see your Xandr User ID, what ge
 
 ## Override your cookie attributes
 
-During testing or debugging, it can be very helpful to override your cookie data. For example, if you are running a [debug
-auction](understanding-the-debug-auction.md), and you want a campaign to bid that is targeting users only in Brazil, but you are based in the US, you must override your country geo code to place yourself in Brazil. To do that, run the same URL string as before, but add the country code for Brazil at the end, like this:
+During testing or debugging, it can be very helpful to override your cookie data. For example, if you are running a [debug auction](understanding-the-debug-auction.md), and you want a campaign to bid that is targeting users only in Brazil, but you are based in the US, you must override your country geo code to place yourself in Brazil. To do that, run the same URL string as before, but add the country code for Brazil at the end, like this:
 
 ```
 https://ib.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE&country=BR 

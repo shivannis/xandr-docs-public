@@ -60,29 +60,29 @@ Use the drop-down at the top right of the screen to choose the interval for quic
 
 The following metrics are shown for the campaign. Note that the data always reflects the currently selected quickstats interval:
 
-- **Lifetime Budget** How much you have allocated to spend over the lifetime of the campaign, in money or impressions.
-- **Daily Budget** How much you have allocated to spend on any given day, in money or impressions. If you have enabled lifetime pacing for the campaign, you will also see the estimated daily budget, which is calculated each day, based on the remaining unspent budget divided by the number of remaining days in the flight. For more information, see
+- **Lifetime Budget** - How much you have allocated to spend over the lifetime of the campaign, in money or impressions.
+- **Daily Budget** -  How much you have allocated to spend on any given day, in money or impressions. If you have enabled lifetime pacing for the campaign, you will also see the estimated daily budget, which is calculated each day, based on the remaining unspent budget divided by the number of remaining days in the flight. For more information, see
   [Lifetime Pacing](lifetime-pacing.md).
   
   > [!NOTE]
   > You can set budgets at the line item level as well. The line item budget takes precedence over your campaign budget. When your line item budget runs out, all campaigns
   > under the line item will stop buying impressions, whether or not they have reached their own budgets. Also, if the line item is under an insertion order, note that the insertion order budget takes precedence over the line item budget. For more details about budgeting, see [Budgeting and Pacing](budgeting-and-pacing.md).
 
-- **Days into Flight** The number of days the campaign has been running out of the total flight range, and the number of days left. This is available only when the campaign has an end date.
-- **Profit** Money you have made from the advertiser as a result of this campaign. This is revenue - media cost. Profit is always in USD.
-- **Imps** Number of impressions for the campaign.
+- **Days into Flight** - The number of days the campaign has been running out of the total flight range, and the number of days left. This is available only when the campaign has an end date.
+- **Profit** - Money you have made from the advertiser as a result of this campaign. This is revenue - media cost. Profit is always in USD.
+- **Imps** - Number of impressions for the campaign.
   
   > [!NOTE]
   > If the campaign has a specific impression budget, this field may shows a visualization of how well the campaign is pacing for the selected quickstats interval. See [Pacing Bars](view-campaign-details.md) for more details.
 
-- **Clicks** Number of clicks for the campaign.
-- **Convs** Number of times conversion pixels under the parent line item have loaded. Note that a conversion pixel load does not necessarily mean that a conversion was attributed to the campaign. To get information about attributed conversions, rather than just conversion pixel loads, see [Reporting on Conversions](reporting-on-conversions.md).
-- **CTR (Click Through Rate)** Percentage of impressions that resulted in clicks for this campaign.
-- **Revenue** Money the advertiser has paid or will pay your network as a result of this campaign.
-- **Media Cost (USD)** Money your network has spent buying media for the campaign. Media Cost always appears in USD, as that is the currency in which Xandr transacts. If the campaign has a specific lifetime media cost budget, this field may show a visualization of how well the campaign is pacing for the selected quickstats interval. See [Pacing Bars](view-campaign-details.md) for more details.
-- **Rev eCPM** Money the advertiser has paid or will pay your network per 1000 impressions.
-- **Cost eCPM** Money your network has spent per 1000 impressions for the campaign. Cost eCPM always appears in USD, as that is the currency in which Xandr transacts.
-- **Cost eCPA (USD)** Money your network has spent buying media per conversion for the campaign. Cost eCPA always appears in USD, as that is the currency in which Xandr transacts.
+- **Clicks** -  Number of clicks for the campaign.
+- **Convs** - Number of times conversion pixels under the parent line item have loaded. Note that a conversion pixel load does not necessarily mean that a conversion was attributed to the campaign. To get information about attributed conversions, rather than just conversion pixel loads, see [Reporting on Conversions](reporting-on-conversions.md).
+- **CTR (Click Through Rate)** - Percentage of impressions that resulted in clicks for this campaign.
+- **Revenue** - Money the advertiser has paid or will pay your network as a result of this campaign.
+- **Media Cost (USD)** - Money your network has spent buying media for the campaign. Media Cost always appears in USD, as that is the currency in which Xandr transacts. If the campaign has a specific lifetime media cost budget, this field may show a visualization of how well the campaign is pacing for the selected quickstats interval. See [Pacing Bars](view-campaign-details.md) for more details.
+- **Rev eCPM** - Money the advertiser has paid or will pay your network per 1000 impressions.
+- **Cost eCPM** - Money your network has spent per 1000 impressions for the campaign. Cost eCPM always appears in USD, as that is the currency in which Xandr transacts.
+- **Cost eCPA (USD)** - Money your network has spent buying media per conversion for the campaign. Cost eCPA always appears in USD, as that is the currency in which Xandr transacts.
 
 ## Pacing bars
 
@@ -149,29 +149,29 @@ In the **Details** section, you can click **Settings** to view the basic setting
 
 ## Basic settings
 
-- **Supply Type** The type of supply that the campaign can serve on, e.g., Web, Mobile web or Mobile app.
-- **ID** The Xandr ID for the campaign.
-- **External Code** The external code (rather than the internal ID) for the campaign.
+- **Supply Type** - The type of supply that the campaign can serve on, e.g., Web, Mobile web or Mobile app.
+- **ID** - The Xandr ID for the campaign.
+- **External Code** - The external code (rather than the internal ID) for the campaign.
 
 ## Buying strategies
 
-- **Scope** Whether the campaign is set up to buy direct inventory (**Direct**), third-party inventory (**Real Time**), or both (**Both**). Direct inventory includes only inventory managed by your network, whereas third-party inventory includes all inventory not managed by your network that has been enabled for reselling (including
+- **Scope** - Whether the campaign is set up to buy direct inventory (**Direct**), third-party inventory (**Real Time**), or both (**Both**). Direct inventory includes only inventory managed by your network, whereas third-party inventory includes all inventory not managed by your network that has been enabled for reselling (including
   external supply partners such as Microsoft Advertising Exchange and Google Ad Manager).
-- **Pay-Per-Impression** If the campaign is set up to buy third-party inventory, this section shows the specific buying strategy for paying publishers on a per-impression basis. This payment type is accepted by all sellers (Xandr sellers and external sellers). For more details about specific CPM buying strategies, see [Create a Campaign](create-a-campaign.md) or [Buying Strategies](buying-strategies.md).
-- **Pay-Per-Click** If the campaign is set up to buy third-party inventory, this section shows the specific strategy for paying publishers when users click on your ads. This payment type is accepted only by participating Xandr sellers, not by external sellers.
-- **Pay-Per-Conversion** If the campaign is set up to buy third-party inventory, this section shows the specific strategy for paying publishers when users convert. This payment type is accepted only by participating Xandr sellers, not by external sellers.
+- **Pay-Per-Impression** - If the campaign is set up to buy third-party inventory, this section shows the specific buying strategy for paying publishers on a per-impression basis. This payment type is accepted by all sellers (Xandr sellers and external sellers). For more details about specific CPM buying strategies, see [Create a Campaign](create-a-campaign.md) or [Buying Strategies](buying-strategies.md).
+- **Pay-Per-Click** - If the campaign is set up to buy third-party inventory, this section shows the specific strategy for paying publishers when users click on your ads. This payment type is accepted only by participating Xandr sellers, not by external sellers.
+- **Pay-Per-Conversion** - If the campaign is set up to buy third-party inventory, this section shows the specific strategy for paying publishers when users convert. This payment type is accepted only by participating Xandr sellers, not by external sellers.
 
 ## Line item settings
 
 This section shows you essential details about the parent line item.
 
-- **Name/ID** The name and id of the line item appears at the top of this section. You can click this to navigate to [View Line Item Details](view-line-item-details.md) for the line item.
+- **Name/ID** - The name and id of the line item appears at the top of this section. You can click this to navigate to [View Line Item Details](view-line-item-details.md) for the line item.
 - **Lifetime** How much the advertiser has allocated for you to spend over the lifetime of the line item, in money or impressions.
-- **Daily** How much the advertiser has allocated for you to spend on any given day, in money or impressions.
-- **Revenue Type** The basis on which the advertiser has agreed to pay you, for example, CPM (per thousand impressions) or CPA (per conversion). For details about each revenue type, see [Create a Standard Line Item](create-a-standard-line-item.md).
-- **Revenue Value** The amount that the advertiser will pay you for the specified revenue type.
-- **Performance Goal Type** The type of goal that the advertiser wants you to achieve (CPC, CPA, CTR). A performance goal is used to achieve a goal that is different from how the advertiser has agreed to pay you (e.g., the advertiser wants to pay a CPM but expects you to meet a $50 CPA goal). For more details about performance goals, see [Create a  Standard Line Item](create-a-standard-line-item.md).
-- **Performance Goal Tracking** The amount for the performance goal.
+- **Daily** - How much the advertiser has allocated for you to spend on any given day, in money or impressions.
+- **Revenue Type** - The basis on which the advertiser has agreed to pay you, for example, CPM (per thousand impressions) or CPA (per conversion). For details about each revenue type, see [Create a Standard Line Item](create-a-standard-line-item.md).
+- **Revenue Value** - The amount that the advertiser will pay you for the specified revenue type.
+- **Performance Goal Type** - The type of goal that the advertiser wants you to achieve (CPC, CPA, CTR). A performance goal is used to achieve a goal that is different from how the advertiser has agreed to pay you (e.g., the advertiser wants to pay a CPM but expects you to meet a $50 CPA goal). For more details about performance goals, see [Create a  Standard Line Item](create-a-standard-line-item.md).
+- **Performance Goal Tracking** - The amount for the performance goal.
 
 ## Serving fees
 

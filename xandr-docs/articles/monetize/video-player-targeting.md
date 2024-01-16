@@ -21,10 +21,10 @@ You can target video creatives in any or all of the following ways:
 - [Target video inventory by framework](video-player-targeting.md#target-video-inventory-by-framework)
 - [Target video inventory by creative duration](video-player-targeting.md#target-video-inventory-by-creative-duration)
 
-  > [!NOTE]
-  > You should avoid using both VAST creatives and in-banner or interstitial video creatives within the same video campaign. An in-banner or interstitial video creative will not serve when you target by position. Setting any of the three video targeting parameters (i.e., **Playback Method**, **Player Size**, or **Position**) will restrict inventory to only those that satisfy the specified parameters and thus significantly limit your delivery potential.
-  >
-  > By default, you will target all playback methods, player sizes, roll positions, allowed creative durations, and video frameworks. However, you can narrow your targeting.
+> [!NOTE]
+> You should avoid using both VAST creatives and in-banner or interstitial video creatives within the same video campaign. An in-banner or interstitial video creative will not serve when you target by position. Setting any of the three video targeting parameters (i.e., **Playback Method**, **Player Size**, or **Position**) will restrict inventory to only those that satisfy the specified parameters and thus significantly limit your delivery potential.
+>
+> By default, you will target all playback methods, player sizes, roll positions, allowed creative durations, and video frameworks. However, you can narrow your targeting.
 
 ## Target video inventory by position or context
 
@@ -81,7 +81,6 @@ You can target the following video frameworks:
 
 ## Target video inventory by creative duration
 
-Publishers set Maximum Creative Duration on the placement or on the query string of the request. You can target creative duration on the deal line item using the expected duration of the creatives that will serve on the deal line item. That way, only impressions with a Maximum Creative Duration higher than the Deal Creative Duration will be
-included. For example, a deal targeting a creative duration of 60 seconds will only include requests that allow ads of 60 seconds or greater to render.
+Publishers set Maximum Creative Duration on the placement or on the query string of the request. You can target creative duration on the deal line item using the expected duration of the creatives that will serve on the deal line item. That way, only impressions with a Maximum Creative Duration higher than the Deal Creative Duration will be included. For example, a deal targeting a creative duration of 60 seconds will only include requests that allow ads of 60 seconds or greater to render.
 
 You can target video inventory by creative duration by specifying the number of seconds duration.

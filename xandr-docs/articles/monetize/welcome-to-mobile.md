@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Welcome to Mobile
-description: The article provides comprehensive guidance on the intricacies of purchasing mobile devices.
+description: Discover the art of purchasing mobile devices and mastering app advertising. Navigate the evolving landscape with expert insights.
 ms.date: 10/28/2023
 ---
 

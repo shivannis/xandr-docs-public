@@ -15,7 +15,7 @@ The Line Items Details window lets you view and edit line item settings and acce
 
 From the **Line Items** window:
 
-1. Select the appropriate progress tab (All, Upcoming, In Progress, or Completed). See [Monitor Line Items](monitor-line-items.md) for more information.
+1. Select the appropriate progress tab (**All**, **Upcoming**, **In Progress**, or **Completed**). See [Monitor Line Items](monitor-line-items.md) for more information.
 1. Click anywhere in the row of the line item you want to see details on.
 
    > [!NOTE]

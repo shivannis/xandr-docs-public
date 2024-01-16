@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Why use budgeting?
 
-A budget is the amount of money or the number of impressions that a client wants to spend for a specific insertion order,
-line item or campaign. Ideally, this budget amount is based on the specific business needs or goals of the client.
+A budget is the amount of money or the number of impressions that a client wants to spend for a specific insertion order, line item or campaign. Ideally, this budget amount is based on the specific business needs or goals of the client.
 Once the budget for a campaign (or its parent line item) has been met, the campaign will no longer bid on inventory, and no creatives will be served. Budgets can be established on a daily basis, for the lifetime of the campaign, or for both. It is neither necessary nor required to set a budget for each campaign; however, not doing so can create very risky
 scenarios.
 
@@ -48,7 +47,7 @@ Therefore, if one campaign in a line item spikes and exhausts the parent line it
 Budgeting acts as a control feature, maintaining an upper limit that the campaign, line item, or insertion order cannot exceed. Without a budget, your campaign could continue to win bids and spend money until you deactivate it. Even in a short time, a campaign can easily spend tens of thousands of dollars. Therefore, it is strongly recommended that you set
 lifetime budgets on your campaigns (daily budgets are also recommended). It is also recommended that you set both lifetime and daily budgets for your parent line items and insertion orders. These practices will help you avoid overspend.
 
-Related Topics
+## Related topics
 
 - [Budgeting and Pacing](budgeting-and-pacing.md)
 - [Difficulties with Exact Budgeting](difficulties-with-exact-budgeting.md)

@@ -1,6 +1,6 @@
 ---
 title: View Legacy Insertion Order Details
-description: Learn how to access and review information about legacy insertion orders.
+description: Discover Legacy Insertion Order details—access settings, metrics, visualizations, and more on the Insertion Order Details screen for precise insights.
 ms.date: 10/28/2023
 ---
 
@@ -75,4 +75,3 @@ This takes you to the **Advertiser Reporting** screen, where you can select to r
 
 - [Explore Insertion Orders](explore-insertion-orders.md)
 - [Create an Insertion Order](create-an-insertion-order.md)
-- 

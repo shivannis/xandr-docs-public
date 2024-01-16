@@ -20,7 +20,7 @@ From the **Insertion Orders** screen, click the name of the insertion order whos
 
 ## Viewing insertion order settings
 
-The settings that display here are read-only and can be edited by clicking **Edit** at the top of the **Insertion Order** Details screen. For more information, see [Create an Insertion Order](create-an-insertion-order.md).
+The settings that display here are read-only and can be edited by clicking **Edit** at the top of the **Insertion Order Details** screen. For more information, see [Create an Insertion Order](create-an-insertion-order.md).
 
 | Setting | Description |
 |---|---|
