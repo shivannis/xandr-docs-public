@@ -1,6 +1,6 @@
 ---
 title: Using Minimum Margin to Balance Margin and Delivery
-description: This page illustrates how you can use minimum margin to manage your margins.
+description: Learn how using minimum margin you can attain right balance between delivery and margin.
 ms.date: 10/28/2023
 ---
 
@@ -33,7 +33,7 @@ First, you set up a line item with a budget of $10,000 and a $5.00 CPM
 booked revenue. Not wanting to impact the initial delivery of the line
 item, you begin with a conservative minimum margin of 5%.
 
-:::image type="content" source="media/min-margin.png" alt-text="Screenshot of Min margin .":::
+:::image type="content" source="media/min-margin.png" alt-text="Screenshot of Min margin.":::
 
 The minimum margin % on the line item ensures that all child campaigns
 are bidding at or below the minimum margin % for 3rd party inventory.
@@ -102,7 +102,7 @@ Line item: $5.00 CPM booked revenue and minimum margin of 20%
 Let's see what happens when this Campaign C bids on the three
 publishers.
 
-:::image type="content" source="media/min-margin-on-direct.png" alt-text="Screenshot of min margin on direct .":::
+:::image type="content" source="media/min-margin-on-direct.png" alt-text="Screenshot of min margin on direct.":::
 
 Minimum Margin ensures that the direct campaign only serves on
 publishers where you will meet your minimum margin %.

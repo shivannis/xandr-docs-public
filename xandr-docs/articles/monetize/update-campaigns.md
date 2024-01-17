@@ -1,6 +1,6 @@
 ---
 title: Update Campaigns
-description: learn to update, Activate/Deactivate, duplicate and edit campaigns in this page.
+description: Learn to update, activate/deactivate, duplicate and edit campaigns in this page.
 ms.date: 10/28/2023
 ---
 

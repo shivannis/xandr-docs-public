@@ -1,6 +1,6 @@
 ---
 title: User ID Syncing with External Partners
-description: In this page learn about user ID syncing that Xandr initiates in order to have a user ID associated with all users in all ad calls. 
+description: In this page learn about user ID syncing that Xandr initiates to have a user ID associated with all users in all ad calls. 
 ms.date: 10/28/2023
 ---
 

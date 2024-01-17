@@ -29,7 +29,7 @@ assume that Xandr has "seen" this user before
 somewhere in their system and so has marked the user's browser cookie
 with an Xandr user ID.
 
-:::image type="content" source="media/usermap.png" alt-text="Sceenshot of a usermap .":::
+:::image type="content" source="media/usermap.png" alt-text="Sceenshot of a usermap.":::
 
 
 **Step 1.** When the page loads, the browser makes this call/request to

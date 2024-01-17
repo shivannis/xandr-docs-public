@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Using a Viewability Rate Target for Guaranteed Views
-description: Learn why its important to manage the average viewability rate in this page. 
+description: Learn why it's important to manage the average viewability rate in this page. 
 ms.date: 10/28/2023
 ---
 

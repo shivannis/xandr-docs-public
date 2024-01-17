@@ -80,7 +80,7 @@ vCPM bid).
 The table below shows a few example scenarios for how vCPM bids are
 included in the auction and how they are paid out:
 
-:::image type="content" source="media/vcpm-auction-example.png" alt-text="Screenshot of VCPM Auction .":::
+:::image type="content" source="media/vcpm-auction-example.png" alt-text="Screenshot of VCPM Auction.":::
 
 In the examples above:
 

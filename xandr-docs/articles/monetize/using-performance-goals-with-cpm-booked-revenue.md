@@ -1,6 +1,6 @@
 ---
 title: Using Performance Goals with CPM Booked Revenue
-description: In this page learn how to best use Xandr optimization when your client is paying you on a CPM basis but will measure results on a CPA, CPC or CTR basis.
+description: In this page learn why it is better to use performance goals on the line item rather than Optimize to a predicted CPC/CPA goal campaign buying strategies for line items using CPM booked revenue.
 ms.date: 10/28/2023
 ---
 
@@ -52,7 +52,7 @@ and caps to ensure your margin.
 
 The setup would look something like this:
 
-:::image type="content" source="media/optimize-to-cpa.png" alt-text="Screenshot to Optimize to CPA .":::
+:::image type="content" source="media/optimize-to-cpa.png" alt-text="Screenshot to Optimize to CPA.":::
 
 ### The results
 
@@ -110,7 +110,7 @@ buying with a CPA performance goal on the line item and an **Optimize to
 
 ### The setup
 
-:::image type="content" source="media/optimize-to-margin.png" alt-text="Screenshot of Optimize to revenue .":::
+:::image type="content" source="media/optimize-to-margin.png" alt-text="Screenshot of Optimize to revenue.":::
 
 ### The results
 
@@ -145,7 +145,7 @@ you can easily increase your no-bid threshold while still tracking
 revenue at your client's stated CPA or CPC goal. In this scenario, you
 are making a strategic tradeoff between delivery and performance.
 
-:::image type="content" source="media/performance-goals.png" alt-text="Screenshot of Performance goals .":::
+:::image type="content" source="media/performance-goals.png" alt-text="Screenshot of Performance goals.":::
 
 ### Trade margin for delivery
 
@@ -157,7 +157,7 @@ the price you're bidding for inventory.
 > [!IMPORTANT]
 > You will soon be able to adjust your margin centrally on the line item for all associated campaigns.
 
-:::image type="content" source="media/margin.png" alt-text="Screenshot of Trade Margin for Delivery ."::: 
+:::image type="content" source="media/margin.png" alt-text="Screenshot of Trade Margin for Delivery."::: 
 
 By successfully managing tradeoffs between performance, margin and
 delivery, you can manage your line item to meet your clients' goals

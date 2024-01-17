@@ -1,6 +1,6 @@
 ---
 title: Using Pulse to Check Campaign Health
-description: In this page learn to view , understand and troubleshoot Pulse Data. 
+description: In this page learn to view, understand and troubleshoot Pulse Data. 
 ms.date: 10/28/2023
 ---
 
@@ -23,7 +23,7 @@ It's easy to display Pulse metrics for your campaigns. From the
 **Campaigns** screen, click the
 **Pulse** button.
 
-:::image type="content" source="media/pulse-button.png" alt-text="Screenshot pulse button .":::
+:::image type="content" source="media/pulse-button.png" alt-text="Screenshot pulse button.":::
 
 This reveals three columns - one containing sparklines, one containing
 spend in the last 60 seconds, and one containing impressions - that show

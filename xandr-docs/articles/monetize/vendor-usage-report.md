@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Vendor Usage Report
-description: Learn what is a Vendor Usage report and what information it provides.
+description: In this page learn that Vendor Usage Report is a Network-level report providing details about data or platform usage, cost, and the line items/campaigns where vendor costs apply.
 ms.date: 10/28/2023
 ---
 

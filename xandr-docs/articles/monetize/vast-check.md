@@ -92,7 +92,7 @@ not required. The creative can be saved.
 - The URL may lead to a rotating, deactivated, or targeting-enabled tag
   that only selectively returns a full XML response
 
-  :::image type="content" source="media/unable-to-run.png" alt-text="Screenshot of an xml file that cant be run .":::
+  :::image type="content" source="media/unable-to-run.png" alt-text="Screenshot of an xml file that cant be run.":::
 
  **Actions to take:**
 
@@ -172,7 +172,7 @@ attributes that will cause VAST Check to fail if they are missing.
 - Click **Run check again** button to
   initiate the re-scanning of the creative XML document.
 
-  :::image type="content" source="media/run-check-again.png" alt-text="Screenshot of Run check again button":::
+  :::image type="content" source="media/run-check-again.png" alt-text="Screenshot of Run check again button.":::
 
 This feature would address the following scenarios where:
   - Scanner failed to run during the upload
@@ -184,7 +184,7 @@ This feature would address the following scenarios where:
 - Reach out to the tag provider to add the missing duration information
   or revise the format. For example:
 
-     :::image type="content" source="media/video-duration.png" alt-text="Screenshot of Video duration .":::
+     :::image type="content" source="media/video-duration.png" alt-text="Screenshot of Video duration.":::
 
 ### No video formats detected
 
@@ -199,7 +199,7 @@ This feature would address the following scenarios where:
 - Click Run check again button to
   initiate the re-scanning of the creative XML document.
 
-  :::image type="content" source="media/run-check-again.png" alt-text="Screenshot of Run check again button .":::
+  :::image type="content" source="media/run-check-again.png" alt-text="Screenshot of Run check again button.":::
 
 This feature would address the following scenarios where:
 
@@ -215,11 +215,11 @@ This feature would address the following scenarios where:
   
   Sample XML with recommended VAST formats:
 
-  :::image type="content" source="media/video-formats.png" alt-text="Screenshot of Video Format .":::
+  :::image type="content" source="media/video-formats.png" alt-text="Screenshot of Video Format.":::
 
   Sample XML with recommended VPAID formats:
 
-   :::image type="content" source="media/media-files.png" alt-text="Screenshot of Media files .":::
+   :::image type="content" source="media/media-files.png" alt-text="Screenshot of Media files.":::
 
 ## Some adjustments are recommended (valid creative)
 
@@ -270,7 +270,7 @@ VAST documents.
 Excerpt of a VAST document with a `<Wrapper>` element pointing to an
 `<InLine>` tag:
 
-:::image type="content" source="media/wrapper-vast.png" alt-text="Screenshot of wrapper vast .":::
+:::image type="content" source="media/wrapper-vast.png" alt-text="Screenshot of wrapper vast.":::
 
 ### All attributes are present and valid (valid creative)
 
