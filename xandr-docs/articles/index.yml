@@ -65,12 +65,12 @@ additionalContent:
     - title: API Reference Documentation
       items:
         # Card
-        - title: Digital Platform API (Work in Progress)
+        - title: Digital Platform API
           links:
             - text: Overview
-              url: invest/index.yml
+              url: digital-platform-api/index.yml
             - text: References
-              url: invest/index.yml
+              url: digital-platform-api/index.yml
             #- text: Release Notes
              # url: invest/index.yml
         # Card
@@ -135,4 +135,8 @@ additionalContent:
         - title: OTT and CTV Video Integrations
           summary: Integration guide for various OTT hardware platforms, including CTV
           url: ott-ctv/index.yml
+        # Card
+        - title: Digital Platform API (Internal)
+          summary: These services are accessible to Microsoft employees only
+          url: digital-platform-api/digital-platform-api-internal-services/index.yml
     
