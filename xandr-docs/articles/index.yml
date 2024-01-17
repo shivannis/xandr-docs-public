@@ -75,7 +75,7 @@ additionalContent:
         - title: Impression Bus API
           links:
             - text: Overview
-              url: impression-bus/index.yml
+              url: bidders/impression-bus-api.md
             - text: References
               url: impression-bus/index.yml
             #- text: Release Notes
