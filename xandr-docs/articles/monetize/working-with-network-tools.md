@@ -9,7 +9,9 @@ ms.date: 10/28/2023
 Microsoft Monetize provides various tools to help you manage network-level settings.
 Select **Tools** \> **General** from the **Network** menu to view and modify your network-level settings with the following tools:
 
-| **General Tools** |  |
+**General tools**
+
+| Tools | Description |
 |---|---|
 | [Reselling Exposure](managing-your-inventory-reselling-exposure.md) | Use this tool to control the visibility of your reselling-enabled content to other networks. |
 | [Content Categories](manage-custom-content-categories.md) | With this tool you can apply a single label to a number of placement groups and/or placements. |
@@ -21,7 +23,9 @@ Select **Tools** \> **General** from the **Network** menu to view and modify you
 
 The following additional tools are available from the **Network** \> **Tools** menu:
 
-| **Additional Tools** |  |
+**Additional Tools**
+
+| Tools | Description |
 |---|---|
 | [Creative Templates](creative-templates.md) | This tool allows you to build your own templates from scratch, or copy Xandr standard templates and then modify them to fit your needs. |
 | [Object Limits](viewing-your-object-limits.md) | Xandr limits the number of items you can have on the platform. View the Object Limits Report to see these limits and proactively monitor your current usage. |
