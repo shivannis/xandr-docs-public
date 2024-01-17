@@ -65,7 +65,8 @@ After the user is redirected to the href, such as [https://www.cnn.com], the fol
 1. The click tracker is passed to the third-party ad server in the tag.
 1. The third-party ad server will take the click tracker and insert it correctly into the creative so that it will load when the creative is clicked.
 
-For a URL-HTML, URL-JS, raw-HTML, or raw-JS creative, you will need to include one of the following Xandr macros in the appropriate place in your URL/tag:
+For a URL-HTML, URL-JS, raw-HTML, or raw-JS creative, you will need to include one of the following Xandr macros in the
+appropriate place in your URL/tag:
 
 | Macro | Description |
 |--|--|
@@ -91,7 +92,7 @@ Therefore, the expanded DoubleClick content will look as follows:
 https://ad.doubleclick.net/adi/N5364.Ivillage.com/B2965815.5;sz=728x90;click=https://nym1-ib.adnxs.com/click2?AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA__________-No5xOAAAAAAEAAAAAAAAAAAAAAAAAAABd8gsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAcAsHNwAAAAA./clickenc=;ord=1330398521?
 ```
 
-The creative will first direct the browser to the impression bus where the click will be recorded, and then to the landing page (the landing page is specified after our `clickenc=` variable). In this example, DoubleClick will use our click URL and `${CACHEBUSTER}` macro when delivering the final creative content to the user's page. The `${CACHEBUSTER}` macro ensures that a fresh call is made to the ad server every time the tag is called, so you are accurately counting impressions. If you don't add the `${CACHEBUSTER}` macro to the tag, you may see inaccurate impression totals. For more information, see [Table 2](supported-creative-macros.md#supported-creative-macros).
+The creative will first direct the browser to the impression bus where the click will be recorded, and then to the landing page (the landing page is specified after our `clickenc=` variable). In this example, DoubleClick will use our click URL and `${CACHEBUSTER}` macro when delivering the final creative content to the user's page. The `${CACHEBUSTER}` macro ensures that a fresh call is made to the ad server every time the tag is called, so you are accurately counting impressions. If you don't add the `${CACHEBUSTER}` macro to the tag, you may see inaccurate impression totals. For more information, see [Table 2](supported-creative-macros.md#supported-creative-macros__table_ff4cf90f-81ed-4864-a193-a41cf7e9aaf5).
 
 ## Examples of failures
 
