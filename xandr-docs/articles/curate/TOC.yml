@@ -2,7 +2,7 @@
   href: index.yml
 - name: Getting Started
   items:
-  - name: About Curate
+  - name: About Microsoft Curate
     href: about-curate.md
   - name: Object Hierarchy
     href: object-hierarchy.md
