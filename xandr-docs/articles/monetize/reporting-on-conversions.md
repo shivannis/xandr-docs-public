@@ -1,48 +1,36 @@
 ---
-Title : Reporting on Conversions
-Description : You can use reports to troubleshoot your conversion pixels and
+title: Microsoft Monetize - Reporting on Conversions
+description: Learn how you can use reports to troubleshoot your conversion pixels and thoroughly analyze conversion data. 
 ms.date: 10/28/2023
-thoroughly analyze conversion data.
 ---
 
 
-# Reporting on Conversions
-
-
-
-
+# Microsoft Monetize - Reporting on conversions
 
 You can use reports to troubleshoot your conversion pixels and
 thoroughly analyze conversion data.
 
-Pixel Loads
+## Pixel loads
 
-The Conversion Pixels section displays
+The **Conversion Pixels** section displays
 how long ago your advertisers' conversion pixels loaded, as well as how
 many times each pixel loaded in the last 12 hours. This information is
 updated continuously, and helps you both verify the pixels that are
 loading properly and identify the pixels in need of troubleshooting. To
 view the health information associated with each pixel, navigate to the
-Conversion Pixels screen.
+**Conversion Pixels** screen.
 
-The Loads Last 12 Hours column
+The **Loads Last 12 Hours** column
 displays the number of total loads on the pixel **ID** in the last 12
 hours (including the twelfth hour).
 
-The Last Load column displays how long
+The **Last Load** column displays how long
 ago any web page with the conversion pixel was last visited in the last
 12 hours. If "Never" displays here for more than 10 minutes after a
 pixel was added, the pixel may not be placed correctly on any website.
 
-
-
-<b>Note:</b> Seeing a reasonable time in the
-Last Load column only indicates that
-the conversion pixel was fired on **at least one (but possibly not
-every)** website in the last 12 hours. It is recommended to check for
-individual sites statistics, in **Attributed URLs** below.
-
-
+> [!NOTE]
+> Seeing a reasonable time in the **Last Load** column only indicates that the conversion pixel was fired on **at least one (but possibly not every)** website in the last 12 hours. It is recommended to check for individual sites statistics, in **Attributed URLs** below.
 
 To view more information about the conversion pixel, mouse-over the
 icons in the **Status** column.
@@ -54,20 +42,17 @@ conversions. Similarly, if your pixel has never loaded, then you might
 need to investigate with your advertiser to make sure the pixel is
 placed correctly.
 
-![Conversion pixel](media/conversionpixels-statuses.png)
+:::image type="content" source="media/conversion-pixels-statuses.png" alt-text="Screenshot of Conversion pixel .":::
 
+For details on using this report via the API, see [Conversion Pixel Last Fire](../digital-platform-api/conversion-pixel-last-fire.md).
 
-For details on using this report via the API, see <a
-href="xandr-api/conversion-pixel-last-fire.md"
-class="xref" target="_blank">Conversion Pixel Last Fire</a>.
+## Attributed URLs
 
-Attributed URLs
-
-To view Conversion Pixel Details and
-the Top 25 Attributed URLs in the Past
-Hour section, select a conversion pixel from the
-Conversion Pixels section.
-The Top 25 Attributed URLs section
+To view **Conversion Pixel Details** and
+the **Top 25 Attributed URLs in the Past
+Hour** section, select a conversion pixel from the
+**Conversion Pixels** section.
+**The Top 25 Attributed URLs** section
 displays the URL of the website on which a conversion pixel has been
 placed and the related load information.
 
@@ -84,7 +69,7 @@ the last 12 hours. If "Never" displays here for more than 10 minutes
 after a pixel was added, the pixel may not be placed correctly on this
 site.
 
-Attributed Conversions
+## Attributed conversions
 
 The Advertiser Attributed Conversions report allows you to view
 conversion pixel IDs, order IDs, times of attributed clicks or
@@ -100,60 +85,27 @@ however, the report will run for "yesterday" relative to your standard
 timezone.
 
 To access this report directly from the
-Conversion Pixels screen, check the
+**Conversion Pixels** screen, check the
 box for each pixel that you want to report on and then click
-More Actions
- \>  Run Report.
+**More Actions**
+ \>  **Run Report**.
 
 This takes you to the Advertiser Attributed Conversions report, where
 the pixels you selected are preset as filters and **Conversion Pixel**
 is preset as a dimension. Note that you can also access the report
-directly from the Advertiser
-Reporting screen
-(Advertisers
-\>  Reporting).
+directly from the **Advertiser
+Reporting** screen (**Advertisers** \>  **Reporting**).
 
-
-
-<b>Note:</b> When exporting the Advertiser
-Attributed Conversions report to Excel, long numbers (including User ID
-and Auction ID) are converted to floating point format, and any digit
-after digit 15 will be converted to zero. For example, a User ID of
-102083040601081716 will be converted to 102083040601081000 which is not
-a valid Xandr User ID. If you need to pull valid
-User or Auction IDs, you can copy them manually or use the API version
-of this report.
-
-
+> [!NOTE]
+> When exporting the Advertiser Attributed Conversions report to Excel, long numbers (including User ID and Auction ID) are converted to floating point format, and any digit after digit 15 will be converted to zero. For example, a User ID of 102083040601081716 will be converted to 102083040601081000 which is not a valid Xandr User ID. If you need to pull valid User or Auction IDs, you can copy them manually or use the API version of this report.
 
 For more information about this report, including a full list of
-dimensions, metrics, and filters, see
-<a href="advertiser-attributed-conversions-report.md"
-class="xref">Advertiser Attributed Conversions Report</a>. For details
-on running this report via the API, click <a
-href="xandr-api/attributed-conversions.md"
-class="xref" target="_blank">here</a>. You may also be interested in the
-<a href="member-attributed-conversions-report.md" class="xref">Network
-Attributed Conversions Report</a>, which provides this information on a
-different level and includes Universal Pixel attribution information.
+dimensions, metrics, and filters, see [Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md). For details
+on running this report via the API, click [here](../digital-platform-api/advertiser-attributed-conversions.md). You may also be interested in the [Network Attributed Conversions Report](member-attributed-conversions-report.md), which provides this information on a different level and includes Universal Pixel attribution information.
 
+## Related topics
 
-
-
-
-Related Topics
-
-- <a href="create-a-conversion-pixel.md" class="xref">Create a
-  Conversion Pixel</a>
-- <a href="export-conversion-pixels.md" class="xref">Export Conversion
-  Pixels</a>
-- <a href="conversion-pixels-advanced.md" class="xref">Conversion Pixels
-  Advanced</a>
-- <a href="server-side-conversion-pixels.md" class="xref">Server-Side
-  Conversion Pixels</a>
-
-
-
-
-
-
+- [Create a Conversion Pixel](create-a-conversion-pixel.md)
+- [Export Conversion Pixels](export-conversion-pixels.md)
+- [Conversion Pixels Advanced](conversion-pixels-advanced.md)
+- [Server-Side Conversion Pixels](server-side-conversion-pixels.md)

@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Admin custom report
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 Xandr admins can use this report to run custom queries against the internal Reporting cluster. Please use with caution, i.e., avoid running heavy queries.
 
 ## REST API

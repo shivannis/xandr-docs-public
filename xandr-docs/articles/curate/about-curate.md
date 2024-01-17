@@ -1,12 +1,12 @@
 ---
-title: About Curate
+title: About Microsoft Curate
 description: In this article, understand what Microsoft Curate is and the benefits of using it.
 ms.date: 10/28/2023
 ---
 
-# About Curate
+# About Microsoft Curate
 
-Microsoft Curate lets curators use their proprietary assets to enhance the value of a seller’s inventory and create unique offerings for buyers.
+Microsoft Curate (powered by Xandr) lets curators use their proprietary assets to enhance the value of a seller’s inventory and create unique offerings for buyers.
 
 ## Benefits
 

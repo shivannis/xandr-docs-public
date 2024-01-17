@@ -1,9 +1,9 @@
 ---
-title: Bidders - DV360 Buying Guide
+title: DV360 Buying Guide
 description: The article outlines a DV360 buying guide designed to facilitate communication between Xandr publishers and their buyers. It provides guidance on accessing and targeting Xandr's publisher inventory through DV360 as their DSP. 
 ms.date: 10/28/2023
 ---
-# Bidders - DV360 buying guide
+# DV360 buying guide
 
 In partnership with DV360, Xandr has created this guide to help Xandr publishers communicate with their buyers about accessing and targeting Xandr's publisher inventory using DV360 as their DSP. This information has been created in collaboration with and
 approved by the DV360 team. Please note that platforms can and will change regularly. We will do our best to update this guide as needed.

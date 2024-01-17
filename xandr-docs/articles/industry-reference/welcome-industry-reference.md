@@ -1,11 +1,11 @@
 ---
-title: Industry Reference - Welcome
+title: Welcome
 description: The article provides an introduction to industry experience, focusing on online advertising and ad trading.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Industry Reference - Welcome
+# Welcome
 
 This guide is for anyone who wants to learn more about online advertising and ad trading. It contains information on:
 

@@ -1,14 +1,11 @@
 ---
-Title : Vertical Video Formats
-Description : Vertical video formats are designed for display on smartphones, and use
+title: Vertical Video Formats
+description: Learn what are Vertical video formats and steps to setup a vertical video.  
 ms.date: 10/28/2023
-an aspect ratio that can be square, or longer than it is wide. For
 ---
 
 
-# Vertical Video Formats
-
-
+# Vertical video formats
 
 Vertical video formats are designed for display on smartphones, and use
 an aspect ratio that can be square, or longer than it is wide. For
@@ -25,65 +22,47 @@ without pillarboxing or letterboxing.
 Currently, vertical video is only supported for outstream video
 placements, which use Xandr's seller tag (AST).
 Supported aspect ratios are 9:16, 3:4, and 1:1. For more information
-about using AST, see the documentation for <a
-href="seller-tag/seller-tag/seller-tag.md"
-class="xref" target="_blank">AST</a> and the <a
-href="seller-tag/seller-tag/ast-api-reference.md"
-class="xref" target="_blank">AST API Reference</a>.
+about using AST, see the documentation for [AST](../seller-tag/seller-tag.md) and the [AST API Reference](../seller-tag/ast-api-reference.md).
 
 To set up vertical video:
 
-1.  Create a video placement that includes the width and height of the
+1. Create a video placement that includes the width and height of the
     creative.
     
+    > [!NOTE]
+    >  If you want to filter out bids that don't correspond to the preferred aspect ratio, set the aspect ratio on the placement using the Video Settings tab of the Placement Manager and select the **Buyer creatives must match aspect ratio** checkbox.
 
-    <b>Note:</b> If you want to filter out
-    bids that don't correspond to the preferred aspect ratio, set the
-    aspect ratio on the placement using the Video Settings tab of the
-    Placement Manager and select the Buyer
-    creatives must match aspect ratio checkbox.
-
-    
-
-2.  In the `rendererOptions` parameter of the `defineTag` element in the
+1. In the `rendererOptions` parameter of the `defineTag` element in the
     AST, specify the desired aspect ratio as shown in the example:
 
-    ``` pre
+    ``` 
     rendererOptions: {
         "aspectRatio": "9:16",
     }
     ```
 
-3.  Optionally, enable and set a maximum height for the player as shown
+1. Optionally, enable and set a maximum height for the player as shown
     in the following example. The player will adjust to maintain the
     aspect ratio.
 
-    ``` pre
+    ``` 
     "maxHeight": {
         "enabled": true,
         "height": 480
     }
     ```
 
-    
+    > [!NOTE]
+    > If you set a maxHeight lower than 300, the player control bar will not be visible on the player. Keep in mind that if you have also enabled skippability, the skip text may need to be updated to fit in the player window. For mobile devices, the `maxHeight` setting is only applied when the aspect ratio is 9:16.
 
-    <b>Note:</b> If you set a maxHeight lower
-    than 300, the player control bar will not be visible on the player.
-    Keep in mind that if you have also enabled skippability, the skip
-    text may need to be updated to fit in the player window.
-    For mobile devices, the `maxHeight` setting is only applied when the
-    aspect ratio is 9:16.
-
-    
-
-4.  If you want vertical video to render correctly in sidestream mode,
+1. If you want vertical video to render correctly in sidestream mode,
     define its width in `rendererOptions`, as shown in the following
     example. Note that the height parameter has been removed. When you
     specify either width or height but not both, the other (width or
     height) value is automatically calculated to match the aspect ratio
     needed for vertical presentation.
 
-    ``` pre
+    ``` 
     rendererOptions: {
          "aspectRatio": "9:16",
          "sideStream": {
@@ -97,17 +76,5 @@ To set up vertical video:
     }
     ```
 
-    
-
-    <b>Tip:</b> If you previously deployed
-    vertical video without specifying `maxHeight`, and your vertical ad
-    display is too tall, you can use the Max
-    Video Height setting on the
-    Video tab of the Placement UI to
-    limit the player height.
-
-    
-
-
-
-
+    > [!TIP]
+    > If you previously deployed vertical video without specifying `maxHeight`, and your vertical ad display is too tall, you can use the **Max Video Height** setting on the **Video** tab of the Placement UI to limit the player height.

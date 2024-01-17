@@ -1,8 +1,8 @@
 ---
-title : Yield Analytics Seasonality FAQs
-description : Learn about seasonality in Yield Analytics in this page.
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
+title: Yield Analytics Seasonality FAQs
+description: Learn about seasonality in Yield Analytics in this page.
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 
 ---
 

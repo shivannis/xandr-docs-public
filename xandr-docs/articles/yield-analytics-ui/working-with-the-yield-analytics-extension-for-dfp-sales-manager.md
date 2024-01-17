@@ -1,13 +1,13 @@
 ---
-title : Working with the Yield Analytics Extension for DFP Sales Manager
-description : Learn background information, Installation and update instructions for Yield Analytics Extension for DFP Sales Manager.
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
+title: DFP sales managers Yield Analytics extension
+description: Learn background information, Installation and update instructions for Yield Analytics Extension for DFP Sales Manager.
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 
 ---
 
 
-# Working with the Yield Analytics Extension for DFP Sales Manager
+# DFP sales managers Yield Analytics extension
 
 ## Background
 
@@ -76,18 +76,18 @@ Instructions process.
 
 After logging into your DFP account, navigate to the **Sales** tab. Access any of the following screens:
 
-Catalog — The results are in the product name column, under each
+**Catalog** — The results are in the product name column, under each
 product’s name, with a dedicated forecast request/refresh button. The
 forecast is controlled by the date-range filter for this screen.
 
-Proposal Detail — The results are in the proposal line item name column,
+**Proposal Detail** — The results are in the proposal line item name column,
 under each line item’s name, with a dedicated forecast request/refresh
 button. All line items can be checked concurrently by utilizing the
 request/refresh button in the column header. The forecast is controlled
 by the date-range set up and targeting defined for each line item row in
 this table.
 
-Proposal Line-item Detail — The results are in a dedicated container
+**Proposal Line-item Detail** — The results are in a dedicated container
 that appears between the product and line item name, with a yield
 analytics Availability label. The forecast is controlled by targeting
 and date-range information according to the most recent saved state. If

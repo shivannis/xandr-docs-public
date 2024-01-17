@@ -1,8 +1,8 @@
 ---
-title : Data Marketplace - Data Partner Overview
-description : Get Data partner overview in this page. 
-ms.custom : data-providers
-ms.date : 11/29/2023
+title: Data Marketplace - Data Partner Overview
+description: Get Data partner overview in this page. 
+ms.custom: data-providers
+ms.date: 11/29/2023
 ---
 
 

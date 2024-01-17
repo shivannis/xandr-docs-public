@@ -1,4 +1,4 @@
-- name: Yield Analytics UI
+- name: Yield Analytics UI Documentation
   href: index.yml
 - name: Getting Started
   href: yield-analytics-overview.md
@@ -128,24 +128,16 @@
     href: anatomy-of-the-order-line-visibility-page.md
   - name: View the Full Details of an Order or Order Line
     href: view-the-full-details-of-an-order-or-order-line.md
-  - name: Solving Delivery Issues with Order Line Visibility
-    href: solving-delivery-issues-with-order-line-visibility.md
+  - name: Solve Delivery Issues with Order Line Visibility
+    href: solve-delivery-issues-with-order-line-visibility.md
   - name: Evaluate Orders
     items:
+    - name: Anatomy of the Evaluate Orders Page
+      href: anatomy-of-the-evaluate-orders-page.md
     - name: Evaluate the Yield of an Order
       href: evaluate-the-yield-of-an-order.md
-    - name: Evaluate Orders Page
-      items:
-      - name: Anatomy of the Evaluate Orders Page
-        href: anatomy-of-the-evaluate-orders-page.md
-      - name: Add a Proposal to a Scenario
-        href: add-a-proposal-to-a-scenario.md
-      - name: Using Alternative Products to Solve Pricing/Availability Issues
-        href: using-alternative-products-to-solve-pricing-availability-issues.md
     - name: Anatomy of the Evaluate Orders Search Page
       href: anatomy-of-the-evaluate-orders-search-page.md
-    - name: About Flags in Evaluate Orders
-      href: about-flags-in-evaluate-orders.md
   - name: Import Order Template
     href: import-order-template.md
 - name: Capacity 
@@ -156,20 +148,16 @@
     href: about-forecasts-and-adjustments.md
   - name: Capacity Dashboard
     items:
-    - name: Anatomy of the Capacity Dashboard Page
+    - name: Anatomy of the Capacity Dashboard
       href: anatomy-of-the-capacity-dashboard-page.md
-    - name: Check Impression Capacity for a Product Group
-      href: check-impression-capacity-for-a-product-group.md
+    
     - name: Yield Analytics Seasonality FAQs
       href: yield-analytics-seasonality-faqs.md
-    - name: Check Manual Adjustments and Holidays
-      href: check-manual-adjustments-and-holidays.md
-    - name: Check Capacity Trended for a Product Group
-      href: check-capacity-trended-for-a-product-group.md
+    
   - name: Anatomy of the Forecast Visibility Page
-    href: anatomy-of-the-forecast-visibility-page.md
-  - name: View the Forecast for Your Products
-    href: view-the-forecast-for-your-products.md
+    href: forecast-visibility-page-anatomy.md
+  - name: View Your Products Forecast
+    href: view-your-products-forecast.md
   - name: Anatomy of the Forecast Management Page
     href: anatomy-of-the-forecast-management-page.md
   - name: Adjustments
@@ -204,65 +192,25 @@
     href: interpreting-scenario-manager-results.md
 - name: Ad Servers
   items:
-  - name: Overview
-    href: ad-servers-overview.md
   - name: Freewheel Priority Values in Yield Analytics
     href: freewheel-priority-values-in-yield-analytics.md
   - name: Working With Multiple Ad Servers
     href: working-with-multiple-ad-servers.md
 - name: User Preferences
-  items:
-  - name: Overview
-    href: user-preferences.md
-  - name: Change Your Password
-    href: change-your-password.md
-  - name: Change Your Default Home Page
-    href: change-your-default-home-page.md
+  href: user-preferences.md
 - name: Administration 
   items:
   - name: Overview
     href: administration-overview.md
-  - name: Users
-    items:
-    - name: Working With Users
-      href: working-with-users.md
-    - name: Reset a User's Password
-      href: reset-a-user-s-password.md
-    - name: Disable a User
-      href: disable-a-user.md
-    - name: Delete a User
-      href: delete-a-user.md
-    - name: Add a New User
-      href: add-a-new-user.md
-    - name: Import Users
-      href: import-users.md
-  - name: User Groups
-    items:
-    - name: Working With User Groups
-      href: working-with-user-groups.md
-    - name: Add a User Group
-      href: add-a-user-group.md
-    - name: Edit a User Group
-      href: edit-a-user-group.md
-    - name: Duplicate a User Group
-      href: duplicate-a-user-group.md
-    - name: Delete a User Group
-      href: delete-a-user-group.md
-    - name: Search User Groups
-      href: search-user-groups.md
-  - name: Saved Reports
-    items:
-    - name: Add a Report Category
-      href: add-a-report-category.md
-    - name: Edit Report Categories
-      href: edit-report-categories.md
-    - name: Filter the List of Saved Reports
-      href: filter-the-list-of-saved-reports.md
-    - name: Schedule a Saved Report
-      href: schedule-a-saved-report.md
+  - name: Working With Users
+    href: working-with-users.md
+  - name: Working With User Groups
+    href: working-with-user-groups.md
+  - name: Working with Saved Reports
+    href: add-a-report-category.md
 - name: Integrations
   items:
-  - name: Working with the Yield Analytics Extension for DFP Sales Manager
+  - name: DFP sales managers Yield Analytics extension
     href: working-with-the-yield-analytics-extension-for-dfp-sales-manager.md
   - name: Ad-Juster Discrepancy
     href: frequently-asked-questions-faqs.md
@@ -276,32 +224,12 @@
   href: at-risk-management-chart-and-solution-paths.md
 - name: Availability Dashboard
   items:
-  - name: Anatomy of the Availability Dashboard Page
+  - name: Anatomy of the Availability Pages
     href: anatomy-of-the-availability-dashboard-page.md
-  - name: Anatomy of the Availability Lookup Page
-    href: anatomy-of-the-availability-lookup-page.md
-  - name: Anatomy of the View Calendar Page
-    href: anatomy-of-the-view-calendar-page.md
+  - name: Check Availability
+    href: check-availability-for-a-combination-of-targeting-attributes.md
   - name: Availability Overview (Old Workflow)
     href: availability-overview-old-workflow.md
-- name: Check Availability
-  items:
-  - name: Overview
-    href: check-availability-for-a-combination-of-targeting-attributes.md
-  - name: Save an Availability Lookup
-    href: save-an-availability-lookup.md
-  - name: Open a Saved Availability Lookup
-    href: open-a-saved-availability-lookup.md
-  - name: Create an Availability Batch Lookup
-    href: create-an-availability-batch-lookup.md
-  - name: View Availability Batch Lookups
-    href: view-availability-batch-lookups.md
-- name: View Availability
-  items:
-  - name: View Availability in a Calendar
-    href: view-availability-in-a-calendar.md
-  - name: Switch Between the Calendar and List Views
-    href: switch-between-the-calendar-and-list-views.md
 - name: Saved Availability Lookups
   items:
   - name: Working With Saved Availability Lookups

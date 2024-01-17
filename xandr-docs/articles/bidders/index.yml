@@ -53,22 +53,22 @@ landingContent:
             url: deal-auction-mechanics.md
           - text: Bidder Best Practices
             url: bidder-best-practices.md
- # - title: Impression Bus API
-    #linkLists:
-     # - linkListType: concept
-      #  links: 
-       #   - text: API Semantics
-       #     url: api-semantics.md
-       #   - text: Bidder Profile Migration Guide
-        #    url: bidder-profile-migration-guide.md
-        #  - text: Creative Service
-        #    url: creative-service.md
-     # - linkListType: reference
-       # links:
-        #  - text: Bidder Service
-         #   url: bidder-service.md
-         # - text: API Best Practices
-         #   url: api-best-practices.md
+  - title: Impression Bus API
+    linkLists:
+      - linkListType: concept
+        links: 
+          - text: API Semantics
+            url: api-semantics.md
+          - text: Bidder Profile Migration Guide
+            url: bidder-profile-migration-guide.md
+          - text: Creative Service
+            url: creative-service.md
+      - linkListType: reference
+        links:
+          - text: Bidder Service
+            url: bidder-service.md
+          - text: API Best Practices
+            url: api-best-practices.md
   - title: Bidding Protocol
     linkLists:
       - linkListType: concept

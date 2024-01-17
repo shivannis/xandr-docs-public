@@ -1,45 +1,16 @@
 ---
-Title : Splits Service
+title: Splits Service
+description: Use the splits service to create and modify programmable splits for augmented line items, allowing for targeting, budget allocation, and creative distribution.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-class="note warning note_warning">
-<b>Warning:</b>
-The `segment[]`condition is no longer used and will be deprecated on
-August 21, 2022. When setting up targeting for new line items, use <a
 ---
 
+# Splits service
 
-# Splits Service
+> [!WARNING]
+> The `segment[]`condition is no longer used and has been deprecated on August 21, 2022. When setting up targeting for new line items, use [Segment Group](#segment-group) (`segment_group`). instead.
 
-
-
-class="note warning note_warning">
-
-<b>Warning:</b>
-
-The `segment[]`condition is no longer used and will be deprecated on
-August 21, 2022. When setting up targeting for new line items, use <a
-href="splits-service.md#SplitsService-SegmentGroup"
-class="xref" target="_blank">Segment Group</a> (`segment_group`)
-instead. For more information, see
-<a href="https://docs.xandr.com/csh?context" class="xref"
-target="_blank">Breaking Change Notice - June 16, 2022 - Splits
-Service</a>.
-
-
-
-The Splits Service creates and modifies programmable splits for <a
-href="line-item-service---ali.md"
-class="xref" target="_blank">augmented line items</a>. When you create a
-line item, you specify the inventory you'd like to target, the budget
-you'd like to spend over the flight, how you want to track revenue, and
-how to use Xandr optimization. **Programmable splits** can further
-target subsets of that total inventory, allocate the specified budget to
-different targets, set bidding criteria, and distribute creatives. The
-targeting on the line item acts as a filter; impressions must match the
-criteria specified by the line item before they'll be passed on to
-splits. For more information on how splits work, see “Understanding
-Splits” in the UI documentation (customer login required).
+The Splits Service creates and modifies programmable splits for [augmented line items](./line-item-service---ali.md). When you create a line item, you specify the inventory you'd like to target, the budget you'd like to spend over the flight, how you want to track revenue, and how to use Xandr optimization. **Programmable splits** can further target subsets of that total inventory, allocate the specified budget to different targets, set bidding criteria, and distribute creatives. The targeting on the line item acts as a filter; impressions must match the criteria specified by the line item before they'll be passed on to splits. For more information on how splits work, see [Understanding Splits](../invest/understanding-splits.md) in the UI documentation (customer login required).
 
 The Splits Service allows you to specify:
 
@@ -48,74 +19,32 @@ The Splits Service allows you to specify:
 - Budget allocation
 - Which creatives are associated with a split.
 
-
-
-
-<b>Note:</b> Using splits with custom models
-is not currently supported. You will receive an error if you attempt to
-create or modify splits on a line item that has a custom model attached.
-
-
-
-
-
+> [!NOTE]
+> Using splits with custom models is not currently supported. You will receive an error if you attempt to create or modify splits on a line item that has a custom model attached.
 
 ## REST API
 
-The Splits service works a little differently from most of Xandr's other
-API services. By default, the budget-splitter (Splits) service creates
-or modifies all the splits on the line item at the same time instead of
-creating or modifying a single split. Rather than creating a single
-split, the service creates a `budget-splitter` object (an array) that is
-associated with the line item. The `budget-splitter` array contains two
-or more splits, and must meet the following requirements:
+The Splits service works a little differently from most of Xandr's other API services. By default, the budget-splitter (Splits) service creates or modifies all the splits on the line item at the same time instead of creating or modifying a single split. Rather than creating a single split, the service creates a `budget-splitter` object (an array) that is associated with the line item. The `budget-splitter` array contains two or more splits, and must meet the following requirements:
 
-- The sum of the budget allocation for all splits on a line item must
-  always equal 100. This ensures that all impressions for a line item
-  are accounted for by at least one split.
-- Each split must be assigned a priority, which determines the split to
-  which an incoming impression will be assigned if the impression meets
-  the targeting requirements for more than one split. The same priority
-  cannot be used for more than one split.
-- One split must be defined as the default split. This is the fallback
-  split to which impressions will be assigned if they don't meet the
-  conditions of any of the other splits. The default split is referred
-  to as the "Line Item Remainder" in the UI.
-- The default split must be named "Default" or "default" and appear as
-  the last split listed in the `budget-splitter` array. It cannot be
-  assigned any conditions or assigned a capped (constrained) allocation
-  strategy, because it is meant as a fallback in case other conditions
-  don't apply. You can, however, allocate 0% of your budget to the
-  default split, which means it will never serve.
-- The default split may only have a bid modifier of "1" or null.
-- The default split must be assigned an order, but no matter what order
-  it is assigned, it will be prioritized last.
+- The sum of the budget allocation for all splits on a line item must always equal 100. This ensures that all impressions for a line item are accounted for by at least one split.
+- Each split must be assigned a priority, which determines the split to which an incoming impression will be assigned if the impression meets the targeting requirements for more than one split. The same priority cannot be used for more than one split.
+- One split must be defined as the default split. This is the fallback split to which impressions will be assigned if they don't meet the conditions of any of the other splits. The default split is referred to as the "Line Item Remainder" in the UI.
+- The default split must be named `"Default"` or `"default"` and appear as the last split listed in the `budget-splitter` array. It cannot be assigned any conditions or assigned a capped (constrained) allocation strategy, because it is meant as a fallback in case other conditions don't apply. You can, however, allocate 0% of your budget to the default split, which means it will never serve.
+- The default split may only have a bid modifier of `"1"` or `null`.
+- The default split must be assigned an order, but no matter what order it is assigned, it will be prioritized last.
 
 The `POST` method is not supported for the Split service.
 
-To modify an individual split, you must use the `PATCH` method as
-described in the examples below.
+To modify an individual split, you must use the `PATCH` method as described in the examples below.
 
+> [!NOTE]
+> You cannot use the `PATCH` method to modify split allocation. Because the sum of the budget allocation for all splits on a line item must equal 100, it is not valid to change the allocation on one split without changing the allocation on at least one other split.
 
-<b>Note:</b>
-
-You cannot use the `PATCH` method to modify split allocation. Because
-the sum of the budget allocation for all splits on a line item must
-equal 100, it is not valid to change the allocation on one split without
-changing the allocation on at least one other split.
-
-
-
-Unlike other Xandr API services, the JSON for the `budget-splitters`
-array does not appear inside a wrapper named after the object. It
-appears simply as an unnamed array. For example, this is the JSON file
-to create a `budget-splitters` array with three splits:
-
-
+Unlike other Xandr API services, the JSON for the `budget-splitters` array does not appear inside a wrapper named after the object. It appears simply as an unnamed array. For example, this is the JSON file to create a `budget-splitters` array with three splits:
 
 **Example budget-splitter object**
 
-``` pre
+```
 [
     {
         "active": true,
@@ -177,384 +106,37 @@ to create a `budget-splitters` array with three splits:
     }
 ```
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="splits-service__section_fyd_4sc_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">HTTP Method</th>
-<th id="splits-service__section_fyd_4sc_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Endpoint</th>
-<th id="splits-service__section_fyd_4sc_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__section_fyd_4sc_xwb__entry__1">PUT</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__section_fyd_4sc_xwb__entry__2"><a
-href="https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits"
-class="xref"
-target="_blank">https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits</a>
-{budget-splitter JSON}</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__section_fyd_4sc_xwb__entry__3">Add splits to a
-line item which has none.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__section_fyd_4sc_xwb__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__section_fyd_4sc_xwb__entry__2"><a
-href="https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits"
-class="xref"
-target="_blank">https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__section_fyd_4sc_xwb__entry__3">View all splits
-for a line item.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__section_fyd_4sc_xwb__entry__1">PUT</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__section_fyd_4sc_xwb__entry__2"><a
-href="https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits"
-class="xref"
-target="_blank">https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits</a>
-{budget-splitter JSON}</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__section_fyd_4sc_xwb__entry__3">Update all
-splits for a line item.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__section_fyd_4sc_xwb__entry__1">DELETE</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__section_fyd_4sc_xwb__entry__2"><a
-href="https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits"
-class="xref"
-target="_blank">https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__section_fyd_4sc_xwb__entry__3">Delete all
-splits from a line item. This will delete all splits from the line item
-permanently. The information for past splits traffic will still appear
-in reporting.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__section_fyd_4sc_xwb__entry__1">PATCH</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__section_fyd_4sc_xwb__entry__2"><p><a
-href="https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits"
-class="xref"
-target="_blank">https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits</a></p>
-<p>(split-update JSON)</p>
-<p>#The split ID must appear in the split-update JSON.</p></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__section_fyd_4sc_xwb__entry__3">Modify a single
-split.</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `PUT` | https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits <br>(budget-splitter JSON) | Add splits to a line item which has none. |
+| `GET` | https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits | View all splits for a line item. |
+| `PUT` | https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits <br>(budget-splitter JSON) | Update all splits for a line item. |
+| `DELETE` | https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits | Delete all splits from a line item. This will delete all splits from the line item permanently. The information for past splits traffic will still appear in reporting. |
+| `PATCH` | https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits<br>(split-update JSON)<br><br>The split ID must appear in the split-update JSON. | Modify a single split. |
 
+## JSON fields
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the split.<br>**Example**: `"id":21197314`<br><br>**Default**: Auto-generated number.<br>**Required On**: `PUT`/`PATCH`/`DELETE`, in JSON. |
+| `name` | string (255) | The name you assign the split.<br>**Example**: `"name":"Split 123"`<br><br>**Note**: The default split must be named `"Default"` or `"default"`. |
+| `is_default` | boolean | Specifies whether this is the default split, which is used when an impression does not meet the targeting requirements for any other splits. Every line item must have one and only one default split. The default split must be named `"Default"` or `"default"` and cannot have any conditions. Possible values are `"true"` and `"false"`.<br>**Example**: `"is_default":true` |
+| `conditions` | array | The targeting conditions for the split. A condition is specified by an array containing a field, an operator, and a value.<br>**Example**: <br>`"conditions":[{"field":"city","operator":"in","value":[196646]}]`<br><br>See [Conditions](#conditions) below for more information. |
+| `active` | boolean | Specifies the status of a split. Possible values are `"true"` or `"false"`.<br>**Example**:<br>`"active":true` |
+| `order` | int | The priority of this split in the `budget_splitters` array. In the UI, this field is referred to as `"Priority"`.<br>If an impression meets the targeting requirements for multiple splits, the priority determines the split to which the impression will be assigned. For example, suppose that Split A (priority 1) is targeting `"domain=cnn.com"` and Split B (priority 2) is targeting `"city=Boston"`, and an impression is available from a user in Boston visiting [cnn.com](https://edition.cnn.com/). The impression will be assigned to Split A because it has a higher priority than Split B.<br><br>You cannot set the same priority for multiple splits.<br><br> The order can start at any value, so long as the values are sequential. For example, the order for three splits can be `0`, `1`, `2` or `4`, `5`, `6`.<br>**Example**: `"order":1` |
+| `allocation_percent` | int | The percentage of the line item budget assigned to this split. The allocation for each split should be between `0` and `100`. The sum of the allocation percentages for all splits in a line item must equal `100`.<br>**Example**: `"allocation_percent":30` |
+| `allocation_strategy` | enum | Specifies how to handle conflicts between the split allocation goal and the line item delivery goal. Possible values are:<br> - `"unconstrained"` - Line item delivery is prioritized over allocation. When a line item with uncapped splits is underdelivering, the uncapped splits are permitted to exceed the allocation goal to reach the line item delivery goal. In the UI, this state is called "uncapped".<br> - `"constrained"` - Allocation is prioritized over delivery. Even when line items are underdelivering, capped splits are not permitted to exceed the allocation goal to help the line item reach its delivery goal. This will prevent overspend on a split, but may cause the line item to underdeliver. In the UI, this state is called "capped".<br>For more information, see [Understanding Splits](../invest/understanding-splits.md) in the UI documentation.<br>**Example**:<br>`"allocation_strategy":"unconstrained"`<br><br>**Default**: `"unconstrained"` |
+| `bid_modifier` | float | The number used to modify the bid for this split. A bid modifier can only be applied to a split when the line item's booked revenue type is CPM and optimization is not enabled. The value of the bid modifier will be multiplied by the CPM booked revenue to serve as the maximum CPM that the split can bid.<br>**Example**: `"bid_modifier":1.25`<br><br>**Note**: <br> - The default split may only have a bid modifier of `"1"` or `null`. Inactive splits must be assigned a bid modifier of `"0"`.<br> - The `bid_modifier` field is not used by GDALI. |
+| `expected_value` | float | The expected value of the impression for this split. An expected value must be included for each split when the line item's booked revenue type is cost plus or dCPM and optimization is not enabled. The expected value serves as the maximum CPM that the split can bid.<br>**Example**: `"expected_value":10.50`<br><br>**Note**: The `expected_value` field is not used by GDALI. |
+| `creatives` | array | Optional. The IDs of the creatives to be served on this split.<br>**Example**:<br>`"creatives":[{"creative_id":123},{"creative_id":456}]` |
+| `creative_macros` | array of strings | Optional. Any creative macros that are added to the served creative.<br>For more information, see [Creative Macro Check Service](./creative-macro-check-service.md).<br><br>**Note**: The `creative_macros` field is not used by GDALI. |
+| `user_test_group_percent` | int | **Optional**. Targets distinct groups of users per split for A/B testing.<br><br>**Note**:<br>When the Line Item Remainder split is set to `"active"` or has a budget allocation greater than 0%, the line item remainder will always include the remaining pool of users not targeted by the other splits. Additionally, the Line Item Remainder split will always include cookieless users.<br><br>If you do not want to serve cookieless users:<br> - If you're using allocations, on the default split, set `allocation_percent` to `"0"`.<br> - If you're not using allocations, on the default split, set `active` to `"false"`. |
 
+### Conditions
 
+A condition is specified by an array containing a field, an operator, and a value. For example, to create a condition that targets impressions from the United States, the condition is:
 
-
-## JSON Fields
-
-
-
-<table id="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc"
-class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th
-id="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th
-id="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-ID of the split.</p>
-<p>Example:</p>
-<pre id="splits-service__pre_a2b_5tc_xwb" class="pre"><code>&quot;id&quot;:21197314</code></pre>
-<p><strong>Default:</strong> Auto-generated number.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">PUT/PATCH/DELETE</code>, in JSON.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string
-(255)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-name you assign the split.</p>
-<p>Example:</p>
-<pre id="splits-service__pre_b2b_5tc_xwb" class="pre"><code>&quot;name&quot;:&quot;Split 123&quot;</code></pre>
-
-
-<b>Note:</b> The default split must be named
-"Default" or "default".
-
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">is_default</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Specifies
-whether this is the default split, which is used when an impression does
-not meet the targeting requirements for any other splits. Every line
-item must have one and only one default split. The default split must be
-named "Default" or "default" and cannot have any conditions. Possible
-values are "true" and "false".</p>
-<p>Example:</p>
-<pre id="splits-service__pre_c2b_5tc_xwb" class="pre"><code>&quot;is_default&quot;:true</code></pre></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">conditions</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-targeting conditions for the split. A condition is specified by an array
-containing a field, an operator, and a value.</p>
-<p>Example:</p>
-<pre id="splits-service__pre_d2b_5tc_xwb" class="pre"><code>&quot;conditions&quot;:[{&quot;field&quot;:&quot;city&quot;,&quot;operator&quot;:&quot;in&quot;,&quot;value&quot;:[196646]}]</code></pre>
-<p>See <a
-href="splits-service.md#SplitsService-Conditions"
-class="xref" target="_blank">Conditions</a> below for more
-information.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">active</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Specifies
-the status of a split. Possible values are "true" or "false".</p>
-<p>Example:</p>
-<pre id="splits-service__pre_e2b_5tc_xwb" class="pre"><code>&quot;active&quot;:true</code></pre></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">order</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-priority of this split in the <code
-class="ph codeph">budget_splitters</code> array. (In the UI, this field
-is referred to as "Priority".)</p>
-<p>If an impression meets the targeting requirements for multiple
-splits, the priority determines the split to which the impression will
-be assigned. For example, suppose that Split A (priority 1) is targeting
-"domain=<a href="http://cnn.com/" class="xref"
-target="_blank">cnn.com</a>" and Split B (priority 2) is targeting
-"city=Boston", and an impression is available from a user in Boston
-visiting <a href="http://cnn.com/" class="xref"
-target="_blank">cnn.com</a>. The impression will be assigned to Split A
-because it has a higher priority than Split B.</p>
-<p>You cannot set the same priority for multiple splits.</p>
-<p>The order can start at any value, so long as the values are
-sequential. For example, the order for three splits can be <code
-class="ph codeph">0, 1, 2</code> or <code
-class="ph codeph">4, 5, 6</code>.</p>
-<p>Example:</p>
-<pre id="splits-service__pre_f2b_5tc_xwb" class="pre"><code>&quot;order&quot;:1</code></pre></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">allocation_percent</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-percentage of the line item budget assigned to this split. The
-allocation for each split should be between 0 and 100. The sum of the
-allocation percentages for all splits in a line item must equal 100.</p>
-<p>Example:</p>
-<pre id="splits-service__pre_g2b_5tc_xwb" class="pre"><code>&quot;allocation_percent&quot;:30</code></pre></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">allocation_strategy</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Specifies
-how to handle conflicts between the split allocation goal and the line
-item delivery goal. Possible values are:</p>
-<ul>
-<li>"unconstrained" - Line item delivery is prioritized over allocation.
-When a line item with uncapped splits is underdelivering, the uncapped
-splits are permitted to exceed the allocation goal to reach the line
-item delivery goal. In the UI, this state is called "uncapped".</li>
-<li>"constrained" - Allocation is prioritized over delivery. Even when
-line items are underdelivering, capped splits are not permitted to
-exceed the allocation goal to help the line item reach its delivery
-goal. This will prevent overspend on a split, but may cause the line
-item to underdeliver. In the UI, this state is called "capped".</li>
-</ul>
-<p>For more information, see "Understanding Splits" in the UI
-documentation.</p>
-<p>Example:</p>
-<pre id="splits-service__pre_i2b_5tc_xwb" class="pre"><code>&quot;allocation_strategy&quot;:&quot;unconstrained&quot;</code></pre>
-<p><strong>Default:</strong> "unconstrained"</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">bid_modifier</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">float</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-number used to modify the bid for this split. A bid modifier can only be
-applied to a split when the line item's booked revenue type is CPM and
-optimization is not enabled. The value of the bid modifier will be
-multiplied by the CPM booked revenue to serve as the maximum CPM that
-the split can bid.</p>
-<p>Example:</p>
-<pre id="splits-service__pre_j2b_5tc_xwb" class="pre"><code>&quot;bid_modifier&quot;:1.25</code></pre>
-
-<b>Note:</b>
-<ul>
-<li>The default split may only have a bid modifier of "1" or null.
-Inactive splits must be assigned a bid modifier of "0".</li>
-<li>The <code class="ph codeph">bid_modifier</code> field is not used by
-GDALI.</li>
-</ul>
-</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">expected_value</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">float</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-expected value of the impression for this split. An expected value must
-be included for each split when the line item's booked revenue type is
-cost plus or dCPM and optimization is not enabled. The expected value
-serves as the maximum CPM that the split can bid.</p>
-<p>Example:</p>
-<pre id="splits-service__pre_l2b_5tc_xwb" class="pre"><code>&quot;expected_value&quot;:10.50</code></pre>
-
-
-<b>Note:</b> The <code
-class="ph codeph">expected_value</code> field is not used by GDALI.
-
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">creatives</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Optional.
-The IDs of the creatives to be served on this split.</p>
-<p>Example:</p>
-<pre id="splits-service__pre_m2b_5tc_xwb" class="pre"><code>&quot;creatives&quot;:[{&quot;creative_id&quot;:123},{&quot;creative_id&quot;:456}]</code></pre></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">creative_macros</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of strings</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Optional.
-Any creative macros that are added to the served creative.</p>
-<p>For more information, see <a
-href="https://docs.xandr.com/csh?context" class="xref"
-target="_blank">Creative Macro Check Service</a>.</p>
-
-
-<b>Note:</b> The <code
-class="ph codeph">creative_macros</code> field is not used by GDALI.
-
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">user_test_group_percent</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="splits-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">Optional.
-Targets distinct groups of users per split for A/B testing.
-
-<b>Note:</b>
-<p>When the Line Item Remainder split is set to active or has a budget
-allocation greater than 0%, the line item remainder will always include
-the remaining pool of users not targeted by the other splits.
-Additionally, the Line Item Remainder split will always include
-cookieless users.</p>
-
-<p>If you do not want to serve cookieless users:</p>
-<ul>
-<li>If you're using allocations, on the default split, set <code
-class="ph codeph">allocation_percent</code> to "0".</li>
-</ul>
-<ul>
-<li>If you're not using allocations, on the default split, set <code
-class="ph codeph">active</code> to "false".</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-**Conditions**
-
-
-
-
-
-A condition is specified by an array containing a field, an operator,
-and a value. For example, to create a condition that targets impressions
-from the United States, the condition is:
-
-``` pre
+```
 "conditions": [
   {
     "field": "country",
@@ -566,115 +148,27 @@ from the United States, the condition is:
 ]
 ```
 
-
-
-**Custom Categories**
-
-
+### Custom categories
 
 Evaluate impressions based on specific custom categories present.
 
-<table id="splits-service__table_yk2_2vc_xwb" class="table">
-<colgroup>
-<col style="width: 28%" />
-<col style="width: 71%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">content_category</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>Custom category ID.
-Use the <a
-href="content-category-service.md"
-class="xref" target="_blank">Content Category Service</a> to retrieve
-custom category IDs.</p>
-class="note warning note_warning">
-<b>Warning:</b>
-<p>Custom categories should only be targeted to managed inventory.</p>
-</td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `content_category` | `=`, `in`, `not_in` | Custom category ID. Use the [Content Category Service](content-category-service.md) to retrieve custom category IDs. <br><br>**Warning**: Custom categories should only be targeted to managed inventory. |
 
-**Key-Value**
-
-
+### Key-value
 
 Evaluate impressions based on specific key-values present.
 
-<table id="splits-service__table_vqc_lvc_xwb" class="table">
-<colgroup>
-<col style="width: 32%" />
-<col style="width: 67%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">key_group</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">and, or</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>A nested conditions
-array that specifies key groups. Each key group array includes key
-ID(s), action(s) ("include" or "exclude"), and value(s):</p>
-class="note warning note_warning">
-<b>Warning:</b>
-<p>Key-values should only be targeted to managed inventory.</p>
-
-<ul>
-<li><code class="ph codeph">key_id</code> - the ID of the key. Use the
-<a
-href="targeting-key-service.md"
-class="xref" target="_blank">Targeting Key Service</a> to retrieve key
-IDs.</li>
-<li><code class="ph codeph">action</code> - can be <code
-class="ph codeph">"include"</code> or "exclude".</li>
-<li><code class="ph codeph">value_equals</code> is an array of value IDs
-that must be matched in the auction for the split to be eligible to
-serve. Use the <a
-href="targeting-value-service.md"
-class="xref" target="_blank">Targeting Value Service</a> to retrieve
-value IDs. When one value is passed, that key-value combination must be
-present on the request for the split to be eligible to serve. When
-multiple values are defined in the array, one of the key-value
-combinations must be present.</li>
-<li><code class="ph codeph">value_less</code> is the high end of the
-range of permitted values, exclusive.</li>
-<li><code class="ph codeph">value_greater</code> is the low end of the
-range of permitted values, exclusive.</li>
-</ul>
-<p>Key-values may be passed on the impression request. See Xandr’s <a
-href="seller-tag/seller-tag.md"
-class="xref" target="_blank">Seller Tag (AST)</a> for more
-information.</p></td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `key_group` | `and`, `or` | A nested conditions array that specifies key groups. Each key group array includes key ID(s), action(s) (`"include"` or `"exclude"`), and value(s):<br><br>**Warning**: Key-values should only be targeted to managed inventory. <br><br>- `key_id` - the ID of the key. Use the [Targeting Key Service](./targeting-key-service.md) to retrieve key IDs. <br>- `action` - can be `"include"` or `"exclude"`. <br> - `value_equals` is an array of value IDs that must be matched in the auction for the split to be eligible to serve. Use the [Targeting Key Service](./targeting-key-service.md) to retrieve value IDs. When one value is passed, that key-value combination must be present on the request for the split to be eligible to serve. When multiple values are defined in the array, one of the key-value combinations must be present. <br>- `value_less` is the high end of the range of permitted values, exclusive. <br> - `value_greater` is the low end of the range of permitted values, exclusive.Key-values may be passed on the impression request. See Xandr’s [Seller Tag (AST)](../seller-tag/seller-tag.md) for more information. |
 
 The following Key-Value example (see JSON below) evaluates to
 
 `[ [include Key ID 123: value ID: [1 OR 2 OR 9] ] AND [exclude Key ID 234: value ID: [20] ] ] OR [include Key ID 789: value ID: [15] ]`
 
-``` pre
+```
 {
    "conditions": [{
       "field": "key_group",
@@ -701,1421 +195,378 @@ The following Key-Value example (see JSON below) evaluates to
 }
 ```
 
-**Country**
+### Country
 
 Evaluate impressions based on the user's country.
 
-<table id="splits-service__table_vsf_myc_xwb" class="table">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 66%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">country</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>Country ID or code,
-such as <code class="ph codeph">233</code> or <code
-class="ph codeph">"US".</code></p>
-<p>Use the <a
-href="country-service.md"
-class="xref" target="_blank">Country Service</a> to retrieve these IDs
-or codes.</p></td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `country` |  `=`, `in`, `not_in` | Country ID or code, such as `233` or `"US"`.Use the [Country Service](./country-service.md) to retrieve these IDs or codes. |
 
-**Region**
+### Region
 
 Evaluate impressions based on the user's geographic region.
 
-<table id="splits-service__table_wrg_bzc_xwb" class="table">
-<colgroup>
-<col style="width: 32%" />
-<col style="width: 67%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">region</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>Region ID or
-country/region code combination, such as <code
-class="ph codeph">"US:NY"</code>.</p>
-<p>Use the <a
-href="region-service.md"
-class="xref" target="_blank">Region Service</a> to retrieve these IDs
-and codes.</p></td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `region` |  `=`, `in`, `not_in` | Region ID or country/region code combination, such as `"US:NY"`.<br>Use the [Region Service](./region-service.md) to retrieve these IDs and codes. |
 
-**City**
+### City
 
 Evaluate impressions based on the user's city.
 
-<table id="splits-service__table_pkv_3zc_xwb" class="table">
-<colgroup>
-<col style="width: 31%" />
-<col style="width: 68%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">city</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>City ID or
-country/region/city code combination, such as <code
-class="ph codeph">"US:NY:New York"</code>.</p>
-<p>Use the <a
-href="city-service.md"
-class="xref" target="_blank">City Service</a> to retrieve these IDs and
-codes.</p></td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `city` |  `=`, `in`, `not_in` |  City ID or country/region/city code combination, such as `"US:NY:New York"`.<br>Use the [City Service](./city-service.md) to retrieve these IDs and codes. |
 
-**DMA**
+### DMA
 
 Evaluate impressions based on the user's DMA (designated market area).
 
-<table id="splits-service__table_an4_mzc_xwb" class="table">
-<colgroup>
-<col style="width: 30%" />
-<col style="width: 69%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">dma</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>DMA ID, such as <code
-class="ph codeph">602</code> (for Chicago metro area).</p>
-<p>Use the <a
-href="city-service.md"
-class="xref" target="_blank">City Service</a> to retrieve DMA
-IDs.</p></td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `dma` |  `=`, `in`, `not_in` |  DMA ID, such as `602` (for Chicago metro area).<br>Use the [City Service](./city-service.md) to retrieve DMA IDs. |
 
-**Postal Code**
+### Postal code
 
-Evaluate impressions based on the user's postal code. Postal code is
-available only for some mobile impressions and impressions from external
-supply partners.
+Evaluate impressions based on the user's postal code. Postal code is available only for some mobile impressions and impressions from external supply partners.
 
-<table id="splits-service__table_jlv_rzc_xwb" class="table">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 66%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">postal_code</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>Postal code ID (an
-integer) or country/postal code combination (a string such as <code
-class="ph codeph">"CA:J0K 1B0"</code> or <code
-class="ph codeph">"US:10010")</code>. Includes US zip codes.</p>
-<p>Use the Postal Code Service (documented in the <a
-href="profile-service.md"
-class="xref" target="_blank">Profile Service</a>) to retrieve postal
-code IDs.</p></td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `postal_code` |  `=`, `in`, `not_in` |  Postal code ID (an integer) or country/postal code combination (a string such as `"CA:J0K 1B0"` or `"US:10010"`). Includes US zip codes.<br><br>Use the Postal Code Service (documented in the [Profile Service](./profile-service.md)) to retrieve postal code IDs. |
 
-**Postal Code List**
+### Postal code list
 
-Evaluate impressions based on the user's post codes in the postal code
-list.
+Evaluate impressions based on the user's post codes in the postal code list.
 
-<table id="splits-service__table_ywn_41d_xwb" class="table">
-<colgroup>
-<col style="width: 32%" />
-<col style="width: 67%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">postal_code_list</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>Postal code list ID
-(an integer).</p>
-<p>Use the Postal Code List Service (documented in <a
-href="postal-code-list-service.md"
-class="xref" target="_blank">Postal Code List Service</a>) to retrieve
-postal code list IDs.</p></td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `postal_code_list` |  `in`, `not_in` |  Postal code list ID (an integer).<br><br>Use the Postal Code List Service (documented in [Postal Code List Service](./postal-code-list-service.md)) to retrieve postal code list IDs. |
 
-**Size**
+### Size
 
-Evaluate impressions based on placement size. Please note that in case
-promo_sizes are passed in the ad call, the evaluation will be performed
-using the primary size only.
+Evaluate impressions based on placement size. Please note that in case `promo_sizes` are passed in the ad call, the evaluation will be performed using the primary size only.
 
-<table id="splits-service__table_ltf_x1d_xwb" class="table">
-<colgroup>
-<col style="width: 30%" />
-<col style="width: 69%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">size</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">String representing
-placement dimensions, formatted as <code
-class="ph codeph">"WIDTHxHEIGHT"</code>.</td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `size` |  `=`, `in`, `not_in` |  String representing placement dimensions, formatted as `"WIDTHxHEIGHT"`. |
 
-**Inventory URL ID**
+### Inventory URL ID
 
 Evaluate impressions based on specific inventory url IDs.
 
+> [!NOTE]
+> Not supported by GDALI.
 
-<b>Note:</b>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `inventory_url_id` |  `=`, `in`, `not_in` |  Inventory URL ID.<br>Use [Validate Inventory Item Service](./validate-inventory-item-service.md) to retrieve these IDs. |
 
-Not supported by GDALI.
-
-
-
-<table id="splits-service__table_fqm_nbd_xwb" class="table">
-<colgroup>
-<col style="width: 30%" />
-<col style="width: 69%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">inventory_url_id</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>Inventory URL ID.</p>
-<p>Use <a
-href="validate-inventory-item-service.md"
-class="xref" target="_blank">Validate Inventory Item Service</a> to
-retrieve these IDs.</p></td>
-</tr>
-</tbody>
-</table>
-
-**Domain**
+### Domain
 
 Evaluate impressions based on domain.
 
+> [!NOTE]
+> - Not supported by GDALI.
+> - This feature is not supported in the Microsoft Invest. If you will also be using the UI to manage your splits, use the Inventory URL ID feature (within this service) instead.
 
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `domain` | `=`, `in`, `not_in` | String representing a top-level domain name, such as `"food.com"` or `"books"`. |
 
-
-<b>Note:</b> Not supported by GDALI.
-
-
-
-
-
-
-<b>Note:</b>
-
-This feature is not supported in the Invest UI. If you will also be
-using the UI to manage your splits, use the Inventory URL ID feature
-(within this service) instead.
-
-
-
-<table id="splits-service__table_dm4_sbd_xwb" class="table">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 66%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">domain</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">String representing a
-top-level domain name, such as <code class="ph codeph">"</code><a
-href="http://food.com/" class="xref" target="_blank"><code
-class="ph codeph">food.com</code></a><code class="ph codeph">"</code> or
-<code class="ph codeph">"books"</code>.</td>
-</tr>
-</tbody>
-</table>
-
-**Mobile App**
+### Mobile app
 
 Evaluate impressions based on specific mobile apps.
 
+> [!NOTE]
+> Not supported by GDALI.
 
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `mobile_app_bundle` | `=`, `in`, `not_in` | Mobile app ID or names.<br><br>Use [Mobile App Service](./mobile-app-service.md) to retrieve these IDs or names. |
 
-
-<b>Note:</b> Not supported by GDALI.
-
-
-
-
-
-<table id="splits-service__table_e24_xbd_xwb" class="table">
-<colgroup>
-<col style="width: 34%" />
-<col style="width: 65%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">mobile_app_bundle</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>Mobile app ID or
-names.</p>
-<p>Use <a
-href="mobile-app-service.md"
-class="xref" target="_blank">Mobile App Service</a> to retrieve these
-IDs or names.</p></td>
-</tr>
-</tbody>
-</table>
-
-**Placement**
+### Placement
 
 Evaluate impressions based on specific placements.
 
-<table id="splits-service__table_whf_hcd_xwb" class="table"
-style="width:100%;">
-<colgroup>
-<col style="width: 34%" />
-<col style="width: 65%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">placement</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>Placement ID.</p>
-<p>Placement ID is listed as <code class="ph codeph">tag_id</code> in
-log-level data.</p></td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `placement` | `=`, `in`, `not_in` | Placement ID.<br><br>Placement ID is listed as `tag_id` in log-level data. |
 
-**Publisher**
+### Publisher
 
 Evaluate impressions based on specific publishers.
 
-<table id="splits-service__table_avj_rcd_xwb" class="table">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 66%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">publisher</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>Publisher ID.</p>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `publisher` | `=`, `in`, `not_in` | Publisher ID.<br><br>**Tip**:<br>Publisher ID is listed as `publisher_id` in log-level data. |
 
-<b>Tip:</b>
-<p>Publisher ID is listed as <code class="ph codeph">publisher_id</code>
-in log-level data.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-**Seller Member**
+### Seller member
 
 Evaluate impressions based on specific seller members.
 
+> [!NOTE]
+> Not supported by GDALI.
 
-<b>Note:</b>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `seller_member_id` | `=`, `in`, `not_in` | Member ID of the seller. |
 
-Not supported by GDALI.
-
-
-
-<table id="splits-service__table_v4b_xcd_xwb" class="table"
-style="width:100%;">
-<colgroup>
-<col style="width: 34%" />
-<col style="width: 65%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">seller_member_id</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">Member ID of the
-seller.</td>
-</tr>
-</tbody>
-</table>
-
-**Deal ID**
-
-
+### Deal ID
 
 Target deal inventory.
 
+> [!NOTE]
+> Not supported by GDALI.
 
-<b>Note:</b> Not supported by GDALI.
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `deal_id` | `=`, `in`, `not_in` | Deal ID. |
 
-
-
-
-
-<table id="splits-service__table_d2m_bdd_xwb" class="table">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 66%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">deal_id</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">Deal ID.</td>
-</tr>
-</tbody>
-</table>
-
-**Deal List ID**
+### Deal list ID
 
 Target deal list inventory.
 
+> [!NOTE]
+> Not supported by GDALI.
 
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `deal_list` | `in`, `not_in` | Deal List ID. |
 
-
-<b>Note:</b> Not supported by GDALI.
-
-
-
-
-
-<table id="splits-service__table_rwh_gdd_xwb" class="table">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 66%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">deal_list</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">Deal List ID.</td>
-</tr>
-</tbody>
-</table>
-
-**Operating System Family**
+### Operating system family
 
 Evaluate impressions based on the user's operating system.
 
-<table id="splits-service__table_rth_c2d_xwb" class="table">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 66%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">os_family</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>Operating System
-Family ID or name, such as <code class="ph codeph">2</code> or <code
-class="ph codeph">"Android"</code>.</p>
-<p>Use the <a
-href="operating-system-family-service.md"
-class="xref" target="_blank">Operating System Family Service</a> to
-retrieve these IDs and names.</p></td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `os_family` | `=`, `in`, `not_in` | Operating System Family ID or name, such as `2` or `"Android"`.<br><br>Use the [Operating System Family Service](./operating-system-family-service.md) to retrieve these IDs and names. |
 
-**Operating System Version**
+### Operating system version
 
-Evaluate impressions based on the specific **version** of the user's
-operating system.
+Evaluate impressions based on the specific **version** of the user's operating system.
 
-<table id="splits-service__table_ev3_g2d_xwb" class="table">
-<colgroup>
-<col style="width: 28%" />
-<col style="width: 71%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">os_extended</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>Operating System
-Extended ID, such as 81 for <code
-class="ph codeph">"10.8 Mountain Lion"</code>.</p>
-<p>Use the <a
-href="operating-system-extended-service.md"
-class="xref" target="_blank">Operating System Extended Service</a> to
-retrieve these IDs.</p>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `os_extended` | `=`, `in`, `not_in` | Operating System Extended ID, such as `81` for `"10.8 Mountain Lion"`.<br>Use the [Operating System Extended Service](./operating-system-extended-service.md) to retrieve these IDs.<br><br>**Note**:<br>Operating system ID is listed as `operating_system` in log-level data. |
 
-<b>Note:</b>
-<p>Operating system ID is listed as <code
-class="ph codeph">operating_system</code> in log-level data.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-**Browser**
+### Browser
 
 Evaluate impressions based on the user's browser.
 
-<table id="splits-service__table_vx4_k2d_xwb" class="table">
-<colgroup>
-<col style="width: 28%" />
-<col style="width: 71%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">browser</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>Browser ID or name,
-such as <code class="ph codeph">8</code> or <code
-class="ph codeph">"Chrome (all versions)"</code>.</p>
-<p>Use the <a
-href="browser-service.md"
-class="xref" target="_blank">Browser Service</a> to retrieve these IDs
-and names.</p></td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `browser` | `=`, `in`, `not_in` | Browser ID or name, such as `8` or `"Chrome (all versions)"`.<br><br>Use the [Browser Service](./browser-service.md) to retrieve these IDs and names. |
 
-**Browser Language**
+### Browser language
 
 Evaluate impressions based on the browser language.
 
-<table id="splits-service__table_ndd_jfd_xwb" class="table">
-<colgroup>
-<col style="width: 29%" />
-<col style="width: 70%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">language</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>Language ID.</p>
-<p>Use the <a
-href="language-service.md"
-class="xref" target="_blank">Language Service</a> to retrieve these
-IDs.</p></td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `language` | `=`, `in`, `not_in` | Language ID.<br><br>Use the [Language Service](./language-service.md) to retrieve these IDs. |
 
-**Device Type**
+### Device type
 
 Evaluate impressions based on specific types of physical devices.
 
-<table id="splits-service__table_hb2_4fd_xwb" class="table">
-<colgroup>
-<col style="width: 29%" />
-<col style="width: 70%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">device_type</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>Device type name.
-Possible values:</p>
-<ul>
-<li><code class="ph codeph">"pc &amp; other devices" </code>- Use this
-value to target desktops and laptops.</li>
-<li><code class="ph codeph">"phone"</code> - Use this value to target
-mobile phones.</li>
-<li><code class="ph codeph">"tablet"</code>- Use this value to target
-mobile tablets.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `device_type` | `=`, `in`, `not_in` | Device type name. Possible values:<br> - `"pc & other devices"` - Use this value to target desktops and laptops.<br> - `"phone"` - Use this value to target mobile phones.<br> - `"tablet"` - Use this value to target mobile tablets. |
 
-**Device Model**
+### Device model
 
 Evaluate impressions based on specific models of physical devices.
 
-<table id="splits-service__table_w5y_rfd_xwb" class="table">
-<colgroup>
-<col style="width: 29%" />
-<col style="width: 70%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">device_model</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>Device model ID.</p>
-<p>Use the <a
-href="device-model-service.md"
-class="xref" target="_blank">Device Model Service</a> to retrieve these
-IDs.</p>
-<p>Device model ID is listed as <code class="ph codeph">device_id</code>
-in log-level data.</p></td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `device_model` | `=`, `in`, `not_in` | Device model ID.<br>Use the [Device Model Service](./device-model-service.md) to retrieve these IDs.<br><br>Device model ID is listed as `device_id` in log-level data. |
 
-**Carrier**
+### Carrier
 
 Evaluate impressions based on specific mobile carriers.
 
-<table id="splits-service__table_sks_wfd_xwb" class="table">
-<colgroup>
-<col style="width: 29%" />
-<col style="width: 70%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">carrier</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not_in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>Mobile carrier ID or
-name, such as <code class="ph codeph">14</code> or <code
-class="ph codeph">"Verizon"</code>.</p>
-<p>Use the <a
-href="carrier-service.md"
-class="xref" target="_blank">Carrier Service</a> to retrieve these IDs
-and names.</p></td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `carrier` | `=`, `in`, `not_in` | Mobile carrier ID or name, such as `14` or "`Verizon"`.<br><br>Use the [Carrier Service](./carrier-service.md) to retrieve these IDs and names. |
 
-**Predicted IAB Viewability Rate**
+### Predicted IAB viewability rate
 
-(Previously known as "Estimated IAB Viewability Rate".) Evaluate web
-display impressions by how likely they are to be measured as viewable by
-the IAB standard, as determined by the Optimization Guide (available in
-the UI documentation).
+Previously known as "Estimated IAB Viewability Rate". Evaluate web display impressions by how likely they are to be measured as viewable by the IAB standard, as determined by the Optimization Guide (available in the UI documentation).
 
+> [!NOTE]
+> Not supported by GDALI.
 
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `predicted_iab_view_rate` | `<`, `<=`, `=`, `>`, `>=` | Decimal number between `0` and `1`, representing a percentage. |
 
+### Predicted IAB video viewability rate
 
-<b>Note:</b> Not supported by GDALI.
+Evaluate web video impressions by how likely they are to be measured as viewable by the IAB standard, as determined by the [Optimization Guide](../monetize/optimization-guide.md) (available in the UI documentation).
 
+> [!NOTE]
+> Not supported by GDALI.
 
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `predicted_iab_video_view_rate` | `<`, `<=`, `=`, `>`, `>=` | Decimal number between `0` and `1`, representing a percentage. |
 
+### Predicted video completion rate
 
+Evaluate web video impressions by how likely they are to be completed, as determined by the [Optimization Guide](../monetize/optimization-guide.md) (available in the UI documentation).
 
-<table id="splits-service__table_pzg_1gd_xwb" class="table">
-<colgroup>
-<col style="width: 29%" />
-<col style="width: 70%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">predicted_iab_view_rate</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">&lt;, &lt;=, =, &gt;,
-&gt;=</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">Decimal number between
-<code class="ph codeph">0</code> and 1, representing a percentage.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Not supported by GDALI.
 
-**Predicted IAB Video Viewability Rate**
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `estimated_video_completion_rate` | `<`, `<=`, `=`, `>`, `>=` | Decimal number between `0` and `1`, representing a percentage. `0` represents non-video inventory. |
 
-Evaluate web video impressions by how likely they are to be measured as
-viewable by the IAB standard, as determined by the Optimization Guide
-(available in the UI documentation).
-
-
-
-
-<b>Note:</b> Not supported by GDALI.
-
-
-
-
-
-<table id="splits-service__table_qlr_ggd_xwb" class="table">
-<colgroup>
-<col style="width: 30%" />
-<col style="width: 69%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">predicted_iab_video_view_rate</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">&lt;, &lt;=, =, &gt;,
-&gt;=</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">Decimal number between
-<code class="ph codeph">0</code> and 1, representing a percentage.</td>
-</tr>
-</tbody>
-</table>
-
-**Predicted Video Completion Rate**
-
-Evaluate web video impressions by how likely they are to be completed,
-as determined by the Optimization Guide (available in the UI
-documentation).
-
-
-
-
-<b>Note:</b> Not supported by GDALI.
-
-
-
-
-
-<table id="splits-service__table_qtd_ngd_xwb" class="table">
-<colgroup>
-<col style="width: 30%" />
-<col style="width: 69%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">estimated_video_completion_rate</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">&lt;, &lt;=, =, &gt;,
-&gt;=</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">Decimal number between
-<code class="ph codeph">0</code> and 1, representing a percentage. <code
-class="ph codeph">0</code> represents non-video inventory.</td>
-</tr>
-</tbody>
-</table>
-
-**Creative**
+### Creative
 
 The creatives to serve on this split.
 
-<table id="splits-service__table_mxh_mhd_xwb" class="table">
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">creative</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>List of creative
-IDs.</p>
-<p>Use the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a> to retrieve these
-IDs.</p></td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `creative` | `in` | List of creative IDs.<br><br>Use the [Creative Service](./creative-service.md) to retrieve these IDs. |
 
-**Segment Group**
+### Segment group
 
-<table class="table">
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"><strong>Field</strong></td>
-<td class="entry"><p><code class="ph codeph">segment_group</code></p>
-<p>Use <a
-href="segment-service.md"
-class="xref" target="_blank">Segment Service</a> to retrieve segment
-IDs.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry"><strong>Operator</strong></td>
-<td class="entry">and, or</td>
-</tr>
-<tr class="odd row">
-<td class="entry"><strong>Value</strong></td>
-<td class="entry"><p>A nested conditions array that specifies segment
-groups. Each segment group array includes segment ID, age, value, and
-action ("include" or "exclude").</p>
-<ul>
-<li><code class="ph codeph">action</code> may be "include" or
-"exclude".</li>
-<li><code class="ph codeph">start_minutes</code> is the lower bound of
-minutes since the user has been added to this segment, inclusive. <code
-class="ph codeph">"start_minutes": 5 </code>includes users who have been
-added to the segment from the five-minute mark, including 5:00.</li>
-<li><code class="ph codeph">expire_minutes</code> is the upper bound of
-minutes since the user has been added to this segment, inclusive. <code
-class="ph codeph">"expire_minutes": 10 </code>includes users who have
-been added to the segment until the ten-minute mark, including
-10:00.</li>
-<li><p><code class="ph codeph">value_less </code>is the low end of the
-range of permitted values, exclusive. <code
-class="ph codeph">"value_less" : 5</code> includes only values greater
-than, but not including, 5.</p></li>
-<li><p><code class="ph codeph">value_greater </code>is the high end of
-the range of permitted values, exclusive. <code
-class="ph codeph">"value_greater" : 10</code> includes only values up
-to, but not including, 10.</p></li>
-<li><code class="ph codeph">value_equals</code> is the exact match to
-the permitted value. <code class="ph codeph">“value_equals” : 5</code>
-includes only values equal to 5.</li>
-<li><p>Unlike the <a
-href="profile-service.md"
-class="xref" target="_blank">Profile Service</a>, the Splits service
-allows you to target segment values of zero (0).</p>
-<pre id="splits-service__codeblock_n2h_n3d_xwb"
-class="pre codeblock"><code>&quot;conditions&quot;: [
-            {
-                &quot;field&quot;: &quot;segment_group&quot;,
-                &quot;operator&quot;: &quot;and&quot;,
-                &quot;value&quot;: [ 
-                            [
-                                {   
-                                    &quot;segment_ID&quot;: SEGMENT_ID,
-                                    &quot;action&quot;: SEGMENT_ACTION,
-                                    &quot;start_minutes&quot;: YOUNGEST_SEGMENT_AGE,
-                                    &quot;expire_minutes&quot;: OLDEST_SEGMENT_AGE,
-                                    &quot;value_less&quot;: LOWER_BOUND_SEGMENT_VALUE,
-                                    &quot;value_greater&quot;: UPPER_BOUND_SEGMENT_VALUE,
-                                    &quot;value_equals&quot;: EXACT_SEGMENT_VALUE
-                                }
-                        &#10;                            ]
-                        ]
-                }
-            ]</code></pre></li>
-</ul>
-Segment values may be passed in a number of ways, for example, through
-the Batch Segment Service or a first-party or third-party segment query
-string.</td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `segment_group`<br><br>Use [Segment Service](./segment-service.md) to retrieve segment IDs. | `and`, `or` | A nested conditions array that specifies segment groups. Each `segment_group` array includes `segment_ID`, `age`, `value`, and `action` (`"include"` or `"exclude"`).<br> - `action` may be `"include"` or `"exclude"`.<br> - `start_minutes` is the lower bound of minutes since the user has been added to this segment, inclusive. `"start_minutes": 5` includes users who have been added to the segment from the five-minute mark, including 5:00.<br> - `expire_minutes` is the upper bound of minutes since the user has been added to this segment, inclusive. `"expire_minutes": 10` includes users who have been added to the segment until the ten-minute mark, including 10:00.<br> - `value_less` is the low end of the range of permitted values, exclusive. `"value_less" : 5` includes only values greater than, but not including, 5.<br> - `value_greater` is the high end of the range of permitted values, exclusive. `"value_greater" : 10` includes only values up to, but not including, `10`.<br> - `value_equals` is the exact match to the permitted value. `“value_equals” : 5` includes only values equal to `5`.<br> - Unlike the [Profile Service](./profile-service.md), the Splits service allows you to target segment values of zero (0). See [example](#example-for-the-value_equals-field) for `value_equals` below. <br>Segment values may be passed in a number of ways, for example, through the Batch Segment Service or a first-party or third-party segment query string. |
 
-**Segment**
+#### Example for the `value_equals` field
 
-class="note warning note_warning">
+```
+"conditions": [
+{
+"field": "segment_group",
+"operator": "and",
+"value": [
+[
+{
+"segment_ID": SEGMENT_ID,
+"action": SEGMENT_ACTION,
+"start_minutes": YOUNGEST_SEGMENT_AGE,
+"expire_minutes": OLDEST_SEGMENT_AGE,
+"value_less": LOWER_BOUND_SEGMENT_VALUE,
+"value_greater": UPPER_BOUND_SEGMENT_VALUE,
+"value_equals": EXACT_SEGMENT_VALUE
+}
 
-<b>Warning:</b>
+]
+]
+}
+]
+```
 
-The `segment[]`condition is no longer used and will be deprecated on
-August 21, 2022. When setting up targeting for new line items, use <a
-href="splits-service.md#SplitsService-SegmentGroup"
-class="xref" target="_blank">Segment Group</a> (`segment_group`)
-instead.
+### Segment
 
+> [!WARNING]
+> The `segment[]`condition is no longer used and has been deprecated on August 21, 2022. When setting up targeting for new line items, use [Segment Group](#segment-group) (`segment_group`) instead.
 
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `segment[SEGMENTID,...]`<br>where `SEGMENTID` is an optional list of segment IDs.<br>Use [Segment Service](./segment-service.md) to retrieve segment IDs. | `<`, `<=`, `=`, `>`, `>=`, `present`, `absent` | A nested conditions array that specifies segment age, value, or presence.<br> - Segment presence is `"present"` or `"absent"`.<br> - Segment age is measured in minutes and must be a positive integer.<br> - Segment value is a non-zero, positive integer representing a user-defined value. See [example](#example-for-the-value-field) for `value` below.<br>Segment values may be passed in a number of ways, for example, through the [Batch Segment Service](./batch-segment-service.md) or a first-party or third-party segment query string. |
 
-<table id="splits-service__table_akm_q3d_xwb" class="table">
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p><code
-class="ph codeph">segment[SEGMENTID,...]</code></p>
-<p>where <code class="ph codeph">SEGMENTID</code> is an optional list of
-segment IDs.</p>
-<p>Use <a
-href="segment-service.md"
-class="xref" target="_blank">Segment Service</a> to retrieve segment
-IDs.</p></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">&lt;, &lt;=, =, &gt;,</code> &gt;=, present,
-absent</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>A nested conditions
-array that specifies segment age, value, or presence.</p>
-<ul>
-<li>Segment presence is "present" or "absent".</li>
-<li>Segment age is measured in minutes and must be a positive
-integer.</li>
-<li>Segment value is a non-zero, positive integer representing a
-user-defined value.</li>
-</ul>
-<pre id="splits-service__codeblock_i3q_w3d_xwb"
-class="pre codeblock"><code>&quot;conditions&quot;: [
-            {
-                &quot;field&quot;: &quot;segment[]&quot;,
-                &quot;operator&quot;: &quot;any&quot;,
-                &quot;value&quot;: [
-                    {
-                        &quot;conditions&quot;: [
-                            {
-                                &quot;field&quot;: &quot;age&quot;,
-                                &quot;operator&quot;: &quot;&lt;=&quot;,
-                                &quot;value&quot;: 1440
-                            }
-                        ],
-                        &quot;id&quot;: 275913
-                    }
-                ]
-            }
-        ],</code></pre>
-Segment values may be passed in a number of ways, for example, through
-the Batch Segment Service or a first-party or third-party segment query
-string.</td>
-</tr>
-</tbody>
-</table>
+#### Example for the `value` field
 
-Evaluate impressions based on the presence, absence, value, or segment
-age of the user in a first-party or third-party segment.
+Evaluate impressions based on the presence, absence, value, or segment age of the user in a first-party or third-party segment.
 
-**Daily Frequency**
+```
+"conditions": [
+{
+"field": "segment[]",
+"operator": "any",
+"value": [
+{
+"conditions": [
+{
+"field": "age",
+"operator": "<=",
+"value": 1440
+}
+],
+"id": 275913
+}
+]
+}
+],
+```
 
-The number of ads seen by a user for an advertiser, line item, or split
-on the current day.
+### Daily frequency
 
-<table id="splits-service__table_dvw_1jd_xwb" class="table">
-<colgroup>
-<col style="width: 27%" />
-<col style="width: 72%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p><code
-class="ph codeph">OBJECT[ID].</code><code
-class="ph codeph">day_frequency</code></p>
-<p>where the object is <code
-class="ph codeph">advertiser, line_item</code>, or <code
-class="ph codeph">campaign</code> (representing split), and ID is the
-object ID. Use the <a
-href="advertiser-service.md"
-class="xref" target="_blank">Advertiser Service</a>, <a
-href="line-item-service.md"
-class="xref" target="_blank">Line Item Service</a>, or <a
-href="splits-service.md"
-class="xref" target="_blank">Splits Service</a> to retrieve
-IDs.</p></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p><code
-class="ph codeph">&gt;</code><code
-class="ph codeph">, =&gt;, </code><code
-class="ph codeph">&lt;</code><code
-class="ph codeph">, =&lt;, </code><code class="ph codeph">=</code></p>
-class="note important note_important">
-<b>Important:</b> Although the operator <code
-class="ph codeph">=</code> is supported for frequency and recency, we
-<strong>strongly recommend</strong> that you do not use it, as it tends
-to cause underdelivery. This is because when you target an impression
-with <code class="ph codeph">frequency=5</code>, you exclude impressions
-with frequencies equal to 0, 1, 2, 3, or 4.
-</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">Positive integer. <code
-class="ph codeph">0</code> indicates no frequency information is
-available (the user has not seen this object on the current day).</td>
-</tr>
-</tbody>
-</table>
+The number of ads seen by a user for an advertiser, line item, or split on the current day.
 
-**Lifetime Frequency**
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `OBJECT[ID].day_frequency`<br>where the object is `advertiser`, `line_item`, or `campaign` (representing split), and ID is the object ID. Use the [Advertiser Service](./advertiser-service.md), [Line Item Service](./line-item-service.md), or Splits Service to retrieve IDs. | `>`, `=>`, `<`, `=<`, `=`<br><br>**Important**: Although the operator `=` is supported for frequency and recency, we **strongly recommend** that you do not use it, as it tends to cause underdelivery. This is because when you target an impression with `frequency=5`, you exclude impressions with frequencies equal to `0`, `1`, `2`, `3`, or `4`. | Positive integer. `0` indicates no frequency information is available (the user has not seen this object on the current day). |
 
-The number of ads seen by a user over the lifetime of an advertiser,
-line item, or split.
+### Lifetime frequency
 
-<table id="splits-service__table_gcj_qjd_xwb" class="table">
-<colgroup>
-<col style="width: 28%" />
-<col style="width: 71%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p><code
-class="ph codeph">OBJECT[ID].</code><code
-class="ph codeph">lifetime_frequency</code></p>
-<p>where the object is <code
-class="ph codeph">advertiser, line_item,</code> or <code
-class="ph codeph">campaign</code> (representing split), and ID is the
-object ID. Use the <a
-href="advertiser-service.md"
-class="xref" target="_blank">Advertiser Service</a>, <a
-href="line-item-service.md"
-class="xref" target="_blank">Line Item Service</a>, or <a
-href="splits-service.md"
-class="xref" target="_blank">Splits Service</a> to retrieve IDs.</p>
-class="note caution note_caution">
-CAUTION: Although the operator <code
-class="ph codeph">=</code> is supported for frequency and recency, we
-<strong>strongly recommend</strong> that you do not use it, as it tends
-to cause underdelivery. This is because when you target an impression
-with <code class="ph codeph">frequency=5</code>, you exclude impressions
-with frequencies equal to 0, 1, 2, 3, or 4.
-</td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">&gt;</code>, =&gt;, <code
-class="ph codeph">&lt;</code>, =&lt;, <code
-class="ph codeph">=</code></td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">Positive integer. <code
-class="ph codeph">0</code> indicates no frequency information is
-available (the user has never seen this object).</td>
-</tr>
-</tbody>
-</table>
+The number of ads seen by a user over the lifetime of an advertiser, line item, or split.
 
-**Recency**
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `OBJECT[ID].lifetime_frequency`<br>where the object is `advertiser`, `line_item`, or `campaign` (representing split), and ID is the object ID. Use the [Advertiser Service](./advertiser-service.md), [Line Item Service](./line-item-service.md), or Splits Service to retrieve IDs.<br><br>**CAUTION**: Although the operator `=` is supported for frequency and recency, we strongly recommend that you do not use it, as it tends to cause underdelivery. This is because when you target an impression with `frequency=5`, you exclude impressions with frequencies equal to `0`, `1`, `2`, `3`, or `4`. | `>`, `=>`, `<`, `=<`, `=` | Positive integer. `0` indicates no frequency information is available (the user has never seen this object). |
 
-The number of minutes since a user has seen an ad. This can be
-determined for a user for all ads under an advertiser, line item, or
-split.
+### Recency
 
-<table id="splits-service__table_bxf_1kd_xwb" class="table">
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 77%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p><code
-class="ph codeph">OBJECT[ID].</code><code
-class="ph codeph">recency</code></p>
-<p>where the object is <code
-class="ph codeph">advertiser, line_item,</code> or <code
-class="ph codeph">campaign</code> (representing split), and ID is the
-object ID. Use the <a
-href="advertiser-service.md"
-class="xref" target="_blank">Advertiser Service</a>, <a
-href="line-item-service.md"
-class="xref" target="_blank">Line Item Service</a>, or <a
-href="splits-service.md"
-class="xref" target="_blank">Splits Service</a> to retrieve
-IDs.</p></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p><code
-class="ph codeph">&gt;</code><code
-class="ph codeph">, =&gt;, </code><code
-class="ph codeph">&lt;</code><code
-class="ph codeph">, =&lt;, </code><code class="ph codeph">=</code></p>
-class="note important note_important">
-<b>Important:</b> Although the operator <code
-class="ph codeph">=</code> is supported for frequency and recency, we
-<strong>strongly recommend</strong> that you do not use it, as it tends
-to cause underdelivery. This is because when you target an impression
-with <code class="ph codeph">frequency=5</code>, you exclude impressions
-with frequencies equal to 0, 1, 2, 3, or 4.
-</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">A positive integer
-indicating the number of minutes since a user has seen an impression,
-rounded down. 59 seconds will evaluate to <code
-class="ph codeph">0</code>, 61 seconds will evaluate to 1. <code
-class="ph codeph">0</code> means the impression was seen very recently.
-<code class="ph codeph">Null</code> means no recency data is available
-(the user has not seen this impression before).</td>
-</tr>
-</tbody>
-</table>
+The number of minutes since a user has seen an ad. This can be determined for a user for all ads under an advertiser, line item, or split.
 
-**Inventory Type**
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `OBJECT[ID].recency`<br>where the object is `advertiser`, `line_item`, or `campaign` (representing split), and ID is the object ID. Use the [Advertiser Service](./advertiser-service.md), [Line Item Service](./line-item-service.md), or Splits Service to retrieve IDs. | `>`, `=>`, `<`, `=<`, `=`<br><br>**Important**: Although the operator `=` is supported for frequency and recency, we strongly recommend that you do not use it, as it tends to cause underdelivery. This is because when you target an impression with `frequency=5`, you exclude impressions with frequencies equal to `0`, `1`, `2`, `3`, or `4`. | A positive integer indicating the number of minutes since a user has seen an impression, rounded down. 59 seconds will evaluate to `0`, 61 seconds will evaluate to `1`. `0` means the impression was seen very recently. `Null` means no recency data is available (the user has not seen this impression before). |
 
-The type of inventory ("app" or "web") targeted by the split. "App"
-targets mobile app inventory and "web" targets web inventory (including
-pages shown in mobile web browsers).
+### Inventory type
 
-<table id="splits-service__table_z3q_mkd_xwb" class="table">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 79%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">inventory_type</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">=, in, not in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>"web", "app"</p>
+The type of inventory ("app" or "web") targeted by the split. "App" targets mobile app inventory and "web" targets web inventory (including pages shown in mobile web browsers).
 
-Example:
-<pre id="splits-service__codeblock_cyf_qkd_xwb"
-class="pre codeblock"><code>&quot;conditions&quot;: [
-    {
-    &quot;field&quot;: &quot;inventory_type&quot;,
-    &quot;operator&quot;: &quot;in&quot;,
-    &quot;value&quot;: [
-        &quot;app&quot;,
-        &quot;web&quot;
-        ]
-    }
-]</code></pre>
-</td>
-</tr>
-</tbody>
-</table>
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `inventory_type` | `=`, `in`, `not_in` | `"web"`, `"app"`<br>See [Example](#example-for-the-inventory_type-field). |
 
-**Inventory URL List**
+#### Example for the `inventory_type` field
 
-Target an allowlist or blocklist established at the Network level. You
-can only target a single list.
+```
+"conditions": [
+{
+"field": "inventory_type",
+"operator": "in",
+"value": [
+"app",
+"web"
+]
+}
+]
+```
 
+### Inventory URL list
 
+Target an allowlist or blocklist established at the Network level. You can only target a single list.
 
+> [!NOTE]
+> Not supported by GDALI.
 
-<b>Note:</b> Not supported by GDALI.
-
-
-
-
-
-
-
-<table id="splits-service__table_qnv_mld_xwb" class="table"
-style="width:100%;">
-<colgroup>
-<col style="width: 35%" />
-<col style="width: 64%" />
-</colgroup>
-<tbody class="tbody">
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Field</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><code
-class="ph codeph">inventory_url_list</code></td>
-</tr>
-<tr class="even row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Operator</strong></td>
-<td class="entry align-left colsep-1 rowsep-1">all, not in</td>
-</tr>
-<tr class="odd row">
-<td
-class="entry align-left colsep-1 rowsep-1"><strong>Value</strong></td>
-<td class="entry align-left colsep-1 rowsep-1"><p>Inventory list ID.</p>
-<pre id="splits-service__pre_rnv_mld_xwb" class="pre"><code>&quot;conditions&quot;:[{&quot;field&quot;:&quot;inventory_url_list&quot;,&quot;operator&quot;:&quot;not in&quot;,&quot;value&quot;:[12345]}]</code></pre>
-<p>To create an inventory list, or retrieve the list IDs for use in
-split targeting, use the <a
-href="inventory-list-service.md"
-class="xref" target="_blank">Inventory List Service</a>.</p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `inventory_url_list` | `all`, `not in` | Inventory list ID.<br><br>`"conditions":[{"field":"inventory_url_list","operator":"not in","value":[12345]}]`<br><br>To create an inventory list, or retrieve the list IDs for use in split targeting, use the [Inventory List Service](./inventory-list-service.md). |
 
 ## Examples
 
-**Create splits for a line item with cost-plus booked revenue and
-optimization disabled**
+### Create splits for a line item with cost-plus booked revenue and optimization disabled
 
-This example creates three splits for Line Item 6377624:
+This example creates three splits for Line Item `6377624`:
 
-- Split 1 - User must be using the Chrome browser. Impressions are
-  assigned an expected value of 2. Forty percent of the line item's
-  traffic is allocated to this split, which is first in priority.
-  Allocation is unconstrained.
-- Split 2 - Impressions must belong to Segment 275913 and must have been
-  added within the last 1440 minutes. They are assigned an expected
-  value of 1. Thirty percent of the line item's traffic is allocated to
-  this split, which is second in priority. Allocation is unconstrained.
-- Split 3 (unnamed) - The default split. Impressions are assigned an
-  expected value of 0.5. Thirty percent of the line item's traffic is
-  allocated to this split, which is third in priority. Allocation is
-  unconstrained.
+- Split 1 - User must be using the Chrome browser. Impressions are assigned an expected value of `2`. Forty percent of the line item's traffic is allocated to this split, which is first in priority. Allocation is unconstrained.
+- Split 2 - Impressions must belong to Segment `275913` and must have been added within the last 1440 minutes. They are assigned an expected value of ``1. Thirty percent of the line item's traffic is allocated to this split, which is second in priority. Allocation is unconstrained.
+- Split 3 (unnamed) - The default split. Impressions are assigned an expected value of `0.5`. Thirty percent of the line item's traffic is allocated to this split, which is third in priority. Allocation is unconstrained.
 
+Since optimization is disabled, we are setting expected values for the splits.
 
-
-Since optimization is disabled, we are setting expected values for the
-splits.
-
-``` pre
+```
 $ cat ali_cost_plus_ev.json
 [
     {
@@ -2243,27 +694,15 @@ $ curl -b cookies -X PUT -s -d '@ali_cost_plus_ev.json' "https://api.appnexus.co
 ]
 ```
 
+### Create splits for a line item with cost-plus booked revenue and optimization enabled
 
+This example creates three splits for Line Item `6377631`:
 
-**Create splits for a line item with cost-plus booked revenue and
-optimization enabled**
+- Split 1 - User must be using the Chrome browser. Impressions are assigned an expected value of `2`. Forty percent of the line item's traffic is allocated to this split, which is first in priority. Allocation is unconstrained.
+- Split 2 - Impressions must belong to Segment `275913` and must have been added within the last 1440 minutes. They are assigned an expected value of `1`. Thirty percent of the line item's traffic is allocated to this split, which is second in priority. Allocation is unconstrained.
+- Split 3 (unnamed) - The default split. Impressions are assigned an expected value of `0.5`. Thirty percent of the line item's traffic is allocated to this split, which is third in priority. Allocation is unconstrained.
 
-This example creates three splits for Line Item 6377631:
-
-- Split 1 - User must be using the Chrome browser. Impressions are
-  assigned an expected value of 2. Forty percent of the line item's
-  traffic is allocated to this split, which is first in priority.
-  Allocation is unconstrained.
-- Split 2 - Impressions must belong to Segment 275913 and must have been
-  added within the last 1440 minutes. They are assigned an expected
-  value of 1. Thirty percent of the line item's traffic is allocated to
-  this split, which is second in priority. Allocation is unconstrained.
-- Split 3 (unnamed) - The default split. Impressions are assigned an
-  expected value of 0.5. Thirty percent of the line item's traffic is
-  allocated to this split, which is third in priority. Allocation is
-  unconstrained.
-
-``` pre
+```
 $ cat ali_cost_plus_opt.json
 [
     {
@@ -2390,29 +829,17 @@ $ curl -b cookies -X PUT -s -d '@ali_cost_plus_opt.json' "https://api.appnexus.c
         "order": 3
 ```
 
-**Create splits for a line item with CPM booked revenue and optimization
-disabled**
+### Create splits for a line item with CPM booked revenue and optimization disabled
 
-This example creates three splits for Line Item 6377633:
+This example creates three splits for Line Item `6377633`:
 
-- Split 1 - User must be using the Chrome browser. Bids are multiplied
-  by 0.5. Forty percent of the line item's traffic is allocated to this
-  split, which is first in priority. Allocation is unconstrained.
-- Split 2 - Impressions must belong to Segment 275913 and must have been
-  added within the last 1440 minutes. Bids are multiplied by 0.4. Thirty
-  percent of the line item's traffic is allocated to this split, which
-  is second in priority. Allocation is unconstrained.
-- Split 3 (unnamed) - The default split. Bids are multiplied by 1 (they
-  remain the same). Thirty percent of the line item's traffic is
-  allocated to this split, which is third in priority. Allocation is
-  unconstrained.
+- Split 1 - User must be using the Chrome browser. Bids are multiplied by `0.5`. Forty percent of the line item's traffic is allocated to this split, which is first in priority. Allocation is unconstrained.
+- Split 2 - Impressions must belong to Segment `275913` and must have been added within the last 1440 minutes. Bids are multiplied by `0.4`. Thirty percent of the line item's traffic is allocated to this split, which is second in priority. Allocation is unconstrained.
+- Split 3 (unnamed) - The default split. Bids are multiplied by `1` (they remain the same). Thirty percent of the line item's traffic is allocated to this split, which is third in priority. Allocation is unconstrained.
 
+Since optimization is disabled, we are setting bid modifiers for each split.
 
-
-Since optimization is disabled, we are setting bid modifiers for each
-split.
-
-``` pre
+```
 $ cat ali_cpm_bid_modifier.json
 [
     {
@@ -2540,17 +967,11 @@ $ curl -b cookies -X PUT -s -d '@ali_cpm_bid_modifier.json' "https://api.appnexu
 ]
 ```
 
+### Update one split on a line item
 
+In this example, Line Item `5200075` already has 3 splits, all with unconstrained allocation strategies. We update `Split 1` to use a constrained allocation strategy.
 
-**Update one split on a line item**
-
-
-
-In this example, Line Item 5200075 already has 3 splits, all with
-unconstrained allocation strategies. We update Split 1 to use a
-constrained allocation strategy.
-
-``` pre
+```
 # View the current splits
 $ curl -b cookies 'https://api.appnexus.com/budget-splitter/5200075/splits'
     {
@@ -2729,26 +1150,7 @@ $ curl -b cookies -X PATCH -d @split1_update.json 'https://api.appnexus.com/budg
 ]
 ```
 
+## Related topics
 
-
-
-
-
-## Related Topics
-
-
-
-- <a
-  href="line-item-service---ali.md"
-  class="xref" target="_blank">Line Item Service - ALI</a>
-- <a
-  href="splits-service-troubleshooting.md"
-  class="xref" target="_blank">Splits Service Troubleshooting</a>
-
-
-
-
-
-
-
-
+- [Line Item Service - ALI](./line-item-service---ali.md)
+- [Splits Service Troubleshooting](./splits-service-troubleshooting.md)

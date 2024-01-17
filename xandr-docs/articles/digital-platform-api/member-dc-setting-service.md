@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Member DC setting service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 Member Datacenter Setting is an admin-only service that allows users to add entries to the `api.member_dc_setting` table. This table is consumed by impression bus and used to configure datacenter-specific settings for bidder members. Please be careful when modifying objects using this service.
 
 ## REST API

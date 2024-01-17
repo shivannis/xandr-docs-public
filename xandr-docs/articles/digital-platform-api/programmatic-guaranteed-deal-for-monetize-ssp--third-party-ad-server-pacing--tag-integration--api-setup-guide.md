@@ -1,11 +1,11 @@
 ---
-title: Programmatic Guaranteed Deal for Microsoft Monetize (Third-Party Ad Server Pacing, Tag Integration) API Setup Guide
+title: Programmatic Guaranteed Deal with Third-Party Ad Server Pacing and Tag Integration
 description: Explore the API setup guide to understand the process of creating and configuring a programmatic guaranteed (PG) deal using our API for Microsoft Monetize.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Programmatic Guaranteed deal for Microsoft Monetize (third-party ad server pacing, tag integration) API setup guide
+# Programmatic Guaranteed deal with third-party ad server pacing and tag integration
 
 Setting up an API implementation for a programmatic guaranteed (PG) deal with third-party ad server pacing and tag integration requires
 configuring a number of different properties on different API objects. This guide will explain the process of creating and configuring a PG deal using our API.

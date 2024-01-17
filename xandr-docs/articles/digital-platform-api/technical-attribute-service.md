@@ -1,115 +1,34 @@
 ---
-Title : Technical Attribute Service
-Description : This is a read-only service that shows you the list of technical
+title: Digital Platform API - Technical Attribute Service
+description: Use the technical attribute service to view the list of technical attributes that you can target in the ad profile service via ID.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-attributes that you can target in the <a
-href="ad-profile-service.md"
 ---
 
+# Digital Platform API - Technical attribute service
 
-# Technical Attribute Service
-
-
-
-This is a read-only service that shows you the list of technical
-attributes that you can target in the <a
-href="ad-profile-service.md"
-class="xref" target="_blank">Ad Profile Service</a> via ID.
-
-
+This is a read-only service that shows you the list of technical attributes that you can target in the [Ad Profile Service](./ad-profile-service.md) via ID.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000357c__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-0000357c__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-0000357c__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000357c__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000357c__entry__2">https://api.<span
-class="ph">appnexus.com/technical-attribute</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000357c__entry__3">View
-all technical attributes</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000357c__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000357c__entry__2">https://api.<span
-class="ph">appnexus.com/technical-attribute?id=TECHNICAL_ATTRIBUTE_ID</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000357c__entry__3">View
-a specific technical attribute</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | https://api.appnexus.com/technical-attribute | View all technical attributes. |
+| `GET` | https://api.appnexus.com/technical-attribute?id=TECHNICAL_ATTRIBUTE_ID | View a specific technical attribute. |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000357c__entry__10"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000357c__entry__11"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000357c__entry__12"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000357c__entry__10"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000357c__entry__11">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000357c__entry__12">The
-internal identifier for the technical attribute</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000357c__entry__10"><code
-class="ph codeph">last_activity</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000357c__entry__11">date</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000357c__entry__12">The
-date/time at which the technical attribute was last modified</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000357c__entry__10"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000357c__entry__11">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000357c__entry__12">The
-name of the technical attribute</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The internal identifier for the technical attribute. |
+| `last_activity` | date | The date/time at which the technical attribute was last modified. |
+| `name` | string | The name of the technical attribute. |
 
 ## Examples
 
-**To see all technical attributes available for targeting.**
+### To see all technical attributes available for targeting
 
-``` pre
+```
 $ curl -b cookies -c cookies  https://api.appnexus.com/technical-attribute
 {
   "response": {
@@ -267,9 +186,3 @@ $ curl -b cookies -c cookies  https://api.appnexus.com/technical-attribute
   }
 }
 ```
-
-
-
-
-
-

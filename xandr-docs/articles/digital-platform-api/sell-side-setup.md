@@ -1,271 +1,83 @@
 ---
-Title : Sell-Side Setup
-Description : Setting up a Xandr API implementation for your
+title: Sell-Side Setup
+description: This article provides guidance on creating and configuring sell-side objects for a typical Xandr API setup.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-sell-side activities can seem complicated. This page will guide you
 ---
 
+# Sell-side setup
 
-# Sell-Side Setup
-
-
-
-Setting up a Xandr API implementation for your
-sell-side activities can seem complicated. This page will guide you
-through the process of creating and configuring sell-side objects for a
-typical API setup. 
-
+Setting up a Xandr API implementation for your sell-side activities can seem complicated. This page will guide you through the process of creating and configuring sell-side objects for a typical API setup.
 
 ## Overview
 
-Setting up a publisher typically involves making requests to the
-following API service endpoints to create and configure the
-corresponding sell-side objects:
+Setting up a publisher typically involves making requests to the following API service endpoints to create and configure the corresponding sell-side objects:
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000184f__section_yfp_ndh_5wb__entry__1"
-class="entry colsep-1 rowsep-1">API Endpoint</th>
-<th id="ID-0000184f__section_yfp_ndh_5wb__entry__2"
-class="entry colsep-1 rowsep-1">Sell-Side Object</th>
-<th id="ID-0000184f__section_yfp_ndh_5wb__entry__3"
-class="entry colsep-1 rowsep-1">Detailed Reference</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000184f__section_yfp_ndh_5wb__entry__1"><a
-href="https://api.appnexus.com/publisher" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/publisher</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000184f__section_yfp_ndh_5wb__entry__2"><strong>publisher</strong></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000184f__section_yfp_ndh_5wb__entry__3"><a
-href="publisher-service.md"
-class="xref" target="_blank">Publisher Service</a></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000184f__section_yfp_ndh_5wb__entry__1"><a
-href="https://api.appnexus.com/site" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/site</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000184f__section_yfp_ndh_5wb__entry__2"><strong>site</strong></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000184f__section_yfp_ndh_5wb__entry__3"><a
-href="site-service.md"
-class="xref" target="_blank">Site Service</a></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000184f__section_yfp_ndh_5wb__entry__1"><a
-href="https://api.appnexus.com/placement" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/placement</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000184f__section_yfp_ndh_5wb__entry__2"><strong>placement</strong></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000184f__section_yfp_ndh_5wb__entry__3"><a
-href="placement-service.md"
-class="xref" target="_blank">Placement Service</a></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000184f__section_yfp_ndh_5wb__entry__1"><a
-href="payment-rule-service.md"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/payment-rule</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000184f__section_yfp_ndh_5wb__entry__2"><strong>payment
-rule</strong></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000184f__section_yfp_ndh_5wb__entry__3"><a
-href="payment-rule-service.md"
-class="xref" target="_blank">Payment Rule Service</a></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000184f__section_yfp_ndh_5wb__entry__1"><a
-href="https://api.appnexus.com/ad-profile" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/ad-profile</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000184f__section_yfp_ndh_5wb__entry__2"><strong>ad
-profile</strong></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000184f__section_yfp_ndh_5wb__entry__3"><a
-href="ad-profile-service.md"
-class="xref" target="_blank">Ad Profile Service</a></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000184f__section_yfp_ndh_5wb__entry__1"><a
-href="https://api.appnexus.com//ad-quality-rule" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com//ad-quality-rule</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000184f__section_yfp_ndh_5wb__entry__2"><strong>ad quality
-rule</strong></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000184f__section_yfp_ndh_5wb__entry__3"><a
-href="ad-quality-rule-service.md"
-class="xref" target="_blank">Ad Quality Rule Service</a></td>
-</tr>
-</tbody>
-</table>
+| API Endpoint | Sell-Side Object | Detailed Reference |
+|:---|:---|:---|
+| https://api.appnexus.com/publisher | `publisher` | [Publisher Service](./publisher-service.md) |
+| https://api.appnexus.com/site | `site` | [Site Service](./site-service.md) |
+| https://api.appnexus.com/placement | `placement` | [Placement Service](./placement-service.md) |
+| https://api.appnexus.com/payment-rule | `payment rule` | [Payment Rule Service](./payment-rule-service.md) |
+| https://api.appnexus.com/ad-profile | `ad profile` | [Ad Profile Service](./ad-profile-service.md) |
+| https://api.appnexus.com//ad-quality-rule | `ad quality rule` | [Ad Quality Rule Service](./ad-quality-rule-service.md) |
 
-This guide uses cURL examples for all requests. You can use other API
-request tools (e.g., <a href="https://www.getpostman.com/" class="xref"
-target="_blank">Postman</a>), but you’ll then need to adjust the
-examples accordingly.
+This guide uses `cURL` examples for all requests. You can use other API request tools (e.g., [Postman](https://www.getpostman.com/), but you’ll then need to adjust the examples accordingly.
 
-
-
-<b>Note:</b> For simplicity, the configuration
-examples provided do not customize the objects to particular use
-cases. See <a
-href="sell-side-services.md"
-class="xref" target="_blank">Sell-Side Services</a> for more information
-on the settings available within each service.
-
-
-
-
-
+> [!NOTE]
+> For simplicity, the configuration examples provided do not customize the objects to particular use cases. See [Sell-Side Services](./sell-side-services.md) for more information on the settings available within each service.
 
 ## Prerequisites
 
-Before beginning this setup, be sure to read <a
-href="api-getting-started.md"
-class="xref" target="_blank">API Getting Started</a>. It provides
-information on testing environments, usage constraints, API semantics
-(running commands, filtering, sorting, etc.), and best practices.
+Before beginning this setup, be sure to read [API Getting Started](./api-getting-started.md). It provides information on testing environments, usage constraints, API semantics (running commands, filtering, sorting, etc.), and best practices.
 
+## Dependencies and order of operations
 
+Sell-side objects often have dependencies on other sell-side objects. For example, when you create or update a *payment rule*, you must provide a *publisher ID* in the `POST` request. But you must create (or already have access to) a publisher to obtain the system generated *publisher ID* you’ll need. There are many other similar dependencies among sell-side objects. Following the order of operations outlined on this page can make configuration easier and reduce the number of requests you'll have to make to the API.
 
+> [!NOTE]
+> A good way to know if a sell-side object has a dependency with another sell-side object is to note which fields are required in the JSON used to create or update it. For example, if there are object IDs (e.g., `publisher_id`, `ad_profile_id`) required on a `POST` request to create an object, then that object is dependent on the object with the required ID.
 
-## Dependencies and Order of Operations
+The diagram below indicates the publisher fields used, sell-side objects created or configured, and setup steps required for setting up a simple sell-side implementation:
 
-Sell-side objects often have dependencies on other sell-side objects.
-For example, when you create or update a *payment rule*, you must
-provide a *publisher ID* in the POST request. But you must create (or
-already have access to) a publisher to obtain the system generated
-*publisher ID* you’ll need. There are many other similar dependencies
-among sell-side objects. Following the order of operations outlined on
-this page can make configuration easier and reduce the number of
-requests you'll have to make to the API. 
+> [!NOTE]
+> The API `"site"` object is referred to as a "placement group" when created and configured using.
 
+:::image type="content" source="media/sell-side-objects.png" alt-text="Diagram that shows setup steps for setting up a simple sell-side implementation with publisher fields, objects created or configured, and setup steps.":::
 
+## Best practices
 
-<b>Note:</b> A good way to know if a sell-side
-object has a dependency with another sell-side object is to note which
-fields are required in the JSON used to create or update it. For
-example, if there are object IDs (e.g., `publisher_id`, `ad_profile_id`)
-required on a POST request to create an object, then that object is
-dependent on the object with the required ID. See <a
-href="sell-side-services.md"
-class="xref" target="_blank">Sell-Side Services</a> for more
-information.
+For a general list of best practices to follow when working with the API, see [API Best Practices](./api-best-practices.md). The following are some best practices that are specific to the sell-side API setup:
 
-
-
-The diagram below indicates the publisher fields used, sell-side objects
-created or configured, and setup steps required for setting up a simple
-sell-side implementation:
-
-
-
-<b>Note:</b> The API "site" object is referred
-to as a "placement group" when created and configured using
-.
-
-
-
-![Sell side Objects](media/sell-side-objects.png)
-
-
-
-
-## Best Practices
-
-For a general list of best practices to follow when working with
-the API, see <a
-href="api-best-practices.md"
-class="xref" target="_blank">API Best Practices</a>. The following are
-some best practices that are specific to the sell-side API setup:
-
-- **Use a default site and default placement**. While you can create a
-  publisher without a default site and default placement (see <a
-  href="publisher-service.md"
-  class="xref" target="_blank">Publisher Service</a>for more
-  information), you’ll usually want a default site and default placement
-  to provide a “catchall” for potential targeting misconfigurations.
-- **Set ad quality rules on the publisher**. If there are no ad quality
-  rules assigned to the publisher, the publisher's default ad profile is
-  automatically applied. If there is no publisher default ad profile,
-  the network ad profile is applied. Setting ad quality rules on the
-  publisher provides the publisher more control over what kinds of ads
-  are served on the publisher’s inventory.
-- **Assign the base ad quality rule ID of the publisher**. The base ad
-  quality rule of a publisher acts as a “catchall” and is applied in two
-  situations:
+- **Use a default site and default placement**. While you can create a publisher without a default site and default placement (see [Publisher Service](./publisher-service.md) for more information), you’ll usually want a default site and default placement to provide a “catchall” for potential targeting misconfigurations.
+- **Set ad quality rules on the publisher**. If there are no ad quality rules assigned to the publisher, the publisher's default ad profile is automatically applied. If there is no publisher default ad profile, the network ad profile is applied. Setting ad quality rules on the publisher provides the publisher more control over what kinds of ads are served on the publisher’s inventory.
+- **Assign the base ad quality rule ID of the publisher**. The base ad quality rule of a publisher acts as a “catchall” and is applied in two situations:
   - If there are no conditional ad quality rules defined.
-  - If none of the defined conditional ad quality rules match the
-    current impression.
-- **Set the `state` field of the publisher to “inactive”** until the
-  publisher is fully configured and ready for testing.
-- **Note the ID of any objects you create.** The IDs of objects you
-  create are returned in the response body of requests. You'll often
-  need these IDs later so copying them when they're returned can reduce
-  the number of additional GET requests you have to make to obtain them.
+  - If none of the defined conditional ad quality rules match the current impression.
+- **Set the `state` field of the publisher to `"inactive"`** until the publisher is fully configured and ready for testing.
+- **Note the ID of any objects you create.** The IDs of objects you create are returned in the response body of requests. You'll often need these IDs later so copying them when they're returned can reduce the number of additional `GET` requests you have to make to obtain them.
 
+## Setup procedure
 
+The following steps will guide you through the process of setting up a publisher with typical configurations:
 
-
-## Setup Procedure
-
-The following steps will guide you through the process of setting up a
-publisher with typical configurations:
-
-1.  <a href="sell-side-setup.md#ID-0000184f__ID-00001962"
-    class="xref">Create a publisher with default site and default
-    placement.</a>
-2.  <a href="sell-side-setup.md#ID-0000184f__ID-0000198e"
-    class="xref">Update the default site.</a>
-3.  <a href="sell-side-setup.md#ID-0000184f__ID-000019b1"
-    class="xref">Update the default placement.</a>
-4.  <a href="sell-side-setup.md#ID-0000184f__ID-000019d5"
-    class="xref">Create a new site.</a>
-5.  <a href="sell-side-setup.md#ID-0000184f__ID-000019f5"
-    class="xref">Create a new placement.</a>
-6.  <a href="sell-side-setup.md#ID-0000184f__ID-00001a22"
-    class="xref">Update the base payment rule.</a>
-7.  <a href="sell-side-setup.md#ID-0000184f__ID-00001a59"
-    class="xref">Create an ad profile.</a>
-8.  <a href="sell-side-setup.md#ID-0000184f__ID-00001a7d"
-    class="xref">Create an ad quality rule.</a>
-9.  <a href="sell-side-setup.md#ID-0000184f__ID-00001aa4"
-    class="xref">Update the base ad quality rule ID.</a>
-
-
-
+1. [Create a publisher with default site and default placement](#step-1-creating-a-publisher).
+1. [Update the default site](#step-2-updating-the-default-site).
+1. [Update the default placement](#step-3-updating-the-default-placement).
+1. [Create a new site](#step-4-creating-a-new-site).
+1. [Create a new placement](#step-5-creating-a-new-placement).
+1. [Update the base payment rule](#step-6-updating-the-base-payment-rule).
+1. [Create an ad profile](#step-7-creating-an-ad-profile).
+1. [Create an ad quality rule](#step-8-creating-an-ad-quality-rule).
+1. [Update the base ad quality rule ID](#step-9-updating-the-base-ad-quality-rule-id-of-publisher).
 
 ## Authentication
 
-First, you’ll need to obtain an authorization token. You must then
-include this authorization token in all subsequent requests (see <a
-href="authentication-service.md"
-class="xref" target="_blank">Authentication Service</a> for more
-information). To obtain an authorization token, do the following:
+First, you’ll need to obtain an authorization token. You must then include this authorization token in all subsequent requests (see [Authentication Service](./authentication-service.md) for more information). To obtain an authorization token, do the following:
 
-1.  Create a JSON file containing your username and password.
+1. Create a JSON file containing your username and password.
 
-    ``` pre
+    ```
     {
         "auth": {
             "username" : "USERNAME",
@@ -274,24 +86,17 @@ information). To obtain an authorization token, do the following:
     }
     ```
 
-2.  Make a POST request to the `/auth` endpoint with this JSON file in
-    the request body (see <a
-    href="authentication-service.md"
-    class="xref" target="_blank">Authentication Service</a> for more
-    information). In the cURL request below, the authorization token
-    returned is stored in the “`cookies`” file.
+1. Make a `POST` request to the `/auth` endpoint with this JSON file in the request body (see [Authentication Service](./authentication-service.md) for more information). In the `cURL` request below, the authorization token returned is stored in the “`cookies`” file.
 
-    ``` pre
+    ```
     curl -c cookies -X POST -d @authentication.json 'https://api.appnexus.com/auth'
     ```
 
-3.  Check the response body of your request (see **Example Response**
-    below). If your request was successful, you’ll get
-    a "`status`" of “`OK`” and the "`token`" field will be populated
-    with the authentication token value.   
-     Example Response  
+1. Check the response body of your request (see **Example Response** below). If your request was successful, you’ll get a `"status"` of `"OK"` and the `"token"` field will be populated with the authentication token value.
+     
+    <br><br>**Example response**
 
-    ``` pre
+    ```
     {
        "response" : {
           "token" : "authn:225692:2d787d1838283:lax1",
@@ -300,86 +105,57 @@ information). To obtain an authorization token, do the following:
     }
     ```
 
-
-
-
 ## Publisher
 
-**Step 1: Creating a Publisher**
+### Step 1: Creating a publisher
 
-There are two options for creating a publisher (see <a
-href="publisher-service.md"
-class="xref" target="_blank">Publisher Service</a> for more
-information):
+There are two options for creating a publisher (see [Publisher Service](./publisher-service.md) for more information):
 
 - Create a publisher with a default site and default placement.
 - Create a publisher without a default site or default placement.
 
-It’s a best practice for publishers to have both a default site and
-default placement, so that’s the option we’ll focus on in this setup
-guide. A default site and default placement can provide a "catchall" if
-targeting is misconfigured and they can help in resolving discrepancies.
+It’s a best practice for publishers to have both a default site and default placement, so that’s the option we’ll focus on in this setup guide. A default site and default placement can provide a "catchall" if targeting is misconfigured and they can help in resolving discrepancies.
 
-To create a publisher with a default site and default placement, do the
-following:
+To create a publisher with a default site and default placement, do the following:
 
-1.  Create a JSON file with the required fields for a publisher (see<a
-    href="publisher-service.md"
-    class="xref" target="_blank">Publisher Service</a> for more
-    information).
+1. Create a JSON file with the required fields for a publisher (see [Publisher Service](./publisher-service.md) for more information).
 
+   > [!NOTE]
+   > Replace the placeholders (e.g., `"PUBLISHER_NAME"`) in the below JSON example with your own values.
 
+    Since the `inventory_relationship` field is required, we’ve set it to `"direct"`, (but it can be set to other values). We’ve also set `state` to `"inactive"` for now. Since we don’t provide the other publisher fields in our request, they will be set to their  default values and display in the response body.
+    
+    ```
+    {
+            "publisher": {
+                    "name": "PUBLISHER_NAME",
+                    "inventory_relationship": "direct",
+                    "billing_dba": "PUBLISHER_DBA",
+                    "billing_address1": "PUBLISHER_ADDRESS",
+                    "billing_city": "PUBLISHER_CITY",
+                    "billing_state": "PUBLISHER_STATE",
+                    "billing_zip": "PUBLISHER_ZIP",
+                    "billing_country": "PUBLISHER_COUNTRY",
+                    "contact": {
+                            "phone": "CONTACT_PHONE",
+                            "email": "CONTACT_EMAIL",
+                            "name": "CONTACT_NAME"
+                    }
+            }
+    }
+    ```
 
-<b>Note:</b> Replace the placeholders (e.g.,
-"PUBLISHER_NAME") in the below JSON example with your own values.
+1. Make a `POST` request to the `/publisher` endpoint with this JSON file in the request body.
 
-
-
-Since the `inventory_relationship` field is required, we’ve set it
-to `“direct”`, (but it can be set to other values). We’ve also set
-`state` to `“inactive”` for now. Since we don’t provide the other
-publisher fields in our request, they will be set to their default
-values and display in the response body.
-
-``` pre
-{
-        "publisher": {
-                "name": "PUBLISHER_NAME",
-                "inventory_relationship": "direct",
-                "billing_dba": "PUBLISHER_DBA",
-                "billing_address1": "PUBLISHER_ADDRESS",
-                "billing_city": "PUBLISHER_CITY",
-                "billing_state": "PUBLISHER_STATE",
-                "billing_zip": "PUBLISHER_ZIP",
-                "billing_country": "PUBLISHER_COUNTRY",
-                "contact": {
-                        "phone": "CONTACT_PHONE",
-                        "email": "CONTACT_EMAIL",
-                        "name": "CONTACT_NAME"
-                }
-        }
-}
-```
-
-1.  Make a POST request to the `/publisher` endpoint with this JSON file
-    in the request body.
-
-    ``` pre
+    ```
     curl -b cookies -X POST -d @Publisher.json 'https://api.appnexus.com/publisher'
     ```
 
-2.  Check the response body of your request (see **Example Response**
-    below). If your request was successful, you’ll get a `"status"` of
-    `“OK”` and a publisher ID (`“id”` in the `“publisher”` object)
-    returned in the response body. Notice that the default site ID,
-    default placement ID, and base payment rule ID fields are populated
-    (along with many other fields). Copy the values of the publisher ID,
-    default site ID, default placement ID, and base payment rule ID for
-    later use.  
-     **Example Response  
-    **
+1. Check the response body of your request (see **Example Response** below). If your request was successful, you’ll get a `"status"` of `"OK"` and a publisher ID (`"id"` in the `"publisher"` object) returned in the response body. Notice that the `default_site_id`, `default_placement_id`, and `base_payment_rule_id` fields are populated (along with many other fields). Copy the values of the `publisher` ID, `default_site_id`, `default_placement_id`, and `base_payment_rule_id` for later use.  
+   
+   **Example response**
 
-    ``` pre
+    ```
     {
        "response" : {
           "status" : "OK",
@@ -467,29 +243,16 @@ values and display in the response body.
     } 
     ```
 
-**Step 2: Updating the Default Site**
+### Step 2: Updating the default site
 
-A default site was created when you created the publisher in
-<a href="sell-side-setup.md#ID-0000184f__ID-00001962"
-class="xref">Creating a Publisher</a> above. While this default site
-doesn’t need additional configuration to function, you can update some
-fields if necessary. To update the default site, do the following:
+A default site was created when you created the publisher in [Creating a Publisher](#step-1-creating-a-publisher) above. While this default site doesn’t need additional configuration to function, you can update some fields if necessary. To update the default site, do the following:
 
+> [!TIP]
+> The API `"site"` object is referred to as a "placement group" when created and configured using.
 
+1. Create a JSON file containing the fields of the default site you want to update (see [Site Service](./site-service.md) for more information). In this example, we are updating the `content_categories` array.
 
-<b>Tip:</b> The API "site" object is referred
-to as a "placement group" when created and configured using
-.
-
-
-
-1.  Create a JSON file containing the fields of the default site you
-    want to update (see
-    <a href="site-service.md"
-    class="xref" target="_blank">Site Service</a> for more information).
-    In this example, we are updating the `content_categories` array. 
-
-    ``` pre
+    ```
     {
             "site": {
                     "content_categories": [{
@@ -512,34 +275,20 @@ to as a "placement group" when created and configured using
     }
     ```
 
-2.  Make a PUT request to the `/site` endpoint with this JSON file in
-    the request body. You’ll need to indicate the site ID of the default
-    site you’re updating in the query string of the request.
+1. Make a `PUT` request to the `/site` endpoint with this JSON file in the request body. You’ll need to indicate the site ID of the default site you’re updating in the query string of the request.
 
+   > [!TIP]
+   > If you copied the default site ID in [Creating a Publisher](#step-1-creating-a-publisher) above, you can use that. Otherwise, you can obtain the default site ID by making a `GET` request to the `/publisher` endpoint using the publisher ID of the publisher that has the default site you want to update (see [Publisher Service](./publisher-service.md) for more information).
+   >
+   > ```
+   > curl -b cookies -X PUT -d @DefaultSiteUpdate.json 'https://api.appnexus.com/site?id=DEFAULT_SITE_ID'
+   >```
 
+1. Check the response body of your request (see **Example response** below). If your request was successful, you’ll get a `"status"` of `"OK"` and you’ll see the updates you made.  
+    
+    **Example response**
 
-<b>Tip:</b> If you copied the default site ID
-in <a href="sell-side-setup.md#ID-0000184f__ID-00001962"
-class="xref">Creating a Publisher</a> above, you can use that.
-Otherwise, you can obtain the default site ID by making a GET request to
-the `/publisher` endpoint using the publisher ID of the publisher that
-has the default site you want to update (see <a
-href="publisher-service.md"
-class="xref" target="_blank">Publisher Service</a> for more
-information).
-
-``` pre
-curl -b cookies -X PUT -d @DefaultSiteUpdate.json 'https://api.appnexus.com/site?id=DEFAULT_SITE_ID'
-```
-
-
-
-1.  Check the response body of your request (see **Example Response**
-    below). If your request was successful, you’ll get
-    a "`status`" of “`OK`” and you’ll see the updates you made.  
-    **Example Response**
-
-    ``` pre
+    ```
     {
        "response" : {
           "site" : {
@@ -603,23 +352,13 @@ curl -b cookies -X PUT -d @DefaultSiteUpdate.json 'https://api.appnexus.com/site
     }
     ```
 
-**Step 3: Updating the Default Placement**
+### Step 3: Updating the default placement
 
-A default placement was created when you created the publisher in
-<a href="sell-side-setup.md#ID-0000184f__ID-00001962"
-class="xref">Creating a Publisher</a> above. While this default
-placement doesn’t need additional configuration to function, you can
-update some fields if necessary. To update the default placement, do the
-following:
+A default placement was created when you created the publisher in [Creating a Publisher](#step-1-creating-a-publisher) above. While this default placement doesn’t need additional configuration to function, you can update some fields if necessary. To update the default placement, do the following:
 
-1.  Create a JSON file containing the fields of the default placement
-    you want to update (see <a
-    href="placement-service.md"
-    class="xref" target="_blank">Placement Service</a> for more
-    information). In this example, we are updating the
-    `default_position` field of the default placement.
+1. Create a JSON file containing the fields of the default placement you want to update (see [Placement Service](./placement-service.md) for more information). In this example, we are updating the `default_position` field of the default placement.
 
-    ``` pre
+    ```
      {
           "placement" : 
              {
@@ -628,35 +367,20 @@ following:
     }
     ```
 
-2.  Make a PUT request to the `/placement` endpoint with this JSON file
-    in the request body. You’ll need to indicate the placement ID of the
-    default placement you’re updating in the query string of the
-    request.
+1. Make a `PUT` request to the `/placement` endpoint with this JSON file in the request body. You’ll need to indicate the placement ID of the default placement you’re updating in the query string of the request.
     
+    > [!NOTE]
+    > If you copied the default placement ID in [Creating a Publisher](#step-1-creating-a-publisher) above, you can use that. Otherwise, you can obtain the default placement ID by making a `GET` request to the `/publisher` endpoint using the publisher ID of the publisher that has the default placement you want to update (see [Publisher Service](./publisher-service.md) for more information).
+    >
+    > ```
+    > curl -b cookies -X PUT -d @DefaultPlacementUpdate.json 'https://api.appnexus.com/placement?id=DEFAULT_PLACEMENT_ID'
+    > ```
 
-    <b>Note:</b> If you copied the default
-    placement ID in
-    <a href="sell-side-setup.md#ID-0000184f__ID-00001962"
-    class="xref">Creating a Publisher</a> above, you can use that.
-    Otherwise, you can obtain the default placement ID by making a GET
-    request to the `/publisher` endpoint using the publisher ID of the
-    publisher that has the default placement you want to update (see <a
-    href="publisher-service.md"
-    class="xref" target="_blank">Publisher Service</a> for more
-    information).
-    ``` pre
-     curl -b cookies -X PUT -d @DefaultPlacementUpdate.json 'https://api.appnexus.com/placement?id=DEFAULT_PLACEMENT_ID'
+1. Check the response body of your request (see **Example response** below). If your request was successful, you’ll get a `"status"` of `"OK"` and you’ll see the updates you made.
+
+    **Example response**
+
     ```
-
-    
-
-3.  Check the response body of your request (see **Example Response**
-    below). If your request was successful, you’ll get
-    a "`status`" of “`OK`” and you’ll see the updates you made.
-
-    **Example Response**
-
-    ``` pre
     {
        "response" : {      
           "start_element" : 0,
@@ -745,23 +469,13 @@ following:
     }
     ```
 
-**Step 4: Creating a New Site**
+### Step 4: Creating a new site
 
-While a default site was created when you created the
-publisher in <a href="sell-side-setup.md#ID-0000184f__ID-00001962"
-class="xref">Creating A Publisher</a> above, this typically is used as a
-“catchall” for targeting misconfigurations and usually only contains the
-default placement. Since you’ll want to add a new placement to the
-publisher, you should first create a new site to contain any new
-placements. To create a new site, do the following:
+While a default site was created when you created the publisher in [Creating a Publisher](#step-1-creating-a-publisher) above, this typically is used as a “catchall” for targeting misconfigurations and usually only contains the default placement. Since you’ll want to add a new placement to the publisher, you should first create a new site to contain any new placements. To create a new site, do the following:
 
-1.  Create a JSON file containing the fields of the new site
-    (see <a href="site-service.md"
-    class="xref" target="_blank">Site Service</a> for more information).
-    In this example, we are including fields in
-    the `content_categories` array along with any required fields.
+1. Create a JSON file containing the fields of the new site (see [Site Service](./site-service.md) for more information). In this example, we are including fields in the `content_categories` array along with any required fields.
 
-    ``` pre
+    ```
     {
        "site" : {
                 "name" : "NEW_SITE_NAME",
@@ -787,31 +501,20 @@ placements. To create a new site, do the following:
     } 
     ```
 
-2.  Make a POST request to the `/site` endpoint with this JSON file in
-    the request body. You’ll need to indicate the `publisher_id` of the
-    publisher you’re adding the site to in the query string of the
-    request.
+1. Make a `POST` request to the `/site` endpoint with this JSON file in the request body. You’ll need to indicate the `publisher_id` of the publisher you’re adding the site to in the query string of the request.
     
+    > [!TIP]
+   > If you copied the publisher ID in [Creating a Publisher](#step-1-creating-a-publisher) above you can use that.
+   >
+   > ```
+   > curl -b cookies -X POST -d @NewSite.json 'https://api.appnexus.com/site publisher_id=PUBLISHER_ID'
+   > ```
 
-    <b>Tip:</b> If you copied the publisher ID
-    in <a href="sell-side-setup.md#ID-0000184f__ID-00001962"
-    class="xref">Creating a Publisher</a> above, you can use that.
-    ``` pre
-     curl -b cookies -X POST -d @NewSite.json 'https://api.appnexus.com/site?publisher_id=PUBLISHER_ID'
+1.  Check the response body of your request (see **Example response** below). If your request was successful, you’ll get a `"status"` of `"OK"` and you’ll see the fields of the new site. Copy the site ID so you'll have it available when you add a placement to the new site.
+
+    **Example response**
+
     ```
-
-    
-
-3.  Check the response body of your request (see **Example
-    Response** below). If your request was successful, you’ll get
-    a "`status`" of “`OK`” and you’ll see the fields of the new site.
-    Copy the site ID so you'll have it available when you add a
-    placement to the new site.
-
-    **Example Response  
-    **
-
-    ``` pre
      {
        "response" : {
           "status" : "OK",
@@ -874,23 +577,13 @@ placements. To create a new site, do the following:
     }
     ```
 
-**Step 5: Creating a New Placement**
+### Step 5: Creating a new placement
 
-While a  default placement was created when you created the publisher in
-<a href="sell-side-setup.md#ID-0000184f__ID-00001962"
-class="xref">Creating a Publisher</a> above, you’ll want to create one
-or more placements and add them to the publisher to handle ad placement
-targeting. To create a placement and add it to your publisher, do the
-following:
+While a default placement was created when you created the publisher in [Creating a Publisher](#step-1-creating-a-publisher) above, you’ll want to create one or more placements and add them to the publisher to handle ad placement targeting. To create a placement and add it to your publisher, do the following:
 
-1.  Create a JSON file containing the fields for the placement you want
-    to add (see <a
-    href="placement-service.md"
-    class="xref" target="_blank">Placement Service</a> for more
-    information). In this example, we have included the required fields
-    along with some supported media type information.
+1. Create a JSON file containing the fields for the placement you want to add (see [Placement Service](./placement-service.md) for more information). In this example, we have included the required fields along with some supported media type information.
 
-    ``` pre
+    ```
      {
           "placement" : 
              {
@@ -907,38 +600,20 @@ following:
     }
     ```
 
-2.  Make a POST request to the `/placement` endpoint with this JSON file
-    in the request body. You'll need to add the `site_id` of the site
-    you're adding the placement to in the query string of the request
-    (see<a
-    href="placement-service.md"
-    class="xref" target="_blank">Placement Service</a> for more
-    information).
-    
+1. Make a `POST` request to the `/placement` endpoint with this JSON file in the request body. You'll need to add the `site_id` of the site you're adding the placement to in the query string of the request (see [Placement Service](./placement-service.md) for more information).
 
-    <b>Tip:</b> If you copied the site ID in
-    <a href="sell-side-setup.md#ID-0000184f__ID-000019d5"
-    class="xref">Creating a New Site</a> above, you can use this when
-    adding a placement. To obtain the site IDs for a publisher, make a
-    GET request to the `/site` endpoint using the publisher ID of the
-    publisher that has the sites (see
-    <a href="site-service.md"
-    class="xref" target="_blank">Site Service</a> for more information).
-    ``` pre
+    > [!TIP]
+    > If you copied the site ID in [Creating a New Site](#step-4-creating-a-new-site) above, you can use this when adding a placement. To obtain the site IDs for a publisher, make a GET request to the `/site` endpoint using the publisher ID of the publisher that has the sites (see [Site Service](./site-service.md) for more information).
+
+    ```
      curl -b cookies -X POST -d @NewPlacement.json 'https://api.appnexus.com/placement?site_id=SITE_ID'
     ```
 
-    
+1. Check the response body of your request (see **Example response** below). If your request was successful, you’ll get a `"status"` of `"OK"` and you'll see the fields of the new placement.
 
-3.  Check the response body of your request (see **Example Response**
-    below). If your request was successful, you’ll get
-    a "`status`" of “`OK`” and you'll see the fields of the new
-    placement.
+    **Example response**
 
-    **Example Response  
-    **
-
-    ``` pre
+    ```
     {
        "response" : {
           "num_elements" : 100,
@@ -1027,46 +702,20 @@ following:
     }
     ```
 
+## Payment rules
 
+You need to configure the financial arrangement between the network and publisher. You do this using base and conditional payment rules (see [Payment Rule Service](./payment-rule-service.md) for more information).
 
+### Step 6: Updating the base payment rule
 
-## Payment Rules
+A base payment rule was created by default when you created a publisher in [Creating a Publisher](#step-1-creating-a-publisher) above. You'll typically need to update this base payment rule to reflect the actual financial arrangement between the network and publisher. To update the base payment rule, do the following:
 
-You need to configure the financial arrangement between the network and
-publisher. You do this using base and conditional payment rules (see <a
-href="payment-rule-service.md"
-class="xref" target="_blank">Payment Rule Service</a> for more
-information).
+1. Create a JSON file containing the fields with the updates you want (see [Payment Rule Service](./payment-rule-service.md) for more information). In this example, we are updating the `pricing_type` and  `cost_cpm` fields.
 
-**Step 6: Updating the Base Payment Rule**
+    > [!NOTE]
+   > Changes to one field might require changes to another dependent field. For example, if you change the value of the `pricing_type` field from `"revshare"` to `"cpm"`, you’ll need to update the `cost_cpm` field as well. See [Payment Rule Service](./payment-rule-service.md) for more information.
 
-A base payment rule was created by default when you created a publisher
-in <a href="sell-side-setup.md#ID-0000184f__ID-00001962"
-class="xref">Creating a Publisher</a> above. You'll typically need to
-update this base payment rule to reflect the actual financial
-arrangement between the network and publisher. To update the base
-payment rule, do the following:
-
-1.  Create a JSON file containing the fields with the updates you want
-    (see <a
-    href="payment-rule-service.md"
-    class="xref" target="_blank">Payment Rule Service</a> for more
-    information). In this example, we are updating the `pricing_type`
-     and  `cost_cpm`  fields.
-
-    
-
-    <b>Note:</b> Changes to one field might
-    require changes to another dependent field. For example, if you
-    change the value of the `pricing_type` field from `“revshare”` to
-    `“cpm”` , you’ll need to update the `cost_cpm` field as well. See <a
-    href="payment-rule-service.md"
-    class="xref" target="_blank">Payment Rule Service</a> for more
-    information.
-
-    
-
-    ``` pre
+    ```
     {
         "payment-rule":{
             "pricing_type": "cpm",
@@ -1075,38 +724,21 @@ payment rule, do the following:
     } 
     ```
 
-2.  Make a PUT request to the `/payment-rule` endpoint with this JSON
-    file in the request body. You’ll need to indicate the base payment
-    rule ID and the publisher ID in the query string of the request.
+1. Make a `PUT` request to the `/payment-rule` endpoint with this JSON file in the request body. You’ll need to indicate the base payment rule ID and the publisher ID in the query string of the request.
 
-    
+    > [!NOTE]
+   > If you copied the basepayment rule ID and the publisher ID in [Creating a Publisher](#step-1-creating-a-publisher) above, you can use these. Otherwise, you can make a `GET` request to the `/publisher` endpoint using the publisher ID of the publisher to find the base payment rule ID you want to update (see [Publisher Service](./publisher-service.md) for more information).
 
-    <b>Note:</b> If you copied the base
-    payment rule ID and the publisher ID in
-    <a href="sell-side-setup.md#ID-0000184f__ID-00001962"
-    class="xref">Creating a Publisher</a> above, you can use these.
-    Otherwise, you can make a GET request to the `/publisher` endpoint
-    using the publisher ID of the publisher to find the base payment
-    rule ID you want to update (see <a
-    href="publisher-service.md"
-    class="xref" target="_blank">Publisher Service</a> for more
-    information).
-
-    
-
-    ``` pre
+    ```
     curl -b cookies -X PUT -d @UpdatePaymentRule.json 'https://api.appnexus.com/payment-rule?id=BASE_PAYMENT_RULE_ID&publisher_id=PUBLISHER_ID'
              
     ```
 
-3.  Check the response body of your request (see **Example Response**
-    below). If your request was successful, you’ll get
-    a "`status`" of “`OK`” and you’ll see the updates you made.
+1. Check the response body of your request (see **Example response** below). If your request was successful, you’ll get a `"status"` of `"OK"` and you’ll see the updates you made.
 
-    **Example Response  
-    **
+    **Example response**
 
-    ``` pre
+    ```
     {
        "response" : {
           "id" : "1570229",
@@ -1146,54 +778,24 @@ payment rule, do the following:
     }
     ```
 
+## Ad quality settings
 
+You can now configure the ad quality settings for your publisher. A newly created publisher will use network ad quality settings unless you create and configure ad quality settings for the publisher. Ad quality settings let publishers determine the quality of ads served on their inventory. These ad quality settings consist of ad profiles (see [Ad Profile Service](./ad-profile-service.md) for more information) and base and conditional ad quality rules (see [Ad Quality Rule Service](./ad-quality-rule-service.md) for more information).
 
+Ad quality rules require an ad profile ID, so you'll need to create an ad profile (or use an existing one) before you can create and apply ad quality rules.
 
-## Ad Quality Settings
+### Step 7: Creating an ad profile
 
-You can now configure the ad quality settings for your publisher. A
-newly created publisher will use network ad quality settings unless you
-create and configure ad quality settings for the publisher. Ad quality
-settings let publishers determine the quality of ads served on their
-inventory. These ad quality settings consist of ad profiles (see <a
-href="ad-profile-service.md"
-class="xref" target="_blank">Ad Profile Service</a> for more
-information) and base and conditional ad quality rules (see <a
-href="ad-quality-rule-service.md"
-class="xref" target="_blank">Ad Quality Rule Service</a> for more
-information).
+An ad profile indicates the eligibility (`"trusted"` or `"banned"`) of characteristics of ads to be served by a publisher. These ad characteristics include buyers, brands, categories, technical attributes, languages, ad servers, and so on. An ad profile is then applied using ad quality rules.
 
-Ad quality rules require an ad profile ID, so you'll need to create an
-ad profile (or use an existing one) before you can create and apply ad
-quality rules. 
+> [!NOTE]
+> If there are no ad quality rules assigned to the publisher, the publisher's default ad profile is automatically applied. If there is no publisher default ad profile, the network ad profile is applied.
 
-**Step 7: Creating an Ad Profile**
+To create an ad profile, do the following:
 
-An ad profile indicates the eligibility (`“trusted”` or `“banned”`) of
-characteristics of ads to be served by a publisher. These ad
-characteristics include buyers, brands, categories, technical
-attributes, languages, ad servers, and so on. An ad profile is then
-applied using ad quality rules. 
+1. Create a JSON file containing the fields with the updates you want (see [Ad Profile Service](./ad-profile-service.md) for more information). In this example, we are adding eligibility information to the `technical_attributes` and categories arrays.
 
-
-
-<b>Note:</b> If there are no ad quality rules
-assigned to the publisher, the publisher's default ad profile is
-automatically applied. If there is no publisher default ad profile, the
-network ad profile is applied.
-
-
-
- To create an ad profile, do the following:
-
-1.  Create a JSON file containing the fields with the updates you want
-    (see <a
-    href="ad-profile-service.md"
-    class="xref" target="_blank">Ad Profile Service</a> for more
-    information). In this example, we are adding eligibility information
-    to the `technical_attributes` and categories arrays.
-
-    ``` pre
+    ```
      {
              "ad-profile" :  {
                 "technical_attributes" : [
@@ -1233,30 +835,20 @@ network ad profile is applied.
     }
     ```
 
-2.  Make a POST request to the `/ad-profile` endpoint with this JSON
-    file in the request body. You’ll need to indicate the
-    `publisher_id` of the publisher you want to associate the ad profile
-    with in the query string of the request
-    
+1. Make a `POST` request to the `/ad-profile` endpoint with this JSON file in the request body. You’ll need to indicate the `publisher_id` of the publisher you want to associate the ad profile with in the query string of the request
 
-    <b>Note:</b> If you copied the publisher
-    ID in Creating a Publisher above, you can use that.
-    ``` pre
-     curl -b cookies -X POST -d @AdProfile.json 'https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID'
-          
+    > [!NOTE]
+   > If you copied the publisher ID in [Creating a Publisher](#step-1-creating-a-publisher) above, you can use that.
+   >
+   > ```
+   > curl -b cookies -X POST -d @AdProfile.json 'https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID'
+   > ```
+
+1. Check the response body of your request (see **Example response** below). If your request was successful, you’ll get a `"status"` of `"OK"` and you’ll see the values you added along with other default settings.
+
+    **Example response**
+
     ```
-
-    
-
-3.  Check the response body of your request (see **Example Response**
-    below). If your request was successful, you’ll get
-    a "`status`" of “`OK`” and you’ll see the values you added along
-    with other default settings.
-
-    **Example Response  
-    **
-
-    ``` pre
     {
        "response" : {
           "ad-profile" : {
@@ -1336,31 +928,15 @@ network ad profile is applied.
     } 
     ```
 
-**Step 8: Creating an Ad Quality Rule**
+### Step 8: Creating an ad quality rule
 
-While configuring ad quality settings beyond the Network Profile is
-optional, it’s a best practice to use ad quality rules on the publisher
-level as well to control ad quality. If you choose to configure ad
-quality settings at the publisher level, you are required to have a base
-ad quality rule for the publisher. Having this will ensure at least some
-ad quality controls are applied at the publisher level in case none of
-the conditional ad quality rules apply. The base ad quality rule is an
-ad quality rule that is assigned to the publisher’s
-`base_ad_quality_rule_id` field (see
-<a href="sell-side-setup.md#ID-0000184f__ID-00001aa4"
-class="xref">Updating Base Ad Quality Rule ID of Publisher</a> below).
+While configuring ad quality settings beyond the Network Profile is optional, it’s a best practice to use ad quality rules on the publisher level as well to control ad quality. If you choose to configure ad quality settings at the publisher level, you are required to have a base ad quality rule for the publisher. Having this will ensure at least some ad quality controls are applied at the publisher level in case none of the conditional ad quality rules apply. The base ad quality rule is an ad quality rule that is assigned to the publisher’s `base_ad_quality_rule_id` field (see [Updating Base Ad Quality Rule ID of Publisher](#step-9-updating-the-base-ad-quality-rule-id-of-publisher) below).
 
 To create an ad quality rule, do the following:
 
-1.  Create a JSON file containing the fields you want (see<a
-    href="ad-quality-rule-service.md"
-    class="xref" target="_blank">Ad Quality Rule Service</a> for more
-    information). In this example, we are adding the ID of the ad
-    profile (see <a href="sell-side-setup.md#ID-0000184f__ID-00001a59"
-    class="xref">Creating an Ad Profile</a> above) we want this ad
-    quality rule to use along with the name and priority of this rule.
+1. Create a JSON file containing the fields you want (see [Ad Quality Rule Service](./ad-quality-rule-service.md) for more information). In this example, we are adding the ID of the ad profile (see [Creating an Ad Profile](#step-7-creating-an-ad-profile) above) we want this ad quality rule to use along with the name and priority of this rule.
 
-    ``` pre
+    ```
     {
           "ad-quality-rule" : {
                 "name" : "New_Ad_Quality_Rule",
@@ -1370,30 +946,20 @@ To create an ad quality rule, do the following:
     }
     ```
 
-2.  Make a POST request to the `/ad-quality-rule` endpoint with this
-    JSON file in the request body. You’ll need to indicate the
-    `publisher_id` in the query string of the request.
-    
+1. Make a `POST` request to the `/ad-quality-rule` endpoint with this JSON file in the request body. You’ll need to indicate the `publisher_id` in the query string of the request.
 
-    <b>Note:</b> If you copied the publisher
-    ID in Creating a Publisher above, you can use this.
-    ``` pre
-     curl -b cookies -X POST -d @AdQualityRule.json 'https://api.appnexus.com/ad-quality-rule?publisher_id=PUBLISHER_ID'
+   > [!NOTE]
+   > If you copied the publisher ID in [Creating a Publisher](#step-1-creating-a-publisher) above, you can use this.
+   >
+   > ```
+   > curl -b cookies -X POST -d @AdQualityRule.json 'https://api.appnexus.com/ad-quality-rule?publisher_id=PUBLISHER_ID'
+   > ```
+
+1. Check the response body of your request (see **Example Response** below). If your request was successful, you’ll get a `"status"` of `"OK"` and you’ll see the fields of the ad quality rule you created. Copy the ad quality rule ID so you'll have it when you update the base ad quality rule ID of the publisher in next step.
+
+    **Example response**
+
     ```
-
-    
-
-3.  Check the response body of your request (see **Example Response**
-    below). If your request was successful, you’ll get
-    a "`status`" of “`OK`” and you’ll see the fields of the ad quality
-    rule you created. Copy the ad quality rule ID so you'll have it when
-    you update the base ad quality rule ID of the publisher in next
-    step.
-
-    ** Example Response  
-    **
-
-    ``` pre
     {
        "response" : {
           "count" : 1,
@@ -1418,76 +984,39 @@ To create an ad quality rule, do the following:
     }
     ```
 
-**Step 9: Updating the Base Ad Quality Rule ID of Publisher**
+### Step 9: Updating the base ad quality rule ID of publisher
 
-You’ll typically want to have a base ad quality rule assigned to your
-publisher. The base ad quality rule acts as a "catchall" ad quality rule
-if there are no conditional ad quality rules defined or if no
-conditional ad quality rules match an impression. Once you’ve created an
-ad quality rule that you want to use for a base ad quality rule, you
-simply assign the ID of that ad quality rule to the publisher with a PUT
-request.
+You’ll typically want to have a base ad quality rule assigned to your publisher. The base ad quality rule acts as a "catchall" ad quality rule if there are no conditional ad quality rules defined or if no conditional ad quality rules match an impression. Once you’ve created an ad quality rule that you want to use for a base ad quality rule, you simply assign the ID of that ad quality rule to the publisher with a `PUT` request.
 
 To assign a base ad quality rule to a publisher, do the following:
 
-1.  Create a JSON file containing a value for
-    the `base_ad_quality_rule_id` field of your publisher (see <a
-    href="publisher-service.md"
-    class="xref" target="_blank">Publisher Service</a> for more
-    information). In this example, we are adding the ID of the ad
-    quality rule we created in
-    <a href="sell-side-setup.md#ID-0000184f__ID-00001a7d"
-    class="xref">Creating an Ad Quality Rule</a> above.
+1. Create a JSON file containing a value for the `base_ad_quality_rule_id` field of your publisher (see [Publisher Service](./publisher-service.md) for more information). In this example, we are adding the ID of the ad quality rule we created in [Creating an Ad Quality Rule](#step-8-creating-an-ad-quality-rule) above.
 
+   > [!TIP]
+   >  If you copied the ad quality rule ID in [Creating an Ad Quality Rule](#step-8-creating-an-ad-quality-rule) above, you can use this. Otherwise, you can make a `GET` request to the `/ad-quality-rule` endpoint (see [Ad Quality Rule Service](./ad-quality-rule-service.md) for more information) using the publisher ID you used in [Creating an Ad Quality Rule](#step-8-creating-an-ad-quality-rule) above to find the ad quality rule ID.
+   >
+   >    ```
+   >    {
+   >             "publisher" :  {
+   >                "base_ad_quality_rule_id" : 632112
+   >             }
+   >    }
+   >     ```
 
+1. Make a `PUT` request to the `/publisher` endpoint with this JSON file in the request body (see [Publisher Service](./publisher-service.md) for more information). You’ll need to indicate the publisher ID in the query string of the request.
 
-<b>Tip:</b> If you copied the ad quality rule
-ID in <a href="sell-side-setup.md#ID-0000184f__ID-00001a7d"
-class="xref">Creating an Ad Quality Rule</a> above, you can use this.
-Otherwise, you can make a GET request to the `/ad-quality-rule` endpoint
-(see <a
-href="ad-quality-rule-service.md"
-class="xref" target="_blank">Ad Quality Rule Service</a> for more
-information) using the publisher ID you used in
-<a href="sell-side-setup.md#ID-0000184f__ID-00001a7d"
-class="xref">Creating an Ad Quality Rule</a> above to find the ad
-quality rule ID.
+    > [!TIP]
+    > If you copied the publisher ID in [Creating a Publisher](#step-1-creating-a-publisher) above you can use this.
+   >
+   > ```
+   > curl -b cookies -X PUT -d @PublisherBaseAdQualityRuleUpdate.json 'https://api.appnexus.com/publisher?id=PUBLISHER_ID'
+   >     ```
 
-``` pre
-{
-         "publisher" :  {
-            "base_ad_quality_rule_id" : 632112
-         }
-}
-```
+1. Check the response body of your request (see **Example response** below). If your request was successful, you’ll get a `"status"` of `"OK"` and you’ll see the updates you made.
 
+    **Example response**
 
-
-1.  Make a PUT request to the `/publisher` endpoint with this JSON file
-    in the request body (see <a
-    href="publisher-service.md"
-    class="xref" target="_blank">Publisher Service</a> for more
-    information). You’ll need to indicate the publisher ID in the query
-    string of the request.
-    
-
-    <b>Tip:</b> If you copied the publisher ID
-    in <a href="sell-side-setup.md#ID-0000184f__ID-00001962"
-    class="xref">Creating a Publisher</a> above, you can use this.
-    ``` pre
-    curl -b cookies -X PUT -d @PublisherBaseAdQualityRuleUpdate.json 'https://api.appnexus.com/publisher?id=PUBLISHER_ID'
     ```
-
-    
-
-2.  Check the response body of your request (see **Example
-    Response** below). If your request was successful, you’ll get
-    a "`status`" of “`OK`” and you’ll see the updates you made.
-
-    **Example Response  
-    **
-
-    ``` pre
     {
        "response" : {
           "count" : 1,
@@ -1579,20 +1108,7 @@ quality rule ID.
     }
     ```
 
+## Related topics
 
-
-
-## Related Topics
-
-- <a
-  href="api-getting-started.md"
-  class="xref" target="_blank">API Getting Started</a>
-- <a
-  href="sell-side-services.md"
-  class="xref" target="_blank">Sell-Side Services</a>
-
-
-
-
-
-
+- [API Getting Started](./api-getting-started.md)
+- [Sell-Side Services](./sell-side-services.md)

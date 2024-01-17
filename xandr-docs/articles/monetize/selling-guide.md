@@ -1,54 +1,32 @@
 ---
-Title : Selling Guide
-Description : This guide helps you understand the sell-side capabilities of
+title: Selling Guide
+description: This guide provides step-by-step instructions for working with managed publishers with whom you have a direct financial relationship.
 ms.date: 10/28/2023
-Microsoft Monetize and provides step-by-step
-instructions for working with managed publishers with whom you have a
-direct financial relationship. For details about network-level features
 ---
 
 
-# Selling Guide
-
-
+# Selling guide
 
 This guide helps you understand the sell-side capabilities of
 Microsoft Monetize and provides step-by-step
 instructions for working with managed publishers with whom you have a
 direct financial relationship. For details about network-level features
-that apply to all publishers, see the
-**<a href="network-guide.md" class="xref">Network Guide</a>**.
+that apply to all publishers, see the [Network Guide](network-guide.md)
+.
 
+> [!TIP]
+> New to sell-side setup tasks and concepts? Check our [Training: Microsoft Advertising's Learning Lab](../training-resources/training-microsoft-advertising-learning-lab.md) for self-paced videos and upcoming classroom and webinar sessions.
 
+## In this guide
 
-<b>Tip:</b> New to sell-side setup tasks and
-concepts? Check our **<a
-href="training-resources/training-microsoft-advertising-learning-lab.md"
-class="xref" target="_blank">Training: Microsoft Advertising's Learning
-Lab</a>** for self-paced videos and upcoming classroom and webinar
-sessions.
-
-
-
-In This Guide
-
-- <a href="working-with-publishers.md" class="xref">Working with
-  Publishers</a> In Xandr, the publisher object
-  is the top level of the sell-side hierarchy (Publishers \> Placement
-  Groups \> Placements). When you create a publisher, you define your
-  financial and business relationship with the publisher, specify how
-  you would like to sell the publisher's inventory to your
-  Xandr partners, and set the types of
-  acceptable payments, payment terms, and ad quality settings.
-- <a href="working-with-payment-rules.md" class="xref">Working with
-  Payment Rules</a> Payment rules represent a financial agreement
+- [Working with Publishers](working-with-publishers.md) In Xandr, the publisher object is the top level of the sell-side hierarchy (Publishers \> Placement Groups \> Placements). When you create a publisher, you define your financial and business relationship with the publisher, specify how you would like to sell the publisher's inventory to your Xandr partners, and set the types of acceptable payments, payment terms, and ad quality settings.
+- [Working with Payment Rules](working-with-payment-rules.md) Payment rules represent a financial agreement
   between a network and a publisher. A network may have a single payment
   rule for all impressions from a publisher, or it might have a "base
   rule" that serves as a default. More specific "conditional rules" can
   be defined that apply to individual impressions based on geography,
   frequency, or other targeting.
-- <a href="working-with-publisher-ad-quality.md" class="xref">Working
-  with Ad Quality</a> Ad quality settings allow sellers to determine
+- [Working with Ad Quality](working-with-publisher-ad-quality.md) Ad quality settings allow sellers to determine
   which creatives will be allowed to serve on their inventory. These
   rules are applied based on attributes of the creative such as the
   buyer or brand. Sellers may also determine which rules to apply based
@@ -57,10 +35,8 @@ In This Guide
   overview of the ad quality settings that can be configured for
   specific publishers. For more information about the ad quality options
   that apply across all or multiple publishers, see
-  <a href="working-with-network-ad-quality.md" class="xref">Working with
-  Network Ad Quality</a>.
-- <a href="working-with-placement-groups.md" class="xref">Working with
-  Placement Groups</a> In Monetize, placement
+  [Working with Network Ad Quality](working-with-network-ad-quality.md).
+- [Working with Placement Groups](working-with-placement-groups.md) In Monetize, placement
   groups allow publishers to organize and categorize placements based on
   ad quality settings and auditing criteria. You can create numerous
   placement groups that live under a publisher. Additionally, since
@@ -69,8 +45,7 @@ In This Guide
   if you wished to enable your placements for reselling, which adds them
   to the general pool of real-time unaudited inventory, you would do so
   at the placement group level.
-- <a href="working-with-placements.md" class="xref">Working with
-  Placements</a> A placement is basically an ad tag, for example, a
+- [Working with Placements](working-with-placements.md) A placement is basically an ad tag, for example, a
   300x250 slot on mysite.com. Placements may be used by publishers, by
   their intermediaries who are using Xandr
   Monetize as their publisher ad server, or by advertisers who
@@ -81,20 +56,19 @@ In This Guide
   your managed and external demand or just for external demand and
   self-classify the placement with categories and sensitive attributes
   for targeting in campaigns and for reporting.
-- <a href="reselling-managed-inventory.md" class="xref">Reselling
-  Managed Inventory</a> In addition to selling your publishers'
+- [Reselling Managed Inventory](reselling-managed-inventory.md) In addition to selling your publishers'
   inventory to managed advertisers, you can resell managed inventory to
   the entire Xandr platform. This section shows
   you the various ways to expose your inventory for targeting and how to
   make sure your placements can be bought by third parties.
 
-Key Sell-Side Features
+## Key sell-side features
 
 Microsoft Monetize has a number of features that
 allow you to maintain business and technical relationships with your
 managed publishers.
 
-Key Features
+## Key features
 
 Microsoft Monetize is more than just an ad server.
 Using Monetize, you can:
@@ -109,7 +83,7 @@ Using Monetize, you can:
   you meet expectations about the quality and content of ads served on
   their sites.
 
-Publishers, Placement Groups, and Placements
+## Publishers, placement groups, and placements
 
 Within Monetize, the hierarchy for Publisher
 organization is as follows: Publisher, Placement Group, Placement.
@@ -125,7 +99,3 @@ overrides your settings at the Publisher level.
 Regarding the relationships within this hierarchy: Each Publisher can be
 associated with one or more Placement Groups, and that a Placement Group
 may have one or more Placements beneath it.
-
-
-
-

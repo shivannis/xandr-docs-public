@@ -3,8 +3,8 @@
 title: Xandr Platform Documentation
 summary: Discover the documentation for the products and services of Xandr platform so that you may realise the full potential of executing programmatic advertising campaigns across screens and tapping into engaged audiences.
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
-# brand: m365
-brand: power-bi
+# brand: power-bi
+brand: m365
 
 metadata:
   title: Xandr Platform Documentation
@@ -40,7 +40,7 @@ additionalContent:
       items:
       # Card
       - title: Microsoft Invest
-        summary: (*Powered by Xandr)
+        summary: (Powered by Xandr)
         links:
           - url: invest/index.yml
             text: Product Documentation
@@ -48,7 +48,7 @@ additionalContent:
             text: Release Notes
       # Card
       - title: Microsoft Monetize (Work in Progress)
-        summary: (*Powered by Xandr)
+        summary: (Powered by Xandr)
         links:
           - url: invest/index.yml
             text: Product Documentation
@@ -56,7 +56,7 @@ additionalContent:
             text: Release Notes
       # Card
       - title: Microsoft Curate
-        summary: (*Powered by Xandr)
+        summary: (Powered by Xandr)
         links:
           - url: curate/index.yml
             text: Product Documentation
@@ -65,19 +65,17 @@ additionalContent:
     - title: API Reference Documentation
       items:
         # Card
-        - title: Digital Platform API (Work in Progress)
+        - title: Digital Platform API
           links:
             - text: Overview
-              url: invest/index.yml
+              url: digital-platform-api/index.yml
             - text: References
-              url: invest/index.yml
-            #- text: Release Notes
-             # url: invest/index.yml
+              url: digital-platform-api/reference.md
         # Card
         - title: Impression Bus API
           links:
             - text: Overview
-              url: impression-bus/index.yml
+              url: bidders/impression-bus-api.md
             - text: References
               url: impression-bus/index.yml
             #- text: Release Notes
@@ -88,7 +86,7 @@ additionalContent:
             - text: Overview
               url: yield-analytics-api/index.yml
             - text: References
-              url: yield-analytics-api/index.yml
+              url: yield-analytics-api/attribute-service.md
         # Card
         #- title: Release Notes
           #links:
@@ -135,4 +133,8 @@ additionalContent:
         - title: OTT and CTV Video Integrations
           summary: Integration guide for various OTT hardware platforms, including CTV
           url: ott-ctv/index.yml
+        # Card
+        - title: Digital Platform API (Internal)
+          summary: These services are accessible to Microsoft employees only
+          url: digital-platform-api/digital-platform-api-internal-services/index.yml
     

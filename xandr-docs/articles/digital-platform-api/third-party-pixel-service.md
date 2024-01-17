@@ -1,449 +1,52 @@
 ---
-Title : Third-Party Pixel Service
-Description : The third-party pixel service allows you to upload and modify
+title: Third-Party Pixel Service
+description: Use the third-party pixel service to upload and modify third-party creative pixels, and attach them to advertisers, or creatives.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-third-party creative pixels, and attach them to advertisers, or
-creatives. You can also attach third-party creative pixels to your
 ---
 
+# Third-party pixel service
 
-# Third-Party Pixel Service
-
-
-
-The third-party pixel service allows you to upload and modify
-third-party creative pixels, and attach them to advertisers, or
-creatives. You can also attach third-party creative pixels to your
-member.
-
-
+The third-party pixel service allows you to upload and modify third-party creative pixels, and attach them to advertisers, or creatives. You can also attach third-party creative pixels to your member.
 
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | https://api.appnexus.com/thirdparty-pixel | View all of your third-party pixels. |
+| `GET` | https://api.appnexus.com/thirdparty-pixel?id=THIRDPARTY-PIXEL_ID | View a specific third-party pixel. |
+| `POST` | https://api.appnexus.com/thirdparty-pixel | Add a new third-party pixel. |
+| `PUT` | https://api.appnexus.com/thirdparty-pixel?id=THIRDPARTY-PIXEL_ID | Modify an existing third-party pixel. |
+| `DELETE` | https://api.appnexus.com/thirdparty-pixel?id=THIRDPARTY-PIXEL_ID | Delete an existing third-party pixel. |
 
+## JSON fields
 
-<table
-id="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8"
-class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1"
-class="entry align-left colsep-1 rowsep-1">HTTP Method</th>
-<th
-id="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"
-class="entry align-left colsep-1 rowsep-1">Endpoint</th>
-<th
-id="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/thirdparty-pixel" class="xref"
-target="_blank">https://api.appnexus.com/thirdparty-pixel</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-all of your third-party pixels.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/thirdparty-pixel?id=THIRDPARTY-PIXEL_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/thirdparty-pixel?id=THIRDPARTY-PIXEL_ID</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-a specific third-party pixel.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">POST</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/thirdparty-pixel" class="xref"
-target="_blank">https://api.appnexus.com/thirdparty-pixel</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Add
-a new third-party pixel.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">PUT</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/thirdparty-pixel?id=THIRDPARTY-PIXEL_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/thirdparty-pixel?id=THIRDPARTY-PIXEL_ID</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Modify
-an existing third-party pixel.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">DELETE</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/thirdparty-pixel?id=THIRDPARTY-PIXEL_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/thirdparty-pixel?id=THIRDPARTY-PIXEL_ID</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Delete
-an existing third-party pixel.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
-
-## JSON Fields
-
-
-
-<table
-id="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc"
-class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th
-id="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th
-id="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">active</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Flag
-indicating whether the pixel is active.</p>
-<ul>
-<li><strong>Default</strong>: <code class="ph codeph">true</code></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">adservers</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-adservers that the pixel calls. Required for pixels that serve on Google
-Ad Manager inventory. A full list of adservers can be retrieved from the
-<a
-href="ad-server-service.md"
-class="xref" target="_blank">ad server service</a>.</p>
-<p>Example:</p>
-<pre id="third-party-pixel-service__pre_gnr_g22_xwb"
-class="pre"><code>&quot;adservers&quot;:[{&quot;id&quot;:11},{&quot;id&quot;:12}]</code></pre></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">advertisers</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>If
-the pixel has an owning advertiser (i.e., <code
-class="ph codeph">advertiser_id</code> is not <code
-class="ph codeph">null</code>), this array must contain the ID (and only
-the ID) of the advertiser that owns the pixel, As a result, this pixel
-will render on all creatives owned by that advertiser. If the pixel does
-not have an owning advertiser, this array can contain multiple
-advertisers to which the pixel will be applied.</p>
-<p>Example:</p>
-<pre id="third-party-pixel-service__pre_hnr_g22_xwb" class="pre"><code>&quot;advertisers&quot;:[{&quot;id&quot;:3}]</code></pre>
-<p><strong>Optional.</strong></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">advertiser_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>ID
-of the advertiser that owns the thirdparty-pixel.</p>
-<ul>
-<li><strong>Default</strong>: <code class="ph codeph">null</code></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">audit_status</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-audit status of the pixel. Possible values are <code
-class="ph codeph">"pending"</code>, <code
-class="ph codeph">"rejected"</code>, <code
-class="ph codeph">"approved"</code> or <code
-class="ph codeph">"exempt"</code>.</p>
-class="note note_note">
-<b>Note:</b>
-<p>An unaudited pixel will not prevent a creative from serving, but it
-will not serve along with the creative until it has passed audit.</p>
-
-<ul>
-<li><strong>Read Only</strong></li>
-<li><strong>Default</strong>: <code
-class="ph codeph">"pending"</code></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">content</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>If
-the pixel's <code class="ph codeph">format</code> is <code
-class="ph codeph">"raw-js"</code>, this is the JavaScript content to
-serve with the creative. The <code class="ph codeph">content</code>
-and/or <code class="ph codeph">secure_content</code> fields are required
-on <code class="ph codeph">POST</code> for raw-js pixels.</p>
-<p>You can also add macros to your pixel. For a list of the creative
-macros that you may append to your pixel, see “Creative Macros” in the
-UI documentation (customer login required).</p>
-<ul>
-<li><strong>Required On</strong>: <code class="ph codeph">POST </code>if
-the pixel's <code class="ph codeph">format</code> is <code
-class="ph codeph">"raw-js".</code></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">creatives</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-creatives to which a pixel is applied. The creatives must belong to the
-owning member/advertiser. To attach a third-party pixel to a creative,
-use the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a>.</p>
-<p>Example:</p>
-<pre id="third-party-pixel-service__pre_lnr_g22_xwb" class="pre"><code>&quot;creatives&quot;:[{&quot;id&quot;:860851}]</code></pre>
-<ul>
-<li><strong>Read Only</strong></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">format</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-format of the pixel. Possible values for creatives: <code
-class="ph codeph">"raw-js"</code>, <code
-class="ph codeph">"url-html"</code>, <code
-class="ph codeph">"url-js"</code>, <code
-class="ph codeph">"url-image"</code>, or <code
-class="ph codeph">"raw-url"</code>.</p>
-<ul>
-<li><strong>Required On</strong>: <code
-class="ph codeph">POST </code>and <code class="ph codeph">PUT</code> if
-changing <code class="ph codeph">content</code>, <code
-class="ph codeph">secure_content</code>, <code
-class="ph codeph">url</code>, or <code
-class="ph codeph">url_secure</code> fields.</li>
-<li><strong>Default</strong>: "raw-js"</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-ID of the third-party pixel.</p>
-<ul>
-<li><strong>Required On</strong>: <code class="ph codeph">PUT </code>and
-<code class="ph codeph">DELETE.</code></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">members</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p><strong>Optional.</strong>
-If specified, this field will contain the ID of the member that owns the
-pixel and this pixel will render on all creatives owned by that
-member.</p>
-<p>Example:</p>
-<pre id="third-party-pixel-service__pre_pnr_g22_xwb"
-class="pre"><code>&quot;members&quot;:[{&quot;id&quot;:1}]</code></pre></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">member_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>ID
-of the member/network that owns this pixel.</p>
-<ul>
-<li><strong>Required On</strong>: <code
-class="ph codeph">POST</code></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">The
-name of the third-party pixel.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">secure_content</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>If
-the pixel's <code class="ph codeph">format</code> is "raw-js", the
-JavaScript content to serve with the creative. The <code
-class="ph codeph">content</code> and/or <code
-class="ph codeph">secure_content</code> fields are required on <code
-class="ph codeph">POST </code>for raw-js pixels.</p>
-<p>You can also add macros to your pixel. For a list of the creative
-macros that you may append to your pixel; see “Creative Macros” in the
-UI documentation (customer login required).</p>
-<ul>
-<li><strong>Required On</strong>: <code class="ph codeph">POST</code> if
-the pixel's <code class="ph codeph">format</code> is <code
-class="ph codeph">"raw-js".</code></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">secure_url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>If
-the pixel's <code class="ph codeph">format</code> is "url-html",
-"url-js", "url-image", or "raw-url", the URL of the HTML, JavaScript, or
-Image pixel to serve with the creative on a secure (https) call. The url
-and/or secure_url fields are required on <code
-class="ph codeph">POST</code> for these pixel types. You can also add
-macros to your pixel.</p>
-<p>You can also add macros to your pixel. For a list of the creative
-macros that you may append to your pixel, see “Creative Macros” in the
-UI documentation (customer login required).</p>
-<ul>
-<li><strong>Required On</strong>: <code class="ph codeph">POST </code>if
-the pixel's <code class="ph codeph">format</code> is <code
-class="ph codeph">"url-html"</code>, <code
-class="ph codeph">"url-js"</code>, <code
-class="ph codeph">"url-image"</code>, or <code
-class="ph codeph">"raw-url".</code></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">supply_exceptions</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-names of members on which the pixel should <strong>not</strong> serve.
-<code class="ph codeph">"AdX"</code> is currently the only acceptable
-value.</p>
-<p>Example:</p>
-<pre id="third-party-pixel-service__pre_tnr_g22_xwb"
-class="pre"><code>&quot;supply_exceptions&quot;:[{&quot;name&quot;:&quot;AdX&quot;}]</code></pre></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="third-party-pixel-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>If
-the pixel's <code class="ph codeph">format</code> is "url-html",
-"url-js", "url-image", or "raw-url", the URL of the HTML, JavaScript, or
-Image pixel to serve with the creative. The <code
-class="ph codeph">url</code> and/or <code
-class="ph codeph">secure_url</code> fields are required on <code
-class="ph codeph">POST </code>for these pixel types.</p>
-<p>You can also add macros to your pixel. For a list of the creative
-macros that you may append to your pixel, see “Creative Macros” in the
-UI documentation (customer login required).</p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
->
+| Field | Type | Description |
+|:---|:---|:---|
+| `active` | boolean | Flag indicating whether the pixel is active.<br><br>**Default**: `true` |
+| `adservers` | array of objects | The adservers that the pixel calls. Required for pixels that serve on Google Ad Manager inventory. A full list of adservers can be retrieved from the [ad server service](./ad-server-service.md).<br><br>Example:<br>`"adservers":[{"id":11},{"id":12}]` |
+| `advertisers` | array of objects | If the pixel has an owning advertiser (i.e., `advertiser_id` is not `null`), this array must contain the ID (and only the ID) of the advertiser that owns the pixel. As a result, this pixel will render on all creatives owned by that advertiser. If the pixel does not have an owning advertiser, this array can contain multiple advertisers to which the pixel will be applied.<br><br>Example:<br>`"advertisers":[{"id":3}]`<br><br>**Optional** |
+| `advertiser_id` | int | ID of the advertiser that owns the third-party-pixel.<br><br>**Default**: `null` |
+| `audit_status` | string | The audit status of the pixel. Possible values are: <br> - `"pending"` <br> - `"rejected"` <br> - `"approved"` <br> - `"exempt"` <br><br>**Note**:<br> An unaudited pixel will not prevent a creative from serving, but it will not serve along with the creative until it has passed audit.<br><br>**Read Only**<br>**Default**: `"pending"` |
+| `content` | string | If the pixel's `format` is `"raw-js"`, this is the JavaScript content to serve with the creative. The `content` and/or `secure_content` fields are required on `POST` for `raw-js` pixels.<br>You can also add macros to your pixel. For a list of the creative macros that you may append to your pixel, see [Creative Macros](../monetize/creative-macros.md) in the UI documentation (customer login required).<br><br>**Required On**: `POST` if the pixel's `format` is `"raw-js"`. |
+| `creatives` | array of objects | The creatives to which a pixel is applied. The creatives must belong to the owning member/advertiser. To attach a third-party pixel to a creative, use the [Creative Service](./creative-service.md).<br><br>Example:<br>`"creatives":[{"id":860851}]`<br><br>**Read Only** |
+| format | string | The format of the pixel. Possible values for creatives: <br> - `"raw-js"`<br> - `"url-html"`<br> - `"url-js"`<br> - `"url-image"`<br> - `"raw-url"`<br><br>**Required On**: `POST` and `PUT` if changing `content`, `secure_content`, `url`, or `url_secure` fields.<br><br>**Default**: `"raw-js"` |
+| `id` | int | The ID of the third-party pixel.<br><br>**Required On**: `PUT` and `DELETE`. |
+| `members` | array of objects | **Optional**. If specified, this field will contain the ID of the member that owns the pixel and this pixel will render on all creatives owned by that member.<br><br>Example:<br>`"members":[{"id":1}]` |
+| `member_id` | int | ID of the member/network that owns this pixel.<br><br>**Required On**: `POST` |
+| `name` | string | The name of the third-party pixel. |
+| `secure_content` | string | If the pixel's `format` is `"raw-js"`, the JavaScript content to serve with the creative. The `content` and/or `secure_content` fields are required on `POST` for `raw-js` pixels.<br><br>You can also add macros to your pixel. For a list of the creative macros that you may append to your pixel; see [Creative Macros](../monetize/creative-macros.md) in the UI documentation (customer login required).<br><br>**Required On**: `POST` if the pixel's `format` is `"raw-js"`. |
+| `secure_url` | string | If the pixel's `format` is `"url-html"`, `"url-js"`, `"url-image"`, or `"raw-url"`, the URL of the HTML, JavaScript, or Image pixel to serve with the creative on a secure (https) call. The `url` and/or `secure_url` fields are required on `POST` for these pixel types. You can also add macros to your pixel.<br><br>You can also add macros to your pixel. For a list of the creative macros that you may append to your pixel, see [Creative Macros](../monetize/creative-macros.md) in the UI documentation (customer login required).<br><br>**Required On**: `POST` if the pixel's `format` is `"url-html"`, `"url-js"`, `"url-image"`, or `"raw-url"`. |
+| `supply_exceptions` | array of objects | The names of members on which the pixel should `not` serve. `"AdX"` is currently the only acceptable value.<br><br>Example:<br>`"supply_exceptions":[{"name":"AdX"}]` |
+| `url` | string | If the pixel's `format` is `"url-html"`, `"url-js"`, `"url-image"`, or `"raw-url"`, the URL of the HTML, JavaScript, or Image pixel to serve with the creative. The `url` and/or `secure_url` fields are required on `POST` for these pixel types.<br><br>You can also add macros to your pixel. For a list of the creative macros that you may append to your pixel, see [Creative Macros](../monetize/creative-macros.md) in the UI documentation (customer login required). |
 
 ## Examples
 
-**View a specific third-party pixel**
+### View a specific third-party pixel
 
-In this example, we view a third-party pixel with ID 123.
+In this example, we view a third-party pixel with ID `123`.
 
-``` pre
+```
 $ curl -b cookies -X GET 'https://api.appnexus.com/thirdparty-pixel?id=123'
  
 {
@@ -470,15 +73,11 @@ $ curl -b cookies -X GET 'https://api.appnexus.com/thirdparty-pixel?id=123'
 }
 ```
 
-**Add a new third-party pixel**
+### Add a new third-party pixel
 
+In this example, we create a new sell-side third-party pixel with ID `123`. Note that parent object information is `"null"` because the JSON file we passed into the API did not specify a parent object for the pixel.
 
-
-In this example, we create a new sell-side third-party pixel with ID
-123. Note that parent object information is "null" because the JSON file
-we passed into the API did not specify a parent object for the pixel.
-
-``` pre
+```
 $ cat thirdparty-pixel.json
 {
   "thirdparty-pixel":
@@ -521,16 +120,11 @@ $ curl -b cookies -c cookies -X POST -d @thirdparty_pixel 'https://api.appnexus.
 }
 ```
 
+### Update a third-party pixel
 
+In this example, we update a third-party pixel with the ID `123`, applying it to all of the owning advertiser's creatives.
 
-**Update a third-party pixel**
-
-
-
-In this example, we update a third-party pixel with the ID 123, applying
-it to all of the owning advertiser's creatives.
-
-``` pre
+```
 $ cat pixelupdate.json
 
 {
@@ -550,15 +144,11 @@ $ curl -b cookies -c cookies -X PUT -d @pixelupdate 'https://api.appnexus.com/th
 }
 ```
 
+### Delete a third-party pixel
 
+In this example, we delete a third-party pixel with the ID `123`.
 
-**Delete a third-party pixel**
-
-
-
-In this example, we delete a third-party pixel with the ID 123.
-
-``` pre
+```
 $ curl -b cookies -X DELETE 'https://api.appnexus.com/thirdparty-pixel?id=123'
 
 {
@@ -568,33 +158,9 @@ $ curl -b cookies -X DELETE 'https://api.appnexus.com/thirdparty-pixel?id=123'
 }
 ```
 
+## Related topics
 
-
-
-
->
-
-## Related Topics
-
-
-
-- <a
-  href="api-semantics.md"
-  class="xref" target="_blank">API Semantics</a>
-- <a
-  href="api-best-practices.md"
-  class="xref" target="_blank">API Best Practices</a>
-- <a
-  href="creative-service.md"
-  class="xref" target="_blank">Creative Service</a>
-- <a
-  href="advertiser-service.md"
-  class="xref" target="_blank">Advertiser Service</a>
-
-
-
-
-
-
-
-
+- [API Semantics](./api-semantics.md)
+- [API Best Practices](./api-best-practices.md)
+- [Creative Service](./creative-service.md)
+- [Advertiser Service](./advertiser-service.md)

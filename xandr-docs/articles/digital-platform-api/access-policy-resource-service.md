@@ -8,7 +8,7 @@ ms.custom: digital-platform-api
 # Access Policy Resource service
 
 > [!NOTE]
-> This service is currently available to a limited set of clients.
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 The **access-policy-resource** service allows you to retrieve the resources based on resource type: UI or API.
 

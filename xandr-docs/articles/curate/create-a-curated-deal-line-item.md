@@ -4,7 +4,7 @@ description: The article outlines the process of creating a curated deal item, a
 ms.date : 10/28/2023
 ---
 
-# Create a curated deal line item
+# Microsoft Curate - Create a curated deal line item
 
 > [!NOTE]
 > Some clients might see different options when creating a curated deal line item. This documentation covers all options in the workflow. Contact your Xandr representative if you have questions about certain options or settings.

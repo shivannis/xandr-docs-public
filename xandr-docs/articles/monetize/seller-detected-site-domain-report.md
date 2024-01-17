@@ -1,27 +1,14 @@
 ---
-Title : Seller Detected Site Domain Report
-Description : <b>Note:</b> This report was deprecated in
+title: Microsoft monetize - Seller Detected Site Domain Report
+description: Learn how Seller Detected Site Domain Report helps sellers get insight on the domains being sold.  
 ms.date: 10/28/2023
-2021.
 ---
 
 
-# Seller Detected Site Domain Report
+# Microsoft monetize - Seller detected site domain report
 
-
-
-
-
-
-
-
-
-<b>Note:</b> This report was deprecated in
-2021.
-
-
-
-
+> [!NOTE]
+> This report was deprecated in 2021.
 
 The **Seller Detected Site Domain** report is designed to provide
 visibility into the actual domains that are being sold, and provide a
@@ -47,18 +34,16 @@ publisher is problematic.
 member-level version **and** the publisher version; they are essentially
 the same.
 
-Time Frame
+## Time frame
 
 All dates and times are given in UTC.
 
-**Time Ranges**
+**Time ranges**
 
 Time ranges define the time period of the data extracted for the report.
 The following is a complete list of time ranges available for reports.
 
 However, all time ranges are not available for every report.
-
-
 
 - Custom
 - Current Hour
@@ -83,15 +68,11 @@ However, all time ranges are not available for every report.
 - Month to Yesterday
 - Lifetime
 
-
-
 **Intervals**
 
 Intervals determine how your data is grouped together into rows in the
 report response. The following is a complete list of intervals available
 for reports. However, all intervals are not available for every report.
-
-
 
 - Hourly: Data is grouped into rows by the hour.
 - Daily: Data is grouped into rows by the day.
@@ -99,163 +80,39 @@ for reports. However, all intervals are not available for every report.
 - Cumulative: Data is grouped together in one figure, covering the
   entire selected time range.
 
+## Metrics
 
+> [!NOTE]
+> When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
-Metrics
+| Column | Description |
+|---|---|
+| Imps | The number of impressions coming through this site or placement. |
 
+## Filters
 
+| Name | Description |
+|---|---|
+| Blocked Inventory | Specify if the impression is in a blocklist. |
+| Minimum Impression | Rows with less than this number of impressions will be excluded from the report. |
+| Placement | The placement on which the impression occurred. |
+| Placement Group | The placement group where the impression occurred. |
+| Publisher | The publisher on whose site the impression occurred. |
 
-<b>Note:</b> When values of a metric are
-displayed as percentages in the UI, they will be displayed as decimals
-when you export the report.
+## Dimensions
 
+| Name | Description |
+|---|---|
+| Blocked Inventory | Specifies if the impression is in a blocklist. |
+| Detected Site Domain | The actual domains that are being sold and where the impression actually occured. |
+| Detected Site Domain Audit Status | Specifies the audit status of the detected site domain .Permissible values are Audited, blocklisted, AdServer, Unauditable, Pending, and Unaudited. |
+| Placement | The name and ID of the placement on which the impression occurred.<br>Note that a placement ID of `0` may appear for 3rd-party impression trackers. For more information about impression trackers, see [Working with Impression and Click Trackers](working-with-impression-and-click-trackers.md). |
+| Placement Group | The name and ID of the placement group where the impression occurred. |
+| Publisher | The name and ID of the publisher on whose site the impression occurred. |
+| Site Domain | The domain where the impression occurred. For mobile applications, this can be the URL of the app's location in the app store. There are two additional values that may appear in place of a domain, specifically: `"deals.unknown"` or `"managed.unknown"`. These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed.<br>**Note**: In some cases, this field will be populated with a domain that is different than where the impression actually occurred, such as an ad server domain. For more information about why this happens, see [Passing Domains Across iFrames](#passing-domains-across-iframes) below. |
+| Site Domain Audit Status | Specifies the audit status of the auctioned site domain .Permissible values are Audited, blocklisted, AdServer, Unauditable, Pending, and Unaudited. |
 
-
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00005d32__entry__1" class="entry">Column</th>
-<th id="ID-00005d32__entry__2" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00005d32__entry__1">Imps</td>
-<td class="entry" headers="ID-00005d32__entry__2">The number of
-impressions coming through this site or placement.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-Filters
-
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00005d32__entry__5" class="entry">Name</th>
-<th id="ID-00005d32__entry__6" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00005d32__entry__5">Publisher</td>
-<td class="entry" headers="ID-00005d32__entry__6">The publisher on whose
-site the impression occurred.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00005d32__entry__5">Placement Group</td>
-<td class="entry" headers="ID-00005d32__entry__6">The placement group
-where the impression occurred.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00005d32__entry__5">Placement</td>
-<td class="entry" headers="ID-00005d32__entry__6">The placement on which
-the impression occurred.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00005d32__entry__5">Blocked Inventory</td>
-<td class="entry" headers="ID-00005d32__entry__6">Specify if the
-impression is in a blocklist.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00005d32__entry__5">Minimum
-Impression</td>
-<td class="entry" headers="ID-00005d32__entry__6">Rows with less than
-this number of impressions will be excluded from the report.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-Dimensions
-
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00005d32__entry__17" class="entry">Name</th>
-<th id="ID-00005d32__entry__18" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00005d32__entry__17">Site Domain</td>
-<td class="entry" headers="ID-00005d32__entry__18">The domain where the
-impression occurred. For mobile applications, this can be the URL of the
-app's location in the app store. There are two additional values that
-may appear in place of a domain, specifically: <code
-class="ph codeph">"deals.unknown"</code> or <code
-class="ph codeph">"managed.unknown"</code>. These mean that we didn't
-receive a valid domain as the referrer. For example, the domain may be
-blank or otherwise malformed.
-
-<b>Note:</b> In some cases, this field will be
-populated with a domain that is different than where the impression
-actually occurred, such as an ad server domain. For more information
-about why this happens, see <strong>Passing Domains Across
-iFrames</strong> below.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00005d32__entry__17">Publisher</td>
-<td class="entry" headers="ID-00005d32__entry__18">The name and ID of
-the publisher on whose site the impression occurred.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00005d32__entry__17">Placement Group</td>
-<td class="entry" headers="ID-00005d32__entry__18">The name and ID of
-the placement group where the impression occurred.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00005d32__entry__17">Placement</td>
-<td class="entry" headers="ID-00005d32__entry__18">The name and ID of
-the placement on which the impression occurred.
-<p>Note that a placement ID of <code class="ph codeph">0</code> may
-appear for 3rd-party impression trackers. For more information about
-impression trackers, see <a
-href="working-with-impression-and-click-trackers.md"
-class="xref">Working with Impression and Click Trackers</a>.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00005d32__entry__17">Site Domain Audit
-Status</td>
-<td class="entry" headers="ID-00005d32__entry__18">Specifies the audit
-status of the auctioned site domain .Permissible values are Audited,
-Blacklisted, AdServer, Unauditable, Pending, and Unaudited.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00005d32__entry__17">Detected Site
-Domain</td>
-<td class="entry" headers="ID-00005d32__entry__18">The actual domains
-that are being sold and where the impression actually occured.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00005d32__entry__17">Detected Site Domain
-Audit Status</td>
-<td class="entry" headers="ID-00005d32__entry__18">Specifies the audit
-status of the detected site domain .Permissible values are Audited,
-Blacklisted, AdServer, Unauditable, Pending, and Unaudited.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00005d32__entry__17">Blocked
-Inventory</td>
-<td class="entry" headers="ID-00005d32__entry__18">Specifies if the
-impression is in a blocklist.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-Passing Domains Across iFrames
+## Passing domains across iFrames
 
 Serving ads inside of iFrames is preferred by publishers for a number of
 reasons, to include:
@@ -263,8 +120,7 @@ reasons, to include:
 - Increased Security: For security reasons, communication between
   iFrames serving from different domains is prohibited by the browser.
   This is known as the "Same Origin Policy". For more information, see
-  the W3C's <a href="http://www.w3.org/Security/wiki/Same_Origin_Policy"
-  class="xref" target="_blank">Same Origin Policy</a> page.
+  the W3C's [Same Origin Policy](https://www.w3.org/Security/wiki/Same_Origin_Policy) page.
 - Page Load Speed: Page load speed is guaranteed to be unaffected by
   advertisements inside iFrames because iFrames allow asynchronous
   loading of both page content and advertisements. This ensures that the
@@ -281,7 +137,7 @@ For example, a publisher is given a snippet of HTML code to put on their
 pages that includes an iFrame referencing a network's domain,
 `best-network.net`:
 
-``` pre
+``` 
 <!-- Publisher's Web Page --> <iframe src="http://best-network.net"> <!-- iFrame Referencing Network Domain --> <script src="http://cooladexchange.net/tag?id=12345"></script> <!-- Ad Exchange Placement serving on Network Domain --> </iframe> 
 ```
 
@@ -294,50 +150,39 @@ determine the actual domain of the publisher's page. As a result, the
 network passes along its own domain as the referring URL to the
 placement.
 
-To Run Your Report
+## To run your report
 
 Follow these steps to run your report.
 
-1.  Select Reporting from the
+1. Select **Reporting** from the
     appropriate top menu (depending on how your account has been
     configured).
-    1.  Or, from the Publishers top menu, click on
-        Prebid
-        Server Premium \>
-        Analytics \>
-        Prebid Server Analytics
-2.  Select the relevant report from the list. The
-    Report screen shows the available
+    1. Or, from the Publishers top menu, click on **Prebid Server Premium** \> **Analytics** \> **Prebid Server Analytics**.
+1. Select the relevant report from the list. The
+    **Report** screen shows the available
     filters, dimensions, and delivery options for the report. The
     selections you make here will determine what report data is
     delivered to you, and how.
-    
 
-    <b>Important:</b> For an explanation of
-    how grouping and filtering work, see
-    <a href="dimensions-metrics-filtering-and-grouping.md"
-    class="xref">Dimensions, Metrics, Filtering, and Grouping</a>.
-
+    > [!IMPORTANT]
+    > For an explanation of
+    how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
     
-3.  Select the relevant filters to limit the data displayed to just the
+1. Select the relevant filters to limit the data displayed to just the
     information you want. For example, rather than running a report that
     shows impressions for all inventory sources, you may want to list
     results for just a select few. When you select a filter (by clicking
-    Edit), a selection panel appears.
+    **Edit**), a selection panel appears.
     Select items in the **Available** list (left), then click
-    Add to include them in the
+    **Add** to include them in the
     **Chosen** list (right).
-4.  Group by Dimension. Grouping allows you to display rows of data in
+1. Group by Dimension. Grouping allows you to display rows of data in
     the order you prefer.
     
-
-    <b>Warning:</b> The more dimensions you
-    group by, the larger the data set that is returned. Larger data sets
-    can take substantially longer to process. Be sure to group using
-    only the dimensions you need.
-
+    > [!WARNING]
+    > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
     
-5.  Choose a delivery option. Once you've selected your filters and
+1. Choose a delivery option. Once you've selected your filters and
     grouped by your chosen dimensions, you need to choose a delivery
     method. Available delivery methods include:
     - **Run now, show results in screen**: For smaller amounts of data,
@@ -348,49 +193,28 @@ Follow these steps to run your report.
     - **Run in background, notify me when results are ready to view**: A
       popup notification will let you know when the report is ready to
       view or download.
-      
 
-      <b>Tip:</b> The maximum size of the
-      report that can be downloaded from the UI is 100 MB. Also, there
-      is a limit of 100,000 rows per report when downloading as XLSX and
-      Excel file. If the size of the report is more than that, you can
-      try to download it using the <a
-      href="xandr-api/report-service.md"
-      class="xref" target="_blank">API</a> for that reporting service
-      (The limit here is 10 million rows).
+      > [!TIP]
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
-      
-    - <span id="ID-00005d32__d10e107">**Export, send results via
-      email**: Run the report in the background and email the results to
+    - **Export, send results via email**: Run the report in the background and email the results to
       one or more email addresses.
     - **Save as report template**: Save your selected report settings so
       that you can run this report again in the future. You can name
       this template using the text entry field under
-      Name this report (its checkbox
+      **Name this report** (its checkbox
       is auto-selected when you choose this option). A saved report can
-      be rerun from the Your Reports
+      be rerun from the **Your Reports**
       screen.
     - **Add to scheduled reports**: Run this report automatically at
       specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a
       name for future reference.
-6.  <span id="ID-00005d32__d10e136">Click Run
-    report to send your report request.
+1. Click **Run report** to send your report request.
 
+## Related topics
 
-
-
-
-Related Topics
-
-- <a href="network-reporting.md" class="xref">Network Reporting</a>
-- <a href="network-site-domain-performance-report.md"
-  class="xref">Network Site Domain Performance Report</a>
-- <a href="network-analytics-report.md" class="xref">Network Analytics
-  Report</a>
-
-
-
-
-
+- [Network Reporting](network-reporting.md)
+- [Network Site Domain Performance Report](network-site-domain-performance-report.md)
+- [Network Analytics Report](network-analytics-report.md)
 

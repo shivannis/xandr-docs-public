@@ -1,9 +1,8 @@
 ---
-title : Yield Analytics 8.9
-description : Learn about the different items enhanced within Yield Analytics.
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
-
+title: Yield Analytics 8.9
+description: Learn about the different items enhanced within Yield Analytics.
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 ---
 
 

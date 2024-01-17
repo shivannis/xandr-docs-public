@@ -1,11 +1,11 @@
 ---
-title: Industry Reference - Use IAB's HTML5 clickTag Standard on Xandr
+title: Use IAB's HTML5 clickTag Standard on Xandr
 description: The article outlines the utilization of the IAB's clickTag standard in HTML5, enabling click tracking and linking the ad's landing page to the specified URL.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Industry Reference - Use IAB's HTML5 `clickTag` standard on Xandr
+# Use IAB's HTML5 `clickTag` standard on Xandr
 
 Follow these instructions to use the IAB's `clickTag` standard in HTML5 creatives hosted with Xandr. This allows
 Xandr to track clicks and set the ad's landing page to the URL provided in.

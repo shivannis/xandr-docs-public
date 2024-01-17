@@ -7,8 +7,9 @@ ms.custom: digital-platform-api
 
 # Batch Segment Config service
 
-> [!IMPORTANT]
-> This is an internal, admin-only service. It is not available to clients, and this page is visible only to Xandr employees.
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 > [!WARNING]
 > If you need to make any changes to the `num_line` or `byte` limits of a member's batch segment configuration, please file a ticket under EPIC: DMP-376, following the directions in the info section of the page. You will need to receive approval from Ewa Maciukiewicz in order to proceed with the changes.
 

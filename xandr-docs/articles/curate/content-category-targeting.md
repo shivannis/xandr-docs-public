@@ -4,10 +4,10 @@ description: The article describes universal and custom categories and how the o
 ms.custom: 
 ---
 
-# Content category targeting
+# Microsoft Curate - Content category targeting
 
 > [!NOTE]
-> This form of targeting is only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting](buy-side-targeting.md).    
+> This form of targeting is only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting](buy-side-targeting.md).
 
 There are two types of content categories:
 

@@ -1,8 +1,8 @@
 ---
-title : Creating and Managing Segments
-description : Learn how Data providers can create and manage their own segments using API and bidder UI.
-ms.custom : data-providers
-ms.date : 11/29/2023
+title: Creating and Managing Segments
+description: Learn how Data providers can create and manage their own segments using API and bidder UI.
+ms.custom: data-providers
+ms.date: 11/29/2023
 ---
 
 

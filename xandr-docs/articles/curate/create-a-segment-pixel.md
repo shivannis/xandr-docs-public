@@ -3,7 +3,7 @@ title: Microsoft Curate - Create a Segment Pixel
 description: The article discusses the process of segmenting users based on their online activities, which includes their visited web pages, actions taken (like purchases), and demographic data (e.g., gender or location). This segmentation helps in identifying a user's association with a specific target audience.
 ---
 
-# Create a segment pixel
+# Microsoft Curate - Create a segment pixel
 
 A segment pixel marks a user as belonging to a certain target audience based on the web pages they visit, the actions they take (such as making a purchase), or data such as gender or location.
 

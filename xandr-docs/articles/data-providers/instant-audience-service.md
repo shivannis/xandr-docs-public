@@ -1,8 +1,8 @@
 ---
-title : Data Providers - Instant Audience Service
-description : Learn what Instant Audience Service is and how you can configure it in this page.  
-ms.custom : data-providers
-ms.date : 11/30/2023
+title: Data Providers - Instant Audience Service
+description: Learn what Instant Audience Service is and how you can configure it in this page.  
+ms.custom: data-providers
+ms.date: 11/30/2023
 ---
 
 # Data Providers - Instant audience service

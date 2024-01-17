@@ -46,7 +46,7 @@ Manage your guaranteed delivery.
 
 - [Guaranteed Delivery Pacing](guaranteed-delivery-pacing.md)
 - [Inventory Forecasting](inventory-forecasting.md)
-- [Yieldex Analytics](../yield-analytics-ui/yield-analytics-overview.md)
+- [Yield Analytics](../yield-analytics-ui/yield-analytics-overview.md)
 
 **Priorities**
 

@@ -8,7 +8,7 @@ ms.custom: digital-platform-api
 # Access Platform User Role service
 
 > [!NOTE]
-> This service is currently available to a limited set of clients.
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 The **access-platform-user-role** service can be used to manage roles for users who are not associated with members.
 

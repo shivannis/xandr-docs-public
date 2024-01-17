@@ -13,7 +13,8 @@ Here are a few of our most frequently asked questions about the Customer Support
 
 If you're new to the Customer Support Portal, please visit the [Login](https://help.xandr.com) page, proceed as a Guest, and click **Contact Support**. Once you've registered, your username will be the email address that you submitted during registration.
 
-The portal account is separate from and [Documentation Portal](https://help.xandr.com) accounts. You will need to log in to each system separately. Note that each account may have a different password.
+> [!TIP]
+> The portal account is separate from and [Documentation Portal](https://help.xandr.com) accounts. You will need to log in to each system separately. Note that each account may have a different password.
 
 ## What do I do if someone else on my team needs access?
 

@@ -1,8 +1,8 @@
 ---
-title : Yield Analytics 8.1
-description : Learn how to find descriptions on Best Practices Folder, and deleting reports. 
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
+title: Yield Analytics 8.1
+description: Learn how to find descriptions on Best Practices Folder, and deleting reports. 
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 ---
 
 

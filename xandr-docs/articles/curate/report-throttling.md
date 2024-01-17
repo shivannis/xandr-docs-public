@@ -4,7 +4,7 @@ description: The article explains how report requests are throttled at both the 
 ms.date: 10/28/2023
 ---
 
-# Report throttling
+# Microsoft Curate - Report throttling
 
 In order to ensure that our systems operate as smoothly as possible for all users, report requests are throttled at both the member and user levels. The limits and how they are applied are described below.
 

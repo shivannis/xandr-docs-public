@@ -1,108 +1,62 @@
 ---
-Title : Run Rich Media Creatives on Mobile Inventory
-Description : This document describes how to set up your rich media creatives to serve
+title: Microsoft Monetize - Run Rich Media Creatives on Mobile Inventory
+description: Learn how to set rich media creatives to serve on mobile devices in this page. 
 ms.date: 10/28/2023
-on mobile devices. It also contains a list of media types supported by
 ---
 
 
-# Run Rich Media Creatives on Mobile Inventory
-
-
+# Microsoft Monetize - Run rich media creatives on mobile inventory
 
 This document describes how to set up your rich media creatives to serve
 on mobile devices. It also contains a list of media types supported by
 each major seller. Note that this is not an exhaustive guide to
 targeting and running mobile ad campaigns; for a complete description of
-our mobile targeting, see
-<a href="buy-mobile-inventory-via-rtb.md" class="xref">Buy Mobile
-Inventory via RTB</a>.
+our mobile targeting, see [Buy Mobile Inventory via RTB](buy-mobile-inventory-via-rtb.md).
 
+> [!NOTE]
+> For the purposes of this document, rich media creatives are defined as **interstitials** and **MRAID expandables**, but not video.
 
+> [!TIP]
+> - For an introduction to how MRAID and Mobile Video work, see [MRAID and Mobile Video Tutorial](../industry-reference/mraid-and-mobile-video-tutorial.md).
+> - For more information on how to correctly submit your mobile creatives
+> (including MRAID) for audit, see [Mobile Creative Auditing](mobile-creative-auditing.md).
 
-<b>Note:</b> For the purposes of this
-document, rich media creatives are defined as **interstitials** and
-**MRAID expandables**, but not video.
-
-
-
-
-
-<b>Tip:</b>
-
-- For an introduction to how MRAID and Mobile Video work, see <a
-  href="industry-reference/mraid-and-mobile-video-tutorial.md"
-  class="xref" target="_blank">MRAID and Mobile Video Tutorial</a>
-- For more information on how to correctly submit your mobile creatives
-  (including MRAID) for audit, see
-  <a href="mobile-creative-auditing.md" class="xref"
-  title="Depending upon the type of mobile creative that you&#39;re attempting to serve on the Xandr platform, the audit process may vary. To ensure that your mobile creatives are successfully audited, you should adhere to our audit processes for mobile creatives.">Mobile
-  Creative Auditing</a>
-
-
-
-Interstitials
+## Interstitials
 
 Buyers can target and purchase interstitial impressions by using
 creatives with sizes appropriate for mobile interstitials. Typical
 mobile interstitial sizes include:
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00006b42__entry__1" class="entry">Device Type</th>
-<th id="ID-00006b42__entry__2" class="entry">Portrait Size</th>
-<th id="ID-00006b42__entry__3" class="entry">Landscape Size</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00006b42__entry__1">Phone</td>
-<td class="entry" headers="ID-00006b42__entry__2">320x480</td>
-<td class="entry" headers="ID-00006b42__entry__3">480x320</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00006b42__entry__1">Tablet</td>
-<td class="entry" headers="ID-00006b42__entry__2">768x1024</td>
-<td class="entry" headers="ID-00006b42__entry__3">1024x768</td>
-</tr>
-</tbody>
-</table>
+| Device Type | Portrait Size | Landscape Size |
+|---|---|---|
+| Phone | 320x480 | 480x320 |
+| Tablet | 768x1024 | 1024x768 |
 
-
-
-<b>Note:</b> For an app interstitial, the size
-is 1x1.
-
-
+> [!NOTE]
+> For an app interstitial, the size is 1x1.
 
 When setting up an interstitial creative, buyers should select the
-Standard Banner media type and enter
+**Standard Banner** media type and enter
 one of the interstitial creative sizes listed above. The above sizes are
 the most common interstitial sizes and apply for all operating systems.
 Although these creatives will serve as interstitials on mobile devices,
 they are really just standard, static banner creatives.
 
+> [!WARNING]
+> The **Interstitial** media type is not currently supported on external mobile supply partners' inventory; you must select the **Standard Banner** media type.
 
-
-<b>Warning:</b> The **Interstitial** media
-type is not currently supported on external mobile supply partners'
-inventory; you must select the **Standard Banner** media type.
-
-
-
-MRAID Expandables
+## MRAID expandables
 
 You can run expandables on mobile app inventory using MRAID creatives.
 These are trafficked as **Standard Banner** media types in common mobile
-sizes such as 300x50. Select Third-party
-creative and enter the HTML or JavaScript code of your MRAID
+sizes such as 300x50. Select **Third-party
+creative** and enter the HTML or JavaScript code of your MRAID
 creative in the **Tag** text area.
 
 Here is an example MRAID creative; note that the line at the top
 including `"mraid.js"` is required for it to work:
 
-``` pre
+``` 
 <script src="mraid.js"></script>
 <img src="media/png" style="display: none" onerror="
         (function(img) {
@@ -119,7 +73,7 @@ including `"mraid.js"` is required for it to work:
     "/>
 ```
 
-MRAID-Certified
+## MRAID-Certified
 
 Creatives that are MRAID-certified may serve on external mobile supply
 sources. During the Xandr creative audit
@@ -127,148 +81,31 @@ process, MRAID creatives with expandable characteristics will only be
 flagged with the MRAID technical attribute and not with the expandable
 technical attribute.
 
-Non-MRAID-Certified
+## Non-MRAID-Certified
 
 Non-MRAID creatives that have expandable features will **not** serve on
 external mobile supply. If there are expandable features, our audit team
 will mark these creatives as having an **Expandable** media type.
 Expandables will not serve on external mobile supply.
 
+> [!WARNING]
+> Creatives that are of the the media type **Expandable** will **not** serve on external mobile supply. For more information about how Xandr audits mobile creatives, see [Mobile Creative Auditing](mobile-creative-auditing.md).
 
-
-<b>Warning:</b> Creatives that are of the the
-media type **Expandable** will **not** serve on external mobile supply.
-
-For more information about how Xandr audits
-mobile creatives, see
-<a href="mobile-creative-auditing.md" class="xref"
-title="Depending upon the type of mobile creative that you&#39;re attempting to serve on the Xandr platform, the audit process may vary. To ensure that your mobile creatives are successfully audited, you should adhere to our audit processes for mobile creatives.">Mobile
-Creative Auditing</a>.
-
-
-
-Supported Rich Media Types by Seller
+## Supported rich media types by seller
 
 All of the mobile sellers in this table support both interstitials and
 expandables.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00006b42__entry__10" class="entry">Mobile Seller</th>
-<th id="ID-00006b42__entry__11" class="entry">Member ID</th>
-<th id="ID-00006b42__entry__12" class="entry">MRAID Support?</th>
-<th id="ID-00006b42__entry__13" class="entry">HTML5 Support?</th>
-<th id="ID-00006b42__entry__14" class="entry">Supported Rich Media
-Vendors</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00006b42__entry__10">Smaato</td>
-<td class="entry" headers="ID-00006b42__entry__11">1752</td>
-<td class="entry" headers="ID-00006b42__entry__12">Yes</td>
-<td class="entry" headers="ID-00006b42__entry__13">Yes</td>
-<td class="entry" headers="ID-00006b42__entry__14"><ul>
-<li>Celtra v1-v3, MRAID</li>
-<li>JustAd</li>
-<li>Medialets</li>
-<li>Crisp</li>
-<li>Phluant</li>
-<li>AdGibbon</li>
-<li><a href="https://www.smaato.com/certified-rich-media-vendors/"
-class="xref"
-target="_blank">https://www.smaato.com/certified-rich-media-vendors/</a></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00006b42__entry__10">MoPub</td>
-<td class="entry" headers="ID-00006b42__entry__11">1813</td>
-<td class="entry" headers="ID-00006b42__entry__12">Yes</td>
-<td class="entry" headers="ID-00006b42__entry__13">Yes</td>
-<td class="entry" headers="ID-00006b42__entry__14"><ul>
-<li>Celtra</li>
-<li>Medialets</li>
-<li>Crisp</li>
-<li>Adxcel</li>
-<li>Sprout/inmobi</li>
-<li>Xtopoly</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00006b42__entry__10">Nexage</td>
-<td class="entry" headers="ID-00006b42__entry__11">1868</td>
-<td class="entry" headers="ID-00006b42__entry__12">Yes</td>
-<td class="entry" headers="ID-00006b42__entry__13">Yes</td>
-<td class="entry" headers="ID-00006b42__entry__14"><ul>
-<li>Celtra</li>
-<li>Medialets</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00006b42__entry__10">Millennial Media</td>
-<td class="entry" headers="ID-00006b42__entry__11">2066</td>
-<td class="entry" headers="ID-00006b42__entry__12">Yes</td>
-<td class="entry" headers="ID-00006b42__entry__13">Yes</td>
-<td class="entry" headers="ID-00006b42__entry__14"><ul>
-<li>Addroid</li>
-<li>AdGibbon</li>
-<li>Adxcel</li>
-<li>Celtra</li>
-<li>Collective</li>
-<li>Crisp</li>
-<li>Flashtalking</li>
-<li>GoldSpot</li>
-<li>Google/DART</li>
-<li>Innovid</li>
-<li>JustAd</li>
-<li>Medialets</li>
-<li>Mediamind</li>
-<li>Mediaplex</li>
-<li>MixPo</li>
-<li>Mobile-5</li>
-<li>MobSmith</li>
-<li>Phluant</li>
-<li>Pointreach</li>
-<li>Pointroll</li>
-<li>Pontiflex</li>
-<li>Simplytics</li>
-<li>Sprout</li>
-<li>Unruly Media</li>
-<li>Vdopia</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00006b42__entry__10">Microsoft Mobile</td>
-<td class="entry" headers="ID-00006b42__entry__11">280</td>
-<td class="entry" headers="ID-00006b42__entry__12">Yes</td>
-<td class="entry" headers="ID-00006b42__entry__13">Yes</td>
-<td class="entry" headers="ID-00006b42__entry__14"></td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00006b42__entry__10">Inneractive</td>
-<td class="entry" headers="ID-00006b42__entry__11">2047</td>
-<td class="entry" headers="ID-00006b42__entry__12">Yes</td>
-<td class="entry" headers="ID-00006b42__entry__13">Yes</td>
-<td class="entry" headers="ID-00006b42__entry__14"><ul>
-<li>Celtra</li>
-<li>Phluant</li>
-<li>Crisp</li>
-<li>Medialets</li>
-<li>AdGibbons</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Mobile Seller | Member ID | MRAID Support? | HTML5 Support? | Supported Rich Media Vendors |
+|---|---|---|---|---|
+| Inneractive | 2047 | Yes | Yes | - Celtra<br> - Phluant<br> - Crisp<br> - Medialets<br> - AdGibbons |
+| Microsoft Mobile | 280 | Yes | Yes |  |
+| Millennial Media | 2066 | Yes | Yes | - Addroid<br> - AdGibbon<br> - Adxcel<br> - Celtra<br> - Collective<br> - Crisp<br> - Flashtalking<br> - GoldSpot<br> - Google/DART<br> - Innovid<br> - JustAd<br> - Medialets<br> - Mediamind<br> - Mediaplex<br> - MixPo<br> - Mobile-5<br> - MobSmith<br> - Phluant<br> - Pointreach<br> - Pointroll<br> - Pontiflex<br> - Simplytics<br> - Sprout<br> - Unruly Media<br> - Vdopia |
+| MoPub | 1813 | Yes | Yes |  - Celtra<br> - Medialets<br> - Crisp<br> - Adxcel<br> - Sprout/inmobi<br> - Xtopoly |
+| Nexage | 1868 | Yes | Yes | - Celtra<br> - Medialets |
+| Smaato | 1752 | Yes | Yes | - Celtra v1-v3, MRAID<br> - JustAd<br> - Medialets<br> - Crisp<br> - Phluant<br> - AdGibbon<br> - [certified rich media vendors](https://www.smaato.com/certified-rich-media-vendors/) |
 
-Related Topics
+## Related topics
 
-- <a href="mobile-creative-auditing.md" class="xref"
-  title="Depending upon the type of mobile creative that you&#39;re attempting to serve on the Xandr platform, the audit process may vary. To ensure that your mobile creatives are successfully audited, you should adhere to our audit processes for mobile creatives.">Mobile
-  Creative Auditing</a>
-- <a href="buying-mobile-inventory.md" class="xref">Buying Mobile
-  Inventory</a>
-
-
-
-
+- [Mobile Creative Auditing](mobile-creative-auditing.md)
+- [Buying Mobile Inventory](buying-mobile-inventory.md)

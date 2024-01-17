@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Carrier Netblock service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 This admin-only service can be used to map blocks of IP addresses to internet providers, enabling advertisers with mobile campaigns to target specific internet providers.
 
 ## REST API

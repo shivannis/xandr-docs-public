@@ -4,7 +4,7 @@ description: The article explains how to activate cross-device targeting and mea
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize -Enable cross-device targeting and measurement for a line item
+# Microsoft Monetize - Enable cross-device targeting and measurement for a line item
 
 You can optionally enable the cross-device targeting and measurement feature on a line item to apply frequency caps, conversion attribution, and audience targeting settings for individual users across multiple devices.
 

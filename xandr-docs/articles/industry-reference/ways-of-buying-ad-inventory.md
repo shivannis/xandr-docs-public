@@ -1,11 +1,11 @@
 ---
-title: Industry Reference - Ways of Buying Ad Inventory
+title: Ways of Buying Ad Inventory
 description: The articles explains the industry reference, various ways of buying as inventory, and how advertisers acquire publisher inventory.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Industry Reference - Ways of buying ad inventory
+# Ways of buying ad inventory
 
 Imagine if you had to pay a fee to view content from all your favorite websites. Thankfully, due to programmatic advertising, you don't have to. Programmatic buying simply refers to buying ad inventory through
 automated means as opposed to more manual buys where advertisers are in contact with a sales team, or other "offline" mechanism. Advertisers want to be able to target their product to the right viewers;
