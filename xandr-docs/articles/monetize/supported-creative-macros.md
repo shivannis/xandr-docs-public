@@ -39,9 +39,11 @@ The following macros can be used in creative third-party tags and landing page U
 | `${CPG_ID}` | The line item ID of the served impression. |
 | `${CREATIVE_CODE}` | The code of the creative served if available. |
 | `${CREATIVE_HEIGHT}` | The height of the creative served. |
+| `${HEIGHT}` | This is an alias for `${CREATIVE_HEIGHT}`, and behaves in the same manner. |
 | `${CREATIVE_ID}` | The creative ID that won the impression. |
 | `${CREATIVE_SIZE}` | The width and height of the creative served. For example: 300x250. |
 | `${CREATIVE_WIDTH}` | The width of the creative served. |
+| `${WIDTH}` | This macro is an alias for `${CREATIVE_WIDTH}`, and behaves in the same manner. |
 | `${CUSTOM_MODEL_ID}` | The `id` of the custom model used in the auction. When no custom model is used, this macro will return `0`.<br><br>**Note**: This custom macro will only work for APB Alpha Test clients. |
 | `${CUSTOM_MODEL_LAST_MODIFIED}` | The date and time (in Unix Epoch time) since the custom model that was used in the auction was last modified. If no model was used, this macro will return 0.<br><br>**Note**: This custom macro will only work for APB Alpha Test clients. |
 | `${CUSTOM_MODEL_LEAF_NAME}` | The `leaf_name` specified in the leaf that determined the winning bid. If no name is specified or if a model was not used, this macro will return `---`. This aligns with the `leaf_name` field in the Standard Feed in Log Level Data. For more information, see [Standard Feed]().<br><br>**Note**: This custom macro will only work for APB Alpha Test clients. |
@@ -49,7 +51,6 @@ The following macros can be used in creative third-party tags and landing page U
 | `${DEAL_ID}` | The Xandr Deal ID associated with the winning bid if applicable. If there is no deal, this macro will return `0`. |
 | `${ECP}` | The publisher-side estimated clear price (ECP) for the auction. |
 | `${GENDER}` | The gender of the user if available. Possible values include:<br> - `f` (female)<br> - `m` (male)<br> - `u` (unknown) |
-| `${HEIGHT}` | This is an alias for `${CREATIVE_HEIGHT}`, and behaves in the same manner. |
 | `${INV_SOURCE_ID}` | **Deprecated** |
 | `${IO_CODE}` | The insertion order code of the served impression. |
 | `${IO_ID}` | The insertion order ID of the served impression. |
@@ -57,15 +58,15 @@ The following macros can be used in creative third-party tags and landing page U
 | `${PMT_RULE_ID}` | The ID of the payment rule used to price the impression. |
 | `${POSTAL_CODE}` | The postal code of the user. |
 | `${PRICE_PAID}` | The price paid for this impression after price reduction. This is the second price. |
+| `${SECOND_PRICE}` | The price that represent the second highest bid in auction. |
 | `${PT1}`, `${PT2}`, `${PT3}`, `${PT4}`, `${PT5}`, `${PT6}`, `${PT7}`, `${PT8}`, `${PT9}` | These macros can be populated with arbitrary custom data that you send when using the following placement tag query string parameters:<br> - `pt1`<br> - `pt2`<br> - `pt3`<br> - `pt4`<br> - `pt5`<br> - `pt6`<br> - `pt7`<br> - `pt8`<br> - `pt9`<br>For more information, see [Create a Placement Tag Macro](create-a-placement-tag-macro.md). |
 | `${PUBLISHER_CODE}` | The code of the publisher selling the impression.<br><br>**Note**: This ID is available only if the publisher uses a code and has exposed it for reporting. |
 | `${PUBLISHER_ID}` | The ID of the publisher selling the impression.<br>**Note**: This ID is available only if the publisher is exposed for reporting. |
-| `${REFERER_URL_ENC}` | The encoded referring URL if available.<br>For mobile app impressions, this macro returns the app store URL if available. |
 | `${REFERER_URL}` | **Deprecated**<br><br>**Note**: Use `${REFERER_URL_ENC}` instead. |
+| `${REFERER_URL_ENC}` | The encoded referring URL if available.<br>For mobile app impressions, this macro returns the app store URL if available. |
 | `${REM_USER}` | A boolean value that indicates if the user is being remarketed. |
 | `${RESERVE_PRICE}` | The reserve price set by the publisher. When there isn't a reserve price, this macro will return `0`. |
 | `${SCHEME}` | Populates the appropriate application protocol (HTTP or HTTPS) depending on the inventory type. |
-| `${SECOND_PRICE}` | The price that represent the second highest bid in auction. |
 | `${SEG_CODES}` | The codes for the segments that the winning buyer owns or has access to within this user's cookie (in order of last seen time). If the user is in more than 15 of your accessible segments, this macro will only return the first 15 (ordered by most recently seen segment to oldest segment). |
 | `${SEG_IDS}` | The IDs of the segments that the winning buyer owns or has access to within this user's cookie (in order of last seen time). If the user is in more than 15 of your accessible segments, this macro will only return the first 15 (ordered by most recently seen segment to oldest segment). |
 | `${SELLER_MEMBER_ID}` | The member ID of the member that is selling the impression. |
@@ -76,15 +77,14 @@ The following macros can be used in creative third-party tags and landing page U
 | `${TAG_ID}` | The Xandr placement ID that initiated the bid request. |
 | `${TIMESTAMP}` | The UNIX timestamp for the auction. |
 | `${USE_COOKIES}` | This is used for third-party creatives to indicate whether cookies should be set for the user viewing the impression. Allowed values include:<br> - `0` for no<br> - `1` for yes<br>For more information about cookie-related settings, see [Cookie Privacy Settings](cookie-privacy-settings.md) and the [Publisher Service](../digital-platform-api/publisher-service.md). |
-| `${USER_AGENT_ENC}` | The encoded user agent string from the request's HTTP header. |
 | `${USER_AGENT}` | The user agent string from the request's HTTP header. The user agent often identifies information such as the application, operating system, and software vendor acting on behalf of the user. For example: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4. |
+| `${USER_AGENT_ENC}` | The encoded user agent string from the request's HTTP header. |
 | `${USER_CITY} `| The character string of the user's city. |
 | `${USER_COUNTRY}` | The character string of the user's country. |
 | `${USER_ID}` | The Xandr 64-bit character string representing the user for the impression. |
 | `${USER_IP}` | The IP address of the user, which is truncated. |
 | `${USER_LOCALE}` | The language and dialect (aa-DD) reported by the user's device. For example, en-ZA represents English (en) used in South Africa (ZA). |
 | `${USER_STATE}` | The character string of the user's state or region.<br> - **In the USA**: 2 letter abbreviation<br> - **Outside of USA**: An encoded URL with the user's country followed by the user's region ID (FIPS 10-4 or Xandr-generated)For example, the region surrounding Riva, Latvia is LV%3A25 (encoding for LV:A25). |
-| `${WIDTH}` | This macro is an alias for `${CREATIVE_WIDTH}`, and behaves in the same manner. |
 
 ## Creative macros for video impressions
 
@@ -128,12 +128,12 @@ In order for our clients to meet their transparency, notice, and choice/consent 
 | Macro | Description |
 |---|---|
 | `${GDPR_APPLIES`} | Designates whether GDPR regulations are applied. It specifically indicates whether the user is located in a GDPR impacted country, or if we have a GDPR-required signal passed with the request. Possible values include:<br> - `0` for no<br> - `1` for yes<br>**Note**: `0` may be received from an EEA country. It is the publisher's choice to signal in this manner. |
+| `${GDPR}` | This is an alias for `${GDPR_APPLIES}`, and behaves in the same manner. |
 | `${GDPR_CONSENT_STRING}` | This macro specifies the IAB GDPR consent string. If the GDPR applies, it will contain a list of user-approved vendors based on the IAB GDPR Transparency and Consent Framework. For more information, see [IAB GDPR Transparency and Consent Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework). |
 | `${GDPR_CONSENT}` | This macro is an alias for `${GDPR_CONSENT_STRING}`, and behaves in the same manner. |
-| `${GDPR}` | This is an alias for `${GDPR_APPLIES}`, and behaves in the same manner. |
+| `${XANDR_DOMAIN}` | Dynamically retrieves the appropriate Xandr domain based on the cookie consent settings included in the TCF string. If the user has cookies enabled from their browser settings but has:<br> - not given consent for their cookies to be included in the TCF string, the [adnxs-simple.com](https://adnxs-simple.com/) domain will be used to prevent the browser from attaching cookies to subsequent ad calls.<br> - given consent for their cookies to be included in the TCF string, the [adnxs.com](https://adnxs.com/) domain will be used to pass cookies in the header of each ad call.<br>**Note**: This macro should only be used if you plan on serving impressions in countries that require consent for cookies. |
 | `${GPP_SID}` | Designates whether a section (i.e. regulatory framework) of the [Global Privacy Platform](https://iabtechlab.com/gpp) should be applied. Specifically, it indicates whether the user is located in a country affected by legislation covered by the GPP. |
 | `${GPP_STRING_XXXXX*}` | This is the IAB [Global Privacy Platform](https://iabtechlab.com/gpp) (GPP) string. If a section of the GPP applies, then this will contain framework-dependent information reflecting the consent elections of the user.<br>**Note**: * `XXXXX` can represent any numerical id |
-| `${XANDR_DOMAIN}` | Dynamically retrieves the appropriate Xandr domain based on the cookie consent settings included in the TCF string. If the user has cookies enabled from their browser settings but has:<br> - not given consent for their cookies to be included in the TCF string, the [adnxs-simple.com](https://adnxs-simple.com/) domain will be used to prevent the browser from attaching cookies to subsequent ad calls.<br> - given consent for their cookies to be included in the TCF string, the [adnxs.com](https://adnxs.com/) domain will be used to pass cookies in the header of each ad call.<br>**Note**: This macro should only be used if you plan on serving impressions in countries that require consent for cookies. |
 
 ## Function macros
 

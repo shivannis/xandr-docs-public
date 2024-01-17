@@ -64,25 +64,25 @@ For more information about how quickly report data is processed, see [Availabili
 
 | Column | Filter? | Description |
 |---|---|---|
-| Age | Yes | The age of the user associated with the impression. For impressions older than 100 days, the age will be "unknown". |
-| Buying Currency | No | The transaction currency that the buyer used to purchase this impression. Including this dimension will cause the monetary metrics to be displayed in the buying currency. This dimension is available only when Currency 2.0 is disabled. |
-| Campaign | Yes | The name and ID of the campaign that purchased this impression. (Does not apply to all advertisers.) |
-| Conversion Pixel | Yes | The unique identification number of the conversion pixel.<br>**Note**: This dimension will return a maximum of 10 conversion pixels. Also, you can filter by no more than 10 conversion pixels. Although Pixel ID groupable, we do not recommend that you group by this dimension since doing so will cause conversion events to then be shown in separate rows from impression and click events. We generally assume you want to view all of these events in a single row so as to be able to retrieve accurate and aggregated values for conversion rate and cost-per-conversion calculations. As a result, we instead recommend that you filter by Pixel ID so you can retrieve conversion counts and related metrics for your most relevant pixel IDs. |
-| Deal | Yes | The deal through which this impression was purchased. |
-| Fold Position | Yes | The fold position of the impression (i.e., where on the page the placement is located).<br>Possible values for impressions:<br> - unknown<br> - above<br> - below |
-| Gender | Yes | The gender of the user. For impressions older than 100 days, the gender will be "unknown". |
 | Insertion Order | Yes | The name and ID of the insertion order under which the impression was purchased. For more information about insertion orders, see [Working with Insertion Orders](working-with-insertion-orders.md). |
 | Line Item | Yes | The name and ID of the line item under which the impression was purchased. For more information about line items, see [Working with Line Items](working-with-line-items.md). |
-| Mobile Application | No | For mobile app impressions, the Apple App Store or Google Play name and ID of the mobile application where the impression occurred, for example, "`Angry Birds (343200656)` or "`Angry Birds (com.rovio.angrybirds)`". |
-| Operating System | Yes | The name and ID of the operating system of the device where the impression occurred. |
-| Operating System Family | Yes | The operating system family (e.g., Apple Mac, Chrome OS) associated with the impressions. |
-| Remarketing Segment | No | Indicator of whether this is a remarketing campaign. |
-| Second-level category | No | The name and ID second-level content category associated with the domain; for example, "`Shoes (20129)`". |
+| Campaign | Yes | The name and ID of the campaign that purchased this impression. (Does not apply to all advertisers.) |
 | Seller | Yes | The seller/publisher who sold the impressions in this data set. |
-| Site Domain | No | The domain where the impression occurred. For mobile applications, this can be the URL of the app's location in the app store. There are two additional values that may appear in place of a domain, specifically: "`deals.unknown`" or "`managed.unknown`". These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed. |
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the **Split** column (if included) will be null. |
-| Supply Type | Yes | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are "`web`", "`mobile_app`", and "`mobile_web`". |
+| Site Domain | No | The domain where the impression occurred. For mobile applications, this can be the URL of the app's location in the app store. There are two additional values that may appear in place of a domain, specifically: "`deals.unknown`" or "`managed.unknown`". These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed. |
+| Mobile Application | No | For mobile app impressions, the Apple App Store or Google Play name and ID of the mobile application where the impression occurred, for example, "`Angry Birds (343200656)` or "`Angry Birds (com.rovio.angrybirds)`". |
 | Top-level category | No | The name and ID of the top-level content category associated with the domain; for example, "`Shopping (19821)`". |
+| Second-level category | No | The name and ID second-level content category associated with the domain; for example, "`Shoes (20129)`". |
+| Remarketing Segment | No | Indicator of whether this is a remarketing campaign. |
+| Age | Yes | The age of the user associated with the impression. For impressions older than 100 days, the age will be "unknown". |
+| Gender | Yes | The gender of the user. For impressions older than 100 days, the gender will be "unknown". |
+| Fold Position | Yes | The fold position of the impression (i.e., where on the page the placement is located).<br>Possible values for impressions:<br> - unknown<br> - above<br> - below |
+| Operating System Family | Yes | The operating system family (e.g., Apple Mac, Chrome OS) associated with the impressions. |
+| Operating System | Yes | The name and ID of the operating system of the device where the impression occurred. |
+| Supply Type | Yes | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are "`web`", "`mobile_app`", and "`mobile_web`". |
+| Conversion Pixel | Yes | The unique identification number of the conversion pixel.<br>**Note**: This dimension will return a maximum of 10 conversion pixels. Also, you can filter by no more than 10 conversion pixels. Although Pixel ID groupable, we do not recommend that you group by this dimension since doing so will cause conversion events to then be shown in separate rows from impression and click events. We generally assume you want to view all of these events in a single row so as to be able to retrieve accurate and aggregated values for conversion rate and cost-per-conversion calculations. As a result, we instead recommend that you filter by Pixel ID so you can retrieve conversion counts and related metrics for your most relevant pixel IDs. |
+| Deal | Yes | The deal through which this impression was purchased. |
+| Buying Currency | No | The transaction currency that the buyer used to purchase this impression. Including this dimension will cause the monetary metrics to be displayed in the buying currency. This dimension is available only when Currency 2.0 is disabled. |
 
 > [!NOTE]
 > You can also filter on a particular number of impressions using the **Minimum Impressions** filter.
@@ -94,36 +94,36 @@ For more information about how quickly report data is processed, see [Availabili
 
 | Column | Description |
 |---|---|
-| Booked Revenue | The revenue received from the advertiser. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
+| Imps | The total number of impressions served. |
 | Clicks | The total number of clicks recorded. |
+| CTR | The click-through-rate; that is, the ratio of clicks to impressions. |
 | Conversion Rate | The ratio of conversions to impressions. |
 | Conversions Per Million | The number of conversions per million impressions. |
-| Cost eCPA | The cost per acquisition/conversion. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
-| Cost eCPC | The cost per click. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
-| CPM | The cost per thousand impressions. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
-| CTR | The click-through-rate; that is, the ratio of clicks to impressions. |
-| Imps | The total number of impressions served. |
-| Media Cost | The cost to the buying member for this inventory. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
-| Post Click Conversion Rate | The ratio of post-click conversions to impressions. |
-| Post Click Conversions | The total number of post-click conversions recorded. For more information about how we record post-click conversions, see [Conversion Attribution](conversion-attribution.md). |
-| Post View Conversion Rate | The ratio of post-view conversions to impressions. |
-| Post View Conversions | The total number of post-view conversions recorded. For more information about how we record post-view conversions, see [Conversion Attribution](conversion-attribution.md). |
-| Profit | Booked revenue minus total cost.<br>This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
-| Profit eCPA | Profit per conversion. |
-| Profit eCPC | Profit per click. |
-| Profit eCPM | The profit (defined as booked revenue minus total cost) per 1,000 imps.<br>This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
-| Profit Margin | Buyer profit margin. |
-| Revenue eCPA | The revenue, expressed as CPA. For definitions of CPA and other terms, see the [Industry Reference Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). |
-| Revenue eCPC | The revenue, expressed as CPC. For definitions of CPC and other terms, see the [Industry Reference Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). |
+| Booked Revenue | The revenue received from the advertiser. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 | Revenue eCPM | The revenue, expressed as CPM. For definitions of CPM and other terms, see the [Industry Reference Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). |
-| Total Cost | The total amount of costs accrued over the reported period of time. This generally includes two types of costs, budgeted costs (media cost, data cost, partner fees, serving fees, commissions) and publisher revenue if you track publisher payouts on the platform. |
-| Total Cost eCPA | The total cost per conversion. |
-| Total Cost eCPC | The total cost per click. |
-| Total Cost eCPM | The total cost per 1,000 imps. |
-| View-Measured Imps | The total number of impressions that were measured for viewability. |
-| Viewability Measurement Rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
-| Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
+| Revenue eCPC | The revenue, expressed as CPC. For definitions of CPC and other terms, see the [Industry Reference Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). |
+| Revenue eCPA | The revenue, expressed as CPA. For definitions of CPA and other terms, see the [Industry Reference Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). |
+| Post View Conversions | The total number of post-view conversions recorded. For more information about how we record post-view conversions, see [Conversion Attribution](conversion-attribution.md). |
+| Post Click Conversions | The total number of post-click conversions recorded. For more information about how we record post-click conversions, see [Conversion Attribution](conversion-attribution.md). |
+| Media Cost | The cost to the buying member for this inventory. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
+| Cost eCPC | The cost per click. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
+| Cost eCPA | The cost per acquisition/conversion. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
+| Profit | Booked revenue minus total cost.<br>This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
+| Profit eCPM | The profit (defined as booked revenue minus total cost) per 1,000 imps.<br>This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
+| CPM | The cost per thousand impressions. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
+| Post View Conversion Rate | The ratio of post-view conversions to impressions. |
+| Post Click Conversion Rate | The ratio of post-click conversions to impressions. |
 | Viewable Imps | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in-view during 1 consecutive second. |
+| View-Measured Imps | The total number of impressions that were measured for viewability. |
+| Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
+| Viewability Measurement Rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
+| Total Cost | The total amount of costs accrued over the reported period of time. This generally includes two types of costs, budgeted costs (media cost, data cost, partner fees, serving fees, commissions) and publisher revenue if you track publisher payouts on the platform. |
+| Total Cost eCPM | The total cost per 1,000 imps. |
+| Total Cost eCPC | The total cost per click. |
+| Total Cost eCPA | The total cost per conversion. |
+| Profit eCPC | Profit per click. |
+| Profit eCPA | Profit per conversion. |
+| Profit Margin | Buyer profit margin. |
 
 ## To run your report
 

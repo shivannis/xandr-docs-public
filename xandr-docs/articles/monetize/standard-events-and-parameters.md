@@ -10,14 +10,14 @@ The following table shows the standard events you can track using the universal 
 
 | Standard Event | Description |
 |---|---|
-| `AddPaymentInfo` | Track when payment information is added in the checkout flow (e.g., landing page on billing info) |
+| `PageView` | Track any type of page view (default event included in Universal Pixel script) |
+| `LandingPage` | Track landing page views |
+| `ItemView` | Track key page views (for example, product page or article) |
 | `AddToCart` | Track when items are added to a shopping cart (for example, by visiting a landing page from an **Add to Cart** button) |
 | `InitiateCheckout` | Track when users enter the checkout flow (for example, by visiting a landing page from a **Checkout** button) |
-| `ItemView` | Track key page views (for example, product page or article) |
-| `LandingPage` | Track landing page views |
-| `Lead` | Track when users express interest in an offering (for example, submit a form, sign up for a trial, or register) |
-| `PageView` | Track any type of page view (default event included in Universal Pixel script) |
+| `AddPaymentInfo` | Track when payment information is added in the checkout flow (e.g., landing page on billing info) |
 | `Purchase` | Track purchases or checkout flow completions (for example, landing on a "Thank You" or confirmation page) |
+| `Lead` | Track when users express interest in an offering (for example, submit a form, sign up for a trial, or register) |
 
 The following table shows the standard query parameters you can pass as part of a standard or custom event. Parameters are passed in a JSON file on the event call, and have a 100-character maximum. Parameters can accept a single value or a comma-delimited array.
 
