@@ -70,9 +70,7 @@ additionalContent:
             - text: Overview
               url: digital-platform-api/index.yml
             - text: References
-              url: digital-platform-api/index.yml
-            #- text: Release Notes
-             # url: invest/index.yml
+              url: digital-platform-api/reference.md
         # Card
         - title: Impression Bus API
           links:
@@ -88,7 +86,7 @@ additionalContent:
             - text: Overview
               url: yield-analytics-api/index.yml
             - text: References
-              url: yield-analytics-api/index.yml
+              url: yield-analytics-api/attribute-service.md
         # Card
         #- title: Release Notes
           #links:
