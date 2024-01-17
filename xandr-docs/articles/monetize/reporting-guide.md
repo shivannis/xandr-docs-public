@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Reporting Guide
-description: We offer a wide variety of reports to help you analyze and optimize your
+description: This page helps you understand reports, delivery methods, data retention periods, and other features of reporting to help you analyze and optimize your use of Microsoft Monetize. 
 ms.date: 10/28/2023
 ---
 
