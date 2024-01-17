@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Working with targeting lists
 
 > [!NOTE]
-> Targeting lists are only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting](buy-side-targeting.md) Buy-Side Targeting.
+> Targeting lists are only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting](buy-side-targeting.md).
 
 Targeting lists are used to place domains or apps with similar characteristics in groups so that you can easily include or exclude them from campaign targeting without having to review each domain or app individually. They're generally used as allowlists or blocklists. Allowlists contain domains or apps that you want to include in your campaign targeting, and blocklists contain domains or apps that you want to exclude.
 

@@ -1,6 +1,6 @@
 ---
 title: Working with Video Inventory
-description: The article helps you to learn video inventory management in our alpha products with quickstart guides.
+description: The article helps you to learn video inventory management in alpha products with concise quickstart guides.
 ms.date: 10/28/2023
 ---
 

@@ -13,7 +13,6 @@ This topic provides an overview of the ad quality settings that can be configure
 
 > [!IMPORTANT]
 > For comprehensive information about our quality standards for creatives, see [Creative Standards](creative-standards.md).
-
 > [!NOTE]
 > If an Ad Quality (AQ) is set as `default_brand_status:banned` but the parent brand is set as `status:trusted`, the child brand overrides the setting in `default_brand_status` and it will be able to serve unless it is explicitly banned in the Ad Profile's brand override list.
 

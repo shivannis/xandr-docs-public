@@ -1,6 +1,6 @@
 ---
 title: Working with Segments
-description: The article defines segment pixels that capture user info (webpages, actions, gender, location) to assign to segments. 
+description: The article defines segment pixels that capture user information (webpages, actions, gender, location) to assign to segments. 
 ms.date: 10/28/2023
 ---
 
@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 Segment pixels use information about a user, such as webpages they visit, actions they take, or qualities such as gender, location, and wealth, to assign that user to a group called a segment. Segment data is written to and extracted from the server-side cookie store via segment pixels.
 
-If you're new to the concept of pixels, we recommend you read a little more about [Cookies](https://en.wikipedia.org/wiki/HTTP_cookie), which are text files associated with specific domains that live in your browser and contain information such
+If you're new to the concept of pixels, we recommend you read a little more about Cookies, which are text files associated with specific domains that live in your browser and contain information such
 as how many times you have been served a particular ad by the domain adserver.com, or what's in your shopping cart from myfavoritestore.com.
 
 Xandr segment pixels look something like this:
@@ -54,11 +54,12 @@ In addition to "standard" segments, QuickStats are also available for the follow
 | Name | This is the segment name. |
 | ID | This is the segment Xandr ID. |
 | Data Provider | This is the data provider name. |
-| Price | This column displays the price a buyer has paid for a segment. It allows the buyer to toggle between these two options:<br>CPM (default)<br>% Media Cost |
+| Price | This column displays the price a buyer has paid for a segment. It allows the buyer to toggle between these two options:<br> - CPM (default)<br> - % Media Cost |
 | Active Users | This is the count of active users in a segment over a 24-hour period. |
 | Daily Loads | The average number of times a user is added to a segment. (This is also known as 'segment fires'.)<br>This allows you to see growth and reduction of segments. |
 
-Please note that contextual segments (from contextual or real-time data providers) will not show loads in this report. This is because contextual segments do not actually involve a pixel being fired. Instead, they are added to an impression in real time.
+> [!NOTE]
+> The contextual segments (from contextual or real-time data providers) will not show loads in this report. This is because contextual segments do not actually involve a pixel being fired. Instead, they are added to an impression in real time.
 
 ## Max usersync pixels
 

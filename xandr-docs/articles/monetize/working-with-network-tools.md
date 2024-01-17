@@ -1,6 +1,6 @@
 ---
 title: Working with Network Tools
-description: The article explains various Network Tools that helps you to manage network-level settings.
+description: Explore tools for efficient network management. Access General tools under the Network menu for quick setting modifications.
 ms.date: 10/28/2023
 ---
 
@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 Microsoft Monetize provides various tools to help you manage network-level settings.
 Select **Tools** \> **General** from the **Network** menu to view and modify your network-level settings with the following tools:
 
-| General Tools |  |
+| **General Tools** |  |
 |---|---|
 | [Reselling Exposure](managing-your-inventory-reselling-exposure.md) | Use this tool to control the visibility of your reselling-enabled content to other networks. |
 | [Content Categories](manage-custom-content-categories.md) | With this tool you can apply a single label to a number of placement groups and/or placements. |

@@ -1,10 +1,10 @@
 ---
 title: Working with Network Ad Quality
-description: The article helps you to manage network ad quality by setting rules based on creative attributes (buyer, brand), size, or user session frequency for inventory display control.
+description: Manage ad quality by setting rules based on creative attributes (buyer, brand), size, or user session frequency for inventory display control.
 ms.date: 10/28/2023
 ---
 
-# Working with network Ad quality
+# Working with network ad quality
 
 Ad quality settings allow sellers to determine which creatives will be allowed to serve on their inventory. These rules are applied based on attributes of the creative such as the buyer or brand. Sellers may also determine which rules to apply based on other information about the impression such as the size of the creative or the user's session
 frequency.
@@ -38,6 +38,6 @@ In This Section
 - [Opt Out of Gambling Ads](opt-out-of-gambling-ads.md): What to do if you don't want gambling ads to run on your
   inventory.
 
-## Related topics
+## Related topic
 
 [Working with Ad Quality](working-with-publisher-ad-quality.md)
