@@ -2,7 +2,7 @@
   href: index.yml
 - name: Getting Started
   items:
-    - name: About Microsoft Invest
+    - name: About Microsoft Invest (powered by Xandr)
       href: about-invest.md
     - name: Object Hierarchy
       href: object-hierarchy.md
