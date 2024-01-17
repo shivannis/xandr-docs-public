@@ -1,14 +1,11 @@
 ---
-Title : Using Multiple Campaigns with a Guaranteed Line Item
-Description : When setting up a guaranteed line item, you may want to run more than
+title: Using Multiple Campaigns with a Guaranteed Line Item
+description: Learn about different use cases while running more than one campaign. 
 ms.date: 10/28/2023
-one campaign under that line item. Running more than one campaign
 ---
 
 
-# Using Multiple Campaigns with a Guaranteed Line Item
-
-
+# Using multiple campaigns with a guaranteed line item
 
 When setting up a guaranteed line item, you may want to run more than
 one campaign under that line item. Running more than one campaign
@@ -24,7 +21,7 @@ settings** when creating a guaranteed line item. This will allow you to
 configure multiple campaigns beneath that line item. Campaigns can be
 created and edited as follows:
 
-- Use the Campaign Shells section as a
+- Use the **Campaign Shells** section as a
   lightweight way to set up campaigns directly from the line item
   creation screen.
 - After saving a guaranteed line item with campaign-level settings
@@ -35,27 +32,18 @@ This page describes several use cases for campaigns, how to create and
 edit campaigns, and how a campaign inherits targeting from its parent
 line item.
 
-
-
-<b>Important:</b> This feature is currently
-not available to all clients.
-
-
+> [!IMPORTANT]
+> This feature is currently not available to all clients.
 
 For instructions on adding campaign shells during guaranteed line item
-setup, see <a href="create-a-guaranteed-delivery-line-item.md"
-class="xref">Create a Guaranteed Delivery Line Item</a>.
+setup, see [Create a Guaranteed Delivery Line Item](create-a-guaranteed-delivery-line-item.md).
 
-Use Cases of Campaign Shells
+## Use cases of campaign shells
 
-- <a
-  href="using-multiple-campaigns-with-a-guaranteed-line-item.md#ID-0000056c__b-8f9a6822-c48e-4183-b34d-ea3e5199610a"
-  class="xref">Deliver during multiple date ranges within a flight</a>
-- <a
-  href="using-multiple-campaigns-with-a-guaranteed-line-item.md#ID-0000056c__b-ea26a346-cb8a-415c-a957-50d399c33404"
-  class="xref">Execute multiple targeting strategies</a>
+- [Deliver during multiple date ranges within a flight](#deliver-during-multiple-date-ranges-within-a-flight)
+- [Execute multiple targeting strategies](#execute-multiple-targeting-strategies)
 
-Deliver during multiple date ranges within a flight
+### Deliver during multiple date ranges within a flight
 
 Advertisers sometimes need a line item to deliver only during certain
 date ranges within the overall flight.
@@ -78,7 +66,7 @@ should still deliver evenly on eligible days, such that:
 - One-third (1/3) of total delivery occurs during the 5 days of *Date
   range 2*
 
-**Execute multiple targeting strategies**
+## Execute multiple targeting strategies
 
 Advertisers may wish to execute multiple targeting strategies with a
 single guaranteed line item.
@@ -91,31 +79,26 @@ As another example, an agency might provide multiple sets of creatives,
 each targeted to a different user segment: one set of creatives
 targeting male users, one targeting female users.
 
-Setting up Campaign Shells
+### Setting up campaign shells
 
 Campaign shells are only available during guaranteed line item setup.
-For instructions, see
-<a href="create-a-guaranteed-delivery-line-item.md"
-class="xref">Create a Guaranteed Delivery Line Item</a>.
+For instructions, see [Create a Guaranteed Delivery Line Item](create-a-guaranteed-delivery-line-item.md).
 
-Creating or Editing Campaigns Directly
+### Creating or editing campaigns directly
 
 After a guaranteed line item that uses campaign-level settings has been
 created, settings on its child campaigns can still be edited; campaigns
 can also be added at any time. There are two ways to navigate to
-campaigns from the
-<a href="explore-line-items.md" class="xref">Line Items</a> screen:
+campaigns from the [Line Items](explore-line-items.md) screen:
 
 **Method 1**: You can click the numbered button in the
-Campaigns column of the grid, which
+**Campaigns** column of the grid, which
 will take you to a list of the campaigns under your guaranteed line
 item.
 
-**Method 2**: You can also navigate to the
-<a href="view-line-item-details.md" class="xref">Line Item Details</a>
-screen and create or edit campaigns from there.
+**Method 2**: You can also navigate to the [Line Item Details](view-line-item-details.md) screen and create or edit campaigns from there.
 
-How a Campaign Inherits Targeting from its Parent Line Item
+### How a campaign inherits targeting from its parent line item
 
 By default, your guaranteed line item will target all direct inventory.
 As you add targeting settings, less and less inventory will be targeted.
@@ -131,16 +114,9 @@ targeting. As each campaign adds its own targeting (e.g., date ranges),
 it further narrows its scope to a different subset of the line item's
 overall inventory.
 
-Related Topics
+## Related topics
 
-- <a href="create-a-guaranteed-delivery-line-item.md"
-  class="xref">Create a Guaranteed Delivery Line Item</a>
-- <a href="guaranteed-delivery.md" class="xref">Guaranteed Delivery</a>
-- <a href="guaranteed-outcomes-auction-mechanics.md"
-  class="xref">Guaranteed Outcomes Auction Mechanics</a>
-- <a href="guaranteed-delivery-pacing.md" class="xref">Guaranteed
-  Delivery Pacing</a>
-
-
-
-
+- [Create a Guaranteed Delivery Line Item](create-a-guaranteed-delivery-line-item.md)
+- [Guaranteed Delivery](guaranteed-delivery.md)
+- [Guaranteed Outcomes Auction Mechanics](guaranteed-outcomes-auction-mechanics.md)
+- [Guaranteed Delivery Pacing](guaranteed-delivery-pacing.md)
