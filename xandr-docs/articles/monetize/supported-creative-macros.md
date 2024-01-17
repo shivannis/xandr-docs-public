@@ -46,7 +46,7 @@ The following macros can be used in creative third-party tags and landing page U
 | `${WIDTH}` | This macro is an alias for `${CREATIVE_WIDTH}`, and behaves in the same manner. |
 | `${CUSTOM_MODEL_ID}` | The `id` of the custom model used in the auction. When no custom model is used, this macro will return `0`.<br><br>**Note**: This custom macro will only work for APB Alpha Test clients. |
 | `${CUSTOM_MODEL_LAST_MODIFIED}` | The date and time (in Unix Epoch time) since the custom model that was used in the auction was last modified. If no model was used, this macro will return 0.<br><br>**Note**: This custom macro will only work for APB Alpha Test clients. |
-| `${CUSTOM_MODEL_LEAF_NAME}` | The `leaf_name` specified in the leaf that determined the winning bid. If no name is specified or if a model was not used, this macro will return `---`. This aligns with the `leaf_name` field in the Standard Feed in Log Level Data. For more information, see [Standard Feed]().<br><br>**Note**: This custom macro will only work for APB Alpha Test clients. |
+| `${CUSTOM_MODEL_LEAF_NAME}` | The `leaf_name` specified in the leaf that determined the winning bid. If no name is specified or if a model was not used, this macro will return `---`. This aligns with the `leaf_name` field in the Standard Feed in Log Level Data. For more information, see [Standard Feed](standard-feed.md).<br><br>**Note**: This custom macro will only work for APB Alpha Test clients. |
 | `${DATACENTER}` | The data center ID (1 = NYM, 2 = LAX, 3 = AMS, 4 = FRA, 5 = SIN). |
 | `${DEAL_ID}` | The Xandr Deal ID associated with the winning bid if applicable. If there is no deal, this macro will return `0`. |
 | `${ECP}` | The publisher-side estimated clear price (ECP) for the auction. |
@@ -103,7 +103,7 @@ The following macros can be used specifically for mobile impressions:
 
 | Macro | Description |
 |---|---|
-| `${CARRIER_ID}` | The Xandr integer representing the mobile carrier ID. For a complete list of carrier IDs, see the [Carrier Service](carrier-service.md). |
+| `${CARRIER_ID}` | The Xandr integer representing the mobile carrier ID. For a complete list of carrier IDs, see the [Carrier Service](../digital-platform-api/carrier-service.md). |
 | `${DEVICE_AAID}` | The Android advertising identifier when the impression is delivered from an Android device. |
 | `${DEVICE_APPLE_IDA} `| The Apple advertising identifier when the impression is delivered from an Apple device. |
 | `${DEVICE_IFA_TYPE}` | The type of identifier represented by the `${DEVICE_IFA}`. Possible values include:<br> - AAID (Android Advertising ID/Google)<br> - IDFA (Identifier for Advertising/Apple)<br> - AFAI (Amazon Fire ID)<br> - RIDA (Roku ID)<br> - OPENUDID<br> - TIFA (Tizen Identifier for Advertising (Samsung Ad ID))<br> - VIDA (Vizio Advertising ID)<br> - LGUDID (LG Unique Device ID)<br><br> `${DEVICE_IFA_TYPE}` should be used in conjunction with `${DEVICE_IFA}`, and this setup is recommended over individual device macros specific to each IFA type. These macros are applicable to both mobile and CTV device types. |
@@ -127,7 +127,7 @@ In order for our clients to meet their transparency, notice, and choice/consent 
 
 | Macro | Description |
 |---|---|
-| `${GDPR_APPLIES`} | Designates whether GDPR regulations are applied. It specifically indicates whether the user is located in a GDPR impacted country, or if we have a GDPR-required signal passed with the request. Possible values include:<br> - `0` for no<br> - `1` for yes<br>**Note**: `0` may be received from an EEA country. It is the publisher's choice to signal in this manner. |
+| `${GDPR_APPLIES}` | Designates whether GDPR regulations are applied. It specifically indicates whether the user is located in a GDPR impacted country, or if we have a GDPR-required signal passed with the request. Possible values include:<br> - `0` for no<br> - `1` for yes<br>**Note**: `0` may be received from an EEA country. It is the publisher's choice to signal in this manner. |
 | `${GDPR}` | This is an alias for `${GDPR_APPLIES}`, and behaves in the same manner. |
 | `${GDPR_CONSENT_STRING}` | This macro specifies the IAB GDPR consent string. If the GDPR applies, it will contain a list of user-approved vendors based on the IAB GDPR Transparency and Consent Framework. For more information, see [IAB GDPR Transparency and Consent Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework). |
 | `${GDPR_CONSENT}` | This macro is an alias for `${GDPR_CONSENT_STRING}`, and behaves in the same manner. |
@@ -159,10 +159,10 @@ To determine whether you will need to use single, double, or triple encoding, yo
 
 | Encoding Example | Format |
 |---|---|
-| Encoding a custom macro called ADFORMAT once | Use the following format:<br>`${URL_ENC(#{ADFORMAT},1)}` |
 | Encoding click URLs once | Use the following format:<br>`${URL_ENC(${CLICK_URL},1)}`<br>**Note**: If [https://xandr.com](https://xandr.com) is passed as the click URL, using `${URL_ENC(${CLICK_URL},1)}` to single encode the URL would result in `https%3A%2F%2Fxandr.com` populating the creative. |
 | Encoding media URL once | Use the following format:<br> `${URL_ENC(${MEDIA_URL},1)}` |
 | Encoding media URL twice | Use the following format:<br> `${URL_ENC(${MEDIA_URL},2)}` |
+| Encoding a custom macro called ADFORMAT once | Use the following format:<br>`${URL_ENC(#{ADFORMAT},1)}` |
 
 ## Related topic
 

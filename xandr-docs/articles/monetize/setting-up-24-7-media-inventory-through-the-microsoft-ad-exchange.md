@@ -106,7 +106,7 @@ You can choose to target specific inventory including 24/7 Media inventory. The 
 
 1. In the **Targeting** section under **Inventory**, click edit to open the **Inventory Targeting** dialog.
 1. In the **Inventory Targeting** dialog, select **3rd Party Inventory**.
-1. In the 3rd Party Inventory pane in the Sellers view, enter the term **Microsoft** in the search field. Include **Microsoft Advertising Exchange (280)** by clicking the green checkmark icon.
+1. In the **3rd Party Inventory** pane in the **Sellers** view, enter the term **Microsoft** in the search field. Include **Microsoft Advertising Exchange (280)** by clicking the green checkmark icon.
 1. The selection should now appear in the **Selected 3rd Party Inventory** list as a green "include" item.
 1. Select **Custom Categories** (also in the **Inventory Targeting** dialog).
 1. In the **Custom Categories** pane, enter the term 247 in the search field. Include **247_Media (23204)** by clicking the green checkmark icon.
