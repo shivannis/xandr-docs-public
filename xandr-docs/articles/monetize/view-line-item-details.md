@@ -1,14 +1,14 @@
 ---
-title: Microsoft Monetize - View Line Item Details - Monitoring
+title: Microsoft Monetize - View Line Item Details
 description: Explore Line Item Details for insights—settings, metrics, visualizations. Swiftly access child campaigns' performance.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - View line item details - Monitoring
+# Microsoft Monetize - View line item details
 
 The **Line Item Details** screen shows you the settings and essential metrics for a specific line item, informs you of conditions preventing the line item from serving, provides visualizations of the line item's performance and delivery, offers quick access to the line item's child campaigns, and more.
 
-## Getting to the line item details pane
+## Getting to the Line Item Details pane
 
 On the **Line Items** screen, hover over the line item for which you want to view advanced details and click the **graph** button.
 
@@ -97,7 +97,7 @@ From the line item campaign list, you can also view specific campaigns and their
 
 To change any of the line item's settings, click the **Edit** icon at the top of the screen or the **Edit** link in the **Details** section.
 
-## Editing Campaign Settings
+## Editing campaign settings
 
 You can also edit campaign settings directly from the **Line Item Details** screen in the **Campaign Details** pane. Wherever a pencil icon appears, you can click the icon to edit that setting.
 

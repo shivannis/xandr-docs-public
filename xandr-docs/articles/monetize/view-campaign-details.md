@@ -4,20 +4,20 @@ description: Navigate campaign details, gain insights on settings, metrics, and 
 ms.date: 10/28/2023
 ---
 
-# View campaign details
+# View Campaign details
 
 The **Campaign Details** screen shows you settings and essential metrics for a specific campaign, informs you of conditions preventing the campaign from serving, provides visualizations of the campaign's performance and delivery, offers quick access to the campaign's associated creatives, and more.
 
 > [!IMPORTANT]
 > **Automatic archiving of objects:** Campaigns that have not served or been edited in more than 180 days and that are not scheduled to serve in the future are automatically archived. If a campaign is in the "archived" state, it cannot spend or be edited. However, it can still be copied, deleted or used in reports (or exported for use in an external reporting tool). In addition, once an object is archived, any child objects it may own (e.g., **Insertion Order** \> **Line Item** \> **Campaign**) will also be archived and no additional child objects may be created beneath the archived parent object. For details, see [Automatic Archiving of Buy-Side Objects](automatic-archiving-of-buy-side-objects.md).
 
-## Getting to the campaign details screen
+## Getting to the Campaign Details screen
 
-## From the campaigns screen
+## From the Campaigns screen
 
 On the **Campaigns** screen, hover over the row of the campaign for which you want to view details. Click the graph button that appears.
 
-## From the line item details screen
+## From the Line Item Details screen
 
 From the **Line Item Details** screen, expand the **Campaigns** section to view the list of campaigns under that line item. Hover over the row of the campaign for which you want to view details. Click the graph button that appears.
 
@@ -35,11 +35,11 @@ The **At-a-Glance** section shows you the campaign's status, state, and flight s
   - Daily impression budget has been met.
   - Daily cost budget has been met.
 
-  > [!WARNING]
-  > The "warning" icon indicates that the campaign is ineligible to serve due to conditions are are likely unintentional and that should be addressed. When a campaign shows this status, hover over the icon to see exactly what conditions are preventing it from serving. The following conditions can provide this status:
-  >
-  > - No creatives are associated with this campaign.
-  > - All creatives associated to this campaign are either ineligible to serve (inactive, expired, prohibited) or can serve only on direct inventory and on supply partners who trust your network's self-classification (unaudited).
+> [!WARNING]
+> The "warning" icon indicates that the campaign is ineligible to serve due to conditions are are likely unintentional and that should be addressed. When a campaign shows this status, hover over the icon to see exactly what conditions are preventing it from serving. The following conditions can provide this status:
+>
+> - No creatives are associated with this campaign.
+> - All creatives associated to this campaign are either ineligible to serve (inactive, expired, prohibited) or can serve only on direct inventory and on supply partners who trust your network's self-classification (unaudited).
 
 ## Viewing quickstats
 
@@ -86,7 +86,7 @@ The following metrics are shown for the campaign. Note that the data always refl
 
 ## Pacing bars
 
-If the campaign meets certain requirements (see **Requirements for Pacing Bars** below), the **Imps** or Media Cost quickstat shows a visualization of how well the campaign is pacing for the selected quickstats interval.
+If the campaign meets certain requirements (see **Requirements for Pacing Bars** below), the **Imps** or **Media Cost** quickstat shows a visualization of how well the campaign is pacing for the selected quickstats interval.
 
 The color of the main pacing bar tells you how your impression/media cost count compares to your pacing target:
 
@@ -133,7 +133,7 @@ top row in the table lists totals for each category, whereas the rows beneath it
 
 If a segment has no performance at all for the time period, it will not appear in the table.
 
-The total of the values for each segment in a given column - imps, clicks, CTR, and so on - may be greater than the total for the category, as some users belong to more than one segment. For example, in the image below, adding each segment value under Imps yields a total of 1,112,967, not 906,848, because users who belong to multiple segments are counted once for each segment to which they belong.
+The total of the values for each segment in a given column - imps, clicks, CTR, and so on - may be greater than the total for the category, as some users belong to more than one segment. For example, in the image below, adding each segment value under **Imps** yields a total of 1,112,967, not 906,848, because users who belong to multiple segments are counted once for each segment to which they belong.
 
 ## Change performance metrics view
 
@@ -196,14 +196,14 @@ The boolean logic between targeting types is always and (e.g., between Geography
 - The user has seen creatives from the campaign less than **20 times overall** and less than **2 times today** AND
 - The impression happens between **12:00am - 3:59am** or between **6:00am - 11:59pm** in the user's time zone
 
-For more details about each type of targeting, see [create-a-campaign.md](Create a Campaign).
+For more details about each type of targeting, see [Create a Campaign](create-a-campaign.md).
 
 > [!NOTE]
 > Clicking the **Edit** link next to **Targeting** opens the campaign for editing and brings you directly to the targeting settings.
 
 ## Editing campaign targeting
 
-You can edit campaign targeting directly from the **Campaign Details** screen. To do so, simply click Targeting to reveal campaign targeting settings, then click **Edit** to be taken directly to the targeting section of the **Edit Campaign** workflow on Microsoft Monetize.
+You can edit campaign targeting directly from the **Campaign Details** screen. To do so, simply click **Targeting** to reveal campaign targeting settings, then click **Edit** to be taken directly to the targeting section of the **Edit Campaign** workflow on Microsoft Monetize.
 
 ## Viewing associated creatives
 

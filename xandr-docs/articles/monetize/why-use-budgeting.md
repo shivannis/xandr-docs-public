@@ -25,12 +25,12 @@ You can apply a budget to an **Insertion Order**, a **Line Item**, or a **Campai
 
 | Object Type | Budget Type | Description |
 |---|---|---|
-| Campaign | Cost-based | The system measures the dollars spent in the campaign. You would select this option to stay within a set amount of dollars spent, regardless of how much income the campaign may or may not generate. |
-| Campaign | Impression-based | The system measures the number of impressions served against the campaign. You would select this option to serve a specific number of impressions by the campaign (with the assumption that you know or have a good estimate of the rate and value of success events). |
 | Insertion Order | Revenue-based | The system measures the booked revenue (in advertiser-selected currency) against the entire insertion order. You would select this option to reach a set goal of dollars earned by the insertion order. This would not necessarily take the amount of dollars spent into account, but there are other methods at work to ensure that you do not spend more money than you earn. |
 | Insertion Order | Impression-based | The system measures the number of impressions served against that entire insertion order. You would select this option to serve a specific number of impressions by the insertion order (with the assumption that you know or have a good estimate of the rate and value of impressions). |
 | Line Item | Revenue-based | The system measures the booked revenue (in advertiser-selected currency) against the entire line item. You would select this option to reach a set goal of dollars earned by the line item. This would not necessarily take the amount of dollars spent into account, but there are other methods at work to ensure that you do not spend more money than you earn. |
 | Line Item | Impression-based | The system measures the number of impressions served against that entire line item. You would select this option to serve a specific number of impressions by the campaign (with the assumption that you know or have a good estimate of the rate and value of impressions). |
+| Campaign | Cost-based | The system measures the dollars spent in the campaign. You would select this option to stay within a set amount of dollars spent, regardless of how much income the campaign may or may not generate. |
+| Campaign | Impression-based | The system measures the number of impressions served against the campaign. You would select this option to serve a specific number of impressions by the campaign (with the assumption that you know or have a good estimate of the rate and value of success events). |
 
 ## Budget caps
 

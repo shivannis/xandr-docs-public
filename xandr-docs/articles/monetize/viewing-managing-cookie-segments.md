@@ -45,11 +45,11 @@ The following table defines what codes are available for overriding, the corresp
 
 | Geo Code | API Service | API Field |
 |---|---|---|
-| Country | [Country Service](../digital-platform-api/country-service.md) | code |
-| Region | [Region Service](../digital-platform-api/region-service.md) | `iso_3166_2` |
-| DMA | [Designated Market Area Service](../digital-platform-api/designated-market-area-service.md) | code |
-| City | [City Service](../digital-platform-api/city-service.md) | name |
-| Postal Code | [Postal Code Service](../digital-platform-api/postal-code-service.md) | code |
+| `Country` | [Country Service](../digital-platform-api/country-service.md) | code |
+| `Region` | [Region Service](../digital-platform-api/region-service.md) | `iso_3166_2` |
+| `DMA` | [Designated Market Area Service](../digital-platform-api/designated-market-area-service.md) | code |
+| `City` | [City Service](../digital-platform-api/city-service.md) | name |
+| `Postal Code` | [Postal Code Service](../digital-platform-api/postal-code-service.md) | code |
 
 ## Remove your geo override
 

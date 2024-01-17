@@ -4,14 +4,14 @@ description: Discover Legacy Insertion Order details—access settings, metrics,
 ms.date: 10/28/2023
 ---
 
-# View legacy insertion order details
+# View legacy Insertion Order details
 
 > [!NOTE]
-> Legacy insertion orders are required for [default insertion order](create-a-guaranteed-delivery-line-item.md). For all other line items, we recommend the use of the [default insertion order](create-an-insertion-order.md).
+> Legacy insertion orders are required for [Guaranteed Delivery Line Items](create-a-guaranteed-delivery-line-item.md). For all other line items, we recommend the use of the [default insertion order](create-an-insertion-order.md).
 
 The **Insertion Order Details** screen shows you the settings and essential metrics for a specific insertion order, provides visualizations of the insertion order's performance, offers quick access to the insertion order's child objects, and more.
 
-## Getting to the legacy insertion order details screen
+## Getting to the legacy Insertion Order Details screen
 
 On the **Insertion Orders** screen, click the name of the legacy insertion order for which you want to view advanced details.
 
@@ -21,7 +21,7 @@ This takes you to the **Insertion Order Details** screen.
 
 The **At-a-Glance** section shows you the insertion order's state and the total number of active and inactive line items under the insertion order. You can click on this number to navigate to the complete list of line items with their quickstats.
 
-## Adding the insertion order to trader home
+## Adding the Insertion O    rder to Trader Home
 
 > [!NOTE]
 > **Trader Home** is currently available to a limited set of clients. If you use insertion orders and are interested in making **Trader Home** your landing page, reach out to your Xandr representative.
@@ -51,7 +51,7 @@ To learn more, see [Improve Performance with Visual Success](improve-performance
 
 ## Viewing associated line items
 
-By default, the **Line Items** section is collapsed. Expand the section to view a list of line items associated to the insertion order. You can edit an associated line item by clicking the edit button for that line item. You can also navigate to the [View Line Item Details](view-line-item-details.md).
+By default, the **Line Items** section is collapsed. Expand the section to view a list of line items associated to the insertion order. You can edit an associated line item by clicking the edit button for that line item. You can also navigate to the [View Line Item Details](view-line-item-details.md) by clicking the graph button for that line item.
 
 ## Viewing analytics graphs
 

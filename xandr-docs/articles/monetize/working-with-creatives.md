@@ -1,10 +1,10 @@
 ---
-title: Working with Creatives
+title: Microsoft Monetize - Working with Creatives
 description: The article highlights working with creatives on ad server, leverage advanced reporting, save on fees, ensure high ad quality, and consistency.
 ms.date: 10/28/2023 
 ---
 
-# Working with creatives
+# Microsoft Monetize - Working with creatives
 
 You can traffic a wide range of creative types, from banners to increasingly pervasive rich media types, through the Xandr platform. Only secure content is supported.
 
@@ -17,7 +17,7 @@ Hosting your creatives with us lets you take full advantage of this technology. 
 
 Xandr also makes it easy for you to traffic creatives that are served by third-party ad servers.
 
-## In This section
+## Related topics
 
 - [Exploring Creatives](exploring-creatives.md)
 - [Adding and Updating Creatives](adding-and-updating-creatives.md)

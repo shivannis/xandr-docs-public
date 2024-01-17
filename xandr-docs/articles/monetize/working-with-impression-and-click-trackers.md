@@ -1,10 +1,10 @@
 ---
-title: Working with Impression and Click Trackers
+title: Microsoft Monetize - Working with Impression and Click Trackers
 description: The article details off-platform ad server's impression and click trackers for tracking hosted creatives' impressions and clicks.
 ms.date: 10/28/2023
 ---
 
-# Working with impression and click trackers
+# Microsoft Monetize - Working with impression and click trackers
 
 Impression and click trackers are used to track impressions and clicks associated with creatives that are hosted by off-platform (non-Xandr) ad servers. This is done by attaching the tracker as a "piggyback pixel" on the externally hosted creative. This lets you report on impressions and clicks on these creatives as if they were hosted by Xandr.
 

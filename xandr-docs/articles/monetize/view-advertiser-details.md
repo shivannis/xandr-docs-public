@@ -4,11 +4,11 @@ description: Unlock advertiser insights with the Advertiser Details screen. Expl
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - View advertiser details
+# Microsoft Monetize - View Advertiser details
 
 The **Advertiser Details** screen shows you the settings and essential metrics for a specific advertiser, provides visualizations of the advertiser's performance, and offers quick access to the advertiser's child objects.
 
-## Getting to the advertiser details Screen
+## Getting to Advertiser Details Screen
 
 On the **Advertisers** screen, click the name of the advertiser for which you want to view advanced details. This takes you to the **Advertiser Details** screen.
 
@@ -34,7 +34,7 @@ Displays partner fees or broker fees associated with this advertiser. For more i
 
 ## Associated universal pixel
 
-Displays the universal pixel that has been associated to the advertiser, which can be used on multiple webpages simultaneously. For more information, see [The Universal Pixel](the-universal-pixel.md).
+Displays the Universal Pixel that has been associated to the advertiser, which can be used on multiple webpages simultaneously. For more information, see [The Universal Pixel](the-universal-pixel.md).
 
 ## Teams
 

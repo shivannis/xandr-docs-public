@@ -1,10 +1,10 @@
 ---
-title: Microsoft Monetize - What to Check if You Suspect a Discrepancy
+title: Microsoft Monetize - What to Check if You Suspect a Discrepancy?
 description: The article guides reporting discrepancies, advising a preliminary investigation considering time frames and zone differences.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - What to check if You suspect a discrepancy
+# Microsoft Monetize - What to check if You suspect a discrepancy?
 
 Report discrepancies have a number of common causes. Before you begin a fuller investigation, consider common potential causes like time frames, time zone differences, measurement units, macro configuration errors, and differences in how ad servers count impressions.
 

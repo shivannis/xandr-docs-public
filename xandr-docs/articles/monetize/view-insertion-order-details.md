@@ -4,11 +4,11 @@ description: Discover crucial settings, metrics, and performance visuals on the 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - View insertion order details
+# Microsoft Monetize - View Insertion Order Details
 
 The **Insertion Order Details** screen displays settings for a specific insertion order, essential metrics, and performance visualizations.
 
-## Getting to the insertion order details screen
+## Getting to the Insertion Order Details screen
 
 From the **Insertion Orders** screen, click the name of the insertion order whose details you want to view. **The Insertion Order Details** screen will be displayed. The screen contains three main sections:
 
@@ -18,7 +18,7 @@ From the **Insertion Orders** screen, click the name of the insertion order whos
 - **Line Items**: Provides a list of the line items currently associated with the insertion order.
 - **Associated Objects**: Provides a list of associated objects with the insertion order.
 
-## Viewing insertion order settings
+## Viewing Insertion Order settings
 
 The settings that display here are read-only and can be edited by clicking **Edit** at the top of the **Insertion Order Details** screen. For more information, see [Create an Insertion Order](create-an-insertion-order.md).
 

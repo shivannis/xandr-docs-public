@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Viewability Targeting
-description: The article introduces viewability targeting, emphasizing Xandr's method using historical data for a pre-auction approach.
+description: Optimize digital ad visibility with viewability targeting. Explore pre-auction strategies using historical data for impactful campaigns.
 ms.date: 10/28/2023
 ---
 
@@ -12,6 +12,6 @@ You can opt to buy only impressions that have a certain percentage predicted vie
 
 Predicted viewability is supported for both display (banners) and video inventory on desktop and mobile web.
 
-## Related topics
+## Related topic
 
 [Measurement of Video Viewability using VPAID Wrapper](video-viewability.md)

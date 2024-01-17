@@ -47,7 +47,8 @@ When one of these criteria are met, a venue gets created on that level, correspo
 
 Assume that you have a daily average of 4,000,000 impressions, all with the same **Member - Publisher - Tag - URL**, but with 10 different **Geo** values (with no more than 600,000 impressions on any single **Geo**) from External inventory. The venue will be created at the **Member - Publisher - Tag - URL** level, because that is the most granular level with a daily average of at least 2,500,000 impressions.
 
-Remember that a venue can be created at any of the six levels described above. Venues further down in the list have greater granularity and are therefore more valuable when determining bids.
+> [!IMPORTANT]
+> Remember that a venue can be created at any of the six levels described above. Venues further down in the list have greater granularity and are therefore more valuable when determining bids.
 
 In order to avoid double-counting impressions, all impressions are counted only at the lowest-level (most granular) venue. When a new venue is created, it immediately absorbs the count of the impressions that created it; subsequently, the parent venue (in which those impressions were counted until the new venue was created) is reduced by the same
 number, because it is no longer the lowest-level.
@@ -64,7 +65,7 @@ the parent venue to the resurrected child venue. An inactive venue is always ava
 
 Throughout the entire process of creation, deletion, and resurrection of venues, data is maintained and transferred between parent and child venues.
 
-## How the Microsoft Bidder determines which venue to use
+## How the Microsoft Bidder determines which venue to use?
 
 At the time of an auction, the bidder determines which venue to use by matching the current inventory to the closest venue, starting with the most-granular (since high granularity makes for a more accurate bid amount, the bidder wants to use the highest degree of granularity):
 
@@ -81,7 +82,7 @@ At the time of an auction, the bidder determines which venue to use by matching 
 - [Targeted Learn](targeted-learn.md)
 - [What is an Optimization Node?](what-is-an-optimization-node.md)
 - [Learn Budget](learn-budget.md)
-- [what-is-valuation.md](What is Valuation?)
+- [What is Valuation?](what-is-valuation.md)
 - [Optimization Levers](optimization-levers.md)
 - [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md)
 - [Sell-Side Optimization](sell-side-optimization.md)

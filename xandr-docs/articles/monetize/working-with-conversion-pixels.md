@@ -1,10 +1,10 @@
 ---
-title : Working with Conversion Pixels
-description : The article explains a conversion pixel which is used to track user actions in response to an advertiser's creatives.
+title: Microsoft Monetize - Working with Conversion Pixels
+description: The article explains a conversion pixel which is used to track user actions in response to an advertiser's creatives.
 ms.date: 10/28/2023
 ---
 
-# Working with conversion pixels
+# Microsoft Monetize - Working with conversion pixels
 
 A conversion pixel is used to track user actions in response to an advertiser's creatives, such as registering at a site or making a purchase. When a conversion pixel fires, we determine if the conversion (the registration, the purchase, etc.) can be "attributed", or tied to the user clicking on or viewing one of the advertiser's creatives previously.
 

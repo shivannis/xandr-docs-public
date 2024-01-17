@@ -65,7 +65,7 @@ The VPAID wrapper has the following specifications:
 - Downloads the VAST document, selects the media file to play, manages tracking events, forwards VPAID Events
 - Desktop web and mobile web measurement
 
-### Reporting - UI
+## Reporting - UI
 
 The following metrics are now available in the Advertiser Video Analytics Report, Publisher Video Analytics Report, and Network Video Analytics Report. (See [Analytics Reporting](analytics-reporting.md) for more information.)
 
@@ -73,8 +73,8 @@ The following metrics are now available in the Advertiser Video Analytics Report
 
 | Viewability Metrics | Definition |
 |---|---|
-| `View-Measured Imps` | The total number of impressions that were measured for viewability. |
-| `Viewability Measurement Rate` | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
+| View-Measured Imps | The total number of impressions that were measured for viewability. |
+| Viewability Measurement Rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
 
    > [!NOTE]
    > Viewability Measurement Rate is not directly comparable to other measurement vendors since our total impression count is higher. Our measurement rate is not an indicator of the technical quality of the measurement. For more information, see the [Viewability FAQ](viewability-faq.md).
@@ -83,8 +83,8 @@ The following metrics are now available in the Advertiser Video Analytics Report
 
 | Viewability Metrics | Definition |
 |---|---|
-| `Viewable Imps` | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that 50% of the pixels of a video creative are in-view during 2 consecutive seconds. |
-| `Viewability Rate` | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
+| Viewable Imps | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that 50% of the pixels of a video creative are in-view during 2 consecutive seconds. |
+| Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
 
 ## Reporting - API
 

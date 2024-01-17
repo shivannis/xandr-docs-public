@@ -8,8 +8,7 @@ ms.date: 10/28/2023
 
 You can target video inventory based on the playback method, player size, and position.
 
-In the **Viewability & Environment Targeting** section of a line item, click the pencil icon next to **Video Player**. (For a standard line item or campaign, click Edit next to
-Video in the Targeting settings. For video targeting for Deals, see [Video Player Targeting](video-player-targeting.md)).
+In the **Viewability & Environment Targeting** section of a line item, click the pencil icon next to **Video Player**. (For a standard line item or campaign, click **Edit** next to **Video** in the **Targeting** settings. For video targeting for Deals, see [Video Player Targeting](video-player-targeting.md)).
 
 You can target video creatives in any or all of the following ways:
 
@@ -57,8 +56,7 @@ Player inventory is available across all supply types (web, mobile web, and mobi
 - **Small -** primarily in-banner inventory (maximum width of 319 pixels)
 - **No player width provided**
 
-> [!TIP]
-> For maximum delivery and reach, we recommend that you include **No player width provided** in your targeting, because some inventory (such as Google Ad Manager) is not
-> classified.
+  > [!TIP]
+  > For maximum delivery and reach, we recommend that you include **No player width provided** in your targeting, because some inventory (such as Google Ad Manager) is not classified.
 
 You can either click the graphic to make a selection or check the appropriate checkbox.

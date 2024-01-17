@@ -4,7 +4,6 @@ description: The valuation calculates bid amounts for success events. Advertiser
 ms.date: 10/28/2023
 ---
 
-
 # What is Valuation?
 
 > [!IMPORTANT]
@@ -35,7 +34,7 @@ the formula:
 
 For more detailed information, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
 
-## Valuation in the learn phase
+## Valuation in the Learn phase
 
 In this phase, we have not yet seen enough clicks/conversions to accurately define how often they will occur on a specific node. Therefore, we supplement those clicks/conversions with additional historical data obtained from the **Bayes Funnel**. We take the data that is available from the current optimization node and combine it with data from the Bayes Funnel; specifically, the most granular level of the funnel in which at least five success events have occurred.
 
@@ -44,7 +43,7 @@ For more detailed information about the Bayes Funnel, see the **How Targeted Lea
 > [!IMPORTANT]
 > The data from the current optimization node could cause the learn rank to go up or down based on its performance relative to our prediction.
 
-## Valuation on an optimized node
+## Valuation on an Optimized node
 
 Upon reaching the specified number of success events, a node is considered optimized. At this point, we can determine the likelihood of a success event for this node using the following formula:
 

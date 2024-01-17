@@ -1,10 +1,10 @@
 ---
-title: Working with Line Items
+title: Microsoft Monetize - Working with Line Items
 description: The article defines advertiser agreement in line item, budget, revenue type, performance goals. Use campaigns to fulfill spending specifics.
 ms.date: 10/28/2023
 ---
 
-# Working with line items
+# Microsoft Monetize - Working with line items
 
 A line item defines your financial agreement with an advertiser, including how much the advertiser has allocated for you to spend (budget), the basis on which the advertiser has agreed to pay you (revenue type), and performance requirements the advertiser expects you to meet (performance goals). After setting up a line item, you can create campaigns to specify how to spend the money to make good on your agreement.
 

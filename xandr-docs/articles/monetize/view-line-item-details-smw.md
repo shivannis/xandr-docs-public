@@ -1,10 +1,10 @@
 ---
-title: Microsoft Monetize - View Line Item Details
+title: Microsoft Monetize - View Line Item Details (SMW)
 description: Learn about the Line Items Details window that empowers you to optimize settings, troubleshoot, and visualize performance metrics for line items. 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - View line item details
+# Microsoft Monetize - View line item details (SMW)
 
 The Line Items Details window lets you view and edit line item settings and access troubleshooting tools, essential metrics, performance visualizations, and associated line item objects.
 
@@ -19,7 +19,7 @@ From the **Line Items** window:
 1. Click anywhere in the row of the line item you want to see details on.
 
    > [!NOTE]
-   >  You can use the **Search** field at the top of the Line Items window to search for a specific line item or navigate from page to page using the pagination functionality at the bottom of the window. See [Monitor Line Items](monitor-line-items.md) for more information.
+   >  You can use the **Search** field at the top of the **Line Items** window to search for a specific line item or navigate from page to page using the pagination functionality at the bottom of the window. See [Monitor Line Items](monitor-line-items.md) for more information.
 
 ## Selected line item details
 
@@ -32,7 +32,7 @@ object.
 
 ## Settings and troubleshooting tabs
 
-The Line Item Details window has the following tabs:
+The **Line Item Details** window has the following tabs:
 
 - **Settings** - Displays information for the selected line item including settings, essential metrics, and performance visualizations. You can edit any line item settings that are editable by clicking **Edit** at the top-right of the Line Items Details window. See [Line Item Settings](line-item-settings.md) for more information.
 - **Troubleshooting** - Displays troubleshooting information for the selected line item. See [Troubleshoot Line Items](troubleshoot-line-items.md) for more information.
