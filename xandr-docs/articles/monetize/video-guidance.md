@@ -1,28 +1,21 @@
 ---
-Title : Video Guidance
-Description : This page includes guidance on running video inventory through Prebid
+title: Video Guidance
+description: Learn how to run video inventory through Prebid Server Premium (PSP). 
 ms.date: 10/28/2023
-Server Premium (PSP).
 ---
 
 
-# Video Guidance
-
-
+# Video guidance
 
 This page includes guidance on running video inventory through Prebid
 Server Premium (PSP).
 
-
-
 ## Instream
-
-
 
 - Include the Xandr PSP `cache.url` object in
   the config settings as shown in the following example:
 
-  ``` pre
+  ``` 
   pbjs.setConfig({
      "cache":{
         "url":"https://ib.adnxs.com/prebid/cache"
@@ -44,7 +37,7 @@ Server Premium (PSP).
   `extPrebid.cache.bids[{}]` object within the `s2sConfig` as shown in
   the following example:
 
-  ``` pre
+  ``` 
   extPrebid = ([
      {
         "cache":{
@@ -66,21 +59,13 @@ Server Premium (PSP).
                           
   ```
 
-
-
-
-
-
-
 ## Outstream
-
-
 
 - To ensure that the ad request is made for `Prebid.js s2s` (with PSP),
   include the renderer object within the adUnit definition as shown in
   the following example:
 
-  ``` pre
+  ``` 
   var adUnits = ([
      {
         "code":"video1",
@@ -141,7 +126,7 @@ Server Premium (PSP).
   shown in the below example, then the `hb_format=video` key-value will
   be sent to Google Ad Manager (GAM) and can be targeted accordingly.
 
-  ``` pre
+  ``` 
   {
      "targetingControls":{
         "addTargetingKeys":[
@@ -161,7 +146,7 @@ Server Premium (PSP).
   keywords to Xandr by including the keywords
   object within the adUnit definition as shown in the following example:
 
-  ``` pre
+  ``` 
   var adUnits = ([
      {
         "code":"div-1",
@@ -192,16 +177,4 @@ Server Premium (PSP).
   ])
   ```
 
-- For more information, see <a
-  href="https://docs.prebid.org/features/firstPartyData.md#supplying-adunit-specific-data"
-  class="xref" target="_blank">Ad Unit specific data</a> and <a
-  href="https://docs.prebid.org/dev-docs/bidders/appnexus.md#appnexus-auction-keywords"
-  class="xref" target="_blank">auction-level keywords</a>.
-
-
-
-
-
-
-
-
+- For more information, see [Ad Unit specific data](https://docs.prebid.org/features/firstPartyData.html#supplying-adunit-specific-data) and [auction-level keywords](https://docs.prebid.org/dev-docs/bidders/appnexus.html#appnexus-auction-keywords).
