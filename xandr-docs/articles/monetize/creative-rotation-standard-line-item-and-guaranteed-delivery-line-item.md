@@ -1,10 +1,13 @@
 ---
-title: Creative Rotation (Standard Line Item and Guaranteed Delivery Line Item)
+title: Creative Rotation
 description: In this article, find information on what creative rotation is and how it works for standard line items and guaranteed delivery line items.
 ms.date: 10/28/2023
 ---
 
-# Creative rotation (Standard line item and guaranteed delivery line item)
+# Creative rotation
+
+> [!IMPORTANT]
+> This document describes the creative rotation feature for standard line items and guaranteed delivery line items. For information about creative rotation for augmented line items, see [Creative Rotation (ALI)](creative-rotation-ali.md).
 
 When multiple creatives of the same size are trafficked to a line item or campaign, you can set a creative delivery strategy using the **Creative Rotation** settings.
 

@@ -1,10 +1,10 @@
 ---
-title: Create a Programmatic Guaranteed Deal that Uses Third-Party Ad Server Pacing, Tag Integration
+title: Create a PG Deal with Third-Party Ad Server Pacing and Tag Integration
 description: In this article, find information on how to create and set up a PG deal that uses pacing in your ad server of record.
 ms.date: 10/28/2023
 ---
 
-# Create a programmatic guaranteed deal that uses third-party ad server pacing, Tag integration
+# Create a PG deal with third-party ad server pacing and tag integration
 
 To create a PG deal that uses pacing in your ad server of record, you need to select a buyer, ad type, CPM, impression budget, flight dates, and a placement specifically created for the PG deal.
 
