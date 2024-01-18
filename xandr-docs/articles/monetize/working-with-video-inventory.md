@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 Welcome to our guide to sell-side video! Here, you can find quickstart guides for our video products currently in alpha.
 
-## In This section
+## Related topics
 
 - [Sell-Side Video Overview](sell-side-video-overview.md)
 - [Quickstart Guide: Set Up Outstream Video](outstream-video-quickstart-guide.md)

@@ -54,7 +54,7 @@ Prior to opening this section, the countries which have already been included fo
 
 You can move countries between the **Available List** and the **Chosen List** to include or exclude them from targeting. Countries that appear in the **Chosen List** are eligible for third-party targeting when creating a campaign. Countries that appear in the **Available List** cannot be selected when creating a campaign.
 
-**To move countries to the Chosen list:**
+**To move countries to the Chosen List:**
 
 A country must be highlighted in the **Available List** before you can move it to the **Chosen List**. There are several ways to highlight and move countries:
 
@@ -62,7 +62,7 @@ A country must be highlighted in the **Available List** before you can move it t
 - Type the country name in the search field (to the right of the magnifying glass symbol). The list shows only those countries that match your search criteria. Highlight the desired countries and click the **Add** button at the bottom of the list. All highlighted countries move to the **Chosen List**.
 - Click the **Select all** option at the top right of the list. Click the **Add** button at the bottom of the list to move them all to the **Chosen List**.
 
-**To move countries to the Available list:**
+**To move countries to the Available List:**
 
 A country must be highlighted in the **Chosen List** before you can move it to the **Available List**. The options for highlighting and moving countries to this list are the same as moving them to the **Chosen List** (with the exception that all movement is in the reverse direction).
 
@@ -73,11 +73,11 @@ Click the **Save** button at the bottom left of the screen when you have finishe
 > [!IMPORTANT]
 > Saving the **Targeting: Geography** settings does not preclude you from making changes to the **Inventory: Domain List** settings.
 
-## Limit the domain lists that you can target
+## Limit the Domain Lists that you can target
 
 The second section of the **3rd Party Buying Filters** screen allows you to choose which domain lists you will use, either inclusively or exclusively.
 
-### Step 1. Open the inventory: Domain lists section
+### Step 1. Open the Inventory: Domain Lists section
 
 Click the arrow to the left of the **Targeting: Geography** header. The section opens to allow for editing.
 

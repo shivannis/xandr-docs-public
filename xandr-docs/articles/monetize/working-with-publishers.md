@@ -18,5 +18,5 @@ The publisher object is the top level of the sell-side hierarchy (**Publishers**
 - [Configuring a Native Assembly](configuring-a-native-assembly.md): Configure native assemblies by selecting
   various creative asset specifications directly from the UI or by creating custom HTML, CSS, and Javascript.
 - [Publisher Requirements for Smart Image Adjustments](publisher-requirements-for-smart-image-adjustments.md): Fill the placements with native creative assets at a much higher capacity.
-- [Monetize Insights for Publishers](monetize-insights-for-publishers.md): Helps sellers to save time by removing
+- [Microsoft Monetize Insights for Publishers](monetize-insights-for-publishers.md): Helps sellers to save time by removing
   the need to configure reporting dashboards or rely on in-depth reporting to access high level inventory information.
