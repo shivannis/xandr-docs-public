@@ -1,25 +1,25 @@
 ---
 title: Batch Log Level Data
-description: In this article, find information about the Batch Log-level Data (LLD) and details about the supported file formats and schemas.
+description: In this article, find information about the Batch Log Level Data (LLD) and details about the supported file formats and schemas.
 ms.custom: log-level-data
 ms.date: 10/28/2023
 ---
 
 # Batch log level data
 
-Batch Log-level Data (LLD) allows you to retrieve and track feeds of log-level event data that include dimensions not available in the Xandr UI or via the API [Report Service](../digital-platform-api/report-service.md) in a batch-processed manner. Feeds are generated hourly and are split into one or more files (see [File Formats](#file-formats--schemas) below). The format of the file you
+Batch Log Level Data (LLD) allows you to retrieve and track feeds of log-level event data that include dimensions not available in the Xandr UI or via the API [Report Service](../digital-platform-api/report-service.md) in a batch-processed manner. Feeds are generated hourly and are split into one or more files (see [File Formats](#file-formats--schemas) below). The format of the file you
 receive will depend on what you specified when you subscribed (e.g., Avro, Protobuf, Protobuf-delimited).
 
-For general information about Log-Level Data, see [Log-level data feeds](log-level-data-feeds.md).
+For general information about Log Level Data, see [Log Level Data feeds](log-level-data-feeds.md).
 
 ## File formats & schemas
 
 You may specify one or more of the following formats when subscribing to the service.
 
-Use the downloads provided below for packaged example files and code for consuming Log-level data files.
+Use the downloads provided below for packaged example files and code for consuming Log Level Data files.
 
 > [!NOTE]
-> Example files are created to assist you when testing the implementation you will use to consume Log-level data files. To ease testing, the example files are somewhat simpler than the generated files you will retrieve in production:
+> Example files are created to assist you when testing the implementation you will use to consume Log Level Data files. To ease testing, the example files are somewhat simpler than the generated files you will retrieve in production:
 >
 > - Example files for the **protobuf** format are not compressed (in production, they are Snappy compressed)
 > - Example data does not contain values that are typical for a given column. Instead, columns are populated with the column's index number converted to the column's type.
@@ -65,7 +65,7 @@ Use the downloads provided below for packaged example files and code for consumi
 
 Files are Snappy compressed [Hadoop Sequence files](https://hadoop.apache.org/docs/r2.6.2/api/org/apache/hadoop/io/SequenceFile.html) where the value for each record is a [BytesWriteable](https://hadoop.apache.org/docs/r2.6.2/api/org/apache/hadoop/io/BytesWritable.html), the payload of which is an encoded [Protocol buffer](https://protobuf.dev/) message.
 
-All schemas specify that fields are optional and `null` values are unset fields in the protobuf message. See the individual feeds under [Log-level data feeds](log-level-data-feeds.md) for the conditions that cause a field's value to be `null` and for more details on column availability.
+All schemas specify that fields are optional and `null` values are unset fields in the protobuf message. See the individual feeds under [Log Level Data feeds](log-level-data-feeds.md) for the conditions that cause a field's value to be `null` and for more details on column availability.
 
 See [Protobuf Install and Configuration](log-level-data-protocol-buffers.md) for instructions on how to install and configure the protobuf compiler and to download a project that includes the schemas and sample code.
 
