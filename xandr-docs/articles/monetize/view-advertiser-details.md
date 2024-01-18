@@ -1,5 +1,5 @@
 ---
-title: Microsoft Monetize - View advertiser details
+title: Microsoft Monetize - View Advertiser Details
 description: Unlock advertiser insights with the Advertiser Details screen. Explore settings, metrics, and visualizations for optimal performance.
 ms.date: 10/28/2023
 ---

@@ -9,17 +9,13 @@ ms.date: 10/28/2023
 > [!IMPORTANT]
 > This guide only applies to the legacy line item. If you are using the augmented line item (ALI), see [Optimization Guide ALI](optimization-guide-ali.md).
 
-Nodes are groupings of impressions from advertisers (or networks
-representing advertisers) which are a combination of a campaign, a
-specific creative, the venue, and the conversion pixel. Optimization is
-performed against a single node.
+Nodes are groupings of impressions from advertisers (or networks representing advertisers) which are a combination of a campaign, a specific creative, the venue, and the conversion pixel. Optimization is performed against a single node.
 
 Each individual node can be in either a **Learn** phase or an **Optimized** phase. A campaign can use multiple nodes at once; therefore, part of a campaign could be in the Learn phase while other part is in the Optimized phase.
 
 ## Optimization phases: Learn and Optimized
 
-As auctions run and information about the bids associated to a campaign
-is recorded, the data is parsed into one of the two possible optimization phases - Learn or Optimized - depending on how much data the node has accumulated.
+As auctions run and information about the bids associated to a campaign is recorded, the data is parsed into one of the two possible optimization phases - Learn or Optimized - depending on how much data the node has accumulated.
 
 > [!IMPORTANT]
 > In both phases, the valuation equation is altered to account for the limitations in the amount of data we have. This is discussed in the [What is Valuation?](what-is-valuation.md) section.

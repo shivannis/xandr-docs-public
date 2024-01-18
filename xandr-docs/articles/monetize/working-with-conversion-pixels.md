@@ -15,7 +15,7 @@ Here's how it works:
 1. You associate the conversion pixel to the advertiser's line item(s), where you define the static revenue value that the advertiser will pay you for attributed conversions. Note that you can also configure to pass an [advanced    conversion pixel](conversion-pixels-advanced.md).
 1. When the conversion pixel fires, we determine if the user clicked on or viewed one of the advertiser's creatives previously. If so, the conversion is considered attributed, and you earn the revenue for the conversion defined in the line item.
 
-## In this section
+## Related topic
 
 - [Create a Conversion Pixel](create-a-conversion-pixel.md)
 - [Export Conversion Pixels](export-conversion-pixels.md)

@@ -4,7 +4,7 @@ description: Explore Line Item Details for insights—settings, metrics, visuali
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - View line item details
+# Microsoft Monetize - View Line Item Details
 
 The **Line Item Details** screen shows you the settings and essential metrics for a specific line item, informs you of conditions preventing the line item from serving, provides visualizations of the line item's performance and delivery, offers quick access to the line item's child campaigns, and more.
 
