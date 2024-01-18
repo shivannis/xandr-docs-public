@@ -405,12 +405,12 @@ Please ensure that all lifecycle rules are set up to move manifest objects to Gl
 
 **Potential Cause**: You are revoking object-level access for non-archived manifests
 
-**Applies to**:
+**Applies to**: 
 
 - Amazon S3
 
-    **Solution**:
-    For each object, `aws s3api get-object-acl --bucket <bucket> --key <object>` should yield the following as one of the grants for each non-archived manifest object:
+**Solution**:
+For each object, `aws s3api get-object-acl --bucket <bucket> --key <object>` should yield the following as one of the grants for each non-archived manifest object:
 
     ```
     {
@@ -425,8 +425,8 @@ Please ensure that all lifecycle rules are set up to move manifest objects to Gl
 
 - Google Cloud Storage
 
-    **Solution**:
-    For each object, `gsutil acl get <object>` should yield the following as one of the grants for each non-archived manifest object:
+**Solution**:
+For each object, `gsutil acl get <object>` should yield the following as one of the grants for each non-archived manifest object:
 
     ```
     {
