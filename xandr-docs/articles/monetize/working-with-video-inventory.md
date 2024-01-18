@@ -1,29 +1,16 @@
 ---
-Title : Working with Video Inventory
-Description : Welcome to our guide to sell-side video! Here, you can find quickstart
+title: Working with Video Inventory
+description: The article helps you to learn video inventory management in alpha products with concise quickstart guides.
 ms.date: 10/28/2023
-guides for our video products currently in alpha.
 ---
 
+# Working with video inventory
 
-# Working with Video Inventory
+Welcome to our guide to sell-side video! Here, you can find quickstart guides for our video products currently in alpha.
 
+## Related topics
 
-
-Welcome to our guide to sell-side video! Here, you can find quickstart
-guides for our video products currently in alpha.
-
-In This Section
-
-- <a href="sell-side-video-overview.md" class="xref">Sell-Side Video
-  Overview</a>
-- <a href="outstream-video-quickstart-guide.md" class="xref">Quickstart
-  Guide: Set Up Outstream Video</a>
-- <a href="selling-in-stream-video.md" class="xref"
-  title="To monetize video inventory, you need to successfully describe the player and its specifications using the placement object. These capabilities are fully supported by Monetize and the Xandr API.">Selling
-  In-Stream Video</a>
-- <a href="video-players.md" class="xref">Video Players</a>
-
-
-
-
+- [Sell-Side Video Overview](sell-side-video-overview.md)
+- [Quickstart Guide: Set Up Outstream Video](outstream-video-quickstart-guide.md)
+- [Selling In-Stream Video](selling-in-stream-video.md)
+- [Video Players](video-players.md)

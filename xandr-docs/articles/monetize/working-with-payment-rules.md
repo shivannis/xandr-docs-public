@@ -1,35 +1,18 @@
 ---
-Title : Working with Payment Rules
-Description : Payment Rules represent a financial agreement between a network and a
+title: Working with Payment Rules
+description: The article covers Payment Rules—a financial pact between a network and a publisher. Single/base rules, with specific conditions for impressions (geography, frequency).
 ms.date: 10/28/2023
-publisher. A network may have a single payment rule for all impressions
 ---
 
+# Working with payment rules
 
-# Working with Payment Rules
-
-
-
-Payment Rules represent a financial agreement between a network and a
-publisher. A network may have a single payment rule for all impressions
-from a publisher, or it might have a **base rule** that serves as a
-default. More specific **conditional rules** can be defined that apply
-to individual impressions based on geography, frequency, or other
+Payment Rules represent a financial agreement between a network and a publisher. A network may have a single payment rule for all impressions from a publisher, or it might have a **base rule** that serves as a default. More specific **conditional rules** can be defined that apply to individual impressions based on geography, frequency, or other
 targeting.
 
-In This Section
+## In this section
 
-- <a href="create-payment-rules.md" class="xref">Create Payment
-  Rules</a>: Create base and conditional payment rules.
-- <a href="update-payment-rules.md" class="xref">Update Payment
-  Rules</a>: View essential metrics about all payment rules under a
-  publisher, get quick access to each payment rule's details, and
-  duplicate, edit, or delete conditional payment rules.
-- <a href="base-and-conditional-rules.md" class="xref">Base and
-  Conditional Rules</a>: Learn about the relationship between base and
-  conditional rules and how they are used for publisher payment rules
-  and ad quality.
-
-
-
-
+- [Create Payment Rules](create-payment-rules.md): Create base and conditional payment rules.
+- [Update Payment Rules](update-payment-rules.md): View essential metrics about all payment rules under a
+  publisher, get quick access to each payment rule's details, and duplicate, edit, or delete conditional payment rules.
+- [Base and Conditional Rules](base-and-conditional-rules.md): Learn about the relationship between base and
+  conditional rules and how they are used for publisher payment rules and ad quality.
