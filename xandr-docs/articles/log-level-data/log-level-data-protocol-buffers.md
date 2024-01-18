@@ -1,11 +1,11 @@
 ---
-title: Log Level Data - Protocol Buffers
+title: Log Level Data - Install and Configure Protocol Buffers
 description: In this article, learn what protocol buffers is and find instructions for installation and configuration.
 ms.custom: log-level-data
 ms.date: 10/28/2023
 ---
 
-# Log level data - Protocol buffers
+# Log level data - Install and Configure Protocol Buffers
 
 Xandr Log-Level Data (LLD) is encoded using a binary interchange format called [Protocol Buffers](https://github.com/protocolbuffers/protobuf). Use the steps below to get started with protobuf and integrate LLD into your system.
 
