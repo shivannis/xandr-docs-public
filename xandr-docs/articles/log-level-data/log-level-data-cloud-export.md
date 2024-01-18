@@ -28,9 +28,9 @@ Please confirm the following prior to proceeding to setup.
 
 Please follow the procedures in the sections below for the cloud vendor you'd like to export to. Xandr currently supports the following through the Xandr UI:
 
-- [Amazon S3](### Amazon S3)
-- Microsoft Azure Blob Storage
-- Google Cloud Storage
+- [Amazon S3](log-level-data-cloud-export.md#amazon-s3)
+- [Microsoft Azure Blob Storage](log-level-data-cloud-export.md#microsoft-azure-blob-storage)
+- [Google Cloud Storage](log-level-data-cloud-export.md#google-cloud-storage)
 
 > [!NOTE]
 > If you use a firewall or other IP-restricting security features, add all of these IP addresses and ranges to your allowlist:
