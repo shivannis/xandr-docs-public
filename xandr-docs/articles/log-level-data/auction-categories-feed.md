@@ -1,7 +1,7 @@
 ---
 title: Auction Categories Feed
 description: In this article, find information about the Auction categories feed and details about the columns associated with this data feed.
-ms.custom: log-level-data
+ms.custom: log level-data
 ms.date: 10/28/2023
 ---
 
@@ -10,13 +10,13 @@ ms.date: 10/28/2023
 > [!IMPORTANT]
 > This feed is not available to Microsoft Invest clients.
 
-This is a log-level data feed that provides you with data on all categories (universal and custom) that were present in an auction where you were the selling member.
+This is a log level data feed that provides you with data on all categories (universal and custom) that were present in an auction where you were the selling member.
 
 The Xandr internal name for this feed is `auction_categories_feed`.
 
 Each feed is delivered hourly and will be retained for 7 days. The feed will be logged when an auction is complete.
 
-If you enable the auction category feed, it will be in your feed list along with all your other log-level data feeds. See [Log Level Data Feeds](log-level-data-feeds.md) for more information.
+If you enable the auction category feed, it will be in your feed list along with all your other log level data feeds. See [Log Level Data Feeds](log level-data-feeds.md) for more information.
 
 | Column Index | Column Name | Type | Description |
 |---|---|---|---|
