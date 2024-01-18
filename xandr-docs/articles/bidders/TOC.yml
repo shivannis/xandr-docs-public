@@ -152,16 +152,20 @@
       href: submit-a-bid-response.md
     - name: Receive a Notify Request
       href: receive-a-notify-request.md
-  - name: Other Considerations
-    items:
-    - name: Bidder Best Practices
-      href: bidder-best-practices.md
     - name: Deals for Bidders
       items:
       - name: Overview
         href: deals-for-bidders.md
       - name: Deal Auction Mechanics
         href: deal-auction-mechanics.md
+      - name: Programmatic Guaranteed Deals for Bidders
+        href: programmatic-guaranteed-deals-for-bidders.md
+    - name: Mobile for Bidders
+      href: mobile-for-bidders.md
+  - name: Expandables and Rich Media
+    href: expandables-and-rich-media.md
+- name: Microsoft Inventory Buying Guide
+      items:  
       - name: Buying Microsoft Casual Games (Windows O&O Apps)
         href: buying-microsoft-casual-games--windows-o-o-apps.md
       - name: Buying Microsoft Deals
@@ -172,12 +176,6 @@
         href: buying-msn-inventory.md
       - name: Microsoft Windows App Inventory for Bidders
         href: microsoft-windows-app-inventory-for-bidders.md
-    - name: Programmatic Guaranteed Deals for Bidders
-      href: programmatic-guaranteed-deals-for-bidders.md
-    - name: Mobile for Bidders
-      href: mobile-for-bidders.md
-  - name: Expandables and Rich Media
-    href: expandables-and-rich-media.md
 - name: Bidding Protocol
   items: 
   - name: Overview
@@ -321,6 +319,8 @@
 #- name: Communications
  # href: communications.md
 
+- name: Best Practices
+  href: bidder-best-practices.md
 - name: Release Notes
   items:
     - name: Latest Release Notes
