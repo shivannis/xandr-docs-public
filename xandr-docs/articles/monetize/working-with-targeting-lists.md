@@ -16,7 +16,7 @@ The pages in this section explain how to create and manage targeting lists at th
 > [!NOTE]
 > Domain targeting applies only to **Web** and **Mobile Web** impressions and does not apply to **Mobile App** impressions. If you have allowed your campaign to serve on mobile apps while targeting a domain list, the campaign will be unrestricted when buying mobile app inventory unless you have also applied App List targeting. To avoid serving on mobile app inventory, switch the **Apps Placements** toggle in your campaign's targeting profile to OFF.
 
-## In this section
+## Related topics
 
 - [Managing Your Targeting Lists](managing-your-targeting-lists.md): Learn how to view and explore app lists and domain
   lists.

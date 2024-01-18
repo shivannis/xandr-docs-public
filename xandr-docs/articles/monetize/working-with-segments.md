@@ -1,10 +1,10 @@
 ---
-title: Working with Segments
+title: Microsoft Monetize - Working with Segments
 description: The article defines segment pixels that capture user information (webpages, actions, gender, location) to assign to segments. 
 ms.date: 10/28/2023
 ---
 
-# Working with segments
+# Microsoft Monetize - Working with segments
 
 Segment pixels use information about a user, such as webpages they visit, actions they take, or qualities such as gender, location, and wealth, to assign that user to a group called a segment. Segment data is written to and extracted from the server-side cookie store via segment pixels.
 
@@ -30,10 +30,10 @@ https://ib.adnxs.com/seg?remove=1,2,4
 These segment pixel calls to `/seg` will always return a 1x1 invisible GIF, unless a piggyback pixel redirect parameter is
 included. (To learn more about redirect parameters, see [Segment Pixels: Advanced](segment-pixels-advanced.md).)
 
-## Network- vs. advertiser-level segments
+## Network- vs. Advertiser-level segments
 
 Networks can create segment pixels that are attached to a specific advertiser, or they can create network-wide
-segment pixels that are available for targeting to all the network's advertisers. An advertiser-level segment is only available to that advertiser's campaigns. You can move a segment from advertiser-level to Network-level by changing the advertiser_id to null via the API.
+segment pixels that are available for targeting to all the network's advertisers. An advertiser-level segment is only available to that advertiser's campaigns. You can move a segment from advertiser-level to Network-level by changing the `advertiser_id` to `null` via the API.
 
 ## Server side cookie storage
 
@@ -51,12 +51,12 @@ In addition to "standard" segments, QuickStats are also available for the follow
 
 | Metric | Description |
 |---|---|
-| Name | This is the segment name. |
-| ID | This is the segment Xandr ID. |
-| Data Provider | This is the data provider name. |
-| Price | This column displays the price a buyer has paid for a segment. It allows the buyer to toggle between these two options:<br> - CPM (default)<br> - % Media Cost |
-| Active Users | This is the count of active users in a segment over a 24-hour period. |
-| Daily Loads | The average number of times a user is added to a segment. (This is also known as 'segment fires'.)<br>This allows you to see growth and reduction of segments. |
+| **Name** | This is the segment name. |
+| **ID** | This is the segment Xandr ID. |
+| **Data Provider** | This is the data provider name. |
+| **Price** | This column displays the price a buyer has paid for a segment. It allows the buyer to toggle between these two options:<br> - CPM (default)<br> - % Media Cost |
+| **Active Users** | This is the count of active users in a segment over a 24-hour period. |
+| **Daily Loads** | The average number of times a user is added to a segment. (This is also known as 'segment fires'.)<br>This allows you to see growth and reduction of segments. |
 
 > [!NOTE]
 > The contextual segments (from contextual or real-time data providers) will not show loads in this report. This is because contextual segments do not actually involve a pixel being fired. Instead, they are added to an impression in real time.

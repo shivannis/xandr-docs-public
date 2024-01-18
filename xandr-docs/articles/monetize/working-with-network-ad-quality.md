@@ -26,7 +26,7 @@ A Publisher Template, like a Network Profile, is a collection of ad quality sett
 
 For more information, see [Create a Publisher Template](create-a-publisher-template.md).
 
-In This Section
+## In this section
 
 - [Network Ad Quality Screen](network-ad-quality-screen.md): A description of the screen elements and what they do.
 - [Update Your Network Profile](update-your-network-profile.md): Determine ad quality settings for all the

@@ -8,9 +8,9 @@ ms.date: 10/28/2023
 
 The publisher object is the top level of the sell-side hierarchy (**Publishers** \> **Placement Groups** \> **Placements**). When you create a publisher, you define your financial and business relationship with the publisher, specify how you would like to sell the publisher's inventory to your Xandr partners, and set the types of acceptable payments, payment terms, and ad quality settings.
 
-## In this section
+## Related topics
 
-- [Create a Publisher](create-a-publisher.md): Create a publisher in Monetize.
+- [Create a Publisher](create-a-publisher.md): Create a publisher in Microsoft Monetize.
 - [Explore Publishers](explore-publishers.md): View essential metrics about all publishers, get quick access to each
   publisher's details, and use bulk editing options.
 - [Update Publishers](update-publishers.md): Update details of a publisher.

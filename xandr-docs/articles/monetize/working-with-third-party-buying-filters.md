@@ -24,7 +24,7 @@ This 3rd-Party Buying Filters screen shows the two areas in which you can apply 
 
 To reach this screen, select **Network** \> **Tools** \> **General** on the top menu and then select the **3rd-Party Buying Filters** tab.
 
-## Targeting: geography
+## Targeting: Geography
 
 This section allows you to establish a list of countries that you can choose from when targeting a specific campaign.
 
@@ -32,7 +32,7 @@ This section allows you to establish a list of countries that you can choose fro
 - **Available List:** This section contains the countries that you have not yet selected.
 - **Chosen List:** This section contains the countries that you have selected. Only these countries will be available for campaign targeting by geography (refer to [Geography Targeting](geography-targeting.md) for more information).
 
-## Inventory: domain lists
+## Inventory: Domain lists
 
 This section allows you to determine targeting using domain lists.
 
@@ -44,17 +44,17 @@ This section allows you to determine targeting using domain lists.
 
 The first section of the **3rd-Party Buying Filters** section allow the creation of a list of countries. These countries will be the only locations in which your campaigns will be able to purchase third-party impressions. This allows you to be more efficient when creating campaigns because you will have a smaller list of countries from which to define geographic targeting.
 
-## Step 1. Open the targeting: geography section
+### Step 1. Open the targeting: Geography section
 
 Click the arrow to the left of the **Targeting: Geography** header. The section opens to allow for editing.
 
 Prior to opening this section, the countries which have already been included for this member are visible. This information is visible below the title of the collapsed section.
 
-## Step 2. Choose the countries to add or remove from targeting
+### Step 2. Choose the countries to add or remove from targeting
 
 You can move countries between the **Available List** and the **Chosen List** to include or exclude them from targeting. Countries that appear in the **Chosen List** are eligible for third-party targeting when creating a campaign. Countries that appear in the **Available List** cannot be selected when creating a campaign.
 
-**To move countries to the chosen list:**
+**To move countries to the Chosen list:**
 
 A country must be highlighted in the **Available List** before you can move it to the **Chosen List**. There are several ways to highlight and move countries:
 
@@ -62,11 +62,11 @@ A country must be highlighted in the **Available List** before you can move it t
 - Type the country name in the search field (to the right of the magnifying glass symbol). The list shows only those countries that match your search criteria. Highlight the desired countries and click the **Add** button at the bottom of the list. All highlighted countries move to the **Chosen List**.
 - Click the **Select all** option at the top right of the list. Click the **Add** button at the bottom of the list to move them all to the **Chosen List**.
 
-**To move countries to the available list:**
+**To move countries to the Available list:**
 
 A country must be highlighted in the **Chosen List** before you can move it to the **Available List**. The options for highlighting and moving countries to this list are the same as moving them to the **Chosen List** (with the exception that all movement is in the reverse direction).
 
-## Step 3. Save your settings
+### Step 3. Save your settings
 
 Click the **Save** button at the bottom left of the screen when you have finished making changes to the **Targeting: Geography** settings.
 
@@ -77,14 +77,14 @@ Click the **Save** button at the bottom left of the screen when you have finishe
 
 The second section of the **3rd Party Buying Filters** screen allows you to choose which domain lists you will use, either inclusively or exclusively.
 
-## Step 1. Open the inventory: domain lists section
+### Step 1. Open the inventory: Domain lists section
 
 Click the arrow to the left of the **Targeting: Geography** header. The section opens to allow for editing.
 
 > [!IMPORTANT]
 > This section shows the domain lists which have already been included for this member prior to opening it. These are seen to the right of the **Include** text in the second row of the collapsed section.
 
-## Step 2. Indicate whether to specify domain lists or not
+### Step 2. Indicate whether to specify domain lists or not
 
 This option allows you to choose one or more domain lists at the network level, thereby filtering the websites they contain prior to use for targeting at the campaign level. This is beneficial if you know that you regularly include or exclude one or more domains. You must choose one of the following options:
 
@@ -111,10 +111,10 @@ This option allows you to choose one or more domain lists at the network level, 
   - This domain lists contains the following domains: **AAA.com**, **CCC.com**, **222.com**, **777.com**, and **999.com**
 - **DLA1** will be included with the campaign. Domains **AAA.com**, **CCC.com**, and **222.com** will be targeted, because they are contained within at least one of the domain lists included at the domain level (**DLA** and **DLB**). However, domains **777.com** and **999.com** will **not** be targeted, as they are not contained with either of the two domain lists included at the network level.
 
-  > [!NOTE]
-  > Be sure to note the difference between a **domain** and a **domain list** in the descriptions above.
+> [!NOTE]
+> Be sure to note the difference between a **domain** and a **domain list** in the descriptions above.
 
-## Step 3. Choose the domain lists to add or remove from targeting
+### Step 3. Choose the domain lists to add or remove from targeting
 
 You can move domain lists between the **Available Domain Lists** and the **Targeted Domain Lists** fields to make them available for targeting or exclusion in a campaign. Domain lists that appear in the **Targeted Domain Lists** are eligible for targeting when creating a campaign. Domain lists that appear in the **Available Domains List** cannot be selected when creating a campaign.
 
@@ -122,7 +122,7 @@ You can move domain lists between the **Available Domain Lists** and the **Targe
 
 - Click the **Add** button at the bottom of the list. All highlighted countries move to the **Targeted Domains List**.
 - Type the country name in the search field (to the right of the magnifying glass symbol). The list shows only those countries that match your search criteria. Highlight the desired countries and click the **Add** button at the bottom of the list. All highlighted countries move to the **Targeted Domains List**.
-- Click the **Select all** option at the top right of the list. Click the Add button at the bottom of the list to move them all to the **Chosen Domains List**. Everything in the **Targeted Domain List** is available for use on the [Working with Targeting Lists](working-with-targeting-lists.md) screen.
+- Click the **Select all** option at the top right of the list. Click the **Add** button at the bottom of the list to move them all to the **Chosen Domains List**. Everything in the **Targeted Domain List** is available for use on the [Working with Targeting Lists](working-with-targeting-lists.md) screen.
 
 **To move countries to the Available Domains List:**
 
@@ -130,7 +130,7 @@ You can move domain lists between the **Available Domain Lists** and the **Targe
 - Type the country name in the search field (to the right of the magnifying glass symbol). The list shows only those countries that match your search criteria. Highlight the desired countries and click the **Remove** button at the bottom of the list. All highlighted countries move to the **Available Domains List**.
 - Click the **Select all** option at the top right of the list. Click the **Remove** button at the bottom of the list to move them all to the **Available Domains List**.
 
-## Step 4. Save your settings
+### Step 4. Save your settings
 
 Click the **Save** button at the bottom left of the screen when you have finished making changes to the **Inventory: Domain List** settings.
 

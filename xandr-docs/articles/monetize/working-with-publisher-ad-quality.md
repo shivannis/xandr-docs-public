@@ -1,6 +1,6 @@
 ---
 title: Working with Ad Quality
-description: The article explains how to manage Ad Quality, in a scenario where the sellers set rules for creative attributes (buyer, brand), size or user session ferquency.
+description: The article explains how to manage Ad Quality, in a scenario where the sellers set rules for creative attributes (buyer, brand), size or user session frequency.
 ms.date: 10/28/2023
 ---
 
@@ -18,7 +18,7 @@ This topic provides an overview of the ad quality settings that can be configure
 
 ## Reference
 
-- [Explore Publisher Ad Quality](explore-publisher-ad-quality.md) - A reference covering the major user interface elements and their functionality.
+[Explore Publisher Ad Quality](explore-publisher-ad-quality.md) - A reference covering the major user interface elements and their functionality.
 
 ## How-tos
 

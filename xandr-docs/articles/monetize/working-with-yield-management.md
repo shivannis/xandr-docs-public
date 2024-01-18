@@ -18,7 +18,7 @@ YM rules are set up per publisher and can apply to various impression properties
 - The type of creatives that are most desired, e.g., those that synchronize with the publisher's content
 - Whether the creatives involved would create channel conflict
 
-## In This section
+## Related topics
 
 - [Understanding Yield Management](understanding-yield-management.md): Get a basic introduction to floor and bias rules
 and how YM rules are applied. If you are unfamiliar with YM, you should start here before moving on to other sections.

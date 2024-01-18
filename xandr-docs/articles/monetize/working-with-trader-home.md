@@ -4,7 +4,7 @@ description: The article defines, Trader Home - a central hub for daily insights
 ms.date: 10/28/2023
 ---
 
-# Working with trader home
+# Working with Trader Home
 
 > [!IMPORTANT]
 > **Trader Home** is currently available to a limited set of clients.
@@ -15,7 +15,7 @@ This section describes **Trader Home** capabilities and provides step-by-step in
 
 **Trader Home** page gives you quick access to the insertion order details and essential metrics. This section helps you get started.
 
-## In this section
+## Related topics
 
 - [Explore Trader Home](explore-trader-home.md)
 - [Update Trader Home](update-trader-home.md)

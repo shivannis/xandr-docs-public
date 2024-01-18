@@ -1,10 +1,10 @@
 ---
-title: Working with Roles
+title: Microsoft Monetize - Working with Roles
 description: The article defines roles for user access in the system at Platform or Feature level. You can customize roles as per business requirements.
 ms.date: 10/28/2023
 ---
 
-# Working with roles
+# Microsoft Monetize - Working with roles
 
 Roles determine what the users can view and perform in the Xandr system, and can be applied at the Platform or Feature level. You can also create custom roles depending on the need of the business.
 

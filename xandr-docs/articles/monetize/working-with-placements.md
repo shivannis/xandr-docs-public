@@ -12,7 +12,7 @@ When you create a placement in Xandr, you select the size and types of creatives
 reserve price for your managed and external demand or just for external demand, self-classify the placement with categories and sensitive attributes for targeting in campaigns and for reporting, and enable the placement for reselling, which adds it to the general pool of real-time unaudited inventory. For more information on working with placements,
 please explore the pages listed below.
 
-## In this section
+## Related topics
 
 - [Create a Placement](create-a-placement.md)
 - [Explore Placements](explore-placements.md)
