@@ -165,17 +165,17 @@
   - name: Expandables and Rich Media
     href: expandables-and-rich-media.md
 - name: Microsoft Inventory Buying Guide
-      items:  
-      - name: Buying Microsoft Casual Games (Windows O&O Apps)
-        href: buying-microsoft-casual-games--windows-o-o-apps.md
-      - name: Buying Microsoft Deals
-        href: buying-microsoft-deals.md
-      - name: Buying Microsoft Outlook.com Inventory
-        href: buying-microsoft-outlook-com-inventory.md
-      - name: Buying MSN Inventory
-        href: buying-msn-inventory.md
-      - name: Microsoft Windows App Inventory for Bidders
-        href: microsoft-windows-app-inventory-for-bidders.md
+    items:  
+    - name: Buying Microsoft Casual Games (Windows O&O Apps)
+      href: buying-microsoft-casual-games--windows-o-o-apps.md
+    - name: Buying Microsoft Deals
+      href: buying-microsoft-deals.md
+    - name: Buying Microsoft Outlook.com Inventory
+      href: buying-microsoft-outlook-com-inventory.md
+    - name: Buying MSN Inventory
+      href: buying-msn-inventory.md
+    - name: Microsoft Windows App Inventory for Bidders
+      href: microsoft-windows-app-inventory-for-bidders.md
 - name: Bidding Protocol
   items: 
   - name: Overview
