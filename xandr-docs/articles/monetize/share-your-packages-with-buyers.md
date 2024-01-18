@@ -1,52 +1,32 @@
 ---
-Title : Share Your Packages with Buyers
-Description : As a seller, you can proactively commercialize your packages by sending
+title: Microsoft Monetize - Share Your Packages with Buyers
+description: The article offers information for sellers to market packages by sharing links with external buyers, with a step-by-step walkthrough.
 ms.date: 10/28/2023
-links to both Xandr and external buyers. This
 ---
 
+# Microsoft Monetize -  Share your packages with buyers
 
-# Share Your Packages with Buyers
+As a seller, you can proactively commercialize your packages by sending links to both Xandr and external buyers. This page walks you through the process.
 
+## Share packages with any buyer
 
+To generate a public link that you can send to any buyer, on Microsoft Monetize or off:
 
-As a seller, you can proactively commercialize your packages by sending
-links to both Xandr and external buyers. This
-page walks you through the process.
+1. Click the **Open Public Package** button.
+1. Copy the URL in the screen that opens. This is the screen the buyer will see.
+1. Email it to any buyers who would be interested in your packages.
 
-Share Packages with Any Buyer
+## Share packages with a specific buyer
 
-To generate a public link that you can send to any buyer, on
-Monetize or off:
+If you have customized packages for a specific buyer, you can grab a unique link to send just to that buyer:
 
-1.  Click the Open Public Package
-    button.
-2.  Copy the URL in the screen that opens. This is the screen the buyer
-    will see.
-3.  Email it to any buyers who would be interested in your packages.
+1. Click the **Preview Packages** button.
+1. On the **Packages Preview** screen, select **Select a specific buyer**, select the buyer, and click **OK**.
+1. Once you're viewing your packages from the buyer's perspective,  click the **Open \< Buyer's\> Catolog** button.
+1. Copy the URL in the screen that opens.
+1. Email it to the specific buyer.
 
-Share Packages with a Specific Buyer
+## Related topics
 
-If you have customized packages for a specific buyer, you can grab a
-unique link to send just to that buyer:
-
-1.  Click the Preview Packages button.
-2.  On the Packages Preview
-    screen, select Select a specific
-    buyer, select the buyer, and click
-    OK.
-3.  Once you're viewing your packages from the buyer's perspective,
-    click the Open \<Buyer's\> Catolog
-    button.
-4.  Copy the URL in the screen that opens.
-5.  Email it to the specific buyer.
-
-Related Topics
-
-- <a href="create-a-package.md" class="xref">Create a Package</a>
-- <a href="manage-your-packages.md" class="xref">Manage Your
-  Packages</a>
-
-
-
-
+- [Create a Package](create-a-package.md)
+- [Manage Your Packages](manage-your-packages.md)
