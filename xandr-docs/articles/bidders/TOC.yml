@@ -4,8 +4,6 @@
   items:
   - name: The Big Picture
     href: the-big-picture.md
-  - name: Auction Overview
-    href: auction-overview.md
   - name: Bidding Use Case with Fees
     href: bidding-use-case-with-fees.md
   - name: Price Reduction Mechanics
