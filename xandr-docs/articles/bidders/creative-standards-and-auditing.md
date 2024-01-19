@@ -1,12 +1,12 @@
 ---
-title : Creative Standards and Auditing
+title : Overview - Creative Standards and Auditing
 description : Learn how Xandr addresses channel conflicts.  
 ms.date : 11/21/2023
 
 ---
 
 
-# Creative standards and auditing
+# Overview - Creative standards and auditing
 
 Avoiding channel conflict is a major challenge for publishers working
 with a third party to sell their inventory. Every publisher has a unique
