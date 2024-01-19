@@ -8,8 +8,7 @@
     href: bidding-use-case-with-fees.md
   - name: Price Reduction Mechanics
     href: price-reduction-mechanics.md
-  - name: Supported Currencies
-    href: supported-currencies.md
+  
  # - name: Xandr's Digital Platform UI
    # href: xandr-s-digital-platform-ui.md
 - name: Bidder Platform UI
@@ -316,7 +315,8 @@
     href: viewability-faq.md
 #- name: Communications
  # href: communications.md
-
+- name: Supported Currencies
+  href: supported-currencies.md
 - name: Best Practices
   href: bidder-best-practices.md
 - name: Release Notes
