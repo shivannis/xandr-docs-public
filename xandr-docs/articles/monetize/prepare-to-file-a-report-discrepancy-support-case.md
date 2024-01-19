@@ -37,6 +37,6 @@ If you're considering working with Support to investigate a suspected discrepanc
 
 1. Calculate the discrepancy percentage using the following formula:
 
-    `(1 - (Xandr Report/3rd Party Report)) x 100`.
+    `(1 - (Xandr Report/3rd Party Report)) x 100`
 
     If the discrepancy is greater than 10% (15% for mobile), you can file a case for Xandr to investigate the discrepancy. If the discrepancy is less, it's considered expected variation, and doesn't qualify for a case investigation.
