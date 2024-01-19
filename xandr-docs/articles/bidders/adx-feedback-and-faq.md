@@ -1,10 +1,10 @@
 ---
-title: AdX Feedback and FAQ
+title: AdX Guidelines and Restrictions
 description: In this article, find information about the guidelines and restrictions of the Google Ad Manager platform.
 ms.date: 10/28/2023
 ---
 
-# AdX feedback and FAQ
+# AdX Guidelines and Restrictions
 
 We strictly adhere to the guidelines and restrictions of the Google Ad Manager platform, all of which can be found at the links below.
 
