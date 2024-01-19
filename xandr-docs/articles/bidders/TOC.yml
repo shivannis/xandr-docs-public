@@ -102,7 +102,7 @@
       href: sherlock-creative-quality-control.md
     - name: Creative Approval - Implementation
       href: creative-approval---implementation.md
-    - name: Smart Image Adjustments for Native Creatives - Bidders
+    - name: Smart Image Adjustments for Native Creatives - Bidder
       href: smart-image-adjustments-for-native-creatives---bidders.md
 - name: Microsoft Monetize Supply for External Demand Partners
   items:
@@ -152,15 +152,15 @@
       href: submit-a-bid-response.md
     - name: Receive a Notify Request
       href: receive-a-notify-request.md
-    - name: Deals for Bidders
+    - name: Deals for Bidder
       items:
       - name: Overview
         href: deals-for-bidders.md
       - name: Deal Auction Mechanics
         href: deal-auction-mechanics.md
-      - name: Programmatic Guaranteed Deals for Bidders
+      - name: Programmatic Guaranteed Deals for Bidder
         href: programmatic-guaranteed-deals-for-bidders.md
-    - name: Mobile for Bidders
+    - name: Mobile for Bidder
       href: mobile-for-bidders.md
   - name: Expandables and Rich Media
     href: expandables-and-rich-media.md
@@ -174,15 +174,15 @@
     href: buying-microsoft-outlook-com-inventory.md
   - name: Buying MSN Inventory
     href: buying-msn-inventory.md
-  - name: Microsoft Windows App Inventory for Bidders
+  - name: Microsoft Windows App Inventory for Bidder
     href: microsoft-windows-app-inventory-for-bidders.md
 - name: Bidding Protocol
   items: 
   - name: Overview
     href: bidding-protocol.md
-  - name: Outgoing Bid Request to Bidders
+  - name: Outgoing Bid Request to Bidder
     href: outgoing-bid-request-to-bidders.md
-  - name: Incoming Bid Response from Bidders
+  - name: Incoming Bid Response from Bidder
     href: incoming-bid-response-from-bidders.md
   - name: Bid Error Codes
     href: bid-error-codes.md
