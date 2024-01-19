@@ -75,7 +75,7 @@
     href: seat-screen.md
 - name: Bidder Platform Operations
   items:
-  - name: Inventory Quality
+  - name: Inventory Quality and Auditing
     items: 
     - name: Overview
       href: inventory-quality.md
