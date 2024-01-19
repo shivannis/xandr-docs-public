@@ -42,7 +42,7 @@ You can create up to 5 user groups per testing pattern. You must then decide wha
 
 By default Xandr will exclude cookieless users from the A/B test because you cannot track clicks or conversions for cookieless users, therefore you cannot test performance on them. You also have the option to put all cookieless users in your control group.
 
-We separate cookieless users into their own bucket (bucket "0"), so that they do not interfere with A/B testing if you choose not to target them.
+We separate cookieless users into their own bucket (bucket "`0`"), so that they do not interfere with A/B testing if you choose not to target them.
 
 ### User group
 

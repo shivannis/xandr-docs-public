@@ -30,7 +30,9 @@ You must have a test publisher and placement to test conversion pixels. If neces
     > [!TIP]
     > Use `Control`+`F` or `Command`+`F` to search for the campaign ID.
 
-1. Once the test campaign is winning the debug auctions, serve yourself an ad using a URL in this format: `https://secure.adnxs.com/tt?id=[TEST_PLACEMENT_ID]&size=[WIDTH]x[HEIGHT]`
+1. Once the test campaign is winning the debug auctions, serve yourself an ad using a URL in the following format:
+
+    `https://secure.adnxs.com/tt?id=[TEST_PLACEMENT_ID]&size=[WIDTH]x[HEIGHT]`
 
     | Option | Description |
     |---|---|
@@ -45,10 +47,10 @@ You must have a test publisher and placement to test conversion pixels. If neces
 
     You will see all the calls going out from the browser to various servers. Within the list of calls, you should see your pixel tag: `https://secure.adnxs.com/px?id=[PIXEL_ID]&t=X` where `X` is `1` (JavaScript) or `2` Image.
 
-    |  |  |
+    | Scenario | Action Item |
     |---|---|
     | If you see the pixel call fire with the correct ID | Success! You should see a conversion appear in reporting several hours after the pixel fires. |
-    | If you have served yourself an ad and have confirmed that the pixel fired properly, but do not see conversions several hours later: | Contact the [Customer Support Portal](https://help.xandr.com) and include all of the following information: <br> - your Xandr user ID (you can find this on `https://secure.adnxs.com/cookie?dongle=[YourMember'sDongle]`) <br> - the hour (including time zone) you served yourself the impression <br> - the pixel ID you fired <br> - the campaign ID you used <br> - the page where the conversion pixel was trafficked <br> - an HTTP archive (available in the browser's **Network** tab) |
+    | If you have served yourself an ad and have confirmed that the pixel fired properly, but do not see conversions several hours later: | Contact the [Customer Support team](https://help.xandr.com) and include all of the following information: <br> - your Xandr user ID (you can find this on `https://secure.adnxs.com/cookie?dongle=[YourMember'sDongle]`) <br> - the hour (including time zone) you served yourself the impression <br> - the pixel ID you fired <br> - the campaign ID you used <br> - the page where the conversion pixel was trafficked <br> - an HTTP archive (available in the browser's **Network** tab) |
 
 ## Related topics
 

@@ -34,7 +34,7 @@ The pixel starts at `</script><img src=\"https://nym1.mobile.adnxs.com/it?`
 
 #### View the separate field response when client-side impression tracking is enabled
 
-An example of a response with client-side impression tracking enabled and leveraging the Separate Field implementation option.
+An example of a response with client-side impression tracking enabled and leveraging the **Separate Field** implementation option.
 
 > [!NOTE]
 > There is a field in this response named "`imptracker`" where the impression tracking pixel will be returned.

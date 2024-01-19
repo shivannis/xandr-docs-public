@@ -36,33 +36,33 @@ The most intuitive way to demonstrate how Targeted Learn leverages data is throu
 
 #### Step 1. Leverage advertiser data
 
-Once the advertiser Bob's Diner has at least 5 conversions (Pixel A firing 5 times), we leverage all of the advertiser's data to calculate a learn bid.
+Once the advertiser Bob's Diner has at least five conversions (Pixel A firing five times), we leverage all of the advertiser's data to calculate a learn bid.
 
-:::image type="content" source="media/advertiser-data.png" alt-text="Venn diagram of Advertiser Data.":::
+:::image type="content" source="media/advertiser-data.png" alt-text="Diagram of Advertiser Data.":::
 
 #### Step 2. Leverage advertiser and venue data
 
-Since the advertiser has run this offer before, it may have even gotten 5 conversions on a single venue (Pixel A firing 5 times on a specific venue for that advertiser). In this case, when calculating a learn bid for this venue, our algorithm leverages the advertiser's data specific to this venue. This data is represented by the intersection of the advertiser and venue data.
+Since the advertiser has run this offer before, it may have even gotten five conversions on a single venue (Pixel A firing five times on a specific venue for that advertiser). In this case, when calculating a learn bid for this venue, our algorithm leverages the advertiser's data specific to this venue. This data is represented by the intersection of the advertiser and venue data.
 
-:::image type="content" source="media/advertiser-venue-data.png" alt-text="Venn diagram of Advertiser and Venue Data.":::
+:::image type="content" source="media/advertiser-venue-data.png" alt-text="Diagram that shows the intersection of Advertiser and Venue Data.":::
 
 #### Step 3. Leverage advertiser, venue, and campaign data
 
-At some point, the Pancakes campaign will get 5 conversions on a specific venue. In this case, when calculating a learn bid on this venue, our algorithm leverages the campaign's data specific to that venue. This data is represented by the intersection of the advertiser, venue, and campaign data.
+At some point, the Pancakes campaign will get five conversions on a specific venue. In this case, when calculating a learn bid on this venue, our algorithm leverages the campaign's data specific to that venue. This data is represented by the intersection of the advertiser, venue, and campaign data.
 
-:::image type="content" source="media/advertiser-venue-campaign-data.png" alt-text="Venn diagram of Advertiser, Venue, and Campaign Data.":::
+:::image type="content" source="media/advertiser-venue-campaign-data.png" alt-text="Diagram that shows the intersection of Advertiser, Venue, and Campaign Data.":::
 
 #### Step 4. Leverage advertiser, venue, campaign, and creative size data
 
-Let's say the Pancake Campaign has 3 300 x 250 creatives. Eventually, the 300 x 250 creatives will cumulatively get 5 conversions on a single venue. At this point, when any of the 300 x 250 creatives are bidding on a venue, our algorithm uses the 300 x 250 creative size data on that venue to calculate a learn bid. This data is represented by the intersection of the advertiser, venue, campaign, and size data.
+Let's say the Pancake Campaign has three 300 x 250 creatives. Eventually, the 300 x 250 creatives will cumulatively get five conversions on a single venue. At this point, when any of the 300 x 250 creatives are bidding on a venue, our algorithm uses the 300 x 250 creative size data on that venue to calculate a learn bid. This data is represented by the intersection of the advertiser, venue, campaign, and size data.
 
-:::image type="content" source="media/advertiser-venue-campaign-size-data.png" alt-text="Venn diagram of Advertiser, Venue, Campaign, and Creative Size Data.":::
+:::image type="content" source="media/advertiser-venue-campaign-size-data.png" alt-text="Diagram that shows the intersection of Advertiser, Venue, Campaign, and Creative Size Data.":::
 
 #### Step 5. Leverage advertiser, venue, campaign, creative size, and creative data
 
-Finally, one of the Pancakes Campaign's creatives will receive 3 success events on a venue. When that creative is bidding on this venue, our algorithm leverages the creative's data specific to that venue to calculate a learn bid. This data is represented by the intersection of the the advertiser, venue, campaign, size, and creative data.
+Finally, one of the Pancakes Campaign's creatives will receive three success events on a venue. When that creative is bidding on this venue, our algorithm leverages the creative's data specific to that venue to calculate a learn bid. This data is represented by the intersection of the the advertiser, venue, campaign, size, and creative data.
 
-:::image type="content" source="media/advertiser-venue-campaign-size-creative-data.png" alt-text="Venn diagram of Advertiser, Venue, Campaign, Creative Size, and Creative Data.":::
+:::image type="content" source="media/advertiser-venue-campaign-size-creative-data.png" alt-text="Diagram that shows the intersection of Advertiser, Venue, Campaign, Creative Size, and Creative Data.":::
 
 #### Step 6. Continue to learn
 
@@ -70,7 +70,7 @@ The Targeted Learn algorithm then leverages this level of data further while the
 
 ## If an advertiser has no data
 
-When a new campaign is started under an advertiser with no historical data to leverage, the optimization engine determines the average bid on each venue and use this data to start winning impressions. Once the advertiser has 3 success events, the engine begins to leverage historical information to calculate learn bids.
+When a new campaign is started under an advertiser with no historical data to leverage, the optimization engine determines the average bid on each venue and use this data to start winning impressions. Once the advertiser has three success events, the engine begins to leverage historical information to calculate learn bids.
 
 ## Related topics
 

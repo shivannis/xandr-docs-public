@@ -28,13 +28,13 @@ There are two categories of roadblock: creative level and page level.
 
 ### Creative level
 
-Creative-level roadblocks can be set on either the line item or the campaign (not both). Each impression is treated separately from the standpoint of impression budget and frequency capping. For example, suppose you have a budget of 100 impressions and a frequency cap of 5 impressions per day. You set up a Creative-level roadblock that serves three creatives to the page. The remaining budget for that roadblock would be 97 impressions, and the remaining frequency cap for that user would be 2 impressions for the rest of that day.
+Creative-level roadblocks can be set on either the line item or the campaign (not both). Each impression is treated separately from the standpoint of impression budget and frequency capping. For example, suppose you have a budget of 100 impressions and a frequency cap of five impressions per day. You set up a Creative-level roadblock that serves three creatives to the page. The remaining budget for that roadblock would be 97 impressions, and the remaining frequency cap for that user would be two impressions for the rest of that day.
 
 :::image type="content" source="media/rb-creative-level.png" alt-text="Diagram that shows how creative-level roadblock works.":::
 
 ### Page level
 
-Page-level roadblocks can be set only on the line item. For a page-level roadblock line item, a single impression is counted when the roadblock serves, no matter how many creatives are delivered to the page. For example, suppose you have a budget of 100 impressions and a frequency cap of 5 impressions per day. You set up a page-level roadblock that serves three creatives to the page. The remaining budget for that roadblock would be 99 impressions, and the remaining frequency cap for that user would be 4 impressions for the rest of that day.
+Page-level roadblocks can be set only on the line item. For a page-level roadblock line item, a single impression is counted when the roadblock serves, no matter how many creatives are delivered to the page. For example, suppose you have a budget of 100 impressions and a frequency cap of five impressions per day. You set up a page-level roadblock that serves three creatives to the page. The remaining budget for that roadblock would be 99 impressions, and the remaining frequency cap for that user would be four impressions for the rest of that day.
 
 :::image type="content" source="media/rb-page-level.png" alt-text="Diagram that shows how page-level roadblock works.":::
 
@@ -46,7 +46,7 @@ It’s possible that you could have more than one eligible creative matching the
 
 #### vCPM guarantees
 
-If a vCPM guaranteed line item (which budgets against views, not impressions) is set up as a page-level roadblock, then the view count of the master creative will be used for budgeting, pacing, and frequency caps. For example, suppose you have a budget of 100 views and a frequency cap of 5 views per day. You set up a page-level vCPM guaranteed roadblock that serves three creatives to the page, two of which are measured as viewed (including the master creative). The remaining budget for the roadblock would be 99 views, and the remaining frequency cap for that user would be four views for the rest of that day.
+If a vCPM guaranteed line item (which budgets against views, not impressions) is set up as a page-level roadblock, then the view count of the master creative will be used for budgeting, pacing, and frequency caps. For example, suppose you have a budget of 100 views and a frequency cap of five views per day. You set up a page-level vCPM guaranteed roadblock that serves three creatives to the page, two of which are measured as viewed (including the master creative). The remaining budget for the roadblock would be 99 views, and the remaining frequency cap for that user would be four views for the rest of that day.
 
 ## Roadblock types
 

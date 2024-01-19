@@ -19,7 +19,7 @@ If you believe that you are serving on inventory with artificially inflated perf
 
 ### Step 1. Provide a high-level description of the issue
 
-- What is the issue and what objects does it affect? For example, which advertisers or campaigns are affected?
+What is the issue and what objects does it affect? For example, which advertisers or campaigns are affected?
 
 ### Step 2. Determine the time range of the incident
 
@@ -43,11 +43,11 @@ See [Network Analytics Report](network-analytics-report.md) for details.
 
 See [Site Domain Performance](site-domain-performance.md) for details.
 
-- If the behavior is specific to a limited set of domains, inspect the domains to see if there is an explanation.
+If the behavior is specific to a limited set of domains, inspect the domains to see if there is an explanation.
 
 ### Step 6. Send your findings to support
 
-After completing the above steps, if you believe you have isolated a specific case, send your findings to [support](https://help.xandr.com/).
+After completing the above steps, if you believe you have isolated a specific case, send your findings to the [support team](https://help.xandr.com/).
 
 This should include the following:
 
