@@ -43,7 +43,7 @@ Split spend allocation is the percentage of the line item daily budget assigned 
 
 ## Capped and uncapped splits
 
-To determine how conflicts between split spend allocation and line item delivery goals are addressed, you can make your splits either capped or uncapped.
+To determine how conflicts between split spend allocation and line item delivery goals are addressed, you can make your splits either **capped** or **uncapped**.
 
 - **Uncapped** - Uncapped splits prioritize delivery over spend allocation. When a line item with uncapped splits is underdelivering, the uncapped splits are permitted to exceed their spend allocation goals to reach the line item delivery goal. That is, if the line item cannot reach the delivery goal, Xandr will ignore spend allocation goals and maximize spend on every split until the line item reaches the delivery goal. If the line item delivery goal is being met, then split spend allocation goals will be met. If the spend allocation goal isn't met, then it implies that the particular split does not have enough inventory to reach allocation goals. By default, splits are uncapped.
 - **Capped** - Capped splits prioritize spend allocation over delivery. Even when line items are underdelivering, capped splits are not permitted to exceed the spend allocation goal to help line items reach their delivery goals. This will prevent overspend on a split, but may cause the line item to underdeliver.

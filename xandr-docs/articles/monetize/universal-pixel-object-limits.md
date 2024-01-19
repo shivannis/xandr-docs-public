@@ -1,10 +1,10 @@
 ---
-title: Microsoft Monetize - Object Limits
+title: Microsoft Monetize - Universal Pixel Object Limits
 description: In this article, find a list of limits for the different objects and requests for universal pixel.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Object limits
+# Microsoft Monetize - Universal Pixel object limits
 
 There are limits for how many audiences, conversions, custom events, and parameters you can create, as well as a data size limit for information transmitted by the parameters for universal pixels.
 

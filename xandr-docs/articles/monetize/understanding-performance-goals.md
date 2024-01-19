@@ -21,7 +21,7 @@ This page explains how performance goals work and outlines some basics about whe
 > [!TIP]
 > **Looking for detailed performance goals or line item setup instructions?** For a how-to that explains performance goal setup, see [Add a Performance Goal to a Line Item](add-a-performance-goal-to-a-line-item.md).
 
-## How performance goals work
+## Performance goals process
 
 Performance goals are set on the line item and work on campaigns in both learn & optimized states. Here's a summary of the process:
 
@@ -33,7 +33,7 @@ Performance goals are set on the line item and work on campaigns in both learn &
 > [!NOTE]
 > While the Xandr platform does exclude low-performing inventory during the learn phase, the performance goal "bid/no bid" check will not take effect until after a campaign has moved beyond the learn stage of optimization, which has a default of three success events.
 
-## When to use performance goals
+## Performance goals applications
 
 Performance goals are most applicable in situations when you are being paid by your advertiser on a flat CPM but the advertiser is using another metric to track goals.
 
@@ -54,7 +54,7 @@ After your campaigns have been active for a little while, you can edit your perf
 
 ### Improve delivery
 
-To go back to the example [above](#when-to-use-performance-goals), let's say you started serving the campaign with the CPA performance goal of $5 per sign-up, but the campaign is not delivering well. You might consider bumping up the per sign-up average - that is, the bid/no bid check - higher to $10 to help ensure that the campaign is delivering.
+To go back to the example [above](#performance-goals-applications), let's say you started serving the campaign with the CPA performance goal of $5 per sign-up, but the campaign is not delivering well. You might consider bumping up the per sign-up average - that is, the bid/no bid check - higher to $10 to help ensure that the campaign is delivering.
 
 :::image type="content" source="media/trade-performance-for-delivery.png" alt-text="Screenshot that shows how to update the performance goals when the campaign is not delivering well.":::
 

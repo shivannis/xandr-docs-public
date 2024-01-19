@@ -103,7 +103,7 @@ If you opt into receiving **billing period-specific invoicing**, you will receiv
 > [!WARNING]
 > **Financial Obligations** - Receiving Advertiser-, Insertion Order, or Billing Period-specific invoices does not change any of your financial or payment obligations to Xandr. You are still responsible for paying all invoices associated with any of your advertisers (including their insertion orders) and their activity and buying. Xandr does not bill advertisers for you.
 
-## Invoice consolidation (Rollup)
+## Invoice consolidation (rollup)
 
 If you have more than one member account, you can choose to receive a consolidated invoice for the buying activity across of your member accounts. For more details on this feature, contact your Account Manager.
 

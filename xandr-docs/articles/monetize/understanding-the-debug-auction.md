@@ -54,10 +54,10 @@ A debug auction can be run using the following calls:
 | `referrer` | Simulate the referring URL from which the ad call is coming. |
 | `prefer_learn` | Set to "`true`" to force a prefer learn auction. |
 | `position` | Overrides fold position. Can be set to "`above`" or "`below`". |
-| age | Overrides age (integer). |
-| gender | Overrides gender ("`male`" or "`female`"). |
-| debug_json | Converts the auction's HTML output to JSON form when set to "`1`" and "`&bidder_only=1`" is appended. |
-| kw_ prefix | Adds keyword parameters for targeting purposes, for example: "`kw_keyname=value1`". |
+| `age` | Overrides age (integer). |
+| `gender` | Overrides gender ("`male`" or "`female`"). |
+| `debug_json` | Converts the auction's HTML output to JSON form when set to "`1`" and "`&bidder_only=1`" is appended. |
+| `kw_prefix` | Adds keyword parameters for targeting purposes, for example: "`kw_keyname=value1`". |
 
 ### Optional geo code parameters
 

@@ -1,10 +1,10 @@
 ---
-title: Microsoft Monetize - Basic Implementation
+title: Microsoft Monetize - Universal Pixel Basic Implementation
 description: In this article, learn how to set up the most basic implementation of the universal pixel to track page views and identify the URLs driving them.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Basic implementation
+# Microsoft Monetize - Universal Pixel basic implementation
 
 With the most basic implementation of the universal pixel, you can track page views and identify the URLs driving them. Setting up the basic implementation requires you to set up the Universal Pixel object in Monetize, deploy the script code containing the pixel ID on your website, and check your pixel activity on the **Activity** tab in the **Universal Pixels** page.
 

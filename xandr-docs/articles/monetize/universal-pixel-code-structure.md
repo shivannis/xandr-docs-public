@@ -1,10 +1,10 @@
 ---
-title: Microsoft Monetize - Code Structure
+title: Microsoft Monetize - Universal Pixel Code Structure
 description: In this article, find samples of the general universal pixel codes to be deployed.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Code structure
+# Microsoft Monetize - Universal Pixel code structure
 
 The general universal pixel code to be deployed in the `<head>` tag on each page of the advertiser website is different from the pixel code required for standard and custom events, which is deployed only on pages of interest.
 

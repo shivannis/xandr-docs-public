@@ -1,10 +1,10 @@
 ---
-title: Microsoft Monetize - Understanding Viewability Rates
+title: Microsoft Monetize - Viewability Rates for Guaranteed Views
 description: In this article, find information about viewability rates and how it affects how much a buyer is charged for guaranteed views.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Understanding viewability rates
+# Microsoft Monetize - Viewability rates for Guaranteed Views
 
 > [!IMPORTANT]
 > This document describes the viewability rates feature for Guaranteed Views.

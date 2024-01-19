@@ -1,10 +1,10 @@
 ---
-title: Microsoft Monetize - Audiences and Conversions
+title: Microsoft Monetize - Universal Pixel Audiences and Conversions
 description: In this article, learn how to identify audiences and conversions for the universal pixel.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Audiences and conversions
+# Microsoft Monetize - Universal Pixel audiences and conversions
 
 After you have set up standard or custom event tracking, you can use the data you collect to identify audiences and conversions.
 

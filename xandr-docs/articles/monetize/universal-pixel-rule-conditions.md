@@ -1,10 +1,10 @@
 ---
-title: Microsoft Monetize - Rule conditions
+title: Microsoft Monetize - Universal Pixel Rule conditions
 description: In this article, find a list of rule condition types and their descriptions for universal pixels.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Rule conditions
+# Microsoft Monetize - Universal Pixel rule conditions
 
 This document contains a list of rule condition types and their descriptions along with condition elements, comparisons, and keywords for universal pixels.
 

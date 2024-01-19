@@ -25,7 +25,7 @@ This page will explain floor and bias rules, and how they work.
 
 For instructions on creating floor and bias rules, see [Create a Floor Rule](create-a-floor-rule.md) and [Create a Bias Rule](create-a-bias-rule.md).
 
-## What floors are
+## Floors overview
 
 A floor is the preferred bid amount a network would like to receive for an impression. The network's preferred bid amount may vary depending upon one or more factors, such as the type of creative involved. Put another way, a floor can be thought of as the minimum price the network would like to receive for an impression. There are two types of floors; hard floors and soft floors.
 
@@ -51,7 +51,7 @@ In another auction, where the same $1.25 soft floor applies, the highest bid you
 
 Read through the slides below to visualize the effects of hard and soft floor settings.
 
-## What biases are
+## Biases overview
 
 A bias is a way of modifying certain bids to appear higher or lower than they actually are in order to prefer or deter the bid. This setting affects the way that bids are ranked but does not affect the value of each bid when it comes time to determine the winning price. It is possible to have a winning bid with a value less than another bid. In this case, the higher bid acts as a soft floor to the winning bid, so the winning bid is not price reduced.
 
