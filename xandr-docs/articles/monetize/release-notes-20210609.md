@@ -1,31 +1,16 @@
 ---
-Title : June 9, 2021: Open Beta for Video Inventory Recommendations
-Description : For buyers using augmented line items, new line-item-level
+title: Microsoft Monetize - Open Beta for Video Inventory Recommendations
+description: Find the release note for new line-item-level video inventory recommendations.
 ms.date: 10/28/2023
-recommendations for video inventory are available on the line item
-Analytics tab. These recommendations
 ---
 
+# Microsoft Monetize - Open Beta for video inventory recommendations
 
-# June 9, 2021: Open Beta for Video Inventory Recommendations
+**Release date**: June 9, 2021
 
-
-
-For buyers using augmented line items, new line-item-level
-recommendations for video inventory are available on the line item
-Analytics tab. These recommendations
-can help boost scale and performance for video campaigns.
+For buyers using augmented line items, new line-item-level recommendations for video inventory are available on the line item **Analytics** tab. These recommendations can help boost scale and performance for video campaigns.
 
 For more information, see:
 
-- <a href="video-inventory-recommendations.md" class="xref"
-  title="To help traders discover new video inventory and maximize scale and performance, Monetize provides detailed recommendations at the line item level. These recommendations identify performant seller/domain combinations and can be found under the Video Inventory Recommendations section (under the Analytics tab) of each video ALI. You can download your recommendations to a CSV file, or use them to efficiently create new allowlists for targeting.">Video
-  Inventory Recommendations</a>
-- <a href="use-recommendations-to-target-video-inventory.md"
-  class="xref"
-  title="To act on the new inventory recommendations found under your video line item&#39;s Analytics tab (in the Video Inventory Recommendations section), you can download them in a CSV file for analysis by an inventory manager, or select individual recommendations to create a new line item-level allowlist. For details on how these recommendations are generated, see Video Inventory Recommendations">Use
-  Recommendations to Target Video Inventory</a>
-
-
-
-
+- [Video Inventory Recommendations](video-inventory-recommendations.md)
+- [Use Recommendations to Target Video Inventory](use-recommendations-to-target-video-inventory.md)

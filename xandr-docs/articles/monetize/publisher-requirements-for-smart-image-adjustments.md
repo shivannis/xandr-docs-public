@@ -1,66 +1,22 @@
 ---
-Title : Publisher Requirements for Smart Image Adjustments
-Description : Buyers can use Smart Image Adjustments to automatically resize their
+title: Publisher Requirements for Smart Image Adjustments
+description: In this article, learn the publisher requirements to be met before using smart image adjustments.
 ms.date: 10/28/2023
-main native creative image and icon, giving publishers the ability to
-easily fill their placements with these native creative assets at a much
-higher capacity. However, publishers must first ensure that they are
 ---
 
+# Publisher requirements for smart image adjustments
 
-# Publisher Requirements for Smart Image Adjustments
+Buyers can use Smart Image Adjustments to automatically resize their main native creative image and icon, giving publishers the ability to easily fill their placements with these native creative assets at a much higher capacity. However, publishers must first ensure that they are meeting the neccesary placement dimension criteria to ensure that they will be able to fulfill the buyers' demand.
 
+DSPs such as Oath, TTD, and DBM all require publishers to meet the minimum placement width and height dimension criteria before a bid can be submitted. For resizing to work, these DSPs require that the publisher provide the exact width and height of the placement. For the ad tag to work, the publisher must meet both the minimum and exact width and height criteria.
 
+Typically, the publisher also defines the native creative image requirements using either the exact size of the image or a ratio. The size of the image is defined by the exact height and width such as 500 x 400. The ratio consists of a `min_width` (in pixels), `ratio_height`, and `ratio_width`. For more information, see [Native Layout Service](../digital-platform-api/native-layout-service.md) and [Seller Tag (AST)](../seller-tag/seller-tag.md).
 
-Buyers can use Smart Image Adjustments to automatically resize their
-main native creative image and icon, giving publishers the ability to
-easily fill their placements with these native creative assets at a much
-higher capacity. However, publishers must first ensure that they are
-meeting the neccesary placement dimension criteria to ensure that they
-will be able to fulfill the buyers' demand.
+The publisher's required native creative image sizes and dimensions can be defined in real time using our various supply integration endpoints, which includes AST, OpenRTB, and our SDK, as well as the Native Assemebly feature that is available in Monetize. For more information, see [Configuring a Native Assembly](configuring-a-native-assembly.md).
 
-DSPs such as Oath, TTD, and DBM all require publishers to meet the
-minimum placement width and height dimension criteria before a bid can
-be submitted. For resizing to work, these DSPs require that the
-publisher provide the exact width and height of the placement. For the
-ad tag to work, the publisher must meet both the minimum and exact width
-and height criteria.
+To keep to our recommended native best practices, see [Native Sell-Side Best Practices](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28%20Dec%202023/Sell-Side-Native-Best-Practices.pdf).
 
-Typically, the publisher also defines the native creative image
-requirements using either the exact size of the image or a ratio. The
-size of the image is defined by the exact height and width such as 500 x
-400. The ratio consists of a `min_width` (in pixels), `ratio_height`,
-and `ratio_width`. For more information, see <a
-href="xandr-api/native-layout-service.md"
-class="xref" target="_blank">Native Layout Service</a> and <a
-href="seller-tag/seller-tag/seller-tag.md"
-class="xref" target="_blank">Seller Tag (AST)</a>.
+## Related topics
 
-The publisher's required native creative image sizes and dimensions can
-be defined in real time using our various supply integration endpoints,
-which includes AST, OpenRTB, and our SDK, as well as the Native
-Assemebly feature that is available in Monetize. For more information,
-see <a href="configuring-a-native-assembly.md" class="xref"
-title="Monetize Ad Server and third-party ad server publishers can configure native assemblies by selecting various creative asset specifications directly from the UI or creating custom HTML, CSS, and Javascript. You must associate all native assemblies to a placement in order for them to go live.">Configuring
-a Native Assembly</a>.
-
-To keep to our recommended native best practices, see <a
-href="../attachments/native-best-practices/Sell-Side-Native-Best-Practices.pdf"
-class="xref">Native Sell-Side Best Practices</a>.
-
->
-
-## Related Topics
-
-- <a href="add-a-creative.md" class="xref"
-  title="You can add a creative by either uploading a spreadsheet or the creative files directly from your computer. Only secure content is supported.">Add
-  a Creative</a>
-- <a href="add-creatives-in-bulk.md" class="xref"
-  title="You can add multiple third-party, hosted, and native creatives to the Creative Manager simultaneously by either uploading a spreadsheet or the creative files directly from your computer. Only secure content is supported.">Add
-  Creatives in Bulk</a>
-
-
-
-
-
-
+- [Add a Creative](add-a-creative.md)
+- [Add Creatives in Bulk](add-creatives-in-bulk.md)
