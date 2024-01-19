@@ -4,7 +4,7 @@ description: In this article, find information about the guidelines and restrict
 ms.date: 10/28/2023
 ---
 
-# AdX Guidelines and Restrictions
+# AdX guidelines and restrictions
 
 We strictly adhere to the guidelines and restrictions of the Google Ad Manager platform, all of which can be found at the links below.
 
