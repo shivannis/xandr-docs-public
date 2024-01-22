@@ -6,9 +6,7 @@ ms.date: 11/23/2023
 
 # Guaranteed Outcomes Bidder Integration Guide
 
-This page outlines the Guaranteed Views feature of Xandr's Exchange.
-
-This specification defines the method by which Xandr enables a Bidder to bid for, and to be billed for, an outcome (view and/or complete) vs. the typical served impression.  In addition, since different buyers have different standards for what constitutes a "viewable impression", the specification is designed to support a variety of standards, including different definitions (e.g., IAB vs. GroupM) and different measurement technology vendors (e.g. DoubleVerify).  In the future, the specification may also be used to support additional transaction events, for example, an in demo impression.
+This page outlines the specifications that define the method by which Xandr enables a Bidder to bid for, and to be billed for, an outcome (view and/or complete) vs. the typical served impression.  In addition, since different buyers have different standards for what constitutes a "viewable impression", the specification is designed to support a variety of standards, including different definitions (e.g., IAB vs. GroupM) and different measurement technology vendors (e.g. DoubleVerify).  In the future, the specification may also be used to support additional transaction events, for example, an in demo impression.
 
 For more information see [Guaranteed Outcomes](./guaranteed-outcomes.md).
 
