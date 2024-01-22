@@ -815,7 +815,9 @@ We support the following fields in the `source` object:
 }
 ```
 
-### MultiMedia Bid Request (To ensure your bidder is configured to receive these requests, please open a support case)
+### MultiMedia Bid Request 
+
+To ensure your bidder is configured to receive these requests, please open a support case.
 
 ``` 
 {
