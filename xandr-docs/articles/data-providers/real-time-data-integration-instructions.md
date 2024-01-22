@@ -11,7 +11,9 @@ Although the configuration is slightly different from regular bidders that are a
 integrations are set up as "bidders" in our system. Once your data provider bidder has been created and you've received credentials, you
 can begin configuring it with the below steps.
 
-## Using the Impression Bus API (api.adnxs.com), you should complete the following steps
+## Implement the Impression Bus API
+
+Complete the following steps to begin using the Impression Bus API (api.adnxs.com):
 
 **Step 1:** Use your API credentials to [authenticate](../bidders/authentication-service.md).
 
@@ -23,15 +25,11 @@ can begin configuring it with the below steps.
 `parent_profile_id` fields. The `parent_profile_id` should be the ID of the profile you created in step 3. The other bidder object fields
 (`notify_uri`, `pixel_uri`, `click_uri`, etc) should not be set as they do not apply to data providers.
 
-> [!TIP]
-> Ensure that you include at least one of our macros in your `bid_uri`. For a complete list of available macros, see Xandr [Macros for Data Providers](xandr-macros-for-data-providers.md).
+    - Ensure that you include at least one of our macros in your `bid_uri`. For a complete list of available macros, see Xandr [Macros for Data Providers](xandr-macros-for-data-providers.md).
 
-**Step 5:** Add at least one bidder instance.
+**Step 5:** Add at least one bidder instance. In production, at least one bidder instance must be registered with each datacenter for which you would like to see traffic.
 
-> [!TIP]
-> In production, at least one bidder instance must be registered with each datacenter for which you would like to see traffic.
-
-**Step 6:** Create segments using the [Segment Service](../digital-platform-api/segment-service.md). The `code` field is what you will return in your bid response. You may also create segments in our [Bidder UI](https://bidder.xandr.com/login) on the Segments tab. 
+**Step 6:** Create segments using the [Segment Service](../digital-platform-api/segment-service.md). The `code` field is what you will return in your bid response. You may also create segments in our [Bidder UI](https://bidder.xandr.com/login) on the Segments tab.
 
 > [!NOTE]
 > You may only create segments in your own member's seat.

@@ -10,31 +10,17 @@ ms.date: 11/30/2023
 > [!NOTE]
 > Alpha-Beta Notice: This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change.
 
-The Instant Audience Service is a server-side method that uses a
-streaming architecture to add individual or small groups of users to
-segments, via the Digital Platform API. Rather than aggregating and
-periodically sending large batches of data using the Batch Segment
-Service, the Instant Audience Service associates' users to segments in
-close to real-time. Our target SLA for adding users to segments with
-this service is 2 minutes. This is useful if you have real-time audience
-remodeling requirements.
+The Instant Audience Service is a server-side method that uses a streaming architecture to add individual or small groups of users to
+segments, via the Digital Platform API. Rather than aggregating and periodically sending large batches of data using the Batch Segment
+Service, the Instant Audience Service associates' users to segments in close to real-time. Our target SLA for adding users to segments with this service is 2 minutes. This is useful if you have real-time audience remodeling requirements.
 
 ## Configure the service
 
-If you're already using the Batch Segment Service, you can skip this
-part and proceed to [Authenticate](#authenticate). If you're a brand-new client and wish to
-start using the Instant Audience Service, you will need to open a ticket
-with and provide the following information:
+If you're already using the Batch Segment Service, you can skip this part and proceed to [Authenticate](#authenticate). If you're a brand-new client and wish to start using the Instant Audience Service, you will need to open a ticket with and provide the following information:
 
-1. Are you using external user IDs (i.e., you use mapUID to store the
-    mapping with Xandr)? If you use another
-    member's external user IDs, include their `member_id` as well.
-1. Do you need to populate segments belonging to other members? If so,
-    provide the associated `member_ids.`
-1. When you would like your segments to expire by default (e.g., never
-    expire, expire 60 days from now, etc.)? Note that if you include
-    EXPIRATION in your seg block, your default expiration will not be
-    used.
+1. Are you using external user IDs (i.e., you use mapUID to store the mapping with Xandr)? If you use another member's external user IDs, include their `member_id` as well.
+1. Do you need to populate segments belonging to other members? If so, provide the associated `member_ids.`
+1. When you would like your segments to expire by default (e.g., never expire, expire 60 days from now, etc.)? Note that if you include EXPIRATION in your seg block, your default expiration will not be used.
 1. The following questions are for our internal capacity planning:
     - What is the number of unique user IDs per post?
     - What is the number of expected posts per day?
@@ -42,12 +28,8 @@ with and provide the following information:
 
 ## Authenticate
 
-Refer to the [Authentication Service](../digital-platform-api/authentication-service.md) for a general
-overview on how to make calls to the Xandr
-API. Just like any other service, you'll authenticate
-against [https://api.appnexus.com](https://api.appnexus.com./).
-However, subsequent calls will be made to the Instant Audience Service
-at [ https://streaming-data.appnexus.com](https://streaming-data.appnexus.com/).
+Refer to the [Authentication Service](../digital-platform-api/authentication-service.md) for a general overview on how to make calls to the Xandr API. Just like any other service, you'll authenticate against [https://api.appnexus.com](https://api.appnexus.com./).
+However, subsequent calls will be made to the Instant Audience Service at [ https://streaming-data.appnexus.com](https://streaming-data.appnexus.com/).
 
 > [!NOTE]
 > In the authentication response, make note of the token as it will be needed for subsequent calls to the Instant Audience Service.
@@ -66,10 +48,7 @@ Example response from the Authentication Service:
 }                     
 ```
 
-The token returned in the response must be included in subsequent calls
-to the Instant Audience Service in the authorization header or as an
-`access_token` query string parameter, as shown in the following
-examples:
+The token returned in the response must be included in subsequent calls to the Instant Audience Service in the authorization header or as an `access_token` query string parameter, as shown in the following examples:
 
 **Authorization header**
 
@@ -79,21 +58,22 @@ examples:
 
 `curl -X POST https://streaming-data.``appnexus``.com/rt-segment?access_token=hbapi:123456:9876abcd54321:nym2`
 
-## Adding/Removing users from segments
+## Add/Remove users from segments
 
-After authenticating, you're now ready to add/remove a user to/from a
-segment, via a JSON file.
+After authenticating, you're now ready to add/remove a user to/from a segment, via a JSON file.
 
 > [!NOTE]
-> Be sure to wait approximately 20 minutes before trying to add users to any newly created segments (to allow these segments to be propagated to all servers). As a best practice, try to minimize the creation of new segments, re-use existing segments where possible or use segment `values` to further sub-divide users within existing segments. These practices will ensure successful user add/remove to/from segments. For details on creating segment `values`, see [Segment Pixels: Advanced](../invest/segment-pixels-advanced.md) and [segment-targeting](../monetize/segment-targeting.md) in Xandr documentation.
+> Wait approximately 20 minutes before trying to add users to any newly created segments (to allow these segments to be propagated to all servers). As a best practice, try to:
+>
+> - minimize the creation of new segments
+> - wherever possible, re-use existing segments
+> - use segment `values` to further sub-divide users within existing segments
+>
+> These practices will ensure successful user add/remove to/from segments. For details on creating segment `values`, see [Segment Pixels: Advanced](../invest/segment-pixels-advanced.md) and [Segment Targeting](../monetize/segment-targeting.md) in Xandr documentation.
 
-The following example demonstrates how to assign a user to two segments.
-In this example, the member is adding user ID 12345678900987654321 (this
-is a Xandr user id) to segments 10001 and 10002,
-setting both associations with value = 1 and expiration within 1440
-minutes.
+The following example demonstrates how to assign a user to two segments. In this example, the member is adding user ID 12345678900987654321 (this is a Xandr user id) to segments 10001 and 10002, setting both associations with value = 1 and expiration within 1440 minutes.
 
-**Example on how to assign a user to two segments**
+### Assign a user to two segments example
 
 |  |  |
 |---|---|
@@ -105,7 +85,7 @@ minutes.
 
 |  | Field |  Type| Description |
 |---|---|---|---|
-| `rt_segment array` | `user_id` | string | This would either be the Xandr `user_id` or an id based on the domain, such as "AEBE52E7-03EE-455A-B3C4-E57283966239", as an example of a device identifier.<br>**Required**: At least one.  |
+| `rt_segment array` | `user_id` | string | This is either the Xandr `user_id` or an ID based on the domain, such as "AEBE52E7-03EE-455A-B3C4-E57283966239", as an example of a device identifier.<br>**Required**: At least one.  |
 |  | `seg_block` | array | Array of segment blocks for segments to associate with the user (see segment block structure below).<br>**Required**: At least one.  |
 |  | `domain` | string | Type of identifier being used in the request, such as Xandr user ID (represented with `null`) or device identifier (`idfa`, `sh1udid`, `md5udid`, `openudid`, and `aaid`).<br>**Note**: Do not use `sha1mac`, which was deprecated in 2019. |
 | `seg_block array`<br><br><br> | `seg_id` | int | The Xandr segment ID.<br>**Required**: If not using `seg_code` and `member_id` to identify segment. |
@@ -119,7 +99,7 @@ minutes.
 
 ## Additional POST scenarios
 
-**Using device ID (IDFA)**
+### Device ID (IDFA)
 
 |  |  |
 |---|---|
@@ -127,7 +107,7 @@ minutes.
 | **JSON Payload** | `{ "rt_segment": [ { "user_id": "1ba98a6c-d1a5-49ef-ad1c-2d9230ebcd13", "seg_block": [ { "seg_id": 12, "seg_code": null, "value": 1, "expiration": 1440, "member_id": null }, { "seg_id": 23784, "seg_code": null, "value": 1, "expiration": 0, "member_id": null } ], "domain": "idfa" } ] }` |
 | **Response** | `{ "response": { "status": "OK", "message": { "users_in_request": 1, "segments_in_request": 2 }, "warnings": [ ] } }` |
 
-**Using codes for other members**
+### Codes for other members
 
 |  |  |
 |---|---|
@@ -137,11 +117,7 @@ minutes.
 
 ## Service limits
 
-> [!NOTE]
-> Service limits may change during alpha and beta testing of this service.
-
-In order to adhere to a maximum of 2 minutes activation time, the
-Instant Audience Service currently has the following limits:
+In order to adhere to a maximum of 2 minutes activation time, the Instant Audience Service currently has the following limits:
 
 |  |  |
 |---|---|
@@ -151,7 +127,7 @@ Instant Audience Service currently has the following limits:
 
 ## Example error scenarios
 
-**Adding/removing over 1000 users in a request**
+### Add/Remove over 1000 users
 
 |  |  |
 |---|---|
@@ -159,21 +135,21 @@ Instant Audience Service currently has the following limits:
 | **JSON Payload** | `{ "rt_segment": [ { "user_id": "12345678900987654321", "seg_block": [ { "seg_id": 10001, "seg_code": null, "value": 1, "expiration": 1440, "member_id": null }, { "seg_id": 10002, "seg_code": null, "value": 1, "expiration": 1440, "member_id": null } ], "domain": "domain" }, #... assume there are additional 1000 users in this array (1002 in total) ] }` |
 | **Response** | `{ "response": { "status": "OK", "message": { "users_in_request": 1000, "segments_in_request": 2000 }, "warnings": [ { "message": "Too many user_ids in request.", "entity": { "user_id": "23456789009876543211", "seg_block": [ { "seg_id": 10001, "seg_code": null, "value": 1, "expiration": 1440, "member_id": null }, { "seg_id": 10002, "seg_code": null, "value": 1, "expiration": 1440, "member_id": null } ] } }, #... similar error will be sent for each user over 1000 ] } }` |
 
-**seg_id or  seg_code and  member_id are not provided**
+### `seg_id` or `seg_code` and `member_id` not provided
 
 |  |  |
 |---|---|
 | **JSON Payload**| `{ "rt_segment": [ { "user_id": "1", "seg_block": [ { "seg_id": null, "seg_code": "abc", "value": 1, "expiration": 1, "member_id": null } ] } ] }` |
 | **Response** | `{ "status": "OK", "message": { "users_in_request": 0, "segments_in_request": 0 }, "warnings": [ { "message": "'seg_id' or 'seg_code' and 'member_id' are required", "entity": { "seg_code": "abc", "value": 1, "expiration": 1 } }, { "message": "No valid segments for user_id: 1.", "entity": { "user_id": "1", "seg_block": [ { "seg_code": "abc", "value": 1, "expiration": 1 } ] } }, { "message": "No valid rt_segment in request.", "entity": { "rt_segment": [ { "user_id": "1", "seg_block": [ { "seg_code": "abc", "value": 1, "expiration": 1 } ] } ] } } ] }` |
 
-**seg_block not provided**
+### `seg_block` not provided
 
 |  |  |
 |---|---|
 | **JSON Payload** | `{ "rt_segment": [ { "user_id": "asdf" } ], "domain": "domain" }` |
 | **Response** | `{ "status": "OK", "message": { "users_in_request": 0, "segments_in_request": 0 }, "warnings": [ { "message": "'seg_block' is required", "entity": { "user_id": "asdf" } }, { "message": "No valid rt_segment in request.", "entity": { "rt_segment": [ { "user_id": "asdf" } ] } } ] }` |
 
-**user_id is empty**
+### `user_id` empty
 
 |  |  |
 |---|---|
@@ -183,4 +159,4 @@ Instant Audience Service currently has the following limits:
 ## Related topics
 
 - [Streaming Server-Side Segmentation](streaming-server-side-segmentation.md)
-- [check-usage-statistics](check-usage-statistics.md)
+- [Check usage statistics](check-usage-statistics.md)

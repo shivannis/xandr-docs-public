@@ -89,7 +89,7 @@ You can get all publicly available seller member IDs through the [Platform Membe
 
 ## How can I make changes to my bidder profile?
 
-You can update your bidder profile by making a PUT call to the bidder profile service [Legacy Bidder Profile Service](../bidders/legacy-bidder-profile-service.md). The put call must include only:
+You can update your bidder profile by making a PUT call to the [Legacy Bidder Profile Service](../bidders/legacy-bidder-profile-service.md). The PUT call must include only:
 
 1. The ID of the profile.
 1. The field that you want to change.
@@ -100,30 +100,30 @@ You must include the value that you'd like the changed field(s) to be. If you ar
 
 No, data provider bidders may only be associated with a parent profile.
 
-## I would like to have different throttling level for different geographies under the same datacenter. How may I achieve that?
+## Can I have different throttling levels for different geographies in the same datacenter?
 
 Unfortunately this is not possible for real time data providers as they cannot have child profiles under their parent profile.
 
-## I would like to have different throttling settings for each datacenter, but I know I can only have one profile. What are my options?
+## How can I set different throttling settings for each datacenter?
 
-You may attempt to set different throttling levels for datacenters by blocking IP addresses through your bidder's ACL settings. For example, if you want to listen to 80% of traffic in NY and 60% of traffic in AMS then you should progressively inch the filter percentage of your bidder up to 80% as well as block IPs in the AMS datacenter so that traffic from AMS is only at 60%. To determine what IP addresses to block, contact your Xandr Account Manager. You may block them through the Rule Builder in the Network section of the Xandr Portal.
+You may only have one profile. You may attempt to set different throttling levels for datacenters by blocking IP addresses through your bidder's ACL settings. For example, if you want to listen to 80% of traffic in NY and 60% of traffic in AMS then you should progressively inch the filter percentage of your bidder up to 80% as well as block IPs in the AMS datacenter so that traffic from AMS is only at 60%. To determine what IP addresses to block, contact your Xandr Account Manager. You may block them through the Rule Builder in the Network section of the Xandr Portal.
 
 ## What is dynamic throttling?
 
 For traffic that is not throttled through a data providers bidder profile, bid requests will under-go dynamic bidder throttling if the
-bidder has dynamic throttling enabled (which all data provider bidders do). Dynamic bidder throttling only impacts bid requests (e.g. it does not affect ready requests) and is driven by a 100 request sliding window average of timeout percentages. That is, if in the last 100 bid requests 50% of the requests timed out, then there is a 50% probability that the next request will be sent to the bidder (and a 50% probability that it will not be sent out).
+bidder has dynamic throttling enabled (which all data provider bidders do). Dynamic bidder throttling only impacts bid requests (e.g. it does not affect ready requests) and is driven by a 100 request sliding window average of timeout percentages. For example, if 50% of the last 100 bid requests timed out, then there is a 50% probability that the next request will be sent to the bidder (and a 50% probability that it will not be sent out).
 
-## How do I enable/disable dynamic throttling for by real time data provider?
+## How do I enable/disable dynamic throttling for a real time data provider?
 
-Dynamic throttling was initially enabled for all data providers. [Submit a Support Request](https://help.xandr.com/s/login/) to request enabling/disabling the feature for your data provider bidder.
+By default, dynamic throttling is initially enabled for all data providers. [Submit a Support Request](https://help.xandr.com/s/login/) to request enabling/disabling the feature for your data provider bidder.
 
 ## Does dynamic throttling always affect incoming bid requests?
 
-No, very high and very low timeout rates are handled as special cases. If a bidder's timeout percentage falls below 5%, then none of the bid requests sent will be dynamically throttled. On the other hand, if a bidder's timeout percentage goes above 90%, then we will send a minimum 10% of traffic regardless of how high the timeout rate becomes until the timeout rate dips below 90% (when we will reengage dynamic throttling).
+No, very high and very low timeout rates are handled as special cases. If a bidder's timeout percentage falls below 5%, then none of the bid requests sent are dynamically throttled. On the other hand, if a bidder's timeout percentage goes above 90%, then we will send a minimum 10% of traffic regardless of how high the timeout rate becomes until the timeout rate dips below 90% (when we will reengage dynamic throttling).
 
 ## I wish to listen for a particular supply type (e.g. web or mobile-app), how should I proceed?
 
-The best way to proceed is to exclude undesirable supply types through the "supply_type_action" and "supply_type_targets" parameters through [Legacy Bidder Profile Service](../bidders/legacy-bidder-profile-service.md). Since there is supply (mostly "web") that is of unmarked supply type by including supply types you will be missing on this unmarked supply.
+The best way to proceed is to exclude undesirable supply types through the "supply_type_action" and "supply_type_targets" parameters through [Legacy Bidder Profile Service](../bidders/legacy-bidder-profile-service.md). However, keep in mind that since there is supply (mostly "web") that is of unmarked supply type, when you will include this supply type you will miss on this unmarked supply.
 
 ## Can RTDPs listen to Facebook traffic?
 
