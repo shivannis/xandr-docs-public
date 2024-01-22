@@ -1,12 +1,12 @@
 ---
-title: Data Marketplace - Data Partner Overview
+title: Data Marketplace Overview
 description: Get Data partner overview in this page. 
 ms.custom: data-providers
 ms.date: 11/29/2023
 ---
 
 
-# Data marketplace - Data partner overview
+# Data marketplace overview
 
 Buyers on the Xandr platform often use
 third-party data made available by our data providers to target
