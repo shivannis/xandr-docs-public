@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Video inventory recommendations
+# Microsoft Monetize - Video inventory (recommendations)
 
 To act on the new inventory recommendations found under your video line
 item's **Analytics** tab (in the
