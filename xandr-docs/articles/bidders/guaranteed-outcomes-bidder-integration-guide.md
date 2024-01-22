@@ -19,8 +19,7 @@ At a high level, our approach to the implementation follows what has been descri
 The billing notification concept has been further developed in the OpenRTB Specification 2.5. Highlighting relevant content from section 4.2.3.
 
     BEST PRACTICE: The essential function of the win notice is to inform a bidder that they won an auction. It does not necessarily imply ad delivery, creative viewability, or billability. Exchanges are highly encouraged to publish to their bidders, their event triggers, billing policies, and any other meaning they attach to the win notice.
-
-BEST PRACTICE: Firing of the billing notice should be server-side and as “close” as possible to where the exchange books revenue in order to minimize discrepancies between exchange and bidder.
+    BEST PRACTICE: Firing of the billing notice should be server-side and as “close” as possible to where the exchange books revenue in order to minimize discrepancies between exchange and bidder.
 
 ## Protocol summary
 
