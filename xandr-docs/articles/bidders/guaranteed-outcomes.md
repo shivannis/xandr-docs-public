@@ -86,8 +86,6 @@ The accuracy of the pre-bid outcome prediction plays a crucial role in the balan
 
 Pre-bid outcome predictions are freely available in [OpenRTB bid requests](./outgoing-bid-request-to-bidders.md) from the Exchange to all bidders and DSPs. Additionally, these predictions are generally available as an Engineered Feature of the Exchange. Buyers can use them as building blocks to develop custom algorithms using [Custom Models (formerly Programmable Bidder)](../data-science-toolkit/custom-models.md). Outcome predictions are also used for view-rate and completion-rate threshold targeting and vCPM optimization.
 
-The outcome predictions are modeled across the entire platform as accurately as possible. For more information on the prediction, see our [tech blog post](https://medium.com/xandr-tech/ad-viewability-and-feature-selection-for-big-data-256acf523f2a).
-
 ### Market-making fee
 
 Xandr provides a service of creating liquidity between buyers and sellers. In doing so, incurs risk and costs from external measurement partners. Thus, Xandr charges a Market-Making Fee for this service. The target Market-Making Fee for Guaranteed Outcomes is 10%. However the actual Market-Making Fee may vary slightly due to Prediction Variability.
