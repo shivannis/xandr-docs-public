@@ -1,10 +1,12 @@
 ---
-title: Auction overview
+title: Bidder - Auction Overview
 description: Learn about impression bus in this page.  
 ms.date: 11/28/2023
 ---
 
-# Auction overview
+# Bidder - Auction overview
+
+This section provides a general overview of Xandr, from Xandr's tags to post-auction reports.
 
 ## Impression bus and tags
 
@@ -20,7 +22,7 @@ When an ad call from one of the Xandr tags or from an Xandr supply partner hits 
 
 Data providers integrated on our platform recognize the user ID and can input any information they may have on that specific ID. They pass the user data to bidders that have the rights to that information. The bidders then evaluate the ad call on behalf of their advertisers and return a bid value to the impression bus.
 
-For a closer look at the auction process, please see the [Auction Overview](auction-overview.md).
+For a closer look at the auction process, see [Auction - Detailed overview](#auction---detailed-overview).
 
 > [!NOTE]
 > Xandr does not allow bids greater than $999 CPM. Any bids over $999 CPM (or effective CPM for CPA/CPC bids) are reduced to $999 CPM.
@@ -47,9 +49,9 @@ Couple this with full reporting and API support, and you have all the tools you 
 - Independent platform allowing deep integration with technologies, optimization engines, and bidders
 - Increase the number of high-value users for your clients while decreasing the number of low-value users
 
-## Auction overview
+## Auction - Detailed overview
 
-This section takes you through an auction step by step. For a general overview of Xandr, from Xandr's tags to post-auction reports, see [Big Picture](#bidder---big-picture).
+This section takes you through an auction step by step.
 
 ### Step 1. Impression bus receives an ad call
 
@@ -70,7 +72,7 @@ The impression bus, in real time, reaches out to all integrated to gather other 
 
 ### Step 3. Impression bus sends bid requests to bidders
 
-The impression bus sends out a [bid request](outgoing-bid-request-to-bidders.md) to all bidders, including [Xandr's Digital Platform UI](xandr-s-digital-platform-ui.md). Bidders may opt out of certain impressions based on the inventory, see [Enhanced Bidder Profiles (enhanced-bidder-profiles.md). Within the bid request, each bidder is passed all relevant information about the user and inventory, as well as the publisher's advertiser exclusion profile. Each bidder is also passed all data within that bidder's reserved user cookie space.
+The impression bus sends out a [bid request](outgoing-bid-request-to-bidders.md) to all bidders, including [Xandr's Digital Platform UI](xandr-s-digital-platform-ui.md). Bidders may opt out of certain impressions based on the inventory, see [Enhanced Bidder Profiles](enhanced-bidder-profiles.md). Within the bid request, each bidder is passed all relevant information about the user and inventory, as well as the publisher's advertiser exclusion profile. Each bidder is also passed all data within that bidder's reserved user cookie space.
 
 ### Step 4. Bidders submit CPM bids
 
