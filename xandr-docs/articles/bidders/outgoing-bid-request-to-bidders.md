@@ -17,6 +17,7 @@ The bid request includes information from sellers that specifies which advertise
 > You may not wish to receive all bid requests that pass through our platform. You can either throttle requests by some percentage, or filter requests by preset criteria such as geography.
 
 ## Implementation
+Refer to the table to locate the implementation details such as objects and headers that you need more information on.
 
 ### Bid request headers
 
