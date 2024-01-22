@@ -221,7 +221,7 @@
   items:
   - name: Overview
     href: batch-server-side-segmentation.md
-  - name: Batch Segment Service
+  - name: Batch Segment Service API
     href: batch-segment-service.md
   - name: Initial BSS Account Setup
     href: initial-bss-account-setup.md
