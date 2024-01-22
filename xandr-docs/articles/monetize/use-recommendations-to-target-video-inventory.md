@@ -1,5 +1,5 @@
 ---
-title: Microsoft Monetize - Video Inventory Recommendations
+title: Microsoft Monetize - Video Inventory (Recommendations)
 description: Learn how to leverage recommendations to target video inventory.
 ms.date: 10/28/2023
 ---
