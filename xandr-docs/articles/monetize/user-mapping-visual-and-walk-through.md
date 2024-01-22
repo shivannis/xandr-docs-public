@@ -1,11 +1,11 @@
 ---
-title: User Mapping Visual and Walk-Through
+title: Microsoft Monetize - User Mapping (Visual and Walk-Through)
 description: Learn how to map your internal user IDs and Xandr user IDs using an example given in this page. 
 ms.date: 10/28/2023
 ---
 
 
-# User Mapping Visual and Walk-Through
+# Microsoft Monetize - User mapping (visual and walk-through)
 
 [User ID Mapping](user-id-mapping-with-getuid-and-mapuid.md) describes how to map your internal user IDs and
 Xandr user IDs so that you can pass
