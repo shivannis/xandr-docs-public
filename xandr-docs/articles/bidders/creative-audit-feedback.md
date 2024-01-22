@@ -1,23 +1,16 @@
 ---
-title : Creative Audit Feedback
-description : Learn about the creative standards set by Xandr, Google Ad Manager, and Microsoft.
-ms.date : 11/22/2023
-
+title: Creative Audit Feedback
+description: Learn about the creative standards set by Xandr, Google Ad Manager, and Microsoft.
+ms.date: 11/22/2023
 ---
-
 
 # Creative audit feedback
 
-This page addresses the creative standards set by
-Xandr, Google Ad Manager, and Microsoft, and
-elaborates on the feedback you receive via email after submitting a
-creative.
+This page addresses the creative standards set by Xandr, Google Ad Manager, and Microsoft, and elaborates on the feedback you receive via email after submitting a creative.
 
 ## Prohibited content
 
-
-Ensure that your creatives and inventory do not contain any of the
-following.
+Ensure that your creatives and inventory do not contain any of the following.
 
 | Ban Reason                                                                               | Description                                                                                                                                                                                                                                                                                                                                                                                               |
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -29,11 +22,11 @@ following.
 | Inappropriately charges for government forms or services                                 | - Charging for government forms or services that are normally free or offering them cheaper than the government. <br> - Any illegal or deceptive service to bypass a public system (ex. fake IDs, evading traffic tickets, etc.)                                                                                                                                                                                   |
 | Misappropriation of a copyright, trademark, trade secret or patent of another party      | Creative deceptively uses a major brand’s logo in an offer not affiliated with that brand                                                                                                                                                                                                                                                                                                                 |
 | Pornography, nudity, obscenity, or other "adult" content                                 | - Major nudity (female nipples, genitalia, etc.) <br> - Depiction of sexual acts <br> - Escort services <br> - Realistic sex toys <br> - Sales or distribution of pornography                                                                                                                                                                                                                                                           |
-
 For more information, see our [Policies for Buying](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx) (login required).
 
-
 ## Disapproval reasons
+
+The following table outlines reasons why a creative may be rejected from serving on Xandr inventory and recommendations for resolving the potential issue. Our policies apply to nearly all inventory sources with some minor exceptions. All creatives must meet these criteria in order to be approved. Xandr reserves the right to update audit policies and integrate or amend acceptance criteria at any time.
 
 | Failure Reason                                                               | Description                                                                                                                                                                                                                                                                                                                                                                                                              | Recommendations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -52,19 +45,9 @@ For more information, see our [Policies for Buying](https://microsoftapc.sharepo
 | Declared tag size does not match creative’s actual dimensions                | Incorrect creative tag size. The size in Xandr UI does not match the actual size of the creative.                                                                                                                                                                                                                                                                                                                        | - Check if the declared size in the UI matches your creative size. If not, please update the declared size to make it match with your creative size. <br> - In case of a high impact or expandable creative: It is recommended to upload and create the creative as a standard banner with 1x1 (or 1x2) size. This way, we won’t look at the primary size and will focus on the expandable creative size.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Political creative does not contain clear “paid for by” disclaimer           | US political creatives without “paid for” disclaimer                                                                                                                                                                                                                                                                                                                                                                     | Update the creative and add the “paid for” disclaimer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
-The following table outlines reasons why a creative may be rejected from
-serving on Xandr inventory and recommendations for resolving the
-potential issue. Our policies apply to nearly all inventory sources with
-some minor exceptions. All creatives must meet these criteria in order
-to be approved. Xandr reserves the right to update audit policies and
-integrate or amend acceptance criteria at any time.
-
-
 ## CBA standards
 
-All creatives must meet the Coalition for Better Ads (CBA) standards in
-order to serve on desktop and mobile inventory. For more information,
-see [https://www.betterads.org/standards/](https://www.betterads.org/standards/).
+All creatives must meet the Coalition for Better Ads (CBA) standards in order to serve on desktop and mobile inventory. For more information, see [https://www.betterads.org/standards/](https://www.betterads.org/standards/).
 
 ## Related topics
 

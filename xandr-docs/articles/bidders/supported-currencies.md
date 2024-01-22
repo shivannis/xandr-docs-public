@@ -1,10 +1,12 @@
 ---
-title : Supported Currencies
-description : This page lists currencies that are supported. 
-ms.date : 11/24/2023
+title: Supported Currencies
+description: This page lists currencies that are supported by the platform.
+ms.date: 11/24/2023
 ---
 
 # Supported currencies
+
+Support for multiple currencies allows buyers and sellers to transact with one another globally on the Xandr platform. The following table lists the currencies that are supported by the Xandr platform.
 
 | Name                        | Symbol   |
 |-----------------------------|----------|
@@ -36,4 +38,3 @@ ms.date : 11/24/2023
 | Turkish Lira (TRY)          | TL       |
 | United States Dollar (USD)  | $        |
 | Vietnamese Dong (VND)       | ₫        |
-
