@@ -10,13 +10,10 @@ ms.date : 11/28/2023
 As described in this document, adding your segment file to the system is
 a multi-step process. 
 
-- Step
-  1: [Format your data file for upload](#format-your-data-file-for-upload).
-- Step 2: [Request an upload URL and Job ID](#request-an-upload-url-and-job-id)
-- Step
-  3: [Post the file to the upload URL](#post-the-file-to-the-upload-url)
-- Step
-  4: [Check the job status](#check-the-job-status)
+1. Step 1: [Format your data file for upload](#format-your-data-file-for-upload).
+2. Step 2: [Request an upload URL and Job ID](#request-an-upload-url-and-job-id)
+3. Step 3: [Post the file to the upload URL](#post-the-file-to-the-upload-url)
+4. Step 4: [Check the job status](#check-the-job-status)
 
 > [!NOTE]
 > Files are limited to 1800 segments on any individual line. If you have more than 1800 segments for one user, you must break that line into multiple lines.
