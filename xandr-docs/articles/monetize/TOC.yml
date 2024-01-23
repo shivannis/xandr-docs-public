@@ -744,16 +744,8 @@
       href: open-dynamic-allocation-and-flexible-priorities.md
     - name: Forecast-Shaped Pacing
       href: forecast-shaped-pacing.md
-  - name: Data Marketplace
-    items:
-    - name: Data Marketplace Overview
-      href: data-marketplace-overview.md
-    - name: Data Marketplace Partners and Contact Information
-      href: data-marketplace-partners-and-contact-information.md
-    - name: Data Cost Calculation Mechanics
-      href: data-cost-calculation-mechanics.md
-    - name: Data Marketplace FAQ(s)
-      href: data-marketplace-faq.md
+  - name: Data Marketplace Overview
+    href: data-marketplace-buyer-overview.md
 - name: Buy-Side Targeting
   items:
   - name: Overview
@@ -819,7 +811,7 @@
     - name: Deal Targeting (ALI)
       href: deal-targeting-ali.md
     - name: Direct Inventory Targeting (ALI)
-      href: direct-inventory-targeting-ali_1.md
+      href: direct-inventory-targeting-ali.md
     - name: Inventory Lists (ALI)
       items:
       - name: Overview
@@ -1315,7 +1307,7 @@
       - name: Setting Up Line Item Inventory and Brand Safety
         href: set-up-line-item-inventory-and-brand-safety-pgli-monetize.md
       - name: Inventory Targeting
-        href: inventory-targeting-pgli.md.
+        href: inventory-targeting-pgli.md
     - name: Set Line Item Frequency and Recency Caps
       href: set-line-item-frequency-and-recency-caps.md
     - name: Programmatic Guaranteed Selling Line Item Targeting
@@ -1576,7 +1568,7 @@
         href: device-analytics-report.md
       - name: Identifiers - Distinct ID Report
         href: identifiers--distinct-id-report.md
-      - name: Identifiers - ID Combinations Report
+      - name: Identifiers: ID Combinations Report
         href: identifiers--id-combinations-report.md
       - name: Key Value Analytics Report
         href: key-value-analytics-report.md
