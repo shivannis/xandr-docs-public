@@ -1,26 +1,14 @@
 ---
-title : Trade Desk Buying Guide
-descritption : Learn about Trade Desk Buying Guide to help Xandr publishers communicate with their buyers about accessing and targeting Xandr's publisher inventory using Trade Desk as their DSP.   
-ms.date : 11/28/2023
+title: Trade Desk Buying Guide
+descritption: Learn about Trade Desk Buying Guide to help Xandr publishers communicate with their buyers about accessing and targeting Xandr's publisher inventory using Trade Desk as their DSP.   
+ms.date: 11/28/2023
 ---
-
 
 # Trade desk buying guide
 
 ## Overview
 
-Xandr, in partnership with Trade Desk, has
-created this buying guide to help
-Xandr publishers communicate with their buyers
-about accessing and targeting Xandr's publisher
-inventory using Trade Desk as their DSP. The information has been
-created in collaboration with and approved by the Trade Desk team.
-Please note that platforms can and will change regularly, and as always
-with our documentation we will do our best to update this guide as
-needed. Wherever possible we've provided links to Trade Desk
-documentation, and we recommend that if buyers are having issues or need
-help with using the Trade Desk platform their first point of outreach
-should be the Trade Desk team.
+Xandr, in partnership with Trade Desk, has created this buying guide to help Xandr publishers communicate with their buyers about accessing and targeting Xandr's publisher inventory using Trade Desk as their DSP. The information has been created in collaboration with and approved by the Trade Desk team. Note that platforms can and will change regularly, and as always with our documentation we will do our best to update this guide as needed. We recommend that if buyers are having issues or need help with using the Trade Desk platform their first point of outreach should be the Trade Desk team.
 
 ## Key definitions
 
@@ -47,122 +35,67 @@ should be the Trade Desk team.
 - Initiate the setting up of a campaign by clicking **+CAMPAIGN** button and enter the **Campaign Name**.
 
   :::image type="content" source="media/trade-desk-buying-guide-fig-c.png" alt-text="Screenshot of Trade Desk Buying Guide Fig C .":::
-  
 
 ### Step 2: Upload a creative
 
-- Upload hosted and third party creatives within the
-  **Add Creative** wizard in
-  the **Basic Information** page.
-  Creatives for all media types are uploaded here. Note that native
-  creatives must be hosted to proceed further. Below screenshots depicts
-  the uploading of a hosted display creative.
+- Upload hosted and third party creatives within the **Add Creative** wizard in the **Basic Information** page. Creatives for all media types are uploaded here. Note that native creatives must be hosted to proceed further. Below screenshots depicts the uploading of a hosted display creative.
 
-    :::image type="content" source="media/trade-desk-buying-guide-fig-d.png" alt-text="Screenshot of Trade Desk Buying Guide Fig D .":::
- 
-- Next, in the **Details** page, enter
-  the **Name** and the
-  **Landing Page URL** for your creative.
+  :::image type="content" source="media/trade-desk-buying-guide-fig-d.png" alt-text="Screenshot of Trade Desk Buying Guide Fig D .":::
+
+- Next, in the **Details** page, enter the **Name** and the **Landing Page URL** for your creative.
 
   :::image type="content" source="media/trade-desk-buying-guide-fig-e.png" alt-text="Screenshot of Trade Desk Buying Guide Fig E .":::
   
-- Next, in **Tracking and Declarations** page, enter the necessary details as per of your
-  requirements.
+- Next, in **Tracking and Declarations** page, enter the necessary details as per of your requirements.
   
   > [!NOTE]
   > The **Clickthrough URL** field is mandatory in this page.
 
   :::image type="content" source="media/trade-desk-buying-guide-fig-f.png" alt-text="Screenshot of Trade Desk Buying Guide Fig F .":::
 
-
-- Next, in **Flight Dates** page,
-  enter the start and end date of the creative flight along with the
-  Time Zone.
+- Next, in **Flight Dates** page, enter the start and end date of the creative flight along with the Time Zone.
 
   :::image type="content" source="media/trade-desk-buying-guide-fig-g.png" alt-text="Screenshot of Trade Desk Buying Guide Fig G .":::
   
-- Next, in the Summary page, review the information entered and confirm
-  the details.
+- Next, in the Summary page, review the information entered and confirm the details.
 
 ### Step 3: Upload a deal to the trade desk platform via PMP
 
-- Click **Inventory Contract** to open the
-  Inventory Contract Wizard. In
-  **Description** page, enter the
-  **Name** of the contract. Other details
-  in the page is optional.
+- Click **Inventory Contract** to open the Inventory Contract Wizard. In **Description** page, enter the **Name** of the contract. Other details in the page is optional.
 
   :::image type="content" source="media/trade-desk-buying-guide-fig-h.png" alt-text="Screenshot of Trade Desk Buying Guide Fig H .":::
   
-
-- In **Supply Vendor Deals** page,
-  select the **Supply Vendor** and enter
-  **Deal
-  Code/ID** as well as CPM.
+- In **Supply Vendor Deals** page, select the **Supply Vendor** and enter **Deal Code/ID** as well as CPM.
 
   :::image type="content" source="media/trade-desk-buying-guide-fig-i.png" alt-text="Screenshot of Trade Desk Buying Guide Fig I .":::
   
-
-- In **Publishers page**, add the
-  **Publisher Name** associated with the
-  **Deal ID** and click **Next**.
+- In **Publishers page**, add the **Publisher Name** associated with the **Deal ID** and click **Next**.
 
   :::image type="content" source="media/trade-desk-buying-guide-fig-j.png" alt-text="Screenshot of Trade Desk Buying Guide Fig J .":::
   
-- In **Category Targeting**, **Site Targeting** and **Location Targeting** pages, specify applicable category(s), site(s), and
-  location(s) that you want to target and
-  click **Next**.
+- In **Category Targeting**, **Site Targeting** and **Location Targeting** pages, specify applicable category(s), site(s), and location(s) that you want to target and click **Next**.
 
   :::image type="content" source="media/trade-desk-buying-guide-fig-k.png" alt-text="Screenshot of Trade Desk Buying Guide Fig K .":::
- 
-- In **Creative Targeting** page,
-  select the applicable Ad Sizes and
-  click **Complete**. Once you click
-  **Complete**, you will only see
-  available impressions for the deal as long as the deal is activated in
-  the SSP.
+
+- In **Creative Targeting** page, select the applicable Ad Sizes and click **Complete**. Once you click **Complete**, you will only see available impressions for the deal as long as the deal is activated in the SSP.
 
   :::image type="content" source="media/trade-desk-buying-guide-fig-l.png" alt-text="Screenshot of Trade Desk Buying Guide Fig L .":::
   
-
 ### Step 4: Create an real time bidding (RTB) Ad group
 
-- Click the **+Ad Group** button and enter
-  a name to your Ad Group. It is recommended to choose a unique name
-  which differs from your other Ad Groups. Select the
-  **Media Types**,
-  **Device Types**,
-  **Ad Environments** and specify
-  the **Goal** and
-  **Target** in the page. Click
-  **Next**.
+- Click the **+Ad Group** button and enter a name to your Ad Group. It is recommended to choose a unique name which differs from your other Ad Groups. Select the **Media Types**, **Device Types**, **Ad Environments** and specify the **Goal** and **Target** in the page. Click **Next**.
 
   :::image type="content" source="media/trade-desk-buying-guide-fig-m.png" alt-text="Screenshot of Trade Desk Buying Guide Fig M .":::
- 
-- Select your **Pacing** and
-  **Flight Dates** and specify your budget
-  for the flights. Enter the amount for your
-  **Base bid** and
-  **Max bid** and click
-  **Next**.
+
+- Select your **Pacing** and **Flight Dates** and specify your budget for the flights. Enter the amount for your **Base bid** and **Max bid** and click **Next**.
 
   :::image type="content" source="media/trade-desk-buying-guide-fig-n.png" alt-text="Screenshot of Trade Desk Buying Guide Fig N .":::
 
-- Select your **Audience Type**,
-  **Frequency**, and
-  **Geos** for targeting. Next, enable
-  **Cross-Device** targeting and
-  attribution.
+- Select your **Audience Type**, **Frequency**, and **Geos** for targeting. Next, enable **Cross-Device** targeting and attribution.
 
   :::image type="content" source="media/trade-desk-buying-guide-fig-o.png" alt-text="Screenshot of Trade Desk Buying Guide Fig O .":::
   
-- Complete your Ad Group creation set up by selecting
-  **Creatives** from drop-down, adding
-  **Sites/App** lists using
-  **ADD LIST** button, and selecting the
-  **Market type** under the
-  **Private Contract** section that you
-  uploaded previously.
+- Complete your Ad Group creation set up by selecting **Creatives** from drop-down, adding **Sites/App** lists using **ADD LIST** button, and selecting the **Market type** under the **Private Contract** section that you uploaded previously.
 
   :::image type="content" source="media/trade-desk-buying-guide-fig-p.png" alt-text="Screenshot of Trade Desk Buying Guide Fig P .":::
 
@@ -183,11 +116,7 @@ should be the Trade Desk team.
 
 ### Step 5: Target and launch the deal
 
-- Find the deal by searching by deal ID or deal name. Once fetched,
-  target the deal ID within the **Private Contract** rail at the Ad Group level. Note that, it is possible
-  to target more than one private contract in a single Ad Group. Once
-  the deal is trafficked in the SSP, your Ad Group will automatically
-  start spending according to the requirements.
+- Find the deal by searching by deal ID or deal name. Once fetched, target the deal ID within the **Private Contract** rail at the Ad Group level. Note that, it is possible to target more than one private contract in a single Ad Group. Once the deal is trafficked in the SSP, your Ad Group will automatically start spending according to the requirements.
 
   :::image type="content" source="media/trade-desk-buying-guide-fig-q.png" alt-text="Screenshot of Trade Desk Buying Guide Fig Q .":::
   
@@ -197,13 +126,8 @@ should be the Trade Desk team.
 
 ## Tips & tricks for PG workflow
 
-- For PG deals with **GAM**, **Magnite**, **Freewheel**, or
-  **Bidswitch**, the client will utilize
-  the Easy Proposal Activation workflow described above.
-- If the SSP is not **GAM**, **Magnite**, **Freewheel**, or
-  **Bidswitch**, the publisher will
-  provide the client with the targetable deal ID so the client can
-  create the PG contract in The Trade Desk platform.
+- For PG deals with **GAM**, **Magnite**, **Freewheel**, or **Bidswitch**, the client will utilize the Easy Proposal Activation workflow described above.
+- If the SSP is not **GAM**, **Magnite**, **Freewheel**, or **Bidswitch**, the publisher will provide the client with the targetable deal ID so the client can create the PG contract in The Trade Desk platform.
 
  > [!NOTE]
  > A few best practices for clients:
@@ -221,21 +145,13 @@ should be the Trade Desk team.
 
 ### The trade desk troubleshooting tool
 
-- Go into the **Private Contract**
-  rail in your Ad Group and click
-  **Troubleshoot** to see the
-  **ISSUE**,
-  **DETAILS**,
-  **POTENTIAL SOLUTION**, and
-  **EXCLUDED PERCENTAGE** of bids for
-  a specific contract.
+- Go into the **Private Contract** rail in your Ad Group and click **Troubleshoot** to see the **ISSUE**, **DETAILS**, **POTENTIAL SOLUTION**, and **EXCLUDED PERCENTAGE** of bids for a specific contract.
 
   :::image type="content" source="media/trade-desk-buying-guide-fig-t.png" alt-text="Screenshot of Trade Desk Buying Guide Fig T .":::
- 
+
   :::image type="content" source="media/trade-desk-buying-guide-fig-u.png" alt-text="Screenshot of Trade Desk Buying Guide Fig U ."::: 
- 
-- The **Bid Exclusions Reasons**
-  dialog would appear. You can
+
+- The **Bid Exclusions Reasons** dialog would appear. You can
 
 |                       |                                                                                                                                                                             |
 |-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -254,7 +170,6 @@ should be the Trade Desk team.
 | No Matching Ad Format Found           | The Ad Group does not have a creative assigned with an ad format matching the bid request.                        | Make sure that all creatives assigned to your Ad Group match the creative sizes coming through the contract details. For example, if the publisher is sending 970x250 and 728x90 desktop display inventory, ensure that you have 970x250 and 728x90 creatives assigned to your Ad Group.                                                    |
 | Referrer Data Missing                 | A pre-bid solution such as DoubleVerify, Grapeshot, IAS or Peer39 blocked the request.                            | Consider loosening or lifting pre-bid solutions as they may be restricting the number of requests.                                                                                                                                                                                                                                          |
 | User Doesn’t Match Audience Targeting | The Ad Group is targeting an audience and there was no match found with the bid request.                          | Confirm with the publisher the avails for the audience in which you’re targeting. Consider expanding the audience targeting so scale is not limited.                                                                                                                                                                                        |
-
 
 ### Common questions asked while troubleshooting
 

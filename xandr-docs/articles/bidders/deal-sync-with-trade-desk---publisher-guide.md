@@ -54,25 +54,23 @@ While there are no changes to how a publisher create deals in Monetize UI, publi
 
 ## Best practices for deal setup
 
-**1:1 Deals and exchange curated deals (ECDs)**
+### 1:1 Deals and Exchange Curated Deals (ECDs)
 
 - Deals must be set up with Trade Desk partner IDs. This deal synchronizing process does not support member ID deals.
 - Once a partner ID is selected for a deal, it cannot be changed in subsequent updates.
-- Always have active communication with the buyer during the deal negotiation and setup process to ensure the buyer knows to approve the
-  deal in the Trade Desk UI.
+- Always have active communication with the buyer during the deal negotiation and setup process to ensure the buyer knows to approve the deal in the Trade Desk UI.
 
-**Programmatic guaranteed (PG) deals**
+### Programmatic guaranteed (PG) deals
 
 - Deals must be set up with Trade Desk partner IDs. This deal sync process does not support member ID deals.
 - You cannot change the Trade Desk partner ID once the deal is created.
 - The deal must have only ONE declared media type (video, banner, native, audio).
 - Banner/Display PG deals must have at least one allowed creative size declared.
-- Always have active communication with the buyer during the deal negotiation and setup process to ensure the buyer knows to approve the
-  deal in the Trade Desk UI.
+- Always have active communication with the buyer during the deal negotiation and setup process to ensure the buyer knows to approve the deal in the Trade Desk UI.
 
-**Multi-buyer deals**
+### Multi-buyer deals
 
-- Deals set up with multiple Trade Desk seat IDs automatically get synchronized.
+- Deals set up with multiple Trade Desk seat IDs automatically get synchronized.
 - Bidder-level deals (set up with ALL Trade Desk buyers) are not supported in automatic deal synchronizing.
 - Xandr systems will randomly assign one buyer to be the primary buyer on the multi-buyer deal. This primary buyer will be the only account allowed to approve the deal. You can check the primary buyer assigned to the deal in the buyer-deal-sync API or database tables.
 - The primary buyer on a multi-buyer deal cannot be changed or removed
