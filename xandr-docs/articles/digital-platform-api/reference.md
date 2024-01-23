@@ -1,11 +1,11 @@
 ---
-title: Reference
+title: API references overview
 description: In this article, explore API services and information about each service.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Reference
+# API references overview
 
 This page lists Xandr's API services, as well as the following information about each service:
 
