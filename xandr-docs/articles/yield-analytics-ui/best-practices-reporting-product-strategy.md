@@ -4,18 +4,18 @@ description: The article highlights effective product strategy reporting through
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
+
 # Best Practices - reporting product strategy
 
 ## What are reporting products?
 
-Reporting products are products that are generally not sold, but are used for reporting purposes only. Reporting products can be used as
-shortcuts to:
+Reporting products are products that are generally not sold, but are used for reporting purposes only. Reporting products can be used as shortcuts to:
 
 - Aggregating meaningful pools of inventory
 - Breaking out consumption and optimizing campaigns
 - Finding, upselling, and cross-selling opportunities
 
-Reporting products are created in, and typically exist in yield analytics only. This is contrary to rate-card products or custom products, which are typically imported from the ad server or order management system.
+Reporting products are created in, and typically exist in Yield Analytics only. This is contrary to rate-card products or custom products, which are typically imported from the ad server or order management system.
 
 ## Creating useful reporting products
 
@@ -23,16 +23,13 @@ There are a few rules that we recommend in creating reporting products:
 
 **Differentiate your naming convention**
 
-Naming conventions are very important for all products in your system. This is for easy access, and to understand what products refer to
-without having to look at their targeting expression. The same is true for reporting products: They are only useful when they are
-well-organized.
+Naming conventions are very important for all products in your system. This is for easy access, and to understand what products refer to without having to look at their targeting expression. The same is true for reporting products: They are only useful when they are well-organized.
 
-You can filter specifically to reporting products in all areas of yield analytics by using the Product Type element. It is recommended to use some kind of element in the product name itself. You frequently desire to build reports that are specific to a single or minimal amount of reporting products. Filtering based on naming convention makes in easier to build those reports quickly.
+You can filter specifically to reporting products in all areas of Yield Analytics by using the Product Type element. It is recommended to use some kind of element in the product name itself. You frequently desire to build reports that are specific to a single or minimal amount of reporting products. Filtering based on naming convention makes in easier to build those reports quickly.
 
 Many publishers use an abbreviation of an existing element that is already present in their products. This eliminates the need to add a new product: You just change an existing element. (Normally this inconsistency isn’t something you’d want to introduce to a naming convention. It is used in this case because the inconsistency identifies a distinction between products).
 
-For example: Your site is the technology news site **TechCrunch**. You set your site variable set as `TechCrunch` for all your Rate Card
-Products, but use `TC` as the site variable for your reporting products.
+For example: Your site is the technology news site **TechCrunch**. You set your site variable set as `TechCrunch` for all your Rate Card Products, but use `TC` as the site variable for your reporting products.
 
 An example of possible rate card products:
 
@@ -76,15 +73,13 @@ Once you have these basics in place, consider where it may be applicable to d
 
 ## Use product groups
 
-Once you have some reporting products created, it is recommended to start assigning them to groups. Groups will make it easier to create
-reports quickly, because they will help filter reporting results and product searches.
+Once you have some reporting products created, it is recommended to start assigning them to groups. Groups will make it easier to create reports quickly, because they will help filter reporting results and product searches.
 
-The major risk in product groups is using too many groups, to the point where it’s cumbersome to search the groups. Do  create groups for
-primary types (Geo vs. Audience, Content vs. Platform). Do not  create groups for every content section or subsection (Sports_Baseball vs. Sports_Football vs. Sports_Basketball). This would create hundreds or thousands of groups. It is recommended to rely on a strong naming convention, and search for what you need.
+The major risk in product groups is using too many groups, to the point where it’s cumbersome to search the groups. Do  create groups for primary types (Geo vs. Audience, Content vs. Platform). Do not  create groups for every content section or subsection (Sports_Baseball vs. Sports_Football vs. Sports_Basketball). This would create hundreds or thousands of groups. It is recommended to rely on a strong naming convention, and search for what you need.
 
 A product group probably isn’t that valuable if it contains less than 10 products that could have a common and unique element in their name. It can make sense to have small groups if you want to create them for specific stakeholders in your organization. Example: The finance team analyzes data in a specify fashion, so their life is made easier by always filtering reports with a single product group.
 
-You can read more about Product Group Strategy  in a separate yield analytics Best Practice doc.
+You can read more about Product Group Strategy  in a separate Yield Analytics Best Practice doc.
 
 ## Related topic
 

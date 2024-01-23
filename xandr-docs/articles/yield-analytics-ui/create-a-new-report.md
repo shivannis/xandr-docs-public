@@ -4,7 +4,9 @@ description: The article describes how to create a new custom based on the selec
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
+
 # Create a new report
+
 Use the **Reports** tab to create custom reports. As you enter metrics, the report automatically updates based on the selected criteria.
 
 Dimension and Primary Metric are the only two required fields to run a report.

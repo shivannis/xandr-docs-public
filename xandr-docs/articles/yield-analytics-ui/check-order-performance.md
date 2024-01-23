@@ -4,7 +4,9 @@ description: The article helps you check order performance using an order perfor
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
+
 # Check order performance
+
 Use the Order Performance widget to quickly view how an order or order line is performing.
 
 1. On the **Order Dashboard** page, view the **Order Performance widget**.
@@ -20,5 +22,5 @@ Use the Order Performance widget to quickly view how an order or order line is
 - [View the Full Details of an Order or Order Line](view-the-full-details-of-an-order-or-order-line.md)
 - [Anatomy of the Orders Dashboard Page](anatomy-of-the-orders-dashboard-page.md)
 - [Anatomy of the Order Visibility Page](anatomy-of-the-order-visibility-page.md)
-- [Solving Delivery Issues with Order Line Visibility](solving-delivery-issues-with-order-line-visibility.md)
+- [Solving Delivery Issues with Order Line Visibility](solve-delivery-issues-with-order-line-visibility.md)
 - [Working with Scenarios](working-with-scenarios-overview.md)

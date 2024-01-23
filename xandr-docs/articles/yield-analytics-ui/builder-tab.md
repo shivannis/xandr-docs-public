@@ -27,6 +27,7 @@ There are two methods of building a target expression:
 ### Method 1
 
 This method is recommended if you know exactly what you are looking for, and your target expression is small.
+
 1. Click **Type Attribute**. This allows you to type directly into the window. Start typing, and a list of the available attributes appears.
 1. Scroll down the list and select the attributes you desire. Select enter, and it automatically goes to the next one.
 
@@ -39,7 +40,7 @@ This method is recommended if you do not know specifically what you are looking 
 1. You can limit the attributes by specified criteria.
 1. There is extensive search capability. The Contains and Search windows at the top of the screen allow you to drill down into the search.
 1. The four options in the search criteria are: Contains, Starts with, Ends with, Equals.
-1. Once the attribute has been identified and selected, the values for that attribute are displayed in the middle column of the screen.    Then you can further drill-down into your search by applying the same search functionality to those results.
+1. Once the attribute has been identified and selected, the values for that attribute are displayed in the middle column of the screen. Then you can further drill-down into your search by applying the same search functionality to those results.
 1. If you want to select multiple attributes at once, you can do so by holding down the shift key while making your selection.
 1. There is also a **Select All** button, if you would like to select all the attributes listed in that window.
 1. The result of the search is displayed in the right-hand window.

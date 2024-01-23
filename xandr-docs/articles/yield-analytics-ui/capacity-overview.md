@@ -19,7 +19,7 @@ It contains three widgets:
 
 - [About Forecasts and Adjustments](about-forecasts-and-adjustments.md)  
 - [Anatomy of the Capacity Dashboard Page](anatomy-of-the-capacity-dashboard-page.md)
-- [Anatomy of the Forecast Visibility Page](anatomy-of-the-forecast-visibility-page.md)  
-- [View the Forecast for Your Products](view-the-forecast-for-your-products.md)  
+- [Anatomy of the Forecast Visibility Page](forecast-visibility-page-anatomy.md)  
+- [View the Forecast for Your Products](view-your-products-forecast.md)  
 - [Anatomy of the Forecast Management Page](anatomy-of-the-forecast-management-page.md)  
 - [Adding and Editing Adjustments](adding-and-editing-adjustments.md)

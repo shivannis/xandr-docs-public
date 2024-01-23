@@ -4,6 +4,7 @@ description: The article explains the most common report configurations in Yield
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
+
 # Common report configurations
 
 Below are the most common report configurations in Yield Analytics:

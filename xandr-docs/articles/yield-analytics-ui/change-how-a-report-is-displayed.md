@@ -4,6 +4,7 @@ description: The article details multiple options available for altering the dis
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
+
 # Change how a report is displayed
 
 You have several options to change how reports are displayed:

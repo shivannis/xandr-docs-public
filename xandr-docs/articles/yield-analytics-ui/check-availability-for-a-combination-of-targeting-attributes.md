@@ -4,7 +4,9 @@ description: The article explains how to check for available attributes, evaluat
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
+
 # Check availability
+
 The following article explains how to check for available attributes, evaluating impressions, setting criteria, and examining results in the Availability Report panel.
 
 ## Check available impressions
@@ -23,8 +25,7 @@ To check for available impressions, specify your lookup criteria and then view t
 1. In the Lookup Request panel, review the product criteria you selected and specify the values for the attributes you chose.
     - To specify attribute values, click the click to add attribute values link. Add the values you want to look up, and then click **Update**. You can type the values you want to look up or you can choose them from a comprehensive list by clicking **Select** and adding/removing values in the Attribute Values dialog.
     - By default, the lookup criteria you selected in step 3 appear in the Products must match all of these criteria box. Products that match all criteria in this box are returned in the lookup results. To have your lookup exclude results with certain attributes,       click **Include**. Then select **Exclude** from the drop-down list that appears.
-    - To have your lookup also match any of a set of criteria, click the And any of these criteria box. Select attributes from
-      the Lookup Criteria panel. Then specify the values for the attributes you chose.
+    - To have your lookup also match any of a set of criteria, click the And any of these criteria box. Select attributes from the Lookup Criteria panel. Then specify the values for the attributes you chose.
 1. (Optional) Add an advanced lookup option.
     - You can set up an OR lookup by clicking **Advanced**. Then select **Create Complex** Product. The lookup returns all products that match either set of criteria you define.
     - You can run a lookup for several values at the same time by clicking **Advanced**. Then select **Create Product** Variants. The lookup returns products that match all of the values in the main criteria, and each of the values in the Vary these attributes box.
@@ -48,6 +49,7 @@ You can open a saved availability lookup to rerun it or edit the details of the 
 1. Select an existing lookup from the list. You can search for an existing lookup by typing in the field at the top of the dialog. The list of lookups is narrowed as you type.
 
 ## Create an availability batch lookup
+
 You can run multiple availability lookups as part of a single availability report, by creating a batch lookup.
 
 1. Set up a new lookup for availability based on a combination of targeting attributes or open an existing saved lookup. Then click **Add to Batch**. The Availability Report panel displays the available inventory based on your lookup criteria, excluding CPM, impressions, and capacity.

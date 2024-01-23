@@ -7,9 +7,7 @@ ms.custom: yield-analytics-ui
 
 # Channel management
 
-Channel Management uses a product-based approach to gather data. This data is extracted to create a mapping document. Explicit product
-mappings ensure that the reports are returning data to meet your specific needs. Thus, information is being directly ported into the
-system, as opposed to a crude distribution of how revenue is allocated to products.
+Channel Management uses a product-based approach to gather data. This data is extracted to create a mapping document. Explicit product mappings ensure that the reports are returning data to meet your specific needs. Thus, information is being directly ported into the system, as opposed to a crude distribution of how revenue is allocated to products.
 
 ## Dashboard
 
@@ -40,7 +38,7 @@ You can view the performance of your channels either By Advertiser or **By Pr
 
 Channel performance uses data from:
 
-- Channel Advertiser - The advertisers yield analytics receives through your SSP integrations (if applicable).
+- Channel Advertiser - The advertisers Yield Analytics receives through your SSP integrations (if applicable).
 
 > [!TIP]
 > We do not always receive the advertiser information. (Just adding this as a reminder).
@@ -57,19 +55,19 @@ Click **View All** to access the **Reports** screen.
 
 ## Reports
 
-The Reports screen allows you to evaluate and analyze the data that we have access to. Essentially, this is the data we give you for your SSP reporting.  You have the ability to filter, sort, and add additional filters. Within the configuration are filters and dimensions related to channels.
+The Reports screen allows you to evaluate and analyze the data that we have access to. Essentially, this is the data we give you for your SSP reporting. You have the ability to filter, sort, and add additional filters. Within the configuration are filters and dimensions related to channels.
+
 The Analyzer functionality is also available on this page.
 
 > [!TIP]
-> There are specific filters related to each SSP integration. Yield Analytics will work with the data that you allow us to access and
-> evaluate.
+> There are specific filters related to each SSP integration. Yield Analytics will work with the data that you allow us to access and evaluate.
 
 ## Product/Customer dimensions related to channels
 
-There are two specific metrics that relate to channel management: 
+There are two specific metrics that relate to channel management:
 
-- Under Product Dimensions \> Channel
-- Under Customer Dimensions \> Channel Advertiser
+- Under Product Dimensions > Channel
+- Under Customer Dimensions > Channel Advertiser
 
 ## Channel metrics
 
@@ -93,14 +91,13 @@ Here are the definitions of the metrics in Channel Reporting:
 
 ## Best practices to switch to a product-based system
 
-Channel Management is currently based on order lines. With the addition of Pre-Bid, we are now basing it on explicit product mappings. The
-following changes must be made:
+Channel Management is currently based on order lines. With the addition of Pre-Bid, we are now basing it on explicit product mappings. The following changes must be made:
 
 - Product overlaps were applied based on overlaps that exist elsewhere in the system. Thus, they are less accurate than desired.
 - With the explicit product mappings we can ensure that the reports are returning data to meet your specific needs
 - Order line based reporting will be deprecated. (This is why you see duplicate metrics at the moment. One is an order line metric, and one is a product metric).
 
-When yield analytics integrates a client, the following general steps are taken:
+When Yield Analytics integrates a client, the following general steps are taken:
 
 1. The clients pick which SSPs they want to integrate with.
 1. Yield Analytics sets up an integration with the API for that SSP.
