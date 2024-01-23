@@ -120,7 +120,7 @@ data collection and use in online advertising, with an emphasis on
 third-party advertising technology companies.
 
 In 2013, they released
-a [Code of Conduct](https://thenai.org/accountability/code-enforcement/)that assesses types of
+a [Code of Conduct](https://thenai.org/accountability/code-of-conduct/) that assesses types of
 data used by member companies for advertising purposes, and imposes
 clear and firm restrictions on members' data collection, use, and
 transfer for online advertising, as well as a [Mobile Application Code](https://thenai.org/wp-content/uploads/2021/07/NAI_MobileCode15_NLT.pdf), which was last updated in 2015. 
