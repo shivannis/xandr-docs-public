@@ -10,8 +10,7 @@ ms.date: 10/28/2023
 The Segment Billing Category Service allows you to **map** your segments to your Data Marketplace pricing taxonomy. Here's how it works:
 
 1. You create a mapping record for a segment that you activate in the Data Marketplace.
-1. In the mapping record, you specify which pricing category the segment should be assigned to.
-1. clients that you've shared your segment with can now target that segment in campaigns and Xandr will clear the cost of usage.
+1. In the mapping record, you specify which pricing category the segment should be assigned to. Clients that you've shared your segment with can now target that segment in campaigns and Xandr will clear the cost of usage.
 
 > [!NOTE]
 >
@@ -21,12 +20,12 @@ The Segment Billing Category Service allows you to **map** your segments to your
 ## REST API
 
 | HTTP Method | Endpoint | Description |
-|---|---|---|
-| GET | [https://api.appnexus.com/data-provider](https://api.appnexus.com/data-provider) | View all of your pricing taxonomy. |
-| GET |  [https://api.appnexus.com/segment-billing-category](https://api.appnexus.com/segment-billing-category)  | View all of your mapping records. |
-| POST |  [https://api.appnexus.com/segment-billing-category](https://api.appnexus.com/segment-billing-category) (mapping JSON)<br><br>**Note:** Only one segment can be mapped at a time. | Add a mapping record. |
-| PUT | [https://api.appnexus.com/segment-billing-category](https://api.appnexus.com/segment-billing-category) (mapping JSON) | Modify a mapping record. |
-| DELETE | [https://api.appnexus.com/segment-billing-category?id=RECORD_ID](https://api.appnexus.com/segment-billing-category?id=RECORD_ID) | Delete a mapping record. |
+|:---|:---|:---|
+| `GET` | [https://api.appnexus.com/data-provider](https://api.appnexus.com/data-provider) | View all of your pricing taxonomy. |
+| `GET` |  [https://api.appnexus.com/segment-billing-category](https://api.appnexus.com/segment-billing-category)  | View all of your mapping records. |
+| `POST` |  [https://api.appnexus.com/segment-billing-category](https://api.appnexus.com/segment-billing-category) (mapping JSON)<br><br>**Note:** Only one segment can be mapped at a time. | Add a mapping record. |
+| `PUT` | [https://api.appnexus.com/segment-billing-category](https://api.appnexus.com/segment-billing-category) (mapping JSON) | Modify a mapping record. |
+| `DELETE` | [https://api.appnexus.com/segment-billing-category?id=RECORD_ID](https://api.appnexus.com/segment-billing-category?id=RECORD_ID) | Delete a mapping record. |
 
 > [!TIP]
 > **JSON structure:**
