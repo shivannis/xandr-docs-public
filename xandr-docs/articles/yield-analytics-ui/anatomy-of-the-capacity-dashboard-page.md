@@ -69,6 +69,6 @@ Use the **Capacity Trended** widget to quickly view how your whole network, or
 ## Related topics
 
 - [About Forecasts and Adjustments](about-forecasts-and-adjustments.md)
-- [View the Forecast for Your Products](view-the-forecast-for-your-products.md)
+- [View the Forecast for Your Products](view-your-products-forecast.md)
 - [Add a Manual Adjustment to a Product](add-a-manual-adjustment-to-a-product.md)
 - [Edit a Seasonal Adjustment for a Seasonal Product](edit-a-seasonal-adjustment-for-a-seasonal-product.md)

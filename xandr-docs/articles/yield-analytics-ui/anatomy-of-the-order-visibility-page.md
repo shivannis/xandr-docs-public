@@ -59,4 +59,4 @@ If you use the **Reports** tab, click the Advertiser name in the order Basics
 - [Find an Order Line](find-an-order-line.md)
 - [Check Revenue Against Goal](check-revenue-against-goal.md)
 - [View the Full Details of an Order or Order Line](view-the-full-details-of-an-order-or-order-line.md)
-- [Solving Delivery Issues with Order Line Visibility](solving-delivery-issues-with-order-line-visibility.md)
+- [Solving Delivery Issues with Order Line Visibility](solve-delivery-issues-with-order-line-visibility.md)

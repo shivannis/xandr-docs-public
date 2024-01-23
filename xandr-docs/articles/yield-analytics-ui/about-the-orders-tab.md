@@ -40,5 +40,5 @@ See the [Glossary](glossary.md) for a complete list of definitions.
 - [Anatomy of the Order Visibility Page](anatomy-of-the-order-visibility-page.md)
 - [Anatomy of the Order Line Visibility Page](anatomy-of-the-order-line-visibility-page.md)
 - [View the Full Details of an Order or Order Line](view-the-full-details-of-an-order-or-order-line.md)
-- [Solving Delivery Issues with Order Line Visibility](solving-delivery-issues-with-order-line-visibility.md)
+- [Solving Delivery Issues with Order Line Visibility](solve-delivery-issues-with-order-line-visibility.md)
 - [Glossary](glossary.md)
