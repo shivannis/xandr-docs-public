@@ -13,12 +13,12 @@ The way a given client utilizes shared segments, contextual, behavioral or other
 
 Bidders receive full details of every auction on the bid request. These details include:
 
-- Auction ID.
-- Xandr User ID.
-- Referrer URL.
-- IP Address.
-- Segment information for all owned segments.
-- Segment information for segments which have been shared by a data provider.
+- Auction ID
+- Xandr User ID
+- Referrer URL
+- IP Address
+- Segment information for all owned segments
+- Segment information for segments which have been shared by a data provider
 
 Use of this information is entirely reliant upon targeting logic built into the bidder's architecture.
 
