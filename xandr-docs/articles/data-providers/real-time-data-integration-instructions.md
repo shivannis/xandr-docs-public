@@ -25,7 +25,7 @@ Complete the following steps to begin using the Impression Bus API (api.adnxs.co
 `parent_profile_id` fields. The `parent_profile_id` should be the ID of the profile you created in step 3. The other bidder object fields
 (`notify_uri`, `pixel_uri`, `click_uri`, etc) should not be set as they do not apply to data providers.
 
-    - Ensure that you include at least one of our macros in your `bid_uri`. For a complete list of available macros, see Xandr [Macros for Data Providers](xandr-macros-for-data-providers.md).
+- Ensure that you include at least one of our macros in your `bid_uri`. For a complete list of available macros, see Xandr [Macros for Data Providers](xandr-macros-for-data-providers.md).
 
 **Step 5:** Add at least one bidder instance. In production, at least one bidder instance must be registered with each datacenter for which you would like to see traffic.
 

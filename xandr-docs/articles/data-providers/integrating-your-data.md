@@ -17,4 +17,4 @@ There are several steps to integrating your data. The typical data provider int
     - [Contextual/Real-Time Integrations](real-time-data-integration-instructions.md)
 
 > [!TIP]
-> For information on Segment Creation see [Creating and managing segments](creating-and-managing-segments.md)
+> For information on Segment Creation, see [Creating and managing segments](creating-and-managing-segments.md)
