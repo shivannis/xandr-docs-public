@@ -8,12 +8,11 @@ ms.date : 10/28/2023
 
 Xandr permits political advertising (advertising relating to elections, ballot initiatives, or political candidates) in the United States, but requires that such advertising comply with applicable law. As required by law, you must certify certain information about the ads and the political organization that purchased them for all political advertising on the state or local level, and for political advertising on the federal level in Washington State.
 
-You are not required to certify political advertising serving outside the United States, but you must still adhere to our [Policies for Curating](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Curating.aspx) (login required)
-and comply with all applicable legal and/or regulatory requirements in the jurisdiction where you are advertising.
+You are not required to certify political advertising serving outside the United States, but you must still adhere to our [Policies for Curating](../policies-regulations/index.yml) and comply with all applicable legal and/or regulatory requirements in the jurisdiction where you are advertising.
 
 Unless specifically authorized by Xandr, curators are prohibited from serving ads related to any federal elections in Canada.
 
-For more details on our policies on political advertising, see our [Political Advertising Policy](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx) (login required). For more information about our transparency reporting, see [Political Advertising Transparency Reporting](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Political-Advertising-Transparency-Reporting.aspx) (login required).
+For more details on our policies on political advertising, see our [Political Advertising Policy](../policies-regulations/index.yml). For more information about our transparency reporting, see [Political Advertising Transparency Reporting](../policies-regulations/index.yml).
 
 ## Enable political advertising
 
@@ -53,12 +52,9 @@ Maryland, Nevada, New Jersey, New York, Virginia, and Washington.
 
 Washington State also has a public reporting requirement for political advertising for federal elections or candidates.
 
-For more information, see [Political Advertising Transparency Reporting](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx).
+For more information, see [Political Advertising Transparency Reporting](../policies-regulations/index.yml).
 
 ## Related topics
 
-- [Political Advertising Policy Implementation](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Political-Advertising-Policy-Implementation.aspx) (login required)
-- [Policies for Curating](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Curating.aspx) (login required)
 - [Create an Advertiser](create-an-advertiser.md)
 - [Create an Insertion Order](create-an-insertion-order.md)
-- [Political Advertising Transparency Reporting](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Political-Advertising-Transparency-Reporting.aspx) (login required)
