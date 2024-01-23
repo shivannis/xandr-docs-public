@@ -68,11 +68,11 @@ Once the seasonal rate card(s) are created, they are displayed on the **Create 
 
 There is filter capability to locate the product group you would like to edit. Clicking the down arrow next to each column identifier allows you to drill down into that section.
 
-    | Column | Filters | Reaction Button |
-    |---|---|---|
-    | Name | - Is equal to<br> - Is not equal to<br> - Starts with<br> - Contains<br> - Does not contain<br> - Ends with | Filter - This filters as per your selection.<br> Clear - This clears all information and allows you to begin again. |
-    | Description | - Is equal to<br> - Is not equal to<br> - Starts with<br> - Contains<br> - Does not contain<br> - Ends with | Filter - This filters as per your selection.<br> Clear - This clears all information and allows you to begin again. |
-    | Status | - Is equal to<br> - Is not equal to<br> - Starts with<br> - Contains<br> - Does not contain<br> - Ends with | Filter - This filters as per your selection.<br>Clear - This clears all information and allows you to begin again. |
+| Column | Filters | Reaction Button |
+|---|---|---|
+| Name | - Is equal to<br> - Is not equal to<br> - Starts with<br> - Contains<br> - Does not contain<br> - Ends with | Filter - This filters as per your selection.<br> Clear - This clears all information and allows you to begin again. |
+| Description | - Is equal to<br> - Is not equal to<br> - Starts with<br> - Contains<br> - Does not contain<br> - Ends with | Filter - This filters as per your selection.<br> Clear - This clears all information and allows you to begin again. |
+| Status | - Is equal to<br> - Is not equal to<br> - Starts with<br> - Contains<br> - Does not contain<br> - Ends with | Filter - This filters as per your selection.<br>Clear - This clears all information and allows you to begin again. |
 
 Once your selections have been made, click **Create Product** to create the product.
 
