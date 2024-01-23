@@ -8,7 +8,8 @@ ms.custom: yield-analytics-ui
 # Forecasts and adjustments
 
 ## Forecasts
-Yield Analytics works with your company to create the forecasts for each product in yield analytics. This also automatically detects spikes in traffic and mitigates them when forecasting. Use forecasting to predict how a product's impressions will be consumed. When viewed on the **Capacity** tab, the Capacity Forecast displays the same information as running a Capacity Forecast report on the **Reports** tab. However, when accessed from the **Capacity** tab, yield analytics specifies the metrics for you. In addition, on the **Capacity** tab you can add or edit adjustments to a forecast and view adjustments for overlapping products. You can also view how adjustments made to them impact the forecasted product.
+
+Yield Analytics works with your company to create the forecasts for each product in Yield Analytics. This also automatically detects spikes in traffic and mitigates them when forecasting. Use forecasting to predict how a product's impressions will be consumed. When viewed on the **Capacity** tab, the Capacity Forecast displays the same information as running a Capacity Forecast report on the **Reports** tab. However, when accessed from the **Capacity** tab, Yield Analytics specifies the metrics for you. In addition, on the **Capacity** tab you can add or edit adjustments to a forecast and view adjustments for overlapping products. You can also view how adjustments made to them impact the forecasted product.
 
 You can only forecast capacity for the future (i.e., you can't create a forecast for a time period in the past).
 

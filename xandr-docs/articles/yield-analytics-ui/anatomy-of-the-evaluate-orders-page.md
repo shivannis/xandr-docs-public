@@ -1,6 +1,6 @@
 ---
 title: Anatomy of the Evaluate Orders Page
-description: In this article, learn the layout of the Evaluate Orders.
+description: In this article, learn the layout of the Evaluate Orders page.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

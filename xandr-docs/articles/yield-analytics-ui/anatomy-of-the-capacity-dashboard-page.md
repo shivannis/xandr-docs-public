@@ -31,8 +31,7 @@ Below the Capacity Tasks panel is the Processing Summary panel. This indicat
 
 ## Check impression capacity for a product group
 
-You can use the Impression Capacity widget to quickly check a snapshot of your network's capacity, or click on a specific product to view its full
-capacity forecast.
+You can use the Impression Capacity widget to quickly check a snapshot of your network's capacity, or click on a specific product to view its full capacity forecast.
 
 1. On the **Capacity Dashboard** page, in the Impression Capacity widget, select the product group from the drop-down list. You can filter the product groups by typing in the box.
 1. (Optional) Adjust the date range by clicking the Next x Month(s) filter, specifying a new standard or custom date range, and clicking **Update**. The top-performing products' impression capacity appears.
@@ -46,6 +45,7 @@ capacity forecast.
 If necessary, you can add or edit a manual or seasonal adjustment to the forecast report.
 
 ## Check Manual Adjustments and Holidays
+
 The Manual Adjustments & Holidays widget displays any upcoming holidays forecast adjustments.
 
 1. On the Capacity Dashboard page, in the Manual Adjustments & Holidays widget, click **Next x Day(s)**.
@@ -57,6 +57,7 @@ The Manual Adjustments & Holidays widget displays any upcoming holidays foreca
     - Adjust the consumption date range or time period metrics by clicking on them.
     - Click **Export** to export the report to CSV or Excel.
     - Change the display of the report from a chart to tabular data.
+
 ## Check capacity trended for a product group
 
 Use the **Capacity Trended** widget to quickly view how your whole network, or a specific product is trending.

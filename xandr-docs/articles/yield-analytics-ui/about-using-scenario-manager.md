@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# About using scenario manager
+# About using Scenario Manager
 
 Yield Analytics uses Scenario Manager to run a "what-if" simulation against existing order lines over the specified time period. This is to show you how the modified order line would impact revenue gain and loss for existing order lines.
 
@@ -26,7 +26,7 @@ You can't make changes to targeting (e.g., position or geotargeting). Changes ma
 
 ## Running multiple items through scenario manager
 
-When you run Scenario Manager, it runs every order and order line on the **Scenario Manager** page. You do not need to stay on the **Scenario Manager** page for it to finish; the analysis runs in the background. You can work in other yield analytics tabs while it's running, and view the results in Scenario Manager when they're ready.
+When you run Scenario Manager, it runs every order and order line on the **Scenario Manager** page. You do not need to stay on the **Scenario Manager** page for it to finish; the analysis runs in the background. You can work in other Yield Analytics tabs while it's running, and view the results in Scenario Manager when they're ready.
 
 You can run only one scenario at a time. If you have multiple scenarios that you want to run, it could save time to add them all to Scenario Manager and run them together instead of adding them and running them one at a time.
 

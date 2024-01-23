@@ -23,8 +23,10 @@ There are several sections on the **Order Visibility** page:
   - **Actions drop-down list**
     - Add to Scenario - Available only if you use Scenario Manager. View how changing the order line's priority affects related products.
     - View in Reports - View order line information on the **Reports** tab.
+
 - **Order details panel** - Displays the latest details for the order. Data in this section is not affected by filters elsewhere on the screen. Click the down arrow next to the panel heading to expand and collapse as needed.
   - **Basics** - Displays basic information about the order. This includes the order name, flight dates, order line ID, order and advertiser links, industry, and salesperson.
+
 - **Dashboard** – Displays a quick overview of order performance with metrics you commonly use for order analysis. Wherever applicable, both lifetime and date range values are displayed for each metric, so you can easily compare information. These values are automatically updated based on the date range you select in the header, and color-coded to match the performance chart. The following metrics are displayed in the dashboard:
   - Contracted Revenue
   - Earned Revenue
@@ -42,6 +44,7 @@ There are several sections on the **Order Visibility** page:
     > If a metric appears in the dashboard, but not in the performance chart, it may appear in red text.
 
 - **Performance chart** - Displays a graphic chart of the order's performance based on revenue or impressions. You can change the chart by selecting a group (daily, weekly, monthly, quarterly, or yearly), and metric (impressions, revenue, or clicks). The horizontal axis displays the flight date range, whereas the vertical axes reflect the metric you selected. Data is color-coded for easy analysis and matches the colors in the dashboard section. When you mouse over any data point on the chart, a tool tip is displayed that describes the metric data. A green vertical line on the graph represents the historical/forecast boundary.
+
 - **Order Lines** – Displays a summary or expanded view of all lines in the order. If you choose to view cancelled lines, these lines will be included in metric data in the **Dashboard** and **Performance chart**. Order lines projected to underdeliver are flagged with a warning.
 
 ## Reporting on orders

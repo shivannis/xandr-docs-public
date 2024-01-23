@@ -37,7 +37,7 @@ Add a manual adjustment to a specific product to make a temporary override to it
 
 1. Make any additional changes as needed to the adjustment, and then click **Save**. The manual adjustment line turns orange, and the original forecast line stays blue.
 
-The changes to the forecast are only reflected in the Forecast Management area. They are not reflected in other parts of yield analytics or in the actual placement of ads until the system processes data overnight.
+The changes to the forecast are only reflected in the Forecast Management area. They are not reflected in other parts of Yield Analytics or in the actual placement of ads until the system processes data overnight.
 
 ## Related topics
 

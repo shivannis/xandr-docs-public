@@ -73,7 +73,6 @@ The colors in each row represent the following based on your selections in the 
 - Date has some inventory available for booking but should be booked with caution
 - Date is unavailable for booking
 
-
 ## Related topics
 
 - [Availability Overview (Old Workflow)](availability-overview-old-workflow.md)
