@@ -85,7 +85,7 @@ Here are the definitions of the metrics in Channel Reporting:
 | Channel Consumed Clicks | The number of clicks consumed or delivered by the channel. |
 | Channel Earned Revenue | The total revenue earned by the channel. |
 | Channel CTR % | The Click Through Ratio percent metric based on the preceding Channel Consumed Impressions and Clicks. |
-| Channel eCPM | The computed eCPM (Effective Cost-Per-Thousand) for the channel.  |
+| Channel eCPM | The computed eCPM (Effective Cost-Per-Thousand) for the channel. |
 | Channel rCPM | Channel `real` CPM using the Channel Received Impressions instead of the Channel Consumed Impressions. |
 | Channel Fill % | Utilization rate of the channel (Sell Through % for non-SSP products/targets. Consider the fact that only guaranteed consumed impressions are taken into account). |
 

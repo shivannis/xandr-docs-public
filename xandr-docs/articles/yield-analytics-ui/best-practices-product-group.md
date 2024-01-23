@@ -50,7 +50,7 @@ Example: Create a few groups for your finance team that help them pull site leve
 1. Navigate to the **Products** tab.
 1. Select **Organize Products**.
 1. Select the group you would like to assign a product to. This accesses the **Edit Product** screen.
-1. Click **Add**. This accesses a screen where you can search and add the products. It is recommended to add or remove products from the  group screen rather than product by product.
+1. Click **Add**. This accesses a screen where you can search and add the products. It is recommended to add or remove products from the group screen rather than product by product.
 
 An alternative way to assign a product to a group is from the **Product Visibility** screen:
 

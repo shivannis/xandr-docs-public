@@ -20,7 +20,7 @@ The Batch Builder allows you to collect multiple lookups that you can then run a
   - Category (pull-down menu)
   - Description (text box)
   - Permissions (table)
-  
+ 
 - After making selections, click **Save** to save this batch. Now when you click the **Open** button, you will see this batch.
 
 ## Opening/sending a batch
