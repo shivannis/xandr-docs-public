@@ -16,7 +16,7 @@ sale, and display of online advertising.
 There are several such organizations currently active in the online
 advertising sector in the United States, Canada, and Europe. This page
 describes what the key organizations are, what they do, and key
-projects, working groups, and objectives of each. 
+projects, working groups, and objectives of each. Xandr is an active participant in these organizations.
 
 ## The digital advertising alliance (DAA)
 
@@ -87,9 +87,9 @@ working groups, as well as their projects, publications, and initiatives
 is available on the
 [IAB website](https://www.iab.com/).
   
-There are numerous global IABs (e.g. IAB Europe), and
+<!--There are numerous global IABs (e.g. IAB Europe), and
 **Xandr is a member of IABs in multiple
-countries worldwide (e.g. IAB France)**. 
+countries worldwide (e.g. IAB France)**. -->
 
 ## IAB tech lab
 
@@ -107,10 +107,10 @@ bring alignment, and standardization to help the industry grow. For more
 information on IAB Tech Lab, visit their
 [website](https://iabtechlab.com/).
 
-**Xandr is a member of the Board of Directors,
+<!--**Xandr is a member of the Board of Directors,
 and various working groups like IAB Programmatic Supply Chain, Privacy
 & Research Commit Group,  Global Privacy Framework Initiative, Project
-Research etc. of IAB Tech Lab.**
+Research etc. of IAB Tech Lab.**-->
 
 ## The network advertising initiative (NAI)
 
@@ -130,8 +130,8 @@ The NAI also offers a
 out of receiving online advertising from NAI members who use HTTP
 cookies on computer browsers. 
 
-**Xandr is an NAI member and sits on NAI's Board
-of Directors.**
+<!--**Xandr is an NAI member and sits on NAI's Board
+of Directors.**-->
 
 ## Prebid.org
 
@@ -150,7 +150,7 @@ bidding, [Prebid.org](https://prebid.org/) creates
 other ‘unbiased programmatic monetization solutions’ for premium
 publishers, including server-side header bidding.
 
-**Xandr is a member of the Board of Directors,
+<!--**Xandr is a member of the Board of Directors,
 and chairs CTV Committee/CTV-OTT Task force and co-chairs Prebid Server
 Committee. Additionally Xandr participates in**
 [Prebid.org](https://prebid.org/)
@@ -161,7 +161,7 @@ Committee. Additionally Xandr participates in**
 - **developers of PBS-Go, PBC-Go, GoGDPR, Client-side (Prebid.js,
   etc.)**
 - **technical writers who also manages Prebid documentation website**
-  [docs.prebid.org](https://docs.prebid.org/)
+  [docs.prebid.org](https://docs.prebid.org/) -->
 
 ## Trustworthy accountability group (TAG)
 
@@ -178,10 +178,10 @@ TAG is a joint effort of the American Association of Advertising
 Agencies (4A’s), Association of National Advertisers (ANA), and
 Interactive Advertising Bureau (IAB). 
 
-**Xandr is a member of the Board of Directors,
+<!-- **Xandr is a member of the Board of Directors,
 the Leadership Council, and various working groups.
 Xandr also co-chairs the anti-malware working
-group.**
+group.** -->
 
 ## The world wide web consortium (W3C)
 
@@ -192,6 +192,6 @@ develop [Web standards](https://www.w3.org/standards/). W3C's primary activity
 guidelines that ensure long-term growth for the Web. W3C's standards
 define key parts of what makes the World Wide Web work.
 
-**Xandr is member of W3C Improving
+<!--**Xandr is member of W3C Improving
 [Web Advertising](https://www.w3.org/community/web-adv/) Business Group
-and [Web Platform Incubator](https://www.w3.org/community/wicg/) Community Group.**
+and [Web Platform Incubator](https://www.w3.org/community/wicg/) Community Group.**-->
