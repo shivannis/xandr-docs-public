@@ -19,7 +19,7 @@ Service, the Instant Audience Service associates' users to segments in close to 
 If you're already using the Batch Segment Service, you can skip this part and proceed to [Authenticate](#authenticate). If you're a brand-new client and wish to start using the Instant Audience Service, you will need to open a ticket with and provide the following information:
 
 1. Are you using external user IDs (i.e., you use mapUID to store the mapping with Xandr)? If you use another member's external user IDs, include their `member_id` as well.
-1. Do you need to populate segments belonging to other members? If so, provide the associated `member_ids.`
+1. Do you need to populate segments belonging to other members? If so, provide the associated `member_ids`.
 1. When you would like your segments to expire by default (e.g., never expire, expire 60 days from now, etc.)? Note that if you include EXPIRATION in your seg block, your default expiration will not be used.
 1. The following questions are for our internal capacity planning:
     - What is the number of unique user IDs per post?
@@ -65,9 +65,9 @@ After authenticating, you're now ready to add/remove a user to/from a segment, v
 > [!NOTE]
 > Wait approximately 20 minutes before trying to add users to any newly created segments (to allow these segments to be propagated to all servers). As a best practice, try to:
 >
-> - minimize the creation of new segments
-> - wherever possible, re-use existing segments
-> - use segment `values` to further sub-divide users within existing segments
+> - Minimize the creation of new segments.
+> - Wherever possible, re-use existing segments.
+> - Use segment `values` to further sub-divide users within existing segments.
 >
 > These practices will ensure successful user add/remove to/from segments. For details on creating segment `values`, see [Segment Pixels: Advanced](../invest/segment-pixels-advanced.md) and [Segment Targeting](../monetize/segment-targeting.md) in Xandr documentation.
 
