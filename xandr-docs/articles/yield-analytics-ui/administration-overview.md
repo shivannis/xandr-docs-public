@@ -24,7 +24,7 @@ If you have administrative permissions, you can manage users, user groups, and
 - [Delete a User Group](delete-a-user-group.md)
 - [Search User Groups](search-user-groups.md)
 - [Working With Saved Reports](working-with-saved-reports.md)
-- [Add a Report Category](add-a-report-category.md)
+- [Add a Report Category]-
 - [Edit Report Categories](edit-report-categories.md)
 - [Filter the List of Saved Reports](filter-the-list-of-saved-reports.md)
 - [Schedule a Saved Report](schedule-a-saved-report.md)
