@@ -26,4 +26,4 @@ are running on inventory that meets our requirements. This information is passed
 
 ## Xandr inventory quality and auditing standards
 
-Please view the full details of inventory standards and auditing in [Xandr Policies](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Xandr-Service-Policies.aspx).
+Please view the full details of inventory standards and auditing in [Xandr Policies](../policies-regulations/index.yml).
