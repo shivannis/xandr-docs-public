@@ -77,20 +77,10 @@
     href: member-data-sharing-service-audience-only.md
 - name: Data Segmentation
   items:
-  - name: Creating and Managing Segments
-    items:
-    - name: Overview
+    - name: Creating and Managing Segments
       href: creating-and-managing-segments.md
-    - name: API Segment Management
-      href: api-segment-management.md
-  - name: Segment Usage by Buyers
-    items:
-    - name: Overview
+    - name: Segment Usage by Buyers
       href: segment-usage-by-buyers.md
-    - name: Xandr's Bidders
-      href: xandr-s-bidders.md
-    - name: Xandr's UI Clients
-      href: xandr-s-ui-clients.md
 - name: Reporting and Tracking
   items:
   - name: Overview
