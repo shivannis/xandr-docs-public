@@ -1,6 +1,6 @@
 ---
 title: Trade Desk Buying Guide
-descritption: Learn about Trade Desk Buying Guide to help Xandr publishers communicate with their buyers about accessing and targeting Xandr's publisher inventory using Trade Desk as their DSP.   
+description: Learn about Trade Desk Buying Guide to help Xandr publishers communicate with their buyers about accessing and targeting Xandr's publisher inventory using Trade Desk as their DSP.   
 ms.date: 11/28/2023
 ---
 
