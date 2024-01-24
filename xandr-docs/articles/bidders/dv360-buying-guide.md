@@ -166,7 +166,7 @@ Buyers can find their DV360 Partner ID in two ways, as shown in the following gr
 
 ### Troubleshooting
 
-The match rate between DV360 and Xandr is healthy and in line with other platforms. Sometimes there can be confusion when troubleshooting line items not delivering that are using Google data. It is possible that the support team will tell the buyer that the issue in delivery is user match rate or lack of cookies, which is a nuanced issue. The actual issue is the lack of match with the Google audience data. Removing the Google audience data or adding 1st or 3rd party data in an OR relationship can often help in these situations.
+The **match rate between DV360 and Xandr** is healthy and in line with other platforms. Sometimes there can be confusion when troubleshooting line items not delivering that are using Google data. It is possible that the support team will tell the buyer that the issue in delivery is user match rate or lack of cookies, which is a nuanced issue. The actual issue is the lack of match with the Google audience data. Removing the Google audience data or adding 1st or 3rd party data in an OR relationship can often help in these situations.
 
 If a DV360 buyer has issues serving on Xandr inventory, we recommend that they:
 
