@@ -1,47 +1,36 @@
 ---
-title : Bidders - Uploading Segment Data Using BSS
-description : Learn adding your segment file to the system in a multi-step process. 
-ms.date : 11/28/2023
+title: Bidders - Uploading Segment Data Using BSS
+description: Learn adding your segment file to the system in a multi-step process. 
+ms.date: 11/28/2023
 ---
 
 
 # Bidders - Uploading segment data using BSS
 
-As described in this document, adding your segment file to the system is
-a multi-step process. 
+As described in this document, adding your segment file to the system is a multi-step process.
 
 1. Step 1: [Format your data file for upload](#format-your-data-file-for-upload).
-2. Step 2: [Request an upload URL and Job ID](#request-an-upload-url-and-job-id)
-3. Step 3: [Post the file to the upload URL](#post-the-file-to-the-upload-url)
-4. Step 4: [Check the job status](#check-the-job-status)
+1. Step 2: [Request an upload URL and Job ID](#request-an-upload-url-and-job-id)
+1. Step 3: [Post the file to the upload URL](#post-the-file-to-the-upload-url)
+1. Step 4: [Check the job status](#check-the-job-status)
 
 > [!NOTE]
 > Files are limited to 1800 segments on any individual line. If you have more than 1800 segments for one user, you must break that line into multiple lines.
 
 ## Format your data file for upload
 
-You have two options when creating a data file for BSS: the [Legacy BSS File Format](legacy-bss-file-format.md) and the
-**newer**, **preferred** [BSS Avro File Format](../digital-platform-api/bss-avro-file-format.md), which uses a
-self-defined schema and supports a wider range of IDs beyond third-party
-cookies. 
+You have two options when creating a data file for BSS: the [Legacy BSS File Format](legacy-bss-file-format.md) and the **newer**, **preferred** [BSS Avro File Format](./bss-avro-file-format.md), which uses a self-defined schema and supports a wider range of IDs beyond third-party cookies.
 
 Note that your data file must meet the following requirements:
 
-- Uses
-  the [Latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1) character set.
+- Uses the [Latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1) character set.
 - Is a maximum of 0.5GB.
 
 ## Request an upload URL and job ID
 
-Each segment data file that is uploaded must be associated with a
-particular job ID. This ID is used to create the upload URL and to track
-the file's processing status. The first step is to send an
-empty `POST` request to the service.
+Each segment data file that is uploaded must be associated with a particular job ID. This ID is used to create the upload URL and to track the file's processing status. The first step is to send an empty `POST` request to the service.
 
-This service works for
-both [api.appnexus.com](https://api.appnexus.com/) and
-for [adnxs.com](http://api.adnxs.com/). It is available for both bidder and UI
-logins.
+This service works for both [api.appnexus.com](https://api.appnexus.com/) and for [adnxs.com](http://api.adnxs.com/). It is available for both bidder and UI logins.
 
 ``` 
 $ curl -b cookies -X POST "https://api.appnexus.com/batch-segment?member_id=456"
@@ -69,22 +58,15 @@ $ curl -b cookies -X POST "https://api.appnexus.com/batch-segment?member_id=456"
 
 ## Post the file to the upload URL
 
-The file upload URL is given in the JSON response in Step 1 by the
-field upload_url: you will `POST` your segment file to this URL for
-processing. Keep the following guidelines in mind:
+The file upload URL is given in the JSON response in Step 1 by the field upload_url: you will `POST` your segment file to this URL for processing. Keep the following guidelines in mind:
 
-- Do not hard-code the upload URL in your application. Make sure to
-  dynamically grab it from the upload_url field.
-- You must begin your upload to the given Upload URL within five (5)
-  minutes, and only one URL is valid at any given time. If you wait
-  longer than 5 minutes to start your upload, you must request a new
-  URL.
-- We recommend, you do not exceed one upload per minute. If you have
-  more than 200 jobs waiting to be processed at any given time, you will
+- Do not hard-code the upload URL in your application. Make sure to dynamically grab it from the upload_url field.
+- You must begin your upload to the given Upload URL within five (5) minutes, and only one URL is valid at any given time. If you wait longer than 5 minutes to start your upload, you must request a new URL.
+- We recommend, you do not exceed one upload per minute. If you have more than 200 jobs waiting to be processed at any given time, you will
   be prohibited from uploading additional jobs.
 
 > [!WARNING]
-> To upload the file correctly, you must specify the MIME type in the HTTP header as `"Content-Type: application/octet-stream"`. Don't use `"Content-Type: application/x-www-form-urlencode"` (`-d or --data flags in curl`). Using an incorrect MIME type will prevent the file from being processed.
+> To upload the file correctly, you must specify the MIME type in the HTTP header as `"Content-Type: application octet-stream"`. Don't use `"Content-Type: application x-www-form-urlencode"` (`-d or --data flags in curl`). Using an incorrect MIME type will prevent the file from being processed.
 
 ``` 
 $ curl -v -H 'Content-Type:application/octet-stream' -b cookies -X POST --data-binary @segment_file "https://01.data-api.prod.adnxs.net/segment-upload/JFY8l6iMOFAFJIWCMPcy39MCt3Yleo1337618549"
@@ -109,7 +91,7 @@ $ curl -v -H 'Content-Type:application/octet-stream' -b cookies -X POST --data-b
 {"response":{"segment_upload":{"job_id":"FkmOY7oL2Qy2aCE7NrhE1BHVoJA0wi1337697712"},"status":"OK"}}
 ```
 
-**Example of SSL upload URL**
+### Example of SSL upload URL
 
 ``` 
 curl -b cookie -c cookie -X POST -s -d '' "https://api.appnexus.com/batch-segment?member_id=958"
@@ -125,15 +107,9 @@ curl -b cookie -c cookie -X POST -s -d '' "https://api.appnexus.com/batch-segmen
 
 ## Check the job status
 
-Finally, check the processing status by sending a GET request with the
-`job_id` returned from step 2 or 3. The JSON response contains
-information such as how long the file took to process and the number of
-errors, if any. Note that you should wait until phase="completed" before
-looking at the results fields such as `num_valid`. For more detailed
-information, see [Troubleshooting BSS Uploads](troubleshooting-bss-uploads.md).
+Finally, check the processing status by sending a GET request with the `job_id` returned from step 2 or 3. The JSON response contains information such as how long the file took to process and the number of errors, if any. Note that you should wait until phase="completed" before looking at the results fields such as `num_valid`. For more detailed information, see [Troubleshooting BSS Uploads](troubleshooting-bss-uploads.md).
 
-Per Xandr SLA, allow up to 24 hours for the file
-to process.
+Per Xandr SLA, allow up to 24 hours for the file to process.
 
 > [!NOTE]
 > If you are a data provider using the Impbus API, note that the `batch_segment_upload_job` field will be an array with a single object inside of it. For example,
@@ -181,9 +157,3 @@ $ curl -b cookies "https://api.appnexus.com/batch-segment?member_id=456&job_id=J
  }
 }
 ```
-
-
-
-
-
-

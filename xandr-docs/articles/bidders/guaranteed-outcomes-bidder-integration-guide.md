@@ -1,6 +1,6 @@
 ---
 title: Guaranteed Outcomes Bidder Integration Guide
-description: This article outlines the Guaranteed Views feature of Xandr's Exchange.
+description: This article outlines the Guaranteed Outcome feature of Xandr's Exchange.
 ms.date: 11/23/2023
 ---
 
@@ -41,7 +41,7 @@ Xandr will indicate that the winning bid was for an outcome, specify which outco
 
 After the creative is served and Xandr receives a positive signal that the desired outcome occurred, Xandr calls the billing notify url to indicate that the outcome occured and the Bidder is charged the winning outcome-based price.
 
-### Specification
+## Specification
 
 ### Bid request
 

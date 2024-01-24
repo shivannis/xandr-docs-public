@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 The Batch Segment Service provides the ability to upload segment data files in a variety of formats. For more information, see the [examples](#examples) below.
 
 > [!NOTE]
-> The Avro format described in [BSS Avro File Format](../digital-platform-api/bss-avro-file-format.md), provides support
+> The Avro format described in [BSS Avro File Format](./bss-avro-file-format.md), provides support
 > for a broader variety of user identifiers.
 
 The method described in this topic has been the standard format in the past, but it is expected to be deprecated in the future as user identification increasingly relies on EIDs (extended IDs) and publisher first-party identifiers rather than cookies.

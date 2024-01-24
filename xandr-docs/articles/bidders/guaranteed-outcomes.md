@@ -15,9 +15,9 @@ Guaranteed Outcomes includes the following features:
 | Guaranteed Views | Banner, Video | vCPM | The buyer pays media cost only on ads that were viewed. |
 | Guaranteed Completes | Video | CPCV | The buyer pays media cost only on ads that achieve 100% runtime. |
 
-For more information about how Xandr measures viewability, see the [Introduction to Viewability](../invest/introduction-to-viewability.md) page in (customer login required).
+For more information about how Xandr measures viewability, see the [Introduction to Viewability](../invest/introduction-to-viewability.md) page.
 
-## How it works
+## Process
 
 Buyers that choose to buy with Guaranteed Views enter a vCPM bid as opposed to a CPM bid. Their bid will be converted and enter the seller’s auction as a CPM bid, with all normal auction mechanics applied.
 
@@ -29,6 +29,8 @@ Buying and selling guaranteed outcomes has the following limitations:
 - Outcome-based bids are not accepted when clearing directly with a third-party seller, or when buying managed inventory.\*
 
 \* You can, however, guarantee ad delivery for managed inventory using managed vCPM.
+
+### Logic of Guaranteed Outcomes
 
 The following overview describes the logic of Guaranteed Outcomes:
 
@@ -74,7 +76,7 @@ The buyer's creative is served to the page. If the Exchange determines that the 
 
 If the Exchange determines that the ad did not achieve the buyer’s desired outcome, or if it is unable to make the measurement, then the buyer is not billed for the impression.
 
-## Understanding payment conversion rates
+## Payment conversion rates
 
 For eligible impressions (see [Guaranteed Outcomes Results Over Time (Examples)](#guaranteed-outcomes-results-over-time-examples), the Exchange calculates an outcome-based bid-to-CPM conversion rate before sending the bid request. To generate the conversion rate, the Exchange uses the predicted outcome rate of the given impression and a marketing-making fee. The two rates are multiplied to generate the impression’s conversion rate.
 
@@ -102,7 +104,7 @@ In the scenario where there is perfect prediction and all else is equal, the Exc
 
 For transparency, Xandr publishes aggregate results for Prediction Variability externally each month. You can find these results at [Monthly Prediction Variability Data](monthly-prediction-variability-data.md).
 
-## Guaranteed Outcomes results over time (examples)
+## Results (examples)
 
 The auction mechanics for Guaranteed Outcomes create a short-term disconnect between how the buyer is charged and how the seller is paid. On average and over time, this disconnect is averaged out. In other words, for any single impression, it is likely that the seller is paid either significantly more or less than the buyer has been charged. Over many impressions, however, the difference between what is charged and what is paid should converge.
 
@@ -128,9 +130,9 @@ If the Exchange over-predicts the viewability of the inventory, then the aggrega
 
 If the Exchange under-predicts the viewability of the inventory, then the aggregate amount charged to the vCPM buyer is greater than the aggregate amount paid to the seller. In this example, the Exchange predicted a 50% viewability rate, but the inventory had a 75% viewability rate. The Exchange is left with a positive balance.
 
-## Supported viewability standards for Guaranteed Outcomes
+## Supported viewability standards
 
-The definition for what constitutes a viewable impression varies from buyer to buyer. A chosen standard generally comprises three components: the media type, the viewability definition, and the measurement technology vendor. Guaranteed Outcomes has been built to support any standard made up of those three components, with each standard represented as a generic clearing event. The following clearing events are supported today for Guaranteed Views.
+The definition for what constitutes a viewable impression varies from buyer to buyer. A chosen standard generally comprises three components: the media type, the viewability definition, and the measurement technology vendor. Guaranteed Outcomes is built to support any standard made up of those three components, with each standard represented as a generic clearing event. The following clearing events are supported today for Guaranteed Views.
 
 | Clearing Event Name | ID | Viewability Definition | Media Type | Measurement Technology Vendor |
 |:---|:---|:---|:---|:---|

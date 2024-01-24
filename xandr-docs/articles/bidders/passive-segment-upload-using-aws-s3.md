@@ -8,8 +8,9 @@ ms.date: 10/28/2023
 
 If your Xandr member account is integrated with AWS S3, you can upload segment data into an AWS S3 bucket instead of actively running API commands against the Batch Segment Service. To set up this integration, contact your account support or file an issue at [help.xandr.com](https://help.xandr.com). Xandr will provide upload credentials on initial setup.
 
-After your member is integrated, the Batch Segment Service scans the `/submitted` directory every five minutes for new data and creates
-linkages between users and segments according to the information in your data files. You can track upload success using the AWS CLI tool at [https://aws.amazon.com/cli/](https://aws.amazon.com/cli/), using the following command to display the directory contents:
+## Process after member integration
+
+After your member is integrated, the Batch Segment Service scans the `/submitted` directory every five minutes for new data and creates linkages between users and segments according to the information in your data files. You can track upload success using the AWS CLI tool at [https://aws amazon.com/cli/](https://aws.amazon.com/cli/), using the following command to display the directory contents:
 
 `AWS_ACCESS_KEY_ID=insert_your_access_key_id_received_from_xandr AWS_SECRET_ACCESS_KEY=insert_your_secret_access_key_id_received_from_xandr aws s3 ls s3://bss-insert_your_member_id-eu-north-1/`
 
@@ -42,8 +43,7 @@ Completed jobs will result in the data file being moved to the `/done` or `/fail
 
 1. **I have received my AWS S3 login credentials, but I am experiencing difficulties logging in.**
 
-    To maintain security, the initial `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` login credentials sent to you may be missing some characters. For security purposes, we send your credentials in two separate communications. Ensure that you have received the
-    complete text string of your login from your Xandr contact.
+    To maintain security, the initial `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` login credentials sent to you may be missing some characters. For security purposes, we send your credentials in two separate communications. Ensure that you have received the complete text string of your login from your Xandr contact.
 
 1. **If I don't log in to AWS S3 frequently, will my credentials expire?**
 

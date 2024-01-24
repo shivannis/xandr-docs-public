@@ -17,7 +17,8 @@ The bid request includes information from sellers that specifies which advertise
 > You may not wish to receive all bid requests that pass through our platform. You can either throttle requests by some percentage, or filter requests by preset criteria such as geography.
 
 ## Implementation
-Refer to the table to locate the implementation details such as objects and headers that you need more information on.
+
+Refer to the tables to locate the implementation details such as objects and headers that you need more information on.
 
 ### Bid request headers
 
@@ -46,8 +47,8 @@ Xandr supports the following fields in the top-level bid request object:
 | `wseat` | array of strings | Specifies an array representing a allowlist of buyer seats allowed to bid on this impression. |
 | `tmax` | integer | Specifies the maximum time (in milliseconds) to submit a bid before timing out. |
 | `cur` | array of strings | Specifies an array of allowed currencies for bids on this bid request using ISO-4217 alphabetic codes. Defaults to `USD`. |
-| `bcat` | array of strings | Specifies a list of blocked content categories. Will include IAB categories (listed in section 5.1 of the specification). Bcat is not a required field and will only be sent if there are blocked categories associated with the bid request. If no blocked categories are associated, then we will not send this field. |
-| `badv` | array of strings | Specifies a list of blocked top-level advertiser domains that correspond to brand URLs in our system. For example, `["company1.com","company2.com"]`. For more information, see the [Brand Service](brand-service.md). A max of 64 values will be sent. |
+| `bcat` | array of strings | Specifies a list of blocked content categories. Includes IAB categories (listed in section 5.1 of the specification). `Bcat` is not a required field and is only sent if there are blocked categories associated with the bid request. If no blocked categories are associated, then we don't send this field. |
+| `badv` | array of strings | Specifies a list of blocked top-level advertiser domains that correspond to brand URLs in our system. For example, `["company1.com","company2.com"]`. For more information, see the [Brand Service](brand-service.md). A max of 64 values is sent. |
 | `regs` | object | Specifies information about an industry, legal, or governmental regulation in force for this request. See [Regs Object](#regs-object) below. |
 | `source` | object | Provides data about the inventory source and which entity makes the final decision. See [Source Object](#source-object) below. |
 | `ext` | object | Used for identifying platform-specific extensions to the OpenRTB bid request. See [Bid Request Extension Object](#bid-request-extension-object) below. |
@@ -69,7 +70,7 @@ We support the following fields in the `schain` (Supply Chain) object:
 |:---|:---|:---|
 | `ver` | string | Version of the supply chain specification in use, in the format of “major.minor”. Currently using version 1.0 of the spec. |
 | `complete` | enum | Flag indicating whether the chain contains all nodes involved in the transaction leading back to the owner of the site, app or other medium of the inventory, where 0 = no, 1 = yes. |
-| `nodes` | object | Array of SupplyChainNode objects in the order of the chain. In a complete supply chain, the first node represents the initial advertising system and seller ID involved in the transaction, i.e. the owner of the site, app, or other medium. In an incomplete supply chain, it represents the first known node. The last node represents the entity sending this bid request, which will be the Xandr node.<br>We support the following fields in the nodes object:<br> - **asi** (string): The canonical domain name of the SSP, Exchange, Header Wrapper, etc system that bidders connect to. This should be the same value as used to identify sellers in an ads.txt file if one exists. For the Xandr node that domain will be appnexus.com<br> - **sid** (string): The identifier associated with the seller or reseller account within the advertising system.<br> - **rid** (string): The OpenRTB RequestId of the request as issued by the seller.<br> - **hp** (integer): Indicates whether this node will be involved in the flow of payment for the inventory. For version 1.0 of SupplyChain, this property should always be 1. |
+| `nodes` | object | Array of SupplyChainNode objects in the order of the chain. In a complete supply chain, the first node represents the initial advertising system and seller ID involved in the transaction, i.e. the owner of the site, app, or other medium. In an incomplete supply chain, it represents the first known node. The last node represents the entity sending this bid request, which is the Xandr node.<br>We support the following fields in the nodes object:<br> - **asi** (string): The canonical domain name of the SSP, Exchange, Header Wrapper, etc system that bidders connect to. This should be the same value as used to identify sellers in an ads.txt file if one exists. For the Xandr node that domain will be appnexus.com<br> - **sid** (string): The identifier associated with the seller or reseller account within the advertising system.<br> - **rid** (string): The OpenRTB RequestId of the request as issued by the seller.<br> - **hp** (integer): Indicates whether this node is involved in the flow of payment for the inventory. For version 1.0 of SupplyChain, this property should always be 1. |
 
 ### Bid request object
 
@@ -204,7 +205,7 @@ For native impressions, the `request` object contains the creative object in the
 |:---|:---|:---|
 | `ver` | string | (Recommended) Specifies the version of the native ad specification currently in use. Currently versions **1.1** and **1.2** are supported. |
 | `plcmtcnt` | integer | Specifies the number of identical placements available on the bid request. Usually `1`, but can be a different integer if the bid request is for a feed with multiple placements within it. |
-| `plcmttype` | integer | The design/format/layout of the ad unit being offered. Xandr will send either value:<br> - `1`: In the feed of content.<br> - `4`: Recommendation widget. |
+| `plcmttype` | integer | The design/format/layout of the ad unit being offered. Xandr sends either value:<br> - `1`: In the feed of content.<br> - `4`: Recommendation widget. |
 | `privacy` | boolean | Flag to indicate if the seller supports a buyer-specific privacy notice.<br> - `0` or absent: The native ad doesn't support custom privacy links.<br>- `1`: The native ad supports buyer-specific privacy notice. |
 | `assets` | array of objects | Specifies a list of assets that are expected to be returned on the bid response. See [Assets Object](#assets-object) below. |
 
@@ -258,7 +259,7 @@ We support the following fields in the `event trackers request` object (Native 
 | Field | Type | Description |
 |:---|:---|:---|
 | `event` | integer | Type of event available for tracking. Supported values are:<br> - `1`: `impression` - Impression<br> - `2`: `viewable-mrc50` - Viewable impression using MRC definition at 50% in view for 1 second.<br> - `3`: `viewable-mrc100` - Viewable impression using MRC definition at 100% in view for 1 second (ie GroupM standard).<br>- `4`: `viewable-video50` - Viewable impression for video using MRC definition at 50% in view for 2 seconds.<br> - `555`: `custom value to signify OMID`  |
-| `methods` | array of integers | Array of the types of tracking available for the given event. <br>Supported values are:<br> - `1`: `img` - Img-pixel tracking - URL provided will be inserted as a 1x1 pixel at the time of the event.<br> - `2`: `js` - Javascript-based tracking - URL provided will be inserted as a js tag at the time of the event. |
+| `methods` | array of integers | Array of the types of tracking available for the given event. <br>Supported values are:<br> - `1`: `img` - Img-pixel tracking - URL provided will be inserted as a 1x1 pixel at the time of the event.<br> - `2`: `js` - Javascript-based tracking - URL provided is inserted as a `js` tag at the time of the event. |
 
 ### Video object for the assets
 
@@ -342,7 +343,7 @@ We support the following fields in the `appnexus` extension object of the `imp` 
 | `predicted_video_view_rate_over_total` | double | Specifies the probability that the impression will be viewable by the user over all video impressions, based on historical data. |
 | `predicted_video_view_rate` | double | Specifies the probability that the impression will be viewable by the user as a percent of measured video impressions, based on historical data. |
 | `member_ad_profile_id` | integer | Specifies the seller's ad profile ID. |
-| `allowed_payment_types` | array of objects | Specifies the allowable payments types for this impression. If this field is not present, then the only allowed payment type is 'impression'.<br><br>**Note:** **This object is not enabled for all clients. Please reach out to your account representative for this feature.** |
+| `allowed_payment_types` | array of objects | Specifies the allowable payments types for this impression. If this field is not present, then the only allowed payment type is 'impression'.<br><br>**Note:** This object is not enabled for all clients. Reach out to your account representative for this feature. |
 | `traffic_source_code` | string | Specifies the external source of the third party traffic for this impression. |
 | `predicted_video_completion_rate` | double | Specifies the probability that the video impression will be viewed completely by a user, based on historical data. |
 | `gpid` | string | Global placement-level identifier provided by the publisher to indicate a specific ad placement on page. |
@@ -352,12 +353,12 @@ We support the following fields in the `appnexus` extension object of the `imp` 
 We support the following fields in the `allowed_payment_types` object:
 
 > [!NOTE]
-> **This object is not enabled for all clients. Please reach out to your account representative for this feature.**
+> This object is not enabled for all clients. Reach out to your account representative for this feature.
 
 | Field | Type | Description |
 |:---|:---|:---|
 | `payment_type` | integer | Specifies the payment type allowed for this impression. Currently supported values:<br> - `1`: Impression<br>- `2`: Views - Standard Display<br> - `6`: Views - Custom Display - 100pv1s<br> - `8`: Views - Standard Video<br> - `9`: Views - Custom Video - 100pv50pd |
-| `conversion_rate` | double | Specifies the the rate that Xandr will use to convert a non-impression bid to an eCPM price for bid ranking in the auction. A Bidder may use this for internal bid ranking, budgeting/pacing, or potentially for others. |
+| `conversion_rate` | double | Specifies the the rate that Xandr uses to convert a non-impression bid to an eCPM price for bid ranking in the auction. A Bidder may use this for internal bid ranking, budgeting/pacing, or potentially for others. |
 | `imp_count_method` | int | Specifies how the impression is counted. Currently supported values:<br> - `0`: Not applicable<br> - `1`: Unknown<br> - `2`: Count on render<br> - `3`: Count on decision/serve |
 
 For more information check the [Overview](guaranteed-outcomes.md) page.
@@ -370,8 +371,8 @@ Sites (also known as placement groups) are a subset of inventory for a publisher
 |:---|:---|:---|
 | `id` | string | Recommended. Specifies the Xandr site ID. Omitted if seller visibility prohibits sharing. Bidders cannot lookup what site the ID corresponds to, but these IDs can be used as anonymous, optimizable chunks of inventory. |
 | `domain` | string | Specifies the domain of the site (for example, `publishersite.com`). Omitted if seller visibility prohibits sharing. |
-| `cat` | array of strings | Specifies a list of content categories. Will include IAB categories (listed in section 5.1 of the specification). Omitted if seller visibility settings prohibit sharing. |
-| `page` | string | Specifies the full URL of the page where the impression will be shown (for example, `page.publishersite.com/path/to/page`). Omitted if seller visibility settings prohibit sharing. Will contain the domain instead of the full URL if only domain is exposed in the visibility profile. |
+| `cat` | array of strings | Specifies a list of content categories. Includes IAB categories (listed in section 5.1 of the specification). Omitted if seller visibility settings prohibit sharing. |
+| `page` | string | Specifies the full URL of the page where the impression is shown (for example, `page.publishersite.com/path/to/page`). Omitted if seller visibility settings prohibit sharing. Contains the domain instead of the full URL if only domain is exposed in the visibility profile. |
 | `publisher` | object | Specifies information about the publisher. Omitted if seller visibility settings prohibit sharing. See [Publisher Object](#publisher-object) below. |
 | `content` | object | Details about the Content within the site. See [Content Object](#content-object) below. |
 | `ext` | object | Used for holding app extension fields. See [Site extension object](#site-extension-object) below.  |
@@ -392,7 +393,7 @@ We support the following fields in the `app` object:
 |:---|:---|:---|
 | `id` | string | Specifies the Xandr app ID. Omitted if seller visibility prohibits sharing. Bidders cannot lookup what site the ID corresponds to, but these IDs can be used as anonymous, optimizable chunks of inventory. |
 | `bundle` | string | Specifies the application bundle or package name (e.g., `com.foo.mygame`). This is intended to be a unique ID across multiple exchanges. For iOS, this will be the iTunes app id (numerical id). Omitted if seller visibility prohibits sharing. |
-| `cat` | array of strings | Specifies a list of content categories. Will include IAB categories (listed in section 5.1 of the specification). Omitted if seller visibility settings prohibit sharing. |
+| `cat` | array of strings | Specifies a list of content categories. Includes IAB categories (listed in section 5.1 of the specification). Omitted if seller visibility settings prohibit sharing. |
 | `publisher` | object | Specifies information about the publisher. Omitted if seller visibility settings prohibit sharing. See [Publisher Object](#publisher-object) below. |
 | `name` | string | The full name of the app (i.e. Angry Birds). (This value may be aliased at the publisher's request.) |
 | `content` | object | Details about the Content within the site. See [Content Object](#content-object) below. |
@@ -434,8 +435,8 @@ Xandr supports the following fields in the Content object:
 | `userrating`  | string  | User rating of the content (e.g., number of stars, likes, etc.). |
 | `qagmediarating`  | integer | Media rating per IQG guidelines. Refer to List 5.17 in the IAB specification. |
 | `keywords`  | string  | Comma separated list of keywords describing the content. |
-| `livestream`  | integer | 0 = not live, 1 = content is live (e.g., stream, live blog). |
-| `sourcerelationship`  | integer | 0 = indirect, 1 = direct. |
+| `livestream`  | integer | `0` = not live, `1` = content is live (e.g., stream, live blog). |
+| `sourcerelationship`  | integer | `0` = indirect, `1` = direct. |
 | `len` | integer | Length of content in seconds; appropriate for video or audio. |
 | `data`  | object array  | Additional content data. Each Data object represents a different data source. Refer to Section 3.2.16 in the IAB specification. |
 
@@ -525,7 +526,7 @@ We support the following fields in the `user` object:
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | string | (Either `id` or `buyeruid` is recommended) Specifies the Xandr unique ID for this user. Omitted if seller visibility settings prohibit sharing. The unique 64-bit ID for the user. It will be the same for all requests from this user until cookies are cleared. This field is 0 when Xandr does not have a match for this user or the user's browser doesn't accept cookies. It will be -1 for opt-out users. |
+| `id` | string | (Either `id` or `buyeruid` is recommended) Specifies the Xandr unique ID for this user. Omitted if seller visibility settings prohibit sharing. The unique 64-bit ID for the user. It is the same for all requests from this user until cookies are cleared. This field is 0 when Xandr does not have a match for this user or the user's browser doesn't accept cookies. It is `-1` for opt-out users. |
 | `buyeruid` | string | (Either `id` or `buyeruid` is recommended) The buyer's unique ID for this user, if known. Omitted if seller visibility settings prohibit sharing. |
 | `yob` | integer | Specifies the year of birth as a 4-digit integer. Omitted if unknown, or if seller visibility settings prohibit sharing. |
 | `gender` | string | Specifies the gender. Set to `null` if unknown. Omitted if unknown, or seller visibility settings prohibit sharing.<br> - `M`: Male<br> - `F`: Female<br> - `O`: Other |
@@ -566,7 +567,7 @@ We support the following fields in the `eids` object:
 ### Segment object
 
 > [!WARNING]
-> **This object is deprecated (2019).**
+> This object is deprecated (2019).
 
 We support the following fields in the `segment` object of the user `data` object:
 
@@ -604,7 +605,7 @@ We support the following fields in the `source` object:
 | Field | Type | Description |
 |:---|:---|:---|
 | `fd` | integer | Entity responsible for the final impression sale decision, where:<br> - `0`: exchange (default)<br> - `1`: upstream source |
-| `tid` | string | Transaction ID that must be common across all participants in this bid request. Value will be passed in from the seller. If seller does not provide a transaction ID, we will create one and share it. |
+| `tid` | string | Transaction ID that must be common across all participants in this bid request. Value will be passed in from the seller. If seller does not provide a transaction ID, we create one and share it. |
 
 ## Example bid requests
 
@@ -815,9 +816,9 @@ We support the following fields in the `source` object:
 }
 ```
 
-### MultiMedia Bid Request 
+### MultiMedia Bid Request
 
-To ensure your bidder is configured to receive these requests, please open a support case.
+To ensure your bidder is configured to receive these requests, open a support case.
 
 ``` 
 {

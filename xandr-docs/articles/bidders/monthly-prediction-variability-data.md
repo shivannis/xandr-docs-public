@@ -13,9 +13,7 @@ Xandr Guaranteed Outcomes allow a buyer to pay on a different event than the sel
 
 We understand that this is a unique offering, but we are driven to build innovative solutions to big marketplace challenges. We are also deeply committed to increasing transparency, efficiency and trust in the programmatic supply chain. To that end, this page is designed to share the resulting monthly prediction variability rates for applicable transactions on the platform.
 
-## Aggregate
-
-### Monthly summary
+## Monthly summary
 
 | Month | Prediction Variability (%) |
 |:---|:---|
