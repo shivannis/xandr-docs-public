@@ -7,7 +7,7 @@ ms.date: 11/29/2023
 
 # Data buyer workflow
 
-Several changes have been made to facilitate the clearance of Data Provider costs and to distinguish between Media costs and Third-party costs (e.g., for user segments, etc.). This article describes these changes, and they might affect your workflow.
+Several changes have been made to help clear the Data Provider costs and to distinguish between Media costs and Third-party costs (e.g., for user segments, etc.). This article describes these changes, and they might affect your workflow.
 
 ## Adding data providers
 
@@ -21,9 +21,9 @@ When creating or editing campaigns, select **Pay on a per-impression (CPM) basis
 
 Once set, you can confirm these changes and click **Save**.
 
-When selecting targeting options on the, if you select the **Edit** button in the **Targeting** section next to Segment, the Segments dialog will display.
+When selecting targeting options, if you select the **Edit** button in the **Targeting** section next to Segment, the Segments dialog displays.
 
-The available segments (along with prices, when available) will then be displayed in the Segments dialog.
+The available segments (along with prices, when available) are then displayed in the Segments dialog.
 
 You can select the various segments that you wish to include in or exclude from your targeting. To calculate the total costs of all segments selected, click **Calculate Data Cost**.
 

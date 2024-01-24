@@ -38,19 +38,19 @@ The Segment Billing Category Service allows you to **map** your segments to your
 
 | Field | Type (Length) | Description | Default | Required On |
 |:---|:---|:---|:---|:---|
-| `id` | int | The unique ID created when a Xandr segment ID is mapped to a billing category. It can be referred as the mapping id per record. | Auto-generated number | PUT (in JSON)<br>DELETE (in query string) |
-| `segment_id` | int | The Xandr segment ID that is being mapped. |  | POST/PUT |
-| `data_provider_id` | int | The data provider ID assigned to you by the Data Marketplace. Note: The POST/CALL call will fail if you submit an ID that is not owned by your account |  | POST/PUT |
-| `data_category_id` | int | The pricing category ID created on Xandr. Note: The POST/PUT calls will fail if you submit an ID that is not owned by your account |  | POST/PUT |
-| `active` | boolean | The status of the mapping record. If set to `true`, mapping record is active. |  | POST |
-| `member_id` | int | Read-only. Your member ID. |  |  |
-| `is_public` | boolean | The setting to mark the segment as public or **private**. If set to `true`, then the segment will be shared to all Data Marketplace buyers immediately. | false | PUT |
+| `id` | int | The unique ID created when a Xandr segment ID is mapped to a billing category. It can be referred as the mapping id per record. | Auto-generated number | `PUT` (in JSON)<br>`DELETE` (in query string) |
+| `segment_id` | int | The Xandr segment ID that is being mapped. |  | `POST`/`PUT` |
+| `data_provider_id` | int | The data provider ID assigned to you by the Data Marketplace. <br>**Note:** The `POST`/`CALL` call will fail if you submit an ID that is not owned by your account. |  | `POST`/`PUT` |
+| `data_category_id` | int | The pricing category ID created on Xandr. <br>**Note:** The `POST`/`PUT` calls will fail if you submit an ID that is not owned by your account. |  | `POST`/`PUT` |
+| `active` | boolean | The status of the mapping record. If set to `true`, mapping record is active. |  | `POST` |
+| `member_id` | int | **Read-only.** Your member ID. |  |  |
+| `is_public` | boolean | The setting to mark the segment as public or **private**. If set to `true`, then the segment is shared with all Data Marketplace buyers immediately. | false | `PUT` |
 | `data_segment_type_id` | string | The type of segment. This makes it easy for buyers to search for specific types of segments. For Brand Safety and Fraud Detection segment types, ensure that the `recommend_include` field (see below) is set to the proper value for the type of segment.<br>Valid options are:<br> - unassigned<br> - Audience<br> - Brand Safety<br> - Fraud Detection<br> - Viewability<br> - Contextual<br> - Geolocation<br> - B2B<br> - Purchase<br> - Interest<br> - Demo<br> - In-Market | unassigned |  |
 | `recommend_include` | boolean | Determines if a segment is intended for inclusion (`true`) or exclusion (`false`). By default, it is set to `false` which is an exclusion; set to `true` if the segment is intended for inclusion. Ensure that this field is set to the proper value for the type of segment. | false |  |
 
 ## Pagination
 
-You can paginate results by specifying `start_element` and `num_elements` in the query string of the GET request. For example, the
+You can paginate results by specifying `start_element` and `num_elements` in the query string of the `GET` request. For example, the
 following request would return 25 items starting from element 26:
 
 ``` 

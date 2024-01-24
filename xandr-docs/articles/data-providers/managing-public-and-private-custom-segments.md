@@ -8,11 +8,11 @@ ms.date: 11/30/2023
 # Managing public and private (custom) segments
 
 The Data Marketplace supports both public and private segments. This means that any segment – whether public or private – used through the
-data marketplace will be cleared and reported on by Xandr. Both the data provider and data buyer benefit from the operational savings of our clearing house and the detailed reporting of data usage. The purpose of this page is to provide best practices depending on the types of data you provide through the marketplace.
+Data Marketplace is cleared and reported on by Xandr. Both the data provider and data buyer benefit from the operational savings of our clearing house and the detailed reporting of data usage. The purpose of this page is to provide best practices depending on the types of data you provide through the marketplace.
 
 ## Public segments
 
-Public segments are segments that are immediately available to all data buyers in the Data Marketplace. These segments typically represent a data provider's standard offering. Xandr will automatically share this segment to all Data Marketplace buyers.
+Public segments are segments that are immediately available to all data buyers in the Data Marketplace. These segments typically represent a data provider's standard offering. Xandr automatically shares this segment with all Data Marketplace buyers.
 
 > [!IMPORTANT]
 > For data providers to be visible to buyers, they must have at least one segment publicly mapped to their taxonomy.
@@ -55,7 +55,7 @@ Private segments are segments that require explicit sharing by the data provider
 segments built for a specific data buyer and are not meant to be seen by any other buyer. Any segment that should not be available to all Data Marketplace buyers should be set as a private segment.
 
 > [!IMPORTANT]
-> **Before sharing a private segment with a buyer, verify that buyers have added your company in the Data Marketplace as described in the Add Data Provider section of [Data Buyer Workflow Changes](data-buyer-workflow-changes.md). Sharing segments with non-activated buyers will result in un-tracked and un-billed data usage. See [Data Buyer Provider Service](data-buyer-provider-service.md).**
+> **Before sharing a private segment with a buyer, verify that buyers have added your company in the Data Marketplace as described in the Add Data Provider section of [Data Buyer Workflow Changes](data-buyer-workflow-changes.md). Sharing segments with non-activated buyers results in un-tracked and un-billed data usage. See [Data Buyer Provider Service](data-buyer-provider-service.md).**
 > [!TIP]
 > Remember that private segments need to be shared manually to your data buyers. As shown in step 3 of "Create a new private segment", you'll need to use our Member Data Sharing API service to share segment IDs to specific Xandrmembers.
 
@@ -150,4 +150,4 @@ segments built for a specific data buyer and are not meant to be seen by any oth
     ```
 
 > [!NOTE]
-> Xandr will automatically share this segment to all Data Marketplace buyers.
+> Xandr automatically shares this segment with all Data Marketplace buyers.

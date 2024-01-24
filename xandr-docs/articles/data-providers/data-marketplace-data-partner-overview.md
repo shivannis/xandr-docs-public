@@ -34,7 +34,7 @@ Reporting is currently available exclusively through our APIs. For an in-depth l
 
 ## Payment
 
-- All payments will be based on Xandr as the system of record.
+- All payments are based on Xandr as the system of record.
 - In order to receive prompt payment for the fees we are clearing on your behalf, be sure you have provided your banking details when signing your contract with Xandr.
 
 > [!NOTE]
