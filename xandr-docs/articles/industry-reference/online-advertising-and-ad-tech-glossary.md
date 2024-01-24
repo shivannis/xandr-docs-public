@@ -1,8 +1,8 @@
 ---
-title :  Online Advertising and Ad Tech Glossary
-description : The page covers glossary of terms from Online Advertising and Ad tech.   
-ms.date : 10/28/2023
-ms.custom : industry-reference
+title: Online Advertising and Ad Tech Glossary
+description: The page covers glossary of terms from Online Advertising and Ad tech.   
+ms.date: 10/28/2023
+ms.custom: industry-reference
 ---
 
 
