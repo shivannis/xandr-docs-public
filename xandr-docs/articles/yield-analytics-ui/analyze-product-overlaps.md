@@ -14,6 +14,7 @@ Using the **Audience Planner** page, you can identify products with overlapping 
 By analyzing overlapping impressions, you can compare how impressions are shared between a selected focus product, or set of target attributes and the products that overlap it.
 
 1. On the **Products Dashboard** page, in the Products Tasks panel, click **Analyze Overlaps**. The Audience Planner page appears.
+
 1. In the **Configuration** panel on the left side of the page, select the criteria for your analysis as follows:
 
       > [!IMPORTANT]
@@ -23,6 +24,7 @@ By analyzing overlapping impressions, you can compare how impressions are shared
     - In the **Primary Metric** field, select **Overlapping Impressions**.
     - Specify whether you want to show non-overlapping impressions.
       Choose whether you want analysis results to be sorted in ascending or descending order.
+
 1. (Optional) In the **Filters** panel, you can narrow the analysis as follows:
 
     > [!IMPORTANT]
@@ -36,6 +38,7 @@ By analyzing overlapping impressions, you can compare how impressions are shared
     - Select one or more product types (rate type products are displayed by default). For more information on product types, see [Products Overview](products-overview.md).
     - Select one or more specific overlap types. For more information on overlap types, see [Overlap Types](overlap-types.md).
     - Specify whether to show products with overlapping values of zero.
+
 1. To see details on how a product in the analysis chart overlaps with the focus product (and with other overlapping products), mouse over the bar for the product. A tooltip appears.
 
     > [!NOTE]
@@ -59,6 +62,7 @@ The image below details how to understand the chart when looking at overlapping 
 > Overlap as a percentage of the comparison product / Overlap as a percentage of the baseline product.
 
 1. On the **Products Dashboard** page, in the Products Tasks panel, click **Analyze Overlaps**. The Audience Planner page appears by default. The product list is filtered to show active rate card products.
+
 1. In the **Configuration** panel on the left side of the page, select the criteria for your analysis as follows:
 
     > [!IMPORTANT]
@@ -69,6 +73,7 @@ The image below details how to understand the chart when looking at overlapping 
     - In the **Primary Metric** field, select **Audience Index**.
     - By default, the baseline for your analysis is the full analyzed network. To use a specific product instead, select one in the **Baseline Product** field.
     - Specify whether you want analysis results to be sorted in ascending or descending order.
+
 1. (Optional) In the **Filters** panel, you can narrow the analysis as follows:
     - Select a different time period for analysis.
     - Select one or more product groups.
@@ -78,7 +83,9 @@ The image below details how to understand the chart when looking at overlapping 
     - Select one or more product types (rate type products are displayed by default). For more information on product types, see [Products Overview](products-overview.md).
     - Select one or more specific overlap types. For more information on overlap types, see [Overlap Types](overlap-types.md).
     - Specify whether to show products with overlapping values of zero.
+
 1. To see details on how the audience index for a product in the analysis chart compares to the audience index for the baseline product, mouse over the bar for the product. A tooltip appears.
+
 1. To view the analysis in a table instead of the default chart view, above the Configuration panel, click on the list view button. The analysis chart is redisplayed as a product list with performance metrics for the focus product, and each overlapping product.
 
 ## Related topics

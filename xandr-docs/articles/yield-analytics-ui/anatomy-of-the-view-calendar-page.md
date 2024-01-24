@@ -14,6 +14,7 @@ The View Calendar page on the Availability tab shows a daily summary of future
 The View Calendar page can be displayed in two views:
 
 - Calendar view – This is the default view for the page and shows a high-level graphical representation of the availability for a given month. You can mouse over each day to see a breakdown of capacity, availability, and sell-through information, as well as the number of booked, pending, and proposed order lines.
+
 - List view – This drill-down view shows each day in the month as a row in a table. You can expand and collapse rows as needed to see full details on the order lines scheduled for that day.
 
 To the left of the daily summary is the Filter panel, where you define how you want availability to be displayed and based on what criteria.

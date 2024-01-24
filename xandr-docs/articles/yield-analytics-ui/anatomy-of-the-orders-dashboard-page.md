@@ -14,7 +14,9 @@ The Orders Dashboard page is the primary view for the **Orders** tab. This pr
 The **Orders Dashboard** is comprised of the following three widgets:
 
 - **Revenue Against Goal** – Displays the difference between earned revenue and scheduled revenue in absolute terms for each order, order line, or advertiser for the selected date range. Click an order or order line to open a detailed view at the order's performance, as well as its order lines' consumption and competition.
+
 - **Consumed Impressions** – Displays a pie chart of the percentage of consumed impressions by order, order line, or advertiser for the specified date range.
+
 - **Order performance** – Displays multiple performance metrics filtered by order or order line, for the selected date range (the default is for the previous day). You can click on a specific order or order line to open a detailed view at the order's performance, as well as its order lines' consumption and competition.
 
 For each widget, you can:
@@ -38,4 +40,4 @@ Below the Orders Tasks panel is the Processing Summary panel. This is a read
 - [Anatomy of the Order Visibility Page](anatomy-of-the-order-visibility-page.md)
 - [Find an Order Line](find-an-order-line.md)
 - [Anatomy of the Order Line Visibility Page](anatomy-of-the-order-line-visibility-page.md)
-- [Solving Delivery Issues with Order Line Visibility](solving-delivery-issues-with-order-line-visibility.md)
+- [Solving Delivery Issues with Order Line Visibility](solve-delivery-issues-with-order-line-visibility.md)

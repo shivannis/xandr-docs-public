@@ -8,7 +8,8 @@ ms.custom: yield-analytics-ui
 # Forecasts and adjustments
 
 ## Forecasts
-Yield Analytics works with your company to create the forecasts for each product in yield analytics. This also automatically detects spikes in traffic and mitigates them when forecasting. Use forecasting to predict how a product's impressions will be consumed. When viewed on the **Capacity** tab, the Capacity Forecast displays the same information as running a Capacity Forecast report on the **Reports** tab. However, when accessed from the **Capacity** tab, yield analytics specifies the metrics for you. In addition, on the **Capacity** tab you can add or edit adjustments to a forecast and view adjustments for overlapping products. You can also view how adjustments made to them impact the forecasted product.
+
+Yield Analytics works with your company to create the forecasts for each product in Yield Analytics. This also automatically detects spikes in traffic and mitigates them when forecasting. Use forecasting to predict how a product's impressions will be consumed. When viewed on the **Capacity** tab, the Capacity Forecast displays the same information as running a Capacity Forecast report on the **Reports** tab. However, when accessed from the **Capacity** tab, Yield Analytics specifies the metrics for you. In addition, on the **Capacity** tab you can add or edit adjustments to a forecast and view adjustments for overlapping products. You can also view how adjustments made to them impact the forecasted product.
 
 You can only forecast capacity for the future (i.e., you can't create a forecast for a time period in the past).
 
@@ -33,8 +34,8 @@ Because adjusting one product's forecast can impact many other products, you sho
 
 ## Related topics
 
-- [View the Forecast for Your Products](view-the-forecast-for-your-products.md)
+- [View the Forecast for Your Products](view-your-products-forecast.md)
 - [Anatomy of the Capacity Dashboard Page](anatomy-of-the-capacity-dashboard-page.md)
 - [Anatomy of the Forecast Management Page](anatomy-of-the-forecast-management-page.md)
-- [Anatomy of the Forecast Visibility Page](anatomy-of-the-forecast-visibility-page.md)
+- [Anatomy of the Forecast Visibility Page](forecast-visibility-page-anatomy.md)
 - [Adding and Editing Adjustments](adding-and-editing-adjustments.md)

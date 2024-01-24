@@ -23,10 +23,12 @@ There are several sections on the **Order Line Visibility** page:
   - **Actions drop-down list**
     - Add to Scenario - Available only if you use Scenario Manager. View how changing the order line's priority affects related products.
     - View in Reports - View order line information on the **Reports** tab.
+
 - **Order line details panel** - Displays the latest details for the line. Data in this section is not affected by filters elsewhere on the screen. Click the down arrow next to the panel heading to expand and collapse each section as needed.
   - **Basics** - Displays basic information including the order line, flight dates, order line ID, order and advertiser links, industry, and salesperson.
   - **Targeting** - Displays targeting information for the order line including sold as, trafficked as, expression, priority, frequency, and flight method.
   - **Contract** - Displays contract and pricing type, rate, and inventory class for the order line.
+
 - **Dashboard** – Displays metrics you commonly use for order line analysis. Wherever applicable, both lifetime and date range values are displayed for each metric so you can easily compare information. These values are automatically updated based on the date range you select in the header, and color-coded to match the performance chart. The following metrics are displayed in the dashboard:
   - Contracted Revenue
   - Earned Revenue
@@ -50,6 +52,7 @@ There are several sections on the **Order Line Visibility** page:
   - Data is color-coded for easy analysis and matches the colors in the dashboard section. When you mouse over any data point on the chart, a tool tip is displayed that describes the metric data.
   - A green vertical line on the graph represents the historical/forecast boundary.
   - Changes made to order line targeting are expressed in the chart using "T" icons. Click the icon to view the details in the **History** tab.
+
 - **Tabs**  
   - **Competition** (default) - Displays a list of all competing order lines, with links to view their details. For example, if you want to know why a line item is expected to underperform for a certain date, you can check for any competing sponsorships on that day. You can then proactively optimize to run the order line in another space (e.g, change the geotargeting to the entire state instead of a specific city). You can choose to display competing lines by priority and time. Expand a row to view order and order ID information for the competing line.
   - **Consumption** - Displays where the order line is delivering, the products it overlaps with and is contained by, and links to view them.
@@ -64,4 +67,4 @@ There are several sections on the **Order Line Visibility** page:
 - [Check Revenue Against Goal](check-revenue-against-goal.md)
 - [Find Orders](find-orders.md)
 - [View the Full Details of an Order or Order Line](view-the-full-details-of-an-order-or-order-line.md)
-- [Solving Delivery Issues with Order Line Visibility](solving-delivery-issues-with-order-line-visibility.md)
+- [Solving Delivery Issues with Order Line Visibility](solve-delivery-issues-with-order-line-visibility.md)

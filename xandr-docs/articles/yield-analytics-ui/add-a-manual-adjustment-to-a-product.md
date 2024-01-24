@@ -37,13 +37,13 @@ Add a manual adjustment to a specific product to make a temporary override to it
 
 1. Make any additional changes as needed to the adjustment, and then click **Save**. The manual adjustment line turns orange, and the original forecast line stays blue.
 
-The changes to the forecast are only reflected in the Forecast Management area. They are not reflected in other parts of yield analytics or in the actual placement of ads until the system processes data overnight.
+The changes to the forecast are only reflected in the Forecast Management area. They are not reflected in other parts of Yield Analytics or in the actual placement of ads until the system processes data overnight.
 
 ## Related topics
 
 - [About Forecasts and Adjustments](about-forecasts-and-adjustments.md)
-- [View the Forecast for Your Products](view-the-forecast-for-your-products.md)
+- [View the Forecast for Your Products](view-your-products-forecast.md)
 - [Anatomy of the Capacity Dashboard Page](anatomy-of-the-capacity-dashboard-page.md)
-- [Anatomy of the Forecast Visibility Page](anatomy-of-the-forecast-visibility-page.md)
+- [Anatomy of the Forecast Visibility Page](forecast-visibility-page-anatomy.md)
 - [Check Impression Capacity for a Product Group](check-impression-capacity-for-a-product-group.md)
 - [Edit a Seasonal Adjustment for a Seasonal Product](edit-a-seasonal-adjustment-for-a-seasonal-product.md)
