@@ -29,7 +29,7 @@ do
 
         # If the line contains "Description", add the new line after it
         if [[ "$line" == *"Description :"* ]]; then
-            echo "ms.custom : yield-analytics-ui" >> "$new_file"
+            echo "ms.custom: digital-platform-api" >> "$new_file"
         fi
     done < "$file"
 
@@ -38,3 +38,4 @@ do
 done
 
 echo "All files in the directory have been updated."
+echo
