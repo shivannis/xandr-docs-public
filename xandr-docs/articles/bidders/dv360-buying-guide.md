@@ -156,13 +156,11 @@ The following graphic shows how to identify the creative ID and audit status for
 
 DV360 supports Xandr's [Buyer Seat ID](https://docs.xandr.com/bundle/monetize_monetize-standard/page/topics/understanding-buyer-seat-ids html) feature. Previously, member breakouts and virtual seats were used for each DV360 buyer. However, they are no longer used for each DV360 buyer. Deals should be set up using DV360 Partner IDs, which Xandr sellers can find in the Partner Center.
 
-Buyers can find their DV360 Partner ID in two ways, as shown in the following graphic.
+Buyers can find their DV360 Partner ID in two ways, as shown in the following graphic. Inspect the URL, which takes the form [https://displayvideo.google.com/#ng_nav/p/xxxx](https://displayvideo.google.com/#ng_nav/p/%2aXXXXX.%2a). `XXXXX` is typically a 5-digit number representing the partner ID.
 
-- Inspect the URL, which takes the form [https://displayvideo.google.com/#ng_nav/p/xxxx](https://displayvideo.google.com/#ng_nav/p/%2aXXXXX.%2a). `XXXXX` is typically a 5-digit number representing the partner ID.
+In the DV360 UI, go to **Partner Settings >  Basic Details**. The Partner ID is at the bottom of the screen.
 
-  In the DV360 UI, go to **Partner Settings >  Basic Details**. The Partner ID is at the bottom of the screen.
-
-  :::image type="content" source="media/dv360-buying-guide-j.png" alt-text="The screenshot that displays the Partner ID at the bottom of the screen.":::
+:::image type="content" source="media/dv360-buying-guide-j.png" alt-text="The screenshot that displays the Partner ID at the bottom of the screen.":::
 
 ### Troubleshooting
 
