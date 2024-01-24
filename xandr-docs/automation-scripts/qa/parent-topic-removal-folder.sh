@@ -39,4 +39,4 @@ find "$1" -type f -print0 | while IFS= read -r -d '' file; do
 done
 
 echo "Changes applied to all files in $1."
-
+echo
