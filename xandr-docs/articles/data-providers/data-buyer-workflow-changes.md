@@ -32,13 +32,13 @@ You can select the various segments that you wish to include in or exclude from 
 >
 > For segments:
 >
-> - you have selected a segment for which the Data Provider has not supplied a price.
-> - you have selected a segment from a Data Provider who is not participating in Xandr automating clearing.
-> - you have selected a user-created segment (e.g., generated via a pixel) not supplied by a Data Provider.
+> - You have selected a segment for which the Data Provider has not supplied a price.
+> - You have selected a segment from a Data Provider who is not participating in Xandr automating clearing.
+> - You have selected a user-created segment (e.g., generated via a pixel) not supplied by a Data Provider.
 >
 > For Data Cost Totals:
 >
-> - one or more of the segments you selected fit the conditions listed above for segment alerts.
+> - One or more of the segments you selected fit the conditions listed above for segment alerts.
 
 ## Line item changes
 
