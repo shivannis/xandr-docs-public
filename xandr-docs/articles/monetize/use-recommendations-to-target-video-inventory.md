@@ -1,11 +1,11 @@
 ---
-title: Microsoft Monetize - Use Recommendations to Target Video Inventory
+title: Microsoft Monetize - Video Inventory (Recommendations)
 description: Learn how to leverage recommendations to target video inventory.
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Use recommendations to target video inventory
+# Microsoft Monetize - Video inventory (recommendations)
 
 To act on the new inventory recommendations found under your video line
 item's **Analytics** tab (in the

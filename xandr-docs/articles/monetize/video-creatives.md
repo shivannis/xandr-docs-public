@@ -1,11 +1,11 @@
 ---
-title: Video Creatives
+title: Microsoft Monetize - Video Creatives
 description: Learn what are video creatives and what they provide. Also, this page covers the types of video inventory types on our platform, which publishers manage directly.
 ms.date: 10/28/2023
 ---
 
 
-# Video creatives
+# Microsoft Monetize - Video creatives
 
 You can host video creatives with Xandr or
 traffic them through third-party ad servers. Non-linear creatives, such
