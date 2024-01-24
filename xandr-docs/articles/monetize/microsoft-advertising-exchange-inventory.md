@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Microsoft Advertising Exchange Inventory
-description: TLearn how to reach your audiences across Microsoft properties using Microsoft Advertising Exchange (MAX).  
+description: Learn how to reach your audiences across Microsoft properties using Microsoft Advertising Exchange (MAX).  
 ms.date: 10/28/2023
 ---
 

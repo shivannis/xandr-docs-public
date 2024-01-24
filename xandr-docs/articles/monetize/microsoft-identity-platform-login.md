@@ -1,11 +1,11 @@
 ---
-title : Microsoft Monetize - Microsoft Identity Platform Login
-description : Learn how to authenticate users for Xandr Advertising Products using Microsoft Identity Platform. 
+title: Microsoft Monetize - Microsoft Identity Platform Login
+description: Learn how to authenticate users for Xandr Advertising Products using Microsoft Identity Platform. 
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Microsoft Identity Platform login
+# Microsoft Monetize - Microsoft identity platform login
 
 This document outlines an overview of authenticating users for Xandr
 Advertising Products using Microsoft Identity Platform.

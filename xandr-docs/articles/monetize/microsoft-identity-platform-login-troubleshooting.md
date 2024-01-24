@@ -1,12 +1,12 @@
 ---
-title: Microsoft Monetize - Microsoft Identity Platform Login Troubleshooting
+title: Microsoft Monetize - Microsoft Identity Platform Login (T/S)
 description: This page answers your queries that may arise while using Microsoft Identity Platform. 
 ms.date: 10/28/2023
 
 ---
 
 
-# Microsoft Monetize - Microsoft identity platform login troubleshooting
+# Microsoft Monetize - Microsoft identity platform login (t/s)
 
 This document outlines some scenarios where questions may arise in the
 minds of users while using Microsoft Identity Platform.
