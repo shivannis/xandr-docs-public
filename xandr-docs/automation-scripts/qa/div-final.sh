@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Function to process a file and remove the pattern
+# Function to process a file and remove specified patterns
 process_file() {
     local input_file="$1"
     local temp_file
     temp_file=$(mktemp)
 
-    # Use sed to remove the pattern from the input file and save the result to the temporary file
-    sed '/<div id=/d' "$input_file" > "$temp_file" && mv "$temp_file" "$input_file"
+    # Use sed to remove the specified patterns from the input file and save the result to the temporary file
+    sed -e '/<div id=/d' -e '/<div>/d' -e '/<\/div>/d' "$input_file" > "$temp_file" && mv "$temp_file" "$input_file"
 }
 
 # Check if a folder was provided as an argument
@@ -24,12 +24,12 @@ fi
 
 # Use 'find' to locate all files within the specified folder and its subdirectories
 find "$1" -type f -print0 | while IFS= read -r -d '' file; do
-    # Check if the file contains the pattern "<div id="
-    if grep -q "<div id=" "$file"; then
+    # Check if the file contains any of the specified patterns
+    if grep -q -e '<div id=' -e '<div>' -e '</div>' "$file"; then
         process_file "$file"
-        echo "Pattern removed from $file"
+        echo "Patterns removed from $file"
     fi
 done
 
 echo "Pattern removal complete."
-
+echo
