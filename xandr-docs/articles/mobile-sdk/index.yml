@@ -33,6 +33,10 @@ landingContent:
         links:
           - text: Overview
             url: ios-sdk.md
+      - linkListType: whats-new
+        links:
+          - text: Release Notes
+            url: ios-sdk-release-notes.md
       - linkListType: how-to-guide
         links:
           - text: Integration Guide
@@ -51,16 +55,17 @@ landingContent:
             url: ios-sdk-ad-units.md
           - text: SDK Privacy for iOS
             url: sdk-privacy-for-ios.md
-      - linkListType: whats-new
-        links:
-          - text: Release Notes
-            url: ios-sdk-release-notes.md
+      
   - title: Android SDK
     linkLists:
       - linkListType: overview
         links:
           - text: Overview
             url: android-sdk.md
+      - linkListType: whats-new
+        links:
+          - text: Release Notes
+            url: android-sdk-release-notes.md
       - linkListType: how-to-guide
         links:
           - text: Integration Guide
@@ -79,10 +84,7 @@ landingContent:
             url: android-sdk-ad-units.md
           - text: SDK Privacy for Android
             url: sdk-privacy-for-android.md
-      - linkListType: whats-new
-        links:
-          - text: Release Notes
-            url: android-sdk-release-notes.md
+      
   - title: Universal Pixel SDK
     linkLists:          
       - linkListType: how-to-guide
