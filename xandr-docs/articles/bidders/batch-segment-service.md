@@ -1,10 +1,10 @@
 ---
-title: Bidders - Batch Segment Service
+title: Bidders - Batch Segment Service API
 description: In this article, find information about the Batch Segment Service (BSS), how to use the feature, possible errors you might face, and the JSON fields associated with BSS.
 ms.date: 10/28/2023
 ---
 
-# Bidders - Batch segment service
+# Bidders - Batch segment service API
 
 The Batch Segment Service allows you to upload audiences to the Xandr platform through a batch/bulk upload framework. This data can be used in conjunction with data from buyers or sellers for the purposes of campaign targeting or yield management. All data sent through the Batch Segment Service is appended to the existing segment data already in our system.
 

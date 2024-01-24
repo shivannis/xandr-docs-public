@@ -1,12 +1,12 @@
 ---
-title: Data Buyer Workflow Changes
+title: Data Buyer Workflow
 description: Learn about Data buyer workflow changes like Adding data providers, Campaign changes and Line item changes in this page.   
 ms.custom: data-providers
 ms.date: 11/29/2023
 ---
 
 
-# Data buyer workflow changes
+# Data buyer workflow
 
 To support the clearing of Data Provider costs and to represent the
 distinction between Media costs and Third-party costs (e.g., for user

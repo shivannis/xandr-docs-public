@@ -207,7 +207,7 @@
   - name: Working With User Groups
     href: working-with-user-groups.md
   - name: Working with Saved Reports
-    href: add-a-report-category.md
+    href: working-with-saved-reports.md
 - name: Integrations
   items:
   - name: DFP sales managers Yield Analytics extension

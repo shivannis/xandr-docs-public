@@ -39,24 +39,24 @@ be stored.
 ## Storing the mapping with Xandr
 
 > [!NOTE]
-> As of April 22, 2019, Xandr no longer supports the userdata_javascript and setuid_function fields. Bidders can make the setuid call directly. 
+> From April 22, 2019, Xandr no longer supports the userdata_javascript and setuid_function fields. Bidders can make the setuid call directly. 
 >
-> Legacy documentation:
->
-> To store the mapping with Xandr, first, you must add the following function to your bidder's "userdata_javascript" field on the [Bidder Service](bidder-service.md):
+
+To store the mapping with Xandr, 
+1. Add the following function to your bidder's "userdata_javascript" field on the [Bidder Service](bidder-service.md):
 
 ``` 
 function setuid(code){ ud.uid = code; }
 ```
 
-Next, set the "setuid_function" field on the [Bidder Service](bidder-service.md) as follows:
+2. Next, set the "setuid_function" field on the [Bidder Service](bidder-service.md) as follows:
 
 
 ``` 
 setuid
 ```
 
-Now, you can use the following URL within a pixel call to push your user
+3. Now, you can use the following URL within a pixel call to push your user
 ID into the user's cookie and the Xandr
 server-side cookie store:
 
@@ -65,7 +65,7 @@ server-side cookie store:
 https://ib.adnxs.com/setuid?entity=[BIDDER_ID]&code=[USER_ID]
 ```
 
-Replace \[BIDDER_ID\] with your bidder's ID (available from the Bidder
+4. Replace \[BIDDER_ID\] with your bidder's ID (available from the Bidder
 Service) and \[USER_ID\] with the user ID you have stored for that user.
 
 In case TCF signals are available on the page, "gdpr" and

@@ -111,8 +111,8 @@ landingContent:
             url: add-a-new-user.md
           - text: Add a User Group
             url: add-a-user-group.md
-          - text: Add a Report Category
-            url: add-a-report-category.md
+          - text: Working with Saved Reports
+            url: working-with-saved-reports.md
   - title: Additional Resources
     linkLists:
       - linkListType: concept

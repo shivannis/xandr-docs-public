@@ -17,7 +17,7 @@ In addition to our baseline inventory content standards, some inventory (platfor
 
 ## Toolbars, browser plug-ins and related inventory
 
-[Xandr's policy](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx) only allows browser plug-ins that provide informed consent to the user before installation and that do not modify or overlay publisher ads. We require that sellers segregate and identify their toolbar inventory within the Xandr system so that we can monitor compliance. Bidders can opt out of receiving requests from toolbar inventory entirely by excluding the toolbar inventory attribute in their [bidder profile](./legacy-bidder-profile-service.md).
+[Xandr's policy](../policies-regulations/index.yml) only allows browser plug-ins that provide informed consent to the user before installation and that do not modify or overlay publisher ads. We require that sellers segregate and identify their toolbar inventory within the Xandr system so that we can monitor compliance. Bidders can opt out of receiving requests from toolbar inventory entirely by excluding the toolbar inventory attribute in their [bidder profile](./legacy-bidder-profile-service.md).
 
 ## Buying based on sensitive attributes and intended audience
 
@@ -114,3 +114,7 @@ This category is used to indicate the age range of the target audience for the c
 - **Young Adults**: A site or part of a site whose content is specifically targeted toward young adults.
 - **General Audiences**: A site or part of a site which has no particular intended audience and whose content is appropriate for all ages.
 - **Mature (18+)**: A site or part of a site whose content is not appropriate for children or young adults under 18.
+
+## Xandr inventory quality and auditing standards
+
+View the full details of inventory standards and auditing in [Xandr Policies](../policies-regulations/index.yml).

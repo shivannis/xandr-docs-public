@@ -112,7 +112,7 @@
       href: programmatic-guaranteed-deal-through-monetize-ad-server-api-setup-guide.md
     - name: Multi-Buyer Deals
       href: multi-buyer-deals-api-setup.md
-- name: Reference
+- name: API References
   items:
   - name: Overview
     href: reference.md
@@ -128,7 +128,7 @@
       href: user-verification-service.md
     - name: Developer Service
       href: developer-service.md
-  - name: Authentication Service
+  - name: Authentication Services
     items:
     - name: Overview
       href: authentication-service.md

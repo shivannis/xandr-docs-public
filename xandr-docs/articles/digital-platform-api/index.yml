@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Digital Platform API
-summary: Welcome to the Digital Platform API Documentation! All the information you need about Digital Platform API is right here. You can simply search for what you need, or click on one of the tiles below.
+summary: Welcome to the Digital Platform API Documentation! All the information you need about Digital Platform API is right here. You can click one of the titles below or refer to the Table of Contents (TOC) on the left for complete documentation.
 metadata:
   title: Digital Platform API
   description: Discover various resources for Digital Platform API
@@ -15,20 +15,20 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: API Semantics
-            url: api-semantics.md
+          - text: Getting Started
+            url: api-getting-started.md
           - text: API Onboarding Process
             url: api-onboarding-process.md
-          - text: Report Pagination
-            url: report-pagination.md
-      - linkListType: reference
+      - linkListType: tutorial
         links:
           - text: API Usage Constraints
             url: api-usage-constraints.md
+          - text: Helpful JSON Tools
+            url: helpful-json-tools.md
+          - text: Token-based API Authentication
+            url: token-based-api-authentication.md
           - text: API Best Practices
             url: api-best-practices.md
-          - text: Xandr API Support
-            url: xandr-api-support.md
   - title: Process Guides
     linkLists:
       - linkListType: overview
@@ -47,9 +47,9 @@ landingContent:
             url: custom-key-value-targeting.md
           - text: Working with Roles using the API
             url: working-with-roles-using-the-api.md
-  - title: Reference
+  - title: References
     linkLists:
-      - linkListType: overview
+      - linkListType: how-to-guide
         links:
           - text: Authentication Service
             url: authentication-service.md
