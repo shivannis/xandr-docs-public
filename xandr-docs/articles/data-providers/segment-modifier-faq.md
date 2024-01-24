@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # Segment Modifier FAQ
 
-Watch this space for answers to frequently asked questions about Segment Modifier.
+This article contains frequently asked questions and answers about Segment Modifier.
 
 ## What is the Segment Modifier feature?
 
@@ -20,13 +20,11 @@ There is not a segment modifier "app" or API service. Segment modifier is a feat
 
 ## Does the platform generate segment modifier values that I can use in Segment Modifier?
 
-The Segment Modifier feature was created for clients that wish to implement their own valuation models on Xandr's platform. As such we do
-not generate values to be fed into the feature; the optimization-produced valuations would be what we would suggest as the bids for an auction.
+The Segment Modifier feature is for clients who wish to implement their own valuation models on Xandr's platform. We don't generate values to be fed into the feature. We suggest the optimization-produced valuations as the bids for an auction.
 
 ## How many segment modifiers can I associate to a campaign in the "campaign_modifiers" array of campaigns?
 
-To be properly functional, the campaign_modifiers array of campaign objects must have a maximum of three elements: one of each modifier type (segment_modifier_id, segment_price_id and segment_weight_id). It is important to note that the "value" of segment modifier types
-"segment_modifier_id" and "segment_price_id" correspond to the Xandr ID of segments used to, respectively, dynamically modify or override bid valuations based on associated values with the segments. The "value" of segment modifier type "segment_weight_id" will simply be the weight by which the campaigns valuation will be modified each time it bids (it is unrelated to a segment).
+To be properly functional, the campaign_modifiers array of campaign objects must have a maximum of three elements: one of each modifier type (segment_modifier_id, segment_price_id and segment_weight_id). It is important to note that the "value" of segment modifier types "segment_modifier_id" and "segment_price_id" correspond to the Xandr ID of segments that are used to modify or override bid valuations (based on associated values with the segments). The "value" of segment modifier type "segment_weight_id" will simply be the weight by which the campaigns valuation will be modified each time it bids (it is unrelated to a segment).
 
 ## Related topics
 
