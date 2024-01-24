@@ -23,7 +23,7 @@ called a [conversion](#conversion) or action. See also [CPA](#cpa).
 ### ad agency
 
 A company that provides services such as planning, creating, buying, and
-tracking advertisements and ad campaigns on behalf of a client.  Often,
+tracking advertisements and ad campaigns on behalf of a client. Often,
 people confuse media agencies, which are allocators of marketers'
 spending across channels – with creative agencies, which are responsible
 for the creation of actual ads and campaign content. 
@@ -139,17 +139,17 @@ Any television content that has evolved beyond traditional, linear
 television delivery models. This umbrella term is inclusive of the
 following:
 
-- Connected TV (CTV): A TV that is connected to the Internet via an
+- **Connected TV (CTV)**: A TV that is connected to the Internet via an
   external (for example, streaming devices and gaming consoles) or
   internal device (for example, a smart television)
-- Smart TV: A subset of Connected TV.
-- Addressable TV: The ability to serve targeted ads to the HH or user
+- **Smart TV**: A subset of Connected TV.
+- **Addressable TV**: The ability to serve targeted ads to the HH or user
   based on deterministic identifiers, allowing brands to define and
   serve their message to the best qualified audience, where ever and
   whenever they're watching.
-- OTT: (over-the-top) TV-like video content delivered over the internet,
+- **OTT**: (over-the-top) TV-like video content delivered over the internet,
   bypassing traditional TV infrastructure.
-- Interactive TV (iTV): The catch-all term for adding a viewer
+- **Interactive TV (iTV)**: The catch-all term for adding a viewer
   engagement piece to television, which may include interactive content,
   interactive advertising or ichannels. This can be delivered in a
   variety of ways, including through the first- and second-screen.
@@ -297,17 +297,17 @@ impression being sold.
 
 ### bitrate or bit rate
 
-- Encoded bit rate: The number of bits (or amount of data) per second
+- **Encoded bit rate**: The number of bits (or amount of data) per second
   that has been used to store a media signal. In audio, this usually is
   presented in kilobits per second (or kb/s or kbps), while for
   high-quality video, this might be presented in megabits per second (or
   Mbps, or Mb/s). For example, the music you buy on iTunes is 256
   kilobits per second, meaning there are 256 kilobits of data stored in
   every second of a song, and an HD video file might be encoded at 2.0
-  megabits per second, meaning there are two megabits of data.The
+  megabits per second, meaning there are two megabits of data. The 
   encoded bit rate is the one used for business requirements as it
   represents a strong signal of fidelity.
-- Available bit rate: The instantaneous delivery rate of data in bits
+- **Available bit rate**: The instantaneous delivery rate of data in bits
   per second (bps), kilobits per second (kbps), megabits per second
   (mbps), etc. from the source server to destination device through one
   or many digital networks. The slowest portion of the network path
@@ -316,7 +316,7 @@ impression being sold.
   available bandwidth. HTTS Live Streaming (HLS) is a variable bitrate
   protocol for delivering video content. HLS starts the stream at a low
   bitrate which provides low video resolution and increases the bitrate
-  and video resolution as the network conditions permit.The available
+  and video resolution as the network conditions permit. The available
   bit rate is used for technical purposes as it represents how much data
   can be passed from the ad server to the client for an ad to deliver
   without jitter.
@@ -381,7 +381,7 @@ route to a [landing page](#landing-page). See also [publisher click-tracking](#
 
 ### competitive separation
 
-Ensues a publisher’s ad pod does not include conflicting brands or
+Ensures a publisher’s ad pod does not include conflicting brands or
 categories, thereby reducing competition and consumer ad fatigue, and
 increasing the value of the spot.
 
@@ -503,9 +503,8 @@ of a visitor clicking on their advertisement. Note that an
 
 ### CPI
 
-Cost per install.  A payment model in which mobile advertisers pay each
+Cost per install. A payment model in which mobile advertisers pay each
 time a user installs their app.   
-
 
 ### CPC
 
@@ -652,8 +651,7 @@ data set to prevent it from counting second clicks.
 A default creative is a creative that runs as a backup in an open
 Internet ad space, in the case that no other creatives are available. A
 default creative can be a literal creative, say an in-house ad, or it
-can be a redirect in the form of a third-party [ad tag](#ad-tag) to a third-party [ad server](#ad-server) . A default creative may also be called a
-"reserve creative."  
+can be a redirect in the form of a third-party [ad tag](#ad-tag) to a third-party [ad server](#ad-server). A default creative may also be called a "reserve creative."  
 
 ### default tag
 
@@ -735,7 +733,7 @@ direct response which is specific and quantifiable. In online display
 advertising, examples of this can include clicking on an ad, making a
 purchase, signing up for a newsletter, and so on.
 
-### direct marketing association (DMA) online behavioral advertising (OBA)compliance
+### direct marketing association (DMA) online behavioral advertising (OBA) compliance
 
 The Direct Marketing Association has been heavily involved in creating
 guidelines for online behavioral advertising (OBA), or advertising to
@@ -868,7 +866,7 @@ as overexposure. See also [recency](#recency-capping).
 The act of limiting, or "capping" how often a particular creative can be
 served to a user. For example, an advertiser might use frequency capping
 to ensure that an ad could be shown to the same user no more than three
-times per 24 hours. See also [recency capping](online-advertising-and-ad-tech-glossary.md#recency-capping).  It allows brands to guard against
+times per 24 hours. See also [recency capping](online-advertising-and-ad-tech-glossary.md#recency-capping). It allows brands to guard against
 agitating viewers with repeat exposures, by specifying a maximum
 threshold for playback.
 
@@ -920,11 +918,11 @@ usually in the form of a credit. See also [premium](#premium-inventory) invent
 Two households may watch the same show via CTV but may be served
 different ads based on various identifiers.
 
-hybrid broadcast-broadband TV (HbbTV) - An international consortium and
+**hybrid broadcast-broadband TV (HbbTV)** - An international consortium and
 standard aimed at combining digital terrestrial broadcast and broadband
 delivery of programming.
 
-hybrid SVOD/AVOD - Services that combine subscription and ad support
+**hybrid SVOD/AVOD** - Services that combine subscription and ad support
 tiers — for example, offering a lower subscription with ad support or a
 premium, ad-free experience.
 
@@ -969,7 +967,7 @@ in-banner video creative, if allowed by the publisher. 
 
 A linear TV advertising format that is displayed with a TV commercial. 
 This is displayed as a banner overlay that appears 5 seconds after the
-ad begins and disappears 5 seconds before it ends.  This is clickable to
+ad begins and disappears 5 seconds before it ends. This is clickable to
 alternate options such as recording a program, requesting information
 about the advertiser, etc..
 
@@ -1006,7 +1004,7 @@ about the value of interactive advertising". Read more at the
 
 A linear TV channel that allows for interactivity and clickable
 advertising by using the selective buttons and arrows on their remote
-control.  These channels have one brand advertiser that sponsors the
+control. These channels have one brand advertiser that sponsors the
 interactive ad.
 
 ### interactive TV (iTV)
@@ -1214,9 +1212,9 @@ Mobile Rich Media Ad Interface Definitions (MRAID) is a common API
 (Application Programming Interface) for mobile rich media ads that will
 run in mobile apps.
 
-### multi-channel attribution - The ability to follow known audience
-viewing behaviour after the fact—for example, using smartphone location
-data or website analytics to correlate outcomes back to ad exposure.
+### multi-channel attribution 
+
+The ability to follow known audience viewing behaviour after the fact—for example, using smartphone location data or website analytics to correlate outcomes back to ad exposure.
 
 ### multi-channel video programming distributor (MVPD)
 
@@ -1338,8 +1336,9 @@ next highest bidder a chance to win the impression. See also [default tag](#def
 Information included in any data set that allows users of the data to
 resolve the real-world identity of the data subject. 
 
-### Premium Entertainment Satellite - PESAT is the delivery of premium
-channels (HBO, STARZ, etc.) over satellites.
+### Premium entertainment satellite 
+
+PESAT is the delivery of premium channels (HBO, STARZ, etc.) over satellites.
 
 ### PHP session ID
 
@@ -1420,7 +1419,7 @@ Invitation-only marketplaces where premium publishers make their
 inventory and audience available to select buyers, often times
 transacted through the use of Deal IDs.
 
- ### probabilistic data
+### probabilistic data
 
 Inferred or modelled data that identifies an audience that has a high
 probability of being a particular consumer.
@@ -1523,7 +1522,7 @@ remnant has an unnecessarily negative connotation, other terms that have
 been experimented with are "premnant" (premium + remnant} or "secondary
 premium." Also sometimes called "tier 2" or "class 2."
 
-**reporting**
+### reporting
 
 In ad tech, reporting data for both buyers and sellers, such as
 audiences reached, effective cost, money spent, impressions seen,
@@ -1737,7 +1736,7 @@ available demand sources and exchange inventory.
 ### tag
 
 A snippet of HTML, generally either JavaScript or an IFRAME, that tells
-the browser to request some content from an ad server.  Tag is often
+the browser to request some content from an ad server. Tag is often
 used to mean an [ad tag](#ad-tag) but may also be a creative tag or some other
 kind of tag. A tag is provided by an ad server or exchange and placed in
 the webpage by a publisher.
@@ -1932,7 +1931,7 @@ executing ads that are supplied using VAST. The interaction between the
 ad and the player is unidirectional, meaning that once the player
 receives the VAST tag no other interactions are possible except for the
 activation of select tracking beacons at appropriate times during ad
-playback. For details, see the[Interactive Advertising Bureau (IAB)](#interactive-advertising-bureau-iab) [VAST documentation](https://www.iab.com/).
+playback. For details, see the [Interactive Advertising Bureau (IAB) VAST documentation](https://www.iab.com/).
 
 ### vendor
 
@@ -2044,10 +2043,10 @@ the video viewability definition of the measurement vendor. 
 
 A desktop video ad or mobile video ad that meets the criteria of:
 
-- Desktop: 50% of the ad’s pixels on an in-focus browser tab in the
+- **Desktop**: 50% of the ad’s pixels on an in-focus browser tab in the
   viewable space of the browser page that has met the time criterion
   that two continuous seconds of the video advertisement is played.
-- Mobile: 50% of the ad’s pixels on an in-focus browser or a fully
+- **Mobile**: 50% of the ad’s pixels on an in-focus browser or a fully
   downloaded, opened, initialized application, on the viewable space of
   the device that has met the time criterion that two continuous seconds
   of the video advertisement is played.
