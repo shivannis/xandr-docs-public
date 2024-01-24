@@ -1264,7 +1264,7 @@ CTV devices, to gain campaign-wide insights.
 ### online behavioral advertising (OBA)
 
 Advertising to people surfing the Internet based on their past browsing
-behaviors. See also [DMA OBA compliance](#direct-marketing-association-dma-online-behavioral-advertising-obacompliance).
+behaviors. See also [DMA OBA compliance](#direct-marketing-association-dma-online-behavioral-advertising-oba-compliance).
 
 ### online data
 
