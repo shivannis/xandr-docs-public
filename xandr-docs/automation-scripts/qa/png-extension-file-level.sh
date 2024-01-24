@@ -21,7 +21,8 @@ find "$directory" -type f -name "*.md" | while read -r file; do
     temp_file=$(mktemp)
 
     # Use sed to replace patterns within each Markdown file and save changes to the temporary file
-    sed -e 's|<img src="\([^"]*/\)\(.*\)"|<img src="media/\2"|g' -e 's|\.jpg"|\.png"|g' "$file" > "$temp_file"
+    #sed -e 's|<img src="\([^"]*/\)\(.*\)"|<img src="media/\2"|g' -e 's|\.jpg"|\.png"|g' "$file" > "$temp_file"
+    sed -e 's|<img src="\([^"]*/\)\(.*\)\.jpg"|<img src="media/\2\.png"|g' -e 's|<img src="\([^"]*/\)\(.*\)\.jpeg"|<img src="media/\2\.png"|g' "$file" > "$temp_file"
 
     # Replace the original file with the temporary file
     mv "$temp_file" "$file"
@@ -29,4 +30,5 @@ find "$directory" -type f -name "*.md" | while read -r file; do
 done
 
 echo "Pattern replacement and extension conversion completed."
+echo
 
