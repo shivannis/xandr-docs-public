@@ -34,7 +34,8 @@ Clicking the sprocket icon to the left of the **Name** column gives you the 
 
 - If the product is already a product in the system, the Create Product option will not be displayed.
 - If it is a dynamic lookup, it allows you to create a product within the system. Click **Create Product**.
-  The following message is displayed on the top of the screen: Product created with Yield ID XXXXXX. The newly-created product name is now a hyperlink. Clicking this link accesses a product metadata screen, which displays information about the product. Products created in this manner will become temporary analysis products that will automatically deactivate after fourteen days. To avoid deactivation, you will need to go to **Products \>  Find Products**, locate the product and edit it, setting the Product Type to Reporting.
+  
+    The following message is displayed on the top of the screen: Product created with Yield ID XXXXXX. The newly-created product name is now a hyperlink. Clicking this link accesses a product metadata screen, which displays information about the product. Products created in this manner will become temporary analysis products that will automatically deactivate after fourteen days. To avoid deactivation, you will need to go to **Products \> Find Products**, locate the product and edit it, setting the Product Type to Reporting.
 - Clicking **Edit Lookup** accesses the **Lookup Builder** screen, and allows you to edit and run the lookup again.
 - Clicking **Run Lookup** will re-run the lookup.
 - Clicking **View Contention** will open a quick view into the demand that will be competing on the inventory utilized within the lookup.

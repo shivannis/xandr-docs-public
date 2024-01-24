@@ -9,14 +9,14 @@ ms.custom: yield-analytics-ui
 
 You can open the following types of reports:
 
-- Pre-defined, standard yield analytics reports.
+- Pre-defined, standard Yield Analytics reports.
 - Reports that you created and saved.
 - Reports that other users created and shared with your user group.
 
 ## To open a report
 
 1. On the **Reports** tab, on the toolbar, click **Open**.
-1. In the Open Analysis dialog, to search for a specific report by its title, enter text in the search box and press **Enter**.  
+1. In the Open Analysis dialog, to search for a specific report by its title, enter text in the search box and press **Enter**.
 
     Or, expand a report type section to view all of the category's reports.
 1. Click on the report name to open it.
