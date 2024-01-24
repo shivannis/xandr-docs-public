@@ -6,7 +6,8 @@ ms.custom: yield-analytics-ui
 ---
 
 # At-risk management chart and solution paths
- :::image type="content" source="media/oo.png" alt-text="The  screenshot that displays the At-risk management flow chart.":::
+
+:::image type="content" source="media/oo.png" alt-text="The  screenshot that displays the At-risk management flow chart.":::
 
 ## Overview
 
@@ -20,20 +21,19 @@ Recommended Steps:
 
 ## Reduce cap restrictions
 
-- Set the Frequency Cap value to a slightly lower amount and Check Avails. If you can't meet the under-delivery value (Pacing -
-  Lifetime), reduce the cap some more and try again.
+Set the Frequency Cap value to a slightly lower amount and Check Avails. If you can't meet the under-delivery value (Pacing - Lifetime), reduce the cap some more and try again.
 
 ## Broaden targeting
 
-- Remove the most restrictive element from the product configuration. Example: If you have multiple audience restrictions, try removing the most specific one. If you have many site sections, change the variable to a broader ad unit value.
+Remove the most restrictive element from the product configuration. Example: If you have multiple audience restrictions, try removing the most specific one. If you have many site sections, change the variable to a broader ad unit value.
 
 ## Extend flight
 
-- Try pulling a longer time period than the order line's end date. Then use the 'group-by' feature, which will give you the results by month/week/day. You can then see where the product opens up, if at all.
+Try pulling a longer time period than the order line's end date. Then use the 'group-by' feature, which will give you the results by month/week/day. You can then see where the product opens up, if at all.
 
 ## Increase priority
 
-- Try pulling availability with a priority value higher than your current order line. This will tell you how changing priority will impact delivery. You may also want to run a Scenario Manager if there is a lot of Guaranteed Direct/Contained competition and you are concerned about creating a new problem on other order lines.
+Try pulling availability with a priority value higher than your current order line. This will tell you how changing priority will impact delivery. You may also want to run a Scenario Manager if there is a lot of Guaranteed Direct/Contained competition and you are concerned about creating a new problem on other order lines.
 
 For the two use cases below, the solution is slightly more involved and is best solved through a report. These are 'edge' cases you should rarely encounter.
 
@@ -47,21 +47,18 @@ For the two use cases below, the solution is slightly more involved and is best 
 
 ## Cancel zombie order lines and reassess
 
-- Zombie order lines are order lines that are in a pending state, but have a start date in the past. These order lines force yield analytics (and your ad server) to predict consumption against them. (They don't actually consume impressions if they never move out of a pending status).
+- Zombie order lines are order lines that are in a pending state, but have a start date in the past. These order lines force Yield Analytics (and your ad server) to predict consumption against them. (They don't actually consume impressions if they never move out of a pending status).
 - Frequently, these order lines are campaigns where:
   - The creative is late.
   - The client has pushed out the deal and the opportunity in OMS has not been updated.
   - The deal was cancelled at the last minute and then forgotten about.
 - You can identify Zombie order lines by:
-  - Pulling a basic report in yield analytics.
+  - Pulling a basic report in Yield Analytics.
   - Setting order line as your dimension.
   - Consumed impressions as your metric.
   - The filtering on order **line status = pending.**
   - Start date (not the time period) to a date prior to the current date.
 
-    For example, two weeks earlier than today is usually a good way to identify these problem order lines. If today was October 15, 2017,
-    you'd want to set the start date filter to (earliest date available - October 1, 2017). It is also sometimes helpful to pull
-    in things like a Salesperson's name, the Advertiser, and other elements to help you follow-up:
-- Any order lines that meet this criteria should be seriously questioned. Are they actually happening? If so, they should have their
-  start date updated to a more realistic launch. If they will not go live, they should be moved to a canceled state.
-- After you make these changes, yield analytics will pick up the change during the next nightly processing cycle. Once that happens, check your order line's risk again and see if the problem still exists. If so, start from the beginning of the flow chart again and re-diagnose the problem.
+    For example, two weeks earlier than today is usually a good way to identify these problem order lines. If today was October 15, 2017, you'd want to set the start date filter to (earliest date available - October 1, 2017). It is also sometimes helpful to pull in things like a Salesperson's name, the Advertiser, and other elements to help you follow-up:
+- Any order lines that meet this criteria should be seriously questioned. Are they actually happening? If so, they should have their start date updated to a more realistic launch. If they will not go live, they should be moved to a canceled state.
+- After you make these changes, Yield Analytics will pick up the change during the next nightly processing cycle. Once that happens, check your order line's risk again and see if the problem still exists. If so, start from the beginning of the flow chart again and re-diagnose the problem.

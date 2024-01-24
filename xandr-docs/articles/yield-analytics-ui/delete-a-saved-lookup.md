@@ -4,6 +4,7 @@ description: The article provides guidance that highlights the capability to del
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
+
 # Delete a saved lookup
 
 If you have administrative permissions, you can delete saved availability lookups. This erases all related information, including any scheduling and batch processed results.

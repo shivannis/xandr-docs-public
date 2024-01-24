@@ -4,7 +4,9 @@ description: The article helps you to check snapshot of your network's capacity,
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
+
 # Check impression capacity for a product group
+
 Use the Impression Capacity widget to quickly check a snapshot of your network's capacity, or click on a specific product to view its full
 capacity forecast.
 
@@ -23,7 +25,7 @@ If necessary, you can add or edit a manual or seasonal adjustment to the forecas
 
 - [About Forecasts and Adjustments](about-forecasts-and-adjustments.md)
 - [Anatomy of the Capacity Dashboard Page](anatomy-of-the-capacity-dashboard-page.md)
-- [View the Forecast for Your Products](view-the-forecast-for-your-products.md)
+- [View the Forecast for Your Products](view-your-products-forecast.md)
 - [Add a Manual Adjustment to a Product](add-a-manual-adjustment-to-a-product.md)
 - [Edit a Seasonal Adjustment for a Seasonal Product](edit-a-seasonal-adjustment-for-a-seasonal-product.md)
-- [Anatomy of the Forecast Visibility Page](anatomy-of-the-forecast-visibility-page.md)
+- [Anatomy of the Forecast Visibility Page](forecast-visibility-page-anatomy.md)

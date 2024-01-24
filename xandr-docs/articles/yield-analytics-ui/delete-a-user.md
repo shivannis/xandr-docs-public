@@ -4,12 +4,13 @@ description: If you have administrative permissions, you can delete user account
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
 ---
+
 # Delete a user
 
 If you have administrative permissions, you can delete user accounts.
 
 > [!WARNING]
-> You should only delete users who have not logged in to yield analytics. To prevent a previously active user from logging in, disable the user account instead.
+> You should only delete users who have not logged in to Yield Analytics. To prevent a previously active user from logging in, disable the user account instead.
 
 1. On the Admin Tools menu, click **Users**. The **Users** page appears, displaying a list of all user accounts.
 1. In the far right column for the user you want to remove, click **Delete**.

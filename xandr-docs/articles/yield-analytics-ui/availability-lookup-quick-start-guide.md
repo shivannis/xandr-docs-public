@@ -4,6 +4,7 @@ description: The topics explains the Availability Lookup screen appears in the A
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
+
 # Availability lookup - quick start guide
 
 The **Availability Lookup** screen appears in the **Availability** drop-down.
@@ -26,8 +27,7 @@ apply additional constraints, such as a frequency cap.
 - **Save**: When you click the **Save** button, you begin the process of saving a lookup template. A dialogue box is accessed that allows you to manage how the template should be saved, and who should have access to it.
 - **Views**: The user is able to choose if they would prefer to perform their lookup by building the lookup from an Attribute and Product View (default), or apply a Product Group View, which would enable you to select a Product Group that you would like to filter off of.
 - **Vary By**: Allows you to vary your lookup based on additional attributes and values that are selected. This creates one lookup for each different combination of vary by items that are selected.
-- **Undo**:  If you make a change, delete or clear all from the lookup, then you can click **Undo** and the previous
-  unaltered lookup will be reinstated.
+- **Undo**:  If you make a change, delete or clear all from the lookup, then you can click **Undo** and the previous unaltered lookup will be reinstated.
 - **Clear All**:  This button allows you to clear out the entire lookup and start over.
 
 ## How to build a lookup
@@ -42,19 +42,14 @@ There are two ways to define the attribute and attribute value you want to inclu
 The second way is to type the attribute you are looking for directly in the builder.
 
 - The available list that matches the text will populate, and you can select.
-- Follow the same steps to define the attribute value. The available value list that matches the text will populate and you can select.  You can add as many attribute values as needed.
+- Follow the same steps to define the attribute value. The available value list that matches the text will populate and you can select. You can add as many attribute values as needed.
 
 After you have selected your attribute and attribute values, there is an option to either and or **or** additional attribute/attribute values to your lookup.
 
 - In order to and an additional attribute value, click on the **Add Attribute** hyperlink.
 - In order to or an additional attribute value, click on the Create a **New Segment** hyperlink.
-
-<!-- -->
-
 - Within the lookup builder screen you can see where attribute values are grouped by and or **or**.
-- While building your lookup, icons on the right allow you to quickly remove all values for a given attribute, or remove the attribute
-  altogether. If you build a targeting segment consisting of multiple attributes and'ed together, an icon in the upper right corner of the
-  segment allows you to easily duplicate the entire segment, creating a new or'ed segment that you can modify as needed.
+- While building your lookup, icons on the right allow you to quickly remove all values for a given attribute, or remove the attribute altogether. If you build a targeting segment consisting of multiple attributes and'ed together, an icon in the upper right corner of the segment allows you to easily duplicate the entire segment, creating a new or'ed segment that you can modify as needed.
 
 There is also a feature that allows you to build a target expression instead of using the builder. Click the icon to the right of the
 Attribute and Product View verbiage. The target editor screen will appear once you click the button above.
@@ -65,9 +60,7 @@ When your lookup is defined, click the **Run** button on the bottom right corn
 
 Each lookup in this tab has a gear icon that presents several actions that can be taken for a given lookup:
 
-- Create Product: Create a new product for the lookup's targeting. This option is only displayed if the lookup doesn't correspond to a
-  pre-existing product. Products created in this manner will become temporary analysis products that will automatically deactivate after
-  fourteen days. To avoid deactivation, you will need to go to **Products  \>  Find Products**. Locate the product and edit it, setting the Product Type to Reporting.
+- Create Product: Create a new product for the lookup's targeting. This option is only displayed if the lookup doesn't correspond to a pre-existing product. Products created in this manner will become temporary analysis products that will automatically deactivate after fourteen days. To avoid deactivation, you will need to go to **Products \> Find Products**. Locate the product and edit it, setting the Product Type to Reporting.
 - Edit Lookup:  Modify the lookup in the Lookup Builder tab.
 - Run Lookup: Re-run the lookup, typically after you've changed the lookup configuration or advanced options on the left.
 - View Contention: Open a quick view into the demand that will be competing on the inventory utilized within the lookup.

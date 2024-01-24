@@ -4,6 +4,7 @@ description: The article explains that if you have administrative permissions,
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
+
 # Delete a user group
 
 If you have administrative permissions, you can delete a user group.

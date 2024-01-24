@@ -4,6 +4,7 @@ description: Use the Revenue Against Goal widget to provide a snapshot of the 
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
+
 # Check revenue against goal
 
 Use the Revenue Against Goal widget to provide a snapshot of the order lines that are most at risk for underdelivery, organized by order, order line, or advertiser. You can then click on a specific line item to open a detailed view of its performance, as well as its consumption and competition.
@@ -23,5 +24,5 @@ To see how all orders or order lines are performing, click the **View All link
 - [Anatomy of the Orders Dashboard Page](anatomy-of-the-orders-dashboard-page.md)
 - [Anatomy of the Order Visibility Page](anatomy-of-the-order-visibility-page.md)
 - [Anatomy of the Order Line Visibility Page](anatomy-of-the-order-line-visibility-page.md)
-- [Solving Delivery Issues with Order Line Visibility](solving-delivery-issues-with-order-line-visibility.md)
+- [Solving Delivery Issues with Order Line Visibility](solve-delivery-issues-with-order-line-visibility.md)
 - [Working with Scenarios](working-with-scenarios-overview.md)

@@ -4,7 +4,9 @@ description: The article describes the manual adjustments & holidays.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
+
 # Check Manual Adjustments and Holidays
+
 The Manual Adjustments & Holidays widget displays any upcoming holidays forecast adjustments.
 
 1. On the Capacity Dashboard page, in the Manual Adjustments & Holidays widget, click **Next x Day(s)**.
@@ -21,5 +23,5 @@ The Manual Adjustments & Holidays widget displays any upcoming holidays foreca
 
 - [About Forecasts and Adjustments](about-forecasts-and-adjustments.md)
 - [Anatomy of the Capacity Dashboard Page](anatomy-of-the-capacity-dashboard-page.md)
-- [View the Forecast for Your Products](view-the-forecast-for-your-products.md)
+- [View the Forecast for Your Products](view-your-products-forecast.md)
 - [Add a Manual Adjustment to a Product](add-a-manual-adjustment-to-a-product.md)

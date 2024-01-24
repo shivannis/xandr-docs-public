@@ -1,10 +1,12 @@
 ---
 title: Create an Availability Batch Lookup
-description: The articles describes how you can run multiple availability lookups as part of a single Availability report, by creating a batch lookup.
+description: The article describes how you can run multiple availability lookups as part of a single Availability report, by creating a batch lookup.
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
 ---
+
 # Create an availability batch lookup
+
 You can run multiple availability lookups as part of a single availability report, by creating a batch lookup.
 
 1. Set up a new lookup for availability based on a combination of targeting attributes or open an existing saved lookup. Then click **Add to Batch**. The Availability Report panel displays the available inventory based on your lookup criteria, excluding CPM, impressions, and capacity.

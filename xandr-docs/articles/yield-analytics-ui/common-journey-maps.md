@@ -1,11 +1,13 @@
 ---
 title: Common Journey Maps
-description: The article explains common journey map or the path a user takes from problem to solution by using yield analytics.
+description: The article explains common journey map or the path a user takes from problem to solution by using Yield Analytics.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
+
 # Common journey maps
-A journey map is the path a user takes from problem to solution by using yield analytics. Some common journey maps are:
+
+A journey map is the path a user takes from problem to solution by using Yield Analytics. Some common journey maps are:
 
 - Dealing with campaign under-delivery
   - Understand what’s competing now, and in the future.
@@ -17,8 +19,7 @@ A journey map is the path a user takes from problem to solution by using yield 
   - Find relevant products to address oversell situations.
 - Pricing a proposed campaign
   - Understand historical and future pricing trends.
-  - Find historical pricing for any combination of `advertiser/agency/industry/contract` type - to understand
-    pricing for unique situations.
+  - Find historical pricing for any combination of `advertiser/agency/industry/contract` type - to understand pricing for unique situations.
 
 ## Related topics
 
