@@ -20,7 +20,7 @@ If buyers bid with a native creative image that doesn't exactly match the dimens
 
 When using Smart Image Adjustments within Bidders, the main native creative image and icon can only be resized up to 200% and down to 50% of the original aspect ratio. Smart Image Adjustments can also convert native creative images vertically and horizontally. This can be done with our Creative Service API , which gives you more control over the max scale factor and aspect ratio bounds. For more information, see [Creative API Services](creative-api-services.md). The original dimensions of the native creative ultimately determine what is possible.
 
-## Requirements and recommendations
+## Recommendations
 
 - Smart Image Adjustments only work for the following file types:
   - .png
