@@ -6,7 +6,7 @@ ms.date: 11/23/2023
 
 # Guaranteed Outcomes Bidder Integration Guide
 
-This page outlines the specifications that define the method by which Xandr enables a Bidder to bid for, and to be billed for, an outcome (view and/or complete) vs. the typical served impression.  In addition, since different buyers have different standards for what constitutes a "viewable impression", the specification is designed to support a variety of standards, including different definitions (e.g., IAB vs. GroupM) and different measurement technology vendors (e.g. DoubleVerify).  In the future, the specification may also be used to support additional transaction events, for example, an in demo impression.
+This page outlines the specifications that define the method by which Xandr enables a Bidder to bid for, and to be billed for, an outcome (view and/or complete) vs. the typical served impression. In addition, since different buyers have different standards for what constitutes a "viewable impression", the specification is designed to support a variety of standards, including different definitions (e.g., IAB vs. GroupM) and different measurement technology vendors (e.g. DoubleVerify).  In the future, the specification may also be used to support additional transaction events, for example, an in demo impression.
 
 For more information see [Guaranteed Outcomes](./guaranteed-outcomes.md).
 
@@ -14,12 +14,13 @@ For more information see [Guaranteed Outcomes](./guaranteed-outcomes.md).
 
 At a high level, our approach to the implementation follows what has been described in the OpenRTB specification as a "billing notice", from OpenRTB Specification 2.4, Section 7.2.
 
-    "Winning the auction, however, does not guarantee that the ad will be successfully delivered to the client or that it will meet viewability expectations. Furthermore,   policies vary among exchanges as to the criteria for billing. Most consider an ad billable upon some form of delivery or rendering vs. the auction win alone. This aligns better with the buyer’s obvious goal of ensuring that the impressions they pay for are actually displayed.To abstract the concept, let us refer to “billing notice” as the firing of some notification URL at the time when the clearing price of the impression will be booked as spend. This is irrespective of whether the actual OpenRTB win notice URL is delegated to the client for firing or some other tracking URL is used."
+> "Winning the auction, however, does not guarantee that the ad will be successfully delivered to the client or that it ? will meet viewability expectations. Furthermore, policies vary among exchanges as to the criteria for billing. Most consider an ad billable upon some form of delivery or rendering vs. the auction win alone. This aligns better with the buyer’s obvious goal of ensuring that the impressions they pay for are actually displayed.To abstract the concept, let us refer to “billing notice” as the firing of some notification URL at the time when the clearing price of the impression will be booked as spend. This is irrespective of whether the actual OpenRTB win notice URL is delegated to the client for firing or some other tracking URL is used."
 
 The billing notification concept has been further developed in the OpenRTB Specification 2.5. Highlighting relevant content from section 4.2.3.
 
-    BEST PRACTICE: The essential function of the win notice is to inform a bidder that they won an auction. It does not necessarily imply ad delivery, creative viewability, or billability. Exchanges are highly encouraged to publish to their bidders, their event triggers, billing policies, and any other meaning they attach to the win notice.
-    BEST PRACTICE: Firing of the billing notice should be server-side and as “close” as possible to where the exchange books revenue in order to minimize discrepancies between exchange and bidder.
+> BEST PRACTICE: The essential function of the win notice is to inform a bidder that they won an auction. It does not necessarily imply ad delivery, creative viewability, or billability. Exchanges are highly encouraged to publish to their bidders, their event triggers, billing policies, and any other meaning they attach to the win notice.
+>
+> BEST PRACTICE: Firing of the billing notice should be server-side and as “close” as possible to where the exchange books revenue in order to minimize discrepancies between exchange and bidder.
 
 ## Protocol summary
 

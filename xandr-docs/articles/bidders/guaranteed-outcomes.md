@@ -48,7 +48,7 @@ This topic describes how an auction works when a buyer submits an outcome-based 
 
 When an ad call is received, the Exchange first predicts the likelihood that the impression will yield the desired outcome. If a prediction cannot be determined, the impression is ineligible for outcome-based bids. There may be other reasons outcome-based bids aren't supported. For example, monitoring may indicate that the prediction for the given placement is inaccurate, which may lead the placement to be marked ineligible. In addition, outcome-based bids are not accepted when clearing directly with the seller. For more information on pre-bid outcome predictions, see [Outcome Prediction](#outcome-prediction).
 
-If an outcome prediction is available, and all other eligibility checks pass, then the Exchange will calculate an outcome-based bid-to-CPM conversion rate. This rate is calculated by multiplying the outcome prediction by a market-making fee. For more information on the conversion rate, see the sections on [Understanding Payment Conversion Rates](#understanding-payment-conversion-rates) and the [Market-Making Fee](#market-making-fee).
+If an outcome prediction is available, and all other eligibility checks pass, then the Exchange will calculate an outcome-based bid-to-CPM conversion rate. This rate is calculated by multiplying the outcome prediction by a market-making fee. For more information on the conversion rate, see the sections on [Payment Conversion Rates](#payment-conversion-rates) and the [Market-Making Fee](#market-making-fee).
 
 ### Bid request
 
@@ -78,7 +78,7 @@ If the Exchange determines that the ad did not achieve the buyer’s desired out
 
 ## Payment conversion rates
 
-For eligible impressions (see [Guaranteed Outcomes Results Over Time (Examples)](#guaranteed-outcomes-results-over-time-examples), the Exchange calculates an outcome-based bid-to-CPM conversion rate before sending the bid request. To generate the conversion rate, the Exchange uses the predicted outcome rate of the given impression and a marketing-making fee. The two rates are multiplied to generate the impression’s conversion rate.
+For eligible impressions, see [Results](#results-examples), the Exchange calculates an outcome-based bid-to-CPM conversion rate before sending the bid request. To generate the conversion rate, the Exchange uses the predicted outcome rate of the given impression and a marketing-making fee. The two rates are multiplied to generate the impression’s conversion rate.
 
 The resulting conversion rate is sent as part of the bid request. If any outcome-based bids are returned, this conversion rate is used to determine the impression-based CPM price paid to the seller.
 
