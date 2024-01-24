@@ -25,7 +25,7 @@ When targeting inventory, you have the option to target only Xandr-reviewed inve
 
 ## Xandr inventory quality and auditing standards
 
-View the full details of inventory standards and auditing in [Xandr Policies](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Xandr-Service-Policies.aspx).
+View the full details of inventory standards and auditing in [Xandr Policies](../policies-regulations/index.yml).
 
 ## Inventory auditing
 
@@ -114,7 +114,3 @@ This category is used to indicate the age range of the target audience for the c
 - **Young Adults**: A site or part of a site whose content is specifically targeted toward young adults.
 - **General Audiences**: A site or part of a site which has no particular intended audience and whose content is appropriate for all ages.
 - **Mature (18+)**: A site or part of a site whose content is not appropriate for children or young adults under 18.
-
-## Xandr inventory quality and auditing standards
-
-View the full details of inventory standards and auditing in [Xandr Policies](../policies-regulations/index.yml).
