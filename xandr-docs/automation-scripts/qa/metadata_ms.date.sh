@@ -1,13 +1,10 @@
 #!/bin/bash
 
 # Check if directory is provided as argument
-if [ $# -eq 0 ]; then
-    echo "Please provide the directory as an argument."
-    exit 1
-fi
+input_directory="$1"
 
 # Directory where your files are located
-dir="$1"
+dir="$input_directory"
 
 # Check if directory exists
 if [ ! -d "$dir" ]; then
@@ -29,7 +26,7 @@ do
 
         # If the line contains "Description", add the new line after it
         if [[ "$line" == *"Description :"* ]]; then
-            echo "ms.date : 10/28/2023" >> "$new_file"
+            echo "ms.date: 10/28/2023" >> "$new_file"
         fi
     done < "$file"
 
@@ -38,3 +35,4 @@ do
 done
 
 echo "All files in the directory have been updated."
+echo
