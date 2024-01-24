@@ -101,21 +101,10 @@ continue to follow the manual workflow.
 
 - Deals set up with multiple DV360 seat IDs automatically get
   synchronized.
-
 - Bidder level deals (set up with ALL DV360 buyers) are not supported in
   automatic deal synchronizing.
-
 - The buyer that accepts a Multi-Buyer Deal in the DV360 UI must have
   access to accounts for **all** seat IDs included in the deal. If that
   is not possible, the buyer should reach out to Google support to
   accept the deal.
-
 - Once a DV360 seat ID is added to a deal, it cannot be removed.
-
-
-
-
-
-
-
-

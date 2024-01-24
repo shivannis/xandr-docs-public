@@ -99,16 +99,12 @@ continue to follow the manual workflow.
 
 - Deals set up with multiple Trade Desk seat IDs automatically get
   synchronized.
-
 - Bidder-level deals (set up with ALL Trade Desk buyers) are not
   supported in automatic deal synchronizing.
-
 - Xandr systems will randomly assign one buyer to be the primary buyer
   on the multi-buyer deal. This primary buyer will be the only account
   allowed to approve the deal. You can check the primary buyer assigned
   to the deal in the buyer-deal-sync API or database tables.
-
 - The primary buyer on a multi-buyer deal cannot be changed or removed
-
 - Multi-buyer deals set up with Trade Desk member IDs will not sync.
   This includes deals set up with Trade Desk member ID 1088.
