@@ -1568,7 +1568,7 @@
         href: device-analytics-report.md
       - name: Identifiers - Distinct ID Report
         href: identifiers--distinct-id-report.md
-      - name: Identifiers: ID Combinations Report
+      - name: Identifiers - ID Combinations Report
         href: identifiers--id-combinations-report.md
       - name: Key Value Analytics Report
         href: key-value-analytics-report.md
