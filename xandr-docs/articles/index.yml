@@ -47,12 +47,12 @@ additionalContent:
           - url: invest/release-notes.md
             text: Release Notes
       # Card
-      - title: Microsoft Monetize (Work in Progress)
+      - title: Microsoft Monetize
         summary: (Powered by Xandr)
         links:
-          - url: invest/index.yml
+          - url: monetize/index.yml
             text: Product Documentation
-          - url: invest/index.yml
+          - url: monetize/release-notes.md
             text: Release Notes
       # Card
       - title: Microsoft Curate
