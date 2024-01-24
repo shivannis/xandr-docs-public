@@ -1,11 +1,11 @@
 ---
-title: Microsoft monetize - Seller Detected Site Domain Report
+title: Microsoft Monetize - Seller Detected Site Domain Report
 description: Learn how Seller Detected Site Domain Report helps sellers get insight on the domains being sold.  
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft monetize - Seller detected site domain report
+# Microsoft Monetize - Seller detected site domain report
 
 > [!NOTE]
 > This report was deprecated in 2021.
