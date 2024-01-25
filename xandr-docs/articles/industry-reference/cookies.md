@@ -9,7 +9,7 @@ ms.custom: industry-reference
 
 While you may have heard that browser cookies track your actions on the Internet, that's not quite the case. Cookies are simply text files that are stored in Internet browsers, allowing publishers to better monetize their websites and offer users free content. They don't track everything that you're doing, they're not viruses, and they don't create spam. In fact, they can be quite useful to you. This page walks you through how cookies work in desktop browsers and mobile applications.
 
-## Cookies Overview
+## Cookies overview
 
 When you log in to Facebook, there are many HTTP requests and responses set in the short time it takes for you to navigate to your home page. The example below uses Tamper Data, another Firefox Add-On, to view the HTTP GET and POST calls sent when signed into Facebook.
 (HTTP GET calls requests data from a specified source, whereas POST calls submits data to be processed to a specified source). This is the first POST request received by the browser.

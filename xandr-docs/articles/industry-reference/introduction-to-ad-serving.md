@@ -26,7 +26,7 @@ tag consumers via their browser's [cookie file](online-advertising-and-ad-tech-g
 parties to segment consumers and collect data on ad effectiveness on an
 individual level.
 
-## Who is involved in online advertising?
+## Different parties involved in online advertising
 
 Many different parties interact in the online advertising ecosystem:
 
@@ -76,7 +76,7 @@ exchange data, set prices, and ultimately serve an ad.  Major ad
 exchanges include DoubleClick, OpenX, Facebook's FBX, and
 Xandr.
 
-## What is Ad serving?
+## Ad serving overview
 
 Ad serving is the process of determining which advertisement goes in
 which ad slot on a publisher's webpage or mobile app and then delivering
@@ -104,7 +104,7 @@ decisioning systems, and others are major ad servers used by many
 clients such as Xandr or Google's various ad
 serving products.
 
-## How does Ad serving work?
+## Working of Ad serving
 
 :::image type="content" source="media/working-of-ad-serving.png" alt-text="Screenshot of How Does Ad Serving Works .":::
 

@@ -23,7 +23,7 @@ this---including most people in the online ad industry.
 There are a lot of information on the internet about HTTPs, below is a quick summary to get you started. Please [let us know](mailto:wiki@appnexus.com) what's helpful for you and what suggestions you have, and let
 us know if you've found any good intro guides.
 
-## HTTP Definition
+## HTTP definition
 
 HTTP stands for Hypertext Transfer Protocol, and it's how different
 parts of the Internet communicate with each other. HTTP is what's known
@@ -103,7 +103,7 @@ equals sign, such as food=hamburger. Value pairs are separated by
 ampersands, and you can have as many value pairs in a query string as
 you need.
 
-In our example above, "?r=1&src=me&ref=travel" is the query string. The
+In the example above, "?r=1&src=me&ref=travel" is the query string. The
 question mark denotes the beginning of the query string. The value pair
 "ref=travel", most likely refers to the fact that this article is in the
 travel section.
@@ -131,5 +131,5 @@ all over the whole Internet, the Domain Name System was created. Domain
 Name Systems map domains to their IP address. When you register a URL
 you must attach it to an IP address and register it with DNS.
 
-From our example above, "www.nytimes.com" would be translated into the
+From the example above, "www.nytimes.com" would be translated into the
 IP address of the server that the NY Times registered with the DNS.

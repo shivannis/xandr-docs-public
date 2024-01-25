@@ -22,7 +22,7 @@ In this section we'll talk about what MRAID is and what it can do in
 combination with HTML and JavaScript. We will also talk about what MRAID
 is not.
 
-### What is MRAID?
+### MRAID definition
 
 MRAID is often used as a buzzword to describe mobile rich media
 creatives. In reality, MRAID is a technology designed for a specific use
@@ -112,7 +112,7 @@ The main thing to remember is that HTML5/JS and MRAID are **not mutually
 exclusive** technologies. MRAID was designed so that creatives can use
 HTML5/JS to communicate with native mobile apps.
 
-## MRAID functionality
+### MRAID functionality
 
 The main functionality of MRAID is to allow a creative that is running
 on **In-App** inventory to change its size, get information about its
@@ -225,7 +225,7 @@ document.getElementById("videoAd").addEventListener('touchstart', click_thru);
 </body>
 ```
 
-### Potential complications with HTML5 Video
+### Potential complications with HTML5 video
 
 - Devices running Android 4.4+ or iOS 6+ **do not** allow HTML5 videos
   to autoplay by default. This means developers have to add the

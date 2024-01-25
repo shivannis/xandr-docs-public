@@ -17,7 +17,7 @@ Ad tags are used for many purposes in display advertising:
 These tags are all essentially the same in structure: They are all requests for content of a certain size and type from a certain URL. The
 content is either a creative or another ad tag and it may be returned immediately in one step or after multiple steps (an auction, redirects, etc.) each with its own tag. An ad tag may look very long and complicated if information about the ad call is included in the tag itself, or it might be very short and simple if ad call information is stored in the server to which the tag's URL is pointed.
 
-## How does an Ad tag work?
+## Working of an Ad tag
 
 :::image type="content" source="media/how-ad-tags-work.png" alt-text="Diagram of How ad tags and bid work.":::
 
@@ -28,7 +28,7 @@ Here's a simple example of how ad tags move through different systems. The examp
 1. The ad server then passes an ad tag to the advertisers. Depending on the publisher-advertiser relationship, this may mean simply directly requesting ads for guaranteed buys, or it may involve requesting bids from multiple advertisers and carrying out an auction to determine the most profitable result for the publisher.
 1. The ad server delivers the creative (the ad) to the browser. Typically, this means returning an ad tag with a creative URL, with the creative itself hosted on an independent content server. For more information about creatives, see [Creatives: An Overview](creatives.md).
 
-## What does an Ad tag look like?
+## How an Ad tag looks 
 
 An ad tag has two parts:
 
