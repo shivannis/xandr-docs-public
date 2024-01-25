@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Bidders - Deal sync with DV360 - publisher guide 
 
 > [!NOTE]
-> This product is currently in Beta stage and has been enabled for selected sellers who have chosen to participate in the beta testing. If you would like to test out this product, please reach out to your Xandr account representative.
+> This product is currently in Beta stage and has been enabled for selected sellers who have chosen to participate in the beta testing. If you would like to test out this product, reach out to your Xandr account representative.
 
 ## Overview
 
@@ -54,13 +54,13 @@ While there are no changes to how a publisher create deals in Monetize UI, publi
 
 ## Best practices for deal set up
 
-**1:1 Deals and Exchange Curated Deals (ECDs)**
+### 1:1 Deals and Exchange Curated Deals (ECDs)
 
 - Deals must be set up with DV360 partner IDs. This deal synchronizing process does not support member ID deals.
 - Once a partner ID is selected for a deal, it cannot be changed in subsequent updates.
 - Always have active communication with the buyer during the deal negotiation and setup process to ensure the buyer knows to approve the deal in the DV360 UI.  
 
-**Programmatic Guaranteed (PG) Deals**
+### Programmatic Guaranteed (PG) deals
 
 - Deals must be set up with DV360 partner IDs. This deal sync process does not support member ID deals.
 - You cannot change the DV360 partner ID once the deal is created.
@@ -69,7 +69,7 @@ While there are no changes to how a publisher create deals in Monetize UI, publi
 - Only update deal details when necessary and **always** notify the buyer to approve the changes. The DV360 buyer continues to bid using previous PG deal details until new deal updates are approved.
 - PG deals must include allowed creative sizes for banner and display.
 
-**Multi Buyer Deals**
+### Multi-buyer deals
 
 - Deals set up with multiple DV360 seat IDs automatically get synchronized.
 - Bidder level deals (set up with ALL DV360 buyers) are not supported in automatic deal synchronizing.

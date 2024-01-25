@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Bidders - Deal sync with Trade Desk - FAQ
 
 > [!NOTE]
-> This product is currently in **Beta** stage and has been enabled for selected sellers who have chosen to participate in the beta testing. If you would like to test out this product, please reach out to your Xandr account representative.
+> This product is currently in **Beta** stage and has been enabled for selected sellers who have chosen to participate in the beta testing. If you would like to test out this product, reach out to your Xandr account representative.
 
 ## How do I know if a deal successfully uploaded to Trade Desk systems?
 
@@ -21,11 +21,12 @@ Ask the Trade Desk buyer to confirm they have accepted the deal in the Trade Des
 
 The following details are shared with Trade Desk APIs:
 
+|  |  |  |
+|---|---|---|
 | - Deal Name | - Deal Type | - Currency |
-|--|--|--|
-| - **Buyer Seat ID** | - **Deal Auction Type** | - **Floor Price/Ask Price** |
-| - **Seller Name** | - **Start Date** | - **Allowed Media Types** |
-| - **Deal ID** | - **End Date** | - **Allowed Creative Sizes** |
+| - Buyer Seat ID | - Deal Auction Type | - Floor Price/Ask Price |
+| - Seller Name | - Start Date | - Allowed Media Types |
+| - Deal ID | - End Date | - Allowed Creative Sizes |
 
 ## What will happen to existing Trade Desk deals that were created before enablement of deal sync?
 
@@ -90,15 +91,14 @@ Publishers should guide the buyers through the following steps:
 Trade Desk buyers may follow below steps to find and accept the deal:
 
 1. Select **Inventory** from the **Libraries** drop-down in the header, and then select the **Proposals** tab.
-1. Once on that page, you can sort by **Pending Approval** if you need to filter to only those proposals (it should automatically sort
-    a. based on importance so this shouldn’t be necessary).
+1. Once on that page, you can sort by **Pending Approval** if you need to filter to only those proposals (it should automatically sort based on importance so this shouldn’t be necessary).
 
 ## Can a publisher pick and chose which Trade Desk buyers to automatically sync deals with?
 
-That is not a feature that will be supported. Deal sync with Trade Desk is designed to automate deal sync for ALL Trade Desk buyers as the
+That feature isn't supported. Deal sync with Trade Desk is designed to automate deal sync for ALL Trade Desk buyers as the
 design of the final state of this product is to enable all sellers in the Xandr marketplace.
 
 ## I created a deal with Trade Desk member 1088, why did it not sync with Trade Desk systems?
 
-Deals created with Trade Desk Xandr members will not be supported in deal sync with Trade Desk as Trade Desk APIs require
-the Trade Desk partner ID declared in the deal. Xandr is unable to determine which partner IDs to associate with a member id deal.
+Deals created with Trade Desk Xandr members are not supported in deal sync with Trade Desk as Trade Desk APIs require
+the Trade Desk partner ID declared in the deal. Xandr is unable to determine which partner IDs to associate with a member ID deal.

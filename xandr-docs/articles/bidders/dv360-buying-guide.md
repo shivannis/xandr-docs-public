@@ -5,12 +5,9 @@ ms.date: 10/28/2023
 ---
 # DV360 buying guide
 
-In partnership with DV360, Xandr has created this guide to help Xandr publishers communicate with their buyers about accessing and targeting Xandr's publisher inventory using DV360 as their DSP. This information has been created in collaboration with and
-approved by the DV360 team. Please note that platforms can and will change regularly. We will do our best to update this guide as needed.
-Wherever possible, we've provided links to DV360 documentation.
+In partnership with DV360, Xandr has created this guide to help Xandr publishers communicate with their buyers about accessing and targeting Xandr's publisher inventory using DV360 as their DSP. This information has been created in collaboration with and approved by the DV360 team. Note that platforms can and will change regularly. We will do our best to update this guide as needed. Wherever possible, we've provided links to DV360 documentation.
 
-We recommend that if buyers are having issues, or if they need help using the DV360 platform, their first point of outreach should be the
-DV360 team.  
+We recommend that if buyers are having issues, or if they need help using the DV360 platform, their first point of outreach should be the DV360 team.  
   
 ## Terminology mapping
 
@@ -22,34 +19,33 @@ In a few cases, DV360 and Xandr use different terminology, as shown in the follo
 | [Non-Guaranteed Auctions](https://support.google.com/displayvideo/answer/3289702) (formerly known as Private Auctions) | Multi-Buyer Deal involving one publisher and many buyers. |
 | Partner ID | Buyer Seat ID |
 
-## Using DV360 to buy Xandr open auction and deals inventory
+## Use DV360 to buy Xandr open auction and deals inventory
 
 This section explains how to target Xandr (formerly AppNexus) as an inventory source within the DV360 UI.
 
 > [!NOTE]
 > To learn more about managing exchanges with DV360, buyers should see [Managing Exchanges](https://support.google.com/displayvideo/answer/9230278?hl=en)in the DV360 Help.
 
-To set up Xandr Exchange targeting in DV360, the buyer needs to target **AppNexus (Xandr)** as an **Exchange** in **Partner
-Settings** as shown in the following graphic:
+To set up Xandr Exchange targeting in DV360, the buyer needs to target **AppNexus (Xandr)** as an **Exchange** in **Partner Settings** as shown in the following graphic:
 
-:::image type="content" source="media/dv360-buying-guide-a.png" alt-text="A screenshot that illustrates how to set up Xandr Exchange targeting in DV360, the buyer needs to target AppNexus (Xandr) as an Exchange in Partner Settings.":::
+:::image type="content" source="media/dv360-buying-guide-a-edited.png" alt-text="Screenshot that illustrates how to set up Xandr Exchange targeting in DV360, the buyer needs to target AppNexus (Xandr) as an Exchange in Partner Settings.":::
 
 > [!TIP]
 > To learn more about targeting an inventory source, buyers should [Inventory Source Targeting](https://support.google.com/displayvideo/answer/2726009) in the DV360 Help.
 
-**Open Auction**  
+### Buy using open auction
 
 To buy using **Open Auction**, buyers can use the following steps to target Xandr as an exchange. The process starts from the Inventory Source UI with nothing defined, as shown in the following graphic:
 
 :::image type="content" source="media/dv360-buying-guide-b.png" alt-text="A screenshot that illustrates the process initiates from the Inventory Source UI without any predefined settings. ":::
 
-1. In **Partner Settings**, the buyer should select **AppNexus (Xandr)** as the exchange as shown in the following graphic. If the buyer only wants to buy Xandr inventory, they should make sure the Target new exchanges checkbox is de-selected.
+In **Partner Settings**, the buyer should select **AppNexus (Xandr)** as the exchange as shown in the following graphic. If the buyer only wants to buy Xandr inventory, they should make sure the Target new exchanges checkbox is de-selected.
 
-    The following graphic shows the Inventory Source screen with Xandr selected as the exchange.
+The following graphic shows the Inventory Source screen with Xandr selected as the exchange.
 
-    :::image type="content" source="media/dv360-buying-guide-c.png" alt-text="A screenshot that illustrates the Inventory Source screen with Xandr chosen as the exchange.":::
+:::image type="content" source="media/dv360-buying-guide-c.png" alt-text="A screenshot that illustrates the Inventory Source screen with Xandr chosen as the exchange.":::
   
-**Deals**
+#### Deals
 
 Deal Sync with DV360 is currently in beta, and only selected sellers are enabled for this feature. For more information, see the following topics in the DV360 Help:
 - [DV360 Buyer UI Deal Acceptance Workflows](dv360-buyer-ui-deal-acceptance-workflows.md)
@@ -61,54 +57,50 @@ Deal Sync with DV360 is currently in beta, and only selected sellers are enabled
 
 **To set up and target a Xandr deal:**
 
-1. In DV360, the buyer should create a new Xandr deal as shown in the following graphics. The second graphic shows an example of a newly created deal in the UI.
+1. In DV360, the buyer creates a new Xandr deal as shown in the following graphic.
 
-   :::image type="content" source="media/dv360-buying-guide-d.png" alt-text="A screenshot that illustrates how the buyer creates a new Xandr deal":::
+   :::image type="content" source="media/dv360-buying-guide-d.png" alt-text="Screenshot that illustrates how the buyer creates a new Xandr deal":::
 
-   :::image type="content" source="media/dv360-buying-guide-e.png" alt-text="A screenshot that illustrates an example a newly created deal in the user interface (UI).":::
+   The second graphic shows an example of a newly created deal in the UI.
 
-2. The buyer should select the created deal for targeting as shown in the following graphics. The second graphic shows an example of the
-    targeted deal displayed in UI.
+   :::image type="content" source="media/dv360-buying-guide-e.png" alt-text="Screenshot that illustrates an example a newly created deal in the user interface (UI).":::
 
-   :::image type="content" source="media/dv360-buying-guide-f.png" alt-text="A screenshot that shows how the buyer selects the created deal for targeting.":::
+2. The buyer selects the created deal for targeting as shown in the following graphic.
 
-   :::image type="content" source="media/dv360-buying-guide-g.png" alt-text="The screenshot that illustrates specific deal presented in the user interface.":::
+   :::image type="content" source="media/dv360-buying-guide-f.png" alt-text="Screenshot that shows how the buyer selects the created deal for targeting.":::
 
-For more information about deals, the buyer can see the following topics in the DV360 Help:
+   The second graphic shows an example of the targeted deal displayed in UI.
+
+   :::image type="content" source="media/dv360-buying-guide-g.png" alt-text="Screenshot that illustrates specific deal presented in the user interface.":::
+
+Refer the buyer to the following topics in the DV360 help for more information about deals.
 
 - [How to Negotiate a Deal](https://support.google.com/displayvideo/answer/7505945?hl=en)
 - [Best Practices for Setting Up Deals](https://support.google.com/displayvideo/answer/9198385?hl=en)
 - [Deal Troubleshooting](https://support.google.com/displayvideo/answer/6292894?hl=en)
 
-## Programmatic guaranteed buying
+## Programmatic Guaranteed (PG) buying
 
-Programmatic guaranteed buying is currently available with DV360. The DV360 team has detailed information on available programmatic guaranteed publishers and associated contacts. Please talk to your Xandr account manager about being included in Xandr's programmatic guaranteed product release.
-
-> [!NOTE]
-> The native is not currently supported for Programmatic Guaranteed buying. We're working with the DV360 team to
-> enable native support.
+Programmatic guaranteed buying is currently available with DV360. The DV360 team has detailed information on available programmatic guaranteed publishers and associated contacts. Talk to your Xandr account manager about being included in Xandr's programmatic guaranteed product release.
 
 > [!NOTE]
 > Publishers can download the following document and share it with buyers directly: [Leverage Programmatic Guaranteed](../monetize/programmatic-guaranteed-buying-line-items.md).
 
-## Targeting audiences and content
+## Target audiences and content
 
 DV360 allows targeted buying based on audiences and content. To learn more about targeting in DV360, see [Introduction to Targeting](https://support.google.com/displayvideo/topic/3033780?hl=en).
 
-**Audience targeting**
+### Audience targeting
 
-Buyers using DV360 have access to a number of different types of audience data. Buyers should note that some of this data has limited
-reach on third-party exchanges such as Xandr.
-For more information, see [Details about audience targeting](https://support.google.com/displayvideo/topic/2726036?hl=en),
-[Audience List Targeting](https://support.google.com/displayvideo/answer/2949947?hl=en), and [Custom List Targeting](https://support.google.com/displayvideo/answer/7583366?hl=en) in the DV360 Help.
+Buyers using DV360 have access to a number of different types of audience data. Buyers should note that some of this data has limited reach on third-party exchanges such as Xandr. For more information, see [Details about audience targeting](https://support.google.com/displayvideo/topic/2726036?hl=en), [Audience List Targeting](https://support.google.com/displayvideo/answer/2949947?hl=en), and [Custom List Targeting](https://support.google.com/displayvideo/answer/7583366?hl=en) in the DV360 Help.
 
 | Google Data | Limitations | Tips and Recommendations |
 |--|--|--|
 | [Custom Affinity](https://support.google.com/displayvideo/answer/7583366?hl=en) | Can be used on Ad Manager and third-party exchanges. Scale is limited on third-party exchanges. First or third-party audiences preferred. | If you are using this type of data, set up your DV360 line item targeting with one or more first- or third-party audience lists in a logical OR relationship to limit scale issues. |
-| [Custom Intent](https://support.google.com/displayvideo/answer/7583366?hl=en) | Can only be used on Ad Manager inventory. |  |
-| [Affinity](https://support.google.com/displayvideo/answer/6021489?hl=en) | Can be used on Ad Manager and third-party exchanges. Scale is limited on third-party exchanges. First or third-party audiences preferred. |  |
-| [Similar/Lookalike](https://support.google.com/displayvideo/answer/13643641?hl=en&visit_id=638362302043745084-900489057&rd=2) | Can be used on Ad Manager and third-party exchanges. Scale is limited on third-party exchanges. First or third-party audiences preferred. |  |
-| [In-Market](https://support.google.com/displayvideo/answer/6213232?hl=en) | Can be used on Ad Manager and third-party exchanges. Scale is limited on third-party exchanges. First or third-party audiences preferred. |  |
+| [Custom Intent](https://support.google.com/displayvideo/answer/7583366?hl=en) | Can only be used on Ad Manager inventory. | N/A |
+| [Affinity](https://support.google.com/displayvideo/answer/6021489?hl=en) | Can be used on Ad Manager and third-party exchanges. Scale is limited on third-party exchanges. First or third-party audiences preferred. | N/A |
+| [Similar/Lookalike](https://support.google.com/displayvideo/answer/13643641?hl=en&visit_id=638362302043745084-900489057&rd=2) | Can be used on Ad Manager and third-party exchanges. Scale is limited on third-party exchanges. First or third-party audiences preferred. | N/A |
+| [In-Market](https://support.google.com/displayvideo/answer/6213232?hl=en) | Can be used on Ad Manager and third-party exchanges. Scale is limited on third-party exchanges. First or third-party audiences preferred. | N/A |
 | [Geography](https://support.google.com/displayvideo/answer/2705812?hl=en) | Can be used on Ad Manager and other exchanges (including PMP). | N/A |
 | [Day and Time](https://support.google.com/displayvideo/answer/2697407?hl=en) | Can be used on Ad Manager and other exchanges (including PMP). | N/A |
 | [Demographics](https://support.google.com/displayvideo/answer/6071542?hl=en) | Can be used on Ad Manager and third-party exchanges. Scale is limited on third-party exchanges. First or third-party audiences preferred. Household income targeting is available on Google Ad Manager and TrueView inventory. | If you are using this type of data, set up your DV360 line item targeting with one or more first- or third-party audience lists in a logical OR relationship to limit scale issues. |
@@ -116,10 +108,9 @@ For more information, see [Details about audience targeting](https://support.goo
 | [New Mobile Device](https://support.google.com/displayvideo/answer/13643641?hl=en&visit_id=638362302043745084-900489057&rd=1) | Can be used on Ad Manager and other exchanges (including PMP). | N/A |
 | [Third Party Audience](https://support.google.com/displayvideo/answer/6212219?hl=en) | Can be used onAd Manager and other exchanges (including PMP). | N/A |
 
-**Content targeting**
+### Content targeting
 
-To learn more about content targeting, see [Content Targeting](https://support.google.com/displayvideo/topic/2726034?hl=en)
-in the DV360 Help.
+To learn more about content targeting, see [Content Targeting](https://support.google.com/displayvideo/topic/2726034?hl=en) in the DV360 Help.
 
 The following table shows content targeting options in DV360 and provides guidance for implementing them.
 
@@ -150,14 +141,12 @@ The following table shows recommendations for providing domain transparency in b
 
 DV360 only bids with creatives that have passed Xandr audit.
 
-- To start the Xandr creative audit, the buyer should make sure the line item their creatives are assigned to is
-  active and targets Xandr inventory.
-- DV360 users can request a re-sync if a creative's audit status seems to get stuck or if DV360 and Xandr are showing
-  different audit statuses. This can be done at the creative level. The buyer should save the creative to restart the creative review process in **Display & Video 360**. For more detail, see the following:
+- To start the Xandr creative audit, the buyer should make sure the line item their creatives are assigned to is active and targets Xandr inventory.
+- DV360 users can request a re-sync if a creative's audit status seems to get stuck or if DV360 and Xandr are showing different audit statuses. This can be done at the creative level. The buyer should save the creative to restart the creative review process in **Display & Video 360**. For more detail, see the following:
 
 :::image type="content" source="media/dv360-buying-guide-h.png" alt-text="The screenshot that displays the creative status in Display & Video 360.":::
 
-**Checking the audit status and Finding the appNexus (Xandr) creative ID**
+### Identify the creative ID and audit status
 
 The following graphic shows how to identify the creative ID and audit status for each creative.
 
@@ -165,17 +154,17 @@ The following graphic shows how to identify the creative ID and audit status for
 
 ## Buyer identification using buyer seat IDs
 
-DV360 supports Xandr's [Buyer Seat ID](https://docs.xandr.com/bundle/monetize_monetize-standard/page/topics/understanding-buyer-seat-ids.html) feature. This means that member breakouts and virtual seats are no longer used for each DV360 buyer. Deals should be set up using DV360 Partner IDs, which Xandr sellers can find in the Partner Center.
+DV360 supports Xandr's [Buyer Seat ID](https://docs.xandr.com/bundle/monetize_monetize-standard/page/topics/understanding-buyer-seat-ids html) feature. Previously, member breakouts and virtual seats were used for each DV360 buyer. However, they are no longer used for each DV360 buyer. Deals should be set up using DV360 Partner IDs, which Xandr sellers can find in the Partner Center.
 
-Buyers can find their DV360 Partner ID in two ways, as shown in the following graphic.
+Buyers can find their DV360 Partner ID in two ways, as shown in the following graphic. Inspect the URL, which takes the form [https://displayvideo.google.com/#ng_nav/p/xxxx](https://displayvideo.google.com/#ng_nav/p/%2aXXXXX.%2a). `XXXXX` is typically a 5-digit number representing the partner ID.
 
-- Inspect the URL, which takes the form [https://displayvideo.google.com/#ng_nav/p/xxxx](https://displayvideo.google.com/#ng_nav/p/%2aXXXXX.%2a). `XXXXX` is typically a 5-digit number representing the partner ID.
+In the DV360 UI, go to **Partner Settings >  Basic Details**. The Partner ID is at the bottom of the screen.
 
-  In the DV360 UI, go to **Partner Settings >  Basic Details**. The Partner ID is at the bottom of the screen.
+:::image type="content" source="media/dv360-buying-guide-j.png" alt-text="The screenshot that displays the Partner ID at the bottom of the screen.":::
 
-  :::image type="content" source="media/dv360-buying-guide-j.png" alt-text="The screenshot that displays the Partner ID at the bottom of the screen.":::
+### Troubleshooting
 
-**Troubleshooting**
+The **match rate between DV360 and Xandr** is healthy and in line with other platforms. Sometimes there can be confusion when troubleshooting line items not delivering that are using Google data. It is possible that the support team will tell the buyer that the issue in delivery is user match rate or lack of cookies, which is a nuanced issue. The actual issue is the lack of match with the Google audience data. Removing the Google audience data or adding 1st or 3rd party data in an OR relationship can often help in these situations.
 
 If a DV360 buyer has issues serving on Xandr inventory, we recommend that they:
 
@@ -184,13 +173,9 @@ If a DV360 buyer has issues serving on Xandr inventory, we recommend that they:
 
 Sellers can reach out to their Xandr account manager or escalate through [help.xandr.com](https://help.xandr.com/s/login/).
 
-**Understanding Match Rates between DV360 and Xandr**
-
-The match rate between DV360 and Xandr is healthy and in line with other platforms. Sometimes there can be confusion when troubleshooting line items not delivering that are using Google data. It is possible that the support team will tell the buyer that the issue in delivery is user match rate or lack of cookies, which is a nuanced issue. The actual issue is the lack of match with the Google audience data. Removing the Google audience data or adding 1st or 3rd party data in an OR relationship can often help in these situations.
-
 ## DV360 and TCF compliance
 
 Google has officially joined the TCF v2. Full guidance from Google can be found [here](https://support.google.com/displayvideo/answer/9496576?hl=en).
 
 > [!NOTE]
-> Google DV 360 was added to the Global Vendor List v2.0 in the update released on July 23, 2020. If you have adopted TCF v2.0, and you have not re-established legal basis with your users using a version of the Global Vendor List released after this date, you risk losing access tosome or all Google DV360 demand . We recommend taking this action promptly to avoid any potential disruption to your business.
+> Google DV 360 is a part of the Global Vendor List v2.0 in the update released on July 23, 2020. If you have adopted TCF v2.0, and you have not re-established legal basis with your users using a version of the Global Vendor List released after this date, you risk losing access to some or all Google DV360 demand . We recommend taking this action promptly to avoid any potential disruption to your business.
