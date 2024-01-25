@@ -4,10 +4,10 @@ description: In this article, learn about bidding use case with fees and the sta
 ms.date: 10/28/2023
 ---
 
-# Bidding use case with fees
+# Bidder - Bidding use case with fees
 
 > [!NOTE]
-> Xandr fees and auction mechanics were designed so that our members can bid what they think an impression is worth and still get the best deal. When a member wins an impression, they will either pay the bid price or less, including any auction fees.
+> Xandr fees and auction mechanics were designed so that our members can bid what they think an impression is worth and still get the best deal. When a member wins an impression, they either pay the bid price or less, including any auction fees.
 
 To understand the fees associated with Xandr's platform, see this example of a basic auction scenario. For this example, all steps are rounded to two digits after the decimal. In an actual auction, six digits after the decimal are used.
 
@@ -27,12 +27,12 @@ In this example, there are two fees:
 
 1. The impression bus sees in its database that doctorwhofans.com is owned by Member 12, and that Member 12 is associated with Bidder 14.
 
-    > [!NOTE]
-    > **Why would a seller work with a bidder?**  
-    > Buyers, sellers, networks, and other entities can overlap each other; perhaps in this case the owner is also a buyer. Or perhaps the owner chose to work with a bidder to enhance the features of Xandr's platform. For example, when a seller is associated with a bidder, they get pinged first before a general Bid Request goes out to all bidders. Sellers can then set a reserve price dynamically, when they have more data about the user.
+   > [!NOTE]
+   > **Why would a seller work with a bidder?**
+   >
+   > Buyers, sellers, networks, and other entities can overlap each other; perhaps in this case the owner is also a buyer. Or perhaps the owner chose to work with a bidder to enhance the features of Xandr's platform. For example, when a seller is associated with a bidder, they get pinged first before a general Bid Request goes out to all bidders. Sellers can then set a reserve price dynamically, when they have more data about the user.
 
-1. The impression bus makes a Bid Request to Bidder 14 only. Bidder 14 receives third-party data within the Bid Request, and according to
-preset logic decides to set the reserve price to $2 via the Bid Response.
+1. The impression bus makes a Bid Request to Bidder 14 only. Bidder 14 receives third-party data within the Bid Request, and according to preset logic decides to set the reserve price to $2 via the Bid Response.
 
 ## Stage 3: Bidding phase
 
@@ -50,19 +50,19 @@ preset logic decides to set the reserve price to $2 via the Bid Response.
 
 ## Stage 4: Auction winner and price are determined
 
-1. Because Xandr charges a 5% fee for all buys at the end of the auction, the "seller revenue" price must be calculated at this stage for comparison to the reserve price. The impression bus subtracts 5% from all bids to create "net bids". Net bids are $5.13 and $4.51.
+1. Because Xandr charges a 5% fee for all buys at the end of the auction, the `"seller_revenue"` price must be calculated at this stage for comparison to the reserve price. The impression bus subtracts 5% from all bids to create "net bids". Net bids are $5.13 and $4.51.
+
+   > [!NOTE]
+   > **Net Bids**
+   >  
+   > The net bid is a calculation of seller revenue, or how much money the seller would actually receive if this bid wins. This is so that bids can be properly compared to the seller's reserve price and to each other. To calculate the net bid, all Xandr fees are subtracted out.
+
+1. The auction winner is determined by ranking the net bids. Bidder 7's $5.13 net bid is the best bid and Bidder 7 wins on behalf of Member 1. The price Member 1 pays is then reduced to $4.52: $0.01 more than the second price of $4.51.
 
     > [!NOTE]
-    > **Net Bids**  
-    > The net bid is a calculation of seller revenue, or how much money the seller would actually receive if this bid wins. This is so that bids can be properly compared to the seller's reserve price and to each other. To calculate the net bid, all Xandr fees are subtracted out.
+    > The price-reduction process is different if the winning bid is passed on to a second auction. For more details, see [Price Reduction Mechanics](price-reduction-mechanics md).
 
-1. The auction winner is determined by ranking the net bids. Bidder 7's $5.13 net bid is the best bid and Bidder 7 wins on behalf of
-Member 1. The price Member 1 pays is then reduced to $4.52: $0.01 more than the second price of $4.51.
-
-    > [!NOTE]
-    > The price-reduction process is different if the winning bid is passed on to a second auction. For more details, see [Price Reduction Mechanics](price-reduction-mechanics.md).
-
-1. At this point all Xandr-related fees (5% of the winning bid price) are added. The price-reduced bid of $4.52 becomes a "buyer_buys" price of $4.76. The seller will receive "seller_revenue" of $4.52. Xandr receives the difference of $.24.
+1. At this point all Xandr-related fees (5% of the winning bid price) are added. The price-reduced bid of $4.52 becomes a `"buyer_buys"` price of $4.76. The seller will receive `"seller_revenue"` of $4.52. Xandr receives the difference of $.24.
 
     > [!NOTE]
     >
@@ -72,7 +72,7 @@ Member 1. The price Member 1 pays is then reduced to $4.52: $0.01 more than the 
     > **Benefits of Price Reduction**  
     > Because of the price reduction auction model, the winning bidder pays less than their initial bid but more than the reduced bid. Bidders are also encouraged to bid what they actually think the impression is worth rather than try to bid incrementally higher than a competitor.
 
-## List of bids, prices, and fees for this example
+## Bids, prices, and fees for this example
 
 | List of bids and prices | Fees |
 |---|---|
