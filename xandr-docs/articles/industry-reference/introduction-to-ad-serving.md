@@ -1,8 +1,8 @@
 ---
-title : Introduction to Ad Serving
-description : Learn what Ad Serving is and how it works.
-ms.date : 10/28/2023
-ms.custom : industry-reference
+title: Introduction to Ad Serving
+description: Learn what Ad Serving is and how it works.
+ms.date: 10/28/2023
+ms.custom: industry-reference
 ---
 
 
@@ -162,11 +162,4 @@ the hops that go into a single impression event, please see [Ad Tags](ad-tags.md
 
 - [Ad Tags](ad-tags.md)
 - [Creatives](creatives.md)
-- [The race to the single platform has begun](https://digiday.com/sponsored/appnexusbcs-005-131729/). Xandr Senior Vice President of
-  Corporate Marketing wrote this in 2015 with a focus on the ad tech
-  ecosystem and its different participants.
-- [A blog post on the technical side of ad
-  serving](http://www.mikeonads.com/2007/05/01/the-ad-exchange-model-part-i/). Former Xandr CTO Mike Nolet wrote
-  this in 2007 with a focus on the relatively new role of ad networks. 
-  It's still accurate.
-- [Wikipedia on ad serving](https://en.wikipedia.org/wiki/Advertising_network)
+

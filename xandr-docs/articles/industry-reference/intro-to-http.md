@@ -1,8 +1,8 @@
 ---
-title : Intro to HTTP
-description : Learn the basics of HTTP and how it is important for online advertising
-ms.date : 10/28/2023
-ms.custom : industry-reference
+title: Intro to HTTP
+description: Learn the basics of HTTP and how it is important for online advertising.
+ms.date: 10/28/2023
+ms.custom: industry-reference
 ---
 
 
@@ -20,13 +20,10 @@ To answer, you need to understand what's really happening when your
 browser contacts a web server, and very few people DO understand
 this---including most people in the online ad industry.
 
-We looked for an intro guide to HTTP that went beyond "Here's what a
-webpage is!" but didn't jump straight into TCP/IP layers, but we struck
-out completely. So we've written our own. Please [let us
-know](mailto:wiki@appnexus.com) what's helpful for you and what suggestions you have, and let
+There are a lot of information on the internet about HTTPs, below is a quick summary to get you started. Please [let us know](mailto:wiki@appnexus.com) what's helpful for you and what suggestions you have, and let
 us know if you've found any good intro guides.
 
-## What is HTTP?
+## HTTP Definition
 
 HTTP stands for Hypertext Transfer Protocol, and it's how different
 parts of the Internet communicate with each other. HTTP is what's known
@@ -54,23 +51,28 @@ Below is the standard syntax of a URL:
 ``` 
 scheme://hostname:port/path?query_string
 ```
-I used the below URL to find the article "Choice Tables - Delicious Ways
-to Love Downtown Los Angeles" on the New York Times website:
+Let's review the following URL and find the article "Choice Tables - Delicious Ways to Love Downtown Los Angeles" on the New York Times website:
 
 [https://www.nytimes.com/2010/09/12/travel/12choice.html?_r=1&src=me&ref=travel](https://www.nytimes.com/2010/09/12/travel/12choice.html?_r=1&src=me&ref=travel)
 
-**Scheme:** This defines the type of resource. We are dealing with HTTP,
+### Scheme
+
+This defines the type of resource. We are dealing with HTTP,
 so the example above is of an HTTP resource. The scheme tells the server
 what type of resource the client (your browser) is looking for and what
 format the rest of the locator will be in. There are other types of
 Schemes, such as FTP, that we will discuss later.
 
-**Hostname:** This is also called the domain name. It is a nickname for
+### Hostname 
+
+This is also called the domain name. It is a nickname for
 an IP address (we'll get into IP's later) that is more easily read by
 people. In the example above the hostname is "www.nytimes.com." So the
 request knows to go to the NY Times server.
 
-**Port:** The port number is optional, so it's not used in most URLs. If
+### Port 
+
+The port number is optional, so it's not used in most URLs. If
 the port is not listed then the default port for the scheme is used. For
 the example above, the port is not included, but the server would know
 to send the URL to port 80 because this is the default port for HTTP.
@@ -78,7 +80,9 @@ Another frequently used scheme is FTP which uses port 21 as a default.
 If you don't know much about ports don't worry about this part. We will
 cover more about ports later.
 
-**Path:** The path is used to define how to find the resource. The
+### Path 
+
+The path is used to define how to find the resource. The
 hostname sends you to the right IP address, and the path further directs
 how to get to a more specific location. This is similar to finding
 something on your computer, for example let's say you have a tax return
@@ -86,15 +90,12 @@ file located at home/documents/taxes/taxreturn2009.pdf. The Path usually
 begins after the first single "/" and there can be multiple layers of a
 path, all set off by a "/".
 
-In our example, the path is "/2010/09/12/travel/12choice.html". Once the
-message reaches the nytimes.com server, it knows to continue through to
-each layer of the path till it reaches the final layer, "12choice".
-Finding a resource using a URL is a similar process to finding a file in
-an office. First you go to the office, then the right file cabinet, then
-the drawer, then the correct green hanging file, then finally the
-manilla folder that has the information you want.
+In the example above, the path is "/2010/09/12/travel/12choice.html". Once the message reaches the nytimes.com server, it knows to continue through to
+each layer of the path till it reaches the final layer, "12choice". Finding a resource using a URL is a similar process to finding a file in an office. First you go to the office, then the right file cabinet, then the drawer, then the correct green hanging file, then finally the manilla folder that has the information you want.
 
-**Query string:** Query strings are always separated from the rest of
+### Query string 
+
+Query strings are always separated from the rest of
 the URL by a question mark. Query strings usually contain any name or
 "value pairs" that the client wishes to pass to the server. A value pair
 is the type of information and the actual information joined by an
@@ -108,7 +109,7 @@ question mark denotes the beginning of the query string. The value pair
 travel section.
 
 Another common example of when query strings are used is filling out an
-online form. This example is of the AppNexus
+online form. This example is of the Xandr
 Contact Form:
 
 :::image type="content" source="media/contact-form.png" alt-text="Screenshot of Contact Form .":::

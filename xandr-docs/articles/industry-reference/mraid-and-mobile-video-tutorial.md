@@ -22,7 +22,7 @@ In this section we'll talk about what MRAID is and what it can do in
 combination with HTML and JavaScript. We will also talk about what MRAID
 is not.
 
-**What is MRAID?**
+### What is MRAID?
 
 MRAID is often used as a buzzword to describe mobile rich media
 creatives. In reality, MRAID is a technology designed for a specific use
@@ -34,7 +34,7 @@ After reading this page you should be able to answer questions like:
 - Do I need MRAID for this behavior?
 - Can I run an MRAID creative on this inventory?
 
-This is how the IAB describes MRAID:
+### IAB's MRAID description
 
 MRAID, or “Mobile Rich Media Ad Interface Definitions” is the IAB Mobile
 Marketing Center of Excellence’s project to define a **<u>common
@@ -45,7 +45,7 @@ developers creating rich media ads will use to communicate what those
 ads do (expand, resize, get access to device functionalities such as
 calendar events, etc) with the apps they are being served into.
 
-Let's review the parts I've marked in **bold:**
+Let's review the parts marked above in **bold:**
 
 - **Common API -** MRAID is a common command set that creative
   developers may use. All apps that support MRAID support the same
@@ -64,14 +64,14 @@ Let's review the parts I've marked in **bold:**
 > [!NOTE]
 > All content in this document refers to MRAID 2.0. You can download the full spec from [here](https://www.iab.com/).
 
-**Why do we need MRAID?**
+## MRAID use cases
 
 To explain the need for MRAID, we need to examine the two main use cases
 in which ads are shown on mobile devices; Mobile Web and In-App. There
 is a fundamental difference in the technologies involved in both cases,
 and that difference creates the need for MRAID.
 
-**Mobile web**
+### Mobile web
 
 Mobile web is practically identical to desktop web. Mobile web sites run
 the same HTML5 and JavaScript code that desktop sites run, with some
@@ -85,7 +85,7 @@ both "speak" HTML5/JS, so they can communicate freely with each other.
 The creative can ask the web page to perform actions on the iframe such
 as change its size (expand).
 
-**In-App**
+### In-App
 
 In-app inventory is fundamentally different from mobile web, because the
 app in which the the creative is displayed **is not** running HTML5 and
@@ -112,7 +112,7 @@ The main thing to remember is that HTML5/JS and MRAID are **not mutually
 exclusive** technologies. MRAID was designed so that creatives can use
 HTML5/JS to communicate with native mobile apps.
 
-**What can MRAID do?**
+## MRAID functionality
 
 The main functionality of MRAID is to allow a creative that is running
 on **In-App** inventory to change its size, get information about its
@@ -142,8 +142,7 @@ the user can see:
 - MRAID lets creatives store photos in the device's permanent memory.
 - MRAID lets creatives access the calendar to create calendar events.
 
-That's it.
-
+## MRAID summary
 All the other fancy stuff that you may have seen mobile rich media
 creatives do like drawing, games, and sounds is done in HTML5 and
 JavaScript. That behavior is not the result of MRAID. The reason why
@@ -151,8 +150,6 @@ these creatives are often referred to as MRAID creatives is that MRAID
 has become a synonym for "Mobile Rich Media" creative. The reason for
 that is that these creatives usually need to expand to reveal this
 additional functionality, and in order to expand they need to use MRAID.
-
-To summarize:
 
 - All creatives that use the MRAID API are mobile, in-app, rich media
   creatives.
@@ -166,7 +163,7 @@ own capabilities and behaviors. You can see how MRAID and HTML5 videos
 behave by loading placement ID 2579103, size 300x250, in the [SDK app](https://play.google.com/store/apps/details?id=com.appnexus.opensdkapp). The code for each creative is
 described below.
 
-**What is an advertising SDK?**
+### Advertising SDK
 
 Before we continue, a few words about the term "Advertising SDK" used
 below. A Software Development Kit (SDK) is a piece of code that makes it
@@ -177,10 +174,9 @@ Advertising SDKs perform are:
   space allocated by the app (the WebView).
 - Implement the MRAID API
 
-> [!NOTE]
-> For more information about our mobile SDKs, see [Xandr Mobile SDKs](../mobile-sdk//xandr-mobile-sdks.md)
+For more information about our mobile SDKs, see [Xandr Mobile SDKs](../mobile-sdk//xandr-mobile-sdks.md)
 
-**MRAID video**
+### MRAID video
 
 This is actually the simplest way to auto-play a video, but it has a
 significant drawback because it is impossible to define a click on the
@@ -201,7 +197,7 @@ mraid.addEventListener('ready', function() {
 </script> 
 ```
 
-**HTML5 video**
+### HTML5 video
 
 One thing all mobile ads have in common is that they run in actual web
 browsers. Both the iFrame in a mobile web page and the WebView running
@@ -229,8 +225,7 @@ document.getElementById("videoAd").addEventListener('touchstart', click_thru);
 </body>
 ```
 
-However, there are some complications with HTML5 video due to
-differences between Android and iOS, **and** between phones and tablets:
+### Potential complications with HTML5 Video
 
 - Devices running Android 4.4+ or iOS 6+ **do not** allow HTML5 videos
   to autoplay by default. This means developers have to add the
@@ -262,7 +257,7 @@ differences between Android and iOS, **and** between phones and tablets:
 - It is **not possible** to autoplay HTML5 videos in mobile web
   inventory in **both Android and iOS** at the same time.
 
-**Embedded video players**
+### Embedded video players
 
 This is the most versatile option. Keep in mind that it is SDK-dependent
 and not standard. If the advertising SDK that is running in the app
