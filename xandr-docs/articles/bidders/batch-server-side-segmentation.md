@@ -38,5 +38,5 @@ Features include:
 
 - Step 1: [Map your user IDs with Xandr user IDs](../invest/user-id-mapping-with-getuid-and-mapuid.md).
 - Step 2: Make sure you've set up your BSS account using the instructions in [Initial BSS Account Setup](initial-bss-account-setup.md).
-- Step 3: Upload your file using the instructions in [Uploading Segment Data Using BSS](../digital-platform-api/uploading-segment-data-using-bss.md). Alternately, you could implement [Passive Segment Upload Using AWS S3](passive-segment-upload-using-aws-s3.md). The preferred format is Avro.
+- Step 3: Upload your file using the instructions in [Uploading Segment Data Using BSS](../digital-platform-api/uploading-segment-data-using-bss.md). Alternately, you can implement [Passive Segment Upload Using AWS S3](passive-segment-upload-using-aws-s3.md). The preferred format is Avro.
 - Step 4: Check the status of your file and correct any errors shown in the error logs. You can also see exactly how many valid user IDs you added to each segment in the segment logs.
