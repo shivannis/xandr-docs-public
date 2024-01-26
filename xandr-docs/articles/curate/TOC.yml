@@ -34,8 +34,7 @@
         href: getting-started-with-roles.md
       - name: Member Users Screen
         href: network-users-screen.md
-  - name: Currency Support
-    href: currency-support.md
+  
   - name: Curate API
     href: digital-platform-ui-api-info.md
 - name: Partner Center Guide
@@ -140,6 +139,8 @@
       href: create-an-insertion-order.md
     - name: Update Insertion Orders
       href: update-insertion-orders.md
+  - name: Currency Support
+    href: currency-support.md
   - name: The Universal Pixel
     items:
     - name: Overview
