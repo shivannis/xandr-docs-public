@@ -105,15 +105,15 @@
     - name: Managing User Logins and Permissions
       items:
        - name: Overview 
-        href: managing-user-logins-and-permissions.md
-      - name: Manage Your Username and Password
-        href: manage-your-username-and-password.md
-      - name: Learn About Partner Single Sign-on Access
-        href: learn-about-partner-single-sign-on-access.md
-      - name: Create a User
-        href: create-a-user.md
-      - name: Edit a Network User
-        href: edit-a-network-user.md
+         href: managing-user-logins-and-permissions.md
+       - name: Manage Your Username and Password
+         href: manage-your-username-and-password.md
+       - name: Learn About Partner Single Sign-on Access
+         href: learn-about-partner-single-sign-on-access.md
+       - name: Create a User
+         href: create-a-user.md
+       - name: Edit a Network User
+         href: edit-a-network-user.md
     - name: Roles
       items:
       - name: Getting Started with Roles
