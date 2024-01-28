@@ -14,6 +14,7 @@ Xandr tags. It depends on their original ad
 serving solution and the ways in which they wish to modify that solution
 with Xandr services.
 
+## Implementation
 There are two main implementations for selling inventory through
 Xandr:
 
