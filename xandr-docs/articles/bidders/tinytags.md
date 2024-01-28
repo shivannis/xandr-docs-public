@@ -65,25 +65,25 @@ Please see [Dynamic TinyTag Parameters](dynamic-tinytag-parameters.md) for detai
 
 ## Sample tags
 
-Tiny Tag called via iframe with a tt call
+### Tiny Tag called via iframe with a tt call
 
 ``` 
 <iframe height="250" frameborder="0" width="300" scrolling="no" src="https://ib.adnxs.com/tt?id=1234" ></iframe>
 ```
 
-Tiny Tag called via Javascript with a ttj call
+### Tiny Tag called via Javascript with a ttj call
 
 ``` pre
 <script src="https://ib.adnxs.com/ttj?id=1234"   type="text/javascript"></script>
 ```
 
-Tiny Tag called using codes via iframe
+### Tiny Tag called using codes via iframe
 
 ``` 
 <iframe height="250" frameborder="0" width="300" scrolling="no" src="https://ib.adnxs.com/tt?member=1&inv_code=abcdef" ></iframe>
 ```
 
-Tiny Tag called using codes via Javascript
+### Tiny Tag called using codes via Javascript
 
 ``` 
 <script src="https://ib.adnxs.com/ttj?member=1&inv_code=abcdef"  type="text/javascript"></script>
