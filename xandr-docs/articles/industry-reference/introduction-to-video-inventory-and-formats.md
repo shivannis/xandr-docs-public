@@ -1,33 +1,35 @@
 ---
-title : Introduction to Video Inventory and Formats
-description : Learn about out-stream video, in-banner video, VAST, VPAID, MRAID and VMAP.     
-ms.date : 10/28/2023
-ms.custom : industry-reference
+title: Introduction to Video Inventory and Formats
+description: Learn about out-stream video, in-banner video, VAST, VPAID, MRAID and VMAP.     
+ms.date: 10/28/2023
+ms.custom: industry-reference
 ---
 
 
 # Introduction to video inventory and formats
 
-## What is in-stream video?
+This article explains about different types of creatives, VAST protocol, VPAID and two types of VPAID modules, API application like MRAID, and VMAP which is a form of “ad podding.” 
+
+## In-stream video
 
 In-stream video creatives are played in video players on web pages. They
 are played before, in the middle of, or after other video content, and
 use VAST XML to ensure proper rendering in the players.
 
-## What is out-stream video?
+## Out-stream video
 
 Out-stream video ads are those that are embedded within the body of an
 article, mostly set to auto-play when the reader reaches the part of the
 page that contains the ad. The sound is usually not activated unless the
 reader hovers over the ads with their mouse. 
 
-## What is in-banner video?
+## In-banner video
 
 In-banner video creatives are played in banner placements rather than in
 video players. The ad buyer must serve the video player code and the
 VAST video creative together.
 
-## What is VAST?
+## VAST
 
 VAST stands for Video Ad Serving Template. It is an XML-based video ad
 serving protocol that provides a uniform way for video content to be
@@ -42,7 +44,7 @@ completions, and completed views. Pure linear VAST is common in mobile
 video. For more details about VAST, see the Interactive Advertising
 Bureau's VAST documentation at [IAB Guidelines for VAS](https://www.iab.com/).
 
-## What is VPAID?
+## VPAID
 
 VPAID stands for Video Player Ad-Serving Interface Definition. There are
 two types of VPAID modules, JavaScript (.js) and Flash (.swf). A VPAID
@@ -55,7 +57,7 @@ order to:
 
 For more information about VPAID, see the [IAB Guidelines for VPAID](https://www.iab.com/).
 
-## What is MRAID?
+## MRAID
 
 Mobile Rich Media Ad Interface Definitions (MRAID) is a common API
 (Application Programming Interface) that allows advertisers to create
@@ -68,7 +70,7 @@ in small areas of the screen.
 For more information regarding MRAID, see our [MRAID and Mobile Video Tutorial](mraid-and-mobile-video-tutorial.md) or
 the [IAB Guidelines for MRAID](https://www.iab.com/).
 
-## What is VMAP?
+## VMAP
 
 Video Multiple Ad Playlist (VMAP) is a form of “ad podding.” It allows
 sellers to create commercial breaks, similar to linear broadcast TV, and

@@ -17,7 +17,7 @@ Ad tags are used for many purposes in display advertising:
 These tags are all essentially the same in structure: They are all requests for content of a certain size and type from a certain URL. The
 content is either a creative or another ad tag and it may be returned immediately in one step or after multiple steps (an auction, redirects, etc.) each with its own tag. An ad tag may look very long and complicated if information about the ad call is included in the tag itself, or it might be very short and simple if ad call information is stored in the server to which the tag's URL is pointed.
 
-## How does an Ad tag work?
+## Working of an Ad tag
 
 :::image type="content" source="media/how-ad-tags-work.png" alt-text="Diagram of How ad tags and bid work.":::
 
@@ -28,7 +28,7 @@ Here's a simple example of how ad tags move through different systems. The examp
 1. The ad server then passes an ad tag to the advertisers. Depending on the publisher-advertiser relationship, this may mean simply directly requesting ads for guaranteed buys, or it may involve requesting bids from multiple advertisers and carrying out an auction to determine the most profitable result for the publisher.
 1. The ad server delivers the creative (the ad) to the browser. Typically, this means returning an ad tag with a creative URL, with the creative itself hosted on an independent content server. For more information about creatives, see [Creatives: An Overview](creatives.md).
 
-## What does an Ad tag look like?
+## How an Ad tag looks 
 
 An ad tag has two parts:
 
@@ -67,18 +67,18 @@ This is what the different elements of the JavaScript are doing:
 Most people dealing with ad tags (publishers, who need tags to put on their inventory pages, and advertisers, who may use tags to direct a
 browser to their creative) aren't hand building tags; they are inputting their page information or creatives into their ad server's user interface, which creates a properly formatted ad tag for them.
 
-## Further examples
+## Additional examples
 
 There are many permutations of ad tag syntax depending on what the tag is doing and whether the ad tag info is on the page or in a server.
 
-A publisher ensures that the ad is an iframe.
+### A publisher ensures that the ad is an iframe
 
 ``` 
 <iframe src="http://ib.adnxs.com/tt?id=1234" width=160 height=600 
 scrolling=no frameborder=0 padding=0></iframe>
 ```
 
-A Google AdSense tag
+### A Google AdSense tag
 
 ``` 
 <script type="text/javascript"><!--
@@ -96,7 +96,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 Even though it looks like a piece of the tag is commented out with "!–", this isn't really the case. Some scripting engines, including those for JavaScript, allow the script statements to be enclosed in a comment. Then a browser that doesn't recognize the JavaScript element will ignore the comment, but others will execute it. This particular faux comment is passing information to the Google ad server in order to determine the right ad to show on the page.
 
-A publisher provides alternate content for browsers with JavaScript disabled.
+### A publisher provides alternate content for browsers with JavaScript disabled
 
 ``` 
 <SCRIPT type="text/javascript"

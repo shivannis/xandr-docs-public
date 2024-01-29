@@ -53,8 +53,7 @@ on a homepage, where no other ad is shown.
 There are a few main ways of pricing media: CPM, CPA, and CPC. Generally, the price of an impression is determined by what buyers are willing to pay in real-time, as well as the quality of the product.
 This type of buying means that ads can be targeted to specific user groups or segments, and budgets can be managed in real-time.
 
-> [!NOTE]
-> RTB operates on a second price auction model. This means that the highest bidder wins the auction but pays $0.01 more than the second-highest bid. Second price auctions allow a more accurate valuation of the item up for auction.
+ RTB operates on a second price auction model. This means that the highest bidder wins the auction but pays $0.01 more than the second-highest bid. Second price auctions allow a more accurate valuation of the item up for auction.
 
 ### CPM
 
@@ -63,9 +62,7 @@ CPM (cost per mille) is where the advertiser pays a flat amount per 1000 impress
 - As a buyer, a $1 CPM price means that if my ad is shown 1000 times, I pay $1.
 - As a seller, a $1 CPM price means that I'll receive $1 for every thousand ads I display.
 
-> [!NOTE]
-> **vCPM** or viewable cost per 1000 impressions means that an advertiser only pays when an ad is shown
-> on screen for a certain period of time (typically based off IAB [International Advertising Bureau] standards).
+**vCPM** or viewable cost per 1000 impressions means that an advertiser only pays when an ad is shown on screen for a certain period of time (typically based off IAB [International Advertising Bureau] standards).
 
 ### CPC
 

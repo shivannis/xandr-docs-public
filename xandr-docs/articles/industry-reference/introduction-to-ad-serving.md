@@ -1,8 +1,8 @@
 ---
-title : Introduction to Ad Serving
-description : Learn what Ad Serving is and how it works.
-ms.date : 10/28/2023
-ms.custom : industry-reference
+title: Introduction to Ad Serving
+description: Learn what Ad Serving is and how it works.
+ms.date: 10/28/2023
+ms.custom: industry-reference
 ---
 
 
@@ -26,7 +26,7 @@ tag consumers via their browser's [cookie file](online-advertising-and-ad-tech-g
 parties to segment consumers and collect data on ad effectiveness on an
 individual level.
 
-## Who is involved in online advertising?
+## Different parties involved in online advertising
 
 Many different parties interact in the online advertising ecosystem:
 
@@ -76,7 +76,7 @@ exchange data, set prices, and ultimately serve an ad.  Major ad
 exchanges include DoubleClick, OpenX, Facebook's FBX, and
 Xandr.
 
-## What is Ad serving?
+## Ad serving overview
 
 Ad serving is the process of determining which advertisement goes in
 which ad slot on a publisher's webpage or mobile app and then delivering
@@ -104,7 +104,7 @@ decisioning systems, and others are major ad servers used by many
 clients such as Xandr or Google's various ad
 serving products.
 
-## How does Ad serving work?
+## Working of Ad serving
 
 :::image type="content" source="media/working-of-ad-serving.png" alt-text="Screenshot of How Does Ad Serving Works .":::
 
@@ -162,11 +162,4 @@ the hops that go into a single impression event, please see [Ad Tags](ad-tags.md
 
 - [Ad Tags](ad-tags.md)
 - [Creatives](creatives.md)
-- [The race to the single platform has begun](https://digiday.com/sponsored/appnexusbcs-005-131729/). Xandr Senior Vice President of
-  Corporate Marketing wrote this in 2015 with a focus on the ad tech
-  ecosystem and its different participants.
-- [A blog post on the technical side of ad
-  serving](http://www.mikeonads.com/2007/05/01/the-ad-exchange-model-part-i/). Former Xandr CTO Mike Nolet wrote
-  this in 2007 with a focus on the relatively new role of ad networks. 
-  It's still accurate.
-- [Wikipedia on ad serving](https://en.wikipedia.org/wiki/Advertising_network)
+

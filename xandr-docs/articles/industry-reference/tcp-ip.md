@@ -7,9 +7,9 @@ ms.custom: industry-reference
 
 # TCP-IP
 
-Now that we've learned about HTTP, I'm going to talk about how browsers and clients actually send and receive HTTP requests and responses to and from each other. I'm going to compare an HTTP response to the process of
+Now that we've learned about HTTP, this article reviews how browsers and clients actually send and receive HTTP requests and responses to and from each other. We are going to compare an HTTP response to the process of
 a package being sent to you in the mail. If you ordered cheese online it would be pretty gross if the mailman left unwrapped pieces of cheese in your mail box. So the cheese store takes the time to wrap the cheese in
-plastic wrap, cover it in packing peanuts and slap a mailing label on the box.
+plastic wrap, cover it in packing peanuts and attach a mailing label on the box.
 
 During delivery, the post office first reads the zip code and sends it to the local post office, which then reads the address and sends it to your building. When you see it on your front step you know it's for you
 because it says your apartment number and your name, not your roommate's name. Then you open the box, pull the cheese out, unwrap the cheese and enjoy a slice. Without the labeling and packaging the cheese would not
@@ -17,10 +17,11 @@ have found its way to you, clean and edible.
 
 :::image type="content" source="media/tcp-ip.png" alt-text="The screenshot that demonstrates the process of opening the box, extracting the cheese, unwrapping it, and savoring a slice that emphasizes that proper labeling and packaging are crucial for ensuring the cleanliness and edibility of the delivered cheese..":::
 
-## TCP/IP (our wiki software does not allow "/" in page titles)
+> [!NOTE]
+> Our wiki software does not allow "/" in page titles, like **TCP/IP**. 
 
 Like the cheese, HTTP Requests and Responses need to be labeled and packaged correctly to travel from the client to the intended server and back. Your HTTP Request/Responses are sent across the Internet and back
-in the following "layers."
+in the following "layers." These are the first three layers that allow an HTTP Request/Response to be sent through the internet intact and to the right destination.
 
 **Application Layer:** In our use case, the application would be HTTP, or the cheese itself. This can be any application, such as FTP or Telnet. This is the request/response.
 
@@ -31,4 +32,4 @@ piece. TCP ensures all HTTP packets are delivered and put in order.
 actually go to in the Network. The URL address is used by Domain Name Systems to map to the IP address. For HTTP URL, the port defaults to Port 80 which is the standard HTTP port. We'll talk more about ports
 later.
 
-These are the first three layers that allow an HTTP Request/Response to be sent through the internet intact and to the right destination.
+

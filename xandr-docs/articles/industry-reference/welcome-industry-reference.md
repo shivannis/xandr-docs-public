@@ -13,9 +13,10 @@ This guide is for anyone who wants to learn more about online advertising and ad
 - How ad trading and ad serving work
 - Key industry terms that will help you understand online advertising and ad tech
 - Important issues related to online advertising and the Internet, like privacy and data collection
-  Please browse our table of contents below to see our current topics and pages, and be sure to visit the Industry Reference regularly for new updates, articles, and information on the world of ad tech.
-
+  
 ## Contents
+
+Please browse our table of contents below to see our current topics and pages, and be sure to visit the Industry Reference regularly for new updates, articles, and information on the world of ad tech.
 
 - [Online Advertising and Ad Tech Glossary](online-advertising-and-ad-tech-glossary.md):
    Provides definitions of commonly used industry terms.

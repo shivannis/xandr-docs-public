@@ -1,12 +1,12 @@
 ---
-title :  Online Advertising Self-Regulatory Organizations
-description : Online advertising self-regulatory organizations are independent bodies
-ms.date : 10/28/2023
-ms.custom : industry-reference
+title: Industry Reference - Online Advertising Organizations (Self-Regulatory)
+description: Learn who the key organizations are, what they do, key projects, working groups, and their objectives in this page. 
+ms.date: 10/28/2023
+ms.custom: industry-reference
 ---
 
 
-# Online advertising self-regulatory organizations
+# Industry Reference - Online advertising organizations (self-regulatory)
 
 Online advertising self-regulatory organizations are independent bodies
 of experts and advertising technology professionals that help to
@@ -169,8 +169,8 @@ Trustworthy Accountability Group (TAG) is devoted to cross-industry
 collaboration to foster transparency in digital advertising business
 relationships and transactions. TAG focuses on four core areas:
 "[eliminating fraudulent digital advertising traffic](https://www.tagtoday.net/fraud),
-[combating malware](https://www.tagtoday.net/threat-sharing),
-[fighting ad-supported Internet piracy](https://www.tagtoday.net/brand-safety) to promote
+[SHARE THREAT INTELLIGENCE](https://www.tagtoday.net/threat-sharing),
+[PROMOTE BRAND SAFETY](https://www.tagtoday.net/brand-safety) to promote
 brand integrity, and promoting brand safety through
 [greater transparency](https://www.tagtoday.net/transparency/)."   
   

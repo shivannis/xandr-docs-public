@@ -1,13 +1,13 @@
 ---
-title : Industry Reference - Introduction to Viewability
-description : Learn about viewability and how it can be measured in Digital Media.
-ms.date : 10/28/2023
-ms.custom : industry-reference
+title: Industry Reference - Introduction to Viewability
+description: Learn about viewability and how it can be measured in Digital Media.
+ms.date: 10/28/2023
+ms.custom: industry-reference
 ---
 
 # Industry Reference - Introduction to viewability
 
-## What is viewability and why is it important?
+## Importance of viewability
 
 Marketers buy media to reach "eyeballs" in an effort to create awareness
 for their brand and influence consumers. If a marketer's advertisement
@@ -17,7 +17,7 @@ all advertising. Digital media presents a unique and exciting
 opportunity to directly measure whether an ad was in-view of a
 consumer. 
 
-**Viewability in digital media**
+### Viewability in digital media
 
 Presently, most online ads are paid for the moment they are served on a
 page, the moment the page starts loading. Depending on where the ad is
@@ -41,7 +41,7 @@ could mean that visitors to the website are very likely to convert, it
 is possible the ads served on the page were not responsible for driving
 the user to conversion.
 
-**Viewability grows up**
+### Viewability grows up
 
 Over time, viewability has become an increasingly available and trusted
 metric for digital media.
@@ -63,7 +63,7 @@ Today, viewability is commonly used to assess the quality and value of
 digital media, and it is often included as a mandatory goal in
 advertisers' campaigns.
 
-**Advertiser impact**
+### Advertiser impact
 
 Viewability is useful to the buy-side because it allows buyers to select
 web sites that provide good quality exposure. Branding campaigns can
@@ -78,7 +78,7 @@ ads are in-view increasing the chance for potential conversions.
 Viewability could also allow buyers to use new attribution models for
 post-view conversions.
 
-**Publisher impact**
+### Publisher impact
 
 Because more and more buyers value media based on viewability metrics,
 publishers have incentive to be aware of how viewable their sites are.
@@ -86,7 +86,7 @@ Understanding and managing viewability for inventory presents the
 opportunity to create high viewability packages and improve overall
 inventory quality.
 
-## How does viewability measurement work?
+## Measuring viewability
 
 Viewability measurement is the technological answer to a longer-lasting
 business need. In order for a creative to be viewable, all the following
@@ -114,7 +114,7 @@ who is served the creative.
 Viewability measurement is, by its nature, an exhaustive measurement of
 every single impression.
 
-**Technical summary**
+### Technical summary
 
 Viewability measurement is achieved by javascript embedded within the
 creative. This script is called for each individual ad-impression. It
@@ -130,7 +130,7 @@ factors such as scrolling and window focus. However, if only a part of
 the required information is available, other techniques must be used so
 that the measurement is consistent across all platforms.
 
-**Technical challenges**
+### Technical challenges
 
 Viewability measurement must work in all environments and provide
 consistent results. IFrames are the most challenging of technical
@@ -142,7 +142,7 @@ potential success rate can be very limited.
 
 :::image type="content" source="media/technical-challenges.png" alt-text="Screenshot of Technical Challenges .":::
 
-**Using viewability data**
+### Using viewability data
 
 Several aggregations are feasible from impression-level viewability
 data. The most common metrics include:
