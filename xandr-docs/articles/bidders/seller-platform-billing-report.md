@@ -1,26 +1,20 @@
 ---
-title : Seller Platform Billing Report
+title: Seller Platform Billing Report
 description: Learn how Suppliers gather transaction information using the Seller Platform Billing Report to invoice buyers or reconcile their internal transaction records.   
-ms.date : 11/27/2023
+ms.date: 11/27/2023
 ---
-
 
 # Seller platform billing report
 
-Learn about Seller Platform Billing Report in this page. 
+Learn about Seller Platform Billing Report in this page.
 
-## Seller Platform Billing Report
+Suppliers gather transaction information using the Seller Platform Billing Report to invoice buyers or reconcile their internal transaction records.
 
-Suppliers gather transaction information using the Seller Platform
-Billing Report to invoice buyers or reconcile their internal transaction
-records.
-
-For instructions on retrieving a report, see the Example below.
+For instructions on retrieving a report, see the [Example](#example) below.
 
 ## Time frame
 
-The `report_interval` field in the JSON request can be set to one of the
-following:
+The `report_interval` field in the JSON request can be set to one of the following:
 
 - `current_hour`
 - `last_hour`
@@ -90,15 +84,9 @@ following:
 
 ## Example
 
-**Create the JSON-formatted report request**
+### Create the JSON-formatted report request
 
-The JSON file should include the `report_type`
-`"seller_invoice_report"`, as well as the `columns` (dimensions and
-metrics) and `report_interval` that you want to retrieve. You can also
-filters for specific dimensions, define granularity (year, month, day),
-and specify the format in which the data should be returned (csv, excel,
-or html). For a full explanation of fields that can be included in the
-JSON file, see the [Report Service](report-service.md).
+The JSON file should include the `report_type` `"seller_invoice_report"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filters for specific dimensions, define granularity (year, month, day), and specify the `format` in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
 
 ``` 
 $ cat report {
@@ -112,7 +100,7 @@ $ cat report {
 > [!NOTE]
 > To order by day, insert this object into your JSON file after the "columns" array: `"orders": ["day"]`
 
-**POST the request to the Reporting Service**
+### `POST` the request to the Reporting Service
 
 ``` 
 $ curl -b cookies -c cookies
@@ -121,12 +109,9 @@ $ curl -b cookies -c cookies
             }
 ```
 
-**GET the report status from the Report Service**
+### `GET` the report status from the Report Service
 
-Make a `GET` call with the Report ID to retrieve the status of the
-report. Continue making this `GET` call until the {{execution_status}}
-is "ready". Then use the \*report-download\* service to save the report
-data to a file, as described in the next step.
+Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the `{{execution_status}}`is `"ready"`. Then use the \*report-download\* service to save the report data to a file, as described in the next step.
 
 ``` 
 $ curl -b cookies -c
@@ -136,17 +121,12 @@ $ curl -b cookies -c
             }
 ```
 
-**GET the report data from the Report Download Service**
+### `GET` the report data from the Report Download Service
 
-To download the report data to a file, make another `GET` call with the
-Report ID, but this time to the \*report-download\* service. You can
-find the service and Report ID in the {{url}} field of the previous
-`GET` response. When identifying the file that you want to save to, be
-sure to use the file extension of the "format" that you specified in
-your initial `POST`.
+To download the report data to a file, make another `GET` call with the Report ID, but this time to the \*report-download\* service. You can find the service and Report ID in the `{{url}}` field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the "format" that you specified in your initial `POST`.
 
-> [!TIP]
-> If an error occurs during download, the response header will include an HTTP error code and message. Use {{-i}} or {{-v}} in your call to expose the response header.
+- If an error occurs during download, the response header will include an HTTP error code and message. Use `{{-i}}` or `{{-v}}` in your call to expose the response header.
+- Use the ID that was given in the response from when you initially posted the report.
 
 ``` 
 $ curl -b cookies -c cookies
@@ -154,13 +134,9 @@ $ curl -b cookies -c cookies
                report.csv
 ```
 
-> [!NOTE]
-> Use the id that was given in the response from when you initially posted the report.
-
 ## Schedule a frequently run report
 
-You can schedule reports that you would like to pull regularly. See the
-[Saved Report Service](saved-report-service.md) for more information.
+You can schedule reports that you would like to pull regularly. See the [Saved Report Service](saved-report-service.md) for more information.
 
 ## Related topics
 

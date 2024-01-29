@@ -36,7 +36,7 @@ Xandr API services are "RESTful." REST (Representational State Transfer) is a ty
 | PUT | update/modify |
 | DELETE | delete |
 
-In our documentation we use [cURL](https://www.php.net/curl) to make REST requests. cURL is a command line tool for transferring files with URL syntax, supporting FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP, TELNET, DICT, LDAP, LDAPS, and FILE. The example scripts on each API wiki page will make clear the structure of the cURL commands you will need to run Xandr's API Services.
+In our documentation we use [cURL](https://www.php.net/curl) to make REST requests. cURL is a command line tool for transferring files with URL syntax, supporting FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP, TELNET, DICT, LDAP, LDAPS, and FILE. The example scripts on each API wiki page will make clear the structure of the `cURL` commands you will need to run Xandr's API Services.
 
 ## Append on PUT
 
@@ -69,7 +69,7 @@ For example (partial output of a meta call):
             }
 ```
 
-## Limiting GET request records
+## Limiting `GET` request records
 
 Adding this string to the end of any GET request to the API will limit the number of records retrieved:
 
@@ -125,7 +125,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/creative?member_id=123,987'
 > [!NOTE]
 > The maximum number of objects that can be returned per request, regardless of pagination, is 100. If you request over 100 objects, we will only return the first 100 and will not provide an error message.
 
-### Filter by Min and Max Values
+### Filter by `Min` and `Max` Values
 
 Fields that are of the type `int`, `double`, `date`, or `money` can be filtered by `min` and `max`. For example:
 
@@ -176,7 +176,7 @@ We support the following additional field-based filters on API responses:
 - `having_min_*`
 - `having_max_*`
 
-**Example**:
+**Example**
 
 ```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/creative?like_[fieldName]=partialValue'
@@ -184,7 +184,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/creative?like_[fieldName]=pa
 
 ## JSON field values
 
-POST and PUT requests require JSON-formatted data. POST request generally create objects in the database, and thus require all of the information about that object (unless it is subsequently modified by a PUT request). For PUT requests, only the JSON fields included in a request will be updated. All other fields will be unchanged.
+`POST` and `PUT` requests require JSON-formatted data. `POST` request generally create objects in the database, and thus require all of the information about that object (unless it is subsequently modified by a PUT request). For `PUT` requests, only the JSON fields included in a request will be updated. All other fields will be unchanged.
 
 Different fields require different types of values.
 
@@ -244,5 +244,4 @@ The `"error"` field is useful for debugging purposes, as it contains a verbose d
 
 ## Related topics
 
-- [API Services](api-services.md)
-- [Bidder API Services](bidder-api-services.md)
+[Bidder API Services](bidder-api-services.md)

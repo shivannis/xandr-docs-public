@@ -53,4 +53,4 @@ examples of non-breaking changes.
 ## Receiving breaking change notifications
 
 - If you have a Xandr user account, you will receive breaking change communications automatically.
-- If you do not have your own Xandr user account, you can sign up to receive communications at [https://www.appnexus.com/en/subscribe](https://www.appnexus.com/en/subscribe).
+- If you do not have your own Xandr user account, you can sign up to receive communications at the [Microsoft Advertising Xandr site](https://about.ads.microsoft.com/en-us/solutions/xandr/xandr-premium-programmatic-advertising).

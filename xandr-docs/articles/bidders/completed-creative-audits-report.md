@@ -1,23 +1,18 @@
 ---
-title : Bidders - Completed Creative Audits Report
-description : Learn about Completed Creative Audits Report that gives you insight into how your creatives are moving through the audit process.
-ms.date : 11/22/2023
-
+title: Bidders - Completed Creative Audits Report
+description: Learn about Completed Creative Audits Report that gives you insight into how your creatives are moving through the audit process.
+ms.date: 11/22/2023
 ---
-
 
 # Bidders - Completed creative audits report
 
-The **Completed Creative Audits Report** is designed to give you insight
-into how your creatives are moving through the audit process. Using this
-report, you can find out:
+The **Completed Creative Audits Report** is designed to give you insight into how your creatives are moving through the audit process. Using this report, you can find out:
 
 - How many of your creatives have been audited over a given time frame
 - Which of your creatives have completed audit
 - How much your creative audit fees will be
 
-See the [Example](#example) below for instructions on retrieving this
-report.
+See the [Example](#example) below for instructions on retrieving this report.
 
 > [!TIP]
 > For more information about how reporting works, see the [Report Service](report-service.md).
@@ -26,8 +21,7 @@ This report's data is retained for 90 days.
 
 ## Time frame
 
-The `report_interval` field in the JSON request must be set to one of
-the following:
+The `report_interval` field in the JSON request must be set to one of the following:
 
 - `yesterday`
 - `last_7_days`
@@ -60,7 +54,7 @@ the following:
 
 ## Example
 
-**Create the JSON report request**
+### Create the JSON report request
 
 ``` 
 $ cat completed-creative-audits.json
@@ -89,7 +83,7 @@ $ cat completed-creative-audits.json
 }
 ```
 
-**POST the request data to the Reporting Service**
+### `POST` the request data to the Reporting Service
 
 ``` 
 $ curl -b cookies -X POST -d @completed-creative-audits.json https://api.adnxs.com/report
@@ -105,7 +99,7 @@ $ curl -b cookies -X POST -d @completed-creative-audits.json https://api.adnxs.c
 }
 ```
 
-**GET the report data**
+### `GET` the report data
 
 ``` 
 $ curl -b cookies https://api.adnxs.com/report/c2c682185b62ec9afd019536a8d947cc
@@ -148,7 +142,6 @@ User:,Rick Land (14311)
 - [Bidder Platform Buyer Report](bidder-platform-buyer-report.md)
 - [Bidder Billing Report API](bidder-billing-report-api.md)
 - [Platform Seller Report](platform-seller-report.md)
-- [seller-platform-billing-report.md](seller-platform-billing-report.md)
+- [Seller platform billing report](seller-platform-billing-report.md)
 - [Inventory Availability Reporting](inventory-availability-report.md)
 - [Reporting Timezones](reporting-timezones.md)
-

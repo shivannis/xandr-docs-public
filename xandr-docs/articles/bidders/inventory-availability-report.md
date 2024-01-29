@@ -50,9 +50,9 @@ Data in this report is retained for 30 days.
 
 ## Example
 
-**Create the JSON-formatted report request**
+### Create the JSON-formatted report request
 
-The JSON file should include the `report_type` of `"platform_inventory_availability"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (year, month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
+The JSON file should include the `report_type` of `"platform_inventory_availability"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the `format` in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 
 >
 
@@ -78,9 +78,7 @@ $ cat platform_inventory_availability
 }
 ```
 
-**`POST` the request to the report service**
-
->
+### `POST` the request to the report service
 
 ```
 $ curl -b cookies -X POST -d @platform_inventory_availability 'https://api.appnexus.com/report'
@@ -93,9 +91,7 @@ $ curl -b cookies -X POST -d @platform_inventory_availability 'https://api.appne
 }
 ```
 
-**`GET` the report status from the report service**
-
->
+### `GET` the report status from the report service
 
 ```
 $ curl -b cookies 'https://api.appnexus.com/report?id=6b177543a9411ffa67b09bdf5e76cac1'
@@ -113,16 +109,15 @@ $ curl -b cookies 'https://api.appnexus.com/report?id=6b177543a9411ffa67b09bdf5e
 }
 ```
 
-**`GET` the report data from the report download service**
+### `GET` the report data from the report download service
 
 To download the report data to a file, make another `GET` call with the Report ID, but this time to the **report-download** service. You can find the service and Report ID in the `url` field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the `"format"` that you specified in your initial `POST`.
 
 > [!NOTE]
-> If an error occurs during download, the response header will include an HTTP error code and message. Use `-i` or `-v` in your call to expose the response header.
+> - If an error occurs during download, the response header will include an HTTP error code and message. Use `-i` or `-v` in your call to expose the response header.
+>
+> - There is a limit of 100,000 rows per report when you download them as XLSX and Excel file.
 
 ```
 $ curl -b cookies 'https://api.appnexus.com/report-download?id=6b177543a9411ffa67b09bdf5e76cac1' > /tmp/platform_inventory_availability.csv
 ```
-
-> [!NOTE]
-> There is a limit of 100,000 rows per report when you download them as XLSX and Excel file.

@@ -1,64 +1,50 @@
 ---
-title : Bidders - Currency Service
-description : This page discusses about Currency service that shows you the list of currencies that you can set a line-item or insertion-order to use.  
-ms.date : 11/21/2023
-
+title: Bidders - Currency Service
+description: This page discusses about Currency service that shows you the list of currencies that you can set a line-item or insertion-order to use.  
+ms.date: 11/21/2023
 ---
-
 
 # Bidders - Currency service
 
 > [!WARNING]
 > The API Currency Service is available to clients solely to reconcile amounts paid or received by them resulting from their transactions through the Xandr Platform and may not be used by clients for any other purpose.
 
-This is a read-only service that shows you the list of currencies that
-you can set a line-item or insertion-order to use. 
+This is a read-only service that shows you the list of currencies that you can set a line-item or insertion-order to use.
 
-For buy side Open RTB for bidders, you can send currencies other than
-USD in the outgoing bid request to bidders and accept other currencies
-in the response. In order for a bidder to change currency of their bid,
-they must send the "cur" field. If the "cur" field is not specified, it
-will be defaulted to USD. A bidder can respond with any currency,
-regardless of what value is set in the default currency. They just need
-to indicate the currency in the "cur" field and no additional enablement
-is required. 
+For buy side Open RTB for bidders, you can send currencies other than USD in the outgoing bid request to bidders and accept other currencies in the response. In order for a bidder to change currency of their bid, they must send the `"cur"` field. If the `"cur"` field is not specified, it will be defaulted to USD. A bidder can respond with any currency, regardless of what value is set in the default currency. They just need to indicate the currency in the `"cur"` field and no additional enablement is required.
 
-For sell side Open RTB, by default USD is used as currency where the
-"cur" field is ignored. If the seller member has a member entitlement
-for seller_bid_currency explicitly set up, the "cur" field in bid
-requests is respected.
+For sell side Open RTB, by default USD is used as currency where the `"cur"` field is ignored. If the seller member has a member entitlement for `seller_bid_currency` explicitly set up, the `"cur"` field in bid requests is respected.
+
+Exchange rates are sourced **once daily** from [Oanda](https://www.oanda.com/) at approximately **3:00 a.m. UTC**.
 
 ## REST API
 
-| HTTP Method | Endpoint                                                                        | Example                                                |
-|-------------|---------------------------------------------------------------------------------|--------------------------------------------------------|
-| GET         | [https://api.adnxs.com/currency](https://api.adnxs.com/currency)                                                  | View all available currencies.                         |
-| GET         | [https://api.adnxs.com/currency?code=CURRENCY_CODE](https://api.adnxs.com/currency?code=CURRENCY_CODE)                               | View a specific currency.                              |
-| GET         | [https://api.adnxs.com/currency?code=CURRENCY_CODE&show_rate=true](https://api.adnxs.com/currency?code=CURRENCY_CODE&show_rate=true)                | View a currency's exchange rate for today.             |
-| GET         | [https://api.adnxs.com/currency?show_rate=true&code=CURRENCY_CODE&ymd=2020-03-01](https://api.adnxs.com/currency?show_rate=true&code=CURRENCY_CODE&ymd=2020-03-01) | View a currency's exchange rate for a day in the past. | 
-
-> [!TIP]
-> Exchange rates are sourced **once daily** from <a href="https://www.oanda.com/" class="xref" target="_blank">Oanda</a> at approximately **3:00 a.m. UTC**.
+| HTTP Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `https://api.appnexus.com/currency` | View all available currencies |
+| `GET` | `https://api.appnexus.com/currency?code=CURRENCY_CODE` | View a specific currency |
+| `GET` | `https://api.appnexus.com/currency?code=CURRENCY_CODE&show_rate=true` | View a currency's exchange rate for today |
+| `GET` | `https://api.appnexus.com/currency?show_rate=true&code=CURRENCY_CODE&ymd=2012-03-01` | View a currency's exchange rate for a day in the past |
 
 ## JSON fields
 
-| Fields        | Type    | Description                                                                                                                                                                                          |
-|---------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `as_of`         | string  | The date and time that [Oanda](https://www.oanda.com/foreign-exchange-data-services/en/) last updated the exchange rate in UTC. We pull the rates from Oanda every day at 3:00 a.m. UTC. This is returned only when you pass `show_rate=true` in the query string. |
-| `code`          | string  | The code for the currency.                                                                                                                                                                           |
-| `description`   | string  | A description of the currency.                                                                                                                                                                       |
-| `is_exposed`    | boolean | If true, the currency is exposed.                                                                                                                                                                    |
-| `last_modified` | string  | The date and time when the currency was last modified. (See Below **Note**)                                                                                                                              |
-| `name`          | string  | The full name of the currency.                                                                                                                                                                       |
-| `position`      | enum    | Whether the currency symbol appears before or after the amount. Possible values: "before" or "after".                                                                                                |
-| `rate_per_usd`  | double  | The exchange rate. This is returned only when you pass `show_rate=true` in the query string.                                                                                                           |
-| `symbol`        | string  | The symbol for the currency, e.g. "$" for USD, "€" for Euro                                                                                                                                          |
+| Fields | Type | Description |
+|---|---|---|
+| `as_of` | string | The date and time that Oanda last updated the exchange rate in UTC. We pull the rates from Oanda every day at 3:00 a.m. UTC. This is returned only when you pass `show_rate=true` in the query string. |
+| `code` | string | The code for the currency. |
+| `description` | string | A description of the currency. |
+| `is_exposed` | boolean | If `true`, the currency is exposed. |
+| `last_modified` | string | The date and time when the currency was last modified. (See **Note** *) |
+| `name` | string | The full name of the currency. |
+| `position` | enum | Whether the currency symbol appears before or after the amount. Possible values: `"before"` or `"after"`. |
+| `rate_per_usd` | double | The exchange rate. This is returned only when you pass `show_rate=true` in the query string. |
+| `symbol` | string | The symbol for the currency, e.g. "`$"` for USD |
+
+To show conversion rates, pass `show_rate=true` in the URL. You can also retrieve a past day's rate by passing in `ymd=YYYYMMDD` via the URL.
 
 > [!NOTE]
-> To show conversion rates, pass `show_rate=true` in the URL. You can also retrieve a past day's rate by passing in `ymd=YYYYMMDD` via the URL.
- 
-> [!WARNING]
-> * When querying the currency API (eg: `rate_per_usd`), the service is currently returning all the correct values, with the exception for `last_modified`. The actual rates are accurate, and the API is returning updated exchange rates. Currently, use the `as_of` column instead of `last_modified` to know the version of the exchange rate being returned.
+>
+> *When querying the currency API (eg: `rate_per_usd`), the service is currently returning all the correct values, with the exception for `last_modified`. The actual rates are accurate, and the API is returning updated exchange rates. Currently, use the `as_of` column instead of `last_modified` to know the version of the exchange rate being returned.
 
 ## Examples
 
