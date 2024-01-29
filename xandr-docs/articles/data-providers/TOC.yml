@@ -16,7 +16,7 @@
       href: real-time-data-integration-instructions.md
     - name: Xandr Macros for Data Providers
       href: xandr-macros-for-data-providers.md
-    - name: Best Practices
+    - name: Real Time Data Integrations Best Practices
       href: best-practices-for-real-time-data-provider-integrations.md
     - name: Data Provider Throttling Traffic FAQ
       href: real-time-data-provider-throttling-traffic-faq.md
@@ -43,7 +43,7 @@
       href: segment-modifier-data-provider-integration.md
     - name: Segment Modifier FAQ
       href: segment-modifier-faq.md
-  - name: Where to Direct Your Integration Inquiries
+  - name: Integration Help
     href: where-to-direct-your-integration-inquiries.md
 - name: Data Marketplace
   items:
@@ -51,9 +51,9 @@
     href: data-marketplace-data-partner-overview.md
   - name: Data Buyer Provider Service
     href: data-buyer-provider-service.md
-  - name: Data Buyer Workflow Changes
+  - name: Data Buyer Workflow
     href: data-buyer-workflow-changes.md
-  - name: Data Cost Calculation Mechanics
+  - name: Data Cost Calculation
     href: data-cost-calculation-mechanics.md
   - name: Managing Public and Private (Custom) Segments
     href: managing-public-and-private-custom-segments.md

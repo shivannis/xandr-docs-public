@@ -42,7 +42,7 @@ landingContent:
         links:
           - text: Data Buyer Provider Service
             url: data-buyer-provider-service.md
-          - text: Data Cost Calculation Mechanics
+          - text: Data Cost Calculation
             url: data-cost-calculation-mechanics.md
           - text: Segment Billing Category Service
             url: segment-billing-category-service.md
