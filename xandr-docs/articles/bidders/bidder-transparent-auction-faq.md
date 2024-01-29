@@ -19,17 +19,17 @@ single auction. While the type of auction being held could be different dependin
 
 With transparent auctions, bidders now receive an auction type (see below) in the bid request. This auction type tells the bidder which type of auction is being held.
 
-## What auction types will be sent in the bid requests?
+## What auction types are sent in the bid requests?
 
 There are two auction types: impression (at) and deal (pmp.deal.at). There are three possible values for auction type:
 
 | Value | Description |
 |:---|:---|
-| 1 | - First price auction<br> &nbsp;&nbsp;- or -<br> - Xandr is not confident that the auction is a second price auction. (Typically this means soft floors are in place, which will produce some first-price and some second-price auctions.) |
+| 1 | - First price auction<br> &nbsp;&nbsp;- or -<br> - Xandr is not confident that the auction is a second price auction. Typically this means soft floors are in place, which produce some first-price and some second-price auctions. |
 | 2 | - Second price auction<br>&nbsp;&nbsp;- and -<br> - There are no soft floors, non-transparent price reductions, or custom auction types. There may be static or dynamic (pre-bid) hard floors. |
 | 3 | *Deals (pmp.deal.at) Only*<br>Fixed price. The bid floor is the agreed-upon deal price. |
 
-Most bid requests will have auction type = 1 (`"at": 1`). For example:
+Most bid requests have auction type = 1 (`"at": 1`). For example:
 
 ``` 
 {
@@ -50,22 +50,20 @@ Most bid requests will have auction type = 1 (`"at": 1`). For example:
             ]....
 ```
 
->
-
 ## Who determines if the auction is first price or second price?
 
-Xandr will determine the auction type (as shown in the table under "[How does Xandr determine the auction types?](#how-does-xandr-determine-the-auction-types)") and send the auction type in the bid request. We do not use auction types passed to us.
+Xandr determines the auction type (as shown in the table under "[How does Xandr determine the auction types?](#how-does-xandr-determine-the-auction-types)") and sends the auction type in the bid request. We do not use auction types passed to us.
 
 Transparent auction has not changed the actual behavior of the auction; only the determination as to which auction type is sent in the bid
 request is different than is was previously.
 
 ## Do you pass the auction type (at) flag on all open auction and PMP deals?
 
-Yes. Auction type will always be passed in the bid request.
+Yes. Auction type is always passed in the bid request.
 
 ## Will Xandr ultimately decide winning/clearing price? Are there any modifications made?
 
-Xandr will determine the highest bid that will get sent to the publisher. Buyer fees will be taken into account when sending the final
+Xandr determines the highest bid that gets sent to the publisher. Buyer fees are taken into account when sending the final
 bid.
 
 ## How does Xandr determine the auction types?
@@ -121,7 +119,7 @@ The following chart outines how `is_header` and `fd` work together with the auct
 
 ## Why does using a soft floor often result in a first price being sent even though the auction is a second-price auction?
 
-In a second-price auction, if no floors have been set the winning bid is price-reduced to the second-highest bid (plus $0.01). However, when a soft floor has been set, the winning bid will be one of the following:
+In a second-price auction, if no floors have been set the winning bid is price-reduced to the second-highest bid (plus $0.01). However, when a soft floor has been set, the winning bid is one of the following:
 
 - If the bid is *above* the soft floor: The greater of the second-highest bid plus $0.01 or the soft floor.
 - If the bid is *below* the soft floor: The winning bid (with no price reduction).

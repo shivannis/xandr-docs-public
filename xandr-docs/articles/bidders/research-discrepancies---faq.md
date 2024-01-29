@@ -1,10 +1,10 @@
 ---
-title: Research Discrepancies - FAQ
+title: Research Discrepancies
 description: In this article, find instructions for researching and resolving discrepancy issues.
 ms.date: 10/28/2023
 ---
 
-# Research discrepancies - FAQ
+# Research discrepancies
 
 The following steps will walk you through researching and resolving discrepancy issues. The idea is to get a report from your side and compare it with the report on the Xandr side.
 
@@ -23,12 +23,12 @@ To open a discrepancy investigation case with the Xandr support team, you must c
 
 ## Retrieve and review aggregated reports
 
-You want to get the impression and spend figures by Seller, Publisher, Tag ID, Domain, Creative Size, Creative ID, and Geo from the [Xandr reporting UI](https://bidder.xandr.com/admin).
+1. Get the impression and spend figures by Seller, Publisher, Tag ID, Domain, Creative Size, Creative ID, and Geo from the [Xandr reporting UI](https://bidder.xandr.com/admin).
 
-Next, retrieve the same report from your side. Compare the reports. We suggest that you first check the data by days, then by the hours. (Be sure to retrieve all the data based on the same time zone.)
+1. Retrieve the same report from your side. Compare the reports. We suggest that you first check the data by days, then by the hours. (Be sure to retrieve all the data based on the same time zone.)
 
-- Get the discrepancy repartition by seller, publisher, tag ID, domain, creative size, creative ID, and geo.
-- Identify if the discrepancy levels are the same within those features.
+   - Get the discrepancy repartition by seller, publisher, tag ID, domain, creative size, creative ID, and geo.
+   - Identify if the discrepancy levels are the same within those features.
 
 If you're able to identify the source of the discrepancy based on your comparison of these reports, depending on the discrepancy level you might want to:
 
