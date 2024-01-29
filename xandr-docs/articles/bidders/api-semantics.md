@@ -242,6 +242,6 @@ The `"error"` field is useful for debugging purposes, as it contains a verbose d
 | SYSTEM | A system error has occurred | Contact Xandr |
 | INTEGRITY | A client request is inconsistent; for example, an attempt to delete a default creative attached to an active TinyTag | Check the request for integrity |
 
-## Related topics
+## Related topic
 
 [Bidder API Services](bidder-api-services.md)
