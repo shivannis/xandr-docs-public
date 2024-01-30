@@ -37,7 +37,7 @@
   - name: Sell-Side Overview
     href: 03---sell-side-overview.md
   - name: Member Configuration
-    href: member-configuration.md
+    href: 06---member-configuration.md
   - name: Advertiser Configuration
     href: 07---advertiser-configuration.md
   - name: Insertion Orders and Line Items
