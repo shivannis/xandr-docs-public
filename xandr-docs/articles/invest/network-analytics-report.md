@@ -257,7 +257,6 @@ If you are frequently requesting Member analytics reports which include dates lo
 | Network Profit eCPC | Network profit per click. |
 | Network Profit eCPA | Network profit per conversion. |
 | Network Profit Margin | Network profit margin. |
-
 | Video Skips | The total number of times a user skipped the video. Use this metric for reporting when buying skippable inventory. |
 | Video Starts | The total number of times the first segment of the video creative was downloaded and started. |
 | 25% Video Complete | The total number of times the video creatives completed 25% of the entire duration. |
