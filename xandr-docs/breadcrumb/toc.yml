@@ -9,6 +9,12 @@
        - name: Bidder
          tocHref: /xandr/articles/bidders/
          topicHref: /xandr/articles/bidders/index
+       - name: Microsoft Monetize
+         tocHref: /xandr/articles/monetize/
+         topicHref: /xandr/articles/monetize/index
+       - name: Digital Platform API
+         tocHref: /xandr/articles/digital-platform-api/
+         topicHref: /xandr/articles/digital-platform-api/index
        - name: Microsoft Invest
          tocHref: /xandr/articles/invest/
          topicHref: /xandr/articles/invest/index
