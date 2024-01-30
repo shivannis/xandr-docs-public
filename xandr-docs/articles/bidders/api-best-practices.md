@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # API best practices
 
-We're thrilled that you're taking advantage of our platform by grabbing raw data, hooking in your own pieces of the ad serving puzzle, or otherwise building on top of our infrastructure. There are a few ground rules that will make sure you have the best experience possible, and keep your applications healthy as our API evolves. Please stay in touch with your implementation consultant as you get started building.
+We're thrilled that you're taking advantage of our platform by grabbing raw data, hooking in your own pieces of the ad serving puzzle, or otherwise building on top of our infrastructure. Follow the best practices to make sure you have the best experience possible, and to keep your applications healthy as our API evolves. Stay in touch with your implementation consultant as you get started building.
 
 ## Filter your results
 

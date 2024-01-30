@@ -4,7 +4,7 @@ description: In this article, learn about bidders Pixel Template service, their 
 ms.date: 10/28/2023
 ---
 
-# Bidders - Pixel Template service
+# Bidders - Pixel template service
 
 This read-only service allows you to view information about Xandr-approved creative pixels from trusted, commonly-used providers, such as Evidon and Brilig. Most Xandr-approved creative pixels can be added to creatives without causing re-audit.
 
@@ -18,8 +18,8 @@ Here's how it works:
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | [https://api.adnxs.com/pixel-template](https://api.adnxs.com/pixel-template) | To view all Xandr-approved creative pixels. |
-| GET | [https://api.adnxs.com/pixel-template/PIXEL_TEMPLATE_ID](https://api.adnxs.com/pixel-template/PIXEL_TEMPLATE_ID) | To view a specific Xandr-approved creative pixel. |
+| `GET` | `https://api.adnxs.com/pixel-template` | To view all Xandr-approved creative pixels. |
+| `GET` | `https://api.adnxs.com/pixel-template/PIXEL_TEMPLATE_ID` | To view a specific Xandr-approved creative pixel. |
 
 ## JSON fields
 

@@ -4,7 +4,7 @@ description: This article explains about the hierarchy and ad type targeting for
 ms.date: 11/23/2023
 ---
 
-# Hierarchy and ad type targeting for enhanced bidder profiles
+# Enhanced bidder profiles ad type targeting
 
 ## Hierarchy
 
@@ -12,20 +12,20 @@ In the past, bidder profiles had a parent/child hierarchy. This added additiona
 
 In summary:
 
-- Bidder profiles will only have a single level.
-  - There will no longer be a parent/child hierarchy.
+- Bidder profiles only have a single level.
+  - Parent/child hierarchy is not there anymore.
 - The impression must meet all the requirements of any of the profile objects to be sent to the bidder (see the chart below for more information).
   - OR relationship across profile objects
   - AND relationship within the profile
 
 ### Hierarchy for bidder profiles
 
-The impression must meet <u>all</u> the requirements <u>of at least one</u> profile object to be sent to the bidder.
+The impression must meet **all** the requirements **of at least one** profile object to be sent to the bidder.
 
 | Description of Behavior | Example | Formula |
 |:---|:---|:---|
 | Profiles will have an OR relationship across profile objects | There are 3 profiles associated with the bidder:<br> - P1: include country, Canada<br> - P2: exclude ad type, Banner<br> - P3: include Exchange 1<br><br>An impression must meet the requirement of either P1, P2, or P3. It does not need to meet the requirements of all 3 profiles. | P1 OR P2 OR P3 |
-| Profiles will have an AND relationship within the profile object. | There is a single profile object associated with a bidder:<br> - P1 includes ad type, banner (V1) and includes Exchange 1, Direct (V2)<br><br>The incoming impression must come from a member in Exchange 1, Direct <u>and</u> be a banner ad type. | V1 AND V2 |
+| Profiles will have an AND relationship within the profile object. | There is a single profile object associated with a bidder:<br> - P1 includes ad type, banner (V1) and includes Exchange 1, Direct (V2)<br><br>The incoming impression must come from a member in Exchange 1, Direct **and** be a banner ad type. | V1 AND V2 |
 | Profiles will have an OR relationship within fields | There is a single profile object associated with a bidder:<br> - P1 includes ad type, banner (F1) and ad type, video (F2)<br><br>The incoming impression can be either a banner or video in order to pass profile check. | F1 OR F2 |
 | Combined behavior within and across profiles | There are 2 profiles associated with the bidder:<br> - P1: include country, Canada (V1) and Exchange 2, Connect (V2)<br> - P2: excludes ad type, Banner (V3) and includes country, Belgium (V4)<br><br>The incoming impression must either be from Canada and a member in the Connect Exchange or a banner impression from Belgium. | (V1 and V2) OR (V3 and V4) |
 
@@ -37,18 +37,18 @@ In Enhanced Bidder Profiles, we wanted to give users the ability to target/filte
 
 The following rules apply:
 
-- An ad type must be explicitly excluded in a PUT/POST in order to be excluded
-  - Otherwise it is implied to be included
-- If no size is listed, then all sizes are assumed to be excluded or included (depending on ad type action)
-- If a size is listed, then it is included or excluded depending on the action for that ad type
-- Sizes only apply to video and banner ad types
-- 1x1 and 0x0 sizes are not allowed in the sizes object
+- An ad type must be explicitly excluded in a `PUT`/`POST` in order to be excluded.
+  - Otherwise, it is implied to be included.
+- If no size is listed, then all sizes are assumed to be excluded or included (depending on ad type action).
+- If a size is listed, then it is included or excluded depending on the action for that ad type.
+- Sizes only apply to video and banner ad types.
+- 1x1 and 0x0 sizes are not allowed in the sizes object.
 
 ### Use cases
 
 #### Exclude native ad type
 
-**PUT/POST Call**
+**`PUT`/`POST` Call**
 
 ```
 {
@@ -66,7 +66,7 @@ The following rules apply:
 }
 ```
 
-**GET Response**
+**`GET` response**
 
 ```
 {
@@ -98,11 +98,11 @@ The following rules apply:
 ```
 
 > [!NOTE]
-> The GET call will output the remaining ad types as included.
+> The `GET` call will output the remaining ad types as included.
 
 #### Include only the banner ad type
 
-**PUT/POST Call**
+**`PUT`/`POST` call**
 
 ```
 {
@@ -129,7 +129,7 @@ The following rules apply:
 }
 ```
 
-**GET Response**
+**`GET` response**
 
 ```
 {
@@ -163,7 +163,7 @@ The following rules apply:
 
 #### Include only banner ad type with size 200x100
 
-**PUT/POST Call**
+**`PUT`/`POST` call**
 
 ```
 {
@@ -195,7 +195,7 @@ The following rules apply:
 }
 ```
 
-**GET Response**
+**`GET` response**
 
 ```
 {
@@ -233,7 +233,7 @@ The following rules apply:
 
 #### Include a video ad type with size 1x1
 
-**PUT/POST Call**
+**`PUT`/`POST` call**
 
 ```
 {
@@ -265,7 +265,7 @@ The following rules apply:
 }
 ```
 
-**GET Response**
+**`GET` response**
 
 N/A - Error
 
@@ -274,7 +274,7 @@ N/A - Error
 
 #### Target the native ad type with size
 
-**PUT/POST Call**
+**`PUT`/`POST` call**
 
 ```
 {
@@ -306,7 +306,7 @@ N/A - Error
 }
 ```
 
-**GET Response**
+**`GET` response**
 
 N/A - Error
 
