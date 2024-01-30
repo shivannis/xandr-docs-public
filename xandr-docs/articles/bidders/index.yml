@@ -15,10 +15,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Overview
-            url: the-big-picture.md
-          - text: Auctions
-            url: auction-overview.md      
+          - text: Auction Overview
+            url: the-big-picture.md   
       - linkListType: concept
         links:
           - text: Price Reduction Mechanics
@@ -29,15 +27,15 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:            
-          - text: Inventory Auditing
-            url: inventory-auditing.md
+          - text: Inventory Quality and Auditing
+            url: inventory-quality.md
           - text: Creative Audit Feedback
             url: creative-audit-feedback.md
       - linkListType: reference
         links:
           - text: Sherlock - Creative Quality Control
             url: sherlock-creative-quality-control.md
-          - text: AdX Feedback and FAQ
+          - text: AdX Guidelines and Restrictions
             url: adx-feedback-and-faq.md
   - title: Bidder Integration
     linkLists:

@@ -1,5 +1,5 @@
 ---
-title: Hierarchy and Ad Type Targeting for Enhanced Bidder Profiles
+title: Enhanced Bidder Profiles Ad Type Targeting
 description: This article explains about the hierarchy and ad type targeting for enhanced bidder profiles.
 ms.date: 11/23/2023
 ---
