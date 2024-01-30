@@ -258,7 +258,6 @@ If you are frequently requesting network analytics reports via the API which inc
 | `imps_blank` | int | `3` | imps_blank | The number of impressions served with a blank. |
 | `imps_psa` | int | `5` | imps_psa | The number of impressions served a PSA. |
 | `imps_psa_error` | int | `0` | imps_psa_error | The number of impressions served a PSA due to a timeout issue or lack of a default creative. |
-| `imps_default` | int | `100` | imps_default | The total number of impressions in which a default creative served. |
 | `imps_default_error` | int | `0` | imps_default_error | The number of impressions that defaulted due to a timeout issue. |
 | `imps_default_bidder` | int | `0` | imps_default_bidder | The number of impressions that defaulted because there were no valid bids. |
 | `imps_kept` | int | `0` | imps_kept | The number of impressions your advertiser purchased from your publisher. |

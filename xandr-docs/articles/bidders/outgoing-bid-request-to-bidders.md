@@ -174,7 +174,7 @@ We support the following fields in the `appnexus` extension object of the `video
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `context` | integer | Specifies the video context:<br> - `0`: Unknown<br> - `1`: Pre-roll<br> - `2`:  Mid-roll<br> - `3`:  Post-roll<br> - `4`: Outstream<br>- `5`: BannerStream |
+| `context` | integer | Specifies the video context:<br> - `0`: Unknown<br> - `1`: Pre-roll<br> - `2`:  Mid-roll<br> - `3`:  Post-roll<br> - `4`: Outstream<br> - `5`: BannerStream<br> - `6`: In-feed<br> - `7`: Interstitial |
 
 ### Audio object
 
