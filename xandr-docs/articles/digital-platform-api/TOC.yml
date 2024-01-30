@@ -4,56 +4,55 @@
   items:
   - name: API Getting Started
     href: api-getting-started.md
+  - name: API Onboarding Process
+    href: api-onboarding-process.md
   - name: API Semantics
     href: api-semantics.md
   - name: API Best Practices
     href: api-best-practices.md
-  - name: Breaking Changes
-    href: breaking-changes.md
-  - name: API Onboarding Process
-    href: api-onboarding-process.md
-  - name: Network Relationship Diagram
-    href: network-relationship-diagram.md
-  - name: API Timezones
-    href: api-timezones.md
-  - name: Example Setup
-    items:
-    - name: 01 - Understand Best Practices
-      href: 01---understand-best-practices.md
-    - name: 02 - Buy-Side Overview
-      href: 02---buy-side-overview.md
-    - name: 03 - Sell-Side Overview
-      href: 03---sell-side-overview.md
-    - name: 04 - API Authentication
-      href: 04---api-authentication.md
-    - name: 05 - Throttling Pagination and Filtering
-      href: 05---throttling-pagination-and-filtering.md
-    - name: 06 - Member Configuration
-      href: 06---member-configuration.md
-    - name: 07 - Advertiser Configuration
-      href: 07---advertiser-configuration.md
-    - name: 08 - Insertion Orders and Line Items
-      href: 08---insertion-orders-and-line-items.md
-    - name: 09 - Creatives
-      href: 09---creatives.md
-    - name: 10 - Segment and Conversion Pixels
-      href: 10---segment-and-conversion-pixels.md
-    - name: 11 - Targeting Profiles
-      href: 11---targeting-profiles.md
-    - name: 12 - Publisher Configuration
-      href: 12---publisher-configuration.md
-    - name: 13 - Sites and Placements
-      href: 13---sites-and-placements.md
+- name: Tutorials
+  items:
+  - name: API Authentication
+    href: 04---api-authentication.md
+  - name: Token-Based Authentication
+    href: token-based-api-authentication.md
+  - name: Throttling, Pagination and Filtering
+    href: 05---throttling-pagination-and-filtering.md
   - name: API Usage Constraints
     href: api-usage-constraints.md
+  - name: API Timezones
+    href: api-timezones.md
   - name: Report Pagination
     href: report-pagination.md
+  - name: Breaking Changes
+    href: breaking-changes.md
   - name: Helpful JSON Tools
     href: helpful-json-tools.md
-  - name: API Viewer
-    href: api-viewer.md
-  - name: Token-Based API Authentication
-    href: token-based-api-authentication.md
+- name: Ad Tech Concepts
+  items:
+  - name: Network Relationship Diagram
+    href: network-relationship-diagram.md
+  - name: Buy-Side Overview
+    href: 02---buy-side-overview.md
+  - name: Sell-Side Overview
+    href: 03---sell-side-overview.md
+  - name: Member Configuration
+    href: member-configuration.md
+  - name: Advertiser Configuration
+    href: 07---advertiser-configuration.md
+  - name: Insertion Orders and Line Items
+    href: 08---insertion-orders-and-line-items.md
+  - name: Creatives
+    href: 09---creatives.md
+  - name: Segment and Conversion Pixels
+    href: 10---segment-and-conversion-pixels.md
+  - name: Targeting Profiles
+    href: 11---targeting-profiles.md
+  - name: Publisher Configuration
+    href: 12---publisher-configuration.md
+  - name: Sites and Placements
+    href: 13---sites-and-placements.md
+  
 - name: Process Guides
   items:
   - name: Buy-Side Setup
