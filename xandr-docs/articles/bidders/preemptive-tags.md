@@ -12,17 +12,17 @@ Preemptive Tags are like TinyTags, but with a slightly different ad call procedu
 
 ## How it works
 
-1. You will create Xandr as an advertiser in your regular ad server and add the appropriate trafficking parameters. This will allow the highest Xandr bid to be recognized by your ad server.
+1. Create Xandr as an advertiser in your regular ad server and add the appropriate trafficking parameters. This allows the highest Xandr bid to be recognized by your ad server.
 
 1. Either a preemptive tag is placed on the publisher's page or some other solution is reached, such as a CNAME redirect, in order to ping Xandr's impression bus as a first stop. See your Xandr contact for details.
 
 1. An [auction](auction-overview.md) is held and a winning bidder is decided.
 
-1. The impression bus passes the winning creative and the winning price on to the third-party ad server. Xandr will appear as a bidder or a participant to that ad server.
+1. The impression bus passes the winning creative and the winning price on to the third-party ad server. Xandr appears as a bidder or a participant to that ad server.
 
 1. That ad server decides whether to show the Xandr creative or to show another.
 
-1. If it shows another ad, the call does NOT return to Xandr. If Xandr "wins," then the call passes back through the impression bus and the winning ad is served to the page.
+1. If it shows another ad, the call does NOT return to Xandr. If Xandr "wins", then the call passes back through the impression bus and the winning ad is served to the page.
 
 ## Related topics
 

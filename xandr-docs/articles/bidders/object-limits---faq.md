@@ -113,7 +113,3 @@ If you need help identifying objects to delete, please contact support for assis
 
 In exceptional cases, a limit may be temporarily lifted by a small amount at the discretion of our engineering team. Please contact your
 Xandr representative to discuss this option or [open a support case](https://help.xandr.com/).
-
-## Related topic
-
-[FAQs](faqs.md)
