@@ -204,6 +204,7 @@ If you are frequently requesting Member analytics reports which include dates lo
 | Clicks | The total number of clicks across all impressions. For Microsoft Invest, clicks from all media types are supported. For external DSPs, only clicks from Native and Video media types are supported. |
 | Total Conversions | The total number of post-view and post-click conversions. |
 | Post View Conversions | The number of post-view conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](conversion-attribution.md). |
+| Post-View Conversions: Cross Device| The number of post-view Cross Device conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](conversion-attribution.md). |
 |Post View Conversions: IP|The number of post-view IP conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](conversion-attribution.md).|
 | Post Click Conversions | The number of post-click conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](conversion-attribution.md). |
 |Post Click Conversions: Cross Device|The number of post-click cross-device conversions. For more information about how we attribute post-click (and other) conversions, see [Conversion Attribution](conversion-attribution.md).|
@@ -256,7 +257,7 @@ If you are frequently requesting Member analytics reports which include dates lo
 | Network Profit eCPC | Network profit per click. |
 | Network Profit eCPA | Network profit per conversion. |
 | Network Profit Margin | Network profit margin. |
-| Post-View Cross Device Conversions | The number of post-view Cross Device conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](./conversion-attribution.md). |
+
 | Video Skips | The total number of times a user skipped the video. Use this metric for reporting when buying skippable inventory. |
 | Video Starts | The total number of times the first segment of the video creative was downloaded and started. |
 | 25% Video Complete | The total number of times the video creatives completed 25% of the entire duration. |
