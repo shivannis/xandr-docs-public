@@ -189,7 +189,7 @@ curl -b cookies "https://api.appnexus.com/apd-status?id=4d362ab8-f94d-11eb-a5ee-
 ### View upload status of geo polygon upload
 
 ```
-curl -b cookies "https://api.appnexus.com/apd-status?id=4d362ab8-f94d-11eb-a5ee-3cfdfec8e950"
+curl -b cookies -c cookies -X GET "https://api.appnexus.com/geo-segment-processor/job-status?geoSegmentId=86831"
 ```
 
 ### Delete a geo polygon segment
