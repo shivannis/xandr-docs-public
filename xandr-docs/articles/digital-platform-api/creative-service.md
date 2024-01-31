@@ -45,8 +45,8 @@ Xandr works with members who care deeply about brand and reputation. For this re
 | Field | Type | Description |
 |:---|:---|:---|
 | `id` | int | The internal ID associated with the creative.<br>**Default:** Auto-generated number.<br>**Required On:** `PUT`, in query string. |
-| `code` | string (100) | The custom code for the creative. This code needs to be unique. |
-| `code2` | string (100) | The additional custom code for the creative. This code needs to be unique. |
+| `code` | string (100) | The custom code for the creative. **Note**: It is important for this code to be unique. |
+| `code2` | string (100) | The additional custom code for the creative. **Note**: It is important for this code to be unique.|
 | `name` | string (400) | The name for the creative. |
 | `type` | enum | The type of creative. Possible values:<br> - `"standard"`<br>`"html"`<br> - `"video"`<br><br>**Note:**<br>**Alpha-Beta Notice**<br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change.<br>**Read Only.** |
 | `advertiser_id` | int | The ID of the advertiser to which the creative is attached.<br>**Required On:** `POST`/`PUT`, in query string, if the creative is attached to an advertiser. |
