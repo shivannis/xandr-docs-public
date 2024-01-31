@@ -1,21 +1,15 @@
 ---
 title: Working With User Groups
-description: Learn about Permissions within yield analytics. 
+description: Learn about Permissions within Yield Analytics. 
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-
 # Working with user groups
 
-Permissions within yield analytics are configured through user groups.
-Each yield analytics user account can belong to multiple groups.
-However, the group with the broadest permissions overrides the more
-restrictive groups (Example: If a user belongs to the Admin group and
-the AdOps group, the permissions for the Admin group win).
+Permissions within Yield Analytics are configured through user groups. Each Yield Analytics user account can belong to multiple groups. However, the group with the broadest permissions overrides the more restrictive groups (Example: If a user belongs to the Admin group and the AdOps group, the permissions for the Admin group win).
 
-If you have administrative permissions, you can add, edit, duplicate,
-and delete user groups.
+If you have administrative permissions, you can add, edit, duplicate, and delete user groups.
 
 ## Add a user group
 
@@ -27,8 +21,7 @@ If you have administrative permissions, you can add user groups to determine p
 1. In the **Users in This Group** section, select the usernames you want to add to the group, or click **Select All** to add all available users. As you select users on the left, they're added to the list of users on the right.
 1. In the **Features Available In This Group** section, clear the check boxes for the features this group shouldn't be able to access. Select the check boxes for the features this group should be able to access.
 
-    The features are broken up into the following sets: Capacity, Availability, Products, Orders, Proposals, Pricing, Reports, Scenario, Admin Tools, and Other.  
-    All features are selected by default.
+    The features are broken up into the following sets: Capacity, Availability, Products, Orders, Proposals, Pricing, Reports, Scenario, Admin Tools, and Other. All features are selected by default.
 1. Click **Save**.
 
 ## Edit a user group
@@ -41,8 +34,7 @@ If you have administrative permissions, you can edit user groups to add and re
 1. Add and remove users in the **Users in This Group** section as follows:
     - To add users to the group, in the list of usernames on the left, select each username you want to add (or click **Select All** to add all users). As you select users, they are highlighted in the list on the left, and added to the list on the right.
     - To remove users from the group, in the list of usernames on the right, click the X for each username you want to remove (or click **Clear All** to remove all users). As you select to remove users, they are deleted from the list on the right and un-highlighted in the list on the left.
-1. Change the permissions for the group as needed in the **Features Available In This Group** section. Select the check boxes for the features the group should be able to access. Clear the check boxes for the features the group shouldn't be able to access. The features are broken up into the following sets:
-Capacity, Availability, Products, Orders, Proposals, Pricing, Reports, Scenario, Admin Tools, and Other.
+1. Change the permissions for the group as needed in the **Features Available In This Group** section. Select the check boxes for the features the group should be able to access. Clear the check boxes for the features the group shouldn't be able to access. The features are broken up into the following sets: Capacity, Availability, Products, Orders, Proposals, Pricing, Reports, Scenario, Admin Tools, and Other.
 1. Click **Save**.
 
 ## Duplicate a user group
@@ -56,8 +48,7 @@ If you have administrative permissions, you can duplicate a user group to quic
 1. Add and remove users in the **Users in This Group** section as follows:
     - To add users to the group, in the list of usernames on the left, select each username you want to add (or click **Select All** to add all users). As you select users, they are highlighted in the list on the left and added to the list on the right.
     - To remove users from the group, in the list of usernames on the right, click the X for each username you want to remove (or click **Clear All** to remove all users). As you select to remove users, they are deleted from the list on the right and un-highlighted in the list on the left.
-1. Change the permissions for the duplicate group as needed in the **Features Available In This Group** section. Select the check boxes for the features the group should be able to access. Clear the check boxes for the features the group shouldn't be able to access. The features are broken up into the following sets:
-Capacity, Availability, Products, Orders, Proposals, Pricing, Reports, Scenario, Admin Tools, and Other.
+1. Change the permissions for the duplicate group as needed in the **Features Available In This Group** section. Select the check boxes for the features the group should be able to access. Clear the check boxes for the features the group shouldn't be able to access. The features are broken up into the following sets: Capacity, Availability, Products, Orders, Proposals, Pricing, Reports, Scenario, Admin Tools, and Other.
 1. Click **Save**.
 
 ## Search user groups
@@ -79,4 +70,3 @@ If you have administrative permissions, you can delete a user group.
 1. On the **Admin Tools** menu, click **Permissions**. The **Permissions** page appears, displaying the Groups panel with a table of all existing user groups.
 1. Click the user group you want to delete. The Group: **[Group Name]** panel appears. **[Group Name]** is the name of the group you selected.
 1. At the bottom of the page, click **Delete**. On the dialog that appears, click **OK**.
-

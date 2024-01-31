@@ -3,17 +3,13 @@ title: Yield Analytics 7.17
 description: Learn how to "Update All" datasets, when there are multiple datasets in reports.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
-
 ---
 
-
-# Yield analytics 7.17
+# Yield Analytics 7.17
 
 ## Feature enhancements
 
-We have created an option to "Update All" datasets, when there are
-multiple datasets in reports. This will eliminate the need to go into
-each dataset to change a single metric filter.
+We have created an option to "Update All" datasets, when there are multiple datasets in reports. This will eliminate the need to go into each dataset to change a single metric filter.
 
 1. Single dataset
     1. Normal operation
@@ -25,8 +21,7 @@ each dataset to change a single metric filter.
     1. Initial dataset
         1. Standard date range should be set on other DS's
     1. Subsequent/cloned dataset
-        1. Custom date range should be set on other DS's (including
-            initial)
+        1. Custom date range should be set on other DS's (including initial)
 1. Click \*Update\* (each filter type, w/multi datasets)
     1. Filter should update on the current dataset only.
 1. Open saved report
@@ -38,7 +33,5 @@ each dataset to change a single metric filter.
 
 ## Fixes
 
-- Corrected discrepancies between what we are showing in analyze
-  overlaps vs. what is shown in availability look up - when running
-  overlaps between attribute values.
+- Corrected discrepancies between what we are showing in analyze overlaps vs. what is shown in availability look up - when running overlaps between attribute values.
 - Fixed session persistence issues within Saved Lookup Edit.
