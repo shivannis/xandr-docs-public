@@ -18,6 +18,6 @@ You can share the report with one or more user groups by selecting Group(s) from
 
 If the Analysis has been scheduled for delivery using the **Send** button in Analyzer, an entry will appear in the Schedules for Analysis table. Click the **Edit** button to make changes to a Report's analysis schedule. Note that the **Save** button is not required to commit the schedule changes.
 
-## Related topics
+## Related topic
 
 [Working With Saved Reports](./working-with-saved-reports.md)

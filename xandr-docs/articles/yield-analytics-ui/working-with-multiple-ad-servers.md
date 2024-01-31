@@ -5,24 +5,24 @@ ms.date: 11/08/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Working With multiple ad servers
+# Working with multiple ad servers
 
-The yield analytics interface supports the use of multiple ad servers (e.g., if you use one for mobile, one for video, etc.). This makes it easier to work with each one separately or all together.
+The Yield Analytics interface supports the use of multiple ad servers (e.g., if you use one for mobile, one for video, etc.). This makes it easier to work with each one separately or all together.
 
 ## Set the default ad server
 
 If you use multiple ad servers, you can specify which one is the default.
 
 1. In the upper-right corner of any page, click your name, and then click **Preferences**. The **Preferences** page loads.
-2. In the **Set Defaults** panel, in the **Ad server for filters** field, click the link for the current setting and then select one of the following ad servers from the dropdown list that appears:
+1. In the **Set Defaults** panel, in the **Ad server for filters** field, click the link for the current setting and then select one of the following ad servers from the dropdown list that appears:
     - **DFPP**
     - **FreeWheel**
     - **AdMarvel**
-3. Click **Save Defaults**.
+1. Click **Save Defaults**.
 
 ## About priority labels
 
-You can customize priority labels, which are searchable, organized from high to low, and displayed throughout yield analytics. In addition, yield analytics can hide priority labels that you don't use. Please contact your services representative for more information.
+You can customize priority labels, which are searchable, organized from high to low, and displayed throughout Yield Analytics. In addition, Yield Analytics can hide priority labels that you don't use. Please contact your services representative for more information.
 
 ## Filtering with multiple ad servers
 

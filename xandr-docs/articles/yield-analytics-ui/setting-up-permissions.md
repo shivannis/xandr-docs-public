@@ -52,6 +52,7 @@ Order Lines are decided based on how it is consuming against the products you ha
 In the **Order Line Visibility** screen, you see the order lines that are competing against the products you have access to.
 
 > [!TIP]
+>
 > - You will only be shown revenue data to products you have access to.
 > - The logic described in the **Order Visibility** screen and **Order Line Visibility** sections is the same logic that follows through all the tabs.
 

@@ -24,4 +24,4 @@ To reset the **Orders Dashboard** to your entire analyzed network, enter **Anal
 - [Anatomy of the Order Visibility Page](anatomy-of-the-order-visibility-page.md)
 - [Find an Order Line](find-an-order-line.md)
 - [Anatomy of the Order Line Visibility Page](anatomy-of-the-order-line-visibility-page.md)
-- [Solving Delivery Issues with Order Line Visibility](solving-delivery-issues-with-order-line-visibility.md)
+- [Solving Delivery Issues with Order Line Visibility](solve-delivery-issues-with-order-line-visibility.md)
