@@ -10,6 +10,19 @@ ms.date: 10/28/2023
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
 
+## 8.10.0
+
+### New Feature
+- 6029394 Added support for setting content language in Ad Request. New API introduced in SDKSettings setContentLanguage(String contentLanguage)
+
+### Improvement/Bug Fixes
+- 6015112 Upgraded OMSDK from 1.4.8 to 1.4.9 (Microsoft namespace)
+
+- 5766029 Resolve the issue with the OutStream iPad video of size 400x980 not rendering properly
+- 5992098 Optimise user agent synchronisation to minimise delays
+Mediation partner updates
+MS-5392 Upgrade of the Facebook Audience Network to version 6.14.0
+
 ## 8.9.0
 
 ### Improvement / Bug fixes
@@ -124,7 +137,7 @@ Update version to match Android SDK. No changes from 8.3.0
 
 - MS-5080: Enable support for high impact media type creatives in BannerAdView
 
-- MS-5108: Added localization configuration option for SDK browser dismiss button "OK" ([Github PR #80](https://github.com/appnexus/mobile-sdk-ios/pull/80))
+- MS-5108: Added localization configuration option for SDK browser dismiss button "OK" (Github PR #80)
 
 ## 8.0.0
 
@@ -136,7 +149,7 @@ We have completed the removal of the APIs referenced in the 7.21.0 release. Plea
 
 - MS-5011: Updated impression counting methodology. Please see our new [Impression Counting Methodology Guide](updated-impression-counting-mechanism-mobile-sdk-v8-0-and-above.md).
 
-- MS-4978: Fixed custom adapter issues in Swift. ([Github Issue #71](https://github.com/appnexus/mobile-sdk-ios/issues/71))
+- MS-4978: Fixed custom adapter issues in Swift. (Github Issue #71)
 
 - MS-5007: Removed all discontinued mediation adapters
 
@@ -200,7 +213,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 ### Improvement / Bug fixes
 
-- MS-4952: Check navigationType when opening a URL ([Github PR #73](https://github.com/appnexus/mobile-sdk-ios/pull/73))
+- MS-4952: Check navigationType when opening a URL (Github PR #73)
 
 - MS-4851: Improved OMSDK performance
 
@@ -228,7 +241,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 ### Bug fixes
 
-- MS-4849: Use retain instead of assign ([Github #69](https://github.com/appnexus/mobile-sdk-ios/pull/69))
+- MS-4849: Use retain instead of assign (Github #69)
 
 - MS-4828: Memory leak related to 1 pixel tracking
 
@@ -238,7 +251,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 #### Fixed
 
-- MS-4820: SDK version warning for Swift Package Manager ([Github #68](https://github.com/appnexus/mobile-sdk-ios/issues/68))
+- MS-4820: SDK version warning for Swift Package Manager (Github #68)
 
 #### Changed
 
@@ -248,7 +261,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 ### Improvements / Bug fixes
 
-- MS-4818: Fixed Swift package manager installation error ([Github issue #67](https://github.com/appnexus/mobile-sdk-ios/issues/67))
+- MS-4818: Fixed Swift package manager installation error (Github issue #67)
 
 ## 7.15
 
@@ -298,7 +311,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 - MS-4693: Added support for Cookieless domain requests
 
-- MS-4618: Fixed issue where the OMID SDK was causing high CPU usage for certain Ad formats ([Github issue #57](https://github.com/appnexus/mobile-sdk-ios/issues/57))
+- MS-4618: Fixed issue where the OMID SDK was causing high CPU usage for certain Ad formats - Github issue #57
 
 ## 7.12
 
@@ -324,7 +337,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 - MS-4685: Added API to disable tracking cookies during auction.
 
-- [Github PR #61](https://github.com/appnexus/mobile-sdk-ios/pull/61): Fixed race condition where ads load blank occasionally.
+- (Github PR #61): Fixed race condition where ads load blank occasionally.
 
 ### Mediation partner updates
 
@@ -412,7 +425,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 - MS-4498: Upgraded Google AdMob SDK to v7.66.0
 
-- MS-4418: Discontinued support for Amazon, inMobi, Millennial Media and Mopub adapters. ([Github Intent to Implement #53](https://github.com/appnexus/mobile-sdk-ios/issues/53))
+- MS-4418: Discontinued support for Amazon, inMobi, Millennial Media and Mopub adapters. (Github Intent to Implement #53)
 
 ### Improvements / Bug fixes
 
@@ -430,7 +443,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 ### Improvements / Bug fixes
 
-- MS-4523: Changed sizesThatShouldConstrainToSuperview to a block ([Github #54](https://github.com/appnexus/mobile-sdk-ios/pull/54))
+- MS-4523: Changed sizesThatShouldConstrainToSuperview to a block (Github #54)
 
 ## 7.6.1
 
@@ -634,7 +647,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 - MS-4023: Removed usage of UIWebView
 
-- MS-4036: Fixed interstitial crash on orientation change if orientation not supported by host application ([Github #47](https://github.com/appnexus/mobile-sdk-ios/issues/47))
+- MS-4036: Fixed interstitial crash on orientation change if orientation not supported by host application (Github #47)
 
 ## 6.0
 
@@ -765,7 +778,7 @@ A list of supported versions of [third-party mediation networks](mediate-with-io
 
 - MS-3712: Resize BannerAd API for Mediation ads
 
-- MS-3808: Removed videoAdDidClose method to prevent Video Player removal ([Github #22](https://github.com/appnexus/mobile-sdk-ios/issues/22))
+- MS-3808: Removed videoAdDidClose method to prevent Video Player removal (Github #22)
 
 ## 5.2
 
@@ -1028,7 +1041,7 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 
 - MS-3078: Add support for loading 1x1 creatives in a banner
 
-- [Github Issue #13](https://github.com/appnexus/mobile-sdk-ios/issues/13): Stop using EKEventStore
+- (Github Issue #13): Stop using EKEventStore
 
 ## 3.6
 

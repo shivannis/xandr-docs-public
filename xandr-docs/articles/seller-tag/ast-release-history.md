@@ -32,6 +32,7 @@ ms.date: 10/28/2023
 | [0.41.0](https://acdn.adnxs.com/ast/static/0.41.0/ast.js) | - Update `adRequested` event trigger conditions <br> - Additional updates to WebComponent and SafeFrame support <br> - Update logic on when to set the displayed flag | Sep 29 2021  |
 | [0.40.0](https://acdn.adnxs.com/ast/static/0.40.0/ast.js) | - Add support for UID2 userId <br> - Add support for Google Additional Consent field | Jun 24 2021  |
 | [0.39.0](https://acdn.adnxs.com/ast/static/0.39.0/ast.js) | Add support for web components to banner ads | Jun 10 2021  |
+| [0.59.0](https://acdn.adnxs.com/ast/static/0.59.0/ast.js) | - Add MSFT `setPageOpts` field <br>- Add `isExclusive` and `isRoadblock` fields to AST event object | 08 November 2023 |
 | [0.38.0](https://acdn.adnxs.com/ast/static/0.38.0/ast.js) | - Ignore case on userId field <br> - Address issue in refresh behavior fro video ads | May 17 2021  |
 | [0.37.1](https://acdn.adnxs.com/ast/static/0.37.1/ast.js) | Fixed issue around `withCredentials` field | May 03 2021  |
 | [0.37.0](https://acdn.adnxs.com/ast/static/0.37.0/ast.js) | Add support for simple domain/cookieless requests | Apr 28 2021  |

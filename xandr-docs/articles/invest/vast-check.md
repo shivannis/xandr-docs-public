@@ -118,6 +118,7 @@ If VAST check returns this message, the creative was scanned but contains errors
 - Click **Run check again** button to initiate the re-scanning of the creative XML document.
 
    :::image type="content" source="./media/run-check-again.png" alt-text="Screenshot of Run Check Again.":::
+
   This feature would address the following scenarios where:
   - Scanner failed to run during the upload
   - Scanner timed out while scanning
