@@ -9,9 +9,7 @@ ms.custom: digital-platform-api
 
 ## Overview
 
-The read-only Change Log and Change Log Detail Services are used in conjunction with other services (listed below) to retrieve information
-about changes that have been made to a set of objects. This page describes the use of these two services to retrieve a list of the logged
-changes in which you are interested. The Change Log service is only available to users with the `"member"`, `"advertiser"`, or `"member_advertiser"` user type.
+The read-only Change Log and Change Log Detail Services are used in conjunction with other services (listed below) to retrieve information about changes that have been made to a set of objects. This page describes the use of these two services to retrieve a list of the logged changes in which you are interested. The Change Log service is only available to users with the `"member"`, `"advertiser"`, or `"member_advertiser"` user type.
 
 > [!NOTE]
 > The Change Log service has some minor differences from other Xandr API services as mentioned below:
@@ -78,6 +76,7 @@ changes in which you are interested. The Change Log service is only available t
 |:---|:---|:---|
 | `service` | string | The service used to make the change.<br>**Required:** Yes<br>**Filter:** Yes |
 | `transaction_id` | int | The ID of the change transaction accepted as input to the endpoint.<br>**Required:** Yes<br>**Filter:** Yes |
+| `previous_object` | boolean | When **true**, the difference between queried and previous transaction is displayed. Otherwise the difference between queried and next transaction is shown by default. This input can be passed either in query parameter or in request body.<br>**Default**: false<br>**Required**: No<br>**Filter**: Yes |
 
 ### Fields returned in the response from the endpoint in Change Log Details service
 
@@ -275,7 +274,8 @@ $ cat change-log-detail.json
 {
 "change-log-detail" : {
 "service" : "advertiser",
-"transaction_id": "016ac252-aa30-5d10-a7a0-b5b3d88df832"
+"transaction_id": "016ac252-aa30-5d10-a7a0-b5b3d88df832",
+"previous_object": "true"
 }
 }
 ```
