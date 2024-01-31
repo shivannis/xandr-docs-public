@@ -53,7 +53,7 @@ When an image is clicked, the "href" page loads. A click is tracked on Xandr and
 https://www.cnn.com. For example:
 
 ```pre
-<a href="https://ib.adnxs.com/click?AAAAAAAAAAAAAAAAAAAA./clickenc=https://www.cnn.com" target="_blank"><img src="media/Ad-MediumRectangle-300x250.png" width="300" height="250"></a>
+<a href="https://nym1-ib.adnxs.com/click2?AAAAAAAAAAAAAAAAAAAA./clickenc=https://www.cnn.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ad-MediumRectangle-300x250.jpg" width="300" height="250"></a>
 ```
 
 After the user is redirected to the href, such as https://www.cnn.com, the following takes place:
@@ -78,13 +78,13 @@ https://ad.doubleclick.net/adi/N5364.Ivillage.com/B2965815.5;sz=728x90;click=${C
 Here "click" is the DoubleClick variable for accepting external click URLs. When the full URL string above is passed from Xandr to the user's browser, the impression bus will replace `${CLICK_URL}` with the actual click Xandr URL, which is easily identified by the large number of capital A's present in the string. The Xandr click URL will look something like this:
 
 ```pre
-https://ib.adnxs.com/click?AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA__________-No5xOAAAAAAEAAAAAAAAAAAAAAAAAAABd8gsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAcAsHNwAAAAA./clickenc=
+https://nym1-ib.adnxs.com/click2?AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA__________-No5xOAAAAAAEAAAAAAAAAAAAAAAAAAABd8gsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAcAsHNwAAAAA./clickenc=
 ```
 
 Therefore, the expanded DoubleClick content will look as follows:
 
 ```pre
-https://ad.doubleclick.net/adi/N5364.Ivillage.com/B2965815.5;sz=728x90;click=https://ib.adnxs.com/click?AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA__________-No5xOAAAAAAEAAAAAAAAAAAAAAAAAAABd8gsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAcAsHNwAAAAA./clickenc=;ord=1330398521?
+https://ad.doubleclick.net/adi/N5364.Ivillage.com/B2965815.5;sz=728x90;click=https://nym1-ib.adnxs.com/click2?AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA__________-No5xOAAAAAAEAAAAAAAAAAAAAAAAAAABd8gsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAcAsHNwAAAAA./clickenc=;ord=1330398521?
 ``````
 
 The creative will first direct the browser to the impression bus where the click will be recorded, and then to the landing page (the landing page is specified after our `clickenc=` variable). In this example, DoubleClick will use our click URL and `${CACHEBUSTER}` macro when delivering the final creative content to the user's page. The `${CACHEBUSTER}` macro ensures that a fresh call is made to the ad

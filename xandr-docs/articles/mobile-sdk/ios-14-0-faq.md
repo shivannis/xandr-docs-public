@@ -2,7 +2,7 @@
 title: iOS 14.0 FAQ
 description: In this article, explore the frequently asked questions (FAQs) about Apple's iOS 14.0 release in relation to the iOS SDK.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # iOS 14.0 FAQ
@@ -51,15 +51,12 @@ and they continue to support app install attribution in iOS14 and above. In addi
 following app install tracking vendors.
 
 - [Flurry](https://www.flurry.com/)
-- Sam4Mobile
 - [AppsFlyer](https://www.appsflyer.com/)
 - [TapStream](https://tapstream.com/)
-- MDotM
 - Google Ad Manager
 - Apsalar
 - [Kochava](https://kochava.com/)
 - [Conversant](https://www.conversantmedia.com/)
-- [TapSense](https://www.tapsense.com/)
 - [Tune (formerly HasOffers)](https://www.tune.com/)
 - [Adjust](https://www.adjust.com/)
   - [Adjust Network Integrations Page](https://docs.adjust.com/en/network-integration/)

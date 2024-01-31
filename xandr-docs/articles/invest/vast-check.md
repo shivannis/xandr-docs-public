@@ -115,8 +115,16 @@ If VAST check returns this message, the creative was scanned but contains errors
 
 **Actions to take:**
 
-- Reach out to the tag provider to add the missing duration information or revise the format. For example:
+- Click **Run check again** button to initiate the re-scanning of the creative XML document.
 
+   :::image type="content" source="./media/run-check-again.png" alt-text="Screenshot of Run Check Again.":::
+  This feature would address the following scenarios where:
+  - Scanner failed to run during the upload
+  - Scanner timed out while scanning
+  - Scanner detected an issue such as missing or wrong duration, missing or wrong media file format, etc.
+  - VAST XML content is updated on the ad server, but needs to be updated at Xandr platform and back-end.
+
+- Reach out to the tag provider to add the missing duration information or revise the format. For example
 :::image type="content" source="./media/video-duration.png" alt-text="Screenshot that shows how to add the missing duration information or revise the format.":::
 
 ### No video formats detected
@@ -127,8 +135,17 @@ If VAST check returns this message, the creative was scanned but contains errors
 
 **Actions to take:**
 
-- Reach out to the tag provider to update the creative with at least one of the recommended video formats. <br> Sample XML with recommended VAST formats:
+- Click **Run check again** button to initiate the re-scanning of the creative XML document
 
+  :::image type="content" source="./media/run-check-again.png" alt-text="Diagram of Run Check Again."::: 
+ 
+  This feature would address the following scenarios where:
+  - Scanner failed to run during the upload
+  - Scanner timed out while scanning
+  - Scanner detected an issue such as missing or wrong duration, missing or wrong media file format, etc.
+  - VAST XML content is updated on the ad server, but needs to be updated at Xandr platform and back-end.
+- Reach out to the tag provider to update the creative with at least one of the recommended video formats.
+Sample XML with recommended VAST formats:
   :::image type="content" source="./media/video-formats.png" alt-text="Screenshot of sample XML with recommended VAST formats.":::
 
   Sample XML with recommended VPAID formats:

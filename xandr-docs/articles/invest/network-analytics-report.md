@@ -204,7 +204,11 @@ If you are frequently requesting Member analytics reports which include dates lo
 | Clicks | The total number of clicks across all impressions. For Microsoft Invest, clicks from all media types are supported. For external DSPs, only clicks from Native and Video media types are supported. |
 | Total Conversions | The total number of post-view and post-click conversions. |
 | Post View Conversions | The number of post-view conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](./conversion-attribution.md). |
+|Post-View Conversions: Cross Device | The number of post-view cross-device conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](./conversion-attribution.md). |
+| Post View Conversions: IP | The number of post-view IP conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](./conversion-attribution.md). |
 | Post Click Convs | The number of post-click conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](./conversion-attribution.md). |
+| Post Click Conversions: Cross Device | The number of post-click cross-device conversions. For more information about how we attribute post-click (and other) conversions, see [Conversion Attribution](./conversion-attribution.md). |
+| Post Click Conversions: IP | The number of post-click IP conversions. For more information about how we attribute post-click (and other) conversions, see [Conversion Attribution](./conversion-attribution.md). |
 | CTR | The click-through rate – the ratio of clicks to impressions, expressed as a percentage. |
 | Conversion Rate | The ratio of conversions to impressions, expressed as a percentage. |
 | Booked Revenue | The total booked revenue (does not include resold revenue). |

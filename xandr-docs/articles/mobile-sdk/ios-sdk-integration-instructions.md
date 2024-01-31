@@ -11,29 +11,9 @@ This page describes how to integrate Mobile SDK with your project. Follow the i
 
 ## Requirements
 
-- This SDK requires **MacOS X 10.15.4** and **Xcode version 12.4**.
+- This SDK requires **Xcode version 15.0 or higher** and your app should target **iOS 12.0 or higher**.
 - In order to show ads, you must have a valid Xandr placement ID.
 - Configure App Transport Security (ATS).
-
-
-## App Transport Security
-
-iOS 9 introduced a new privacy feature called [App Transport Security (ATS)](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW33). ATS blocks non-HTTPS requests by default.
-
-To show ads using our SDK, you must include the exception in the `info.plist` file of each app which contains our SDK, [see below](#exception-in-the-infoplist-file).
-
-If you are using v2.13 or greater of our SDK and would like to show only ATS-compliant ads, you can enable HTTPS ads in your app using the instructions in [Request Ads over HTTPS](request-ads-over-https-on-ios.md).
-
-### Exception in the `info.plist` file
-
-``` 
-<!-- iOS: plist settings to allow non-HTTPS ads -->
-<key>NSAppTransportSecurity</key>
-<dict>
-    <key>NSAllowsArbitraryLoads</key>
-    <true/>
-</dict>
-```
 
 ## Installation
 
