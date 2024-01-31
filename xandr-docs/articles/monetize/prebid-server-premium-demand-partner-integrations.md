@@ -95,7 +95,7 @@ Additional resources on demand partners:
 | Dianomi | dianomi | No | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | DistrictM | districtm | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | DistrictM DMX | dmx | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
-| DXKulture | dxkulturea | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
+| DXKulture | dxkulture | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | Edge226 | edge226 | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | E-planning | eplanning | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | E_Volution | e_volution | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
