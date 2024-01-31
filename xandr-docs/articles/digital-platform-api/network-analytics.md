@@ -46,7 +46,8 @@ Most data in this report is maintained permanently (exceptions noted below). Aft
 
 In some cases Analytics reports can show delivery that does not match statistics shown elsewhere in Invest or Monetize for a given advertiser or publisher. This is due to the way that Analytics reporting data older than 100 days and 14 months are aggregated. The data from Billing reports are kept in non-aggregated form indefinitely. For more information, see [Dates and Times in Reporting](../curate/dates-and-times-in-reporting.md) in the UI documentation (customer login required).
 
-To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
+> [!NOTE]
+> To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 
 **Time ranges including dates occurring greater than 45 days ago**
 
@@ -414,7 +415,7 @@ If you are frequently requesting network analytics reports via the API which inc
 | `marketplace_clearing_events_booked_revenue_cpm` | double | `2.45` | total revenue/1000 events | The total revenue per 1000 events (for the associated Clearing Event). |
 | `marketplace_clearing_event_buyer_media_cost_ecpm` | double | `2.37` | total media cost/1000 events | The total media cost per 1000 events (for the associated Clearing Event). |
 
-## Custom Viewable Definition Metrics
+## Custom viewable definition metrics
 
 | Column | Type | Example | Formula | Description |
 |:---|:---|:---|:---|:---|

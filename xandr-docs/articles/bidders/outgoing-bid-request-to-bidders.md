@@ -1,6 +1,6 @@
 ---
 title: Outgoing Bid Request to Bidders
-description: In this article, learn about outgoing bid request to bidders that offers all the necessary information for a bidder to produce a bid price and a creative to serve.
+description: Learn about outgoing bid request to bidders that offers all the necessary information for a bidder to produce a bid price and a creative to serve.
 ms.date: 10/28/2023
 ---
 

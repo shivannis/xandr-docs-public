@@ -4,7 +4,7 @@ description: Learn about Advanced Frequency Management (AFM), an innovative tech
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Advanced Frequency Management
+# Microsoft Invest - Advanced frequency management
 
 Advanced Frequency Management (AFM) is an innovative frequency-capping feature that lets you control the number of impressions seen by users who opt out of including traditional identifiers in ad requests ("cookieless users").
 
