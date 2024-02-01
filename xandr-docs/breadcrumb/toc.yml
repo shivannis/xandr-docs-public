@@ -4,7 +4,7 @@
   items:
    - name: Xandr Platform
      #tocHref: /xandr-docs/
-     topicHref: /xandr/index
+     topicHref: /xandr/articles/index
      items:
        - name: Bidder
          tocHref: /xandr/articles/bidders/
@@ -16,8 +16,8 @@
          tocHref: /xandr/articles/digital-platform-api/
          topicHref: /xandr/articles/digital-platform-api/index
        - name: Microsoft Invest
-         tocHref: /xandr/invest/
-         topicHref: /xandr/invest/index
+         tocHref: /xandr/articles/invest/
+         topicHref: /xandr/articles/invest/index
        - name: Microsoft Curate
          tocHref: /xandr/articles/curate/
          topicHref: /xandr/articles/curate/index
