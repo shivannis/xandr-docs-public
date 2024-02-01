@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Data Marketplace Partners and Contact Information
-description: In this article, find a list of data provider partners along with links to their home pages.
+description: In this article, find a list of data provider partners and links to their home pages.
 ms.date: 10/28/2023
 ---
 

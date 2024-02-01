@@ -13,6 +13,6 @@ This documentation contains information for data providers on the processes and 
 
 Xandr serves as a facilitator and filter for our clients if and when they decide to use additional user-centric or inventory-based data to better target campaigns.
 
-# Related topic
+## Related topic
 
 [Data Marketplace Overview](../invest/data-marketplace-overview.md)

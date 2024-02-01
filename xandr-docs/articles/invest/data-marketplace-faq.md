@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Data Marketplace FAQ(s)
-description: In this article, find answers to frequently asked questions regarding the Data Marketplace.
+description: In this article, find answers to frequently asked questions regarding Data Marketplace.
 ms.date: 10/28/2023
 ---
 

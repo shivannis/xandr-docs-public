@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Data Cost Calculation Mechanics
-description: In this article, find information about how buyers are billed for the segments they acquire through the Data Marketplace.
+description: In this article, find information about how buyers are billed for the segments they acquire through Data Marketplace.
 ms.date: 10/28/2023
 ---
 
@@ -86,7 +86,7 @@ Buyers can create multiple segments groups (using the boolean AND/OR operators d
 
 #### AND Targeting using Segment Groups
 
-:::image type="content" source="media/advanced-and-d.png" alt-text="Screenshot of a bid when the ad is relevant to all targeted segment groups.":::
+:::image type="content" source="media/advanced-and.png" alt-text="Screenshot of a bid when the ad is relevant to all targeted segment groups.":::
 
 When using the AND boolean against segment groups, the boolean within each group will be set to OR. OR pricing logic described in the section above will be used to determine which segments to use in each group. Then a second calculation is done to verify that at least one segment is relevant in each group. At least one segment from each group will be used to bid on the auction.
 

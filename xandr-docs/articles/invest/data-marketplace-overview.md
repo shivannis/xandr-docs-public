@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Data Marketplace Overview
-description: In this article, find information about the workflow, filtering, and data usage for the Data Marketplace.
+description: In this article, find information about the workflow, filtering, and data usage for Data Marketplace.
 ms.date: 10/28/2023
 ---
 
