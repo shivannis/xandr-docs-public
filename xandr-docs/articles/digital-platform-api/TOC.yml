@@ -627,11 +627,5 @@
     items:
     - name: Privacy Service
       href: privacy-service.md
-- name: Xandr API Support
-  items:
-  - name: Overview
-    href: xandr-api-support.md
-  - name: Submit a Support Request
-    href: submit-a-support-request.md
-  - name: Seller Bid Error Report - Messages and Resolutions for Sellers
-    href: seller-bid-error-report---messages-and-resolutions-for-sellers.md
+- name: API Support
+  href: xandr-api-support.md
