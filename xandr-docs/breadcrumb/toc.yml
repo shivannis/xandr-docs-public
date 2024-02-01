@@ -4,7 +4,7 @@
   items:
    - name: Xandr Platform
      #tocHref: /xandr-docs/
-     topicHref: /xandr/articles/index
+     topicHref: /xandr/index
      items:
        - name: Bidder
          tocHref: /xandr/articles/bidders/
