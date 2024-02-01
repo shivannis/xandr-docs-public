@@ -60,7 +60,7 @@ The `buyer` object contains the following fields:
 
 ### Buyer bidders
 
-The `buyer_bidders` object is used in multi-buyer deals. The `buyer_bidders` object can be set on a `POST`, and can be updated with a `PUT`. When a seller is enabled for multi-buyer deals. the `buyer_bidders` object can be set in combination with `buyer_seats` and `buyer_members`.
+The `buyer_bidders` object is used in multi-buyer deals. The `buyer_bidders` object can be set on a `POST`, and can be updated with a `PUT`. When a seller is enabled for multi-buyer deals, the `buyer_bidders` object can be set in combination with `buyer_seats` and `buyer_members`.
 
 The `buyer_bidders` object contains the following fields:
 

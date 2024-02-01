@@ -51,7 +51,7 @@ The following steps will guide you through the process of setting up a curated d
 - [Step 5 - Create a curated deal line item profile](#step-5---create-a-curated-deal-line-item-profile)
 - [Step 6 - Create a curated deal line item](#step-6---create-a-curated-deal-line-item)
 
-## Step 1 - Obtain an authorization token
+### Step 1 - Obtain an authorization token
 
 First, you’ll need to obtain an authorization token. You must then include this authorization token in all subsequent requests (see [Authentication Service](./authentication-service.md) for more information). To obtain an authorization token, do the following:
 
@@ -83,7 +83,7 @@ First, you’ll need to obtain an authorization token. You must then include thi
     }
     ```
 
-## Step 2 - Create or access an advertiser
+### Step 2 - Create or access an advertiser
 
 You'll need to create or access an advertiser from which to create a curated deal line item. You set up advertisers for curated deal line items the same way you would for augmented line items.
 
@@ -111,7 +111,7 @@ If you don't already have an advertiser to use, create an advertiser by doing th
 
 1. Note the advertiser ID in the response body so you can use it when you create the curated deal line item in [Step 6 - Create a curated deal line item](#step-6---create-a-curated-deal-line-item).
 
-### JSON fields for advertiser (required and useful optional fields)
+#### JSON fields for advertiser (required and useful optional fields)
 
 | Field | Type | Required or Optional | Description |
 |:---|:---|:---|:---|
@@ -119,7 +119,7 @@ If you don't already have an advertiser to use, create an advertiser by doing th
 | `timezone` | enum | Optional | The timezone of the advertiser. See [API Timezones](./api-timezones.md) for details and accepted values.  |
 | `use_insertion_orders` | boolean | Required | This field must be set to `true` in order to create curated deal line items. |
   
-## Step 3 - Create or access an insertion order
+### Step 3 - Create or access an insertion order
 
 You'll need to create or access an insertion order to create a curated deal line item. Curated deal line items require a seamless insertion order (see **required** fields below).
 
@@ -162,14 +162,14 @@ information):
 
 1. Note the insertion order ID in the response body so you can use it when you create the curated deal line item in [Step 6 - Create a curated deal line item](#step-6---create-a-curated-deal-line-item).
 
-### JSON fields for seamless insertion order
+#### JSON fields for seamless insertion order
 
 | Field | Type | Required or Optional | Description |
 |:---|:---|:---|:---|
 | `budget_intervals` | array of objects | Required | In order for an insertion order created via the API to be seamless, you must use the `budget_intervals` field. |
 | `name` | string | Required | The name of the advertiser |
 
-## Step 4 - Create a deal
+### Step 4 - Create a deal
 
 You'll need to create the deal you want to associate with the curated deal line item.
 
@@ -204,7 +204,7 @@ To create a deal, do the following (see [Deal Service](./deal-service.md) for 
 
 1. Note the deal ID in the response body so you can use it when you create the deal line item in [Step 6 - Create a curated deal line item](#step-6---create-a-curated-deal-line-item).
 
-### JSON fields for deal
+#### JSON fields for deal
 
 | Field | Type | Required or Optional | Description |
 |:---|:---|:---|:---|
@@ -214,11 +214,11 @@ To create a deal, do the following (see [Deal Service](./deal-service.md) for 
 | `type` | object | Required | The type of deal. This field must be set to `"5"` for curated deals. |
 | `version` | int | Required | This field must be set to `"2"` in order to associate the deal to a curated deal line item. |
 
-#### Useful optional JSON fields
+##### Useful optional JSON fields
 
-##### JSON fields for allowed creatives
+###### JSON fields for allowed creatives
 
-##### Brand (see [Brand Service](./brand-service.md))
+**Brand (see [Brand Service](./brand-service.md))**
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -228,7 +228,7 @@ To create a deal, do the following (see [Deal Service](./deal-service.md) for 
 | `name` | string | Field within `brands`: Name of the brand that is eligible for the deal |
 | `override` | boolean | Field within `brands`: Set to `true` to allow a specific brand to serve for a deal even if the ad quality profile would have blocked it. |
 
-###### Brand example
+**Brand example**
 
 ```
 "brand_restrict": true,
@@ -246,7 +246,7 @@ To create a deal, do the following (see [Deal Service](./deal-service.md) for 
             ] 
 ```
 
-##### Media type (see [Media Subtype Service](media-subtype-service.md) and [Media Type Service](media-type-service.md))
+**Media type (see [Media Subtype Service](media-subtype-service.md) and [Media Type Service](media-type-service.md))**
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -255,7 +255,7 @@ To create a deal, do the following (see [Deal Service](./deal-service.md) for 
 | `allowed_media_types` | array of objects | The media types allowed for the deal |
 | `id` | int | Field within `allowed_media_types`: The ID of the media type allowed for the deal |
 
-###### Media type example
+**Media type example**
 
 ```
 "allowed_media_subtypes": [
@@ -291,7 +291,7 @@ To create a deal, do the following (see [Deal Service](./deal-service.md) for 
              ]
 ```
 
-## Step 5 - Create a curated deal line item profile
+### Step 5 - Create a curated deal line item profile
 
 Next, create a curated deal line item profile to use in targeting with the curated deal line item. Be sure to note the ID for this profile for later use. See [Profile Service](./profile-service.md) for more information.
 
@@ -388,11 +388,11 @@ To create a curated deal line item profile, do the following (see [Profile Serv
 
 1. Note the profile ID in the response body so you can use it when you create the curated deal line item in [Step 6 - Create a curated deal line item](#step-6---create-a-curated-deal-line-item).
 
-### Optional JSON fields for deal line item profile
+#### Optional JSON fields for deal line item profile
 
 There are many optional fields available in the curated deal line item profile for targeting with the curated deal line item. For example, you can target properties associated with inventory, inventory types, allowlists, blocklists, device types, and so forth. See the [Profile Service](./profile-service.md) for more information on available fields.  
 
-## Step 6 - Create a curated deal line item
+### Step 6 - Create a curated deal line item
 
 Finally, you'll need to create the curated deal line item to associate the deal ID and the curated deal line item profile you created in [Step 5 - Create a curated deal line item profile](#step-5---create-a-curated-deal-line-item-profile).
 
@@ -497,7 +497,7 @@ To create a curated deal line item, do the following (see [Line Item Service](
 
 1. Note the line item ID in the response body so you can identify this curated deal line item later to change its `state` (`active` or `inactive`) or modify it.  
 
-### JSON fields for curated deal line item
+#### JSON fields for curated deal line item
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -514,7 +514,7 @@ To create a curated deal line item, do the following (see [Line Item Service](
 | `valuation` | object | For curated deals, use the following valuation object fields:<br> - `min_revenue_value` <br> - If you set the `revenue_type` to `vcpm` (Standard), set the floor price in `min_revenue_value`.<br> - If you set the `revenue_type` to `cpm` (Fixed), set the value of `min_revenue_value` to `null`. <br><br> - `min_margin_cpm` - Set the margin value in `min_margin_cpm` when using CPM as a margin type.<br><br> - `min_margin_pct` - Set the margin value in `min_margin_pct` when using percentage as a margin type.<br><br>**Note**: The `min_margin_cpm` and `min_margin_pct` fields cannot both be set at the same time. If one is set, the other must be `null`.  |
 | `auction_event` | object | Object for auction event type properties: The `kpi_auction_type_id`, `payment_auction_type_id`, and `revenue_auction_type_id` fields of the auction_event object must all be set to `1`. |
 
-#### Note for `line_item_subtype` field
+##### Note for `line_item_subtype` field
 
 Setting `line_item_subtype` field to `"standard_curated"` will automatically assign the following values to these related fields.
 
@@ -530,7 +530,7 @@ Setting `line_item_subtype` field to `"standard_curated"` will automatically ass
 
 The `line_item_subtype` field (and associated fields/arrays) cannot be changed after the line item is created.
 
-#### Useful optional JSON fields for curated deal line item
+##### Useful optional JSON fields for curated deal line item
 
 | Field | Type | Description |
 |:---|:---|:---|

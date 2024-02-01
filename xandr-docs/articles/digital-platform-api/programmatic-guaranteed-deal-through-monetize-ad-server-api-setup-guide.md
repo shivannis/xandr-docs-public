@@ -51,7 +51,7 @@ The following steps will guide you through the process of setting up a deal line
 - [Step 5 - Create a PG deal line item profile](#step-5-create-a-deal-line-item-profile)
 - [Step 6 - Create a PG deal line item](#step-6-create-a-pg-deal-line-item)
 
-## Step 1: Obtain an authorization token
+### Step 1: Obtain an authorization token
 
 First, you’ll need to obtain an authorization token. You must then include this authorization token in all subsequent requests. For more information, see [Authentication Service](authentication-service.md). To obtain an authorization token, do the following:
 
@@ -84,7 +84,7 @@ First, you’ll need to obtain an authorization token. You must then include thi
     }
     ```
 
-## Step 2: Create or access an advertiser
+### Step 2: Create or access an advertiser
 
 You'll need to create or access an advertiser from which to create a deal line item. For deal line items, advertisers are set up the same way as augmented line items.
 
@@ -112,7 +112,7 @@ If you don't already have an advertiser to use, create an advertiser by doing th
 
 1. Note the advertiser ID in the response body so you can use it when you create the deal line item in [Step 6 - Create a deal line item](#step-6-create-a-pg-deal-line-item).
 
-### JSON fields for advertiser (required and useful optional fields)
+#### JSON fields for advertiser (required and useful optional fields)
 
 | Field | Type | Required or Optional | Description |
 |:---|:---|:---|:---|
@@ -120,7 +120,7 @@ If you don't already have an advertiser to use, create an advertiser by doing th
 | `timezone` | enum | Optional | The timezone of the advertiser. For details and accepted values, see [API Timezones](api-timezones.md). |
 | `use_insertion_orders` | boolean | Required | This field must be set to `true` in order to create deal line items. |
 
-## Step 3: Create or access an insertion order for PG
+### Step 3: Create or access an insertion order for PG
 
 You'll need to create or access an insertion order to create a PG deal. Deal line items require a seamless insertion order (see required fields below).
 
@@ -162,7 +162,7 @@ If you don't already have an insertion order to use, create an insertion order b
 
 1. Note the insertion order ID in the response body so you can use it when you create the PG deal line item in [Step 6 - Create a deal line item](#step-6-create-a-pg-deal-line-item).
 
-### JSON fields for seamless insertion order (required and useful optional fields)
+#### JSON fields for seamless insertion order (required and useful optional fields)
 
 | Field | Type | Required or Optional | Description |
 |:---|:---|:---|:---|
@@ -172,7 +172,7 @@ If you don't already have an insertion order to use, create an insertion order b
 | `budget_type` | enum | Required | Budget type will translate to all deals below the insertion order. For PG deals, the `budget_type` field can be set to either of the following values: `"impression"` or `"flexible"`. If you select an impression budget type for your insertion order, then you can't have deal line items with a revenue budget associated to that insertion order. However, insertion orders with `"flexible"` budget types can have deal line items with either impression or revenue budget types. |
 | `pacing` |  | Required |  |
 
-## Step 4: Create a PG deal
+### Step 4: Create a PG deal
 
 You'll need to create the deal you want to associate with the PG deal line item.
 
@@ -203,7 +203,7 @@ To create a deal, do the following (for more information, see [Deal Service](dea
 
 1. Note the deal ID in the response body so you can use it when you create the deal line item in [Step 6 - Create a deal line item](#step-6-create-a-pg-deal-line-item).
 
-### JSON fields for deal
+#### JSON fields for deal
 
 | Field | Type | Required or Optional | Description |
 |:---|:---|:---|:---|
@@ -218,11 +218,11 @@ To create a deal, do the following (for more information, see [Deal Service](dea
 | `currency` | enum | Required | The currency for the `floor_price`. For a full list of available currencies, use the read-only [Currency Service](currency-service.md). The default value for this field is `"USD"`. |
 | `use_deal_floor` | Boolean | Required | This field must be set to `true`. When this field is set to `true`, the `floor_price` is applied for the deal. When `use_deal_floor` is `true`, the deal's floor price overrides any other floors you may have, for example, in placements or yield management profiles.<br><br>**Note:** As of 2017, only `ask_price` is used. API `POST` and `PUT` calls referencing `floor_price` and `use_deal_floor` will work as follows:<br>- If the API call includes `ask_price` only, this is the value that will be used.<br>- If the API call includes only a `floor_price` value, this value will be converted into the `ask_price` value. |
 
-#### Useful optional JSON fields
+##### Useful optional JSON fields
 
-##### JSON fields for allowed creatives
+###### JSON fields for allowed creatives
 
-###### Brand (see [Brand Service](brand-service.md))
+**Brand (see [Brand Service](brand-service.md))**
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -250,7 +250,7 @@ To create a deal, do the following (for more information, see [Deal Service](dea
             ] 
 ```
 
-###### Language (see [Language Service](language-service.md))
+**Language (see [Language Service](language-service.md))**
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -278,7 +278,7 @@ To create a deal, do the following (for more information, see [Deal Service](dea
             ]
 ```
 
-###### Trust level
+**Trust level**
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -290,7 +290,7 @@ To create a deal, do the following (for more information, see [Deal Service](dea
 "audit_status_option": "max_trust" 
 ```
 
-###### Creative category
+**Creative category**
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -318,7 +318,7 @@ To create a deal, do the following (for more information, see [Deal Service](dea
              "category_restrict": true
 ```
 
-###### Specific creatives
+**Specific creatives**
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -341,7 +341,7 @@ To create a deal, do the following (for more information, see [Deal Service](dea
             ]
 ```
 
-###### Media Type (see [Media Subtype Service](media-subtype-service.md) and [Media Type Service](media-type-service.md))
+**Media Type (see [Media Subtype Service](media-subtype-service.md) and [Media Type Service](media-type-service.md))**
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -386,7 +386,7 @@ To create a deal, do the following (for more information, see [Deal Service](dea
              ]
 ```
 
-###### Technical attributes (see [Technical Attribute Service](technical-attribute-service.md))
+**Technical attributes (see [Technical Attribute Service](technical-attribute-service.md))**
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -408,12 +408,12 @@ To create a deal, do the following (for more information, see [Deal Service](dea
              ]
 ```
 
-##### JSON fields for deal data protection (see [Visibility Profile Service](visibility-profile-service.md))
+###### JSON fields for deal data protection (see [Visibility Profile Service](visibility-profile-service.md))
 
 > [!WARNING]
 > This beta feature isn't available for all clients. Please reach out to your account manager to discuss if you have a use case.
 
-###### User ID and device ID
+**User ID and device ID**
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -454,7 +454,7 @@ To create a deal, do the following (for more information, see [Deal Service](dea
 > curl -b cookies -c cookies -X PUT -d @deal_data_protection.json 'https://api.appnexus.com/deal?id=549271'
 ```
 
-###### IP Address
+**IP Address**
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -495,7 +495,7 @@ To create a deal, do the following (for more information, see [Deal Service](dea
 > curl -b cookies -c cookies -X PUT -d @deal_data_protection.json 'https://api.appnexus.com/deal?id=549271'
 ```
 
-###### URL
+**URL**
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -533,7 +533,7 @@ To create a deal, do the following (for more information, see [Deal Service](dea
 > curl -b cookies -c cookies -X PUT -d @deal_data_protection.json 'https://api.appnexus.com/deal?id=549271'
 ```
 
-###### Add to segment (see [Deal Service](deal-service.md))
+**Add to segment (see [Deal Service](deal-service.md))**
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -555,7 +555,7 @@ To create a deal, do the following (for more information, see [Deal Service](dea
 > curl -b cookies -c cookies -X PUT -d @add_segment.json 'https://api.appnexus.com/deal?id=123456'
 ```
 
-## Step 5: Create a deal line item profile
+### Step 5: Create a deal line item profile
 
 Next, create a deal line item profile to use in targeting with the deal line item. Be sure to note the ID for this profile for later use. For more information, see [Profile Service](profile-service.md).
 
@@ -621,13 +621,13 @@ To create a PG deal line item profile, do the following (for more information, s
 
 1. Note the profile ID in the response body so you can use it when you create the PG deal line item in [Step 6 - Create a PG deal line item](#step-6-create-a-pg-deal-line-item).
 
-### Optional JSON fields for deal line item profile
+#### Optional JSON fields for deal line item profile
 
 There are many optional fields available in the deal line item profile for targeting with the deal line item. For example, you can target
 properties associated with inventory, inventory types, allowlists, blocklists, device types, and so forth. For more information on
 available fields, see the [Profile Service](profile-service.md).
 
-## Step 6: Create a PG deal line item
+### Step 6: Create a PG deal line item
 
 Finally, you'll need to create the deal line item to associate the deal ID and the deal line item profile you created in [Step 5 - Create a PG deal line item profile](#step-5-create-a-deal-line-item-profile).
 
@@ -742,7 +742,7 @@ To create a PG deal line item, do the following (for more information, see [Line
 
 1. Note the line item ID in the response body so you can identify this deal line item later to change its `state` (`active` or `inactive`) or modify it.
 
-### JSON fields for deal line item
+#### JSON fields for deal line item
 
 | Field | Type | Required or Optional | Description |
 |:---|:---|:---|:---|
@@ -766,7 +766,7 @@ To create a PG deal line item, do the following (for more information, see [Line
 | `delivery_model_type` | enum | Required | Set this field's value to `"guaranteed"`. |
 | `line_item_subtype` | enum | Required | Set this field's value to `"pg_deal_3p_pacing"`. |
 
-#### `budget_intervals` example
+##### `budget_intervals` example
 
 ```
 "budget_intervals": [
@@ -795,7 +795,7 @@ To create a PG deal line item, do the following (for more information, see [Line
 ]
 ```
 
-#### `auction_event` example
+##### `auction_event` example
 
 ```
 "auction_event": {
@@ -813,7 +813,7 @@ To create a PG deal line item, do the following (for more information, see [Line
 }
 ```
 
-#### Useful optional JSON fields for deal line item
+##### Useful optional JSON fields for deal line item
 
 | Field | Type | Description |
 |:---|:---|:---|
