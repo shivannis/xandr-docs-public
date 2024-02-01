@@ -193,7 +193,7 @@ If you are frequently requesting Member analytics reports which include dates lo
 | Imps | The total number of impressions. |
 | Imps (master creative) | The number of page-level roadblocks that served the master creative. <br> **Note**: Alpha-Beta Notice: <br> This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
 | Imps (blank) | The total number of impressions in which a blank creative served. |
-| Imps (default) | The total number of impressions in which a default creative served. |
+| Imps (default bidder) | The total number of impressions in which a default creative served because there were no valid bids.|
 | Imps (default error) | The total number of impressions in which a default creative served due to timeout issue. |
 | Imps (kept) | The total number of impressions in which one of your managed advertisers served a creative. |
 | Imps (PSA) | The total number of impressions in which a public service announcement served because no other creative was eligible. |
