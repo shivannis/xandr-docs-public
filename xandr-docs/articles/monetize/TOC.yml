@@ -110,10 +110,14 @@
          href: manage-your-username-and-password.md
        - name: Learn About Partner Single Sign-on Access
          href: learn-about-partner-single-sign-on-access.md
-       - name: Create a User
-         href: create-a-user.md
-       - name: Edit a Network User
-         href: edit-a-network-user.md
+    - name: Network Users Screen
+      items: 
+      - name: Overview
+        href: network-users-screen.md
+      - name: Create a Network User
+        href: create-a-user.md
+      - name: Edit a Network User
+        href: edit-a-network-user.md  
     - name: Roles
       items:
       - name: Getting Started with Roles
@@ -126,8 +130,7 @@
           href: create-a-custom-role.md
         - name: Role Capabilities
           href: role-capabilities.md
-    - name: Network Users Screen
-      href: network-users-screen.md
+    
   - name: Network Operations
     items:
     - name: Partner Fees
