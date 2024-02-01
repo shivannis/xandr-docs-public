@@ -22,10 +22,9 @@ Multi-buyer deals must be implemented using deal line items (Deals v2). The `bu
 
 ## JSON fields
 
-The following tables outline the JSON fields required for setting up the Multi-buyer deals API:
+The tables below outline the JSON fields required for setting up the Multi-buyer deals API.
 
-> [!NOTE]
-> For multi-buyer deals, you are required to include at least one of the following JSON fields in a `POST`: `buyer`, `buyer_bidders`, `buyer_members`, or `buyer_seats`. For single-buyer deals, you must include either `buyer` or `buyer_seats` in a `POST`.
+For multi-buyer deals, you are required to include at least one of the following JSON fields in a `POST`: `buyer`, `buyer_bidders`, `buyer_members`, or `buyer_seats`. For single-buyer deals, you must include either `buyer` or `buyer_seats` in a `POST`.
 
 | Field | Type (Length) | Description |
 |:---|:---|:---|
@@ -34,7 +33,7 @@ The following tables outline the JSON fields required for setting up the Multi-b
 | `buyer _members` | object | The Xandr member ID of the buyer who can target this deal. For more details, see [Buyer Members](#buyer-members) below. |
 | `buyer _seats` | object | The seat ID (the unique advertiser ID from their DSP) of the buyer who can target this deal. A deal will only ever use the `buyer` field or the `buyer_seats` field, not both. For more details, see [Buyer Seats](#buyer-seats) below. |
 
-## Buyer
+### Buyer
 
 The `buyer` object is not used in multi-buyer deals. The `buyer` object can be set on a `POST`, but cannot be updated with a `PUT`. If you want to change the buyer, you need to create a new deal.
 
@@ -46,7 +45,7 @@ The `buyer` object contains the following fields:
 | `bidder_id` | int | **Read-only**. The bidder ID of the member. For buyers, this will always be `2`. |
 | `name` | string | **Read-only**. The member name of the buyer. |
 
-### Example of the `buyer` object
+#### Example of the `buyer` object
 
 ```
 "buyer": {
@@ -69,7 +68,7 @@ The `buyer_bidders` object contains the following fields:
 | `bidder_name` | string | **Read-only**. The name of the bidder. |
 | `id` | int | The bidder ID of the buyer. The bidder ID is `2`. <br>**Required On**: `POST`  |
 
-### Example of the `buyer_bidders` object
+#### Example of the `buyer_bidders` object
 
 ```
 "buyer_bidders": [{
@@ -91,7 +90,7 @@ The `buyer_members` object contains the following fields:
 | `id` | int | The member ID of the buyer. <br>**Required On**: `POST` |
 | `name` | string | **Read-only**. The member name of the buyer. |
 
-### Example of the `buyer_members` object
+#### Example of the `buyer_members` object
 
 ```
 "buyer_members": [{
@@ -104,10 +103,7 @@ The `buyer_members` object contains the following fields:
 
 ### Buyer seats
 
-The `buyer_seats` object is used in multi-buyer deals. Deals with seats can be set up using the `buyer_seats` object via the API.
-
-- When setting up a new deal via the API, use the `buyer_seats` object.
-- When a new deal is set up via the API, the API will be populated with the `buyer_seats` object.
+The `buyer_seats` object is used in multi-buyer deals. Deals with seats can be set up using the `buyer_seats` object via the API. When setting up a new deal via the API, use the `buyer_seats` object, and the API will be populated with this object.
 
 Use the Microsoft Invest buyer's member ID in the `code` and `bidder_id=2` field. New deals with external DSP's can also be set up with buyer seat IDs. You can check which external DSPs are using buyer seat IDs [here](https://monetize.xandr.com/docs/external-dsps-using-buyer-seat-ids) (login required).
 
@@ -127,7 +123,7 @@ The `buyer_seats` object contains the following fields:
 | `code` | string | The identifier for the buyer seat. <br> **Required On**: `POST` |
 | `name` | string | The name of buyer seat. |
 
-### Example of the `buyer_seats` object
+#### Example of the `buyer_seats` object
 
 ```
 "buyer": null,
@@ -140,6 +136,8 @@ The `buyer_seats` object contains the following fields:
                 }
             ],
 ```
+
+## Multi-buyer deal example
 
 ### Add a multi-buyer deal
 
