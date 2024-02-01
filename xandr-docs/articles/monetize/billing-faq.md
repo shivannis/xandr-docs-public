@@ -177,7 +177,7 @@ from your data provider. If you purchased data through
 Xandr you will see that activity in our **Data
 Usage Report** in the UI. Otherwise, you will be billed by the Data
 Provider. For more information on Data Clearing, see [Data
-Marketplace - Buyer Overview](data-marketplace-buyer-overview.md).
+Marketplace Overview](data-marketplace-overview.md).
 
 ### How can I set up netting if we buy and sell through Xandr?
 

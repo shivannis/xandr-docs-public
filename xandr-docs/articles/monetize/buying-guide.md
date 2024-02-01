@@ -127,6 +127,6 @@ agreements with sellers, see [Buying Deals](buying-deals.md).
   from a buyer with a committed impression volume, the most important
   performance indicator is that the line item delivers its budget in
   full and evenly across its flight dates.
-- [Data Marketplace - Buyer Overview](data-marketplace-buyer-overview.md): Xandr supports automatic clearing of third-party segment data you can
+- [Data Marketplace Overview](data-marketplace-overview.md): Xandr supports automatic clearing of third-party segment data you can
   purchase and use to target audience segments.
 

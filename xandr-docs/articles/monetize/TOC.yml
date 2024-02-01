@@ -16,9 +16,9 @@
     href: network-guide.md
   - name: Targeting Lists
     items:
-    - name: Work with Targeting Lists
+    - name: Working with Targeting Lists
       href: working-with-targeting-lists.md
-    - name: Manage Your Targeting Lists
+    - name: Managing Your Targeting Lists
       href: managing-your-targeting-lists.md
     - name: Create a Domain List or App List
       href: create-a-domain-list-or-app-list.md
@@ -28,7 +28,7 @@
       href: explore-domain-lists-or-app-lists.md
   - name: Third-Party Inventory
     items:
-    - name: Work with Third-Party Inventory
+    - name: Working with Third-Party Inventory
       href: working-with-third-party-inventory.md
     - name: Traffic Quality
       href: traffic-quality.md
@@ -38,11 +38,11 @@
         href: exchanges-and-aggregators.md
       - name: Google Ad Manager
         href: doubleclick-ad-exchange-adx.md
-      - name: Sync User ID with External Partners
-        href: user-id-sync-with-external-partners.md
+      - name: User ID Syncing with External Partners
+        href: user-id-syncing-with-external-partners.md
       - name: Asynchronous Usersync Pixels
         href: asynchronous-usersync-pixels.md
-  - name: Key/Value Target
+  - name: Key/Value Targeting
     items:
     - name: Getting Started with Key/Value Targeting
       href: getting-started-with-key-value-targeting.md
@@ -50,7 +50,7 @@
       href: pre-defining-targeting-keys-and-values.md
   - name: Network Ad Quality
     items:
-    - name: Work with Network Ad Quality
+    - name: Working with Network Ad Quality
       href: working-with-network-ad-quality.md
     - name: Network Ad Quality Screen
       href: network-ad-quality-screen.md
@@ -68,27 +68,27 @@
     href: ad-quality-and-creative-standards.md
   - name: Network Tools
     items:
-    - name: Work with Network Tools
+    - name: Working with Network Tools
       href: working-with-network-tools.md
-    - name: Manage Your Inventory Reselling Exposure
+    - name: Managing Your Inventory Reselling Exposure
       href: managing-your-inventory-reselling-exposure.md
     - name: Manage Custom Content Categories
       href: manage-custom-content-categories.md
-    - name: Manage Custom Creative and Placement Sizes
+    - name: Managing Custom Creative and Placement Sizes
       href: managing-custom-creative-and-placement-sizes.md
-    - name: Cap Daily Spend on Third-Party Inventory (Safety Budget)
+    - name: Capping Daily Spend on Third-Party Inventory (Safety Budget)
       href: capping-daily-spend-on-third-party-inventory-safety-budget.md
-    - name: Manage Targeting Templates
+    - name: Managing Targeting Templates
       href: managing-targeting-templates.md
-    - name: Work with Third-Party Buying Filters
+    - name: Working with Third-Party Buying Filters
       href: working-with-third-party-buying-filters.md
-    - name: Manage Notification Recipients
+    - name: Managing Notification Recipients
       href: managing-notification-recipients.md
     - name: Creative Templates
       href: creative-templates.md
-    - name: View Your Object Limits
+    - name: Viewing Your Object Limits
       href: viewing-your-object-limits.md
-    - name: View Your Target Limits
+    - name: Viewing Your Target Limits
       href: viewing-your-target-limits.md
     - name: Manage Network Priorities
       href: manage-network-priorities.md
@@ -96,13 +96,13 @@
       href: create-a-third-party-network-pixel-for-your-creatives.md
     - name: Create a VAST Extension
       href: create-a-vast-extension.md
-  - name: Manage User Logins and Permissions
+  - name: Managing User Logins and Permissions
     items:
     - name: Microsoft Identity Platform Login
       href: microsoft-identity-platform-login.md
     - name: Microsoft Identity Platform Login Troubleshooting
       href: microsoft-identity-platform-login-troubleshooting.md
-    - name: Manage User Logins and Permissions
+    - name: Managing User Logins and Permissions
       items:
        - name: Overview 
          href: managing-user-logins-and-permissions.md
@@ -110,14 +110,10 @@
          href: manage-your-username-and-password.md
        - name: Learn About Partner Single Sign-on Access
          href: learn-about-partner-single-sign-on-access.md
-    - name: Network Users Screen
-      items: 
-      - name: Overview
-        href: network-users-screen.md
-      - name: Create a Network User
-        href: create-a-user.md
-      - name: Edit a Network User
-        href: edit-a-network-user.md  
+       - name: Create a User
+         href: create-a-user.md
+       - name: Edit a Network User
+         href: edit-a-network-user.md
     - name: Roles
       items:
       - name: Getting Started with Roles
@@ -130,7 +126,8 @@
           href: create-a-custom-role.md
         - name: Role Capabilities
           href: role-capabilities.md
-    
+    - name: Network Users Screen
+      href: network-users-screen.md
   - name: Network Operations
     items:
     - name: Partner Fees
@@ -161,7 +158,7 @@
   items:
   - name: Overview
     href: partner-center-guide.md
-  - name: Manage Relationships with Buyers
+  - name: Managing Relationships with Buyers
     items:
     - name: Overview
       href: managing-relationships-with-buyers.md
@@ -733,8 +730,16 @@
       href: open-dynamic-allocation-and-flexible-priorities.md
     - name: Forecast-Shaped Pacing
       href: forecast-shaped-pacing.md
-  - name: Data Marketplace Overview
-    href: data-marketplace-buyer-overview.md
+  - name: Data Marketplace
+    items:
+    - name: Data Marketplace Overview
+      href: data-marketplace-overview.md
+    - name: Data Marketplace Partners and Contact Information
+      href: data-marketplace-partners-and-contact-information.md
+    - name: Data Cost Calculation Mechanics
+      href: data-cost-calculation-mechanics.md
+    - name: Data Marketplace FAQ(s)
+      href: data-marketplace-faq.md
 - name: Buy-Side Targeting
   items:
   - name: Overview
