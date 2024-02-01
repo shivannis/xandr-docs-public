@@ -15,7 +15,7 @@ When you edit a seasonal adjustment, you can change only the number of impressio
 1. On the Capacity Dashboard, click **Adjust Seasonal Forecast**.
 1. On the Forecast Management page, specify the Configuration and Filter values to find the seasonal product.
 1. In the Products list, click on the product to display it in the Product detail preview.
-1. In the Product detail preview, click **View \>  Forecast Visibility**.
+1. In the Product detail preview, click **View \> Forecast Visibility**.
 1. On the Forecast Visibility page, in the Adjustments Influencing Forecast panel, click the **Edit** button.
 1. In the Edit Seasonal Adjustment panel, select whether you want to add Monthly or **Daily** impressions.
 1. For each month or day, specify the number of impressions.
@@ -24,9 +24,9 @@ When you edit a seasonal adjustment, you can change only the number of impressio
 ## Related topics
 
 - [About Forecasts and Adjustments](about-forecasts-and-adjustments.md)
-- [View the Forecast for Your Products](view-the-forecast-for-your-products.md)
+- [View the Forecast for Your Products](view-your-products-forecast.md)
 - [Anatomy of the Capacity Dashboard Page](anatomy-of-the-capacity-dashboard-page.md)
-- [Anatomy of the Forecast Visibility Page](anatomy-of-the-forecast-visibility-page.md)
+- [Anatomy of the Forecast Visibility Page](forecast-visibility-page-anatomy.md)
 - [Check Impression Capacity for a Product Group](check-impression-capacity-for-a-product-group.md)
 - [Add a Manual Adjustment to a Product](add-a-manual-adjustment-to-a-product.md)
 - [Adding and Editing Adjustments](adding-and-editing-adjustments.md)

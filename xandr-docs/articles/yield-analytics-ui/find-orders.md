@@ -13,7 +13,7 @@ ms.custom: yield-analytics-ui
     - To filter the orders list by date, click **This Month** in the Date Range filter, specify a standard or custom time period, and click **Update**.
 
     - To filter the order list by status, click **Includes x Values** in the Status filter, click on a status to select or deselect it, and click **Update**. The selected statuses are displayed in a tooltip.
-1. In the search box in the toolbar above the order list, type a search term, change the search options as needed, and then press Enter. The order list is redisplayed to show only the orders that match your search criteria.  
+1. In the search box in the toolbar above the order list, type a search term, change the search options as needed, and then press Enter. The order list is redisplayed to show only the orders that match your search criteria.
 
     - By default, the search returns orders that contain the search term you entered. To change the type of search, on the drop-down list to the left of the search box, click **Contains** and select a different option (e.g., to search for orders that starts with the search term you typed, select **Starts With**).
 
@@ -36,5 +36,5 @@ ms.custom: yield-analytics-ui
 - [Anatomy of the Order Visibility Page](anatomy-of-the-order-visibility-page.md)
 - [Find an Order Line](find-an-order-line.md)
 - [Anatomy of the Order Line Visibility Page](anatomy-of-the-order-line-visibility-page.md)
-- [Solving Delivery Issues with Order Line Visibility](solving-delivery-issues-with-order-line-visibility.md)
+- [Solving Delivery Issues with Order Line Visibility](solve-delivery-issues-with-order-line-visibility.md)
 - [Orders Overview](orders-overview.md)

@@ -15,5 +15,5 @@ This section contains information on using Evaluate Orders to evaluate the yie
 - [Anatomy of the Evaluate Orders Page](anatomy-of-the-evaluate-orders-page.md)
 - [About Flags in Evaluate Orders](about-flags-in-evaluate-orders.md)
 - [Using Alternative Products to Solve Pricing/Availability Issues](using-alternative-products-to-solve-pricing-availability-issues.md)
-- [Anatomy of the Evaluate Orders Search Page](anatomy-of-the-evaluate-orders-search-page.md)  
+- [Anatomy of the Evaluate Orders Search Page](anatomy-of-the-evaluate-orders-search-page.md)
 - [Orders Overview](orders-overview.md)

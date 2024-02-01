@@ -9,8 +9,6 @@ ms.custom: yield-analytics-ui
 
 The following glossary provides definitions of commonly used terms across the application. Click a letter to skip to its section.
 
-
-
 ## A
 
 ### Adjustment type
@@ -102,7 +100,7 @@ Formula: Channel Consumed Impressions/Channel Received Impressions \* 100
 
 ### Click pacing
 
-A measure of the total clicks scheduled in the ad server for CPC order lines subtracted from the number of clicks - that have either delivered in the past or are forecast to deliver in the future - based on the date range selected in yield analytics. This value can be positive or negative with over- or under-delivery. This metric is available for order line and product dimensions.
+A measure of the total clicks scheduled in the ad server for CPC order lines subtracted from the number of clicks - that have either delivered in the past or are forecast to deliver in the future - based on the date range selected in Yield Analytics. This value can be positive or negative with over- or under-delivery. This metric is available for order line and product dimensions.
 
 Formula: Consumed clicks - Scheduled clicks
 
@@ -206,7 +204,7 @@ Contract type or ad type per the ad server (Example: standard, exclusive, sponso
 
 ### Contracted clicks
 
-The number of clicks contractually obligated for a CPC order line based on the date range selected in yield analytics. This metric is available for order line and product dimensions.
+The number of clicks contractually obligated for a CPC order line based on the date range selected in Yield Analytics. This metric is available for order line and product dimensions.
 
 ### Contracted clicks (lifetime)
 
@@ -410,10 +408,10 @@ For dynamic metrics, you can control the definition of the metric by using the m
 
 ### Network status
 
-Indicates whether yield analytics processes log files to analyze the underlying impression details for a product:
+Indicates whether Yield Analytics processes log files to analyze the underlying impression details for a product:
 
-- Analyzed Network – Indicates products (or associated order lines) for which yield analytics receives and processes impression-level log files.
-- Non-analyzed Network – Indicates products (or associated order lines) for which yield analytics does not receive and process impression-level log files.
+- Analyzed Network – Indicates products (or associated order lines) for which Yield Analytics receives and processes impression-level log files.
+- Non-analyzed Network – Indicates products (or associated order lines) for which Yield Analytics does not receive and process impression-level log files.
 
 ## O
 
@@ -455,7 +453,7 @@ The unique identifier of the order line "Trafficked As" target from the order ma
 
 ### Order line target Yield Analytics ID
 
-The unique identifier for the order line target in yield analytics.
+The unique identifier for the order line target in Yield Analytics.
 
 ### Origin system
 
@@ -558,7 +556,7 @@ Indicates the state of a product. This is determined by the type of product and 
 
 ### Product Yield Analytics ID
 
-The unique identifier for the product in yield analytics.
+The unique identifier for the product in Yield Analytics.
 
 ## R
 
@@ -590,7 +588,7 @@ Name of all sales team members that are associated with a deal. When Sales Team 
 
 ### Scheduled clicks
 
-The total clicks scheduled in the ad server for CPC order lines based on the date range specified in yield analytics. This metric is available for all order line and product dimensions.
+The total clicks scheduled in the ad server for CPC order lines based on the date range specified in Yield Analytics. This metric is available for all order line and product dimensions.
 
 ### Scheduled clicks (lifetime)
 
@@ -625,7 +623,7 @@ Formula: Consumed impressions / Impression capacity
 
 ### Source system
 
-Indicates the current source of the data. This is the system from which yield analytics is currently pulling the order data. This could be an ad server or any other system in the chain.
+Indicates the current source of the data. This is the system from which Yield Analytics is currently pulling the order data. This could be an ad server or any other system in the chain.
 
 ### SOV
 

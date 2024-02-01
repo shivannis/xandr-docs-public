@@ -10,6 +10,7 @@ ms.custom: yield-analytics-ui
 The following article explais about evaluation and other processes to measure the yield of an order.
 
 ## Process flow
+
 Use the **Orders** tab and Evaluate Orders to see how a proposal is expected to deliver and be consumed.
 
 1. On the **Orders** tab, in the Order Tasks panel, click **Evaluate Orders**.
@@ -64,6 +65,7 @@ In the Product Details panel, click the **Alternate Products** tab.
 1. Click **Update**.
 
 To remove the order line, click **Edit** and clear the **Included** checkbox.
+
 ## Flags in evaluate orders
 
 Use the flags in Evaluate Orders to find and resolve potential availability and pricing issues related to the line items on each proposal.
@@ -80,6 +82,3 @@ There are three types of flags in Evaluate Orders:
 
 - [Anatomy of the Evaluate Orders Page](anatomy-of-the-evaluate-orders-page.md)
 - [Anatomy of the Evaluate Orders Search Page](anatomy-of-the-evaluate-orders-search-page.md)
-- [About Flags in Evaluate Orders](about-flags-in-evaluate-orders.md)
-- [Using Alternative Products to Solve Pricing/Availability Issues](using-alternative-products-to-solve-pricing-availability-issues.md)
-- [Evaluate Orders Overview](evaluate-orders-overview.md)

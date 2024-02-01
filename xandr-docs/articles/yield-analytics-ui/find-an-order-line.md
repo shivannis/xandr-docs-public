@@ -15,7 +15,7 @@ You can search for a specific order line, or search all order lines to find at-r
     - To filter the order list by status: Click **Includes x Values** in the Status filter. Click on a status to select or deselect it. Click **Update**.
     - To filter the list on the type of contract (e.g., sponsorship or bulk): Click **None Selected** in the Contract Type filter. Click on one or more contract types to select them. Click **Update**.
     - To filter the list on the inventory (e.g., guaranteed): Click **None Selected** in the Inventory Class filter. Click on one or more types of inventory to select them. Click **Update**.
-1. In the search box in the toolbar above the order list, type a search term. Change the search options as needed, and then press **Enter**. The order list is redisplayed to show only the orders that match your search criteria.  
+1. In the search box in the toolbar above the order list, type a search term. Change the search options as needed, and then press **Enter**. The order list is redisplayed to show only the orders that match your search criteria.
     - By default, the search returns orders that contain the search term you entered. To change the type of search, on the drop-down list
       to the left of the search box, click **Contains** and select a different option (e.g., to search for orders that starts with the
       search term you typed, select **Starts With**).
@@ -39,5 +39,5 @@ You can search for a specific order line, or search all order lines to find at-r
 - [View the Full Details of an Order or Order Line](view-the-full-details-of-an-order-or-order-line.md)
 - [Anatomy of the Order Visibility Page](anatomy-of-the-order-visibility-page.md)
 - [Anatomy of the Order Line Visibility Page](anatomy-of-the-order-line-visibility-page.md)
-- [Solving Delivery Issues with Order Line Visibility](solving-delivery-issues-with-order-line-visibility.md)
+- [Solving Delivery Issues with Order Line Visibility](solve-delivery-issues-with-order-line-visibility.md)
 - [Orders Overview](orders-overview.md)
