@@ -15,7 +15,7 @@ Before you can use any of the API services, you must have access to the API endp
 
 If you're new to working with REST APIs, start here to learn about how the API works, some of the best ways to interact with it, and other introductory information.
 
-- [API Basics](./api-semantics.md)
+- [API Semantics](./api-semantics.md)
 - [API Best Practices](./api-best-practices.md)
 - [What are Breaking Changes?](./breaking-changes.md)
 
@@ -26,7 +26,6 @@ Here you can find out the specifics of working with the API, including how to ge
 - [API Onboarding Process](./api-onboarding-process.md)
 - [Example Setup](./example-setup.md)
 - [API Usage Constraints](./api-usage-constraints.md)
-- [API Semantics](./api-semantics.md)
 - [Report Pagination](./report-pagination.md)
 
 ## Email communications
@@ -37,7 +36,6 @@ Xandr sends periodic emails that we think you'll find useful, including Marketin
 
 Here are some additional resources that maybe helpful as you explore the API.
 
-- [Buy-Side Services](./buy-side-services.md)
 - [ALI Service](./line-item-service---ali.md)
 - [API Services Reference](./reference.md)
 - [Helpful JSON Tools](./helpful-json-tools.md)

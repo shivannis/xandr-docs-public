@@ -11,8 +11,6 @@ We're thrilled that you're taking advantage of our platform by grabbing raw data
 
 ## API Dos
 
-### Retrieve only the objects you need
-
 ### GET multiple objects by ID
 
 Most services support the retrieval of multiple specific objects by ID. To do this, you append a comma-separated list of IDs to the query string. For example, the following request would return only the publishers with the specified IDs.
@@ -125,7 +123,7 @@ If we were to use `append=true` in the `PUT` call to update to this object, we 
 }
 ```
 
-We would use the following CURL command (replacing \<`profile_ID`\> with the appropriate value)
+We would use the following CURL command (replacing \<`profile_ID`\> with the appropriate value).
 
 #### CURL example
 
@@ -205,10 +203,6 @@ We limit the number of objects each member can create and use on the platform. T
 
 If possible, schedule your processes so that they do not overlap with each other. If there is no business need to perform your bulk operations during business hours, try to schedule these processes on off-peak hours so that you maximize your API usage throughout the day. Remember, you are allotted a certain amount of READ and WRITE calls per minute. Try to take advantage of the times at which you are not making any calls to the API so that you have additional headroom at the times that you need it, and prioritize your time-sensitive operations.
 
-### Read the entire API Wiki before using the API
-
-There are many tips, tricks, and examples throughout the API Wiki that will be useful in developing your integration.
-
 ## API Don'ts
 
 ### Don't assume an API call was successful
@@ -253,7 +247,7 @@ This can cause the reporting backend to be overloaded, resulting in delayed repo
 
 If your architecture calls for multiple requests from the reporting service per hour or day, investigate higher-level reports with more data to see if you can get the data you need with fewer calls to the API.
 
-For instance, if you are requesting reports once per hour for every advertiser and publisher on your network, you should investigate whether using the [Network Analytics Report](./network-analytics.md) - rather than individual requests for the [Advertiser Analytics](./advertiser-analytics.md) or [Publisher Analytics](./publisher-analytics.md) reports - would fulfill your needs and match your use-case better.
+For example, if you're requesting hourly reports for all advertisers and publishers in your network, determine if using the [Network Analytics Report](./network-analytics.md) would meet your needs. Consider using it as an alternative to making individual requests for [Advertiser Analytics](./advertiser-analytics.md) or [Publisher Analytics](./publisher-analytics.md) reports, ensuring a better match with your use case.
 
 For more information on all of the available reports and their fields, see the API documentation on the [Reporting Service](./report-service.md).
 
