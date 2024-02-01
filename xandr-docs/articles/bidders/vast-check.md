@@ -42,6 +42,11 @@ If VAST check returns this message, your creative contains errors that will prev
 
 **Video duration is undefined**
 
+What it means:
+
+The duration information for the video creative is missing or invalid. A creative must have a duration declared to be eligible to serve on the Open Exchange. If your creative has a duration but you are seeing this error, the duration format may be invalid. Durations must be in the "00:00:00" format.
+Actions to take:
+
 **Actions to take:**
 
 - Click **Run check again** button to initiate the re-scanning of the creative XML document.
@@ -56,7 +61,7 @@ If VAST check returns this message, your creative contains errors that will prev
 
 - Reach out to the tag provider to add the missing duration information or revise the format. For example
 
-  :::image type="content" source="./media/video-duration.png" alt-text="Screenshot that shows how to add the missing duration information or revise the format.":::
+    :::image type="content" source="./media/video-duration.png" alt-text="Screenshot that shows how to add the missing duration information or revise the format.":::
 
 ### No recommended video formats detected
 
