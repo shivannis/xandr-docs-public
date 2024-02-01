@@ -11,8 +11,8 @@ Run an existing order through Scenario Manager to simulate how changes to it w
 
 There are three main steps to using Scenario Manager to run a simulated change on an order:
 
-1. [Find the order line and add it to Scenario Manager](#find-the-order-and-add-it-to-scenario-manager)
-1. [Modify the order line you're focusing on](#modify-the-order-you-are-focusing-on)
+1. [Find the order and add it to Scenario Manager](#find-the-order-and-add-it-to-scenario-manager)
+1. [Modify the order you're focusing on](#modify-the-order-you-are-focusing-on)
 1. [Run and analyze the scenario](#run-and-analyze-the-scenario)
 
 ## Find the order and add it to Scenario Manager

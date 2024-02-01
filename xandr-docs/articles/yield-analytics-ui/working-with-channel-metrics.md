@@ -9,14 +9,14 @@ ms.custom: yield-analytics-ui
 
 The **Channels** tab provides high-level metrics for integrated Supply-Side Platform (SSPs) along with adserver data. It is a useful tool to contrast guaranteed verses pre-emptible volumes and pricing, in addition to comparing multiple SSP's effectiveness.
 
-Since the **Channels** tab is powered by the **reporting** tab, custom reports can be built within yield analytics using data captured from the SSP. In reports, information can be bucketed into four types of channels:
+Since the **Channels** tab is powered by the **reporting** tab, custom reports can be built within Yield Analytics using data captured from the SSP. In reports, information can be bucketed into four types of channels:
 
 | Channel Type | Definition | Data Source |
 |:---|:---|:---|
 | SSP (Xandr, AdX, etc.) | Any order line that is associated with a given SSP will be included in that SSP's channel. | SSP |
 | Direct Sales | Any guaranteed, non-SSP, in-network order line. | Ad Server |
 | N/A | Any pre-emptible, non-SSP, in-network or out-of-network order line. | Channel-specific metrics not provided. |
-| Non-Analyzed | Any guaranteed, non-SSP, out-of-network order line. | Ad Server <br>(Contracted values are distributed in a straight-line fashion. Values are not affected by out-of-network data). |
+| Non-Analyzed | Any guaranteed, non-SSP, out-of-network order line. | Ad Server <br> (Contracted values are distributed in a straight-line fashion. Values are not affected by out-of-network data). |
 
 ## Channel metric definitions
 

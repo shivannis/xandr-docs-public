@@ -19,6 +19,6 @@ From the **Forecast Management** page you can click a specific product and selec
 - [About Forecasts and Adjustments](./about-forecasts-and-adjustments.md)
 - [Anatomy of the Capacity Dashboard Page](./anatomy-of-the-capacity-dashboard-page.md)
 - [Anatomy of the Forecast Management Page](./anatomy-of-the-forecast-management-page.md)
-- [Anatomy of the Forecast Visibility Page](./anatomy-of-the-forecast-visibility-page.md)
+- [Anatomy of the Forecast Visibility Page](./forecast-visibility-page-anatomy.md)
 - [Adding and Editing Adjustments](./adding-and-editing-adjustments.md)
 - [Capacity Overview](./capacity-overview.md)
