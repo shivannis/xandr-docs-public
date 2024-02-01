@@ -11,8 +11,7 @@ ms.date: 10/28/2023
 
 ## Overview
 
-Due to the premium nature of Netflix inventory, Netflix PMP deals are considered "Seller Defined Deals," meaning the seller defines the
-targeting parameters the buyer is allowed to configure. The Deal Defined Line Item workflow in Microsoft Invest only displays the settings the buyer is able to control, eliminating the potential for conflict between a buyer and seller, and thus maximizing win rates.
+Due to the premium nature of Netflix inventory, Netflix PMP deals are considered "Seller Defined Deals," meaning the seller defines the targeting parameters the buyer is allowed to configure. The Deal Defined Line Item workflow in Microsoft Invest only displays the settings the buyer is able to control, eliminating the potential for conflict between a buyer and seller, and thus maximizing win rates.
 
 ## Before you begin
 
@@ -24,6 +23,21 @@ Before you create a **Deal Defined** line item, you must perform the following t
 The insertion order you created must have at least one billing period with dates in the future.
 
 You must also have access to one or more PMP deals to target. Sellers must first create these deals for buyers to access them for targeting. If you have questions about how to gain access to a PMP deal, contact your account manager.
+
+> [!WARNING]
+> Advertisers in the following verticals are required to submit their licenses and/or proof of creative approval in select markets to serve their ads on Netflix:
+>
+> - Alcohol
+> - Financial Services
+> - Insurance
+> - High fat/sugar/salt foods
+> - Online sports betting
+> - State-run lotteries
+> - Healthcare
+> - Pharmaceuticals
+> - Dating
+>
+> More information on these requirements, along with web forms for submitting licenses and creative approval can be found on the Netflix [Restricted Policy Page](https://help.nflxext.com/legal/netflix_ad_restrictions.pdf).
 
 ## Access Netflix PMP deals
 
