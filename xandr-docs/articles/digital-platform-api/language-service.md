@@ -7,8 +7,7 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Language service
 
-This read-only service shows you the list of language IDs that you can use in the [Profile Service](profile-service.md) (to target browser
-languages) or in the [Ad Profile Service](ad-profile-service.md) (to trust or ban creative languages).
+This read-only service shows you the list of language IDs that you can use in the [Profile Service](profile-service.md) (to target browser languages) or in the [Ad Profile Service](ad-profile-service.md) (to trust or ban creative languages).
 
 ## REST API
 
@@ -42,32 +41,50 @@ languages) or in the [Ad Profile Service](ad-profile-service.md) (to trust or ba
 | 7 |  Arabic      |  AR    |
 | 8 |  Portuguese  |  PT    |
 | 9 |  Russian     |  RU    |
-| 10 |  Korean      |  KO    |
-| 11 |  Italian     |  IT    |
-| 12 |  Dutch       |  NL    |
-| 14 |  Danish      |  DA    |
-| 15 |  Swedish     |  SV    |
-| 16 |  Norwegian   |  NB    |
-| 17 |  Polish      |  PL    |
-| 18 |  Turkish     |  TR    |
-| 19 |  Finnish     |  FI    |
-| 20 |  Czech       |  CS    |
-| 21 |  Slovak      |  SK    |
-| 22 |  Romanian    |  RM    |
-| 23 |  Bulgarian   |  BG    |
-| 24 |  Slovene     |  SL    |
-| 25 |  Hungarian   |  HU    |
-| 26 |  Ukranian    |  UK    |
-| 27 |  Croatian    |  HR    |
-| 28 |  Serbian     |  SR    |
-| 29 |  Bosnian     |  BS    |
-| 30 |  Albanian    |  SQ    |
-| 31 |  Macedonian  |  MK    |
-| 32 |  Vietnamese  |  VI    |
-| 33 |  Hindi       |  HI    |
-| 34 |  Urdu        |  UR    |
-| 35 |  Tamil       |  TA    |
-| 36 |  Thai        |  TH    |
+| 10 |  Korean     |  KO    |
+| 11 |  Italian    |  IT    |
+| 12 |  Dutch      |  NL    |
+| 14 |  Danish     |  DA    |
+| 15 |  Swedish    |  SV    |
+| 16 |  Norwegian  |  NB    |
+| 17 |  Polish     |  PL    |
+| 18 |  Turkish    |  TR    |
+| 19 |  Finnish    |  FI    |
+| 20 |  Czech      |  CS    |
+| 21 |  Slovak     |  SK    |
+| 22 |  Romanian   |  RM    |
+| 23 |  Bulgarian  |  BG    |
+| 24 |  Slovene    |  SL    |
+| 25 |  Hungarian  |  HU    |
+| 26 |  Ukranian   |  UK    |
+| 27 |  Croatian   |  HR    |
+| 28 |  Serbian    |  SR    |
+| 29 |  Bosnian    |  BS    |
+| 30 |  Albanian   |  SQ    |
+| 31 |  Macedonian |  MK    |
+| 32 |  Vietnamese |  VI    |
+| 33 |  Hindi      |  HI    |
+| 34 |  Urdu       |  UR    |
+| 35 |  Tamil      |  TA    |
+| 36 |  Thai       |  TH    |
+| 37 |  Greek      |  FL    |
+| 38 |  Persian    |  FA    |
+| 39 |  Welsh      |  CY    |
+| 40 |  Hebrew     |  HE    |
+| 41 |  Lithuanian |  LT    |
+| 42 |  Estonian   |  ET    |
+| 43 |  Latvian    |  LV    |
+| 44 |  Indonesian |  ID    |
+| 45 |  Azerbaijani|  AZ    |
+| 46 |  Galician   |  GL    |
+| 47 |  Georgian   | KA     |
+| 48 |  Malay      | MS     |
+| 49 |  Armenian   | HY     |
+| 50 |  Catalan    | CA     |
+| 51 |  Uzbek      | UZ     |
+| 52 |  Burmese    | MY     |
+| 53 | Kazakh      | KK     |
+| 54 | Basque      | EU     |
 
 ## Examples
 
