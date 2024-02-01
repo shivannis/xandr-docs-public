@@ -8,6 +8,7 @@
           "**/docfx.json"
         ],
         "src": "articles",
+        "dest": "articles",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
