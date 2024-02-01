@@ -14,7 +14,7 @@ In order for Xandr to track a click to the corresponding impression, a click tra
 
 1. There is a redirect to the webpage that follows the click tracker. For example:
 
-    ```pre
+    ```
     https://nym1-ib.adnxs.com/click2?
     ```
 
@@ -39,20 +39,20 @@ A simple third-party tag is made up of two parts:
 
 For example:
 
-```pre
+```
 <a href="https://www.cnn.com" target="_blank"><img src="media/Ad-MediumRectangle-300x250.png" width="300" height="250"></a>
 ```
 
 The anchor tag contains a "href" or hyperlink reference, which in this case is cnn.com. When the creative is clicked, the browser will redirect to cnn.com. The landing page will load as specified by the `target` parameter, which in this case is "\_blank", to indicate that the page should load in a new window or tab. In order for a third-party tag to track clicks, the `${CLICK_URL_ENC}` macro must be implemented. When an impression is delivered, the macro will be replaced with a dynamically-generated click tracker. The click tracker loads only when the creative is clicked. To achieve this, the macro should be placed right before the creative's landing page as shown here:
 
-```pre
+```
 <a href="${CLICK_URL_ENC}https://www.cnn.com" target="_blank"><img src="media/Ad-MediumRectangle-300x250.png" width="300" height="250"></a>
 ```
 
 When an image is clicked, the "href" page loads. A click is tracked on Xandr and followed by a redirect to
 https://www.cnn.com. For example:
 
-```pre
+```
 <a href="https://nym1-ib.adnxs.com/click2?AAAAAAAAAAAAAAAAAAAA./clickenc=https://www.cnn.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ad-MediumRectangle-300x250.jpg" width="300" height="250"></a>
 ```
 
@@ -71,19 +71,19 @@ For a URL-HTML, URL-JS, raw-HTML, or raw-JS creative, you will need to include o
 
 Although an encoded version is available for certain ad servers, you'll most likely want to include the `${CLICK_URL}` macro. For example:
 
-```pre
+```
 https://ad.doubleclick.net/adi/N5364.Ivillage.com/B2965815.5;sz=728x90;click=${CLICK_URL};ord=${CACHEBUSTER}?
 ```
 
 Here "click" is the DoubleClick variable for accepting external click URLs. When the full URL string above is passed from Xandr to the user's browser, the impression bus will replace `${CLICK_URL}` with the actual click Xandr URL, which is easily identified by the large number of capital A's present in the string. The Xandr click URL will look something like this:
 
-```pre
+```
 https://nym1-ib.adnxs.com/click2?AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA__________-No5xOAAAAAAEAAAAAAAAAAAAAAAAAAABd8gsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAcAsHNwAAAAA./clickenc=
 ```
 
 Therefore, the expanded DoubleClick content will look as follows:
 
-```pre
+```
 https://ad.doubleclick.net/adi/N5364.Ivillage.com/B2965815.5;sz=728x90;click=https://nym1-ib.adnxs.com/click2?AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA__________-No5xOAAAAAAEAAAAAAAAAAAAAAAAAAABd8gsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAcAsHNwAAAAA./clickenc=;ord=1330398521?
 ``````
 

@@ -56,7 +56,7 @@ The anchor tag contains a "href" or hyperlink reference, which in this case is c
 When an image is clicked, the "href" page loads. A click is tracked on Xandr and followed by a redirect to https://www.cnn.com. For example:
 
 ```
-<a href="https://nym1-ib.adnxs.com/click2?AAAAAAAAAAAAAAAAAAAA./clickenc=https://www.cnn.com" target="_blank"><img src="media/Ad-MediumRectangle-300x250.png" width="300" height="250"></a>
+<a href="https://nym1-ib.adnxs.com/click2?AAAAAAAAAAAAAAAAAAAA./clickenc=https://www.cnn.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ad-MediumRectangle-300x250.jpg" width="300" height="250"></a>
 ```
 
 After the user is redirected to the href, such as [https://www.cnn.com], the following takes place:

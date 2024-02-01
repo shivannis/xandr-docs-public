@@ -42,24 +42,47 @@ If VAST check returns this message, your creative contains errors that will prev
 
 **Video duration is undefined**
 
-**Cause:** The `Duration` information for the video creative is missing or invalid. A creative must have a duration declared to be eligible to serve on the Open Exchange. If your creative has a duration but you are
-seeing this error, the duration format may be invalid. Durations must have format "00:00:00".
+**Actions to take:**
 
-**Corrective action**: Reach out to your third-party ad server to add the missing duration information or revise the format. Valid duration example:
+- Click **Run check again** button to initiate the re-scanning of the creative XML document.
 
-:::image type="content" source="media/valid-duration.png" alt-text="The screenshot that demonstrates the steps for addressing missing or invalid duration information in a video creative, advising users to contact their third-party ad server to either add the necessary duration details or adjust the format.":::
+   :::image type="content" source="./media/run-check-again.png" alt-text="Screenshot of Run Check Again.":::
+
+  This feature would address the following scenarios where:
+  - Scanner failed to run during the upload
+  - Scanner timed out while scanning
+  - Scanner detected an issue such as missing or wrong duration, missing or wrong media file format, etc.
+  - VAST XML content is updated on the ad server, but needs to be updated at Xandr platform and back-end.
+
+- Reach out to the tag provider to add the missing duration information or revise the format. For example
+
+  :::image type="content" source="./media/video-duration.png" alt-text="Screenshot that shows how to add the missing duration information or revise the format.":::
 
 ### No recommended video formats detected
 
 **Cause**: The MediaFile information for the video creative contains none of the recommended video formats. At least one video format must be present for the creative to save.
 
-**Corrective action**: Reach out to your third-party ad server to update the creative with at least one of the recommended video formats. Sample XML with recommended VAST formats:
+**Actions to take:**
 
-:::image type="content" source="media/recommended-vast-format.png" alt-text="The screenshot that illustrates the process of contacting a third-party ad server to update a creative with at least one of the recommended video formats. The accompanying text refers to a sample XML containing the suggested VAST formats.":::
+- Click **Run check again** button to initiate the re-scanning of the creative XML document.
+
+   :::image type="content" source="./media/run-check-again.png" alt-text="Screenshot of Run Check Again.":::
+
+  This feature would address the following scenarios where:
+  - Scanner failed to run during the upload
+  - Scanner timed out while scanning
+  - Scanner detected an issue such as missing or wrong duration, missing or wrong media file format, etc.
+  - VAST XML content is updated on the ad server, but needs to be updated at Xandr platform and back-end.
+
+- Reach out to the tag provider to update the creative with at least one of the recommended video formats.
+### Sample XML with recommended VAST formats:
+
+  
+  :::image type="content" source="media/recommended-vast-format.png" alt-text="The screenshot that illustrates the process of contacting a third-party ad server to update a creative with at least one of the recommended video formats. The accompanying text refers to a sample XML containing the suggested VAST formats.":::
 
 ### Sample XML with recommended VPAID formats
 
-:::image type="content" source="media/sample-xml.png" alt-text="The screenshot that illustrates Sample XML with recommended VPAID formats:":::
+   :::image type="content" source="media/sample-xml.png" alt-text="The screenshot that illustrates Sample XML with recommended VPAID formats:":::
 
 **Some adjustments are suggested**
 

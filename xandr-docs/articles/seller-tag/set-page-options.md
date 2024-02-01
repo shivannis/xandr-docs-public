@@ -63,7 +63,7 @@ Specifies information and settings unique to Microsoft.
 
 | Parameter | Type | Description |
 |---|---|---|
-| toptout | number | A number that represents the status of the end user's MSFT optout choices (eg 0, 1, etc) |
+| `toptout` | number | A number that represents the status of the end user's MSFT optout choices (eg 0, 1, etc) |
 ### Schain object
 
 The feature in AST allows for publishers to perform an optional syntax check on the schain they specify in the config parameter. The syntax criteria is based on the IAB specification for the schain object.

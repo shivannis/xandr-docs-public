@@ -126,7 +126,8 @@ If VAST check returns this message, the creative was scanned but contains errors
   - VAST XML content is updated on the ad server, but needs to be updated at Xandr platform and back-end.
 
 - Reach out to the tag provider to add the missing duration information or revise the format. For example
-:::image type="content" source="./media/video-duration.png" alt-text="Screenshot that shows how to add the missing duration information or revise the format.":::
+
+  :::image type="content" source="./media/video-duration.png" alt-text="Screenshot that shows how to add the missing duration information or revise the format.":::
 
 ### No video formats detected
 
