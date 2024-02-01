@@ -40,12 +40,11 @@ If VAST check was successful, it means that your VAST document has satisfied all
 
 If VAST check returns this message, your creative contains errors that will prevent it from saving. Open your VAST file by pasting the VAST URL into a browser to check the missing information.
 
-**Video duration is undefined**
+### Video duration is undefined
 
-What it means:
+**What it means:**
 
 The duration information for the video creative is missing or invalid. A creative must have a duration declared to be eligible to serve on the Open Exchange. If your creative has a duration but you are seeing this error, the duration format may be invalid. Durations must be in the "00:00:00" format.
-Actions to take:
 
 **Actions to take:**
 
@@ -59,9 +58,9 @@ Actions to take:
   - Scanner detected an issue such as missing or wrong duration, missing or wrong media file format, etc.
   - VAST XML content is updated on the ad server, but needs to be updated at Xandr platform and back-end.
 
-- Reach out to the tag provider to add the missing duration information or revise the format. For example
+- Reach out to your third-party ad server to add the missing duration information or revise the format. Valid duration example:
 
-    :::image type="content" source="./media/video-duration.png" alt-text="Screenshot that shows how to add the missing duration information or revise the format.":::
+   :::image type="content" source="media/valid-duration.png" alt-text="The screenshot that demonstrates the steps for addressing missing or invalid duration information in a video creative, advising users to contact their third-party ad server to either add the necessary duration details or adjust the format.":::
 
 ### No recommended video formats detected
 
@@ -79,27 +78,28 @@ Actions to take:
   - Scanner detected an issue such as missing or wrong duration, missing or wrong media file format, etc.
   - VAST XML content is updated on the ad server, but needs to be updated at Xandr platform and back-end.
 
-- Reach out to the tag provider to update the creative with at least one of the recommended video formats.
-### Sample XML with recommended VAST formats:
+- **Corrective action**: Reach out to your third-party ad server to update the creative with at least one of the recommended video formats. 
+
+  **Sample XML with recommended VAST formats**
 
   
   :::image type="content" source="media/recommended-vast-format.png" alt-text="The screenshot that illustrates the process of contacting a third-party ad server to update a creative with at least one of the recommended video formats. The accompanying text refers to a sample XML containing the suggested VAST formats.":::
 
-### Sample XML with recommended VPAID formats
+  **Sample XML with recommended VPAID formats**
 
    :::image type="content" source="media/sample-xml.png" alt-text="The screenshot that illustrates Sample XML with recommended VPAID formats:":::
 
-**Some adjustments are suggested**
+### Some adjustments are suggested
 
 If your VAST check returns this message, your creative is valid and can be saved. The VAST check will however provide suggested adjustments that may improve the reach of your creative and ensure it serves on all
 player types.  
 
-**Video duration is greater than 30 seconds**
+### Video duration is greater than 30 seconds
 
 No corrective action is required. Long-form creatives are flagged because they may not be eligible to serve on Instream inventory with duration limits. Targeting Outstream inventory is recommended as it will
 typically not have the same duration limits as Instream.  
 
-**Some recommended video formats not detected**
+### Some recommended video formats not detected
 
 **Cause:** The `MediaFile` information for the video does not declare all of the recommended formats for VAST or VPAID.
 
@@ -113,7 +113,7 @@ type. VPAID 2.0 supports HTML5 (media type application/JavaScript) which allows
 
 For sample XML snippets with the recommended formats, see the [No recommended video formats detected](vast-check.md#no-recommended-video-formats-detected) section.
   
-**\<Wrapper\> element(s) detected**
+### \<Wrapper\> element(s) detected
 
 **Cause:** A `<Wrapper>` element indicates that the location of the `<InLine>` tag from which to retrieve the video creative is not located directly in the current VAST document. The location of that tag must then be retrieved from another VAST document. In addition, `<Wrapper>` element may refer to a VAST document that contains `<Wrapper>` element. Each redirect to another VAST document increases the time taken to reach the actual creative.
 
@@ -125,7 +125,7 @@ For sample XML snippets with the recommended formats, see the [No recommended vi
 
 Excerpt of a VAST document with a `<Wrapper>` element pointing to an \<InLine\> tag:
 
-:::image type="content" source="media/recommended-vast-format.png" alt-text="The screenshot that provides guidance on taking corrective actions by avoiding the use of multiple chained Wrapper elements in VAST documents.":::
+:::image type="content" source="./media/excerpt-of-a-vast.png" alt-text="The screenshot that provides guidance on taking corrective actions by avoiding the use of multiple chained Wrapper elements in VAST documents.":::
 
 **Unable to run VAST check**
 
