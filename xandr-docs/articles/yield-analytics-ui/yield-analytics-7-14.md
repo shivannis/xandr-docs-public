@@ -3,12 +3,9 @@ title: Yield Analytics 7.14
 description: Learn how to manage saved reports, edit screens options, create a new schedule, add additional metrics, and apply additional filters in new landing page for find. 
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
-
-
 ---
 
-
-# Yield analytics 7.14
+# Yield Analytics 7.14
 
 ## New features
 
@@ -36,20 +33,11 @@ This is a new screen with added details:
 
 ## Find products
 
-- Additional Metrics are now configurable, which includes metrics that
-we have previously shown as meta data. The reasoning is that
+- Additional Metrics are now configurable, which includes metrics that we have previously shown as meta data. The reasoning is that
 Services/Clients find that data helpful when exporting.
-- Export will only export what is currently shown in the table, and
-not all meta data - as was done previously. The new mechanism is
-consistent with Reports, where what you see in the table is what is
-exported. The format for the export on the Find Products page is now
-consistent with the export format for Reports.
-- The look and feel is nearly identical to Reports. This is also for
-consistency.
-- The selection of a product behaves the same as the Reports page i.e.
-a dialog is launched where meta data, characteristics, product group can
-be viewed, as well as permissioned buttons to navigate to other
-locations.
+- Export will only export what is currently shown in the table, and not all meta data - as was done previously. The new mechanism is consistent with Reports, where what you see in the table is what is exported. The format for the export on the Find Products page is now consistent with the export format for Reports.
+- The look and feel is nearly identical to Reports. This is also for consistency.
+- The selection of a product behaves the same as the Reports page i.e. a dialog is launched where meta data, characteristics, product group can be viewed, as well as permissioned buttons to navigate to other locations.
 
 ## New landing page for find
 
