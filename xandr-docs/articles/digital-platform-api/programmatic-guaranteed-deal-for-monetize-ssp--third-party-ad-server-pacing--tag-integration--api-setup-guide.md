@@ -1,11 +1,11 @@
 ---
-title: Programmatic Guaranteed Deal with Third-Party Ad Server Pacing and Tag Integration
+title: Programmatic Guaranteed Deal with Third-Party Ad Server
 description: Explore the API setup guide to understand the process of creating and configuring a programmatic guaranteed (PG) deal using our API for Microsoft Monetize.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Programmatic Guaranteed deal with third-party ad server pacing and tag integration
+# Programmatic Guaranteed deal with third-party ad server
 
 Setting up an API implementation for a programmatic guaranteed (PG) deal with third-party ad server pacing and tag integration requires
 configuring a number of different properties on different API objects. This guide will explain the process of creating and configuring a PG deal using our API.
@@ -52,9 +52,7 @@ The following steps will guide you through the process of setting up a deal line
 - [Step 5 - Create a PG deal line item profile](#step-5-create-a-deal-line-item-profile)
 - [Step 6 - Create a PG deal line item](#step-6-create-a-pg-deal-line-item)
 
-## Authentication
-
-### Step 1: Obtain an authorization token
+## Step 1: Obtain an authorization token
 
 First, you’ll need to obtain an authorization token. You must then include this authorization token in all subsequent requests. For more information, see [Authentication Service](authentication-service.md). To obtain an authorization token, do the following:
 
@@ -87,19 +85,9 @@ First, you’ll need to obtain an authorization token. You must then include thi
     }
     ```
 
-## Advertiser
-
-### Step 2: Create or access an advertiser
+## Step 2: Create or access an advertiser
 
 You'll need to create or access an advertiser from which to create a deal line item. For deal line items, advertisers are set up the same way as augmented line items.
-
-#### JSON fields for advertiser (required and useful optional fields)
-
-| Field | Type | Required or Optional | Description |
-|:---|:---|:---|:---|
-| `name` | string | Required | The name of the advertiser |
-| `timezone` | enum | Optional | The timezone of the advertiser. For details and accepted values, see [API Timezones](api-timezones.md). |
-| `use_insertion_orders` | boolean | Required | This field must be set to `true` in order to create deal line items. |
 
 If you don't already have an advertiser to use, create an advertiser by doing the following (for more information, see [Advertiser Service](advertiser-service.md)):
 
@@ -125,20 +113,17 @@ If you don't already have an advertiser to use, create an advertiser by doing th
 
 1. Note the advertiser ID in the response body so you can use it when you create the deal line item in [Step 6 - Create a deal line item](#step-6-create-a-pg-deal-line-item).
 
-## Insertion Order
-
-### Step 3: Create or access an insertion order for PG
-
-You'll need to create or access an insertion order to create a PG deal. Deal line items require a seamless insertion order (see required fields below).
-
-#### JSON fields for seamless insertion order (required and useful optional fields)
+### JSON fields for advertiser (required and useful optional fields)
 
 | Field | Type | Required or Optional | Description |
 |:---|:---|:---|:---|
-| `name` | string | Required | The name of the insertion order |
-| `state` | enum | Required | The state of the insertion order: `active` or `inactive` |
-| `budget_intervals`<br>(Billing Periods) | array of objects | Required | To create an insertion order for a PG deal through the API, to be seamless, you must use the `budget_intervals` field. The following array objects must be set to to the following values:<br>- `"end_date"`: `null`<br>- `"lifetime_budget"`: `null`<br>- `"lifetime_budget_imps"`: `null`<br>- `"daily_budget"`: `null`<br>- `"daily_budget_imps"`: `null`<br>- `"enable_pacing"`: `false`<br>- `"lifetime_pacing"`: `false`<br>- `"lifetime_pacing_pct"`: `null` |
-| `budget_type` | enum | Required | Budget type will translate to all deals below the insertion order. For PG deals, the `budget_type` field can be set to either of the following values: `"impression"` or `"flexible"`. If you select an impression budget type for your insertion order, then you can't have deal line items with a revenue budget associated to that insertion order. However, insertion orders with `"flexible"` budget types can have deal line items with either impression or revenue budget types. |
+| `name` | string | Required | The name of the advertiser |
+| `timezone` | enum | Optional | The timezone of the advertiser. For details and accepted values, see [API Timezones](api-timezones.md). |
+| `use_insertion_orders` | boolean | Required | This field must be set to `true` in order to create deal line items. |
+
+## Step 3: Create or access an insertion order for PG
+
+You'll need to create or access an insertion order to create a PG deal. Deal line items require a seamless insertion order (see required fields below).
 
 If you don't already have an insertion order to use, create an insertion order by doing the following (for more information, see [Insertion Order Service](insertion-order-service.md)):
 
@@ -177,13 +162,47 @@ If you don't already have an insertion order to use, create an insertion order b
 
 1. Note the insertion order ID in the response body so you can use it when you create the PG deal line item in [Step 6 - Create a deal line item](#step-6-create-a-pg-deal-line-item).
 
-## Deal
+### JSON fields for seamless insertion order (required and useful optional fields)
 
-### Step 4: Create a PG deal
+| Field | Type | Required or Optional | Description |
+|:---|:---|:---|:---|
+| `name` | string | Required | The name of the insertion order |
+| `state` | enum | Required | The state of the insertion order: `active` or `inactive` |
+| `budget_intervals`<br>(Billing Periods) | array of objects | Required | To create an insertion order for a PG deal through the API, to be seamless, you must use the `budget_intervals` field. The following array objects must be set to to the following values:<br>- `"end_date"`: `null`<br>- `"lifetime_budget"`: `null`<br>- `"lifetime_budget_imps"`: `null`<br>- `"daily_budget"`: `null`<br>- `"daily_budget_imps"`: `null`<br>- `"enable_pacing"`: `false`<br>- `"lifetime_pacing"`: `false`<br>- `"lifetime_pacing_pct"`: `null` |
+| `budget_type` | enum | Required | Budget type will translate to all deals below the insertion order. For PG deals, the `budget_type` field can be set to either of the following values: `"impression"` or `"flexible"`. If you select an impression budget type for your insertion order, then you can't have deal line items with a revenue budget associated to that insertion order. However, insertion orders with `"flexible"` budget types can have deal line items with either impression or revenue budget types. |
+
+## Step 4: Create a PG deal
 
 You'll need to create the deal you want to associate with the PG deal line item.
 
-#### JSON fields for deal
+To create a deal, do the following (for more information, see [Deal Service](deal-service.md)):
+
+1. Create a deal JSON:
+
+    ```
+    $ cat deal.json
+    {
+        "deal": {
+            "name": "Deal Line Item Example Deal",
+            "buyer": {
+                "id": 2379
+            },
+            "version": 2
+        }
+    }
+    ```
+
+1. Make a `POST` request to the [https://api.appnexus.com/deal](https://api.appnexus.com/deal) endpoint with this deal JSON and an appropriate `member_id`.
+
+    ```
+    curl -b cookies -c cookies -X POST -d @deal.json 'https://api.appnexus.com/deal?member_id=2378'
+    ```
+
+1. Check the response body of your request. If your request was successful, you’ll get a "`status`" of “`OK`” and you’ll see the updates you made.
+
+1. Note the deal ID in the response body so you can use it when you create the deal line item in [Step 6 - Create a deal line item](#step-6-create-a-pg-deal-line-item).
+
+### JSON fields for deal
 
 | Field | Type | Required or Optional | Description |
 |:---|:---|:---|:---|
@@ -197,7 +216,7 @@ You'll need to create the deal you want to associate with the PG deal line item.
 | `currency` | enum | Required | The currency for the `floor_price`. For a full list of available currencies, use the read-only [Currency Service](currency-service.md). The default value for this field is `"USD"`. |
 | `use_deal_floor` | Boolean | Required | This field must be set to `true`. When this field is set to `true`, the `floor_price` is applied for the deal. When `use_deal_floor` is `true`, the deal's floor price overrides any other floors you may have, for example, in placements or yield management profiles.<br><br>**Note:** As of 2017, only `ask_price` is used. API `POST` and `PUT` calls referencing `floor_price` and `use_deal_floor` will work as follows:<br>- If the API call includes `ask_price` only, this is the value that will be used.<br>- If the API call includes only a `floor_price` value, this value will be converted into the `ask_price` value. |
 
-##### `buyer_members` example
+#### `buyer_members` example
 
 ```
 "buyer_members":[
@@ -210,9 +229,9 @@ You'll need to create the deal you want to associate with the PG deal line item.
 
 #### Useful optional JSON fields
 
-JSON Fields for Allowed Creatives  
+##### JSON fields for allowed creatives  
 
-Brand (see [Brand Service](brand-service.md))
+###### Brand (see [Brand Service](brand-service.md))
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -240,7 +259,7 @@ Brand (see [Brand Service](brand-service.md))
             ] 
 ```
 
-**Language (see [Language Service](language-service.md))**
+###### Language (see [Language Service](language-service.md))
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -268,7 +287,7 @@ Brand (see [Brand Service](brand-service.md))
             ]
 ```
 
-**Trust level**
+###### Trust level
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -280,7 +299,7 @@ Brand (see [Brand Service](brand-service.md))
 "audit_status_option": "max_trust" 
 ```
 
-**Creative category**
+###### Creative category
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -308,7 +327,7 @@ Brand (see [Brand Service](brand-service.md))
              "category_restrict": true
 ```
 
-**Specific creatives**
+###### Specific creatives
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -331,7 +350,7 @@ Brand (see [Brand Service](brand-service.md))
             ]
 ```
 
-Media Type (see [Media Subtype Service](media-subtype-service.md) and [Media Type Service](media-type-service.md))
+###### Media Type (see [Media Subtype Service](media-subtype-service.md) and [Media Type Service](media-type-service.md))
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -376,7 +395,7 @@ Media Type (see [Media Subtype Service](media-subtype-service.md) and [Media Typ
              ]
 ```
 
-**Technical Attributes (see [Technical Attribute Service](technical-attribute-service.md))**
+###### Technical Attributes (see [Technical Attribute Service](technical-attribute-service.md))
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -398,12 +417,12 @@ Media Type (see [Media Subtype Service](media-subtype-service.md) and [Media Typ
              ]
 ```
 
-**JSON fields for deal data protection (see [Visibility Profile Service](visibility-profile-service.md))**
+##### JSON fields for deal data protection (see [Visibility Profile Service](visibility-profile-service.md))
 
 > [!WARNING]
 > This beta feature isn't available for all clients. Please reach out to your account manager to discuss if you have a use case.
 
-**User ID and Device ID**
+###### User ID and Device ID
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -444,7 +463,7 @@ Media Type (see [Media Subtype Service](media-subtype-service.md) and [Media Typ
 > curl -b cookies -c cookies -X PUT -d @deal_data_protection.json 'https://api.appnexus.com/deal?id=549271'
 ```
 
-**IP address**
+###### IP address
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -485,7 +504,7 @@ Media Type (see [Media Subtype Service](media-subtype-service.md) and [Media Typ
 > curl -b cookies -c cookies -X PUT -d @deal_data_protection.json 'https://api.appnexus.com/deal?id=549271'
 ```
 
-**URL**
+###### URL
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -522,7 +541,7 @@ Media Type (see [Media Subtype Service](media-subtype-service.md) and [Media Typ
 > curl -b cookies -c cookies -X PUT -d @deal_data_protection.json 'https://api.appnexus.com/deal?id=549271'
 ```
 
-**Add to Segment (see [Deal Service](deal-service.md))**
+###### Add to Segment (see [Deal Service](deal-service.md))
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -544,44 +563,9 @@ Media Type (see [Media Subtype Service](media-subtype-service.md) and [Media Typ
 > curl -b cookies -c cookies -X PUT -d @add_segment.json 'https://api.appnexus.com/deal?id=123456'
 ```
 
-To create a deal, do the following (for more information, see [Deal Service](deal-service.md)):
-
-1. Create a deal JSON:
-
-    ```
-    $ cat deal.json
-    {
-        "deal": {
-            "name": "Deal Line Item Example Deal",
-            "buyer": {
-                "id": 2379
-            },
-            "version": 2
-        }
-    }
-    ```
-
-1. Make a `POST` request to the [https://api.appnexus.com/deal](https://api.appnexus.com/deal) endpoint with this deal JSON and an appropriate `member_id`.
-
-    ```
-    curl -b cookies -c cookies -X POST -d @deal.json 'https://api.appnexus.com/deal?member_id=2378'
-    ```
-
-1. Check the response body of your request. If your request was successful, you’ll get a "`status`" of “`OK`” and you’ll see the updates you made.
-
-1. Note the deal ID in the response body so you can use it when you create the deal line item in [Step 6 - Create a deal line item](#step-6-create-a-pg-deal-line-item).
-
-## Profile
-
-### Step 5: Create a deal line item profile
+## Step 5: Create a deal line item profile
 
 Next, create a deal line item profile to use in targeting with the deal line item. Be sure to note the ID for this profile for later use. For more information, see [Profile Service](profile-service.md).
-
-**Optional JSON fields for deal line item profile**
-
-There are many optional fields available in the deal line item profile for targeting with the deal line item. For example, you can target
-properties associated with inventory, inventory types, allowlists, blocklists, device types, and so forth. For more information on
-available fields, see the [Profile Service](profile-service.md).
 
 To create a PG deal line item profile, do the following (for more information, see [Profile Service](profile-service.md)):
 
@@ -645,84 +629,15 @@ To create a PG deal line item profile, do the following (for more information, s
 
 1. Note the profile ID in the response body so you can use it when you create the PG deal line item in [Step 6 - Create a PG deal line item](#step-6-create-a-pg-deal-line-item).
 
-## Line item
+### Optional JSON fields for deal line item profile
 
-### Step 6: Create a PG deal line item
+There are many optional fields available in the deal line item profile for targeting with the deal line item. For example, you can target
+properties associated with inventory, inventory types, allowlists, blocklists, device types, and so forth. For more information on
+available fields, see the [Profile Service](profile-service.md).
+
+## Step 6: Create a PG deal line item
 
 Finally, you'll need to create the deal line item to associate the deal ID and the deal line item profile you created in [Step 5 - Create a PG deal line item profile](#step-5-create-a-deal-line-item-profile).
-
-#### JSON fields for deal line item
-
-| Field | Type | Required or Optional | Description |
-|:---|:---|:---|:---|
-| `advertiser_id` | int | Required | The ID of the advertiser to which the line item belongs. |
-| `insertion_orders` | array | Required | Array containing the insertion order ID you want to associate this deal line item to.<br><br>**Note:** PG deal line items can only use a single insertion order. |
-| `name` | string | Required | Name of the deal line item.<br><br>**Note:** The buyer won't see this. |
-| `state` | enum | Required | State of the PG deal line item. Default is `active`, so set to `inactive` if you don't want the deal to go live right away. |
-| `priority` | int | Required | Set this field's value to `"5"` for a PG deal. |
-| `ad_types` | array | Required | The type of creative used for this deal line item. Possible values:<br>`"banner"`<br><br>**Note:** Currently, you can only use banner (display) creatives for PG deals for SSP (third-party ad server targeting and pacing). |
-| `line_item_type` | enum | Required | Must be set to `"standard_v2"` to create a PG deal line item. |
-| `profile_id` | int | Required | Profile ID associated with the deal line item ([Step 5 - Create a deal line item profile](#step-5-create-a-deal-line-item-profile)). |
-| `budget_intervals` | array of objects | Required | Always include a `start_date`. To create an endless PG deal line item, leave `end_date` as `null`.<br>To establish an unlimited impression budget, set `lifetime_budget_imps` to `null`.<br><br>See `budget_intervals` [example](#budget_intervals-example). |
-| `deals` | array of objects | Required | The `id` field within deals must be the ID of the deal you created in [Step 4 - Create a deal](#step-4-create-a-pg-deal).<br><br>**Note:** Only one PG deal ID can be inserted. |
-| `supply_strategies` | object | Required | An object containing several boolean fields used to designate which inventory supply sources you would like to target. This object must have the following fields and values set for a PG deal:<br>- `"managed":` `true`<br>- `"rtb":` `false`<br>- `"deals":` `false`<br>- `"programmatic_guaranteed":` `false` |
-| `revenue_type` | enum | Required | Set this field to `"cpm"` for a PG deal. |
-| `revenue_value` | double | Required | Set this field to `"5"` for a PG deal. |
-| `auction_event` | object | Required | For a PG deal, fields and value for the `auction_event` object for must be set like [this](#auction_event-example). |
-| `valuation` | object | Required | You must set this object's `min_revenue_value` to `null` for a PG deal. |
-| `bid_object_type` | enum | Required | Must be set to `"deal"` for a PG deal line item. |
-| `delivery_goal` | enum | Required | For a PG deal, set this field to `null`. |
-| `delivery_model_type` | enum | Required | Set this field's value to `"guaranteed"`. |
-| `line_item_subtype` | enum | Required | Set this field's value to `"pg_deal_3p_pacing"`. |
-
-##### `budget_intervals` example
-
-```
-"budget_intervals": [
-{
-"id": 18770835,
-"object_id": 18601984,
-"object_type": "campaign_group",
-"start_date": "2022-08-08 00:00:00",
-"end_date": "2022-08-17 23:59:59",
-"timezone": "Europe/Paris",
-"code": null,
-"parent_interval_id": null,
-"creatives": null,
-"subflights": null,
-"lifetime_budget": null,
-"lifetime_budget_imps": 100,
-"lifetime_pacing": false,
-"enable_pacing": true,
-"lifetime_pacing_pct": 105,
-"underspend_rollover_state": false
-}
-]
-```
-
-##### `auction_event` example
-
-```
-"auction_event": {
-"payment_auction_event_type_code": "impression",
-"payment_auction_event_type": "impression",
-"payment_auction_type_id": 1,
-"revenue_auction_event_type_code": "impression",
-"revenue_auction_event_type": "impression",
-"revenue_auction_type_id": 1,
-"kpi_auction_event_type_code": "impression",
-"kpi_auction_event_type": "impression",
-"kpi_auction_type_id": 1,
-"kpi_value_type": null,
-"kpi_value": null
-}
-```
-
-**Useful optional JSON fields**
-
-| Field | Type | Description |
-|:---|:---|:---|
-| `budget_intervals` | array of objects | Set a budget on the deal using fields within `budget_intervals` including: `daily_budget`, `daily_budget_imps`, `lifetime_budget`, or `lifetime_budget_imps`. Use the fields with no imp if the deal line item has revenue budget type or the fields with `_imp` at the end if the deal line item has revenue type impression. You can either have a daily or lifetime budget, not both. A lifetime budget that sits across flights ends up being broken out across each flight via the API. Remember that if your deal has no end date, it can't have a budget. |
 
 To create a PG deal line item, do the following (for more information, see [Line Item Service](line-item-service---ali.md)):
 
@@ -834,6 +749,79 @@ To create a PG deal line item, do the following (for more information, see [Line
 1. Check the response body of your request. If your request was successful, you’ll get a "`status`" of “`OK`” and you’ll see the updates you made.
 
 1. Note the line item ID in the response body so you can identify this deal line item later to change its `state` (`active` or `inactive`) or modify it.
+
+### JSON fields for deal line item
+
+| Field | Type | Required or Optional | Description |
+|:---|:---|:---|:---|
+| `advertiser_id` | int | Required | The ID of the advertiser to which the line item belongs. |
+| `insertion_orders` | array | Required | Array containing the insertion order ID you want to associate this deal line item to.<br><br>**Note:** PG deal line items can only use a single insertion order. |
+| `name` | string | Required | Name of the deal line item.<br><br>**Note:** The buyer won't see this. |
+| `state` | enum | Required | State of the PG deal line item. Default is `active`, so set to `inactive` if you don't want the deal to go live right away. |
+| `priority` | int | Required | Set this field's value to `"5"` for a PG deal. |
+| `ad_types` | array | Required | The type of creative used for this deal line item. Possible values:<br>`"banner"`<br><br>**Note:** Currently, you can only use banner (display) creatives for PG deals for SSP (third-party ad server targeting and pacing). |
+| `line_item_type` | enum | Required | Must be set to `"standard_v2"` to create a PG deal line item. |
+| `profile_id` | int | Required | Profile ID associated with the deal line item ([Step 5 - Create a deal line item profile](#step-5-create-a-deal-line-item-profile)). |
+| `budget_intervals` | array of objects | Required | Always include a `start_date`. To create an endless PG deal line item, leave `end_date` as `null`.<br>To establish an unlimited impression budget, set `lifetime_budget_imps` to `null`.<br><br>See `budget_intervals` [example](#budget_intervals-example). |
+| `deals` | array of objects | Required | The `id` field within deals must be the ID of the deal you created in [Step 4 - Create a deal](#step-4-create-a-pg-deal).<br><br>**Note:** Only one PG deal ID can be inserted. |
+| `supply_strategies` | object | Required | An object containing several boolean fields used to designate which inventory supply sources you would like to target. This object must have the following fields and values set for a PG deal:<br>- `"managed":` `true`<br>- `"rtb":` `false`<br>- `"deals":` `false`<br>- `"programmatic_guaranteed":` `false` |
+| `revenue_type` | enum | Required | Set this field to `"cpm"` for a PG deal. |
+| `revenue_value` | double | Required | Set this field to `"5"` for a PG deal. |
+| `auction_event` | object | Required | For a PG deal, fields and value for the `auction_event` object for must be set like [this](#auction_event-example). |
+| `valuation` | object | Required | You must set this object's `min_revenue_value` to `null` for a PG deal. |
+| `bid_object_type` | enum | Required | Must be set to `"deal"` for a PG deal line item. |
+| `delivery_goal` | enum | Required | For a PG deal, set this field to `null`. |
+| `delivery_model_type` | enum | Required | Set this field's value to `"guaranteed"`. |
+| `line_item_subtype` | enum | Required | Set this field's value to `"pg_deal_3p_pacing"`. |
+
+#### `budget_intervals` example
+
+```
+"budget_intervals": [
+{
+"id": 18770835,
+"object_id": 18601984,
+"object_type": "campaign_group",
+"start_date": "2022-08-08 00:00:00",
+"end_date": "2022-08-17 23:59:59",
+"timezone": "Europe/Paris",
+"code": null,
+"parent_interval_id": null,
+"creatives": null,
+"subflights": null,
+"lifetime_budget": null,
+"lifetime_budget_imps": 100,
+"lifetime_pacing": false,
+"enable_pacing": true,
+"lifetime_pacing_pct": 105,
+"underspend_rollover_state": false
+}
+]
+```
+
+#### `auction_event` example
+
+```
+"auction_event": {
+"payment_auction_event_type_code": "impression",
+"payment_auction_event_type": "impression",
+"payment_auction_type_id": 1,
+"revenue_auction_event_type_code": "impression",
+"revenue_auction_event_type": "impression",
+"revenue_auction_type_id": 1,
+"kpi_auction_event_type_code": "impression",
+"kpi_auction_event_type": "impression",
+"kpi_auction_type_id": 1,
+"kpi_value_type": null,
+"kpi_value": null
+}
+```
+
+#### Useful optional JSON fields for deal line item
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `budget_intervals` | array of objects | Set a budget on the deal using fields within `budget_intervals` including: `daily_budget`, `daily_budget_imps`, `lifetime_budget`, or `lifetime_budget_imps`. Use the fields with no imp if the deal line item has revenue budget type or the fields with `_imp` at the end if the deal line item has revenue type impression. You can either have a daily or lifetime budget, not both. A lifetime budget that sits across flights ends up being broken out across each flight via the API. Remember that if your deal has no end date, it can't have a budget. |
 
 ## Related topics
 

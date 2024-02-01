@@ -9,11 +9,11 @@ ms.custom: digital-platform-api
 
 ## Overview
 
-Xandr now offers a Guaranteed Delivery Augmented Line Item (GDALI) that is based on our Augmented Line Item (ALI) and associated with the Seamless Insertion Order. The new GDALI offers similar features to the legacy GDLI, but by consolidating onto the ALI framework, we will be able to simplify the API, provide Ad Ops with a more intuitive workflow and user experience, and improve on the feature set available to guaranteed delivery line items.
+Xandr offers Guaranteed Delivery Augmented Line Item (GDALI) that is based on our Augmented Line Item (ALI) and associated with the Seamless Insertion Order. The GDALI offers similar features to the legacy Guaranteed Delivery Line Item (GDALI), but by consolidating onto the ALI framework, we will be able to simplify the API, provide Ad Ops with a more intuitive workflow and user experience, and improve on the feature set available to guaranteed delivery line items.  
 
-This document will explain the differences between the legacy GDLI and the new GDALI and provide links to the resources you'll need to migrate to using GDALIs.
+This document explains the differences between the legacy GDLI and the current GDALI and provide links to the resources you'll need to migrate to using GDALIs.
 
-## What's changing?
+## What changed?
 
 The GDALI uses the same insertion order and line item service endpoints as the legacy GDLI. But we've updated and added new fields and logic to both the insertion order and line item objects to enable the GDALI features.
 
