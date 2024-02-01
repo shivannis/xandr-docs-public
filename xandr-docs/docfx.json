@@ -2,19 +2,18 @@
   "build": {
     "content": [
       {
+        "src": "articles",
+        "dest": ".",
         "files": [
           "**/*.md",
           "**/*.yml",
           "**/docfx.json"
         ],
-        "src": "articles",
-        "dest": ".",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
           "_themes/**",
           "_themes.pdf/**",
-          
           "_repo.en-us/**",
           "README.md",
           "LICENSE",
@@ -22,7 +21,6 @@
           "ThirdPartyNotices.md",
           "SECURITY.md"
         ],
-        {
         "src": "articles/invest",
         "dest": "./invest/",
         "files": [
@@ -34,7 +32,6 @@
             "**/includes/**",
             "**/obj/**"
         ]
-      },
       }
     ],
     "resource": [
