@@ -4,7 +4,7 @@ description: In this article, find a list of all demand partners currently avail
 ms.date: 10/28/2023
 ---
 
-# Prebid Server Premium demand partner integrations
+# Prebid server premium demand partner integrations
 
 The table below lists all demand partners currently available through Prebid Server Premium (PSP). When demand partners create new adapters for an [open-source Prebid Server](https://docs.prebid.org/prebid-server/overview/prebid-server-overview.html) they are generally added to PSP within two weeks.
 
@@ -134,7 +134,7 @@ Additional resources on demand partners:
 | Krushmedia | krushmedia | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Kubient | kubient | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | LemmaDigital | lemmadigital | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
-| Liftoff (Vungle) | liftoff | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: No | No | **App**: No <br>**Site**: No |
+| Vungle | vungle | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: No | No | **App**: No <br>**Site**: No |
 | Limelight Digital | limelightDigital | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | LM KiviAds | lm_kiviads | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | LockerDome | lockerdome | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | No | **App**: No <br>**Site**: No |
