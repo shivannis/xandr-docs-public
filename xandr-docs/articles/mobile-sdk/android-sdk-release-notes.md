@@ -7,6 +7,21 @@ ms.date : 10/28/2023
 
 # Android SDK release notes
 
+## 8.10
+
+### New feature
+
+- 6029394 Added support for setting content language in Ad Request. New API introduced in SDKSettings setContentLanguage(String contentLanguage)
+- 6014990 Changed Internal Error to Network error for applicable cases and provided additional failure message
+
+### Improvement/Bug fixes
+
+- 6015110 Upgraded OMSDK from 1.4.8 to 1.4.9 (Microsoft namespace)
+
+### Mediation partner updates
+
+- 5622337 Upgraded Facebook Audience Network SDK from 6.13.7 to 6.16.0
+
 ## 8.9
 
 ### New feature
