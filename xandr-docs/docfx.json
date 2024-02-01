@@ -21,17 +21,6 @@
           "ThirdPartyNotices.md",
           "SECURITY.md"
         ],
-        "src": "articles/invest",
-        "dest": "./invest/",
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-            "**/_themes/**",
-            "**/includes/**",
-            "**/obj/**"
-        ]
       }
     ],
     "resource": [
