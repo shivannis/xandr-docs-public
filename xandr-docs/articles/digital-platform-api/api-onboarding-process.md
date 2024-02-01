@@ -5,7 +5,6 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-
 # API onboarding process
 
 Customers who plan to integrate with Xandr APIs need to complete the following steps in our API onboarding process.
@@ -13,7 +12,7 @@ Customers who plan to integrate with Xandr APIs need to complete the following s
 > [!NOTE]
 > The Xandr API endpoints are accessible only to current customers. If you're not currently a Xandr customer but are interested in becoming one, [request a consultation](https://www.xandr.com/contact-us/).
 
-To know more about Xandr's APi go to, [Reference](./reference.md) page.
+To know more about Xandr's API, go to [Reference](./reference.md) page.
 
 ## Get API access
 
@@ -43,23 +42,6 @@ The API documentation provides insight into the structure of the API and will he
 > **API change info**
 >
 > We will notify customers of API changes. You can sign up to receive emails of API changes, as well as other Xandr news. If you have a Xandr user account, you should receive relevant communications automatically.
-
-## Complete the self-paced training
-
-We offer a pre-recorded training webinar, [API Overview and Training](https://vimeo.com/123017389/15bce65150), targeted at anyone interested in developing against our APIs. (Note, the training was recorded several years ago, but the basic concepts still apply.) The training covers the following topics:
-
-- The reasons for using an API
-- Best practices for integrating
-- Definitions of breaking and non-breaking changes
-- Throttling, filtering and sorting
-- Data entity mapping/relationships
-- JSON introduction
-- API authorization
-- Available tools
-
-You can download a [PDF version](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28%20Dec%202023/166636901.pdf) of the PowerPoint presentation used in the Webinar.
-
-You should also read the [API Best Practices](./api-best-practices.md). This document also covers many of the basic concepts that will help get you started.
 
 ## Related topics
 

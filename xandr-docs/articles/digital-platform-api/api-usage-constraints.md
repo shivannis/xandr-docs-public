@@ -89,7 +89,7 @@ After authenticating, your token remains valid for 2 hours. You do not need to r
 Xandr limits the number of line items, campaigns, creatives, publishers, sites, and placements that you can have on the platform. In addition, Xandr limits the number of domains that can be used in a single domain list and the number of certain targets that can be used in a single profile. You can use the [Object Limit Service](./object-limit-service.md) to view your limits and proactively monitor your usage.
 
 > [!TIP]
-> For all object types except creatives, both active and inactive objects are counted against the limit. For creatives, only <u>non-expired</u> objects are counted against the limit. A creative expires when it has neither served nor been modified in 45 days.
+> For all object types except creatives, both active and inactive objects are counted against the limit. For creatives, only non-expired objects are counted against the limit. A creative expires when it has neither served nor been modified in 45 days.
 
 For most clients, the default object limits are as follows:
 
@@ -116,24 +116,24 @@ For most clients, the default object limits are as follows:
 
 ### FAQs
 
-#### *How will I know that I am approaching my limit for an object?*
+#### How will I know that I am approaching my limit for an object?
 
 We send you an email notification when you reach 85% and 95% of your limit for an object and another email when you reach 100% of your limit.
 
-#### *Who receives object limit email notifications?*
+#### Who receives object limit email notifications?
 
 Object limit notification emails are sent to the email addresses specified in the `sherlock_notify_email` field of the [Member Service](./member-service.md). You can change the recipients at any time. Note, however, that this field controls the recipients for creative auditing emails as well.
 
-#### *What if I reach my limit for an object?*
+#### What if I reach my limit for an object?
 
 When you approach or reach your limit for campaigns, line items, placements, sites, or publishers, you should delete any inactive, unused, or unnecessary instances so you can stay under your limit. Deleted line items, campaigns, creatives, publishers, sites, and placements will continue to appear in reporting but cannot be undeleted.
 
-When you approach or reach your limit for creatives, you should remove <u>non-expired</u> creatives. Non-expired creatives have the `is_expired` field set to `false`. Note that removing expired creatives will not impact your creative count.
+When you approach or reach your limit for creatives, you should remove non-expired creatives. Non-expired creatives have the `is_expired` field set to `false`. Note that removing expired creatives will not impact your creative count.
 
-#### *What if I am already over my limit?*
+#### What if I am already over my limit?
 
 If you need to create additional objects but have already met or exceeded your limit as listed above, please delete unused objects or contact support for assistance. Our support team can help you identify inactive objects to delete.
 
-#### *Can my limit be raised?*
+#### Can my limit be raised?
 
 In exceptional cases, a limit may be temporarily lifted by a small amount at the discretion of our engineering team. Please contact your Xandr representative to discuss this option.
