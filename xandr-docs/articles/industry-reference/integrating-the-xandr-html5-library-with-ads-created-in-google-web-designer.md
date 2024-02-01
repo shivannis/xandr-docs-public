@@ -1,11 +1,11 @@
 ---
-title: Integrating the Xandr HTML5 Library with Ads Created in Google Web Designer
+title: Integrating the Xandr HTML5 Library with Google Web Designer Ads
 description: In this article, find instructions on how to modify an ad created in Google Web Designer to work with the Xandr HTML5 Library. 
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Integrating the Xandr HTML5 Library with ads created in Google Web Designer
+# Integrating the Xandr HTML5 Library with Google Web Designer ads
 
 Follow these instructions to modify an ad created in Google Web Designer such that it works seamlessly with the Xandr HTML5 Library. This is required to properly track clicks.
 
@@ -23,7 +23,7 @@ Then, locate and open the file named `index.html`. This file is where you will 
 
 ### Step 2: Add the Xandr HTML5 Library
 
-Ensure that the actual Xandr HTML5 Library is linked to inside `index.html`. The library can be found [here](https://acdn.adnxs.com/html5-lib/1.3.0/appnexus-html5-lib.min.js).
+Ensure that the actual Xandr HTML5 Library is linked to inside `index.html`.
 
 Link the library inside the `<head>` tag in the `index.html` file, by adding the following `<script>` tag:
 

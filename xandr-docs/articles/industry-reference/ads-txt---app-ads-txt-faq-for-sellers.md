@@ -1,11 +1,11 @@
 ---
-title: Ads.txt/App-Ads.txt FAQ for Sellers
+title: Ads.txt/App-Ads.txt Seller FAQ
 description: In this article, explore answers to frequently asked questions (FAQs) about Ads.txt/App-Ads.txt for sellers.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Ads.txt/App-Ads.txt FAQ for sellers
+# Ads.txt/App-Ads.txt seller FAQ
 
 ## What is ads.txt and app-ads.txt?
 
@@ -19,13 +19,13 @@ You can read more about what problems these standards are meant to solve on the 
 
 ## How is Xandr as a DSP going to use ads.txt and app-ads.txt files?
 
-Xandr is using Ads.txt and App-Ads.txt information as a way to strengthen our existing inventory quality programs.
+Xandr uses Ads.txt and App-Ads.txt information as a way to strengthen our existing inventory quality programs.
 
 ## How should publishers or networks incorporate their Xandr accounts into their ads.txt file?
 
 For more information on how publishers and networks should use ads.txt and app-ads.txt, see [Xandr Support for Ads.txt](xandr-support-for-ads-txt-and-app-ads-txt.md).
 
-## Is Xandr recommending that all publishers and networks implement ads.txt?
+## Does Xandr recommend that all publishers and networks implement ads.txt?
 
 Yes. The Ads.txt standard was launched in early 2018, and has gained significant traction in the industry. Some buyers will exclusively
 purchase content that is considered "authorized" by Ads.txt. App-Ads.txt formally launched in the Spring of 2019, and is also quickly gaining traction.  
@@ -42,7 +42,7 @@ Over 90% of our top 1000 publishers are compliant and have ads.txt files on thei
 
 Daily for Ads.txt. Weekly for App-Ads.txt.
 
-## How is ads.txt currently being used by Xandr buyer clients?
+## How is ads.txt used by Xandr buyer clients?
 
 Buyers (both Xandr UI and API users as well as external bidder clients) benefit from Xandr's daily ads.txt file crawling and enforcement because, by default, they only buy from compliant sellers if a domain has an ads.txt file associated to it. Buyers do not have the option to target any differently because Xandr simply suspends supply paths in violation of information found in sellers' ads.txt files.
 
@@ -55,7 +55,7 @@ app-ads.txt files, and enforce inventory standards on the basis of these results
 
 If a publisher has a file in error (meaning they don't include all their sellers that are authorized), then that has the potential impact them. If a file is found that appears unintentionally broken or corrupted in some way, Xandr will check with publishers rather than immediately disable buying from parties whose information is not found in the file.
 
-## Why isn't Xandr enforcing ads.txt compliance for external bidder demand?
+## Does Xandr enforce ads.txt compliance for external bidder demand?
 
 We are not enforcing ads.txt compliance for external bidders because we anticipate that many of our external bidder partners will be rolling out ads.txt detection and enforcement mechanisms within their own systems, and wanted to avoid duplication of logic.
 

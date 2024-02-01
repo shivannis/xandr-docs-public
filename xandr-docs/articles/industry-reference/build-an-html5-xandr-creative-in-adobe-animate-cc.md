@@ -41,7 +41,7 @@ This guide explains how to use Adobe Animate CC to build HTML5 creatives that wi
 
     :::image type="content" source="media/save-and-published.png" alt-text="Screenshot of the address bar.":::
 
-    Refresh the page and click on the ad. A new window with Xandr's website should open in your browser. When the ad is served Xandr sets the value of clickTag to Xandr's click tracker and a redirect to the landing page URL provided for the creative in Console.
+    Refresh the page and click on the ad. A new window with Xandr's website should open in your browser. When the ad is served Xandr sets the value of clickTag to Xandr's click tracker and a redirect to the landing page URL provided for the creative in Microsoft Monetize.
 
 ## Related topic
 

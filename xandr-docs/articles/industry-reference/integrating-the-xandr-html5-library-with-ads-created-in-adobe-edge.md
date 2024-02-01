@@ -1,11 +1,11 @@
 ---
-title: Integrating the Xandr HTML5 Library with Ads Created in Adobe Edge
+title: Integrating the Xandr HTML5 Library with Adobe Edge Ads
 description: In this article, find instructions on how to modify an ad created in Adobe Edge to work with the Xandr HTML5 Library.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Integrating the Xandr HTML5 Library with ads created in Adobe Edge
+# Integrating the Xandr HTML5 Library with Adobe Edge ads
 
 Follow these instructions to modify an ad created in Adobe Edge such that it works seamlessly with the Xandr HTML5 Library. This is required to properly track clicks.
 
@@ -28,7 +28,7 @@ These files are where you will make all of the necessary changes in the steps be
 
 ### Step 2: Add the Xandr HTML5 Library
 
-Ensure that the actual Xandr HTML5 Library is linked to inside `index.html`. The library can be found [here](https://acdn.adnxs.com/html5-lib/1.3.0/appnexus-html5-lib.min.js).
+Ensure that the actual Xandr HTML5 Library is linked to inside `index.html`.
 
 Link the library inside the `<head>`tag in the `index.html` file, by adding the following `<script>` tag:
 
@@ -118,7 +118,7 @@ Select all of the contents within the folder created when you unzipped the file.
 
 :::image type="content" source="media/rezip.png" alt-text="A screenshot that shows how to zip files.":::
 
-You are now ready to upload your HTML5 creatives onto the AppNexus platform.
+You are now ready to upload your HTML5 creatives onto the Xandr platform.
 
 ### IAB validator (optional)
 
