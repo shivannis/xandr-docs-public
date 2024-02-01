@@ -13,6 +13,17 @@ The Xandr API services are for use by current Xandr customers. Service endpoints
 > **For Current Xandr customers**:  
 > All support requests can be submitted and routed to the appropriate Xandr team directly from our Customer Support Request Form located at [https://help.xandr.com](https://help.xandr.com/).
 
+## Submit a support request
+
+All support requests can be submitted and routed to the appropriate Xandr team directly from our Customer Support Portal located at [https://help.xandr.com](https://help.xandr.com).
+
+## Seller bid error report - Messages and resolutions for sellers
+
+For information on Seller Bid Error report, the error messages and resolutions for sellers, refer to the following topics:
+- [Seller Bid Error Report](./seller-bid-error-report.md)
+- [Bid Error Codes](../bidders/bid-error-codes.md)
+
+  
 ## Training
 
 - [API Getting Started](api-getting-started.md) - This section provides an introduction to the API onboarding process and best practices, walks you through the typical setup steps and common operations for network users, and covers important concepts such as breaking changes and API usage constraints.
