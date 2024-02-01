@@ -38,7 +38,7 @@ This guide explains how to use Adobe Edge to build HTML5 creatives that will pro
     > [!TIP]
     > Use https to ensure the creative can serve on secure inventory.
 
-1. Click **Preview in Browser** to open the ad in your browser. Add `?clickTag=http://YOUR-URL-HERE.com` at the end of the URL in the address bar with the landing page you want to test. Refresh the page and click on the ad. A new window with the landing page you entered should open in your browser. When the creative is served, Xandr sets the value of `clickTag` to Xandr's click tracker and sets a redirect to the landing page URL provided in Console.
+1. Click **Preview in Browser** to open the ad in your browser. Add `?clickTag=http://YOUR-URL-HERE.com` at the end of the URL in the address bar with the landing page you want to test. Refresh the page and click on the ad. A new window with the landing page you entered should open in your browser. When the creative is served, Xandr sets the value of `clickTag` to Xandr's click tracker and sets a redirect to the landing page URL provided in Microsoft Monetize.
 
 ## Without Xandr HTML5 library
 
@@ -62,7 +62,7 @@ This guide explains how to use Adobe Edge to build HTML5 creatives that will pro
 
     :::image type="content" source="media/click-tag-code.png" alt-text="Screenshot of the Click Tag Code.":::
 
-1. Click **Preview in Browser** to open the ad in your browser. Add `?clickTag=http://YOUR-URL-HERE.com` at the end of the URL in the address bar with the landing page you want to test. Refresh the page and click on the creative. A new window with the landing page you entered should open in your browser. When the creative is served, Xandr sets the value of `clickTag` to Xandr's click tracker and sets a redirect to the landing page URL provided in Console.
+1. Click **Preview in Browser** to open the ad in your browser. Add `?clickTag=http://YOUR-URL-HERE.com` at the end of the URL in the address bar with the landing page you want to test. Refresh the page and click on the creative. A new window with the landing page you entered should open in your browser. When the creative is served, Xandr sets the value of `clickTag` to Xandr's click tracker and sets a redirect to the landing page URL provided in Microsoft Monetize.
 
 ## Related topic
 
