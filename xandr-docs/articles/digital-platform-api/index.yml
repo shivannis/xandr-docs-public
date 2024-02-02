@@ -39,7 +39,7 @@ landingContent:
             url: sell-side-setup.md
           - text: Deal Line Item API Setup Guide
             url: deal-line-item-api-setup-guide.md
-          - text: Programmatic Guaranteed Deal through Microsoft Monetize Ad Server
+          - text: Microsoft Monetize Ad Server for Programmatic Guaranteed Deal
             url: programmatic-guaranteed-deal-through-monetize-ad-server-api-setup-guide.md
       - linkListType: reference
         links:

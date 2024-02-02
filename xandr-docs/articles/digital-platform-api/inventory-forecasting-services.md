@@ -108,11 +108,11 @@ For more on roadblocking, see [Target Your Inventory with Roadblocking](../mone
 | `timezone` | enum | The timezone for which the line item is active. For details and accepted values, see [API Timezones](api-timezones.md).<br>**Required:** No, If not specified, member default timezone will be used. |
 | `creatives` | array of objects | The creatives associated with the campaign. If you include creatives you must include at least the creative ID. For a list and descriptions of available fields, see [Creative Service](creative-service.md).<br>**Required:** No |
 
-#### Forecasting profiles
+### Forecasting profiles
 
 You can define the targeting requirements for your forecast by using the [Profile Service](profile-service.md) on the line item and the campaign. However, there are some differences in how you need to define some of the fields for forecasting as opposed to other types of targeting specifications.
 
-##### `postal_code_targets`
+#### `postal_code_targets`
 
 The fields for the `postal_code_targets` object in the `profile` service are defined in the [Postal Code Service](postal-code-service.md). If you want to forecast based on postal codes, you *must* provide the following information:
 
@@ -121,9 +121,9 @@ The fields for the `postal_code_targets` object in the `profile` service are def
 | `code` | string | The postal code can be an alphanumeric string of up to 14 characters and can contain a space or hyphen. |
 | `country_id` | string | The [ISO code](https://www.maxmind.com/en/iso3166) for the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country codes. |
 
-###### Example
+##### Example
 
-**Expand source**
+###### Expand source
 
 ```
 "postal_code_targets":[  
@@ -138,7 +138,7 @@ The fields for the `postal_code_targets` object in the `profile` service are def
 ]
 ```
 
-##### Legacy GDLI example - Check inventory availability for legacy GDLIs with multiple campaigns
+#### Legacy GDLI example - Check inventory availability for legacy GDLIs with multiple campaigns
 
 To see an inventory availability forecast across multiple child campaigns based on proposed targeting, create a JSON file in the format shown here:
 
@@ -339,7 +339,7 @@ You'll get back JSON in the following format:
 }
 ```
 
-##### GDALI example - Check inventory availability for GDALIs with splits
+#### GDALI example - Check inventory availability for GDALIs with splits
 
 To see an inventory availability forecast across splits based on proposed targeting, create a JSON file in the format shown here:
 
@@ -446,7 +446,7 @@ If you do not have splits, simply pass in an empty array for splits:
 
 Then `POST` it to the service either without any additional queries or with the `split_breakout` query:
 
-###### `POST` without additional queries
+##### `POST` without additional queries
 
 ```
 curl --silent  -b cookies -X POST -d '@/tmp/forecast-inventory-multi.json' "https://api.appnexus.com/forecast-inventory-multi"
@@ -518,7 +518,7 @@ You'll get back JSON in the following format:
 }
 ```
 
-###### `POST` with `split_breakout` query
+##### `POST` with `split_breakout` query
 
 ```
 curl --silent  -b cookies -X POST -d '@/tmp/forecast-inventory-multi.json' "https://api.appnexus.com/forecast-inventory-multi?split_breakout=true"
@@ -703,7 +703,7 @@ You'll get back JSON in the following format:
 }
 ```
 
-##### Legacy GDLI example - Check inventory availability for legacy GDLIs with a roadblock
+#### Legacy GDLI example - Check inventory availability for legacy GDLIs with a roadblock
 
 To run an inventory availability forecast given a roadblock with several creative sizes, you'll need to:
 
@@ -738,7 +738,7 @@ Here's an example of the JSON you would send in your query:
 }       
 ```
 
-##### GDALI example - Check inventory availability for GDALIs with a roadblock
+#### GDALI example - Check inventory availability for GDALIs with a roadblock
 
 To run an inventory availability forecast on GDALIs given a roadblock with several creative sizes, you'll need to:
 
@@ -876,7 +876,7 @@ Use the query string parameters shown in the table below to tune the output. For
 | `timezone` | enum | The timezone for which the line item is active. For details and accepted values, see [API Timezones](api-timezones.md).<br>**Required:** No. If not specified, member default timezone will be used. |
 | `creatives` | array of objects | The creatives associated with the campaign. If you include creatives you must include at least the creative ID. For a list and descriptions of available fields, see [Creative Service](creative-service.md).<br>**Required:** No |
 
-##### Legacy GDLI example - Check inventory contention for legacy GDLIs with multiple campaigns
+#### Legacy GDLI example - Check inventory contention for legacy GDLIs with multiple campaigns
 
 To see an inventory contention forecast across multiple child campaigns based on your proposed targeting settings, create a JSON file in the format shown below:
 
@@ -1078,76 +1078,7 @@ You'll get back JSON in the following format:
 }
 ```
 
-##### GDALI example - Check inventory contention for GDALIs with splits
-
-To see an inventory contention forecast across splits based on your proposed targeting settings, create a JSON file in the format shown
-below:
-
-```
-{
-    "line_item": {
-        "ad_types": [
-            "banner"
-        ],
-        "start_date": "2022-04-28 00:00:00",
-        "end_date": "2022-05-01 23:59:59",
-        "profile": {
-            "country_targets": [
-                {
-                    "id": 123,
-                    "action": "include",
-                }
-            ],
-            "size_targets": {
-                "width": 190,
-                "height": 213
-            },
-            {
-                "width": 728,
-                "height": 90
-            },
-            "id": null,
-            "advertiser_id": 5878213,
-            "graph_id": null
-        },
-        "creatives": [],
-        "roadblock": null
-    },
-    "splits": [
-        {
-            "id": 111111111,
-            "conditions": []
-            "is_default": false,
-            "active": true,
-            "order": 1,
-            "name": "Name1",
-            "allocation_strategy": "unconstrained",
-            "creatives": []
-        },
-        {
-            "id": 222222222,
-            "conditions": []
-            "is_default": false,
-            "active": true,
-            "order": 2,
-            "name": "Name2",
-            "allocation_strategy": "unconstrained",
-            "creatives": []
-        },
-        {
-            "id": 333333333,
-            "is_default": true,
-            "active": false,
-            "order": 5,
-            "name": "Default",
-            "allocation_strategy": "unconstrained",
-            "creatives": []
-        }
-    ]
-}
-```
-
-##### GDALI example: Check inventory contention for GDALIs with splits
+#### GDALI example - Check inventory contention for GDALIs with splits
 
 To see an inventory contention forecast across splits based on your proposed targeting settings, create a JSON file in the format shown
 below:

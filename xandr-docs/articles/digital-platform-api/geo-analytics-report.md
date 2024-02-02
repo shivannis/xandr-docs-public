@@ -20,7 +20,7 @@ This report can break down campaign performance along the following geographic b
 
 For more information on the available data fields and their definitions, see [Dimensions](#dimensions) and [Metrics](#metrics) below.
 
-For instructions on running this report, see the [Example](#example).
+For instructions on running this report, see the [Examples](#examples).
 
 > [!NOTE]
 > **On the accuracy of determining user geography by IP address**

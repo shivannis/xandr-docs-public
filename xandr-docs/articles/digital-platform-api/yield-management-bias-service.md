@@ -30,8 +30,8 @@ The Yield Management Bias Service is used to create and update biases within an 
 | `ym_profile_id` | int | The ID of the yield management profile that the yield management bias is associated with. For details, see the [Yield Management Profile Service](yield-management-profile-service.md).<br><br>**Note:** This ID cannot be changed once it is set.<br><br>**Default:** `NULL`<br>**Required On:** `POST` |
 | `profile_id` | int | An optional `profile_id` is used to determine when to apply a bias. A profile is a generic set of rules for targeting inventory, and certain biases may only apply to certain slices of inventory. For details, see the [Profile Service](profile-service.md).<br>**Default:** `NULL` |
 | `priority` | int | The priority field (optional) is used to create a hierarchy of how the bias should to be applied. Value may be between `1`-`10` where priority `10` is treated as the highest priority value.<br>**Default:** `5` |
-| `members` | array of objects | This is an array specifying the member(s) the yield management bias should be applied to. For details, see the [Members Array](#the-members-array) below.<br>**Default:** `NULL` |
-| `buyer_groups` | array of objects | This is an array specifying the buyer group(s) the yield management bias should be applied to. For details, see the [Buyer Groups Array](#the-buyer-groups-array) below.<br>**Default:** `NULL` |
+| `members` | array of objects | This is an array specifying the member(s) the yield management bias should be applied to. For details, see the [Members Array](#members-array) below.<br>**Default:** `NULL` |
+| `buyer_groups` | array of objects | This is an array specifying the buyer group(s) the yield management bias should be applied to. For details, see the [Buyer Groups Array](#buyer-groups-array) below.<br>**Default:** `NULL` |
 
 ### Members array
 

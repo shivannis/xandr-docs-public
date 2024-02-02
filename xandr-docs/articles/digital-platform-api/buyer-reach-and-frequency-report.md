@@ -12,9 +12,7 @@ The Buyer Reach and Frequency report shows you the information associated with t
 The Buyer Reach and Frequency Report offers flexible filtering to analyze unique devices by facilitating below procedure:
 
 - Pull a **basic running total** of unique devices for their active Line Items or Insertion Orders.
-
 - Pull unique devices for these objects over a **defined period of time** (for example, past week).
-
 - You can **filter and group on specific criteria**, which will provide an accurate unique device count across the specified criteria. For example, the count of unique devices across Line Items A, B, and D, in the US and Canada, for the past month.
 
 ## Time frame
