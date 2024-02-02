@@ -1,11 +1,11 @@
 ---
-title: 08 - Insertion Orders and Line Items
+title: Insertion Orders and Line Items
 description: In this article, learn how to create an insertion order and a line item by providing the necessary fields and details.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# 08 - Insertion orders and line items
+# Insertion orders and line items
 
 Once the advertiser is properly configured, we can begin building out the sell-side hierarchy.  
 

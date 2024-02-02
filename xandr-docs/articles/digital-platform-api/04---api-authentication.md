@@ -1,11 +1,11 @@
 ---
-title: 04 - API Authentication
+title: API Authentication
 description: In this article, learn step-by-step instructions on how to authenticate an API service with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# 04 - API authentication
+# API authentication
 
 Before you can make calls to any API service or report, you must use your username and password to get an authorization token from the
 authentication service. The token remains active for 2 hours, during which you do not need to re-authenticate. This page walks you through

@@ -1,11 +1,11 @@
 ---
-title: 07 - Advertiser Configuration
+title: Advertiser Configuration
 description: In this article, learn about advertiser configuration and explore detailed information about the various parameters configured at the advertiser level.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# 07 - Advertiser configuration
+# Advertiser configuration
 
 Prior to creating any pieces of the campaign hierarchy via the API, it is best practice to fully configure the advertiser first. The reason for this is that there are defaults that can be specified on an advertiser level which cascade to child objects under the advertiser.
 

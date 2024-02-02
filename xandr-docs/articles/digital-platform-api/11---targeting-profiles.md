@@ -1,11 +1,11 @@
 ---
-title: 11 - Targeting Profiles
+title: Targeting Profiles
 description: In this article, learn about targeting profiles and explore detailed information about the most common targeting parameters.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# 11 - Targeting profiles
+# Targeting profiles
 
 All targeting in Xandr is controlled via targeting profiles. This allows us to keep targeting unified across all objects as well as allow targeting to be applied to nearly any object on the platform. Some of the most common targeting parameters available are:
 

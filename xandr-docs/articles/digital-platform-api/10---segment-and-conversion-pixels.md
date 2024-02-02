@@ -1,11 +1,11 @@
 ---
-title: 10 - Segment and Conversion Pixels
+title: Segment and Conversion Pixels
 description: In this article, learn about the segment and conversion pixels with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# 10 - Segment and conversion pixels
+# Segment and conversion pixels
 
 Pixels can be used for two main purposes in Xandr: segment targeting and conversion tracking.
 
