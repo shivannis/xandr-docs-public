@@ -53,7 +53,7 @@ Below is an example of a change log service. For more details, see [Change Log S
 
 ## Member services
 
-Below are examples of a member services. For more details, see [Member Service](member-service.md).
+Below are examples of a few member services. For more details, see [Member Service](member-service.md).
 
 | Service Name | Endpoint | Context | Read-only? |
 |:---|:---|:---|:---|

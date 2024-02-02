@@ -42,9 +42,9 @@ When creating your password, please create a complex password with the following
 - At least one digit (0–9)
 - At least one special character (such as #, $, ? %, &)
 
-## Step 2. POST the file to the authentication service
+## Step 2. `POST` the file to the authentication service
 
-The request returns a token that remains valid for the 2 hours following your most recent call to the API. We suggest using "`-b cookies -c cookies`" in the POST request to store the token in a cookie.
+The request returns a token that remains valid for the 2 hours following your most recent call to the API. We suggest using "`-b cookies -c cookies`" in the `POST` request to store the token in a cookie.
 
 ```
 $ curl -b cookies -c cookies -X POST -d @auth 'https://api.appnexus.com/auth'
