@@ -74,6 +74,6 @@ We have a list of banned user agents. However, due to the rapid pace of change f
 
 We de-duplicate clicks on a particular ad impression in our data pipeline.
 
-### Can I get Xandr to place on my blocklist a specific IP address or domain?
+### Can I get Xandr to place a specific IP address or domain on my blocklist?
 
 We're happy to investigate but can't guarantee that action will be taken. Abnormal performance you report may not be reflected across the broader platform.

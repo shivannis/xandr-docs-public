@@ -10,7 +10,7 @@ One way to target an advertising campaign is by utilizing key/value sets based o
 
 ## Key/Value overview
 
-Keys are the categories that will be used to create targets. Examples of keys would be *city*, *sport*, or *car*. Values are the specific attributes within those categories that you want to target. Examples of values for *city* are *New York*, *London*, and *Tokyo*. Values for sport could include *football*, *rugby*, and *tennis*. Creating these key/value sets would allow advertisers to target, for example, all users in New York or London who play tennis.
+Keys are the categories that are used to create targets. Examples of keys are *city*, *sport*, or *car*. Values are the specific attributes within those categories that you want to target. Examples of values for *city* are *New York*, *London*, and *Tokyo*. Values for sport could include *football*, *rugby*, and *tennis*. Creating these key/value sets would allow advertisers to target, for example, all users in New York or London who play tennis.
 
 ## Key/Value management
 
@@ -54,15 +54,12 @@ You can re-activate a key at any time by selecting the key and choosing **Activa
 
 ### Delete a key
 
-We recommend that you deactivate keys rather than deleting them. If you deactivate a key, you can activate it again at any time.
+We recommend that you deactivate keys rather than deleting them as deleting a key cannot be undone. If you deactivate a key, you can activate it again at any time.
 
 If you do need to delete a key, follow these steps:
 
 1. In the **Key/Value Management**  window, click the check box next to the key you want to delete.
 1. From the **Action** dropdown, select **Delete**.
-
-> [!WARNING]
-> Deleting a key cannot be undone.
 
 ## Entering values
 
@@ -160,6 +157,6 @@ The following restrictions are enforced when entering or importing values.
   - `%` (percent)
   - `/` (forward slash)
 
-## Related topic
+<!--## Related topic
 
-[Key/Value Targeting](key-value-targeting.md)
+[Key/Value Targeting](key-value-targeting.md)-->
