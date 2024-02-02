@@ -2,8 +2,6 @@
   "build": {
     "content": [
       {
-        "src": "articles",
-        "dest": ".",
         "files": [
           "**/*.md",
           "**/*.yml",
