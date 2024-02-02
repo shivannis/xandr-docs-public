@@ -39,7 +39,7 @@
       - name: Google Ad Manager
         href: doubleclick-ad-exchange-adx.md
       - name: Sync User ID with External Partners
-        href: user-id-syncing-with-external-partners
+        href: user-id-syncing-with-external-partners.md
       - name: Asynchronous Usersync Pixels
         href: asynchronous-usersync-pixels.md
   - name: Key/Value Target
