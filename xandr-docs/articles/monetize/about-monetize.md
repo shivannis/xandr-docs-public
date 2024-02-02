@@ -20,7 +20,7 @@ Monetize offers:
 - Built-in fraud protections and inventory quality protections.
 - No need for contracts with each publisher or exchange.
 
-A number of other key features help Xandr optimize your ad buying revenue and increase buying efficiency.
+A number of other key features help Microsoft Monetize optimize your ad buying revenue and increase buying efficiency.
 
 ## Sellers
 
@@ -31,9 +31,9 @@ Monetize has a number of features that allow you to maintain business and techni
 - Apply optimization strategies to your direct campaigns since optimizing direct campaigns is as important as optimizing on third-party inventory.
 - Manage individual publishers' ad quality requirements, ensuring that you meet expectations about the quality and content of ads served on their sites.
 
-## Adserver
+## Ad server
 
-As an Adserver user, you have access to your end-to-end setup of advertiser and publisher information. You can set up publishers and available inventory, as well as advertisers and their selling specifications. With Adserver, you can set up and manage your buy-side systems and your sell-side systems, as well as manage forecasting, priorities, and many other types of functionality between the two.
+As an ad server user, you have access to your end-to-end setup of advertiser and publisher information. You can set up publishers and available inventory, as well as advertisers and their selling specifications. With an ad server, you can set up and manage your buy-side systems and your sell-side systems, as well as manage forecasting, priorities, and many other types of functionality between the two.
 
 ## Technical details
 

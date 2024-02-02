@@ -10,23 +10,30 @@ This page introduces the main objects that you work with to buy and sell media.
 
 ## Buy-side hierarchy
 
-:::image type="content" source="media/buy-side-object-hierarchy.png" alt-text="The diagram that defines buy-side hierarchy.":::
-
-## Overview and diagram (Augmented Line Item)
-
-:::image type="content" source="media/buy-side-object-hierarchy.png" alt-text="The diagram that defines augmented line item in buy-side hierarchy.":::
-
-Key differences of an [Augmented Line Item (ALI)](augmented-line-items-ali.md) compared to Standard Line Items:
+Key differences of an [Augmented Line Item (ALI)](augmented-line-items-ali.md) compared to Standard Line Item are:
 
 - ALIs require Insertion Orders (not optional).
 - Targeting, budgeting, bidding strategies, and optimization strategies that were associated with campaigns are set on the line item level.
 - ALIs do not use campaigns.
 
+### Standard line item
+
+The following image illustrates the standard line item.
+
+:::image type="content" source="media/buy-side-object-hierarchy.png" alt-text="Diagram that defines buy-side hierarchy.":::
+
+### Augmented line item
+
+The following image illustrates the augmented line item.
+
+:::image type="content" source="media/buy-side-object-hierarchy.png" alt-text="Diagram that defines augmented line item in buy-side hierarchy.":::
+
 ## Network
 
-The [Network](network-guide.md) represents your account as a whole. At this level, you decide who's eligible to sell to you and what level of inventory audit you require
-The [seller settings](set-seller-defaults.md), you create lists of domains and apps for efficient allowlist or blocklist targeting in campaigns
-[targeting lists](working-with-targeting-lists.md), you put in place a cap on how much you are willing to spend per day on third-party inventory [safety budget](capping-daily-spend-on-third-party-inventory-safety-budget.md) and more.
+The [Network](network-guide.md) represents your account as a whole. At this level:
+- You decide who's eligible to sell to you and what level of inventory audit you require [seller settings](set-seller-defaults.md).
+- You create lists of domains and apps for efficient allowlist or blocklist targeting in campaigns [targeting lists](working-with-targeting-lists.md).
+- You put in place a cap on how much you are willing to spend per day on third-party inventory [safety budget](capping-daily-spend-on-third-party-inventory-safety-budget.md) and more.
 
 ## Advertiser
 
@@ -100,6 +107,8 @@ A [click tracker](create-a-click-tracker.md) is used to track clicks associated 
 You can have many click trackers under a single advertiser.
 
 ## Sell-side hierarchy
+
+The following sections in this article explain the sell-side hierachy. The details in the following image are covered in these sections.
 
 :::image type="content" source="media/sell-side-object-hierarchy.png" alt-text="The diagram that defines sell-side hierarchy.":::
 
