@@ -1,20 +1,17 @@
 ---
-title: Microsoft Monetize - Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access
+title: Microsoft Monetize - Edit Default Buyer Settings
 description: The article helps you to set the eligibility, allowed payment types, and targeting access.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Edit buyer eligibility, allowed payment types, and targeting access
+# Microsoft Monetize - Edit default buyer settings
 
-You can set the eligibility, allowed payment types, and targeting access for buyers within the **Partner Center** screen or in the **Partner Controls** tab.
-The **Partner Controls** tab is also visible to the buyer. They can see what you have exposed to and hidden from them. Your default settings will apply if you do not set custom
-settings for the buyer.
+<!--You can set the eligibility, allowed payment types, and targeting access for buyers within the **Partner Center** screen or in the **Partner Controls** tab.-->This article explains about the updates you can make to the default buyer settings within the **Partner Center** screen or in the **Partner Controls** tab. The **Partner Controls** tab is also visible to the buyer. They can see what you have exposed to and hidden from them. Your default settings will apply if you do not set custom settings for the buyer.
 
 > [!NOTE]
 > While you can manage these settings in the **Partner Center** and in the **Partner Controls** tab, you can only view the buyer's current settings in the **Partner Controls** tab.
-
 > [!TIP]
-> For more information about the settings described on this page, see [Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
+> For more information about the settings described on this page, see [Set default buyer settings](set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
 
 ## Edit a single buyer's settings
 

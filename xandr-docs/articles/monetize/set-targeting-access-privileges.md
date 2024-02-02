@@ -8,12 +8,11 @@ ms.date: 10/28/2023
 
 You can set targeting access privileges for a specific buyer within the **Partner Controls** tab. The more information you expose to buyers, the more easily they can target your inventory. If you do not set targeting access for the buyer, your default targeting access settings will apply.
 
-You can also [manage a buyer's targeting access settings](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md) in the **Partner Center** screen. However, you
-can only view the buyer's current settings here on the **Partner Privileges** tab.
+You can also [manage a buyer's targeting access settings](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md) in the **Partner Center** screen. However, you can only view the buyer's current settings on the **Partner Privileges** tab.
 
 ## Getting there
 
-Select **Partners** \> **Partner Center** from the top navigation menu.
+Select **Partners** > **Partner Center** from the top navigation menu.
 
 ## Step 1. Get started
 

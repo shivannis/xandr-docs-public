@@ -10,8 +10,8 @@ ms.date: 10/28/2023
 
 Networks use Microsoft Monetize to buy inventory on behalf of their advertisers. This inventory may be:
 
-- 3rd-party: inventory sold by other networks/exchanges on the platform
-- Managed: inventory purchased directly from managed publishers with whom the network has proprietary relationships
+- **3rd-party**: inventory sold by other networks/exchanges on the platform
+- **Managed**: inventory purchased directly from managed publishers with whom the network has proprietary relationships
 
 To succeed in their role as financial intermediaries, networks must be able to easily and accurately invoice their advertisers and pay their publishers for **all activity**, as well as have the tools to make sure they maintain an appropriate profit margin.
 
@@ -19,11 +19,11 @@ To succeed in their role as financial intermediaries, networks must be able to e
 
 ## Pulling billing reports
 
-The Billing Report tool of Microsoft Monetize allows you to easily manage internal invoicing for your publishers and advertisers across all activity, both managed and 3rd-party buying and selling. To access this tool, go **Network**  \>  **Reporting** and select "Billing Report" from the **Type** drop-down. You now have a new set of metrics and dimensions available which simplify your in-house invoice development process.
+The Billing Report tool of Microsoft Monetize allows you to easily manage internal invoicing for your publishers and advertisers across all activity, both managed and 3rd-party buying and selling. To access this tool, go **Network**  >  **Reporting** and select "Billing Report" from the **Type** drop-down. You now have a new set of metrics and dimensions available which simplify your in-house invoice development process.
 
 ## Booked revenue: How advertisers pay networks?
 
-Advertisers make all kinds of financial deals with networks, based on CPMs, CPAs or other models. Within Xandr Monetize, networks can input their "booked revenue," or the revenue they will receive from advertisers.
+Advertisers make all kinds of financial deals with networks, based on CPMs, CPAs or other models. Within Microsoft Monetize, networks can input their "booked revenue," or the revenue they will receive from advertisers.
 
 - CPM: A flat payment per thousand impressions
 - CPC: A flat payment per click
@@ -39,15 +39,14 @@ Although defining your revenue values at the Line Item level is technically opti
 
 ## Media Cost: How networks pay publishers?
 
-Networks can buy from real-time publishers, or they can buy from their own, managed publishers. Real-time publishers are paid on a CPM basis.
-networks and other Microsoft Monetize users can use bidding strategies to optimize their bids based on events other than impressions, such as [Buying Strategies](buying-strategies.md), but ultimately the bids themselves are made using CPMs.
+Networks can buy from real-time publishers, or they can buy from their own, managed publishers. Real-time publishers are paid on a CPM basis. Networks and other Microsoft Monetize users can use bidding strategies to optimize their bids based on events other than impressions, such as [Buying Strategies](buying-strategies.md), but ultimately the bids themselves are made using CPMs.
 
 For managed publishers, networks can set their pricing models as:
 
-- CPM: Publisher is paid a flat fee per thousand ads served
-- Revenue share: Publisher is paid a percentage of booked revenue received from the advertiser
+- **CPM**: Publisher is paid a flat fee per thousand ads served
+- **Revenue share**: Publisher is paid a percentage of booked revenue received from the advertiser
 
-When you apply a pricing model to a publisher in Microsoft Monetize, this is for reporting purposes only and will not affect **actual** publisher payout. Networks pay their publishers directly, rather than through Xandr.
+When you apply a pricing model to a publisher in Microsoft Monetize, this is for reporting purposes only and will not affect **actual** publisher payout. Networks pay their publishers directly, rather than through Microsoft Monetize.
 
 ## Network profit
 
@@ -55,8 +54,7 @@ The Network's profit is then Booked Revenue - Media Cost. For booked revenue tha
 
 ## Example
 
-Let's say an advertiser, Prostarr Sportswear, will pay a $1 CPM to Network A, and will pay a maximum of $10,000 over the next month. The money is not dependent on performance, but there are certain restrictions. They want users between 20 and 40 who live in the major U.S. metropolitan regions where Prostarr has stores, and they have
-different creatives for men and women. They want to show their ads on sports sites, news sites, and Facebook.
+Let's say an advertiser, Prostarr Sportswear, will pay a $1 CPM to Network A, and will pay a maximum of $10,000 over the next month. The money is not dependent on performance, but there are certain restrictions. They want users between 20 and 40 who live in the major U.S. metropolitan regions where Prostarr has stores, and they have different creatives for men and women. They want to show their ads on sports sites, news sites, and Facebook.
 
 For this example, Network A is buying only 3rd party inventory and not from its own managed publishers.
 
@@ -64,6 +62,6 @@ Network A enters the $1 CPM and $10,000 budget into the Line Item. Within that l
 
 Now they have to decide how much profit they need to make from this transaction. Let's say they want to spend a $.50 CPM, and make a $.50 profit. So they bid $.50.
 
-Now when they go to bill the advertiser, they run a report on booked revenue, and that is the amount they bill advertisers. A report on media cost will tell them how much they owe the AppNexus platform.
+Now when they go to bill the advertiser, they run a report on booked revenue, and that is the amount they bill advertisers. A report on media cost tells them how much they owe the Xandr platform.
 
 They can also run reports on revenue to easily see the difference between what they spent and what they made.
