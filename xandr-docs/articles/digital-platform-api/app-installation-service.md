@@ -44,10 +44,10 @@ Each object in the `permissions` array contains the following fields:
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `privileges` | array of objects | The types of calls that the app can make to the API service and the specific fields that can be used. See [Example (privileges)](#example-privileges)<br>Within each object, `method` defines the calls that can be made to the service (`"get"`, `"post"`, `"put"`, or `"delete"`), and `fields` restricts the permissions to particular fields in the service. If `fields` is `null`, the permissions apply to all fields in the service. Note that use of the `"delete"` method must be approved by a Xandr representative. |
+| `privileges` | array of objects | The types of calls that the app can make to the API service and the specific fields that can be used. See [`privileges` example](#privileges-example)<br>Within each object, `method` defines the calls that can be made to the service (`"get"`, `"post"`, `"put"`, or `"delete"`), and `fields` restricts the permissions to particular fields in the service. If `fields` is `null`, the permissions apply to all fields in the service. Note that use of the `"delete"` method must be approved by a Xandr representative. |
 | `service` | enum | The name of the API service that the app is permitted to use. |
 
-#### Example (`privileges`)
+#### `privileges` example
 
 ```
 {
@@ -221,7 +221,3 @@ $ curl -b cookies -c cookies -X DELETE 'https://api.appnexus.com/app-installatio
 }
  
 ```
-
-## Related topic
-
-[Apps Marketplace Services](./apps-marketplace-services.md)

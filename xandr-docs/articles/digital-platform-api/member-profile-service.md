@@ -9,12 +9,12 @@ ms.custom: digital-platform-api
 
 The Member Profile Service allows you to establish a single, global profile to limit the countries and domains from which you accept third-party impressions. Your campaigns will not bid on third-party impressions that do not match the requirements of the member profile.
 
-> [!NOTE]
-> Be sure to align your campaign [profiles](./profile-service.md) with your member profile; otherwise, your campaign targeting may not be effective.
->
-> Example 1: Your member profile is set to accept third-party impressions from the US and Canada. A campaign is set to target impressions from the US, Canada, and Mexico. In this case, the campaign will never have the chance to target impressions from Mexico because the member profile prevents those impressions from being available for bidding.
->
-> Example 2: Your member profile is set to block third-party impressions from domain list 1, which includes apples.com, oranges.com, and pears.com. A campaign is set to target domain list 3, which includes plums.com, bananas.com, and apples.com. Note that apples.com is included in both domain list 1 and domain list 3. In this case, the campaign will never have the chance to target impressions from apples com because the member profile blocks domain list 1.
+## Align campaign profiles with member profile
+
+Be sure to align your campaign [profiles](./profile-service.md) with your member profile; otherwise, your campaign targeting may not be effective.
+
+- **Example 1**: Your member profile is set to accept third-party impressions from the US and Canada. A campaign is set to target impressions from the US, Canada, and Mexico. In this case, the campaign will never have the chance to target impressions from Mexico because the member profile prevents those impressions from being available for bidding.
+- **Example 2**: Your member profile is set to block third-party impressions from domain list 1, which includes apples.com, oranges.com, and pears.com. A campaign is set to target domain list 3, which includes plums.com, bananas.com, and apples.com. Note that apples.com is included in both domain list 1 and domain list 3. In this case, the campaign will never have the chance to target impressions from apples com because the member profile blocks domain list 1.
 
 ## REST API
 

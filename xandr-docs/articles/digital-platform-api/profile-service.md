@@ -1,11 +1,11 @@
 ---
-title: Profile Service
+title: Profile Service Overview
 description: Explore the Profile service, its JSON fields, REST API, parameters with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Profile service
+# Profile service overview
 
 A profile is a set of targeting parameters, such as gender, age, geography, and frequency. It can be applied to several objects in the
 system, most of which are listed below. The most common use of the profile service is to run a campaign; you create a profile and then
@@ -1449,7 +1449,7 @@ Each object in the `operating_system_extended_targets` array contains the follow
 
 ### Operating system family targets
 
-The `operating_system_family_targets` array specifies the operating systems as a whole (e.g., Android, Apple iOS, Windows 7, etc.) to either include in or exclude from your targeting, as defined by the `operating_system_family_action` field.
+The `operating_system_family_targets` array specifies the operating systems as a whole (e.g., Android, Apple iOS, Windows 7, Windows 11 etc.) to either include in or exclude from your targeting, as defined by the `operating_system_family_action` field.
 
 > [!NOTE]
 > `operating_system_family_action` field is used to target all versions of operating systems, whereas `operating_system_targets` is used to target specific versions of operating systems.

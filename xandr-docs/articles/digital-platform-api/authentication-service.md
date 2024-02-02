@@ -1,11 +1,11 @@
 ---
-title: Digital Platform API - Authentication Service
+title: Digital Platform API - Authentication Process
 description: In this article, find information about the Authentication service and step-by-step instructions for the authentication process. 
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Authentication service
+# Digital Platform API - Authentication process
 
 Before you can make calls to any of the Digital Platform API services or reports, you must use your username and password to get an authorization token. The token remains active for 2 hours, during which you do not need to re-authenticate. Furthermore, there is a 24-hour hard expiry. When an API session reaches the 24 hour mark, regardless of when the most recent API call was made, that session will expire.
 
