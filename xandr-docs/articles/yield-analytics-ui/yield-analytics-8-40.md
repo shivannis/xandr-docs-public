@@ -1,6 +1,6 @@
 ---
 title: Yield Analytics 8.40
-description: This page lists table about Fixes/Improvements/Additions and the Integrations Affected.
+description: The version 8.40 of Yield Analytics presents different Fixes, Improvements, Additions and the Integrations Affected in a tabular form.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

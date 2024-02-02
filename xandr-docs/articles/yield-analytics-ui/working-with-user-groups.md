@@ -1,6 +1,6 @@
 ---
 title: Working With User Groups
-description: Learn about Permissions within Yield Analytics. 
+description: Learn how by having administrative permissions you can add, edit, duplicate, search, and delete a User Group.  
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

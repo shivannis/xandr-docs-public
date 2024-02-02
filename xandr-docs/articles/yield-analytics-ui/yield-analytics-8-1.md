@@ -1,6 +1,6 @@
 ---
 title: Yield Analytics 8.1
-description: Learn how to find descriptions on Best Practices Folder, and deleting reports. 
+description: In this page, learn about the Best Practices Folder for saved reports and feature enhancement in Xandr Channel integration.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
@@ -9,7 +9,7 @@ ms.custom: yield-analytics-ui
 
 ## Feature enhancements
 
-**Best Practices Folder** - There is a new folder of saved reports available to all publishers.  The descriptions of the reports can all be found by going Help \> Reports \> Top Reports in your help files.
+**Best Practices Folder** - There is a new folder of saved reports available to all publishers. The descriptions of the reports can all be found by going to Help \> Reports \> Top Reports in your help files.
 
 **Improve Xandr Integration** - The Xandr Channel integration has added size, country, deal id/deal name, publisher name, site name, and placement name fields.
 

@@ -1,6 +1,6 @@
 ---
 title: Working With Users
-description: Learn how Yield Analytics can be used to set usernames, passwords, permissions, add, edit, disable and delete user accounts.
+description: Learn how with administrative permissions you can add, import, disable, delete and reset password of a User. 
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

@@ -1,6 +1,6 @@
 ---
 title: Working with Saved Reports
-description: In this article, learn how to add, edit, or remove a report category.
+description: In this article, learn actions that you can take on Saved Reports like adding, editing, filtering and scheduling of saved reports.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
