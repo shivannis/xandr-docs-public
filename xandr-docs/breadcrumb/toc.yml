@@ -4,56 +4,56 @@
   items:
    - name: Xandr Platform
      #tocHref: /xandr-docs/
-     topicHref: /xandr/index
+     topicHref: /xandr/articles/index
      items:
        - name: Bidder
-         tocHref: /xandr/bidders/
-         topicHref: /xandr/bidders/index
+         tocHref: /xandr/articles/bidders/
+         topicHref: /xandr/articles/bidders/index
        - name: Microsoft Monetize
-         tocHref: /xandr/monetize/
-         topicHref: /xandr/monetize/index
+         tocHref: /xandr/articles/monetize/
+         topicHref: /xandr/articles/monetize/index
        - name: Digital Platform API
-         tocHref: /xandr/digital-platform-api/
-         topicHref: /xandr/digital-platform-api/index
+         tocHref: /xandr/articles/digital-platform-api/
+         topicHref: /xandr/articles/digital-platform-api/index
        - name: Microsoft Invest
-         tocHref: /xandr/invest/
-         topicHref: /xandr/invest/index
+         tocHref: /xandr/articles/invest/
+         topicHref: /xandr/articles/invest/index
        - name: Microsoft Curate
-         tocHref: /xandr/curate/
-         topicHref: /xandr/curate/index
+         tocHref: /xandr/articles/curate/
+         topicHref: /xandr/articles/curate/index
        - name: Customer Support
-         tocHref: /xandr/customer-support/
-         topicHref: /xandr/customer-support/index
+         tocHref: /xandr/articles/customer-support/
+         topicHref: /xandr/articles/customer-support/index
        - name: Data Providers
-         tocHref: /xandr/data-providers/
-         topicHref: /xandr/data-providers/index
+         tocHref: /xandr/articles/data-providers/
+         topicHref: /xandr/articles/data-providers/index
        - name: Data Science Toolkit
-         tocHref: /xandr/data-science-toolkit/
-         topicHref: /xandr/data-science-toolkit/index
+         tocHref: /xandr/articles/data-science-toolkit/
+         topicHref: /xandr/articles/data-science-toolkit/index
        - name: Impression Bus API
-         tocHref: /xandr/impression-bus/
-         topicHref: /xandr/impression-bus/index
+         tocHref: /xandr/articles/impression-bus/
+         topicHref: /xandr/articles/impression-bus/index
        - name: Industry Reference
-         tocHref: /xandr/industry-reference/
-         topicHref: /xandr/industry-reference/index
+         tocHref: /xandr/articles/industry-reference/
+         topicHref: /xandr/articles/industry-reference/index
        - name: Log Level Data
-         tocHref: /xandr/log-level-data/
-         topicHref: /xandr/log-level-data/index
+         tocHref: /xandr/articles/log-level-data/
+         topicHref: /xandr/articles/log-level-data/index
        - name: Mobile SDK
-         tocHref: /xandr/mobile-sdk/
-         topicHref: /xandr/mobile-sdk/index
+         tocHref: /xandr/articles/mobile-sdk/
+         topicHref: /xandr/articles/mobile-sdk/index
        - name: OTT and CTV
-         tocHref: /xandr/ott-ctv/
-         topicHref: /xandr/ott-ctv/index
+         tocHref: /xandr/articles/ott-ctv/
+         topicHref: /xandr/articles/ott-ctv/index
        - name: Seller Tag
-         tocHref: /xandr/seller-tag/
-         topicHref: /xandr/seller-tag/index
+         tocHref: /xandr/articles/seller-tag/
+         topicHref: /xandr/articles/seller-tag/index
        - name: Supply Partners
-         tocHref: /xandr/supply-partners/
-         topicHref: /xandr/supply-partners/index
+         tocHref: /xandr/articles/supply-partners/
+         topicHref: /xandr/articles/supply-partners/index
        - name: Yield Analytics API
-         tocHref: /xandr/yield-analytics-api/
-         topicHref: /xandr/yield-analytics-api/index
+         tocHref: /xandr/articles/yield-analytics-api/
+         topicHref: /xandr/articles/yield-analytics-api/index
        - name: Yield Analytics UI
-         tocHref: /xandr/yield-analytics-ui/
-         topicHref: /xandr/yield-analytics-ui/index
+         tocHref: /xandr/articles/yield-analytics-ui/
+         topicHref: /xandr/articles/yield-analytics-ui/index
