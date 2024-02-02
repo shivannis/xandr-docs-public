@@ -69,12 +69,16 @@ Show a campaign no more than 3 times per hour:
 
 - `min_minutes_per_imp` = 20 minutes
 
-## Where and how?
+## Where and how to apply frequency?
 
 Frequency can be applied through profiles to [advertisers](advertiser-service.md), [insertion orders](./insertion-order-service.md), [line items](./line-item-service.md), [campaigns](./campaign-service.md), and [creatives](./creative-service.md), as well as to [payment rules](./payment-rule-service.md) for publishers. The most restrictive setting always takes precedence. For Adserver clients: Frequency can also be used for forecasting. Set the forecasting on the [profile](./profile-service.md), then reference that profile in
 the [Inventory Forecasting Services](./inventory-forecasting-services.md).
 
+### Inheritance of frequency or recency caps
+
 When you set a frequency or recency cap for an object at one level, its child objects will inherit that cap, but it will be inherited by all child objects as a group. For example: If you set a frequency cap of ten impressions per day at the advertiser level and have ten line items attached to that advertiser, one line item could potentially use all 10 of the allotted impressions on one user. If you would like to spread the ten impressions out more evenly among your line items, you should also set a frequency cap at the line item level.
+
+### Frequency and recency settings
 
 Another important point to remember is that frequency and recency settings will be applied according to the strictest settings available. For example, imagine that you have two creatives, `A` and `B`, associated with the same line item. The frequency settings for creative `A` specify that it can only serve three times per day (where a day is defined as a calendar day). Creative `B` is set to only serve once per day. The line item settings, however, specify a frequency cap of two impressions per day.
 

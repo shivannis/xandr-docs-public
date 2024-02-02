@@ -11,6 +11,8 @@ You can amplify your video viewability metrics by tapping into a third-party vid
 
 ## Update a video creative
 
+The steps below explain how to update a video creative.
+
 ### Step 1. Include the following array in your JSON file
 
 ```
