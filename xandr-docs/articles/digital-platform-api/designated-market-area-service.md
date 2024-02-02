@@ -31,7 +31,7 @@ The read-only Designated Market Area (DMA) Service allows you to retrieve the ID
 | `id` | int | The ID of the DMA. |
 | `name` | string | The name of the DMA. |
 
-## Examples
+## Example
 
 ### View all designated market areas
 

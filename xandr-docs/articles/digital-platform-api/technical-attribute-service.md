@@ -7,7 +7,7 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Technical attribute service
 
-This is a read-only service that shows you the list of technical attributes that you can target in the [Ad Profile Service](./ad-profile-service.md) via ID.
+This is a read-only service that shows you the list of technical attributes that you can target in the [Ad Profile Service](./ad-profile-service.md) via technical attribute ID.
 
 ## REST API
 

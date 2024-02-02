@@ -27,7 +27,7 @@ This read-only service allows you to view information about ad servers that can 
 | `last_modified` | timestamp | The date and time (in the form YYYY-MM-DD HH:MM:SS) when the ad server configuration was last updated in our system. |
 | `name` | string | The name of the ad server. |
 
-## Example
+## Examples
 
 ### View all ad servers (output is truncated)
 

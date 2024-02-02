@@ -39,7 +39,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 
 Alternately, the `start_date` and `end_date` fields can be set to a range within the last 33 days. The `timezone` field in the JSON request can be set only to `UTC`, but this is not necessary, as the timezone defaults to `UTC` if not specified.
 
-**Data retention period**
+### Data retention period
 
 This report can retrieve data for the last 90 days and only in UTC timezone.
 
@@ -170,9 +170,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=07af1282c9485ad
 }
 ```
 
-**If necessary, use the Lookup Service to map objects IDs to other relevant data, such as names, codes, and statuses**
-
-See [Lookup Service](./lookup-service.md) for more details.
+If necessary, use the [Lookup Service](./lookup-service.md) to map objects IDs to other relevant data, such as names, codes, and statuses.
 
 ### `GET` the report data from the report download service
 
