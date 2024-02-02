@@ -12,9 +12,9 @@ On the **Partner Center** screen, the **Default Settings** option allows you to 
 
 ## Getting there
 
-**Publisher clients:** select **Marketplace** \> **Partner Center**.
+**Publisher clients:** select **Marketplace** > **Partner Center**.
 
-**All other clients:** select **Partners** \> **Partner Center**.
+**All other clients:** select **Partners** > **Partner Center**.
 
 ## Step 1. Get started
 
@@ -28,7 +28,7 @@ This setting is similar to banning or trusting members using ad quality settings
 
 For more information on the different options described in this section, see the **Setting default buyer eligibility** section within [Setting Buyer Defaults](partner-center-screen-seller-view.md).
 
-## Set default allowed payment types
+### Set default allowed payment types
 
 These are the type(s) of payment you accept from partners whose eligibility is set to eligible. CPM is selected by default for all eligible buyers and cannot be unchecked since it is the standard payment type for third-party inventory.
 
@@ -36,7 +36,7 @@ You can also opt into allowing members to pay for inventory on a CPC or CPA basi
 
 For more information, see [CPC and CPA Payment Types](cpc-and-cpa-payment-types.md).
 
-## Set default targeting access
+### Set default targeting access
 
 This indicates the information each member receives when targeting your inventory. Members cannot report on this information; it is only used for targeting. The more information you give buyers, the more easily they can target your inventory.
 
