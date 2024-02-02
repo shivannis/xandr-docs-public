@@ -1,11 +1,11 @@
 ---
-title: Creatives
+title: Digital Platform API - Creatives
 description: In this article, learn how a creative is associated with a campaign and explore the necessary fields with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Creatives
+# Digital Platform API - Creatives
 
 For any campaign to serve, it must have valid creatives associated with it. All creative must be registered via the API, but doing this can be tricky. The way creatives should be uploaded is highly dependent on the format of the creative.
 
