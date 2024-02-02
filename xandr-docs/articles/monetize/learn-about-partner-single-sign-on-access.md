@@ -1,10 +1,10 @@
 ---
-title: Learn About Partner Single Sign-on Access
+title: Partner Single Sign-on Access
 description: In this article, learn about Partner single sign-on and how it works.
 ms.date: 10/28/2023
 ---
 
-# Learn about partner single sign-on access
+# Partner single sign-on access
 
 > [!IMPORTANT]
 > This feature is no longer available. To integrate your company's SSO with Microsoft Identity Platform and to access the Xandr products, see [Microsoft Identity Platform Login](microsoft-identity-platform-login.md).

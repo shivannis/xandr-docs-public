@@ -6,15 +6,19 @@ ms.date: 10/28/2023
 
 # Ad quality and creative standards
 
-Advertisers wish to serve their creatives in as many places as possible. As a publisher, though, you want to protect your site from creatives that violate your standards. Since these issues are very related, here is an overview about how our Creative Standards and Ad Quality profiles interact.
+Advertisers wish to serve their creatives in as many places as possible. As a publisher, though, you want to protect your site from creatives that violate your standards. As these issues are both equally important, here is an overview about how our Creative Standards and Ad Quality profiles interact.
 
-**Buyers** can opt their creatives into the Xandr audit process to maximize their reach.
+## Buyers
+
+Buyers can opt their creatives into the Xandr audit process to maximize their reach.
 
 - This includes buyers using our hosted bidder, Microsoft Monetize, and other technology partners that have built their own bidders and integrated with our stack.
 - We audit both creatives hosted with us as well as third-party tags.
 - [Creative Standards](creative-standards.md)
 
-**Sellers** of inventory can determine the types of creatives that are allowed to serve on their inventory, including whether or not the creative is audited by the Xandr team.
+## Sellers
+
+Sellers of inventory can determine the types of creatives that are allowed to serve on their inventory, including whether or not the creative is audited by the Xandr team.
 
 - All aggregators, including Microsoft, require creatives to be audited by the Xandr team prior to serving on their inventory.
 - Some ad networks allow unaudited creatives to serve on their inventory or a portion of it.
