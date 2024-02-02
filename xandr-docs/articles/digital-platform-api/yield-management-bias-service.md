@@ -33,7 +33,7 @@ The Yield Management Bias Service is used to create and update biases within an 
 | `members` | array of objects | This is an array specifying the member(s) the yield management bias should be applied to. For details, see the [Members Array](#the-members-array) below.<br>**Default:** `NULL` |
 | `buyer_groups` | array of objects | This is an array specifying the buyer group(s) the yield management bias should be applied to. For details, see the [Buyer Groups Array](#the-buyer-groups-array) below.<br>**Default:** `NULL` |
 
-### The members array
+### Members array
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -43,7 +43,7 @@ The Yield Management Bias Service is used to create and update biases within an 
 | `bias_pct` | double | This is the % amount the buyer member should be adjusted by. If `bias_pct = 5`, then the net bid will be increased 5%.<br>**Default:** `0.00`<br>**Required On:** `POST`, `PUT` (if `type` is `'percent'`). |
 | `bias_cpm` | double | This is the CPM increase/decrease the buyer member should be adjusted by.<br>**Default:** `NULL`<br>**Required On:** `POST`, `PUT` (if `type` is `'cpm'`). |
 
-### The buyer groups array
+### Buyer groups array
 
 | Parameter | Type | Description |
 |:---|:---|:---|

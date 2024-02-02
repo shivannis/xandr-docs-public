@@ -7,11 +7,13 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Seller CMP analytics report
 
-The Seller CMP Analytics Report provides insight into the number, validity, and content of the IAB Transparency & Consent Framework (IAB TCF) strings on seller ad requests to our endpoints. This report enables sellers to answer questions like:
+The Seller CMP (Consent Management Platform) Analytics Report provides insight into the number, validity, and content of the IAB Transparency & Consent Framework (IAB TCF) strings on seller ad requests to our endpoints. This report enables sellers to answer questions like:
 
 - How many ad requests contained TCF strings encoded according to the TCF V1 and V2 specifications?
 - How many ad requests contained TCF strings that were not encoded properly and therefore invalid or malformed?
 - Is my CMP (Consent Management Platform) correctly passing permission information?
+
+## Overview
 
 This report does not prove or disprove compliance with any laws or regulations. The language "GDPR applied" for this report means applied TCF logic. We support the IAB TCF and this report enables sellers using the TCF to confirm that TCF signals are communicated properly.
 
@@ -39,7 +41,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 > [!NOTE]
 > To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 
-**Data retention period**
+### Data retention period
 
 Data retention period for this report is 30 days.
 
