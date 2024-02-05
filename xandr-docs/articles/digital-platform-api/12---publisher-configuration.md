@@ -1,11 +1,11 @@
 ---
-title: 12 - Publisher Configuration
+title: Publisher Configuration
 description: In this article, learn about publisher configuration and explore detailed information about the various parameters configured at the publisher level.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# 12 - Publisher configuration
+# Publisher configuration
 
 Prior to creating any pieces of the sell-side hierarchy via the API, it is best practice to fully configure the publisher first. The reason for this is that there are defaults that can be specified on a publisher level which cascade to child objects under the publisher.
 

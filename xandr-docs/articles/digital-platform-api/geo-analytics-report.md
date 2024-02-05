@@ -20,7 +20,7 @@ This report can break down campaign performance along the following geographic b
 
 For more information on the available data fields and their definitions, see [Dimensions](#dimensions) and [Metrics](#metrics) below.
 
-For instructions on running this report, see the [Example](#example).
+For instructions on running this report, see the [Examples](#examples).
 
 > [!NOTE]
 > **On the accuracy of determining user geography by IP address**
@@ -35,7 +35,7 @@ The `report_interval` field in the request can be set to one of the following:
 - yesterday
 - last_7_days
 
-**Data retention period**
+### Data retention period
 
 Data retention period for this report is 45 days.
 
@@ -142,7 +142,7 @@ Data retention period for this report is 45 days.
 | `revenue_ecpa_buying_currency` | money |  |  | The revenue per conversion in the buying currency. |
 | `total_cost_buying_currency` | money |  |  | The total sum of media costs, data costs and partner fees in buying (advertiser) currency |
 
-## Example
+## Examples
 
 ### Create the JSON-formatted report request
 

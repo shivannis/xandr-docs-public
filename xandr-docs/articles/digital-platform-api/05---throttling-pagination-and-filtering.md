@@ -1,11 +1,11 @@
 ---
-title: 05 - Throttling Pagination and Filtering
+title: Throttling Pagination and Filtering
 description: In this article, learn about the concepts such as, Throttling, Pagination, and Filtering, accompanied by examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# 05 - Throttling Pagination and Filtering
+# Throttling Pagination and Filtering
 
 ## Throttling
 

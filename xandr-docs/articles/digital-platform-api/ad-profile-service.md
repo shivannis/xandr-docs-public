@@ -13,9 +13,9 @@ Ad profiles consist of several elements: members, brands, creatives, language, t
 creating an ad profile, you can approve or ban each creative in the system individually, but you may prefer to save time by approving or
 banning entire brands or members.
 
-- A member should be trusted if you believe their ads will always be acceptable. For instance, you may "trust" Network A to run quality ads, so you can mitigate the need to audit each of their creatives.
-- A brand should be trusted if you believe that ads of this brand will almost always be acceptable. However you will always have the ability to ban a specific creative even if it is part of a "trusted" brand. If the specific creative is not banned, it will run by default.
-- A brand should be banned if you believe that ads of this brand will never be acceptable. You will still have the ability to approve a specific creative assigned a "banned" brand, unless the member is banned.
+- **A member should be trusted:** If you believe their ads will always be acceptable. For instance, you may "trust" Network A to run quality ads, so you can mitigate the need to audit each of their creatives.
+- **A brand should be trusted:** If you believe that ads of this brand will almost always be acceptable. However you will always have the ability to ban a specific creative even if it is part of a "trusted" brand. If the specific creative is not banned, it will run by default.
+- **A brand should be banned:** If you believe that ads of this brand will never be acceptable. You will still have the ability to approve a specific creative assigned a "banned" brand, unless the member is banned.
 - The default profile (blank or ID set to 0) will ban unaudited ads from other members (i.e. where the `member_id` of the creative is different than the `member_id` of the TinyTag).
 
 > [!NOTE]
@@ -85,7 +85,7 @@ banning entire brands or members.
 | `require_seller_audit_status` | enum | Whether the member can require its own audit for creatives from a given buyer:<br> - `"always"`: This member can always require audit for creatives from a given buyer.<br> - `"never"`: This member can never require audit for creatives from a given buyer.<br> - `"case-by-case"`: Fall back to `ad_profile.require_seller_audit_default` for audit required status. |
 
 > [!TIP]
-> The combination of the Member `status`, `audit_type`, and `exclude_unaudited` fields determines the buyer trust level shown in the Network Ad Quality profile in.
+> The combination of the Member `status`, `audit_type`, and `exclude_unaudited` fields determines the buyer trust level shown in the Network Ad Quality profile.
 >
 > | `status` | `audit_type` | `exclude_unaudited` | Trust Level in UI |
 > |:---|:---|:---|:---|
@@ -160,10 +160,7 @@ banning entire brands or members.
 
 ### Create a new ad profile
 
-Below we have used the `cat` command to output an example ad profile JSON file.
-
-> [!NOTE]
-> This is a fairly complex profile.
+This is a fairly complex profile. Below we have used the `cat` command to output an ad profile JSON file example.
 
 ```
 $ cat ad_profile

@@ -39,7 +39,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 > [!NOTE]
 > To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](report-service.md).
 
-**Time ranges including dates occurring greater than 45 days ago.**
+### Dates occurring greater than 45 days ago
 
 If you create a Key Value Analytics report with the Range field set to Custom (where the end date is greater than 45 days from today), your report (regardless of metrics included) will be added to a special queue for "resource-intensive" reports. As a result, the report may take longer than usual to complete. In addition, this resource-intensive report may, due to the amount of data being requested, fail before being completed. If your report fails to complete, you will receive a notification. If your report request fails, you can:
 

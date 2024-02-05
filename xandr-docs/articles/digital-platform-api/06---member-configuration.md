@@ -1,11 +1,11 @@
 ---
-title: 06 - Member Configuration
+title: Member Configuration
 description: In this article, learn about member configuration and explore detailed information about the various parameters configured at the member level.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# 06 - Member configuration
+# Member configuration
 
 Prior to creating any objects via the API, it is best practice to fully configure the member first. The reason for this is that there are
 defaults that can be specified on a member level which cascade to child objects under the member.

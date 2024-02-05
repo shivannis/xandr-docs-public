@@ -105,9 +105,9 @@
       href: real-time-signals-service-api-reference.md
   - name: API Setup Guide
     items:
-    - name: Programmatic Guaranteed Deal with Third-Party Ad Server Pacing and Tag Integration
+    - name: Programmatic Guaranteed Deal with Third-Party Ad Server
       href: programmatic-guaranteed-deal-for-monetize-ssp--third-party-ad-server-pacing--tag-integration--api-setup-guide.md
-    - name: Programmatic Guaranteed Deal through Microsoft Monetize Ad Server
+    - name: Microsoft Monetize Ad Server for Programmatic Guaranteed Deal
       href: programmatic-guaranteed-deal-through-monetize-ad-server-api-setup-guide.md
     - name: Multi-Buyer Deals
       href: multi-buyer-deals-api-setup.md
@@ -185,7 +185,7 @@
       items:
       - name: Overview
         href: creative-service.md
-      - name: Creative HTML Services
+      - name: Creative HTML Service
         href: creative-html-service.md
       - name: Creative Upload Service - File Format
         href: creative-upload-service---file-format.md
@@ -213,7 +213,7 @@
         href: creative-vast-service.md
       - name: VAST Extension Template Service
         href: vast-extension-template-service.md
-    - name: Deal Buyer Setting Services
+    - name: Deal Buyer Setting Service
       href: deal-buyer-setting-service.md
     - name: Deal From Package Service
       href: deal-from-package-service.md
@@ -237,7 +237,7 @@
       href: line-item-service---ali.md
     - name: Mobile App Instance List Service
       href: mobile-app-instance-list-service.md
-    - name: Optimizatioptimization-override-service.mdon Override Service
+    - name: Optimization Override Service
       href: optimization-override-service.md
     - name: Partner Fee Service
       href: partner-fee-service.md
@@ -309,13 +309,13 @@
       href: currency-service.md
     - name: Deal Buyer Access Service
       href: deal-buyer-access-service.md
-    - name: Delivery Type Services
+    - name: Delivery Type Service
       href: delivery-type-service.md
     - name: Designated Market Area Service
       href: designated-market-area-service.md
     - name: Device Make Service
       href: device-make-service.md
-    - name: Device Model Services
+    - name: Device Model Service
       href: device-model-service.md
     - name: Domain Audit Status Service
       href: domain-audit-status-service.md
@@ -375,7 +375,7 @@
       href: region-service.md
     - name: Report Status Service
       href: report-status-service.md
-    - name: Search Services
+    - name: Search Service
       href: search-service.md
     - name: Technical Attribute Service
       href: technical-attribute-service.md
@@ -599,7 +599,7 @@
           href: primary-ad-server-service.md
     - name: Publisher Service
       href: publisher-service.md
-    - name: Seller Creative Review Services
+    - name: Seller Creative Review Service
       href: seller-creative-review-service.md
     - name: Site Service
       href: site-service.md
@@ -623,9 +623,7 @@
         href: yield-management-auction-tier-service.md
       - name: Buyer Group Service
         href: buyer-group-service.md
-  - name: Shared Platform Services
-    items:
-    - name: Privacy Service
-      href: privacy-service.md
+  - name: Shared Platform Privacy Service
+    href: privacy-service.md
 - name: API Support
   href: xandr-api-support.md

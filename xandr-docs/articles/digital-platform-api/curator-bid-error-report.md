@@ -7,9 +7,9 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Curator bid error report
 
-The **Curator Bid Error Report** helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the Xandr platform. Error Count has been multiplied by 100 to account for the 5% sampling. You can use this report to troubleshoot sell-side and buy-side settings that result in auction errors, thereby blocking spend. The goal is to help you eliminate the error in the future. You can find information on the owner, cause and recommended resolution for each error in [Bid Error Codes](../bidders/bid-error-codes.md).
+The **Curator Bid Error Report** helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the Xandr platform. Error Count is multiplied by 100 to account for the 5% sampling. You can use this report to troubleshoot sell-side and buy-side settings that result in auction errors, thereby blocking spend. The goal is to help you eliminate the error in the future. You can find information on the owner, cause and recommended resolution for each error in [Bid Error Codes](../bidders/bid-error-codes.md).
 
-For instructions on retrieving a report, see [Report Service](./report-service.md) or the [example](#example) below.
+For instructions on retrieving a report, see [Report Service](./report-service.md) or the [examples](#examples) below.
 
 ## Time frame
 
@@ -18,7 +18,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 - custom
 - last_hour
 
-**Data retention period**
+### Data retention period
 
 Data in this report is retained for 33 days.
 
@@ -94,7 +94,7 @@ Data in this report is retained for 33 days.
 |:---|:---|:---|:---|:---|
 | `error_count` | int | `2340` | sum(error_count)*100 | The amount of errors logged on the Xandr platform over the timeframe selected (a randomly selected set of 5% of the errors multiplied by 100 to account for the sampling). |
 
-## Example
+## Examples
 
 ### Create the JSON-formatted report request
 
