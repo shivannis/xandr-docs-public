@@ -68,7 +68,7 @@ Before beginning this setup, familiarize yourself with the foundational concepts
 
     Use the [Ad Profile Service](ad-profile-service.md) to create a new ad profile. When using ad profiles with curated deals or curator members, the following fields are supported:
 
-    ### JSON fields
+    - JSON fields
 
         | Field | Type | Description |
         |---|---|---|
@@ -78,33 +78,33 @@ Before beginning this setup, familiarize yourself with the foundational concepts
         | `default_category_status`  | enum  | The brand category status to be used by default when no explicit selection is made. Possible values include: <br> - trusted <br> - banned |
         | `default_language_status`  | enum  | The language status to be used by default when no explicit selection is made. Possible values include: <br> - trusted <br> - banned |
         | `default_ad_server_status`  | enum  | The creative ad server status to be used by default when no explicit selection is made. Possible values include: <br> - trusted <br> - banned |
-        | `brands`  | array of objects  | Array of brands with their status. See [Brands](#brands) below for more details.  |
-        | `categories`  | array of objects  | Array of brand categories with their status. See [Brand Categories](#brand-category) below for more details.  |
-        | `languages`  | array of objects  | Array of languages with their status. See [Languages](#language) below for more details.  |
-        | `ad_servers`  | array of objects  | Array of creative ad servers with their status. See [Creative Ad Servers](#creative-ad-servers) below for more details.  |
+        | `brands`  | array of objects  | Array of brands with their status. See the **Brands** section below for more details.  |
+        | `categories`  | array of objects  | Array of brand categories with their status. See the **Brand Categories** section below for more details.  |
+        | `languages`  | array of objects  | Array of languages with their status. See the **Languages** section below for more details.  |
+        | `ad_servers`  | array of objects  | Array of creative ad servers with their status. See the **Creative Ad Servers** section below for more details.  |
 
-    ### Brands
+    - Brands
 
         | Field | Type | Description |
         |---|---|---|
         | `id`  | int  | The ID of the brand. You can use the [Brand Service](brand-service.md) to retrieve brand IDs.  |
         | `status`  | enum  | Determines if the creatives of this brand can or cannot serve through the curated deal or curator member associated with this ad profile. Possible values include: <br> - trusted <br> - banned |
 
-    ### Brand category
+    - Brand category
 
         | Field | Type | Description |
         |---|---|---|
         | `id`  | int  | The ID of the brand category. You can use the [Category Service](category-service.md) to retrieve category IDs.  |
         | `status`  | enum  | Determines if the creatives of this brand category can or cannot serve through the curated deal or curator member associated with this ad profile. Possible values include: <br> - trusted <br> - banned |
 
-    ### Language
+    - Language
 
         | Field | Type | Description |
         |---|---|---|
         | `id`  | int  | The ID of the language. You can use the [Language Service](language-service.md) to retrieve language IDs.  |
         | `status`  | enum  | Determines if the creatives with this language can or cannot serve through the curated deal or curator member associated with this ad profile. Possible values include: <br> - trusted <br> - banned |
 
-    ### Creative ad servers
+    - Creative ad servers
 
         | Field | Type | Description |
         |---|---|---|
@@ -113,35 +113,36 @@ Before beginning this setup, familiarize yourself with the foundational concepts
 
 1. Associate the ad profile with a curated deal or curator member.
 
-    - To associate the ad profile with a curated deal:
+    To associate the ad profile with a curated deal:
 
-        ```
-        $ cat deal.json
-         
-        {
-          “deal”: {
-         
-            “ad_profile_id”: 123456
-          }
-         
-        }
-         
-        $ curl -b cookies -c cookies -X PUT -d ‘@deal.json’ ‘https://api.appnexus.com/deal?id=987654’
-        ```
+    ```
+    $ cat deal.json
+ 
+    {
+      “deal”: {
+ 
+        “ad_profile_id”: 123456
+      }
 
-    - To associate the ad profile with your curator member:
+    }
 
-        ```
-        $ cat member.json
-         
-        {
-          “member”: {
-            “default_ad_profile_id”: 123456
-          }
-        }
-         
-        $ curl -b cookies -c cookies -X PUT -d ‘@member.json’ ‘https://api.appnexus.com/member’
-        ```
+    $ curl -b cookies -c cookies -X PUT -d ‘@deal.json’ ‘https://api.appnexus.com/deal?id=987654’
+    ```
+
+    To associate the ad profile with your curator member:
+
+    ```
+           
+    $ cat member.json
+     
+    {
+      “member”: {
+        “default_ad_profile_id”: 123456
+      }
+    }
+     
+    $ curl -b cookies -c cookies -X PUT -d ‘@member.json’ ‘https://api.appnexus.com/member’
+    ```
 
 ## Examples
 
