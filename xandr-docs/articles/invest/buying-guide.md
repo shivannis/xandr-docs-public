@@ -31,5 +31,5 @@ advertisers, see the [Network Guide](network-guide.md). For direct agreements wi
 - [Buying Video Inventory](buying-video-inventory.md): This guide provides advanced video reference information as well as information about buying in-stream, out-stream, and Connected TV inventory.
 - [Buying Audio Inventory](buying-audio-inventory.md): This guide provides information about buying audio inventory.
 - [Buying Native Inventory](buying-native-inventory.md): Websites that sell native inventory accept ad content but enforce their own display properties to integrate. This guide describes how to buy native inventory on properties that allow it.
-- [Data Marketplace - Buyer Overview](data-marketplace-buyer-overview.md): Xandr supports automatic clearing of third-party segment data you can purchase and use to target audience segments.
+- [Data Marketplace Overview](data-marketplace-overview.md): Xandr supports automatic clearing of third-party segment data you can purchase and use to target audience segments.
 - [Create a User](create-a-user.md): You can create advertiser users for advertisers that want to run reports for themselves. An advertiser user does not see data about any other advertisers and does not have editing capabilities.
