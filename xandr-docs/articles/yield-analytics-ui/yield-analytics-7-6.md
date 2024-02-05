@@ -1,6 +1,6 @@
 ---
 title: Yield Analytics 7.6
-description: Learn about the Duration Based Metrics, Earned Revenue for Viewable and Additional Product Search functionality in this page . 
+description: Learn how to use features like Duration Based Metrics, Earned Revenue for Viewable and Additional Product Search functionality in this page. 
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

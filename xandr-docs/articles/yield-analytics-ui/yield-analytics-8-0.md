@@ -1,6 +1,6 @@
 ---
 title: Yield Analytics 8.0
-description: In this page we tell you about Version 8.0 of Yield Analytics and how the Availabilty Lookup Screen has been redesigned.
+description: In this page, learn about the new features added in the Availabilty Lookup Screen and webinars links that cover client demonstrations also available in Help Docs.   
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
@@ -13,7 +13,7 @@ Welcome to Version 8.0 of Yield Analytics. The Availabilty Lookup Screen has bee
 - Improved attribute selection
 - Easier visual communication of the lookup
 
-Addition Availability Lookup details:
+Additional Availability Lookup details:
 
 - The old Availability page and new Availability Lookups screen will both be accessible to clients.
   - The link to the old screen will be deprecated at the end of the quarter.
@@ -30,7 +30,7 @@ Thu, Feb 22, 2018 4:30 PM - 5:00 PM MST
 
 Please join the meeting from your computer, tablet or smartphone.
 
-[https://global.gotomeeting.com/join/623890877](https://global.gotomeeting.com/join/623890877)
+[Global GoTo Meeting](https://global.gotomeeting.com/join/623890877)
 
 You can also dial in using your phone.
 
@@ -43,7 +43,7 @@ Access Code: 623-890-877
 
 [Thu, Feb 22, 2018 8:30 AM - 9:00 AM MST](https://global.gotomeeting.com/join/660745821)
 
-[https://global.gotomeeting.com/join/660745821](https://global.gotomeeting.com/join/660745821)
+[Global GoTo Meeting](https://global.gotomeeting.com/join/660745821)
 
 Please join the meeting from your computer, tablet or smartphone.
 
@@ -54,4 +54,4 @@ United States: +1 (571) 317-3117
 Access Code: 660-745-821
 
 First GoToMeeting? Let's do a quick system check:
-[https://link.gotomeeting.com/system-check](https://link.gotomeeting.com/system-check)
+[GoTo Support](https://link.gotomeeting.com/system-check)

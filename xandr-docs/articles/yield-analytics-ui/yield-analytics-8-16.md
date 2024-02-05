@@ -1,6 +1,6 @@
 ---
 title: Yield Analytics 8.16
-description: The Product creation and edit screens are updated to better match the functionality that exists within the Availability Lookup screen.
+description: In version 8.16 of Yield Analytics, learn about the updated Product Creation and Edit Screen. 
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

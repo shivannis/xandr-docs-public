@@ -1,6 +1,6 @@
 ---
 title: Yield Analytics 8.26
-description: Learn all about Order Line Visibility page. 
+description: In this page, learn about updates to Order Line Visibility page that improves performance.  
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
@@ -13,12 +13,12 @@ The Order Line Visibility page layout contains the same data as before, but is n
 
 ## Performance tab
 
-:::image type="content" source="media/c.png" alt-text="Screenshot of Yield Analytics UI - C .":::
+:::image type="content" source="media/c.png" alt-text="Screenshot of Performance tab in the Order Line Visibility page layout.":::
 
 ## Competition tab
 
-:::image type="content" source="media/d.png" alt-text="Screenshot of Yield Analytics UI - D .":::
+:::image type="content" source="media/d.png" alt-text="Screenshot of Competition tab in the Order Line Visibility page layout.":::
 
 ## Consumption tab
 
-:::image type="content" source="media/e.png" alt-text="Screenshot of Yield Analytics UI - E .":::
+:::image type="content" source="media/e.png" alt-text="Screenshot of Consumption tab in the Order Line Visibility page layout.":::

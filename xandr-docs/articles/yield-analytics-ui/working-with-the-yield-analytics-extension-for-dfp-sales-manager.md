@@ -1,6 +1,6 @@
 ---
 title: DFP sales managers Yield Analytics extension
-description: Learn background information, Installation and update instructions for Yield Analytics Extension for DFP Sales Manager.
+description: Learn how to install the Yield Analytics Sales Manager Extension and how it automatically updates.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
@@ -16,7 +16,7 @@ You can access Yield Analytics derived forecast and contention information direc
 Users who access Sales Manager using the Chrome browser are able to take advantage of this functionality by following the installation and setup instructions:
 
 1. Open the Chrome application.
-1. Navigate to the following link: [https://chrome.google.com/webstore/detail/yieldex-analytics-sales-m/ingnfjfbgglccomoildaalnppeifljlk](https://chrome.google.com/webstore/detail/yieldex-analytics-sales-m/ingnfjfbgglccomoildaalnppeifljlk).
+1. Navigate to the following link: [Yieldex Analytics Sales Manager Extension Overview](https://chrome.google.com/webstore/detail/yieldex-analytics-sales-m/ingnfjfbgglccomoildaalnppeifljlk).
 1. Click **Add to Chrome** to install the plugin.
 1. On the dialog that appears, click **Add extension** to confirm the installation.
 1. View the Yield Analytics Sales Manager Extension in Chrome.
