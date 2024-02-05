@@ -1,6 +1,6 @@
 ---
 title: Yield Analytics Overview
-description: Learn about Yield Analytics in this page.
+description: This page provides basics on Yield Analytics.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
@@ -17,7 +17,7 @@ Yield Analytics is a data analytics tool that helps publishers properly forecast
 
 This is how Yield Analytics works behind the scenes:
 
-**Integration**
+### Integration
 
 We integrate with an ad server, as well as many other systems. This includes:
 
@@ -27,15 +27,15 @@ We integrate with an ad server, as well as many other systems. This includes:
 - Third-party Data Systems
 - Additional Ad Servers (e.g.: Video Ad Server)
 
-**Analysis**
+### Analysis
 
 Yield Analytics integrates with the above systems and pulls the information into our system. We take log-level data. This means that rather than just looking at a certain set or “sampling” of data, Yield Analytics analyzes every single impression that ran through the ad server, video server, or any of the systems mentioned in the bullet points above. We run analytics on the data to forecast and emulate.
 
-**Forecasting**
+### Forecasting
 
 Forecasting for the client’s system - Yield Analytics not only analyzes for your site, but correlates that information to certain products within your system. We look at specific sites, sections, different audiences, etc. to better estimate how many impressions are going to be needed at those locations.
 
-**Emulation**
+### Emulation
 
 Emulating campaign delivery – Yield Analytics analyzes every line item in your server that is running. Based on our findings, we estimate which line items:
 
@@ -124,11 +124,11 @@ If you are integrated with different SSPs, Yield Analytics can pull that informa
 
 Yield Analytics functionality and the resulting gained information benefit many sectors. Included are:
 
-**Sales**
+### Sales
 
 Sales is going to look through ways to drive revenue through client solutions. They are building out Sales plans, and receiving RFPs from the clients and responding back to them. They also manage the client relationship.
 
-**Ad ops**
+### Ad ops
 
 Ad Ops teams ensure all that revenue gets delivered. They also implement client plans, and solve technical issues on a basic level.
 
