@@ -6,10 +6,9 @@ ms.date: 10/28/2023
 
 # Working with network tools
 
-Microsoft Monetize provides various tools to help you manage network-level settings.
-Select **Tools** \> **General** from the **Network** menu to view and modify your network-level settings with the following tools:
+Microsoft Monetize provides various tools to help you manage network-level settings. Select **Tools** > **General** from the **Network** menu to view and modify your network-level settings with the following tools:
 
-**General tools**
+## General tools
 
 | Tools | Description |
 |---|---|
@@ -21,9 +20,9 @@ Select **Tools** \> **General** from the **Network** menu to view and modify you
 | [Third-Party Buying Filters](working-with-third-party-buying-filters.md) | Geography and domain list targeting that applies universally to all your campaigns that buy 3rd-party inventory. |
 | [Notification Addresses](managing-notification-recipients.md) | This screen shows you how to control who receives creative audit, object limit, inventory deactivation, and toolbar flag emails from Xandr. |
 
-The following additional tools are available from the **Network** \> **Tools** menu:
+## Additional tools
 
-**Additional Tools**
+The following additional tools are available from the **Network** > **Tools** menu:
 
 | Tools | Description |
 |---|---|

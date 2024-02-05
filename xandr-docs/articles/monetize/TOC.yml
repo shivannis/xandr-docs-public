@@ -6,7 +6,7 @@
     href: about-monetize.md
   - name: Object Hierarchy
     href: object-hierarchy.md
-  - name: Getting Started with Adserver
+  - name: Getting Started with Ad Server
     href: getting-started-with-adserver.md
   - name: Monetize API
     href: digital-platform-ui-api-info.md
@@ -38,7 +38,7 @@
         href: exchanges-and-aggregators.md
       - name: Google Ad Manager
         href: doubleclick-ad-exchange-adx.md
-      - name: User ID Syncing with External Partners
+      - name: Sync User ID with External Partners
         href: user-id-syncing-with-external-partners.md
       - name: Asynchronous Usersync Pixels
         href: asynchronous-usersync-pixels.md
@@ -108,7 +108,7 @@
          href: managing-user-logins-and-permissions.md
        - name: Manage Your Username and Password
          href: manage-your-username-and-password.md
-       - name: Learn About Partner Single Sign-on Access
+       - name: Partner Single Sign-on Access
          href: learn-about-partner-single-sign-on-access.md
        - name: Create a User
          href: create-a-user.md

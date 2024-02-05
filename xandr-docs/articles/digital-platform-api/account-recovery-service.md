@@ -7,7 +7,7 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Account Recovery service
 
-The Account Recovery Service allows you to reset your Xandr password or retrieve your username.
+The Account Recovery Service allows you to [reset your Xandr password](#reset-your-password) or [retrieve your username](#retrieve-your-username).
 
 ## Reset your password
 
@@ -32,9 +32,9 @@ $ cat reset_password_1
 }
 ```
 
-### Step 2: POST the file (password reset)
+### Step 2: `POST` the file (password reset)
 
-Post the file to the account recovery service.
+`POST` the file to the account recovery service.
 
 ```
 $ curl -X POST -d @reset_password_1 'https://api.appnexus.com/account-recovery'
@@ -50,8 +50,7 @@ $ curl -X POST -d @reset_password_1 'https://api.appnexus.com/account-recovery'
 
 ### Step 3: Check your email (password reset)
 
-The previous step triggers the system to send an email to the address associated with the username in the JSON-formatted file. The email
-includes the token that you will use in the next step.
+The previous step triggers the system to send an email to the address associated with the username in the JSON-formatted file. The email includes the token that you will use in the next step.
 
 > [!NOTE]
 > The token is valid for 16 hours.
@@ -84,9 +83,9 @@ When creating your password, create a complex password with the following:
 - At least one digit (0–9).
 - At least one special character (such as \#, $, ?, %, &).
 
-### Step 5: PUT the file (password reset)
+### Step 5: `PUT` the file (password reset)
 
-Put the file to the account recovery service.
+`PUT` the file to the account recovery service.
 
 This resets your password and sends a confirmation email to the address associated with your username. Once you receive the confirmation email, you can log in to the API with your username and new password. For guidance, see [Authentication Service](authentication-service.md).
 
@@ -123,9 +122,9 @@ $ cat retrieve_username
     }
 ```
 
-### Step 2: POST the file (retrieve username)
+### Step 2: `POST` the file (retrieve username)
 
-Post the file to the account recovery service.
+`POST` the file to the account recovery service.
 
 ```
 $ curl -X POST -d @retrieve_username 'https://api.appnexus.com/account-recovery'

@@ -85,7 +85,7 @@ The meta array includes the following fields:
 > [!NOTE]
 > Some report types will allow you to run a report for a custom time frame. This can be done by setting the `start_date` and `end_date` fields in your report request.
 
-**Click here to view an example meta data response (using the `network_analytics` report)**
+### Meta data response example (using the `network_analytics` report)
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report?meta=network_analytics'

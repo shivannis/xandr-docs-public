@@ -9,8 +9,8 @@ ms.custom: digital-platform-api
 
 App providers can use the User Verification service to confirm that the correct (paying) customer is signing in to the App. This confirmation takes place via two steps:
 
-1. The API makes a `POST` call to generate a verification token when the user launches an app within.  Verification tokens expire after two minutes for security purposes.
-1. The app makes a `GET` call using the verification token that is sent by Xandr when the app is launched to retrieve the user's ID. Once the verification token has been used to return a user ID the token will be deleted for security purposes.
+1. The API makes a `POST` call to generate a verification token when the user launches an app within. Verification tokens expire after two minutes for security purposes.
+1. The app makes a `GET` call using the verification token that is sent by Xandr when the app is launched to retrieve the user's ID. Once the verification token is used to return a user ID, the token is deleted for security purposes.
 
 ## REST API
 

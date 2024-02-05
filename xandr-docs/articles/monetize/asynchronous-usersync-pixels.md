@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Asynchronous usersync pixels
 
-We've made a technical upgrade to the way we perform [User ID Syncing with External Partners](user-id-syncing-with-external-partners.md) so that user syncing happens after a publisher's page has completely finished loading. This allows us to fire more usersync pixels per ad call without disrupting the user experience of visitors to the publisher's site. This change will benefit publishers by increasing spend platform-wide as usersyncing clients will have an increased match rate, allowing them to bid higher CPMs using their proprietary data on more users.
+User syncing happens after a publisher's page has completely finished loading. We refer to this as Asynchronous usersync pixels. This allows us to fire more usersync pixels per ad call without disrupting the user experience of visitors to the publisher's site. This benefits publishers by increasing spend platform-wide as usersyncing clients will have an increased match rate, allowing them to bid higher CPMs using their proprietary data on more users.
 
 ## Effects on Ghostery and related tools
 
