@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Network users screen
 
-The Network Users screen shows you basic information about your network-level users, provides access to additional details about specific users, and lets you edit or
-activate/deactivate specific network-level users.
+The Network Users screen shows you basic information about your network-level users, provides access to additional details about specific users, and lets you edit or activate/deactivate specific network-level users.
 
 ## Viewing network user details
 
@@ -33,14 +32,14 @@ To view the details of a specific Network User, select the user in the table. Th
 
 ## Editing an existing user
 
-To edit an existing user, select the user in the table and click **Full Edit**.
+To edit an existing user, select the user in the table and click **Full Edit**. Further details are available in [Edit a Network User](edit-a-network-user.md).
 
 ## Activating/deactivating users
 
 To activate or deactivate one or more users, check the box to the left of the row of each user that you want to change and select the **More Actions** button. Choose
 **Activate** or **Deactivate** from the drop-down list. Further details are available at [Create a User](create-a-user.md).
 
-## Related topics
+<!--## Related topics
 
 - [Create a User](create-a-user.md)
-- [Edit a Network User](edit-a-network-user.md)
+- [Edit a Network User](edit-a-network-user.md)-->
