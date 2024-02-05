@@ -8,10 +8,12 @@ ms.date: 10/28/2023
 # AST Release History
 
 > [!TIP]
-> To utilize the most current version of AST, link to our CDN at [https://acdn.adnxs.com/ast/ast.js](https://acdn.adnxs.com/ast/ast.js). For a detailed example, see our AST implementation guide. If your implementation requires a specific version of AST, use the following link, where `{VERSION_NUM}` would be replaced with the number of the version you want to use: `https://acdn.adnxs.com/ast/static/{VERSION_NUM}/ast.js`
+> To utilize the most current version of AST, link to our CDN at [https://acdn.adnxs.com/ast/ast.js](https://acdn.adnxs.com/ast/static/0.60.1/ast.js). For a detailed example, see our AST implementation guide. If your implementation requires a specific version of AST, use the following link, where `{VERSION_NUM}` would be replaced with the number of the version you want to use: `https://acdn.adnxs.com/ast/static/{VERSION_NUM}/ast.js`
 
 | Release | Description | Date |
 |---|---|---|
+| [0.60.1](https://acdn.adnxs.com/ast/static/0.60.1/ast.js) | - Integrate telemetry logging in AST <br> - Add content language field in setPageOpts <br> - Improve logic on specific null checks | December 15 2023 |
+| [0.59.0](https://acdn.adnxs.com/ast/static/0.59.0/ast.js) | - Add MSFT `setPageOpts` field  <br> - Add `isExclusive` and `isRoadblock` fields to AST event object | November 08 2023 |
 | [0.58.0](https://acdn.adnxs.com/ast/static/0.58.0/ast.js) | - Include `invCode` with `apntag.getTag` function <br> - Update `clearRequest` to choose certain tags <br> - Add support for GPP 1.1 <br> - Add MSFT bid fields to AST event object | Sep 20 2023 |
 | [0.57.0](https://acdn.adnxs.com/ast/static/0.57.0/ast.js) | - Add native renderer information for AST events <br> - Check value of `gdprApplies` before checking `tcString` <br> - Catch exception when calling `getTag()` in certain cases <br> - Update `attachClickTrackers()` to be compatible inside web component environment <br> - Update AST `usersync` domain and logic | Jul 14 2023 |
 | [0.56.0](https://acdn.adnxs.com/ast/static/0.56.0/ast.js) | - Add support for coppa <br> - Add support to specify sandbox attributes for AST iframe <br> - Add support to include extra div container around AST iframe <br> - Update the this context in `xhr` call <br> - Fix function call in `adManager` | May 31 2023 |
