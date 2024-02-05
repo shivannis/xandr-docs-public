@@ -15,7 +15,7 @@ The basic input into a Yield Analytics capacity forecast is ad server log data. 
 
 :::image type="content" source="media/a.png" alt-text="Screenshot of seasonal model without seasonality.":::
 
-:::image type="content" source="media/b.png" alt-text="Screenshot of seasonal model with seasonality.":::
+:::image type="content" source="media/b.png" alt-text="Screenshot of seasonal model when inventory has seasonality.":::
 
 ## How do I know whether my inventory has seasonality?
 
