@@ -1,6 +1,6 @@
 ---
 title: Yield Analytics Seasonality FAQs
-description: Learn about seasonality in Yield Analytics in this page.
+description: Learn FAQs on Seasonality in this page.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
@@ -13,9 +13,9 @@ This page deals with concepts on seasonality in Yield Analytics.
 
 The basic input into a Yield Analytics capacity forecast is ad server log data. Yield Analytics can forecast your inventory using log data alone, but the forecast will not account for changes in the traffic pattern and amplitude, based on the time of year or on events or holidays that recur year after year. Without seasonality, all future Mondays will have the same capacity. All future Tuesdays will have the same capacity, and so on. With your help, a Technical Client Manager can implement seasonal models in Yield Analytics to ensure forecasts reflect the seasonality of your inventory.
 
-:::image type="content" source="media/a.png" alt-text="Screenshot of Yield Analytics UI - A .":::
+:::image type="content" source="media/a.png" alt-text="Screenshot of seasonal model without seasonality.":::
 
-:::image type="content" source="media/b.png" alt-text="Screenshot of Yield Analytics UI - B .":::
+:::image type="content" source="media/b.png" alt-text="Screenshot of seasonal model with seasonality.":::
 
 ## How do I know whether my inventory has seasonality?
 

@@ -1,6 +1,6 @@
 ---
 title: Yield Analytics 8.60
-description: This page deals with table on Fixes/Improvements/Additions and Integrations Affected (Version 8.60).
+description: This page covers Fixes/Improvements/Additions and Integrations affected in Yield Analytics 8.60.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
