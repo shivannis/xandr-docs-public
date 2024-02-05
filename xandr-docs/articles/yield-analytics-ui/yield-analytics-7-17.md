@@ -1,6 +1,6 @@
 ---
 title: Yield Analytics 7.17
-description: In this page, learn about a new feature to update all datasets in the reports when there are multiple datasets in reports present.
+description: In this page, learn about a new feature to update all datasets in the reports when there are multiple datasets present in reports.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

@@ -1,6 +1,6 @@
 ---
 title: Yield Analytics 8.26
-description: In this page, learn about feature enhancements in Order Line Visibility Page.  
+description: In this page, learn about updates to Order Line Visibility page that improves performance.  
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

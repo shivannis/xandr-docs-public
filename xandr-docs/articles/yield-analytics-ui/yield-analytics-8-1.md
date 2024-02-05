@@ -1,6 +1,6 @@
 ---
 title: Yield Analytics 8.1
-description: In this page, learn about the Best Practices Folder for saved reports and feature enhancement in Xandr Channel integration.
+description: In this page, learn about the Best Practices Folder for saved reports and feature enhancements in Xandr Channel integration.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

@@ -20,4 +20,4 @@ ms.custom: yield-analytics-ui
   - A View override will display Availability Lookup Result data regardless of the Product Permission.
   - An Edit override will allow Product Creation on Availability Lookup, Product Creation, and Product Edit.
 
-  :::image type="content" source="media/n.png" alt-text="Screenshot of View override and Edit override.":::
+  :::image type="content" source="media/n.png" alt-text="Screenshot of Availability Lookup Result data.":::
