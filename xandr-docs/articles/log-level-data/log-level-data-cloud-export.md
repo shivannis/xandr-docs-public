@@ -60,10 +60,9 @@ Please follow the procedures in the sections below for the cloud vendor you'd li
     | **Format** | Data format for log-level data files (e.g., *protobuf* ) |
     | **Server-side Encryption** | The server-side encryption applied to uploaded LLD files: <br> - None - do not apply server-side encryption <br> - [SSE-S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingServerSideEncryption.html) - apply server-side encryption with Amazon S3-managed encryption keys <br> - [SSE-KMS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html) - apply server-side encryption with AWS KMS-managed encryption keys. You must grant the Xandr AWS user [access to your key](https://aws.amazon.com/blogs/security/share-custom-encryption-keys-more-securely-between-accounts-by-using-aws-key-management-service/). <br> Selecting SSE-S3 or SSE-KMS will override any [default bucket encryption settings](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-encryption.html) for the uploaded files. |
 
-    > [!WARNING]
-    > Do not manually create any manifest- or feed-related paths. Doing so will cause your export to fail to verify due to object-level ACLs.
-    >
-    > The necessary paths will be automatically created by Xandr.
+> [!WARNING]
+> Do not manually create any manifest- or feed-related paths. Doing so will cause your export to fail to verify due to object-level ACLs.
+> The necessary paths will be automatically created by Xandr.
 
 1. **Authorization**. For each Xandr member seat, Xandr creates a unique AWS user to upload data to S3 buckets. Xandr generates a
     suggested [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html) to [apply](https://docs.aws.amazon.com/AmazonS3/latest/userguide/add-bucket-policy.html) to your bucket that allows our AWS user access to your bucket. This policy can be used as-is, but if you already have a policy applied to your bucket, you will have to merge our policy statements with yours.
