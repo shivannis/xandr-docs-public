@@ -26,7 +26,7 @@ ms.date : 11/16/2023
 | View a complete URL like ["www.xandr.com"](https://about.ads.microsoft.com/en-us/solutions/xandr/xandr-premium-programmatic-advertising)       | [https://www.xandr.com](https://about.ads.microsoft.com/en-us/solutions/xandr/xandr-premium-programmatic-advertising)                                  |
 | View a URL with "careers" in the path          | [https://www.xandr.com/careers](https://about.ads.microsoft.com/en-us/solutions/xandr/xandr-premium-programmatic-advertising)                           |
 | View a URL with "software" in the query string | [https://www.xandr.com/careers?queryString=software](https://about.ads.microsoft.com/en-us/solutions/xandr/xandr-premium-programmatic-advertising)      |
-| View a URL with a domain of "Xandr"            | [https://www.xandr.com](https://about.ads.microsoft.com/en-us/solutions/xandr/xandr-premium-programmatic-advertising)and [https://www.xandr.com/careers](https://about.ads.microsoft.com/en-us/solutions/xandr/xandr-premium-programmatic-advertising) |
+| View a URL with a domain of "Microsoft Advertising"            | [https://www.xandr.com](https://about.ads.microsoft.com/en-us/solutions/xandr/xandr-premium-programmatic-advertising)and [https://www.xandr.com/careers](https://about.ads.microsoft.com/en-us/solutions/xandr/xandr-premium-programmatic-advertising) |
 
 ## Related topics
 

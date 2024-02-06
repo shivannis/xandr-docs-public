@@ -9,7 +9,7 @@ ms.date : 11/15/2023
 # Microsoft Curate - Viewability targeting
 
 Based on historical viewability data across several dimensions of the ad
-call, Xandr has developed a methodology for
+call, Microsoft Advertising has developed a methodology for
 determining, pre-auction, the percentage probability that an ad will be
 viewable to the user once it is delivered to the page, per the IAB
 viewability measurement standards.

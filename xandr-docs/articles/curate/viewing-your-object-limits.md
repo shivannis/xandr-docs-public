@@ -8,7 +8,7 @@ ms.date : 11/16/2023
 
 # Microsoft Curate - Viewing your object limits
 
-Xandr limits the number of object (line items,
+Microsoft Advertising limits the number of object (line items,
 creatives, etc.) that you can have on the platform. The Object Limits
 Report allows you to view these limits and proactively monitor your
 current usage.
@@ -48,7 +48,7 @@ for each:
   that are candidates for deletion.
 
 > [!TIP]
-> Line items that have not served or been modified in the last 90 days are good candidates for deletion. Contact your Xandr representative if you need assistance in cleaning out old objects or to request that your object limit be increased.
+> Line items that have not served or been modified in the last 90 days are good candidates for deletion. Contact your Microsoft Advertising representative if you need assistance in cleaning out old objects or to request that your object limit be increased.
 
 ## FAQs
 
@@ -79,7 +79,7 @@ exceeded your limit as listed above, please delete unused objects.
 
 In exceptional cases, a limit may be temporarily lifted by a small
 amount at the discretion of our engineering team. Please contact your
-Xandr representative to discuss this option.
+Microsoft Advertising representative to discuss this option.
 
 
 

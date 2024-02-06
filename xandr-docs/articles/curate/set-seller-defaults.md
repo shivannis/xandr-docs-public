@@ -28,13 +28,13 @@ Go to the **Partner Center** screen (**Partners \> Partner Center**) and click o
 >
 > AppNexus Direct is a group of 100+ sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers.
 >
-> For more information, please see [AppNexus Direct](appnexus-direct-for-buyers.md) or contact your Xandr account manager.
+> For more information, please see [AppNexus Direct](appnexus-direct-for-buyers.md) or contact your Microsoft Advertising account manager.
 > [!NOTE]
 > **Unblocking AppNexus Direct Sellers**
 >
 > Once you unblock an AppNexus Direct seller, you cannot reinstate blocking for that seller in the **Partner Center**.
 
-The **Default Inventory Trust** setting indicates whether you trust inventory reviewed only by the Xandr platform (**Platform-reviewed**), by the Xandr platform and the seller (**Seller-reviewed**), or all inventory (**All**). For more information on the different inventory trust levels, see the **Setting default inventory trust** section in [Partner Center Screen](partner-center-screen-buyer-view.md).
+The **Default Inventory Trust** setting indicates whether you trust inventory reviewed only by the Microsoft Advertising platform (**Platform-reviewed**), by the Microsoft Advertising platform and the seller (**Seller-reviewed**), or all inventory (**All**). For more information on the different inventory trust levels, see the **Setting default inventory trust** section in [Partner Center Screen](partner-center-screen-buyer-view.md).
 
 ## Related topics
 

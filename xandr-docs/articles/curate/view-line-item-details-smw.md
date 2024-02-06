@@ -13,7 +13,7 @@ and access troubleshooting tools, essential metrics, performance
 visualizations, and associated line item objects.
 
 > [!NOTE]
-> The Xandr Curate Monitoring feature is in **Open Beta** and currently only supports deal line items. It is subject to change without notice and is only available to select clients.
+> The Microsoft Advertising Curate Monitoring feature is in **Open Beta** and currently only supports deal line items. It is subject to change without notice and is only available to select clients.
 
 ## Access line item details
 

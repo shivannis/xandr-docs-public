@@ -17,13 +17,13 @@ pixels.
 If you're new to the concept of pixels, we recommend you read a little
 more about [Cookies](https://en.wikipedia.org/wiki/HTTP_cookie), which are text files associated with specific domains that live in your browser and contain information such as how many times you have been served a particular ad by the domain adserver.com, or what's in your shopping cart from myfavoritestore.com.
 
-Xandr segment pixels look something like this:
+Microsoft Advertising segment pixels look something like this:
 
 ``` 
 https://ib.adnxs.com/seg?add=1,2,4
 ```
 
-where 1, 2, 4 are Xandr segment IDs.
+where 1, 2, 4 are Microsoft Advertising segment IDs.
 
 For example, let's say ProStarr Sportswear wants to target users that
 have purchased from their online store in the past. They can put a
@@ -77,7 +77,7 @@ the following segment types:
 | **Active Users**  | This is the count of active users in a segment over a 24-hour period.                                                                                       |
 | **Daily Loads**  | The average number of times a user is added to a segment. (This is also known as 'segment fires'.) This allows you to see growth and reduction of segments. |
 | **Data Provider** | This is the data provider name.                                                                                                                             |
-| **ID**            | This is the segment Xandr ID.                                                                                                                               |
+| **ID**            | This is the segment Microsoft Advertising ID.                                                                                                                               |
 | **Name**          | This is the segment name.                                                                                                                                   |
 | **Price**        | This column displays the price a buyer has paid for a segment. It allows the buyer to toggle between these two options: <br> - CPM (default) <br> - % Media Cost          |
 
