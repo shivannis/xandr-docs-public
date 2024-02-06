@@ -48,7 +48,7 @@ You can easily modify native assemblies that contain pre-configured native creat
 1. Click the **Additional Specifications** menu in the **Creative Asset Specifications** section to add and configure creative asset specifications for the native assembly.
 
     > [!TIP]
-    > For the best Xandr marketplace performance, third-party ad server publishers should refrain from adding video assets and any custom native assets to their native assemblies.
+    > For the best Microsoft Advertising marketplace performance, third-party ad server publishers should refrain from adding video assets and any custom native assets to their native assemblies.
 
     All pre-configured native assemblies contain preset creative asset specifications. Although these are recommended configurations, they can be modified. For example, if you want to only serve creatives that contain a particular asset specification, set it to **Required**, which may limit your demand. Otherwise, set the creative asset specification to **Optional**. You can also remove any
     creative asset specification at any time by clicking the **X**.

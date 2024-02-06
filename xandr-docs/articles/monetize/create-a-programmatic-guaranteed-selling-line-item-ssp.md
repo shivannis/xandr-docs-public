@@ -52,7 +52,7 @@ To set up the PG deal:
 1. Select the ad type to be used for your deal, and complete any additional steps for your selected ad type:
 
     > [!IMPORTANT]
-    > You can currently only use banner creatives in your PG deal without Xandr representative assistance. If you'd like to use other creative types, please contact your Xandr account representative.
+    > You can currently only use banner creatives in your PG deal without Microsoft Advertising representative assistance. If you'd like to use other creative types, please contact your Microsoft Advertising account representative.
 
     | Selection | Step |
     |---|---|

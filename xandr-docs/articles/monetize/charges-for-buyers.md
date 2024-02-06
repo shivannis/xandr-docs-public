@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 ## Buyer Auction Service Charge (BASC)
 
-The charge for purchases of third-party inventory. Quoted as a percentage of media cost, this charge can be either a fee or a deduction, and may differ in amount when buying from Xandr's platform sellers (Platform Inventory) and supply partners (Partner Inventory).
+The charge for purchases of third-party inventory. Quoted as a percentage of media cost, this charge can be either a fee or a deduction, and may differ in amount when buying from Microsoft Advertising's platform sellers (Platform Inventory) and supply partners (Partner Inventory).
 
 > [!NOTE]
 > You can view the BASC deduction or fee amount for a specific invoice period using one of the billing reports in the UI. For more details about how this charge is calculated,
@@ -16,7 +16,7 @@ The charge for purchases of third-party inventory. Quoted as a percentage of med
 
 ## BASC as a deduction (Bid reduction)
 
-When specified as a bid reduction in your contract, the BASC is set to be a component of media cost by default and is therefore not itemized separately on your invoice. Applied as a bid reduction, BASC is accounted for within your budget (e.g., insertion order or line item). Alternately, you can contact your Xandr Account Representative to have your BASC set to be a disclosed deduction. This will cause it to appear as a separate line item on your invoice.
+When specified as a bid reduction in your contract, the BASC is set to be a component of media cost by default and is therefore not itemized separately on your invoice. Applied as a bid reduction, BASC is accounted for within your budget (e.g., insertion order or line item). Alternately, you can contact your Microsoft Advertising Account Representative to have your BASC set to be a disclosed deduction. This will cause it to appear as a separate line item on your invoice.
 
 ## BASC as a fee
 
@@ -30,7 +30,7 @@ The amount charged for serving creatives that are over the maximum size specifie
 
 > [!NOTE]
 > (b) the **maximum creative size** is in **KB** where as (d) the **bandwidth charge** is in **GB**. When converting from GB to KB, **divide by 976,563** because
-> Xandr uses the **kibibyte** metric for KB.
+> Microsoft Advertising uses the **kibibyte** metric for KB.
 
 For **example**, let's say the maximum creative size in your contract is (b) 40KB, you have a (a) 60KB creative that served (c) 100,000 times, and your bandwidth fee is (d) $2.50 per GB (which converts to 976,563 KB).
 
@@ -38,5 +38,5 @@ Your creative overage fee is calculated as follows: `\[ \[ (a) 60KB - (b) 40KB \
 
 ## Creative audit
 
-The charge for each creative audit performed by Xandr, both initial audits and re-audits. The creative audit fee is the standard audit rate with standard turnaround
+The charge for each creative audit performed by Microsoft Advertising, both initial audits and re-audits. The creative audit fee is the standard audit rate with standard turnaround
 time. Priority audit is a higher fee with expedited turnaround time. You can view the creative audit amount for a specific invoice period using the **Completed Creative Audits Report** in the UI.

@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Create a guaranteed delivery line item
 
 > [!IMPORTANT]
-> This option is available only to Xandr Ad Server customers.
+> This option is available only to Microsoft Advertising Ad Server customers.
 > [!NOTE]
 > For Guaranteed Delivery Augmented Line Items (GDALI), see [Create a Guaranteed Delivery Line Item (GDALI)](create-a-guaranteed-delivery-line-item-gdali.md).
 
@@ -161,7 +161,7 @@ To configure campaign shells, click the toggle next to **Campaign Shells** and a
 
 ### Roadblocking
 
-If you're using multi-tag auctions via [Xandr's seller tag](../seller-tag/seller-tag.md) to make a single request for multiple ad slots on a page, you can serve multiple linked creatives, known as roadblocking. For more information, see [Target Your Inventory with Roadblocking](target-your-inventory-with-roadblocking.md).
+If you're using multi-tag auctions via [Microsoft Advertising's seller tag](../seller-tag/seller-tag.md) to make a single request for multiple ad slots on a page, you can serve multiple linked creatives, known as roadblocking. For more information, see [Target Your Inventory with Roadblocking](target-your-inventory-with-roadblocking.md).
 
 To enable roadblocking on the line item, perform the following actions:
 

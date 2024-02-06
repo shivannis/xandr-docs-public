@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Creative CTV guidelines and specifications
 
-To serve on Xandr publisher's CTV inventory, your creatives must meet the guidelines and specification requirements, as well as Xandr creative standards and any other guidelines that may apply. While uploading your creatives, you can see whether your creatives meet the specified CTV requirements or not under the **View CTV Eligibility** section. If not, you can click **More Details**, to see which requirements need to be adjusted in order to serve on Xandr’s premium publisher’s CTV inventory. The CTV specification validations and approval indicators will be present throughout the Line item and Creative workflows in various tooltips and issues columns, as well.
+To serve on Microsoft Advertising publisher's CTV inventory, your creatives must meet the guidelines and specification requirements, as well as Microsoft Advertising creative standards and any other guidelines that may apply. While uploading your creatives, you can see whether your creatives meet the specified CTV requirements or not under the **View CTV Eligibility** section. If not, you can click **More Details**, to see which requirements need to be adjusted in order to serve on Microsoft Advertising’s premium publisher’s CTV inventory. The CTV specification validations and approval indicators will be present throughout the Line item and Creative workflows in various tooltips and issues columns, as well.
 
 For more information, see [Creative Guidelines and Specifications](creative-guidelines-and-specifications.md) and [Creative Standards](creative-standards.md).
 
@@ -15,7 +15,7 @@ For more information, see [Creative Guidelines and Specifications](creative-guid
 
 ## Hosted creative CTV guidelines and specifications
 
-Buyers upload one media file and Xandr works on its transcoding. Therefore, the following requirements are for an individual media file which the buyer needs to upload.
+Buyers upload one media file and Microsoft Advertising works on its transcoding. Therefore, the following requirements are for an individual media file which the buyer needs to upload.
 
 ### Hulu
 

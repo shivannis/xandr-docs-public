@@ -54,7 +54,7 @@ As a result, these creatives will bid on your line item's behalf as follows:
 
 The creative within a size bucket with the highest click-through-rate (CTR) delivers the most. This is the default setting.
 
-Xandr assigns weights per creative for nodes (tag and inventory URL combinations) that have at least 50,000 impressions and 10 clicks served by the line item. When the creative is new, default weights are assigned instead.
+Microsoft Advertising assigns weights per creative for nodes (tag and inventory URL combinations) that have at least 50,000 impressions and 10 clicks served by the line item. When the creative is new, default weights are assigned instead.
 
 ## Related topics
 

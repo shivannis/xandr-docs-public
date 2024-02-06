@@ -14,7 +14,7 @@ Most likely the the wrong tag size was selected.
 
 A quick note: most creative issues can be mitigated by uploading content directly onto our server and then inputting click/tracking URLs in the designated field. Our server is approved across all supply partners, so if your creative passes our auditing, it may be more likely to be permitted on restrictive supply sources like Google Ad Manager than if it is hosted by a third-party ad server.
 
-There are a few things you can look for before sending a ticket into Xandr Support. First, does the trafficking code (html, javascript, etc.) match the creative? A javascript tag that is interpreted as pure html (e.g. `<script></script>`) should be trafficked as html. Raw javascript (e.g. `var x = "my tag"`) should be trafficked as such. The tag code determines how that impression bus will deliver the ad (i.e. if it will be wrapped within a doc.write or not), so it is often the problem behind blank creatives.
+There are a few things you can look for before sending a ticket into Microsoft Advertising Support. First, does the trafficking code (html, javascript, etc.) match the creative? A javascript tag that is interpreted as pure html (e.g. `<script></script>`) should be trafficked as html. Raw javascript (e.g. `var x = "my tag"`) should be trafficked as such. The tag code determines how that impression bus will deliver the ad (i.e. if it will be wrapped within a doc.write or not), so it is often the problem behind blank creatives.
 
 If your tag code is correct, load a creative preview using our server URL:
 
@@ -34,7 +34,7 @@ We now have a built-in click-tracking test in the creative Full Edit pane.
 
 **Flash creatives**: Make sure that the **clickTAG** macro is capitalized correctly as it is case sensitive. However, note that some flash creatives use other capitalization variations (e.g. clickTag). You can decompile the flash file using a free software utility (e.g. Flare) to check.
 
-Please see [Click Tracking](click-tracking.md) for further details on click tracking. If you are still having problems, please contact Xandr Support.
+Please see [Click Tracking](click-tracking.md) for further details on click tracking. If you are still having problems, please contact Microsoft Advertising Support.
 
 ## Can I run creatives in different languages?
 
@@ -52,4 +52,4 @@ Currently, the creative preview in Full Edit is not intended to be fully functio
 
 ## Gambling creatives
 
-Please see our [Policies for Buying](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx) (login required) for information on what kinds of gambling ads are allowed to serve and under what conditions.
+Please see our [Policies for Buying](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Buying.aspx) (login required) for information on what kinds of gambling ads are allowed to serve and under what conditions.

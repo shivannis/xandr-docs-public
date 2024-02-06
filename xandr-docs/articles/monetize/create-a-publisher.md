@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Create a publisher
 
-When you create a publisher, you can enter key publisher information, define your financial and business relationship with that publisher, specify how you would like to sell the publisher's inventory to your Xandr partners, and set the appropriate types of payments, payment terms, and ad quality settings.
+When you create a publisher, you can enter key publisher information, define your financial and business relationship with that publisher, specify how you would like to sell the publisher's inventory to your Microsoft Advertising partners, and set the appropriate types of payments, payment terms, and ad quality settings.
 
 ## Get started
 
@@ -71,7 +71,7 @@ In the **Advanced Options** section, you can set a publisher code, a max learn p
 
 - **Code**: Assign a code to a publisher as your own unique identifier.
 - **Override Dynamic Learn**: The optimization system automatically allocates a certain percentage of auctions to prefer learn bids over other types (i.e., optimized bids or base bids). However, you can override this percentage by entering a value in the **% learn auctions** field. This number indicates the percentage of auctions that will first attempt to find and use bids that are in the learning stage if they are available (including CPC and CPA bids from trusted partners). We recommend that you allow the system to maintain this percentage.
-- **User ID Syncing**: In order to increase the Xandr pool of cookied users, we apply user syncing pixels to allow partners to map our IDs to their IDs. You can choose which partners use them. The options for this setting, which effect the partners you can select, are **Use default settings** or **Override default settings**.
+- **User ID Syncing**: In order to increase the Microsoft Advertising pool of cookied users, we apply user syncing pixels to allow partners to map our IDs to their IDs. You can choose which partners use them. The options for this setting, which effect the partners you can select, are **Use default settings** or **Override default settings**.
   - **Allow supply partner syncing**: Select this option to allow supply partners to utilize user syncing pixels. This option is selected (and locked) by default. To deselect it, set the **User ID syncing** field to **Override default settings**.
   - **Allow data provider syncing**: Select this option to allow data provider partners to utilize user syncing pixels. This option is selected (and locked) by default. To deselect it, set the **User ID syncing** field to **Override default settings**.
   - **Allow demand partner syncing**: Select this option to allow demand partners to utilize user syncing pixels. This option is selected (and locked) by default. To deselect it, set the **User ID syncing** field to **Override default settings**.
@@ -79,7 +79,7 @@ In the **Advanced Options** section, you can set a publisher code, a max learn p
 - **Enable Sell-side Page Capping**: Use this setting to limit the number of impressions that an individual brand can serve on a page in multi-tag auctions using **Sell-Side Page Caps**.
 
     > [!IMPORTANT]
-    > This feature is not available to clients by default; for more information, please speak with your Xandr representative.
+    > This feature is not available to clients by default; for more information, please speak with your Microsoft Advertising representative.
 
 - **Reporting Labels**: Enter the name of an internal **Salesperson** or an **Account Manager** (or both) responsible for the publisher in order to report on performance in **Network Reporting**.
 

@@ -10,7 +10,7 @@ ms.date: 10/28/2023
 > [Buying Native Inventory](buying-native-inventory.md) provides instructions for a a global approach in which you reach all sellers simultaneously with a single line
 > item or campaign. Scaling is the approach we recommend over the seller-specific settings shown here.
 
-[Seedtag](https://www.seedtag.com/) inventory is available programmatically through Xandr. Seedtag is the European leader in In-Image advertising and manages more than 1B impressions across the globe. We work with top Publishers and our responsive ad format will allow you to boost your metrics. Seedtag's average Viewability rate is
+[Seedtag](https://www.seedtag.com/) inventory is available programmatically through Microsoft Advertising. Seedtag is the European leader in In-Image advertising and manages more than 1B impressions across the globe. We work with top Publishers and our responsive ad format will allow you to boost your metrics. Seedtag's average Viewability rate is
 above 90% and our CTR are 5 time higher than traditional display.
 
 Seedtag has office and exclusive agreements with Publishers in the below countries:
@@ -30,7 +30,7 @@ Before you can sell through Seedtag you need to set them up as an eligible partn
 
 ## Send your creative to Seedtag
 
-Seedtag's in-image format is a non-IAB Standard ad format which requires them to adapt your creative and provide you with the ad tag to be implemented. You must send your creative (preferably as a PSD file) to [programmatic@seedtag.com](mailto:programmatic@seedtag.com) to receive a tag that you will apply when adding your creative in Xandr
+Seedtag's in-image format is a non-IAB Standard ad format which requires them to adapt your creative and provide you with the ad tag to be implemented. You must send your creative (preferably as a PSD file) to [programmatic@seedtag.com](mailto:programmatic@seedtag.com) to receive a tag that you will apply when adding your creative in Microsoft Advertising
 Monetize.
 
 ## Request the creation of a deal ID to Deedtag
@@ -47,7 +47,7 @@ You must select CPM as your **Buying Strategy**. You can select any option under
 
 **Inventory Quality:**
 
-- Select **Serve only on** Xandr-reviewed inventory.
+- Select **Serve only on** Microsoft Advertising-reviewed inventory.
 - Select **Also serve on trusted seller-reviewed/unreviewed inventory**.
 
 ## Upload a third-party creative
@@ -63,7 +63,7 @@ Navigate to the **Creative Manager** screen. Click on the **Create New** button 
 
 - Media Type: **Banner: Standard Banner**
 
-- Template: **Xandr: Standard**
+- Template: **Microsoft Advertising: Standard**
 
 - Size: Select **New** from the dropdown list. Enter a **width** of **600** and a **height** of **105**
 

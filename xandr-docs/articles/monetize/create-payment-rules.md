@@ -50,7 +50,7 @@ You may target by Country, Region, Metro Code, City, or Zip Code. Learn more abo
 
 Users of geographic targeting should expect some degree of inaccuracy; though targeting by country is highly accurate, the more specific the targeting, the more imprecise the results. This is especially true when targeting locations as granular as cities, metro codes, and zip codes.
 
-Xandr uses the IP lookup service provided by [Digital Envoy](https://www.digitalelement.com/geolocation/). For more information, [contact Digital Envoy directly](http://www.digitalelement.com/contact-us/).
+Microsoft Advertising uses the IP lookup service provided by [Digital Envoy](https://www.digitalelement.com/geolocation/). For more information, [contact Digital Envoy directly](http://www.digitalelement.com/contact-us/).
 
 ##### Geographic targeting and boolean logic
 

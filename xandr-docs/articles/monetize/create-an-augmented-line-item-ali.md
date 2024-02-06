@@ -36,7 +36,7 @@ If you've created an advertiser and an insertion order, you're ready to create a
 
 1. [Set Up Line Item Optimization](set-up-line-item-optimization.md)
 
-    From the **Optimization** section, you can enable or disable Xandr optimization for a line item. If you enable Xandr optimization, you must first set a performance goal and goal priority, and then associate the line item with conversion pixels for those goals.
+    From the **Optimization** section, you can enable or disable Microsoft Advertising optimization for a line item. If you enable Microsoft Advertising optimization, you must first set a performance goal and goal priority, and then associate the line item with conversion pixels for those goals.
 
 1. [Set Up Line Item Inventory and Brand Safety](set-up-line-item-inventory-and-brand-safety.md)
 

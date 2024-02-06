@@ -39,7 +39,7 @@ You must also select the appropriate **Supply Type** from the dropdown:
 
 ## Step 3. Select your marketplace settings
 
-You can designate the Xandr Marketplaces in which you want the inventory associated with this placement group to be available.
+You can designate the Microsoft Advertising Marketplaces in which you want the inventory associated with this placement group to be available.
 
 ### RTB marketplace
 
@@ -49,7 +49,7 @@ You can designate the Xandr Marketplaces in which you want the inventory associa
 
 ## Step 4. Apply universal categories to the placement group
 
-On the **Content Categories** tab, you can apply Xandr universal categories for a specific placement group, making it attractive to buyers who have targeted these categories in their campaigns. You must choose one of the following options:
+On the **Content Categories** tab, you can apply Microsoft Advertising universal categories for a specific placement group, making it attractive to buyers who have targeted these categories in their campaigns. You must choose one of the following options:
 
 - **Categorize as mixed/unknown**: Select this option to leave all category settings unselected. Buyers will not be able to specifically target this placement group.
 
@@ -115,13 +115,13 @@ You cannot select these options (they are for informational purposes only). Plac
 
 You must check the **checkbox** in this section to confirm that you have done the following:
 
-- Self-audited this placement group to comply with the Xandr content standards
+- Self-audited this placement group to comply with the Microsoft Advertising content standards
 - Set the appropriate sensitive attributes
 - Noted the intended audience
 
 > [!NOTE]
-> The **View the Xandr content standards** link provides detailed information about the standards that platform content must meet. You can click the link from the **Self-audit Criteria** tab.
+> The **View the Microsoft Advertising content standards** link provides detailed information about the standards that platform content must meet. You can click the link from the **Self-audit Criteria** tab.
 
 ## Step 8. Save the placement group
 
-To finish adding the placement group to the Xandr platform, click the **Save** button. Alternately, if you want to save the placement group and immediately create a new placement under it, click the **Save and Add New Placement** button.
+To finish adding the placement group to the Microsoft Advertising platform, click the **Save** button. Alternately, if you want to save the placement group and immediately create a new placement under it, click the **Save and Add New Placement** button.

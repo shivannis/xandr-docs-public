@@ -6,11 +6,11 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Click tracking
 
-Click tracking serves many useful purposes within the ad serving industry as a whole. For Xandr, click tracking is necessary for optimizing to CPC and CPA goals, for bidding CPC and CPA, and for measuring a campaign's success.
+Click tracking serves many useful purposes within the ad serving industry as a whole. For Microsoft Advertising, click tracking is necessary for optimizing to CPC and CPA goals, for bidding CPC and CPA, and for measuring a campaign's success.
 
-In order for Xandr to track a click to the corresponding impression, a click tracker needs to load when a user clicks on a creative. When the Xandr click tracker is loaded:
+In order for Microsoft Advertising to track a click to the corresponding impression, a click tracker needs to load when a user clicks on a creative. When the Microsoft Advertising click tracker is loaded:
 
-1. A click is recorded on the Xandr server.
+1. A click is recorded on the Microsoft Advertising server.
 1. There is a redirect to the webpage that follows the click tracker.
 
     For example:
@@ -19,11 +19,11 @@ In order for Xandr to track a click to the corresponding impression, a click tra
     https://nym1-ib.adnxs.com/click2?
     ```
 
-    In this example, the Xandr click tracker is followed by the Xandr homepage. When the link is loaded, a click is recorded on Xandr, and then there is a redirect to the Xandr homepage.
+    In this example, the Microsoft Advertising click tracker is followed by the Microsoft Advertising homepage. When the link is loaded, a click is recorded on Microsoft Advertising, and then there is a redirect to the Microsoft Advertising homepage.
 
 ## Tracking clicks on hosted creatives
 
-Xandr will configure the click tracking for hosted creatives such as JPGs, GIFs, and PNGs since they are wrapped in our creative templates. Our templates are set up in such a way that a dynamically-generated click tracker is correctly populated in the creative content. For more information, see [Creative
+Microsoft Advertising will configure the click tracking for hosted creatives such as JPGs, GIFs, and PNGs since they are wrapped in our creative templates. Our templates are set up in such a way that a dynamically-generated click tracker is correctly populated in the creative content. For more information, see [Creative
 Templates](creative-templates.md).
 
 All you have to do is enter the landing page URL in the **Landing Page** field and select the **Enable Click Tracking** checkbox if you're using Console, and a click URL with encoded information about the creative will be automatically appended to the creative. When a user clicks the URL, the user's browser will first request the URL from adnxs.com. The encoded information in the URL will be recorded by the server. The user's browser will be redirected to the landing page configured for the creative.
@@ -51,7 +51,7 @@ The anchor tag contains a "href" or hyperlink reference, which in this case is c
 <a href="${CLICK_URL_ENC}https://www.cnn.com" target="_blank"><img src="media/Ad-MediumRectangle-300x250.png" width="300" height="250"></a>
 ```
 
-When an image is clicked, the "href" page loads. A click is tracked on Xandr and followed by a redirect to https://www.cnn.com. For example:
+When an image is clicked, the "href" page loads. A click is tracked on Microsoft Advertising and followed by a redirect to https://www.cnn.com. For example:
 
 ```
 <a href="https://nym1-ib.adnxs.com/click2?AAAAAAAAAAAAAAAAAAAA./clickenc=https://www.cnn.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ad-MediumRectangle-300x250.jpg" width="300" height="250"></a>
@@ -59,11 +59,11 @@ When an image is clicked, the "href" page loads. A click is tracked on Xandr and
 
 After the user is redirected to the href, such as [https://www.cnn.com], the following takes place:
 
-1. The Xandr impression bus generates a click tracker by populating the `${CLICK_URL_ENC}` macro.
+1. The Microsoft Advertising impression bus generates a click tracker by populating the `${CLICK_URL_ENC}` macro.
 1. The click tracker is passed to the third-party ad server in the tag.
 1. The third-party ad server will take the click tracker and insert it correctly into the creative so that it will load when the creative is clicked.
 
-For a URL-HTML, URL-JS, raw-HTML, or raw-JS creative, you will need to include one of the following Xandr macros in the
+For a URL-HTML, URL-JS, raw-HTML, or raw-JS creative, you will need to include one of the following Microsoft Advertising macros in the
 appropriate place in your URL/tag:
 
 | Macro | Description |
@@ -77,8 +77,8 @@ Although an encoded version is available for certain ad servers, you'll most lik
 https://ad.doubleclick.net/adi/N5364.Ivillage.com/B2965815.5;sz=728x90;click=${CLICK_URL};ord=${CACHEBUSTER}?
 ```
 
-Here "click" is the DoubleClick variable for accepting external click URLs. When the full URL string above is passed from Xandr to the user's browser, the impression bus 
-will replace `${CLICK_URL}` with the actual click Xandr URL, which is easily identified by the large number of capital A's present in the string. The Xandr click URL will look something like this:
+Here "click" is the DoubleClick variable for accepting external click URLs. When the full URL string above is passed from Microsoft Advertising to the user's browser, the impression bus 
+will replace `${CLICK_URL}` with the actual click Microsoft Advertising URL, which is easily identified by the large number of capital A's present in the string. The Microsoft Advertising click URL will look something like this:
 
 ```
 https://nym1-ib.adnxs.com/click2?AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA__________-No5xOAAAAAAEAAAAAAAAAAAAAAAAAAABd8gsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAcAsHNwAAAAA./clickenc=
@@ -103,7 +103,7 @@ The creative will first direct the browser to the impression bus where the click
 
 In order to properly track clicks, all hosted HTML5 creatives must refer the click tag parameter in the URL of the creative when it is served. Also when the creative is clicked, it should open specific the landing page defined in your setup.
 
-Creative designers can either use their own code to ensure that the reference is present, or use helper code provided in the Xandr HTML5 library.
+Creative designers can either use their own code to ensure that the reference is present, or use helper code provided in the Microsoft Advertising HTML5 library.
 
 ## Related topics
 

@@ -56,9 +56,9 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
 
     1. Select an allowlist, or create one directly from the insertion order. This determines the inventory that may be targeted by any line items belonging to this insertion order.
 
-        Allowlists include the Xandr Inventory List, a collection of inventory that Xandr has selected based on demonstrated demand interest within our marketplace and vetted via additional quality controls (as well as platform inventory quality filtering).
+        Allowlists include the Microsoft Advertising Inventory List, a collection of inventory that Microsoft Advertising has selected based on demonstrated demand interest within our marketplace and vetted via additional quality controls (as well as platform inventory quality filtering).
 
-    1. Select a blocklist, or create one directly from the insertion order. This determines which inventory will be excluded from targeting by line items belonging to this insertion order. The Xandr blocklist is applied by default.
+    1. Select a blocklist, or create one directly from the insertion order. This determines which inventory will be excluded from targeting by line items belonging to this insertion order. The Microsoft Advertising blocklist is applied by default.
 
 1. If this insertion order contains line items for political advertising, fill out the [Political Advertising](#political-advertising) section.
 
@@ -87,7 +87,7 @@ The name for the insertion order. You will later be able to search for and repor
 
 ### External code (optional)
 
-An external code used for reporting. (Xandr also assigns an internal code automatically.) The code may only contain alphanumeric characters, periods, underscores or dashes. It is not case-sensitive (upper- and lower-case characters are treated the same).
+An external code used for reporting. (Microsoft Advertising also assigns an internal code automatically.) The code may only contain alphanumeric characters, periods, underscores or dashes. It is not case-sensitive (upper- and lower-case characters are treated the same).
 
 No two objects at the same level (like line items or campaigns) can use the same code. For example, two lines items cannot both use code "XYZ", but a single line item and its child campaign can.
 
@@ -169,7 +169,7 @@ Options are:
 
 ### Political organization details
 
-This section contains the details of the person or organization that is purchasing ads on Xandr. For example, a candidate, an agency, or a political consultant.
+This section contains the details of the person or organization that is purchasing ads on Microsoft Advertising. For example, a candidate, an agency, or a political consultant.
 
 The required fields must be filled out for any state or local political advertising that will or could serve in California, Illinois, Maryland, Nevada, New Jersey, New York, Virginia, or Washington, or for political advertising at the federal level that will or could serve in Washington State. If your political ad will not be served in any of those states, you may enter "N/A”. For more information on political advertising, see [Political Advertising](political-advertising.md).
 
@@ -181,7 +181,7 @@ We reserve the right to implement additional screening at any time.
 | **City** | City of the person, group, organization, or business that is advertising. |
 | **Country** | Country of the person, group, organization, or business that is advertising. |
 | **Independent Expenditure Committee** | Select this if any ads are being paid for by an independent expenditure committee: a political committee that makes only independent expenditures; that is, it spends money on political communications that expressly advocate the election or defeat of a clearly identified candidate and does not coordinate with a candidate, a candidate’s authorized committee, or an agent of the candidate. |
-| **Organization Name** | Name of the person, group, organization, or business that is paying you to advertise on Xandr. |
+| **Organization Name** | Name of the person, group, organization, or business that is paying you to advertise on Microsoft Advertising. |
 | **Payment Method** | How the political organization pays you. Options are: <br> - **Bank account (direct deposit)** <br> - **Check** <br> - **Credit or debit card** <br> - **Other** - If this is selected, you must specify details. |
 | **Phone** | Phone number of the person, group, organization, or business that is advertising. |
 | **State Registration Form** | New York and New Jersey require copies of state registration forms from independent expenditure committees making purchases. Creatives won't serve in those states until the form is uploaded. |
@@ -191,7 +191,7 @@ We reserve the right to implement additional screening at any time.
 | **U.S. FEC ID** | Optional. ID number assigned by the [U.S. Federal Election Committee](https://www.fec.gov/). |
 | **ZIP or Postal Code** | ZIP or postal code of the person, group, organization, or business that is advertising. |
 
-You must check **I certify that all information provided herein is accurate and up to date, and acknowledge and agree that Xandr is relying on the accuracy of this information.** before you can save the insertion order.
+You must check **I certify that all information provided herein is accurate and up to date, and acknowledge and agree that Microsoft Advertising is relying on the accuracy of this information.** before you can save the insertion order.
 
 ## Related topics
 

@@ -75,7 +75,7 @@ In the **Deals Selection** section, click the **Edit** button and then include t
 >     Buyers targeting the deals and buyers targeting the inventory via other means compete for the impression.
 >   - **Private Auction**
 >     Buyers targeting the private deals compete for the impression first. Then, if none of the deal buyers win, the auction is opened to  buyers targeting the inventory via other means.
->   - **First Look** Deals considered "First Look" are offered only by external supply partners and have extremely varied auction logic depending on both the supply partner and the seller. You must contact the supply partner for details about how the deal works. Xandr as a buying platform can make no guarantee that first look deals actually give you the first look at an impression.
+>   - **First Look** Deals considered "First Look" are offered only by external supply partners and have extremely varied auction logic depending on both the supply partner and the seller. You must contact the supply partner for details about how the deal works. Microsoft Advertising as a buying platform can make no guarantee that first look deals actually give you the first look at an impression.
 > 
 > - **Start Date** The day and time when the deal starts being available to you. Note that this is distinct from your campaign start date.
 > 
@@ -106,7 +106,7 @@ This amount is the highest ask price of all deals you are targeting. For example
 **Suggested Minimum Bid**
 
 If you're targeting deals with an ask price, the suggested minimum bid shows you the CPM amount that will likely clear the ask price for your deals. It is based on the highest ask price of all deals you are targeting plus your auction service charge. For deals with external suppliers, this amount will include additional margin to account for
-discrepancies and may fluctuate over time as the level of discrepancy between Xandr and the third party changes.
+discrepancies and may fluctuate over time as the level of discrepancy between Microsoft Advertising and the third party changes.
 
 > [!NOTE]
 > Bidding the suggested minimum will help ensure that you are eligible for the deal but will not guarantee that your bid wins.
@@ -118,7 +118,7 @@ Paying on a CPA or CPC basis is not available for deal inventory. The other CPM 
   - **Bid CPM: max $\_\_\_ CPM min $\_\_\_ CPM** - Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
   - **Enable cadence modifier** - Under OTHER OPTIONS, check this box to vary your bid based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user hasn't seen it before or hasn't seen it many times or seen it recently. For more
     details, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
-- **Optimize to a predicted CPA goal** - Use this strategy to vary bids based on the likelihood of an attributed conversion for each piece of inventory. This strategy uses the Xandr optimization engine.
+- **Optimize to a predicted CPA goal** - Use this strategy to vary bids based on the likelihood of an attributed conversion for each piece of inventory. This strategy uses the Microsoft Advertising optimization engine.
   - **Bid $\_ post-click/post-view CPA** - Select the conversion pixel to which you want to optimize and enter the dollar amount per conversion that you want the optimization engine to aim for.
   - **Learn Budget** - The learn budget is the portion of your campaign budget that you want to commit to optimizing your campaign, which helps you quickly find slices of third-party inventory that provide a positive ROI. The first phase of this process is called Learn. You can set a lifetime learn budget of up to 100% of the campaign budget
     as well as a daily cap for learning. For more information about optimization and learning, see [Targeted Learn](targeted-learn.md).
@@ -127,7 +127,7 @@ Paying on a CPA or CPC basis is not available for deal inventory. The other CPM 
   - **Bid CPM: max $\_ CPM min $\_ CPM** - Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
   - **Enable cadence modifier** - This option appears under OTHER OPTIONS and cannot be deselected. When optimizing to a predicted CPA goal, your bids will always vary based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user
     hasn't seen it before or hasn't seen it many times or seen it recently. For more details, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
-- **Optimize to a predicted CPC goal** - Use this strategy to vary bids based on the likelihood of a click for each piece of inventory. This strategy uses the Xandr optimization engine.
+- **Optimize to a predicted CPC goal** - Use this strategy to vary bids based on the likelihood of a click for each piece of inventory. This strategy uses the Microsoft Advertising optimization engine.
 - **Optimize to $\_ per click** - Enter the dollar amount per click that you want the optimization engine to aim for when calculating bids.
 - **Learn Budget** - The learn budget is the portion of your campaign budget that you want to commit to optimizing your campaign, which helps you quickly find slices of third-party inventory that provide a positive ROI. The first phase of this process is called Learn. You can set a lifetime learn budget of up to 100% of the campaign budget as
   well as a daily cap for learning. For more information about optimization and learning, see [Targeted Learn](targeted-learn.md).
@@ -137,10 +137,10 @@ Paying on a CPA or CPC basis is not available for deal inventory. The other CPM 
 - **Enable cadence modifier** - This option appears under OTHER OPTIONS and cannot be deselected. When optimizing to a predicted CPA goal, your bids will always vary based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user hasn't seen it
   before or hasn't seen it many times or seen it recently. For more details, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
 - **Target reach and delivery (bid via ECP or EAP)** - Use this strategy to bid the going platform rate for each piece of inventory.
-  - **Auto-bid to win most platform impressions (ECP)** - Select this option to bid an estimate of the price that is likely to win most impressions from Xandr platform sellers
+  - **Auto-bid to win most platform impressions (ECP)** - Select this option to bid an estimate of the price that is likely to win most impressions from Microsoft Advertising platform sellers
     based on historical bids and their success or failure. Since off-platform sellers (e.g., Google Ad Manager, Rubicon, etc.)
     conduct a secondary auction, bidding ECP does not necessarily ensure winning off-platform impressions.
-  - **Auto-bid to win ~50% of platform impressions (EAP)** - Select this option to bid an estimate of the price that is likely to win about half of the impressions from Xandr platform sellers based on historical bids and their success or failure. Since off-platform sellers (e.g., Google Ad Manager, Rubicon, etc.) conduct a secondary auction, bidding EAP does not necessarily ensure winning half of off-platform impressions.
+  - **Auto-bid to win ~50% of platform impressions (EAP)** - Select this option to bid an estimate of the price that is likely to win about half of the impressions from Microsoft Advertising platform sellers based on historical bids and their success or failure. Since off-platform sellers (e.g., Google Ad Manager, Rubicon, etc.) conduct a secondary auction, bidding EAP does not necessarily ensure winning half of off-platform impressions.
   - **Bid CPM: max $\_ CPM min $\_ CPM** - Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
   - **Enable cadence modifier** - Under OTHER OPTIONS, check this box to vary your bid based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user hasn't seen it before or hasn't seen it many times or seen it recently. For more details, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
 

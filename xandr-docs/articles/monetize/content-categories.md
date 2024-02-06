@@ -10,7 +10,7 @@ Content categories are metadata attached to a slice of inventory that describe t
 
 There are two types of content categories:
 
-- **Universal:** These categories are maintained by Xandr.
+- **Universal:** These categories are maintained by Microsoft Advertising.
 - **Custom:** Sellers have the ability to define their own categories and apply them to slices of their own inventory.
 
    > [!TIP]

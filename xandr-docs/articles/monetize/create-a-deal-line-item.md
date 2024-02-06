@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Create a deal line item
 
-Deal Line Items let publishers using Xandr Monetize as an ad server or SSP set up advanced deals with their buyers and provide all the newest features the Monetize deals platform has to offer.
+Deal Line Items let publishers using Microsoft Advertising Monetize as an ad server or SSP set up advanced deals with their buyers and provide all the newest features the Monetize deals platform has to offer.
 
 ## About deal line items
 
@@ -78,7 +78,7 @@ In the **Basic Setup** section, enter the basic details for the deal line item.
   > details.
 
 - **Name** - Enter the name for the deal line item. You will later be able to search for and report on the line item using this name. This name is not exposed to the buyer.
-- **External Code** - If you want to report on the line item using an external code (rather than the internal ID that Xandr assigns automatically), enter the code
+- **External Code** - If you want to report on the line item using an external code (rather than the internal ID that Microsoft Advertising assigns automatically), enter the code
   here. The code may only contain alphanumeric characters, periods, underscores, or dashes. The code you enter is not case-sensitive (uppercase and lowercase characters are treated the same). No two line items can use the same code per advertiser.
 - **State** - Set the state of the line item. If "**Active**", the line item will be eligible to serve. Best practice for sellers is to set the state to **"Active"** so that buyers can serve on their inventory as quickly as possible.
 - **Insertion Order Details** - Insertion order details for **Budget Type**, **Currency**, **Total Lifetime Budget**, **Pacing**, **Start Date**, and **End Date** display in the gray box (you must select an insertion order to display these values).
@@ -177,7 +177,7 @@ You can specify the following inventory and brand safety settings for the deal l
   - **App & Web** - To run on both inventory types. This is the default setting.
   - **App Only** - To run in applications installed on mobile tablets, phones, and Windows 8 devices.
   - **Web Only** - To run on standard web sites and those optimized for browsers on mobile devices.
-- **Blocklist**: Select one or more blocklists (by default, the Xandr blocklist will always be applied). Any inventory in the blocklists you apply
+- **Blocklist**: Select one or more blocklists (by default, the Microsoft Advertising blocklist will always be applied). Any inventory in the blocklists you apply
   will automatically be excluded and not bid on by this line item. You can select from network/member-level blocklists or [Inventory Lists](inventory-lists-ali-only.md)  directly from the line item. Once applied, you can also view or export the blocklist.
 - **Allowlist**: Select an allowlist you would like to apply to this line item. You can select from network/member-level allowlists or [create an allowlist](inventory-targeting-ali.md) directly from the line item. Once applied, you can also view or export the allowlist.
 - **Ads.txt**: Do not use (not supported for deal line items).

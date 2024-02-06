@@ -15,7 +15,7 @@ To configure a native assembly:
 1. [Create a Native Assembly](create-a-native-assembly.md): You can modify native assemblies that contain pre-configured native creative asset specifications or create your own from scratch.
 
    > [!WARNING]
-   > For the best Xandr marketplace performance, third-party ad server publishers should refrain from adding video assets and any custom native assets to their native assemblies.
+   > For the best Microsoft Advertising marketplace performance, third-party ad server publishers should refrain from adding video assets and any custom native assets to their native assemblies.
 
 1.  [Native Assembly Renderer Best Practices](native-assembly-renderer-best-practices.md):  The **Renderer** tab stores the HTML, CSS, and Javascript code associated with the native assembly. Any changes made on the **Renderer** tab will automatically be reflected in the **Preview** window.
 1.  [Native Assembly Object Placeholders](native-assembly-object-placeholders.md): You can add a variety of standard and custom data and image object placeholders to the **HTML** text box within the **Renderer** tab for your native assemblies.

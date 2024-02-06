@@ -41,7 +41,7 @@ Based on these buying strategies, Network A would fill out the third-party biddi
 
 ## CPA and CPC payment bid calculations
 
-In order to submit a bid for CPC and CPA payment types, your CPC/A bid must be converted by Microsoft Monetize into eCPMs to compete with all CPM bids. Xandr uses
+In order to submit a bid for CPC and CPA payment types, your CPC/A bid must be converted by Microsoft Monetize into eCPMs to compete with all CPM bids. Microsoft Advertising uses
 historical click-through-rate (CTR) and conversion-rate data to calculate an eCPM.
 
 Example:
@@ -52,11 +52,11 @@ Example:
 | $0.50 CPC | 0.001 | $0.5 |
 | $ 8.50 CPA | 0.0001 | $0.85 |
 
-The bids above would be sent to the Impression Bus for decisioning. For CPC/A Payment types, Xandr is taking the risk of calculating correctly. The bidder pays only on a click or conversion. This is different from using our optimization system which uses a networks goal to create a CPM bid; the network is paying for each impression.
+The bids above would be sent to the Impression Bus for decisioning. For CPC/A Payment types, Microsoft Advertising is taking the risk of calculating correctly. The bidder pays only on a click or conversion. This is different from using our optimization system which uses a networks goal to create a CPM bid; the network is paying for each impression.
 
 ### Targeting inventory when using CPA/C payment
 
-Currently, only Network inventory is available on a CPA/C basis, so if you choose to buy inventory in this manner, please ensure that you are targeting Network inventory, not just exchange inventory. Please reach out to your Xandr Implementation Consultant for insight into what inventory is available on a CPC/A basis.
+Currently, only Network inventory is available on a CPA/C basis, so if you choose to buy inventory in this manner, please ensure that you are targeting Network inventory, not just exchange inventory. Please reach out to your Microsoft Advertising Implementation Consultant for insight into what inventory is available on a CPC/A basis.
 
 ## Reporting on payment types
 

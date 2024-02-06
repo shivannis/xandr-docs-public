@@ -6,14 +6,14 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Creative templates
 
-If you want to customize the way creatives render, you can create your own templates from scratch, or you can copy Xandr standard templates and modify them to fit your needs.
+If you want to customize the way creatives render, you can create your own templates from scratch, or you can copy Microsoft Advertising standard templates and modify them to fit your needs.
 
 Our platform supports common creative types such as videos and banners, as well as increasingly pervasive rich media types such as interstitials and expandables. For each type of creative, a standard creative template is provided that ensures proper rendering on web pages when creatives are served. You can examine the rendering code and the macros used in these standard creative templates, but you cannot edit them.
 
 Creating your own custom templates gives you complete control of the JavaScript and XML rendering code. You can also define macros to prompt your buyers to enter information and make decisions about the behavior of the creative during upload. You can create up to 100 custom templates.
 
 > [!NOTE]
-> Xandr does not provide support for creatives that do not render correctly as a result of errors in the custom template code.
+> Microsoft Advertising does not provide support for creatives that do not render correctly as a result of errors in the custom template code.
 
 For more information, see the following topics:
 

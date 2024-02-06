@@ -8,12 +8,12 @@ ms.date: 10/28/2023
 
 If you would like even more flexibility than what our existing macros provide, you can create a placement tag macro, which will send custom data on the placement ad call so that you can use it in your creative tag. You can create a placement tag macro if you have access to both managed supply and demand.
 
-Placement tag macros can be used for sending page-level data to non-Xandr systems. For more information about our creative macros, see [Creative Macros](creative-macros.md).
+Placement tag macros can be used for sending page-level data to non-Microsoft Advertising systems. For more information about our creative macros, see [Creative Macros](creative-macros.md).
 
 > [!NOTE]
 > Before creating placement tag macros, you should consider the following:
 >
-> - Data passed in using this method is not stored in our data pipeline. There is no reporting available from Xandr related to your use of this feature.
+> - Data passed in using this method is not stored in our data pipeline. There is no reporting available from Microsoft Advertising related to your use of this feature.
 > - Like most of our non-clicktracking creative macros, these macros are populated by our bidder engine. Therefore, they won't populate in creative previews, but only during true auctions.
 
 1. Create a placement using your platform or content management system.

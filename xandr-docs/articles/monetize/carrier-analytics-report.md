@@ -63,23 +63,23 @@ This report's data is retained for 46 days. For more information about how quick
 
 | Column | Filter? | Example | Description |
 |--|--|--|--|
-| Advertiser | Yes | "Mobile Zombies (789)" | The name of the advertiser followed by the ID (Xandr format). |
+| Advertiser | Yes | "Mobile Zombies (789)" | The name of the advertiser followed by the ID (Microsoft Advertising format). |
 | Bid Type | Yes | "Manual" | The optimization phase the node was in when it bid for the impression. Note that the term "give up" is appended to the bid types below if the valuation for that impression falls below the venue's "give up price". Allowed values:<br>"Manual": Applies when you are bidding with a CPM goal, whether it's Base, EAP, or ECP.<br>"Learn": Applies when you are bidding with optimization (CPA, CPC, or margin) and we do not yet have enough data to bid optimized.<br>"Optimized": Applies when you are bidding with optimization (CPA, CPC, or margin) and we have enough data to bid optimized.<br>"Unknown": The node was in an unknown optimization phase.<br>"Optimized give up"<br>"Learn give up"<br>"Manual give up" |
-| Buyer | Yes | "My Network (123)" | The name of the buying member followed by the ID (Xandr format). |
-| Campaign | Yes | "Mobile Campaign (222)" | The name of the campaign followed by the ID (Xandr format). (Does not apply to all advertisers.) |
-| Carrier | Yes | "Sprint - FR (20)" | The name of the carrier followed by the ID (Xandr format). If the carrier is smaller, you may see this value appear as -1 because it is aggregated. |
+| Buyer | Yes | "My Network (123)" | The name of the buying member followed by the ID (Microsoft Advertising format). |
+| Campaign | Yes | "Mobile Campaign (222)" | The name of the campaign followed by the ID (Microsoft Advertising format). (Does not apply to all advertisers.) |
+| Carrier | Yes | "Sprint - FR (20)" | The name of the carrier followed by the ID (Microsoft Advertising format). If the carrier is smaller, you may see this value appear as -1 because it is aggregated. |
 | Connection Type | Yes | "Carrier" | The type of internet connection at the time of the impression. Possible values: "Carrier-based" or "WiFi or Static". |
 | Country | Yes | "US" | The code for the country. |
 | Device Type | Yes | 15 | The type of device on which the impression was served. Possible values: "Phone", "Tablet", or "Other Devices". |
 | Impression Type | Yes | "Resold" | The type of impression. Possible values (associated IDs in parentheses):<br>`Blank (1)`: No creative served.<br>PSA (2): A public service announcement served because no other creative was eligible.<br>Default Error (3): A default creative served due to timeout issue.<br>Default (4): A default creative served because no line item or campaign bid or no other creative was eligible.<br>Kept (5): One of your managed advertisers served a creative.<br>Resold (6): The impression was sold to a third-party buyer.<br>RTB (7): Your creative served on third-party inventory.<br>PSA Default Error (8): A public service announcement served due to timeout issue.<br>External Impression (9): An impression from an impression tracker.<br>External Click (10): A click from a click tracker.<br>Insertion (11): Your creative served on third-party inventory where it persists across page-loads and sessions. |
-| Insertion Order | Yes | "Mobile Insertion Order (321)" | The name of the insertion order followed by the ID (Xandr format). |
-| Line Item | Yes | "Mobile Line Item (111)" | The name of the line item followed by the ID (Xandr format). |
+| Insertion Order | Yes | "Mobile Insertion Order (321)" | The name of the insertion order followed by the ID (Microsoft Advertising format). |
+| Line Item | Yes | "Mobile Line Item (111)" | The name of the line item followed by the ID (Microsoft Advertising format). |
 | Media Type | Yes | "Banner" | The media type of the creative. Possible values: "Banner", "Pop", "Interstitial", "Video", "Text", "Expandable", "Skin", or "Facebook". |
 | Payment Rule | Yes | "Homepage Payment Rule (1215)" | The type of the payment rule followed by the ID. |
 | Payment Type | Yes | "com", "revshare" | The type of payment to a broker. |
-| Publisher | Yes | "Undead.com (456)" | The name of the publisher followed by the ID (Xandr format). |
+| Publisher | Yes | "Undead.com (456)" | The name of the publisher followed by the ID (Microsoft Advertising format). |
 | Revenue Type | Yes | "CPA" | The basis on which the advertiser pays the member. |
-| Seller | Yes | "That Seller (456)" | The name of the selling member followed by the ID (Xandr format). |
+| Seller | Yes | "That Seller (456)" | The name of the selling member followed by the ID (Microsoft Advertising format). |
 | Size | Yes | "728x90" | The size of the creative served. |
 | Split | Yes | "Mobile Split A (342)" | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the Split column (if included) will be null. |
 

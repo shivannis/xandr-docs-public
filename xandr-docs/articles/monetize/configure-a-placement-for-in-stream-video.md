@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 To set up an in-stream video placement, use the [Create a Placement](create-a-placement.md) workflow, select **Allowed Media \> Media Types \> Video**, and provide the required
 information about video context, player width and height, and skippability, as well as whether the ad will be part of a group of sequential ads (ad pod). You can also use the placement to define information about duration, playback method, and mime types.
 
-To make in-stream video available, use the following recommendations for placement setup. Some of the values defined in the Xandr placement definition can be overridden in
+To make in-stream video available, use the following recommendations for placement setup. Some of the values defined in the Microsoft Advertising placement definition can be overridden in
 the query string or on-page code if necessary.
 
 1. On the **Details** tab of the placement, select **Allowed Media \> Media Types \> Video**.

@@ -6,9 +6,9 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Conversion attribution
 
-When an advertiser's conversion pixel loads, Xandr determines if that pixel load can be associated with a user, and if so, whether the user has converted in response to having previously viewed or clicked one of the advertiser's creatives. This process is called conversion attribution.
+When an advertiser's conversion pixel loads, Microsoft Advertising determines if that pixel load can be associated with a user, and if so, whether the user has converted in response to having previously viewed or clicked one of the advertiser's creatives. This process is called conversion attribution.
 
-Xandr performs conversion attribution using the "post-view/post-click" method. Depending upon whether you've created a "post-view" or "post-click" conversion pixel, or a "hybrid" conversion pixel (which is triggered by views **or** clicks), the conversion will be attributed differently.
+Microsoft Advertising performs conversion attribution using the "post-view/post-click" method. Depending upon whether you've created a "post-view" or "post-click" conversion pixel, or a "hybrid" conversion pixel (which is triggered by views **or** clicks), the conversion will be attributed differently.
 
 Whichever type of pixel you use, an important concept to understand is the pixel's lookback window (referred to as its **Expiration**). The lookback window is set by the advertiser for each conversion pixel. It determines how far back in time to search the user's cookie data for evidence of a view or click of the advertiser's creative. If a view or click occurred within the lookback window, it is given credit for the conversion.
 
@@ -22,7 +22,7 @@ Whichever type of pixel you use, an important concept to understand is the pixel
 
 ### Step 2. Our system checks for a cookie stored by the browser, and attributes the conversion if possible
 
-- If there is no Xandr cookie stored by the user's browser, the pixel is recorded as having loaded, but the conversion is UNATTRIBUTED.
+- If there is no Microsoft Advertising cookie stored by the user's browser, the pixel is recorded as having loaded, but the conversion is UNATTRIBUTED.
 - If there is one of our cookies stored by the user's browser, the pixel is recorded as having loaded, and we check the cookie data for the most recent view or click associated with the advertiser's creative.
   If the cookie data does not include a record of a view or click event within the user-specified lookback window, the conversion is UNATTRIBUTED.
 - If our cookie is stored by the user's browser, the pixel is recorded as having loaded, and we check the cookie data for the most recent view or click associated with the advertiser's creative. If the cookie data includes a record of a view or click event within the user-specified lookback window, the conversion is ATTRIBUTED.
@@ -33,7 +33,7 @@ There are three types of conversion pixels: **View**, **Click**, and **Hybrid**.
 be configured separately. The following diagrams illustrate how our system determines attribution given each of the three types of conversion pixel.
 
 > [!NOTE]
-> In all of the following examples, the phrases "last impression" or "last click" are shorthand for "the last impression or click event logged in the Xandr cookie stored in the user's browser".
+> In all of the following examples, the phrases "last impression" or "last click" are shorthand for "the last impression or click event logged in the Microsoft Advertising cookie stored in the user's browser".
 
 ### View conversion pixel
 

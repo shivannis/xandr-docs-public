@@ -51,7 +51,7 @@ In the **Basic Setup** section, enter the basic details and flight dates for the
 
 - **Insertion Orders** - If your advertiser is set up to use insertion orders, click **Edit** and select the insertion orders you want to associate with this line item. The insertion order is automatically associated if you create the line item from the insertion order details screen.
 - **Name** - Enter the name for the line item. You will later be able to search for and report on the line item using this name.
-- **External Code** - If you want to report on the line item using an external code (rather than the internal ID that Xandr assigns automatically), enter the code here.
+- **External Code** - If you want to report on the line item using an external code (rather than the internal ID that Microsoft Advertising assigns automatically), enter the code here.
 - **State** - Set the state of the line item. If "**Active**", child campaigns will be eligible to serve. However, it is best practice to set the state to "**Inactive**" until everything related to the buy has been set up and verified. This will avoid spending before you are ready.
 - **Currency** - Select the currency in which the advertiser will pay you (revenue currency). This defaults to the currency set at the advertiser level, if any, but can be overridden here. Note that you cannot change the currency after saving the line item.
 - **Flight Dates** - Select the start and end dates and times for the line item. Note that the time format (12-hour or 24-hour) and time zone are inherited from the advertiser.
@@ -118,7 +118,7 @@ You can choose from the following revenue types:
   - **Revenue Value** - Enter the amount that the advertiser will pay you per click.
   - **Ensure a minimum margin of ___ %** - If you want to set a minimum margin, check the checkbox and enter the percent minimum margin in the empty field.
 
-- **CPA** - Select this revenue type if the advertiser will pay you every time a user "converts". A conversion happens when a user lands on a page containing a conversion pixel, generally as a result of taking some action (completing a purchase, submitting a form, etc.), and Xandr determines that the event can be attributed to the user having clicked or viewed one of the advertiser's creatives previously. For more details, see [Conversion Attribution](conversion-attribution.md).
+- **CPA** - Select this revenue type if the advertiser will pay you every time a user "converts". A conversion happens when a user lands on a page containing a conversion pixel, generally as a result of taking some action (completing a purchase, submitting a form, etc.), and Microsoft Advertising determines that the event can be attributed to the user having clicked or viewed one of the advertiser's creatives previously. For more details, see [Conversion Attribution](conversion-attribution.md).
   - **Select Conversion Pixels** - When you select CPA as the revenue type, you must then click Edit to view the conversion pixels under the advertiser, select the correct conversion pixel(s) to pay attention to, and then enter the Post-Click Revenue amount and/or Post-View Revenue amount for each selected pixel.
   - **Ensure a minimum margin of ___ %** - If you want to set a minimum margin, check the checkbox and enter the percent minimum margin in the empty field.
 
@@ -137,14 +137,14 @@ You can choose from the following revenue types:
   > [!NOTE]
   > You must enter start and end dates for flights with fixed fees. End dates must have an end time of 11:59 PM, day parting is not supported for fixed fees.
 
-- **Do Not Track Revenue** - Select this option if you do not want to track booked revenue in the Xandr system. Please note that, although defining your revenue values at the line item level is optional for third-party campaigns, not entering your revenue values limits to a great degree the amount of information we can present in the billing reporting tools. If you have any direct campaigns under a line item, you must enter a revenue value (even if it's $0) as this determines how much you will pay your publishers.
+- **Do Not Track Revenue** - Select this option if you do not want to track booked revenue in the Microsoft Advertising system. Please note that, although defining your revenue values at the line item level is optional for third-party campaigns, not entering your revenue values limits to a great degree the amount of information we can present in the billing reporting tools. If you have any direct campaigns under a line item, you must enter a revenue value (even if it's $0) as this determines how much you will pay your publishers.
 
 > [!WARNING]
 > **CPC/CPA Revenue Tracking** - Budgeting based on CPC and CPA revenue is less exact than budgeting based on media cost (Cost Plus) or impressions (CPM) because the "budget events" for CPC- and CPA-based budgets are, by their nature, not within the control of the network or ad server. In these cases, a "budget event" is a click or conversion, as opposed to an impression. For example, your campaign may buy several thousand impressions, but many corresponding clicks or conversions may not happen for hours or even days.
 
 ## Set roadblocking
 
-In cases where your managed publishers are using Xandr's Seller Tag (AST) to conduct a single auction for multiple ad slots on a page, you can serve multiple linked creatives in response to create a roadblock. The ability to enable roadblocking depends on the following requirements:
+In cases where your managed publishers are using Microsoft Advertising's Seller Tag (AST) to conduct a single auction for multiple ad slots on a page, you can serve multiple linked creatives in response to create a roadblock. The ability to enable roadblocking depends on the following requirements:
 
 - You can set roadblocks on the line item or campaign level, but not both. If a campaign already has roadblocking enabled, you cannot enable it on the associated line item. Alternatively, once you enable roadblocking on the line item, you cannot set it on a campaign.
 - Roadblocking can be enabled only for direct inventory. If a campaign is set up to buy third-party inventory, roadblocking cannot be enabled on the line item (or campaign).
@@ -168,7 +168,7 @@ See [Target Your Inventory with Roadblocking](target-your-inventory-with-roadblo
 Optimization (to a performance goal) selections are made via the **Primary KPI** menu. You may set your line item to a primary KPI of CPC, CPA, or CTR.
 
 > [!NOTE]
-> Optimization to a Primary KPI works in conjunction with CPM, CPC, or CPA revenue types when advertisers want to meet goals that are different from the payment types they have chosen (e.g., an advertiser wants to pay CPM but would like you to meet a $50 CPA primary KPI). For all campaigns under the line item, the Xandr optimization engine will consider your entries in the Optimization section fields when deciding whether or not to bid on inventory.
+> Optimization to a Primary KPI works in conjunction with CPM, CPC, or CPA revenue types when advertisers want to meet goals that are different from the payment types they have chosen (e.g., an advertiser wants to pay CPM but would like you to meet a $50 CPA primary KPI). For all campaigns under the line item, the Microsoft Advertising optimization engine will consider your entries in the Optimization section fields when deciding whether or not to bid on inventory.
 
 For more information on the relationship between revenue and tracking, see [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md).
 
@@ -200,7 +200,7 @@ Select this option if your advertiser wants to achieve a goal based on click-thr
 In the **Conversion Tracking** section, click **Edit** to select conversion pixels that you want to be available for reporting, attribution, or CPA optimization for any campaign under the line item. Conversion pixels selected for tracking revenue or advertiser goals will already be selected here. If no conversion pixels exist for the advertiser, see [Create a Conversion Pixel](create-a-conversion-pixel.md) for step-by-step instructions.
 
 > [!NOTE]
-> You can attach a maximum of 20 conversion pixels to a line item. This includes conversion pixels associated with booked revenue and performance goals. If you need to attach more, please speak with your Xandr representative.
+> You can attach a maximum of 20 conversion pixels to a line item. This includes conversion pixels associated with booked revenue and performance goals. If you need to attach more, please speak with your Microsoft Advertising representative.
 
 ## Choose targeting settings
 

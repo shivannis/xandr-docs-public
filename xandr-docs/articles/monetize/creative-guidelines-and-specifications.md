@@ -1,12 +1,12 @@
 ---
 title: Microsoft Monetize - Creative Guidelines and Specifications
-description: In this article, find information about the guidelines and specifications for creatives to serve on the Xandr platform and other third-party platforms.
+description: In this article, find information about the guidelines and specifications for creatives to serve on the Microsoft Advertising platform and other third-party platforms.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - Creative guidelines and specifications
 
-To serve on the Xandr platform and other third-party platforms, all creatives must adhere to the guidelines and specifications listed here, our creative standards, and any other guidelines that may apply.
+To serve on the Microsoft Advertising platform and other third-party platforms, all creatives must adhere to the guidelines and specifications listed here, our creative standards, and any other guidelines that may apply.
 
 Adhere to these guidelines and specifications when creating creatives of any type:
 
@@ -14,8 +14,8 @@ Adhere to these guidelines and specifications when creating creatives of any typ
 - Creatives must be in an approved format such as JPEG, PNG GIF, DHTML, HTML5, or JavaScript third-party ad tags from an approved ad server.
 - After clicking the creative, the user must successfully be redirected to an acceptable landing page within a separate browser tab.
 - The actual dimensions of the creative content must match the dimensions configured for the creative.
-- Creatives may not use local shared objects (LSOs). Creatives hosted by Xandr or trafficked through the Xandr platform may not set Flash cookies or other LSOs for online behavioral advertising, delivery and reporting, or multi-site advertising. Prohibited uses include but are not limited to storing user IDs, interest segments, user browsing history, or other unique user data. LSOs include Flash cookies, browser helper objects, and HTML5 Local Storage.
-- Creatives should not set, read, write, modify, or delete any cookie on a domain that Xandr owns or operates.
+- Creatives may not use local shared objects (LSOs). Creatives hosted by Microsoft Advertising or trafficked through the Microsoft Advertising platform may not set Flash cookies or other LSOs for online behavioral advertising, delivery and reporting, or multi-site advertising. Prohibited uses include but are not limited to storing user IDs, interest segments, user browsing history, or other unique user data. LSOs include Flash cookies, browser helper objects, and HTML5 Local Storage.
+- Creatives should not set, read, write, modify, or delete any cookie on a domain that Microsoft Advertising owns or operates.
 
 For more information about video, audio, and HTML5 guidelines and specifications, as well as native creative asset and creative character specifications, see the following:
 

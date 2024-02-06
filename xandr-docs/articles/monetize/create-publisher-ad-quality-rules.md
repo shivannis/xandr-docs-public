@@ -73,7 +73,7 @@ significantly.
 - Example 2: If both the California Region and Chicago, IL Metro Code are selected, then NO users will be targeted since the Chicago metro code does not overlap with California.
 
 > [!NOTE]
-> When geographic targeting by IP address, you should expect some degree of inaccuracy; though targeting by country is highly accurate, the more specific the targeting, the more imprecise the results. This is especially true when targeting cities, metro codes, and zip codes. Xandr uses the IP lookup service provided by [Digital Envoy](https://www.digitalelement.com/geolocation/). For more information, [contact Digital Envoy directly](http://www.digitalelement.com/contact-us/).
+> When geographic targeting by IP address, you should expect some degree of inaccuracy; though targeting by country is highly accurate, the more specific the targeting, the more imprecise the results. This is especially true when targeting cities, metro codes, and zip codes. Microsoft Advertising uses the IP lookup service provided by [Digital Envoy](https://www.digitalelement.com/geolocation/). For more information, [contact Digital Envoy directly](http://www.digitalelement.com/contact-us/).
 
 #### Country
 

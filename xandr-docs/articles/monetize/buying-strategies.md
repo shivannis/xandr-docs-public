@@ -17,7 +17,7 @@ You can choose to pay publishers for every impression. This payment type is acce
 
 If you choose to use your [standard line item's](create-a-standard-line-item.md) Booked Revenue to bid, your bid will be based on your booked revenue with whatever % margin off the top that you choose. For example, if your booked revenue is $1 CPM, and you set a bidding strategy margin of 25%, your campaign will bid $0.75. If your booked revenue type is a CPA or CPC goal, it will apply your desired margin and optimize to that predicted goal.
 
-If you have advertiser goals at the line item level, Xandr will calculate an optimized eCPM based on the line item booked revenue (after a margin has been calculated) and a
+If you have advertiser goals at the line item level, Microsoft Advertising will calculate an optimized eCPM based on the line item booked revenue (after a margin has been calculated) and a
 click through or conversion rate. Then it will check to see if this bid will meet the advertiser goal. If so, bid. If not, do not bid.
 
 If you choose to optimize to a % margin of your booked revenue, you also have the option to place a max and min bid.
@@ -61,7 +61,7 @@ You may wish to pay the going platform rate for the inventory you desire, which 
 - EAP is an estimate of a bid that is likely to win about half of impressions, based on observing historical bids.
 - ECP is an estimate of a bid that is likely to win the impression from a given publisher, based on observing historical bids.
 
-These estimates are based only on Xandr bids in RTB auctions.
+These estimates are based only on Microsoft Advertising bids in RTB auctions.
 
 You have the option to set a minimum and maximum bid range as well as using the [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md) to modify your
 bid according to frequency and recency. You can also set a min/max bid here as well.

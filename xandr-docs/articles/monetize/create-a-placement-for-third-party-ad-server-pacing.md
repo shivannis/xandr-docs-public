@@ -43,7 +43,7 @@ PG deals that use a third-party ad server for pacing require a single, exclusive
 1. Select a media (creative) type for the placement.
 
     > [!IMPORTANT]
-    > You can currently only use banner creatives in your PG deal without a Xandr representative's assistance. If you'd like to use other creative types, please contact your Xandr account representative.
+    > You can currently only use banner creatives in your PG deal without a Microsoft Advertising representative's assistance. If you'd like to use other creative types, please contact your Microsoft Advertising account representative.
 
 1. Select a size for the media type.
 

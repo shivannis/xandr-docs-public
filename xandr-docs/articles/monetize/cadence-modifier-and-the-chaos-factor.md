@@ -38,7 +38,7 @@ The initial data (frequency, recency, and conversion likelihood) which makes up 
 
 - **Creative -** The creative-level cadence type measures frequency and recency of how often a user has seen the particular creative. This cadence type is recommended for generic creatives or when the creative is unlike other creatives under the advertiser.
 
-- **Default** - If the model has insufficient conversion rate information (e.g., a brand new advertiser), the table is populated with default values from Xandr. These default
+- **Default** - If the model has insufficient conversion rate information (e.g., a brand new advertiser), the table is populated with default values from Microsoft Advertising. These default
   values are used in auctions until sufficient impressions and conversion data is obtained.
 
   Once initial data has been applied, the system can begin to bid on auctions. As impressions are won, the system gains additional information about when users convert impressions and adjusts the individual buckets accordingly. The borders of a bucket can shift based on statistical changes, as can the likelihood factor.
@@ -48,7 +48,7 @@ The initial data (frequency, recency, and conversion likelihood) which makes up 
 
 ## Applying the chaos factor
 
-Bidding is not an exact science. While Xandr has tools that strive to determine the most effective bid amount for each auction, there is no guarantee that the bid is the best possible value. Therefore, after the bid is determined and the Cadence Modifier is applied, a final factor called the **Chaos Factor** is applied. This is a random calculation which can increase or decrease a bid up to the mean statistical variation of the frequency/recency bucket (which rarely exceeds 5%). In the event of similar campaigns that have very close bid amounts, the chaos factor ensures that neither campaign will win all of the auctions over the other. The chaos factor is used whenever the cadence modifier is applied, but cannot be applied to a bid amount independently.
+Bidding is not an exact science. While Microsoft Advertising has tools that strive to determine the most effective bid amount for each auction, there is no guarantee that the bid is the best possible value. Therefore, after the bid is determined and the Cadence Modifier is applied, a final factor called the **Chaos Factor** is applied. This is a random calculation which can increase or decrease a bid up to the mean statistical variation of the frequency/recency bucket (which rarely exceeds 5%). In the event of similar campaigns that have very close bid amounts, the chaos factor ensures that neither campaign will win all of the auctions over the other. The chaos factor is used whenever the cadence modifier is applied, but cannot be applied to a bid amount independently.
 
 ## Other considerations
 

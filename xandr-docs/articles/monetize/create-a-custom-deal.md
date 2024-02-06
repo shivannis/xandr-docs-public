@@ -17,7 +17,7 @@ If you would like to create a package for buyers to browse and generate their ow
 This page describes the properties you can define when creating a deal.
 
  > [!NOTE]
-> Clients of different types may see different options when creating a deal. This page covers all options in the create a deal workflow. If you do not have access to certain settings or options or have any other questions, please reach out to your Xandr representative.
+> Clients of different types may see different options when creating a deal. This page covers all options in the create a deal workflow. If you do not have access to certain settings or options or have any other questions, please reach out to your Microsoft Advertising representative.
 >
 > If you are assigning a deal to a curator account, you must [create a deal line item](create-a-deal-line-item.md). Custom deals are not supported with curator members. See
 > [Curated Deals](curated-deals.md) for more information.
@@ -43,8 +43,8 @@ Enter basic details for the new deal:
 
 - **Name** - Enter the name for the deal.
 - **Buyer** - If you are creating a deal from the **Deals** screen, select the buyer for whom you are creating the deal. Buyers can be listed using a
-  Xandr member ID or (for external DSPs) using a buyer seat ID. For more information, see [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md). Note that some seat IDs are visible but aren't yet eligible for bidding: check [External DSPs Using Buyer Seat IDs](external-dsps-using-buyer-seat-ids.md) for the latest information.
-- **Code -** If you want to report on the deal using an external code (rather than the internal ID that Xandr assigns automatically), enter the code here.
+  Microsoft Advertising member ID or (for external DSPs) using a buyer seat ID. For more information, see [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md). Note that some seat IDs are visible but aren't yet eligible for bidding: check [External DSPs Using Buyer Seat IDs](external-dsps-using-buyer-seat-ids.md) for the latest information.
+- **Code -** If you want to report on the deal using an external code (rather than the internal ID that Microsoft Advertising assigns automatically), enter the code here.
 - **Start Date -** Enter the start date for the deal.
 - **End Date -** Enter the end date for the deal. This information is not required. A deal with no end date will be active until you cancel it.
 
@@ -76,10 +76,10 @@ Enter basic details for the new deal:
 
   - **Specify an ask price** - Select this if you would like to enter a price for the deal. You must enter an ask price for private auction deals.
 
-    Enter the price you would like the buyer to see in the **Ask Price** field. The system automatically deducts the revenue fee specified in your Xandr contract to determine the amount you will receive (**Min. Revenue**).
+    Enter the price you would like the buyer to see in the **Ask Price** field. The system automatically deducts the revenue fee specified in your Microsoft Advertising contract to determine the amount you will receive (**Min. Revenue**).
 
     - **Ask Price** - This is the **Min. Revenue** plus any fees. This amount, which is visible to the buyer, is the minimum amount the buyer must bid in order to compete for this inventory.
-    - **Fees** - The revenue share fees specified in your Xandr contract.
+    - **Fees** - The revenue share fees specified in your Microsoft Advertising contract.
     - **Min. Revenue** - The minimum amount you are willing to accept for this inventory. This amount is not visible to the buyer.
 
     > [!NOTE]
@@ -279,7 +279,7 @@ By default, deals follow network ad quality settings to determine buyer trust le
 To allow deals to serve more creatives, click **Edit** in the Trust Level section and choose one of the following:
 
 - **Default:** Default setting. If selected, this deal uses the existing publisher ad quality buyer trust level.
-- **Allow pending creatives:** If checked, the default setting is used but creatives submitted for Xandr audit in the
+- **Allow pending creatives:** If checked, the default setting is used but creatives submitted for Microsoft Advertising audit in the
   "pending" state are allowed to serve. Once the audit is complete, the creative uses the default ad quality setting.
 - **Maximum:** If selected, all creatives are allowed to serve for this deal (except for creatives specifically banned; see below).
 

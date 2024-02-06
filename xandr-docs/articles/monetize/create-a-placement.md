@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Create a placement
 
 > [!NOTE]
-> Xandr now supports a domain, [adnxs-simple.com](http://adnxs-simple.com/), which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Xandr will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Reinforcing-Privacy-Controls-Through-a-Cookie-Free-Domain.aspx) (login required).
+> Microsoft Advertising now supports a domain, [adnxs-simple.com](http://adnxs-simple.com/), which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Microsoft Advertising will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Reinforcing-Privacy-Controls-Through-a-Cookie-Free-Domain.aspx) (login required).
 
 A placement is the object in our system that represents (and is used to generate) the tag that is placed on a publisher's page.
 
@@ -34,7 +34,7 @@ Enter a **Name** for the placement and do any of the following:
 - If you do not want the placement to be active once it's saved, select **Inactive**. Otherwise, the **State** field is set to **Active** by default.
 
     > [!NOTE]
-    > If you try to serve an impression on an inactive placement, the impression will be blank and Xandr will not redirect it.
+    > If you try to serve an impression on an inactive placement, the impression will be blank and Microsoft Advertising will not redirect it.
 
 - If you want to override publisher-level payment rules, select the **Use placement-level pricing** checkbox and then enter the CPM amount that the publisher should receive.
 - If you'd like to set a reserve price on this placement, select the **Set a placement reserve price** checkbox and enter a CPM price into the text area. Note that any reserve price you enter here will be applied to all demand for this placement. However, you can change this setting later by editing **Reserve Price Setting**. For more information, see [Update a Placement](update-a-placement.md).
@@ -53,7 +53,7 @@ In the **Allowed Media** section of the **Placement Details** tab, you can limit
 
 ### Media types and subtypes
 
-The Xandr platform categorizes creatives by media type and media subtype. Media type defines the general display style of creatives such as Standard Banner and Native, and media subtype defines the specific display style of creatives such as Standard Banner, In-Banner Video, In-Feed Standard, and Content Marketing. By default, creatives of the "Banner" media type are allowed to serve on the placement. If you want to change this setting, select the **Other** radio button and include the media types or subtypes that you want to allow.
+The Microsoft Advertising platform categorizes creatives by media type and media subtype. Media type defines the general display style of creatives such as Standard Banner and Native, and media subtype defines the specific display style of creatives such as Standard Banner, In-Banner Video, In-Feed Standard, and Content Marketing. By default, creatives of the "Banner" media type are allowed to serve on the placement. If you want to change this setting, select the **Other** radio button and include the media types or subtypes that you want to allow.
 
 - **Type and Subtype Combinations:** You can combine the "Banner" and "Text" media types, and any combination of their media subtypes, on a single placement, but you cannot combine any of the other media types and subtypes. This limitation ensures that only appropriate creatives are served on a placement. For example, a placement that allows creatives of the "Video" media type is intended to be fed to a video player; it would not make sense to allow creatives of any other media type, such as "Interstitial," to serve on the placement.
 - **Expandable Placements:** You can set a placement to allow the "Expandable" media type or any of its subtypes for direct (not resellable) inventory only.
@@ -124,7 +124,7 @@ Within a video placement, there is a field named skipoffsetseconds. A publisher 
 ### Mixed media and mime type options
 
 > [!NOTE]
-> If a creative's VAST contains both VPAID and inline video files, it will be assigned the VPAID frameworks when it's uploaded in Xandr. Therefore, certain placements that permit multiple creative types may be blocked in auction. To ensure accurate creative matching, you should follow the steps outlined below.
+> If a creative's VAST contains both VPAID and inline video files, it will be assigned the VPAID frameworks when it's uploaded in Microsoft Advertising. Therefore, certain placements that permit multiple creative types may be blocked in auction. To ensure accurate creative matching, you should follow the steps outlined below.
 
 To set mime type options (recommended), select the **Show Mime Type Options** checkbox. This opens the **Mime Type Options** section. From there, you will need to set two distinct fields: **Handles Mixed Media** and **Video Mime Types**.
 
@@ -132,12 +132,12 @@ To set mime type options (recommended), select the **Show Mime Type Options** ch
 
 This checkbox is used to denote if your player can successfully parse a creative and identify the correct media files if the creative has media files with varying mime types.
 
-- If checked, Xandr will serve a creative as long as it has one media file you do support.
-- If not checked, Xandr won't serve a creative unless it only has the media files you do support.
+- If checked, Microsoft Advertising will serve a creative as long as it has one media file you do support.
+- If not checked, Microsoft Advertising won't serve a creative unless it only has the media files you do support.
 
 ### Video mime types
 
-These checkboxes allow you to identify the format of the file. For instance, **video/mp4** is a mime type that tells Xandr the file is a video and the type of video file is mp4. All mime types are selected by default.
+These checkboxes allow you to identify the format of the file. For instance, **video/mp4** is a mime type that tells Microsoft Advertising the file is a video and the type of video file is mp4. All mime types are selected by default.
 
 - To ensure we are only serving creatives with media files that your player can play, select the mime types that you know your player supports by checking the appropriate boxes.
 - If your player does not support VPAID, do **NOT** check application/javascript or application/x-shockwave-flash.
@@ -148,7 +148,7 @@ On the **Content Categories** tab, you can apply **universal** and **custom** ca
 
 ### Universal categories
 
-You can apply up to 20 categories from the Xandr universal list of content categories. Your managed advertisers and other buyers who trust your self-categorization can target these categories through their campaigns.
+You can apply up to 20 categories from the Microsoft Advertising universal list of content categories. Your managed advertisers and other buyers who trust your self-categorization can target these categories through their campaigns.
 
 ### Custom categories
 
@@ -160,10 +160,10 @@ Once a custom category has at least one placement associated to it, buyers can s
 
 ## Step 6. Self-audit the placement for sensitive categories
 
-On the **Self-Audit Settings** tab, you can self-classify the placement for sensitive attributes and intended audience. Your advertisers and buyers who trust your self-audit can target these settings in their campaigns. Xandr may also audit this inventory if it meets volume thresholds.
+On the **Self-Audit Settings** tab, you can self-classify the placement for sensitive attributes and intended audience. Your advertisers and buyers who trust your self-audit can target these settings in their campaigns. Microsoft Advertising may also audit this inventory if it meets volume thresholds.
 
 > [!WARNING]
-> You will be notified of undeclared and improperly declared toolbar inventory on a weekly basis. Xandr will flag this inventory and declare/properly declare it within 72 hours of notification.
+> You will be notified of undeclared and improperly declared toolbar inventory on a weekly basis. Microsoft Advertising will flag this inventory and declare/properly declare it within 72 hours of notification.
 > [!NOTE]
 > For compliance with the Children's Online Privacy Protection Act (COPPA), designating your placement as intended for children will indicate to our system to apply special COPPA rules, including that user information will not be collected. Campaigns requiring user information for frequency capping or other targeting purposes will not serve on this placement.
 
@@ -183,4 +183,4 @@ If you want a piggyback pixel to fire when a creative serves on the placement, e
 
 ## Step 9. Save the placement
 
-To finish adding the placement to the Xandr platform, click the **Save** button. The placement is then added to the **Placement List** in the **Placement Manager**.
+To finish adding the placement to the Microsoft Advertising platform, click the **Save** button. The placement is then added to the **Placement List** in the **Placement Manager**.

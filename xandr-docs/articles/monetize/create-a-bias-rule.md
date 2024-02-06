@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Create a bias rule
 
 > [!NOTE]
-> This feature is not available by default. If you are interested in gaining access or discussing potential use cases that may apply to your business, reach out to your Xandr representative.
+> This feature is not available by default. If you are interested in gaining access or discussing potential use cases that may apply to your business, reach out to your Microsoft Advertising representative.
 
 You can create bias rules to make bids appear higher or lower than they actually are, thereby influencing the outcome of an auction.
 
@@ -143,7 +143,7 @@ Select **Audience Targeting \> Geography** to create a bias rule that applies to
 >
 > Users of geographic targeting should expect some degree of inaccuracy; though targeting by country is highly accurate, the more specific the targeting, the more imprecise the results. This is especially true when targeting locations as granular as cities, metro codes, and zip codes.
 >
-> Xandr uses the IP lookup service provided by [MaxMind](http://www.maxmind.com). For more information, read about their [GeoIP Technology](http://www.maxmind.com/en/geolocation_landing) or [contact MaxMind directly](http://www.maxmind.com/app/contact).
+> Microsoft Advertising uses the IP lookup service provided by [MaxMind](http://www.maxmind.com). For more information, read about their [GeoIP Technology](http://www.maxmind.com/en/geolocation_landing) or [contact MaxMind directly](http://www.maxmind.com/app/contact).
 >
 > **Geographic targeting and boolean logic**
 >

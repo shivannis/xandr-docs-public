@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 You can insert creative macros into your creative third-party tags, impression trackers, landing page URLs, and third-party pixels for reporting and optimization purposes.
 
-A creative macro is a text placeholder that is replaced with impression-level information when a creative is served. This impression-level information is transmitted to systems outside of Xandr, which you can then use for reporting, optimization, and many other purposes. When multiple values are requested, data is sent in a comma separated list. For more information about the creative macros that we support, see [Supported Creative Macros](supported-creative-macros.md).
+A creative macro is a text placeholder that is replaced with impression-level information when a creative is served. This impression-level information is transmitted to systems outside of Microsoft Advertising, which you can then use for reporting, optimization, and many other purposes. When multiple values are requested, data is sent in a comma separated list. For more information about the creative macros that we support, see [Supported Creative Macros](supported-creative-macros.md).
 
 Every macro needs a key to precede it to communicate to the ad server what information should be populated. In the example below, the keys are `cb` and `age` and the macros are `${CACHEBUSTER}` and `${AGE}`:
 
@@ -16,7 +16,7 @@ Every macro needs a key to precede it to communicate to the ad server what infor
 https://lensmaster.com/newsunglasses?cb=${CACHEBUSTER}&age=${AGE}
 ```
 
-Keys are specific to the ad server. It's important to note that Xandr auto-inserts click tracking and cache buster macros for specific ad servers. For more information, see [Auto Macro Insertion](auto-macro-insertion.md). Additionally, most creative macros are populated by our bidder engine with the exception of click tracking macros. Therefore, they won't populate in creative previews, but only during true auctions.
+Keys are specific to the ad server. It's important to note that Microsoft Advertising auto-inserts click tracking and cache buster macros for specific ad servers. For more information, see [Auto Macro Insertion](auto-macro-insertion.md). Additionally, most creative macros are populated by our bidder engine with the exception of click tracking macros. Therefore, they won't populate in creative previews, but only during true auctions.
 
 > [!NOTE]
 > Creative macros are case-sensitive and aren't available for piggyback conversion pixels.

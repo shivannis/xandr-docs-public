@@ -30,19 +30,19 @@ Audience buying is a basic kind of campaign setup used by many buyers to target 
 engaging or clicking an ad, and drive more traffic to your advertiser's offer or website. This is a very commonly employed strategy for direct response campaigns. The segments used for this type of campaign are usually acquired in one of two ways:
 
 - Buying data segments from third-party data providers
-- Collecting your own data that is synced with Xandr user IDs
+- Collecting your own data that is synced with Microsoft Advertising user IDs
 
 The procedures outlined on this page do not describe the different methods for collecting data and assume that the buyer already has access to the data when the campaign is being setup. Audience buying campaigns feature a very simple setup and should have few restrictions on delivery outside of the segment target.
 
 > [!IMPORTANT]
-> One of the main reasons that Audience Buying campaigns fail to deliver is because the targeted segments contain too small a pool of users. Therefore, if this occurs, check segment loads. For third-party segments, traffickers will need to reach out to the third-party as Xandr does not have access to this segment load information. Also, if your daily budget is less than $100, pacing may be affecting campaign delivery.
+> One of the main reasons that Audience Buying campaigns fail to deliver is because the targeted segments contain too small a pool of users. Therefore, if this occurs, check segment loads. For third-party segments, traffickers will need to reach out to the third-party as Microsoft Advertising does not have access to this segment load information. Also, if your daily budget is less than $100, pacing may be affecting campaign delivery.
 
 **Retargeting**
 
 Retargeting campaigns are designed to drive users back to a website or product page. For example, if a user has visited the page for a shoe product, segmenting and retargeting this user on the exchange can help drive the user back to the product page to complete a purchase. Buyers employ this strategy to concentrate their buying on users they have
 deemed valuable. Retargeting is also a valuable strategy if you have a relationship with a premium publisher that sees high quality traffic. By segmenting the users that visit your publisher's web property, you have a valuable audience that you can retarget on third-party inventory. The general process can be broken into two distinct steps: 1. Collect users that visit a webpage (most likely will be that of a managed publisher) into a segment. 2. Target that segment in an audience-buying campaign.
 
-The usual case involves placing a segment pixel on a publisher's page to collect users into that segment (e.g., using a piggyback pixel). Sometimes, advertisers will have access to visitors to a page and will push those audiences into the Xandr seat. Retargeting involves working with publishers to collect users in a segment and then targeting that segment in a campaign. Just like audience buying, retargeting campaigns should have few restrictions on delivery outside of the segment target.
+The usual case involves placing a segment pixel on a publisher's page to collect users into that segment (e.g., using a piggyback pixel). Sometimes, advertisers will have access to visitors to a page and will push those audiences into the Microsoft Advertising seat. Retargeting involves working with publishers to collect users in a segment and then targeting that segment in a campaign. Just like audience buying, retargeting campaigns should have few restrictions on delivery outside of the segment target.
 
 > [!IMPORTANT]
 > If you are having delivery issues, first verify that the targeted segment contains users by viewing segment loads or reaching out to the third-party data provider. If your daily budget is less than $100, pacing may be affecting campaign delivery.
@@ -80,7 +80,7 @@ In the **Campaign Type** section, select **Buy direct/third-party inventory**. T
 In the **Basic Setup** section, enter the basic details and flight dates for the campaign.
 
 - **Name** - Enter the name for the campaign. You will later be able to search for and report on the campaign using this name.
-- **External Code** - If you want to report on the campaign using an external code (rather than the internal ID that Xandr assigns automatically), enter the code
+- **External Code** - If you want to report on the campaign using an external code (rather than the internal ID that Microsoft Advertising assigns automatically), enter the code
   here.
 - **State** - The state is set to "Inactive" by default to prevent the campaign from spending before all necessary settings and creatives are complete. You can set the state to "Active" at any time.
 - **Flight Dates** - Set the start for the campaign and set an end date or select **Run Indefinitely**. Note that the time format (12-hour or 24-hour) and time zone are inherited from the advertiser. Enter or select the start and end dates and times for the campaign.
@@ -92,7 +92,7 @@ In the **Basic Setup** section, enter the basic details and flight dates for the
 
 ### Step 6. Set the campaign budget
 
-By default, your campaign media Budget is unlimited. If you prefer, you can define exactly how much you are willing to spend on buying inventory for the campaign. The budget can be in impressions or in media cost (dollars). Note that media cost is in USD rather than the advertiser's currency because USD is the currency in which Xandr transacts.
+By default, your campaign media Budget is unlimited. If you prefer, you can define exactly how much you are willing to spend on buying inventory for the campaign. The budget can be in impressions or in media cost (dollars). Note that media cost is in USD rather than the advertiser's currency because USD is the currency in which Microsoft Advertising transacts.
 
 > [!IMPORTANT]
 > You can set budgets at the insertion order and line item levels as well. Budgets at these levels take precedence over a child campaign's budget; if they run out, the
@@ -118,7 +118,7 @@ By default, your campaign media Budget is unlimited. If you prefer, you can defi
   > [!NOTE]
   > If you have enabled the unlimited budget warning feature, you will not be able to set the budget for your campaign to unlimited if the line item and (if applicable) insertion order budgets are also set to unlimited. This feature prevents mistaken overspend that can result when budgets are set to unlimited at all levels. When the feature is enabled, to set your campaign budget to unlimited, you must first limit the budget for either the insertion order or line item associated with the campaign.
   >
-  > To enable this feature, speak to your Xandr representative.
+  > To enable this feature, speak to your Microsoft Advertising representative.
 
 ### Step 7. Define the buying strategies
 
@@ -139,7 +139,7 @@ To run the campaign on your own managed publishers or direct buys, check the **B
   > By default, campaign priority is 5. If you leave this default for all of your direct campaigns, no campaign will be given precedence over any other. As soon as you
   > change the priority in one of your direct campaigns, however, ALL of your eligible campaigns are potentially impacted.
 
-- **Enable Roadblocking** - In cases where your managed publishers are using Xandr's Seller Tag (AST) to conduct a single auction for multiple ad slots on a page, you can serve multiple linked creatives in response, also known as roadblocking. If a roadblock campaign is eligible, the campaign priority is effectively 11. There are three possible types of roadblocks:
+- **Enable Roadblocking** - In cases where your managed publishers are using Microsoft Advertising's Seller Tag (AST) to conduct a single auction for multiple ad slots on a page, you can serve multiple linked creatives in response, also known as roadblocking. If a roadblock campaign is eligible, the campaign priority is effectively 11. There are three possible types of roadblocks:
   - **Normal Roadblock** - The number of creatives is greater than or equal to the number of ad slots.
   - **Partial Roadblock** - One creative for each size must be eligible to serve on the page. All creatives will serve if ad slots are
     available. If more than one creative per size exists, creative will rotate through a single slot.
@@ -154,7 +154,7 @@ To run the campaign on your own managed publishers or direct buys, check the **B
 
 #### Buy Third-Party Inventory
 
-To run the campaign on inventory from other members of the Xandr platform and from external partners and exchanges, check the **Buy Third-Party Inventory** box. Then decide how
+To run the campaign on inventory from other members of the Microsoft Advertising platform and from external partners and exchanges, check the **Buy Third-Party Inventory** box. Then decide how
 you want to pay for third-party inventory (per impression, per click, and/or per conversion) and define exactly how you want to calculate your bids. Note that the revenue type of the parent line item determines which buying strategy options are available and, of those available, which are recommended. For a detailed explanation of your options, see
 [Buying Strategies](buying-strategies.md).
 
@@ -169,13 +169,13 @@ you want to pay for third-party inventory (per impression, per click, and/or per
 > - For more information, please see [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md).
 > - To learn about setting up Performance Goals on the line item, see Step 6 of [Create a Standard Line Item](create-a-standard-line-item.md).
 
-- **Pay on a Per-impression (CPM) basis** - Select this option to pay publishers for every impression. This payment type is accepted by all sellers (Xandr sellers and external sellers)
+- **Pay on a Per-impression (CPM) basis** - Select this option to pay publishers for every impression. This payment type is accepted by all sellers (Microsoft Advertising sellers and external sellers)
 
   - **Optimize to a % margin of booked revenue** - Use this strategy to bid a % margin of the revenue that the advertiser pays you. For example, if your booked revenue is $1 CPM, and you set a bidding strategy margin of 25%, your campaign will bid $0.75. If your booked revenue type is a CPA or CPC goal, it will apply your desired margin and optimize to that predicted goal.
     - **Bid CPM: max $\_ CPM min $\_ CPM** - Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
     - **Enable Cadence Modifier** - Under OTHER OPTIONS, check this box to vary your bid based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user hasn't seen it before or hasn't seen it many times or seen it recently. For more details, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
   - **Optimize to a predicted CPA goal** - Use this strategy to vary bids based on the likelihood of an attributed conversion for each piece of inventory. This strategy uses the
-    Xandr optimization engine.
+    Microsoft Advertising optimization engine.
     - **Bid $\_ post-click/post-view CPA** - Select the conversion pixel to which you want to optimize and enter the dollar amount per conversion that you want the optimization engine to aim for.
     - **Learn Budget** - The learn budget is the portion of your campaign budget that you want to commit to optimizing your campaign, which helps you quickly find slices of third-party inventory that provide a positive ROI. The first phase of this process is called Learn. You can set a lifetime learn budget of up to 100% of the campaign budget as well as a daily cap for learning. For more information about optimization and learning, see [Targeted Learn](targeted-learn.md).
     - **Bid at most $\_ CPM in Learn Phase** - When your campaign starts to spend on new inventory, the optimization engine submits "learn" bids. If necessary, enter max CPM dollar amount for these bids.
@@ -187,7 +187,7 @@ you want to pay for third-party inventory (per impression, per click, and/or per
     - **Bid CPM**: **max $\_ CPM min $_ CPM** - Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
     - **Enable Cadence Modifier** - This option appears under OTHER OPTIONS and cannot be deselected. When optimizing to a predicted CPA goal, your bids will always vary based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user hasn't seen
       it before or hasn't seen it many times or seen it recently. For more details, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
-  - **Optimize to a predicted CPC goal** - Use this strategy to vary bids based on the likelihood of a click for each piece of inventory. This strategy uses the Xandr optimization engine.
+  - **Optimize to a predicted CPC goal** - Use this strategy to vary bids based on the likelihood of a click for each piece of inventory. This strategy uses the Microsoft Advertising optimization engine.
       - **Optimize to $\_ per click** - Enter the dollar amount per click that you want the optimization engine to aim for when calculating bids.
       - **Learn Budget** - The learn budget is the portion of your campaign budget that you want to commit to optimizing your campaign, which helps you quickly find slices of third-party inventory that provide a positive ROI. The first phase of this process is called Learn. You can set a lifetime learn budget of up to 100% of the campaign budget as well as a daily cap for learning. For more information about optimization and learning, see [Targeted Learn](targeted-learn.md).
       - **Bid at most $\_ CPM in Learn Phase** - When your campaign starts to spend on new inventory, the optimization engine submits "learn" bids. It is recommended to enter a max CPM dollar about for these bids. In doing so, you will avoid learning on inventory that is too expensive while not limiting yourself from optimized inventory sources that are worth higher prices. For more details and suggestion for using this feature, see Max Learn CPM.
@@ -205,10 +205,10 @@ you want to pay for third-party inventory (per impression, per click, and/or per
       it before or hasn't seen it many times or seen it recently. For more details, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
     - **Bid CPM: max $\_CPM min $\_ CPM** - This option is available under OTHER OPTIONS only once you enable Cadence Modifier. Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
   - **Target reach and delivery** - Use this strategy to bid the going platform rate for each piece of inventory.
-    - **Auto-bid to win most platform impressions (ECP)** - Select this option to bid an estimate of the price that is likely to win most impressions from Xandr platform sellers
+    - **Auto-bid to win most platform impressions (ECP)** - Select this option to bid an estimate of the price that is likely to win most impressions from Microsoft Advertising platform sellers
       based on historical bids and their success or failure. Since off-platform sellers (e.g., Google Ad Manager, Rubicon, etc.)
       conduct a secondary auction, bidding ECP does not necessarily ensure winning off-platform impressions.
-    - **Auto-bid to win ~50% of platform impressions (EAP)** - Select this option to bid an estimate of the price that is likely to win about half of the impressions from Xandr
+    - **Auto-bid to win ~50% of platform impressions (EAP)** - Select this option to bid an estimate of the price that is likely to win about half of the impressions from Microsoft Advertising
       platform sellers based on historical bids and their success or failure. Since off-platform sellers (e.g., Google Ad Manager, Rubicon, etc.) conduct a secondary auction, bidding EAP does not necessarily ensure winning half of off-platform impressions.
     - **Bid CPM: max $\_ CPM min $\_ CPM** - Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
     - **Enable Cadence Modifier** - Under OTHER OPTIONS, check this box to vary your bid based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user hasn't seen it before or hasn't seen it many times or seen it recently. For
@@ -239,17 +239,17 @@ not have cookies.
 > [!IMPORTANT]
 > Cookieless Users on Mobile Devices
 >
-> - Targeting cookieless user does not affect mobile app targeting. Almost all in-app inventory has a device ID associated with it; this device ID is then associated with a cookie from Xandr.
+> - Targeting cookieless user does not affect mobile app targeting. Almost all in-app inventory has a device ID associated with it; this device ID is then associated with a cookie from Microsoft Advertising.
 > - For mobile web campaigns, checking **Show to users without cookies** is currently the only way to serve ads to Safari users, since Safari disables third-party (advertising) cookies by default.
 
 ### Step 9. Set optimization levers
 
-If your buying strategy uses the Xandr optimization engine, you can adjust **Optimization Levers** to influence how optimization works for your campaign, for example, how much you bid during the Learn phase, how many success events (clicks or conversions) it takes to move from the Learn phase to the Optimized phase, as well as whether you want to optimize to the campaign bidding strategy before optimizing to the line item booked revenue.
+If your buying strategy uses the Microsoft Advertising optimization engine, you can adjust **Optimization Levers** to influence how optimization works for your campaign, for example, how much you bid during the Learn phase, how many success events (clicks or conversions) it takes to move from the Learn phase to the Optimized phase, as well as whether you want to optimize to the campaign bidding strategy before optimizing to the line item booked revenue.
 
 To access optimization levers, click the **Edit** button under **Buying Strategies** \> **OTHER OPTIONS**. For detailed explanations of each lever, see Optimization Levers.
 
 > [!IMPORTANT]
-> If you do not have access to optimization levers and are interested in learning more about about them, please contact your Xandr account representative.
+> If you do not have access to optimization levers and are interested in learning more about about them, please contact your Microsoft Advertising account representative.
 
 ### Step 10. Add targeting
 
@@ -328,7 +328,7 @@ To add a new serving fee:
 
 ### Step 14. Review and save your campaign
 
-Confirm that the campaign details are correct and then click the **Save** button to finish adding the campaign to Xandr. The campaign is then added to 
+Confirm that the campaign details are correct and then click the **Save** button to finish adding the campaign to Microsoft Advertising. The campaign is then added to 
 the list of campaigns on the [Explore Campaigns](explore-campaigns.md).
 
 ### Step 15. Complete peer approval

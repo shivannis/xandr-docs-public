@@ -37,7 +37,7 @@ The **Create New Insertion Order** screen is then displayed. Define all relevant
 In the **Basic Setup** section, enter the basic details and flight dates for the insertion order.
 
 - **Name** - Enter the name for the insertion order. You will later be able to search for and report on the insertion order using this name.
-- **External Code** - If you want to report on the insertion order using an external code (rather than the internal ID that Xandr assigns automatically), enter the code here. The code may only contain alphanumeric characters, periods, underscores or dashes. The code you enter is not case-sensitive (upper- and lower-case characters are treated the same). No two objects at the same level (e.g., line items or campaigns) can use the same code per advertiser. For example, two line items cannot both use code "XYZ", but a single line item and its child campaign can.
+- **External Code** - If you want to report on the insertion order using an external code (rather than the internal ID that Microsoft Advertising assigns automatically), enter the code here. The code may only contain alphanumeric characters, periods, underscores or dashes. The code you enter is not case-sensitive (upper- and lower-case characters are treated the same). No two objects at the same level (e.g., line items or campaigns) can use the same code per advertiser. For example, two line items cannot both use code "XYZ", but a single line item and its child campaign can.
 - **Billing Code** - Enter any internal billing code you want to associate with this insertion order. If you receive an invoice per insertion order, the code you enter here will appear on that invoice. For details on invoices, see [Understanding Your Invoice](understanding-your-invoice.md).
 - **State** - Set the state of the insertion order. If "**Active**", child line items and campaigns will be eligible to serve. However, it is best practice to set the state to "**Inactive**" until everything related to the buy has been set up and verified. This will avoid spending before you are ready.
 - **Currency** - The currency is inherited from the advertiser, but you can set a different currency for the insertion order, if necessary. Note that you cannot change the currency after saving the insertion order.
@@ -84,7 +84,7 @@ These settings must be filled out if you are using this insertion order for adve
 
 ### Your details
 
-This section contains the details of the person or organization that is purchasing ads on Xandr. The "Buyer Name" will be automatically filled in with the name of the Xandr client. You should enter the contact details for the person or team who can best answer any  questions about political advertising on this insertion order.
+This section contains the details of the person or organization that is purchasing ads on Microsoft Advertising. The "Buyer Name" will be automatically filled in with the name of the Microsoft Advertising client. You should enter the contact details for the person or team who can best answer any  questions about political advertising on this insertion order.
 
 ### Political organization details
 
@@ -96,7 +96,7 @@ This section contains the details of the person, group, organization, or busines
 
 - **Organization Name**
 
-    Name of the person, group, organization, or business that is paying you to advertise on Xandr.
+    Name of the person, group, organization, or business that is paying you to advertise on Microsoft Advertising.
 
     You can search for a political organization's name by typing in the Organization Name field and selecting the appropriate match. This will automatically fill in the contact details for the organization.
 

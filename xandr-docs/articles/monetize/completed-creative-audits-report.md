@@ -1,12 +1,12 @@
 ---
 title: Microsoft Monetize - Completed Creative Audits 
-description: The article emphasizes Audit Reports, providing information on the number of creatives that passed the Xandr audit and associated charges.
+description: The article emphasizes Audit Reports, providing information on the number of creatives that passed the Microsoft Advertising audit and associated charges.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - Completed creative audits report
 
-The Completed Creative Audits Report provides insight into the number of creatives that have completed the Xandr audit process, and the associated charges. Use this report to find out:
+The Completed Creative Audits Report provides insight into the number of creatives that have completed the Microsoft Advertising audit process, and the associated charges. Use this report to find out:
 
 - The number of creatives that have been audited over a given time frame
 - The number of creatives that have been audited for a specific advertiser

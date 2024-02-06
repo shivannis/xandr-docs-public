@@ -39,7 +39,7 @@ You can set the name, state, and ad type of the GDALI from the **Basic Setting
     > [!NOTE]
     > The name of the line item must be unique per advertiser.
 
-1. **External Code**: (Optional) Click **+External Code** and enter a code if you want to report on a line item using your own code (rather than the internal ID that Xandr assigns automatically). External codes must follow these guidelines:
+1. **External Code**: (Optional) Click **+External Code** and enter a code if you want to report on a line item using your own code (rather than the internal ID that Microsoft Advertising assigns automatically). External codes must follow these guidelines:
     - They can only contain alphanumeric characters, periods, underscores or dashes.
     - Codes are not case-sensitive (uppercase and lowercase characters are treated the same).
     - No two objects can use the same code per advertiser. For example, two line items cannot both use code "ABC."
@@ -109,7 +109,7 @@ To set up line item budgeting and scheduling:
     | Option | Description |
     |---|---|
     | **CPM** | Select this revenue type if the advertiser will pay you a flat amount per thousand impressions. Enter the amount that the advertiser will pay you per thousand impressions in the **Revenue Value** field. |
-    | **Viewable CPM** | Select this revenue type if the advertiser will pay you a flat amount per thousand viewable impressions. Only measured viewable impressions will be counted, according to Xandr viewability measurement. Enter the amount that the advertiser will pay you per thousand viewable impressions in the **Revenue Value** field. |
+    | **Viewable CPM** | Select this revenue type if the advertiser will pay you a flat amount per thousand viewable impressions. Only measured viewable impressions will be counted, according to Microsoft Advertising viewability measurement. Enter the amount that the advertiser will pay you per thousand viewable impressions in the **Revenue Value** field. |
     | **Fixed Fee** | Select this revenue type if the advertiser will pay you a fixed amount on a specified allocation date. That date can be daily (**Cost per day**) or at the end of the flight (**One time allocation**). If you pay managed publishers a percentage of your revenue, their share will be paid out on the allocation date, after which the line item will no longer be editable. Note that the fixed fee will not be booked on the allocation date unless the line item has served at least one impression. If you select a revenue type of **Fixed Fee**, you will need to select one of the following: <br> - **Cost per day** - the advertiser will pay a flat fee each day throughout the flight. The specified daily revenue value will not be allocated on any day that the line item has not served at least one impression. Enter the amount an advertiser will pay you each day in **Revenue Value per Day**. <br> - **One time allocation** - the advertiser will pay out the full amount of the fee on the end date of the flight. Revenue will be allocated proportional to impression delivery throughout the line item’s flight. <br> **Note**: The end date must be within one month (30 days) of the start date. <br> Enter an amount an advertiser will pay in **Revenue Value** and select a date in **Allocation Date**. The allocation date must be after the end date of the flight. <br><br> **Warning**: Guaranteed delivery line items with a **Fixed Fee** revenue type must have a start date time of 12:00 AM. |
 
 1. **Flight**: Set up a flight by specifying its start and end dates, budgeting, and pacing. Flights are subject to the following constraints:
@@ -164,7 +164,7 @@ To set up line item budgeting and scheduling:
     - **Web Only** - Runs on standard websites and those optimized for browsers on mobile devices.
 
 1. **Inventory**: You can target or exclude the following inventory:
-    - **Universal Categories**: These are defined by Xandr. When Xandr reviews inventory, we apply these categories based on the inventory's content. For example, a car dealership placement group would be assigned to the "Autos & Vehicles" category. Sellers can apply universal categories when self-reviewing inventory as well.
+    - **Universal Categories**: These are defined by Microsoft Advertising. When Microsoft Advertising reviews inventory, we apply these categories based on the inventory's content. For example, a car dealership placement group would be assigned to the "Autos & Vehicles" category. Sellers can apply universal categories when self-reviewing inventory as well.
 
       > [!NOTE]
       > When targeting more than one universal category, the categories have an OR relationship. For example, if you target the "News" and "Finance" categories, you will bid on inventory that is in either category. The inventory does not need to be in both categories.
@@ -176,7 +176,7 @@ To set up line item budgeting and scheduling:
 
     - **Direct Inventory**: You can narrow your targeting to include or exclude specific managed publishers, placement groups (sites), or placements. Select **Browse** to search by name or ID of an object, or **Text** to paste a list of IDs.
 
-1. **Key/Value**: You can configure your own keys and their corresponding values to make full use of publisher data and help advertisers reach their intended audience. Xandr allows you to create custom key/value sets that can be used in advertising campaigns to target specific types of customers.
+1. **Key/Value**: You can configure your own keys and their corresponding values to make full use of publisher data and help advertisers reach their intended audience. Microsoft Advertising allows you to create custom key/value sets that can be used in advertising campaigns to target specific types of customers.
 
     To edit key/value sets, click the pencil icon next to **Key/Value** to open the **Key/Value Targeting** screen. For more information, see [Key/Value Targeting](key-value-targeting.md).
 

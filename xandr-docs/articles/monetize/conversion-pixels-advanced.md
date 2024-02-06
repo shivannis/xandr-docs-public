@@ -69,7 +69,7 @@ select "Post View Revenue" and "Post Click Revenue" as **metrics** in your Analy
 
 ## Redirect URL/piggybacking: redir
 
-You can piggyback off the Xandr conversion pixel and notify your internal or third-party server about conversion events. When you create a conversion pixel in Monetize,
+You can piggyback off the Microsoft Advertising conversion pixel and notify your internal or third-party server about conversion events. When you create a conversion pixel in Monetize,
 you can input the URL of your pixel and mark it as image or JavaScript. Please note that following restrictions:
 
 - Image pixels can only piggyback off other other image pixels, and JavaScript pixels can only piggyback other JavaScript pixels.

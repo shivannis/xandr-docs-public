@@ -11,11 +11,11 @@ information regarding the available supply, what data is available through deals
 
 ## Creative specifications
 
-- **Xandr hosted**: Xandr will automatically convert MP3, WAV, or OGG files to necessary VAST creative format
+- **Microsoft Advertising hosted**: Microsoft Advertising will automatically convert MP3, WAV, or OGG files to necessary VAST creative format
 - **Lengths**: Audio spots available in both 15 and 30 seconds lengths
 - **Companion banner**: Optional static companion banner images available, 300x250 hosted JPG
 - **3rd party VAST creatives:** Allowed if they include OGG audio asset
-- **Audit**: Creatives must be submitted to Xandr audit and be fully SSL compliant
+- **Audit**: Creatives must be submitted to Microsoft Advertising audit and be fully SSL compliant
 - **Alcohol:** Allowed only with 21+ age targeting
 
 ## Adding an audio creative
@@ -26,7 +26,7 @@ Follow the steps outlined in [Add a Creative](add-a-creative.md) and [Add Creati
 
 ## Spotify supply
 
-The following are the specifications of available Spotify Xandr Member id: **3860** Spotify AB supply:
+The following are the specifications of available Spotify Microsoft Advertising Member id: **3860** Spotify AB supply:
 
 - 15 to 30 second Audio spots played instream during ad breaks between songs.
 - Played through Spotify's mobile app on iOS and Android powered phones and tablets.

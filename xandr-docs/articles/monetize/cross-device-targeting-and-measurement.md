@@ -18,11 +18,11 @@ measure the impact of ad spending on driving conversions.
 
 Cross-device capability enhances targeting and attribution using
 information from an identity graph, a database of customer information
-that allows Xandr to identify users on multiple devices. Supported
+that allows Microsoft Advertising to identify users on multiple devices. Supported
 identity graphs are:
 
-- Xandr's identity graph, which covers the
-  United States and Europe. The Xandr United
+- Microsoft Advertising's identity graph, which covers the
+  United States and Europe. The Microsoft Advertising United
   States and Europe graphs are powered by market-leading data partners.
   
   > [!IMPORTANT]
