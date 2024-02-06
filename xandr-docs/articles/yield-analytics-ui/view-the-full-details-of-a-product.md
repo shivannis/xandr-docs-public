@@ -1,13 +1,13 @@
 ---
 title: View the Full Details of a Product
-description: View the product details on the Product Visibility page, from any page within yield analytics that displays product information.
+description: View the product details on the Product Visibility page, from any page within Yield Analytics that displays product information.
 ms.date: 11/08/2023
 ms.custom: yield-analytics-ui
 ---
 
 # View the full details of a product
 
-You can view the full details of a product that is displayed on the **Product Visibility** page, from any page within yield analytics that displays product information.
+You can view the full details of a product that is displayed on the **Product Visibility** page, from any page within Yield Analytics that displays product information.
 
 The following are some common ways to access the **Product Visibility** page:
 

@@ -1,6 +1,6 @@
 ---
 title: Products Overview
-description: In this article, learn information about the Products tab in yield analytics.
+description: In this article, learn information about the Products tab in Yield Analytics.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
@@ -28,7 +28,7 @@ Products are divided into four types:
 
 - Rate Card –  Product that is sold frequently by the sales team and represents the product catalog (e.g., ROS 728x90).
 - Reporting – Product that is used for reporting purposes, but is not generally not sold (e.g., Top three ad sizes in the Sports section).
-- Custom – Product that represents a unique combination of attributes - that is not typically sold - but may have been trafficked in the ad server (e.g., ROS 728x90, DMA=NY, LA). Unique products referenced by order lines in the ad server are imported into yield analytics as custom products.
+- Custom – Product that represents a unique combination of attributes - that is not typically sold - but may have been trafficked in the ad server (e.g., ROS 728x90, DMA=NY, LA). Unique products referenced by order lines in the ad server are imported into Yield Analytics as custom products.
 - Seasonal Model – Set of products that represents the seasonal patterns of traffic on your site. The full set of seasonal model products must comprehensively account for all the impressions in your network. Seasonal model products cannot overlap each other, and each seasonal model product must reflect all the distinct seasonality patterns observed in your network.
 
 ## Product statuses

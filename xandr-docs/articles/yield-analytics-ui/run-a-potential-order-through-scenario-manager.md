@@ -57,7 +57,7 @@ If you include multiple new order lines in your simulation, you can apply the sa
 Run the scenario when you have finished editing one or more order lines. When the scenario is done running, you can analyze it to determine how it will impact delivery.
 
 1. Click the **Run Scenario** button. The **Scenario** link in the upper-right corner of the page displays spinning arrows while Scenario Manager is running. You can let Scenario Manager run in the background while working on other tasks and tabs.
-1. When the scenario has completed, click the **Scenario Summary** tab. This allows you to view a summary of revenue Gain, Losses, and Net Gain Loss, together with data for the number of order lines, orders, and products impacted by the modifications.
+1. When the scenario has completed, click the **Scenario Summary** tab. This allows you to view a summary of revenue Gain, Losses, and Net Gain Loss, together with data for the number of order lines, orders, and products impacted by the modifications.
 
 ## Related topics
 

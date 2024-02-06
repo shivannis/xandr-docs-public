@@ -111,4 +111,3 @@ Sudden, sharp changes in average CTR, CPC, or CPA may indicate a problem. Check 
 - [Create an Insertion Order](create-an-insertion-order.md)
 - [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
 - [Change-Log Services](../digital-platform-api/change-log-services.md)
-- [Using Pulse to Check Campaign Health](using-pulse-to-check-campaign-health.md)

@@ -1,18 +1,15 @@
 ---
 title: Yield Analytics 7.14
-description: Learn how to manage saved reports, edit screens options, create a new schedule, add additional metrics, and apply additional filters in new landing page for find. 
+description: Learn what are the new details added in Manage Saved Reports present in Admin Tools dropdown. 
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
-
-
 ---
 
-
-# Yield analytics 7.14
+# Yield Analytics 7.14
 
 ## New features
 
-**Manage saved reports**
+### Manage saved reports
 
 Navigate to Manage Saved Reports in the Admin Tools dropdown.
 
@@ -24,39 +21,29 @@ This is a new screen with added details:
 - You can add a new schedule.
 - You can edit an existing schedule.
 
-:::image type="content" source="media/o.png" alt-text="Screenshot of Yield Analytics UI - O .":::
+:::image type="content" source="media/o.png" alt-text="Screenshot of Manage Saved Reports screen.":::
 
 ## Edit screen options
 
-:::image type="content" source="media/p.png" alt-text="Screenshot of Yield Analytics UI - P .":::
+:::image type="content" source="media/p.png" alt-text="Screenshot showing Edit Screen options.":::
 
 ## New schedule screen
 
-:::image type="content" source="media/q.png" alt-text="Screenshot of Yield Analytics UI - Q .":::
+:::image type="content" source="media/q.png" alt-text="Screenshot of New Schedule screen.":::
 
 ## Find products
 
-- Additional Metrics are now configurable, which includes metrics that
-we have previously shown as meta data. The reasoning is that
-Services/Clients find that data helpful when exporting.
-- Export will only export what is currently shown in the table, and
-not all meta data - as was done previously. The new mechanism is
-consistent with Reports, where what you see in the table is what is
-exported. The format for the export on the Find Products page is now
-consistent with the export format for Reports.
-- The look and feel is nearly identical to Reports. This is also for
-consistency.
-- The selection of a product behaves the same as the Reports page i.e.
-a dialog is launched where meta data, characteristics, product group can
-be viewed, as well as permissioned buttons to navigate to other
-locations.
+- Additional Metrics are now configurable, which includes metrics that we have previously shown as meta data. The reasoning is that Services/Clients find that data helpful when exporting.
+- Export will only export what is currently shown in the table, and not all meta data - as was done previously. The new mechanism is consistent with Reports, where what you see in the table is what is exported. The format for the export on the Find Products page is now consistent with the export format for Reports.
+- The look and feel is nearly identical to Reports. This is also for consistency.
+- The selection of a product behaves the same as the Reports page i.e. a dialog is launched where meta data, characteristics, product group can be viewed, as well as permissioned buttons to navigate to other locations.
 
 ## New landing page for find
 
 - You can add Additional Metrics.
 
-:::image type="content" source="media/r.png" alt-text="Screenshot of Yield Analytics UI - R .":::
+:::image type="content" source="media/r.png" alt-text="Screenshot of Additional Metrics.":::
 
 - You can apply any additional Filters.
 
-:::image type="content" source="media/s.png" alt-text="Yield Analytics UI - S .":::
+:::image type="content" source="media/s.png" alt-text="Screenshot showing page where you can apply additional Filters.":::

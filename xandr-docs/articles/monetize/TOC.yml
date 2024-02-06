@@ -6,7 +6,7 @@
     href: about-monetize.md
   - name: Object Hierarchy
     href: object-hierarchy.md
-  - name: Getting Started with Adserver
+  - name: Getting Started with Ad Server
     href: getting-started-with-adserver.md
   - name: Monetize API
     href: digital-platform-ui-api-info.md
@@ -38,7 +38,7 @@
         href: exchanges-and-aggregators.md
       - name: Google Ad Manager
         href: doubleclick-ad-exchange-adx.md
-      - name: User ID Syncing with External Partners
+      - name: Sync User ID with External Partners
         href: user-id-syncing-with-external-partners.md
       - name: Asynchronous Usersync Pixels
         href: asynchronous-usersync-pixels.md
@@ -108,7 +108,7 @@
          href: managing-user-logins-and-permissions.md
        - name: Manage Your Username and Password
          href: manage-your-username-and-password.md
-       - name: Learn About Partner Single Sign-on Access
+       - name: Partner Single Sign-on Access
          href: learn-about-partner-single-sign-on-access.md
        - name: Create a User
          href: create-a-user.md
@@ -168,9 +168,9 @@
       href: partnership-details-screen-seller-view.md
     - name: Customize Your Seller Profile
       href: customize-your-seller-profile.md
-    - name: Default Buyer Eligibility, Payment Types, and Targeting Access
+    - name: Set Default Buyer Settings
       href: set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md
-    - name: Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access
+    - name: Edit Default Buyer Settings
       href: edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md
     - name: Set Targeting Access Privileges
       href: set-targeting-access-privileges.md
@@ -730,8 +730,16 @@
       href: open-dynamic-allocation-and-flexible-priorities.md
     - name: Forecast-Shaped Pacing
       href: forecast-shaped-pacing.md
-  - name: Data Marketplace Overview
-    href: data-marketplace-buyer-overview.md
+  - name: Data Marketplace
+    items:
+    - name: Data Marketplace Overview
+      href: data-marketplace-overview.md
+    - name: Data Marketplace Partners and Contact Information
+      href: data-marketplace-partners-and-contact-information.md
+    - name: Data Cost Calculation Mechanics
+      href: data-cost-calculation-mechanics.md
+    - name: Data Marketplace FAQ(s)
+      href: data-marketplace-faq.md
 - name: Buy-Side Targeting
   items:
   - name: Overview

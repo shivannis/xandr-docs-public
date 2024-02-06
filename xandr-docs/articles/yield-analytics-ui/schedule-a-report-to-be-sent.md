@@ -23,6 +23,6 @@ To schedule a report to run bi-monthly, create two monthly instances of recurren
 
 If you have administrative access, you can select **Admin Tools** > **View Reports** to view and edit scheduled reports.
 
-## Related topics
+## Related topic
 
 [Anatomy of the Reports Tab](anatomy-of-the-reports-tab.md)

@@ -42,8 +42,7 @@ landingContent:
           - text: Mobile Advertising
             url: introduction-to-mobile-advertising.md
           - text: Video Inventory and Formats
-            url: introduction-to-video-inventory-and-formats.md
-            
+            url: introduction-to-video-inventory-and-formats.md        
   - title: How to Guides
     linkLists:
       - linkListType: how-to-guide
@@ -52,11 +51,11 @@ landingContent:
             url: add-a-microsoft-outlook-versatile-creative.md
           - text: Build an HTML5 Creative in Google Web Designer  
             url: build-an-html5-xandr-creative-in-google-web-designer.md
-          - text: Integrate Xandr HTML5 Library with Ads Created in Google Web Designer
+          - text: Integrate Xandr HTML5 Library with Google Web Designer Ads
             url: integrating-the-xandr-html5-library-with-ads-created-in-google-web-designer.md
           - text: Build an HTML5 Creative in Adobe Edge
             url: build-an-html5-xandr-creative-in-adobe-edge.md
-          - text: Integrate Xandr HTML5 Library with Ads created in Adobe Edge
+          - text: Integrate Xandr HTML5 Library with Adobe Edge Ads
             url: integrating-the-xandr-html5-library-with-ads-created-in-adobe-edge.md
           - text: Build an HTML5 Creative in Adobe Animate CC
             url: build-an-html5-xandr-creative-in-adobe-animate-cc.md

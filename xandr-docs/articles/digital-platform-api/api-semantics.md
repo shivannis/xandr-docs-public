@@ -171,7 +171,9 @@ $ curl -b cookies -c cookies -X POST -d @auth.json 'https://api.appnexus.com/aut
 | `'https://api.appnexus.com/auth'` | The URL of the service you are making the request to. Use quotes in case you have any special characters in your URL. |
 
 > [!TIP]
-> Use Single Quotes Around Your Request URL Some requests require single quotes around your request URL, as in the above `curl` request. If you get an error message from your UNIX shell, make sure your request URL has single quotes before troubleshooting further. For more information on how UNIX shell quotes and escaping work, see [this documentation on quotes and escaping in shells](http://wiki.bash-hackers.org/syntax/quoting).
+> **Use Single Quotes Around Your Request URL**
+>
+> Some requests require single quotes around your request URL, as in the above `curl` request. If you get an error message from your UNIX shell, make sure your request URL has single quotes before troubleshooting further. For more information on how UNIX shell quotes and escaping work, see [this documentation on quotes and escaping in shells](http://wiki.bash-hackers.org/syntax/quoting).
 
 ## Filtering and sorting
 
@@ -203,13 +205,13 @@ $ curl -bc -cc 'https://api.appnexus.com/campaign?id=1,2,3
 
 Pass a query string parameter for the field with a comma-separated list of IDs.
 
-**Example:** Request all campaigns for certain line items.
+### Example: Request all campaigns for certain line items
 
 ```
 $ curl -b cookies 'https://api.appnexus.com/campaign?advertiser_id=40&line_item_id=1,2,3' 
 ```
 
-**Example:** Request certain advertisers
+### Example: Request certain advertisers
 
 ```
 $ curl -b cookies 'https://api.appnexus.com/advertiser?id=3'
@@ -217,10 +219,10 @@ $ curl -b cookies 'https://api.appnexus.com/advertiser?id=3'
 
 > [!TIP]
 > Only 100 objects will be returned per request
-> 
+>
 > The maximum number of objects that can be returned, regardless of pagination, is 100. If you request over 100 objects, we will only return the first 100 and will not provide an error message. For more information on how to paginate API results, see [Paging](#paging).
 
-**Filter by min and max values**
+## Filter by min and max values
 
 Fields that are of the type `int`, `double`, `date`, or `money` can be filtered by `min` and `max`. For example:
 
@@ -339,8 +341,7 @@ $ cat plugin-update.json
 }
 ```
 
-Normally, sending the [JSON](http://json.org/) above
-on a `PUT` call would overwrite the whole `member_availabilities` array. However, this time we'll add `"append=true"` to the query string of the call. This tells the API to change just the object whose `id` is `4`. We can verify that it's done so by inspecting the output.
+Normally, sending the [JSON](http://json.org/) above on a `PUT` call would overwrite the whole `member_availabilities` array. However, this time we'll add `"append=true"` to the query string of the call. This tells the API to change just the object whose `id` is `4`. We can verify that it's done so by inspecting the output.
 
 ```
 $ curl -bc -X PUT -d @plugin-update.json 'https://api.appnexus.com/plugin?id=13&append=true' | jq '.response.plugin.member_availabilities'
@@ -413,7 +414,6 @@ An example that puts them together:
 
 Different fields require different types of values. The table of types below extends those defined in the [JSON standard](http://json.org).
 
-
 | Type | Description | Example |
 |:---|:---|:---|
 | boolean | True or false. | `true` |
@@ -469,8 +469,7 @@ For a tutorial that explains how to use our reporting APIs effectively, see [Rep
 
 JSON fields and values use underscores, e.g., `audit_type_direct`.
 
-API service names in URLs are hyphenated, e.g.,
-`https://api.``appnexus``.com/insertion-order`.
+API service names in URLs are hyphenated, e.g., `https://api.``appnexus``.com/insertion-order`.
 
 ## Response codes
 

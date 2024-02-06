@@ -76,4 +76,4 @@ This page explains how to use Google Web Designer to build HTML5 creatives that 
 
     1. Refresh the page and click on the creative.
 
-        A new window with the landing page that you entered should open in your browser. When the creative is served, Xandr sets a value of `clickTag` to Xandr' click tracker along with a redirect to the landing page URL provided in the Console.
+        A new window with the landing page that you entered should open in your browser. When the creative is served, Xandr sets a value of `clickTag` to Xandr' click tracker along with a redirect to the landing page URL provided in Microsoft Monetize.

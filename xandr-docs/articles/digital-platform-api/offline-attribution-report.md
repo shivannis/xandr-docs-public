@@ -25,11 +25,12 @@ The `report_interval` field in the JSON request can be set to one of the followi
 - last_30_available_days
 - last_365_days
 
-**Data retention period**
+### Data retention period
 
 This report has a daily time granularity and can retrieve data from the past 120 days.
 
 > [!NOTE]
+>
 > - To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 > - You can't make a specific time zone selection because NCS data uses the time zone(s) from where sales take place.
 

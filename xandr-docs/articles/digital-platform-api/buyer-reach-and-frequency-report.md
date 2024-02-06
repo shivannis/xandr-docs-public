@@ -7,16 +7,13 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Buyer Reach and Frequency report
 
-The Buyer Reach and Frequency report shows you the information associated with two parameters as **"reach"** which is the number of
-unique devices or persons exposed to ads and **"frequency"** which is the average number of times each unique device or person was exposed to advertisements. It helps to draw meaningful conclusions about the impact of cross device on conversion use cases. In short, buyers can have an insight on how cross device impacted the number of times a single person saw their ads across all their devices using this report as this report shows historical reach and average frequency on your buying.
+The Buyer Reach and Frequency report shows you the information associated with two parameters: **"reach"** and **"frequency"**. **"reach"** is the number of unique devices or persons exposed to ads. **"frequency"** is the average number of times each unique device or person was exposed to advertisements. It helps to draw meaningful conclusions about the impact of cross device on conversion use cases. In short, buyers can have an insight on how cross device impacted the number of times a single person saw their ads across all their devices using this report as this report shows historical reach and average frequency on your buying.
 
 The Buyer Reach and Frequency Report offers flexible filtering to analyze unique devices by facilitating below procedure:
 
 - Pull a **basic running total** of unique devices for their active Line Items or Insertion Orders.
-
 - Pull unique devices for these objects over a **defined period of time** (for example, past week).
-
-- Now you can **filter and group on specific criteria**, which will provide an accurate unique device count across the specified criteria. For example, the count of unique devices across Line Items A, B, and D, in the US and Canada, for the past month.
+- You can **filter and group on specific criteria**, which will provide an accurate unique device count across the specified criteria. For example, the count of unique devices across Line Items A, B, and D, in the US and Canada, for the past month.
 
 ## Time frame
 
@@ -92,7 +89,7 @@ Data in this report is retained for 90 days.
 | `estimated_people_reach` **(currently available in the US only)** | int | `269,266` | unique devices / device density factor | The estimated number of people reached, deduplicated across the user-specified dimensions. |
 
 > [!NOTE]
-> Xandr has built a probabilistic data science model to estimate people reach, which is a new metric (**estimated_people_reach**) available in this report. This model considers the unique devices reached at the zip code level, and utilizes publicly available US census data for the total population of each zip code, in order to estimate the number of people reached for that zip code. This zip code level data is then aggregated when a report is pulled by the API so that the buyer can view it at any level of granularity that is provided by the existing dimensions in the report.
+> The metric **`estimated_people_reach`** is currently available in the US only. This model considers the unique devices reached at the zip code level, and utilizes publicly available US census data for the total population of each zip code, in order to estimate the number of people reached for that zip code. This zip code level data is then aggregated when a report is pulled by the API so that the buyer can view it at any level of granularity that is provided by the existing dimensions in the report.
 >
 > [Advanced Frequency Management (AFM)](../invest/advanced-frequency-management.md), which is currently in **beta**, does not take universal identifier (Universal ID) into account. This is subject to change as the feature would move into GA. Line items utilising Universal ID targeting should avoid using AFM until this is completely adapted.
 

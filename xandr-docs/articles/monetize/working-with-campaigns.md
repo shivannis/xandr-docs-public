@@ -18,7 +18,5 @@ Once you have created a line item to define your financial agreement with an adv
 - [Update Campaigns](update-campaigns.md): Edit, delete, duplicate, activate and deactivate campaigns.
 - [Associate Creatives to Campaigns](associate-creatives-to-campaigns.md): Select the creatives that you want to run
   for a campaign.
-- [Using Pulse to Check Campaign Health](using-pulse-to-check-campaign-health.md): Troubleshoot campaign spending
-  using a real-time visualization of your campaign delivery.
 - [Buying Strategies](buying-strategies.md): Understand how to optimize third-party buying using CPM, CPA, or CPC.
 - [Bidding Priority](bidding-priority.md): Control how campaigns are prioritized in relation to each other.

@@ -1,11 +1,11 @@
 ---
-title: 02 - Buy-Side Overview
+title: Buy-Side Overview
 description: In this article, explore detailed information about buy-side and its various objects.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# 02 - Buy-side overview
+# Buy-side overview
 
 ## Diagram
 

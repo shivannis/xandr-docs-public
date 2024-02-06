@@ -1,11 +1,11 @@
 ---
-title: 01 - Understand Best Practices
+title: Understand Best Practices
 description: In this article, understand and implement the best practices for Digital Platform APIs that ensure a smoothly operating integration.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# 01 - Understand best practices
+# Understand best practices
 
 Understanding and implementing the best practices laid out on the [API Best Practices](api-best-practices.md) wiki page is crucial to a smoothly operating integration. These will help you:
 

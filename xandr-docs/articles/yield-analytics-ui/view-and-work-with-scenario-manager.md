@@ -11,7 +11,7 @@ Follow the instructions on this page to access Scenario Manger and to add an ord
 
 ## Access Scenario Manager
 
-To access Scenario Manager at any time, click the **Scenario** link at the upper-right corner of the **yield analytics** page. Click **View Scenario**.
+To access Scenario Manager at any time, click the **Scenario** link at the upper-right corner of the **Yield Analytics** page. Click **View Scenario**.
 
 You can also access Scenario Manager from the **Order Line Visibility** page. If it displays an under-delivery alert, click the **What should I do?** link. Click the **Add to Scenario** button.
 

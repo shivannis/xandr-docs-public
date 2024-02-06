@@ -34,6 +34,7 @@ To create a segment with geo polygons, follow below steps:
 | `POST` | https://api.appnexus.com/geo-polygon-segment/{segmentID}/polygon/select<br><br>`POST -d '{"criteria":{},"ordering":{"direction":"desc","by":"id"}}' "https://api.appnexus.com/geo-polygon-segment/{segmentID}/polygon/select"` | View all geo polygon definitions in a segment |
 | `GET` | https://api.appnexus.com/apd-status | View recent uploads |
 | `GET` | https://api.appnexus.com/apd-status?id=%7Bapd_id%7D | View status of a specific upload |
+| `GET` | https://api.appnexus.com/geo-segment-processor/job-status | View status of a geo polygon upload |
 | `DELETE` | https://api.appnexus.com/geo-polygon-segment/{segmentID} | Delete a geo polygon segment |
 | `DELETE` | https://api.appnexus.com/geo-polygon-segment/%7BsegmentID%7D/polygon/delete<br><br>`POST -d '{"criteria":{"id":{"in":[_polygon_feature_id_]}}}' "https://api.appnexus.com/geo-polygon-segment/{segmentID}/polygon/delete"` | Delete a specific feature from a geo polygon segment |
 
@@ -46,12 +47,12 @@ To create a segment with geo polygons, follow below steps:
 | `code` | string | User-defined code for calling the geo polygon segment. For example, `"GEO123"` |
 | `description` | string | Description for this geo polygon segment |
 | `short_name` | string | Short name used to describe the geo polygon segment<br><br>**Required On**: `POST` |
-| `regional_centers` | array of objects | ID or code of the region in which the geo polygon segment is available.<br>Possible values:<br> - `ID: 1, 2 or 3`<br> - `code: "americas", "emea", "apac"` |
+| `regional_centers` | array of objects | ID or code of the region in which the geo polygon segment is available.<br>**Possible values:**<br> - `ID: 1, 2 or 3`<br> - `code: "americas", "emea", "apac"` |
 
 
 ### CSV file format
 
-Column names: Polygon,Name.
+The CSV file has the column names as **Polygon** and **Name** and they hold the values for the defined geo-polygons.
 
 > [!NOTE]
 > Column names are case-sensitive and without any space. You must specify the column names in your CSV file.
@@ -184,6 +185,11 @@ curl -b cookies "https://api.appnexus.com/apd-status"
 
 ```
 curl -b cookies "https://api.appnexus.com/apd-status?id=4d362ab8-f94d-11eb-a5ee-3cfdfec8e950"
+```
+### View upload status of geo polygon upload
+
+```
+curl -b cookies -c cookies -X GET "https://api.appnexus.com/geo-segment-processor/job-status?geoSegmentId=86831"
 ```
 
 ### Delete a geo polygon segment

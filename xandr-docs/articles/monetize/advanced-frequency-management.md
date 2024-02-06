@@ -4,11 +4,11 @@ description: In this article, learn what Advanced Frequency Management (AFM) is,
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Advanced Frequency Management
+# Microsoft Monetize - Advanced frequency management
 
 Advanced Frequency Management (AFM) is an innovative frequency-capping feature that lets you control the number of impressions seen by users who opt out of including traditional identifiers in ad requests ("cookieless users").
 
-> [!IMPORTANT]
+> [!NOTE]
 > This feature is only applicable to ALI (Augumented Line Items) using **Open** and/or **Deal** supply sources.
 
 Historically, frequency capping for digital advertising has entirely relied on the presence of ad-request identifiers to identify and assign impression-cap rules for users. However, an increasing number of ad requests no longer include an identifier.

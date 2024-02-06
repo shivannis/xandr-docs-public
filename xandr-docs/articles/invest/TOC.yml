@@ -494,8 +494,16 @@
       href: buying-seedtag-inventory.md
   - name: Political Advertising
     href: political-advertising.md
-  - name: Data Marketplace - Buyer Overview
-    href: data-marketplace-buyer-overview.md
+  - name: Data Marketplace
+    items:
+    - name: Data Marketplace Overview
+      href: data-marketplace-overview.md
+    - name: Data Marketplace Partners and Contact Information
+      href: data-marketplace-partners-and-contact-information.md
+    - name: Data Cost Calculation Mechanics
+      href: data-cost-calculation-mechanics.md
+    - name: Data Marketplace FAQ(s)
+      href: data-marketplace-faq.md
 - name: Buy Side Targeting
   items:
   - name: Daypart Targeting

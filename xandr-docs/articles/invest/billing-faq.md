@@ -116,7 +116,7 @@ Depending on which product you use, you can locate historical billing documents 
 ### Why am I getting an invoice for data from both the data provider and Xandr?
 
 You can purchase data through Xandr or directly from your data provider. If you purchased data through Xandr, you will see that activity in our **Data Usage Report** in the UI. Otherwise, you will be billed by the Data Provider. For more information on Data Clearing, see
-[Data Marketplace - Buyer Overview](data-marketplace-buyer-overview.md).
+[Data Marketplace Overview](data-marketplace-overview.md).
 
 ### How can I set up netting if we buy and sell through Xandr?
 

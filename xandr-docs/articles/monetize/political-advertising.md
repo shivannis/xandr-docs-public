@@ -6,7 +6,9 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Political advertising
 
-Xandr permits political advertising (advertising relating to elections, ballot initiatives, or political candidates) in the United States, but requires that such advertising comply with applicable law. As required by law, you must certify certain information about the ads and the political organization that purchased them for all political advertising on the state or local level, and for political advertising on the federal level in Washington State.
+Microsoft Monetize no longer permits political advertising on its platform.  This includes election-related content, fundraising for political candidates, hot button political issue ads, and advertising that exploits a political agenda or sensitive political issues.
+
+<!--Xandr permits political advertising (advertising relating to elections, ballot initiatives, or political candidates) in the United States, but requires that such advertising comply with applicable law. As required by law, you must certify certain information about the ads and the political organization that purchased them for all political advertising on the state or local level, and for political advertising on the federal level in Washington State.
 
 You are not required to certify political advertising serving outside the United States, but you must still adhere to our [Policies for Selling](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Selling.aspx) (login required) and comply with all applicable legal and/or regulatory requirements in the jurisdiction where you are advertising.
 
@@ -57,3 +59,4 @@ For more information, see [Political Advertising Transparency Reporting](https:/
 - [Create an Advertiser](create-an-advertiser.md)
 - [Create an Insertion Order](create-an-insertion-order.md)
 - [Political Advertising Transparency Reporting](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Political-Advertising-Transparency-Reporting.aspx)
+-->

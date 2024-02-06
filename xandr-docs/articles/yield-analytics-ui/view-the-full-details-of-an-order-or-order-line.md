@@ -30,5 +30,5 @@ The following are some common ways to access the **Order Line Visibility** page:
 - [About the Orders Tab](./about-the-orders-tab.md)
 - [Anatomy of the Order Visibility Page](./anatomy-of-the-order-visibility-page.md)
 - [Anatomy of the Order Line Visibility Page](./anatomy-of-the-order-line-visibility-page.md)
-- [Solving Delivery Issues with Order Line Visibility](./solving-delivery-issues-with-order-line-visibility.md)
+- [Solving Delivery Issues with Order Line Visibility](./solve-delivery-issues-with-order-line-visibility.md)
 - [Orders Overview](./orders-overview.md)

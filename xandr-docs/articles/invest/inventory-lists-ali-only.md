@@ -57,7 +57,7 @@ To identify specific mobile apps to target, we recommend targeting the region yo
 
 Each domain or app in a list can have one of the following audit statuses:
 
-- ![A green check-mark icon.](media/audit_check.png) - the domain/app has been audited and approved.
+- **Approved** - the domain/app has been audited and approved.
 - **Rejected** - The reason the domain/app has been rejected after being audited (e.g., Hate Speech).
 - "**--**" - the domain/app is either unauditable (has been reviewed but can't be audited) or is pending audit (has not been reviewed yet, but is in the audit queue).
 - **Masked** - the seller is not exposing the domain/app's actual URL for targeting or reporting. However, the real domain/app URL is still audited by Xandr inventory quality controls within the bid request.
@@ -66,7 +66,7 @@ Each domain or app in a list can have one of the following audit statuses:
 > [!NOTE]
 >
 >- For audit status "`--`" or "`Unsupported`", creatives will be delivered through managed inventory or deals. They will not be delivered in open exchange unless you have allowed unauditable creatives for the line item.
->- The domains with audit status of either ![A green check-mark icon.](media/audit_check.png) or "**--**" are available for use in the augmented line item inventory lists.
+>- The domains with audit status of either **Approved** or "**--**" are available for use in the augmented line item inventory lists.
 
 ## Create a new inventory list
 

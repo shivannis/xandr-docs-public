@@ -41,9 +41,9 @@ This is a read-only service that shows you the list of currencies that you can s
 > [!NOTE]
 > - To show conversion rates, pass `show_rate=true` in the URL. You can also retrieve a past day's rate by passing in `ymd=YYYYMMDD` via the URL.
 >
-> - \* When querying the currency API (eg: `rate_per_usd`), the service is currently returning all the correct values, with the exception for `last_modified`. The actual rates are accurate, and the API is returning updated exchange rates.
+> - \* When querying the currency API (eg: `rate_per_usd`), the service returns all the correct values, with the exception for `last_modified`. The actual rates are accurate, and the API returns updated exchange rates.
 >
-  > Currently, use the `as_of` column instead of `last_modified` to know the version of the exchange rate being returned.
+  > Use the `as_of` column instead of `last_modified` to know the version of the exchange rate being returned.
 
 ## Examples
 
@@ -109,7 +109,7 @@ curl -b cookies -c cookies 'https://api.appnexus.com/currency'
 }
 ```
 
-### View the EUR exchange rate on March 1, 2012
+### View the EUR exchange rate on January 2, 2024
 
 ```
 $ curl -b cookies -c cookies  'https://api.appnexus.com/currency?show_rate=true&code=EUR&ymd=2012-03-01'
@@ -124,7 +124,7 @@ $ curl -b cookies -c cookies  'https://api.appnexus.com/currency?show_rate=true&
             "position": "before",
             "last_modified": "2010-08-16 23:07:23",
             "rate_per_usd": 0.7506,
-            "as_of": "2012-03-01 11:24:00",
+            "as_of": "2024-01-02 11:24:00",
             "is_exposed": true
         },
         "count": 1,

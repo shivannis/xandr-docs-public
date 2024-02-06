@@ -19,8 +19,7 @@ Reports must be saved to be shared with other people.
 1. To share the report with users in other groups, click the **click here** link. Then select the group(s) from the list that appears.
 1. Click **Save**.
 
-If you're sharing the report with someone who doesn't have access to yield analytics, the recipient doesn't receive a URL to access the
-report.
+If you're sharing the report with someone who doesn't have access to yield analytics, the recipient doesn't receive a URL to access the report.
 
 ## Related topics
 

@@ -1,9 +1,8 @@
 ---
-title : Creative Troubleshooting FAQ
-description: Learn Creative Troubleshooting FAQs in this page. 
-ms.date : 11/23/2023
+title: Creative Troubleshooting FAQ
+description: This topic deals with Creative Troubleshooting FAQs. 
+ms.date : 10/28/2023
 ---
-
 
 # Creative troubleshooting FAQ
 
@@ -11,17 +10,13 @@ This page deals with FAQs on Creative Troubleshooting.
 
 ## Recommended technical specifications for creatives
 
-There are few technical requirements imposed on creatives by Xandr's
-platform. A number of networks and publishers do have such requirements.
-Follow the recommendations listed here to ease your use of the platform
-and access as much inventory as possible.
+There are few technical requirements imposed on creatives by Xandr's platform. A number of networks and publishers do have such requirements. Follow the recommendations listed here to ease your use of the platform and access as much inventory as possible.
 
 **General recommendations**
 
 Follow these recommendations when building creatives of any type:
 
-- Limit initial load size to less than 40 KB. This will meet the [Google Display Network's limit of 50 KB](https://support.google.com/adspolicy/answer/94230?hl=en)
-  as well.
+- Limit initial load size to less than 40 KB. This will meet the [Google Display Network's limit of 50 KB](https://support.google.com/adspolicy/answer/94230?hl=en) as well.
 - Xandr provides standard [Creative Templates](creative-template-service.md) for all [Supported Media Types](expandables-and-rich-media.md). You may also
   create your own custom templates. You can use the [Creative Template API Service](creative-template-service.md) to
   create your own template.
@@ -706,9 +701,18 @@ iframe creative for javascript tags.
 ## content vs. original_content
 
 - original_content: The tag exactly as it is uploaded to the api.
-- content: The tag exactly as the ${CONTENT} macro of the creative
-  template is expecting it.
-- In the case of an HTML tag, if the **serve in iFrame** option is
-  checked, both content and original content will be exactly the same.
-- HTML Tag with the serve in iFrame option unchecked, content and
-  original content will be different.
+- content: The tag exactly as the ${CONTENT} macro of the creative template is expecting it.
+- In the case of an HTML tag, if the **serve in iFrame** option is checked, both content and original content will be exactly the same.
+- HTML Tag with the serve in iFrame option unchecked, content and original content will be different.
+
+**How can I fix the following error message "There was an error with the request: Vast Wrapper tracker URL is not valid"?**
+
+Ensure that there is no invalid or unsupported character present in the VAST url as well as in the 3rd party segments attached to the creative. For example,
+
+- This is the set of valid VAST characters: `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~:/?#[]@!$&'()*+,;=.`
+- This is a set of common invalid characters: `|, <, >, ^, {,}.`
+
+Additionally:
+
+- If there are curly brackets `{ }` present in the VAST url or segment, then they **must** have `$` in front of the bracket.
+- Ensure that there is no double `%` present in the VAST url or segment.

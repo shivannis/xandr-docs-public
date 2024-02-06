@@ -2,6 +2,8 @@
   "build": {
     "content": [
       {
+        "src": "articles",
+        "dest": ".",
         "files": [
           "**/*.md",
           "**/*.yml",
@@ -12,7 +14,6 @@
           "**/includes/**",
           "_themes/**",
           "_themes.pdf/**",
-          
           "_repo.en-us/**",
           "README.md",
           "LICENSE",

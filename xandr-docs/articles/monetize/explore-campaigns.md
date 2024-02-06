@@ -169,8 +169,6 @@ The **Pulse** button provides a visualization of campaign spending in real time.
 > - Diagnose delivery issues quickly with a shorter feedback loop
 > - Confidently optimize by seeing changes take effect minutes after you make them
 
-To learn more, see [Using Pulse to Check Campaign Health](using-pulse-to-check-campaign-health.md).
-
 ## Showing/hiding columns
 
 You can choose the columns that are displayed by clicking the **Configure Columns** button.

@@ -7,7 +7,7 @@ ms.custom: yield-analytics-ui
 
 # Import users
 
-If you have administrative permissions, you can quickly add multiple users to yield analytics by importing a CSV (comma-separated values) file that contains a set of usernames and passwords.
+If you have administrative permissions, you can quickly add multiple users to Yield Analytics by importing a CSV (comma-separated values) file that contains a set of usernames and passwords.
 
 1. On the **Admin Tools** menu, click **Users**. The Users page appears, displaying a list of all user accounts.
 1. At the bottom of the list, in the **CSV File** field, click **Choose File**.

@@ -1,11 +1,11 @@
 ---
-title: 03 - Sell-Side Overview
+title: Sell-Side Overview
 description: In this article, explore detailed information about sell-side and its various objects.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# 03 - Sell-side overview
+# Sell-side overview
 
 ## Diagram
 

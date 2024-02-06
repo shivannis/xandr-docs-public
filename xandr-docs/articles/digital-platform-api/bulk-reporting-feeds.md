@@ -13,6 +13,8 @@ Bulk Reporting Feeds are different than standard reports in that they allow you 
 
 ## Types of bulk reporting feeds
 
+This section provides information on the various categories of bulk reporting feeds that are available on the platform.
+
 ### Network analytics feed
 
 This bulk reporting feed offers you extensive data on your network's buy-side and sell-side performance.
@@ -23,10 +25,8 @@ For a list of available columns, go to [Network Analytics Feed](network-analytic
 
 You can use [Click Trackers](click-tracker-service.md) to track user clicks on creatives served by third-party ad servers (i.e., not served by Xandr). This reporting feed provides data on those external clicks.
 
-> [!NOTE]
-> Each row returned is for a single click event.
-
-For a list of available columns, go to [Clicktrackers Feed](clicktrackers-feed.md).
+- Each row returned is for a single click event.
+- For a list of available columns, go to [Clicktrackers Feed](clicktrackers-feed.md).
 
 ## Retrieve a bulk reporting feed
 
@@ -41,9 +41,9 @@ Reporting Feeds were built so you could automatically pull updated data each hou
 
 See the [example](#example) below for a detailed walk-through of this procedure.
 
-## Example
+## Examples
 
-### Requesting a network analytics reporting feed
+### Request a network analytics reporting feed
 
 You request a reporting feed using the [Report Service](report-service.md). Note that the Reporting Service imposes several restrictions on reporting feeds in order to limit the size of data and post processing time:
 
@@ -150,11 +150,11 @@ You then make another `GET` call with the download URL. When specifying the file
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=91281567ba7b36ef66be08cc4e637c8f' > /temp/report_download.csv
 ```
 
-### Matching IDs to object names and reference data
+### Match IDs to object names and reference data
 
-For most object types, the reporting feed returns IDs only. You can use Lookup Service to map IDs to, for example, names, codes, descriptions, and statuses. See the [Lookup Service](lookup-service.md) for more details.
+For most object types, the reporting feed returns IDs only. You can use [Lookup Service](lookup-service.md) to map IDs to, for example, names, codes, descriptions, and statuses.
 
-### Ensuring that your data is up-to-date
+### Ensure that your data is up-to-date
 
 In order to synchronize data, you need to know when to load new hours or days of data into your local database. To make this easy, we provide a [Feed Status Service](feed-status-service.md) to notify you when new hours of reporting data become available or previous hours have been changed.
 
@@ -167,7 +167,6 @@ We recommend that you store a local record of when you last pulled an hour or da
 |---|---|
 | 2011-07-01 00:00:00 | 2011-07-01 01:23:13 |
 | 2011-07-01 01:00:00 | 2011-07-01 02:19:54 |
-| ... | ... |
 
 *reporting_ymdh* is the hour (or day) or reporting data you have synchronized with your local database.
 
@@ -175,7 +174,7 @@ We recommend that you store a local record of when you last pulled an hour or da
 
 You can then compare which hours you have already pulled with the hours available via the [Feed Status Service](feed-status-service.md). (Again, note that this only works with the [Network Analytics Feed](network-analytics-feed.md).) You can also compare the time that you last pulled an hour or day of data to the `last_run` timestamp for that hour. If `last_run` is greater than the last time you synchronized that hour, then we have updated that hour of data and you should re-load it into your database.
 
-Here's an example:
+#### Example
 
 Assume you want to synchronize the previous day of data within 15 minutes of reporting data becoming available or changing. If you are synchronizing data for 2011-07-01 in EST timezone, you need to wait until hours 2011-07-01 05:00 to 2011-07-02 04:00 are available.
 
@@ -226,9 +225,7 @@ You would record the `created_on` timestamp to your database as your *last_synch
 
 | reporting_ymd | last_synchronized |
 |---|---|
-| ... | ... |
 | 2011-07-01 00:00:00 | 2011-07-02 01:13:35 |
-| ... | ... |
 
 ## Related topics
 

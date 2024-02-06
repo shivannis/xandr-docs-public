@@ -15,12 +15,12 @@ You can search across a list of products and drill down to see details.
 1. In the Filter panel on the left side of the page, narrow the product list by selecting options in the fields provided. As you make your filter selections, the product list is redisplayed accordingly.
     - Under Configuration, select the time period for the product metrics you want to see.
     - Under Refine By, select the product group(s), product type(s), parent product(s), overlapping product(s), creation time period(s), and/or product status(es) for the products you want to see. If you select more than one option in a **Refine By** field (e.g., if you select two product types), you can mouse over the field to see a tooltip that lists your selections.
-1. In the search box in the toolbar above the product list, type a search term. Change the search options as needed. Press Enter. The product list is redisplayed to show only the products that match your search criteria.  
+1. In the search box in the toolbar above the product list, type a search term. Change the search options as needed. Press Enter. The product list is redisplayed to show only the products that match your search criteria.
     - By default, the search returns products that contain the search term you entered. To change the type of search, on the drop-down
       list to the left of the search box, select a different option (e.g., to search for products that starts with the search term you
       typed, select **Starts With**).
     - By default, the search is run against the product name, ID, target expression, and target ID. To narrow the search to just one of these, on the drop-down list to the right of the search box, select a different option (e.g., to search for products by product name only, select **Product**).
-1. To drill into the high-level details of a product, click the plus sign to the left of the product name. The product row is expanded to show the product type, status, and more.  
+1. To drill into the high-level details of a product, click the plus sign to the left of the product name. The product row is expanded to show the product type, status, and more.
 
 > [!TIP]
 > From within your product search results, you can do the following:

@@ -1,23 +1,21 @@
 ---
-title: Getting Started with Adserver
-description: The article details how adserver users can access end-to-end setups of advertiser and publisher information.
+title: Getting Started with Ad Server
+description: The article details how ad server users can access end-to-end setups of advertiser and publisher information.
 ms.date: 10/28/2023
 ---
 
-# Getting started with adserver 
+# Getting started with ad server 
 
-As an Adserver user, you have access to your end-to-end setup of advertiser and publisher information. You can set up publishers and available inventory, as well as advertisers and their selling specifications. This guide will describe some of the functionality available to you, and link you to the vast number of documentation resources that can help you quickly and efficiently set up and maintain your system of buyers and sellers.
+As an ad server user, you have access to your end-to-end setup of advertiser and publisher information. You can set up publishers and available inventory, as well as advertisers and their selling specifications. This guide will describe some of the functionality available to you, and link you to the vast number of documentation resources that can help you quickly and efficiently set up and maintain your system of buyers and sellers.
 
-With Adserver, you can set up and manage your buy-side systems and your sell-side systems, as well as manage forecasting, priorities, and many
-other types of functionality between the two.
+With an ad server, you can set up and manage your buy-side systems and your sell-side systems, as well as manage forecasting, priorities, and many other types of functionality between the two.
 
 ## Network
 
 Your overall network (member) settings apply to your entire setup. Some settings are specific to your account, some apply as default settings to your advertisers and publishers.
 
 - [Network Guide](network-guide.md): Start here to find all your network resources for working with your buy-side and sell-side setups.
-- [Managing User Logins and Permissions](managing-user-logins-and-permissions.md): Manage your username and password. For network administrators, learn how to create
-  users and modify user settings.
+- [Managing User Logins and Permissions](managing-user-logins-and-permissions.md): Manage your username and password. For network administrators, learn how to create users and modify user settings.
 - [Network Operations](network-operations.md): Manage your business operations.
 
 ## Buy-side setup

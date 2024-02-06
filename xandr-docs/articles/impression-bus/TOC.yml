@@ -70,12 +70,10 @@
       href: ../bidders/bidder-profile-migration-guide.md
     - name: Exchange Service
       href: ../bidders/exchange-service.md
-    - name: Hierarchy and Ad Type Targeting for Enhanced Bidder Profiles
+    - name: Enhanced Bidder Profiles Ad Type Targeting
       href: ../bidders/hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md
     - name: API Use Cases for Enhanced Bidder Profiles
       href: ../bidders/api-use-cases-for-enhanced-bidder-profiles.md
-    - name: Frequently Asked Questions (FAQ) for Enhanced Bidder Profiles
-      href: ../bidders/frequently-asked-questions-faq-for-enhanced-bidder-profiles.md
     - name: Changelog for Enhanced Bidder Profiles
       href: ../bidders/changelog-for-enhanced-bidder-profiles.md
 - name: Member Service

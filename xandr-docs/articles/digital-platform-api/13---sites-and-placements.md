@@ -1,11 +1,11 @@
 ---
-title: 13 - Sites and Placements
+title: Sites and Placements
 description: In this article, learn how to create a site and set up the placement by providing the necessary fields and details.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# 13 - Sites and placements
+# Sites and placements
 
 Once the publisher is properly configured, we can begin building out the buy-side hierarchy. The sell-side hierarchy includes two levels under the publisher:
 

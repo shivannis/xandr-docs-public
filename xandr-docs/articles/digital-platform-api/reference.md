@@ -26,12 +26,12 @@ Below are examples of a few apps marketplace services. For details of all the se
 
 ## Authentication services
 
+Below are examples of a few authentication services. For more details, see [Authentication Service](authentication-service.md).
+
 | Service Name | Endpoint | Context | Read-only? |
 |:---|:---|:---|:---|
 | [Authentication Service](authentication-service.md) | [https://api.appnexus.com/auth](https://api.appnexus.com/auth) | Foundation | No |
 | [Account Recovery Service](account-recovery-service.md) | [https://api.appnexus.com/account-recovery](https://api.appnexus.com/account-recovery) | Foundation | No |
-
-For more details, see [Authentication Service](authentication-service.md).
 
 ## Buy-side services
 
@@ -45,28 +45,28 @@ Below are examples of a few buy-side services. For details of all the services f
 
 ## Change log services
 
+Below is an example of a change log service. For more details, see [Change Log Services](change-log-services.md).
+
 | Service Name | Endpoint | Context | Read-only? |
 |:---|:---|:---|:---|
 | [Change Log Services](change-log-services.md) | - [https://api.appnexus.com/change-log](https://api.appnexus.com/change-log)<br>- [https://api.appnexus.com/change-log-detail](https://api.appnexus.com/change-log-detail) | Buying | Yes |
 
-For more details, see [Change Log Services](change-log-services.md).
-
 ## Member services
+
+Below are examples of a few member services. For more details, see [Member Service](member-service.md).
 
 | Service Name | Endpoint | Context | Read-only? |
 |:---|:---|:---|:---|
 | [Member Service](member-service.md) | [https://api.appnexus.com/member](https://api.appnexus.com/member) | Foundation | No |
 | [Member Profile Service](member-profile-service.md) | [https://api.appnexus.com/member-profile](https://api.appnexus.com/member-profile) | Foundation | No |
 
-For more details, see [Member Service](member-service.md).
-
 ## Profile service
+
+Below is an example of a profile service. For more details, see [Profile Service](profile-service.md).
 
 | Service Name | Endpoint | Context | Read-only? |
 |:---|:---|:---|:---|
 | [Profile Service](profile-service.md) | [https://api.appnexus.com/profile](https://api.appnexus.com/profile) | Buying/Selling | No |
-
-For more details, see [Profile Service](profile-service.md).
 
 ## Read-only services
 
@@ -100,16 +100,16 @@ Below are examples of a few sell-side services. For details of all sell-side ser
 
 ## Shared platform service
 
+Below is an example of a shared platform service. For more details, see [Shared Platform Services](shared-platform-services.md).
+
 | Service Name | Endpoint | Context | Read-only? |
 |:---|:---|:---|:---|
 | [Privacy Service](privacy-service.md) | [https://api.appnexus.com/privacy](https://api.appnexus.com/privacy) | Foundation | No |
 
-For more details, see [Shared Platform Services](shared-platform-services.md).
-
 ## User service
+
+Below is an example of a user service. For more details, see [User Service](user-service.md).
 
 | Service Name | Endpoint | Context | Read-only? |
 |:---|:---|:---|:---|
 | [User Service](user-service.md) | [https://api.appnexus.com/user](https://api.appnexus.com/user) | Foundation | No |
-
-For more details, see [User Service](user-service.md).

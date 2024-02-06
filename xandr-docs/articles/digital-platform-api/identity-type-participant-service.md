@@ -8,7 +8,7 @@ ms.custom: digital-platform-api
 # Identity Type Participant service
 
 > [!NOTE]
-> This service currently is in Alpha. It is still under development and may be subject to change without notice. Contact your Microsoft Account Representative to getenabled.
+> This service currently is in Alpha. It is still under development and may be subject to change without notice. Contact your Xandr Account Representative to get enabled.
 
 The Identity Type Participant service in Identity Management Framework allows identity framework participants to manage permissions for all identity solutions that they are leveraging. With the Identity Type Participant service, each publisher participant can:
 
@@ -37,7 +37,7 @@ The Identity Type Participant service in Identity Management Framework allows id
 | `id` | int | Microsoft created ID of the identity type participant.<br>**Read Only.**<br>**Required On:** `POST`, `PUT`, and `DELETE`. |
 | `participant_member_id` | int | The member ID to which the identity type participant belong.<br>**Required On:** `POST`, `PUT`, and `DELETE`. |
 
-### The control settings for an Identity Type Participant service
+### Control settings for an Identity Type Participant service
 
 | Field | Type | Description |
 |:---|:---|:---|

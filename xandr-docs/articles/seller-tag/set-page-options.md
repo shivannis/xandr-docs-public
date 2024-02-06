@@ -36,6 +36,8 @@ The parameters listed below can be sent as arguments in the function.
 | `pageUrl` | string | This field is set to support progressive web apps that uses AST to show ads in their apps. The development framework generates an invalid referrer, that is blocked by our IQ rules.<br>Publishers using AST in their iOS apps, need to set this field to override the default page URL referrer information (normally derived by AST), to  HTTP(s) value they feel best represents the page. This feature is primarily designed for mobile environments where the referrer information may not reflect typical HTTP page URLs. The feature will only activate when the AST tag is loaded within an iOS app webview. |
 | `trackingManagement` | object | Object that specifies values for tracking related features related to the auction and creatives (viewability, usersync, etc). See [TrackingManagement Object](#trackingmanagement-object) details below. |
 | `renderingManagement` | object | Object that specifies values for rendering related features, which influence how ads are rendered onto a webpage. See [RenderingManagement Object](#renderingmanagement-object) details below. |
+| `content` | object | Object that specifies information about the content where the ads will show. See [Content Object](#content-object) for details below. |
+
 
 ## Objects
 
@@ -136,6 +138,12 @@ Specifies a mobile device on which the ads will be shown.
 | `mcc` | string | The mobile country code, as specified by the ITU. |
 | `mnc` | string | The mobile network code, as specified by the ITU. |
 | `devTime` | number | The time on the device (in UNIX Time). |
+
+### Content Object
+
+| Parameter | Type | Description |
+|:---|:---|:---|
+| `language` | string | The two-letter ANSI code for this user's language. For example, 'EN'. |
 
 ### TrackingManagement object
 
