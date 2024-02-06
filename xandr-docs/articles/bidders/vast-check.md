@@ -21,8 +21,8 @@ When adding a third-party VAST or VPAID video creative, a series of checks are p
   - To view the Xandr wrapper of your creative: [ib.adnxs.com/cr?id=[INSERT_ID]&amp;format=vast](http://ib.adnxs.com/cr?id=ID&amp;format=vast)
 - **\<Wrapper\> tags**  
 
-> [!NOTE]
-> To manually inspect the elements of your XML file, paste the VAST URL into a browser.
+  > [!NOTE]
+  > To manually inspect the elements of your XML file, paste the VAST URL into a browser.
 
 ## Possible VAST check outputs
 
@@ -44,21 +44,9 @@ If VAST check returns this message, your creative contains errors that will prev
 
 **What it means:**
 
-The duration information for the video creative is missing or invalid. A creative must have a duration declared to be eligible to serve on the Open Exchange. If your creative has a duration but you are seeing this error, the duration format may be invalid. Durations must be in the "00:00:00" format.
+**Cause**: The `Duration` information for the video creative is missing or invalid. A creative must have a duration declared to be eligible to serve on the Open Exchange. If your creative has a duration but you are seeing this error, the duration format may be invalid. Durations must have format "00:00:00".
 
-**Actions to take:**
-
-- Click **Run check again** button to initiate the re-scanning of the creative XML document.
-
-   :::image type="content" source="./media/run-check-again.png" alt-text="Screenshot of Run Check Again.":::
-
-  This feature would address the following scenarios where:
-  - Scanner failed to run during the upload
-  - Scanner timed out while scanning
-  - Scanner detected an issue such as missing or wrong duration, missing or wrong media file format, etc.
-  - VAST XML content is updated on the ad server, but needs to be updated at Xandr platform and back-end.
-
-- Reach out to your third-party ad server to add the missing duration information or revise the format. Valid duration example:
+**Corrective action**: Reach out to your third-party ad server to add the missing duration information or revise the format. Valid duration example:
 
    :::image type="content" source="media/valid-duration.png" alt-text="The screenshot that demonstrates the steps for addressing missing or invalid duration information in a video creative, advising users to contact their third-party ad server to either add the necessary duration details or adjust the format.":::
 
@@ -66,19 +54,7 @@ The duration information for the video creative is missing or invalid. A creativ
 
 **Cause**: The MediaFile information for the video creative contains none of the recommended video formats. At least one video format must be present for the creative to save.
 
-**Actions to take:**
-
-- Click **Run check again** button to initiate the re-scanning of the creative XML document.
-
-   :::image type="content" source="./media/run-check-again.png" alt-text="Screenshot of Run Check Again.":::
-
-  This feature would address the following scenarios where:
-  - Scanner failed to run during the upload
-  - Scanner timed out while scanning
-  - Scanner detected an issue such as missing or wrong duration, missing or wrong media file format, etc.
-  - VAST XML content is updated on the ad server, but needs to be updated at Xandr platform and back-end.
-
-- **Corrective action**: Reach out to your third-party ad server to update the creative with at least one of the recommended video formats. 
+**Corrective action**: Reach out to your third-party ad server to update the creative with at least one of the recommended video formats. 
 
   **Sample XML with recommended VAST formats**
 
