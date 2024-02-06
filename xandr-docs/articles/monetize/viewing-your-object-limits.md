@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Viewing your object limits
 
-Xandr limits the number of object (line items, creatives, etc.) that you can have on the platform. The Object Limits Report allows you to view these limits and proactively monitor your current usage.
+Microsoft Advertising limits the number of object (line items, creatives, etc.) that you can have on the platform. The Object Limits Report allows you to view these limits and proactively monitor your current usage.
 
 Both active and inactive objects are counted against the object limit. For creatives, only non-expired objects are counted against the limit. A creative expires when it has neither served nor been modified in 45 days.
 
@@ -31,7 +31,7 @@ for each:
 > [!TIP]
 > Line items that have not served or been modified in the last 90 days are good candidates for deletion. For information about finding and deleting line items, see [Update Line Items](update-line-items.md).
 >
-> Contact your Xandr representative if you need assistance in cleaning out old objects or to request that your object limit be increased.
+> Contact your Microsoft Advertising representative if you need assistance in cleaning out old objects or to request that your object limit be increased.
 
 ## FAQ's
 
@@ -51,4 +51,4 @@ If you need to create additional objects but have already met or exceeded your l
 
 ### Can my limit be raised?
 
-In exceptional cases, a limit may be temporarily lifted by a small amount at the discretion of our engineering team. Please contact your Xandr representative to discuss this option.
+In exceptional cases, a limit may be temporarily lifted by a small amount at the discretion of our engineering team. Please contact your Microsoft Advertising representative to discuss this option.

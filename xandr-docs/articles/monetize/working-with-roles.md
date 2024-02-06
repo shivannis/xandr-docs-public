@@ -6,20 +6,20 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Working with roles
 
-Roles determine what the users can view and perform in the Xandr system, and can be applied at the Platform or Feature level. You can also create custom roles depending on the need of the business.
+Roles determine what the users can view and perform in the Microsoft Advertising system, and can be applied at the Platform or Feature level. You can also create custom roles depending on the need of the business.
 
 A **role** represents a set of capabilities (also known as permissions) that a user has access to in the system. For example, a user with the Platform role of Network Admin can view, create, update, and edit anything within the system for their network, while a user with a Custom role that includes only the Advertisers/Orders - Read Only permission
 won't be able to do anything other than view network advertisers and insertion orders on that network.
 
 There are three types of roles:
 
-- **Platform**: Roles that are built into the Xandr system
+- **Platform**: Roles that are built into the Microsoft Advertising system
 - **Feature**: Roles that provide access to alpha and beta features.
 - **Custom**: Roles that you create. Custom Roles give you fine-grained control over how your users access console.
 
 ## Platform roles
 
-Platform roles are created by Xandr and cannot be changed. They have a pre-defined set of permissions that relate
+Platform roles are created by Microsoft Advertising and cannot be changed. They have a pre-defined set of permissions that relate
 mostly to administrative and specialized tasks.
 
 Platform roles differ by network, but could include roles such as the following:
@@ -43,7 +43,7 @@ You can assign platform roles to users when you create the user account. You can
 
 ## Feature roles
 
-Like platform roles, feature roles are created by Xandr, and the resources granted based on those roles cannot be changed by network administrators. You can, however, update the role to ensure all the appropriate users in your network have
+Like platform roles, feature roles are created by Microsoft Advertising, and the resources granted based on those roles cannot be changed by network administrators. You can, however, update the role to ensure all the appropriate users in your network have
 permissions to the feature. When a feature role is removed, all users who had access to that product or feature will retain access.
 
 ## Custom roles

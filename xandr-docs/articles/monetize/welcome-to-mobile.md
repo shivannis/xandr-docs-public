@@ -65,12 +65,12 @@ As the world transitions toward heavier mobile device usage, learning the ins an
 
 - **[Device Make Service](../digital-platform-api/device-make-service.md)**
   
-  This read-only service lets you view all device makes recognized by Xandr.
+  This read-only service lets you view all device makes recognized by Microsoft Advertising.
 
 - **[Device Model Service](../digital-platform-api/device-model-service.md)**
 
-  This read-only service lets you view all device models recognized by Xandr.
+  This read-only service lets you view all device models recognized by Microsoft Advertising.
 
 - **[Carrier Service](../digital-platform-api/carrier-service.md)**
   
-  This read-only service lets you view all mobile carriers recognized by Xandr.
+  This read-only service lets you view all mobile carriers recognized by Microsoft Advertising.

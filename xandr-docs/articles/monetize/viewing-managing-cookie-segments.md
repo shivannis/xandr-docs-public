@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Viewing & managing cookie segments
 
-When troubleshooting an issue, it is sometimes helpful to: (1) see what Xandr segments you belong to; and (2) override
+When troubleshooting an issue, it is sometimes helpful to: (1) see what Microsoft Advertising segments you belong to; and (2) override
 certain aspects of your cookie, such as what country, region, city, postal, and DMA you are in so that you can mimic different kinds of users. This page walks you through the process.
 
 > [!NOTE]
@@ -25,7 +25,7 @@ If you are unsure of your member ID and/or dongle, you can go to any placement i
 
 ## View your cookie attributes
 
-When you navigate to the cookie viewer, you will see your Xandr User ID, what geo overrides you have set, and all of the segments you belong to.
+When you navigate to the cookie viewer, you will see your Microsoft Advertising User ID, what geo overrides you have set, and all of the segments you belong to.
 
 ## Override your cookie attributes
 
@@ -68,7 +68,7 @@ You can view the segments you belong to under the "Server-side Data" section. Th
 - when you expire out of the segment, and
 - whether the segment is active.
 
-  The cookie viewer also allows you to see the cookie of other users besides yourself. To do this, you must know the  Xandr user ID and use this format:
+  The cookie viewer also allows you to see the cookie of other users besides yourself. To do this, you must know the  Microsoft Advertising user ID and use this format:
 
   ```
   https://ib.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE&uid=USER_ID 

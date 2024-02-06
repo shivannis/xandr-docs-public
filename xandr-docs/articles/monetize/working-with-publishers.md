@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Working with publishers
 
-The publisher object is the top level of the sell-side hierarchy (**Publishers** \> **Placement Groups** \> **Placements**). When you create a publisher, you define your financial and business relationship with the publisher, specify how you would like to sell the publisher's inventory to your Xandr partners, and set the types of acceptable payments, payment terms, and ad quality settings.
+The publisher object is the top level of the sell-side hierarchy (**Publishers** \> **Placement Groups** \> **Placements**). When you create a publisher, you define your financial and business relationship with the publisher, specify how you would like to sell the publisher's inventory to your Microsoft Advertising partners, and set the types of acceptable payments, payment terms, and ad quality settings.
 
 ## Related topics
 

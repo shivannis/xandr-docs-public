@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Viewing your target limits
 
-Xandr limits the number of domains that can be used in a single domain list and the number of certain targets that can be used in a single profile.
+Microsoft Advertising limits the number of domains that can be used in a single domain list and the number of certain targets that can be used in a single profile.
 
 ## Target limits report
 

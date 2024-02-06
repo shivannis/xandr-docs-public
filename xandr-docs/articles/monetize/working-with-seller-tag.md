@@ -1,12 +1,12 @@
 ---
-title: Working with Xandr's Seller Tag (AST)
+title: Working with Microsoft Advertising's Seller Tag (AST)
 description: The article explains Seller Tag (AST) which consolidates ad slots, enabling efficient auctions. This lightweight JavaScript SDK runs asynchronously.
 ms.date: 10/28/2023
 ---
 
-# Working with Xandr's seller tag (AST)
+# Working with Microsoft Advertising's seller tag (AST)
 
-Xandr's Seller Tag (AST) is a lightweight JavaScript SDK that consolidates all ad slots on a publisher's web page
+Microsoft Advertising's Seller Tag (AST) is a lightweight JavaScript SDK that consolidates all ad slots on a publisher's web page
 to be auctioned and sends information about them in a single ad request whenever possible.
 
 AST runs in the header or body of a web page in a user's browser and allows publishers to conduct auctions directly from the page. AST loads asynchronously, meaning that ad calls do not block the page content from loading. For more information on AST, see [Seller Tag](../seller-tag/seller-tag.md).

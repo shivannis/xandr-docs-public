@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Working with yield management
 
 > [!NOTE]
-> This feature is not available by default. If you are interested in gaining access or discussing potential use cases that may apply to your business, reach out to your Xandr representative.
+> This feature is not available by default. If you are interested in gaining access or discussing potential use cases that may apply to your business, reach out to your Microsoft Advertising representative.
 
 Yield management (YM) tools allow networks and their publishers to set floor (minimum bid price) and bias (bid modifying) rules that enable you to exert more control over impression pricing. These tools help you to serve creatives with the highest yields for publishers, allow publishers to express preferences for creatives from certain buyers over others,
 and avoid channel conflict with directly negotiated deals.

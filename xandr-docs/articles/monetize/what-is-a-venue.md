@@ -11,7 +11,7 @@ ms.date: 10/28/2023
 
 ## Overview
 
-In order to maximize the accuracy of our predictions, all of the inventory on the Xandr platform is entered into
+In order to maximize the accuracy of our predictions, all of the inventory on the Microsoft Advertising platform is entered into
 groupings of like inventory buckets called venues so that:
 
 1. Each venue can be expected to similarly impact response rates. For example, users visiting the New York Times website from the UK are likely to respond differently to offers than visitors from the US. Similarly, users are likely to respond differently to a front page placement on a site compared to one nested several layers deep.
@@ -35,13 +35,13 @@ venue).
 
 There are two sets of criteria used to create a venue:
 
-- In an external (non-Xandr) environment, there must be an average of 2,500,000 impressions recorded each day over the 14-day period.
-- In an internal (Xandr) inventory environment, there must be an average of 100,000 impressions recorded each day over the 14-day period.
+- In an external (non-Microsoft Advertising) environment, there must be an average of 2,500,000 impressions recorded each day over the 14-day period.
+- In an internal (Microsoft Advertising) inventory environment, there must be an average of 100,000 impressions recorded each day over the 14-day period.
 
 When one of these criteria are met, a venue gets created on that level, corresponding to whichever tag-url-geo (or tag-url, or tag-geo, or tag, etc.) on which the threshold is exceeded.
 
 > [!IMPORTANT]
-> When calculating average impression numbers for venue creation, days in which no impressions were recorded are not counted, but they are counted as part of the 14-day period. For example, if 1,200,000 impressions were recorded in the last 14 days, but four of those days had zero impressions, the system will divide 1,200,000 by 10 (14-4) to determine the daily average. In this case, the result (120,000) would be sufficient to create a venue from Xandr inventory. However, if even one impression was recorded on each of those four days, the system would divide 1,200,000 by 14 to determine the daily average. In this case, the result (85,714) would not be sufficient to create a venue for inventory from Xandr.
+> When calculating average impression numbers for venue creation, days in which no impressions were recorded are not counted, but they are counted as part of the 14-day period. For example, if 1,200,000 impressions were recorded in the last 14 days, but four of those days had zero impressions, the system will divide 1,200,000 by 10 (14-4) to determine the daily average. In this case, the result (120,000) would be sufficient to create a venue from Microsoft Advertising inventory. However, if even one impression was recorded on each of those four days, the system would divide 1,200,000 by 14 to determine the daily average. In this case, the result (85,714) would not be sufficient to create a venue for inventory from Microsoft Advertising.
 
 ## Example
 
