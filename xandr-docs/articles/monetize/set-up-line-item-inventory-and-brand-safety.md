@@ -35,7 +35,7 @@ You can use the **Inventory & Brand Safety Targeting** section to specify the ty
 
 1. Select a member-level or advertiser-level blocklist or create a blocklist directly from the **Inventory & Brand Safety Targeting** section.
 
-    The inventory that has been included in your blocklists won't be bidded on. By default, the Xandr blocklist will always be applied.
+    The inventory that has been included in your blocklists won't be bidded on. By default, the Microsoft Advertising blocklist will always be applied.
   
     > [!NOTE]
     > If the **Require for all Line Items** checkbox has been selected at the Network level for a particular blocklist, it will be applied to all of your line items and can't be removed.
@@ -47,7 +47,7 @@ You can use the **Inventory & Brand Safety Targeting** section to specify the ty
    > [!NOTE]
    >
    > - If the **Require for all Line Items** checkbox has been selected at the Network level for a particular allowlist, it will be applied to all of your line items and can't be removed.
-   > - If you have selected **Open Exchange** as one of your supply sources, you should also select at least one allowlist. If you don't have an allowlist, you can select the Xandr Inventory List. This list is a collection of inventory that Xandr has selected based on demonstrated demand interest within our marketplace. The Xandr Inventory List has been vetted using additional quality controls and platform inventory quality filtering.
+   > - If you have selected **Open Exchange** as one of your supply sources, you should also select at least one allowlist. If you don't have an allowlist, you can select the Microsoft Advertising Inventory List. This list is a collection of inventory that Microsoft Advertising has selected based on demonstrated demand interest within our marketplace. The Microsoft Advertising Inventory List has been vetted using additional quality controls and platform inventory quality filtering.
    > - If you selected **Open Exchange** or **Managed** as your **Supply Source**, you can only bid on inventory in the allowlist.
    > - You can view or export selected allowlists. Allowlists can also be applied at the insertion order level.
 

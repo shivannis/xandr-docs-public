@@ -30,7 +30,7 @@ Use the links below to get started.
 - **[Share Your Packages with Buyers](share-your-packages-with-buyers.md)**
 
   Proactively commercialize your packages by sending links to both
-  Xandr and external buyers.
+  Microsoft Advertising and external buyers.
 
 - **[Manage Your Packages](manage-your-packages.md)**
 
@@ -40,7 +40,7 @@ Use the links below to get started.
 
 - **[Negotiate Deals with Buyers](negotiate-deals-with-buyers.md)**
 
-  Negotiate custom deals with both Xandr buyers
+  Negotiate custom deals with both Microsoft Advertising buyers
   and external demand partners.
 
 - **[Create a Custom Deal](create-a-custom-deal.md)**

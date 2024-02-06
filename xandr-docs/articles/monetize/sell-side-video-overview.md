@@ -10,7 +10,7 @@ ms.date: 10/28/2023
 Sellers who want to work with video inventory generally face three key
 challenges when attempting to succeed in this fast-evolving area of
 Internet advertising: monetization, latency, and cross-device adserving.
-Xandr sell-side video products are built with
+Microsoft Advertising sell-side video products are built with
 these challenges in mind. Our goal is to offer a seamless video product
 that maximizes revenue, speed, and cross-device capabilities for a range
 of client types.
@@ -22,7 +22,7 @@ how they work, and how they help clients to succeed.
 
 In order to succeed in video trafficking, sellers must be able to
 reliably and predictably monetize their video inventory and ensure
-optimal video fill. Xandr video products help to
+optimal video fill. Microsoft Advertising video products help to
 ensure that video inventory is sold efficiently and seamlessly.
 
 ## Monetization
@@ -30,7 +30,7 @@ ensure that video inventory is sold efficiently and seamlessly.
 Monetization involves optimizing video CPM in order to get the best
 possible price for inventory.
 
-- All of the Xandr advanced yield management
+- All of the Microsoft Advertising advanced yield management
   tools which sellers are familiar with in display are also available
   for video inventory. Through floor rules and deals, sellers can
   closely control their monetization.
@@ -45,9 +45,9 @@ possible price for inventory.
 Fill means optimizing the sale of inventory so that you sell as much of
 it as possible.
 
-- Sellers can use Xandr to access a range of RTB
+- Sellers can use Microsoft Advertising to access a range of RTB
   demand. In addition to the premium video buyers already using the
-  Xandr DSP, sellers can access RTB demand from
+  Microsoft Advertising DSP, sellers can access RTB demand from
   several video-first DSPs who we are currently integrating.
 - With client-side video mediation, clients can access mediated demand
   as well as RTB. Mediated demand sources are called as the page loads
@@ -56,7 +56,7 @@ it as possible.
   demand may also be called in the page body and used for both instream
   and outstream video.
 - Sellers can run their non-guaranteed video campaigns in
-  Xandr and setup any passbacks as required
+  Microsoft Advertising and setup any passbacks as required
   allowing them to easily manage their own demand on our platform.
 
 ## Breaking the speed barrier
@@ -86,7 +86,7 @@ priority assigned to VPAID which responds more quickly.
 ## Cross-Device support
 
 If video ads are to succeed, they must be able to play across devices.
-Xandr Video is designed to render and monetize
+Microsoft Advertising Video is designed to render and monetize
 video for desktop web, mobile web, and mobile app contexts.
 
 Our focus with video clients is on mobile web and desktop web. Through
@@ -99,7 +99,7 @@ our Mobile SDK, you can also integrate interstitials and instream video:
 
 ## Video reporting insights
 
-Xandr gives sellers access to
+Microsoft Advertising gives sellers access to
 impression-by-impression reporting data about their video inventory via
 the Log Level Data service's [Video Events feed](../log-level-data/video-events-feed.md). This allows sellers
 to gain valuable insights into their inventory and audience. Our video

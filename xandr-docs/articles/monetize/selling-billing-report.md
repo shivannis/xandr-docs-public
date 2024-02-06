@@ -79,13 +79,13 @@ for reports. However, all intervals are not available for every report.
 | Buyers | Yes | The buyer of this impression. |  
 | Country | Yes | Country of this impression. |  
 | Curator | Yes | The curator of this impression. | 
-| Curator Cleared | Yes | Whether or not the seller receives the reseller revenue from Xandr or the curator.<br> See [Curator cleared Table](#curator-cleared-table)  |
+| Curator Cleared | Yes | Whether or not the seller receives the reseller revenue from Microsoft Advertising or the curator.<br> See [Curator cleared Table](#curator-cleared-table)  |
 | Deal ID | Yes | The deal associated with the impression. |  
 | Deal Type | Yes | The deal type associated with the impression. Possible values are:<br> - Private Marketplace<br> - First Look<br> - Programmatic Guaranteed<br> - Curated |  
 | Impression Type | Yes | See [Impression Types](#impression-types) below for definitions of the different types of impressions. |  
 | Insertion Order | Yes | The insertion order of this impression. |  
 | Is Claims Activity | Yes | Is adjustment made from Invalid Trafffic (IVT) claims. |  
-| Is Cross Seat Activity | Yes | Only relevant if you have more than one member/seat on the Xandr platform. If you do, this field allows you to know whether the activity was associated with transactions between members you manage and therefore simplify the reconciling of their invoices. |  
+| Is Cross Seat Activity | Yes | Only relevant if you have more than one member/seat on the Microsoft Advertising platform. If you do, this field allows you to know whether the activity was associated with transactions between members you manage and therefore simplify the reconciling of their invoices. |  
 | Is Deal | Yes | Is there any deal associated with the impression. Different from 'Deal' which is the actual deal id |  
 | Media Type (Billing) | Yes | The video-specific media type classification for billing only. If you don't have video-specific pricing, this field is irrelevant. Possible values are<br> - -- <br> - Non-Video<br> - Video (Hosted)<br> - Video (Non-Hosted) |  
 | Publisher | Yes | The publisher on whose inventory the impression occurred. |  
@@ -96,15 +96,15 @@ for reports. However, all intervals are not available for every report.
 
 |  |  |
 |---|---|
-| 0 | Xandr acts as the clearing house, collecting the cost of media from the buyer and paying the seller. |
-| 1 | Xandr does not clear cash; the buyer pays the seller directly for the cost of media. |
+| 0 | Microsoft Advertising acts as the clearing house, collecting the cost of media from the buyer and paying the seller. |
+| 1 | Microsoft Advertising does not clear cash; the buyer pays the seller directly for the cost of media. |
 | -1 | Dummy value for unbilled activity. |
 
 ### Curator cleared table
 
 |  |  |
 |---|---|
-| 0 | The seller receives the reseller revenue from Xandr. |
+| 0 | The seller receives the reseller revenue from Microsoft Advertising. |
 | 1 | The seller receives the reseller revenue from the curator. |
 | -1 | Dummy value for unbilled activity. |
 

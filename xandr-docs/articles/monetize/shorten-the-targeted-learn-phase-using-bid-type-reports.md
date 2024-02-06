@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 > [!IMPORTANT]
 > This guide only applies to the legacy line item. If you are using the augmented line item (ALI), see [Optimization Guide - ALI](optimization-guide-ali.md).
 
-Whether you optimize to a percentage margin or a predicted performance goal (e.g., CPC or CPA), a new campaign will need to buy inventory and use the Xandr optimization engine to learn which groupings of inventory will deliver the desired performance.
+Whether you optimize to a percentage margin or a predicted performance goal (e.g., CPC or CPA), a new campaign will need to buy inventory and use the Microsoft Advertising optimization engine to learn which groupings of inventory will deliver the desired performance.
 
 During this learning phase, a percentage of your budget will be spent in venues that will not necessarily deliver the results expected (so that our optimization can learn what performs best). If you are under a tight budget or timeline, there are a few things you could do to help speed up the [Learn Budget](learn-budget.md) process and reduce budget spending in areas that are not performing. This page outlines one of these manual optimization tips: using Bid Type reports for inventory exclusion.
 
@@ -26,7 +26,7 @@ To perform manual optimization use the Bid Type report. This report can be run a
 The report will show you exactly which placements within a publisher are still in the learn phase by displaying **learn** in the **Bid Type** column.
 
 > [!IMPORTANT]
-> Visit the Bid Type Definitions in the [Advertiser Reporting](advertiser-reporting.md) page to learn more about bid types in Xandr.
+> Visit the Bid Type Definitions in the [Advertiser Reporting](advertiser-reporting.md) page to learn more about bid types in Microsoft Advertising.
 
 By analyzing the performance of placements in learn phase, you can begin to derive three main criteria:
 

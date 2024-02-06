@@ -12,7 +12,7 @@ cause.
 
 You can use this report to troubleshoot video settings and eliminate
 errors relating to sell-side video advertising on the
-Xandr platform. [VAST 3 error codes](https://wiki.iabtechlab.com/index.php?title=VAST_Error_Code_Troubleshooting_Matrix) provide further
+Microsoft Advertising platform. [VAST 3 error codes](https://wiki.iabtechlab.com/index.php?title=VAST_Error_Code_Troubleshooting_Matrix) provide further
 insight into the source of errors.
 
 ## Time frame
@@ -80,7 +80,7 @@ For all revenue fields, the currency is defined by the
 
 | Column | Filter? | Description |
 |---|---|---|
-| Ad Request Call Type | N | The type of handler that was used to send the impression to Xandr (e.g.,  `vmap`, `ut`,  `mob`,  `ptv`,  `openrtb`
+| Ad Request Call Type | N | The type of handler that was used to send the impression to Microsoft Advertising (e.g.,  `vmap`, `ut`,  `mob`,  `ptv`,  `openrtb`
 . |
 | Advertiser | Y | The advertiser associated with the impression. |
 | Application ID | N | The ID of the user's mobile app. |

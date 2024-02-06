@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Select an Audit Option for a Creative
-description: Learn how to set up an audit options in this page. You can choose to audit your own creatives or have Xandr audit them. 
+description: Learn how to set up an audit options in this page. You can choose to audit your own creatives or have Microsoft Advertising audit them. 
 ms.date: 10/28/2023
 ---
 
@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Microsoft Monetize - Select an Audit Option for a Creative
 
 When adding creatives, you can specify if you want to audit your own
-creatives or have Xandr audit them. An unaudited
+creatives or have Microsoft Advertising audit them. An unaudited
 creative can only run on your managed publishers. Unaudited creatives
 aren't eligible to run on third-party inventory unless the seller
 specifically allows it.
@@ -18,13 +18,13 @@ Select one of the following audit options from the
 
 - **Platform Audit**: Select this option
   to submit the creative for auditing by the
-  Xandr Audit team and perform the following:
+  Microsoft Advertising Audit team and perform the following:
   - Select a priority.
 
     > [!NOTE]
     > Business days are from 9:00pm Sunday to 11:59pm Friday ET.
 
-    Xandr charges a fee for each audited creative. Creatives are audited
+    Microsoft Advertising charges a fee for each audited creative. Creatives are audited
     in the order that they are received with a target completion time of
     one business day from the submission time. Priority audits, which
     are available for an additional fee, are completed within two
@@ -54,7 +54,7 @@ Select one of the following audit options from the
   self-auditing, see [Self-Auditing Creatives](self-auditing-creatives.md).
 
   > [!NOTE]
-  > Self-auditing may reduce access to inventory outside of your network since many sellers only allow Xandr audited creatives.
+  > Self-auditing may reduce access to inventory outside of your network since many sellers only allow Microsoft Advertising audited creatives.
 
   Set any one of the following creative attributes:
 
@@ -80,9 +80,9 @@ Select one of the following audit options from the
   > [!NOTE]
   > When selecting **No Audit**, this may result in the creative serving less frequently, as publishers might choose to block it.
 
-For a full description of the Xandr auditing
+For a full description of the Microsoft Advertising auditing
 process and the content standards for creatives running on the
-Xandr platform, see [Auditing Creatives](auditing-creatives.md) and [Creative Standards](creative-standards.md). Regardless of your audit selection, the Xandr Sherlock technology checks all creatives for overt malvertising threats and suspicious behavior.
+Microsoft Advertising platform, see [Auditing Creatives](auditing-creatives.md) and [Creative Standards](creative-standards.md). Regardless of your audit selection, the Microsoft Advertising Sherlock technology checks all creatives for overt malvertising threats and suspicious behavior.
 
 ## Related topics
 

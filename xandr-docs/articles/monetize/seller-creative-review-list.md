@@ -56,7 +56,7 @@ available columns.
 | **ID** | ID of the creative. |
 | **Name** | Name of the creative |
 | **Type** | Type of creative, e.g., **Banner**, **Video** |
-| **Xandr Hosted** | Specifies if Xandr is hosting the creative |
+| **Microsoft Advertising Hosted** | Specifies if Microsoft Advertising is hosting the creative |
 
 ## Search for creatives
 

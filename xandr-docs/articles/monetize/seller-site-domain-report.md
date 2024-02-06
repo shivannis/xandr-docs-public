@@ -18,7 +18,7 @@ allows you to:
   publisher so you can understand how to value it
 - Guarantee a certain degree of inventory quality to managed buyers
 - Optimize on domains or mobile application ID for managed campaigns
-- Understand the business impact of Xandr audit
+- Understand the business impact of Microsoft Advertising audit
   and categorization
 
 **Available to Members and Publishers:** This page describes both the
@@ -85,7 +85,7 @@ for reports. However, all intervals are not available for every report.
 | Content Category | The name and ID of the universal content category associated with this site or placement. For more information about content categories, see [Content Categories](content-categories.md). |
 | Domains Exposed | Whether this inventory's domains are exposed for targeting by buyers. Possible values:<br> - `"Exposed"`<br> - `"Not exposed"` |
 | Exposed for Resale | Whether this inventory is exposed for resale. Possible values:<br> - `"Exposed"`<br> - `"Not Exposed"` |
-| Filtered Request Reason | The reason the ad request was filtered out by Xandr prior to bidding. |
+| Filtered Request Reason | The reason the ad request was filtered out by Microsoft Advertising prior to bidding. |
 | Fold Position | The fold position of the impression (i.e., where on the page the placement is located).<br>Possible values for non-Facebook impressions:<br> - unknown<br> - above<br> - below<br>Possible values for Facebook impressions:<br> - Top FB Ad Slot<br> - 2nd FB Ad Slot<br> - 3rd FB Ad Slot<br> - 4th FB Ad Slot<br> - 5th FB Ad Slot<br> - 6th FB Ad Slot<br> - 7th FB Ad Slot<br> - 8th FB Ad Slot<br> - 9th FB Ad Slot<br> - 10th FB Ad Slot |
 | Gender | The gender of the user. For impressions older than 100 days, the gender will be "unknown". |
 | Impression Type | The type of impression that occurred. Possible impression types:<br> - `"PSA (2)"`: The auction ended in default due to a lack of bids, or there may not have been any bids that met the seller's reserve price. No default creative was assigned to the placement, and a PSA was served.<br> - `"Default Error (3)"`: The auction ended in default due to a technical error, and the placement's default creative was served.<br> - `"Default (4)"`: The auction ended in default due to a lack of bids, or there may not have been any bids that met the seller's reserve price. A default creative was served.<br> - `"Kept (5)"`: The auction ended with a managed buyer winning.<br> - `"Resold (6)"`: The auction ended with an external buyer winning.<br> - `"PSA Error (8)"`: The auction ended in default due to a technical error. No default creative was assigned to the placement, and a PSA was served. |
@@ -106,7 +106,7 @@ for reports. However, all intervals are not available for every report.
 | Age | The age of the user associated with the impression. For impressions older than 100 days, the age will be "unknown". |
 | Audit Type | The type of audit performed on the domain where the impression occurred. Possible values:<br> - `"By Seller"`: The domain was self-audited.<br> - `"By AppNexus"`: The domain was audited by AppNexus.<br> - `"By Seller & AppNexus"`: The domain was audited by both the seller and AppNexus.<br> - `"Unknown Audit Type"`: This usually means that the domain is unaudited. In some cases, this means that the domain was not auditable for technical reasons. |
 | Content Category | The universal content category associated with this site or placement. For more information about content categories, see [Content Categories](content-categories.md). |
-| Filtered Request Reason | The reason the ad request was filtered out by Xandr prior to bidding. |
+| Filtered Request Reason | The reason the ad request was filtered out by Microsoft Advertising prior to bidding. |
 | Fold Position | The fold position of the impression (i.e., where on the page the placement is located).<br>Possible values for non-Facebook impressions:<br> - unknown<br> - above<br> - below<br>Possible values for Facebook impressions:<br> - Top FB Ad Slot<br> - 2nd FB Ad Slot<br> - 3rd FB Ad Slot<br> - 4th FB Ad Slot<br> - 5th FB Ad Slot<br> - 6th FB Ad Slot<br> - 7th FB Ad Slot<br> - 8th FB Ad Slot<br> - 9th FB Ad Slot<br> - 10th FB Ad Slot |
 | Gender | The gender of the user. For impressions older than 100 days, the gender will be "unknown". |
 | Impression Type | The type of impression. Possible values (associated IDs in parentheses):<br> - "Blank" (1): No creative served.<br> - "PSA" (2): A public service announcement served because no other creative was eligible.<br> - "Default Error" (3): A default creative served due to timeout issue.<br> - "Default" (4): A default creative served because no campaigns bid or no other creative was eligible.<br> - "Kept" (5): One of your managed advertisers served a creative.<br> - "Resold" (6): The impression was sold to a third-party buyer.<br> - "RTB" (7): Your creative served on third-party inventory.<br> - "PSA Default Error" (8): A public service announcement served due to timeout issue.<br> - "External Impression" (9): An impression from an impression tracker.<br> - "External Click" (10): A click from a click tracker.<br> - "Insertion" (11): Your creative served on third-party inventory where it persists across page-loads and sessions. Note: This impression type is currently only for Facebook News Feed creatives. |
@@ -128,7 +128,7 @@ for reports. However, all intervals are not available for every report.
 | Column | Description |
 |---|---|
 | Clicks | The number of clicks coming through this site or placement. |
-| Filtered Request | The total number of impressions which have been filtered out by Xandr Inventory Quality (e.g. from a blocklisted domain, IP, etc.). |
+| Filtered Request | The total number of impressions which have been filtered out by Microsoft Advertising Inventory Quality (e.g. from a blocklisted domain, IP, etc.). |
 | Imps | The number of impressions coming through this site or placement. |
 | Network Revenue | The amount of network revenue running through this site or placement. This is the revenue coming into the network, booked through direct advertisers and resold to real time buyers. |
 | Publisher Revenue | The amount of publisher revenue running through this site or placement. This is the revenue paid out to the publisher (on a Revshare or CPM basis). |

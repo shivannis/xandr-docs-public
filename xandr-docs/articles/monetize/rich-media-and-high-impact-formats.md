@@ -1,17 +1,17 @@
 ---
 title: Rich Media and High Impact Formats
-description: Learn about some basic Rich Media formats that you can transact on Xandr and also offers information on app providers that specialize in Rich Media and High Impact formats.
+description: Learn about some basic Rich Media formats that you can transact on Microsoft Advertising and also offers information on app providers that specialize in Rich Media and High Impact formats.
 ms.date: 10/28/2023
 ---
 
 
 # Rich media and high impact formats
 
-At times, Xandr clients want to transact larger
+At times, Microsoft Advertising clients want to transact larger
 ad formats in addition to standard [IAB ad formats](https://www.iab.com/). These are usually sold
 at higher CPM rates and have higher CTRs. This article gives an overview
 of some basic Rich Media formats that you can transact on
-Xandr and also offers further information on app
+Microsoft Advertising and also offers further information on app
 providers that specialize in Rich Media and High Impact formats, some of
 which are also known as "rising stars".
 

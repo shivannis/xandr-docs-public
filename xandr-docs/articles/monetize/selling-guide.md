@@ -19,7 +19,7 @@ that apply to all publishers, see the [Network Guide](network-guide.md)
 
 ## In this guide
 
-- [Working with Publishers](working-with-publishers.md) In Xandr, the publisher object is the top level of the sell-side hierarchy (Publishers \> Placement Groups \> Placements). When you create a publisher, you define your financial and business relationship with the publisher, specify how you would like to sell the publisher's inventory to your Xandr partners, and set the types of acceptable payments, payment terms, and ad quality settings.
+- [Working with Publishers](working-with-publishers.md) In Microsoft Advertising, the publisher object is the top level of the sell-side hierarchy (Publishers \> Placement Groups \> Placements). When you create a publisher, you define your financial and business relationship with the publisher, specify how you would like to sell the publisher's inventory to your Microsoft Advertising partners, and set the types of acceptable payments, payment terms, and ad quality settings.
 - [Working with Payment Rules](working-with-payment-rules.md) Payment rules represent a financial agreement
   between a network and a publisher. A network may have a single payment
   rule for all impressions from a publisher, or it might have a "base
@@ -47,9 +47,9 @@ that apply to all publishers, see the [Network Guide](network-guide.md)
   at the placement group level.
 - [Working with Placements](working-with-placements.md) A placement is basically an ad tag, for example, a
   300x250 slot on mysite.com. Placements may be used by publishers, by
-  their intermediaries who are using Xandr
+  their intermediaries who are using Microsoft Advertising
   Monetize as their publisher ad server, or by advertisers who
-  wish to traffic a direct media buy through Xandr
+  wish to traffic a direct media buy through Microsoft Advertising
   Monetize. When you create a placement in
   Monetize, you select the size and types of
   creatives that can serve on the placement, set a reserve price for
@@ -58,7 +58,7 @@ that apply to all publishers, see the [Network Guide](network-guide.md)
   for targeting in campaigns and for reporting.
 - [Reselling Managed Inventory](reselling-managed-inventory.md) In addition to selling your publishers'
   inventory to managed advertisers, you can resell managed inventory to
-  the entire Xandr platform. This section shows
+  the entire Microsoft Advertising platform. This section shows
   you the various ways to expose your inventory for targeting and how to
   make sure your placements can be bought by third parties.
 
@@ -74,7 +74,7 @@ Microsoft Monetize is more than just an ad server.
 Using Monetize, you can:
 
 - Set up publishers and traffic campaigns on managed inventory.
-- Resell inventory on the Xandr platform for
+- Resell inventory on the Microsoft Advertising platform for
   better monetization.
 - Apply optimization strategies to your direct campaigns; optimizing
   direct campaigns is as important as optimizing on third-party

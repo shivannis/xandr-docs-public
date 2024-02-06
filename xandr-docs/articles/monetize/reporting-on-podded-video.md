@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Reporting on Podded Video
-description: Learn about the two reports that provide insight into how your podded video supply is performing on Xandr. 
+description: Learn about the two reports that provide insight into how your podded video supply is performing on Microsoft Advertising. 
 ms.date: 10/28/2023
 ---
 
@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Microsoft Monetize - Reporting on podded video
 
 > [!NOTE]
-> This feature is currently in **Alpha**. It is still under development and may be subjected to changes without notice. Contact your Xandr Account Representative to get it enabled.
+> This feature is currently in **Alpha**. It is still under development and may be subjected to changes without notice. Contact your Microsoft Advertising Account Representative to get it enabled.
 
 ## Overview
 
@@ -22,7 +22,7 @@ optimised on variables such as price and fill rate.
 ## Reporting types
 
 There are two reports that provide insight into how your podded video
-supply is performing on Xandr:
+supply is performing on Microsoft Advertising:
 
 - Seller Slot Analytics Report
 - Seller Pod Analytics Report
@@ -31,7 +31,7 @@ supply is performing on Xandr:
 
 | Report Name | Description | Example Use Cases |
 |---|---|---|
-| Seller Pod Analytics Report | This report provides an understanding on the effectiveness and monetization of your supply based on a particular ad break. You can report on the number of pods sent to Xandr and the number of pods with at least 1 impression sold, so that you can analyze performance. This report enables reporting on the average number of impressions or revenue per pod to inform decisions on how to structure your inventory for optimal yield. All dimensions included in this report remains consistent across the entire ad break. | For a publisher, region or genre:<br> - average pod fill rate in seconds perpublisher,<br> - average impression seconds sold per pod,<br> - average impressions sold per pod, and<br> - average revenue per pod. |
+| Seller Pod Analytics Report | This report provides an understanding on the effectiveness and monetization of your supply based on a particular ad break. You can report on the number of pods sent to Microsoft Advertising and the number of pods with at least 1 impression sold, so that you can analyze performance. This report enables reporting on the average number of impressions or revenue per pod to inform decisions on how to structure your inventory for optimal yield. All dimensions included in this report remains consistent across the entire ad break. | For a publisher, region or genre:<br> - average pod fill rate in seconds perpublisher,<br> - average impression seconds sold per pod,<br> - average impressions sold per pod, and<br> - average revenue per pod. |
 
 ## Seller slot analytics
 

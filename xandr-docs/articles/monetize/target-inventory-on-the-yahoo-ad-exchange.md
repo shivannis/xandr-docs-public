@@ -22,7 +22,7 @@ This page shows you how to set up a campaign to run on Yahoo Ad Exchange (YAX) i
 
 ### Access to YAX
 
-Buyers that do not have access to the Yahoo Ad Exchange through Xandr will not see the YAX seller for targeting. For information about gaining access to YAX, please speak with your Xandr representative.
+Buyers that do not have access to the Yahoo Ad Exchange through Microsoft Advertising will not see the YAX seller for targeting. For information about gaining access to YAX, please speak with your Microsoft Advertising representative.
 
 ### Creative requirements
 
@@ -33,7 +33,7 @@ Each creative that you want to serve on YAX inventory must meet the following re
 - The creative format must be flash, image, raw-js, raw-html, iframe-html, or url-html.
 - The creative template must be a Standard template.
 - You must submit the creative for [auditing](creative-standards.md) and it must pass.
-- If you want the creative to serve on secure YAX inventory, you must submit the creative for Xandr SSL audit, and it must pass.
+- If you want the creative to serve on secure YAX inventory, you must submit the creative for Microsoft Advertising SSL audit, and it must pass.
   
 ## Step 1. Open your campaign
 

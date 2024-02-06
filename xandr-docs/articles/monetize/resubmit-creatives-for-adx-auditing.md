@@ -16,7 +16,7 @@ the issue that Google Ad Manager found, review your creative and its
 settings to confirm the validity of Google's rejection reason.
 
 > [!NOTE]
-> Creatives can have a Google Ad Manager audit status of "pending" for an indefinite period. Because Xandr is not performing the Google Ad Manager audit, we can't guarantee a turnaround time on Google Ad Manager audit statuses. For any issues related to the Google Ad Manager audit, please contact Google Ad Manager.
+> Creatives can have a Google Ad Manager audit status of "pending" for an indefinite period. Because Microsoft Advertising is not performing the Google Ad Manager audit, we can't guarantee a turnaround time on Google Ad Manager audit statuses. For any issues related to the Google Ad Manager audit, please contact Google Ad Manager.
 
 1. If your creative does not comply with Google's [Ad Exchange Policies](https://support.google.com/authorizedbuyers/answer/1325008?hl=en), revise your
     creative to meet the necessary requirements.

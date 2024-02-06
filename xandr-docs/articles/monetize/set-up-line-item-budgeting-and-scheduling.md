@@ -40,7 +40,7 @@ To set up line item budgeting and scheduling:
    |---|---|
    | **CPM** | Select this revenue type if the advertiser will pay you a flat amount per thousand impressions. Enter the amount that the advertiser will pay you per thousand impressions in the **Revenue Value** field. |
    | **CPC** | Select this revenue type if the advertiser will pay you a flat amount per click. This option is only available if the line item's **Budget Type** is set to **Revenue**. Enter the amount that the advertiser will pay you per click in the **Revenue Value** field. |
-   | **Viewable CPM** | Select this revenue type if the advertiser will pay you a flat amount per thousand viewable impressions. Only measured viewable impressions will be counted, according to the Xandr viewability measurement. Enter the amount in the **Revenue Value** field.<br>**Note**: If you select **Viewable CPM** (vCPM), you also have the opportunity to pay only for impressions that have been shown to be viewable. To do that, click **Outcomes** > **Guaranteed Views** under **Payment Model**. |
+   | **Viewable CPM** | Select this revenue type if the advertiser will pay you a flat amount per thousand viewable impressions. Only measured viewable impressions will be counted, according to the Microsoft Advertising viewability measurement. Enter the amount in the **Revenue Value** field.<br>**Note**: If you select **Viewable CPM** (vCPM), you also have the opportunity to pay only for impressions that have been shown to be viewable. To do that, click **Outcomes** > **Guaranteed Views** under **Payment Model**. |
    | **CPCV** | Select this revenue type if the advertiser will pay you for videos that have been viewed through completion. Enter the amount that the advertiser will pay you per completed video in the **Revenue Value** field. This setting is available under **Revenue Type** only when **Video** is selected as the **Ad Type** and **Completes** is selected as the **Payment Model**. |
 
     **Flexible Revenue** pricing models indicate that your revenue may fluctuate depending on media/cost/spend. Those options are:
@@ -97,7 +97,7 @@ Each line item must have at least one flight. Flights are subject to the followi
 1. **Optional:** Click **+Add Subflight** to create one or more subflights that you can use to further customize flight pacing and spend.
 
     > [!NOTE]
-    >  Budget subflights are an **Alpha** feature that allow you to set custom budget and pacing settings for specific days within a line item flight. If you'd like to gain access to them, please contact your Xandr account representative.
+    >  Budget subflights are an **Alpha** feature that allow you to set custom budget and pacing settings for specific days within a line item flight. If you'd like to gain access to them, please contact your Microsoft Advertising account representative.
 
    1. Enter a name for your subflight.
    1. Select a start and end date for your subflight.

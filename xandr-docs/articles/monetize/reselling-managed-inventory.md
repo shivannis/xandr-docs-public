@@ -10,7 +10,7 @@ ms.date: 10/28/2023
 
 In addition to selling your publishers' inventory to managed
 advertisers, you can also resell to the entire
-Xandr platform. This section of the
+Microsoft Advertising platform. This section of the
 documentation will provide an overview of reselling-related settings, as
 well as offer instructions for how to configure your inventory for
 reselling.

@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 # Seller podded video
 
 > [!NOTE]
-> This feature is currently in **Alpha**. It is still under development and may be subjected to changes without notice. Contact your Xandr Account Representative to get it enabled.
+> This feature is currently in **Alpha**. It is still under development and may be subjected to changes without notice. Contact your Microsoft Advertising Account Representative to get it enabled.
 
 The **Seller Pod Analytics** report shows metrics for groups of ads (aka
 pods) delivered sequentially in between segments of non-commercial video
@@ -71,7 +71,7 @@ how quickly reporting data is processed, see [Availability of Reporting Data](av
 | Billing Currency | String | No | `USD` | The transaction currency that the buyer used to purchase this impression. This dimension is available only when Currency 2.0 is disabled. |
 | Billing Currency Exchange Rate | Numeric | No |  |  |
 | Browser | String | Yes | `webOS Browser (33)` | The name of the browser. |
-| Call Type | String | Yes |  | The type of handler that was used to send the impression to Xandr (e.g., ttj, ut, mob, ptv, openrtb) |
+| Call Type | String | Yes |  | The type of handler that was used to send the impression to Microsoft Advertising (e.g., ttj, ut, mob, ptv, openrtb) |
 | City | String | Yes | `Vienna` | The city in which the user is located. |
 | Country | String | Yes | `"France"` | The country of the user's location, both name and code, in the format "France". The string "250" can appear in cases where we don't know the country or if the country doesn't map correctly to a location in our database. |
 | Device Type | String | Yes | `"set top box"` | The type of device on which the impression was served. Possible values are:<br> - "desktops & laptops"<br> - "tablets"<br> - "mobile phones"<br> - "tv"<br> - "game consoles"<br> - "set top box"<br> - "media players"<br> - "other devices" |
@@ -117,7 +117,7 @@ how quickly reporting data is processed, see [Availability of Reporting Data](av
 | Column | Type | Example | Formula | Description |
 |---|---|---|---|---|
 | Booked Revenue Dollars | money | 578.98 | `booked_revenue_dollars` | The revenue generated from managed line items. |
-| Clicks | int | 3445 | `clicks` | The number of clicks recorded. For video we record clicks from Xandr Invest and external DSPs. |
+| Clicks | int | 3445 | `clicks` | The number of clicks recorded. For video we record clicks from Microsoft Advertising Invest and external DSPs. |
 | Completion rate | double | 0.85 | `video_completions / impressions` | The number of impressions that resulted in a completion. |
 | Completions | int | 8458 | `completions` | The number of times the video player reported a completion event |
 | CPM | money | 30.56 | `total_revenue / total_imps * 1000` | The average revenue per 1000 impressions sold |
@@ -134,10 +134,10 @@ how quickly reporting data is processed, see [Availability of Reporting Data](av
 | Imps (Kept) | int | 2340 | `imps_kept` | The total number of impressions sold by managed line items. |
 | Imps (Resold) | int | 324 | `imps_resold` | The total number of impressions sold to other buyers via open exchange or deals. |
 | Imps (Unsold) | int | 4523 | `imps_unsold` | The total number of impressions that have blank, default or PSA impression types. If you are using house line items to count unsold impressions, these will be recorded here. |
-| Percent Pods 1 Imp | double | 0.43 | `(sum(pod_count) - sum(pod_no_imps)) / sum(pod_count)` | The percentage of ad breaks (pods) sent to Xandr for monetization that had at least 1 impression delivered within them. |
-| Percent Pods 1 response | double | 0.34 | `(sum(pod_count) - sum(pod_no_responses)) / sum(pod_count)` | The percentage of ad breaks (pods) sent to Xandr for monetization that had at least 1 response returned within them. |
+| Percent Pods 1 Imp | double | 0.43 | `(sum(pod_count) - sum(pod_no_imps)) / sum(pod_count)` | The percentage of ad breaks (pods) sent to Microsoft Advertising for monetization that had at least 1 impression delivered within them. |
+| Percent Pods 1 response | double | 0.34 | `(sum(pod_count) - sum(pod_no_responses)) / sum(pod_count)` | The percentage of ad breaks (pods) sent to Microsoft Advertising for monetization that had at least 1 response returned within them. |
 | Pod Available Seconds | int | 4534532 | `pod_available_seconds` | The maximum duration that could deliver within the ad breaks (pods). |
-| Pod Count | int | 5345 | `pod_count` | The number of ad breaks (pods) sent to Xandr for monetization. If multiple ad breaks are sent in one request, e.g. using cue points, then this will record the total number of ad breaks, not ad requests sent to Xandr. |
+| Pod Count | int | 5345 | `pod_count` | The number of ad breaks (pods) sent to Microsoft Advertising for monetization. If multiple ad breaks are sent in one request, e.g. using cue points, then this will record the total number of ad breaks, not ad requests sent to Microsoft Advertising. |
 | Pod Fill Rate Duration | double | 0.55 | `sum(impression_seconds_resold + impression_seconds_kept) / sum(max_duration * pod_count)` | The total resold and kept seconds divided by the maximum duration that could deliver within the ad breaks (pods). |
 | Pod Fill Rate Slots | double | 0.28 | `sum(imps_kept + imps_resold) / sum(imps_resold + imps_kept + imps_unsold)` | The total resold and kept impressions divided by the total impressions served. This metric can be used when a house line item is being used to track unsold impressions as default impression types. |
 | Pod No Imps | int | 34 | `pod_no_imps` | The number of ad breaks where no kept, resold or default impressions were recorded in any slot in the pod. |

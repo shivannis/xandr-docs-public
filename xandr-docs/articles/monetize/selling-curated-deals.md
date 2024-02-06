@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Microsoft Monetize - Selling curated deals
 
 > [!NOTE]
-> Deal curation is not available to all clients. Contact your Xandr representative for information on how you can be enabled for deal curation.
+> Deal curation is not available to all clients. Contact your Microsoft Advertising representative for information on how you can be enabled for deal curation.
 
 As a seller, you can create [Curated Deals](curated-deals.md) to provide
 buyers special access to inventory and/or data. For example, a curated

@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Set up seller creative review
 
-Currently, sellers can review and approve creatives within the Political category before they serve on seller inventory. In the future, Xandr will support seller review of additional categories.
+Currently, sellers can review and approve creatives within the Political category before they serve on seller inventory. In the future, Microsoft Advertising will support seller review of additional categories.
 
 Seller Creative Review requires the following initial setup before it can show you a list of creatives to review:
 

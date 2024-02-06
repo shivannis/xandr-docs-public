@@ -30,7 +30,7 @@ tasks and concepts listed below:
 - **Optimization**: For performance oriented campaigns, clients must
   understand how our V7 optimization algorithm works in order to avoid
   redundancies if their user model will be used in conjunction with our
-  own. Xandr optimization uses past advertiser
+  own. Microsoft Advertising optimization uses past advertiser
   performance against the same pixel/click goal, and performance data
   against our own inventory definition. Therefore, a modifier that
   attempts to take into account the domain:user combination will be
@@ -45,16 +45,16 @@ tasks and concepts listed below:
 
 One of the key elements of segment modifier is that the client is
 responsible for creating the optimization model. As a result,
-Xandr won't have visibility into the exact
+Microsoft Advertising won't have visibility into the exact
 science behind the model's performance. Additionally, due to
 restrictions in our user database, neither will
-Xandr have visibility into the individual values
+Microsoft Advertising have visibility into the individual values
 behind each user. Therefore, the client must accept the bulk of the test
 analysis. This includes recurring, daily analytics of segment modifier
 performance; since the client created the model, the client should be
 able to analyze it.
 
-Xandr can measure lift on a high level or guide
+Microsoft Advertising can measure lift on a high level or guide
 performance testing best practices.
 
 ## Testing best practices

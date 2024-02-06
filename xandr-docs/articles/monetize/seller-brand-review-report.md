@@ -73,7 +73,7 @@ Data in this report is retained for 14 months.
 
 | Column | Filter? | Group? | Description |
 |---|---|---|---|
-| Audit Status | Yes | Yes | The audit status of the creatives you want included in the report (e.g., Unaudited, Self Audit Only, Xandr Audited). |
+| Audit Status | Yes | Yes | The audit status of the creatives you want included in the report (e.g., Unaudited, Self Audit Only, Microsoft Advertising Audited). |
 | Brand | Yes | Yes | The name and ID of the brand associated with the impression. |
 | Brand Offer Category | Yes | Yes | The name of the brand offer category associated with the impression. |
 | Buyer | Yes | Yes | The member name and ID with whom you are sharing segments. |

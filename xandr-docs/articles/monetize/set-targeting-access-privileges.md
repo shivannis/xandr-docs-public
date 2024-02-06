@@ -29,7 +29,7 @@ Select the desired radio button for each targeting access option, **Hide** (hide
 For more information on the different targeting access options, see the **Setting default targeting access** section within [Setting Buyer Defaults](partner-center-screen-seller-view.md).
 
 > [!NOTE]
-> Age and gender targeting information can only be shared if you include the Xandr age and gender macro when exporting your placement tag. For more information, see [Placement Tag Parameters](placement-tag-parameters.md).
+> Age and gender targeting information can only be shared if you include the Microsoft Advertising age and gender macro when exporting your placement tag. For more information, see [Placement Tag Parameters](placement-tag-parameters.md).
 > [!IMPORTANT]
 > You will have the option to expose domains or full URLs to external buyers.
 

@@ -9,10 +9,10 @@ ms.date: 10/28/2023
 
 The Seller Fill and Delivery Report was designed as a troubleshooting
 tool to provide sellers granular information regarding all impressions
-sent to Xandr and to help diagnose delivery
+sent to Microsoft Advertising and to help diagnose delivery
 issues all the way down to the tag and domain level. Using the new
 descriptive fields, it is possible to see an approximation of overall
-fill rate on Xandr using the "Total Ad
+fill rate on Microsoft Advertising using the "Total Ad
 Responses" and "Total Ad Requests" metrics. This report provides
 guidance on areas to troubleshoot but should not be used as a source of
 truth for billing or transacted impressions.
@@ -20,7 +20,7 @@ truth for billing or transacted impressions.
 > [!NOTE]
 > This report only provides directional guidance on potential areas to troubleshoot. Figures in this report might see slight discrepancies with other standard reports, including the Network Analytics Report and the Video Analytics Report. 
 >
-> We recommend viewing each report independently and not comparing the directional figures from the Seller Fill and Delivery Report with other Xandr reporting, to avoid unnecessary confusion.
+> We recommend viewing each report independently and not comparing the directional figures from the Seller Fill and Delivery Report with other Microsoft Advertising reporting, to avoid unnecessary confusion.
 
 The data contained in this report will help pinpoint issues contributing
 to untransacted impressions stemming from:
@@ -31,9 +31,9 @@ to untransacted impressions stemming from:
 - Miscellaneous causes
 
 > [!NOTE]
-> **For video sellers only:** As a result of video caching by video players, the Xandr data pipeline allows a six-hour window to register a response from a video player after the auction is complete and the creative VAST XML has been sent to the page, before considering a video impression 'non-responsive' (Bid Sent No Response).
+> **For video sellers only:** As a result of video caching by video players, the Microsoft Advertising data pipeline allows a six-hour window to register a response from a video player after the auction is complete and the creative VAST XML has been sent to the page, before considering a video impression 'non-responsive' (Bid Sent No Response).
 >
-> Xandr will update some counts, for video tags only, six hours after the time of the auction. Therefore, to receive the most accurate view of video counts across dimensions, schedule your reports to run after the six-hour window for a given hour of data.
+> Microsoft Advertising will update some counts, for video tags only, six hours after the time of the auction. Therefore, to receive the most accurate view of video counts across dimensions, schedule your reports to run after the six-hour window for a given hour of data.
 
 The diagram below is a representation of how metrics are grouped and
 counted for this report:
@@ -95,15 +95,15 @@ This report's data is retained for 99 days.
 
 | Column | Description |
 |---|---|
-| Bid Sent No Reponses | Ad requests sent from Xandr to external ad servers for a secondary auction that did not result in a win, or Xandr auctions using Xandr's seller tags (AST) where an auction was held but the impression tracker failed to notify Xandr servers. For more information, see the [Seller Tag](../seller-tag/seller-tag.md) page. |
+| Bid Sent No Reponses | Ad requests sent from Microsoft Advertising to external ad servers for a secondary auction that did not result in a win, or Microsoft Advertising auctions using Microsoft Advertising's seller tags (AST) where an auction was held but the impression tracker failed to notify Microsoft Advertising servers. For more information, see the [Seller Tag](../seller-tag/seller-tag.md) page. |
 | Default No Reponses | Ad requests where a default creative was sent but no response was received from the end ad server. This could be the result of an error or an alternate default tag was chosen by the final ad server. |
 | Defaults | Ad requests where a default creative served because there were no valid bids. |
-| Filtered Requests | Ad requests filtered pre-bid by Xandr for inventory quality. |
+| Filtered Requests | Ad requests filtered pre-bid by Microsoft Advertising for inventory quality. |
 | Imps (kept) | An impression where a managed advertiser's creative serves on a managed publisher's site. |
 | Imps (resold) | An impression that is resold to a third-party buyer. |
-| PSAs or Blanks | The number of blanks or PSAs served. It can also include ad requests where no bids were submitted by Xandr, such as unfilled header bidding requests. |
-| Total Ad Requests | The total number of ad requests sent to Xandr. (Filtered Requests + Imps (kept) + Imps (resold) + Defaults + Video Player Errors + Video Default Errors + Bid Sent No Responses + Default No Responses + PSAs or Blanks) |
-| Total Ad Responses | The total number of ad responses counted within Xandr. (Imps (kept) + Imps (resold) + Video Player Errors + Bid Sent No Responses) |
+| PSAs or Blanks | The number of blanks or PSAs served. It can also include ad requests where no bids were submitted by Microsoft Advertising, such as unfilled header bidding requests. |
+| Total Ad Requests | The total number of ad requests sent to Microsoft Advertising. (Filtered Requests + Imps (kept) + Imps (resold) + Defaults + Video Player Errors + Video Default Errors + Bid Sent No Responses + Default No Responses + PSAs or Blanks) |
+| Total Ad Responses | The total number of ad responses counted within Microsoft Advertising. (Imps (kept) + Imps (resold) + Video Player Errors + Bid Sent No Responses) |
 | Video Default Errors | Errors reported from the video player when a default creative should have served. |
 | Video Player Errors | Errors reported from the video player after the VAST XML has been delivered. |
 
@@ -124,7 +124,7 @@ data in a particular order.
 
 | Name | Description |
 |---|---|
-| Ad Request Call Type | The type of handler that was used to send the impression to Xandr (e.g., ttj, ut, mob, ptv, openrtb) |
+| Ad Request Call Type | The type of handler that was used to send the impression to Microsoft Advertising (e.g., ttj, ut, mob, ptv, openrtb) |
 | Allowed Media Types | The media types that are allowed to participate in the auction. The permitted media types is a combination that is enabled through the ad call and placement settings. Possible values are `Banner`, `Expandable` and `Native`. |
 | Country | The country in which the impression occured. |
 | Deal | The deal associated with the transaction for the impression. |

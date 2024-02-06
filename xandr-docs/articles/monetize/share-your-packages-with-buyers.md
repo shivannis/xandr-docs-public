@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize -  Share your packages with buyers
 
-As a seller, you can proactively commercialize your packages by sending links to both Xandr and external buyers. This page walks you through the process.
+As a seller, you can proactively commercialize your packages by sending links to both Microsoft Advertising and external buyers. This page walks you through the process.
 
 ## Share packages with any buyer
 

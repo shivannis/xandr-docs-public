@@ -85,7 +85,7 @@ You can choose to serve on only certain portions of Microsoft Ad Exchange invent
     > [!NOTE]
     > Do not not click the green include icon or the red exclude icon, as this will simply include or exclude all Microsoft Ad Exchange inventory.
 
-1. **Content Categories** on the Xandr platform correspond to bins in Microsoft terminology. Choose the content categories to include by clicking the corresponding icons for those categories.
+1. **Content Categories** on the Microsoft Advertising platform correspond to bins in Microsoft terminology. Choose the content categories to include by clicking the corresponding icons for those categories.
 1. The bins you chose to include or exclude should now appear in the **Selected 3rd Party Inventory** list.
 
 ## Target only 24/7 media inventory
@@ -116,7 +116,7 @@ You can choose to target specific inventory including 24/7 Media inventory. The 
    > [!NOTE]
    > Do not click the green include icon or the red exclude icon, as this will simply include or exclude all Microsoft Ad Exchange inventory.
 
-1. **Content Categories** on the Xandr Platform correspond to **bins** in Microsoft terminology. Choose the content categories to include by clicking the corresponding icons for those categories.
+1. **Content Categories** on the Microsoft Advertising Platform correspond to **bins** in Microsoft terminology. Choose the content categories to include by clicking the corresponding icons for those categories.
 1. The bins you chose to include or exclude should now appear in the **Selected 3rd Party Inventory** list.
 
 ## Targeting specific Microsoft Ad Exchange domains where visible (select sites and countries)

@@ -97,7 +97,7 @@ directly from the **Advertiser
 Reporting** screen (**Advertisers** \>  **Reporting**).
 
 > [!NOTE]
-> When exporting the Advertiser Attributed Conversions report to Excel, long numbers (including User ID and Auction ID) are converted to floating point format, and any digit after digit 15 will be converted to zero. For example, a User ID of 102083040601081716 will be converted to 102083040601081000 which is not a valid Xandr User ID. If you need to pull valid User or Auction IDs, you can copy them manually or use the API version of this report.
+> When exporting the Advertiser Attributed Conversions report to Excel, long numbers (including User ID and Auction ID) are converted to floating point format, and any digit after digit 15 will be converted to zero. For example, a User ID of 102083040601081716 will be converted to 102083040601081000 which is not a valid Microsoft Advertising User ID. If you need to pull valid User or Auction IDs, you can copy them manually or use the API version of this report.
 
 For more information about this report, including a full list of
 dimensions, metrics, and filters, see [Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md). For details

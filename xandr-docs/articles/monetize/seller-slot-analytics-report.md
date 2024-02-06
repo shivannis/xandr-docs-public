@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Seller slot analytics
 
 > [!NOTE]
-> This functionality currently is in **Alpha**. It is still under development and might change without notice. Contact your Xandr Account Representative to get enabled.
+> This functionality currently is in **Alpha**. It is still under development and might change without notice. Contact your Microsoft Advertising Account Representative to get enabled.
 
 ## Seller slot analytics
 
@@ -67,12 +67,12 @@ how quickly reporting data is processed, see [Availability of Reporting Data](av
 | Browser | string | no | `webOS Browser (33)` | The name of the browser. |
 | Buyer Member | string | yes | `My Buyer` | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: 229 = PSA, 0 = Blank, or 319 = Default. |
 | Buyer Seat | string | yes | `My Buyer Seat (DSP Name)` | The display name for the buyer seat code. |
-| Call Type | string | no | `ttj`, `ut`, `mob`, `ptv`, `openrtb` | The type of handler that was used to send the impression to Xandr (e.g., ttj, ut, mob, ptv, openrtb). |
+| Call Type | string | no | `ttj`, `ut`, `mob`, `ptv`, `openrtb` | The type of handler that was used to send the impression to Microsoft Advertising (e.g., ttj, ut, mob, ptv, openrtb). |
 | City | string | yes | `Vienna` | The city in which the user is located. |
 | Country | string | yes | `"France"` | The country of the user's location, both name and code, in the format "France". The string "250" can appear in cases where we don't know the country or if the country doesn't map correctly to a location in our database. |
 | Creative | string | yes | `My Creative` | The creative name. |
 | Creative Size | Int |  | `1x1` | The height of the creative. |
-| Deal | string | yes | `My Deal` | The deal name for deals set up in Xandr. |
+| Deal | string | yes | `My Deal` | The deal name for deals set up in Microsoft Advertising. |
 | Device Type | string | yes | `"set top box"` | The type of device on which the impression was served. Possible values are:<br> - "desktops & laptops"<br> - "tablets"<br> - "mobile phones"<br> - "tv"<br> - "game consoles"<br> - "set top box"<br> - "media players"<br> - "other devices" |
 | External Deal Code | string | no | `A857249` | The deal code from the external SSP for imps sold via prebid server. |
 | Geo Region | string | yes | `L6` | The region or state code code (Federal Information Processing Standard) of the user's location. For example CA for California and L6 for Shropshire. |

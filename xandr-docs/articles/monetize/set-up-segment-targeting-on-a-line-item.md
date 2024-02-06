@@ -61,7 +61,7 @@ For more information, see [Segment Targeting](segment-targeting.md).
    | **Value** | Refines the targeting criteria for a particular segment. For example, if you want to target a subset of users within a segment who have a household income that exceeds $200,000 USD and visited a product page containing different products, you would select **Above** from the **Value** pull-down menu and enter $200,000 USD in the text field.<br>Similarly, if you want to target a subset of users who have a household income between $100,000 USD and $200,000 USD, select **Between** in the **Value** pull-down menu and enter $99,999 USD in the **Greater than** field and $199,999 USD in the **Less than** field. |
 
    > [!NOTE]
-   > The options that are available from the **Fired** and **Value** menus may vary based on the data provider's offering. Xandr has only defined these options for segments that you've created.
+   > The options that are available from the **Fired** and **Value** menus may vary based on the data provider's offering. Microsoft Advertising has only defined these options for segments that you've created.
 
 1. Click **Save**.
 

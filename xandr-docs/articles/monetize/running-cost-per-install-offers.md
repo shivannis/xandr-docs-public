@@ -18,12 +18,12 @@ offers with your mobile ad campaigns. This includes procedures for:
 
 Follow the steps described in [Set Up Third-Party Mobile App Install Tracking](set-up-third-party-mobile-app-install-tracking.md) to
 integrate with a third-party mobile app install tracker and set your
-creative click URLs so that Xandr will be able
+creative click URLs so that Microsoft Advertising will be able
 to register your conversions. You may also want to associate your
 creative with an impression tracker. For instructions, see [Create an Impression Tracker](create-an-impression-tracker.md).
 
 > [!NOTE]
-> - The instructions in [Set Up Third-Party Mobile App Install Tracking</a> will only work with Xandr-hosted creatives at this time. Technicall](set-up-third-party-mobile-app-install-tracking.md) will only work with Xandr-hosted creatives at this time. Technically, our server-side conversion attribution requires the `${SSP_DATA`} macro to be populated by the creative's ad server, so any ad server that populates this macro will work. In practice, there are not any other ad servers that populate this macro at this time.
+> - The instructions in [Set Up Third-Party Mobile App Install Tracking</a> will only work with Microsoft Advertising-hosted creatives at this time. Technicall](set-up-third-party-mobile-app-install-tracking.md) will only work with Microsoft Advertising-hosted creatives at this time. Technically, our server-side conversion attribution requires the `${SSP_DATA`} macro to be populated by the creative's ad server, so any ad server that populates this macro will work. In practice, there are not any other ad servers that populate this macro at this time.
 > - You should thoroughly test the integration with your install tracking vendor before campaigns go live to avoid discrepancy issues. For more information on how to test that your conversion pixels are loading as planned, see [Managing Mobile Discrepancies](managing-mobile-discrepancies.md).
 > - For more information on how server-side conversion tracking works, see the descriptions in [Set Up Third-Party Mobile App Install Tracking](set-up-third-party-mobile-app-install-tracking.md) and [Server-Side Conversion Pixels](server-side-conversion-pixels.md).
 

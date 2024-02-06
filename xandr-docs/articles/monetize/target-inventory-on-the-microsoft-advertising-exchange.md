@@ -56,7 +56,7 @@ In the **Inventory Targeting** dialog, under **3rd Party Inventory** \> **Seller
 
 ### Option 2. Target specific Microsoft Advertising MSN "bins"
 
-To target specific Microsoft Advertising bins, follow the steps in **Option 1**, and then click on **Seller: Microsoft Advertising Exchange (280)** to expose a list of bins - named "Content Categories" on the Xandr platform. You can then either **Include** the specific bins that you want to target or **Exclude** the specific bins that you do not want to target.
+To target specific Microsoft Advertising bins, follow the steps in **Option 1**, and then click on **Seller: Microsoft Advertising Exchange (280)** to expose a list of bins - named "Content Categories" on the Microsoft Advertising platform. You can then either **Include** the specific bins that you want to target or **Exclude** the specific bins that you do not want to target.
 
 > [!IMPORTANT]
 > For a complete list of MS Ad Exchange bins with descriptions, see [Microsoft Advertising Exchange Inventory](microsoft-advertising-exchange-inventory.md).

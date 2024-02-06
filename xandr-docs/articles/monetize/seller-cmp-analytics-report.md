@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 The Seller CMP Analytics Report provides insight into the number,
 validity, and content of the IAB Transparency & Consent Framework (IAB
-TCF) strings on seller ad requests to Xandr
+TCF) strings on seller ad requests to Microsoft Advertising
 endpoints. This report enables sellers to answer questions like:
 
 - How many ad requests contained TCF strings encoded according to the
@@ -17,12 +17,12 @@ endpoints. This report enables sellers to answer questions like:
 - How many ad requests contained TCF strings that were not encoded
   properly and therefore invalid or malformed?
 - Is my CMP (Consent Management Platform) correctly passing permission
-  information to Xandr?
+  information to Microsoft Advertising?
 
 This report does not prove or disprove compliance with any laws or
 regulations. The language "GDPR applied" for this report means,
-Xandr applied TCF logic.
-Xandr supports the IAB TCF and this report
+Microsoft Advertising applied TCF logic.
+Microsoft Advertising supports the IAB TCF and this report
 enables sellers using the TCF to confirm that TCF signals are
 communicated properly.
 
@@ -33,18 +33,18 @@ summarized in this diagram:
 
 Sellers wishing to have all of their ad requests treated according to
 the IAB TCF standards and policies can force application of
-Xandr TCF logic by passing 'gdpr=1' according to
+Microsoft Advertising TCF logic by passing 'gdpr=1' according to
 the IAB OpenRTB Spec. If the GDPR parameter is omitted but the request
-includes a TCF string via URL params, Xandr will
+includes a TCF string via URL params, Microsoft Advertising will
 apply TCF logic (unless the impression is received via OpenRTB). For
 impressions received via OpenRTB, the
 **Regs.ext.gdpr** field must be set to
-**1** in order for Xandr to apply TCF logic.
+**1** in order for Microsoft Advertising to apply TCF logic.
 
 A high number of present but malformed strings for a given publisher
 usually means that the publisher's CMP is not creating or encoding the
 strings according to TCF specifications, and therefore are unreadable to
-Xandr and other vendors. Unreadable strings,
+Microsoft Advertising and other vendors. Unreadable strings,
 because they do not provide clear signals to vendors, are treated as no
 permission for any vendor, and should be avoided.
 
@@ -107,7 +107,7 @@ Data for this report is grouped into rows by the day.
 
 | Column | Filter? | Description |
 |---|---|---|
-| Ad Request Call Type | N | The path where Xandr received the ad request. This generally corresponds to the seller integration. For example: /openrtb2, /ut/v3, /ut/v3/prebid, /ptv, /ttj. |
+| Ad Request Call Type | N | The path where Microsoft Advertising received the ad request. This generally corresponds to the seller integration. For example: /openrtb2, /ut/v3, /ut/v3/prebid, /ptv, /ttj. |
 | Publisher | Y | The name and ID of the publisher associated with the impression. For example, New York Times (723968) |
 | Publisher Name | N | The publisher associated with the impression. |
 | URL | N | The URL of the incoming impression. |
@@ -120,11 +120,11 @@ Data for this report is grouped into rows by the day.
 
 | Column |  Description |
 |---|---|
-| Ad Requests GDPR Applied | The number of incoming ad requests for which Xandr applied TCF logic. Xandr applies TCF logic if the IAB OpenRTB Specified flag gdpr is set to 1 or if the gdpr flag is omitted but the request includes a gdpr_consent field. If your digital properties intend to use TCF for all GDPR-covered inventory, this number should be close to Ad Requests GDPR Country. |
+| Ad Requests GDPR Applied | The number of incoming ad requests for which Microsoft Advertising applied TCF logic. Microsoft Advertising applies TCF logic if the IAB OpenRTB Specified flag gdpr is set to 1 or if the gdpr flag is omitted but the request includes a gdpr_consent field. If your digital properties intend to use TCF for all GDPR-covered inventory, this number should be close to Ad Requests GDPR Country. |
 | Ad Requests GDPR Country | The number of incoming ad requests for which the impression originated from a GDPR-implementing country, or the impression contained a consent string. |
-| Blank Consent Strings | The number of ad requests where Xandr applied TCF logic ("GDPR applied"), but the string was either blank or the field gdpr_consent was omitted. This number should ideally be zero. |
+| Blank Consent Strings | The number of ad requests where Microsoft Advertising applied TCF logic ("GDPR applied"), but the string was either blank or the field gdpr_consent was omitted. This number should ideally be zero. |
 | Invalid CMP Impressions | Number of incoming ad requests for which GDPR is applied, the consent string is valid, and the CMP used to generate the impression is NOT registered with the IAB, as seen at [https://iabeurope.eu/cmp-list/](https://iabeurope.eu/cmp-list/). |
-| Malformed Consent Strings | The number of ad requests where Xandr applied TCF logic ("GDPR applied"), but the string received could not be decoded. This number should ideally be zero. |
+| Malformed Consent Strings | The number of ad requests where Microsoft Advertising applied TCF logic ("GDPR applied"), but the string received could not be decoded. This number should ideally be zero. |
 | Percent Ad Requests GDPR Applied | The percentage of incoming ad requests from GDPR-implementing countries for which GDPR is applied. |
 | Percent Bad Consent Strings | The percentage of incoming ad requests for which GDPR is applied and the consent string is non-blank and malformed. |
 | Percent Blank Consent Strings | The percentage of incoming ad requests for which GDPR is applied and the consent string is blank. |
@@ -132,14 +132,14 @@ Data for this report is grouped into rows by the day.
 | Percent TCF Version 2 Impressions | The percentage of incoming ad requests for which GDPR is applied and the consent string is valid and encoded according to TCF v2. |
 | Percent Valid CMP Impressions | The percentage of incoming ad requests for which GDPR is applied, the consent string is valid, and the CMP used to generate the impression is registered with the IAB, as shown at [https://iabeurope.eu/cmp-list/](https://iabeurope.eu/cmp-list/). |
 | Percent Valid Consent Strings | The percentage of incoming ad requests for which GDPR is applied and the consent string is non-null and valid. |
-| Percent Xandr Consented | The percentage of incoming ad requests for which GDPR is applied and the vendor bit (#32) for Xandr is a 1 for TCF v1 encoded strings |
+| Percent Microsoft Advertising Consented | The percentage of incoming ad requests for which GDPR is applied and the vendor bit (#32) for Microsoft Advertising is a 1 for TCF v1 encoded strings |
 | Percentage Invalid CMP Impressions | The percentage of incoming ad requests for which GDPR is applied, the consent string is valid, and the CMP used to generate the impression is NOT registered with the IAB, as shown at [https://iabeurope.eu/cmp-list/](https://iabeurope.eu/cmp-list/). |
 | Seller Revenue Invalid Consent Strings | TThe total estimated seller revenue associated with invalid (un-decodable) strings. If a string is unreadable but present, an impression is served without personal data such as cookies. This number should ideally be zero, indicating that all ad requests had a decodable string. |
-| TCF Version 1 Impressions | The number of ad requests where Xandr applied TCF logic ("GDPR applied"), the string was parseable, and the decoded value of cookie_version was 1, indicating that this TC string was created according to the TCF v1.0 specification. The specification can be found here: [https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework).  |
-| TCF Version 2 Impressions | The number of ad requests where Xandr applied TCF logic ("GDPR applied"), the string was parseable, and the decoded value of cookie_version was 2, indicating that this TC string was created according to the TCF v2.0 specification. The specification can be found here: [https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework). |
+| TCF Version 1 Impressions | The number of ad requests where Microsoft Advertising applied TCF logic ("GDPR applied"), the string was parseable, and the decoded value of cookie_version was 1, indicating that this TC string was created according to the TCF v1.0 specification. The specification can be found here: [https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework).  |
+| TCF Version 2 Impressions | The number of ad requests where Microsoft Advertising applied TCF logic ("GDPR applied"), the string was parseable, and the decoded value of cookie_version was 2, indicating that this TC string was created according to the TCF v2.0 specification. The specification can be found here: [https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework). |
 | Valid CMP Impressions | The number of incoming ad requests for which GDPR is applied, the consent string is valid, and the CMP used to generate the impression is registered with the IAB, as seen at [https://iabeurope.eu/cmp-list/](https://iabeurope.eu/cmp-list/). |
-| Valid Consent Strings | The number of ad requests where Xandr applied TCF logic ("GDPR applied") and the request contained a string that was parseable. This number should ideally equal the number of ad requests where Xandr applied TCF logic. |
-| Xandr Consented Impressions | For TCF v1-encoded strings, the number of incoming ad requests for which GDPR is applied, and Xandr's vendor bit (#32) is a 1 in the string.<br>For TCF v2 encoded strings, the number of incoming ad requests for which GDPR is applied, Xandr's vendor bit (#32) is a 1 in the string, and we have established legal basis to process personal data (i.e. consent for purpose 1 **and** either consent or legitimate interest for purposes 2, 7 and 10 is signalled in the consent string). |
+| Valid Consent Strings | The number of ad requests where Microsoft Advertising applied TCF logic ("GDPR applied") and the request contained a string that was parseable. This number should ideally equal the number of ad requests where Microsoft Advertising applied TCF logic. |
+| Microsoft Advertising Consented Impressions | For TCF v1-encoded strings, the number of incoming ad requests for which GDPR is applied, and Microsoft Advertising's vendor bit (#32) is a 1 in the string.<br>For TCF v2 encoded strings, the number of incoming ad requests for which GDPR is applied, Microsoft Advertising's vendor bit (#32) is a 1 in the string, and we have established legal basis to process personal data (i.e. consent for purpose 1 **and** either consent or legitimate interest for purposes 2, 7 and 10 is signalled in the consent string). |
 
 ## To run your report
 

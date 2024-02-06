@@ -21,4 +21,4 @@ Additional guidance for PSP setup:
  - [Prebid Server Premium Data Passthrough](prebid-server-premium-identity-and-user-syncing.md)
 
   > [!NOTE]
-  > At this time, not all clients have access to PSP. If you would like more information, please contact your Xandr Representative.
+  > At this time, not all clients have access to PSP. If you would like more information, please contact your Microsoft Advertising Representative.

@@ -76,7 +76,7 @@ including `"mraid.js"` is required for it to work:
 ## MRAID-Certified
 
 Creatives that are MRAID-certified may serve on external mobile supply
-sources. During the Xandr creative audit
+sources. During the Microsoft Advertising creative audit
 process, MRAID creatives with expandable characteristics will only be
 flagged with the MRAID technical attribute and not with the expandable
 technical attribute.
@@ -89,7 +89,7 @@ will mark these creatives as having an **Expandable** media type.
 Expandables will not serve on external mobile supply.
 
 > [!WARNING]
-> Creatives that are of the the media type **Expandable** will **not** serve on external mobile supply. For more information about how Xandr audits mobile creatives, see [Mobile Creative Auditing](mobile-creative-auditing.md).
+> Creatives that are of the the media type **Expandable** will **not** serve on external mobile supply. For more information about how Microsoft Advertising audits mobile creatives, see [Mobile Creative Auditing](mobile-creative-auditing.md).
 
 ## Supported rich media types by seller
 

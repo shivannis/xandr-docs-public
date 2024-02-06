@@ -22,7 +22,7 @@ This reporting helps sellers in the following ways:
   appropriately
 - facilitating data clearing, so that instead of them being responsible
   for billing their data providers each month,
-  Xandr can do it for them.
+  Microsoft Advertising can do it for them.
 
 ## Time frame
 

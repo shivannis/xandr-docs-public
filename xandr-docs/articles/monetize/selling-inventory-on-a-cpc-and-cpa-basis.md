@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Selling inventory on a CPC and CPA basis
 
-In order to foster a stronger ecosystem on Xandr, we pioneered the ability to resell your inventory on a CPC or CPA basis in real time. Since many networks negotiate financial terms with publishers based on a revenue share per conversion or click, it makes sense that networks should be able to resell inventory in this fashion to other networks.
+In order to foster a stronger ecosystem on Microsoft Advertising, we pioneered the ability to resell your inventory on a CPC or CPA basis in real time. Since many networks negotiate financial terms with publishers based on a revenue share per conversion or click, it makes sense that networks should be able to resell inventory in this fashion to other networks.
 
 Selling inventory in this fashion allows you to demand a larger payout for accepting more risk as the seller. We have built capabilities into Microsoft Monetize to support this tradeoff.
 

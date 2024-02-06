@@ -8,13 +8,13 @@ ms.date: 10/28/2023
 # Sell-Side page caps
 
 > [!IMPORTANT]
-> This feature is not available to clients by default. If you would like to enable this feature, please speak with your Xandr representative.
+> This feature is not available to clients by default. If you would like to enable this feature, please speak with your Microsoft Advertising representative.
 >
-> [Xandr's seller tag](../seller-tag/seller-tag.md) (AST, which makes a `/ut` http ad request) is the primary tag that supports multi-tag auctions. The legacy `/mtj` is no longer supported. Note that we will refer to a "single AST ad call" throughout this document - this represents a single http request (to the `/ut` endpoint), however, it is possible to split up these ad calls (and thus the http requests) using the AST library. The features described on this page do not apply across http requests. For the examples on this page, will we assume that all tags on a page are included in a single AST ad call.
+> [Microsoft Advertising's seller tag](../seller-tag/seller-tag.md) (AST, which makes a `/ut` http ad request) is the primary tag that supports multi-tag auctions. The legacy `/mtj` is no longer supported. Note that we will refer to a "single AST ad call" throughout this document - this represents a single http request (to the `/ut` endpoint), however, it is possible to split up these ad calls (and thus the http requests) using the AST library. The features described on this page do not apply across http requests. For the examples on this page, will we assume that all tags on a page are included in a single AST ad call.
 >
 > Sell-side page caps are also enforced on OpenRTB calls.
 
-When you run multi-tag auctions via [Xandr's seller tag](../seller-tag/seller-tag.md), you get the ability to set page caps. Page caps can be used to
+When you run multi-tag auctions via [Microsoft Advertising's seller tag](../seller-tag/seller-tag.md), you get the ability to set page caps. Page caps can be used to
 restrict brands, advertisers, line items, or campaigns from winning more
 than one ad slot per AST ad call. Sell-side page caps apply to brands,
 while buy-side page caps apply to advertisers, line items, and
