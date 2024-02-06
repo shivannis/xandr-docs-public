@@ -10,7 +10,7 @@ Integrating publisher inventory with Prebid Server Premium (PSP) begins with a c
 
 ## Microsoft Monetize ad server customer integration
 
-Monetize Ad Server customers can maintain their current integration type from page/app/server to Xandr, then follow the guidance on the pages below:
+Monetize Ad Server customers can maintain their current integration type from page/app/server to Microsoft Advertising, then follow the guidance on the pages below:
 
 1. [Add or Edit PSP Global Settings](add-or-edit-psp-global-settings.md).
 1. [Add or Edit a Demand Partner](add-or-edit-a-demand-partner.md).
@@ -20,7 +20,7 @@ There is an exception for accelerated mobile pages (AMP) inventory. Microsoft Mo
 
 ## Direct Supply (SSP) customer integration
 
-SSP customers an integrate with Xandr, and in turn, PSP, across the following types of inventory:
+SSP customers an integrate with Microsoft Advertising, and in turn, PSP, across the following types of inventory:
 
 - [Integrate Web/Mobile Web with PSP](integrate-web-mobile-web-with-psp.md)
 - [Integrate Apps with PSP](integrate-apps-with-psp.md)

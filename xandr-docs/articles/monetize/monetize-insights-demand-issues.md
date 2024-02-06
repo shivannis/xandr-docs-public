@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Demand issues
 
 > [!NOTE]
-> This feature is part of a functionality that is currently in **Beta**. It is still under development and may be subject to change without notice. Contact your Xandr Account Representative to get enabled. 
+> This feature is part of a functionality that is currently in **Beta**. It is still under development and may be subject to change without notice. Contact your Microsoft Advertising Account Representative to get enabled. 
 
 **Demand Issues** show the bid
 rejections caused by buyer behavior. Some of the common examples
@@ -30,7 +30,7 @@ window with the following fields:
 
 | Filter | Description |
 |---|---|
-| Buyer | The Xandr member seat that submitted the bid. |
+| Buyer | The Microsoft Advertising member seat that submitted the bid. |
 | Demand Issue | Bid rejections caused by buyer behavior. |
 | Media type | Native, Banner or Video creative. |
 | Placement group | Is part of the inventory structure and can be used to group placements within a publisher. |
@@ -77,7 +77,7 @@ table.
 | % Δ Blocked Bid Value | The percentage change in the total value of blocked bids over the selected time range. |
 | Avg CPM | The average [CPM](../industry-reference/online-advertising-and-ad-tech-glossary.md#cpm) of the bid rejections. |
 | Blocked Bid Value | The total value of blocked bids within the selected time range. |
-| Buyer | The Xandr member seat that submitted the bid. |
+| Buyer | The Microsoft Advertising member seat that submitted the bid. |
 | Error Count | The total number of bid rejections resulting from Ad Quality Rules. |
 | Issue | Issues for a buyer on specific publishers. |
 | Publisher | An object within our system to group inventory, normally by publication. |

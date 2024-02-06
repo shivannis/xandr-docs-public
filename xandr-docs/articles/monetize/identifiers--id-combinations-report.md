@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Identifiers: ID combinations report
 
-The ID Combinations Report provides users with insights on combinations of cookies, device IDs, and common IDs available in the purchased impressions. It also provides information on impression distribution, performance metrics for combinations of ID types, and what types of IDs are present in the purchased impressions. Users can access the report either through the platform or the Xandr API.
+The ID Combinations Report provides users with insights on combinations of cookies, device IDs, and common IDs available in the purchased impressions. It also provides information on impression distribution, performance metrics for combinations of ID types, and what types of IDs are present in the purchased impressions. Users can access the report either through the platform or the Microsoft Advertising API.
 
 ## Time frame
 

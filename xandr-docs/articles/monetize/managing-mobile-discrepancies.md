@@ -34,7 +34,7 @@ between stages of a game app. The creative may be fetched from the ad
 server several minutes before actually being shown to a user when they
 complete a game level. Because our ad server waits several minutes to
 count the impression, the user finishes the game, views the creative,
-and Xandr then logs the impression as expected,
+and Microsoft Advertising then logs the impression as expected,
 thus avoiding any discrepancy issues.
 
 ## Related topics

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Managing Notification Recipients
-description: Learn how you can control who recieves email notifications from Xandr using your notification settings. 
+description: Learn how you can control who recieves email notifications from Microsoft Advertising using your notification settings. 
 ms.date: 10/28/2023
 ---
 
@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Microsoft Monetize - Managing notification recipients
 
 From the Network menu, you can control who
-receives email notifications from Xandr for
+receives email notifications from Microsoft Advertising for
 various alerts, including creative audit, object limit, inventory
 deactivation, and toolbar flag alerts using your notification settings.
 
@@ -23,7 +23,7 @@ Budget)](capping-daily-spend-on-third-party-inventory-safety-budget.md).
 ## Audit notification
 
 Enter the recipients who should receive a notification when
-Xandr audits a creative belonging to this
+Microsoft Advertising audits a creative belonging to this
 member. The notification includes the creative's audit status and any
 reasons why the creative has not passed audit.
 
@@ -40,7 +40,7 @@ you reach 85, 95, and 100 percent of your limit for an object. See [Viewing Your
 ## Inventory deactivation & toolbar flag notification
 
 Enter the recipients who should receive a notification when
-Xandr identifies invalid traffic or toolbar
+Microsoft Advertising identifies invalid traffic or toolbar
 inventory. The notification will include information about the kind of
 invalid traffic or what non ad-supported or Owned & Operated domains
 your tag served on.

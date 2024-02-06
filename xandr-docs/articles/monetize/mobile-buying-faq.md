@@ -42,9 +42,9 @@ smaller the radius, the lower the reach. We are also reliant on sellers
 to be able to access this information from mobile devices and populate
 ad requests with this information, which many sellers are unable to do.
 For each impression (display, video, etc.) that is sent out from
-Xandr's bidder, there is metadata associated
+Microsoft Advertising's bidder, there is metadata associated
 with it including latitude and longitude for the location. However,
-Xandr does not assure the accuracy of those
+Microsoft Advertising does not assure the accuracy of those
 coordinates. Also, latitude/longitude coordinates are not being used to
 determine geography (zip code, metro code, country) targeting.
 
@@ -84,7 +84,7 @@ your device-optimized pages.
 Yes. To enable serving ads into a mobile app, we use a placement tag
 that's been modified to pass additional mobile-specific data. We're
 developing mobile SDKs (Currently undergoing a closed alpha. Please
-inquire with your Xandr representative if you
+inquire with your Microsoft Advertising representative if you
 wish to join the alpha.) which will make this even easier for app
 publishers. For more information, see the [Mobile SDKs](../mobile-sdk/xandr-mobile-sdks.md).
 
@@ -104,7 +104,7 @@ correlation to the click in the app can still be tracked. This is
 because we overwrite the browser cookie with the user ID from the app.
 
 > [!NOTE]
-> Xandr does not have an app install tracking solution at this time. We do provide instructions for integrating with an install tracking vendor; see [Set Up Third-Party Mobile App Install Tracking](set-up-third-party-mobile-app-install-tracking.md).
+> Microsoft Advertising does not have an app install tracking solution at this time. We do provide instructions for integrating with an install tracking vendor; see [Set Up Third-Party Mobile App Install Tracking](set-up-third-party-mobile-app-install-tracking.md).
 
 ### Can I track app install events from browser impressions or clicks?
 
@@ -117,7 +117,7 @@ attribution, which generally relies on creative click.
 ### Can I track browser conversions events from in app impressions or clicks?
 
 Tracking conversion events in this cross environment scenario may be
-possible if a third party tracking solution is used. Xandr conversion
+possible if a third party tracking solution is used. Microsoft Advertising conversion
 pixels placed on advertiser conversion pages may show conversions from
 app impressions or clicks. This will happen if we have linked the user
 identifier between the browser and the app environments. There are a

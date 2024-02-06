@@ -23,25 +23,25 @@ domain, visit the following pages for more information:
 - [Azure Active Directory](https://www.microsoft.com/security/business/identity-access/microsoft-entra-id)
 - [Single Sign On](https://learn.microsoft.com/entra/identity/enterprise-apps/what-is-single-sign-on)
 
-## After logging into a Xandr product, I receive an error saying my email does not match any accounts and I don't have access.
+## After logging into a Microsoft Advertising product, I receive an error saying my email does not match any accounts and I don't have access.
 
 Upon logging in, if you receive an error saying your email does not
-match any accounts, that means no user objects in the Xandr platform
+match any accounts, that means no user objects in the Microsoft Advertising platform
 match the email or user principle name provided by the Microsoft
 Identity Platform. This requires updating the users registered in the
-Xandr platform to match the email address or user principle name that
+Microsoft Advertising platform to match the email address or user principle name that
 you signed into Microsoft.
 
 You can contact the designated person with the role of
 **User Manager** in your seat to
 update the email ID of your user on your behalf. If you are not aware of
-the User Manager, you can contact your Xandr Account Representative or
-Xandr Support at [Customer Support](https://help.xandr.com/).
+the User Manager, you can contact your Microsoft Advertising Account Representative or
+Microsoft Advertising Support at [Customer Support](https://help.xandr.com/).
 
 ## I can't access the API with my Microsoft credentials.
 
-Currently Xandr APIs do not support Microsoft credentials. To view the
-username and reset the password for the API, login to one of the Xandr
+Currently Microsoft Advertising APIs do not support Microsoft credentials. To view the
+username and reset the password for the API, login to one of the Microsoft Advertising
 products in your browser, and navigate to
 **Account Settings** from the top right
 navigation dropdown. On this page, you'll be able to see the accounts to
@@ -50,13 +50,13 @@ trigger a password reset for each of the accounts here.
 
 ## The email associated with my user is a distribution list and cannot be signed into through my corporate identity provider.
 
-For improved security, Xandr discourages the use of shared credential or
+For improved security, Microsoft Advertising discourages the use of shared credential or
 user accounts. When access is associated with a single person, it helps
 in easier access management and robust auditing.
 
-Xandr suggests updating the account's email address to that of an
-individual person with the Xandr User Manager, or by contacting your
-Xandr Account Representative or Xandr Support at
+Microsoft Advertising suggests updating the account's email address to that of an
+individual person with the Microsoft Advertising User Manager, or by contacting your
+Microsoft Advertising Account Representative or Microsoft Advertising Support at
 [Customer Support](https://help.xandr.com/).
 
 ## I don't see all the accounts I have access to in the Seat Switcher or Account Settings page.
@@ -64,25 +64,25 @@ Xandr Account Representative or Xandr Support at
 This scenario signifies that the email or user principal name used to
 sign in to Microsoft does not match the user or account you are looking
 for. Troubleshooting of this issue requires updating the users
-registered in the Xandr platform to match the email address or user
+registered in the Microsoft Advertising platform to match the email address or user
 principle name that you use to sign into Microsoft.
 
 You can contact the designated person with the role of
 **User Manager** in your seat to
 update the email ID of your user on your behalf. If you are not aware of
-the User Manager, you can contact your Xandr Account Representative or
-Xandr Support at [Customer Support](https://help.xandr.com/).
+the User Manager, you can contact your Microsoft Advertising Account Representative or
+Microsoft Advertising Support at [Customer Support](https://help.xandr.com/).
 
 ## Microsoft Identity Platform says I must have an admin consent to permissions and won't let me sign in.
 
 Some organizations might require higher level of consent with their
 corporate sign in process with Microsoft Identity Platform. Please
-contact your IT support, and request them to consent to the Xandr
+contact your IT support, and request them to consent to the Microsoft Advertising
 Digital Platform requested permissions in Azure Active Directory
 Enterprise Applications.
 
 They can provide consent either through the Azure Portal, or by
-attempting to sign in to a Xandr product with their Azure Active
+attempting to sign in to a Microsoft Advertising product with their Azure Active
 Directory admin credentials.
 
 ## I'm having trouble signing into Microsoft.

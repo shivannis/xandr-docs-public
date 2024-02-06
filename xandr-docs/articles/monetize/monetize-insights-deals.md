@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Deals
 
 > [!NOTE]
-> This feature is part of a functionality that is currently in **Beta**. It is still under development and may be subject to change without notice. Contact your Xandr Account Representative to get enabled.
+> This feature is part of a functionality that is currently in **Beta**. It is still under development and may be subject to change without notice. Contact your Microsoft Advertising Account Representative to get enabled.
 
 In **Monetize Insights,
 Deals** tab specifies the most
@@ -49,7 +49,7 @@ with the following fields:
 |---|---|
 | Bid rejection type | The classification of the bid rejection. Possible values are Brand, Category, Tech, and Language. |
 | Bidder | Also known as DSP. It is the demand partner platform submitting the bid. |
-| Buyer | The Xandr member seat that submitted the bid. |
+| Buyer | The Microsoft Advertising member seat that submitted the bid. |
 | Deal | The most significant bid rejections by deal. |
 | Media type | Native, Banner or Video creative. |
 | Name | The specific name of the block. For example, brand name, category name or technical attribute name that has been blocked. |
@@ -97,7 +97,7 @@ below.
 | Avg CPM | The average [CPM](../industry-reference/online-advertising-and-ad-tech-glossary.md#cpm) of the bid rejections. |
 | Bidder | Also known as the DSP, it is the demand partner platform submitting the bid. Buyers are associated with one bidder at a time. |
 | Blocked Bid Value | The total value of blocked bids within the selected time range. |
-| Buyer | The Xandr member seat that submitted the bid. |
+| Buyer | The Microsoft Advertising member seat that submitted the bid. |
 | Deal | This is the negotiated deal between the seller and the buyer. |
 | Error Count | The total number of bid rejections resulting from Ad Quality Rules. |
 | Name | The specific name of the block. For example, brand name, category name or technical attribute name that has been blocked. |

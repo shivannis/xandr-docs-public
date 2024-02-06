@@ -1,12 +1,12 @@
 ---
 title: Microsoft Monetize - Introduction to Viewability
-description: In this article, find an overview of viewability in digital media, why viewability is important, how it works, and current Xandr support for viewability.
+description: In this article, find an overview of viewability in digital media, why viewability is important, how it works, and current Microsoft Advertising support for viewability.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - Introduction to viewability
 
-This page provides an overview of viewability in digital media as well as information about why viewability is important, how it works, and current Xandr support for viewability.
+This page provides an overview of viewability in digital media as well as information about why viewability is important, how it works, and current Microsoft Advertising support for viewability.
 
 ## What is viewability and why is it important
 
@@ -84,6 +84,6 @@ It is also possible for a media buyer to:
 
 ### Measurement technology
 
-Viewability measurement on Xandr is tested continuously across all major browser versions, including web, mobile app, and mobile web context.
+Viewability measurement on Microsoft Advertising is tested continuously across all major browser versions, including web, mobile app, and mobile web context.
 
 :::image type="content" source="media/viewability-measurement.png" alt-text="Diagram that shows the various contexts in which viewability measurement is tested.":::

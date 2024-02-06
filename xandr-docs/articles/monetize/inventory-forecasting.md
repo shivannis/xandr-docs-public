@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Inventory forecasting
 
 > [!IMPORTANT]
-> Inventory forecasting is available only to Xandr Ad Server customers.
+> Inventory forecasting is available only to Microsoft Advertising Ad Server customers.
 
 For a publisher to commit to delivering against an advertiser's budget, that publisher needs a way to forecast how much inventory is available for the advertiser to buy. In addition, the publisher needs a way to discover inventory contention. Inventory contention occurs when there are multiple line items competing for the same inventory. Understanding contention is important so the publisher can make prioritization decisions when conflicts occur.
 

@@ -27,7 +27,7 @@ You should use this method when you want to control the budget of each individua
 
 ## Best practice recommendations
 
-Xandr makes the following suggestions regarding pacing:
+Microsoft Advertising makes the following suggestions regarding pacing:
 
 ### Resist pacing at multiple levels
 

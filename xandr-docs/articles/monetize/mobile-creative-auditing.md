@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Microsoft Monetize - Mobile creative auditing
 
 Depending upon the type of mobile creative that you're attempting to
-serve on the Xandr platform, the audit process
+serve on the Microsoft Advertising platform, the audit process
 may vary. To ensure that your mobile creatives are successfully audited,
 you should adhere to our audit processes for mobile creatives.
 
@@ -40,7 +40,7 @@ must provide an alternative landing page URL in the
 
 To successfully pass our platform audit, all MRAID creatives must always
 display the appropriate branding from a desktop browser even when a
-mraid.js file isn't present. The Xandr Audit
+mraid.js file isn't present. The Microsoft Advertising Audit
 team will verify that the MRAID creative contains the appropriate
 branding, but they will not flag any unusual or unexpected behavior
 since MRAID creatives may exhibit behavior that is incompatible with

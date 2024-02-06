@@ -20,7 +20,7 @@ more about Moat measurement, you can visit [this link](https://www.oracle.com/cx
 > [!NOTE]
 > - In order to get started with Moat tracking, fill out [this form](https://moat.com/account/signup).
 > - As of now Moat integration is only available on desktop and mobile supply types.
-> - To link your Xandr account with your Moat account you must contact a Moat representative. They may request your Xandr member ID or seat ID.
+> - To link your Microsoft Advertising account with your Moat account you must contact a Moat representative. They may request your Microsoft Advertising member ID or seat ID.
 
 This guide explains the process of enabling Moat Attention Metrics for
 your video creative.
@@ -56,10 +56,10 @@ uploading a new creative. Follow the below steps to do the needful:
   to include metrics about this creative in your Moat dashboard.
   
   > [!NOTE]
-  > You will find **Xandr - Viewability** checkbox is disabled, because Xandr video viewability measurement runs automatically.
+  > You will find **Microsoft Advertising - Viewability** checkbox is disabled, because Microsoft Advertising video viewability measurement runs automatically.
 
 - After this initial setup, all data associated with your
-  Xandr creatives will automatically flow into
+  Microsoft Advertising creatives will automatically flow into
   your Moat account.
   
   > [!NOTE]
@@ -82,7 +82,7 @@ box to include metrics about this creative in your Moat dashboard.
 After you launch your creative, get in touch with Moat representative to
 setup a new tile within the Moat reporting interface. Once you've
 completed this one time setup, your tile will capture and display Moat
-metrics for all of the Xandr creatives you setup
+metrics for all of the Microsoft Advertising creatives you setup
 with Moat's tracking enabled.
 
 At any point of time in future, if you want to disable Moat metrics,

@@ -10,4 +10,4 @@ If you use header bidding or OpenRTB, you will only need to harvest the Placemen
 
 For a single placement, it's easy to locate the Placement ID by editing the placement in the Monetize user interface.
 
-The [prebid.org](https://docs.prebid.org/index.html) website contains a useful overview of header bidding as well as detailed information about implementing video advertising using header bidding. For more information about the Xandr integration with OpenRTB, see [Incoming Bid Requests from SSPs](../supply-partners/incoming-bid-request-from-ssps.md) on our Documentation Center.
+The [prebid.org](https://docs.prebid.org/index.html) website contains a useful overview of header bidding as well as detailed information about implementing video advertising using header bidding. For more information about the Microsoft Advertising integration with OpenRTB, see [Incoming Bid Requests from SSPs](../supply-partners/incoming-bid-request-from-ssps.md) on our Documentation Center.

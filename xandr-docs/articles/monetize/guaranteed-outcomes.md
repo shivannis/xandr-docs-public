@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Guaranteed outcomes
 
-With Guaranteed Outcomes, buyers can achieve maximum reach while paying for media in a way that makes sense for their business, and sellers benefit from increased demand in the auction without having to manage the risk of impressions that don’t achieve the buyer’s desired outcome. Guaranteed Outcomes is a feature of the Xandr Exchange, designed to reduce friction in the programmatic marketplace by enabling buyers to purchase 100% of their media with the assurance that it will be viewed completely.
+With Guaranteed Outcomes, buyers can achieve maximum reach while paying for media in a way that makes sense for their business, and sellers benefit from increased demand in the auction without having to manage the risk of impressions that don’t achieve the buyer’s desired outcome. Guaranteed Outcomes is a feature of the Microsoft Advertising Exchange, designed to reduce friction in the programmatic marketplace by enabling buyers to purchase 100% of their media with the assurance that it will be viewed completely.
 
 Guaranteed Outcomes includes the following features:
 

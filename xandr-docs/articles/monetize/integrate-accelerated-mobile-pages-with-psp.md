@@ -10,7 +10,7 @@ Both Microsoft Monetize Ad Server and Direct Supply customers must follow the be
 
 ## Context
 
-When a publisher calls Xandr using the `/prebid/amp` endpoint, Xandr responds with key-values for each adapter and the top bid. This happens regardless of whether the client has a consolidated or bidder-specific line item setup. Xandr Prebid bid response includes Prebid key-values (bidder, price, deal, and so on) for each SSP (Xandr and/or SSP demand partners with PSP) that submitted a valid bid into the auction.
+When a publisher calls Microsoft Advertising using the `/prebid/amp` endpoint, Microsoft Advertising responds with key-values for each adapter and the top bid. This happens regardless of whether the client has a consolidated or bidder-specific line item setup. Microsoft Advertising Prebid bid response includes Prebid key-values (bidder, price, deal, and so on) for each SSP (Microsoft Advertising and/or SSP demand partners with PSP) that submitted a valid bid into the auction.
 
 ## Implementation
 
@@ -33,7 +33,7 @@ To set up AMP inventory with PSP:
     >
     > - Enable the checkbox **Serve into a SafeFrame** of Prebid Universal Creatives set up in GAM. This ensures viewability tracking.
     > - All relevant ad sizes are included on the creatives in GAM.
-    > - Any optional `hb_bidder` targeting must include all relevant PSP demand partners, not just Xandr.
+    > - Any optional `hb_bidder` targeting must include all relevant PSP demand partners, not just Microsoft Advertising.
 
 ## Related topics
 

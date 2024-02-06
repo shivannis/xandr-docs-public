@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Mobile User Segment Targeting
-description: Learn how to use and create Xandr segments for mobile users in this page.  
+description: Learn how to use and create Microsoft Advertising segments for mobile users in this page.  
 ms.date: 10/28/2023
 ---
 
@@ -11,16 +11,16 @@ ms.date: 10/28/2023
 > This form of targeting is only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting](buy-side-targeting.md).
 
 This page offers tips and recommendations for how to use and create
-Xandr segments for mobile users. Because
+Microsoft Advertising segments for mobile users. Because
 traditional cookies are not used in in-app mobile inventory, segment
 targeting relies on different processes. In the sections below, you can
 learn about targeting in-app mobile users and the limitations of this
 kind of targeting.
 
-## How to create segments of mobile users on Xandr
+## How to create segments of mobile users on Microsoft Advertising
 
 There are three methods for creating mobile in-app user segments on
-Xandr:
+Microsoft Advertising:
 
 ## Method 1: Add users who view or click on a creative to a segment
 
@@ -31,7 +31,7 @@ Xandr:
 ## Method 2: Add users who have converted on mobile offers using reporting and batch segment service\*
 
 - Using the Log-Level Data Feed, you can gather the list of
-  Xandr User IDs for users who have converted on
+  Microsoft Advertising User IDs for users who have converted on
   your account.
 - Once you have your list of user IDs, you can load them into segments
   using the [Batch Segment Service](../digital-platform-api/batch-segment-service.md).
@@ -46,7 +46,7 @@ Xandr:
   segments using the [Batch Segment Service](../digital-platform-api/batch-segment-service.md).
 - Be sure to use [SEPARATOR5](../digital-platform-api/bss-avro-file-format.md) to designate that you will be
   uploading device IDs and instead of the standard
-  Xandr user IDs.
+  Microsoft Advertising user IDs.
 
 \*Requires API access and [Batch Segment Service](../digital-platform-api/batch-segment-service.md).
 
@@ -65,7 +65,7 @@ important to consider when targeting mobile users:
       mobile in-app traffic, the most important to remember for
       targeting is that web-optimized traffic tracks users with cookies
       while in-app traffic tracks device IDs with
-      Xandr user IDs mapped to them.
+      Microsoft Advertising user IDs mapped to them.
 1. Limit additional campaign targeting
     - Because of the additional technical complications that come with
       tracking mobile users, it is important to limit additional

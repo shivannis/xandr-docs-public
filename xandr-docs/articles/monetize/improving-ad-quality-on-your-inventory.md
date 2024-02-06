@@ -6,9 +6,9 @@ ms.date: 10/28/2023
 
 # Improving ad quality on your inventory
 
-In addition to a robust creative auditing program that ensures a high standard of advertising, Xandr also provides extensive rule-based tools for managing network and publisher ad quality concerns, including competitive ads and incompatible subject matter.
+In addition to a robust creative auditing program that ensures a high standard of advertising, Microsoft Advertising also provides extensive rule-based tools for managing network and publisher ad quality concerns, including competitive ads and incompatible subject matter.
 
-Ad quality is a subjective term that needs to be considered in terms of your inventory's requirements. If you find ads on your or your publisher's site that you consider inappropriate or low in value, there are several ways to ensure that a creative, or a certain type of creative, doesn't show up there again. Microsoft Monetize offers the following options for controlling what content can serve on your inventory. These rule-based Ad Quality controls are provided in addition to the [Creative Standards](creative-standards.md) that Xandr applies to all creatives served on the platform.
+Ad quality is a subjective term that needs to be considered in terms of your inventory's requirements. If you find ads on your or your publisher's site that you consider inappropriate or low in value, there are several ways to ensure that a creative, or a certain type of creative, doesn't show up there again. Microsoft Monetize offers the following options for controlling what content can serve on your inventory. These rule-based Ad Quality controls are provided in addition to the [Creative Standards](creative-standards.md) that Microsoft Advertising applies to all creatives served on the platform.
 
 You can use the following controls to determine what ads are allowed to serve on your inventory:
 

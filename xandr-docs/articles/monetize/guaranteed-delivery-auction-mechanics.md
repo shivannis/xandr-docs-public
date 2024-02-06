@@ -1,13 +1,13 @@
 ---
 title: Guaranteed Delivery Auction Mechanics
-description: The article explains Guaranteed Delivery Auction Mechanics option which available only to Xandr Ad Server customers.
+description: The article explains Guaranteed Delivery Auction Mechanics option which available only to Microsoft Advertising Ad Server customers.
 ms.date: 10/28/2023
 ---
 
 # Guaranteed delivery auction mechanics
 
 > [!IMPORTANT]
-> This option is available only to Xandr Ad Server customers.
+> This option is available only to Microsoft Advertising Ad Server customers.
 
 This page describes how auctions involving guaranteed line items work. If you are looking for information about how guaranteed line item pacing and delivery works, see [Guaranteed Delivery Pacing](guaranteed-delivery-pacing.md). If you need an introduction to what guaranteed line items are and how they work at a high level, [Guaranteed Delivery](guaranteed-delivery.md).
 

@@ -65,7 +65,7 @@ For each network you'd like to mediate, do the following:
 Assuming you've set up your integration as described above, the ad call
 flow looks like this:
 
-1. The tag on the page calls the Xandr ad server.
+1. The tag on the page calls the Microsoft Advertising ad server.
 
 1. The ad server runs an auction for the impression. Mediated bids are
     ranked in the auction according to bid price, alongside RTB bids.
@@ -95,7 +95,7 @@ flow looks like this:
 ## SDK mediation
 
 SDK mediation allows mobile app developers and publishers to access
-demand from mediation networks. Xandr has built [Xandr Mobile SDKs](../mobile-sdk/xandr-mobile-sdks.md) that allow app
+demand from mediation networks. Microsoft Advertising has built [Microsoft Advertising Mobile SDKs](../mobile-sdk/xandr-mobile-sdks.md) that allow app
 developers to monetize their inventory.
 
 SDK mediation requires coordination between ad ops teams and mobile
@@ -111,7 +111,7 @@ engineers:
 
 Follow these steps to set up SDK mediation integration:
 
-1. Integrate one of our [Xandr Mobile SDKs](../mobile-sdk/xandr-mobile-sdks.md) with your app.
+1. Integrate one of our [Microsoft Advertising Mobile SDKs](../mobile-sdk/xandr-mobile-sdks.md) with your app.
     Our SDKs come bundled with mediation adaptors that allow us to
     mediate SDKs from popular networks such as AdMob. For a complete
     list of networks that we support with SDK adaptors, see [Mediation Networks](mediation-networks.md).
@@ -142,20 +142,20 @@ Follow these steps to set up SDK mediation integration:
 Assuming you've set up your integration as described, the ad call flow
 looks like this:
 
-1. The Xandr SDK calls our ad server.
+1. The Microsoft Advertising SDK calls our ad server.
 1. The ad server runs an auction for the impression. Mediated bids are
     ranked in the auction according to bid price, alongside RTB bids.
 1. The ad server responds differently depending on the auction outcome:
     1. If there is a winning RTB bid, it returns the ad directly.
     1. Otherwise, it returns a list of mediated networks (a waterfall)
-        which Xandr's SDK will use to communicate with other ad
+        which Microsoft Advertising's SDK will use to communicate with other ad
         networks' SDKs installed on the device.
-1. The Xandr SDK will call the mediated networks' SDKs running on the
+1. The Microsoft Advertising SDK will call the mediated networks' SDKs running on the
     same device in the order specified by the waterfall response from
     the ad server.
 1. Each of the mediated SDKs listed in the waterfall gets the chance to
     respond with an ad. The mediated SDK that ends up serving notifies
-    the Xandr SDK that an ad was served.
+    the Microsoft Advertising SDK that an ad was served.
 
 :::image type="content" source="media/mediation-sdk-integration.png" alt-text="Diagram of sdk integration .":::
 
@@ -185,7 +185,7 @@ Follow these steps to set up a server side mediation integration:
 Assuming you've set up your integration as described, the ad call flow
 looks like this:
 
-1. The tag on page calls Xandr's ad server.
+1. The tag on page calls Microsoft Advertising's ad server.
 1. The ad server runs an auction for the impression. Mediated bids are
     ranked in the auction according to bid price, alongside RTB bids.
 1. The ad server behaves differently depending on the auction outcome:

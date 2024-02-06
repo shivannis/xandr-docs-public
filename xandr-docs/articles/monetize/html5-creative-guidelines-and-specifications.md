@@ -1,12 +1,12 @@
 ---
 title: Microsoft Monetize - HTML5 Creative Guidelines and Specifications
-description: In this article, find the guidelines and specifications that HTML5 creatives must follow to serve on the Xandr platform and other third-party platforms. 
+description: In this article, find the guidelines and specifications that HTML5 creatives must follow to serve on the Microsoft Advertising platform and other third-party platforms. 
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - HTML5 creative guidelines and specifications
 
-To serve on the Xandr platform and other third-party platforms, all HTML5 creatives must adhere to the guidelines and specifications listed here, our creative standards, and any other guidelines that may apply.
+To serve on the Microsoft Advertising platform and other third-party platforms, all HTML5 creatives must adhere to the guidelines and specifications listed here, our creative standards, and any other guidelines that may apply.
 
 Adhere to these guidelines and specifications when creating HTML5 creatives:
 
@@ -20,7 +20,7 @@ Adhere to these guidelines and specifications when creating HTML5 creatives:
   > - clicks are tracked properly when the creative is served.
   > - the corresponding landing page can be opened when the creative is clicked.
 
-- Creative designers can either use their own code or the helper code provided in the Xandr HTML5 library to integrate HTML5 creatives into websites efficiently. For more information, see our [HTML5 Library](https://github.com/appnexus/appnexus-html5-lib), [Walkthrough for Manually Created Ads](https://github.com/appnexus/appnexus-html5-lib/blob/master/docs/Walkthrough-For-Manually-Created-Ads.md), and [IAB standards](https://www.iab.com/wp-content/uploads/2013/07/HTML5forDigitalAdvertising2.0PublicCommentDraft.pdf).
+- Creative designers can either use their own code or the helper code provided in the Microsoft Advertising HTML5 library to integrate HTML5 creatives into websites efficiently. For more information, see our [HTML5 Library](https://github.com/appnexus/appnexus-html5-lib), [Walkthrough for Manually Created Ads](https://github.com/appnexus/appnexus-html5-lib/blob/master/docs/Walkthrough-For-Manually-Created-Ads.md), and [IAB standards](https://www.iab.com/wp-content/uploads/2013/07/HTML5forDigitalAdvertising2.0PublicCommentDraft.pdf).
 
 Creative designers can reference the following guides when creating new HTML5 creatives:
 

@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 You can always improve viewability rate performance by adjusting your line item setup, even after setting a viewability threshold.
 
-For reference, Xandr considers any viewability rate higher than 0% to be normal. This is because viewability rates can vary greatly from one placement and impression to another. Instances of zero viewability (0%) can occur when:
+For reference, Microsoft Advertising considers any viewability rate higher than 0% to be normal. This is because viewability rates can vary greatly from one placement and impression to another. Instances of zero viewability (0%) can occur when:
 
 - a user leaves a page within one second of a creative rendering
 - a user rapidly scrolls down their screen, missing a creative near the top of the page

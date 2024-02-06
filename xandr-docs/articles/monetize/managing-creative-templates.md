@@ -18,7 +18,7 @@ creative template:
 - **Name**: The name of the creative
   template helps buyers identify the creative template when uploading
   creatives that match this template's media type and format. The
-  Xandr standard templates for each media type
+  Microsoft Advertising standard templates for each media type
   and format are all named "Standard".
 - **ID**: The unique identification number
   assigned to the creative template.
@@ -26,7 +26,7 @@ creative template:
   creatives that can use the template, such as banner.
 - **Template Owner**: The name of the
   person who created the creative template.
-  Xandr is the owner of all standard templates.
+  Microsoft Advertising is the owner of all standard templates.
   Your network owns all custom templates.
 - **State**: The status of the creative
   template, which is either **Active** or **Inactive**.

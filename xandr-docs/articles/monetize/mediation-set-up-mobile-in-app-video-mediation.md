@@ -44,7 +44,7 @@ these steps.
     select **Unknown** brand.
     
     > [!TIP]
-    > If we don't have an existing brand for a video demand source, it can be created. Please talk to your Xandr representative
+    > If we don't have an existing brand for a video demand source, it can be created. Please talk to your Microsoft Advertising representative
 
 1. Press **Save**.
 
@@ -58,18 +58,18 @@ these steps.
 A mediation bid allows you to set how much you expect the mediated
 network will pay for a video impression on a particular placement,
 thereby allowing the mediated network to compete for the impression
-against RTB demand in the Xandr auction.
+against RTB demand in the Microsoft Advertising auction.
 
 To setup a mediation bid you need to have the average bid price you want
 to use and a third party URL, which can call the mediated network
 appropriately. If the URL can accept a cachebuster, please insert the
-Xandr *${CACHEBUSTER}* macro so we can insert a randomly generated
+Microsoft Advertising *${CACHEBUSTER}* macro so we can insert a randomly generated
 number and make each URL call unique.
 
 > [!TIP]
 > The Mediated URL Field accepts Creative Macros
 >
-> The mediated URL field will accept any Xandr creative macro.
+> The mediated URL field will accept any Microsoft Advertising creative macro.
 
 To create a bid navigate to
 **Mediation**
@@ -113,7 +113,7 @@ To create a bid navigate to
 
 ## Related topics
 
-- [Xandr Mobile SDKs](../mobile-sdk/xandr-mobile-sdks.md)
+- [Microsoft Advertising Mobile SDKs](../mobile-sdk/xandr-mobile-sdks.md)
 - [Show Instream Video Ads on Android](../mobile-sdk/show-instream-video-ads-on-android.md)
 - [Show Instream Video Ads on iOS](../mobile-sdk/show-instream-video-ads-on-ios.md)
 - [Mediate with Android](../mobile-sdk/mediate-with-android-sdk-instructions.md)

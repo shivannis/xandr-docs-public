@@ -18,7 +18,7 @@ To target specific inventory, open the **Inventory & Brand Safety** branch. Then
 
 ## Universal and custom categories
 
-- **Universal:** Universal categories are defined by Xandr. When Xandr reviews inventory, we apply these categories based on the inventory's content. For example, a car dealership placement group would be assigned to the "Autos & Vehicles" category. Sellers can apply universal categories when self-reviewing inventory as well.
+- **Universal:** Universal categories are defined by Microsoft Advertising. When Microsoft Advertising reviews inventory, we apply these categories based on the inventory's content. For example, a car dealership placement group would be assigned to the "Autos & Vehicles" category. Sellers can apply universal categories when self-reviewing inventory as well.
 - **Custom:** Custom categories are defined by sellers. Sellers create these and apply them to slices of their inventory to package their inventory for specific buyers to target.
 
 ### Target universal categories
@@ -26,7 +26,7 @@ To target specific inventory, open the **Inventory & Brand Safety** branch. Then
 By default, your line item will target all universal categories. However, you can narrow your targeting to include or exclude specific universal categories.
 
 1. On the **Universal Categories** tab, include or exclude custom categories.
-    - The **Categories** lists shows all top-level universal categories defined by Xandr. You can either include or exclude top-level categories or drill into a category to view its child categories.
+    - The **Categories** lists shows all top-level universal categories defined by Microsoft Advertising. You can either include or exclude top-level categories or drill into a category to view its child categories.
     - The **Sub-Categories** list shows all child universal categories in the context of their parent categories. You can either include or exclude sub-categories. Note that when you exclude a top-level category, its sub-categories are not available for further inclusion or exclusion.
 
     > [!NOTE]

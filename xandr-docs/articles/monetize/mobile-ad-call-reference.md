@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Microsoft Monetize - Mobile ad call reference
 
 > [!NOTE]
-> Xandr now supports a domain, `adnxs-simple.com`, which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Xandr will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Reinforcing-Privacy-Controls-Through-a-Cookie-Free-Domain.aspx) (login required).
+> Microsoft Advertising now supports a domain, `adnxs-simple.com`, which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Microsoft Advertising will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Reinforcing-Privacy-Controls-Through-a-Cookie-Free-Domain.aspx) (login required).
 
 This document describes our mobile ad calls, the `/ssmob` and `/mob`
 calls, which are used to request ads for mobile apps. These calls
@@ -61,7 +61,7 @@ examples of mobile ad call requests, see the [examples](#examples) at the bottom
 | id | int | Yes | The unique ID of the placement where the ad will serve. If you'd rather not pass the raw placement ID, you can pass in a combination of `member` and `inv_code` parameters. For more information, see the documentation for those parameters. |
 | idfa | string | No | The Apple advertising identifier for iOS devices running iOS 6+. |
 | inv_code | string | No | (Optional) A user-supplied "code" (arbitrary string) that identifies a particular placement. Instead of passing the placement ID, you can pass a combination of this field and `member` to uniquely identify a specific placement. |
-| ip | string | Yes, on `/ssmob` calls | IP address of the device making the ad request, e.g., `207.237.150.246`.<br> - If not specified for `/mob` calls, the IP passed via HTTP headers will be used for geo detection instead.<br> - If not specified for `/ssmob` calls, Xandr will not be able to detect geo location, and buyers will therefore not be able to target by geo. |
+| ip | string | Yes, on `/ssmob` calls | IP address of the device making the ad request, e.g., `207.237.150.246`.<br> - If not specified for `/mob` calls, the IP passed via HTTP headers will be used for geo detection instead.<br> - If not specified for `/ssmob` calls, Microsoft Advertising will not be able to detect geo location, and buyers will therefore not be able to target by geo. |
 | istest | boolean | No | Whether this is a test request. Allowed values: `true` or `false`, `1` or `0`. |
 | language | string | No | The device's language, specified with an [ISO Language Code](https://www.iso.org/iso-639-language-code). |
 | LimitAdTrackingEnabled | boolean | No | If `true`, the user has set the system-level preference to not receive behaviorally targeted ads. Allowed values: `true`, `false`, `1`, or `0`.<br>**Tip**: For more information about the system-level ads preferences on iOS, see [Opt out of interest-based ads from iAd](https://support.apple.com/en-us/HT202074).<br>For more information about the system-level ads preferences on Android, see [Advertising ID](https://developers.google.com/android/reference/com/google/android/gms/ads/identifier/AdvertisingIdClient). |
@@ -98,7 +98,7 @@ The requests differ from those made by the SDK as follows:
   for more information about `curl`, see the project website at [https://curl.haxx.se/](https://curl.se/)
   
 > [!NOTE]
-> The `id` parameter in these examples refers to the Xandr placement ID. You will need to replace it with one provided to you by the Xandr platform member you're working with.
+> The `id` parameter in these examples refers to the Microsoft Advertising placement ID. You will need to replace it with one provided to you by the Microsoft Advertising platform member you're working with.
 
 ## JavaScript
 

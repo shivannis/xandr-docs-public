@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Guaranteed delivery
 
 > [!IMPORTANT]
-> This option is available only to Xandr Ad Server customers.
+> This option is available only to Microsoft Advertising Ad Server customers.
 > [!NOTE]
 > For Guaranteed Delivery Augmented Line Items (GDALI), see [Guaranteed Delivery (GDALI)](guaranteed-delivery-gdali.md).
 

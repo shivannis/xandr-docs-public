@@ -29,9 +29,9 @@ perform any kind of integration you want.
 
 To start selling your inventory through mediation, you must:
 
-1. Have the **Mediation** tab enabled for your Xandr
+1. Have the **Mediation** tab enabled for your Microsoft Advertising
     Monetize Ad Server account. You'll need to contact your
-    Xandr representative.
+    Microsoft Advertising representative.
 1. From the list of supported networks in the **Mediation** tab, add
     the networks for which you have accounts. For instructions, see [Mediation Networks](mediation-networks.md).
 1. Once you've created your networks, switch to the bids page and begin

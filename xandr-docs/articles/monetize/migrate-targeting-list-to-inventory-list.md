@@ -41,10 +41,10 @@ your existing targeting lists to inventory lists.
     Depending on the size of the list, this may take a moment. The list
     will be checked to ensure that:
     - none of the domains or apps that you entered violate
-      Xandr policies.
+      Microsoft Advertising policies.
 
     - unsupported URLS are flagged. Unsupported means that the
-      Xandr targeting system has not yet audited
+      Microsoft Advertising targeting system has not yet audited
       these URLs and, as a result, you will not be able to serve on
       them.
 
@@ -62,7 +62,7 @@ your existing targeting lists to inventory lists.
     the arrows to advance through the pages).
     - Unsupported domains or apps will be flagged.
     - You can also remove any domains or apps that violate
-      Xandr policies by clicking
+      Microsoft Advertising policies by clicking
       **Remove from list**. However, you
       will never serve on them even if you leave them in the list.
     - You can choose whether to additionally include subdomains in the

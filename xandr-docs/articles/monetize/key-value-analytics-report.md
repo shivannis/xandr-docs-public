@@ -11,7 +11,7 @@ The Key Value Analytics report shows you the information associated with your ne
 Impressions with key/value targeting will serve and be reported only for those impressions that were logged by a placement tag containing the `kw_` prefix on the key name. For example, a placement tag containing `keyname=value1` will not serve and therefore not be logged, whereas a placement tag containing `kw_keyname=value1` will serve and be logged. This applies to GET-based query-string ad calls with the following tag types: `/tt`, `/ttj`, `/fpt,` `/jpt`, `/pt`, `/ptv`, `/ssptv`, `/mtj`, `/map`, `/mob`, `/prebid/amp`, `/vmap`, `/ssvmap`.
 
 > [!NOTE]
-> **Xandr Seller Tags:** When using [Xandr's seller tag](../seller-tag/seller-tag.md) (AST), omit the `kw_` prefix. AST has the keyword object in the body of the (`ut/v3`) request, so the prefix is not needed. The same holds true for other POST-based request body ad calls from Prebid (`ut/v3/prebid`, `openrtb2/prebid`, `prebid/lfv`) and OpenRTB (`openrtb2`).
+> **Microsoft Advertising Seller Tags:** When using [Microsoft Advertising's seller tag](../seller-tag/seller-tag.md) (AST), omit the `kw_` prefix. AST has the keyword object in the body of the (`ut/v3`) request, so the prefix is not needed. The same holds true for other POST-based request body ad calls from Prebid (`ut/v3/prebid`, `openrtb2/prebid`, `prebid/lfv`) and OpenRTB (`openrtb2`).
 
 Not all impressions from key/value targets will be included in reports. To be included, the targets must meet the following criteria:
 
@@ -108,7 +108,7 @@ Data in this report is retained for 14 months. After 100 days, you are no longer
 | Advertiser Currency | Yes | The transaction currency that the buyer used to purchase the impression. Including this dimension will cause most monetary metrics to be displayed in the buying currency. This dimension is available only when Currency 2.0 is disabled. |
 | Impression Type |  Yes | See the [Impression Types](#impression-types) table below for definitions of the different types of impressions. |
 | Insertion Order |  Yes | The name of the insertion order associated with the line item or campaign that purchased the impression. |
-| Buyer Member |  No | The member name and Xandr ID of the buyer. |
+| Buyer Member |  No | The member name and Microsoft Advertising ID of the buyer. |
 | Country | Yes | The country in which the impression took place. |
 | Key Name | Yes | The name of the key. |
 | Key Label | Yes | The label (alias) of the key name. |
@@ -131,7 +131,7 @@ Data in this report is retained for 14 months. After 100 days, you are no longer
 | Conversion Rate | The ratio of conversions to impressions, expressed as a percentage. |
 | Conversions Per Million | The number of conversions per million impressions. |
 | CTR | The click-through rate – the ratio of clicks to impressions, expressed as a percentage. |
-| Filtered Requests | Ad requests filtered pre-bid by Xandr for inventory quality. |
+| Filtered Requests | Ad requests filtered pre-bid by Microsoft Advertising for inventory quality. |
 | Imps | The total number of impressions. |
 | Imps (master creative) | The number of page-level roadblocks that served the master creative. <br><br> **Important**: **Alpha-Beta Notice**: <br> This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
 | Imps (master creative) | The number of page-level roadblocks that served the master creative. <br><br> **Important**: This metric is in alpha testing and not available to all customers. |

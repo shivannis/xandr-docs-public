@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 Publishers often have custom data about users (age, gender, income, interests, location, etc) or content (search keywords, contextual tags, ad positions, etc) that could be utilized to produce offerings that can be of value to advertisers. There are a variety of ways to target publisher customer data to accomplish this, including query strings and segment targeting. Another way is through custom key/value targeting.
 
-With custom key/value targeting, you can define your own keys and their corresponding values to make full use of publisher data and help advertisers reach their intended audience. Xandr allows you to create custom key value sets that can be used in advertising campaigns to target specific types of customers.
+With custom key/value targeting, you can define your own keys and their corresponding values to make full use of publisher data and help advertisers reach their intended audience. Microsoft Advertising allows you to create custom key value sets that can be used in advertising campaigns to target specific types of customers.
 
 ## Pre-defining keys and values
 

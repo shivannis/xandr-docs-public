@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Floor rule
 
 > [!NOTE]
-> This feature is part of a functionality that is currently in **Beta**. It is still under development and may be subject to change without notice. Contact your Xandr Account Representative to get enabled.
+> This feature is part of a functionality that is currently in **Beta**. It is still under development and may be subject to change without notice. Contact your Microsoft Advertising Account Representative to get enabled.
 
 A floor can be thought of as the minimum price a network or publisher
 would like to receive for a creative. Floor Rule name is the name
@@ -76,7 +76,7 @@ Rules** table have columns listed in the table below:
 | % Δ Blocked Bid Value | The percentage change in the total value of blocked bids over the selected time range. |
 | Avg CPM | The average [CPM](../industry-reference/online-advertising-and-ad-tech-glossary.md#cpm) of the bid rejections. |
 | Blocked Bid Value | The total value of blocked bids within the selected time range. |
-| Buyer | The Xandr member seat that submitted the bid. |
+| Buyer | The Microsoft Advertising member seat that submitted the bid. |
 | Error Count | The total number of bid rejections resulting from Ad Quality Rules. |
 | Issue | Issues for a buyer on specific publishers. |
 | Publisher | An object within our system to group inventory, normally by publication. |

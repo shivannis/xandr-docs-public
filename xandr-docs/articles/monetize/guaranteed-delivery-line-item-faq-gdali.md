@@ -8,17 +8,17 @@ ms.date: 10/28/2023
 
 Answers to common questions about Guaranteed Delivery Line Items (GDALI).
 
-## Why is Xandr releasing GDALIs?
+## Why is Microsoft Advertising releasing GDALIs?
 
-Xandr has been continually investing in its Augmented Line Item (ALI) to provide our Microsoft Monetize and Microsoft Invest customers with greater control and optimization capabilities for direct sold, programmatic, and deal line items. Legacy guaranteed delivery line items, used by our Monetize Ad Server customers, use our legacy line item and campaign architecture, but are unable to leverage the most recent features and workflows offered by ALIs.
+Microsoft Advertising has been continually investing in its Augmented Line Item (ALI) to provide our Microsoft Monetize and Microsoft Invest customers with greater control and optimization capabilities for direct sold, programmatic, and deal line items. Legacy guaranteed delivery line items, used by our Monetize Ad Server customers, use our legacy line item and campaign architecture, but are unable to leverage the most recent features and workflows offered by ALIs.
 
-To provide a more streamlined user experience and ensure Microsoft Monetize customers have access to the latest features, we will be phasing out legacy line items and campaign support in favor of ALI in 2022. GDALI is one of several enhancements Xandr is launching to support this initiative.
+To provide a more streamlined user experience and ensure Microsoft Monetize customers have access to the latest features, we will be phasing out legacy line items and campaign support in favor of ALI in 2022. GDALI is one of several enhancements Microsoft Advertising is launching to support this initiative.
 
 ## When do I need to fully adopt GDALIs and update my integration with any third-party vendors?
 
 We recognize that transitioning your direct sold business to GDALIs is a time consuming and sensitive effort. We previously communicated that any new guaranteed line items with a start date in 2022 must be set up as GDALIs. However, to allow you more time to transition to the new workflow and APIs, we are extending this deadline to May 1, 2022.
 
-We suggest that you engage with any of your third-party vendors who have integrated with Xandr’s platform via the API, for example, Order Management Systems (OMS), to ensure they update their integration prior to May 1, 2022. Beginning on May 1, 2022, the creation of new legacy GDLIs will be restricted via the API and UI.
+We suggest that you engage with any of your third-party vendors who have integrated with Microsoft Advertising’s platform via the API, for example, Order Management Systems (OMS), to ensure they update their integration prior to May 1, 2022. Beginning on May 1, 2022, the creation of new legacy GDLIs will be restricted via the API and UI.
 
 ## Are you planning to release any new features that will improve the usability of Microsoft Monetize?
 
@@ -28,7 +28,7 @@ There will be a number of improvements to the GDALI experience, including:
 - Creative Scheduling: Preschedule creatives to deliver on set dates or custom intervals within a flight.
 - Programmable Splits: Creative targeting within the line item - no more campaign shells.
 - Underspend Catch-Up: Choose delivery catch-up following mid-flight changes.
-- Projected Spend: View Xandr’s budget breakdown by displaying the expected allocation per day within a flight.
+- Projected Spend: View Microsoft Advertising’s budget breakdown by displaying the expected allocation per day within a flight.
 - Updated Interface: A streamlined interface for faster navigation; inline forecasting updates in real-time as you create or edit your line item.
 - Monitoring: The new Monitoring workflow tracks delivery and pacing of GDALIs and Deal Line Items, all in one place (for more information, see [Monitoring](monitoring.md)).
 
@@ -42,7 +42,7 @@ The GDALI release only impacts legacy guaranteed delivery line items. There is n
 
 ## Are resources being made available to help migrate legacy GDLI to GDALI?
 
-Due to the inherent risk and complication of migrating in-flight line items, Xandr will not be migrating existing legacy GDLIs to GDALIs. Therefore, we recommend that you let any in-flight legacy GDLIs created prior to May 1, 2022, complete their flights as is.
+Due to the inherent risk and complication of migrating in-flight line items, Microsoft Advertising will not be migrating existing legacy GDLIs to GDALIs. Therefore, we recommend that you let any in-flight legacy GDLIs created prior to May 1, 2022, complete their flights as is.
 
 ## If my legacy GDLI flight runs beyond May 1, 2022, will it stop delivering?
 
@@ -50,7 +50,7 @@ Your campaign will not immediately stop delivering. To ensure a smooth transitio
 
 ## Do I have to wait until May 1, 2022 to run GDALIs?
 
-No. The product is available to all Monetize Ad Server customers upon request. Reach out to your Xandr Account Representative for activation.
+No. The product is available to all Monetize Ad Server customers upon request. Reach out to your Microsoft Advertising Account Representative for activation.
 
 We highly encourage you to begin using the new workflow and updating the integration with your OMS or any third-party vendors or reporting systems that have integrated with your ad server to ensure they have sufficient time to make these changes.
 

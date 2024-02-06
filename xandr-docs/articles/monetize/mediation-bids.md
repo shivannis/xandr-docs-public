@@ -78,7 +78,7 @@ this bid. Select the tabs for the types of inventory you want to target:
 
 - **Universal categories**
   - The **Categories** lists shows all
-    top-level universal categories defined by Xandr. You can either
+    top-level universal categories defined by Microsoft Advertising. You can either
     include or exclude top-level categories or drill into a category to
     view its child categories.
   - The **Sub-Categories** list shows

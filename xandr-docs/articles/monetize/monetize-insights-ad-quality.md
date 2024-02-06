@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Ad quality
 
 > [!NOTE]
-> This feature is part of a functionality that is currently in **Beta**. It is still under development and may be subject to change without notice. Contact your Xandr Account Representative to get enabled.
+> This feature is part of a functionality that is currently in **Beta**. It is still under development and may be subject to change without notice. Contact your Microsoft Advertising Account Representative to get enabled.
 
 **Ad Quality** shows revenue-impacting
 blocks to help identify and evaluate opportunities to adjust ad quality

@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Guaranteed delivery pacing
 
 > [!IMPORTANT]
-> This option is available only to Xandr Ad Server customers.
+> This option is available only to Microsoft Advertising Ad Server customers.
 
 [Guaranteed Delivery](guaranteed-delivery.md) line items are designed to deliver their budgets in full and evenly across their flight dates. How guaranteed line items pace determines how well they meet the requirements of those budgets.
 
@@ -33,7 +33,7 @@ Due to physical constraints (such as how fast information propagates across netw
 
 Furthermore, even if it were possible to adjust bid decisions in real-time, the request rates and win rates across a slice of inventory are often extremely volatile, as shown in the graphs below. Due to the fact that budgets are distributed across our many bidders and any real-time calculations have to occur locally at the bidder level, were we to attempt to adjust bid decisioning in response to this information, each bidder would have either a very outdated estimate of the request and win rate (due to slower-than-real-time updates), or a very noisy one (thanks to the volatility of the graphs).
 
-To give you some idea of the volatility involved, here are the bid requests per minute across one randomly selected slice of inventory on the Xandr platform over a 24-hour period in early 2015:
+To give you some idea of the volatility involved, here are the bid requests per minute across one randomly selected slice of inventory on the Microsoft Advertising platform over a 24-hour period in early 2015:
 
 :::image type="content" source="media/request-rate.png" alt-text="A graph of minutes against bid requests per minute for one random inventory over a 24-hour period.":::
 

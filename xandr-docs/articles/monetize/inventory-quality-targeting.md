@@ -11,9 +11,9 @@ ms.date: 10/28/2023
 
 In the **Inventory Quality** section of a campaign, you can determine how restrictive your campaign will be about the inventory it serves on.
 
-- **Serve only on Xandr-reviewed inventory** - This is the most restrictive option and is selected by default. You will serve only on high-traffic domains that Xandr has reviewed for sensitive attributes and intended audience. You will therefore have less volume but better inventory quality assurance.
-- **Also serve on trusted seller-reviewed/unreviewed inventory** - This is less restrictive. In addition to serving on Xandr-reviewed inventory, you will also serve on seller-reviewed and unreviewed inventory from sellers that you have trusted in your **Seller Eligibility** settings. See [Edit Seller Defaults](edit-seller-defaults.md) for more details.
-- **Serve on any inventory** - This is the least restrictive option. You will serve on all inventory (Xandr-reviewed, seller-reviewed, and unreviewed) from all eligible sellers.
+- **Serve only on Microsoft Advertising-reviewed inventory** - This is the most restrictive option and is selected by default. You will serve only on high-traffic domains that Microsoft Advertising has reviewed for sensitive attributes and intended audience. You will therefore have less volume but better inventory quality assurance.
+- **Also serve on trusted seller-reviewed/unreviewed inventory** - This is less restrictive. In addition to serving on Microsoft Advertising-reviewed inventory, you will also serve on seller-reviewed and unreviewed inventory from sellers that you have trusted in your **Seller Eligibility** settings. See [Edit Seller Defaults](edit-seller-defaults.md) for more details.
+- **Serve on any inventory** - This is the least restrictive option. You will serve on all inventory (Microsoft Advertising-reviewed, seller-reviewed, and unreviewed) from all eligible sellers.
 
 > [!NOTE]
 >
@@ -22,7 +22,7 @@ In the **Inventory Quality** section of a campaign, you can determine how restri
 > [!IMPORTANT]
 > Regardless of your inventory quality settings, you will never serve on sellers that you have blocked in your **Seller Eligibility** settings. For more details, see [Edit Seller Defaults](edit-seller-defaults.md).
 
-If you choose to serve on Xandr-reviewed or seller-reviewed inventory, you can click the **Edit** button to further expand your reach to target inventory that has been flagged (by Xandr or by the seller) with sensitive attributes and intended audiences.
+If you choose to serve on Microsoft Advertising-reviewed or seller-reviewed inventory, you can click the **Edit** button to further expand your reach to target inventory that has been flagged (by Microsoft Advertising or by the seller) with sensitive attributes and intended audiences.
 
 ## Related topics
 

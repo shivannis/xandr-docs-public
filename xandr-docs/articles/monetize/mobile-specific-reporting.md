@@ -1,13 +1,13 @@
 ---
 title: Microsoft Monetize - Reporting (Mobile-Specific)
-description: This page lists reports created by Xandr that helps you focus on mobile-specific data. 
+description: This page lists reports created by Microsoft Advertising that helps you focus on mobile-specific data. 
 ms.date: 10/28/2023
 ---
 
 
 # Microsoft Monetize - Reporting (mobile-specific)
 
-Xandr has created several reports that let you
+Microsoft Advertising has created several reports that let you
 focus on mobile-specific data. For more information, see the reports
 below.
 

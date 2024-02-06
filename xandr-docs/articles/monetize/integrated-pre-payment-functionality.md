@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Microsoft Monetize - Integrated pre-payment functionality
 
 > [!IMPORTANT]
-> This feature is available for selected clients only. If you want this feature to be enabled, contact your Xandr Account Representative.
+> This feature is available for selected clients only. If you want this feature to be enabled, contact your Microsoft Advertising Account Representative.
 
 **Pre-requisite:** Users will need the Financial Observer role to access the credit card prepayment functionality.
 
@@ -17,7 +17,7 @@ To initiate the payment process, do the following:
 
 1. Within the **Monetize UI** switch over to member or account into which you want the prepayment to be applied to.
 1. Navigate to the **Billing UI** and click on **Make a Payment** button.
-1. Enter the amount to be applied to your account in the credit card payment form. The email address is auto-populated with the billing contact that is recorded with Xandr.
+1. Enter the amount to be applied to your account in the credit card payment form. The email address is auto-populated with the billing contact that is recorded with Microsoft Advertising.
 1. Click on **Pay as guest** to open the credit card payment form in a new window.
 
     Customers have the option to sign in as a guest or sign up to Plastiq, if they would prefer their details to be saved.

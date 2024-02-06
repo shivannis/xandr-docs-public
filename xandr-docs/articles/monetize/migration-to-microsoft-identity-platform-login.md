@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Migration to Microsoft Identity Platform Login
-description: This page provides step by step guide on how to migrate existing authentication process in Xandr products to Microsoft Identity Platform.
+description: This page provides step by step guide on how to migrate existing authentication process in Microsoft Advertising products to Microsoft Identity Platform.
 ms.date: 10/28/2023
 ---
 
@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Microsoft Monetize - Migration to Microsoft Identity Platform login
 
 This documentation provides step by step guide on how to migrate
-existing authentication process in Xandr products to Microsoft Identity
+existing authentication process in Microsoft Advertising products to Microsoft Identity
 Platform.
 
 1. Go to product login screen using [Monetize Login url](https://monetize.xandr.com/login).
@@ -34,13 +34,13 @@ Platform.
        :::image type="content" source="media/monetize-login-b.png" alt-text="Screenshot of moneitize login - B":::   
 
 1. In the **Sign In page**, enter
-    Email ID associated with your Xandr account login and click
+    Email ID associated with your Microsoft Advertising account login and click
     **Next**. If your have registered a
-    different email ID for Microsoft products, ensure that Xandr
+    different email ID for Microsoft products, ensure that Microsoft Advertising
     platform account matches the email used to login to Microsoft. If
     they do not match, contact the designated person with the role of
     User Manager from your organization to do the needful or you can
-    raise a ticket in [Xandr Support portal](https://help.xandr.com/s/login/).
+    raise a ticket in [Microsoft Advertising Support portal](https://help.xandr.com/s/login/).
 
     :::image type="content" source="media/monetize-login-c.png" alt-text="Screenshot of moneitize login - C .":::
 

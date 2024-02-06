@@ -13,25 +13,25 @@ Prebid Server Premium (PSP) supports four options for SSP customers to integrate
 - Non-Prebid
 - Long-Form Video
 
-Monetize Ad Server customers do not need to change their current integration into Xandr and can instead follow the [PSP Setup Steps](integrate-with-psp.md).
+Monetize Ad Server customers do not need to change their current integration into Microsoft Advertising and can instead follow the [PSP Setup Steps](integrate-with-psp.md).
 
 ## Prebid.js send top bid
 
 ### Context
 
-In general, Send Top Bid should be used by default if you do not have bidder-specific line items already set up in your ad server, or if you do not need all bids for reporting purposes. By using the Send Top Bid option, the winning bid response will indicate Xandr as the winner with a buyer member ID as normal even if a separate SSP Demand Partner won through Prebid Server Premium. Your ad server will see Xandr as the winner if this top bid wins the ad server auction. You can determine which SSP won, either Xandr or another demand partner via Prebid Server Premium, by utilizing Xandr's Prebid Server Premium Seller Analytics Report and standard Monetize Reporting and cross-referencing the other SSP Demand Partners' reporting.
+In general, Send Top Bid should be used by default if you do not have bidder-specific line items already set up in your ad server, or if you do not need all bids for reporting purposes. By using the Send Top Bid option, the winning bid response will indicate Microsoft Advertising as the winner with a buyer member ID as normal even if a separate SSP Demand Partner won through Prebid Server Premium. Your ad server will see Microsoft Advertising as the winner if this top bid wins the ad server auction. You can determine which SSP won, either Microsoft Advertising or another demand partner via Prebid Server Premium, by utilizing Microsoft Advertising's Prebid Server Premium Seller Analytics Report and standard Monetize Reporting and cross-referencing the other SSP Demand Partners' reporting.
 
 ### Implementation
 
 To set up Prebid.js with Send Top Bid:
 
-1. [Integrate with a Prebid.js instance](https://docs.prebid.org/prebid-server/use-cases/pbs-pbjs.html) that uses the [Xandr (AppNexus) Prebid.js adapter](https://docs.prebid.org/dev-docs/bidders/appnexus.html).
+1. [Integrate with a Prebid.js instance](https://docs.prebid.org/prebid-server/use-cases/pbs-pbjs.html) that uses the [Microsoft Advertising (AppNexus) Prebid.js adapter](https://docs.prebid.org/dev-docs/bidders/appnexus.html).
 
-    This should not require any changes to the "appnexus" adapter setup on page if already integrated through Xandr this way.
+    This should not require any changes to the "appnexus" adapter setup on page if already integrated through Microsoft Advertising this way.
 
-1. Call the Xandr SSP client-side using the `/ut/v3/prebid` endpoint.
+1. Call the Microsoft Advertising SSP client-side using the `/ut/v3/prebid` endpoint.
 
-1. If Demand Partners are already being called client-side, remove partners other than 'appnexus' (Xandr) from the Prebid.js client-side instance.
+1. If Demand Partners are already being called client-side, remove partners other than 'appnexus' (Microsoft Advertising) from the Prebid.js client-side instance.
 
 1. Configure those, and any additional SSP Demand Partners, in Monetize via **Publishers** > **Prebid Server Premium** > **Demand Partner Configurations**.
 
@@ -47,11 +47,11 @@ Send All Bids should be used if Demand Partner-specific line items in the ad ser
 
 To set up Prebid.js with Send All Bids:
 
-1. [Integrate with a Prebid.js instance](https://docs.prebid.org/prebid-server/use-cases/pbs-pbjs.html) that uses the [Xandr (AppNexus) Prebid.js adapter](https://docs.prebid.org/dev-docs/bidders/appnexus.html).
+1. [Integrate with a Prebid.js instance](https://docs.prebid.org/prebid-server/use-cases/pbs-pbjs.html) that uses the [Microsoft Advertising (AppNexus) Prebid.js adapter](https://docs.prebid.org/dev-docs/bidders/appnexus.html).
 
-    This should not require any changes to the "appnexus" adapter setup on page if already integrated through Xandr this way.
+    This should not require any changes to the "appnexus" adapter setup on page if already integrated through Microsoft Advertising this way.
 
-1. Call the Xandr SSP client-side using the `/openrtb2/prebid` endpoint
+1. Call the Microsoft Advertising SSP client-side using the `/openrtb2/prebid` endpoint
 
 1. Follow the Prebid GitHub example [here](https://github.com/prebid/Prebid.js/blob/master/integrationExamples/gpt/prebidServer_example.html).
 
@@ -60,7 +60,7 @@ To set up Prebid.js with Send All Bids:
 
 Make the below changes to the s2sConfig:
 
-1. Set the **accountId** to your Xandr Seller Member ID.
+1. Set the **accountId** to your Microsoft Advertising Seller Member ID.
 
 1. Set **enabled** to **true**.
 
@@ -84,10 +84,10 @@ Make the below changes to the s2sConfig:
 
 1. Include **'appnexus'** in **bidders**.
 
-1. Set the timeout value to the number of ms the browser should wait for a response from Xandr.
+1. Set the timeout value to the number of ms the browser should wait for a response from Microsoft Advertising.
 
     > [!NOTE]
-    > This value should be greater than your Xandr (PSP) auction timeout. If the value is lower, there is a risk that the client-side timeout will hit before Xandr responds with a bid, potentially preventing receipt of demand from Xandr. For more information, see the Demand Partner Timeout section in [Add or Edit PSP Global Settings](add-or-edit-psp-global-settings.md).
+    > This value should be greater than your Microsoft Advertising (PSP) auction timeout. If the value is lower, there is a risk that the client-side timeout will hit before Microsoft Advertising responds with a bid, potentially preventing receipt of demand from Microsoft Advertising. For more information, see the Demand Partner Timeout section in [Add or Edit PSP Global Settings](add-or-edit-psp-global-settings.md).
 
 See below for a **s2sConfig** example:
 
@@ -120,7 +120,7 @@ When using Send All Bids, report on the key values in an external ad server, suc
 
 ### Context
 
-The above Prebid.js integration methods return Prebid key values to the ad server. If Prebid.js is not implemented on the pages and Prebid key values are not needed for PSP demand to compete in the ad server's auction, the SSP customer's existing integration into Xandr can be used instead:
+The above Prebid.js integration methods return Prebid key values to the ad server. If Prebid.js is not implemented on the pages and Prebid key values are not needed for PSP demand to compete in the ad server's auction, the SSP customer's existing integration into Microsoft Advertising can be used instead:
 
 - `/openrtb2` (For more details see, [Incoming Bid Request from SSPs](../supply-partners/incoming-bid-request-from-ssps.md))
 - Video tags (For more details see, [Integrating In-Stream Video with Tags](integrating-in-stream-video-with-tags.md))

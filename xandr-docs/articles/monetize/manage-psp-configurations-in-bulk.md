@@ -28,7 +28,7 @@ You can also include these optional configuration settings:
 
 | Options | Settings |
 |---|---|
-| **Operating System (OS)** | To set the OS for your configuration click in the **Search OS** text field and select an OS, or type in the field to see filtered options. This will ensure the PSP configuration is utilized (PSP demand partners are sent ad requests) only when Xandr detects the corresponding OS from the user's device in the auction. For more information, see the [Operating System-Families API Service](../digital-platform-api/operating-system-families-service.md). |
+| **Operating System (OS)** | To set the OS for your configuration click in the **Search OS** text field and select an OS, or type in the field to see filtered options. This will ensure the PSP configuration is utilized (PSP demand partners are sent ad requests) only when Microsoft Advertising detects the corresponding OS from the user's device in the auction. For more information, see the [Operating System-Families API Service](../digital-platform-api/operating-system-families-service.md). |
 | **Ad Size Selection** | To specify which ad sizes will be allowed for this configuration, click in the **Ad Size Selection** field and select some ad sizes, or type in the field to see filtered options. This will ensure the PSP configuration is utilized (PSP demand partners are sent ad requests) only when the auction includes one of the selected ad sizes. The **Ad Size Selection** menu includes all standard sizes as well as any custom sizes saved to your member seat.<br>Follow these steps to add new custom sizes:<br>- Select **Network** > **Tools** > **General** from the top menu. This will display the **Tools: General** page.<br> - Select **Custom Sizes** from the horizontal sub-menu.<br> - Click the **New custom size** button. This will display the **Custom Size Details** popover.<br> - Enter values for **Width** and **Height** text fields and click the check box if you want to make this a standard size.<br> - Click the **Save** button. |
 
 If these optional settings are left blank, then any auction for the
@@ -92,7 +92,7 @@ to call the associated Demand Partners.
 
 **Send template**
 
-Submit the completed template to your Xandr
+Submit the completed template to your Microsoft Advertising
 account team for processing unless otherwise instructed.
 
 ## Add demand partners to existing configurations in bulk
@@ -117,7 +117,7 @@ You can also include these optional configuration settings:
 
 | Options | Settings |
 |---|---|
-| **Operating System (OS)** | To set the OS for your configuration click in the **Search OS** text field and select an OS, or type in the field to see filtered options. This will ensure the PSP configuration is utilized (PSP demand partners are sent ad requests) only when Xandr detects the corresponding OS from the user's device in the auction. For more information, see the [Operating System-Families API Service](../digital-platform-api/operating-system-families-service.md). |
+| **Operating System (OS)** | To set the OS for your configuration click in the **Search OS** text field and select an OS, or type in the field to see filtered options. This will ensure the PSP configuration is utilized (PSP demand partners are sent ad requests) only when Microsoft Advertising detects the corresponding OS from the user's device in the auction. For more information, see the [Operating System-Families API Service](../digital-platform-api/operating-system-families-service.md). |
 | **Ad Size Selection** | To specify which ad sizes will be allowed for this configuration, click in the **Ad Size Selection** field and select some ad sizes, or type in the field to see filtered options. This will ensure the PSP configuration is utilized (PSP demand partners are sent ad requests) only when the auction includes one of the selected ad sizes. The **Ad Size Selection** menu includes all standard sizes as well as any custom sizes saved to your member seat.<br>Follow these steps to add new custom sizes:<br> - Select **Network** > **Tools** > **General** from the top menu. This will display the **Tools: General** page.<br> - Select **Custom Sizes** from the horizontal sub-menu.<br> - Click the **New custom size** button. This will display the **Custom Size Details** popover.<br> - Enter values for **Width** and **Height** text fields and click the check box if you want to make this a standard size.<br> - Click the **Save** button. |
 
 If these optional settings are left blank, then any auction for the selected Placement/Placement Group/Publisher ID will trigger the corresponding PSP configuration to be used in the auction and enable PSP to call the associated Demand Partners.
@@ -173,7 +173,7 @@ If these optional settings are left blank, then any auction for the selected Pla
 
 **Send template**
 
-Submit the completed template to your Xandr account team for processing
+Submit the completed template to your Microsoft Advertising account team for processing
 unless otherwise instructed.
 
  > [!NOTE]
