@@ -39,7 +39,7 @@ The following information about the activity of each publisher associated to you
 - **Publisher's Share**
   
   > [!IMPORTANT]
-  > For publishers with an inventory relationship of **Owned & Operated**, **Publisher Revenue** and **RPM** will always be zero. The amount made on inventory is rolled up into the Network Revenue column, which represents the revenue earned by your Xandr member seat.
+  > For publishers with an inventory relationship of **Owned & Operated**, **Publisher Revenue** and **RPM** will always be zero. The amount made on inventory is rolled up into the Network Revenue column, which represents the revenue earned by your Microsoft Advertising member seat.
 
 - **Revenue** - The total revenue earned by this publisher. This value represents the network's cost.
 - **RPM** - The revenue per 1,000 impressions for this publisher. This value includes impressions from defaults, PSAs, and errors. It represents your network's CPM.

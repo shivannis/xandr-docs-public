@@ -90,29 +90,29 @@ and cumulative intervals are still available).
 
 | Column | Type | Filter? | Example | Description |
 |---|---|---|---|---|
-| Advertiser | string | Yes | "Mobile Zombies (789)" | The name of the advertiser followed by the ID (Xandr format). |
+| Advertiser | string | Yes | "Mobile Zombies (789)" | The name of the advertiser followed by the ID (Microsoft Advertising format). |
 | Bid Type | string | Yes | "Manual" | The optimization phase the node was in when it bid for the impression. Note that the term "give up" is appended to the bid types below if the valuation for that impression falls below the venue's "give up price". Allowed values:<br> - "Manual": Applies when you are bidding with a CPM goal, whether it's Base, EAP, or ECP.<br> - "Learn": Applies when you are bidding with optimization (CPA, CPC, or margin) and we do not yet have enough data to bid optimized.<br> - "Optimized": Applies when you are bidding with optimization (CPA, CPC, or margin) and we have enough data to bid optimized.<br> - "Unknown": The node was in an unknown optimization phase.<br> - "Optimized give up"<br> - "Learn give up"<br> - "Manual give up" |
-| Browser | string | Yes |  | The name of the browser followed by the ID (Xandr format). |
-| Buyer | string | Yes | "My Network (123)" | The name of the buying member followed by the ID (Xandr format). |
+| Browser | string | Yes |  | The name of the browser followed by the ID (Microsoft Advertising format). |
+| Buyer | string | Yes | "My Network (123)" | The name of the buying member followed by the ID (Microsoft Advertising format). |
 | Buying Currency | string | No | "EUR" | The transaction currency that the buyer used to purchase this impression. Including this dimension will cause the monetary metrics to be displayed in the buying currency. This dimension is available only when Currency 2.0 is disabled. |
-| Campaign | string | Yes | "Mobile Campaign (222)" | The name of the campaign followed by the ID (Xandr format). (Does not apply to all advertisers.) |
+| Campaign | string | Yes | "Mobile Campaign (222)" | The name of the campaign followed by the ID (Microsoft Advertising format). (Does not apply to all advertisers.) |
 | Connection Type | string | Yes | "Carrier-based" | The type of internet connection at the time of the impression. Possible values: "Carrier-based" or "Wifi or Static". |
 | Country | string | Yes | "US" | The code for the country. |
 | Deal ID | string | Yes | "My New Deal" | The ID/name of the deal associated with the transaction for the impression. |
-| Device Make | string | Yes | "4G Systems (1)" | The name of the device make followed by the ID (Xandr format). |
-| Device Model | string | Yes | "DX650 (15)" | The name of the device model followed by the ID (Xandr format). |
+| Device Make | string | Yes | "4G Systems (1)" | The name of the device make followed by the ID (Microsoft Advertising format). |
+| Device Model | string | Yes | "DX650 (15)" | The name of the device model followed by the ID (Microsoft Advertising format). |
 | Device Type | string | No | desktops & laptops | The type of device on which the impression was served. |
 | Impression Type | string | Yes | "Resold" | The type of impression. Possible values (associated IDs in parentheses):<br> - "Blank" (1): No creative served.<br> - "PSA" (2): A public service announcement served because no other creative was eligible.<br> - "Default Error" (3): A default creative served due to timeout issue.<br> - "Default" (4): A default creative served because no campaigns bid or no other creative was eligible.<br> - "Kept" (5): One of your managed advertisers served a creative.<br> - "Resold" (6): The impression was sold to a third-party buyer.<br> - "RTB" (7): Your creative served on third-party inventory.<br> - "PSA Default Error" (8): A public service announcement served due to timeout issue.<br> - "External Impression" (9): An impression from an impression tracker.<br> - "External Click" (10): A click from a click tracker.<br> - "Insertion" (11): Your creative served on third-party inventory where it persists across page-loads and sessions.<br>**Note**:<br>The "Insertion" impression type is currently only for Facebook News Feed creatives. |
-| Insertion Order | string | Yes | "Mobile Insertion Order (321)" | The name of the insertion order followed by the ID (Xandr format). |
-| Line Item | string | Yes | "Mobile Line Item (111)" | The name of the line item followed by the ID (Xandr format). |
+| Insertion Order | string | Yes | "Mobile Insertion Order (321)" | The name of the insertion order followed by the ID (Microsoft Advertising format). |
+| Line Item | string | Yes | "Mobile Line Item (111)" | The name of the line item followed by the ID (Microsoft Advertising format). |
 | Media Type | string | Yes | "Banner" | The media type of the creative. Possible values: "Banner", "Pop", "Interstitial", "Video", "Text", "Expandable", "Skin", or "Facebook". |
-| Operating System | string | Yes | "Android 6.0.1 Marshmallow (155)" | The name of the operating system of the device followed by the ID (Xandr format). |
-| Operating System Family | string | Yes | "Android (2)" | The name of the operating system family (e.g., Android, Microsoft Windows) of the device followed by the ID (Xandr format). |
+| Operating System | string | Yes | "Android 6.0.1 Marshmallow (155)" | The name of the operating system of the device followed by the ID (Microsoft Advertising format). |
+| Operating System Family | string | Yes | "Android (2)" | The name of the operating system family (e.g., Android, Microsoft Windows) of the device followed by the ID (Microsoft Advertising format). |
 | Payment Rule | string | Yes | "Homepage Rule (993)" | The name of the payment rule followed by the ID. |
 | Payment Type | string | Yes | "cpm", "revshare" | The type of payment to a broker. |
-| Publisher | string | Yes | "Undead.com (456)" | The name of the publisher followed by the ID (Xandr format). |
+| Publisher | string | Yes | "Undead.com (456)" | The name of the publisher followed by the ID (Microsoft Advertising format). |
 | Revenue Type | string | Yes | "CPA" | The basis on which the advertiser pays the member. |
-| Seller | string | Yes | "That Seller (456)" | The name of the selling member followed by the ID (Xandr format). |
+| Seller | string | Yes | "That Seller (456)" | The name of the selling member followed by the ID (Microsoft Advertising format). |
 | Selling Currency | string | No | "EUR" | The transaction currency used by the seller to sell this impression. Including this dimension will cause the monetary metrics to be displayed in the selling currency. This dimension is available only when Currency 2.0 is disabled. |
 | Size | string | Yes | "728x90" | The size of the creative served. |
 | Split | string | Yes | "Mobile Split A (342)" | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the Split column (if included) will be null. |

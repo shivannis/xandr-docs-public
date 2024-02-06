@@ -64,7 +64,7 @@ To duplicate a domain list or app list:
 
 ### Delete a domain list or app list
 
-You can delete domain lists and app lists from the Xandr system. Be sure to read the warnings below before you delete a domain list or app list:
+You can delete domain lists and app lists from the Microsoft Advertising system. Be sure to read the warnings below before you delete a domain list or app list:
 
 > [!WARNING]
 > Deleting a domain or app list while it's in use by an active campaign will change the targeting of that campaign. If the list you delete is the only one in use by the

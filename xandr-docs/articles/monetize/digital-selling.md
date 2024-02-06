@@ -15,11 +15,11 @@ As a Digital Seller, you will receive the following documents:
 - Invoice
 
 If you change your billing address, be sure to submit a ticket to the
-Xandr Client Finance team by clicking Contact
-Support in the [Xandr Customer Support Portal](https://help.xandr.com/s/login/).
+Microsoft Advertising Client Finance team by clicking Contact
+Support in the [Microsoft Advertising Customer Support Portal](https://help.xandr.com/s/login/).
 
 ## Related topics
 
 - [Understanding Your Seller Statement](understanding-your-seller-statement.md)
 - [Reconciling your Seller Statement with Reporting](reconciling-your-seller-statement-with-reporting.md)
-- [Getting Paid by Xandr](getting-paid-by-xandr.md)
+- [Getting Paid by Microsoft Advertising](getting-paid-by-xandr.md)

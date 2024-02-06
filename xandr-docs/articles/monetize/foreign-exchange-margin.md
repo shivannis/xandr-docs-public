@@ -1,18 +1,18 @@
 ---
 title: Microsoft Monetize - Foreign Exchange Margin
-description: The article reveals how Xandr handles Foreign Exchange Margin (FX Margin) to mitigate currency risks in non-USD media costs during monthly transactions.
+description: The article reveals how Microsoft Advertising handles Foreign Exchange Margin (FX Margin) to mitigate currency risks in non-USD media costs during monthly transactions.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - Foreign exchange margin
 
-Xandr charges an **FX Margin** (Foreign Exchange Margin) for clearing media cost in non-USD currencies.This charge is applied to offset the risk that Xandr assumes
+Microsoft Advertising charges an **FX Margin** (Foreign Exchange Margin) for clearing media cost in non-USD currencies.This charge is applied to offset the risk that Microsoft Advertising assumes
 due to the natural fluctuations of currency exchange rates during the course of a month of buying/selling activity. If you have any questions
 about this charge, contact your Account Manager.
 
 ## Rates
 
-The table below lists the FX Margin Rates per currency. These rates are subject to change and are set by Xandr based on currency volatility, transaction volume, and cost to clear.
+The table below lists the FX Margin Rates per currency. These rates are subject to change and are set by Microsoft Advertising based on currency volatility, transaction volume, and cost to clear.
 
 | Currency | FX Margin effective Jun/1/2017 | FX Margin effective Aug/1/2017 | FX Margin effective Oct/9/2017 | FX Margin effective Nov/1/2017 | FX Margin effective Jan/10/2018 | FX Margin effective Jan/29/2018 | FX Margin effective June 1, 2018 | FX Margin effective Feb 1st, 2021 | FX Margin effective Mar 13, 2021 |
 |--|--|--|--|--|--|--|--|--|--|
@@ -47,7 +47,7 @@ The table below lists the FX Margin Rates per currency. These rates are subject 
 
 ## How is FX margin applied?
 
-- FX margin is only charged on non-USD media costs that Xandr clears.
+- FX margin is only charged on non-USD media costs that Microsoft Advertising clears.
   - For Buyers, this is any non-USD "Cost of Media" on the invoice.
   - For Sellers, this is any non-USD "Seller Revenue" on a payment.
 - FX Margin is a percentage calculated by multiplying the FX Margin Rate % \* Media Cost.
@@ -56,7 +56,7 @@ The table below lists the FX Margin Rates per currency. These rates are subject 
 
 ## Fee vs Deduction
 
-Xandr can charge FX Margin as either a fee or deduction (depending on what the client prefers). Generally, we apply whatever method is being used for the client's BASC/SASC charges (but that can be overridden as needed). Each charging method is described below:
+Microsoft Advertising can charge FX Margin as either a fee or deduction (depending on what the client prefers). Generally, we apply whatever method is being used for the client's BASC/SASC charges (but that can be overridden as needed). Each charging method is described below:
 
 | FX Margin as a Deduction | FX Margin as a Fee |
 |--|--|
@@ -72,7 +72,7 @@ Buyers can view either FX Margin Fees or Deductions in the Buying Billing Report
 
 ## Sellers
 
-To protect contract terms privacy, Xandr does not expose sell-side revenue sharing in reporting.
+To protect contract terms privacy, Microsoft Advertising does not expose sell-side revenue sharing in reporting.
 
 ## Related topic
 

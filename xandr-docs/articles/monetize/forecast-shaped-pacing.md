@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Forecast-shaped pacing
 
-Xandr applies pacing throughout the lifetime of a line item to ensure that each line item meets its delivery goal in full and at a steady rate. Forecast-Shaped Pacing (FSP) – which governs daily pacing schedules for all impression-based guaranteed line items on the platform – takes standard pacing methods a step further by ensuring
+Microsoft Advertising applies pacing throughout the lifetime of a line item to ensure that each line item meets its delivery goal in full and at a steady rate. Forecast-Shaped Pacing (FSP) – which governs daily pacing schedules for all impression-based guaranteed line items on the platform – takes standard pacing methods a step further by ensuring
 line items deliver at a rate that reflects the forecasted inventory available for the line item.
 
 FSP provides a great amount of precision in delivery and allows publishers to realize increased revenue from RTB through [Open Dynamic Allocation and Flexible Priorities](open-dynamic-allocation-and-flexible-priorities.md).
@@ -22,7 +22,7 @@ delivery scheduled accordingly.
 To summarize: FSP takes into account the variability of inventory throughout the day, setting hourly delivery goals that map to high-fidelity, line-item specific forecasts powered by the [Yield Forecasting Engine](../yield-analytics-ui/yield-analytics-overview.md).
 
 > [!NOTE]
-> Xandr uses FSP for all impression-based Guaranteed Delivery line items. It does not apply to line items with an **Exclusive** delivery type.
+> Microsoft Advertising uses FSP for all impression-based Guaranteed Delivery line items. It does not apply to line items with an **Exclusive** delivery type.
 
 ## What FSP means to publishers
 

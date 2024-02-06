@@ -77,7 +77,7 @@ for reports. However, all intervals are not available for every report.
 | Buying Currency | No | The transaction currency used by the buyer |
 | Curated Deal ID | Yes | Curated deal ID |
 | Curator | No | Member ID of the curator who facilitated the transaction |
-| Curator Cleared | Yes | - "0" if Xandr clears net seller revenue with the seller.<br> - "1" if the curator direct clears net seller revenue with the seller. |
+| Curator Cleared | Yes | - "0" if Microsoft Advertising clears net seller revenue with the seller.<br> - "1" if the curator direct clears net seller revenue with the seller. |
 | Publisher | Yes | Publisher ID of the seller where the curated transaction served on |
 | Seller | Yes | Member ID of the seller where the curated transaction served on |
 | Selling Currency | No | The transaction currency used by the seller |
@@ -90,10 +90,10 @@ for reports. However, all intervals are not available for every report.
 | Column | Description |
 |---|---|
 | Billable Imps | The total number of impressions billed to the client. |
-| Curator Auction Fees | The amount Xandr charged to the curator as a fee at auction time |
-| Curator Auction Service Deductions | The amount Xandr charged to the curator as a deduction at auction time |
+| Curator Auction Fees | The amount Microsoft Advertising charged to the curator as a fee at auction time |
+| Curator Auction Service Deductions | The amount Microsoft Advertising charged to the curator as a deduction at auction time |
 | Curator Margin Deduction | The profit a curator makes on a transaction. |
-| Net Seller Revenue | The amount of net revenue a seller earns, exclusive of seller auction service fees (SASC) they owe to Xandr. <br>**Note**: this field is only filled for sellers for which the curator has a direct clear relationship. |
+| Net Seller Revenue | The amount of net revenue a seller earns, exclusive of seller auction service fees (SASC) they owe to Microsoft Advertising. <br>**Note**: this field is only filled for sellers for which the curator has a direct clear relationship. |
 
 ## To run your report
 

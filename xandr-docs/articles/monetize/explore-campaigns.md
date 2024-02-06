@@ -115,16 +115,16 @@ The following stats are shown for each campaign. Columns that show an arrow in t
 > - **Rev** Money the advertiser has paid or will pay your network as a result of the campaign. Using the currency toggle, you can choose whether to show **Rev** in USD or in the currency set at the line item.
 >
 > - **Media Cost (USD)** Money your network has spent buying media for the campaign. Media Cost always appears in USD, as that is the currency in
->   which Xandr transacts. For campaigns with specific lifetime media cost budgets, you can select the **Pacing** toggle to visualize how well the campaigns are pacing for the selected stats
+>   which Microsoft Advertising transacts. For campaigns with specific lifetime media cost budgets, you can select the **Pacing** toggle to visualize how well the campaigns are pacing for the selected stats
 >   interval. For more details, see **Showing/Hiding Pacing Bars**.
 >
 > - **Profit (USD)** Money your network has made from the advertiser as a result of the campaign. This is revenue - media cost. Profit always appears in USD.
 >
 > - **Rev eCPM** Money the advertiser has paid or will pay your network per 1000 impressions. Using the currency toggle, you can choose whether to show **Rev eCPM** in USD or in the currency set at the line item.
 >
-> - **Cost eCPM (USD)** Money your network has spent buying media per 1000 impressions. Cost eCPM always appears in USD, as that is the currency in which Xandr transacts.
+> - **Cost eCPM (USD)** Money your network has spent buying media per 1000 impressions. Cost eCPM always appears in USD, as that is the currency in which Microsoft Advertising transacts.
 >
-> - **Cost eCPA (USD)** Money your network has spent buying media per conversion. Cost eCPA always appears in USD, as that is the currency in which Xandr transacts.
+> - **Cost eCPA (USD)** Money your network has spent buying media per conversion. Cost eCPA always appears in USD, as that is the currency in which Microsoft Advertising transacts.
 
 ## Showing/Hiding pacing bars
 

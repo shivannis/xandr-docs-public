@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize -  Publisher Guide for Deal Sync with DV360 
-description: Learn all about Xandr's integration with the Display Video 360 (DV360) Seller API. 
+description: Learn all about Microsoft Advertising's integration with the Display Video 360 (DV360) Seller API. 
 ms.date: 10/28/2023
 ---
 
@@ -12,7 +12,7 @@ ms.date: 10/28/2023
 
 ## Overview
 
-Xandr's integration with the Display Video 360
+Microsoft Advertising's integration with the Display Video 360
 (DV360) Seller API automatically synchronizes the deals created in
 Microsoft Monetize with the Google DV360 system.
 This enables a more seamless deal transaction between

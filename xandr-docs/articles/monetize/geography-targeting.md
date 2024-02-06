@@ -77,7 +77,7 @@ On the **Postal Code** tab, once you select a country, you can include up to 400
 strings of up to 14 characters and can contain a space or hyphen. Postal codes may only be included (not excluded).
 
 > [!NOTE]
-> Certain legitimate ZIP or postal codes are unrecognizable or invalid within the Xandr geography targeting system. This can happen because [Digital Envoy](https://www.digitalelement.com/), a Xandr partner that handles geolocation data, can't recognize a ZIP or postal code's existence until an IP address (user) has been associated with it.
+> Certain legitimate ZIP or postal codes are unrecognizable or invalid within the Microsoft Advertising geography targeting system. This can happen because [Digital Envoy](https://www.digitalelement.com/), a Microsoft Advertising partner that handles geolocation data, can't recognize a ZIP or postal code's existence until an IP address (user) has been associated with it.
 > Postal codes that don't exist in the system often represent obscure or otherwise small geographical zones with minimal internet activity.
 
 Unlike other types of geographic targeting, postal code targeting is include only.

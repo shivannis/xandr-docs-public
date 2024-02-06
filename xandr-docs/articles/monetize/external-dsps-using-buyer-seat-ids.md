@@ -8,9 +8,9 @@ ms.date: 10/28/2023
 
 Not every buyer seat ID that you'll see when creating deals is currently eligible for deal creation. Before you create a custom deal with an external DSP using buyer seat IDs, you should check the Buyer Seat Migration Status reference table and communicate with the buyer to ensure you're using the correct IDs.
 
-The following DSPs have either fully or partially migrated to use buyer seat ID bidding on Xandr, or they're in the process of migrating. When you set up a custom deal, you will see a combination of Xandr member IDs and seat IDs when selecting a buyer.
+The following DSPs have either fully or partially migrated to use buyer seat ID bidding on Microsoft Advertising, or they're in the process of migrating. When you set up a custom deal, you will see a combination of Microsoft Advertising member IDs and seat IDs when selecting a buyer.
 
-Before you try to set up a deal using a buyer seat ID, please use the Seat ID Deal Status column in the table to verify eligibility. If your external DSP is marked Not Eligible, you should continue to set up deals using the Xandr member ID.
+Before you try to set up a deal using a buyer seat ID, please use the Seat ID Deal Status column in the table to verify eligibility. If your external DSP is marked Not Eligible, you should continue to set up deals using the Microsoft Advertising member ID.
 
 > [!NOTE]
 > External DSPs not identified in this table have not yet migrated to buyer seat IDs.

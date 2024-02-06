@@ -72,7 +72,7 @@ Deals, you can add buyer seat IDs to an existing deal.
 
 ## Can I create a deal for multiple media types?
 
-While multi format deals are supported in Xandr
+While multi format deals are supported in Microsoft Advertising
 Monetize UI, DV360 does encourage publishers to declare only one
 media type in a deal. This will allow buyers to get more granular
 details about how to target a deal.
@@ -124,22 +124,22 @@ Negotiations screen of the DV360 UI:
 - Filter for deals "pending action" to find deals that require the
   buyer's acceptance.
 - Search for deals using the seller name, which will be the publisher's
-  Xandr Member name.
+  Microsoft Advertising Member name.
 - Search for deals using the deal name, which will be the name submitted
-  in Xandr systems.
+  in Microsoft Advertising systems.
 
 ## Can a publisher pick and chose which DV360 buyers to automatically sync deals with?
 
 That is not a feature that will be supported. Deal sync with DV360 is
 designed to automate deal sync for ALL DV360 buyers as the design of the
 final state of this product is to enable all sellers in the
-Xandr marketplace.
+Microsoft Advertising marketplace.
 
 ## I created a deal with DV360 member 1212, why did it not sync with DV360 systems?
 
-Deals created with DV360 Xandr members will not
+Deals created with DV360 Microsoft Advertising members will not
 be supported in deal sync with DV360 as DV360 APIs require the DV360
-partner ID declared in the deal. Xandr is unable
+partner ID declared in the deal. Microsoft Advertising is unable
 to determine which partner IDs to associate with a member ID deal.
 
 ## My buyer is seeing that creative format and creative requirements are undeclared but required in the UI, should they be concerned?
@@ -157,7 +157,7 @@ these deals.
 The buyer should not be concerned that Pacing is set to ASAP. Pacing is
 controlled on the sell side, and this field is purely for transparency
 purposes. Therefore pacing will largely determined based on the
-publisher's settings in Xandr systems rather
+publisher's settings in Microsoft Advertising systems rather
 than the line items set up in DV360.
 
 ## I am setting up a PG Deal using size-less placements, do I still need to declare sizes in the deal?
@@ -170,5 +170,5 @@ select at least one creative that satisfies each required creative
 dimension, thereby guaranteeing that we'll have at least one eligible
 creative to serve the requested ad size. If the allowed sizes for a PG
 deal changes, the publisher can go in and update the allowed creative
-sizes in the PG deal and Xandr will
+sizes in the PG deal and Microsoft Advertising will
 automatically upload those updates to DV360 systems.

@@ -90,7 +90,7 @@ Impressions with key/value targeting will serve and be reported only for those i
 This applies to ad calls with the following tag types: /tt, /ttj, /fpt, /jpt, /pt, /ptv, /ssptv, /mtj, /map, and /mob.
 
 > [!NOTE]
-> When using [Xandr's seller tag](../seller-tag/seller-tag.md) (AST), omit the `kw_` prefix. AST uses the keyword object in the body of the request, so the prefix is not needed.
+> When using [Microsoft Advertising's seller tag](../seller-tag/seller-tag.md) (AST), omit the `kw_` prefix. AST uses the keyword object in the body of the request, so the prefix is not needed.
 
 A maximum of 100 key/value pairs can be defined per tag.
 

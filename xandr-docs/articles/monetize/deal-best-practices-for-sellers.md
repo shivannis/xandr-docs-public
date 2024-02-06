@@ -145,7 +145,7 @@ providing value to your buyers.
   the same level of visibility into their deal usage as you would with a
   buyer. For example, A targeted icon (green check mark) will display in
   Monetize near deals that a platform buyer is
-  targeting. Xandr doesn't have insight into
+  targeting. Microsoft Advertising doesn't have insight into
   deal campaigns set up behind a DSP, so the targeted icon will not be
   available for off-platform buyers. Additionally, off-platform buyers
   will not be notified when you create a deal for them. You will need to

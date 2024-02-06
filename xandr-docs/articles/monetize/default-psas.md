@@ -1,6 +1,6 @@
 ---
 title: Default PSAs
-description: Learn how Xandr serves Default public service announcement creatives (PSAs or PSA creatives) to prevent serving blanks.
+description: Learn how Microsoft Advertising serves Default public service announcement creatives (PSAs or PSA creatives) to prevent serving blanks.
 ms.date: 10/28/2023
 ---
 
@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Default PSAs
 
 Default public service announcement creatives (PSAs or PSA creatives)
-are actual PSAs that Xandr serves in order to
+are actual PSAs that Microsoft Advertising serves in order to
 prevent serving blanks under certain circumstances.
 
 > [!TIP]
@@ -20,7 +20,7 @@ prevent serving blanks under certain circumstances.
 >In the past, filtered impressions on inventory flagged as violating platform standards would serve blanks. Now, these impressions follow seller preferences for impressions with no demand. As with all impressions that follow this workflow, sellers will be charged the applicable fee.
 
 Default PSAs are ads intended for general audiences that
-Xandr serves for various causes and nonprofit
+Microsoft Advertising serves for various causes and nonprofit
 organizations at no cost in order to prevent serving a blank when there
 is no other creative to serve.
 
@@ -30,7 +30,7 @@ Below are a few examples of default PSAs served for managed inventory.
 
 :::image type="content" source="media/default-psas.png" alt-text="Screenshot of Default .":::
 
-A PSA creative provided by Xandr will be served
+A PSA creative provided by Microsoft Advertising will be served
 for your managed inventory in the following circumstances:
 
 - The impression is not purchased through a campaign
@@ -45,7 +45,7 @@ for your managed inventory in the following circumstances:
 ## Report on PSAs
 
 In network reporting, PSAs will show up as a buyer in a report grouped
-by buyer. The buyer member associated with Xandr
+by buyer. The buyer member associated with Microsoft Advertising
 default PSAs is ID 229, Public Service Announcements, but the report
 will show a row for Buyer: PSA, and will not include Buyer 229.
 

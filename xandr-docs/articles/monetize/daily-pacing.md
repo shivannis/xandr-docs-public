@@ -27,7 +27,7 @@ automatically throughout the day based on the performance of the
 campaign to that point in an attempt to maintain an even budget
 delivery.
 
-Xandr recommends that you enable pacing for most
+Microsoft Advertising recommends that you enable pacing for most
 campaigns.
 
 ## How the system reduces over- or underspend
@@ -135,7 +135,7 @@ smooth delivery.
 - **The smaller your budget, the greater the margin for error** In order
   to spend a budget, a portion of it must be allocated to each bidder.
   Considering the number of individual bidders within
-  Xandr (thousands), it becomes more difficult
+  Microsoft Advertising (thousands), it becomes more difficult
   to allocate that amount accurately. This leads to us delivering
   budgets much faster than expected. To combat this situation, you can
   do one of the following:

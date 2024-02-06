@@ -73,10 +73,10 @@ Data retention period for this report is 1100 days.
 | Column | Filter? | Description |
 |---|---|---|
 | Bidder | No | Name / ID of the bidder who bought on the transaction |
-| Billing Currency | No | The currency that Xandr bills the curator in |
+| Billing Currency | No | The currency that Microsoft Advertising bills the curator in |
 | Brand | Yes | Brand name / ID associated with the creative that served on the curated deal |
 | Buyer | Yes | Member name / ID of the buyer who bought on the transaction |
-| Country | Yes | The country in which the impression took place. For impression requests for which Xandr received no indication that the ad was rendered (i.e., non-transacted), country information is not provided. |
+| Country | Yes | The country in which the impression took place. For impression requests for which Microsoft Advertising received no indication that the ad was rendered (i.e., non-transacted), country information is not provided. |
 | Curated Advertiser | No | Advertiser name / ID of the curator member object that owns the deal line item associated with the curated deal |
 | Curated Deal | Yes | Curated deal name / ID |
 | Curated Deal Advertiser Id | No | The advertiser ID of the advertiser whose creative served on this impression |
@@ -101,7 +101,7 @@ Data retention period for this report is 1100 days.
 > [!NOTE]
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 >
-> Click metrics are available for impressions bought through Xandr Invest. Video metrics are available for impressions bought through any DSP.
+> Click metrics are available for impressions bought through Microsoft Advertising Invest. Video metrics are available for impressions bought through any DSP.
 
 | Column | Description |
 |---|---|
@@ -113,7 +113,7 @@ Data retention period for this report is 1100 days.
 | Curator Margin | The profit a curator makes on a transaction<br>**Note**: When taken as a percentage, Curator Margin is calculated based on Curator Revenue. |
 | Curator Net Media Cost | The amount of spend a curator sends to exchange sellers, net of curator fees and margins, if applicable. This is the same as gross seller revenue, inclusive of seller rev share (SASC). |
 | Curator Revenue | The amount of spend a buyer sends to the curator, net of buyer fees, if applicable. This is the same as buyer media cost, exclusive of buyer rev share (BASC). |
-| Curator Tech Fees | The fees Xandr charges to a curator on a transaction. |
+| Curator Tech Fees | The fees Microsoft Advertising charges to a curator on a transaction. |
 | Curator Total Cost | The amount of spend a curator sends to the exchange and exchange sellers, net of curator margin but gross of curator fees. |
 | Imps | Delivered impressions |
 | Video 25% Complete | The total number of times the video completed 25% of the entire duration. |

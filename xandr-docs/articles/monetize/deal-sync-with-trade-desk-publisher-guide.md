@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Publisher Guide for Deal Sync with Trade Desk 
-description: Learn how a seamless deal transaction between Xandr Monetize publishers and Trade Desk buyers is possible.  
+description: Learn how a seamless deal transaction between Microsoft Advertising Monetize publishers and Trade Desk buyers is possible.  
 ms.date: 10/28/2023
 ---
 
@@ -12,10 +12,10 @@ ms.date: 10/28/2023
 
 ## Overview
 
-Xandr's integration with the Trade Desk Proposal
+Microsoft Advertising's integration with the Trade Desk Proposal
 API automatically synchronizes the deals created in
 Microsoft Monetize with the Trade Desk system. This
-enables a more seamless deal transaction between Xandr
+enables a more seamless deal transaction between Microsoft Advertising
 Monetize publishers and Trade Desk buyers.
 
 > [!IMPORTANT]
@@ -101,7 +101,7 @@ continue to follow the manual workflow.
   synchronized.
 - Bidder-level deals (set up with ALL Trade Desk buyers) are not
   supported in automatic deal synchronizing.
-- Xandr systems will randomly assign one buyer to be the primary buyer
+- Microsoft Advertising systems will randomly assign one buyer to be the primary buyer
   on the multi-buyer deal. This primary buyer will be the only account
   allowed to approve the deal. You can check the primary buyer assigned
   to the deal in the buyer-deal-sync API or database tables.

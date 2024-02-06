@@ -15,11 +15,11 @@ As a Digital Buyer, you will receive the following documents:
 - Credit Memo
 - Netting Statement (if opeed into netting)
   > [!NOTE]
-  > If you change your billing address, be sure to submit a ticket to the Xandr Client Finance team by clicking Contact Support in the [Xandr Customer Support Portal](https://help.xandr.com/s/login/).
+  > If you change your billing address, be sure to submit a ticket to the Microsoft Advertising Client Finance team by clicking Contact Support in the [Microsoft Advertising Customer Support Portal](https://help.xandr.com/s/login/).
 
 ## Related topics
 
 - [Understanding Your Invoice](understanding-your-invoice.md)
 - [Understanding Your Pricing Terms](understanding-your-pricing-terms.md)
 - [Reconciling Your Invoice with Reporting](reconciling-your-invoice-with-reporting.md)
-- [Payment to Xandr](payment-to-xandr.md)
+- [Payment to Microsoft Advertising](payment-to-xandr.md)

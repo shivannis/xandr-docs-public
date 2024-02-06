@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Microsoft Monetize - Curated deals
 
 > [!NOTE]
-> Deal curation is not available to all clients. Contact your Xandr representative for information on how you can be enabled for deal curation.
+> Deal curation is not available to all clients. Contact your Microsoft Advertising representative for information on how you can be enabled for deal curation.
 
 ## Microsoft Curate client overview
 
@@ -19,7 +19,7 @@ inventory and create unique offerings for buyers. These proprietary
 assets can include audience data, preferred inventory access, specially
 negotiated rates with sellers, optimization capabilities, investment
 strategy, and other features. Curated deals can be bought via
-Xandr's Invest DSP and all major DSPs.
+Microsoft Advertising's Invest DSP and all major DSPs.
 
 In addition, for buyers who execute a large volume of campaigns and need
 to manage their media investment, Microsoft Curate’s
@@ -37,7 +37,7 @@ percentage, optimization, and so on.
 Certain fees/charges apply to curated transactions, but only if the bid
 for the curated deal wins the impression in the seller’s final auction.
 These fees/charges may include a tech fee charged by
-Xandr to the third-party curator for its use of
+Microsoft Advertising to the third-party curator for its use of
 the platform and the Microsoft Curate technology,
 and a margin to be charged by the curator for their enhancement of the
 inventory. If you are a seller, all bids for curated transactions will
@@ -83,5 +83,5 @@ account management team.
 
 **Additional questions or want to learn more?**
 
-Please reach out to your Xandr account manager
+Please reach out to your Microsoft Advertising account manager
 to learn more about Microsoft Curate.

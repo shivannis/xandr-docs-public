@@ -15,7 +15,7 @@ Sellers can see the settings you have set for them. Your default settings will a
 
 While you can change your settings for the seller, you cannot change the seller's settings for you. You can change your settings for the seller in the **Partner Center** and in the **My Settings for {Seller Name}** section of the **Partner Details** page. You can view the seller's current settings for you in the **{Seller Name} Settings for Me** section of the **Partner Details** page.
 
-**Get to Know Xandr Direct:** Xandr Direct is a group of 100+ sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers. For more information, please see [Xandr Direct for Buyers](appnexus-direct-for-buyers.md) Xandr or contact [mailto:appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Xandr account manager.
+**Get to Know Microsoft Advertising Direct:** Microsoft Advertising Direct is a group of 100+ sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers. For more information, please see [Microsoft Advertising Direct for Buyers](appnexus-direct-for-buyers.md) Microsoft Advertising or contact [mailto:appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Microsoft Advertising account manager.
 
 ## Edit seller settings
 
@@ -47,7 +47,7 @@ To apply seller defaults [Set Seller Defaults](set-seller-defaults.md):
     - For multiple sellers, the settings are available in the **Edit Partner Controls** section.
 2. Select the custom settings:
     - **Seller Eligibility** - the transaction eligibility between buyer and seller. A buyer may block a seller, a seller may block a buyer, or both buyer and seller may be blocked by each other, see [Partner Center Screen - Buyer View](partner-center-screen-buyer-view.md).
-    - **Inventory Trust Level** - indicates whether you trust inventory reviewed only by the Xandr platform (**Platform-reviewed**), by the Xandr platform and the seller (**Seller-reviewed**), or all inventory (**All**). For more information on the different inventory trust levels, see the **Setting default inventory trust** section in [Partner Center Screen - Buyer View](partner-center-screen-buyer-view.md).
+    - **Inventory Trust Level** - indicates whether you trust inventory reviewed only by the Microsoft Advertising platform (**Platform-reviewed**), by the Microsoft Advertising platform and the seller (**Seller-reviewed**), or all inventory (**All**). For more information on the different inventory trust levels, see the **Setting default inventory trust** section in [Partner Center Screen - Buyer View](partner-center-screen-buyer-view.md).
 
 ### Step 3. Save your changes
 

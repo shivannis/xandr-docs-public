@@ -25,7 +25,7 @@ related to the Number of Bidders).
 
 ## Speed and volume
 
-Xandr sees over 700 billion impressions every
+Microsoft Advertising sees over 700 billion impressions every
 day (as of mid-2022), or more than 8 million impressions each second.
 Our standard auction timeout is currently 200 milliseconds. Therefore,
 during the course of an auction, it is possible for us to see 1.6
@@ -109,7 +109,7 @@ spent across geographies (since each geographic location is agnostic of
 the other, each will try to spend the entire budget and will not stop
 until the campaign or line item budget threshold is reached).
 
-## How does Xandr combat these issues?
+## How does Microsoft Advertising combat these issues?
 
 We realize that these inherent fluctuations in budgeting can cause
 problems for our clients regardless of their overall advertising budget.

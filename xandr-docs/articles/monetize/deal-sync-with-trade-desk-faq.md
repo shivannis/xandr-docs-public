@@ -80,10 +80,10 @@ additional buyer seat ids to an existing deal.
 
 ## Can I create a deal for multiple media types?
 
-While multi format deals are supported in Xandr
+While multi format deals are supported in Microsoft Advertising
 Monetize UI, Trade Desk does require that each deal have a
 declared media type. If your deal allows for multiple media types,
-Xandr will only upload one of the media types as
+Microsoft Advertising will only upload one of the media types as
 the allowed creative format for the deal.
 
 The order of priority will be:
@@ -145,12 +145,12 @@ Trade Desk buyers may follow below steps to find and accept the deal:
 That is not a feature that will be supported. Deal sync with Trade Desk
 is designed to automate deal sync for ALL Trade Desk buyers as the
 design of the final state of this product is to enable all sellers in
-the Xandr marketplace.
+the Microsoft Advertising marketplace.
 
 ## I created a deal with Trade Desk member 1088, why did it not sync with Trade Desk systems?
 
-Deals created with Trade Desk Xandr members will
+Deals created with Trade Desk Microsoft Advertising members will
 not be supported in deal sync with Trade Desk as Trade Desk APIs require
 the Trade Desk partner ID declared in the deal.
-Xandr is unable to determine which partner IDs
+Microsoft Advertising is unable to determine which partner IDs
 to associate with a member ID deal.

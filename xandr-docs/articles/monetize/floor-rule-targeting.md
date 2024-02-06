@@ -17,7 +17,7 @@ From the **Create New Floor Rule** or **Edit Floor Rule** page, locate **Targeti
 - Select the **Scope** to indicate whether you would like frequency to be calculated based on views on inventory across the entire platform (**Platform Wide**), or only views on the publisher's inventory (**Publisher Specific**).
 - Check the **User seen at most \_\__times** checkbox and then type the maximum number of impression views to which the rule will apply.
 - Check the **User seen at least \_\__times** checkbox and then type the minimum number of impression views you want to user to experience before the rule applies.
-- If you choose to set a minimum and/or maximum value, you can select the option to **Apply to users without a valid Xandr User ID**. Doing this might violate
+- If you choose to set a minimum and/or maximum value, you can select the option to **Apply to users without a valid Microsoft Advertising User ID**. Doing this might violate
   frequency caps.
 
 ## Geography targeting
@@ -71,7 +71,7 @@ Click the **Custom Categories** tab to include or exclude categories in the floo
 By default, your campaign will target all universal categories. However, you can narrow your targeting to include or exclude specific universal categories.
 
 > [!NOTE]
-> Universal categories are defined by Xandr. When Xandr reviews inventory, we apply these categories based on the inventory's content. For example, a car dealership placement group would be assigned to the "Autos & Vehicles" category. Sellers can apply universal categories when self-reviewing inventory as well.
+> Universal categories are defined by Microsoft Advertising. When Microsoft Advertising reviews inventory, we apply these categories based on the inventory's content. For example, a car dealership placement group would be assigned to the "Autos & Vehicles" category. Sellers can apply universal categories when self-reviewing inventory as well.
 
 Click the the **Universal Categories** tab to include or exclude universal categories in the floor rule.
 

@@ -70,6 +70,6 @@ You'll find information on all your reporting needs in our [Reporting Guide](rep
 
 ## General Data Protection Regulation (GDPR)
 
-Information about data protection and privacy on the Xandr Platform.
+Information about data protection and privacy on the Microsoft Advertising Platform.
 
   [GDPR](https://microsoftapc.sharepoint.com/teams/PrivacyRegulations)

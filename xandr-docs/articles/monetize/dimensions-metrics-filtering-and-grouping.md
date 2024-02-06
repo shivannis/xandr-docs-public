@@ -141,7 +141,7 @@ data set size from 18 row to 4 rows.
 ## Grouping and dimension selection guidance
 
 Grouping can increase the size of the data set by adding rows (possibly
-a very large number of rows). Since the Xandr
+a very large number of rows). Since the Microsoft Advertising
 reporting system automatically groups by all the dimensions you select,
 a best practice is to select as few dimensions as possible to get just
 the information you need. You can further reduce the effects of this

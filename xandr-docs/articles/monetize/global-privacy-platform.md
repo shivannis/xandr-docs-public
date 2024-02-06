@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 The [Global Privacy Platform](https://github.com/InteractiveAdvertisingBureau/Global-Privacy-Platform) (GPP) is a protocol that helps to consolidate the management of different user consent signals from a variety global privacy jurisdictions. It is a communication layer that interacts with frameworks such as the Transparency and Consent Framework ([TCF](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/tree/master/TCFv2)) and the US Privacy API ([USPAPI](https://github.com/InteractiveAdvertisingBureau/USPrivacy/blob/master/CCPA/USP%20API.md)) to convert multiple signals into a single API, thereby making communication between ad tech vendors
 more efficient.
 
-In order to be compliant with state legislation in the United States, Xandr will support the '[US-States](https://github.com/InteractiveAdvertisingBureau/Global-Privacy-Platform/tree/main/Sections/US-States)' section of the GPP as of 01.01.23. That means that publishers and advertisers operating in theUnited States will have an industry-accepted method of maintaining legal compliance and respecting the privacy of their users.
+In order to be compliant with state legislation in the United States, Microsoft Advertising will support the '[US-States](https://github.com/InteractiveAdvertisingBureau/Global-Privacy-Platform/tree/main/Sections/US-States)' section of the GPP as of 01.01.23. That means that publishers and advertisers operating in theUnited States will have an industry-accepted method of maintaining legal compliance and respecting the privacy of their users.
 
 ## How does the GPP work
 
@@ -31,7 +31,7 @@ In general, ad tech vendors need to know two things in order to process privacy 
 1.  The local legislative framework of the user (for example, if the user is in the EU, then it's GDPR.)
 1.  For which data processing purposes the user has granted consent (consent elections) or the legal bases for processing data which do/do not apply.
 
-In the GPP framework, this information is conveyed by 'applicable sections' (which sections of the string should be enforced) and the GPP string itself. Taken together, these parameters allow Xandr to understand the consent choices of the end user and to know which privacy law to apply.
+In the GPP framework, this information is conveyed by 'applicable sections' (which sections of the string should be enforced) and the GPP string itself. Taken together, these parameters allow Microsoft Advertising to understand the consent choices of the end user and to know which privacy law to apply.
 
 ## AD call examples
 
@@ -61,7 +61,7 @@ In order to use the GPP, website owners need to:
     });
     ```
 
-The ad call made to Xandr will then be updated to include the GPP params as outlined below:
+The ad call made to Microsoft Advertising will then be updated to include the GPP params as outlined below:
 
 ```
 {
@@ -98,7 +98,7 @@ In order to use the GPP, website owners need to:
     });
     ```
 
-The ad call made to Xandr will then be updated to include the GPP params as outlined below:
+The ad call made to Microsoft Advertising will then be updated to include the GPP params as outlined below:
 
 ```
 {

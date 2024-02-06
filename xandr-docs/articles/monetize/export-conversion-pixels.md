@@ -34,7 +34,7 @@ tags, you can enter up to 10 email addresses, separated by commas.
 
 In the **Advanced Options** section, you can select additional values to include in the pixel tag.
 
-Select **Use codes** to generate a pixel with your external code (the value you entered when creating the pixel) and your member ID instead of the Xandr pixel
+Select **Use codes** to generate a pixel with your external code (the value you entered when creating the pixel) and your member ID instead of the Microsoft Advertising pixel
 ID.
 
 Select **Use a server-side pixel** to generate a URL that you can call, instead of an HTML-based pixel that is placed on a publisher's web page.

@@ -1,13 +1,13 @@
 ---
 title: Microsoft Monetize - Engagement Metrics Report
-description: The article outlines the Engagement Metrics report, exclusive to Xandr Publisher Adserver customers, which furnishes details on ad viewability. It also identifies issues that may hinder Xandr from accurately measuring the viewability of an impression.
+description: The article outlines the Engagement Metrics report, exclusive to Microsoft Advertising Publisher Adserver customers, which furnishes details on ad viewability. It also identifies issues that may hinder Microsoft Advertising from accurately measuring the viewability of an impression.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - Engagement metrics report
 
-The Engagement Metrics report provides information about ad viewability, as well as indicating any problems that might be preventing Xandr from measuring an impression's
-viewability. This report is only available for Xandr Publisher Adserver customers.
+The Engagement Metrics report provides information about ad viewability, as well as indicating any problems that might be preventing Microsoft Advertising from measuring an impression's
+viewability. This report is only available for Microsoft Advertising Publisher Adserver customers.
 
 Report data is retained for 35 days.
 

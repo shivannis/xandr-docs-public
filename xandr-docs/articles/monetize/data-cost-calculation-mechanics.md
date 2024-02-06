@@ -72,7 +72,7 @@ If multiple segments are targeted with a line item or campaign, the boolean AND/
 
     :::image type="content" source="media/advanced-or-b.png" alt-text="Screenshot of a bid when the ad is relevant to any of the targeted segments.":::
 
-- If the ad request is relevant to more than one segment (overlaps), Xandr will use the lowest priced segment to bid on the auction.
+- If the ad request is relevant to more than one segment (overlaps), Microsoft Advertising will use the lowest priced segment to bid on the auction.
 
     :::image type="content" source="media/advanced-or-c.png" alt-text="Screenshot of a bid when the ad is relevant to more than one targeted segment.":::
 
@@ -113,7 +113,7 @@ Data costs are only charged on impressions that are won by the line item or camp
 
 ### When the segments are positively targeted (inclusion targeting)
 
-The buyer will be charged for all segments that were used to win the bid. The group of used segments will be passed through the data provider's pricing methodology as described in the provider's rate cards to determine a bundled price. Contact your Xandr representative or data provider for segment pricing information.
+The buyer will be charged for all segments that were used to win the bid. The group of used segments will be passed through the data provider's pricing methodology as described in the provider's rate cards to determine a bundled price. Contact your Microsoft Advertising representative or data provider for segment pricing information.
 
 ### When the segments are negatively targeted (exclusion targeting)
 

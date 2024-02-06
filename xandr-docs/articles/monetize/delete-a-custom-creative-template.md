@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 You can delete existing custom templates from the
 **Creative Templates** screen at any
-time. You can't delete Xandr standard templates.
+time. You can't delete Microsoft Advertising standard templates.
 
 1. Navigate to the
     **Creative Templates** screen by

@@ -7,8 +7,8 @@ ms.date: 10/28/2023
 # Export placement tags
 
 > [!NOTE]
-> Xandr now supports a domain, [adnxs-simple.com](http://adnxs-simple.com/), which does not send or read browser cookies on requests. Clients can leverage this cookie-free
-> domain when there is no consent to use personal data. Relevant calls initiated by Xandr will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Reinforcing-Privacy-Controls-Through-a-Cookie-Free-Domain.aspx)(login required).
+> Microsoft Advertising now supports a domain, [adnxs-simple.com](http://adnxs-simple.com/), which does not send or read browser cookies on requests. Clients can leverage this cookie-free
+> domain when there is no consent to use personal data. Relevant calls initiated by Microsoft Advertising will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Reinforcing-Privacy-Controls-Through-a-Cookie-Free-Domain.aspx)(login required).
 
 Once you've finished setting up placements, you can export the tags and give them to your publishers for inclusion on pages.
 
@@ -76,7 +76,7 @@ You have three delivery options: You can either copy the tags manually, download
 >
 > - Be sure to tell your publisher to copy the URL into the video player rather than placing it directly on the page.
 > - If you have whitelabeled Monetize and your domain appears within the generated tag, you must replace your domain with "ib.adnxs.com" in the tag before sending
->   the tag to your publisher. Otherwise, the whitelabeled VAST tag will redirect to the Xandr domain, which the Flash-based player will not accept; for security purposes, Flash-based players will not retrieve content when redirected to a different domain.
+>   the tag to your publisher. Otherwise, the whitelabeled VAST tag will redirect to the Microsoft Advertising domain, which the Flash-based player will not accept; for security purposes, Flash-based players will not retrieve content when redirected to a different domain.
 >
 :::image type="content" source="media/generated-tags.png" alt-text="Screenshot that explains the export placement tags.":::
 

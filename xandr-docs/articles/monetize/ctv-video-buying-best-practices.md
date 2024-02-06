@@ -19,7 +19,7 @@ rollout.
 
 ## Frequency capping
 
-Xandr supports frequency capping for video
+Microsoft Advertising supports frequency capping for video
 advertising. However, because many publishers of OTT content do not pass
 a user id persistently across platforms, you should always select the
 **Show to users without cookies** checkbox under

@@ -23,7 +23,7 @@ items that do not use optimization.
 > [!TIP]
 > The **RPM** (Revenue Per Thousand) of a node is inverse to volume; low volume means that we will allocate a greater portion of our impressions to the highest performing nodes to optimize return.
 
-On the Xandr platform, there are two types of
+On the Microsoft Advertising platform, there are two types of
 auctions that occur: **Learn Auctions**, which give preference to bids
 from nodes in a learn state, and **Revenue Auctions**, which give
 preference to bids from nodes in an optimized state. The percentage of

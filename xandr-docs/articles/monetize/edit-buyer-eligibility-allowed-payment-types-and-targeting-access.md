@@ -43,7 +43,7 @@ targeting information. The more information you give the buyer, the more #easily
 
 You will have the option to expose domains or full URLs to external buyers.
 
-Age and gender targeting information can only be shared if you include the Xandr age and gender macro when exporting your placement tag. For more information, see [Export Placement Tags](export-placement-tags.md).
+Age and gender targeting information can only be shared if you include the Microsoft Advertising age and gender macro when exporting your placement tag. For more information, see [Export Placement Tags](export-placement-tags.md).
 
 For **Categories (Custom),** there is the additional option to expose specific categories. To select specific custom categories, choose **Expose Custom** and then click
 **Edit** to display the list of custom categories. Click on a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the
@@ -78,7 +78,7 @@ Select the information that should be exposed to the buyers when they are target
 placement, or publisher targeting information. The more information you give buyers, the more easily they can target your inventory.
 
 > [!NOTE]
-> Age and gender targeting information can only be shared if you include the Xandr age and gender macro when exporting your placement tag. For more information, see
+> Age and gender targeting information can only be shared if you include the Microsoft Advertising age and gender macro when exporting your placement tag. For more information, see
 > [Placement Tag Parameters](placement-tag-parameters.md).
 
 For **Category (Custom)** there is the additional option to expose specific categories. To select specific custom categories, choose **Selected** to display the list of custom categories. Click on a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the **Selected Items** area, click on the **X** next to the category name. When you have finished selecting custom categories, click **Add** to save your changes.

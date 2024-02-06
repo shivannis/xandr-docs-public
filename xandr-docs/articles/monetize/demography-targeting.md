@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Microsoft Monetize - Demography targeting
 
 > [!NOTE]
-> This feature is currently available for selected clients only. If you want this feature to be enabled, please reach out to your Xandr Account Manager.
+> This feature is currently available for selected clients only. If you want this feature to be enabled, please reach out to your Microsoft Advertising Account Manager.
 
 Occasionally, publishers pass the age or gender of users in the query
 string of their ad calls. In these cases, you can target users based on

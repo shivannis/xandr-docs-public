@@ -15,7 +15,7 @@ deal functionality.
 ### Start slow
 
 For buyers that are new to our deals feature,
-Xandr recommends working with sellers you trust
+Microsoft Advertising recommends working with sellers you trust
 to develop a few test deals. Use and refine these test deals to learn
 what works best for you and your sellers before targeting a creating a
 lot of ad campaigns that target deals.
@@ -82,15 +82,15 @@ that work best.
 
 - Each deal ID can only be associated with a single deal price. Enter
   one price when setting up a deal in REVV Connect. If multiple prices
-  are entered, Xandr will only map the deal to
+  are entered, Microsoft Advertising will only map the deal to
   the highest possible price.
 - Each deal ID can only be associated with a single buyer. Enter one
   buyer member when setting up a deal in REVV Connect. If multiple
-  members are entered, Xandr will only map the
+  members are entered, Microsoft Advertising will only map the
   deal to the first buyer member.
 - Deals with a price in a foreign currency may drift from the
   agreed-upon price as the exchange rate fluctuates. On the day the deal
-  is synchronized with Xandr, Rubicon converts
+  is synchronized with Microsoft Advertising, Rubicon converts
   the deal price to USD. Rubicon does not refresh the deal price with
   updated daily exchange rates. It will remain static and may drift from
   the agreed-upon price in the foreign currency.
@@ -99,5 +99,5 @@ that work best.
 
 - Each deal ID can only be associated with a single buyer. Enter one
   buyer member when setting up a deal in PubMatic. If multiple members
-  are entered, Xandr will only map the deal to
+  are entered, Microsoft Advertising will only map the deal to
   the first buyer member.

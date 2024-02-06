@@ -69,7 +69,7 @@ Complete the following fields:
   overview of the audit quality of your inventory. You can see the
   number of impressions as well as the percentage of your inventory that
   has been self-audited (**Seller-reviewed**) or audited by
-  Xandr (**Platform-reviewed**). The statistics
+  Microsoft Advertising (**Platform-reviewed**). The statistics
   for **All** inventory will include your audited and unaudited
   inventory.
 

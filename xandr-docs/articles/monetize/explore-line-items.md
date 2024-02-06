@@ -111,13 +111,13 @@ The following quickstats are shown for each line item. Note that the data always
 | **Viewability Rate** | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
 | **View Measurement Rate** | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
 | **Rev (USD)** | Money the advertiser has paid or will pay your network as a result of campaigns under the line item.<br>**Tip**: Using the currency toggle, you can choose whether to show **Rev** in USD or in the currency set at the line item. However, note that pacing bars are not available when viewing revenue in a currency other than USD. |
-| **Media Cost (USD)** | Money your network has spent buying media for campaigns under the line item. Media Cost always appears in USD (the currency in which Xandr transacts). |
-| **Third Party Costs (USD)** | Aggregated data costs for all third-party services and data used when purchasing media (e.g., user segments) from the Xandr Data Marketplace. |
+| **Media Cost (USD)** | Money your network has spent buying media for campaigns under the line item. Media Cost always appears in USD (the currency in which Microsoft Advertising transacts). |
+| **Third Party Costs (USD)** | Aggregated data costs for all third-party services and data used when purchasing media (e.g., user segments) from the Microsoft Advertising Data Marketplace. |
 | **Profit (USD)** | Money your network has made from the advertiser as a result of campaigns under the line item. This is revenue minus media cost. Profit always appears in USD. |
 | **Rev eCPM** | Money the advertiser has paid or will pay your network per 1000 impressions.<br>Tip: Using the currency toggle, you can choose whether to show **Rev eCPM** in USD or in the currency set at the line item. |
-| **Cost eCPM (USD)** | Money your network has spent buying media per 1000 impressions. Cost eCPM always appears in USD (the currency in which Xandr transacts). |
+| **Cost eCPM (USD)** | Money your network has spent buying media per 1000 impressions. Cost eCPM always appears in USD (the currency in which Microsoft Advertising transacts). |
 | **Rev eCPA (USD)** | Total booked revenue earned per conversion. |
-| **Cost eCPA (USD)** | Money your network has spent buying media per 1000 attributed conversions. Cost eCPA always appears in USD (the currency in which Xandr transacts). |
+| **Cost eCPA (USD)** | Money your network has spent buying media per 1000 attributed conversions. Cost eCPA always appears in USD (the currency in which Microsoft Advertising transacts). |
 | **Rev eCPC (USD)** | Total booked revenue earned per click. |
 | **Days into Flight** | Number of days since the line item’s current flight began. |
 
