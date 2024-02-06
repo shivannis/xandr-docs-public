@@ -7,12 +7,12 @@ ms.date: 10/28/2023
 # Microsoft Invest - Working with impression and click trackers
 
 Impression and click trackers are used to track impressions and clicks associated with creatives that are hosted by off-platform
-(non-Xandr) ad servers. This is done by attaching the tracker as a "piggyback pixel" on the externally hosted creative. This lets you report on impressions and clicks on these creatives as if they were hosted by Xandr.
+(non-Microsoft Advertising) ad servers. This is done by attaching the tracker as a "piggyback pixel" on the externally hosted creative. This lets you report on impressions and clicks on these creatives as if they were hosted by Microsoft Advertising.
 
 There are several reasons why you might want to use an impression or click tracker. For example:
 
-- Some publishers' ad servers may not allow you to run Xandr placement tags.
-- You may be running a non-banner ad campaign, but you want to track the data from that campaign in Xandr.
+- Some publishers' ad servers may not allow you to run Microsoft Advertising placement tags.
+- You may be running a non-banner ad campaign, but you want to track the data from that campaign in Microsoft Advertising.
 
 For more information about how to set up impression and click trackers and report on them, see the documentation linked below.
 

@@ -61,9 +61,9 @@ For more information about how quickly reporting data is processed, see [Availab
 | Column | Filter? | Description |
 |:---|:---|:---|
 | Seller | No | The seller of the inventory. |
-| Seller Type | Yes | Xandr buckets sellers into different types for billing purposes. For example, publisher, intermediary or both. |
+| Seller Type | Yes | Microsoft Advertising buckets sellers into different types for billing purposes. For example, publisher, intermediary or both. |
 | Content Category | Yes | The content category associated with the inventory where these impressions occurred, for example Business & Industry. |
-| Ad Request Call Type | No | The type of handler that was used to send the impression to Xandr (e.g., `vmap`, `ut`, `mob`, `ptv`, `openrtb`). |
+| Ad Request Call Type | No | The type of handler that was used to send the impression to Microsoft Advertising (e.g., `vmap`, `ut`, `mob`, `ptv`, `openrtb`). |
 | Site Domain | Yes | For web video inventory, the domain of the site where the inventory is available. |
 | Application Id | Yes | For mobile app inventory, the ID of the app that will host the placement. |
 | Device Type | Yes | The type of hardware device that will deliver the ad, for example a desktop computer or a game console. |

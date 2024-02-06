@@ -13,7 +13,7 @@ When adding a third-party VAST or VPAID video creative, a series of checks are p
 >
 > CTV Eligibility Check: Ensure that your uploaded creative meets the suggested format and quality requirements for CTV inventory.
 >
-> Hosted Asset Scanning: Xandr-hosted video assets will now be checked in addition to third-party creatives.
+> Hosted Asset Scanning: Microsoft Advertising-hosted video assets will now be checked in addition to third-party creatives.
 
 ## VAST check elements
 
@@ -23,7 +23,7 @@ When adding a third-party VAST or VPAID video creative, a series of checks are p
   - VAST: Flv, MP4, WebM
   - VPAID: application/JavaScript, application/x-shockwave/flash
 - Secure: All URLs inside the VAST document must be prefixed with https:// to serve on secure inventory.
-- Click Tracking: Xandr automatically wraps third-party creatives to provide impression, click, and playback tracking.
+- Click Tracking: Microsoft Advertising automatically wraps third-party creatives to provide impression, click, and playback tracking.
 - Wrappers: A maximum of two `<Wrapper>` tags is recommended.
 
 ## OTT eligibility
@@ -77,7 +77,7 @@ Minimum recommended OTT creative specifications:
 
 - If you paste the VAST URL into a browser and no content is returned, the creative is either invalid, disabled, or utilizing some sort of targeting. The tag provider will need to address this before the creative can be trafficked.
 
-- If you paste the VAST URL into a browser and see a full valid XML file for the creative, then the third-party ad server is likely blocking Xandr VAST Check specifically. The tag provider will need to address this before the creative can be trafficked.
+- If you paste the VAST URL into a browser and see a full valid XML file for the creative, then the third-party ad server is likely blocking Microsoft Advertising VAST Check specifically. The tag provider will need to address this before the creative can be trafficked.
 - To remove a block, it may also help to inform the ad server that our VAST Check user agent will appear as: **connection.setRequestProperty("User-Agent","AppNexus Vastbot/1.0");**
 - To see what the VAST URL is returning when called by VAST Check, make the following API call with your VAST URL inserted: `curl -L -v -H "User-Agent: ``AppNexus`` VastBot" "VAST_URL"`
   - If there isn't any XML or a blank XML response is returned, the ad server isn't responding to our VAST Check properly
@@ -98,7 +98,7 @@ Minimum recommended OTT creative specifications:
 
 - If you paste the VAST URL into a browser and no content is returned, the creative is either invalid, disabled, or utilizing some sort of targeting. The tag provider will need to address this before the creative can be trafficked.
 
-- If you paste the VAST URL into a browser and see valid XML content for the creative, then the third-party ad server is likely blocking Xandr VAST Check. The tag provider will need to address this before the creative can be trafficked.
+- If you paste the VAST URL into a browser and see valid XML content for the creative, then the third-party ad server is likely blocking Microsoft Advertising VAST Check. The tag provider will need to address this before the creative can be trafficked.
 - To remove a block, it may also help to inform the ad server that our VAST Check user agent will appear as: **connection.setRequestProperty("User-Agent","AppNexus Vastbot/1.0");**
 - To see what the VAST URL is returning when called by VAST Check, make the following API call with your VAST URL inserted: `curl -L -v -H "User-Agent: ``AppNexus`` VastBot" "VAST_URL"`
   - If there isn't any XML or a blank XML response is  returned, the ad server isn't responding to our VAST Check properly
@@ -123,7 +123,7 @@ If VAST check returns this message, the creative was scanned but contains errors
   - Scanner failed to run during the upload
   - Scanner timed out while scanning
   - Scanner detected an issue such as missing or wrong duration, missing or wrong media file format, etc.
-  - VAST XML content is updated on the ad server, but needs to be updated at Xandr platform and back-end.
+  - VAST XML content is updated on the ad server, but needs to be updated at Microsoft Advertising platform and back-end.
 
 - Reach out to the tag provider to add the missing duration information or revise the format. For example
 
@@ -145,7 +145,7 @@ If VAST check returns this message, the creative was scanned but contains errors
   - Scanner failed to run during the upload
   - Scanner timed out while scanning
   - Scanner detected an issue such as missing or wrong duration, missing or wrong media file format, etc.
-  - VAST XML content is updated on the ad server, but needs to be updated at Xandr platform and back-end.
+  - VAST XML content is updated on the ad server, but needs to be updated at Microsoft Advertising platform and back-end.
 - Reach out to the tag provider to update the creative with at least one of the recommended video formats.
 Sample XML with recommended VAST formats:
   :::image type="content" source="./media/video-formats.png" alt-text="Screenshot of sample XML with recommended VAST formats.":::

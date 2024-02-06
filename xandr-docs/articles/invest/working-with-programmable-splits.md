@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 > [!NOTE]
 > Programmable splits are only available for [Augmented Line Items (ALIs)](augmented-line-items-ali.md).
 
-When you create a [line item](create-an-augmented-line-item-ali.md), you specify the inventory you'd like to target, the budget you'd like to spend over the flight, how to track revenue, and how to use Xandr optimization. You also have the option to split up the line item inventory using **programmable splits**, which further target subsets of that total inventory, allocate the specified budget to different targets, and distribute creatives. The targeting on the line item acts as a filter, so impressions must match the criteria specified by the line item before they'll be passed on to splits.
+When you create a [line item](create-an-augmented-line-item-ali.md), you specify the inventory you'd like to target, the budget you'd like to spend over the flight, how to track revenue, and how to use Microsoft Advertising optimization. You also have the option to split up the line item inventory using **programmable splits**, which further target subsets of that total inventory, allocate the specified budget to different targets, and distribute creatives. The targeting on the line item acts as a filter, so impressions must match the criteria specified by the line item before they'll be passed on to splits.
 
 You define a split by specifying the inventory you want available for it, using any combination of split targeting specifications. These
 include geography, inventory performance, and segment information. If you choose, you can also specify bidding or valuation rules, budget

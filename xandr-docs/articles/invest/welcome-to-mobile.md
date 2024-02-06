@@ -51,9 +51,9 @@ Topics we'll cover include:
 - **[Network Carrier Analytics](../digital-platform-api/network-carrier-analytics.md)** <br>Learn how to use the API to retrieve performance data based on mobile carrier and connection type.
 
 - **[Device Make Service](../digital-platform-api/device-make-service.md)** <br>This read-only service let's you view all device makes recognized by
-  Xandr.
+  Microsoft Advertising.
 
-- **[Device Model Service](../digital-platform-api/device-model-service.md)** <br>This read-only service let's you view all device models recognized by Xandr.
+- **[Device Model Service](../digital-platform-api/device-model-service.md)** <br>This read-only service let's you view all device models recognized by Microsoft Advertising.
 
 - **[Carrier Service](../digital-platform-api/carrier-service.md)** <br>This read-only service let's you view all mobile carriers recognized by
-  Xandr.
+  Microsoft Advertising.

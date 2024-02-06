@@ -1,12 +1,12 @@
 ---
 title: Microsoft Invest - Viewing Your Object Limits
-description: Xandr limits the number of object (line items, creatives, etc.) that you can have on the platform. Learn about the Object Limits Report that allows you to view these limits and proactively monitor your current usage.
+description: Microsoft Advertising limits the number of object (line items, creatives, etc.) that you can have on the platform. Learn about the Object Limits Report that allows you to view these limits and proactively monitor your current usage.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Viewing your object limits
 
-Xandr limits the number of object (line items, creatives, etc.) that you can have on the platform. The Object Limits Report allows you to view these limits and proactively monitor your current usage.
+Microsoft Advertising limits the number of object (line items, creatives, etc.) that you can have on the platform. The Object Limits Report allows you to view these limits and proactively monitor your current usage.
 
 Both active and inactive objects are counted against the object limit. For creatives, only non-expired objects are counted against the limit. A creative expires when it has neither served nor been modified in 45 days.
 
@@ -28,7 +28,7 @@ The **Object Limits Report** section lists the types of objects that are limited
 - **% Served or Modified in the Last 90 Days** - The percent of objects that have had impressions, or have been modified, in the last 90 days. For creatives, since expired creatives are not counted, this will always be 100%. If the percentage is low, the client has many objects that are candidates for deletion.
 
 > [!TIP]
-> Line items that have not served or been modified in the last 90 days are good candidates for deletion. For information about finding and deleting line items, see [Update Line Items](update-line-items.md). Contact your Xandr representative if you need assistance in cleaning out old objects or to request that your object limit be increased.
+> Line items that have not served or been modified in the last 90 days are good candidates for deletion. For information about finding and deleting line items, see [Update Line Items](update-line-items.md). Contact your Microsoft Advertising representative if you need assistance in cleaning out old objects or to request that your object limit be increased.
 
 ## FAQs
 
@@ -51,4 +51,4 @@ If you need to create additional objects but have already met or exceeded your l
 ***Can my limit be raised?***
 
 In exceptional cases, a limit may be temporarily lifted by a small amount at the discretion of our engineering team. Please contact your
-Xandr representative to discuss this option.
+Microsoft Advertising representative to discuss this option.

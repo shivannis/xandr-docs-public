@@ -7,9 +7,9 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Upload a hosted video creative
 
-Xandr supports hosting VAST ([video ad serving template](https://www.iab.com/guidelines/vast/)) creatives.
+Microsoft Advertising supports hosting VAST ([video ad serving template](https://www.iab.com/guidelines/vast/)) creatives.
 VAST is used to serve on in-stream and some non-linear placements, per
-publisher specifications. Xandr currently
+publisher specifications. Microsoft Advertising currently
 supports VAST 2.0 and VAST 3.0. This page explains how to upload VAST
 video creatives and other considerations for working with this type of
 creative.
@@ -17,8 +17,8 @@ creative.
 ## Subscribing to video creative hosting
 
 If you are interested in hosting video creatives on
-Xandr, please talk to your
-Xandr representative about pricing, your use
+Microsoft Advertising, please talk to your
+Microsoft Advertising representative about pricing, your use
 case, and technical specifics.
 
 > [!IMPORTANT]
@@ -104,11 +104,11 @@ user upon clicking.
 
 On the **Creative Attributes** tab, select
 whether you want to submit the creative for
-Xandr audit, classify the creative yourself, or
+Microsoft Advertising audit, classify the creative yourself, or
 exempt the creative from auditing entirely.
 
 - **Platform Audit** - Submit the creative for auditing by the
-  Xandr audit team.  
+  Microsoft Advertising audit team.  
   Audit process includes:
   - checking technical and content criteria
 
@@ -117,7 +117,7 @@ exempt the creative from auditing entirely.
 
   - requirements of sellers
 
-    Xandr audit is mandatory but you can opt out
+    Microsoft Advertising audit is mandatory but you can opt out
     of other platform specific audits.
 
   - Select your audit **priority**.
@@ -126,11 +126,11 @@ exempt the creative from auditing entirely.
     > Business days are from 9:00pm Sunday to 11:59pm Friday ET.
 
   For more information about content standards for creatives running
-    on the Xandr platform, see [Creative Standards](creative-standards.md).
+    on the Microsoft Advertising platform, see [Creative Standards](creative-standards.md).
 - **Self-Audit** - Classify the creative yourself.
   
   > [!NOTE]
-  > - Self-auditing may reduce access to inventory outside of the ones you manage or own, as many sellers allow only Xandr audited creatives. For further guidance on self-classifying, see [Self-Auditing Creatives](self-auditing-creatives.md).
+  > - Self-auditing may reduce access to inventory outside of the ones you manage or own, as many sellers allow only Microsoft Advertising audited creatives. For further guidance on self-classifying, see [Self-Auditing Creatives](self-auditing-creatives.md).
   > - You must check the **I confirm compliance** checkbox in order to save the creative.
   
 - **No Audit** - An unaudited creative can run **only** on your managed
@@ -149,7 +149,7 @@ upload process.
 
 ### Step 7. Attach third-party and segment tracking pixels (optional)
 
-Xandr records all impressions. If you wish to
+Microsoft Advertising records all impressions. If you wish to
 use another system to track impressions in addition, you can attach
 third-party tracking pixels to your creative.
 

@@ -12,11 +12,11 @@ Viewable CPM (vCPM) is a payment type that allows buyers to pay only for impress
 
 To use the vCPM payment type, select **Viewable CPM** as your revenue type and enter your bid price.
 
-The **vCPM** payment type supports the ability to use a custom definition for viewable impressions. We currently support two definitions, the IAB standard and the Group M standard. The IAB standard definition is used by default. If you would like to use a custom definition, contact your Xandr Account Manager.
+The **vCPM** payment type supports the ability to use a custom definition for viewable impressions. We currently support two definitions, the IAB standard and the Group M standard. The IAB standard definition is used by default. If you would like to use a custom definition, contact your Microsoft Advertising Account Manager.
 
 ### vCPM payment bid calculations
 
-Buyers submit bids at a vCPM rate, just as they would with CPC or CPA. In order for that bid to participate in an RTB auction, the bid must be converted into an eCPM to compete with other CPM bids. Xandr calculates the eCPM by multiplying the vCPM bid amount by the estimated view rate for that impression.
+Buyers submit bids at a vCPM rate, just as they would with CPC or CPA. In order for that bid to participate in an RTB auction, the bid must be converted into an eCPM to compete with other CPM bids. Microsoft Advertising calculates the eCPM by multiplying the vCPM bid amount by the estimated view rate for that impression.
 
 > [!NOTE]
 > vCPM calculations are only used to manage auction mechanics for the seller. It does not impact the buyer's final media cost or the fact that they pay only for viewable impressions.

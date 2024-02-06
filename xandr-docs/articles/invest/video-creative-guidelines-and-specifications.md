@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Video creative guidelines and specifications
 
-To serve on the Xandr platform and other third-party platforms, all video creatives must adhere to the guidelines and specifications listed here, our creative standards, and any other guidelines that may apply.
+To serve on the Microsoft Advertising platform and other third-party platforms, all video creatives must adhere to the guidelines and specifications listed here, our creative standards, and any other guidelines that may apply.
 
 Adhere to these general specifications when creating video creatives:
 

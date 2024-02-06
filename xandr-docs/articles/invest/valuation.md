@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Valuation
 
-Valuation is the process by which our system determines a bid amount. Our valuation algorithms determine the appropriate price for an auction based on the likelihood that an event that the advertiser values (a click, a view, a video complete, or a conversion) will occur. Through research and testing, the Xandr Data Science team has determined the features and signals that have the most significant impact for accurately calculating the likelihood of an event. We use different mathematical methods, such as logistic regression, to leverage our platform's extensive datasets in creating valuation solutions for each type of advertiser goal. Our system builds a unique data model for each line item to determine the optimal bid for impressions.
+Valuation is the process by which our system determines a bid amount. Our valuation algorithms determine the appropriate price for an auction based on the likelihood that an event that the advertiser values (a click, a view, a video complete, or a conversion) will occur. Through research and testing, the Microsoft Advertising Data Science team has determined the features and signals that have the most significant impact for accurately calculating the likelihood of an event. We use different mathematical methods, such as logistic regression, to leverage our platform's extensive datasets in creating valuation solutions for each type of advertiser goal. Our system builds a unique data model for each line item to determine the optimal bid for impressions.
 
 The final bid submitted in an auction is further modified based on multiple additional factors, including:
 

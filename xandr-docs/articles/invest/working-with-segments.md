@@ -11,11 +11,11 @@ wealth, to assign that user to a group called a segment. Segment data is written
 
 If you're new to the concept of pixels, we recommend you read a little more about [Cookies](https://en.wikipedia.org/wiki/HTTP_cookie), which are text files associated with specific domains that live in your browser and contain information such as how many times you have been served a particular ad by the domain adserver.com, or what's in your shopping cart from myfavoritestore.com.
 
-Xandr segment pixels look something like this:
+Microsoft Advertising segment pixels look something like this:
 
 ```https://ib.adnxs.com/seg?add=1,2,4```
 
-where 1, 2, 4 are Xandr segment IDs.
+where 1, 2, 4 are Microsoft Advertising segment IDs.
 
 For example, let's say ProStarr Sportswear wants to target users that have purchased from their online store in the past. They can put a segment pixel on their checkout page. When a user checks out, the pixel fires and "Segment 123" is written into the server-side cookie store. When the user visits some other page, say mysite.com, the cookie is read, and ProStarr knows that this user is in Segment 123.
 
@@ -47,7 +47,7 @@ In addition to "standard" segments, QuickStats are also available for the follow
 | Metric | Description |
 |--|--|
 | **Name** | This is the segment name. |
-| **ID** | This is the segment Xandr ID. |
+| **ID** | This is the segment Microsoft Advertising ID. |
 | **Data Provider** | This is the data provider name. |
 | **Price** | This column displays the price a buyer has paid for a segment. It allows the buyer to toggle between these two options: CPM (default) % Media Cost |
 | **Active Users** | This is the count of active users in a segment over a 24-hour period. |
@@ -64,5 +64,5 @@ You can set a maximum number of [user syncs](user-id-syncing-with-external-partn
 
 - [Segment Pixels: Advanced](segment-pixels-advanced.md): More advanced manipulation of segment pixels 
 - [Segment Targeting](segment-targeting.md): Targeting the segments that you have created through pixels
-- [User ID Syncing with External Partners](user-id-syncing-with-external-partners.md): User ID syncing between Xandr and its platform partners
+- [User ID Syncing with External Partners](user-id-syncing-with-external-partners.md): User ID syncing between Microsoft Advertising and its platform partners
 - [Create a Segment Pixel](create-a-segment-pixel.md)

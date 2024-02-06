@@ -21,7 +21,7 @@ Video inventory recommendations are based on:
 > [!NOTE]
 > Recommendations are only available for mid-flight line items: you'll start to see recommendation data the day after spending occurs.
 
-The same domain might be available through multiple sellers, resulting in more than one recommendation for the site. To ensure recommendations are new and relevant, Xandr filters out any inventory that is already part of an allowlist or blocklist, or that your ads have already served on for this line item.
+The same domain might be available through multiple sellers, resulting in more than one recommendation for the site. To ensure recommendations are new and relevant, Microsoft Advertising filters out any inventory that is already part of an allowlist or blocklist, or that your ads have already served on for this line item.
 
 Recommendations include the following information for each recommended domain/seller combination:
 
