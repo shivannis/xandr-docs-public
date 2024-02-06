@@ -10,4 +10,4 @@ ms.date: 10/28/2023
 
 Microsoft Advertising introduced a new domain, adnxs-simple.com, to facilitate improved consumer privacy controls for no-consent scenarios. The new domain does not send or read browser cookies on requests. Clients can leverage the new domain for monetization when there is no consent to use personal data. Relevant calls initiated by Microsoft Advertising will now automatically utilize this new domain when there is no consent or when cookies are not required for the function.
 
-For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Reinforcing-Privacy-Controls-Through-a-Cookie-Free-Domain.aspx) (login required).
+For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain (Part of Service Policies)](../policies-regulations/index.yml).
