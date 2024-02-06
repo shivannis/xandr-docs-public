@@ -21,7 +21,7 @@ There are four sections on the **Forecast Visibility** page:
 ## Related topics
 
 - [About Forecasts and Adjustments](about-forecasts-and-adjustments.md)
-- [View the Forecast for Your Products](view-the-forecast-for-your-products.md)
+- [View the Forecast for Your Products](view-your-products-forecast.md)
 - [Anatomy of the Capacity Dashboard Page](anatomy-of-the-capacity-dashboard-page.md)
 - [Anatomy of the Forecast Management Page](anatomy-of-the-forecast-management-page.md)
 - [Check Impression Capacity for a Product Group](check-impression-capacity-for-a-product-group.md)
