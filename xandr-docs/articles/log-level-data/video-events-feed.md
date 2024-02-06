@@ -78,6 +78,7 @@ The columns below are listed in the same order in which they appear in the log-l
 | 50 | video_hit_50_pct_timestamp | UNIX Epoch time | The time and date when the video second quartile event was received by Xandr. | Both |
 | 51 | video_hit_75_pct_timestamp | UNIX Epoch time | The time and date when the video third quartile event was received by Xandr. | Both |
 | 52 | video_completed_timestamp | UNIX Epoch time | The time and date when the video completed event was received by Xandr. | Both |
+| 53 | vg_id | Int | Field is part of an ongoing alpha release. | Buyer |
 
 ## Error codes
 
