@@ -26,9 +26,7 @@ landingContent:
   - title: Member Settings
     linkLists:
       - linkListType: concept
-        links:            
-          - text: Single Credential Login and MFA
-            url: single-credential-login-and-multi-factor-authentication-mfa.md
+        links:           
           - text: Microsoft Identity Platform Login
             url: microsoft-identity-platform-login.md
       - linkListType: how-to-guide
