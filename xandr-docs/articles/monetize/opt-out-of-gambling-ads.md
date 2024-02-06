@@ -44,5 +44,4 @@ The Ad Quality Manager shares the same user interface for publishers and network
 
 ## Related topics
 
-- [Buy-Side Gambling Policy](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Buying.aspx) (login required)
-- [Sell-Side Gambling Policy](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Selling.aspx) (login required)
+- [Gambling Policy (Part of Service Policies)](../policies-regulations/index.yml)
