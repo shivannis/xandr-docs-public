@@ -1,22 +1,22 @@
 ---
 title: Microsoft Invest - Buyer Auction Service Charge Mechanics
-description: In this article, understand what Buyer Auction Service Charge (BASC) is, how it is calculated, and how it is charged by Xandr.
+description: In this article, understand what Buyer Auction Service Charge (BASC) is, how it is calculated, and how it is charged by Microsoft Advertising.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buyer auction service charge mechanics
 
-When purchasing inventory with Xandr, the buyer may be charged the Buyer Auction Service Charge (BASC) specified in its contract. BASC is quoted as a percentage of Media Cost. Xandr can apply this charge in one of two ways, either as a fee or a deduction. Which of the two is being used will be specified in the contract.
+When purchasing inventory with Microsoft Advertising, the buyer may be charged the Buyer Auction Service Charge (BASC) specified in its contract. BASC is quoted as a percentage of Media Cost. Microsoft Advertising can apply this charge in one of two ways, either as a fee or a deduction. Which of the two is being used will be specified in the contract.
 
 ## Fee
 
-In this case, the BASC is charged separately from Media Cost. Note that these fees will NOT affect or be deducted from Media Cost budgets. As a result, the total amount Xandr will invoice for at the end of a campaign (or line item) will exceed the media budget by the BASC.
+In this case, the BASC is charged separately from Media Cost. Note that these fees will NOT affect or be deducted from Media Cost budgets. As a result, the total amount Microsoft Advertising will invoice for at the end of a campaign (or line item) will exceed the media budget by the BASC.
 
 `Buyer Payment = Media Cost + (Media Cost * Buyer Auction Service Charge %)`
 
 ## Deduction (or Bid reduction)
 
-In this case, the BASC is applied as a component of Media Cost. As a result, Xandr deducts its BASC from the Media Cost paid by the buyer and passes the remainder on to the seller. During the auction, Xandr reduces bids by the amount of each buyer's BASC before comparing bids to determine the winning price paid to the seller.
+In this case, the BASC is applied as a component of Media Cost. As a result, Microsoft Advertising deducts its BASC from the Media Cost paid by the buyer and passes the remainder on to the seller. During the auction, Microsoft Advertising reduces bids by the amount of each buyer's BASC before comparing bids to determine the winning price paid to the seller.
 
 `Buyer Payment = Media Cost`
 
@@ -42,4 +42,4 @@ Assume the buyer has a 10% BASC and is bidding a flat $1.20 CPM, and that the ne
 
 ## Inventory discrepancy and bid calculation
 
-When buying ads through the Auction Service, Xandr may reduce the bid amount submitted by Company due to discrepancy offsets based on historical counting differences with the inventory provider.
+When buying ads through the Auction Service, Microsoft Advertising may reduce the bid amount submitted by Company due to discrepancy offsets based on historical counting differences with the inventory provider.

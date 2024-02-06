@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Banner and HTML5 creatives
 
-You can host common display creatives such as banner and HTML5 with Xandr or traffic them through third-party ad servers.
+You can host common display creatives such as banner and HTML5 with Microsoft Advertising or traffic them through third-party ad servers.
 
 ## Banner creatives
 

@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Buy Microsoft Outlook.com inventory
 
-You can buy Microsoft Outlook.com inventory on the Xandr platform.
+You can buy Microsoft Outlook.com inventory on the Microsoft Advertising platform.
 
 ## Inventory overview
 
@@ -52,4 +52,4 @@ For instructions on how to target the Outlook app, see [Buying Microsoft Windows
 
 ## More questions?
 
-If you have any further questions about buying Outlook.com inventory, please contact your Xandr account representative.
+If you have any further questions about buying Outlook.com inventory, please contact your Microsoft Advertising account representative.

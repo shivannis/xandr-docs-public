@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - A comparison of mobile app vs. web
 
-In [Welcome to Mobile](welcome-to-mobile.md), that mobile app and web features are mostly the same. The table below contains a comparison listing mobile app features, how different they are from web, and how they differ.
+In [Welcome to Mobile](welcome-to-mobile.md), we claim that mobile app and web features are mostly the same. The table below contains a comparison listing mobile app features, how different they are from web, and how they differ.
 
 For more information about why mobile app features differ from web, see [Technical Limitations of Mobile Buying](technical-limitations-of-mobile-buying.md).
 

@@ -16,7 +16,7 @@ As described on the [Technical Limitations of Mobile Buying](technical-limitatio
 separate campaigns targeting apps from those targeting mobile web inventory.
 
 > [!NOTE]
-> It is up to the sellers to declare the supply type for their placements. In other words, this is not a part of the Xandr platform review process. Some sellers may not describe their placements' supply type accurately. For this reason, it is best practice to set mobile web campaigns to include both mobile web and web supply.
+> It is up to the sellers to declare the supply type for their placements. In other words, this is not a part of the Microsoft Advertising platform review process. Some sellers may not describe their placements' supply type accurately. For this reason, it is best practice to set mobile web campaigns to include both mobile web and web supply.
 
 To target a range of mobile inventory, select multiple inventory types - for example, phones and tablets - for your supply type.
 

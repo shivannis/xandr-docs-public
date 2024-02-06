@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 > [!NOTE]
 > [Buying Native Inventory](./buying-native-inventory.md) provides instructions for a global approach in which you reach all sellers simultaneously with a single line item. Scaling is the approach we recommend over the seller-specific settings shown here.
 
-[Seedtag](https://www.seedtag.com) inventory is available programmatically through Xandr. Seedtag is the European leader in In-Image advertising and manages more than 1B impressions across the globe. We work with top Publishers and our responsive ad format will allow you to boost your metrics. Seedtag's average Viewability rate is above 90% and our CTR are 5 time higher than traditional display.
+[Seedtag](https://www.seedtag.com) inventory is available programmatically through Microsoft Advertising. Seedtag is the European leader in In-Image advertising and manages more than 1B impressions across the globe. We work with top Publishers and our responsive ad format will allow you to boost your metrics. Seedtag's average Viewability rate is above 90% and our CTR are 5 time higher than traditional display.
 
 Seedtag has office and exclusive agreements with Publishers in the below countries:
 
@@ -47,7 +47,7 @@ You must select CPM as your **Buying Strategy**. You can select any option under
 
 **Inventory quality:**
 
-- Select **Serve only on** Xandr-reviewed inventory.
+- Select **Serve only on** Microsoft Advertising-reviewed inventory.
 - Select **Also serve on trusted seller-reviewed/unreviewed inventory**.
 
 ## Upload a third-party creative
@@ -58,7 +58,7 @@ Navigate to the **Creative Manager** screen. Click on the **Create New** button 
 - Creative Format: **Third-party tag**
 - Tag Type: **This tag is HTML**. Uncheck the **Serve in iFrame** option.
 - Media Type: **Banner: Standard Banner**
-- Template: **Xandr: Standard**
+- Template: **Microsoft Advertising: Standard**
 - Size: Select **New** from the dropdown list. Enter a **width** of **600** and a **height** of **105**
 - Name: Self-classify the creative with the accurate brand.
   <br> In the Tag field, paste in the tag you received from Seedtag when you sent your creative. You will need to edit the tag. Your tag will contain a section like this:

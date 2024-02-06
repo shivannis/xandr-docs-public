@@ -10,11 +10,11 @@ This page provides you with a suggested workflow to optimize the new enhancement
 
 ## Step 1. Add VAST video creatives
 
-You can either opt to have Xandr host your VAST creatives, or add creatives hosted by a third-party provider. For more
+You can either opt to have Microsoft Advertising host your VAST creatives, or add creatives hosted by a third-party provider. For more
 information, see  see [Add a Creative](./add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md).
 
 > [!NOTE]
-> A contract addendum must be signed prior to hosting with Xandr. Contact your Xandr representative for more information.
+> A contract addendum must be signed prior to hosting with Microsoft Advertising. Contact your Microsoft Advertising representative for more information.
 
 ## Step 2. Create your buy-side setup
 

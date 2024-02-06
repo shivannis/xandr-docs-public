@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Add a Creative
-description: In this module, follow the step-by-step instructions to add one creative at a time to the Xandr platform.
+description: In this module, follow the step-by-step instructions to add one creative at a time to the Microsoft Advertising platform.
 ms.date: 10/28/2023
 ---
 
@@ -21,14 +21,14 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
    The **Create New** screen displays.
 
 1. Provide the creative file using one of the following methods:
-    - If the creative is being hosted with Xandr, upload the file by clicking the **Select Files** button to upload the appropriate assets.
+    - If the creative is being hosted with Microsoft Advertising, upload the file by clicking the **Select Files** button to upload the appropriate assets.
       > [!NOTE]
       > For native creatives, you can upload a main image and icon simultaneously.
 
     - If the creative is being hosted on your own platform or trafficked through a third-party ad server, enter a secure URL.
 
     If you're adding a video or audio creative, you'll have to select one of the following tabs in order to provide the creative file:
-    - **Hosted File**: For video and audio creatives that are being hosted through Xandr's platform.
+    - **Hosted File**: For video and audio creatives that are being hosted through Microsoft Advertising's platform.
     - **Third-Party URL**: For video and audio creatives that are being trafficked through a third-party ad server.
     > [!TIP]
     > When uploading creative files, you can hold down the **Command** (if using a Mac) or **CTRL** (if using a PC) key until you've selected all the necessary files from your computer, and then click **Open**.
@@ -42,7 +42,7 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
     1. Enter a landing page URL in the **Landing Page** field that the users will be redirected to when clicking the creative, or select the **Set on the Line Item level** radio button to set it at the line item level.
        For more information, see [Dynamic Landing Pages](dynamic-landing-pages.md)
     1. For banner creatives, select a media type from the menu pull-down.
-      A standard Xandr template is selected by default. You can click the **X** in the search field next to the menu pull-down and select a different template. For more information, see [Applying Media Types and Templates to Banner Creatives](applying-media-types-and-templates-to-banner-creatives.md).
+      A standard Microsoft Advertising template is selected by default. You can click the **X** in the search field next to the menu pull-down and select a different template. For more information, see [Applying Media Types and Templates to Banner Creatives](applying-media-types-and-templates-to-banner-creatives.md).
     1. For HTML5 creatives, select one of the following media types: **Standard**, **Interstitial**, or **Expandable**.
     1. For HTML5 and banner creatives, select a creative size.
 

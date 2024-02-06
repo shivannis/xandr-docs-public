@@ -73,7 +73,7 @@ This report's data is retained for 420 days.
 | Deal | Y | The deal associated with the impression. |
 | Creative | Y | The creative associated with the impression. |
 | Publisher | Y | The publisher associated with the impression. |
-| Ad Request Call Type | N | The type of handler that was used to send the impression to Xandr (e.g., `vmap`, `ut`, `mob`, `ptv`, `openrtb`). |
+| Ad Request Call Type | N | The type of handler that was used to send the impression to Microsoft Advertising (e.g., `vmap`, `ut`, `mob`, `ptv`, `openrtb`). |
 | Site Domain | Y | The domain associated with the impression. |
 | Application ID | N | The ID of the mobile app on the device where the impression occurred. |
 | Impression Type | Y | The type of impression. An integer value which translates as follows: <br/> - 1 = Blank <br/> - 2 = PSA <br/> - 3 = Default Error <br/> - 4 = Default <br/> - 5 = Kept <br/> - 6 = Resold <br/> - 7 = RTB <br/> - 8 = PSA Error <br/> - 9 = External Impression <br/> - 10 = External Click |

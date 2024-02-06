@@ -75,7 +75,7 @@ attributes, the name of its attributes will appear below it using the following 
 | CTR (Click-Through Rate) | The ratio of clicks to impressions, expressed as a percentage |
 | Measurable Imps | The total number of impressions that were measured for viewability |
 | Viewed Imps | The total number of impressions that were deemed viewable as defined by the Interactive Advertising Bureau (IAB): For at least one second, 50% of a creative's pixels (or 30% for a creative with at least 242,500 pixels) must be viewable to a viewer on their screen. |
-| Custom Viewable Imps | The number of measured impressions that were viewable, per the member-level custom definition configuration (for more details, contact your Xandr account representative) |
+| Custom Viewable Imps | The number of measured impressions that were viewable, per the member-level custom definition configuration (for more details, contact your Microsoft Advertising account representative) |
 | Viewability Measurement Rate | The percentage of impressions measured for viewability out of the total number of impressions. <br> Viewability Measurement Rate = Measurable Imps / Imps |
 | Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. <br> Viewability Rate = Viewed Imps / Measurable Imps |
 | Custom Viewability Rate | The percentage of impressions that were viewable, per the member-level custom definition configuration, out of the total number of impressions measured for viewability |

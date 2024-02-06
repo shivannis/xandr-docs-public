@@ -9,13 +9,13 @@ ms.date: 10/28/2023
 This page provides specific information for the **Triton Audio Ad Exchange**, which includes testing your ads and setting up a line item to target **Triton** audio inventory.
 
 > [!NOTE]
-> If you are interested in serving companion banner ads, please contact your Xandr or Triton representative.
+> If you are interested in serving companion banner ads, please contact your Microsoft Advertising or Triton representative.
 
 ## Test your ads
 
-After designing your audio creative and adding your creative to Xandr, you can test it. See [Buying Audio Inventory](./buying-audio-inventory.md).
+After designing your audio creative and adding your creative to Microsoft Advertising, you can test it. See [Buying Audio Inventory](./buying-audio-inventory.md).
 
-Triton Digital has created a test station where you can test your a2x/Xandr ads in a replica of a live environment. The test station runs a sequence of one song followed by one or more ads. You can test only one ad at a time.
+Triton Digital has created a test station where you can test your a2x/Microsoft Advertising ads in a replica of a live environment. The test station runs a sequence of one song followed by one or more ads. You can test only one ad at a time.
 
 > [!NOTE]
 > To access the test station, a **custom placement ID** and a **player site ID** from Triton Digital is required. To obtain these IDs, contact Triton Digital customer support.
@@ -73,8 +73,8 @@ You can also narrow the inventory by specifying if the inventory should target p
 
 | Category | Description |
 |:--|:--|
-| Cookie: Matched (924163) | Inventory that is assigned to traffic from users who are matched to an ID from Xandr using the Xandr cookie. |
-| Cookie: Not Synced (24164) | Inventory that is assigned to traffic from users who are not synced with an ID from Xandr, either because the player does not support cookies or because the player does not have the cookie sync code. |
+| Cookie: Matched (924163) | Inventory that is assigned to traffic from users who are matched to an ID from Microsoft Advertising using the Microsoft Advertising cookie. |
+| Cookie: Not Synced (24164) | Inventory that is assigned to traffic from users who are not synced with an ID from Microsoft Advertising, either because the player does not support cookies or because the player does not have the cookie sync code. |
 
 > [!NOTE]
 > There are no controls to keep you from narrowing your scope to a point of excluding all inventory. For example, you can choose to exclude **Category: Mobile Browser** in a line item with a scope of "Mobile: Device-Optimized websites". This will leave you with no available inventory. Make sure to use prudence when targeting categories.

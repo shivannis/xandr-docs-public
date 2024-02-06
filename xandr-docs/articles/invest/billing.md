@@ -6,10 +6,10 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Billing
 
-For real-time inventory, Xandr serves as the clearinghouse by paying inventory sellers and then billing buyers. Networks and direct marketers pay their managed publishers directly. This section provides resources for accessing and understanding your billing information.
+For real-time inventory, Microsoft Advertising serves as the clearinghouse by paying inventory sellers and then billing buyers. Networks and direct marketers pay their managed publishers directly. This section provides resources for accessing and understanding your billing information.
 
 > [!IMPORTANT]
-> To view the Billing dashboard, your account must be assigned to the **Financial Observer** role. Contact your Xandr representative if you do not have the correct access.
+> To view the Billing dashboard, your account must be assigned to the **Financial Observer** role. Contact your Microsoft Advertising representative if you do not have the correct access.
 
 Member users with special access can access past invoices, seller statements, and credit status, as well as pricing terms (used when calculating fees and charges on invoices) directly in Microsoft Invest.
 
@@ -20,7 +20,7 @@ To access past invoices, select **Billing** under your Member settings. in the m
 Billing periods reflect periods of platform activity. For example, a June invoice reflects your platform activity in June. However, you may not receive the invoice until July.
 
 For each billing period listed, you can click to view the invoice and/or seller statement. Invoices and seller statements available in
-Microsoft Invest are identical to the invoices you receive (via email) from Xandr.
+Microsoft Invest are identical to the invoices you receive (via email) from Microsoft Advertising.
 
 For a detailed explanation of the fields and values in an invoice or seller statement, see [Understanding Your Invoice](understanding-your-invoice.md).
 

@@ -23,7 +23,7 @@ To restrict the impressions you target based on other geographic details of the 
 
 For third-party buying, geographic targeting is limited by any existing country settings in your Third-Party Buying Filters at the network
 level. If countries are included in your Third-Party Buying Filters, only those countries and the regions and cities within them will be
-available for targeting. If you target (include) geographies at the Region, City, Metro Code, or Postal Code level, Xandr will use these settings to derive the country target to be compared with your Third-Party Buying filters.
+available for targeting. If you target (include) geographies at the Region, City, Metro Code, or Postal Code level, Microsoft Advertising will use these settings to derive the country target to be compared with your Third-Party Buying filters.
 
 ## Restrict users by country, region, or city
 
@@ -67,7 +67,7 @@ The countries that support metro code targeting are:
 On the **Postal Code** tab, once you select a country, you can include up to 4,000 postal codes using a comma-separated or line-separated list. Postal codes can be alphanumeric strings of up to 14 characters and can contain a space or hyphen. Unlike other types of geographic targeting, postal codes may only be included (not excluded).
 
 > [!NOTE]
-> Certain legitimate ZIP or postal codes are unrecognizable or invalid within the Xandr geography targeting system. This can happen because [Digital Envoy](https://www.digitalelement.com/), a Xandr partner that handles geolocation data, can't recognize a ZIP or postal
+> Certain legitimate ZIP or postal codes are unrecognizable or invalid within the Microsoft Advertising geography targeting system. This can happen because [Digital Envoy](https://www.digitalelement.com/), a Microsoft Advertising partner that handles geolocation data, can't recognize a ZIP or postal
 code's existence until an IP address (user) has been associated with it. Postal codes that don't exist in the system often represent obscure or otherwise small geographical zones with minimal internet activity.
 
 As a guide to how postal codes should be formatted for each country, consult the list below.
@@ -100,7 +100,7 @@ As a guide to how postal codes should be formatted for each country, consult the
 | United Kingdom     | ZE3 9JJ   |
 | United States      | 99950     |
 
-If your list contains postal/zip codes that don't exist in the Xandr database, you will be presented with an error message and given the chance to correct and resubmit any invalid postal codes. Some common formatting errors that may generate an error message are:
+If your list contains postal/zip codes that don't exist in the Microsoft Advertising database, you will be presented with an error message and given the chance to correct and resubmit any invalid postal codes. Some common formatting errors that may generate an error message are:
 
 - **Excel-Truncated Zeros**: Excel may truncate leading zeros from postal codes if they are numeric (06514 becomes 6514). However, an
   alphanumeric postal code such as "0AH 135" would not be affected.

@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Buy GumGum inventory
 
-You can enhance user engagement via [GumGum "in-image" or "in-screen" units](https://www.gumgum.com/image-recognition/in-image-advertising), which are available programmatically through Xandr. GumGum ad campaigns involve a few adjustments to the process of uploading standard display campaigns. This page will guide you through this process and explain how to display your creative via GumGum's inventory.
+You can enhance user engagement via [GumGum "in-image" or "in-screen" units](https://www.gumgum.com/image-recognition/in-image-advertising), which are available programmatically through Microsoft Advertising. GumGum ad campaigns involve a few adjustments to the process of uploading standard display campaigns. This page will guide you through this process and explain how to display your creative via GumGum's inventory.
 
 ## Upload a third-party creative
 
@@ -16,14 +16,14 @@ Navigate to the **Creative Manager** screen. Click on the **Create New** button 
 - **Creative Format**: **Third-Party Tag**
 - **Tag Type: This tag is HTML**
 - **Media Type: Banner: Standard Banner**
-- **Template: Xandr Standard**
+- **Template: Microsoft Advertising Standard**
 - **Size:** See the table below for recommended sizes depending on your GumGum inventory selection. For example, "10x10" for the Studio 728x90.
 - **Name:** Self classify the creative with the accurate brand.
 
 > [!IMPORTANT]
-> Do not submit for audit since the creative will only be able to render on GumGum's inventory and the Xandr team cannot audit it.
+> Do not submit for audit since the creative will only be able to render on GumGum's inventory and the Microsoft Advertising team cannot audit it.
 
-| GumGum Product           | Xandr Size |
+| GumGum Product           | Microsoft Advertising Size |
 |:-------------------------|:-----------|
 | In-Image 728x90          | 10x10      |
 | In-Image Animated        | 12x12      |

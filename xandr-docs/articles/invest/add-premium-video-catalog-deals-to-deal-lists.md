@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 Using the Inventory Library, buyers can add premium video catalog (PVC) deals to new and existing deal lists for all line item types except programmatic guaranteed buying line items.
 
 > [!NOTE]
-> The Inventory Library is a **Beta** feature that isn't available to all clients. If you'd like to gain access to it, contact your Xandr account representative.
+> The Inventory Library is a **Beta** feature that isn't available to all clients. If you'd like to gain access to it, contact your Microsoft Advertising account representative.
 
 1. Go to **Inventory &gt; Inventory Library**.
 1. Use the available filters to search through the various PVC deals:

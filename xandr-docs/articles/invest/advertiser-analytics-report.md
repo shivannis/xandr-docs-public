@@ -98,7 +98,7 @@ allow for a fuller reconciliation with conversions, impressions and other metric
 | Column | Filter? | Description |
 |:-------|:--------|:------------|
 | Seller | Yes | The seller of the impression. |
-| Seller Type | Yes | Xandr buckets sellers into different types for billing purposes. For more information, see [Seller Types](#seller-types). |
+| Seller Type | Yes | Microsoft Advertising buckets sellers into different types for billing purposes. For more information, see [Seller Types](#seller-types). |
 | Publisher | Yes | The publisher on whose inventory this impression occurred. |
 | Placement | Yes | The placement through which this impression occurred. <br> **Note:** For impressions older than 100 days, placements are aggregated into one row with `-1` as the ID and a generic name. |
 | Line Item | Yes | The line item under which this impression was purchased. |
@@ -173,7 +173,7 @@ allow for a fuller reconciliation with conversions, impressions and other metric
 |:-----|:-----------|
 | platform | When you purchase platform inventory, you will be charged your contracted auction service fee. |
 | partner | When you purchase inventory from one of our external supply partners, you will be charged your contracted auction service fee. |
-| unknown | The seller type is not identifiable. You shouldn't see this turn up in your reports. If you do, please contact your Xandr support at [https://help.xandr.com](https://help.xandr.com). |
+| unknown | The seller type is not identifiable. You shouldn't see this turn up in your reports. If you do, please contact your Microsoft Advertising support at [https://help.xandr.com](https://help.xandr.com). |
 
 ### Bid types
 
@@ -287,7 +287,7 @@ Note that the term "give up" is appended to the bid types below if the valuation
 
 | Column | Description |
 |:-------|:------------|
-| Custom Viewable Imps | The number of measured impressions that were viewable, per the member-level custom definition configuration (for more details, contact your Xandr account representative). |
+| Custom Viewable Imps | The number of measured impressions that were viewable, per the member-level custom definition configuration (for more details, contact your Microsoft Advertising account representative). |
 | Custom Viewability Rate | The percentage of impressions that were viewable, per the member-level custom definition configuration, out of the total number of impressions measured for viewability. |
 
 ## To run your report

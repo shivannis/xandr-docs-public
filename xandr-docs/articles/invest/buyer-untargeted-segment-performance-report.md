@@ -61,7 +61,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Insertion Order | Yes | The insertion order associated with the impression, in the format "Midwest Winter Getaways (789)". |
 | Line Item | Yes | The line item associated with the impression, in the format "Kansas City Winter Commuters (314)". |
 | Campaign | Yes | The campaign associated with the impression, in the format "South Texas Ford Drivers (123)". (Does not apply to all advertisers.) |
-| Campaign Code | No | The ID associated with a campaign by Xandr platform or by user as an external code. |
+| Campaign Code | No | The ID associated with a campaign by Microsoft Advertising platform or by user as an external code. |
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the Split column (if included) will be null. |
 | Segment | Yes | The user segment associated with the impression in the format "Submitted application (220)". |
 | Buying Currency | No | The transaction currency that the buyer used to purchase this impression. Including this dimension will cause the monetary metrics to be displayed in the buying currency. |

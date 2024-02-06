@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 The Buying Billing Report allows you to manage internal invoicing for your advertisers across both managed and third-party buying.
 
-If you would like to use this report to analyze your Xandr invoice, see [Understanding Your Invoice](understanding-your-invoice.md). (Login required.)
+If you would like to use this report to analyze your Microsoft Advertising invoice, see [Understanding Your Invoice](understanding-your-invoice.md). (Login required.)
 
 ## Time frame
 
@@ -70,10 +70,10 @@ Intervals determine how your data is grouped together into rows in the report re
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the **Split** column (if included) will be null. |
 | BP External Code | No | The optional external code supplied for the insertion order's billing period. |
 | Media Type (Billing) | Yes | The video-specific media type classification for billing only. If you don't have video-specific pricing, this field is irrelevant. Possible values are `--`, `Non-Video`, `Video (Hosted)`, and `Video (Non-Hosted)`. |
-| Is Cross Seat Activity | Yes | Only relevant if you have more than one member/seat on the Xandr platform. If you do, this field allows you to know whether the activity was associated with transactions between members you manage and therefore simplify the reconciling of their invoices. |
+| Is Cross Seat Activity | Yes | Only relevant if you have more than one member/seat on the Microsoft Advertising platform. If you do, this field allows you to know whether the activity was associated with transactions between members you manage and therefore simplify the reconciling of their invoices. |
 | Buying Currency | No | The transaction currency that the buyer used to purchase this impression. Including this dimension will cause the **Booked Revenue**, **Buyer Media Cost**, **Auction Service Deduction**, **Net Media Cost Auction Service Fees**, and **Creative Overage Fees** metrics to be displayed in the buying currency. |
 | Impression Type | Yes | See [Impression Types](#impression-types) below for definitions of the different types of impressions. |
-| Direct Cleared | Yes | Whether or not the buyer pays the seller directly for the cost of media. <br/> - `0` : Xandr acts as the clearing house, collecting the cost of media from the buyer and paying the seller. <br/> - `1` : Xandr does not clear cash; the buyer pays the seller directly for the cost of media. <br/> - `-1` : Dummy value for un-billed activity. |
+| Direct Cleared | Yes | Whether or not the buyer pays the seller directly for the cost of media. <br/> - `0` : Microsoft Advertising acts as the clearing house, collecting the cost of media from the buyer and paying the seller. <br/> - `1` : Microsoft Advertising does not clear cash; the buyer pays the seller directly for the cost of media. <br/> - `-1` : Dummy value for un-billed activity. |
 | Deal | Yes | The deal associated with the impression. |
 | Advertiser Code | No | The external ID of the advertiser. |
 | IO Code | No | The external ID of the insertion order. |
@@ -93,7 +93,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Clicks | The total number of clicks. |
 | Conversions | The total number of post-view and post-click conversions. |
 | Booked Revenue | The revenue booked through managed advertisers. |
-| Buyer Media Cost | The total amount to be paid for media purchases. When buying impressions, this payment is made to Xandr or an external exchange. When selling impressions, this payment is made to the publisher. |
+| Buyer Media Cost | The total amount to be paid for media purchases. When buying impressions, this payment is made to Microsoft Advertising or an external exchange. When selling impressions, this payment is made to the publisher. |
 | Auction Service Deduction | The total deductions charged for impressions bought from third parties. These deductions are included in the buyer's media cost and deducted when calculating the seller's payment. |
 | Net Media Cost | The total amount to be paid for media purchases, less the Auction Service Deduction. |
 | Creative Overage Fees | The total fees charged for hosted creatives that exceed the creative size limit. |
@@ -110,8 +110,8 @@ Intervals determine how your data is grouped together into rows in the report re
 | Clearing Event Buyer Media Cost Per Event | The media cost per clearing event. |
 | Clearing Event Booked Revenue Per Event | The total booked revenue per clearing event. |
 | Exchange Cost | The amount taken out of the exchange to give to the seller. If you aren't using a line item with a guaranteed outcomes payment model, this metric's value equals **Net Media Cost**. |
-| eCPM Conversion Deduction | The amount that Xandr takes out of a guaranteed outcomes bid/payment to cover eCPM conversion and post-auction outcome prediction services. If you aren't using a line item with a guaranteed outcomes payment model, this field's value equals 0. |
-| GO Market Making Fee | The percentage-based fee (risk premium) that Xandr takes out of a guaranteed outcomes bid/payment to cover the risk incurred when providing guaranteed outcomes. If you aren't using a line item with a guaranteed outcomes payment model, this field's value equals 0. The target for this fee is 10%, but the actual percentage used varies based on continuously shifting prediction accuracy. <br/> - GO Market Making Fee Percentage = Fixed Percentage (10%) ± Prediction Variability (a positive or negative percentage that changes based on shifting prediction accuracy) |
+| eCPM Conversion Deduction | The amount that Microsoft Advertising takes out of a guaranteed outcomes bid/payment to cover eCPM conversion and post-auction outcome prediction services. If you aren't using a line item with a guaranteed outcomes payment model, this field's value equals 0. |
+| GO Market Making Fee | The percentage-based fee (risk premium) that Microsoft Advertising takes out of a guaranteed outcomes bid/payment to cover the risk incurred when providing guaranteed outcomes. If you aren't using a line item with a guaranteed outcomes payment model, this field's value equals 0. The target for this fee is 10%, but the actual percentage used varies based on continuously shifting prediction accuracy. <br/> - GO Market Making Fee Percentage = Fixed Percentage (10%) ± Prediction Variability (a positive or negative percentage that changes based on shifting prediction accuracy) |
 
 ## Impression types
 

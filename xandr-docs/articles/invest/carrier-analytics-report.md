@@ -63,13 +63,13 @@ This report's data is retained for 46 days. For more information about how quick
 
 | Column | Filter? | Example | Description |
 |:-|:-|:-|:-|
-| Buyer | Yes | `"My Member (123)"` | The name of the buying member followed by the ID (Xandr format). |
-| Seller | Yes | `"That Seller (456)"` | The name of the selling member followed by the ID (Xandr format). |
-| Advertiser | Yes | `"Mobile Zombies (789)"` | The name of the advertiser followed by the ID (Xandr format). |
-| Publisher | Yes | `"Undead.com (456)"` | The name of the publisher followed by the ID (Xandr format). |
-| Insertion Order | Yes | `"Mobile Insertion Order (321)"` | The name of the insertion order followed by the ID (Xandr format). |
-| Line Item | Yes | `"Mobile Line Item (111)"` | The name of the line item followed by the ID (Xandr format). |
-| Campaign | Yes | `"Mobile Campaign (222)"` | The name of the campaign followed by the ID (Xandr format). (Does not apply to all advertisers.) |
+| Buyer | Yes | `"My Member (123)"` | The name of the buying member followed by the ID (Microsoft Advertising format). |
+| Seller | Yes | `"That Seller (456)"` | The name of the selling member followed by the ID (Microsoft Advertising format). |
+| Advertiser | Yes | `"Mobile Zombies (789)"` | The name of the advertiser followed by the ID (Microsoft Advertising format). |
+| Publisher | Yes | `"Undead.com (456)"` | The name of the publisher followed by the ID (Microsoft Advertising format). |
+| Insertion Order | Yes | `"Mobile Insertion Order (321)"` | The name of the insertion order followed by the ID (Microsoft Advertising format). |
+| Line Item | Yes | `"Mobile Line Item (111)"` | The name of the line item followed by the ID (Microsoft Advertising format). |
+| Campaign | Yes | `"Mobile Campaign (222)"` | The name of the campaign followed by the ID (Microsoft Advertising format). (Does not apply to all advertisers.) |
 | Split | Yes | `"Mobile Split A (342)"` | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the Split column (if included) will be null. |
 | Media Type | Yes | `"Banner"` | The media type of the creative. Possible values: `"Banner"`, `"Pop"`, `"Interstitial"`, `"Video"`, `"Text"`, `"Expandable"`, `"Skin"`, or `"Facebook"`. |
 | Country | Yes | `"US"` | The code for the country. |
@@ -81,7 +81,7 @@ This report's data is retained for 46 days. For more information about how quick
 | Payment Type | Yes | `"com"`, `"revshare"` | The type of payment to a broker. |
 | Device Type | Yes | `15` | The type of device on which the impression was served. Possible values: `"Phone"`, `"Tablet"`, or `"Other Devices"`. |
 | Connection Type | Yes | `"Carrier"` | The type of internet connection at the time of the impression. Possible values: `"Carrier-based"` or `"WiFi or Static"`. |
-| Carrier | Yes | `"Sprint - FR (20)"` | The name of the carrier followed by the ID (Xandr format). If the carrier is smaller, you may see this value appear as `-1` because it is aggregated. |
+| Carrier | Yes | `"Sprint - FR (20)"` | The name of the carrier followed by the ID (Microsoft Advertising format). If the carrier is smaller, you may see this value appear as `-1` because it is aggregated. |
 
 > [!NOTE]
 > You can also filter on a particular number of impressions using the **Minimum Impressions** filter.

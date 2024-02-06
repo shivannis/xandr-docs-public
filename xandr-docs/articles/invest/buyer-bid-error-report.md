@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Buyer bid error report
 
-The **Buyer Bid Error Report** helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the Xandr platform. Error Count has been multiplied by 100 to account for the 5% sampling.
+The **Buyer Bid Error Report** helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the Microsoft Advertising platform. Error Count has been multiplied by 100 to account for the 5% sampling.
 
 You can use this report to troubleshoot sell-side and buy-side settings that result in auction errors, thereby blocking spend. The goal is to help you eliminate the error in the future. You can find information on the owner, cause, and recommended resolution for each error in [Bid Error Codes](../bidders/bid-error-codes.md).
 
@@ -61,7 +61,7 @@ This report's data is retained for 33 days. For more information about how quick
 | Error ID | Yes | The specific error that occurred and was logged in ImpBus (ties to Error Message). |
 | Error Message | Yes | A generic Error Message that describes the error that occurred (ties to Error ID) |
 | Ad Profile ID | Yes* | The Ad Profile ID of the Seller Member impacted by the error. |
-| Brand | Yes | The brand registered in the Xandr system and associated with the creative that is impacted by the error. |
+| Brand | Yes | The brand registered in the Microsoft Advertising system and associated with the creative that is impacted by the error. |
 | Creative Category | Yes | A classification assigned to both brands and creatives impacted by the error. |
 | Creative Code | Yes | The Creative Code associated with the Buyer Member that is impacted by the error. |
 | Creative Size | No | The size of the creative impacted by the error. |
@@ -82,7 +82,7 @@ This report's data is retained for 33 days. For more information about how quick
 
 | Column | Description |
 |---|---|
-| Error Count | The amount of errors logged on the Xandr platform over the time range selected (a randomly selected set of 5% of the errors multiplied by 100 to account for the sampling). |
+| Error Count | The amount of errors logged on the Microsoft Advertising platform over the time range selected (a randomly selected set of 5% of the errors multiplied by 100 to account for the sampling). |
 
 ## How to run your report
 

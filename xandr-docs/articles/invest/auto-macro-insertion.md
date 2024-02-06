@@ -6,21 +6,21 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Auto macro insertion
 
-When you add or edit third-party creative tags, Xandr automatically inserts the `${CLICK_URL}` and `${CACHEBUSTER}` macros into your creative third-party tags if the third-party ad server's format is recognized, which will allow you to quickly traffic your creatives.
+When you add or edit third-party creative tags, Microsoft Advertising automatically inserts the `${CLICK_URL}` and `${CACHEBUSTER}` macros into your creative third-party tags if the third-party ad server's format is recognized, which will allow you to quickly traffic your creatives.
 
-In some cases, Xandr will replace an ad server macro with a macro specific to Xandr.
+In some cases, Microsoft Advertising will replace an ad server macro with a macro specific to Microsoft Advertising.
 
 > [!NOTE]
 > You can also use the encoded version of the `${CLICK_URL}` macro, such as `${CLICK_URL_ENC}`. For more information, see [Click Tracking](click-tracking.md).
 
-If the Xandr auto-tagger fails to automatically insert the `${CLICK_URL}` and `${CACHEBUSTER}` macros into your third-party tag, you can manually insert them into the appropriate locations. For more information, see [Click Tracking](click-tracking.md). If you don't know which parameter to use when inserting the macro, contact your client.
+If the Microsoft Advertising auto-tagger fails to automatically insert the `${CLICK_URL}` and `${CACHEBUSTER}` macros into your third-party tag, you can manually insert them into the appropriate locations. For more information, see [Click Tracking](click-tracking.md). If you don't know which parameter to use when inserting the macro, contact your client.
 
 ## Insert macros into third-party tags automatically
 
-Xandr can automatically insert the `${CLICK_URL}` and `${CACHEBUSTER}` macros into a variety of third-party tags such as Sizmek and Atlas.
+Microsoft Advertising can automatically insert the `${CLICK_URL}` and `${CACHEBUSTER}` macros into a variety of third-party tags such as Sizmek and Atlas.
 
 > [!NOTE]
-> Xandr can't auto insert the `${CLICK_URL}` and `${CACHEBUSTER}` macros into Google's DDM tags. However, these third-party tags can still be manually inserted.
+> Microsoft Advertising can't auto insert the `${CLICK_URL}` and `${CACHEBUSTER}` macros into Google's DDM tags. However, these third-party tags can still be manually inserted.
 
 Feel free to submit a [support ticket](https://help.xandr.com/) if you'd like to have a specific tag type added to our supported list. When creating the support ticket, be sure to provide:
 

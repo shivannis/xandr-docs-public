@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Applying media types and templates to banner creatives
 
-You can apply media types and standard Xandr and custom templates to your banner creatives from the Create New screen.
+You can apply media types and standard Microsoft Advertising and custom templates to your banner creatives from the Create New screen.
 
 You can apply the following media types to your banner creatives:
 
@@ -18,7 +18,7 @@ You can apply the following media types to your banner creatives:
 | Skin         | Transformative media that is embedded into the background of a web page.                                |
 | High Impact  | Dynamic media that is scalable and contains rich media attributes.                                      |
 
-After selecting the appropriate media type, you can search for and select standard Xandr and custom templates. For more information about how to create a custom creative template, see [Create a Custom Creative Template](./create-a-custom-creative-template.md).
+After selecting the appropriate media type, you can search for and select standard Microsoft Advertising and custom templates. For more information about how to create a custom creative template, see [Create a Custom Creative Template](./create-a-custom-creative-template.md).
 
 ## Related topics
 

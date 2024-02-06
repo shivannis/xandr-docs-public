@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 ## Overview
 
-The purpose of the Augmented Line Item (ALI) is to streamline a trader's workflow on the Xandr platform. It does this by enhancing already familiar features while providing new options and settings to support more sophisticated users. In addition, the ALI performs various functions in an automated fashion that previously had required tedious manual adjustment and maintenance by traders. As a result, ALI allows traders to rapidly create buying strategies on the platform, provides tools that specifically address trader goals while reducing daily management and overhead.
+The purpose of the Augmented Line Item (ALI) is to streamline a trader's workflow on the Microsoft Advertising platform. It does this by enhancing already familiar features while providing new options and settings to support more sophisticated users. In addition, the ALI performs various functions in an automated fashion that previously had required tedious manual adjustment and maintenance by traders. As a result, ALI allows traders to rapidly create buying strategies on the platform, provides tools that specifically address trader goals while reducing daily management and overhead.
 
 ## Advantages of ALI
 

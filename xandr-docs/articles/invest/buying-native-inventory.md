@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 Native ads seamlessly integrate advertising into a placement's context. In contrast with traditional HTML/JavaScript ads, native ads specify the ad content but not how to display it. This lets publishers control their user's experience by integrating advertising within their inventory, and it affords advertisers higher quality inventory to choose from. This guide contains steps for buying native inventory.
 
-From the Xandr platform you have access to a number of native supply sources. While you can set up an individual line item for each source, we recommend that you set up a single line item to reach all of them
+From the Microsoft Advertising platform you have access to a number of native supply sources. While you can set up an individual line item for each source, we recommend that you set up a single line item to reach all of them
 simultaneously. This type of setup allows for easier budgeting, reporting, performance-tracking, frequency capping, etc. This page describes the process of setting up a line item to serve across whichever native sellers you choose.
 
 For specific information on individual sellers, see [Native Inventory Seller Specifications](./native-inventory-seller-specifications.md)
@@ -25,8 +25,8 @@ Some native sellers require you to go through a quick buyer audit before they'll
 | Native Seller | Are you in an allowlist? | How to be put in an allowlist |
 |:-|:-|:-|
 | Ligatus | You must be in an allowlist to buy Ligatus inventory. You can determine whether you're eligible to serve on Ligatus by checking your settings in Partner Center. See the [Partner Center Guide](./partner-center-guide.md) documentation for more information. | Please reach out to [rta@ligatus.com](mailto:rta@ligatus.com) for allowlist approval. |
-| Sanoma Finland | If you have not previously bought Sanoma Finland via Xandr, you are not yet in an allowlist. | Reach out to [programmatic@sanoma.com](mailto:appnexus@triplelift.com). |
-| TripleLift | If you have not previously bought TripleLift via Xandr, you are not yet in an allowlist. | Reach out to [appnexus@triplelift.com](mailto:appnexus@triplelift.com). |
+| Sanoma Finland | If you have not previously bought Sanoma Finland via Microsoft Advertising, you are not yet in an allowlist. | Reach out to [programmatic@sanoma.com](mailto:appnexus@triplelift.com). |
+| TripleLift | If you have not previously bought TripleLift via Microsoft Advertising, you are not yet in an allowlist. | Reach out to [appnexus@triplelift.com](mailto:appnexus@triplelift.com). |
 
 The following sellers do not currently have any allowlist requirements:
 
@@ -46,7 +46,7 @@ This will bring up the **Create New Creative** dialog.
 
 To maximize reach for your creatives across native inventory sources, here are some general guidelines we recommend:
 
-|     Field    |                Xandr Guidelines               |
+|     Field    |                Microsoft Advertising Guidelines               |
 |:-------------|:----------------------------------------------|
 | Title        | 25 character maximum                          |
 | Body         | 300 character maximum                         |
@@ -57,11 +57,11 @@ To maximize reach for your creatives across native inventory sources, here are s
 If a parameter is not mentioned in the table above, enter whatever values make sense for your campaign.
 
 For detailed information on additional fields and uploading a native
-creative see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](./add-creatives-in-bulk.md). You can also review our [Native Buy-Side Best Practices](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Buy-Side-Native-Best-Practices.pdf).
+creative see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](./add-creatives-in-bulk.md). You can also review our [Native Buy-Side Best Practices](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/Buy-Side-Native-Best-Practices.pdf).
 
 > [!WARNING]
 > Do not use JavaScript piggyback pixels on native creatives. Only image pixels can be used on native creatives.
 
 ## Step 3. Targeting
 
-In terms of targeting, Xandr recommends you do not target individual sellers as part of your setup. Instead, we recommend serving on Xandr-audited inventory and using [inventory lists](./inventory-targeting-ali.md) to focus delivery on relevant supply.
+In terms of targeting, Microsoft Advertising recommends you do not target individual sellers as part of your setup. Instead, we recommend serving on Microsoft Advertising-audited inventory and using [inventory lists](./inventory-targeting-ali.md) to focus delivery on relevant supply.
