@@ -625,5 +625,7 @@
         href: buyer-group-service.md
   - name: Shared Platform Privacy Service
     href: privacy-service.md
+- name: Freewheel change in Demand Creative API
+  href: freewheel-demand-creative-api-changes.md
 - name: API Support
   href: xandr-api-support.md
