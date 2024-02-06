@@ -25,8 +25,10 @@ This page makes references to an attribution server. This is a server that is se
 ```
 https://attributionserver.com/attr?id=12&idfa=${DEVICE_APPLE_IDA}&token=${SSP_DATA}
 ```
-```https://attributionserver.com/attr?id=12&idfa=adw-231234-550&token=ams1AAAAAAAAkQC8rFPull3JKKU9tUKckvOj1WFMAAAAAGULAAA3AAAUQIAAd$AAA``` 
 The user’s device ID and the server-side pixel token replace the macros in the URL.
+```
+https://attributionserver.com/attr?id=12&idfa=adw-231234-550&token=ams1AAAAAAAAkQC8rFPull3JKKU9tUKckvOj1WFMAAAAAGULAAA3AAAUQIAAd$AAA
+```
 1. The attribution server captures the token along with any other available information.
 1. The user is redirected to the App Store or an advertiser’s landing page. The user converts. In the case of a mobile app installation the user downloads the app and opens it.
 1. Built into the app or conversion page is a call to the attribution server. For apps this is fired when the app is opened for the first time.
