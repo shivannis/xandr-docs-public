@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Understanding your pricing terms
 
-Charges and fees for common activity on Xandr's platform can be found in the **Billing** section of the UI. This page provides an overview of these common charges. For a complete list of charges and fees you may incur, see your contract or contact your Xandr representative.
+Charges and fees for common activity on Microsoft Advertising's platform can be found in the **Billing** section of the UI. This page provides an overview of these common charges. For a complete list of charges and fees you may incur, see your contract or contact your Microsoft Advertising representative.
 
 ## Charges for buyers
 
@@ -18,7 +18,7 @@ See [Charges for Sellers](charges-for-sellers.md).
 
 ## Tiered pricing (for both buyers and sellers)
 
-Some pricing rates in your Xandr contract (e.g., BASC, SASC, ad serving fee) may be based on the volume of your transacted activities on the Xandr platform (media cost, seller revenue, impressions). For these cases, the more you transact on the Xandr platform, the lower your pricing rate may be. If your activities meet the contractually agreed threshold for tiered pricing, you will receive a credit adjustment for the correct pricing rates on your invoice (for buyers) or seller activity statement (for sellers). If you receive consolidated invoices for multiple member accounts, the adjustment will only apply to the parent member.
+Some pricing rates in your Microsoft Advertising contract (e.g., BASC, SASC, ad serving fee) may be based on the volume of your transacted activities on the Microsoft Advertising platform (media cost, seller revenue, impressions). For these cases, the more you transact on the Microsoft Advertising platform, the lower your pricing rate may be. If your activities meet the contractually agreed threshold for tiered pricing, you will receive a credit adjustment for the correct pricing rates on your invoice (for buyers) or seller activity statement (for sellers). If you receive consolidated invoices for multiple member accounts, the adjustment will only apply to the parent member.
 
 ## Near-real time tiered pricing (for clients who opt-in)
 
@@ -30,7 +30,7 @@ For clients who have opted into Near-Real Time Tiered Pricing, the discounted pr
 > [!NOTE]
 > If there is any discrepancy between when you actually reached the contracted threshold and when our system applied the discounted rate, you may see a credit for a pricing adjustment on your Invoice or additional funds on your Seller Statement or Invoice.
 
-Contact your Xandr representative if you want to opt-in for Near-Real Time Tiered Pricing.
+Contact your Microsoft Advertising representative if you want to opt-in for Near-Real Time Tiered Pricing.
 
 ## Related topics
 

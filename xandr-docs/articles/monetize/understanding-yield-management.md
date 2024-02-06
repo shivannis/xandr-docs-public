@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Understanding yield management
 
 > [!IMPORTANT]
-> This feature is not available by default. If you are interested in gaining access or discussing potential use cases that may apply to your business, reach out to your Xandr representative.
+> This feature is not available by default. If you are interested in gaining access or discussing potential use cases that may apply to your business, reach out to your Microsoft Advertising representative.
 
 Networks can use yield management (YM) tools to set floor (minimum bid price) and bias (bid modifying) rules, thereby exerting more control over impression pricing in order to:
 

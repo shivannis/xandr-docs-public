@@ -79,10 +79,10 @@ The following metrics are shown for the campaign. Note that the data always refl
 - **Convs** - Number of times conversion pixels under the parent line item have loaded. Note that a conversion pixel load does not necessarily mean that a conversion was attributed to the campaign. To get information about attributed conversions, rather than just conversion pixel loads, see [Reporting on Conversions](reporting-on-conversions.md).
 - **CTR (Click Through Rate)** - Percentage of impressions that resulted in clicks for this campaign.
 - **Revenue** - Money the advertiser has paid or will pay your network as a result of this campaign.
-- **Media Cost (USD)** - Money your network has spent buying media for the campaign. Media Cost always appears in USD, as that is the currency in which Xandr transacts. If the campaign has a specific lifetime media cost budget, this field may show a visualization of how well the campaign is pacing for the selected quickstats interval. See [Pacing Bars](view-campaign-details.md) for more details.
+- **Media Cost (USD)** - Money your network has spent buying media for the campaign. Media Cost always appears in USD, as that is the currency in which Microsoft Advertising transacts. If the campaign has a specific lifetime media cost budget, this field may show a visualization of how well the campaign is pacing for the selected quickstats interval. See [Pacing Bars](view-campaign-details.md) for more details.
 - **Rev eCPM** - Money the advertiser has paid or will pay your network per 1000 impressions.
-- **Cost eCPM** - Money your network has spent per 1000 impressions for the campaign. Cost eCPM always appears in USD, as that is the currency in which Xandr transacts.
-- **Cost eCPA (USD)** - Money your network has spent buying media per conversion for the campaign. Cost eCPA always appears in USD, as that is the currency in which Xandr transacts.
+- **Cost eCPM** - Money your network has spent per 1000 impressions for the campaign. Cost eCPM always appears in USD, as that is the currency in which Microsoft Advertising transacts.
+- **Cost eCPA (USD)** - Money your network has spent buying media per conversion for the campaign. Cost eCPA always appears in USD, as that is the currency in which Microsoft Advertising transacts.
 
 ## Pacing bars
 
@@ -150,16 +150,16 @@ In the **Details** section, you can click **Settings** to view the basic setting
 ## Basic settings
 
 - **Supply Type** - The type of supply that the campaign can serve on, e.g., Web, Mobile web or Mobile app.
-- **ID** - The Xandr ID for the campaign.
+- **ID** - The Microsoft Advertising ID for the campaign.
 - **External Code** - The external code (rather than the internal ID) for the campaign.
 
 ## Buying strategies
 
 - **Scope** - Whether the campaign is set up to buy direct inventory (**Direct**), third-party inventory (**Real Time**), or both (**Both**). Direct inventory includes only inventory managed by your network, whereas third-party inventory includes all inventory not managed by your network that has been enabled for reselling (including
   external supply partners such as Microsoft Advertising Exchange and Google Ad Manager).
-- **Pay-Per-Impression** - If the campaign is set up to buy third-party inventory, this section shows the specific buying strategy for paying publishers on a per-impression basis. This payment type is accepted by all sellers (Xandr sellers and external sellers). For more details about specific CPM buying strategies, see [Create a Campaign](create-a-campaign.md) or [Buying Strategies](buying-strategies.md).
-- **Pay-Per-Click** - If the campaign is set up to buy third-party inventory, this section shows the specific strategy for paying publishers when users click on your ads. This payment type is accepted only by participating Xandr sellers, not by external sellers.
-- **Pay-Per-Conversion** - If the campaign is set up to buy third-party inventory, this section shows the specific strategy for paying publishers when users convert. This payment type is accepted only by participating Xandr sellers, not by external sellers.
+- **Pay-Per-Impression** - If the campaign is set up to buy third-party inventory, this section shows the specific buying strategy for paying publishers on a per-impression basis. This payment type is accepted by all sellers (Microsoft Advertising sellers and external sellers). For more details about specific CPM buying strategies, see [Create a Campaign](create-a-campaign.md) or [Buying Strategies](buying-strategies.md).
+- **Pay-Per-Click** - If the campaign is set up to buy third-party inventory, this section shows the specific strategy for paying publishers when users click on your ads. This payment type is accepted only by participating Microsoft Advertising sellers, not by external sellers.
+- **Pay-Per-Conversion** - If the campaign is set up to buy third-party inventory, this section shows the specific strategy for paying publishers when users convert. This payment type is accepted only by participating Microsoft Advertising sellers, not by external sellers.
 
 ## Line item settings
 

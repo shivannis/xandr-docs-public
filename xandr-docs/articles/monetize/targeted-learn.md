@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 > [!IMPORTANT]
 > This guide only applies to the legacy line item. If you are using the augmented line item (ALI), see [Optimization Guide - ALI](optimization-guide-ali.md).
 
-The Xandr optimization engine uses a campaign's past performance data (conversion rate and click-through rate) to determine the appropriate bid for every impression relative to the campaign's cost-per-acquisition (CPA) or cost-per-click (CPC) goal. When you add a new campaign to Microsoft Monetize, however, performance data is not yet available. In this case, the Xandr optimization engine must first learn what to bid for the campaign. This page describes the learn process.
+The Microsoft Advertising optimization engine uses a campaign's past performance data (conversion rate and click-through rate) to determine the appropriate bid for every impression relative to the campaign's cost-per-acquisition (CPA) or cost-per-click (CPC) goal. When you add a new campaign to Microsoft Monetize, however, performance data is not yet available. In this case, the Microsoft Advertising optimization engine must first learn what to bid for the campaign. This page describes the learn process.
 
 ## Overview
 

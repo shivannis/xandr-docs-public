@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Update bias rules
 
 > [!NOTE]
-> This feature is not available by default. If you are interested in gaining access or discussing potential use cases that may apply to your business, reach out to your Xandr representative.
+> This feature is not available by default. If you are interested in gaining access or discussing potential use cases that may apply to your business, reach out to your Microsoft Advertising representative.
 
 The **Bias Rule Manager** screen lists all
 bias rules for the publisher, allows you to view and edit rule details,

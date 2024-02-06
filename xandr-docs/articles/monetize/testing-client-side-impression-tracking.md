@@ -6,11 +6,11 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Testing client-side impression tracking
 
-Xandr only allows impressions to be counted client-side for requests generated through the `/ssmob` call.
+Microsoft Advertising only allows impressions to be counted client-side for requests generated through the `/ssmob` call.
 
 ## How was this implemented?
 
-Xandr appends an impression tracking pixel to the ad response.
+Microsoft Advertising appends an impression tracking pixel to the ad response.
 
 ### Implementation options
 
@@ -21,7 +21,7 @@ Xandr appends an impression tracking pixel to the ad response.
 
 #### View the default response when client-side impression tracking is enabled
 
-The response shown below is the default returned by Xandr.
+The response shown below is the default returned by Microsoft Advertising.
 
 > [!NOTE]
 > With client-side impression tracking enabled, the "`content`" field now has an impression tracking pixel appended.
@@ -53,11 +53,11 @@ Additionally, if the publisher is parsing, it is critical that you **test** the 
 
 ## What is parsing & why do I care?
 
-Parsing is an action taken by the publisher's server that divides out the response provided by Xandr into different pieces prior to delivering the content.
+Parsing is an action taken by the publisher's server that divides out the response provided by Microsoft Advertising into different pieces prior to delivering the content.
 
-For example, a publisher may separate out the creative image and landing page from the Xandr "`content`" field prior to delivering. This is a common tactic for publishers that have feature phone inventory or do not support JavaScript.
+For example, a publisher may separate out the creative image and landing page from the Microsoft Advertising "`content`" field prior to delivering. This is a common tactic for publishers that have feature phone inventory or do not support JavaScript.
 
-It has been found that most publishers that parse can **not** support a response where the pixel is appended to the end of the "`content`" field (Default Implementation). This occurs because the publisher parses the "`content`" and drops the impression tracking pixel. This results in impression volumes dropping to zero within Xandr.
+It has been found that most publishers that parse can **not** support a response where the pixel is appended to the end of the "`content`" field (Default Implementation). This occurs because the publisher parses the "`content`" and drops the impression tracking pixel. This results in impression volumes dropping to zero within Microsoft Advertising.
 
 ## How do I test?
 
@@ -83,4 +83,4 @@ https://mobile.adnxs.com/ssmob?id=12345&size=320x50&cs=1
 
 You and your publisher will count the same number of impressions delivered.
 
-If your publisher records **zero** impressions despite sending Xandr ad requests during a test, please reach out to your Xandr representative.
+If your publisher records **zero** impressions despite sending Microsoft Advertising ad requests during a test, please reach out to your Microsoft Advertising representative.

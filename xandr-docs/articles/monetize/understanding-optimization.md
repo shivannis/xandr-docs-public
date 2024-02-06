@@ -9,11 +9,11 @@ ms.date: 10/28/2023
 > [!IMPORTANT]
 > This guide only applies to the legacy line item. If you are using the augmented line item (ALI), see [Optimization Guide - ALI](optimization-guide-ali.md).
 
-The Xandr optimization engine is a tool that you can use to determine bid amounts based on campaign performance. This document will explain why optimization is beneficial to you, provide a high-level overview of the process of optimization, and tell you the information you can provide to Xandr to make optimization as effective as possible. If you are unfamiliar with optimization, you should read this document before moving on to [Optimization In-Depth](optimization-in-depth.md).
+The Microsoft Advertising optimization engine is a tool that you can use to determine bid amounts based on campaign performance. This document will explain why optimization is beneficial to you, provide a high-level overview of the process of optimization, and tell you the information you can provide to Microsoft Advertising to make optimization as effective as possible. If you are unfamiliar with optimization, you should read this document before moving on to [Optimization In-Depth](optimization-in-depth.md).
 
 ## What is optimization?
 
-Optimization at Xandr is a tool that uses data to determine a bid that equals what an impression is worth to you (as a party making a bid). This algorithm calculates bids based on the performance of different pieces of inventory, bidding lower on inventory that generates fewer success events and higher on more valuable inventory. This is a highly efficient manner of bidding and allows you to get the greatest benefit for the money spent on campaigns.
+Optimization at Microsoft Advertising is a tool that uses data to determine a bid that equals what an impression is worth to you (as a party making a bid). This algorithm calculates bids based on the performance of different pieces of inventory, bidding lower on inventory that generates fewer success events and higher on more valuable inventory. This is a highly efficient manner of bidding and allows you to get the greatest benefit for the money spent on campaigns.
 
 If you're a network, rather than a direct trader, there's an additional layer of planning. Since optimization tries to bid an amount that is equal to the value of the impression (i.e., a break-even point) as determined by the network, networks often include a margin in their break-even point, so they can make a profit.
 

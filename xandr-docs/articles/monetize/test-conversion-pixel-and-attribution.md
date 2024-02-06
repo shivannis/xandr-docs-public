@@ -50,7 +50,7 @@ You must have a test publisher and placement to test conversion pixels. If neces
     | Scenario | Action Item |
     |---|---|
     | If you see the pixel call fire with the correct ID | Success! You should see a conversion appear in reporting several hours after the pixel fires. |
-    | If you have served yourself an ad and have confirmed that the pixel fired properly, but do not see conversions several hours later: | Contact the [Customer Support team](https://help.xandr.com) and include all of the following information: <br> - your Xandr user ID (you can find this on `https://secure.adnxs.com/cookie?dongle=[YourMember'sDongle]`) <br> - the hour (including time zone) you served yourself the impression <br> - the pixel ID you fired <br> - the campaign ID you used <br> - the page where the conversion pixel was trafficked <br> - an HTTP archive (available in the browser's **Network** tab) |
+    | If you have served yourself an ad and have confirmed that the pixel fired properly, but do not see conversions several hours later: | Contact the [Customer Support team](https://help.xandr.com) and include all of the following information: <br> - your Microsoft Advertising user ID (you can find this on `https://secure.adnxs.com/cookie?dongle=[YourMember'sDongle]`) <br> - the hour (including time zone) you served yourself the impression <br> - the pixel ID you fired <br> - the campaign ID you used <br> - the page where the conversion pixel was trafficked <br> - an HTTP archive (available in the browser's **Network** tab) |
 
 ## Related topics
 

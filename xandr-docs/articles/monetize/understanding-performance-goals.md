@@ -25,13 +25,13 @@ This page explains how performance goals work and outlines some basics about whe
 
 Performance goals are set on the line item and work on campaigns in both learn & optimized states. Here's a summary of the process:
 
-1. A standard campaign in the learn phase will bid on all inventory initially as the Xandr platform collects success events and the data needed to create a valuation.
-1. During learn, the Xandr platform will continuously review the campaign's performance and exclude low-performing inventory to help the campaign optimize faster.
+1. A standard campaign in the learn phase will bid on all inventory initially as the Microsoft Advertising platform collects success events and the data needed to create a valuation.
+1. During learn, the Microsoft Advertising platform will continuously review the campaign's performance and exclude low-performing inventory to help the campaign optimize faster.
 1. Once the campaign moves into the optimization phase, performance goals on the line item perform a bid/no bid check using the data collected in the learn phase to determine a valuation.
 1. Based on the results of the bid/no bid check, campaigns only bid on inventory that is most likely to meet the performance goals as set on the line item.
 
 > [!NOTE]
-> While the Xandr platform does exclude low-performing inventory during the learn phase, the performance goal "bid/no bid" check will not take effect until after a campaign has moved beyond the learn stage of optimization, which has a default of three success events.
+> While the Microsoft Advertising platform does exclude low-performing inventory during the learn phase, the performance goal "bid/no bid" check will not take effect until after a campaign has moved beyond the learn stage of optimization, which has a default of three success events.
 
 ## Performance goals applications
 

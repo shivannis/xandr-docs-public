@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Microsoft Monetize - Troubleshooting creatives
 
 > [!IMPORTANT]
-> This feature is part of a functionality that is presently in **Open Beta**. It is currently under development and may be subjected to change without notice. Contact your Xandr Account Representative to get it enabled.
+> This feature is part of a functionality that is presently in **Open Beta**. It is currently under development and may be subjected to change without notice. Contact your Microsoft Advertising Account Representative to get it enabled.
 
 The **Troubleshooting** tab on the **Creative Manager** window provides troubleshooting information and creative setup analysis depending on the ad format (banner, video, native, and audio) of the creative. You can choose to run additional validations on creatives by navigating to the **Troubleshooting** tab, where a list of validations will run on the creative and its corresponding troubleshooting information is displayed on the creative details panel.
 
@@ -53,7 +53,7 @@ Find a list of possible error messages for various ad types, their analyses, and
 | Error Message | Type | Description | Analysis | Resolution |
 |---|---|---|---|---|
 | Video must have a duration greater than 00:00:00 | Error | Invalid Duration | This occurs most often when the video content does not exist, or when the duration of the video either doesn't exist or is zero. | The duration of the creative must be greater than 00:00:00 seconds. Re-upload the creative and ensure the video has a valid content and a proper duration. |
-| Invalid formats detected. These are not supported by Xandr Player | Error |  | The video file type is neither mp4 nor webm. This is not supported by our Xandr Player. <br><br> **Note**: The video may still be eligible for publishers like Netflix depending on their requirements. | Re-upload the creative with a supported format. |
+| Invalid formats detected. These are not supported by Microsoft Advertising Player | Error |  | The video file type is neither mp4 nor webm. This is not supported by our Microsoft Advertising Player. <br><br> **Note**: The video may still be eligible for publishers like Netflix depending on their requirements. | Re-upload the creative with a supported format. |
 | No recommended formats were detected | Error | Invalid File Type Detected When Accessing VAST. | No format listed when accessing VAST. The video creative must be created using one of the following file types: 3G2 (3GPP2), 3GP (3GPP), Advanced Systems Format (ASF), Audio Video Interactive (AVI), M2V, M4V, MKV, MOV, M4P, MPE, MPEG, MPEG-2 (MP2), MPEG-4 (MP4), MPG, MPV, OGG, OGV, QuickTime (QT), RM, SWF, TS, VOB, WebM, and Windows Media Video (WMV). | Convert the creative to the [correct file type](video-creative-guidelines-and-specifications.md) and re-upload the creative. |
 | VAST creative with MP4 format is required for CTV inventory | Error |  | For non-VPAID creatives, the MP4 file type is missing. | Re-upload the creative with a supported file type. |
 | A negative media file attribute was detected. Ensure height, width, and bitrate are positive | Error |  | For non-VPAID creatives that have an MP4 file, the height, width and bitrate are less than 0. | Re-upload the creative with positive attributes. |
@@ -75,7 +75,7 @@ Find a list of possible warning messages for various ad types, their analyses, a
 
 | Warning Message | Type | Description | Analysis | Resolution |
 |---|---|---|---|---|
-| Invalid formats video/x-flv detected. These are not supported by Xandr Player | Warning | This creative has a Flash based transcoding, which may not be supported by all video players | This video format is not accepted. The video creative must be created using one of the following file types: 3G2 (3GPP2), 3GP (3GPP), Advanced Systems Format (ASF), Audio Video Interactive (AVI), M2V, M4V, MKV, MOV, M4P, MPE, MPEG, MPEG-2 (MP2), MPEG-4 (MP4), MPG, MPV, OGG, OGV, QuickTime (QT), RM, SWF, TS, VOB, WebM, and Windows Media Video (WMV). | Re-upload the creative with a supported format to preview the creative. |
+| Invalid formats video/x-flv detected. These are not supported by Microsoft Advertising Player | Warning | This creative has a Flash based transcoding, which may not be supported by all video players | This video format is not accepted. The video creative must be created using one of the following file types: 3G2 (3GPP2), 3GP (3GPP), Advanced Systems Format (ASF), Audio Video Interactive (AVI), M2V, M4V, MKV, MOV, M4P, MPE, MPEG, MPEG-2 (MP2), MPEG-4 (MP4), MPG, MPV, OGG, OGV, QuickTime (QT), RM, SWF, TS, VOB, WebM, and Windows Media Video (WMV). | Re-upload the creative with a supported format to preview the creative. |
 | Targeting Outstream is recommended for creatives over 30 seconds | Warning | 15-30 seconds is the normal accepted range for Instream videos. | Your video creative is over 30 seconds and therefore does not meet industry standards. It may be limited in serving on all inventory. | For more information, see [Instream vs.Outstream Video Ads](https://target-video.com/instream-vs-outstream-video-ads/). |
 | To serve on CTV inventory, upload a VAST creative with MP4 format, minimum resolution of 1280x720 and minimum bitrate of 2000 kbps | Warning |  | For VPAID creatives, if the MP4 file type is missing, the following error message will be displayed. | Re-upload the creative with a supported file type and recommended specifications. |
 | VAST with format video/x-flv. Provide video/mp4 and/or video/webm formats to maximize reach | Warning | This creative has a Flash based transcoding, which may not be supported by all video players | Flash-based video file format is only accepted by some publishers. It is more likely to be accepted by publishers if the file format used is mp4 or webm. | Re-upload the creative with video/mp4 and/or video/webm formats to maximize reach. |
@@ -110,7 +110,7 @@ Find a list of possible success messages for various ad types and their descript
 |---|---|---|
 | Creative meets recommended CTV inventory specifications | Success | For VPAID creatives, the MP4 file type is present. |
 | VAST with formats (video/xxx, video/yyy, etc) | Success | The video/audio is valid and has the following formats video/mp4 and/or video/webm |
-| VPAID with format application/javascript | Success | This creative was detected with VPAID, which is an accepted format by Xandr. |
+| VPAID with format application/javascript | Success | This creative was detected with VPAID, which is an accepted format by Microsoft Advertising. |
 
 ## Related topics
 

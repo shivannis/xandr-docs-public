@@ -1,6 +1,6 @@
 ---
 title: Video Campaign Best Practices
-description: This page provides you with a list of best practices to ensure maximum delivery and success for your video campaigns on the Xandr platform. 
+description: This page provides you with a list of best practices to ensure maximum delivery and success for your video campaigns on the Microsoft Advertising platform. 
 ms.date: 10/28/2023
 ---
 
@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 This page provides you with a list of best practices in a
 question-answer format to ensure maximum delivery and success for your
-video campaigns on the Xandr platform.
+video campaigns on the Microsoft Advertising platform.
 
 ## Are you following general delivery best practices?
 
@@ -27,7 +27,7 @@ video campaign.
 ## Have you reviewed available domains and available impressions by geography?
 
 Review all available domains and monthly available impressions,
-segregated by geography, from each Xandr supply
+segregated by geography, from each Microsoft Advertising supply
 partner.
 
 It is best to ensure that any specific inventory you are looking for
@@ -80,7 +80,7 @@ When targeting these dimensions, your campaign will not deliver.
 ## Are you eligible to serve on all video inventory?
 
 Some sellers only allow known partners to buy their inventory. In order
-to gain access, please reach out to your Xandr
+to gain access, please reach out to your Microsoft Advertising
 representative.
 
 ## Are you using multiple video formats in the same campaign?

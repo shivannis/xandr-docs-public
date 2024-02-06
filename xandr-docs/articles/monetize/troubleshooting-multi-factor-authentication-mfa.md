@@ -12,7 +12,7 @@ You can find answers to the most common issues associated with Multi-Factor Auth
 
 Some users are reporting that after entering their one-time password they are getting an error that says: `SEEMS THAT YOUR CODE IS NOT VALID. PLEASE CHECK AND RETRY.`
 
-**Solution**: This issue, most likely, is caused by the computer that they are using to log in to the Xandr application and the mobile app that they are using to generate the one-time code to be out of sync in their respective clocks. Follow the below steps to resolve the issue:
+**Solution**: This issue, most likely, is caused by the computer that they are using to log in to the Microsoft Advertising application and the mobile app that they are using to generate the one-time code to be out of sync in their respective clocks. Follow the below steps to resolve the issue:
 
 > [!NOTE]
 > The actual steps will vary depending on the user's computer, mobile device and MFA app.
@@ -49,11 +49,11 @@ Some users are reporting that the app that they are using for MFA authentication
 
 It's possible that some users are interpreting the concept of MFA's one-time passcode as "I only need to do it once and after that I can delete the app". However, this is not the case.
 
-**Solution**: Users need to have an MFA authentication app (for example, Google Authenticator, Auth0 Guardian, etc.) permanently install on one of their mobile devices for as long as they need to continue on accessing a Xandr application that requires MFA as part of the authentication process. If you have deleted the app, the way to resolve this is to request for Product Support to reset MFA for the affected users. Please contact Product Support with the email address for the affected user.
+**Solution**: Users need to have an MFA authentication app (for example, Google Authenticator, Auth0 Guardian, etc.) permanently install on one of their mobile devices for as long as they need to continue on accessing a Microsoft Advertising application that requires MFA as part of the authentication process. If you have deleted the app, the way to resolve this is to request for Product Support to reset MFA for the affected users. Please contact Product Support with the email address for the affected user.
 
 ## Multiple MFA accounts in the MFA authentication app
 
-Many applications (Xandr and other vendors, web/desktop/mobile) require users to setup MFA as part of the authentication process. Each of these applications' MFA codes are unique and specific to their respective application. It is possible for users to end up with multiple MFA accounts under their single MFA authentication app (for example, Google Authenticator, Auth0 Guardian, etc.).
+Many applications (Microsoft Advertising and other vendors, web/desktop/mobile) require users to setup MFA as part of the authentication process. Each of these applications' MFA codes are unique and specific to their respective application. It is possible for users to end up with multiple MFA accounts under their single MFA authentication app (for example, Google Authenticator, Auth0 Guardian, etc.).
 
 **Solution**: Most MFA authentication apps - NOT the individual accounts - should allow a user to enter EDIT mode where they can rename each individual MFA account to something more meaningful than the name given by the MFA authenticator provider. This may help to make sure that you are selecting the correct MFA code for the application that you are trying to access.
 

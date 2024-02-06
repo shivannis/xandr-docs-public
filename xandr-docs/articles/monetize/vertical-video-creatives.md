@@ -12,7 +12,7 @@ an aspect ratio that can either be square, or longer than it is wide.
 For example, unlike a traditional tall creative for HDTV measuring 1920
 x 1080 pixels, a vertical version might be 1080 pixels wide and 1920
 pixels tall. A square video creative might be 600 x 600 pixels.
-Xandr supports vertical video for out-stream and
+Microsoft Advertising supports vertical video for out-stream and
 side-stream play.
 
 Vertical videos can be displayed either in a "native" or full-screen

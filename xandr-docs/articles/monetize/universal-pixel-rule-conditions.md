@@ -23,7 +23,7 @@ This document contains a list of rule condition types and their descriptions alo
 | Include users who | Example URL |
 |---|---|
 | View a complete URL like "`www.xandr.com`" | `https://www.xandr.com` |
-| View a URL with a domain of "`Xandr`" | `https://www.xandr.com` and `https://www.xandr.com/careers` |
+| View a URL with a domain of "`Microsoft Advertising`" | `https://www.xandr.com` and `https://www.xandr.com/careers` |
 | View a URL with "`careers`" in the path | `https://www.xandr.com/careers` |
 | View a URL with "`software`" in the query string | `https://www.xandr.com/careers?queryString=software` |
 

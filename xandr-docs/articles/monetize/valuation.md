@@ -11,7 +11,7 @@ Valuation is the process by which our system determines a bid amount.
 Our valuation algorithms determine the appropriate price for an auction
 based on the likelihood that an event that the advertiser values (a
 click, a view, a video complete, or a conversion) will occur. Through
-research and testing, the Xandr Data Science
+research and testing, the Microsoft Advertising Data Science
 team has determined the features and signals that have the most
 significant impact for accurately calculating the likelihood of an
 event. We use different mathematical methods, such as logistic

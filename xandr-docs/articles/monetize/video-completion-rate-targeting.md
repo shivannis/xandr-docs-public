@@ -15,6 +15,6 @@ Targeting** section and entering a percentage value.
 For a standard line item, this setting is located in
 the **Targeting** settings.
 
-Xandr collects historical information about
+Microsoft Advertising collects historical information about
 video completion in order to predict the probability that a particular
 video creative will be played to completion.

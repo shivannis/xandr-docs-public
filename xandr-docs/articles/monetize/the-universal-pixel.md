@@ -14,7 +14,7 @@ The universal pixel is implemented by placing the code within the head tag (\<he
 - Track Standard events which can be fired based on user actions on a page
 - Track additional metadata that's passed using a parameter along with a standard event
 
-To set up the pixel, you'll create the pixel code, deploy it on your website, see the activity reflected in the Xandr UI, and then do any further segment and conversion configuration to refine your data collection process. After you set up segments, you can also target them from your line items. For the complete setup workflow, see [Universal Pixel Basic Implementation](universal-pixel-basic-implementation.md).
+To set up the pixel, you'll create the pixel code, deploy it on your website, see the activity reflected in the Microsoft Advertising UI, and then do any further segment and conversion configuration to refine your data collection process. After you set up segments, you can also target them from your line items. For the complete setup workflow, see [Universal Pixel Basic Implementation](universal-pixel-basic-implementation.md).
 
 > [!NOTE]
 > You can only define one universal pixel per advertiser. Also, while you can reconfigure or rename the pixel after you create it, you cannot delete it.

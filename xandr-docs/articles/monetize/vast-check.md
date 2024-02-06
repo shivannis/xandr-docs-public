@@ -16,7 +16,7 @@ outputs you may see and corrective action that can be taken.
 > 
 > CTV Eligibility Check: Ensure that your uploaded creative meets the suggested format and quality requirements for CTV inventory.
 > 
-> Hosted Asset Scanning: Xandr-hosted video assets will now be checked in addition to third-party creatives.
+> Hosted Asset Scanning: Microsoft Advertising-hosted video assets will now be checked in addition to third-party creatives.
 
 ## VAST check elements
 
@@ -27,7 +27,7 @@ outputs you may see and corrective action that can be taken.
   - VPAID: application/JavaScript, application/x-shockwave/flash
 - Secure: All URLs inside the VAST document must be prefixed with
   https:// to serve on secure inventory.
-- Click Tracking: Xandr automatically wraps
+- Click Tracking: Microsoft Advertising automatically wraps
   third-party creatives to provide impression, click, and playback
   tracking.
 - Wrappers: A maximum of two `<Wrapper>` tags is recommended.
@@ -102,7 +102,7 @@ not required. The creative can be saved.
   creative can be trafficked.
 - If you paste the VAST URL into a browser and see a full valid XML file
   for the creative, then the third-party ad server is likely blocking
-  Xandr VAST Check specifically. The tag
+  Microsoft Advertising VAST Check specifically. The tag
   provider will need to address this before the creative can be
   trafficked.
 - To remove a block, it may also help to inform the ad server that our
@@ -138,7 +138,7 @@ not required. The creative can be saved.
   creative can be trafficked.
 - If you paste the VAST URL into a browser and see valid XML content for
   the creative, then the third-party ad server is likely blocking
-  Xandr VAST Check. The tag provider will need
+  Microsoft Advertising VAST Check. The tag provider will need
   to address this before the creative can be trafficked.
 - To remove a block, it may also help to inform the ad server that our
   VAST Check user agent will appear as:
@@ -180,7 +180,7 @@ This feature would address the following scenarios where:
   - Scanner detected an issue such as missing or wrong duration, missing
     or wrong media file format, etc.
   - VAST XML content is updated on the ad server, but needs to be
-    updated at Xandr platform and back-end.
+    updated at Microsoft Advertising platform and back-end.
 - Reach out to the tag provider to add the missing duration information
   or revise the format. For example:
 
@@ -206,7 +206,7 @@ This feature would address the following scenarios where:
   - Scanner failed to run during the upload
   - Scanner timed out while scanning
   - Scanner detected an issue such as missing or wrong duration, missing or wrong media file format, etc.
-  - VAST XML content is updated on the ad server, but needs to be updated at Xandr platform and back-end.
+  - VAST XML content is updated on the ad server, but needs to be updated at Microsoft Advertising platform and back-end.
 
 - Reach out to the tag provider to update the creative with at least one of the recommended video formats.
   

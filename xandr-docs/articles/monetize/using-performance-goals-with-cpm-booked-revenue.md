@@ -8,10 +8,10 @@ ms.date: 10/28/2023
 # Using performance goals with CPM booked revenue
 
 The purpose of this page is to illustrate how to best use
-Xandr optimization when your client is paying
+Microsoft Advertising optimization when your client is paying
 you on a CPM basis but will measure results on a CPA, CPC or CTR basis.
 
-In the past, Xandr recommended setting up this
+In the past, Microsoft Advertising recommended setting up this
 scenario as a line item with CPM booked revenue and a campaign with the
 **Optimize to a predicted CPC/CPA goal** buying strategies.
 

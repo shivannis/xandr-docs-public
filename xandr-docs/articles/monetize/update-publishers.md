@@ -1,13 +1,13 @@
 ---
 title: Update Publishers
-description: In this page learn to update, edit, activate/deactivate and delete a Publisher in the Xandr system.
+description: In this page learn to update, edit, activate/deactivate and delete a Publisher in the Microsoft Advertising system.
 ms.date: 10/28/2023
 ---
 
 
 # Update publishers
 
-You can update publishers in the Xandr system.
+You can update publishers in the Microsoft Advertising system.
 Follow the steps in the appropriate section to modify your publishers.
 All of these actions happen from the
 **Publishers** screen in

@@ -35,7 +35,7 @@ If no ad is returned or any errors are seen, reach out to your third party hosti
 
 ## Correct URL but creative is not displaying/displaying incorrectly in Monetize
 
-If an ad is returned by the URL in a validator, but the creative is not displaying in Monetize or is failing audit for improper display, ensure that your third-party hosting service is not blocking the **adnxs.com** or **adnxs.net** domains, the **US/NY** geo, or any of the range of [Xandr IP Addresses](../digital-platform-api/ip-range-list-service.md).
+If an ad is returned by the URL in a validator, but the creative is not displaying in Monetize or is failing audit for improper display, ensure that your third-party hosting service is not blocking the **adnxs.com** or **adnxs.net** domains, the **US/NY** geo, or any of the range of [Microsoft Advertising IP Addresses](../digital-platform-api/ip-range-list-service.md).
 
 ## What does the error message "Heavy ad intervention" mean?
 

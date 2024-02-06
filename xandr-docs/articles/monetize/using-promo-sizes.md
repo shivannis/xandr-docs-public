@@ -68,7 +68,7 @@ would have the form:
 
 ### How is the size reported in the Network Reports?
 
-For impressions in Network Reporting, Xandr
+For impressions in Network Reporting, Microsoft Advertising
 reports on the size of each creative that serves.
 
 For example, let's say 30 impressions were generated with this tag:
@@ -84,7 +84,7 @@ the 300x250 creative would be reported separately.
 ### How is the size reported to other buyers in the Inventory Research Tool?
 
 To determine the amount of available impressions,
-Xandr reports on the parameter size of the tag.
+Microsoft Advertising reports on the parameter size of the tag.
 In other words, other buyers are only able to view impression
 availability based on the primary size that is passed in the tag.
 

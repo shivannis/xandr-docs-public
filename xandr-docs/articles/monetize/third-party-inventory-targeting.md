@@ -7,11 +7,11 @@ ms.date: 10/28/2023
 # Third-party inventory targeting
 
 > [!TIP]
-> **Get to Know Xandr Direct**
+> **Get to Know Microsoft Advertising Direct**
 >
-> Xandr Direct is a group of 100+ Xandr sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers.
+> Microsoft Advertising Direct is a group of 100+ Microsoft Advertising sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers.
 >
-> For more information, please see [Microsoft Monetize supply](appnexus-direct-for-buyers.md) or contact your Xandr account manager.
+> For more information, please see [Microsoft Monetize supply](appnexus-direct-for-buyers.md) or contact your Microsoft Advertising account manager.
 
 If your campaign is set to buy third-party inventory, your campaign will target all third-party inventory by default. However, you can narrow your targeting to include or exclude specific sellers, publishers, universal content categories, or placements.
 

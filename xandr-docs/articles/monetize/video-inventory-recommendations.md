@@ -33,7 +33,7 @@ Video inventory recommendations are based on:
 
 The same domain might be available through multiple sellers, resulting
 in more than one recommendation for the site. To ensure recommendations
-are new and relevant, Xandr filters out any
+are new and relevant, Microsoft Advertising filters out any
 inventory that is already part of an allowlist or blocklist, or that
 your ads have already served on for this line item.
 

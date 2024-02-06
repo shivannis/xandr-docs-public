@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Update a custom creative template
 
-Although you cannot modify the standard Xandr creative templates, you can modify the rendering code and macros in your own custom templates.
+Although you cannot modify the standard Microsoft Advertising creative templates, you can modify the rendering code and macros in your own custom templates.
 
 > [!WARNING]
 > Your changes immediately affect any creatives that are already using the template. If your changes cause these creatives to stop rendering properly, their audit status will be changed to "**rejected**" and they will stop serving on most third-party inventory.

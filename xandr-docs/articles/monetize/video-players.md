@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Video players
 
-This page describes the Xandr video player offerings, as well as ideal use cases and limitations of each player.
+This page describes the Microsoft Advertising video player offerings, as well as ideal use cases and limitations of each player.
 
 ## Instream versus outstream video
 
@@ -25,4 +25,4 @@ This page concerns the various player options we provide for outstream video (in
 | HTML5/JavaScript | This option is set via the playerTechnology options when selecting [Outstream Video Player Options](outstream-video-player-options.md). | iOS/iPad and Android (HTML5), desktop |
 
    > [!NOTE]
-   > The JavaScript VPAID player will be included in a subsequent release of Xandr video players.
+   > The JavaScript VPAID player will be included in a subsequent release of Microsoft Advertising video players.

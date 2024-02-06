@@ -24,7 +24,7 @@ The **At-a-Glance** section shows you the insertion order's state and the total 
 ## Adding the Insertion Order to Trader Home
 
 > [!NOTE]
-> **Trader Home** is currently available to a limited set of clients. If you use insertion orders and are interested in making **Trader Home** your landing page, reach out to your Xandr representative.
+> **Trader Home** is currently available to a limited set of clients. If you use insertion orders and are interested in making **Trader Home** your landing page, reach out to your Microsoft Advertising representative.
 
 To track this insertion order in **Trader Home**, click **Add to Trader Home**. A card displaying essential information about this insertion order will appear when you navigate to **Trader Home**.
 

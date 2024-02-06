@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 Invalid traffic, while low on the platform due to proactive monitoring, is a legitimate concern for buyers and sellers of digital advertising. As part of the effort to combat this, in March of 2018 we implemented policies that streamline the refund process for buyers (excluding bidders) who have purchased invalid traffic.
 
 > [!NOTE]
-> Full details of the current policy can be found in our [Fraud Credit Policy](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Fraud-Credit-Policy.aspx) (login required).
+> Full details of the current policy can be found in our [Fraud Credit Policy](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Fraud-Credit-Policy.aspx) (login required).
 
 ## Claim submission
 
@@ -32,6 +32,6 @@ On receipt of the a buyer's report, Client Finance takes the following steps:
 
 Adjustments related to invalid traffic will be quoted on the Seller Remittance Statement, which is sent to the seller when the associated revenue payment is released to them based on the contractual payment terms.
 
-To obtain information on invalid traffic adjustment amounts sooner, the seller can submit a Client Finance case or email the [Xandr Billing team](mailto:billing@xandr.com) after the 15th of the month following the activity period in question.
+To obtain information on invalid traffic adjustment amounts sooner, the seller can submit a Client Finance case or email the [Microsoft Advertising Billing team](mailto:billing@xandr.com) after the 15th of the month following the activity period in question.
 
 To dispute the invalid traffic amount claimed by a buyer, the seller may contact the representative or verification partner responsible for the relationship.

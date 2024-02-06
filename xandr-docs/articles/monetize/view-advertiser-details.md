@@ -46,7 +46,7 @@ Indicates whether a **Salesperson**, **Account Manager**, or **Advertiser Type**
 
 ## Billing information
 
-Displays the billing address for the advertiser. This helps you maintain all of your advertiser information in one system. Xandr does not bill advertisers for you, and billing information is not included in reporting.
+Displays the billing address for the advertiser. This helps you maintain all of your advertiser information in one system. Microsoft Advertising does not bill advertisers for you, and billing information is not included in reporting.
 
 ## Frequency & recency
 

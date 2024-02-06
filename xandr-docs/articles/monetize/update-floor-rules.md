@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Update floor rules
 
 > [!NOTE]
-> This feature is not available by default. If you are interested in gaining access or discussing potential use cases that may apply to your business, reach out to your Xandr representative.
+> This feature is not available by default. If you are interested in gaining access or discussing potential use cases that may apply to your business, reach out to your Microsoft Advertising representative.
 
 The **Floor Rule** screen lists all
 floor rules for a publisher, allows you to view and edit rule details,

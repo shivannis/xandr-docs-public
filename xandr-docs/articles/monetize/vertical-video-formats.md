@@ -20,7 +20,7 @@ either case, the video is displayed in its true vertical aspect ratio,
 without pillarboxing or letterboxing.
 
 Currently, vertical video is only supported for outstream video
-placements, which use Xandr's seller tag (AST).
+placements, which use Microsoft Advertising's seller tag (AST).
 Supported aspect ratios are 9:16, 3:4, and 1:1. For more information
 about using AST, see the documentation for [AST](../seller-tag/seller-tag.md) and the [AST API Reference](../seller-tag/ast-api-reference.md).
 

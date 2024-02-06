@@ -18,7 +18,7 @@ Roadblocking is only available when the following criteria are met:
 
 Important things to note about roadblocking campaigns and tag setup include:
 
-- Xandr will always attempt to "fill up" a tag with roadblocking campaigns, but each placement will become a separate auction if that's not possible.
+- Microsoft Advertising will always attempt to "fill up" a tag with roadblocking campaigns, but each placement will become a separate auction if that's not possible.
 - It is the publisher's responsibility to correctly place code snippets on the page for all components of the tag.
 - In the auction, there are as many auctions (and as many associated auction fees) as there are components in the tag. For example, if the tag contains four components, every time the page loads there will be four auctions, four impressions shown, etc. Note that if the publisher only places code snippets on the page in two places for a tag with four total components, there will still be four auctions, four impressions, and so on. The ad server has no way of knowing that the last two code snippets weren't placed correctly.
 
@@ -82,7 +82,7 @@ To serve an exact roadblock, the number of creatives must be exactly equal to th
 
 ## Setting up roadblocks
 
-Since multi-tag requests are required for roadblocking, you will need to set up [Xandr's seller tag (AST)](../seller-tag/seller-tag.md) on your publisher's inventory.
+Since multi-tag requests are required for roadblocking, you will need to set up [Microsoft Advertising's seller tag (AST)](../seller-tag/seller-tag.md) on your publisher's inventory.
 
 In order to run roadblock campaigns, you need to target the tag(s) you just created. For instructions on targeting a specific placement, see the **Target specific slices of direct inventory** section of [Create a Campaign](create-a-campaign.md). Then, enable roadblocking as follows:
 

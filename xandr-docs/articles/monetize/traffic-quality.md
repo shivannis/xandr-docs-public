@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Traffic quality
 
-Xandr makes every effort to search for sellers, publishers, placements, or domains that are seeing illegitimate conversion or click rates. We continue to improve the automated and manual processes of analysis by which we patrol the inventory that runs through our platform. If you have specific questions on how our Traffic Quality team operates, please reach out to your Xandr representative.
+Microsoft Advertising makes every effort to search for sellers, publishers, placements, or domains that are seeing illegitimate conversion or click rates. We continue to improve the automated and manual processes of analysis by which we patrol the inventory that runs through our platform. If you have specific questions on how our Traffic Quality team operates, please reach out to your Microsoft Advertising representative.
 
 This page describes what to do if you discover suspicious traffic affecting your business and answers some frequently asked questions about traffic quality.
 
@@ -56,24 +56,24 @@ This should include the following:
 
 ## Frequently asked questions
 
-This section is intended to help you understand our monitoring and security systems, and any general questions you have about how we respond or regulate unusual activity on the Xandr Platform.
+This section is intended to help you understand our monitoring and security systems, and any general questions you have about how we respond or regulate unusual activity on the Microsoft Advertising Platform.
 
-### Does Xandr allow bidders/advertisers to bid on ad requests where IP addresses are owned by cloud providers such as Amazon Web Services or Rackspace?
+### Does Microsoft Advertising allow bidders/advertisers to bid on ad requests where IP addresses are owned by cloud providers such as Amazon Web Services or Rackspace?
 
 We block some cloud providers but not all because some international customers use various cloud providers as a proxy. This is temporary until they fully migrate to our platform.
 
-### Does Xandr allow bidder/advertisers to bid on ad requests where IP addresses are listed on the IAB's spider list?
+### Does Microsoft Advertising allow bidder/advertisers to bid on ad requests where IP addresses are listed on the IAB's spider list?
 
 No. We subscribe to the [IAB bots and spiders list](https://www.iab.com/guidelines/iab-abc-international-spiders-bots-list/), so bots that are declared in their user agents will not be bid on.
 
-### Does Xandr allow bidders/advertisers to bid on ad requests where the UserAgent is not a known standard browser?
+### Does Microsoft Advertising allow bidders/advertisers to bid on ad requests where the UserAgent is not a known standard browser?
 
 We have a list of banned user agents. However, due to the rapid pace of change for many user agents, we can't guarantee we're blocking all unsuitable agents. If you see a suspect user agent, please let us know.
 
-### Does Xandr have any detection for 'duplicate' clicks?
+### Does Microsoft Advertising have any detection for 'duplicate' clicks?
 
 We de-duplicate clicks on a particular ad impression in our data pipeline.
 
-### Can I get Xandr to place a specific IP address or domain on my blocklist?
+### Can I get Microsoft Advertising to place a specific IP address or domain on my blocklist?
 
 We're happy to investigate but can't guarantee that action will be taken. Abnormal performance you report may not be reflected across the broader platform.

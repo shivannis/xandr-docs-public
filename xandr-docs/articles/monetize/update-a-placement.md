@@ -20,7 +20,7 @@ appears. See [Create a Placement](create-a-placement.md) for descriptions of the
 
 ## Delete a placement
 
-You can delete placements from the Xandr system
+You can delete placements from the Microsoft Advertising system
 in just two steps.
 
 > [!WARNING]
@@ -53,7 +53,7 @@ dialog. Verify that you want to delete the placement by clicking
 **Confirm**.
 
 > [!NOTE]
-> If a managed campaign is directly targeting the placement, you will see the warning "Cannot delete placement that is targeted by campaigns. Contact Xandr support." In order to delete this placement, you will need to first remove the placement from the campaign targeting. Once this is done, you should be able to delete the placement.
+> If a managed campaign is directly targeting the placement, you will see the warning "Cannot delete placement that is targeted by campaigns. Contact Microsoft Advertising support." In order to delete this placement, you will need to first remove the placement from the campaign targeting. Once this is done, you should be able to delete the placement.
 
 ## Move a placement to a different placement group
 

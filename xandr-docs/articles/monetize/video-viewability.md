@@ -9,15 +9,15 @@ ms.date: 10/28/2023
 This page explains the technology behind our video viewability measurement.
 
 > [!IMPORTANT]
-> Viewability for video creatives on Xandr is measured using OMSDK for Web and App, and if it's not available we fall back to the VPAID wrapper measurement which is avalable for Web only but not for App.
+> Viewability for video creatives on Microsoft Advertising is measured using OMSDK for Web and App, and if it's not available we fall back to the VPAID wrapper measurement which is avalable for Web only but not for App.
 
 ## What is video viewability?
 
-The Xandr video viewability measurement is based on the IAB guidelines, which state that 50% of the surface of a video ad must be in-view for a minimum of 2 seconds.
+The Microsoft Advertising video viewability measurement is based on the IAB guidelines, which state that 50% of the surface of a video ad must be in-view for a minimum of 2 seconds.
 
-### The Xandr video viewability measurement
+### The Microsoft Advertising video viewability measurement
 
-To enable viewability measurement, Xandr wraps video ads with a VPAID component which is responsible for loading and playing the ad. In addition, the VPAID wrapper manages, tracks and measures viewability by dropping the viewability measurement script on the page. The VPAID component then notifies the measurement script of any ad related events such as starts, pauses, resumes, etc.
+To enable viewability measurement, Microsoft Advertising wraps video ads with a VPAID component which is responsible for loading and playing the ad. In addition, the VPAID wrapper manages, tracks and measures viewability by dropping the viewability measurement script on the page. The VPAID component then notifies the measurement script of any ad related events such as starts, pauses, resumes, etc.
 
 The VPAID wrapper requires that the player supports VPAID creatives. If the publisher does not support VPAID, the creative is considered non-measurable.The following is a list of all the supported and non-supported formats:
 
@@ -33,15 +33,15 @@ The VPAID wrapper requires that the player supports VPAID creatives. If the publ
 
 When viewability is enabled, the VPAID wrapper is served by default. If the player does not support VPAID, and the original third party creative was VAST, the VAST XML will serve without the VPAID component, and viewability will not be measured. Creatives that already include VPAID components will not serve on players that do not support VPAID.
 
-The Xandr VPAID wrapper will always serve when the player is able to play VPAID creatives. At present, only desktop web and mobile web are supported. Viewability measurement on both instream and outstream positions is supported.
+The Microsoft Advertising VPAID wrapper will always serve when the player is able to play VPAID creatives. At present, only desktop web and mobile web are supported. Viewability measurement on both instream and outstream positions is supported.
 
 ### The ad serving lifecycle
 
 1. A **video tag** is embedded within a video player on a publisher's website.
-1. Consumer loads the website and the video ad tag makes a **bid request** to Xandr servers.
-1. The Xandr server generates a **VAST document** that links to the Xandr VPAID wrapper URL, and from the VAST to the player via a URL.
+1. Consumer loads the website and the video ad tag makes a **bid request** to Microsoft Advertising servers.
+1. The Microsoft Advertising server generates a **VAST document** that links to the Microsoft Advertising VPAID wrapper URL, and from the VAST to the player via a URL.
 1. The VAST document is **sent** to the **Video player**.
-1. The player loads, initializes, and **runs** the Xandr **VPAID viewability wrapper**.
+1. The player loads, initializes, and **runs** the Microsoft Advertising **VPAID viewability wrapper**.
 1. The VPAID wrapper injects the **viewability measurement javascript** on the page.
 1. The VPAID wrapper makes a call to a **third party ad server**.
 1. Third party ad server generates a **VAST document** (the original VAST creative uploaded within Microsoft Monetize).
@@ -59,7 +59,7 @@ In addition to viewability measurement, the VPAID wrapper is responsible for loa
 
 The VPAID wrapper has the following specifications:
 
-- Hosted by Xandr CDN
+- Hosted by Microsoft Advertising CDN
 - Injects JavaScript code in the page to measure viewability
 - Receives the URL of the VAST document to play as a parameter
 - Downloads the VAST document, selects the media file to play, manages tracking events, forwards VPAID Events
@@ -101,20 +101,20 @@ The [Video Events Feed](../log-level-data/video-events-feed.md) now has the the 
 
 | Column | Description |
 |---|---|
-| `view_result` | The Xandr viewability measurement result of the impression. Possible values:<br> - 1 = `VIEW_MEASURED_VIEWABLE`<br> - 2 = `VIEW_MEASURED_NON_VIEWABLE`<br> - 3 = `VIEW_NON_MEASURED`<br> For non-impression events, this will be NULL. |
+| `view_result` | The Microsoft Advertising viewability measurement result of the impression. Possible values:<br> - 1 = `VIEW_MEASURED_VIEWABLE`<br> - 2 = `VIEW_MEASURED_NON_VIEWABLE`<br> - 3 = `VIEW_NON_MEASURED`<br> For non-impression events, this will be NULL. |
 | `view_non_measurable_reason` | The reason an impression could not be measured for viewability. Possible values:<br> - 0 = N/A. The impression was measured for viewability<br> - 1 = `SCRIPT_NOT_SERVED`. The viewability script was not served with the creative. For example, on mobile-app inventory.<br> - 2 = `NO_SCRIPT_CALLBACK`. The viewability script was served with the creative, but no callback/event was received. For example, the user left the page before the creative was served.<br> - 3 = `TECHNICAL_LIMITATION`. The viewability script was served and loaded, but was unable to measure for a technical reason. For example, a cross-domain iframe with Flash disabled. |
 
 ## FAQ
 
 This section lists out frequently asked questions regarding video viewability.
 
-### Will viewability work on both Xandr hosted creatives and third-party hosted creatives?
+### Will viewability work on both Microsoft Advertising hosted creatives and third-party hosted creatives?
 
-Yes, Xandr provides viewability measurement across all video creatives for free.
+Yes, Microsoft Advertising provides viewability measurement across all video creatives for free.
 
 ### What happens if I upload a VAST creative?
 
-Xandr adds a VPAID viewability wrapper and will deliver the viewability measurement across players that accept VPAID.
+Microsoft Advertising adds a VPAID viewability wrapper and will deliver the viewability measurement across players that accept VPAID.
 The video creative is served as a VAST creative with no viewability measurement to players that only accept VAST.
 
 ### Will viewability measurement work on mobile web and mobile app supply?
@@ -123,11 +123,11 @@ Desktop, mobile web and mobile app supply are supported.
 
 ### What happens if I upload a VPAID creative?
 
-Xandr includes the VPAID viewability wrapper, thus increasing the number of wrappers on the creative, and the creative will measure viewability across players that allow for VPAID.
+Microsoft Advertising includes the VPAID viewability wrapper, thus increasing the number of wrappers on the creative, and the creative will measure viewability across players that allow for VPAID.
 
 ### Will it cause latency?
 
-Using a VPAID wrapper generates some additional latency since the player must first download the VPAID wrapper from Xandr CDN (\\150ms). Once the wrapper is downloaded, the time taken to load a video ad with a wrapper will be the same as one loaded without. Viewability components are run asynchronously and do not affect the ad.
+Using a VPAID wrapper generates some additional latency since the player must first download the VPAID wrapper from Microsoft Advertising CDN (\\150ms). Once the wrapper is downloaded, the time taken to load a video ad with a wrapper will be the same as one loaded without. Viewability components are run asynchronously and do not affect the ad.
 
 ### Do I have to do anything to enable viewability for my creatives?
 
@@ -135,13 +135,13 @@ No, your video creatives are enabled for viewability measurement by default.
 
 ### Will viewability restrict reach?
 
-No, it will not. Xandr will serve the viewability script where applicable and the VAST only version of the creative where VPAID is not allowed, to ensure maximum reach.
+No, it will not. Microsoft Advertising will serve the viewability script where applicable and the VAST only version of the creative where VPAID is not allowed, to ensure maximum reach.
 
 ### How can I optimize to more highly viewable inventory?
 
 Viewability measurement is included in the [Advertiser Video Analytics Report](advertiser-video-analytics-report.md) and [Network Video Analytics Report](network-video-analytics-report.md), which provide reporting down to the individual
 tag/placement or site domain. This enables clients to update targeting to either include or exclude high or poor performing placements.
 
-### How does Xandr viewability compare with other third party viewability vendors such as MOAT, integral Ad science, and DoubleVerify?
+### How does Microsoft Advertising viewability compare with other third party viewability vendors such as MOAT, integral Ad science, and DoubleVerify?
 
-The Xandr viewability measurement aligns closely with third party vendors and should be used as a helpful proxy to help optimize for higher viewability.
+The Microsoft Advertising viewability measurement aligns closely with third party vendors and should be used as a helpful proxy to help optimize for higher viewability.

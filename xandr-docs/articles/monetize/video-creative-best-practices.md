@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Video Creative Best Practices
-description: This page provides a list of best practices to ensure maximum delivery and success for your VAST creatives on the Xandr platform. 
+description: This page provides a list of best practices to ensure maximum delivery and success for your VAST creatives on the Microsoft Advertising platform. 
 ms.date: 10/28/2023
 ---
 
@@ -9,9 +9,9 @@ ms.date: 10/28/2023
 
 This page provides you with a list of best practices, in a
 question-answer format, to ensure maximum delivery and success for your
-VAST creatives on the Xandr platform.
+VAST creatives on the Microsoft Advertising platform.
 
-## Has the creative passed the Xandr platform audit?
+## Has the creative passed the Microsoft Advertising platform audit?
 
 If not, the creative will be ineligible to serve on any SSP inventory.
 See [Creative Standards](creative-standards.md) for more information about audit.
@@ -26,7 +26,7 @@ will see limited delivery other SSP inventory. See
 
 This can limit reach because most supply sources will cap at 30 or 60
 seconds. However, if your creative must be longer than 60 seconds,
-please reach out to your Xandr representative.
+please reach out to your Microsoft Advertising representative.
 
 ## Are you using the correct tags?
 
@@ -47,7 +47,7 @@ connections. For more information, see [Video Creative Guidelines and Specificat
 
 ## Is your creative VPAID?
 
-Xandr will only match VPAID creatives to
+Microsoft Advertising will only match VPAID creatives to
 VPAID-enabled placements, limiting reach.
 
 ## Are you using both VAST and in-banner creatives in the same line item or campaign?
@@ -62,19 +62,19 @@ serve when you target by position: Pre-Roll, Mid-Roll, or Post-Roll.
 Ensure that any VAST XML includes at least three formats -- FLV, MP4,
 and WebM. Not including the recommended formats will limit delivery.
 
-## Does your ad server allow Xandr VAST check domains?
+## Does your ad server allow Microsoft Advertising VAST check domains?
 
-Ensure that your ad server allows Xandr VAST
+Ensure that your ad server allows Microsoft Advertising VAST
 check domains. VAST check may fail otherwise. Please reach out to your
-Xandr representative for additional domain
+Microsoft Advertising representative for additional domain
 detail if necessary.
 
 ## Have you included all necessary query string macros in your VAST tag?
 
-Xandr automatically inserts the click URL into
+Microsoft Advertising automatically inserts the click URL into
 the XML wrapper of all VAST creatives. You are not required to add the
 click macro and click testing is not required. However, you should
-manually insert the Xandr CACHEBUSTER macro.
+manually insert the Microsoft Advertising CACHEBUSTER macro.
 
 ## What does the error message "Heavy ad intervention" mean?
 

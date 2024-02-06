@@ -16,7 +16,7 @@ Multi-buyer deals offer the following benefits to sellers:
   > [!NOTE]
   > Some DSPs do not support changing the buyers once a deal has been registered on the DSP. Be sure to check with the buyer about what they support.
 
-- Sellers can better understand how DSPs are configured to buy on deals. The **Buyer Targeting** screen (see [Set Up Multi-Buyer Deals](set-up-multi-buyer-deals.md)) indicates whether a DSP is bidding with seats or members and it will enforce settings around whether that DSP supports multi-buyer or bidder-level deals. Xandr enables DSPs on an individual basis to support either bidder-level (i.e., DSP-wide) or multi-buyer deals.
+- Sellers can better understand how DSPs are configured to buy on deals. The **Buyer Targeting** screen (see [Set Up Multi-Buyer Deals](set-up-multi-buyer-deals.md)) indicates whether a DSP is bidding with seats or members and it will enforce settings around whether that DSP supports multi-buyer or bidder-level deals. Microsoft Advertising enables DSPs on an individual basis to support either bidder-level (i.e., DSP-wide) or multi-buyer deals.
 
 With multi-buyer deals, sellers can set up:
 

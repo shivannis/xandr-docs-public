@@ -88,7 +88,7 @@ For more information about how quickly report data is processed, see [Availabili
 | Column | Description |
 |---|---|
 | Imps | The number of impressions where a cost was incurred for third-party vendor data. If multiple third-party vendors were used for a single impression, that impression will be listed for each third-party vendor. |
-| Sales Tax | The amount of sales tax collected. This field is only populated when the buyer's billing address is located in one of the following U.S. states: NY, TX or NJ. Xandr is required to collect this tax by the relevant local state regulator. |
+| Sales Tax | The amount of sales tax collected. This field is only populated when the buyer's billing address is located in one of the following U.S. states: NY, TX or NJ. Microsoft Advertising is required to collect this tax by the relevant local state regulator. |
 | Vendor Costs | The total costs, including but not limited to segment data costs,and feature costs. |
 
 > [!WARNING]

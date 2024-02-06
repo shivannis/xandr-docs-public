@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Video content targeting
 
 For publishers that have adopted video taxonomy and provide
-Xandr with information about the content where
+Microsoft Advertising with information about the content where
 ads reside, Deal line items can target video inventory based on criteria
 such as the genre of the content, content duration, the type of program,
 and delivery type (live or Video on Demand).
@@ -22,13 +22,13 @@ about the specific video content, including the type of programming, the
 subject matter, the scheduled airtime, and more. In order for Video
 Content data to be targetable based on this information, the publisher
 must set up a Video Taxonomy implementation with
-Xandr. If you're a video publisher and would
+Microsoft Advertising. If you're a video publisher and would
 like to implement this functionality, please contact your account
 manager.
 
 If you're a deal curator, you can set up curated deals targeting these
 settings. However, before the data is targetable, sellers you plan to
-include must first integrate with Xandr video
+include must first integrate with Microsoft Advertising video
 taxonomy. If you target this data without ensuring that a contributing
 seller will provide matching data, you will not see any delivery on the
 deal. The best practice for curators is to work directly with sellers

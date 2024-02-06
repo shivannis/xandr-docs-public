@@ -69,7 +69,7 @@ For more information about how quickly reporting data is processed, see [Availab
 
 | Column | Filter? | Description |
 |---|---|---|
-| Ad Request Call Type | No | The type of handler that was used to send the impression to Xandr (e.g., `vmap`, `ut`, `mob`, `ptv`, `openrtb`). |
+| Ad Request Call Type | No | The type of handler that was used to send the impression to Microsoft Advertising (e.g., `vmap`, `ut`, `mob`, `ptv`, `openrtb`). |
 | Application Id | Yes | For mobile app inventory, the ID of the app that will host the placement. |
 | Content Category | Yes | The content category associated with the inventory where these impressions occurred, for example Business & Industry. |
 | Country | Yes | The country in which the impression took place. |
@@ -83,7 +83,7 @@ For more information about how quickly reporting data is processed, see [Availab
 | Minimum Ad Duration | No | Specifies the minimum duration of the video placement. |
 | Seller | No | The seller of the inventory. |
 | Seller Group | Yes | The group of sellers the seller belongs to. |
-| Seller Type | Yes | Xandr buckets sellers into different types for billing purposes. For example, publisher, intermediary or both. |
+| Seller Type | Yes | Microsoft Advertising buckets sellers into different types for billing purposes. For example, publisher, intermediary or both. |
 | Site Domain | Yes | For web video inventory, the domain of the site where the inventory is available. |
 | Skippability Support | Yes | Whether the publisher player was set to honor the Skip setting in the VAST document. |
 | Supply Type | Yes | The supply type for the impression – Web, Mobile Web, or Mobile App. |
