@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # API documentation
 
-Information about Xandr's API is available in the [Xandr API documentation](../digital-platform-api/digital-platform-api-home.md). This page refers you to particularly relevant pages in that space.
+Information about Xandr's API is available in the [Xandr API documentation](../digital-platform-api/index.yml). This page refers you to particularly relevant pages in that space.
 
 ## Getting started with the API
 
