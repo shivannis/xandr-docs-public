@@ -132,7 +132,7 @@ Standard Event strings are defined within the Event class. See the [Standard Ev
 | itemType : String | A generic type of the item represented. Types can also be passed as an array of comma separated items. Example: "itemType1, itemType2" |
 | value : String | Value of a user performing this event to the business. |
 | Function |  |
-| put (key : String, value : String) | Arbitrary data defined by the publisher. Enables the passing of custom event data through key/value pairs. Keys should be preregistered using Universal Pixel UI. Values can be an array separated by a comma. See the [Custom Events](#track-custom-event) section below for more details |
+| put (key : String, value : String) | Arbitrary data defined by the publisher. Enables the passing of custom event data through key/value pairs. Keys should be preregistered using Universal Pixel UI. Values can be an array separated by a comma. See the [Custom Events](#track-custom-events) section below for more details |
 
 ### Code samples
 
