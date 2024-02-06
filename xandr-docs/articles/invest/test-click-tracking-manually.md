@@ -22,7 +22,7 @@ You can manually test click tracking if strange creative behavior or UI issues c
 1. Enable the "Auto-open DevTools for popups", under **Preferences &gt; Global**.
 1. Click on the Creative.
 1. The landing page will open and the dev tools should automatically open in the new tab.
-1. Search for "click" in the Network tab.
+1. Search for "click" in the **Network** tab.
 1. You should see a call similar to the following:
 
     `https://nym1-ib.adnxs.com/click2?`
