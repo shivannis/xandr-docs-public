@@ -10,7 +10,7 @@ ms.date : 11/14/2023
 
 This page provides an overview of viewability in digital media as well
 as information about why viewability is important, how it works, and
-current Xandr support for viewability.
+current Microsoft Advertising support for viewability.
 
 ## What is viewability and why is it important?
 
@@ -140,7 +140,7 @@ It is also possible for a media buyer to:
 
 ## Measurement technology
 
-Viewability measurement on Xandr is tested continuously across all major
+Viewability measurement on Microsoft Advertising is tested continuously across all major
 browser versions, including web, mobile app, and mobile web context.
 
 :::image type="content" source="media/viewability-measurement.png" alt-text="Screenshot of Viewability Measurement .":::

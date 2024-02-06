@@ -29,7 +29,7 @@ after waiting five minutes.
 If you cannot sign in to Microsoft Curate due to a
 forgotten username, follow these steps:
 
-1. Go to the login page of Xandr Curate and
+1. Go to the login page of Microsoft Advertising Curate and
     click **Reset Password**.
 
 1. On the **Reset Password** screen,
@@ -73,14 +73,14 @@ To change your password either after it expires, or if you have [forgotten your 
 1. Retype the password to confirm it and click
     **Submit**.
 1. <span id="ID-0000051b__ID-00000554">You will be redirected to the
-    login page of Xandr Curate, where you can
+    login page of Microsoft Advertising Curate, where you can
     sign in with your username and new password. You will also receive a
     confirmation email of the password reset.
 
 ## Requesting a forgotten password
 
 1. If you forgot your password, go to the login page of
-    Xandr Curate and click **Reset Password**.
+    Microsoft Advertising Curate and click **Reset Password**.
 1. Enter your username and click **Send Email**.
 1. Within a few minutes, you'll receive an email including a link.
     Click the link to create a new password as described above. Note

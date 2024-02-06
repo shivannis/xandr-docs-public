@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Curate - Birthday cookies
 
-The first time a user without one of our cookies visits a website where we serve ads, we set a cookie. We also add that user to the "Xandr Birthday Cookie" segment. This segment appears in Microsoft Curate as "cookie_birthday (shared)" and its segment ID is 1.
+The first time a user without one of our cookies visits a website where we serve ads, we set a cookie. We also add that user to the "Microsoft Advertising Birthday Cookie" segment. This segment appears in Microsoft Curate as "cookie_birthday (shared)" and its segment ID is 1.
 
 This segment is not owned by any particular member; instead, we expose the birthday cookie segment to all members of the platform. In other words, it is a shared segment that any member can use. This document describes several example use cases for the birthday cookie segment. It also provides links to further documentation on segments, targeting, and conversion attribution.
 

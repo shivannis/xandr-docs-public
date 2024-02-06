@@ -41,7 +41,7 @@ Select the information that should be exposed to the buyer when they are targeti
 You will have the option to expose domains or full URLs to external buyers.
 
 > [!NOTE]
-> Age and gender targeting information can only be shared if you include the Xandr age and gender macro when exporting your placement tag.
+> Age and gender targeting information can only be shared if you include the Microsoft Advertising age and gender macro when exporting your placement tag.
 
 For **Categories (Custom)**, there is the additional option to expose specific categories. To select specific custom categories, choose **Expose Custom** and then click **Edit** to display the list of custom categories. Click on a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the **Selected Items** area, click on the **X** next to the category name. When you have finished selecting custom categories, click **Add** to save your changes.
 
@@ -73,7 +73,7 @@ Select the payment types you are willing to accept from the buyers. Choose the *
 Select the information that should be exposed to the buyers when they are targeting your inventory. Choose the **Default** setting if you want the default value to continue to apply to the selected buyers. Otherwise, choose the **Custom** setting and then select the checkbox near the desired settings to allow access to URL, category, age, gender, placement, or publisher targeting information. The more information you give buyers, the more easily they can target your inventory.
 
 > [!NOTE]
-> Age and gender targeting information can only be shared if you include the Xandr age and gender macro when exporting your placement tag.
+> Age and gender targeting information can only be shared if you include the Microsoft Advertising age and gender macro when exporting your placement tag.
 
 For **Category (Custom)** there is the additional option to expose specific categories. To select specific custom categories, choose **Selected** to display the list of custom categories. Click on a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the **Selected Items** area, click on the **X** next to the category name. When you have finished selecting custom categories, click **Add** to save your changes.
 

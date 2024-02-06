@@ -42,12 +42,12 @@ and then review the statistics to determine if you'd like to partner with the se
 ## Seller eligibility, history, and deals
 
 > [!TIP]
-> **Get to Know Xandr direct**
-> Xandr Direct is a group of 100+ Xandr sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers.
+> **Get to Know Microsoft Advertising direct**
+> Microsoft Advertising Direct is a group of 100+ Microsoft Advertising sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers.
 >
->For more information, please see [Xandr Direct](appnexus-direct-for-buyers.md) or contact [appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Xandr account manager.
+>For more information, please see [Microsoft Advertising Direct](appnexus-direct-for-buyers.md) or contact [appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Microsoft Advertising account manager.
 
-- **Seller Group** - Shows if the seller is labeled as Xandr Direct.
+- **Seller Group** - Shows if the seller is labeled as Microsoft Advertising Direct.
 - **Eligibility** - Shows the transaction eligibility between members. A buyer may block a seller, a seller may block a buyer, or both buyer and seller may be blocked by each other. Status is indicated by the circular eligibility icon in each row, and you can mouse over the row in the **Eligibility** column for details.
 - **Deals** - Number of deals available to you from this seller.
 - **Join Date** - Shows the date a member was added. If less than a year, the exact date will show; if over a year, the join date will show as **+1 year**.

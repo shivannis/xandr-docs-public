@@ -28,7 +28,7 @@ To sample bid request data:
 1. Click **Search** to generate bid requests.
 
 > [!NOTE]
-> Bid requests are generated using a 0.001% sampling rate. If you try to generate a bid request and don't see results, Xandr will automatically increase the sampling rate to 5%. Wait 30 minutes for this sampling rate change to take effect before you generate another bid request. You don't have to keep the **Bid Request Sampler** section open while you wait 30 minutes before generating a new request. You can leave the section and come back to generate a new request after 30 minutes have passed.
+> Bid requests are generated using a 0.001% sampling rate. If you try to generate a bid request and don't see results, Microsoft Advertising will automatically increase the sampling rate to 5%. Wait 30 minutes for this sampling rate change to take effect before you generate another bid request. You don't have to keep the **Bid Request Sampler** section open while you wait 30 minutes before generating a new request. You can leave the section and come back to generate a new request after 30 minutes have passed.
 
 Bid requests (if any) are listed in the **Bid Request** section. You can do the following with the results:
 

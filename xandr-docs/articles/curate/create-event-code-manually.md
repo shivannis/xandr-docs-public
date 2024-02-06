@@ -10,7 +10,7 @@ Use the following template to create the code for your standard event,
 where:
 
 - *EventName* is the name for your event
-- *UUID* is the unique ID for your pixel as shown in the Xandr UI
+- *UUID* is the unique ID for your pixel as shown in the Microsoft Advertising UI
 
 See [Standard Events and Parameters](standard-events-and-parameters.md) for the names of standard events.
 

@@ -63,4 +63,4 @@ For instructions on how to target the MSN app, see [Buying Microsoft Windows App
 
 ## More questions?
 
-If you have any further questions about buying MSN inventory, please contact your Xandr account representative.
+If you have any further questions about buying MSN inventory, please contact your Microsoft Advertising account representative.

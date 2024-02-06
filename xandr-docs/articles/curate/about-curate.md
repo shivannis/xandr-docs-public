@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # About Microsoft Curate
 
-Microsoft Curate (powered by Xandr) lets curators use their proprietary assets to enhance the value of a seller’s inventory and create unique offerings for buyers.
+Microsoft Curate (powered by Microsoft Advertising) lets curators use their proprietary assets to enhance the value of a seller’s inventory and create unique offerings for buyers.
 
 ## Benefits
 
@@ -18,6 +18,6 @@ Curated deals can be bought via Microsoft Invest and all major DSPs.
 
 ## Get started
 
-Get in touch with a Xandr representative today so you can get started! [Contact us](https://about.ads.microsoft.com/en-us/solutions/xandr/contact-xandr).
+Get in touch with a Microsoft Advertising representative today so you can get started! [Contact us](https://about.ads.microsoft.com/en-us/solutions/xandr/contact-xandr).
 
 Or if you already have an account, [log in to Curate](https://curate.xandr.com/login).

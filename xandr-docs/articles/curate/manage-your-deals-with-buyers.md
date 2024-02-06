@@ -40,7 +40,7 @@ in the header when you hover over them are sortable.
   buyer bid.
 
   > [!NOTE]
-  >  When the Xandr Impbus is doing the bidding for on-platform deals, all deals will be eligible for participation because they will have already passed quality and other eligibility checks on the platform. When third-party deals are active, the total number of bids may be greater than the number of bids marked eligible.
+  >  When the Microsoft Advertising Impbus is doing the bidding for on-platform deals, all deals will be eligible for participation because they will have already passed quality and other eligibility checks on the platform. When third-party deals are active, the total number of bids may be greater than the number of bids marked eligible.
 
 - **Final Bids** - The total number of
   auctions on which a buyer submitted eligible bids to participate in

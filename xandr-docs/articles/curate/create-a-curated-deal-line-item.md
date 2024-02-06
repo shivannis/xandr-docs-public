@@ -1,15 +1,15 @@
 ---
 title: Microsoft Curate - Create a Curated Deal Line Item 
-description: The article outlines the process of creating a curated deal item, allowing users to establish a curated deal for a buyer. These curated deals involve negotiated agreements between a buyer and a curator, merging the curator's assets with Xandr Marketplace supply.
+description: The article outlines the process of creating a curated deal item, allowing users to establish a curated deal for a buyer. These curated deals involve negotiated agreements between a buyer and a curator, merging the curator's assets with Microsoft Advertising Marketplace supply.
 ms.date : 10/28/2023
 ---
 
 # Microsoft Curate - Create a curated deal line item
 
 > [!NOTE]
-> Some clients might see different options when creating a curated deal line item. This documentation covers all options in the workflow. Contact your Xandr representative if you have questions about certain options or settings.
+> Some clients might see different options when creating a curated deal line item. This documentation covers all options in the workflow. Contact your Microsoft Advertising representative if you have questions about certain options or settings.
 
-A curated deal line item lets you set up a curated deal for a buyer. Curated deals represent a negotiated agreement between a buyer and a curator that combines a curator’s assets with Xandr Marketplace supply.
+A curated deal line item lets you set up a curated deal for a buyer. Curated deals represent a negotiated agreement between a buyer and a curator that combines a curator’s assets with Microsoft Advertising Marketplace supply.
 
 Curated deal line items offer the following features:
 
@@ -59,7 +59,7 @@ In the **Basic Setup** section, enter the basic details for the curated deal lin
    > Selecting **Ad Type** determines the availability of other settings (e.g., **Targeting >  Completion Rate Threshold**). This is not the setting that filters out any impressions and does not impact auction logic. You can select **Media Type** under **Deal Creative Criteria** to control which types of ads are allowed to serve via the curated deal.
 
 - **Name** - Enter the name for the curated deal line item. You will later be able to search for and report on the line item using this name. This name is not exposed to the buyer.
-- **External Code** - If you want to report on the curated deal line item using an external code (rather than the internal ID that Xandr assigns automatically), enter the code here. The code can only contain alphanumeric characters, periods, underscores, or dashes. The code you enter is not case-sensitive (i.e., uppercase and lowercase characters are treated the same). No two objects at the same level can use the same code per advertiser.
+- **External Code** - If you want to report on the curated deal line item using an external code (rather than the internal ID that Microsoft Advertising assigns automatically), enter the code here. The code can only contain alphanumeric characters, periods, underscores, or dashes. The code you enter is not case-sensitive (i.e., uppercase and lowercase characters are treated the same). No two objects at the same level can use the same code per advertiser.
 - **State** - Set the state of the curated deal line item. If **"Active"**, the line item will be eligible to serve. Best practice for curators is to set the state to **"Active"** so that buyers can serve via the curated deal as quickly as possible.
 - **Insertion Order Details** - Insertion order details for **Budget Type**, **Currency**, **Total Lifetime Budget**, **Pacing**, **Start Date**, and **End Date** display in the gray box (you must select an insertion order to display these values).
 - **Budget Type** - Budget is set on the parent insertion order.
@@ -154,12 +154,12 @@ You can specify the following inventory and brand safety settings for the curate
 
 **Universal categories**
 
-Universal categories are defined by Xandr. When Xandr reviews inventory, we apply these categories based on the inventory's content. For example, a car dealership placement group would be assigned to the "Autos & Vehicles" category. Sellers can apply universal categories when self-reviewing inventory as well.
+Universal categories are defined by Microsoft Advertising. When Microsoft Advertising reviews inventory, we apply these categories based on the inventory's content. For example, a car dealership placement group would be assigned to the "Autos & Vehicles" category. Sellers can apply universal categories when self-reviewing inventory as well.
 
 By default, your curated deal line item will target all universal categories. However, you can narrow your targeting to include or exclude specific universal categories:
 
 1. On the **Universal Categories** tab, include or exclude custom categories.
-    - The **Categories** lists shows all top-level universal categories defined by Xandr. You can either include or exclude top-level categories or drill into a category to view its child
+    - The **Categories** lists shows all top-level universal categories defined by Microsoft Advertising. You can either include or exclude top-level categories or drill into a category to view its child
       categories.
     - The **Sub-Categories** list shows all child universal categories in the context of their parent categories. You can either include or exclude sub-categories. 
      > [!NOTE]

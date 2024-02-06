@@ -23,7 +23,7 @@ In the **Basic Setup** section, enter the basic details for the advertiser.
 - **Name** - Enter the advertiser's name.
 
 - **External Code** - If you want to report on the advertiser using an external code (rather than the internal ID that
-  Xandr assigns automatically), enter the code here.
+  Microsoft Advertising assigns automatically), enter the code here.
 
 - **State** - Set the state of the advertiser. "Active" means child insertion orders and line items will be eligible to serve. To avoid accidental spending, you should set the state to "Inactive" until everything related to the buy has been set up and verified.
 
@@ -57,7 +57,7 @@ What you enter here will not affect any insertion orders that have already been 
 > [!TIP]
 > Templates are typically used when all or most of your political advertising is paid for by a single political organization.
 
-This section contains the details of the person or organization that is purchasing ads on Xandr. For example, a candidate, an agency, or a political consultant.
+This section contains the details of the person or organization that is purchasing ads on Microsoft Advertising. For example, a candidate, an agency, or a political consultant.
 
 The required fields must be filled out for any state or local political advertising that will or could serve in California,
 Illinois, Maryland, Nevada, New Jersey, New York, Virginia, or Washington, or for political advertising at the federal level
@@ -71,7 +71,7 @@ We reserve the right to implement additional screening at any time.
 | **Subject of the Ads** | The candidate or ballot initiative that is supported or opposed. |
 | **Payment Method** | How the political organization pays you. Options are:<br> - **Bank account (direct deposit)**<br> - **Check**<br> - **Credit or debit card**<br> - **Other**. If this is selected, you must specify details. |
 | **U.S. FEC ID** | Optional. ID number assigned by the [U.S. Federal Election Committee](https://www.fec.gov/). |
-| **Organization Name** | Name of the person, group, organization, or business that is paying you to advertise on Xandr. |
+| **Organization Name** | Name of the person, group, organization, or business that is paying you to advertise on Microsoft Advertising. |
 | **Address** | Address of the person, group, organization, or business that is advertising. |
 | **City** | City of the person, group, organization, or business that is advertising. |
 | **State, Province, or Region** | State, province, or region of the person, group, organization, or business that is advertising. |
@@ -96,7 +96,7 @@ In the **Advanced Settings** section, enter any optional advanced settings that 
   > [!TIP]
   > You may also choose to include a billing code on your insertion order-specific invoices. For more details, see [Create an Insertion Order](create-an-insertion-order.md).
 
-- **Brand Settings** - You can set a default brand and offer category to be assigned to all creatives added under this advertiser. If you submit a creative for Xandr audit, the audit team will validate and, when necessary, alter these settings.
+- **Brand Settings** - You can set a default brand and offer category to be assigned to all creatives added under this advertiser. If you submit a creative for Microsoft Advertising audit, the audit team will validate and, when necessary, alter these settings.
 - **Exclusions** - for publishers using Curate's [AST](../seller-tag/seller-tag.md) - Managed publishers can conduct a single auction for multiple ad slots on a page. Competitive exclusions ensure that creatives from competitive brands (e.g., Coke and Pepsi) and competitive offer categories never serve alongside each   other. You can define up to 25 brand exclusions and up to 25 offer category exclusions.
 - **Insertion Orders** - Select this check box to ensure that all line items under this advertiser also have an insertion order **(Advertiser \> Insertion Order \> Line Items)**. Insertion orders allow you to better represent your financial relationship with an advertiser. This check box must be selected if you want to use [Working with Insertion Orders](working-with-insertion-orders.md).
 

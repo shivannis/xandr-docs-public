@@ -1,6 +1,6 @@
 ---
 title : Microsoft Curate - Impression Counting
-description : Learn how Xandr counts an impression, and records payment to the seller.
+description : Learn how Microsoft Advertising counts an impression, and records payment to the seller.
 ms.date : 11/14/2023
 
 ---
@@ -8,7 +8,7 @@ ms.date : 11/14/2023
 
 # Microsoft Curate - Impression counting
 
-Xandr counts an impression, and records payment
+Microsoft Advertising counts an impression, and records payment
 to the seller, once we receive an "accept call", which notifies us that
 a creative was served to the web page or mobile app. Because the amount
 of time between when an impression is requested and when the creative is

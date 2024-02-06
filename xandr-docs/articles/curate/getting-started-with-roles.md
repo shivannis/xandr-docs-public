@@ -8,7 +8,7 @@ ms.date : 11/14/2023
 
 # Microsoft Curate - Getting started with roles
 
-As a company doing business with Xandr, it's
+As a company doing business with Microsoft Advertising, it's
 possible that you have more than one user responsible for your company's
 interaction with the system, whether that interaction is through the UI
 or the API. You may have several users who are responsible for different

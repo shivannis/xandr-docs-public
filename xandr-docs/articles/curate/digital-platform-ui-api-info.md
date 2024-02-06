@@ -8,7 +8,7 @@ ms.date: 11/10/2023
 
 Microsoft Curate is built on a robust API that is available to customers. You can use this API to automate certain tasks and reporting.
 
-Xandr has one API that is shared across all digital platform products. Refer to the following resources to learn more about the API and the services that are available.
+Microsoft Advertising has one API that is shared across all digital platform products. Refer to the following resources to learn more about the API and the services that are available.
 
 - [Getting Started with the API](../digital-platform-api/api-getting-started.md)
 - [Buy-Side Setup Guide](../digital-platform-api/buy-side-setup-with-the-augmented-line-item.md)

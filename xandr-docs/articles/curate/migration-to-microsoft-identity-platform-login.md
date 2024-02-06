@@ -1,12 +1,12 @@
 ---
 title: Microsoft Curate - Migration to Microsoft Identity Platform Login
-description: In this article, find step-by-step instructions on how to migrate the existing authentication process in Xandr products to Microsoft Identity Platform.
+description: In this article, find step-by-step instructions on how to migrate the existing authentication process in Microsoft Advertising products to Microsoft Identity Platform.
 ms.date : 10/28/2023
 ---
 
 # Microsoft Curate - Migration to Microsoft Identity Platform login
 
-This documentation provides step by step instructions on how to migrate existing authentication process in Xandr products to Microsoft Identity Platform.
+This documentation provides step by step instructions on how to migrate existing authentication process in Microsoft Advertising products to Microsoft Identity Platform.
 
 1. Go to the product login screen using the [Microsoft Curate Login url](https://curate.xandr.com/login).
 
@@ -25,7 +25,7 @@ This documentation provides step by step instructions on how to migrate existing
 
     :::image type="content" source="media/b.png" alt-text="A screenshot of the Action Required: Create a Microsoft Account screen.":::
 
-1. In the **Sign in** page, enter Email ID associated with your Xandr account login and click **Next**. If you have registered a different email ID for Microsoft products, ensure that the Xandr platform account matches the email used to log in to Microsoft. If they do not match, contact the designated person with the role of **User Manager** from your organization to do the needful or you can raise a ticket on the [Xandr Customer Support Portal](https://help.xandr.com/s/login/).
+1. In the **Sign in** page, enter Email ID associated with your Microsoft Advertising account login and click **Next**. If you have registered a different email ID for Microsoft products, ensure that the Microsoft Advertising platform account matches the email used to log in to Microsoft. If they do not match, contact the designated person with the role of **User Manager** from your organization to do the needful or you can raise a ticket on the [Microsoft Advertising Customer Support Portal](https://help.xandr.com/s/login/).
 
     :::image type="content" source="media/c.png" alt-text="A screenshot of the Microsoft sign in page.":::
 

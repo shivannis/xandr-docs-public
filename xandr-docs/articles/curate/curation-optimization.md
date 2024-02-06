@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Curation optimization
 
 > [!NOTE]
-> The Curation Optimization feature will roll out in phases through 2023. You will receive a notification when your account is enabled. Contact your Xandr Account Representative for any queries.
+> The Curation Optimization feature will roll out in phases through 2023. You will receive a notification when your account is enabled. Contact your Microsoft Advertising Account Representative for any queries.
 
 With the growth of the programmatic industry, systems are having to process a greater volume of auctions with more and more information in
 them. For example, there are now industry IDs, schains, and, since the last few years, curated deals that have been incorporated into the
@@ -19,7 +19,7 @@ processing curated deals that buyers are actively using and spending against. In
 
 ## Curation optimization process
 
-Xandr tracks the bids a deal receives to determine whether buyers are currently interested in the deal. If we notice that buyers are not bidding against a deal, and are therefore not currently interested in the deal, we sample the auctions where that deal participates. If a deal is being sampled and receives a bid, we stop sampling it within 15 minutes and allow it to participate in all targeted auctions. For multi-buyer deals, a bid from any buyer will deactivate sampling for the deal.
+Microsoft Advertising tracks the bids a deal receives to determine whether buyers are currently interested in the deal. If we notice that buyers are not bidding against a deal, and are therefore not currently interested in the deal, we sample the auctions where that deal participates. If a deal is being sampled and receives a bid, we stop sampling it within 15 minutes and allow it to participate in all targeted auctions. For multi-buyer deals, a bid from any buyer will deactivate sampling for the deal.
 
 To ensure a smooth taper, the sampling rate increases in stages over several weeks without bids:
 

@@ -10,7 +10,7 @@ Planner is an interactive forecasting tool that provides reach and delivery proj
 delivery and reach opportunities for a curated deal before constructing a deal line item, adjusting your strategy as you go based on direct visual and statistical feedback.
 
 For example, you can compare the projected reach in different zip codes, predict availability across video channels, or identify the
-highest-value user segments, based on real user and impression data across the Xandr platform. Planner also recommends the best-performing inventory based on your targeting preferences. When you've adjusted the plan to maximize your goals, you
+highest-value user segments, based on real user and impression data across the Microsoft Advertising platform. Planner also recommends the best-performing inventory based on your targeting preferences. When you've adjusted the plan to maximize your goals, you
 can share targeting and supply data with your team, and seamlessly create a deal line item based on your plan.
 
 > [!NOTE]

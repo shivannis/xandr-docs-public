@@ -1,13 +1,13 @@
 ---
 title: Microsoft Curate - Ad Viewability - Description of Methodology (DOM)
-description: In this module, understand the Xandr viewability measurement process and methodology. It is designed for Xandr clients, prospects, and partners only.
+description: In this module, understand the Microsoft Advertising viewability measurement process and methodology. It is designed for Microsoft Advertising clients, prospects, and partners only.
 ms.date: 10/28/2023
 ---
 
 
 # Microsoft Curate - Ad Viewability: Description of Methodology (DOM)
 
-This document is meant to describe the Xandr viewability measurement process and methodology. It is designed for Xandr clients, prospects, and partners only.
+This document is meant to describe the Microsoft Advertising viewability measurement process and methodology. It is designed for Microsoft Advertising clients, prospects, and partners only.
 
 ## Introduction
 
@@ -29,21 +29,21 @@ Ad viewability measurement is a complex issue. It must take into account various
 
 This document is confidential and not public.
 
-It is available to Xandr clients, prospects, and partners.
+It is available to Microsoft Advertising clients, prospects, and partners.
 
-It must not be transferred to any other recipient without explicit agreement from Xandr.
+It must not be transferred to any other recipient without explicit agreement from Microsoft Advertising.
 
 ### Document updates
 
-Xandr measurement technology must constantly be updated to provide a consistent and stable methodology in a changing environment.
+Microsoft Advertising measurement technology must constantly be updated to provide a consistent and stable methodology in a changing environment.
 
-This document reflects Xandr methodology at the date it was written. We advise you not to use a PDF export of this document, as it may become obsolete.
+This document reflects Microsoft Advertising methodology at the date it was written. We advise you not to use a PDF export of this document, as it may become obsolete.
 
-Xandr shall not be held responsible for any conclusion drawn from an obsolete version of this document.
+Microsoft Advertising shall not be held responsible for any conclusion drawn from an obsolete version of this document.
 
 ### Description of this document
 
-This document follows the main steps of the Xandr viewability measurement process:
+This document follows the main steps of the Microsoft Advertising viewability measurement process:
 
 - In-page measurement
 - Data collection, filtering, and processing
@@ -53,7 +53,7 @@ This document follows the main steps of the Xandr viewability measurement proces
 
 ### Overview
 
-Xandr technology relies on a JavaScript that is served with the advertising creative. This script runs in the browser of the internet user.
+Microsoft Advertising technology relies on a JavaScript that is served with the advertising creative. This script runs in the browser of the internet user.
 
 Several functions are performed by the script:
 
@@ -66,7 +66,7 @@ Several functions are performed by the script:
 
 #### Compatible formats
 
-Xandr technology is compatible with the following types of formats:
+Microsoft Advertising technology is compatible with the following types of formats:
 
 - Display creatives
 - Rich media creatives (javascript + images)
@@ -78,18 +78,18 @@ Xandr technology is compatible with the following types of formats:
 
 #### Incompatible formats
 
-Xandr technology is currently not compatible with the following formats:
+Microsoft Advertising technology is currently not compatible with the following formats:
 
 - Ads in sites that refuse third party scripts
 - Custom banner ad formats
 
 ### Script implementation
 
-The Xandr script is implemented as a native call from the creative's script. The script is served to all impressions traded on the Xandr platform.
+The Microsoft Advertising script is implemented as a native call from the creative's script. The script is served to all impressions traded on the Microsoft Advertising platform.
 
 #### Compatible Ad Servers
 
-Xandr ad viewability is independent from publisher or agency ad servers. Nevertheless, its measurement has been tested on the following non-exhaustive list:
+Microsoft Advertising ad viewability is independent from publisher or agency ad servers. Nevertheless, its measurement has been tested on the following non-exhaustive list:
 
 - Google DoubleClick: Doubleclick For Agencies (DFA), Doubleclick For Publishers (DFP)
 - Sizmek
@@ -108,9 +108,9 @@ All desktop ad servers allow third party scripts, except some browser toolbars a
 
 #### Methods
 
-The Xandr script is called as a script tag (`<SCRIPT>`) included into the creative's JavaScript.
+The Microsoft Advertising script is called as a script tag (`<SCRIPT>`) included into the creative's JavaScript.
 
-Since Xandr serves the creative, the script call is generated natively by the platform. No manual copy and paste, or option checkbox is required.
+Since Microsoft Advertising serves the creative, the script call is generated natively by the platform. No manual copy and paste, or option checkbox is required.
 
 #### Compatible platforms
 
@@ -137,31 +137,31 @@ Since Xandr serves the creative, the script call is generated natively by the pl
 
 ### Sampling
 
-Xandr does not conduct any form of sampling.
+Microsoft Advertising does not conduct any form of sampling.
 
 ### Impression counting
 
 #### Script call
 
-The Xandr script is delivered by a CDN that automatically chooses the closest server to ensure quick delivery of the script. Script delivery, however, is not used to count the number of impressions served.
+The Microsoft Advertising script is delivered by a CDN that automatically chooses the closest server to ensure quick delivery of the script. Script delivery, however, is not used to count the number of impressions served.
 
 #### Impressions
 
-Impressions are counted by the Xandr ad-trading platform, not by the measurement script. Our count of impressions (imps) is the one used for billing. It corresponds to the real total number of traded impressions.
+Impressions are counted by the Microsoft Advertising ad-trading platform, not by the measurement script. Our count of impressions (imps) is the one used for billing. It corresponds to the real total number of traded impressions.
 
-This metric differs from third party ad viewability providers. Vendors rely on their script to count impressions. If the script is not loaded, or cannot fire a pixel, no impression is counted by third party vendors, whereas the impression is inherently counted by Xandr.
+This metric differs from third party ad viewability providers. Vendors rely on their script to count impressions. If the script is not loaded, or cannot fire a pixel, no impression is counted by third party vendors, whereas the impression is inherently counted by Microsoft Advertising.
 
 > [!NOTE]
-> The Xandr impression count is higher than third-party impression numbers.
+> The Microsoft Advertising impression count is higher than third-party impression numbers.
 
 #### Measured impressions
 
-Measured impressions are counted when the measurement script fires a pixel to the Xandr platform.
+Measured impressions are counted when the measurement script fires a pixel to the Microsoft Advertising platform.
 
-In cases where the user quits the page before the Xandr script has actually launched, the impression is counted as served, and not measured.
+In cases where the user quits the page before the Microsoft Advertising script has actually launched, the impression is counted as served, and not measured.
 
 > [!NOTE]
-> Xandr measured impressions are comparable with third party's measured impressions.
+> Microsoft Advertising measured impressions are comparable with third party's measured impressions.
 
 #### No impact on ad viewability
 
@@ -170,19 +170,19 @@ Ad viewability is not impacted by the impression counting methodology. By defaul
 The consequence of a higher (and real) number of impressions is a lower measurement rate (measured impressions / impressions).
 
 > [!NOTE]
-> The Xandr measurement rate should not be compared with a third party vendor's measurement rate.
+> The Microsoft Advertising measurement rate should not be compared with a third party vendor's measurement rate.
 
 ### Compound tracking
 
-Xandr does not allow compound tracking. If several ads must be measured, they must be configured individually.
+Microsoft Advertising does not allow compound tracking. If several ads must be measured, they must be configured individually.
 
-Xandr can however, measure banners made of several objects, as a single impression.
+Microsoft Advertising can however, measure banners made of several objects, as a single impression.
 
 ### Cache-busting techniques
 
-Xandr uses specific http headers, such as "Cache-Control:no-store, no-cache, private" or "Pragma no-cache," to force browsers not to cache tracking requests.
+Microsoft Advertising uses specific http headers, such as "Cache-Control:no-store, no-cache, private" or "Pragma no-cache," to force browsers not to cache tracking requests.
 
-Xandr tracking requests (impression count and viewability measurement) also use a double system to ensure that http requests are not cached by browsers.
+Microsoft Advertising tracking requests (impression count and viewability measurement) also use a double system to ensure that http requests are not cached by browsers.
 
 Each script loading is associated with a unique ID. The script fires several pixels during the lifetime of the impression. Each pixel is unique, as it contains all the measured information and a unique timestamp (milliseconds).
 
@@ -199,7 +199,7 @@ Despite all these precautions, in a negligible number of cases, impressions may 
 
 ### Object detection
 
-Xandr detects the banner object that must be measured. The object can be an image or an iframe. It must be fully loaded on the page to be considered as viewable.
+Microsoft Advertising detects the banner object that must be measured. The object can be an image or an iframe. It must be fully loaded on the page to be considered as viewable.
 
 Non-loaded banner objects are not viewable.
 
@@ -207,7 +207,7 @@ Non-loaded banner objects are not viewable.
 
 #### Required information
 
-The Xandr script monitors the following events and browser statuses to assess whether an ad is viewable or not:
+The Microsoft Advertising script monitors the following events and browser statuses to assess whether an ad is viewable or not:
 
 - Window focus / non-focus
 - Tab switches
@@ -220,17 +220,17 @@ The Xandr script monitors the following events and browser statuses to assess wh
 
 #### Known limitations
 
-- Xandr considers only the window that is in focus as visible. This methodological choice matches the norms of internet audience measurement.
+- Microsoft Advertising considers only the window that is in focus as visible. This methodological choice matches the norms of internet audience measurement.
 - When two monitors are used, if an out-of-focus browser window is visible on one monitor, the impression may be considered non-viewable even if the user may see it.
 - When measured from a cross-domain iframe, an impression that is loaded in a window that is not in focus, may be counted as viewable. This may lead to an overestimation of viewable impressions.
-- Xandr does not monitor if the whole browser window is moved out of the screen while still in focus. In this case, the impression may be considered viewable even if it is out of the screen.
+- Microsoft Advertising does not monitor if the whole browser window is moved out of the screen while still in focus. In this case, the impression may be considered viewable even if it is out of the screen.
 - Auto-refresh pages may generate additional ad impressions. The refreshed page can either be viewable or not. If the page is not viewable (hidden tab or window), the impression is not viewable.
-- If the refreshed page is viewable, the impressions on the page may be viewable if they are in the visible part of the page. In this case, the number of viewable impressions may be overestimated. Although Xandr cannot quantify this overestimation, it should remain limited, as highly refreshed pages can be detected by fraud detection procedures.
+- If the refreshed page is viewable, the impressions on the page may be viewable if they are in the visible part of the page. In this case, the number of viewable impressions may be overestimated. Although Microsoft Advertising cannot quantify this overestimation, it should remain limited, as highly refreshed pages can be detected by fraud detection procedures.
 - If a Firefox browser window is resized, the impression may be out of view. When the impression is loaded within a cross-domain iframe, it may result in an overestimation of its viewability status.
 
 #### Iframes
 
-Xandr measures ad viewability in iframes (HTML pages within the HTML page), even when served in a cross-domain configuration (the domain of the iframe is different from the domain of the page).
+Microsoft Advertising measures ad viewability in iframes (HTML pages within the HTML page), even when served in a cross-domain configuration (the domain of the iframe is different from the domain of the page).
 
 In order to achieve this, several techniques are used:
 
@@ -239,17 +239,17 @@ In order to achieve this, several techniques are used:
 
 #### Abandonment
 
-Xandr records impressions when the impression is transacted on the platform, prior to delivery of the selected ad content.
+Microsoft Advertising records impressions when the impression is transacted on the platform, prior to delivery of the selected ad content.
 
 In certain situations, the user may abandon the web page after the impression was counted, but prior to delivery of the ad content. In this case, the impression is counted in the "imps" metrics, but the impression is not counted as "viewable impression".
 
 ### Logging Techniques
 
-The Xandr script periodically transfers data to a collection platform. Data transfers contain partial information about ad viewability that is then aggregated on the platform.
+The Microsoft Advertising script periodically transfers data to a collection platform. Data transfers contain partial information about ad viewability that is then aggregated on the platform.
 
 It is not prudent to send viewability data only when the user navigates away from the page because pages can remain open in hidden tabs, sometimes for days or weeks and the information may be lost if the page is closed when the user is offline.
 
-For this reason, data transfers are made periodically so that the risk of losing data is minimized. When the impression reaches the viewability threshold, a pixel is fired to the Xandr platform.
+For this reason, data transfers are made periodically so that the risk of losing data is minimized. When the impression reaches the viewability threshold, a pixel is fired to the Microsoft Advertising platform.
 
 ### Miscellaneous
 
@@ -257,27 +257,27 @@ For this reason, data transfers are made periodically so that the risk of losing
 
 Ad blockers are browser extensions that prevent ads from showing on pages. They rely on lists of ad servers, and block http calls to these ad servers.
 
-Because Xandr is an ad server, no call to Xandr is made by browsers that use ad blockers.
+Because Microsoft Advertising is an ad server, no call to Microsoft Advertising is made by browsers that use ad blockers.
 
 #### Image size-based ad blockers
 
-In cases where an ad server is called but images are blocked, the Xandr script detects no creative object. The ad impression is counted (the ad server counts it too, so numbers remain consistent), but the ad is not viewable. See [Object Detection](#object-detection) for more information.
+In cases where an ad server is called but images are blocked, the Microsoft Advertising script detects no creative object. The ad impression is counted (the ad server counts it too, so numbers remain consistent), but the ad is not viewable. See [Object Detection](#object-detection) for more information.
 
 #### User's disability image rendering
 
-Xandr measures the actual impression size, zoom, etc. on the screen of the user. If the images are zoomed, the real size is taken into account.
+Microsoft Advertising measures the actual impression size, zoom, etc. on the screen of the user. If the images are zoomed, the real size is taken into account.
 
 ### Rich media banners
 
 Rich media banners are most often made of two distinct objects. The main object is a regular ad impression. The second object is often called expand.
 
-Xandr can measure both objects for rich media banners. But viewability reporting is on the main object only.
+Microsoft Advertising can measure both objects for rich media banners. But viewability reporting is on the main object only.
 
 ## Data collection, filtering, and processing
 
 ### Robots.txt
 
-The Xandr collection servers host the `robots.txt` file. This file excludes all official robot traffic to collection pages. This way, official robots cannot generate fake impression records on the Xandr platform.
+The Microsoft Advertising collection servers host the `robots.txt` file. This file excludes all official robot traffic to collection pages. This way, official robots cannot generate fake impression records on the Microsoft Advertising platform.
 
 ### Server crawlers
 
@@ -286,37 +286,37 @@ If non-official robots access a collection page, they can either:
 - replay existing requests
 - randomly generate new requests
 
-If a request is replayed, Xandr detects duplicated requests (same full URL) thanks to the unique ID used to generate unique URLs. Duplicated lines are filtered out.
+If a request is replayed, Microsoft Advertising detects duplicated requests (same full URL) thanks to the unique ID used to generate unique URLs. Duplicated lines are filtered out.
 
-If a random request is generated, Xandr checks for consistency of the different parameters of the request. The probability of randomly generated valid requests with the existing IDs (customers, campaigns, etc.) is negligible.
+If a random request is generated, Microsoft Advertising checks for consistency of the different parameters of the request. The probability of randomly generated valid requests with the existing IDs (customers, campaigns, etc.) is negligible.
 
-Xandr uses a list of robot names that is checked against the user agent of the request. User agents that do not correspond to real browsers are filtered out.
+Microsoft Advertising uses a list of robot names that is checked against the user agent of the request. User agents that do not correspond to real browsers are filtered out.
 
 #### Known limitations
 
 Some robots do not use their real user agent name. They pretend to be a regular browser. In this case, their traffic may not be correctly filtered out using the above mentioned method.
 
-Xandr has developed a series of methods to detect and exclude non-human traffic. These methods are applied in the process of ad-serving, before making the ad viewability script call.
+Microsoft Advertising has developed a series of methods to detect and exclude non-human traffic. These methods are applied in the process of ad-serving, before making the ad viewability script call.
 
 ### Impression counts
 
-Xandr impression counts closely match the ones gathered by the ad servers.
+Microsoft Advertising impression counts closely match the ones gathered by the ad servers.
 
 For this reason, except for fake traffic mentioned above (robotic impressions), no impressions are filtered out. Additional rules apply to viewable impressions though.
 
-### Xandr test traffic
+### Microsoft Advertising test traffic
 
-Xandr staff can potentially generate ad-impressions for testing purposes. In this case, they render the creatives in a preview mode such that no impressions are generated.
+Microsoft Advertising staff can potentially generate ad-impressions for testing purposes. In this case, they render the creatives in a preview mode such that no impressions are generated.
 
-Therefore, tests run by Xandr do not impact reporting and viewability results are not impacted.
+Therefore, tests run by Microsoft Advertising do not impact reporting and viewability results are not impacted.
 
 ### Projections
 
-No projection is made for ad viewability on the Xandr platform.
+No projection is made for ad viewability on the Microsoft Advertising platform.
 
 ### Invalid traffic (IVT) guideline
 
-Xandr filters for sIVT and gIVT on:
+Microsoft Advertising filters for sIVT and gIVT on:
 
 - User ID (i.e. cookie ID)
 - User agent
@@ -332,7 +332,7 @@ Our detection runs, depending on the method:
 - Daily on aggregated data
 - Weekly on aggregated data
 
-We do not filter and subject all impression requests on the Xandr platform to IVT filtration. Generally, thresholds and standards are checked on a weekly basis. Though there is no fixed cadence, we often update certain filters daily.
+We do not filter and subject all impression requests on the Microsoft Advertising platform to IVT filtration. Generally, thresholds and standards are checked on a weekly basis. Though there is no fixed cadence, we often update certain filters daily.
 
 ## Client-facing reporting
 
@@ -340,11 +340,11 @@ We do not filter and subject all impression requests on the Xandr platform to IV
 
 A day starts at 0:00 :00 am and ends at 23:59:59. The default time zone is New York (ET). Local time zones are also available in the reporting interface.
 
-Xandr processes data every hour.
+Microsoft Advertising processes data every hour.
 
 ### Quality assurance process
 
-The Xandr Quality Assurance (QA) process is a mix of automatic and manual verifications.
+The Microsoft Advertising Quality Assurance (QA) process is a mix of automatic and manual verifications.
 
 #### Automatic QA
 
@@ -361,9 +361,9 @@ The automatic verification process performs several analyses:
 
 #### Manual QA
 
-Given the volumes managed by Xandr (20 billion impressions measured per day), no manual QA is feasible.
+Given the volumes managed by Microsoft Advertising (20 billion impressions measured per day), no manual QA is feasible.
 
-Xandr has created a 3-level support for ad viewability:
+Microsoft Advertising has created a 3-level support for ad viewability:
 
 - TAMs (Technical Account Managers) are trained to answer most client questions.
 - Ad viewability experts or SMEs (Subject Matter Experts) can investigate more complex questions that TAMs cannot solve.
@@ -371,7 +371,7 @@ Xandr has created a 3-level support for ad viewability:
 
 #### Quality improvement
 
-A continuous process allows Xandr to constantly improve its measurement. Feedback from the production team is shared with the engineering team. If necessary, the script is updated, and new tests are added.
+A continuous process allows Microsoft Advertising to constantly improve its measurement. Feedback from the production team is shared with the engineering team. If necessary, the script is updated, and new tests are added.
 
 ### List of tests
 
@@ -428,7 +428,7 @@ Each group of data must contain a minimum number of impressions (1, 100, 1000 de
 
 Definitions of the accredited indicators are available in the [Introduction to Viewability](introduction-to-viewability.md).
 
-All these metrics are available in a specific report called "**Viewability Report**". Note that this report excludes mobile web traffic, even though it is measured by Xandr.
+All these metrics are available in a specific report called "**Viewability Report**". Note that this report excludes mobile web traffic, even though it is measured by Microsoft Advertising.
 
 #### Other viewability indicators
 
@@ -445,8 +445,8 @@ However, it is possible to run the [Site Domain Performance](../monetize/site-do
 
 ### Retention period
 
-Depending on the level of granularity, the data collected by Xandr are stored for a specific period of time. See [Availability of Reporting Data](availability-of-reporting-data.md) for more information.
+Depending on the level of granularity, the data collected by Microsoft Advertising are stored for a specific period of time. See [Availability of Reporting Data](availability-of-reporting-data.md) for more information.
 
 ### Changes in the Description of Methodology
 
-Major changes to the methodology can be communicated to clients through Xandr product communication mailing lists.
+Major changes to the methodology can be communicated to clients through Microsoft Advertising product communication mailing lists.

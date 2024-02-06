@@ -31,7 +31,7 @@ The Impression Funnel includes the following settings and metrics:
   - **Imps Matched** - The count of available impressions matching the deal line item's targeting and buyer's acceptance status.
   - **Bids Requests** - The count of requests sent to the buyer with the deal included.
   - **Bids** - The count of deal auctions with a bid from the buyer. This metric represents the presence of a single bid per buyer, even if the buyer bids multiple times on the same auction.
-  - **Auctions Won** - The count of bids that successfully won the Xandr auction. This metric does not account for secondary auctions in the seller’s primary ad server.
+  - **Auctions Won** - The count of bids that successfully won the Microsoft Advertising auction. This metric does not account for secondary auctions in the seller’s primary ad server.
   - **Imps Rendered** - The count of successful creative renders on the deal.
 - **Time** - Use the **Time** drop-down to select the time frame in which to display the metrics. Choose from:
   - **10 Minutes**

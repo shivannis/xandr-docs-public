@@ -236,4 +236,4 @@ For more information, see [Profile Service](../digital-platform-api/profile-serv
 
 ## More questions?
 
-If you have further questions about buying this inventory, please contact your Xandr account representative.
+If you have further questions about buying this inventory, please contact your Microsoft Advertising account representative.

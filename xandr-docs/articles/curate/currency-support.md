@@ -6,28 +6,28 @@ ms.date: 10/28/2023
 
 # Microsoft Curate - Currency support
 
-Support for multiple currencies allows buyers and sellers to transact with one another globally on the Xandr platform. However, it is important for all parties to understand how spending and payment in different currencies flows from buyers to sellers and partners on the platform. This page provides an explanation of all relevant concepts, processes and settings. In addition, Xandr is expanding its support for non-USD currencies (as part of a larger multi-year platform-wide localization effort). As a result, this page will be updated periodically to explain how these changes affect the currencies supported on the platform, reporting and invoicing and what customization options you have. If you have questions about currency support please contact your Account Manager.
+Support for multiple currencies allows buyers and sellers to transact with one another globally on the Microsoft Advertising platform. However, it is important for all parties to understand how spending and payment in different currencies flows from buyers to sellers and partners on the platform. This page provides an explanation of all relevant concepts, processes and settings. In addition, Microsoft Advertising is expanding its support for non-USD currencies (as part of a larger multi-year platform-wide localization effort). As a result, this page will be updated periodically to explain how these changes affect the currencies supported on the platform, reporting and invoicing and what customization options you have. If you have questions about currency support please contact your Account Manager.
 
 ## Prerequisite concepts
 
 Ensure you understand these basics before proceeding (each of these concepts is discussed in greater detail in dedicated sections below):
 
-1. **Base Currency:** Xandr' default currency is USD.
-    - Although USD is the default currency, Xandr supports the **buying and selling ("transacting")** of impressions as well as **billing** in a number of different non-USD currencies.
-    - Xandr performs all calculations in USD. To support non-USD use cases, we convert in and out of USD (as needed) using the latest exchange rates from our [API Currency Service](../digital-platform-api/currency-service.md).
+1. **Base Currency:** Microsoft Advertising' default currency is USD.
+    - Although USD is the default currency, Microsoft Advertising supports the **buying and selling ("transacting")** of impressions as well as **billing** in a number of different non-USD currencies.
+    - Microsoft Advertising performs all calculations in USD. To support non-USD use cases, we convert in and out of USD (as needed) using the latest exchange rates from our [API Currency Service](../digital-platform-api/currency-service.md).
 1. **Supported Local Currencies and Exchange Rates:** Our [API Currency Service](../digital-platform-api/currency-service.md) updates exchange rates platform-wide on a daily basis based on the most current [Oanda](https://www.oanda.com/) rates.
-1. **Transaction and Billing Currency and Account Setup:** Xandr distinguishes between the currencies you transact in (currencies you select in the Digital Platform UI/API for buying/selling) and the currency you are billed in (currency in which you are invoiced or paid). Generally, Xandr bills clients for fees/charges based on the daily conversion rate logged at the time the relevant auction
+1. **Transaction and Billing Currency and Account Setup:** Microsoft Advertising distinguishes between the currencies you transact in (currencies you select in the Digital Platform UI/API for buying/selling) and the currency you are billed in (currency in which you are invoiced or paid). Generally, Microsoft Advertising bills clients for fees/charges based on the daily conversion rate logged at the time the relevant auction
     took place. However, in the following scenarios, we use the month-end rate to bill (for a full list, see [When Media Cost and Related Fees are Converted for use in Billing?](#when-media-cost-and-related-fees-are-converted-for-use-in-billing) below):
     - The transaction currency differs from the billing currency.
     - We can't easily associate a fee back to an auction (e.g., Ad Serving Fees, Minimums, Log Level Data Fees, etc.).
 
 ## Base currency (USD)
 
-Xandr uses USD as the default currency (also referred to as "base" or "primary" currency). However, we support transacting in a wide range of currencies. When we need to compare values across the platform, we use a common unit of measure; our base currency of USD (which we convert into). This conversion practice is used across the platform when evaluating bids, running auctions, managing budgets or optimizing performance across the currencies we support. However, none of these conversions will change the local currency amount since we convert in and out of the local currency using the same rate.
+Microsoft Advertising uses USD as the default currency (also referred to as "base" or "primary" currency). However, we support transacting in a wide range of currencies. When we need to compare values across the platform, we use a common unit of measure; our base currency of USD (which we convert into). This conversion practice is used across the platform when evaluating bids, running auctions, managing budgets or optimizing performance across the currencies we support. However, none of these conversions will change the local currency amount since we convert in and out of the local currency using the same rate.
 
 ## Supported currencies
 
-Xandr supports the non-USD currencies listed below.
+Microsoft Advertising supports the non-USD currencies listed below.
 
 | Currency | Transaction | Billing |
 |:---|:---|:---|
@@ -98,14 +98,14 @@ Xandr supports the non-USD currencies listed below.
   - For Sellers, this is set at the Publisher level.
   - Users can manually set a transaction currency on most objects (e.g., Insertion Orders, Line Items).
   - A given member/network might have multiple transaction currencies if they set up objects in different currencies (i.e., Advertiser A = EUR, Advertiser B = USD, Publisher C = GBP, etc.)
-- **Billing Currency** is the currency in which you are invoiced and/or paid by Xandr. Each member has only one billing currency (specified in your contract). If you would like to change your billing currency, contact your Account Manager.
+- **Billing Currency** is the currency in which you are invoiced and/or paid by Microsoft Advertising. Each member has only one billing currency (specified in your contract). If you would like to change your billing currency, contact your Account Manager.
 
 > [!NOTE]
 > Not all currencies available for **transacting** are available for **billing** (invoicing) and if you set your transaction currency to anything other than your billing currency, the amount you are billed at month-end may not exactly match the totaled sum of all transaction amounts since transaction values are calculated after each auction and billing is totaled monthly using the conversion rate at the end of the month.
 
 ## Exchange rates
 
-Exchange Rates are sourced once daily from [Oanda](https://www.oanda.com/) at approximately 3:00 a.m. UTC. All Xandr applications (bidder, budgeting, billing, etc.) use the [API Currency Service](../digital-platform-api/currency-service.md) (also available to clients) to access the latest rates. This service provides centralized, consistent and uniform exchange rates across the entire platform. The API Currency Service is available to clients solely to reconcile amounts paid or received by them resulting from their transactions through the Xandr Platform and may not be used by clients for any other purpose.
+Exchange Rates are sourced once daily from [Oanda](https://www.oanda.com/) at approximately 3:00 a.m. UTC. All Microsoft Advertising applications (bidder, budgeting, billing, etc.) use the [API Currency Service](../digital-platform-api/currency-service.md) (also available to clients) to access the latest rates. This service provides centralized, consistent and uniform exchange rates across the entire platform. The API Currency Service is available to clients solely to reconcile amounts paid or received by them resulting from their transactions through the Microsoft Advertising Platform and may not be used by clients for any other purpose.
 
 > [!NOTE]
 > Due to the distributed nature of our systems, new rates will not be populated across all of our servers simultaneously.
@@ -152,9 +152,9 @@ Once you've set the currency for your member and any objects (e.g., Insertion Or
 
 ### Selling
 
-1. When you set a Publisher to active and begin selling, buyers will begin submitting their bids for that Publisher's inventory. Although these bids may be submitted in multiple currencies (depending on each buyer's settings), Xandr will convert all bids received to USD in order to evaluate the auction using a single currency.
-1. To enforce any Publisher floors, Xandr converts the local currency floor price to USD, then compares the floor to the net bids (already converted to USD) to eliminate unwanted bids.
-1. The auction is run and all results are logged in USD. In addition, Xandr logs the Transaction Currency (Publisher currency) and the applicable exchange rate at the time of auction.
+1. When you set a Publisher to active and begin selling, buyers will begin submitting their bids for that Publisher's inventory. Although these bids may be submitted in multiple currencies (depending on each buyer's settings), Microsoft Advertising will convert all bids received to USD in order to evaluate the auction using a single currency.
+1. To enforce any Publisher floors, Microsoft Advertising converts the local currency floor price to USD, then compares the floor to the net bids (already converted to USD) to eliminate unwanted bids.
+1. The auction is run and all results are logged in USD. In addition, Microsoft Advertising logs the Transaction Currency (Publisher currency) and the applicable exchange rate at the time of auction.
 
 ### Conversions made during the auction
 
@@ -239,6 +239,6 @@ The conversion of media costs and fees to the billing currency will be based on 
   - Seller Revshare Min
   - Other Mins
   - Onboarding Fee
-  - Xandr Service Fee
+  - Microsoft Advertising Service Fee
   - Other Flat Fees
   - Other CPM Fees

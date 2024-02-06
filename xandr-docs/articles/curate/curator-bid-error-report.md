@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 > [!IMPORTANT]
 > This report is only available to curators.
 
-The **Curator Bid Error Report** helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the Xandr platform. Error Count has been multiplied by 100 to account for the 5% sampling. You can use this report to troubleshoot sell-side and buy-side settings that result in auction errors that block spend. The goal is to help you eliminate the error in the future. You can find information on the owner, cause, and recommended resolution for each error in [Bid Error Codes](../bidders/bid-error-codes.md).
+The **Curator Bid Error Report** helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the Microsoft Advertising platform. Error Count has been multiplied by 100 to account for the 5% sampling. You can use this report to troubleshoot sell-side and buy-side settings that result in auction errors that block spend. The goal is to help you eliminate the error in the future. You can find information on the owner, cause, and recommended resolution for each error in [Bid Error Codes](../bidders/bid-error-codes.md).
 
 ## Time frame
 
@@ -95,7 +95,7 @@ For more information about how quickly reporting data is processed, see [Availab
 
 | Column | Description |
 |:---|:---|
-| Error Count | The amount of errors logged on the Xandr platform over the time range selected (a randomly selected set of 5% of the errors multiplied by 100 to account for the sampling). |
+| Error Count | The amount of errors logged on the Microsoft Advertising platform over the time range selected (a randomly selected set of 5% of the errors multiplied by 100 to account for the sampling). |
 
 ## To run your report
 

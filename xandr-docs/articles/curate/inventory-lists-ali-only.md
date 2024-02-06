@@ -103,10 +103,10 @@ statuses:
   is in the audit queue).
 - **Masked** - the seller is not exposing the domain/app's actual URL
   for targeting or reporting. However, the real domain/app URL is still
-  audited by Xandr inventory quality controls
+  audited by Microsoft Advertising inventory quality controls
   within the bid request.
 - **Unsupported** - the domain/app is not yet in the
-  Xandr audit queue. You should submit a
+  Microsoft Advertising audit queue. You should submit a
   Salesforce ticket to have it reviewed.
 
 > [!NOTE]
@@ -161,9 +161,9 @@ statuses:
 1. Click **Validate Domains & Apps**. The
     list will be checked to ensure that:
     - None of the domains or apps you entered violate
-      Xandr policies.
+      Microsoft Advertising policies.
     - Unsupported URLs are flagged. Unsupported means the
-      Xandr targeting system hasn't audited
+      Microsoft Advertising targeting system hasn't audited
       these URLs yet so that you won't be able to serve on them.
     - Invalid URL formats (i.e., non-http or non-https) are removed from
       the list.
@@ -174,7 +174,7 @@ statuses:
     through the pages. Note the following:
     - Unsupported domains or apps will be flagged.
     - You can also remove any domains or apps that violate
-      Xandr policies by clicking
+      Microsoft Advertising policies by clicking
       **Remove**. However, you will never
       serve on them even if you leave them in the list.
     - Select **Include subdomains** to

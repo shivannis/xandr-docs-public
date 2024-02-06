@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Curated deal floors
 
-Xandr lets you to specify a floor on curated deals. Curated deal floor types are configured on a [curated deal line item](create-a-curated-deal-line-item.md).
+Microsoft Advertising lets you to specify a floor on curated deals. Curated deal floor types are configured on a [curated deal line item](create-a-curated-deal-line-item.md).
 
 ## Floor types
 

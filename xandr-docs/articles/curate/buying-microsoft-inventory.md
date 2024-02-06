@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Curate - Buying Microsoft inventory
 
-With **Microsoft Advertising Exchange**, Xandr offers exclusive programmatic access to a quality, engaged audience in a brand safe environment.
+With **Microsoft Advertising Exchange**, Microsoft Advertising offers exclusive programmatic access to a quality, engaged audience in a brand safe environment.
 
 - Owned and operated, brand-sale content including MSN, Outlook, Xbox, and Windows
 - Maximum viewability with load-on-scroll and non-scrolling placements

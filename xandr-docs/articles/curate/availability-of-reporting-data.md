@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 This page describes how, when, and for how long reporting data is or becomes available to you.
 
 > [!IMPORTANT]
-> If you are noticing any latency in the availability of your reporting data, first check if there are any known outages at [Xandr Status](https://status.xandr.com).
+> If you are noticing any latency in the availability of your reporting data, first check if there are any known outages at [Microsoft Advertising Status](https://status.xandr.com).
 
 ## Data processing
 

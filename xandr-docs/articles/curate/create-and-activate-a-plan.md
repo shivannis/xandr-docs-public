@@ -7,7 +7,7 @@ description: The article describes how to create and activate a plan.
 
 From the **Plan** menu, you can create a plan that lets you experiment with deal line item targeting settings, understand inventory availability and reach, and seamlessly create a line item from your completed plan.
   
-This page provides instructions on creating and activating a plan for your curated deal. To create a plan, log into your account on our Xandr Curate platform.
+This page provides instructions on creating and activating a plan for your curated deal. To create a plan, log into your account on our Microsoft Advertising Curate platform.
 
 > [!NOTE]
 > To achieve accurate forecasting results, Planner needs to be able to match a minimum number of impressions or users to the plan's targeting criteria. If the plan yields too small a number of impression or user matches, Planner displays an error rather than attempting to provide forecasting data.

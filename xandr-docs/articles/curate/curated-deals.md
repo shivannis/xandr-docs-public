@@ -19,7 +19,7 @@ simplify campaign execution. Using Microsoft Curate, buyers could act as curator
 
 ### What fees/charges are associated with curated transactions?
 
-Certain fees/charges apply to curated transactions, but only if the bid for the curated deal wins the impression in the seller’s final auction. These fees/charges may include a tech fee charged by Xandr to the third-party curator for its use of the platform and the Microsoft Curate technology, and a margin to be charged by the curator for their enhancement of the inventory. If you are a seller, all bids for curated transactions will be submitted to your final auction net of such fees/charges unless you agree otherwise with the applicable curator, and such bids will need to compete in your final auction in order to win the impression. Again, to be clear, no curation-related fees/charges will apply if a bid for inventory via curation does not win.
+Certain fees/charges apply to curated transactions, but only if the bid for the curated deal wins the impression in the seller’s final auction. These fees/charges may include a tech fee charged by Microsoft Advertising to the third-party curator for its use of the platform and the Microsoft Curate technology, and a margin to be charged by the curator for their enhancement of the inventory. If you are a seller, all bids for curated transactions will be submitted to your final auction net of such fees/charges unless you agree otherwise with the applicable curator, and such bids will need to compete in your final auction in order to win the impression. Again, to be clear, no curation-related fees/charges will apply if a bid for inventory via curation does not win.
 
 ### Will my eligibility settings be respected for curated transactions?
 
@@ -35,7 +35,7 @@ Curation allows third parties to easily enrich your inventory with their data, t
 
 ### Additional questions or want to learn more?
 
-Please reach out to your Xandr account manager to learn more about Microsoft Curate.
+Please reach out to your Microsoft Advertising account manager to learn more about Microsoft Curate.
 
 ## Related topics
 

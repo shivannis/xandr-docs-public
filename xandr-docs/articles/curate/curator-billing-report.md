@@ -73,7 +73,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Publisher | Yes | Publisher ID of the seller where the curated transaction served on. |
 | Curator | No | Member ID of the curator who facilitated the transaction. |
 | Curated Deal ID | Yes | Curated deal ID. |
-| Curator Cleared | Yes | - "0" if Xandr clears net seller revenue with the seller.<br> - "1" if the curator direct clears net seller revenue with the seller. |
+| Curator Cleared | Yes | - "0" if Microsoft Advertising clears net seller revenue with the seller.<br> - "1" if the curator direct clears net seller revenue with the seller. |
 | Buying Currency | No | The transaction currency used by the buyer. |
 | Selling Currency | No | The transaction currency used by the seller. |
 
@@ -85,10 +85,10 @@ Intervals determine how your data is grouped together into rows in the report re
 | Column | Description |
 |:---|:---|
 | Billable Imps | The total number of impressions billed to the client. |
-| Net Seller Revenue | The amount of net revenue a seller earns, exclusive of seller auction service fees (SASC) they owe to Xandr. <br><br>**Note:** This field is only filled for sellers for which the curator has a direct clear relationship. |
+| Net Seller Revenue | The amount of net revenue a seller earns, exclusive of seller auction service fees (SASC) they owe to Microsoft Advertising. <br><br>**Note:** This field is only filled for sellers for which the curator has a direct clear relationship. |
 | Curator Margin Deduction | The profit a curator makes on a transaction. |
-| Curator Auction Service Deductions | The amount Xandr charged to the curator as a deduction at auction time. |
-| Curator Auction Fees | The amount Xandr charged to the curator as a fee at auction time. |
+| Curator Auction Service Deductions | The amount Microsoft Advertising charged to the curator as a deduction at auction time. |
+| Curator Auction Fees | The amount Microsoft Advertising charged to the curator as a fee at auction time. |
 
 ## To run your report
 

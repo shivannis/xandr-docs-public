@@ -36,7 +36,7 @@ You can have many line items under a single advertiser or insertion order.
 
 ### Creative
 
-A creative is an actual ad, hosted either by Xandr or by a third-party ad server. The Xandr platform enables you to traffic a wide range of creative types, from banners to rich media types like interstitials and expandables.
+A creative is an actual ad, hosted either by Microsoft Advertising or by a third-party ad server. The Microsoft Advertising platform enables you to traffic a wide range of creative types, from banners to rich media types like interstitials and expandables.
 
 Creatives belong to a specific advertiser. You can associate each creative to many line items under an advertiser.
 
@@ -48,7 +48,7 @@ Segment pixels belong either to the entire network or to a specific advertiser. 
 
 ### Conversion pixel
 
-A conversion pixel is placed on web pages to track user actions in response to an advertiser's creatives, such as registering at a site or making a purchase. When a conversion pixel fires, Xandr determines if the conversion (the registration, the purchase, etc.) can be "attributed", or tied to the user clicking on or viewing one of the advertiser's creatives previously.
+A conversion pixel is placed on web pages to track user actions in response to an advertiser's creatives, such as registering at a site or making a purchase. When a conversion pixel fires, Microsoft Advertising determines if the conversion (the registration, the purchase, etc.) can be "attributed", or tied to the user clicking on or viewing one of the advertiser's creatives previously.
 
 You can have many conversion pixels under a single advertiser. You associate each conversion pixel to many line items.
 
@@ -60,12 +60,12 @@ You can have third-party pixels at the network, advertiser, or creative levels. 
 
 ### Impression tracker
 
-An impression tracker is used to track impressions associated with creatives that are hosted by off-platform (non-Xandr) ad servers. This is done by attaching the tracker as a "piggyback pixel" on the externally hosted creative.
+An impression tracker is used to track impressions associated with creatives that are hosted by off-platform (non-Microsoft Advertising) ad servers. This is done by attaching the tracker as a "piggyback pixel" on the externally hosted creative.
 
 You can have many impression trackers under a single advertiser.
 
 ### Click tracker
 
-A click tracker is used to track clicks associated with creatives that are hosted by off-platform (non-Xandr) ad servers. This is done by attaching the tracker as a "piggyback pixel" on the externally hosted creative.
+A click tracker is used to track clicks associated with creatives that are hosted by off-platform (non-Microsoft Advertising) ad servers. This is done by attaching the tracker as a "piggyback pixel" on the externally hosted creative.
 
 You can have many click trackers under a single advertiser.

@@ -111,7 +111,7 @@ Use the targeting parameters below across different regions for your specific re
 
 #### Americas
 
-| Country | Content Category | Xandr Curate Targeting |
+| Country | Content Category | Microsoft Advertising Curate Targeting |
 |---|---|---|
 | Argentina and Uruguay | AR-001 (25668), ar.msn.com (25669) | Content Category |
 | Brazil | BR-001 (20353), br.msn.com (25624) | Content Category |
@@ -124,7 +124,7 @@ Use the targeting parameters below across different regions for your specific re
 
 #### EMEA
 
-| Country | Content Category | Xandr Curate Targeting |
+| Country | Content Category | Microsoft Advertising Curate Targeting |
 |---|---|---|
 | Austria | AT-001 (24941), at.msn.com (25636) | Content Category & Domain (MSN.COM) + Country Geo (AT) |
 | Belgium | BE-001-Dutch (20348), be.msn.com (25633), BE-004-French (20350) | Content Category |
@@ -146,7 +146,7 @@ Use the targeting parameters below across different regions for your specific re
 
 #### APAC
 
-| Country | Content Category | Xandr Curate Targeting |
+| Country | Content Category | Microsoft Advertising Curate Targeting |
 |---|---|---|
 | Australia | AU-001 (20276) | Content Category |
 | China * Launch Q2 | CN-001 (27305), cn.msn.com (27306) | Content Category & Domain (MSN.COM) + Country Geo (CN) |

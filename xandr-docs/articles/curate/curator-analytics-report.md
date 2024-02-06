@@ -72,7 +72,7 @@ Data retention period for this report is 1100 days.
 | Curated Deal Line Item | Yes | Line Item name/ID of the curator member object that owns the deal line item associated with the curated deal. |
 | Curated Deal Advertiser Id | No | The advertiser ID of the advertiser whose creative served on this impression. |
 | Member Currency | No | The currency associated with the curator member's seat. |
-| Billing Currency | No | The currency that Xandr bills the curator in. |
+| Billing Currency | No | The currency that Microsoft Advertising bills the curator in. |
 | Bidder | No | Name/ID of the bidder who bought on the transaction. |
 | Buyer | Yes | Member name/ID of the buyer who bought on the transaction. |
 | Brand | Yes | Brand name/ID associated with the creative that served on the curated deal. |
@@ -82,7 +82,7 @@ Data retention period for this report is 1100 days.
 | Placement | Yes | Placement name/ID of the seller where the curated transaction served on. |
 | Seller Deal | No | The seller deal name/ID being included in a curated deal.<br><br>**Note:** If applicable, since not all curated deals will include a seller. |
 | Size | Yes | The size of the creative (e.g., 320x50). |
-| Country | Yes | The country in which the impression took place. For impression requests for which Xandr received no indication that the ad was rendered (i.e., non-transacted), country information is not provided. |
+| Country | Yes | The country in which the impression took place. For impression requests for which Microsoft Advertising received no indication that the ad was rendered (i.e., non-transacted), country information is not provided. |
 | Site Domain | No | Site Domain/App where the curated transaction served on. |
 | Mobile Application | No | The mobile application associated with the creative that served on this impression. |
 | Media Type | No | The media type associated with the creative that served on this impression. |
@@ -103,7 +103,7 @@ Data retention period for this report is 1100 days.
 | Viewed Imps | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in-view during 1 consecutive second. |
 | View Measurable Imps | The total number of impressions that were measured for viewability. |
 | Curator Revenue | The amount of spend a buyer sends to the curator, net of buyer fees, if applicable. This is the same as buyer media cost, exclusive of buyer rev share (BASC). |
-| Curator Tech Fees | The fees Xandr charges to a curator on a transaction. |
+| Curator Tech Fees | The fees Microsoft Advertising charges to a curator on a transaction. |
 | Curator Net Media Cost | The amount of spend a curator sends to exchange sellers, net of curator fees and margins, if applicable. This is the same as gross seller revenue, inclusive of seller rev share (SASC). |
 | Curator Margin | The profit a curator makes on a transaction.<br><br>**Note:** When taken as a percentage, Curator Margin is calculated based on Curator Revenue. |
 | Curator Total Cost | The amount of spend a curator sends to the exchange and exchange sellers, net of curator margin but gross of curator fees. |
