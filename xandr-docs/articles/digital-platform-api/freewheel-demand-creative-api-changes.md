@@ -4,7 +4,7 @@ description: Avoid updating Freewheel creatives via API from Jan 29 to Mar 5, 20
 ms.date: 10/28/2023
 ---
 
-**Freewheel change in demand creative API**
+# Freewheel change in demand creative API
 
 Freewheel is temporarily suspending the creative update functionality in the Demand Creative API. This suspension is necessary due to the implementation of new creative detection logic. During this temporary suspension, users may encounter errors when updating their creatives. Once the suspension period ends, the API function is expected to behave as before, and users will no longer encounter the following errors.
 
