@@ -5,7 +5,7 @@ ms.custom: android-sdk
 ms.date : 10/28/2023
 ---
 
-# Overview
+# Android SDK Integration Overview
 
 This section provides instructions on integrating our Android SDK with your project.
 
