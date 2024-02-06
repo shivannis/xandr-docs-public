@@ -412,7 +412,7 @@ Please ensure that all lifecycle rules are set up to move manifest objects to Gl
 **Solution**:
 For each object, `aws s3api get-object-acl --bucket <bucket> --key <object>` should yield the following as one of the grants for each non-archived manifest object:
 
-    ```
+```
     {
     "Grantee": {
     "Type": "CanonicalUser",
@@ -421,20 +421,20 @@ For each object, `aws s3api get-object-acl --bucket <bucket> --key <object>` sho
     },
     "Permission": "FULL_CONTROL"
     },
-    ```
+```
 
 - Google Cloud Storage
 
 **Solution**:
 For each object, `gsutil acl get <object>` should yield the following as one of the grants for each non-archived manifest object:
 
-    ```
+```
     {
     "email": "prod-lld-gcs-<member>@appnexus-cloud-export.iam.gserviceaccount.com",
     "entity": "user-prod-lld-gcs-<member>@appnexus-cloud-export.iam.gserviceaccount.com",
     "role": "OWNER"
     }
-    ```
+```
 
 #### Creating prefix at `<path>`
 
