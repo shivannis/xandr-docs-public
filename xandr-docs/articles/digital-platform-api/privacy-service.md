@@ -114,5 +114,5 @@ $ curl -X POST -d @privacy.json 'https://api.appnexus.com/privacy/consumer-reque
 
 ## Related topics
 
-- [CCPA Client Overview](https://microsoftapc.sharepoint.com/teams/PrivacyRegulations/SitePages/CCPA-Client-Overview.aspx) (login required)
-- [CCPA Publisher Controls Provided by Xandr](https://microsoftapc.sharepoint.com/teams/PrivacyRegulations/SitePages/CCPA-Publisher-Controls-Provided-by-Xandr.aspx) (login required)
+- [CCPA Client Overview (Part of Privacy Policies)](../policies-regulations/index.yml)
+- [CCPA Publisher Controls Provided by Xandr(Part of Privacy Policies)](../policies-regulations/index.yml)
