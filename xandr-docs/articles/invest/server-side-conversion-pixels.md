@@ -37,7 +37,7 @@ https://attributionserver.com/attr?id=12&idfa=adw-231234-550&token=ams1AAAAAAAAk
 ```
 https://sspx-router.adnxs.com/sspx?id=1235&sspdata=ams1AAAAAAAAkQC8rFPull3JKKU9tUKckv1Oj1WFMAAAAAGULAAA3AAAAUQIAAD4AAA
 ```
-The ID parameter is the Microsoft Advertising’s ID of the pixel and SSPdata is the token.
+ The ID parameter is the Microsoft Advertising’s ID of the pixel and SSPdata is the token.
 - Microsoft Advertising connects the sspdata value to the token value and attributes the conversion to the correct auction.
 
 
