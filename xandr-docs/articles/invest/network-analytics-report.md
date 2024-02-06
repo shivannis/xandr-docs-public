@@ -203,21 +203,12 @@ If you are frequently requesting Member analytics reports which include dates lo
 | Impression Requests | The total number of ad calls (impression requests).<br>**Warning**: This metric is typically inaccurate for video inventory due to occasional delays in receiving video events, which can lead to inflated request totals based on the assumption that the video has expired. For a better video request metric, you should use Ad Requests in the [Seller Fill and Delivery Network Report](../monetize/seller-fill-and-delivery-network-report.md) or [Member Video Analytics Report](./network-video-analytics-report.md). |
 | Clicks | The total number of clicks across all impressions. For Microsoft Invest, clicks from all media types are supported. For external DSPs, only clicks from Native and Video media types are supported. |
 | Total Conversions | The total number of post-view and post-click conversions. |
-<<<<<<< HEAD
-| Post View Conversions | The number of post-view conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](./conversion-attribution.md). |
-|Post-View Conversions: Cross Device | The number of post-view cross-device conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](./conversion-attribution.md). |
-| Post View Conversions: IP | The number of post-view IP conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](./conversion-attribution.md). |
-| Post Click Convs | The number of post-click conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](./conversion-attribution.md). |
-| Post Click Conversions: Cross Device | The number of post-click cross-device conversions. For more information about how we attribute post-click (and other) conversions, see [Conversion Attribution](./conversion-attribution.md). |
-| Post Click Conversions: IP | The number of post-click IP conversions. For more information about how we attribute post-click (and other) conversions, see [Conversion Attribution](./conversion-attribution.md). |
-=======
 | Post View Conversions | The number of post-view conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](conversion-attribution.md). |
 | Post-View Conversions: Cross Device| The number of post-view Cross Device conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](conversion-attribution.md). |
 |Post View Conversions: IP|The number of post-view IP conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](conversion-attribution.md).|
 | Post Click Conversions | The number of post-click conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](conversion-attribution.md). |
 |Post Click Conversions: Cross Device|The number of post-click cross-device conversions. For more information about how we attribute post-click (and other) conversions, see [Conversion Attribution](conversion-attribution.md).|
 |Post Click Conversions: IP| The number of post-click IP conversions. For more information about how we attribute post-click (and other) conversions, see [Conversion Attribution](conversion-attribution.md).|
->>>>>>> 6a4205da36c4803e7c65dea4d4ed03d1b8a4e2a7
 | CTR | The click-through rate – the ratio of clicks to impressions, expressed as a percentage. |
 | Conversion Rate | The ratio of conversions to impressions, expressed as a percentage. |
 | Booked Revenue | The total booked revenue (does not include resold revenue). |
