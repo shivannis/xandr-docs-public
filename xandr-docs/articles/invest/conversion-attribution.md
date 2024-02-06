@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Conversion Attribution
-description: Learn how when an advertiser's conversion pixel loads, Xandr determines if a pixel load can be associated with a user, and whether the user has converted in response to having previously viewed or clicked one of the advertiser's creatives. 
+description: Learn how when an advertiser's conversion pixel loads, Microsoft Advertising determines if a pixel load can be associated with a user, and whether the user has converted in response to having previously viewed or clicked one of the advertiser's creatives. 
 ms.date: 10/28/2023
 ---
 
@@ -8,12 +8,12 @@ ms.date: 10/28/2023
 # Conversion attribution for Microsoft Invest
 
 When an advertiser's conversion pixel loads,
-Xandr determines if that pixel load can be
+Microsoft Advertising determines if that pixel load can be
 associated with a user, and if so, whether the user has converted in
 response to having previously viewed or clicked one of the advertiser's
 creatives. This process is called conversion attribution.
 
-Xandr performs conversion attribution using the
+Microsoft Advertising performs conversion attribution using the
 "post-view/post-click" method. Depending upon whether you've created a
 "post-view" or "post-click" conversion pixel, or a "hybrid" conversion
 pixel (which is triggered by views **or** clicks), the conversion will
@@ -41,7 +41,7 @@ conversion.
 
 ### Step 2. Our system checks for a cookie stored by the browser, and attributes the conversion if possible
 
-- If there is no Xandr cookie stored by the
+- If there is no Microsoft Advertising cookie stored by the
   user's browser, the pixel is recorded as having loaded, but the
   conversion is UNATTRIBUTED.
 - If there is one of our cookies stored by the user's browser, the pixel
@@ -68,7 +68,7 @@ system determines attribution given each of the three types of
 conversion pixel.
 
 > [!NOTE]
-> In all of the following examples, the phrases "last impression" or "last click" are shorthand for "the last impression or click event logged in the Xandr cookie stored in the user's browser".
+> In all of the following examples, the phrases "last impression" or "last click" are shorthand for "the last impression or click event logged in the Microsoft Advertising cookie stored in the user's browser".
 
 ## View conversion pixel
 

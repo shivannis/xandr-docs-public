@@ -12,7 +12,7 @@ Currently, CTV inventory is primarily purchased through deal campaigns. You'll n
 
 ## Frequency capping
 
-Xandr supports frequency capping for video advertising. However, because many publishers of OTT content do not pass a user id persistently across platforms, you should always select the **Show to users without cookies** checkbox under **Frequency and Recency** when you set up a line item. Otherwise, your ads may not serve on some publishers' inventory. Note that because device IDs and user IDs are not always available, frequency-capped CTV video campaigns can be more challenging to scale than desktop and mobile campaigns.
+Microsoft Advertising supports frequency capping for video advertising. However, because many publishers of OTT content do not pass a user id persistently across platforms, you should always select the **Show to users without cookies** checkbox under **Frequency and Recency** when you set up a line item. Otherwise, your ads may not serve on some publishers' inventory. Note that because device IDs and user IDs are not always available, frequency-capped CTV video campaigns can be more challenging to scale than desktop and mobile campaigns.
 
 ## Device targeting
 

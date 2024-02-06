@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Delete a custom creative template
 
-You can delete existing custom templates from the **Creative Templates** screen at any time. You can't delete Xandr standard templates.
+You can delete existing custom templates from the **Creative Templates** screen at any time. You can't delete Microsoft Advertising standard templates.
 
 1. Navigate to the **Creative Templates** screen by clicking **Creative &gt; Templates**.
 1. Select the checkboxes for any creative templates that need to be deleted.

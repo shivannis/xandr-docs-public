@@ -93,7 +93,7 @@ level.
 
 ## Redirect URL/piggybacking: redir
 
-You can piggyback off the Xandr conversion pixel
+You can piggyback off the Microsoft Advertising conversion pixel
 and notify your internal or third-party server about conversion events.
 When you create a conversion pixel in Invest
 DSP, you can input the URL of your pixel and mark it as image or

@@ -22,7 +22,7 @@ permitted on restrictive supply sources like Google Ad Manager than if
 it is hosted by a third-party ad server.
 
 There are a few things you can look for before sending a ticket into
-Xandr Support. First, does the trafficking code
+Microsoft Advertising Support. First, does the trafficking code
 (html, javascript, etc.) match the creative? A javascript tag that is
 interpreted as pure html (e.g. `<script></script>`) should be trafficked
 as html. Raw javascript (e.g. `var x = "my tag"`) should be trafficked
@@ -66,7 +66,7 @@ can decompile the flash file using a free software utility (e.g. Flare)
 to check.
 
 Please see [Click Tracking](click-tracking.md) for further details on click tracking. If you are still
-having problems, please contact Xandr Support.
+having problems, please contact Microsoft Advertising Support.
 
 ## Can I run creatives in different languages?
 
@@ -90,6 +90,6 @@ following URL to serve your creative:
 
 ## Gambling creatives
 
-Please see our [Policies for Buying](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx) (login required) for information on what kinds of gambling ads are allowed to serve and
+Please see our [Policies for Buying](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Buying.aspx) (login required) for information on what kinds of gambling ads are allowed to serve and
 under what conditions.
 

@@ -68,7 +68,7 @@ All of the examples below will use the same underlying "database", which contain
 | 17 | H | Hap's Go-Kart Track and Petting Zoo | 1108 | 87 |
 | 18 | H | Hap's Go-Kart Track and Petting Zoo | 1872 | 116 |
 
-You can also [download](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/tiny-db.csv) the example in CSV format.
+You can also [download](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/tiny-db.csv) the example in CSV format.
 
 ## Filtering examples
 
@@ -115,7 +115,7 @@ In this example, we filter out all but two advertisers. This reduces our data se
 
 ## Grouping and dimension selection guidance
 
-Grouping can increase the size of the data set by adding rows (possibly a very large number of rows). Since the Xandr reporting system automatically groups by all the dimensions you select, a best practice is to select as few dimensions as possible to get just the information you need. You can further reduce the effects of this automatic grouping of dimensions by applying filtering.
+Grouping can increase the size of the data set by adding rows (possibly a very large number of rows). Since the Microsoft Advertising reporting system automatically groups by all the dimensions you select, a best practice is to select as few dimensions as possible to get just the information you need. You can further reduce the effects of this automatic grouping of dimensions by applying filtering.
 
 ## Related topics
 

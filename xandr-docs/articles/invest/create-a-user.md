@@ -30,7 +30,7 @@ Microsoft Invest. Click on your Member name in the top right of the navigation m
 
 From the **User Details** tab, enter the user's **Contact Information**.
 > [!NOTE]
-> The email ID entered here will be the primary username for signing into the Xandr products via the Microsoft Identity Platform. Ensure the email is consistent across any accounts in the Xandr platform, and matches the user's email for authenticating to Microsoft products. For more details, visit [Microsoft Identity Platform Login](microsoft-identity-platform-login.md).
+> The email ID entered here will be the primary username for signing into the Microsoft Advertising products via the Microsoft Identity Platform. Ensure the email is consistent across any accounts in the Microsoft Advertising platform, and matches the user's email for authenticating to Microsoft products. For more details, visit [Microsoft Identity Platform Login](microsoft-identity-platform-login.md).
 > [!NOTE]
 > If the State is set to Inactive, the user will not be able to log in.
 
@@ -56,8 +56,8 @@ format chosen here for this user.
 
 - **Login Credentials**: Enter a username. The username should not
   contain any special characters such as $, \#, and ". This will be the
-  username the user can use to sign into the Xandr API. For accessing
-  the Xandr Digital Platform UI products, the user's email will be used
+  username the user can use to sign into the Microsoft Advertising API. For accessing
+  the Microsoft Advertising Digital Platform UI products, the user's email will be used
   via the Microsoft Identity Platform to authenticate.
 - **Permissions**: If this user needs to view billing information in
   Invest DSP, select the **Admin User** check

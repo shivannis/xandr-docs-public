@@ -11,7 +11,7 @@ You can optionally enable the cross-device targeting and measurement feature on 
 The **Cross-Device** pull-down menu appears in the **Audience & Location Targeting** section. It is disabled by default.
 
 > [!NOTE]
-> Cross-device targeting carries a cost-per-mille (CPM) or cost-per-thousand-impressions charge, which is noted next to the name of the identity provider you select. Xandr clears this charge with the data provider, and it is included in your total costs in reporting.
+> Cross-device targeting carries a cost-per-mille (CPM) or cost-per-thousand-impressions charge, which is noted next to the name of the identity provider you select. Microsoft Advertising clears this charge with the data provider, and it is included in your total costs in reporting.
 > [!WARNING]
 > Cross-device functionality is available to sellers when running line items that purchase inventory from the ad exchange using RTB. It's not available when sellers are running managed campaigns on their own inventory.
 
@@ -19,7 +19,7 @@ For more information about how identity graphs and cross-device targeting works,
 
 To enable cross-device tracking and measurement, select the identity graph you want to use to connect users across devices.
 
-- Xandr (US + EU) graph to use Xandr's information to target and attribute across multiple devices in the U.S. and Europe. Xandr  continues to invest in enriching the Xandr graph in Europe and the U.S. and to work closely with new market-leading data partners.
+- Microsoft Advertising (US + EU) graph to use Microsoft Advertising's information to target and attribute across multiple devices in the U.S. and Europe. Microsoft Advertising  continues to invest in enriching the Microsoft Advertising graph in Europe and the U.S. and to work closely with new market-leading data partners.
   > [!IMPORTANT]
   > European cross device coverage is currently limited to the following key countries:
   > - France

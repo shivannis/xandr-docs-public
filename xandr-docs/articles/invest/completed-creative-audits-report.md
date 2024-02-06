@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Completed creative audits report
 
-The Completed Creative Audits Report provides insight into the number of creatives that have completed the Xandr audit process, and the associated charges. Use this report to find out:
+The Completed Creative Audits Report provides insight into the number of creatives that have completed the Microsoft Advertising audit process, and the associated charges. Use this report to find out:
 
 - The number of creatives that have been audited over a given time frame
 - The number of creatives that have been audited for a specific advertiser

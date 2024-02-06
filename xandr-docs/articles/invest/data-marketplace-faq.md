@@ -8,19 +8,19 @@ ms.date: 10/28/2023
 
 **What happens when I activate a data provider?**
 
-Xandr will automatically set up standard pricing and clearing for that data provider and shares all public segments to your seat. Segments may take up to 2 hours to populate the UI but in some instances, you will be able to immediately start targeting that data provider's segments.
+Microsoft Advertising will automatically set up standard pricing and clearing for that data provider and shares all public segments to your seat. Segments may take up to 2 hours to populate the UI but in some instances, you will be able to immediately start targeting that data provider's segments.
 
 **Does the data marketplace support custom segments?**
 
 Yes, we provide the same reporting and clearing services for custom segments as long as there is a CPM associated with the segment and if the data provider has opted to offer them through our data marketplace. Once the data provider has been activated in the UI, the data provider will be able to expose your custom segments to your Microsoft account. You will know everything is properly set up when the segment is available for targeting and there is a price associated with the segment.
 
-**What if I have better rates than what Xandr provides?**
+**What if I have better rates than what Microsoft Advertising provides?**
 
 Please reach out to the relevant Data Provider to make sure these better rates are reflected in our system.
 
 **What if I have a monthly flat-rate deal with a data provider?**
 
-Xandr will not be able to clear that cost for the buyer. The data provider will have to continue invoicing your organization directly.
+Microsoft Advertising will not be able to clear that cost for the buyer. The data provider will have to continue invoicing your organization directly.
 
 **Do you support custom rate cards in non-USD currencies?**
 
@@ -32,7 +32,7 @@ In most cases, the cost of data will be an extra line item in your invoice. If y
 
 **Do I have to change anything about my line item to make this work?**
 
-If your in-flight line item is targeting a segment supported by the data marketplace, then there is nothing on the line item that you have to change. Once the data provider is activated for clearing, Xandr will immediately start clearing the cost of data on your behalf.
+If your in-flight line item is targeting a segment supported by the data marketplace, then there is nothing on the line item that you have to change. Once the data provider is activated for clearing, Microsoft Advertising will immediately start clearing the cost of data on your behalf.
 
 **The data provider I need isn't supported by the Data Marketplace. What should I do?**
 

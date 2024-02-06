@@ -31,7 +31,7 @@ In the **Delivery Options** section, select whether you want to generate the tag
 
 In the Advanced Options section, you can select additional values to include in the pixel tag.
 
-Select **Use codes** to generate a pixel with your external code (the value you entered when creating the pixel) and your member ID instead of the Xandr pixel ID.
+Select **Use codes** to generate a pixel with your external code (the value you entered when creating the pixel) and your member ID instead of the Microsoft Advertising pixel ID.
 
 Select **Use a server-side pixel** to generate a URL that you can call, instead of an HTML-based pixel that is placed on a publisher's web page.
 

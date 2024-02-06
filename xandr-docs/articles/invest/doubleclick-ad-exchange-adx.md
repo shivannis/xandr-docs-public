@@ -6,23 +6,23 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Google Ad Manager
 
-Xandr has brandsafe creative policies, but in order to run ads through the Google Ad Manager, you must also follow the requirements below.
+Microsoft Advertising has brandsafe creative policies, but in order to run ads through the Google Ad Manager, you must also follow the requirements below.
 
-## Enabling your Xandr member seat for Google Ad Manager buying
+## Enabling your Microsoft Advertising member seat for Google Ad Manager buying
 
-Xandr member seats do not have access to Google Ad Manager by default; the ability to buy Google Ad Manager inventory requires a separate enablement process for each Xandr member seat. There are two types of setups:
+Microsoft Advertising member seats do not have access to Google Ad Manager by default; the ability to buy Google Ad Manager inventory requires a separate enablement process for each Microsoft Advertising member seat. There are two types of setups:
 
-- Standard setup: Member purchases Google Ad Manager inventory through the Xandr parent seat.
-- Alternate setup: Member has their own seat on Google Ad Manager and it is linked to a Xandr member ID
+- Standard setup: Member purchases Google Ad Manager inventory through the Microsoft Advertising parent seat.
+- Alternate setup: Member has their own seat on Google Ad Manager and it is linked to a Microsoft Advertising member ID
 
-The standard setup is a simple process that does not require a waiting period. The alternate setup requires the client to work with Google Ad Manager to obtain a seat on their exchange. Once this seat is obtained, it needs to be linked to an Xandr member ID. This process can take two to four weeks to complete.
+The standard setup is a simple process that does not require a waiting period. The alternate setup requires the client to work with Google Ad Manager to obtain a seat on their exchange. Once this seat is obtained, it needs to be linked to an Microsoft Advertising member ID. This process can take two to four weeks to complete.
 
 > [!NOTE]
 >
->- Mapping of Google Ad Manager seats to Xandr seats is 1:1 - you cannot link multiple Google Ad Manager seats to one Xandr seat or vice versa
->- The seat in Google Ad Manager must exist as a child of the Xandr Google Ad Manager seat - you cannot link any other type of Google Ad Manager seat to an Xandr member
+>- Mapping of Google Ad Manager seats to Microsoft Advertising seats is 1:1 - you cannot link multiple Google Ad Manager seats to one Microsoft Advertising seat or vice versa
+>- The seat in Google Ad Manager must exist as a child of the Microsoft Advertising Google Ad Manager seat - you cannot link any other type of Google Ad Manager seat to an Microsoft Advertising member
 
-To begin the enablement process for your Xandr member seat, please submit a ticket to our Business Support team via our [Customer Support Portal](https://help.xandr.com/) and copy in your Account Manager (if applicable). If you have already contacted Google and you do not qualify for a Google Ad Manager seat, please reach out to your Account Manager or Business Support to discuss alternate options for buying Google Ad Manager inventory.
+To begin the enablement process for your Microsoft Advertising member seat, please submit a ticket to our Business Support team via our [Customer Support Portal](https://help.xandr.com/) and copy in your Account Manager (if applicable). If you have already contacted Google and you do not qualify for a Google Ad Manager seat, please reach out to your Account Manager or Business Support to discuss alternate options for buying Google Ad Manager inventory.
 
 ## Use of technology vendors
 

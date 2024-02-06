@@ -16,7 +16,7 @@ The charge for serving managed, kept, mediated, or direct impressions and for se
 
 ## Seller revenue share minimum fee
 
-For contracts which contain a clause that requires a Seller Revenue Share Minimum fee (included on your Buyer invoice for Seller activity during the invoiced period), we review Xandr's earnings from the Seller’s resold traffic and apply a minimum CPM (the exact value applied is defined in the contract). For example, assuming the Seller Auction Service fee = **10%** and the Seller Revenue Share Minimum fee CPM = **$0.01 CPM**, the following calculations could be made:
+For contracts which contain a clause that requires a Seller Revenue Share Minimum fee (included on your Buyer invoice for Seller activity during the invoiced period), we review Microsoft Advertising's earnings from the Seller’s resold traffic and apply a minimum CPM (the exact value applied is defined in the contract). For example, assuming the Seller Auction Service fee = **10%** and the Seller Revenue Share Minimum fee CPM = **$0.01 CPM**, the following calculations could be made:
 
 | Month | Resold Impressions | Gross Resold Revenue | Seller Auction Service fee (see formulas below) | Seller Rev Share minimum (see formulas below) | Seller Rev Share Minimum Fee Assessed (explanation) |
 |:--|:--|:--|:--|:--|:--|
@@ -29,4 +29,4 @@ The Seller Revenue Share Minimum fee will appear on invoices as the DIFFERENCE b
 Auction Service Fee.
 
 > [!WARNING]
-> Gross Resold Revenue does not appear in the UI. Resold Revenue is net earnings to the network after Xandr Seller and Buyer Auction Service Charges have been applied.
+> Gross Resold Revenue does not appear in the UI. Resold Revenue is net earnings to the network after Microsoft Advertising Seller and Buyer Auction Service Charges have been applied.

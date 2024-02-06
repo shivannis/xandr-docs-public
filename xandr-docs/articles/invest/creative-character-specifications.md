@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Creative character specifications 
 
-There are character specifications that you should keep in mind when uploading creatives on to the Xandr platform.
+There are character specifications that you should keep in mind when uploading creatives on to the Microsoft Advertising platform.
 
 For creatives, ensure that there is no invalid or unsupported character present in the VAST url as well as in the 3rd party segments attached to the creative. For example,
 

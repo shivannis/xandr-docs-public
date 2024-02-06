@@ -46,8 +46,8 @@ create a line item.
 
 1. [Set Up Line Item Optimization](set-up-line-item-optimization.md)<br>
  From the **Optimization** section,
-    you can enable or disable Xandr optimization
-    for a line item. If you enable Xandr
+    you can enable or disable Microsoft Advertising optimization
+    for a line item. If you enable Microsoft Advertising
     optimization, you must first set a performance goal and goal
     priority, and then associate the line item with conversion pixels
     for those goals.

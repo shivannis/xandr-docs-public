@@ -41,14 +41,14 @@ Click the **+ New** button. This opens the
     Value".
 1. In the **Max Usersync Pixels** field,
     enter the number of user sync pixels that are allowed on the pixel.
-    - User sync pixels are pixels that Xandr
+    - User sync pixels are pixels that Microsoft Advertising
       fires on the back of the segment pixel to sync our user IDs with
       yours. This is done to improve reach and audience targeting,
       however, you may want to consider limiting them so as to not
       affect page load performance. User sync pixels make it possible
-      for Xandr to recognize users even when
+      for Microsoft Advertising to recognize users even when
       they're viewing pages that don't contain
-      Xandr ad tags. Why is this important?
+      Microsoft Advertising ad tags. Why is this important?
       Buyers benefit from being able to target by segment and frequency,
       and sellers benefit by monetizing their inventory.
 1. **Keep user in segment**: select

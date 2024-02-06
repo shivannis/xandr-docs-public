@@ -169,7 +169,7 @@ The **Projected Impact Overview** calculates the projected spend, media cost, pa
 following parts:
 
 - **Spend Breakdown** - The media cost and the Buyer Auction Service
-  Charge (BASC) charged by Xandr. For more
+  Charge (BASC) charged by Microsoft Advertising. For more
   information on BASC, see [Understanding
   Your Pricing Terms](understanding-your-pricing-terms.md)
    (separate login required).

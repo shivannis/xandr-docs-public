@@ -10,9 +10,9 @@ Cross-device targeting and measurement, which can be enabled at the line item le
 
 By tracking and managing each individual user's ad viewing and conversion experience across the various devices they use, advertisers can deliver a holistic brand experience to consumers and more accurately measure the impact of ad spending on driving conversions.
 
-Cross-device capability enhances targeting and attribution using information from an identity graph, a database of customer information that allows Xandr to identify users on multiple devices. Supported identity graphs are:
+Cross-device capability enhances targeting and attribution using information from an identity graph, a database of customer information that allows Microsoft Advertising to identify users on multiple devices. Supported identity graphs are:
 
-- Xandr's identity graph, which covers the United States and Europe. The Xandr United States and Europe graphs are powered by market-leading data partners.
+- Microsoft Advertising's identity graph, which covers the United States and Europe. The Microsoft Advertising United States and Europe graphs are powered by market-leading data partners.
 
   > [!IMPORTANT]
   > European cross device coverage is currently limited to the following key countries:

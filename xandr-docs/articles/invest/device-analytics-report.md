@@ -73,13 +73,13 @@ Most data in this report is maintained for 14 months. However, after 100 days, y
 
 | Column | Type | Filter? | Example | Description |
 |:---|:---|:---|:---|:---|
-| Buyer | string | Yes | "My Member (123)" | The name of the buying member followed by the ID (Xandr format). |
-| Seller | string | Yes | "That Seller (456)" | The name of the selling member followed by the ID (Xandr format). |
-| Advertiser | string | Yes | "Mobile Zombies (789)" | The name of the advertiser followed by the ID (Xandr format). |
-| Publisher | string | Yes | "Undead.com (456)" | The name of the publisher followed by the ID (Xandr format). |
-| Insertion Order | string | Yes | "Mobile Insertion Order (321)" | The name of the insertion order followed by the ID (Xandr format). |
-| Line Item | string | Yes | "Mobile Line Item (111)" | The name of the line item followed by the ID (Xandr format). |
-| Campaign | string | Yes | "Mobile Campaign (222)" | The name of the campaign followed by the ID (Xandr format). (Does not apply to all advertisers.) |
+| Buyer | string | Yes | "My Member (123)" | The name of the buying member followed by the ID (Microsoft Advertising format). |
+| Seller | string | Yes | "That Seller (456)" | The name of the selling member followed by the ID (Microsoft Advertising format). |
+| Advertiser | string | Yes | "Mobile Zombies (789)" | The name of the advertiser followed by the ID (Microsoft Advertising format). |
+| Publisher | string | Yes | "Undead.com (456)" | The name of the publisher followed by the ID (Microsoft Advertising format). |
+| Insertion Order | string | Yes | "Mobile Insertion Order (321)" | The name of the insertion order followed by the ID (Microsoft Advertising format). |
+| Line Item | string | Yes | "Mobile Line Item (111)" | The name of the line item followed by the ID (Microsoft Advertising format). |
+| Campaign | string | Yes | "Mobile Campaign (222)" | The name of the campaign followed by the ID (Microsoft Advertising format). (Does not apply to all advertisers.) |
 | Split | string | Yes | "Mobile Split A (342)" | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the Split column (if included) will be null. |
 | Deal ID | string | Yes | "My New Deal" | The ID/name of the deal associated with the transaction for the impression. |
 | Media Type | string | Yes | "Banner" | The media type of the creative. Possible values: "Banner", "Pop", "Interstitial", "Video", "Text", "Expandable", "Skin", or "Facebook". |
@@ -92,11 +92,11 @@ Most data in this report is maintained for 14 months. However, after 100 days, y
 | Payment Type | string | Yes | "cpm", "revshare" | The type of payment to a broker. |
 | Device Type | string | No | desktops & laptops | The type of device on which the impression was served. |
 | Connection Type | string | Yes | "Carrier-based" | The type of internet connection at the time of the impression. Possible values: "Carrier-based" or "Wifi or Static". |
-| Device Make | string | Yes | "4G Systems (1)" | The name of the device make followed by the ID (Xandr format). |
-| Device Model | string | Yes | "DX650 (15)" | The name of the device model followed by the ID (Xandr format). |
-| Operating System | string | Yes | "Android 6.0.1 Marshmallow (155)" | The name of the operating system of the device followed by the ID (Xandr format). |
-| Operating System Family | string | Yes | "Android (2)" | The name of the operating system family (e.g., Android, Microsoft Windows) of the device followed by the ID (Xandr format). |
-| Browser | string | Yes |  | The name of the browser followed by the ID (Xandr format). |
+| Device Make | string | Yes | "4G Systems (1)" | The name of the device make followed by the ID (Microsoft Advertising format). |
+| Device Model | string | Yes | "DX650 (15)" | The name of the device model followed by the ID (Microsoft Advertising format). |
+| Operating System | string | Yes | "Android 6.0.1 Marshmallow (155)" | The name of the operating system of the device followed by the ID (Microsoft Advertising format). |
+| Operating System Family | string | Yes | "Android (2)" | The name of the operating system family (e.g., Android, Microsoft Windows) of the device followed by the ID (Microsoft Advertising format). |
+| Browser | string | Yes |  | The name of the browser followed by the ID (Microsoft Advertising format). |
 | Buying Currency | string | No | "EUR" | The transaction currency that the buyer used to purchase this impression. Including this dimension will cause the monetary metrics to be displayed in the buying currency. This dimension is available only when Currency 2.0 is disabled. |
 | Selling Currency | string | No | "EUR" | The transaction currency used by the seller to sell this impression. Including this dimension will cause the monetary metrics to be displayed in the selling currency. This dimension is available only when Currency 2.0 is disabled. |
 

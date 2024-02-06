@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 If you want to customize the way creatives render, you can create your
 own templates from scratch, or you can copy
-Xandr standard templates and modify them to fit
+Microsoft Advertising standard templates and modify them to fit
 your needs.
 
 Our platform supports common creative types such as videos and banners,
@@ -26,7 +26,7 @@ of the creative during upload. You can create up to 100 custom
 templates.
 
 > [!NOTE]
->  Xandr does not provide support for creatives that do not render correctly as a result of errors in the custom template code.
+>  Microsoft Advertising does not provide support for creatives that do not render correctly as a result of errors in the custom template code.
 
 For more information, see the following topics:
 

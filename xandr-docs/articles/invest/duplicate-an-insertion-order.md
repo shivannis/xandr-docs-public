@@ -55,7 +55,7 @@ There are certain considerations you should keep in mind before duplicating an i
     - Duplicated line items will have **_Copy** appended to their names. You can edit the names later.
 
       > [!NOTE]
-      > All line items are selected by default. If the IO has more than 100 line items, the first 100 are selected, and you may change the selection. If you need to duplicate more than 100 line items, you may bulk upload the rest or contact your Xandr Account Manager for help.
+      > All line items are selected by default. If the IO has more than 100 line items, the first 100 are selected, and you may change the selection. If you need to duplicate more than 100 line items, you may bulk upload the rest or contact your Microsoft Advertising Account Manager for help.
 
 1. Once the above information is entered, click **Duplicate** to duplicate the insertion order with the selected criteria. You can click
 **Cancel** to cancel the insertion order duplication process if required.

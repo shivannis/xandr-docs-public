@@ -30,7 +30,7 @@ basic details for the advertiser.
 
 - **External Code** - If you want to report on the advertiser using an
   external code (rather than the internal ID that
-  Xandr assigns automatically), enter the code
+  Microsoft Advertising assigns automatically), enter the code
   here.
 
 - **State** - Set the state of the advertiser. "Active" means child
@@ -94,7 +94,7 @@ already been created.
 > Templates are typically used when all or most of your political advertising is paid for by a single political organization.
 
 This section contains the details of the person or organization that is
-purchasing ads on Xandr. For example, a
+purchasing ads on Microsoft Advertising. For example, a
 candidate, an agency, or a political consultant.
 
 The required fields must be filled out for any state or local political
@@ -118,7 +118,7 @@ We reserve the right to implement additional screening at any time.
 | **State Registration Form** | New York and New Jersey require copies of state registration forms from independent expenditure committees making purchases. Creatives won't serve in those states until the form is uploaded. |
 | **Phone** | Phone number of the person, group, organization, or business that is advertising. |
 | **Payment Method** | How the political organization pays you. Options are:<br> - **Bank account (direct deposit)** <br> - **Check** <br> - **Credit or debit card**<br> - **Other**. If this is selected, you must specify details. |
-| **Organization Name** | Name of the person, group, organization, or business that is paying you to advertise on Xandr. |
+| **Organization Name** | Name of the person, group, organization, or business that is paying you to advertise on Microsoft Advertising. |
 | **Independent Expenditure Committee** | Select this if any ads are being paid for by an independent expenditure committee: a political committee that makes only independent expenditures; that is, it spends money on political communications that expressly advocate the election or defeat of a clearly identified candidate and does not coordinate with a candidate, a candidate’s authorized committee, or an agent of the candidate. |
 | **Country** | Country of the person, group, organization, or business that is advertising. |
 | **City** | City of the person, group, organization, or business that is advertising. |
@@ -159,7 +159,7 @@ enter any optional advanced settings that are useful.
 
 - **Brand Settings** - You can set a default brand and offer category to
   be assigned to all creatives added under this advertiser. If you
-  submit a creative for Xandr audit, the audit
+  submit a creative for Microsoft Advertising audit, the audit
   team will validate and, when necessary, alter these settings.
 - **Exclusions** - for publishers using Invest
   DSP's [AST](../seller-tag/seller-tag.md) - Managed publishers can conduct

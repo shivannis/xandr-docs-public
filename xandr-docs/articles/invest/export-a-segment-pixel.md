@@ -22,7 +22,7 @@ In the **Delivery Options** section, select whether you want to generate the tag
 
 In the Advanced Options section, you can select additional values to include in the pixel tag.
 
-- **Use codes**: to generate a pixel with your external code (the value you entered when creating the pixel) and your member ID instead of the Xandr pixel ID
+- **Use codes**: to generate a pixel with your external code (the value you entered when creating the pixel) and your member ID instead of the Microsoft Advertising pixel ID
 - **Add user to segments on call**: enables you to add additional segments
 - **Remove user from segments on call**: enables you to remove the user from segments
 - **Parameter**:

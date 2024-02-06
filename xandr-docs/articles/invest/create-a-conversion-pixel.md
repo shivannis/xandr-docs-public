@@ -104,7 +104,7 @@ Add piggyback pixels with the following in mind:
 ## Step 7. Save the conversion pixel
 
 To finish adding the conversion pixel to the
-Xandr platform, click the
+Microsoft Advertising platform, click the
 **Save** button. The pixel is then added
 to the Conversion Pixels list, where you can add it to your line item.
 
