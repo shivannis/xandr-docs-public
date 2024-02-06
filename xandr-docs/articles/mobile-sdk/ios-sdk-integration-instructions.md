@@ -39,11 +39,11 @@ If you are using v2.13 or greater of our SDK and would like to show only ATS-com
 
 There are five ways to get our SDK:
 
-- [CocoaPods](#CocoaPods)
-- [Carthage](#Carthage)
-- [Download from source](#Download-from-source)
-- [XCFramework](#XCFramework)
-- [Swift Package Manager](#Swift-Package-Manager)
+- [CocoaPods](#cocoapods)
+- [Carthage](#carthage)
+- [Download from source](#download-from-source)
+- [XCFramework](#xcframework)
+- [Swift Package Manager](#swift-package-manager)
 
 ### CocoaPods
 
