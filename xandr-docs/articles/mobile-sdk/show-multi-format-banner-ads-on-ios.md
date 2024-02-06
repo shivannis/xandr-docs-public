@@ -1,12 +1,12 @@
 ---
-title : Show multi-format banner ads on iOS
-description : The AppNexus mobile SDK supports serving multiple creative formats through a single banner entry point. 
+title: Banner Video / OutStream Ads on iOS
+description: The AppNexus mobile SDK supports serving multiple creative formats through a single banner entry point. 
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 
-# Show multi-format banner ads on iOS
+# Banner Video / OutStream ads on iOS
 
 > [!NOTE]
 > This offering is currently in Alpha and is subject to change.

@@ -19,16 +19,14 @@ In order for Xandr to track a click to the corresponding impression, a click tra
     https://nym1-ib.adnxs.com/click2?
     ```
 
-    In this example, the Xandr click tracker is followed by the Xandr homepage. When the link is loaded, a click is recorded on Xandr, and then there is a redirect to the
-    Xandr homepage.
+    In this example, the Xandr click tracker is followed by the Xandr homepage. When the link is loaded, a click is recorded on Xandr, and then there is a redirect to the Xandr homepage.
 
 ## Tracking clicks on hosted creatives
 
 Xandr will configure the click tracking for hosted creatives such as JPGs, GIFs, and PNGs since they are wrapped in our creative templates. Our templates are set up in such a way that a dynamically-generated click tracker is correctly populated in the creative content. For more information, see [Creative
 Templates](creative-templates.md).
 
-All you have to do is enter the landing page URL in the **Landing Page** field and select the **Enable Click Tracking** checkbox if you're using Console, and a click URL
-with encoded information about the creative will be automatically appended to the creative. When a user clicks the URL, the user's browser will first request the URL from adnxs.com. The encoded information in the URL will be recorded by the server. The user's browser will be redirected to the landing page configured for the creative.
+All you have to do is enter the landing page URL in the **Landing Page** field and select the **Enable Click Tracking** checkbox if you're using Console, and a click URL with encoded information about the creative will be automatically appended to the creative. When a user clicks the URL, the user's browser will first request the URL from adnxs.com. The encoded information in the URL will be recorded by the server. The user's browser will be redirected to the landing page configured for the creative.
 
 ## Tracking third-party clicks on URLs for hosted creatives
 
@@ -56,7 +54,7 @@ The anchor tag contains a "href" or hyperlink reference, which in this case is c
 When an image is clicked, the "href" page loads. A click is tracked on Xandr and followed by a redirect to https://www.cnn.com. For example:
 
 ```
-<a href="https://nym1-ib.adnxs.com/click2?AAAAAAAAAAAAAAAAAAAA./clickenc=https://www.cnn.com" target="_blank"><img src="media/Ad-MediumRectangle-300x250.png" width="300" height="250"></a>
+<a href="https://nym1-ib.adnxs.com/click2?AAAAAAAAAAAAAAAAAAAA./clickenc=https://www.cnn.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ad-MediumRectangle-300x250.jpg" width="300" height="250"></a>
 ```
 
 After the user is redirected to the href, such as [https://www.cnn.com], the following takes place:

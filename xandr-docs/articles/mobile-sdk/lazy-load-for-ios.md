@@ -2,7 +2,7 @@
 title: Lazy Load for iOS
 description: In this article, learn about the Lazy Load feature in iOS, including its scope, methods, properties, and examples.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # Lazy Load for iOS
@@ -30,8 +30,7 @@ Additionally, it allows the host app to choose the optimal moment to fire tracke
 
 ## Scope of Lazy Load
 
-The scope of this feature is limited to Banner AdUnits that display banner Media Types. It does not apply to any other AdUnit, including
-instream video and native, nor does it apply to Media Types returned by a multi-format Banner AdUnit other than banner including banner-video (outstream video) and banner-native.
+The scope of this feature is limited to Banner AdUnits that display banner and native assembly renderer Media Types. It does not apply to any other AdUnit, including instream video and native, nor does it apply to Media Types returned by a multi-format Banner AdUnit other than banner and native assembly renderer including banner-video (outstream video) and banner-native. 
 
 ## Properties
 
@@ -84,18 +83,13 @@ Loads the webview of a lazy-loaded AdUnit and fires all trackers, including thir
     //
     ANBannerAdView  *banner  = [ANBannerAdView adViewWithFrame:rect placementId:placementID adSize:size];
  
+    /* native assebly renderer
+    self.banner.shouldAllowNativeDemand = YES;
+    self.banner.enableNativeRendering = YES;
+    */
+
     self.lazyBanner = banner;
- 
-    self.lazyBanner.delegate = self;
-    self.lazyBanner.enableLazyLoad = YES;
- 
-    [self.view addSubview:self.lazyBanner];
- 
- 
-    // Begin the load of AdUnit.
-    //
-    [self.lazyBanner loadAd];
-}
+    self.lazyBanner.delegate = self; self.lazyBanner.enableLazyLoad = YES; [self.view addSubview:self.lazyBanner]; // Begin the load of AdUnit. // [self.lazyBanner loadAd]; } // ... - (void)readyToDisplayLazyBanner { // Complete the load of AdUnit. // [self.lazyBanner loadLazyAd]; } // // ANAdProtocol delegate methods. // - (void)adDidReceiveAd:(id)ad { // Optional processing when lazy banner webview completes loading. } - (void)lazyAdDidReceiveAd:(id)ad { // Optional Processing when lazy banner is received. }
  
 // ...
  
@@ -154,6 +148,12 @@ class BannerAdViewController: UIViewController , ANBannerAdViewDelegate{
         self.banner = ANBannerAdView(frame: rect, placementId: adID, adSize: size)
         self.banner?.rootViewController = self
         self.banner?.delegate = self
+        
+         /* native assebly renderer
+        self.banner?.shouldAllowNativeDemand = true
+        self.banner?.enableNativeRendering = true
+        */
+
         self.banner?.enableLazyLoad = true
         // Load an ad.
         self.banner?.loadAd()

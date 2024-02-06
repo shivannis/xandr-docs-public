@@ -19,6 +19,7 @@ The parameters listed below can be sent as arguments in the function.
 
 | Parameter | Type | Description |
 |:---|:---|:---|
+| `msft` | object | Object that contains request values unique to Microsoft. See [MSFT Object details below](#schain-object). |
 | `member` | number | The member ID. |
 | `publisherId` | number | The `publisherId` can be used when using an inventory code. This ensures the right publisher is used to help pick the correct default placement. |
 | `user` | object | Object that specifies information about an external user. See User Object details below. |
@@ -58,6 +59,13 @@ apntag.setPageOpts({
 });
 ```
 
+### MSFT object 
+
+Specifies information and settings unique to Microsoft.
+
+| Parameter | Type | Description |
+|---|---|---|
+| `toptout` | number | A number that represents the status of the end user's MSFT optout choices (eg 0, 1, etc) |
 ### Schain object
 
 The feature in AST allows for publishers to perform an optional syntax check on the schain they specify in the config parameter. The syntax criteria is based on the IAB specification for the schain object.

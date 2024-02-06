@@ -196,7 +196,7 @@ This feature would address the following scenarios where:
 
 **Actions to take:**
 
-- Click Run check again button to
+- Click **Run check again** button to
   initiate the re-scanning of the creative XML document.
 
   :::image type="content" source="media/run-check-again.png" alt-text="Screenshot of Run check again button.":::
@@ -205,13 +205,10 @@ This feature would address the following scenarios where:
 
   - Scanner failed to run during the upload
   - Scanner timed out while scanning
-  - Scanner detected an issue such as missing or wrong duration, missing
-    or wrong media file format, etc.
-  - VAST XML content is updated on the ad server, but needs to be
-    updated at Xandr platform and back-end.
+  - Scanner detected an issue such as missing or wrong duration, missing or wrong media file format, etc.
+  - VAST XML content is updated on the ad server, but needs to be updated at Xandr platform and back-end.
 
-- Reach out to the tag provider to update the creative with at least one
-  of the recommended video formats.
+- Reach out to the tag provider to update the creative with at least one of the recommended video formats.
   
   Sample XML with recommended VAST formats:
 

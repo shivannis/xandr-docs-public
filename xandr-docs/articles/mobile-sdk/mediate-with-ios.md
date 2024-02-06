@@ -21,8 +21,8 @@ This section lists the networks that we provide mediation adaptors for, and the 
 
 | Adaptor | Version | Banner | Interstitial | Native | Docs |
 |:---|:---|:---|:---|:---|:---|
-| AdMob and DFP | 10.3.0 | Yes | Yes | Yes | [Google Mobile Ads - iOS Document](https://developers.google.com/admob/ios/mediation) |
-| SmartAdServer | 7.17.1 | Yes | Yes | No | [SmartAdServer Documentation](https://help.smartadserver.com/iOS/V6.6/) |
+| AdMob and DFP | 10.10.0  | Yes | Yes | Yes | [Google Mobile Ads - iOS Document](https://developers.google.com/admob/ios/mediation) |
+| SmartAdServer | 7.22.0  | Yes | Yes | No | [SmartAdServer Documentation](https://documentation.smartadserver.com/displaySDK/) |
 
 ## Prerequisites
 
