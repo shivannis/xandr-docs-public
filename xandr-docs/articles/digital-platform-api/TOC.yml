@@ -172,7 +172,7 @@
       - name: Streaming Server-Side Segmentation
         items:
         - name: Overview
-          href: streaming-server-side-segmentation_archive.md
+          href: streaming-server-side-segmentation.md
         - name: Instant Audience Service
           href: instant-audience-service.md
         - name: Check Usage Statistics
