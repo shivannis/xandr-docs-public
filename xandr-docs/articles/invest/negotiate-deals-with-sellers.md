@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Negotiate deals with sellers
 
-Xandr Buyers can negotiate custom deals with sellers to obtain:
+Microsoft Advertising Buyers can negotiate custom deals with sellers to obtain:
 
 - Preferential pricing on inventory
 - Access to exclusive inventory
@@ -21,7 +21,7 @@ As a buyer, the best way to find deals is to browse seller packages, which are p
 
 ## Deals with external supply partners
 
-At this time, Xandr supports deals with the following external supply partners:
+At this time, Microsoft Advertising supports deals with the following external supply partners:
 
 - AOL One Display
 - Google Ad Manager
@@ -33,10 +33,10 @@ At this time, Xandr supports deals with the following external supply partners:
 - Teads TV
 - Yahoo Ad Exchange
 
-You must negotiate deals with these supply partners offline and save them in the partner's deal portal. Xandr will then automatically synchronize the deals with our system; they should be available for purchase within a few hours of creation. Please note that Xandr employees cannot explain these external supply partner's auction mechanics or deal types.
+You must negotiate deals with these supply partners offline and save them in the partner's deal portal. Microsoft Advertising will then automatically synchronize the deals with our system; they should be available for purchase within a few hours of creation. Please note that Microsoft Advertising employees cannot explain these external supply partner's auction mechanics or deal types.
 
 > [!NOTE]
-> Each deal ID can be associated only with a single buyer. Enter one buyer member when setting up a deal in the external supply partner's system. If multiple members are entered, Xandr will map the deal only to the first buyer member.
+> Each deal ID can be associated only with a single buyer. Enter one buyer member when setting up a deal in the external supply partner's system. If multiple members are entered, Microsoft Advertising will map the deal only to the first buyer member.
 
 ## Related topics
 

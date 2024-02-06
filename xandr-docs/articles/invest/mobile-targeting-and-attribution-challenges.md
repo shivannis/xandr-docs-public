@@ -47,7 +47,7 @@ Also known as: **Apps vs. Apps**
 
 - Use Google's advertising identifier (`aaid`) or standardize on the `sha1` device ID for Android devices.
 
-  Xandr associates multiple device IDs to one Xandr cookie IDs. This allows us to do frequency capping using the mechanisms we already have in place. For more information about `idfa`, `sha1`, and the other mobile device IDs we support, see the [Mobile Ad Call  Reference](mobile-ad-call-reference.md).
+  Microsoft Advertising associates multiple device IDs to one Microsoft Advertising cookie IDs. This allows us to do frequency capping using the mechanisms we already have in place. For more information about `idfa`, `sha1`, and the other mobile device IDs we support, see the [Mobile Ad Call  Reference](mobile-ad-call-reference.md).
 
 ## 4: Mobile Safari cookies
 

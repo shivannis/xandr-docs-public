@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Mobile-specific reporting
 
-Xandr has created several reports that let you focus on mobile-specific data. For more information, see the reports below.
+Microsoft Advertising has created several reports that let you focus on mobile-specific data. For more information, see the reports below.
 
 > [!TIP]
 > We've written this document to make it easier to find reports focused on mobile. All these reports are located in the [Reporting Guide](reporting-guide.md), so don't forget to look there as well.

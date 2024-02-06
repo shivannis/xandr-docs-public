@@ -45,7 +45,7 @@ types will not be eligible to serve on OTT inventory.
 ## Checking your creative's specifications
 
 To view the specifications of a particular creative in the XML code,
-paste its third-party VAST URL or the [Xandr hosting URL](http://ib.adnxs.com/cr?id=CREATIVE_ID&format=vast)
+paste its third-party VAST URL or the [Microsoft Advertising hosting URL](http://ib.adnxs.com/cr?id=CREATIVE_ID&format=vast)
  into a browser. The VAST Check functionality in
 Invest DSP will also verify that all creatives
 meet the requirements for duration, format, OTT bitrate, and resolution.

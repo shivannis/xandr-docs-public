@@ -18,8 +18,8 @@ The Postal Code List feature enables traders to:
 - enable postal code lists (include or exclude) for targeting at the line item level. The maximum number of postal code lists a line item or split can target is 100.
 
 > [!NOTE]
-> Certain legitimate ZIP or postal codes are unrecognizable or invalid within the Xandr geography targeting system. This can
-> happen because [Digital Envoy](https://www.digitalelement.com/), a Xandr partner that handles geolocation data, can't recognize a ZIP or postal code's existence until an IP address (user) has been associated with it. Postal codes that don't exist in the system often represent obscure or otherwise small geographical zones with minimal internet activity.
+> Certain legitimate ZIP or postal codes are unrecognizable or invalid within the Microsoft Advertising geography targeting system. This can
+> happen because [Digital Envoy](https://www.digitalelement.com/), a Microsoft Advertising partner that handles geolocation data, can't recognize a ZIP or postal code's existence until an IP address (user) has been associated with it. Postal codes that don't exist in the system often represent obscure or otherwise small geographical zones with minimal internet activity.
 
 ## Manage postal code lists
 

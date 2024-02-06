@@ -80,7 +80,7 @@ For all revenue fields, the currency is defined by the **Buying Currency** field
 | Publisher | Y | The name of the publisher associated with the impression. |
 | Placement Group | Y | The name of the placement group associated with the impression. |
 | Placement | Y | The name of the placement associated with the impression. |
-| Ad Request Call Type | N | The type of handler that was used to send the impression to Xandr (e.g., `vmap`, `ut` , `mob` , `ptv` , `openrtb` ). |
+| Ad Request Call Type | N | The type of handler that was used to send the impression to Microsoft Advertising (e.g., `vmap`, `ut` , `mob` , `ptv` , `openrtb` ). |
 | Site Domain | Y | The ID of the user's mobile app. |
 | Application ID | N | The ID of the mobile app on the device where the impression occurred. |
 | Device Type | Y | The type of device where the impression occurred. |

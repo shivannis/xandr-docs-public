@@ -60,8 +60,8 @@ Each domain or app in a list can have one of the following audit statuses:
 - **Approved** - the domain/app has been audited and approved.
 - **Rejected** - The reason the domain/app has been rejected after being audited (e.g., Hate Speech).
 - "**--**" - the domain/app is either unauditable (has been reviewed but can't be audited) or is pending audit (has not been reviewed yet, but is in the audit queue).
-- **Masked** - the seller is not exposing the domain/app's actual URL for targeting or reporting. However, the real domain/app URL is still audited by Xandr inventory quality controls within the bid request.
-- **Unsupported** - the domain/app is not yet in the Xandr audit queue. You should submit a Salesforce ticket to have it reviewed.
+- **Masked** - the seller is not exposing the domain/app's actual URL for targeting or reporting. However, the real domain/app URL is still audited by Microsoft Advertising inventory quality controls within the bid request.
+- **Unsupported** - the domain/app is not yet in the Microsoft Advertising audit queue. You should submit a Salesforce ticket to have it reviewed.
 
 > [!NOTE]
 >
@@ -94,12 +94,12 @@ Each domain or app in a list can have one of the following audit statuses:
       > The maximum number of domains and/or apps per inventory list is limited to 100,000.
 
 1. Click **Validate Domains & Apps**. The list will be checked to ensure that:
-    - None of the domains or apps you entered violate Xandr policies.
-    - Unsupported URLs are flagged. Unsupported means the Xandr targeting system hasn't audited these URLs yet so that you won't be able to serve on them.
+    - None of the domains or apps you entered violate Microsoft Advertising policies.
+    - Unsupported URLs are flagged. Unsupported means the Microsoft Advertising targeting system hasn't audited these URLs yet so that you won't be able to serve on them.
     - Invalid URL formats (i.e., non-http or non-https) are removed from the list.
 1. Click **Next**. The domains and apps you entered will be listed along with **Flags** for each (see [Key to Domain/App Audit Flags](#key-to-domainapp-audit-flags) for more information). If the list is large, use the arrows to advance through the pages. Note the following:
     - Unsupported domains or apps will be flagged.
-    - You can also remove any domains or apps that violate Xandr policies by clicking **Remove**. However, you will never serve on them even if you leave them in the list.
+    - You can also remove any domains or apps that violate Microsoft Advertising policies by clicking **Remove**. However, you will never serve on them even if you leave them in the list.
     - Select **Include subdomains** to include subdomains. For example, if you selected this option for "`mydomain.com`", you would also serve on its subdomains such as "`mydomain.com/foo`" and "`foo.mydomain.com`".
 1. Click **Create List**. The inventory list is created and displays in **Inventory Lists**.
 

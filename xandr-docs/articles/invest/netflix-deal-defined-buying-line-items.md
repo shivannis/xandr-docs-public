@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Netflix deal defined buying line items
 
 > [!NOTE]
-> This feature is currently in Alpha. It is still under development and is subject to change without notice. To enable this feature, contact your Xandr Account Representative.
+> This feature is currently in Alpha. It is still under development and is subject to change without notice. To enable this feature, contact your Microsoft Advertising Account Representative.
 
 ## Overview
 

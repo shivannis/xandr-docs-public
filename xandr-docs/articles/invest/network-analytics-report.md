@@ -97,7 +97,7 @@ If you are frequently requesting Member analytics reports which include dates lo
 | Adjustments | No | Changes to Member reported revenue based on factors such as revenue, conversions, clicks, or impressions reported by their advertisers or agencies' ad servers. |
 | Buyer | Yes | The buyer of this impression. <br> **Note**: The name might be "Default"; or "Default Error", which means that there was no buyer for the impression, and a default creative was served. |
 | Seller | Yes | The seller of this impression. |
-| Seller Type | Yes | Xandr buckets sellers into different types for billing purposes. For more information about the different seller types, see "Seller Types" below. |
+| Seller Type | Yes | Microsoft Advertising buckets sellers into different types for billing purposes. For more information about the different seller types, see "Seller Types" below. |
 | Advertiser | Yes | The advertiser whose creative served on this impression. |
 | Publisher | Yes | The publisher on whose inventory this impression occurred. |
 | Placement Group | Yes | The placement group (simply a collection of placements) which includes the placement through which this impression occurred. <br> For impressions older than 100 days, the ID will be 0. |
@@ -141,7 +141,7 @@ If you are frequently requesting Member analytics reports which include dates lo
 | Campaign | Yes | The campaign which purchased this impression. (Does not apply to all advertisers.) |
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the Split column (if included) will be null. |
 | Media Type | Yes | The media type associated with the creative that served on this impression. |
-| Brand | Yes | The brand associated with the creative. Xandr keeps a list of advertiser brands in our systems that can be applied to a creative when it's uploaded. For impression type "Resold", no information is available in the **Brand** field for this report. |
+| Brand | Yes | The brand associated with the creative. Microsoft Advertising keeps a list of advertiser brands in our systems that can be applied to a creative when it's uploaded. For impression type "Resold", no information is available in the **Brand** field for this report. |
 | Country | Yes | The country in which the impression took place. For impression requests for which we received no indication that the ad was rendered (i.e., non-transacted), country information **is not** provided. |
 | Size | Yes | The size of the creative (e.g., 320x50). |
 | Bid Type | Yes | See "Bid Types" below for definitions of the different types of bids. |
@@ -173,7 +173,7 @@ If you are frequently requesting Member analytics reports which include dates lo
 | Creative Code | No | The optional code applied to the creative used. |
 | External Code | No | The name and ID of the external inventory code passed in the ad call and predefined by the publisher. For more details, see [External Inventory Code Service](../digital-platform-api/external-inventory-code-service.md). |
 | Deal Type | Yes | The type of deal. Options are **Open Auction**, **Private Auction**, **First Look**, or **Programmatic Guaranteed**. |
-| Filtered Request Reason | Yes | The reason why the impression request was filtered out by Xandr inventory quality controls and the auction was not held. Possible reasons are: <br> - Invalid Domain <br> - Invalid IP <br> - Suspected Domain Detection Tampering <br> - Unknown <br> - **Valid Impression** is also a possible **Filtered Request Reason**, but in that case, an auction was held and it was not filtered. |
+| Filtered Request Reason | Yes | The reason why the impression request was filtered out by Microsoft Advertising inventory quality controls and the auction was not held. Possible reasons are: <br> - Invalid Domain <br> - Invalid IP <br> - Suspected Domain Detection Tampering <br> - Unknown <br> - **Valid Impression** is also a possible **Filtered Request Reason**, but in that case, an auction was held and it was not filtered. |
 | Clearing Event | Yes | The underlying auction event that was transacted (e.g., impression, viewable impression, completed video). |
 | Buyer Seat Code | No | The Custom Buyer Seat ID (submitted by DSP) that was used to bid on the impression |
 | Buyer Seat Name | No | The display name for the buyer seat code |
@@ -238,7 +238,7 @@ If you are frequently requesting Member analytics reports which include dates lo
 | Imps (master creative) | The number of page-level roadblocks that served the master creative. <br> **Note**: Alpha-Beta Notice: <br> This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
 | Feature Costs | Costs incurred when using a platform feature such as cross-device. |
 | Segment Data Costs | All costs related to using segments in the data marketplace. Applicable when specific segments are applied in line items and associated pricing is displayed in the platform. |
-| Filtered Requests | The total number of bid requests for which Xandr did not hold an auction due to inventory quality concerns. See **Filtered Request Reason** (under **Dimensions**) for a list of the possible reasons. |
+| Filtered Requests | The total number of bid requests for which Microsoft Advertising did not hold an auction due to inventory quality concerns. See **Filtered Request Reason** (under **Dimensions**) for a list of the possible reasons. |
 | Avg. Bid Reduction | The average bid reduction you gained on the line item. This value represents the difference (as a percentage) between your bid and the actual media cost you paid for the impression you won (e.g., due to bid reduction). This value is only valid for RTB bidding (i.e., not Managed). Currently, this value is not accurately calculated for line items which have the **Pay Per** field set to "View" and **Buying Strategy** set to "RTB". |
 | Clearing Event Units | The total number of events purchased (for the associated Clearing Event). When buying a Clearing Event other than impression (e.g., viewable impressions), the number of billed events will be less than the number of impressions. |
 | Clearing Event Buyer Media Cost eCPM | The total media cost per 1000 events (for the associated Clearing Event). |
@@ -277,7 +277,7 @@ If you are frequently requesting Member analytics reports which include dates lo
 |:---|:---|
 | direct | When you purchased inventory from a seller with whom you have a managed relationship. |
 | real time | When you purchase inventory from a seller on the open exchange. |
-| unknown | The seller type is not identifiable. You shouldn't see this turn up in your reports. If you do, please contact [Xandr support](https://help.xandr.com/s/login/). |
+| unknown | The seller type is not identifiable. You shouldn't see this turn up in your reports. If you do, please contact [Microsoft Advertising support](https://help.xandr.com/s/login/). |
 
 ### Revenue types
 

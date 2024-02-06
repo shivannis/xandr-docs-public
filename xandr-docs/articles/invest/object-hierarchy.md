@@ -58,8 +58,8 @@ order.
 ## Creative
 
 A [creative](exploring-creatives.md)
-is an actual ad, hosted either by Xandr or by a
-third-party ad server. The Xandr platform
+is an actual ad, hosted either by Microsoft Advertising or by a
+third-party ad server. The Microsoft Advertising platform
 enables you to traffic a wide range of [creative
 types](add-creatives-in-bulk.md), from banners to rich media types like interstitials
 and expandables.
@@ -88,7 +88,7 @@ A [conversion pixel](working-with-conversion-pixels.md)
  is placed on web pages to track user actions in
 response to an advertiser's creatives, such as registering at a site or
 making a purchase. When a conversion pixel fires,
-Xandr determines if the conversion (the
+Microsoft Advertising determines if the conversion (the
 registration, the purchase, etc.) can be "attributed", or tied to the
 user clicking on or viewing one of the advertiser's creatives
 previously [conversion attribution](conversion-attribution.md).
@@ -114,7 +114,7 @@ auditing of creatives.
 An [impression tracker](create-an-impression-tracker.md)
  is used to track impressions associated with
 creatives that are hosted by off-platform
-(non-Xandr) ad servers. This is done by
+(non-Microsoft Advertising) ad servers. This is done by
 attaching the tracker as a "piggyback pixel" on the externally hosted
 creative.
 
@@ -124,7 +124,7 @@ You can have many impression trackers under a single advertiser.
 
 A [click tracker](create-a-click-tracker.md)
 is used to track clicks associated with creatives that are hosted by
-off-platform (non-Xandr) ad servers. This is
+off-platform (non-Microsoft Advertising) ad servers. This is
 done by attaching the tracker as a "piggyback pixel" on the externally
 hosted creative.
 

@@ -78,7 +78,7 @@ For more information, see [Inventory Targeting](inventory-targeting-ali.md).
 | Domain or App | Impression domain ID or app ID. The IDs are listed in the drop-down menu for the field in the UI. Mobile app IDs are also available through the API with the [Mobile App Service](../digital-platform-api/mobile-app-service.md). <br> **Example:** <br> Include cnn.com: <br> `any 324` |
 | Placement | Placement ID. The IDs are available through the API with the [Placement Service](../digital-platform-api/placement-service.md). <br> **Example:** <br> Include placements 482348, 506200, and 506199: <br> `any 482348, 506200, 506199` |
 | Publisher | Publisher ID. The IDs are available through the API with the [Publisher Service](../digital-platform-api/publisher-service.md). <br> **Example:** <br> Exclude Publisher: <br> `any 233,41` |
-| Seller Member | Seller Member ID. The IDs are listed in the drop-down menu for the field in the UI or available through the API with the [Platform Member Service](../digital-platform-api/platform-member-service.md). <br> **Example:** <br> Exclude Xandr Demo and Xandr Testing Account: <br> `not 233,41` |
+| Seller Member | Seller Member ID. The IDs are listed in the drop-down menu for the field in the UI or available through the API with the [Platform Member Service](../digital-platform-api/platform-member-service.md). <br> **Example:** <br> Exclude Microsoft Advertising Demo and Microsoft Advertising Testing Account: <br> `not 233,41` |
 | Inventory type | Inventory type. Options: web, app, all <br> **Example:** <br> Include web inventory: <br> `any web` |
 | Inventory list | Inventory blocklist or allowlist. <br> **Examples:** <br> Target allowlist 16245: <br> `all 16245` <br> Exclude blocklist 150: <br> `not_any 150` |
 
@@ -102,9 +102,9 @@ For more information, see [Introduction to Viewability](introduction-to-viewabil
 
 | Column Title | Description |
 |---|---|
-| Viewability Threshold | Evaluate web display impressions by how likely they are to be measured as viewable by the IAB standard, as determined by Xandr optimization. <br>**Example:** <br> Include impressions that are at least 80% likely to achieve IAB viewability rate: <br> `>=0.8` |
-| Video Viewability Threshold | Evaluate web video impressions by how likely they are to be measured as viewable by the IAB standard, as determined by Xandr optimization. <br> **Example:** <br> Include impressions that are at least 60% likely to achieve IAB video viewability rate: <br> `>=0.6` |
-| Completion Rate Threshold | Evaluate web video impressions by how likely they are to be completed, as determined by Xandr optimization. <br> **Example:** <br> Exclude impressions that are no more than 20% likely to be completed: <br> `not <=0.20` |
+| Viewability Threshold | Evaluate web display impressions by how likely they are to be measured as viewable by the IAB standard, as determined by Microsoft Advertising optimization. <br>**Example:** <br> Include impressions that are at least 80% likely to achieve IAB viewability rate: <br> `>=0.8` |
+| Video Viewability Threshold | Evaluate web video impressions by how likely they are to be measured as viewable by the IAB standard, as determined by Microsoft Advertising optimization. <br> **Example:** <br> Include impressions that are at least 60% likely to achieve IAB video viewability rate: <br> `>=0.6` |
+| Completion Rate Threshold | Evaluate web video impressions by how likely they are to be completed, as determined by Microsoft Advertising optimization. <br> **Example:** <br> Exclude impressions that are no more than 20% likely to be completed: <br> `not <=0.20` |
 
 ### Segment
 
@@ -130,7 +130,7 @@ For more information, see [Frequency Targeting](frequency-and-recency-caps.md).
 
 ## Example CSV
 
-This is a [Sample Splits CSV](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/sample-splits-csv.csv).
+This is a [Sample Splits CSV](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/sample-splits-csv.csv).
 
 ## Related topics
 

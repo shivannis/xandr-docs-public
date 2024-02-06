@@ -13,7 +13,7 @@ page URL where the split will serve.
 For example, suppose you set a custom macro for a split by defining the
 key as "color" and the value as "red". If you have a macro called
 `${color}` within the creative's landing page URL,
-Xandr will replace it with a "red" value. Before
+Microsoft Advertising will replace it with a "red" value. Before
 you begin passing custom macros, you need to first add custom macro keys
 to your creatives' landing page URLs when editing a creative or line
 item.

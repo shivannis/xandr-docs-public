@@ -18,7 +18,7 @@ For support in requesting access to the Segment Builder app, please contact [odc
 
 ## Permissions
 
-This app has permission to access the folllowing Xandr API services and fields for your account.
+This app has permission to access the folllowing Microsoft Advertising API services and fields for your account.
 
 | Name | Read | Create | Edit | Delete |
 |:---|:---|:---|:---|:---|

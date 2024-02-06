@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Mobile creative auditing
 
-Depending upon the type of mobile creative that you're attempting to serve on the Xandr platform, the audit process may vary. To ensure that your mobile creatives are successfully audited, you should adhere to our audit processes for mobile creatives.
+Depending upon the type of mobile creative that you're attempting to serve on the Microsoft Advertising platform, the audit process may vary. To ensure that your mobile creatives are successfully audited, you should adhere to our audit processes for mobile creatives.
 
 ## App download campaigns
 
@@ -29,7 +29,7 @@ must provide an alternative landing page URL in the **Brand URL** field in the *
 visible from a desktop browser. We strongly recommend that you verify that the landing page is visible from a desktop browser before
 submitting the creative for audit. For more information about how you can serve MRAID creatives on your mobile inventory, see [Run Rich Media Creatives on Mobile Inventory](run-rich-media-creatives-on-mobile-inventory.md).
 
-To successfully pass our platform audit, all MRAID creatives must always display the appropriate branding from a desktop browser even when a mraid.js file isn't present. The Xandr Audit team will verify that the MRAID creative contains the appropriate
+To successfully pass our platform audit, all MRAID creatives must always display the appropriate branding from a desktop browser even when a mraid.js file isn't present. The Microsoft Advertising Audit team will verify that the MRAID creative contains the appropriate
 branding, but they will not flag any unusual or unexpected behavior since MRAID creatives may exhibit behavior that is incompatible with desktop browsers.
 
 ## Unbranded creatives

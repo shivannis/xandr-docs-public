@@ -23,7 +23,7 @@ than humans.
 bids and deliver budgets as efficiently as possible.
 
 [Lifetime Pacing](lifetime-pacing.md): Automatically distribute a budget over the lifespan of a
-line item's flight utilizing Xandr's algorithm.
+line item's flight utilizing Microsoft Advertising's algorithm.
 
 [Discovery](discovery.md): Prioritize the
 inventory that is most likely to perform.

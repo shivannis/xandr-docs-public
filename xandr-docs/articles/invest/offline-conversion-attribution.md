@@ -10,7 +10,7 @@ ms.date: 10/28/2023
 "Offline" attribution is [conversion attribution](conversion-attribution.md)
  that involves pushing all of the data processing
 required for conversion attribution "offline" to the
-Xandr data warehouse.
+Microsoft Advertising data warehouse.
 
 Offline attribution provides:
 
@@ -102,7 +102,7 @@ The **Data Warehouse** has finished post-processing the limited amount
 of information on the converted user passed along from the **User Data**
 storage and integrating it with its own, more comprehensive data. At
 this point, the conversion-related data is made available to the
-Xandr Platform for reporting, optimization, and
+Microsoft Advertising Platform for reporting, optimization, and
 budget purposes.
 
 ## Current Method ("Offline")
@@ -131,7 +131,7 @@ The **Data Warehouse** has finished processing and integrating the
 information on the impression and the converted user passed along from
 the **Impression Bus**. At this point, the impression- and
 conversion-related data is made available to the
-Xandr Platform for reporting, optimization, and
+Microsoft Advertising Platform for reporting, optimization, and
 budget purposes.
 
 ## Related topics

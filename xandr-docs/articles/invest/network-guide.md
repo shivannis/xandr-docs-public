@@ -14,6 +14,6 @@ New to Microsoft Invest? Check out our **[training portal](../training-resources
 ## In this section
 
 - [Working with Member Settings](working-with-network-tools.md): Manage your member-level settings, such as email notifications and safety budgets.
-- [Managing User Logins and Permissions](managing-user-logins-and-permissions.md): You can create users who have different levels of access to your Xandr account. This is useful if you want your network's account managers or salespeople to view only the accounts they are responsible for or if your advertisers want to run reports for themselves.
+- [Managing User Logins and Permissions](managing-user-logins-and-permissions.md): You can create users who have different levels of access to your Microsoft Advertising account. This is useful if you want your network's account managers or salespeople to view only the accounts they are responsible for or if your advertisers want to run reports for themselves.
 - [Member Operations](network-operations.md): Manage your business operations, including fees, currency support, and reporting labels.
 - [Working with Third-Party Inventory](working-with-third-party-inventory.md): Find third-party inventory and learn about exchanges and aggregators.

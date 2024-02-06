@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 The Inventory Library contains thousands of premium video catalog (PVC) deals that have been curated directly by Microsoft Monetize and other exchanges such as FreeWheel and Magnite (Telaria and SpotX). These PVC deals can be filtered by deal updates, parent publisher, channel publisher, content category, language, exchange, device, format, app type, brand safety, and floor price.
 
 > [!NOTE]
-> The Inventory Library is a **Beta** feature that isn't available to all clients. If you'd like to gain access to it, contact your Xandr account representative.
+> The Inventory Library is a **Beta** feature that isn't available to all clients. If you'd like to gain access to it, contact your Microsoft Advertising account representative.
 
 You can access the Inventory Library by going to **Inventory** > **Inventory Library**. With Inventory Library:
 

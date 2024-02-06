@@ -7,9 +7,9 @@ ms.date: 10/28/2023
 # Modeled audiences
 
 > [!NOTE]
-> This feature is currently in Alpha. It is still under development and may be subjected to changes without notice. To enable this feature, contact your Xandr Account Representative.
+> This feature is currently in Alpha. It is still under development and may be subjected to changes without notice. To enable this feature, contact your Microsoft Advertising Account Representative.
 
-Modeled Audience is a feature available for Microsoft Invest that allows advertisers to take their first-party segments and expand them to similar users for targeting. For first-party seed segments, Xandr gathers auction data such as geographic information, device type, and inventory URL. Xandr uses this data and machine learning algorithms to find more users with similar characteristics as those within the first-party segment. These users are then added to the new modeled audience segment.
+Modeled Audience is a feature available for Microsoft Invest that allows advertisers to take their first-party segments and expand them to similar users for targeting. For first-party seed segments, Microsoft Advertising gathers auction data such as geographic information, device type, and inventory URL. Microsoft Advertising uses this data and machine learning algorithms to find more users with similar characteristics as those within the first-party segment. These users are then added to the new modeled audience segment.
 
 ## Modeled audience requirements
 

@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Native creatives
 
-You can host video, audio, banner, carousel, and app install native creatives with Xandr.
+You can host video, audio, banner, carousel, and app install native creatives with Microsoft Advertising.
 
 Since native creatives match the form, feel, and function of the platform that they appear on, they provide publishers with the ability to integrate advertising more seamlessly with their inventory. In contrast with traditional HTML and JavaScript creatives, native creatives provide flexibility because they can be integrated into websites and mobile apps using any one of these formats:
 

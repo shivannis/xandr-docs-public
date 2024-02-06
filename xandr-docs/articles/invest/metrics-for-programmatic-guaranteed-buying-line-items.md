@@ -41,8 +41,8 @@ to your specific PG buying scenario and needs, but they serve as an exhaustive l
 
 | Metric | Description |
 |:---|:---|
-| **Xandr Impressions** | The total number of impressions recorded for a PG deal using Xandr's classification for an impression. |
-| **Measurable Impressions (Imps)** | Impressions classified as when the measurement script fires a pixel to the Xandr platform. When the user leaves the page containing the creative before the Xandr script actually launched, the impression is counted as served, not measured. |
+| **Microsoft Advertising Impressions** | The total number of impressions recorded for a PG deal using Microsoft Advertising's classification for an impression. |
+| **Measurable Impressions (Imps)** | Impressions classified as when the measurement script fires a pixel to the Microsoft Advertising platform. When the user leaves the page containing the creative before the Microsoft Advertising script actually launched, the impression is counted as served, not measured. |
 | **Viewability Rate** | The percentage of creative impressions that are deemed viewable as defined by the Interactive Advertising Bureau (IAB). <br> - **IAB's Definition of a "Viewable" Impression:** For at least one second, 50% of a creative's pixels (or 30% for a creative with at least 242,500 pixels) must be viewable to a viewer on their screen.<br> - **Viewability Rate = (Viewed Impressions ÷ View Measured Impressions) × 100** |
 | **Viewable Impressions (Imps)** | Impressions considered viewable based upon Media Rating Council (MRC) and Interactive Advertising Bureau (IAB) viewability guidelines. |
 | **Google AdX Impressions** | The total number of impressions recorded for a PG deal using Google Ad Manager's classification for an impression. |

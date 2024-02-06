@@ -7,9 +7,9 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Payment
 
-## Xandr invoice information
+## Microsoft Advertising invoice information
 
-Xandr invoices are sent within 5 business days
+Microsoft Advertising invoices are sent within 5 business days
 of the end of the previous month of service; for example, for March
 purchase of media the invoice date would be no later than April 7 (at
 the latest).

@@ -70,14 +70,14 @@ with the seller.
 ## Seller eligibility, history, and deals
 
   > [!TIP]
-  > **Get to Know Xandr Direct**
+  > **Get to Know Microsoft Advertising Direct**
   >
-  > Xandr Direct is a group of 100+ Xandr sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers.
+  > Microsoft Advertising Direct is a group of 100+ Microsoft Advertising sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers.
   >
-  > For more information, please see [Xandr Direct](appnexus-direct-for-buyers.md) or contact [appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Xandr account manager.
+  > For more information, please see [Microsoft Advertising Direct](appnexus-direct-for-buyers.md) or contact [appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Microsoft Advertising account manager.
 
 - **Seller Group** - Shows if the seller
-  is labeled as Xandr Direct.
+  is labeled as Microsoft Advertising Direct.
 - **Eligibility** - Shows the transaction
   eligibility between members. A buyer may block a seller, a seller may
   block a buyer, or both buyer and seller may be blocked by each other.

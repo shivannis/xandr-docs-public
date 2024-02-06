@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Managing notification recipients
 
-From the Member menu, you can control who receives email notifications from Xandr for various alerts, including creative audit, object limit, inventory deactivation, and toolbar flag alerts using your notification settings.
+From the Member menu, you can control who receives email notifications from Microsoft Advertising for various alerts, including creative audit, object limit, inventory deactivation, and toolbar flag alerts using your notification settings.
 
 > [!TIP]
 > If you need multiple team members to receive notifications, you might want to create an email list that you can manage internally and use a single address for notification emails. For example, `notification@yourcompany.com` could include multiple internal team members, and you could adjust notification recipients by adding them to, or removing them from, the main `notification@yourcompany.com` list. You wouldn't have to make any additional changes within your notification settings.
@@ -17,7 +17,7 @@ For setting recipients for daily safety budget notifications, see [Capping Daily
 
 ## Audit notification
 
-Enter the recipients who should receive a notification when Xandr audits a creative belonging to this member. The notification includes the creative's audit status and any reasons why the creative has not passed audit.
+Enter the recipients who should receive a notification when Microsoft Advertising audits a creative belonging to this member. The notification includes the creative's audit status and any reasons why the creative has not passed audit.
 
 ## Sherlock and object limit notification
 
@@ -27,7 +27,7 @@ These recipients will also receive object limit notifications, sent when you rea
 
 ## Inventory deactivation & toolbar flag notification
 
-Enter the recipients who should receive a notification when Xandr identifies invalid traffic or toolbar inventory. The notification will include information about the kind of invalid traffic or what non ad-supported or Owned & Operated domains your tag served on.
+Enter the recipients who should receive a notification when Microsoft Advertising identifies invalid traffic or toolbar inventory. The notification will include information about the kind of invalid traffic or what non ad-supported or Owned & Operated domains your tag served on.
 
 ## Related topic
 

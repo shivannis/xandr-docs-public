@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Microsoft Invest - Mobile ad call reference
 
 > [!NOTE]
-> Xandr now supports a domain, [adnxs-simple.com](http://adnxs-simple.com/), which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Xandr will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://wiki.xandr.com/display/policies/Reinforcing+Privacy+Controls+Through+a+Cookie-Free+Domain) (login required).
+> Microsoft Advertising now supports a domain, [adnxs-simple.com](http://adnxs-simple.com/), which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Microsoft Advertising will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://wiki.xandr.com/display/policies/Reinforcing+Privacy+Controls+Through+a+Cookie-Free+Domain) (login required).
 
 This document describes our mobile ad calls, the `/ssmob` and `/mob` calls, which are used to request ads for mobile apps. These calls include information about the client device as query string parameters.
 
@@ -55,7 +55,7 @@ The mobile ad call accepts the query string parameters shown below. For examples
 | `sha1udid` | string | No | The SHA1 hash of the `ANDROID_ID`. This should only be sent for Android devices. This should be URL encoded.. |
 | `idfa` | string | No | The Apple advertising identifier for iOS devices running iOS 6+. |
 | `aaid` | string | No | The Google advertising identifier for Android devices as retrieved from Google Play services. |
-| `ip` | string | Yes, on `/ssmob` calls | IP address of the device making the ad request, e.g., `207.237.150.246`.<br> - If not specified for `/mob` calls, the IP passed via HTTP headers will be used for geo detection instead.<br> - If not specified for `/ssmob` calls, Xandr will not be able to detect geo location, and buyers will therefore not be able to target by geo. |
+| `ip` | string | Yes, on `/ssmob` calls | IP address of the device making the ad request, e.g., `207.237.150.246`.<br> - If not specified for `/mob` calls, the IP passed via HTTP headers will be used for geo detection instead.<br> - If not specified for `/ssmob` calls, Microsoft Advertising will not be able to detect geo location, and buyers will therefore not be able to target by geo. |
 | `istest` | boolean | No | Whether this is a test request. Allowed values: `true` or `false`, `1` or `0`. |
 | `language` | string | No | The device's language, specified with an [ISO Language Code](https://www.iso.org/iso-639-language-codes.html). |
 | `loc` | string | No | The user's location expressed in latitude and longitude, in the format: `snnn.ddddddddddddd`, `snnn.ddddddddddddd`. Up to 13 decimal places of precision are allowed. |
@@ -85,7 +85,7 @@ The requests differ from those made by the SDK as follows:
 - We use the `curl` command line tool to request the ad from the server; for more information about `curl`, see the project website at [https://curl.haxx.se/](https://curl.haxx.se/).
 
 > [!NOTE]
-> The `id` parameter in these examples refers to the Xandr placement ID. You will need to replace it with one provided to you by the Xandr platform member you're working with.
+> The `id` parameter in these examples refers to the Microsoft Advertising placement ID. You will need to replace it with one provided to you by the Microsoft Advertising platform member you're working with.
 
 ### JavaScript
 
