@@ -11,7 +11,7 @@ The split custom macro is used to pass any value to a creative landing page URL 
 > [!IMPORTANT]
 > Split custom macros are not supported by Guaranteed Delivery ALIs.
 
-For example, suppose you set a custom macro for a split by defining the key as "color" and the value as "red". If you have a macro called `${color}` within the creative's landing page URL, Xandr will replace it with a "red" value. Before you begin passing custom macros, you need to first add custom macro keys to your creatives' landing page URLs when editing a creative or line item.
+For example, suppose you set a custom macro for a split by defining the key as "color" and the value as "red". If you have a macro called `${color}` within the creative's landing page URL, Microsoft Advertising will replace it with a "red" value. Before you begin passing custom macros, you need to first add custom macro keys to your creatives' landing page URLs when editing a creative or line item.
 
 1. Select the **Use Custom Macros** checkbox.
 1. Click the pencil icon in the **Creatives** > **Custom Macro** column for the corresponding split.

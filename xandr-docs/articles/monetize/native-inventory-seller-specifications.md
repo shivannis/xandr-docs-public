@@ -343,13 +343,13 @@ on Plista:
 | Icon (sizes in pixels) | - Logo<br> - 1x1 ratio<br> - Maximum 150x150 |
 | Image (sizes in pixels) | - 1.91:1 ratio<br> - 1200x628 |
 
-You can serve native creatives on Schibsted Norway's desktop, mobile web and mobile app inventory. You can preview your native creatives to see what they'll look like on Schibsted websites. Use the following URLs, replacing `Xandr_creative_id` with your creative ID.
+You can serve native creatives on Schibsted Norway's desktop, mobile web and mobile app inventory. You can preview your native creatives to see what they'll look like on Schibsted websites. Use the following URLs, replacing `Microsoft Advertising_creative_id` with your creative ID.
 
 | Website | Category | Desktop? | Tablet? | Smartphone? | Smartphone? | Smartphone?  | Preview URL |
 |---|---|---|---|---|---|---|---|
 |  |  |  | **Web** | **App** | **Web** | **App** |  |
-| [e24.no](https://e24.no/) | News | Y | Y | Y | Y | Y | **Desktop** - https://e24.no/?ast_override_div=ad-smartboard_1:Xandr_creative_id <br> **Mobile web** -  https://e24.no/?ast_override_div=ad-board_3:APPNEXUS_CREATIVE_ID |
-| [vg.no](https://www.vg.no/) | News | Y | Y | Y | Y | Y | **Desktop** -  https://www.vg.no/?ast_override_div=ad-front-smartboard_1:Xandr_creative_id<br>**Mobile web** - https://www.vg.no/?ast_override_div=ad-front-board_1:Xandr_creative_id |
+| [e24.no](https://e24.no/) | News | Y | Y | Y | Y | Y | **Desktop** - https://e24.no/?ast_override_div=ad-smartboard_1:Microsoft Advertising_creative_id <br> **Mobile web** -  https://e24.no/?ast_override_div=ad-board_3:APPNEXUS_CREATIVE_ID |
+| [vg.no](https://www.vg.no/) | News | Y | Y | Y | Y | Y | **Desktop** -  https://www.vg.no/?ast_override_div=ad-front-smartboard_1:Microsoft Advertising_creative_id<br>**Mobile web** - https://www.vg.no/?ast_override_div=ad-front-board_1:Microsoft Advertising_creative_id |
 
 When you set up your targeting, you'll need to target **Schibsted Media
 Group (3296)** and the **domains** listed in the available inventory
@@ -408,7 +408,7 @@ discovery mind set. The look and feel of Taboola's Infeed Placements are customi
 - **Taboola Native Display** - Activated through DSP via open auction or PMPs (pricing models: vCPM - guarantees 100% viewability, or CPM)
   - High impact native placements, including Top of Feed, Homepage as well as an Ad Adjacency solution are available via PMP.
 - **Taboola Video** - Activated through DSP via open auction or PMPs (pricing model: CPM)
-- **Native Video** - Soon to come with Xandr Monetize.
+- **Native Video** - Soon to come with Microsoft Advertising Monetize.
 
 **Supply types**
 
@@ -475,7 +475,7 @@ Reach out to your Taboola representative if you have any questions. If you do no
 | Attribute | Value |
 |---|---|
 | **Third-Party Trackers** | All 3rd party trackers are accepted as long as they are 1x1 image tag. All trackers must be secure (https://). |
-| **Creative technical attributes** | The creative has to be self-audited or platform-audited with the technical attributes **Image** (Technical attribute ID 1) and **Native: In-Feed Standard** (Technical Attribute ID 93) in order to pass TripleLift's Ad Quality Profile on the Xandr platform. |
+| **Creative technical attributes** | The creative has to be self-audited or platform-audited with the technical attributes **Image** (Technical attribute ID 1) and **Native: In-Feed Standard** (Technical Attribute ID 93) in order to pass TripleLift's Ad Quality Profile on the Microsoft Advertising platform. |
 | **Suggested Do's and Don't's** |  - Do choose engaging photos.<br> - Do use products set in real environments. Historically, these have tended to perform better than products in isolation.<br> - Do pick a click-through URL that is somewhat associated with the creative.<br> - Do explore all the image options at your fingertips. From blogs to product pages, you likely have a treasure trove of impactful images.<br> - Don't use images with too much text.<br> - Don't crop the image. TripleLift will ensure the image fits perfectly across every placement.<br> - Don't use an image with a logo overlaid on top.<br> - Don't use banner ad creative. |
 
 ### UIM

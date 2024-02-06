@@ -15,7 +15,7 @@ In the UI, run the Selling Billing Report to view your Seller Revenue on your se
 
 ## Confirm invoice values (Selling)
 
-The (Managed) Ad Serving Fee is the amount to be paid to Xandr for kept, blank, default, and PSA impressions (which includes filtered requests). The sum of the **Total Imps** (Imps + Filtered Requests) in the **Blank**, **Default**, **Kept**, and **PSA** rows should match the value in the **Billable Units** column on your invoice. To calculate the charge, multiply the sum of Total Imps (where **Impression Type** is **Blank**, **Default**, **Kept**, or **PSA**) by the CPM ad serving fee in your Xandr contract. The value you have calculated should match the value in the **Amount** column on your invoice.
+The (Managed) Ad Serving Fee is the amount to be paid to Microsoft Advertising for kept, blank, default, and PSA impressions (which includes filtered requests). The sum of the **Total Imps** (Imps + Filtered Requests) in the **Blank**, **Default**, **Kept**, and **PSA** rows should match the value in the **Billable Units** column on your invoice. To calculate the charge, multiply the sum of Total Imps (where **Impression Type** is **Blank**, **Default**, **Kept**, or **PSA**) by the CPM ad serving fee in your Microsoft Advertising contract. The value you have calculated should match the value in the **Amount** column on your invoice.
 
 ## Related topics
 

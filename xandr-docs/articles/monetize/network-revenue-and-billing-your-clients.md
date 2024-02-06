@@ -62,6 +62,6 @@ Network A enters the $1 CPM and $10,000 budget into the Line Item. Within that l
 
 Now they have to decide how much profit they need to make from this transaction. Let's say they want to spend a $.50 CPM, and make a $.50 profit. So they bid $.50.
 
-Now when they go to bill the advertiser, they run a report on booked revenue, and that is the amount they bill advertisers. A report on media cost tells them how much they owe the Xandr platform.
+Now when they go to bill the advertiser, they run a report on booked revenue, and that is the amount they bill advertisers. A report on media cost tells them how much they owe the Microsoft Advertising platform.
 
 They can also run reports on revenue to easily see the difference between what they spent and what they made.

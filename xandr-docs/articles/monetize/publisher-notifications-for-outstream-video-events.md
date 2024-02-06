@@ -6,17 +6,17 @@ ms.date: 10/28/2023
 
 # Publisher notifications for outstream video events
 
-Microsoft Monetize can provide notifications to the publisher when video and ad-related events occur in Xandr players. This page describes how these notifications work and how to implement them.
+Microsoft Monetize can provide notifications to the publisher when video and ad-related events occur in Microsoft Advertising players. This page describes how these notifications work and how to implement them.
 
 ## Prerequisites
 
-This page assumes that you are familiar with certain Xandr features, such as [Xandr's seller tag (AST)](../seller-tag/seller-tag.md).
+This page assumes that you are familiar with certain Microsoft Advertising features, such as [Microsoft Advertising's seller tag (AST)](../seller-tag/seller-tag.md).
 
 ## How outstream publisher notifications work
 
-Generally speaking, the process works like this: a publisher specifies an optional callback function as part of the options that are passed into Xandr code. Once this callback function is specified, our code then calls this callback whenever important events occur while the ad is being rendered - these may include video reporting events, as well as non-reportable events such as AdLoaded or custom AdUnit events. In addition:
+Generally speaking, the process works like this: a publisher specifies an optional callback function as part of the options that are passed into Microsoft Advertising code. Once this callback function is specified, our code then calls this callback whenever important events occur while the ad is being rendered - these may include video reporting events, as well as non-reportable events such as AdLoaded or custom AdUnit events. In addition:
 
-- The field that is added to the "options" that is passed into Xandr code, which identifies the callback function.
+- The field that is added to the "options" that is passed into Microsoft Advertising code, which identifies the callback function.
 - The name of field is `"cbNotification"`. In the JSON, this field would look something like `"cbNotification" : callbackFunction` where `callbackFunction` is the name of the publisher function.
 
 > [!TIP]

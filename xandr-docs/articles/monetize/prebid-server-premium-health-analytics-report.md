@@ -88,7 +88,7 @@ Data in this report is retained for the past 33 days of activity.
 | Average Response Time | The average time demand partners took to respond to bid requests. |
 | Bid Requests Sent | The number of requests sent from Prebid Server Premium to demand partners. |
 | Bid Responses Received | The number of bid responses received by Prebid Server Premium from demand partners. |
-| Bids Submitted to Ad Server | The number of ad requests that had a valid Prebid bid that was not subject to any additional Xandr rejections returned to the ad server. This number is counted after the Xandr auction process that evaluates bids received from all sources. The reduced volume between Valid Bids on Imps and this metric could be due to creative requirements not being met, being outbid by other bidders, or due to the option to [send only the top bid back to the ad server](integrate-web-mobile-web-with-psp.md). |
+| Bids Submitted to Ad Server | The number of ad requests that had a valid Prebid bid that was not subject to any additional Microsoft Advertising rejections returned to the ad server. This number is counted after the Microsoft Advertising auction process that evaluates bids received from all sources. The reduced volume between Valid Bids on Imps and this metric could be due to creative requirements not being met, being outbid by other bidders, or due to the option to [send only the top bid back to the ad server](integrate-web-mobile-web-with-psp.md). |
 | Errors | The number of errors in bid responses from demand partners. |
 | Errors Rate | The number of bid errors divided by the number of bid requests sent to demand partners. |
 | Imps (delivered) | The number of impressions successfully delivered and ads rendered. Note this report is based on sample log data multiplied to estimate the full volume of PSP activity and does not represent final delivery. |
@@ -107,18 +107,18 @@ Data in this report is retained for the past 33 days of activity.
 | Code | Error | Description | Remedy |
 |---|---|---|---|
 | 0 | `NONE` | No error. | None needed. |
-| 1 | `INTERNAL` | There is a server-side error from Demand Partner, such as a 400 status code. | Seller should work with Xandr to collect a specific example code to share with Demand Partner for investigation. |
+| 1 | `INTERNAL` | There is a server-side error from Demand Partner, such as a 400 status code. | Seller should work with Microsoft Advertising to collect a specific example code to share with Demand Partner for investigation. |
 | 2 | `TIMEOUT` | Demand Partner did not respond within the timeout limit. | Either increase timeout settings to allow for a longer response time or contact Demand Partner to inform them of the restriction. For more information on timeouts, see [Add or Edit PSP Global Settings](add-or-edit-psp-global-settings.md). |
-| 3 | `CLIENT` | Demand Partner's Prebid Server adapter generated an error. | For significant quantities of this error type, Seller should contact Xandr support to diagnose issues by looking at the internal Xandr logs. An example of this error could be that video supply has been sent to an adapter that does not support it. |
-| 4 | `PARSE` | Demand Partner has formatted the bid response incorrectly. | Seller should work with Xandr and Demand Partner to determine and resolve the specific formatting issue. |
+| 3 | `CLIENT` | Demand Partner's Prebid Server adapter generated an error. | For significant quantities of this error type, Seller should contact Microsoft Advertising support to diagnose issues by looking at the internal Microsoft Advertising logs. An example of this error could be that video supply has been sent to an adapter that does not support it. |
+| 4 | `PARSE` | Demand Partner has formatted the bid response incorrectly. | Seller should work with Microsoft Advertising and Demand Partner to determine and resolve the specific formatting issue. |
 | 21 | `NO_BID_PRICE` | No price received from Demand Partner. | Seller should notify Demand Partner of the issue. |
 | 22 | `NO_CREATIVE_ID` | No creative ID received from Demand Partner. | Seller should notify Demand Partner of the issue. |
-| 23 | `NEC_ERROR` | The bid was rejected during the Xandr auction process. | The bid was successfully received from Demand Partner, but the bid was rejected within the Xandr auction. Seller can use the seller bid error report to diagnose specific rejections occurring on their supply. |
+| 23 | `NEC_ERROR` | The bid was rejected during the Microsoft Advertising auction process. | The bid was successfully received from Demand Partner, but the bid was rejected within the Microsoft Advertising auction. Seller can use the seller bid error report to diagnose specific rejections occurring on their supply. |
 | 24 | `CREATIVE_WRONG_SIZE` | Demand Partner is bidding with a creative size that doesn't match the tag size. | Seller should review the creative size and notify Demand Partner regarding the mismatch. |
 | 70 | `MEMBER_NOT_ELIGIBLE` | Seller's settings are blocking the Buyer's member from participating in the auction. | Seller should notify the buyer that they are currently blocked from bidding. |
 | 84 | `CATEGORY_REQ_ALLOWLIST` | The category of the creative is sensitive and requires addition to the allowlist. | Seller should work with Buyer to determine if the creative warrants addition to the allowlist. |
 | 132 | `DYN_CREATIVE_INCOMPATIBLE_TYPE` | Dynamic ad-markup bidding is not supported for certain PSP demand partners that require client-side rendering when a Seller doesn't support it. | Seller should correct their setup to align with client-side rendering requirements, on both supply and PSP sides. |
-| 150 | `SELLER_MEMBER_NO_CONTRACT` | Seller's contract isn't set up properly. | Seller should work with Xandr to remedy the contract issue. |
+| 150 | `SELLER_MEMBER_NO_CONTRACT` | Seller's contract isn't set up properly. | Seller should work with Microsoft Advertising to remedy the contract issue. |
 
 > [!NOTE]
 > For additional possible error codes, see [Bid Error Codes](../bidders/bid-error-codes.md).

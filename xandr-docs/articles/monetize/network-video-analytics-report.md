@@ -73,7 +73,7 @@ Data in this report is retained for 420 days.
 | Line Item | Yes | The line item under which this impression was purchased. |
 | Campaign | Yes | The campaign which purchased this impression. (Does not apply to all advertisers.) |
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the Split column (if included) will be null. |
-| Brand | Yes | The brand associated with the creative. Xandr keeps a list of advertiser brands in our systems that can be applied to a creative when it's uploaded. For impression type "`Resold`", no information is available in the Brand field for this report. |
+| Brand | Yes | The brand associated with the creative. Microsoft Advertising keeps a list of advertiser brands in our systems that can be applied to a creative when it's uploaded. For impression type "`Resold`", no information is available in the Brand field for this report. |
 | Country | Yes | The country in which the impression took place. |
 | Deal | Yes | The deal associated with the transaction for the impression. |
 | Creative | Yes | The creative served for the impression. |
@@ -89,7 +89,7 @@ Data in this report is retained for 420 days.
 | Video Playback Method | Yes | The playback method for the creative, e.g, 'auto-start, sound on'. |
 | Video Player Size | Yes | The size of the player based on pixel width, e.g., '`small`', '`medium`', '`large`'. |
 | Bidder | No | The name of a would-be buyer that submitted a bid on the impression. |
-| Call Type | No | The type of handler that was used to send the impression to Xandr (e.g., ttj, `ut`, `mob`, `ptv`, `openrtb`). |
+| Call Type | No | The type of handler that was used to send the impression to Microsoft Advertising (e.g., ttj, `ut`, `mob`, `ptv`, `openrtb`). |
 | Creative Duration | No | The duration of the video creative in seconds. |
 | Device Type | Yes | The type of device where the creative was set to play. Options include Desktops & Laptops, Mobile Phones, Tablets, TV, Game Consoles, Media Players, Set Top Box, and Other Devices. |
 | Buying Currency | No | The transaction currency that the buyer used to purchase this impression. This dimension is available only when Currency 2.0 is disabled. |
@@ -143,7 +143,7 @@ Data in this report is retained for 420 days.
 | PPM | **Deprecated**. The total profit per 1000 impressions. |
 | Viewable Imps | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that 50% of the pixels of a creative are in view during 1 consecutive second. |
 | View-Measured Imps | The total number of impressions that were measured for viewability. |
-| Custom Viewable Imps | The number of measured impressions that were viewable, per the member-level custom definition configuration. For more details, contact your Xandr account representative. |
+| Custom Viewable Imps | The number of measured impressions that were viewable, per the member-level custom definition configuration. For more details, contact your Microsoft Advertising account representative. |
 | Viewability Measurement Rate | The percentage of impressions measured for viewability out of the total number of impressions. (view-measured impressions/total impressions) |
 | Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (viewed impressions/view-measured impressions) |
 | Custom Viewability Rate | The percentage of impressions that were viewable, per the member-level custom definition configuration, out of the total number of impressions measured for viewability. |

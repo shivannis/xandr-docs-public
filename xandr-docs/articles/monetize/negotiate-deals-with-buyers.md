@@ -1,13 +1,13 @@
 ---
 title: Microsoft Monetize - Negotiate Deals with Buyers
-description: The article explains how Xandr sellers can negotiate custom deals, providing buyers with special rate and inventory access options.
+description: The article explains how Microsoft Advertising sellers can negotiate custom deals, providing buyers with special rate and inventory access options.
 ms.date: 10/28/2023
 ---
 
 
 # Microsoft Monetize - Negotiate deals with buyers
 
-Xandr sellers can negotiate custom deals to offer buyers a variety of special rate and inventory access options.
+Microsoft Advertising sellers can negotiate custom deals to offer buyers a variety of special rate and inventory access options.
 These include:
 
 - Special access to premium inventory
@@ -18,7 +18,7 @@ This page explains how to negotiate and set up deals with both Microsoft Monetiz
 
 ## Deals with Microsoft Monetize buyers
 
-You can negotiate deals with buyers on the Xandr platform from the Partner Center.
+You can negotiate deals with buyers on the Microsoft Advertising platform from the Partner Center.
 
 For more information on communicating with buyers and viewing deals, see the [Partnership Details Screen - Seller View](partnership-details-screen-seller-view.md).
 
@@ -28,7 +28,7 @@ Once you've negotiated deal terms with a buyer, you can create the deal in the P
 
 ### Step 1. Negotiate a deal
 
-Negotiate a deal with the buyer offline. Then ask the buyer for their Xandr member ID so you can set up the deal in Monetize.
+Negotiate a deal with the buyer offline. Then ask the buyer for their Microsoft Advertising member ID so you can set up the deal in Monetize.
 
 > [!NOTE]
 > **If you have not seen delivery from this bidder previously**, be sure to ask the buyer to make sure that the bidder has you (the seller) in an allowlist in their bidder profile. This is an important step: if the bidder does not receive traffic from you, the buyer will not be able to buy through the negotiated deal.

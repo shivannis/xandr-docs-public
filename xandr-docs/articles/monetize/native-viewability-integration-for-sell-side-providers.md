@@ -1,15 +1,15 @@
 ---
 title: Native Viewability Integration for Sell-Side Providers
-description: The article explains how Xandr enables native viewability measurement for Sell-Side Providers. This is achieved by configuring the website to modify the payload of the viewability script.
+description: The article explains how Microsoft Advertising enables native viewability measurement for Sell-Side Providers. This is achieved by configuring the website to modify the payload of the viewability script.
 ms.date: 10/28/2023
 ---
 
 # Native viewability integration for sell-Side providers
 
-Native SSPs using OpenRTB can integrate with Xandr native viewability measurement by configuring the website to modify the payload of the viewability script.
+Native SSPs using OpenRTB can integrate with Microsoft Advertising native viewability measurement by configuring the website to modify the payload of the viewability script.
 You can integrate the script using direct access to the DOM ID or the classname, or use a CSS selector.
 
-TheXandr viewability script payload can be found in the `jstracker` field of the OpenRTB response, as defined in the [IAB specs](https://www.iab.com/wp-content/uploads/2016/03/OpenRTB-Native-Ads-Specification-1-1_2016.pdf). This payload contains the `;dom_id=%native_dom_id%` parameter, which can be replaced using any of the methods below.
+TheMicrosoft Advertising viewability script payload can be found in the `jstracker` field of the OpenRTB response, as defined in the [IAB specs](https://www.iab.com/wp-content/uploads/2016/03/OpenRTB-Native-Ads-Specification-1-1_2016.pdf). This payload contains the `;dom_id=%native_dom_id%` parameter, which can be replaced using any of the methods below.
 
 ## Use the DOM ID
 
@@ -23,7 +23,7 @@ You can use any unique ID (newly created or already existing on the page) that's
   </div>
 ```
 
-The native ad renderer injects the script in the page, so that the Xandr viewability script can retrieve the HTML element using `document.getElementById`.
+The native ad renderer injects the script in the page, so that the Microsoft Advertising viewability script can retrieve the HTML element using `document.getElementById`.
 
 ## Pass a reference to DOM element (Compatible with shadow DOM)
 

@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Outstream video player options
 
-This topic describes settings available for configuring outstream video that can be configured in page code, or on the placement via Microsoft Monetize. Note that setting page code via Xandr's seller tag (AST) overrides any settings created in Monetize.
+This topic describes settings available for configuring outstream video that can be configured in page code, or on the placement via Microsoft Monetize. Note that setting page code via Microsoft Advertising's seller tag (AST) overrides any settings created in Monetize.
 
 ## Page-level outstream options
 
@@ -246,7 +246,7 @@ rendererOptions: {
 The options below can be set on the placement in Monetize or via the API.
 
 > [!TIP]
-> A best practice for setting up your inventory is to have a one-to-one mapping between an ad unit position on your website and a placement in Xandr. In other words, try to have only one placement per ad unit position. With one-to-one mapping, you can control your outstream ad unit's appearance and behavior from the placement settings and provide any necessary additional configuration from the page.
+> A best practice for setting up your inventory is to have a one-to-one mapping between an ad unit position on your website and a placement in Microsoft Advertising. In other words, try to have only one placement per ad unit position. With one-to-one mapping, you can control your outstream ad unit's appearance and behavior from the placement settings and provide any necessary additional configuration from the page.
 >
 > If you choose to map multiple ad unit positions to a single Run of Site placement, you control your outstream ad unit's appearance and behavior from the on-page settings. This decision allows you to use different settings for each ad unit position on your website.
 

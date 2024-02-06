@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 Programmatic guaranteed (PG) selling line items provide a workflow for you to for create and sell PG deals to buyers who use Microsoft Invest and other partner DSPs.
 
-PG deals combine the certainty of direct sales with the power of programmatic, enabling publishers to programmatically execute direct deals with buyers. With PG deals, you have the power of guaranteed selling within a bidding environment using deal IDs. Instead of using traditional insertion orders, Xandr PG offerings unlock the world of direct buying and selling through centralized, programmatic channels. They also bring the advantage of commitments to programmatic-oriented buyers and sellers, enabling far greater predictability for your deals.
+PG deals combine the certainty of direct sales with the power of programmatic, enabling publishers to programmatically execute direct deals with buyers. With PG deals, you have the power of guaranteed selling within a bidding environment using deal IDs. Instead of using traditional insertion orders, Microsoft Advertising PG offerings unlock the world of direct buying and selling through centralized, programmatic channels. They also bring the advantage of commitments to programmatic-oriented buyers and sellers, enabling far greater predictability for your deals.
 
 PG selling line items are used to create fixed price deals with specified impression budgets, forecasts in the ad server, reservations, and guaranteed pacing and delivery.
 
@@ -61,7 +61,7 @@ As a Microsoft Monetize client, you have two options for PG deal creation:
 
 Additionally, the two PG selling options have these respective benefits and trade-offs:
 
-| Xandr Ad Server | Microsoft Monetize |
+| Microsoft Advertising Ad Server | Microsoft Monetize |
 |---|---|
 | Header-bidding integration | Tag-based integration |
 | Streamlined beginning-to-end deal configuration | Greater setup flexibility |

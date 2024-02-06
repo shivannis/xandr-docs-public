@@ -25,14 +25,14 @@ To create a new programmatic guaranteed (PG) deal, start by pre-selecting a paci
 
    | Choice | Description |
    |---|---|
-   | **Pacing in Xandr** | If you choose this pacing option, pacing and other configurations such as targeting, frequency/recency caps, and deal creative criteria will be handled within Xandr Monetize.<br>**Note**: **Pacing in Xandr** is a **beta** feature that isn't available to all clients. If you'd like access to this feature, please contact your Xandr account representative. |
+   | **Pacing in Microsoft Advertising** | If you choose this pacing option, pacing and other configurations such as targeting, frequency/recency caps, and deal creative criteria will be handled within Microsoft Advertising Monetize.<br>**Note**: **Pacing in Microsoft Advertising** is a **beta** feature that isn't available to all clients. If you'd like access to this feature, please contact your Microsoft Advertising account representative. |
    | **Pacing in Ad Server of Record** | If you choose this pacing option, a third-party ad server will handle pacing and other configurations. |
 
 1. Click **Next**.
 
-    Depending on your **Pacing** selection, you'll see the **Create New Line** Item screen (if you chose **Pacing in Xandr**) or the **Create New Programmatic Guaranteed Deal** screen (if you chose **Pacing in Ad Server of Record**).
+    Depending on your **Pacing** selection, you'll see the **Create New Line** Item screen (if you chose **Pacing in Microsoft Advertising**) or the **Create New Programmatic Guaranteed Deal** screen (if you chose **Pacing in Ad Server of Record**).
 
 For instructions on creating a programmatic guaranteed deal with your pacing selection, see
 
-- [Create a Programmatic Guaranteed Deal](create-a-programmatic-guaranteed-selling-line-item.md)(if you chose **Pacing in Xandr**)
+- [Create a Programmatic Guaranteed Deal](create-a-programmatic-guaranteed-selling-line-item.md)(if you chose **Pacing in Microsoft Advertising**)
 - [Create a Programmatic Guaranteed Deal that Uses Third-Party Ad Server Pacing, Tag Integration](create-a-programmatic-guaranteed-selling-line-item-ssp.md)(if you chose **Pacing in Ad Server of Record**)

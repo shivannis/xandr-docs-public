@@ -6,13 +6,13 @@ ms.date: 10/28/2023
 
 # Platform-wide banning
 
-The Xandr platform rigorously audits and rejects creatives that do not meet its standards. Before you request banning a creative from the platform, you should first try blocking it from your publisher or network using your Ad Quality settings.
+The Microsoft Advertising platform rigorously audits and rejects creatives that do not meet its standards. Before you request banning a creative from the platform, you should first try blocking it from your publisher or network using your Ad Quality settings.
 
-Creative Auditing prevents a wide range of creatives from serving based on the criteria described in [Inventory Standards and Auditing](inventory-standards-and-auditing.md). Xandr continuously monitors for issues such as inappropriate or illegal content, malware, and technology that interferes with the functionality of inventory where the ad is displayed. For more information about specific standards
-required for advertiser creatives, see [Policies for Buying](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx) (login required).
+Creative Auditing prevents a wide range of creatives from serving based on the criteria described in [Inventory Standards and Auditing](inventory-standards-and-auditing.md). Microsoft Advertising continuously monitors for issues such as inappropriate or illegal content, malware, and technology that interferes with the functionality of inventory where the ad is displayed. For more information about specific standards
+required for advertiser creatives, see [Policies for Buying](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Buying.aspx) (login required).
 
 If you're experiencing unwanted ads on your site, asking for the content to be banned should be your last resort after you've tried the
-strategies suggested in [Improving Ad Quality on Your Inventory](improving-ad-quality-on-your-inventory.md). If you're sure the creatives you're seeing are inappropriate according to Xandr policies, not just inappropriate for your inventory, you can submit an issue on our [Customer Support Portal](https://help.xandr.com/login).
+strategies suggested in [Improving Ad Quality on Your Inventory](improving-ad-quality-on-your-inventory.md). If you're sure the creatives you're seeing are inappropriate according to Microsoft Advertising policies, not just inappropriate for your inventory, you can submit an issue on our [Customer Support Portal](https://help.xandr.com/login).
 
 ## Related topics
 

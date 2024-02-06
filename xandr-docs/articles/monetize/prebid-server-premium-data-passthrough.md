@@ -10,13 +10,13 @@ ms.date: 10/28/2023
 
 Per the IAB, the SupplyChain (schain) object, along with sellers.json, identifies all of the intermediaries in the flow of money from the buying platform back to the publisher. It does not include an intermediary that does not participate in the money flow or systems that are paid a fee for their services but do not pay upstream sellers.
 
-Prebid Server Premium (PSP) acts as a pass-through for requests and responses and although it incurs a fee for the publisher, PSP is not a financial entity in the chain. For this reason, the appnexus (Xandr) node is not appended to the schain when requests are sent from PSP to external demand partners (SSPs). Those SSPs apply their node to the schain when they send the request on to DSPs.
+Prebid Server Premium (PSP) acts as a pass-through for requests and responses and although it incurs a fee for the publisher, PSP is not a financial entity in the chain. For this reason, the appnexus (Microsoft Advertising) node is not appended to the schain when requests are sent from PSP to external demand partners (SSPs). Those SSPs apply their node to the schain when they send the request on to DSPs.
 
 More information on the SupplyChain object can be found [here](https://iabtechlab.com/wp-content/uploads/2019/07/FAQ-for-sellers.json_supplychain-object.pdf).
 
 ## Floors
 
-When a publisher includes reserved price or price in the request to Xandr, PSP passes the value on to demand partners. PSP does not pass yield management floors to demand partners. For more information on yield management, see [Working with Yield Management](working-with-yield-management.md).
+When a publisher includes reserved price or price in the request to Microsoft Advertising, PSP passes the value on to demand partners. PSP does not pass yield management floors to demand partners. For more information on yield management, see [Working with Yield Management](working-with-yield-management.md).
 
 ## Global Placement ID (GPID)
 

@@ -13,7 +13,7 @@ By using Native Assembly, publishers can take the guesswork and manual developme
 
 ## Native assembly for Microsoft Monetize ad server publishers
 
-Microsoft Monetize Ad Server publishers can use Native Assembly on the client side whereXandr's seller tag (AST) and mobile SDKs for Android and iOS can be leveraged. With Native Assembly, Microsoft Monetize Ad Server publishers can:
+Microsoft Monetize Ad Server publishers can use Native Assembly on the client side whereMicrosoft Advertising's seller tag (AST) and mobile SDKs for Android and iOS can be leveraged. With Native Assembly, Microsoft Monetize Ad Server publishers can:
 
 - Access a gallery of high impact templates and personalize them using HTML, CSS, and/or Javascript.
 - use custom native assets to enhance their users' experience.
@@ -21,7 +21,7 @@ Microsoft Monetize Ad Server publishers can use Native Assembly on the client si
 
 ## Native assembly for third-Party ad server publishers
 
-Third-party ad server publishers can use Native Assembly on the server side. Since third-party ad server publishers do not have access to Xandr's seller tag (AST) and mobile SDKs for Android and iOS, their Native Assembly renderers are applied on the server side. With Native Assembly, third-party ad server publishers can:
+Third-party ad server publishers can use Native Assembly on the server side. Since third-party ad server publishers do not have access to Microsoft Advertising's seller tag (AST) and mobile SDKs for Android and iOS, their Native Assembly renderers are applied on the server side. With Native Assembly, third-party ad server publishers can:
 
 - expose native inventory to buyers.
 - render native inventory that matches their asset specifications to
@@ -30,5 +30,5 @@ Third-party ad server publishers can use Native Assembly on the server side. Sin
 ## Related topics
 
 - [Configuring a Native Assembly](configuring-a-native-assembly.md)
-- [Working with Xandr's Seller Tag (AST)](working-with-seller-tag.md)
-- [Xandr Mobile SDKs](../mobile-sdk/xandr-mobile-sdks.md)
+- [Working with Microsoft Advertising's Seller Tag (AST)](working-with-seller-tag.md)
+- [Microsoft Advertising Mobile SDKs](../mobile-sdk/xandr-mobile-sdks.md)

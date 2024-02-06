@@ -11,7 +11,7 @@ Augmented Line Item (ALI) optimization uses sophisticated algorithms to achieve 
 ## In this guide
 
 - [Adaptive Pacing](adaptive-pacing.md): Shade bids and deliver budgets as efficiently as possible.
-- [Lifetime Pacing](lifetime-pacing.md): Automatically distribute a budget over the lifespan of a line item's flight utilizing Xandr's algorithm.
+- [Lifetime Pacing](lifetime-pacing.md): Automatically distribute a budget over the lifespan of a line item's flight utilizing Microsoft Advertising's algorithm.
 - [Discovery](discovery.md): Prioritize the inventory that is most likely to perform.
 - [Valuation](valuation.md): Determine how much to bid.
 - [Ways to Improve Click-Through Rate (CTR) Performance](ways-to-improve-ctr-performance.md): Improve your line item's CTR performance, even after setting a CTR optimization goal.

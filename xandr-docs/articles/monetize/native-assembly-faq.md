@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 ## What is Native Assembly?
 
-Native Assembly is Xandr’s native inventory management feature, allowing you to create new native inventory or enable native capabilities on an existing display placement.
+Native Assembly is Microsoft Advertising’s native inventory management feature, allowing you to create new native inventory or enable native capabilities on an existing display placement.
 
 ## If I’m adding native capabilities to existing display inventory, is it really native inventory?
 
@@ -36,7 +36,7 @@ Each placement must be associated with one renderer. This is because the rendere
 
 ## Do I have to activate placements individually?
 
-No, bulk activation is possible for scaled native inventory enablement. Please contact your Xandr team for more details.
+No, bulk activation is possible for scaled native inventory enablement. Please contact your Microsoft Advertising team for more details.
 
 ## What requirements should I set for my native assets?
 

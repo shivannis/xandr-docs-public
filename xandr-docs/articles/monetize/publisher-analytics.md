@@ -83,7 +83,7 @@ Real Time Data is a new feature being offered within this report (not all users 
 | Country | Yes | The country where the impression occurred. |
 | Deal | Yes | The deal associated with the transaction for the impression. |
 | External Code | No | The name and ID of the external inventory code passed in the ad call and predefined by the publisher. For more details, see [External Inventory Code Service](../digital-platform-api/external-inventory-code-service.md). |
-| Filtered Request Reason | No | The reason the ad request was filtered out by Xandr prior to bidding. |
+| Filtered Request Reason | No | The reason the ad request was filtered out by Microsoft Advertising prior to bidding. |
 | Impression Type | Yes | The type of impression that occurred. For the definitions of each impression type, see the [Impression Type Definitions](#impression-type-definitions) section below. |
 | Line Item | No | The line item under which the impression was purchased. For more information about line items, see [Working with Line Items](working-with-line-items.md). |
 | Media Type | Yes | The media type associated with the creative that served on this impression. |
@@ -154,7 +154,7 @@ Real Time Data is a new feature being offered within this report (not all users 
 | Conversions Per Million | The number of conversions per million impressions. |
 | Cost Per Video Complete | The cost per video completion. |
 | CTR | The click-through rate – the ratio of clicks to impressions. |
-| Filtered Requests | The total number of bid requests for which Xandr did not hold an auction due to inventory quality concerns. |
+| Filtered Requests | The total number of bid requests for which Microsoft Advertising did not hold an auction due to inventory quality concerns. |
 | Impression Requests | The total number of ad calls (impression requests). <br><br> **Warning**: This metric is typically inaccurate for video inventory due to occasional delays in receiving video events, which can lead to inflated request totals based on the assumption that the video has expired. For a better video request metric, you should use Ad Requests in the S[eller Fill and Delivery Network Report](seller-fill-and-delivery-network-report.md) or [Network Video Analytics Report](network-video-analytics-report.md). |
 | Imps | The total number of impressions. |
 | Imps (blank) | The number of blank impressions. |

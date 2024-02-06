@@ -8,6 +8,6 @@ ms.date: 10/28/2023
 
 **Release date**: January 9, 2023
 
-Microsoft Monetize and Ad Server clients can now use **Bid Rejection** tabs to easily access revenue impact data across ad quality, floors, deals, and demand issues. Contact your Xandr Account Representative to get enabled.
+Microsoft Monetize and Ad Server clients can now use **Bid Rejection** tabs to easily access revenue impact data across ad quality, floors, deals, and demand issues. Contact your Microsoft Advertising Account Representative to get enabled.
 
 For more information, see [Monetize Insights for Publishers](monetize-insights-for-publishers.md).

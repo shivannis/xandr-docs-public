@@ -20,7 +20,7 @@ If you are a network that also represents buyers, the **Buyers** and **Sellers**
 
 ## Managing your profile
 
-Click the **My Profile** button to edit the information that demand partners will see on your **Partner Details** page. Your profile provides information about your company which helps demand partners understand how you could be useful as a partner. The **My Seller Profile** dialog also displays an overview of the audit quality of your inventory. You can see how much of your inventory has been self-audited (**Seller-reviewed**) and how much has been audited by Xandr (**Platform-reviewed**).
+Click the **My Profile** button to edit the information that demand partners will see on your **Partner Details** page. Your profile provides information about your company which helps demand partners understand how you could be useful as a partner. The **My Seller Profile** dialog also displays an overview of the audit quality of your inventory. You can see how much of your inventory has been self-audited (**Seller-reviewed**) and how much has been audited by Microsoft Advertising (**Platform-reviewed**).
 
 For step-by-step instructions on customizing your profile, see [Customize Your Seller Profile](customize-your-seller-profile.md).
 

@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Publisher reporting
 
-Publisher reports allow you to get more granular information about the performance of individual publishers than is provided by [Network Reporting](network-reporting.md). These reports are also designed to contain information that is more relevant to selling activity than buyer or network reports. Also, if you only participate in selling activity (e.g., as a Publisher) on the Xandr platform, these may be the only reports you have access to.
+Publisher reports allow you to get more granular information about the performance of individual publishers than is provided by [Network Reporting](network-reporting.md). These reports are also designed to contain information that is more relevant to selling activity than buyer or network reports. Also, if you only participate in selling activity (e.g., as a Publisher) on the Microsoft Advertising platform, these may be the only reports you have access to.
 
 In this section of the reporting guide, you'll find documentation for all of our publisher-level reports.
 

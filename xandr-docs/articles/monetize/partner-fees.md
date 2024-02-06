@@ -12,7 +12,7 @@ Common fees you might need to budget for are:
 
 - Advertiser **ad serving fees** and **creative hosting fees**, which are charged for delivering a line item's creative assets.
 
-- **Data fees** that are not cleared by Xandr as part of the Data Marketplace.
+- **Data fees** that are not cleared by Microsoft Advertising as part of the Data Marketplace.
 
 - Post-bid **reporting fees** - for example, using a pixel to track where impressions are served and then auditing retroactively how many transactions violated brand safety standards.
 

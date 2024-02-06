@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Onboarding mobile supply
 
 > [!NOTE]
-> Xandr now supports a domain, [adnxs-simple.com](http://adnxs-simple.com/), which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Xandr will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Reinforcing-Privacy-Controls-Through-a-Cookie-Free-Domain.aspx)(login required).
+> Microsoft Advertising now supports a domain, [adnxs-simple.com](http://adnxs-simple.com/), which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Microsoft Advertising will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Reinforcing-Privacy-Controls-Through-a-Cookie-Free-Domain.aspx)(login required).
 
 There are several ways to onboard mobile supply. The type of mobile supply you are bringing on will determine the type of ad call your publishers need to make.
 
@@ -22,9 +22,9 @@ This page lists the exact mobile ad calls you must make for each type of mobile 
 
 For both app and mobile web inventory, there are two types of ad calls that can be generated: one that comes directly from the device (the client-side), and one that comes from the server.
 
-When an ad call comes directly from the device (client-side), the application or website calls the Xandr Impression Bus directly. This means that Xandr has direct access to important metadata such as the User Agent and IP address.
+When an ad call comes directly from the device (client-side), the application or website calls the Microsoft Advertising Impression Bus directly. This means that Microsoft Advertising has direct access to important metadata such as the User Agent and IP address.
 
-On the other hand, a server-side call means that an external server calls the Xandr Impression Bus on behalf of the client (the device). In this case, Xandr does not have direct access to necessary metadata that would make the impression attractive to buyers such as the IP address and the User Agent. Since this data is not supplied by the server-side call, it must be appended to the request by your mobile ad tag. The instructions below show you which tags you must add to your placement tags depending on the type of integration.
+On the other hand, a server-side call means that an external server calls the Microsoft Advertising Impression Bus on behalf of the client (the device). In this case, Microsoft Advertising does not have direct access to necessary metadata that would make the impression attractive to buyers such as the IP address and the User Agent. Since this data is not supplied by the server-side call, it must be appended to the request by your mobile ad tag. The instructions below show you which tags you must add to your placement tags depending on the type of integration.
 
 This diagram shows the difference between how server-side and client-side mobile ad calls are made:
 
@@ -70,7 +70,7 @@ We recommend that you include the following parameters (in the table below) on s
 | Name | Parameter | Description |
 |---|---|---|
 | App ID | `appid` | The app ID is a string used to identify an app running on Android or iOS. Many buyers set campaign targeting and reporting based on app ID. Failing to supply a correct `appid` will make your inventory unattractive to these buyers. Therefore, passing this field is **strongly recommended**. For more information about the `appid` parameter, see our [Mobile Ad Call Reference](mobile-ad-call-reference.md). |
-| IP Address | `ip` | The IP address parameter provides Xandr with the geographic location of the user, as well as the carrier whose network the device is connected to. Many buyers use carrier or geo targeting. Including this information on an ad call is important in order to capture mobile demand. |
+| IP Address | `ip` | The IP address parameter provides Microsoft Advertising with the geographic location of the user, as well as the carrier whose network the device is connected to. Many buyers use carrier or geo targeting. Including this information on an ad call is important in order to capture mobile demand. |
 | User Agent | `ua` | The User Agent parameter provides us with the device's operating system as well its make and model. Many buyers are targeting based on these parameters and not including them will restrict demand. |
 | IDFA (for iOS) | `idfa` | This is the user's unique identifier for iOS devices and is tied to a user ID. If you don't provide this information on the ad call, demand partners who have implemented frequency capping and/or a buying strategy that requires conversion tracking will not buy your inventory. Not providing the user's unique ID will severely restrict demand. |
 | AAID (for Android) | `aaid` | This is the user's unique identifier for Android devices that use Google Play Services and is tied to a user ID. If you don't provide this information on the ad call, demand partners who have implemented frequency capping and/or a buying strategy that requires conversion tracking will not buy your inventory. Not providing the user's unique ID will severely restrict demand. |

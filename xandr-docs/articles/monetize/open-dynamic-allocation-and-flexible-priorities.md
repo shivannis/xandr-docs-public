@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Open dynamic allocation and flexible priorities
 
 When working with your managed inventory, you often have eligible demand from a number of different channels. You might have managed demand that you have sold on a guaranteed or up-front basis, which you need to ensure meets delivery commitments. You might also have managed demand that your team is responsible for trafficking, but that may not have
-committed up-front guarantees (performance demand, house campaigns, etc.). And finally, you might have external demand sources that you work with by exposing your inventory for reselling on the Xandr exchange.
+committed up-front guarantees (performance demand, house campaigns, etc.). And finally, you might have external demand sources that you work with by exposing your inventory for reselling on the Microsoft Advertising exchange.
 
 Through Open Dynamic Allocation, Microsoft Monetize allows you to optimize across these different demand channels:
 maximizing revenue for your managed inventory while still ensuring delivery in full for your guaranteed/high-priority managed demand.

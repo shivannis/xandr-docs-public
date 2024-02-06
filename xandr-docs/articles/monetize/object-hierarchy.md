@@ -68,7 +68,7 @@ You can have many campaigns under a single line item.
 
 ## Creative
 
-A [creative](exploring-creatives.md) is an actual ad, hosted either by Xandr or by a third-party ad server. The Xandr platform enables you to traffic a wide range of
+A [creative](exploring-creatives.md) is an actual ad, hosted either by Microsoft Advertising or by a third-party ad server. The Microsoft Advertising platform enables you to traffic a wide range of
 [creative types](add-creatives-in-bulk.md), from banners to rich media types like interstitials and expandables.
 
 Creatives belong to a specific advertiser. You can associate each creative to many line items or campaigns under an advertiser.
@@ -83,7 +83,7 @@ advertisers. Advertiser-level segments are available for targeting only in campa
 ## Conversion pixel
 
 A [conversion pixel](working-with-conversion-pixels.md) is placed on web pages to track user actions in response to an advertiser's creatives, such as registering at a site or
-making a purchase. When a conversion pixel fires, Xandr determines if the conversion (the registration, the purchase, etc.) can be "attributed", or tied to the
+making a purchase. When a conversion pixel fires, Microsoft Advertising determines if the conversion (the registration, the purchase, etc.) can be "attributed", or tied to the
 user clicking on or viewing one of the advertiser's creatives previously [conversion attribution](conversion-attribution.md).
 
 You can have many conversion pixels under a single advertiser. You associate each conversion pixel to many line items (for tracking payment or performance goals on a CPA basis) or campaigns (for valuing impressions based on CPA optimization data).
@@ -96,13 +96,13 @@ You can have third-party pixels at the network, advertiser, or creative levels. 
 
 ## Impression tracker
 
-An [impression tracker](create-an-impression-tracker.md) is used to track impressions associated with creatives that are hosted by off-platform (non-Xandr) ad servers. This is done by attaching the tracker as a "piggyback pixel" on the externally hosted creative.
+An [impression tracker](create-an-impression-tracker.md) is used to track impressions associated with creatives that are hosted by off-platform (non-Microsoft Advertising) ad servers. This is done by attaching the tracker as a "piggyback pixel" on the externally hosted creative.
 
 You can have many impression trackers under a single advertiser.
 
 ## Click tracker
 
-A [click tracker](create-a-click-tracker.md) is used to track clicks associated with creatives that are hosted by off-platform (non-Xandr) ad servers. This is done by attaching the tracker as a "piggyback pixel" on the externally hosted creative.
+A [click tracker](create-a-click-tracker.md) is used to track clicks associated with creatives that are hosted by off-platform (non-Microsoft Advertising) ad servers. This is done by attaching the tracker as a "piggyback pixel" on the externally hosted creative.
 
 You can have many click trackers under a single advertiser.
 
@@ -124,7 +124,7 @@ Restrictions set in a your network ad quality profile cannot be loosened at the 
 
 ## Content category
 
-Xandr provides a set of "universal" content categories, which are commonly used categories that you can apply to placement groups and placements for buyer targeting. You can also create your own [custom content categories](manage-custom-content-categories.md) and apply them to placement groups and placements for buyer targeting.
+Microsoft Advertising provides a set of "universal" content categories, which are commonly used categories that you can apply to placement groups and placements for buyer targeting. You can also create your own [custom content categories](manage-custom-content-categories.md) and apply them to placement groups and placements for buyer targeting.
 
 Direct campaigns can target your universal and custom categorization by default, but you must [expose universal and custom content targeting to third-party buyers](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md) in the Partner Center.
 

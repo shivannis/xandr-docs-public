@@ -63,7 +63,7 @@ Depending on the type of query string segment you need, follow the instructions 
       >   - Parameters and values are case-insensitive
       >   - You can pass up to 40 parameter-value pairs, each of which can have up to 60 characters.
       >   - Each parameter-value pair must follow the `parameter=value` format.
-      >   - Xandr does not universally support non-Unicode characters. When passing this information, we recommend that you use only Unicode characters to ensure maximum data compatibility.
+      >   - Microsoft Advertising does not universally support non-Unicode characters. When passing this information, we recommend that you use only Unicode characters to ensure maximum data compatibility.
       >
       > - When you choose the **Custom** option, no text area appears, since values for this segment will always be defined at time of targeting on a line item or campaign.
       > - If a segment is targeting values `0` as well as any negative number, the Impbus will consider the segment as a default value that means no value is actually being passed.

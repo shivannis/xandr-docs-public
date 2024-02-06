@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Override ad quality settings on a deal
 
-By default, when you create a deal, the deal inherits any ad quality settings you have already established for a given network and publisher. For example, a network may prohibit animated or Flash ads and a publisher may ban certain specific brands or category. But, since deals are special arrangements with buyers, Xandr allows you to ignore these settings and allow creatives that would normally be blocked to serve on a deal.
+By default, when you create a deal, the deal inherits any ad quality settings you have already established for a given network and publisher. For example, a network may prohibit animated or Flash ads and a publisher may ban certain specific brands or category. But, since deals are special arrangements with buyers, Microsoft Advertising allows you to ignore these settings and allow creatives that would normally be blocked to serve on a deal.
 
 > [!NOTE]
 > These settings are configured when you [create a custom deal](create-a-custom-deal.md). The settings they override are described in [Working with Network Ad Quality](working-with-network-ad-quality.md) and [Working with Ad Quality](working-with-publisher-ad-quality.md).
@@ -24,7 +24,7 @@ There are three types of ad quality overrides:
 Trust Level is used to indicate what level of audit status you want to permit for creatives to serve for a deal.
 
 - **Default**: Default setting. If selected, this deal uses the default ad quality buyer trust level.
-- **Allow pending creatives**: if checked, the default setting is used but creatives submitted for Xandr audit in the "pending" state are allowed to serve. Once the audit is complete, the creative uses the default ad quality setting.
+- **Allow pending creatives**: if checked, the default setting is used but creatives submitted for Microsoft Advertising audit in the "pending" state are allowed to serve. Once the audit is complete, the creative uses the default ad quality setting.
 - **Maximum**: If selected, all creatives are allowed to serve for this deal (except for creatives specifically banned; see below). With **Maximum** trust level set on a deal, a buyer can serve on that deal even if the buyer has been blocked in network or publisher ad quality rules.
 
   > [!NOTE]

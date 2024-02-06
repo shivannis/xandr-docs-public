@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Offline conversion attribution
 
-"Offline" attribution is [conversion attribution](conversion-attribution.md) that involves pushing all of the data processing required for conversion attribution "offline" to the Xandr data warehouse.
+"Offline" attribution is [conversion attribution](conversion-attribution.md) that involves pushing all of the data processing required for conversion attribution "offline" to the Microsoft Advertising data warehouse.
 
 Offline attribution provides:
 
@@ -39,23 +39,23 @@ The **User Data** store responds to the **Impression Bus** with information abou
 
 Because of the nature of the design of the data store, and the speed with which it must respond to requests, the information about the user it can pass to the **Impression Bus** in this step is limited. It is also unable to receive information about views or clicks as quickly as it must respond to requests for the latest view and click information. As a result, the information can be slightly out of date - where "slightly" is measured in seconds - leading to less accuracy in attributing conversions.
 
-### Step 4. User data is passed to Xandr's bidder
+### Step 4. User data is passed to Microsoft Advertising's bidder
 
-The **Impression Bus** passes along the information about the user it received from the **User Data** store to **Xandr's Bidder** for attribution.
+The **Impression Bus** passes along the information about the user it received from the **User Data** store to **Microsoft Advertising's Bidder** for attribution.
 
-### Step 5. Attribution is performed by **Xandr's bidder**
+### Step 5. Attribution is performed by **Microsoft Advertising's bidder**
 
-**Xandr's Bidder** performs the actual [conversion attribution](conversion-attribution.md), searching the user's data for the most recent view or click associated with the advertiser's creative.
+**Microsoft Advertising's Bidder** performs the actual [conversion attribution](conversion-attribution.md), searching the user's data for the most recent view or click associated with the advertiser's creative.
 
 ### Step 6. User data is passed to the Data Warehouse for additional processing
 
-**Xandr's Bidder** has attributed the conversion, and passes that information along to the **Data Warehouse**, along with the information it was given by the **Impression Bus** and **User Data** store.
+**Microsoft Advertising's Bidder** has attributed the conversion, and passes that information along to the **Data Warehouse**, along with the information it was given by the **Impression Bus** and **User Data** store.
 
 As noted in Step 3, the user information the **User Data** store can provide is limited. That limited set of data on the user must now go through a lengthy post-processing step, whereby it is combined with the more comprehensive user data stored in the **Data Warehouse**.
 
 ### Step 7. Conversion-related data is made available for reporting, optimization, and budget
 
-The **Data Warehouse** has finished post-processing the limited amount of information on the converted user passed along from the **User Data** storage and integrating it with its own, more comprehensive data. At this point, the conversion-related data is made available to the Xandr Platform for reporting, optimization, and budget purposes.
+The **Data Warehouse** has finished post-processing the limited amount of information on the converted user passed along from the **User Data** storage and integrating it with its own, more comprehensive data. At this point, the conversion-related data is made available to the Microsoft Advertising Platform for reporting, optimization, and budget purposes.
 
 ## Current method ("Offline")
 
@@ -73,7 +73,7 @@ The **Data Warehouse** receives information about the impression and the user fr
 
 ### Step 4. Conversion-related data is made available for reporting, optimization, and budget
 
-The **Data Warehouse** has finished processing and integrating the information on the impression and the converted user passed along from the **Impression Bus**. At this point, the impression and conversion-related data is made available to the Xandr Platform for reporting, optimization, and budget purposes.
+The **Data Warehouse** has finished processing and integrating the information on the impression and the converted user passed along from the **Impression Bus**. At this point, the impression and conversion-related data is made available to the Microsoft Advertising Platform for reporting, optimization, and budget purposes.
 
 ### Related topics
 

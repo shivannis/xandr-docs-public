@@ -32,7 +32,7 @@ for step-by-step instructions). You can also override these settings for individ
 
 You can define which portion of an eligible seller's inventory you trust. There are three trust levels (they are listed here from least trusted to most trusted):
 
-- **Platform-reviewed**: Indicates that you trust only the inventory that has been audited by the Xandr platform. The Xandr domain-level platform-review consists of
+- **Platform-reviewed**: Indicates that you trust only the inventory that has been audited by the Microsoft Advertising platform. The Microsoft Advertising domain-level platform-review consists of
   categories, sensitive attributes, and intended audience. This is the lowest level of trust and offers the fewest options (domains) in which to serve impressions, but provides the highest level of assurance that ads will not be served on questionable sites.
 - **Seller-reviewed**: This indicates that, in addition to all platform-reviewed inventory (above), you also trust inventory audited by the seller. This expands the number of
   domains on which an ad can serve, but requires confidence in the review process and standards of the seller.
@@ -61,13 +61,13 @@ Avails.** columns will display statistics on all of the seller's transactions ac
 ## Seller eligibility, history, and deals
 
   > [!TIP]
-  > **Get to Know Xandr Direct**
+  > **Get to Know Microsoft Advertising Direct**
   >
-  > Xandr Direct is a group of 100+ Xandr sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers.
+  > Microsoft Advertising Direct is a group of 100+ Microsoft Advertising sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers.
   >
-  > For more information, please see [Xandr Direct](appnexus-direct-for-buyers.md) or contact [appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Xandr account manager.
+  > For more information, please see [Microsoft Advertising Direct](appnexus-direct-for-buyers.md) or contact [appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Microsoft Advertising account manager.
 
-- **Seller Group** - Shows if the seller is labeled as Xandr Direct.
+- **Seller Group** - Shows if the seller is labeled as Microsoft Advertising Direct.
 - **Eligibility** - Shows the transaction eligibility between members. A buyer may block a seller, a seller may block a buyer, or both buyer and seller may be blocked by each other.
   Status is indicated by the circular eligibility icon in each row, and you can mouse over the row in the
   **Eligibility** column for details.

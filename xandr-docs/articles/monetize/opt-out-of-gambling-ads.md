@@ -6,11 +6,11 @@ ms.date: 10/28/2023
 
 # Opt out of gambling ads
 
-Xandr allows gambling ads in certain countries where such advertising is not prohibited. If you don't want to permit gambling ads to serve on your or your publishers' inventory, this page describes how to ban gambling ads from serving on such inventory.
+Microsoft Advertising allows gambling ads in certain countries where such advertising is not prohibited. If you don't want to permit gambling ads to serve on your or your publishers' inventory, this page describes how to ban gambling ads from serving on such inventory.
 
 ## Option 1. Exclude gambling ads from several publishers at once
 
-Complete the attached [Excel Worksheet](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fdownload.microsoft.com%2Fdownload%2Fe%2Fe%2F5%2Fee544211-092a-45c4-8076-57b5c5aaceb3%2F28%2520Dec%25202023%2Fgambling-publisher-opt-out-worksheet.xlsx&wdOrigin=BROWSELINK) by entering a list of Xandr publisher IDs or codes. These IDs and codes represent inventory where you don't want gambling ads to run. Once you've finished completing the worksheet, email it to [gamblingoptout@appnexus.com](mailto:gamblingoptout@appnexus.com). (You'll need to CC: your Xandr representative as well.) We will update your Ad Quality settings to opt out of gambling ads on those publishers.
+Complete the attached [Excel Worksheet](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fdownload.microsoft.com%2Fdownload%2Fe%2Fe%2F5%2Fee544211-092a-45c4-8076-57b5c5aaceb3%2F28%2520Dec%25202023%2Fgambling-publisher-opt-out-worksheet.xlsx&wdOrigin=BROWSELINK) by entering a list of Microsoft Advertising publisher IDs or codes. These IDs and codes represent inventory where you don't want gambling ads to run. Once you've finished completing the worksheet, email it to [gamblingoptout@appnexus.com](mailto:gamblingoptout@appnexus.com). (You'll need to CC: your Microsoft Advertising representative as well.) We will update your Ad Quality settings to opt out of gambling ads on those publishers.
 
 ## Option 2. Exclude gambling ads from all publishers
 
@@ -44,5 +44,5 @@ The Ad Quality Manager shares the same user interface for publishers and network
 
 ## Related topics
 
-- [Buy-Side Gambling Policy](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx) (login required)
-- [Sell-Side Gambling Policy](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Selling.aspx) (login required)
+- [Buy-Side Gambling Policy](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Buying.aspx) (login required)
+- [Sell-Side Gambling Policy](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Selling.aspx) (login required)

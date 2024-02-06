@@ -46,11 +46,11 @@ PG line items offer the following advantages:
 
 ## PG deal billing
 
-With PG deal buying, you'll never pay for more than a deal's agreed-to number of booked impressions. You only pay for a number of delivered impressions that is less than or equal to a PG deal's booked impression number. Xandr only charges fees on the
+With PG deal buying, you'll never pay for more than a deal's agreed-to number of booked impressions. You only pay for a number of delivered impressions that is less than or equal to a PG deal's booked impression number. Microsoft Advertising only charges fees on the
 cost-of-media collected.
 
 > [!NOTE]
-> While Xandr's billing reports show PG deals as being capped at their agreed-to booked impressions, non-billing reports still reflect overdelivery regarding logged delivered impressions versus adjusted-for-billing impressions.
+> While Microsoft Advertising's billing reports show PG deals as being capped at their agreed-to booked impressions, non-billing reports still reflect overdelivery regarding logged delivered impressions versus adjusted-for-billing impressions.
 
 - **What happens with billing in the month that a deal ends?**
 
@@ -71,7 +71,7 @@ PG buying line items are required to bid on every possible impression associated
 With **auto-monitoring**, your line item is sent a warning once its bid rate drops to a certain percentage. If the line item's bid rate percentage drops further, your line item automatically deactivates and switches to an **Inactive** state. The line item's targeted PG deal also switches its acceptance status to **Inactive**. This allows you to then troubleshoot your line item by fixing its setup issues (like member-level targeting conflicts and creative eligibility issues) or renegotiating the terms of the seller's PG deal. After making the necessary adjustments to increase your line item's bid rate, you can manually re-activate your line item to continue fulfilling the deal.
 
 > [!NOTE]
-> When your line item deactivates, Xandr sends a notification email to all email addresses marked as **Notification Addresses** for your account's Sherlock deactivations.
+> When your line item deactivates, Microsoft Advertising sends a notification email to all email addresses marked as **Notification Addresses** for your account's Sherlock deactivations.
 
 ## Related topics
 

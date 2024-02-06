@@ -73,7 +73,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Line Item | Yes | The line item under which this impression was purchased. |
 | Campaign | Yes | The campaign which purchased this impression. (Does not apply to all advertisers.) |
 | Creative | Yes | The creative associated with the impression. |
-| Brand | Yes | The brand associated with the creative. Xandr keeps a list of advertiser brands in our systems that can be applied to a creative when its uploaded. For impression type "Resold", no information is available in the **Brand** field for this report. |
+| Brand | Yes | The brand associated with the creative. Microsoft Advertising keeps a list of advertiser brands in our systems that can be applied to a creative when its uploaded. For impression type "Resold", no information is available in the **Brand** field for this report. |
 | Country | Yes | The country in which the impression took place. |
 | Deal | Yes | The deal associated with the transaction for the impression. |
 | Creative Recency | Yes | How recently the creative was viewed by the user. For more information, see [Creative Frequency and Recency Report](creative-frequency-and-recency-report.md). |
