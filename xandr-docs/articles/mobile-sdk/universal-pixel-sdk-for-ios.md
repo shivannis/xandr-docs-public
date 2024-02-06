@@ -112,7 +112,7 @@ Pixie.initialize(pixelId:String)`
 
 ### eventName:String
 
-Standard Event strings are defined within the Event class. See the [Standard Events](#track-standard-event) section below for the available Standard Event strings. You also have the option to define Custom Event string(s) in Universal Pixel UI and use it in your application.
+Standard Event strings are defined within the Event class. See the [Standard Events](##track-standard-event---page-view) section below for the available Standard Event strings. You also have the option to define Custom Event string(s) in Universal Pixel UI and use it in your application.
 
 **Custom Event String(s) must be pre-registered using Universal Pixel UI.**
 
