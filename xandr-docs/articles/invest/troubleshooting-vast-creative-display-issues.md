@@ -39,7 +39,7 @@ addresses, or certain domains.
 ## Correct URL but creative is not displaying/displaying incorrectly in Microsoft Invest
 
 If an ad is returned by the URL in a validator, but the creative is not displaying in Microsoft Invest or is failing audit for
-improper display, ensure that your third-party hosting service is not blocking the **adnxs.com** or **adnxs.net** domains, the **US/NY** geo, or any of the range of Xandr IP Addresses.
+improper display, ensure that your third-party hosting service is not blocking the **adnxs.com** or **adnxs.net** domains, the **US/NY** geo, or any of the range of Microsoft Advertising IP Addresses.
 
 ## What does the error message "Heavy ad intervention" mean?
 

@@ -17,7 +17,7 @@ The following table shows the scale of historical data underlying the estimates:
 
 ## Planner data providers
 
-Planner supports real-time data provider segments from the Xandr Real-Time Signals Service (RTSS) as well as the following brand safety/contextual data providers:
+Planner supports real-time data provider segments from the Microsoft Advertising Real-Time Signals Service (RTSS) as well as the following brand safety/contextual data providers:
 
 - comScore
 - IAS

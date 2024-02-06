@@ -13,7 +13,7 @@ and how to read the output you receive.
 
 ## Running a debug auction
 
-A debug auction simulates a real auction without actually logging or serving anything and shows the results in your browser. The log shows the impression bus communicating with all active bidders (including Xandr) and then shows the member-specific
+A debug auction simulates a real auction without actually logging or serving anything and shows the results in your browser. The log shows the impression bus communicating with all active bidders (including Microsoft Advertising) and then shows the member-specific
 decisioning.
 
 A debug auction can be run using the following calls:
@@ -55,7 +55,7 @@ https://ib.adnxs.com/ptv?id=[TAG_ID]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASS
 
 | Parameter | Description |
 |---|---|
-| bidder | The bidder ID. Xandr Invest uses bidder ID 2 in production |
+| bidder | The bidder ID. Microsoft Advertising Invest uses bidder ID 2 in production |
 | referrer | Simulate the referring URL from which the ad call is coming |
 | prefer_learn | Set to "true" to force a prefer learn auction |
 | position | Overrides fold position. Can be set to "above" or "below" |
@@ -87,12 +87,12 @@ https://ib.adnxs.com/tt?id=3457&size=728x90&dongle=MyPassWord&debug_member=999&r
 ## Important points
 
 > [!NOTE]
-> Placement tag IDs can be found in the UI for your direct inventory, but not for real-time inventory. If you do not have a test publisher and placement to use, contact Xandr support at [https://help.xandr.com](https://help.xandr.com)for assistance.
+> Placement tag IDs can be found in the UI for your direct inventory, but not for real-time inventory. If you do not have a test publisher and placement to use, contact Microsoft Advertising support at [https://help.xandr.com](https://help.xandr.com)for assistance.
 
 > [!NOTE]
 > If an item is out of budget, inactive, or in pacing sleep (i.e. it is spending evenly across the day), it will not appear in the log. Generally, refreshing will cause paced objects to appear (because they will have come out of sleep). But heavily paced objects (e.g. spend $5 evenly with no targeting so there's a lot of sleeping between bids) may not appear in the final list of bidding campaigns.
 
-## Override Xandr browser cookie
+## Override Microsoft Advertising browser cookie
 
 When debugging a particular ad campaign, it may help that your browser's cookie contains or excludes the specific user criteria being targeting (e.g. country or segment). Please see the below table for information on how to view/modify your cookie.
 
@@ -101,7 +101,7 @@ When debugging a particular ad campaign, it may help that your browser's cookie 
 
 | Action | URL |
 |---|---|
-| View Xandr cookie | [https://ib.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE](https://ib.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE) where MEMBER_ID is your member ID, DONGLE is your member-specific dongle |
+| View Microsoft Advertising cookie | [https://ib.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE](https://ib.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE) where MEMBER_ID is your member ID, DONGLE is your member-specific dongle |
 | Add/remove yourself to/from segments | https://ib.adnxs.com/seg?add=SEGMENT_ID [https://ib.adnxs.com/seg?remove=SEGMENT_ID](https://ib.adnxs.com/seg?remove=SEGMENT_ID) where SEGMENT_ID is the ID of the targeted segment  |
 | Override cookie geography data | [https://ib.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE&country=COUNTRY&region=REGION&dma=DMA&city=CITY&postal=POSTALwhere](https://ib.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE&country=COUNTRY&region=REGION&dma=DMA&city=CITY&postal=POSTALwhere)Lwhere MEMBER_ID is your member ID, DONGLE is your member-specific dongle, COUNTRY is the targeted country code, REGION is the targeted region code, DMA is the targeted numeric metropolitan code, CITY is the targeted city name, and POSTAL is the targeted postal code (Note that to set city geo, you must set country, region in addition.) |
 
@@ -155,7 +155,7 @@ see the value of the bid, the brand ID, and the learn type.
 
 
 > [!TIP]
-> This debug log will also compare the result of Xandr's bidder with the result any other bidders participating in the auction, looking for the winner and the second highest price (since Xandr uses Second Price Auction).
+> This debug log will also compare the result of Microsoft Advertising's bidder with the result any other bidders participating in the auction, looking for the winner and the second highest price (since Microsoft Advertising uses Second Price Auction).
 
 Finally, we show the highest net bid, and the member and creative that
 would have served had this not been a debug auction.
@@ -258,7 +258,7 @@ would have served had this not been a debug auction.
 
 In addition to debug auctions, which simulate real auctions without logging or serving ads, you can also run a test auction. Test auctions are designed to allow clients to test if their ads are being delivered as expected and verify that everything is configured correctly.
 
-Like a debug auction, in a test auction Xandr does not transact the impression; no one will be paid or billed, nothing is logged, and no ads will be served. In addition, in a test auction, the actual content of the ad being sent is ignored; even if a banned creative is sent, a test auction will not result in an IP being blocked.
+Like a debug auction, in a test auction Microsoft Advertising does not transact the impression; no one will be paid or billed, nothing is logged, and no ads will be served. In addition, in a test auction, the actual content of the ad being sent is ignored; even if a banned creative is sent, a test auction will not result in an IP being blocked.
 
 To run a test auction, add the `test=1` parameter to an ad call; for
 example:

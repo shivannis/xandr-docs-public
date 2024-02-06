@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 This page defines viewability metrics that are available and best practices for making optimal use of them.
 
-Xandr provides **always-on**, **free**, **reliable** and **independent** ad-viewability measurement to all participants of the internet advertising industry. Viewability improves the performance and quality of internet advertising.
+Microsoft Advertising provides **always-on**, **free**, **reliable** and **independent** ad-viewability measurement to all participants of the internet advertising industry. Viewability improves the performance and quality of internet advertising.
 
 ## Viewability definitions
 
@@ -29,7 +29,7 @@ Not all impressions are successfully measured, because of one, or more of the fo
 | Viewability Measurement Rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
 
 > [!NOTE]
-> The Xandr measured viewability rate should not be directly compared to other measurement vendors, due to differences in what, where and how impressions were served.
+> The Microsoft Advertising measured viewability rate should not be directly compared to other measurement vendors, due to differences in what, where and how impressions were served.
 
 ### Viewability metrics
 
@@ -63,7 +63,7 @@ Viewability indicators are located in the **Metrics** section. Click the **Edit*
 ## Impression-level viewability
 
 A column in the Log Level Data Standard Feed enables impression-level viewability analytics. You can determine the result of the
-Xandr viewability measurement for each individual impression and use the data to perform enhanced reporting and in-depth analysis.
+Microsoft Advertising viewability measurement for each individual impression and use the data to perform enhanced reporting and in-depth analysis.
 
 | Column | Description |
 |:---|:---|

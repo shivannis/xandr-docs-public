@@ -11,7 +11,7 @@ The **Seller Site Domain** report is designed to give sellers information about 
 - See what kind of web or mobile app inventory is coming through a publisher so you can understand how to value it
 - Guarantee a certain degree of inventory quality to managed buyers
 - Optimize on domains or mobile application ID for managed campaigns
-- Understand the business impact of Xandr audit and categorization
+- Understand the business impact of Microsoft Advertising audit and categorization
 
 **Available to members and publishers:** This page describes both the member-level version **and** the publisher version; they are essentially the same.
 
@@ -83,7 +83,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Supply Type | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values:<br> - `"web"`<br> - `"mobile_app"`<br> - `"mobile_web"` |
 | Operating System | The operating system of the device where the impression occurred. |
 | Operating System Family | The name of the operating system family associated with the device the impression was served on (e.g., Android, Apple iOS). |
-| Filtered Request Reason | The reason the ad request was filtered out by Xandr prior to bidding. |
+| Filtered Request Reason | The reason the ad request was filtered out by Microsoft Advertising prior to bidding. |
 
 ## Filters
 
@@ -103,7 +103,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Operating System Family | The name of the operating system family associated with the device the impression was served on (e.g., Android, Apple iOS). |
 | Seller Name | The name of the seller member associated with the site domain. |
 | Seller ID | The ID of the seller member associated with the site domain. |
-| Filtered Request Reason | The reason the ad request was filtered out by Xandr prior to bidding. |
+| Filtered Request Reason | The reason the ad request was filtered out by Microsoft Advertising prior to bidding. |
 | Minimum Impression | Rows with less than this number of impressions will be excluded from the report. |
 
 ## Metrics
@@ -113,7 +113,7 @@ Intervals determine how your data is grouped together into rows in the report re
 
 | Column | Description |
 |:---|:---|
-| Filtered Request | The total number of impressions which have been filtered out by Xandr Inventory Quality (e.g. from a blocklisted domain, IP, etc.). |
+| Filtered Request | The total number of impressions which have been filtered out by Microsoft Advertising Inventory Quality (e.g. from a blocklisted domain, IP, etc.). |
 | Imps | The number of impressions coming through this site or placement. |
 | Clicks | The number of clicks coming through this site or placement. |
 | Network Revenue | The amount of network revenue running through this site or placement. This is the revenue coming into the network, booked through direct advertisers and resold to real time buyers. |

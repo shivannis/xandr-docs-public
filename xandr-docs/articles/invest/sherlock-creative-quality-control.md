@@ -1,12 +1,12 @@
 ---
 title: Microsoft Invest - Sherlock - Creative Quality Control
-description: In this article, learn what Sherlock is and how Xandr deals with malware.
+description: In this article, learn what Sherlock is and how Microsoft Advertising deals with malware.
 ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Sherlock: Creative quality control
 
-Xandr takes malware extremely seriously, and we are actively working to be at the forefront of prevention in order to protect our customers.
+Microsoft Advertising takes malware extremely seriously, and we are actively working to be at the forefront of prevention in order to protect our customers.
 
 We utilize our own automated creative scanning system, Sherlock, to detect malicious content and assist our human auditors with ad quality. Sherlock simulates real traffic as accurately as possible. Because we do not wish to describe our methods to any potential bad actors, we are not currently disclosing details of the process in our documentation. For more information, please contact our Anti-Malvertising team.
 
@@ -15,7 +15,7 @@ We utilize our own automated creative scanning system, Sherlock, to detect malic
 
 ## Malware policy
 
-We have developed an [Anti-malvertising Policy](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx) (login required) to ensure that our clients are taking all the necessary steps to keep the Xandr platform safe.
+We have developed an [Anti-malvertising Policy](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Buying.aspx) (login required) to ensure that our clients are taking all the necessary steps to keep the Microsoft Advertising platform safe.
 
 ## Contacting our team
 

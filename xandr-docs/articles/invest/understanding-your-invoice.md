@@ -1,18 +1,18 @@
 ---
 title: Microsoft Invest - Understanding Your Invoice
-description: Learn Annotated descriptions of the contents of your Xandr invoices.
+description: Learn Annotated descriptions of the contents of your Microsoft Advertising invoices.
 ms.date: 10/28/2023
 ---
 
 
 # Microsoft Invest - Understanding your invoice
 
-Annotated descriptions of the contents of your Xandr invoices.
+Annotated descriptions of the contents of your Microsoft Advertising invoices.
 
 ## Understanding your invoice
 
 All members who buy inventory through one of the
-Xandr Digital Platform UI products will receive
+Microsoft Advertising Digital Platform UI products will receive
 an invoice every month indicating the amount they have spent. There are
 several types of invoices; this page explains each one.
 
@@ -29,8 +29,8 @@ descriptions of annotations below):
 :::image type="content" source="./media/invoice-annotated.png" alt-text="Screenshot of Invoice Annotated.":::
 
 Your invoice lists the amount you have spent on
-Xandr's platform; this is the amount you must
-pay Xandr. You can reconcile some of these
+Microsoft Advertising's platform; this is the amount you must
+pay Microsoft Advertising. You can reconcile some of these
 amounts using reports in the UI. For more information see [Reconciling Your Invoice with Reporting](reconciling-your-invoice-with-reporting.md).
 
 
@@ -44,25 +44,25 @@ amounts using reports in the UI. For more information see [Reconciling Your Invo
 
 1. **Customer** - Your unique customer ID (member/network ID). Refer to
     your customer number in all correspondence with
-    Xandr Client Finance.
+    Microsoft Advertising Client Finance.
 
 1. **Date** - The date the invoice was generated.
 
    > [!NOTE]
-   > Xandr creates invoices within the first 5 business days of the month following the activity. For example, an invoice for activity in September 2018 would be prepared within the first 5 business days of October 2018.
+   > Microsoft Advertising creates invoices within the first 5 business days of the month following the activity. For example, an invoice for activity in September 2018 would be prepared within the first 5 business days of October 2018.
 
 1. **Billing Period** - The month during which inventory was purchased
-    on Xandr's platform (this is not the same as
+    on Microsoft Advertising's platform (this is not the same as
     your Insertion Order billing period).
 
 1. **Bill To** - The name and address of the customer. To update this
     information, create a Client Finance case via the [Customer
     Service Portal](https://help.xandr.com/s/login/).
 
-1. **Payment Terms** - The number of days after the end of the relevant activity billing period when payment is due, as specified in the Payment Terms section of your Xandr Service Exhibit.
+1. **Payment Terms** - The number of days after the end of the relevant activity billing period when payment is due, as specified in the Payment Terms section of your Microsoft Advertising Service Exhibit.
 
      > [!NOTE]
-   > To avoid being charged finance fees on overdue balances, be sure to make payments on time. To review how Xandr calculates finance fees, see [Billing FAQ](billing-faq.md)>. Your finance fee amount is specified in the Payments; Payment Obligations section of your Xandr Master Services Agreement.
+   > To avoid being charged finance fees on overdue balances, be sure to make payments on time. To review how Microsoft Advertising calculates finance fees, see [Billing FAQ](billing-faq.md)>. Your finance fee amount is specified in the Payments; Payment Obligations section of your Microsoft Advertising Master Services Agreement.
 
 1. **Billing Start / Billing End Date** - The start and end date of the
     activity period covered in this invoice (including time zone). The
@@ -75,18 +75,18 @@ amounts using reports in the UI. For more information see [Reconciling Your Invo
         platform. This charge can be found in your Service Agreement.
 
     1. **Cost of Media** - The amount you owe
-        Xandr for inventory purchased during the
+        Microsoft Advertising for inventory purchased during the
         billing period.
 
     1. **Views/Completes** - The amount you owe
-        Xandr for display impressions and/or
+        Microsoft Advertising for display impressions and/or
         video completes purchased via the Viewable Marketplace (e.g.,
         *Views - Standard Display*, *Completes - Standard Video*). For
         information on confirming invoice values associated with
         Viewable Marketplace activity, see [Reconciling Your Invoice with Reporting](reconciling-your-invoice-with-reporting.md).
 
     1. **Buyer Auction Service Fee** - Typically, the fee for
-        impressions bought from third parties such as Google or Yahoo!. This fee is charged in addition to the media cost. The fee percentage is specified in the Summary of Standard Xandr Service Charges/Fees section of your Xandr Service Exhibit. For more
+        impressions bought from third parties such as Google or Yahoo!. This fee is charged in addition to the media cost. The fee percentage is specified in the Summary of Standard Microsoft Advertising Service Charges/Fees section of your Microsoft Advertising Service Exhibit. For more
         information about buyer auction service charges, see
         [Buyer Auction Service Charge](buyer-auction-service-charge-mechanics.md).
 
@@ -96,28 +96,28 @@ amounts using reports in the UI. For more information see [Reconciling Your Invo
     1. **Seller Auction Service Fee (SASC)** - This fee is only applied
         to selling activity and only if the seller has the SASC set as a
         Fee instead of a Deduction in their contract terms with
-        Xandr. This fee is charged directly by
-        Xandr for impressions sold. If you have
+        Microsoft Advertising. This fee is charged directly by
+        Microsoft Advertising for impressions sold. If you have
         questions about this charge on your seller invoice, contact your
         account representative.
 
     1. **Ad Serving Fee** (only charged to Sellers) - The charge for kept, blank, default, and/or PSA impressions. This will appear as a separate line item on your invoice and can be tied out with the Selling Billing Report in the UI. These charges do not appear by default in that report. To view them in the report, you must select **Filtered Requests** (under **Metrics**).
 
     1. **Priority/Creative Audit Fee** - The charge for each creative
-        audit performed by Xandr (including both
+        audit performed by Microsoft Advertising (including both
         initial audits and re-audits). The creative audit fee, specified
-        in the Summary of Standard Xandr Service
-        Charges/Fees section of your Xandr
+        in the Summary of Standard Microsoft Advertising Service
+        Charges/Fees section of your Microsoft Advertising
         Service Exhibit, is the standard audit rate with standard
         turnaround time. Priority audit, specified in the Ad Unit
-        Auditing Fee section of your Xandr
+        Auditing Fee section of your Microsoft Advertising
         Service Exhibit, is a higher fee incurred when you request
         expedited turnaround time.
 
     1. **Creative Overage Fee** - The charge for serving creatives that
         are over the maximum size specified in the Summary of Standard
-        Xandr Service Charges/Fees section of
-        your Xandr Service Exhibit. For each
+        Microsoft Advertising Service Charges/Fees section of
+        your Microsoft Advertising Service Exhibit. For each
         oversized creative, the difference between the maximum size (in
         your contract) and the size of the creative is multiplied by (1)
         the number of impressions where the creative served, and then
@@ -128,15 +128,15 @@ amounts using reports in the UI. For more information see [Reconciling Your Invo
         **((10KB x 4) x $1.00) = $40**.
 
     1. **Data Fees** – The charge for information purchased from a
-        third party via the Xandr Data
+        third party via the Microsoft Advertising Data
         Marketplace. Unless you have a contractual direct clearing
         arrangement with the third party from whom you purchased the
-        data, Xandr is responsible for the
+        data, Microsoft Advertising is responsible for the
         payment to the third party and your payments for this data
-        should be sent to Xandr.
+        should be sent to Microsoft Advertising.
 
     1. **Video Creative Hosting** – The charge for video inventory that
-        is purchased through Xandr's platform.
+        is purchased through Microsoft Advertising's platform.
 
     1. Finance Fees – The incremental fee for any past due payments.
         Finance fees are never generated on outstanding finance fees
@@ -144,20 +144,20 @@ amounts using reports in the UI. For more information see [Reconciling Your Invo
 
 1. Tax - The charge for any applicable local taxes.
 
-1. **Total** - The total amount due to Xandr
+1. **Total** - The total amount due to Microsoft Advertising
     (e.g., all charges plus taxes).
 
 1. **Payment Instructions** - Information to help you submit your
     payment via check or wire. To ensure your wire payment is applied
     correctly, submit it to the account listed on your statement. For
-    more information, see [Payment to Xandr](payment-to-xandr.md).
+    more information, see [Payment to Microsoft Advertising](payment-to-xandr.md).
 
 ## Advertiser-Specific, Insertion order-specific, and billing Period-specific invoices
 
 You have the option to receive advertiser-, insertion order-, or billing
 period-specific invoices (e.g., to separate specific costs and fees for
 an advertiser's billing department). To opt into receiving these more
-specific invoices, contact your Xandr
+specific invoices, contact your Microsoft Advertising
 representative.
 
 If you opt into receiving **advertiser-specific invoices**, you will
@@ -202,7 +202,7 @@ will receive three levels of invoices:
 > If you entered a value in the **Billing Code** field of your Insertion Order, that value will appear on you insertion order-specific invoices and/or your billing period-specific invoices (depending on which you opted into).
 
 > [!WARNING]
-> Financial Obligations -Receiving Advertiser-, Insertion Order, or Billing Period-specific invoices does not change any of your financial or payment obligations to Xandr. You are still responsible for paying all invoices associated with any of your advertisers (including their insertion orders) and their activity and buying. Xandr does not bill advertisers for you.
+> Financial Obligations -Receiving Advertiser-, Insertion Order, or Billing Period-specific invoices does not change any of your financial or payment obligations to Microsoft Advertising. You are still responsible for paying all invoices associated with any of your advertisers (including their insertion orders) and their activity and buying. Microsoft Advertising does not bill advertisers for you.
 
  > [!NOTE]
  > Billing Name/Address and Billing Code
@@ -219,20 +219,20 @@ Manager.
 
 ## Netting Statement
 
-If you both buy and sell inventory with Xandr,
-you can opt into having Xandr “net” this
+If you both buy and sell inventory with Microsoft Advertising,
+you can opt into having Microsoft Advertising “net” this
 activity rather than receiving both monthly invoices and payments from
-Xandr. The netting statement document lists the
+Microsoft Advertising. The netting statement document lists the
 amount you have spent as a buyer and the amount of revenue you have
-earned as a seller. Xandr then deducts the
+earned as a seller. Microsoft Advertising then deducts the
 amount that you owe as a buyer based on your buy-side payment terms from
 the revenue you have earned based on your sell-side payment terms in
 order to determine the net amount that you will owe or be paid by
-Xandr. For more details, see [Understanding Your Seller Statement](understanding-your-seller-statement.md).
+Microsoft Advertising. For more details, see [Understanding Your Seller Statement](understanding-your-seller-statement.md).
 
 ## Credit Note
 
-If Xandr issues you a credit or debit, you will
+If Microsoft Advertising issues you a credit or debit, you will
 receive a credit memo listing the credit/debit amount. If a credited
 amount can be applied to an outstanding balance, it will be applied. If
 it is not clear where to apply this credit, the amount will be listed on
@@ -244,7 +244,7 @@ credit memo once the credit is processed.
     credit. The original invoice number for which the credit memo is
     being generated will also be shown. If that invoice is still open
     (i.e., not yet fully paid), the credit memo will be applied to that
-    invoice. If the invoice is fully paid, Xandr
+    invoice. If the invoice is fully paid, Microsoft Advertising
     can apply the amount of the credit to another invoice (after
     receiving your approval to do so).
 1. **Balance/Credit** - The amount that has been credited to your account.

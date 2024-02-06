@@ -12,7 +12,7 @@ This reporting helps sellers in the following ways:
 
 - by providing data on the usage per segment, so they can understand how often they used each segment and thus enable them to bill their data providers and/or advertisers appropriately
 - by providing data of performance per segment, so they can analyze which segments are performing well or not well and optimize appropriately
-- facilitating data clearing, so that instead of them being responsible for billing their data providers each month, Xandr can do it for them.
+- facilitating data clearing, so that instead of them being responsible for billing their data providers each month, Microsoft Advertising can do it for them.
 
 ## Time frame
 

@@ -13,7 +13,7 @@ Read about the latest updates to Microsoft Invest.
 - [December 7, 2022: New Feature - Insertion Order (IO) Duplication](release-notes-20221207-2.md)
 - [December 7, 2022: Budget Rollover for Line Items](release-notes-20221207-1.md)
 - [October 25, 2022: New Data Provider in Data Marketplace](release-notes-20221025-1.md)
-- [October 25, 2022: Launch of new Xandr Data Marketplace Resources](release-notes-20221025-2.md)
+- [October 25, 2022: Launch of new Microsoft Advertising Data Marketplace Resources](release-notes-20221025-2.md)
 - [June 30, 2022: Alpha Testing for Underspend Budget Rollover](release-notes-20220630.md)
 - [May 2, 2022: Buyer Engagement Report](release-notes-20220502.md)
 - [February 17, 2022: Enhancements to the ALI Setup Experience](release-notes-20220217.md)

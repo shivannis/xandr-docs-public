@@ -9,18 +9,18 @@ ms.date: 10/28/2023
 You can find answers to the most frequently asked questions about single credential login and MFA.
 
 > [!NOTE]
-> With the consolidation of Xandr to the Microsoft family, we have integrated the authentication process of the users (who are using Xandr products) to the Microsoft Identity Platform. The profound advantage of this integration is that users would be able to access Xandr applications using the same sign-on methods as for other Microsoft products. Additionally, the integration to the Microsoft Identity Platform enables new and more secure methods of authentication, powered by Microsoft.
+> With the consolidation of Microsoft Advertising to the Microsoft family, we have integrated the authentication process of the users (who are using Microsoft Advertising products) to the Microsoft Identity Platform. The profound advantage of this integration is that users would be able to access Microsoft Advertising applications using the same sign-on methods as for other Microsoft products. Additionally, the integration to the Microsoft Identity Platform enables new and more secure methods of authentication, powered by Microsoft.
 >
 > For more details, visit [Microsoft Identity Platform Login](microsoft-identity-platform-login.md).
 
-## Why is Xandr implementing single credential login and multi-factor authentication?
+## Why is Microsoft Advertising implementing single credential login and multi-factor authentication?
 
-A number of long-standing pain points relating to how users access Xandr’s digital platform applications are being addressed. The issues were:
+A number of long-standing pain points relating to how users access Microsoft Advertising’s digital platform applications are being addressed. The issues were:
 
 - Users must have a separate set of authentication credentials to access each of their user accounts. Therefore, they must create, remember, and periodically reset multiple passwords.
 - Users must sign in to each user account individually. Therefore, they must sign in each time they switch between user accounts/seats in order to transact on behalf of a different member.
-- The more usernames and passwords a user has to remember, the more likely they are to write them down. This creates a security risk for  Xandr and our clients.
-- Xandr’s new Information Security Policies (XISP) require that all Xandr applications be protected by a second factor of authentication.
+- The more usernames and passwords a user has to remember, the more likely they are to write them down. This creates a security risk for  Microsoft Advertising and our clients.
+- Microsoft Advertising’s new Information Security Policies (XISP) require that all Microsoft Advertising applications be protected by a second factor of authentication.
 - Overall, we are simplifying how users manage their accounts.
 
 ## Can a user opt out of unified login?
@@ -60,7 +60,7 @@ Yes. They will receive a password expiry warning email 21 days and 5 days prior 
 ## How can a user switch out the MFA app they are using for a different one?
 
 Product Support can reset the users MFA account via the single credential login tool. The user will be prompted to setup their MFA
-account again the next time they successfully sign in to a Xandr Digital Platform application with their username and password.
+account again the next time they successfully sign in to a Microsoft Advertising Digital Platform application with their username and password.
 
 ## Related topic
 

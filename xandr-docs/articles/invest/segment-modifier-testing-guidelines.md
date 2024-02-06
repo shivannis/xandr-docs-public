@@ -16,15 +16,15 @@ Clients wishing to use segment modifiers should be proficient with the tasks and
 - **Batch Segment API**: Clients who are performing more robust integrations (requiring bulk feeds of segment data coming into Microsoft Invest) will benefit from a working knowledge of the [Batch Segment Service](../digital-platform-api/batch-segment-service.md). For clients
   who will be adding modifier values through pixel fires, please see [Page-Level Modifiers](#page-level-modifiers) below.
 - **Audience Creation**: Clients are responsible for creating their own audience segments for targeting, either through collection via segment pixel, or offline computation based on their own analysis.
-- **Optimization**: For performance oriented campaigns, clients must understand how our V7 optimization algorithm works in order to avoid redundancies if their user model will be used in conjunction with our own. Xandr optimization uses past advertiser performance against the same pixel/click goal, and performance data against our own inventory definition. Therefore, a modifier that attempts to take into account the domain:user combination will be fighting our own optimization.
+- **Optimization**: For performance oriented campaigns, clients must understand how our V7 optimization algorithm works in order to avoid redundancies if their user model will be used in conjunction with our own. Microsoft Advertising optimization uses past advertiser performance against the same pixel/click goal, and performance data against our own inventory definition. Therefore, a modifier that attempts to take into account the domain:user combination will be fighting our own optimization.
 - **Log Level Data**: Clients can use [Log Level Data Feeds](../log-level-data/log-level-data-feeds.md) to do low-level analytics on the performance of their model. Since Log Level Data includes the individual user IDs to which the modifier is being applied, analyzing the exact relationship between modifier values and overall lift will be much easier.
 
 ## Analytical requirements
 
 One of the key elements of segment modifier is that the client is responsible for creating the optimization model. As a result,
-Xandr won't have visibility into the exact science behind the model's performance. Additionally, due to restrictions in our user database, neither will Xandr have visibility into the individual values behind each user. Therefore, the client must accept the bulk of the test analysis. This includes recurring, daily analytics of segment modifier performance; since the client created the model, the client should be able to analyze it.
+Microsoft Advertising won't have visibility into the exact science behind the model's performance. Additionally, due to restrictions in our user database, neither will Microsoft Advertising have visibility into the individual values behind each user. Therefore, the client must accept the bulk of the test analysis. This includes recurring, daily analytics of segment modifier performance; since the client created the model, the client should be able to analyze it.
 
-Xandr can measure lift on a high level or guide performance testing best practices.
+Microsoft Advertising can measure lift on a high level or guide performance testing best practices.
 
 ## Testing best practices
 

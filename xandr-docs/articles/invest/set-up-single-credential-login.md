@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 This will guide you through the single credential login set up process.
 
 > [!NOTE]
-> With the consolidation of Xandr to the Microsoft family, we have integrated the authentication process of the users (who are using Xandr products) to the Microsoft Identity Platform. The profound advantage of this integration is that users would be able to access Xandr applications using the same sign-on methods as for other Microsoft products. Additionally, the integration to the Microsoft Identity Platform enables new and more secure methods of authentication, powered by Microsoft.
+> With the consolidation of Microsoft Advertising to the Microsoft family, we have integrated the authentication process of the users (who are using Microsoft Advertising products) to the Microsoft Identity Platform. The profound advantage of this integration is that users would be able to access Microsoft Advertising applications using the same sign-on methods as for other Microsoft products. Additionally, the integration to the Microsoft Identity Platform enables new and more secure methods of authentication, powered by Microsoft.
 >
 > For more details, visit [Microsoft Identity Platform Login](microsoft-identity-platform-login.md).
 

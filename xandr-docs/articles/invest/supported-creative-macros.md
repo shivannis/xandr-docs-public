@@ -48,7 +48,7 @@ The following macros can be used in creative third-party tags and landing page U
 | `${CUSTOM_MODEL_LAST_MODIFIED}` | The date and time (in Unix Epoch time) since the custom model that was used in the auction was last modified. If no model was used, this macro will return `0`. <br><br> **Note**: This custom macro will only work for APB Alpha Test clients. |
 | `${CUSTOM_MODEL_LEAF_NAME}` | The `leaf_name` specified in the leaf that determined the winning bid. If no name is specified or if a model was not used, this macro will return `---`. This aligns with the `leaf_name` field in the Standard Feed in Log Level Data. For more information, see [Standard Feed](../log-level-data/standard-feed.md). <br><br> **Note**: This custom macro will only work for APB Alpha Test clients. |
 | `${DATACENTER}` | The data center ID (1 = NYM, 2 = LAX, 3 = AMS, 4 = FRA, 5 = SIN). |
-| `${DEAL_ID}` | The Xandr Deal ID associated with the winning bid if applicable. If there is no deal, this macro will return `0`. |
+| `${DEAL_ID}` | The Microsoft Advertising Deal ID associated with the winning bid if applicable. If there is no deal, this macro will return `0`. |
 | `${ECP}` | The publisher-side estimated clear price (ECP) for the auction. |
 | `${GENDER}` | The gender of the user if available. Possible values include: <br> - `f` (female) <br> - `m` (male) <br> - `u` (unknown) |
 | `${INV_SOURCE_ID}` | **Deprecated** |
@@ -74,17 +74,17 @@ The following macros can be used in creative third-party tags and landing page U
 | `${SSP_DATA}` | Required for server-side conversion pixels. For more information, see [Server-Side Conversion Pixels](server-side-conversion-pixels.md). |
 | `${TAG_CODE1}` | The integration code set on the placement. |
 | `${TAG_CODE2}` | The additional integration code set on the placement. |
-| `${TAG_ID}` | The Xandr placement ID that initiated the bid request. |
+| `${TAG_ID}` | The Microsoft Advertising placement ID that initiated the bid request. |
 | `${TIMESTAMP}` | The UNIX timestamp for the auction. |
 | `${USE_COOKIES}` | This is used for third-party creatives to indicate whether cookies should be set for the user viewing the impression. Allowed values include: <br> - `0` for no <br> - `1` for yes <br> For more information about cookie-related settings, see [Publisher Service](../digital-platform-api/publisher-service.md). |
 | `${USER_AGENT}` | The user agent string from the request's HTTP header. The user agent often identifies information such as the application, operating system, and software vendor acting on behalf of the user. For example: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4. |
 | `${USER_AGENT_ENC}` | The encoded user agent string from the request's HTTP header. |
 | `${USER_CITY}` | The character string of the user's city. |
 | `${USER_COUNTRY}` | The character string of the user's country. |
-| `${USER_ID}` | The Xandr 64-bit character string representing the user for the impression. |
+| `${USER_ID}` | The Microsoft Advertising 64-bit character string representing the user for the impression. |
 | `${USER_IP}` | The IP address of the user, which is truncated. |
 | `${USER_LOCALE}` | The language and dialect (aa-DD) reported by the user's device. For example, en-ZA represents English (en) used in South Africa (ZA). |
-| `${USER_STATE}` | The character string of the user's state or region. <br> **In the USA**: 2 letter abbreviation <br> **Outside of USA**: An encoded URL with the user's country followed by the user's region ID (FIPS 10-4 or Xandr-generated) <br> For example, the region surrounding Riva, Latvia is LV%3A25 (encoding for LV:A25). |
+| `${USER_STATE}` | The character string of the user's state or region. <br> **In the USA**: 2 letter abbreviation <br> **Outside of USA**: An encoded URL with the user's country followed by the user's region ID (FIPS 10-4 or Microsoft Advertising-generated) <br> For example, the region surrounding Riva, Latvia is LV%3A25 (encoding for LV:A25). |
 
 ## Creative macros for video impressions
 
@@ -103,14 +103,14 @@ The following macros can be used specifically for mobile impressions:
 
 | Macro | Description |
 |---|---|
-| `${CARRIER_ID}` | The Xandr integer representing the mobile carrier ID. For a complete list of carrier IDs, see [Carrier Service](../digital-platform-api/carrier-service.md). |
+| `${CARRIER_ID}` | The Microsoft Advertising integer representing the mobile carrier ID. For a complete list of carrier IDs, see [Carrier Service](../digital-platform-api/carrier-service.md). |
 | `${DEVICE_AAID}` | The Android advertising identifier when the impression is delivered from an Android device. |
 | `${DEVICE_APPLE_IDA}` | The Apple advertising identifier when the impression is delivered from an Apple device. |
 | `${DEVICE_IFA}` | The unique identifier representing the device. |
 | `${DEVICE_IFA_TYPE}` | The type of identifier represented by the `${DEVICE_IFA}`. Possible values include: <br> - AAID (Android Advertising ID/Google) <br> - IDFA (Identifier for Advertising/Apple) <br> - AFAI (Amazon Fire ID) <br> - RIDA (Roku ID) <br> - OPENUDID <br> - TIFA (Tizen Identifier for Advertising (Samsung Ad ID)) <br> - VIDA (Vizio Advertising ID) <br> - LGUDID (LG Unique Device ID) <br> `${DEVICE_IFA_TYPE}` should be used in conjunction with `${DEVICE_IFA}`, and this setup is recommended over individual device macros specific to each IFA type. These macros are applicable to both mobile and CTV device types. |
-| `${DEVICE_MAKE_ID}` | The Xandr integer representing the ID of the make of the mobile device such as `26`. For a complete list of mobile device make IDs, see [Device Make Service](../digital-platform-api/device-make-service.md). |
+| `${DEVICE_MAKE_ID}` | The Microsoft Advertising integer representing the ID of the make of the mobile device such as `26`. For a complete list of mobile device make IDs, see [Device Make Service](../digital-platform-api/device-make-service.md). |
 | `${DEVICE_MD5}` | The MD5-encrypted unique identifier representing the mobile device. |
-| `${DEVICE_MODEL_ID}` | The Xandr integer representing the ID of the mobile device model such as `301`. For a complete list of mobile device model IDs, see the [Device Model Service](../digital-platform-api/device-model-service.md). |
+| `${DEVICE_MODEL_ID}` | The Microsoft Advertising integer representing the ID of the mobile device model such as `301`. For a complete list of mobile device model IDs, see the [Device Model Service](../digital-platform-api/device-model-service.md). |
 | `${DEVICE_ODIN}` | The ODIN-encrypted unique identifier representing the mobile device. For more information, see [ODIN](https://code.google.com/archive/p/odinmobile/). |
 | `${DEVICE_OPENUDID}` | The OPENUDID-encrypted unique identifier representing the mobile device. |
 | `${DEVICE_SHA1}` | The SHA1-encrypted unique identifier representing the mobile device. |
@@ -123,7 +123,7 @@ The following macros can be used specifically for mobile impressions:
 
 ## Privacy Macros
 
-In order for our clients to meet their transparency, notice, and choice/consent requirements under US state privacy law, the GDPR and the ePrivacy Directive, Xandr supports the [Global Privacy Platform](https://iabtechlab.com/gpp) and the IAB Europe Transparency & Consent Framework (the "Framework"). For more information, see the [IAB Europe Transparency & Consent Framework](https://iabeurope.eu/knowledgehub/policy/transparency-consent-framework-publishers-factsheet/). Publishers should reference [Privacy Regulations and Xandr: A Guide for Clients](https://microsoftapc.sharepoint.com/teams/PrivacyRegulations) when using macros, such as the ones noted in the table below, to surface notice, transparency, and choice to end users located in the EEA, signal approved vendors, and pass consent to Xandr and demand sources as well as their vendors through the Xandr Platform. For more information, see [Service Policies](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies) (login required).
+In order for our clients to meet their transparency, notice, and choice/consent requirements under US state privacy law, the GDPR and the ePrivacy Directive, Microsoft Advertising supports the [Global Privacy Platform](https://iabtechlab.com/gpp) and the IAB Europe Transparency & Consent Framework (the "Framework"). For more information, see the [IAB Europe Transparency & Consent Framework](https://iabeurope.eu/knowledgehub/policy/transparency-consent-framework-publishers-factsheet/). Publishers should reference [Privacy Regulations and Microsoft Advertising: A Guide for Clients](https://microsoftapc.sharepoint.com/teams/PrivacyRegulations) when using macros, such as the ones noted in the table below, to surface notice, transparency, and choice to end users located in the EEA, signal approved vendors, and pass consent to Microsoft Advertising and demand sources as well as their vendors through the Microsoft Advertising Platform. For more information, see [Service Policies](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies) (login required).
 
 | Macro | Description |
 |---|---|
@@ -131,7 +131,7 @@ In order for our clients to meet their transparency, notice, and choice/consent 
 | `${GDPR}` | This is an alias for `${GDPR_APPLIES}`, and behaves in the same manner. |
 | `${GDPR_CONSENT_STRING}` | This macro specifies the IAB GDPR consent string. If the GDPR applies, it will contain a list of user-approved vendors based on the IAB GDPR Transparency and Consent Framework. For more information, see [IAB GDPR Transparency and Consent Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework). |
 | `${GDPR_CONSENT}` | This macro is an alias for `${GDPR_CONSENT_STRING}`, and behaves in the same manner. |
-| `${XANDR_DOMAIN}` | Dynamically retrieves the appropriate Xandr domain based on the cookie consent settings included in the TCF string. If the user has cookies enabled from their browser settings but has: <br> - not given consent for their cookies to be included in the TCF string, the `adnxs-simple.com` domain will be used to prevent the browser from attaching cookies to subsequent ad calls. <br> - given consent for their cookies to be included in the TCF string, the `adnxs.com` domain will be used to pass cookies in the header of each ad call. <br><br> **Note**: This macro should only be used if you plan on serving impressions in countries that require consent for cookies. |
+| `${XANDR_DOMAIN}` | Dynamically retrieves the appropriate Microsoft Advertising domain based on the cookie consent settings included in the TCF string. If the user has cookies enabled from their browser settings but has: <br> - not given consent for their cookies to be included in the TCF string, the `adnxs-simple.com` domain will be used to prevent the browser from attaching cookies to subsequent ad calls. <br> - given consent for their cookies to be included in the TCF string, the `adnxs.com` domain will be used to pass cookies in the header of each ad call. <br><br> **Note**: This macro should only be used if you plan on serving impressions in countries that require consent for cookies. |
 | `${GPP_SID}` | Designates whether a section (i.e. regulatory framework) of the [Global Privacy Platform](https://iabtechlab.com/gpp) should be applied. Specifically, it indicates whether the user is located in a country affected by legislation covered by the GPP. |
 | `${GPP_STRING_XXXXX*}` | This is the IAB [Global Privacy Platform](https://iabtechlab.com/gpp) (GPP) string. If a section of the GPP applies, then this will contain framework-dependent information reflecting the consent elections of the user. <br><br> **Note**: * XXXXX can represent any numerical id. |
 
@@ -139,7 +139,7 @@ In order for our clients to meet their transparency, notice, and choice/consent 
 
 A function macro performs a function on another macro. Function macros can be used in combination with any other creative macro, including custom macros. If they are not recognized at render time, they will not be translated and the function will not be called.
 
-Xandr currently supports the `{$URL_ENC}` function macro, which can be used for a variety of purposes related to encoding. A key use case is when a URL needs to be passed from ad server to ad server using a creative macro. Due to the presence of unsupported characters in standard URL formatting, the `{$URL_ENC}` function macro must be encoded at various stages of the process.
+Microsoft Advertising currently supports the `{$URL_ENC}` function macro, which can be used for a variety of purposes related to encoding. A key use case is when a URL needs to be passed from ad server to ad server using a creative macro. Due to the presence of unsupported characters in standard URL formatting, the `{$URL_ENC}` function macro must be encoded at various stages of the process.
 
 This function macro takes the following form:
 

@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Supported VAST features
 
-The Xandr platform supports a variety of VAST features such as skipoffset and ad verification. Our VAST features are compatible with certain VAST versions. VAST versions 2.0 through 4.0 support backwards feature compatibility. However, if a publisher doesn't support a particular VAST version, then implementation of certain features on that publisher's player won't be possible.
+The Microsoft Advertising platform supports a variety of VAST features such as skipoffset and ad verification. Our VAST features are compatible with certain VAST versions. VAST versions 2.0 through 4.0 support backwards feature compatibility. However, if a publisher doesn't support a particular VAST version, then implementation of certain features on that publisher's player won't be possible.
 
 The following table provides feature descriptions and indicates the VAST versions that are supported:
 

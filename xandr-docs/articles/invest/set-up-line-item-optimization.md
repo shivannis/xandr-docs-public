@@ -6,13 +6,13 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Set up line item optimization
 
-You can enable or disable Xandr optimization for a line item. If you enable Xandr optimization, you must first set a performance goal and goal priority, then associate the line item with conversion pixels for those goals.
+You can enable or disable Microsoft Advertising optimization for a line item. If you enable Microsoft Advertising optimization, you must first set a performance goal and goal priority, then associate the line item with conversion pixels for those goals.
 
 The **Optimization** section provides several settings related to optimization, goals, goal priority, conversion tracking, and viewability (if enabled). For more information, see the [Optimization Guide - ALI](optimization-guide-ali.md).
 
 1. Turn on optimization.
 
-    If the **Optimization Method** toggle has been turned on, the Xandr optimization engine will consider your goal value and goal type when bidding on inventory.
+    If the **Optimization Method** toggle has been turned on, the Microsoft Advertising optimization engine will consider your goal value and goal type when bidding on inventory.
 
     If the **Optimization Method** toggle is turned off, automatic optimization is disabled, including the algorithms for bid valuation, inventory discovery, and allocation. When optimization is off, adaptive pacing will still shade bids in response to delivery.
 

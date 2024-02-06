@@ -8,12 +8,12 @@ ms.date: 10/28/2023
 
 ## Use case
 
-Server-side conversion pixels, also known as postback URLs, are used in situations where normal Xandr cookie-based
+Server-side conversion pixels, also known as postback URLs, are used in situations where normal Microsoft Advertising cookie-based
 conversion tracking is unavailable or not used. A major use case for server-side pixels is to track conversions on mobile devices where app sandboxing (the inability of one mobile app to communicate with another) and a lack of cookies prevent a conversion from being recorded in a conventional manner.
 
 For instance, if the conversion is a user downloading and installing an app from the Apple App Store, a normal conversion pixel could not track a user completely through this process; however, a server-side pixel would allow for this conversion to be tied to a specific auction.
 
-This page makes references to an attribution server. This is a server that is set up to capture the server-side pixel token data, attribute a conversion, and notify Xandr of a successful conversion.
+This page makes references to an attribution server. This is a server that is set up to capture the server-side pixel token data, attribute a conversion, and notify Microsoft Advertising of a successful conversion.
 
 ## How server-side pixels work
 
@@ -51,7 +51,7 @@ https://sspx-router.adnxs.com/sspx?id=25619&order_id=1234&value=5678&sspdata=ams
 
 1. Click through the ad and see the token populate in the URL.
 
-1. Copy the token from the http header and fire it back to Xandr using the command line. The call for this looks like
+1. Copy the token from the http header and fire it back to Microsoft Advertising using the command line. The call for this looks like
 
     ``` pre
     curl --verbose -L 'https://sspx-router.adnxs.com/sspx?id=78874&sspdata=nym1CJjYiJ3oq6LkMxACGIHey7vM0vGDRyIJMTAuMS4xMi42KAE.' 
@@ -59,7 +59,7 @@ https://sspx-router.adnxs.com/sspx?id=25619&order_id=1234&value=5678&sspdata=ams
 
     Please note:
 
-    - `id` is the pixel ID from Xandr
+    - `id` is the pixel ID from Microsoft Advertising
     - `sspdata` is the populated ${SSP_DATA} token; the length of this
       string is susceptible to change
 
@@ -69,13 +69,13 @@ https://sspx-router.adnxs.com/sspx?id=25619&order_id=1234&value=5678&sspdata=ams
 
 - Server-side pixels cannot be used to add or remove users from segments. However, a normal, client-side pixel can add or remove users from segments; see [Conversion Pixels Advanced](./conversion-pixels-advanced.md).
 
-- The `sspdata` parameter must be the last parameter listed in the conversion call sent from the attribution server to Xandr.
+- The `sspdata` parameter must be the last parameter listed in the conversion call sent from the attribution server to Microsoft Advertising.
 
 - Server-side pixel data tokens typically have a period at the end, which must be included in calls.
 
 ## Investigations
 
-To investigate issues or discrepancies with server-side pixels, Xandr must be provided with verbose logs of the pixel fires because these calls provide the information needed to do an investigation.
+To investigate issues or discrepancies with server-side pixels, Microsoft Advertising must be provided with verbose logs of the pixel fires because these calls provide the information needed to do an investigation.
 
 ## Alternate use case: Post-view conversions
 

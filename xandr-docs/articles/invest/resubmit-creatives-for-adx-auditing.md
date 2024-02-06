@@ -11,7 +11,7 @@ You may receive a rejection reason directly from Google's API if your creative i
 Find the reason that was provided using the table within [Google Ad Manager Disapproval Reasons](adx-disapproval-reasons.md). Once you have an understanding of the issue that Google Ad Manager found, review your creative and its settings to confirm the validity of Google's rejection reason.
 
 > [!NOTE]
-> Creatives can have a Google Ad Manager audit status of "pending" for an indefinite period. Because Xandr is not performing the Google Ad Manager audit, we can't guarantee a turnaround time on Google Ad Manager audit statuses. For any issues related to the Google Ad Manager audit, please contact Google Ad Manager.
+> Creatives can have a Google Ad Manager audit status of "pending" for an indefinite period. Because Microsoft Advertising is not performing the Google Ad Manager audit, we can't guarantee a turnaround time on Google Ad Manager audit statuses. For any issues related to the Google Ad Manager audit, please contact Google Ad Manager.
 
 1. If your creative does not comply with Google's [Ad Exchange Policies](http://support.google.com/adxbuyer/bin/answer.py?hl=en&amp;answer=1325008), revise your creative to meet the necessary requirements. Revision could involve modifying the creative file itself or changing settings associated with your creative. For API users, it could also involve using the [Creative Service](../digital-platform-api/creative-service.md). For more information, see the **Recommendation** column in the table within [Google Ad Manager Disapproval Reasons](adx-disapproval-reasons.md).
 

@@ -6,10 +6,10 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Self-auditing creatives
 
-When adding creatives to Xandr, it's to your advantage to submit each creative to Xandr for human auditing. The manual audit process includes checking technical attributes, sensitive categories, offer category, brand, and language to enable seller protection features on the platform.
+When adding creatives to Microsoft Advertising, it's to your advantage to submit each creative to Microsoft Advertising for human auditing. The manual audit process includes checking technical attributes, sensitive categories, offer category, brand, and language to enable seller protection features on the platform.
 
-If you are not able to submit creatives to Xandr for audit, either because they do not meet our creative standards or
-because Xandr does not audit your particular creative type (interstitial or pop), we strongly encourage self-auditing in those cases. Be sure to self-audit the technical attributes, sensitive categories, offer category, brand, and language that have been associated with the creative. Whereas very few sellers allow unaudited creatives to run on their publishers' inventory, sellers often do allow self-audited creatives, so self-auditing enables much greater access to supply than unaudited creatives.
+If you are not able to submit creatives to Microsoft Advertising for audit, either because they do not meet our creative standards or
+because Microsoft Advertising does not audit your particular creative type (interstitial or pop), we strongly encourage self-auditing in those cases. Be sure to self-audit the technical attributes, sensitive categories, offer category, brand, and language that have been associated with the creative. Whereas very few sellers allow unaudited creatives to run on their publishers' inventory, sellers often do allow self-audited creatives, so self-auditing enables much greater access to supply than unaudited creatives.
 
 ## Benefits of standardization
 
@@ -17,7 +17,7 @@ Self-audited creatives are only eligible to run on sellers' inventory that have 
 **Maximum** in their Demand Partners settings. As an advertiser, it is critical that you don't betray the seller's trust and ensure that the seller can rely on your self-audit.
 
 An ecosystem of standardized audit practices and open trust settings will greatly increase liquidity for every member on the
-Xandr platform. If a seller feels like they can no longer control the types of creatives that serve on their inventory, their first action will be to reduce the trust level of the buying member and effectively limit access to their supply. Standardization will ultimately benefit everyone by leading to more liquidity.
+Microsoft Advertising platform. If a seller feels like they can no longer control the types of creatives that serve on their inventory, their first action will be to reduce the trust level of the buying member and effectively limit access to their supply. Standardization will ultimately benefit everyone by leading to more liquidity.
 
 ## Applying sensitive categories to generic creatives
 

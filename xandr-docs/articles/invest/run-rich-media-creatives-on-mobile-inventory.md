@@ -57,7 +57,7 @@ Here is an example MRAID creative; note that the line at the top including `"mra
 
 ## MRAID-certified
 
-Creatives that are MRAID-certified may serve on external mobile supply sources. During the Xandr creative audit process, MRAID creatives with expandable characteristics will only be flagged with the MRAID technical attribute and not with the expandable technical attribute.
+Creatives that are MRAID-certified may serve on external mobile supply sources. During the Microsoft Advertising creative audit process, MRAID creatives with expandable characteristics will only be flagged with the MRAID technical attribute and not with the expandable technical attribute.
 
 ## Non-MRAID-certified
 
@@ -66,7 +66,7 @@ Non-MRAID creatives that have expandable features will **not** serve on external
 > [!WARNING]
 > Creatives that are of the the media type **Expandable** will **not** serve on external mobile supply.
 >
-> For more information about how Xandr audits mobile creatives, see [Mobile Creative Auditing](mobile-creative-auditing.md).
+> For more information about how Microsoft Advertising audits mobile creatives, see [Mobile Creative Auditing](mobile-creative-auditing.md).
 
 ## Supported rich media types by seller
 
