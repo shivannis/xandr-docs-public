@@ -1,6 +1,6 @@
 ---
 title: Ad Quality Order of Operations
-description: In this article, learn about the process by which the Xandr system finds a collection of ad quality settings to apply to an impression.
+description: In this article, learn about the process by which the Microsoft Advertising system finds a collection of ad quality settings to apply to an impression.
 ms.date: 10/28/2023
 ---
 

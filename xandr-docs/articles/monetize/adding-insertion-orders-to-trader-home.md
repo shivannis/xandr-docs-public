@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 You can easily track insertion orders directly from Trader Home.
 
 > [!IMPORTANT]
-> **Trader Home** is currently available to a limited set of clients. If you use insertion orders and would like to make **Trader Home** your landing page, contact your Xandr representative.
+> **Trader Home** is currently available to a limited set of clients. If you use insertion orders and would like to make **Trader Home** your landing page, contact your Microsoft Advertising representative.
 
 To track a particular insertion order in Trader Home, click **Add to Trader Home**. A card displaying essential information about the insertion order will appear when you navigate to Trader Home.
 

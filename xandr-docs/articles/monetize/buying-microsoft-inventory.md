@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize -  Buying Microsoft inventory
 
-With **Microsoft Advertising Exchange**, Xandr
+With **Microsoft Advertising Exchange**, Microsoft Advertising
 offers exclusive programmatic access to a quality, engaged audience in a
 brand safe environment.
 

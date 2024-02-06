@@ -22,7 +22,7 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
     The **Create New** screen displays.
 
 1. Provide the creative file using one of the following methods:
-    - If the creative is being hosted with Xandr, upload the file by clicking the **Select Files** button to upload the appropriate assets.
+    - If the creative is being hosted with Microsoft Advertising, upload the file by clicking the **Select Files** button to upload the appropriate assets.
 
       > [!NOTE]
       > For native creatives, you can upload a main image and icon simultaneously.
@@ -30,7 +30,7 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
     - If the creative is being hosted on your own platform or trafficked through a third-party ad server, enter a secure URL.
 
     If you're adding a video or audio creative, you'll have to select one of the following tabs in order to provide the creative file:
-    - **Hosted File**: For video and audio creatives that are being hosted through Xandr's platform.
+    - **Hosted File**: For video and audio creatives that are being hosted through Microsoft Advertising's platform.
     - **Third-Party URL**: For video and audio creatives that are being trafficked through a third-party ad server.
 
     > [!TIP]
@@ -50,7 +50,7 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
 
     1. For banner creatives, select a media type from the menu pull-down.
 
-        A standard Xandr template is selected by default. You can click the **X** in the search field next to the menu pull-down and select a different template. For more information, see [Applying Media Types and Templates to Banner Creatives](applying-media-types-and-templates-to-banner-creatives.md).
+        A standard Microsoft Advertising template is selected by default. You can click the **X** in the search field next to the menu pull-down and select a different template. For more information, see [Applying Media Types and Templates to Banner Creatives](applying-media-types-and-templates-to-banner-creatives.md).
 
     1. For HTML5 creatives, select one of the following media types: **Standard**, **Interstitial**, or **Expandable**.
     1. For HTML5 and banner creatives, select a creative size.

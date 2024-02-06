@@ -73,7 +73,7 @@ This report's data is retained for 420 days
 
 | Column | Filter? | Description |
 |---|---|---|
-| Ad Request Call Type | N | The type of handler that was used to send the impression to Xandr (e.g., `vmap`, `ut`, `mob`, `ptv`, `openrtb`). |
+| Ad Request Call Type | N | The type of handler that was used to send the impression to Microsoft Advertising (e.g., `vmap`, `ut`, `mob`, `ptv`, `openrtb`). |
 | Application ID | N | The ID of the mobile app on the device where the impression occurred. |
 | Bidder Name | N | The name of the bidder associated with the impression. |
 | Campaign | Y | The campaign associated with the impression. (Does not apply to all advertisers.) |

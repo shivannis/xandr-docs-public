@@ -83,9 +83,9 @@ Any legacy SDK before Windows 8.1 lacks support for mobile standard
 third-party ad serving, impression tracking pixels, javascript and
 MRAID.
 
-As an Xandr Buyer, you may still access legacy
+As an Microsoft Advertising Buyer, you may still access legacy
 SDK inventory by uploading an image creative to
-Xandr and specifying a landing page. For more
+Microsoft Advertising and specifying a landing page. For more
 information on uploading a hosted image as a creative, see [Add Banner Creatives](../Monetize/applying-media-types-and-templates-to-banner-creatives.md).
 
 ## Targeting instructions
@@ -152,7 +152,7 @@ To maximize reach across Windows App inventory, we recommend targeting
 both Supply Type "Mobile App" and “Web” inventory within Microsoft
 Advertising Exchange without additional parameters such as "Device
 Type." This is because there are certain instances where
-Xandr does not receive this information from the
+Microsoft Advertising does not receive this information from the
 device SDK and applications are presented as Sites referencing the
 Windows Store URL.
 
@@ -174,7 +174,7 @@ across apps on the same device, compliant to the user's OS-level privacy
 settings.
 
 For Windows 10 inventory, Microsoft also provides the
-Xandr ID (UUID64) corresponding to the user's
+Microsoft Advertising ID (UUID64) corresponding to the user's
 default browser where available. This process is called user-syncing,
 and enables advertisers to track users across devices. **User-sync is
 available on 82% of Windows 10 impressions, and better enables category
@@ -184,20 +184,20 @@ targeting, frequency cap, conversion tracking and more.**
 
 For buyers running campaigns with a CPA goal of an App installation, the
 third-party app installation vendors Tune, Adjust, and Kochava support
-Windows Apps attribution tracking through Xandr.
+Windows Apps attribution tracking through Microsoft Advertising.
 See [Set Up Third-Party Mobile App Install Tracking](set-up-third-party-mobile-app-install-tracking.md) for more
-information on hosted Xandr creatives and how to
+information on hosted Microsoft Advertising creatives and how to
 use third-party app installation vendors for conversion tracking within
-Xandr.If you are using a third-party ad
+Microsoft Advertising.If you are using a third-party ad
 server, you will be tracking conversions in that third-party ad server,
 which will require its own integration with Tune, Adjust, or Kochava for
 conversion attribution. We will continue onboarding additional
 attribution vendors. If you rely upon a specific attribution vendor that
 is not supported today, please contact your
-Xandr Account Representative.
+Microsoft Advertising Account Representative.
 
 ## More questions?
 
 If you have any further questions about buying Windows App Inventory,
-please contact your Xandr account
+please contact your Microsoft Advertising account
 representative.

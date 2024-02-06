@@ -24,7 +24,7 @@ request-level timeout. See [Full Timeout Hierarchy](#full-timeout-hierarchy) for
 
 ### Request-tevel timeouts
 
-- Timeout for AMP inventory can alternatively be set at the request level via the timeout field and override any higher level timeouts (placement, PSP, member). Contact your Xandr account team to have Xandr's settings updated to allow the timeout field to override other timeouts.
+- Timeout for AMP inventory can alternatively be set at the request level via the timeout field and override any higher level timeouts (placement, PSP, member). Contact your Microsoft Advertising account team to have Microsoft Advertising's settings updated to allow the timeout field to override other timeouts.
 - Monetize Ad Server clients can similarly set the request-level timeout via the `auction_timeout_ms` field. Request-level timeout values longer than 450 ms will be floored to 450 ms.
 
 ### Full timeout hierarchy
@@ -36,16 +36,16 @@ The full timeout hierarchy in order from highest to lowest priority is:
     1. For AMP, see above.
     1. For Android, see guidance [here](../mobile-sdk/set-the-auction-timeout-for-android.md).
     1. For iOS, see guidance [here](../mobile-sdk/set-the-auction-timeout-for-ios.md).
-1. Placement-level `auction_timeout_ms` value. Contact your Xandr Representative to set this value.
+1. Placement-level `auction_timeout_ms` value. Contact your Microsoft Advertising Representative to set this value.
 1. PSP Global Settings (Cross Partner) Timeout value set by the publisher. See guidance above.
-1. Member-level `default_auction_timeout_ms` value for the given data center. Contact your Xandr Representative to set this value.
-1. Member-level `default_auction_timeout_ms` value. Contact your Xandr Representative to set this value.
-1. Xandr data center / global default (150ms)
+1. Member-level `default_auction_timeout_ms` value for the given data center. Contact your Microsoft Advertising Representative to set this value.
+1. Member-level `default_auction_timeout_ms` value. Contact your Microsoft Advertising Representative to set this value.
+1. Microsoft Advertising data center / global default (150ms)
 
 ## Price granularity
 
 > [!NOTE]
-> By default, PSP demand competes with Xandr demand in a unified auction. **Monetize Ad Server** customers do not need to set up line items for PSP demand and can ignore price granularity settings entirely, as well as price bucket currency.
+> By default, PSP demand competes with Microsoft Advertising demand in a unified auction. **Monetize Ad Server** customers do not need to set up line items for PSP demand and can ignore price granularity settings entirely, as well as price bucket currency.
 
 This field defines the CPM price buckets into which Demand Partner bids will be grouped. The setting should reflect a client's [Prebid price granularity settings](https://docs.prebid.org/adops/price-granularity.html) and their line item setup in their non-Monetize Ad Server with respect to price points (`hb_pb` or `hb_pb_{partner}` key-value targeting).
 
@@ -64,7 +64,7 @@ You can choose from the five system-defined options, or you may choose "custom" 
 
 ## Price bucket currency
 
-This specifies the currency used for price buckets and **does not apply to Monetize Ad Server customers**. Specifically, targeting keys, not bids, are converted into the selected currency. Select the currency that aligns with the line items in your ad server. You can choose any currency supported by Xandr seen in [Currency Support](currency-support.md).
+This specifies the currency used for price buckets and **does not apply to Monetize Ad Server customers**. Specifically, targeting keys, not bids, are converted into the selected currency. Select the currency that aligns with the line items in your ad server. You can choose any currency supported by Microsoft Advertising seen in [Currency Support](currency-support.md).
 
 > [!NOTE]
 > This is independent of your Monetize currency selection and only applies to Prebid Server Premium auctions.

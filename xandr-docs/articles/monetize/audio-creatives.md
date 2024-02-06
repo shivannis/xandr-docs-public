@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Audio creatives
 
-You can host audio creatives with Xandr or
+You can host audio creatives with Microsoft Advertising or
 traffic them through third-party ad servers, which may be created for
 traditional radio, streaming radio (TuneIn), music streaming (Spotify),
 and podcasts.
@@ -34,7 +34,7 @@ metrics, see the following:
 
 - [Audio Creative Guidelines and Specifications](audio-creative-guidelines-and-specifications.md)
 - [Video Creatives](video-creatives.md)<a href="" class="xref"
-  title="You can host video creatives with Xandr or traffic them through third-party ad servers. Non-linear creatives, such as a non-video overlay creative that is served on top of the player, are not supported."></a>
+  title="You can host video creatives with Microsoft Advertising or traffic them through third-party ad servers. Non-linear creatives, such as a non-video overlay creative that is served on top of the player, are not supported."></a>
 - [Native Creatives](native-creatives.md)
 - [Banner and HTML5 Creatives](banner-and-html5-creatives.md)
 - [Add Creatives in Bulk](add-creatives-in-bulk.md)

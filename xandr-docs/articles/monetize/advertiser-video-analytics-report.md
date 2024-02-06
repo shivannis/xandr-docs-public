@@ -149,7 +149,7 @@ Data in this report is retained for 420 days.
 | Viewable Imps | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that 50% of the pixels of a creative are in-view during 1 consecutive second. |
 | Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (viewed imps / view-measured imps) |
 | Custom Viewability Rate | The percentage of impressions that were viewable, per the member-level custom definition configuration, out of the total number of impressions measured for viewability. |
-| Custom Viewable Imps | The number of measured impressions that were viewable, per the member-level custom definition configuration (for more details, contact your Xandr account representative). |
+| Custom Viewable Imps | The number of measured impressions that were viewable, per the member-level custom definition configuration (for more details, contact your Microsoft Advertising account representative). |
 | Render Rate | The percentage of videos delivered based on the response rate from buyers. (impressions /ad responses) For video ads, an impression takes place when the first frame of the video is loaded. |
 | Total Cost | The total amount of costs accrued over the reported period of time. This generally includes two types of costs, budgeted costs (media cost, data cost, partner fees, serving fees, commissions) and publisher revenue if you track publisher payouts on the platform. |
 | Total Cost eCPM | The total cost per 1,000 imps. |

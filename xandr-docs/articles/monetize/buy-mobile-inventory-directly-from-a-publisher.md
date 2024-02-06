@@ -23,7 +23,7 @@ inventory directly from a publisher; it involves the following steps:
   Each of these steps is described more fully below.
 
 > [!NOTE]
-> If you'd like to buy from other networks on the Xandr platform, see [Buy Mobile Inventory via RTB](buy-mobile-inventory-via-rtb.md).
+> If you'd like to buy from other networks on the Microsoft Advertising platform, see [Buy Mobile Inventory via RTB](buy-mobile-inventory-via-rtb.md).
 
 Still have questions? See the [Mobile Buying FAQ](mobile-buying-faq.md)
 .
@@ -149,7 +149,7 @@ basic details and flight dates for the campaign.
   search for and report on the campaign using this name.
 - **External Code** - If you want to report on the campaign using an
   external code (rather than the internal ID that
-  Xandr assigns automatically), enter the code
+  Microsoft Advertising assigns automatically), enter the code
   here.
 - **State** - The state is set to "Inactive" by default to prevent the
   campaign from spending before all necessary settings and creatives are
@@ -170,7 +170,7 @@ you can define exactly how much you are willing to spend on buying
 inventory for the campaign. The budget can be in impressions or in media
 cost (dollars). Note that media cost is in USD rather than the
 advertiser's currency because USD is the currency in which
-Xandr transacts.
+Microsoft Advertising transacts.
 
 - **Lifetime** - This is the budget that you are willing to spend over
   the entire lifetime of the campaign. There are two options:
@@ -215,7 +215,7 @@ Xandr transacts.
   - **Unlimited** - Select this option to leave your daily budget
     undefined.
 
-    To enable this feature, speak to your Xandr
+    To enable this feature, speak to your Microsoft Advertising
     representative.
 
 If you have enabled the unlimited budget warning feature, you will not
@@ -253,7 +253,7 @@ direct campaigns and, if applicable, enable roadblocking.
   impacted.
 
 - **Enable Roadblocking** - In cases where your managed publishers are
-  using Xandr's Seller Tag (AST) to conduct a
+  using Microsoft Advertising's Seller Tag (AST) to conduct a
   single auction for multiple ad slots on a page, you can serve multiple
   linked creatives in response, also known as roadblocking. If a
   roadblock campaign is eligible, the campaign priority is
@@ -407,7 +407,7 @@ Share serving fee.
 
 Confirm that the campaign details are correct and then click the
 Save button to finish adding the
-campaign to Xandr. The campaign is then added to
+campaign to Microsoft Advertising. The campaign is then added to
 the list of campaigns on the [Explore Campaigns](explore-campaigns.md).
 
 ## Step 17. Complete peer approval

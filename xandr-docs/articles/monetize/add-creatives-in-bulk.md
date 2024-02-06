@@ -19,8 +19,8 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
     The **Create New Creatives: Hosted** screen displays.
 
 1. Do one of the following:
-    - To add video, audio, and display creatives that will be hosted with Xandr, remain on the **Create New Creatives: Hosted** screen.
-    - To add native creatives that will be hosted with Xandr, click the **Native** button.
+    - To add video, audio, and display creatives that will be hosted with Microsoft Advertising, remain on the **Create New Creatives: Hosted** screen.
+    - To add native creatives that will be hosted with Microsoft Advertising, click the **Native** button.
     - To add video, audio, and display creatives that will be trafficked through a third-party ad server, click the **Third-Party** button.
 
     If you clicked the **Native** or **Third-Party** button, the appropriate **Create New Creatives** screen will display.

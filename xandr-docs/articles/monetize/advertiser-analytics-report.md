@@ -153,7 +153,7 @@ Real Time Data is offered within this report (not all users have access). Tradit
 | Publisher Currency | No | This is the currency in which the publisher sells their inventory. This dimension is available only when Currency 2.0 is disabled. |
 | Revenue Type | Yes | The basis on which the advertiser has agreed to pay you for the impression. For more information, see [Revenue Types](#revenue-types). |
 | Seller | Yes | The seller of the impression. |
-| Seller Type | Yes | Xandr buckets sellers into different types for billing purposes. For more information, see [Seller Types](#seller-types). |
+| Seller Type | Yes | Microsoft Advertising buckets sellers into different types for billing purposes. For more information, see [Seller Types](#seller-types). |
 | Selling Currency | No | The transaction currency used by the seller to sell this impression. Including this dimension will cause most monetary metrics to be displayed in the selling currency. This dimension is available only when Currency 2.0 is disabled. |
 | Size | Yes | The size of the creative, e.g., 320x50. There may be situations where the size listed in the report does not match the size of the placement. This happens when Promo Sizes come into the equation. When a creative serves into a placement fulfilling a size in the Promo Sizes Array, the size reported is the `size` of the creative, which could be different from the promo size or the placement's size. |
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the **Split** column (if included) will be null. |
@@ -168,7 +168,7 @@ Real Time Data is offered within this report (not all users have access). Tradit
 |---|---|
 | partner | When you purchase inventory from one of our external supply partners, you will be charged your contracted auction service fee. |
 | platform | When you purchase platform inventory, you will be charged your contracted auction service fee. |
-| unknown | The seller type is not identifiable. You shouldn't see this turn up in your reports. If you do, please contact your Xandr support from the [Customer Support Portal](https://help.xandr.com/). |
+| unknown | The seller type is not identifiable. You shouldn't see this turn up in your reports. If you do, please contact your Microsoft Advertising support from the [Customer Support Portal](https://help.xandr.com/). |
 
 ### Bid types
 
@@ -288,7 +288,7 @@ Real Time Data is offered within this report (not all users have access). Tradit
 
 | Column | Description |
 |---|---|
-| Custom Viewable Imps | The number of measured impressions that were viewable, per the member-level custom definition configuration (for more details, contact your Xandr account representative). |
+| Custom Viewable Imps | The number of measured impressions that were viewable, per the member-level custom definition configuration (for more details, contact your Microsoft Advertising account representative). |
 | Custom Viewability Rate | The percentage of impressions that were viewable, per the member-level custom definition configuration, out of the total number of impressions measured for viewability. |
 
 ## To run your report

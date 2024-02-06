@@ -33,7 +33,7 @@ The Creative Details side pane lets you view details of the creative and approve
 | Creative name, ID, status, and brand | At the top of the Creative Details side pane, the following information is listed: <br> - Name of the creative <br> - ID of the creative <br> - Status of the creative (**Pending**, **Approved**, or **Rejected**) <br> - Brand associated with the creative |
 | **Creative Preview** | Visual preview of the creative. You can click on the creative to reach the destination URL or select the following under **Open preview in new tab**: <br> - **Secure Preview** – opens creative in a browser with an HTTPS link <br> - **Non-Secure Preview** – opens creative in a browser with an HTTP link |
 | **Last Modified** | Date and time creative was last modified in UTC |
-| **Platform Audit Status** | Audit status Xandr assigned the creative (e.g., **audited**) |
+| **Platform Audit Status** | Audit status Microsoft Advertising assigned the creative (e.g., **audited**) |
 | **Seller Member Audit Status** | Audit status assigned to the creative by the seller: <br> - **Pending** - not yet approved or rejected by seller <br> - **Approved** - approved by seller <br> - **Rejected** - rejected by seller |
 
 ## Approve and reject creatives

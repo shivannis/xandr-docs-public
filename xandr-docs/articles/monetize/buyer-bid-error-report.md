@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 The **Buyer Bid Error Report** helps you gain insight into rejected
 demand through a randomly selected set of 5% of the errors logged on the
-Xandr platform. Error Count has been multiplied
+Microsoft Advertising platform. Error Count has been multiplied
 by 100 to account for the 5% sampling.
 
 You can use this report to troubleshoot sell-side and buy-side settings
@@ -74,7 +74,7 @@ of Reporting Data](availability-of-reporting-data.md).
 | Column | Filter? | Description |
 |---|---|---|
 | Ad Profile ID | Yes* | The Ad Profile ID of the Seller Member impacted by the error. |
-| Brand | Yes | The brand registered in the Xandr system and associated with the creative that is impacted by the error. |
+| Brand | Yes | The brand registered in the Microsoft Advertising system and associated with the creative that is impacted by the error. |
 | Buyer Seat Code | No | The Custom Buyer Seat ID (submitted by DSP) which was used to bid on the impression. |
 | Buyer Seat Name | No | The display name for the buyer seat code. |
 | Creative Category | Yes | A classification assigned to both brands and creatives impacted by the error. |
@@ -97,7 +97,7 @@ of Reporting Data](availability-of-reporting-data.md).
 
 | Column | Description |
 |---|---|
-| Error Count | The amount of errors logged on the Xandr platform over the time range selected (a randomly selected set of 5% of the errors multiplied by 100 to account for the sampling). |
+| Error Count | The amount of errors logged on the Microsoft Advertising platform over the time range selected (a randomly selected set of 5% of the errors multiplied by 100 to account for the sampling). |
 
 ## How to run your report
 

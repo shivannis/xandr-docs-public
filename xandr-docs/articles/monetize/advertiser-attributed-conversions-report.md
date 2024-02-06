@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Advertiser attributed conversions report
 
-When a conversion pixel fires, Xandr determines if the conversion can be attributed (tied to a creative that the user previously viewed or clicked). For more information about how conversion attribution works, see [Conversion Attribution](conversion-attribution.md).
+When a conversion pixel fires, Microsoft Advertising determines if the conversion can be attributed (tied to a creative that the user previously viewed or clicked). For more information about how conversion attribution works, see [Conversion Attribution](conversion-attribution.md).
 
 The Attributed Conversions Report lets you see conversion pixel IDs, order IDs, when clicks or impressions were attributed, and other information related to your advertisers' attributed conversions.
 
@@ -67,7 +67,7 @@ This report can retrieve data for the last 90 days.
 | Post Click/Post View Conversion | Yes | Whether the conversion was a post-click (PC) or post-view (PV) conversion. |
 | Post Click/Post View Revenue | No | Whether the revenue generated was from a post-click (PC) or post-view (PV) conversion. |
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the Split column (if included) will be null. |
-| User ID | No | The Xandr user ID for the user who converted. If you have a mapping of your own user IDs to Xandr IDs, you might be able to do some analysis around which segments are converting, or you could count your unique and repeat converters. <br><br> **Warning**: To prepare for the upcoming implementation of the GDPR, this field is being deprecated on May 21, 2018. Subject to requirements under the GDPR, this field will continue to be available if you receive log level data via [Cloud Export](../log-level-data/log-level-data-cloud-export.md). For details, see [Changes to Log-Level Data and Console Reporting](https://microsoftapc.sharepoint.com/teams/PrivacyRegulations/SitePages/Changes-to-Log-Level-Data-and-Reporting-Support-for-European-Privacy-Regulations.aspx). |
+| User ID | No | The Microsoft Advertising user ID for the user who converted. If you have a mapping of your own user IDs to Microsoft Advertising IDs, you might be able to do some analysis around which segments are converting, or you could count your unique and repeat converters. <br><br> **Warning**: To prepare for the upcoming implementation of the GDPR, this field is being deprecated on May 21, 2018. Subject to requirements under the GDPR, this field will continue to be available if you receive log level data via [Cloud Export](../log-level-data/log-level-data-cloud-export.md). For details, see [Changes to Log-Level Data and Console Reporting](https://microsoftapc.sharepoint.com/teams/PrivacyRegulations/SitePages/Changes-to-Log-Level-Data-and-Reporting-Support-for-European-Privacy-Regulations.aspx). |
 
 ### Impression types
 

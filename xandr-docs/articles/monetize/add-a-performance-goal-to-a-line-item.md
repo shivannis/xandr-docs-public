@@ -36,7 +36,7 @@ You can also add a performance goal to a new line item during initial line item 
 Optimization (to a performance goal) selections are made via the **Primary KPI** menu. You may set your line item to a primary KPI of CPC, CPA, or CTR.
 
 > [!IMPORTANT]
-> Optimization to a Primary KPI works in conjunction with CPM, CPC, or CPA revenue types when advertisers want to meet goals that are different from the payment types they have chosen (e.g., an advertiser wants to pay CPM but would like you to meet a $50 CPA primary KPI). For all campaigns under the line item, the Xandr optimization engine will consider your entries in the **Optimization** section fields when deciding whether or not to bid on inventory.
+> Optimization to a Primary KPI works in conjunction with CPM, CPC, or CPA revenue types when advertisers want to meet goals that are different from the payment types they have chosen (e.g., an advertiser wants to pay CPM but would like you to meet a $50 CPA primary KPI). For all campaigns under the line item, the Microsoft Advertising optimization engine will consider your entries in the **Optimization** section fields when deciding whether or not to bid on inventory.
 
 For more information on the relationship between revenue and tracking, see [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md).
 
@@ -66,7 +66,7 @@ Select this option if your advertiser wants to achieve a goal based on click-thr
 When you have finished setting the performance goal for the line item, click the **Save** button. This takes you back to [Explore Line Items](explore-line-items.md). You can view the performance goals on the line item by hovering over the row for that line item and clicking the graph icon that appears. This takes you to [View Line Item Details](view-line-item-details.md), which contains details about all of the settings for that line item.
 
 > [!NOTE]
-> During learn, the Xandr platform will continuously review the  campaign's performance and exclude low-performing inventory to help the campaign optimize faster. Once the campaign moves into the optimization phase, performance goals on the line item perform a bid/no bid check using the data collected in the learn phase to determine a valuation. The default threshold for moving into the optimization phase is three success events. This setting can be changed using the **Phase Thresholds** setting under **Optimization Levers** at the campaign level. For more details about optimization, see [Optimization Levers](optimization-levers.md).
+> During learn, the Microsoft Advertising platform will continuously review the  campaign's performance and exclude low-performing inventory to help the campaign optimize faster. Once the campaign moves into the optimization phase, performance goals on the line item perform a bid/no bid check using the data collected in the learn phase to determine a valuation. The default threshold for moving into the optimization phase is three success events. This setting can be changed using the **Phase Thresholds** setting under **Optimization Levers** at the campaign level. For more details about optimization, see [Optimization Levers](optimization-levers.md).
 
 ## Related topics
 

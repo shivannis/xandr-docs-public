@@ -7,14 +7,14 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Billing
 
-For real-time inventory, Xandr serves as the
+For real-time inventory, Microsoft Advertising serves as the
 clearinghouse by paying inventory sellers and then billing buyers.
 Networks and direct marketers pay their managed publishers directly.
 This section provides resources for accessing and understanding your
 billing information.
 
 > [!IMPORTANT]
-> To view the Billing dashboard, your account must be assigned to the **Financial Observer** role. Contact your Xandr representative if you do not have the correct access.
+> To view the Billing dashboard, your account must be assigned to the **Financial Observer** role. Contact your Microsoft Advertising representative if you do not have the correct access.
 
 Network users with Financial
 Observer or Financial Admin roles can access past invoices,
@@ -33,7 +33,7 @@ not receive the invoice until July.
 For each billing period listed, you can click to view the invoice and/or
 seller statement. Invoices and seller statements available in
 Monetize are identical to the invoices you
-receive (via email) from Xandr.
+receive (via email) from Microsoft Advertising.
 
 For a detailed explanation of the fields and values in an invoice or
 seller statement, see [Understanding Your Invoice](understanding-your-invoice.md) or [Understanding Your Seller Statement](understanding-your-seller-statement.md).
@@ -66,7 +66,7 @@ do so:
     this grants the user the ability to install apps as well as view
     billing information. For more details, see [Create a User](create-a-user.md).
 1. If you don't want to make the user a general Admin, reach out to
-    your Xandr representative for assistance.
+    your Microsoft Advertising representative for assistance.
 
 ## Checking your credit status
 

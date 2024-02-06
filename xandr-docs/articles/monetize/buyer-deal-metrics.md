@@ -126,7 +126,7 @@ for reports. However, all intervals are not available for every report.
 | Reject Other Advertiser Exclusion Count | The total number of bids rejected due to advertiser exclusions not listed above. |
 | Reject Other Count | The total number of bids rejected for reasons other than data security not listed above. |
 | Reject Other Data Protection Count | The total number of bids rejected for data security reasons not listed above. |
-| Submitted Bids | The number of bids which were eligible in the final auction. For deals with Xandr sellers, this value is equal to the number of bids minus the number of rejected bids. For deals with SSPs, this value is equal to the number of bids submitted to the SSP for the final auction. |
+| Submitted Bids | The number of bids which were eligible in the final auction. For deals with Microsoft Advertising sellers, this value is equal to the number of bids minus the number of rejected bids. For deals with SSPs, this value is equal to the number of bids submitted to the SSP for the final auction. |
 
 ## To run your report
 

@@ -20,9 +20,9 @@ Follow these steps to add a new Demand Partner:
 1. Optionally, update the **Bid CPM Adjustment** field. This is a multiplier value applied to the Demand Partner's CPM bid price to adjust how the bids compete in auction. This does not change the actual bid or revenue payout- only the ranking of the bid in the auction. The default value is 1.00 in which case all partners' bids compete equally with no adjustments. The adjustment can be used to account for partner fees or for optimization. If CPM adjustments are needed at a level more granular than Demand Partner, see [Create a Bias Rule](create-a-bias-rule.md).
 
 > [!NOTE]
-> You do not need to select Xandr as a Demand Partner. All standard managed/direct and RTB demand in the Xandr marketplace will operate and flow as it normally does outside the PSP environment/context.
+> You do not need to select Microsoft Advertising as a Demand Partner. All standard managed/direct and RTB demand in the Microsoft Advertising marketplace will operate and flow as it normally does outside the PSP environment/context.
 >
-> If you select Xandr as a **Demand Partner**, do not input parameters that map the configuration to inventory within the same Member ID (Xandr seat). The Xandr Demand Partner is for mapping inventory from the Publisher's member/seat to a different Xandr network seat where that partner has reselling authority.
+> If you select Microsoft Advertising as a **Demand Partner**, do not input parameters that map the configuration to inventory within the same Member ID (Microsoft Advertising seat). The Microsoft Advertising Demand Partner is for mapping inventory from the Publisher's member/seat to a different Microsoft Advertising network seat where that partner has reselling authority.
 
 ## Edit a demand partner
 

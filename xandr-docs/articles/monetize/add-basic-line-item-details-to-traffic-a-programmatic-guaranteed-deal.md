@@ -24,7 +24,7 @@ You can associate one or more insertion orders to the programmatic guaranteed li
 1. Select the appropriate **Ad Type**.
 
     > [!NOTE]
-    > You can currently only use banner creatives in your PG deal without Xandr representative assistance. If you'd like to use other creative types, please contact your Xandr account representative.
+    > You can currently only use banner creatives in your PG deal without Microsoft Advertising representative assistance. If you'd like to use other creative types, please contact your Microsoft Advertising account representative.
 
     - **Banner**
     - **Video (Audio)**
@@ -52,7 +52,7 @@ You can associate one or more insertion orders to the programmatic guaranteed li
 
 1. Enter the name you will use to search for and report on the line item.
 
-1. Click **+External Code** and enter a code if you want to report on a line item using your own code (rather than the internal ID that Xandr assigns automatically).
+1. Click **+External Code** and enter a code if you want to report on a line item using your own code (rather than the internal ID that Microsoft Advertising assigns automatically).
 
     External codes must follow these guidelines:
     - They can contain only alphanumeric characters, periods, underscores, or dashes.

@@ -68,7 +68,7 @@ for reports. However, all intervals are not available for every report.
 | Advertiser | Yes | The advertiser name and ID, in the format "Great Advertiser (456)". |
 | Buying Currency | No | The transaction currency that the buyer used to purchase this impression. Including this dimension will cause the monetary metrics to be displayed in the buying currency. |
 | Campaign | Yes | The campaign associated with the impression, in the format "South Texas Ford Drivers (123)". (Does not apply to all advertisers.) |
-| Campaign Code | No | The ID associated with a campaign by Xandr platform or by user as an external code |
+| Campaign Code | No | The ID associated with a campaign by Microsoft Advertising platform or by user as an external code |
 | Campaign Group Type Id | No | The ID for a campaign group type. For example, Buy direct/third-party inventory |
 | Insertion Order | Yes | The insertion order associated with the impression, in the format "Midwest Winter Getaways (789)". |
 | Is Advertiser Segment | Yes | Whether a target segment is an advertiser segment |

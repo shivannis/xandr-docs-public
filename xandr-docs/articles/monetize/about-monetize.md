@@ -27,7 +27,7 @@ A number of other key features help Microsoft Monetize optimize your ad buying r
 Monetize has a number of features that allow you to maintain business and technical relationships with your managed publishers. With Monetize, you can:
 
 - Set up publishers and traffic campaigns on managed inventory.
-- Resell inventory on the Xandr platform for better monetization.
+- Resell inventory on the Microsoft Advertising platform for better monetization.
 - Apply optimization strategies to your direct campaigns since optimizing direct campaigns is as important as optimizing on third-party inventory.
 - Manage individual publishers' ad quality requirements, ensuring that you meet expectations about the quality and content of ads served on their sites.
 
@@ -37,9 +37,9 @@ As an ad server user, you have access to your end-to-end setup of advertiser and
 
 ## Technical details
 
-The Xandr platform is a real-time bidding system and ad server. The main processing system here is called the "impression bus". The impression bus receives ad requests, applies data to the request, receives bids, makes decisions, serves creatives, logs auctions, etc.
+The Microsoft Advertising platform is a real-time bidding system and ad server. The main processing system here is called the "impression bus". The impression bus receives ad requests, applies data to the request, receives bids, makes decisions, serves creatives, logs auctions, etc.
 
-Ad calls come in via our inventory supply partners: exchanges, SSPs, ad networks, and a few valued publishers. Some of the ad calls are client-side, meaning there is a Xandr tag on the page, and we get the call directly. Others are server-side, meaning our partners initially field the call and then contact us asking for a bid.
+Ad calls come in via our inventory supply partners: exchanges, SSPs, ad networks, and a few valued publishers. Some of the ad calls are client-side, meaning there is a Microsoft Advertising tag on the page, and we get the call directly. Others are server-side, meaning our partners initially field the call and then contact us asking for a bid.
 
 Once we get the call, we overlay segment data from our server-side cookie store. Data is added to the cookie store either through segment pixels or by clients sending us a file of data. We also contact third-party data providers and overlay any available data.
 
@@ -47,8 +47,8 @@ We contact all of the bidders on our platform. The ad call includes whatever use
 
 Monetize serves as our proprietary bidder, which has a suite of features including campaigns and targeting, bidding algorithms, multi-currency support, and all the other features of a premium ad server. It can be accessed by either a UI or an API.
 
-The impression bus decides which bid wins based on the amount of the bid and any preferences the publisher has about what they want served on their page. If the call was client-side, Xandr serves the ad. If it was server-side, Xandr passes the bid and the location of the creative to the partner who will ultimately serve the ad.
+The impression bus decides which bid wins based on the amount of the bid and any preferences the publisher has about what they want served on their page. If the call was client-side, Microsoft Advertising serves the ad. If it was server-side, Microsoft Advertising passes the bid and the location of the creative to the partner who will ultimately serve the ad.
 
 ## Get started
 
-[Get in touch](https://about.ads.microsoft.com/en-us/solutions/xandr/contact-xandr) with a Xandr representative today so you can get started! Already have an account? Log in to [Monetize](https://monetize.xandr.com/login).
+[Get in touch](https://about.ads.microsoft.com/en-us/solutions/xandr/contact-xandr) with a Microsoft Advertising representative today so you can get started! Already have an account? Log in to [Monetize](https://monetize.xandr.com/login).

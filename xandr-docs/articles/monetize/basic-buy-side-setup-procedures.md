@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Basic Buy-side Setup Procedures
-description: Learn how to setup your buying objects on the Xandr platform.
+description: Learn how to setup your buying objects on the Microsoft Advertising platform.
 ms.date: 10/28/2023
 ---
 
@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Microsoft Monetize - Basic Buy-Side setup procedures
 
 This page provides a list of procedures needed to get your buying
-objects quickly setup on the Xandr platform. You
+objects quickly setup on the Microsoft Advertising platform. You
 can use these to set up media buying on behalf of your company or, if
 you're an agency, your advertisers.
 

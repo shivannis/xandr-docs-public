@@ -12,7 +12,7 @@ You can set the name, state, and ad type, as well as associate additional insert
 
     The name of the line item must be unique per advertiser.
 
-1. Click **+External Code** and enter a code if you want to report on a line item using your own code (rather than the internal ID that Xandr assigns automatically).
+1. Click **+External Code** and enter a code if you want to report on a line item using your own code (rather than the internal ID that Microsoft Advertising assigns automatically).
 
     External codes must follow these guidelines:
     - They can contain only alphanumeric characters, periods, underscores, or dashes.

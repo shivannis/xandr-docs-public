@@ -32,7 +32,7 @@ space where the ad would have been. It is technically the delivery of a
 
 ## Why do we charge for blanks?
 
-Because it costs Xandr, money to run an auction
+Because it costs Microsoft Advertising, money to run an auction
 and serve a blank, and our clients have the option of turning blanks on
 or off, we charge for the blanks the same as we would for a creative or
 PSA.

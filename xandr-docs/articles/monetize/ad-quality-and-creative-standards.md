@@ -10,7 +10,7 @@ Advertisers wish to serve their creatives in as many places as possible. As a pu
 
 ## Buyers
 
-Buyers can opt their creatives into the Xandr audit process to maximize their reach.
+Buyers can opt their creatives into the Microsoft Advertising audit process to maximize their reach.
 
 - This includes buyers using our hosted bidder, Microsoft Monetize, and other technology partners that have built their own bidders and integrated with our stack.
 - We audit both creatives hosted with us as well as third-party tags.
@@ -18,9 +18,9 @@ Buyers can opt their creatives into the Xandr audit process to maximize their re
 
 ## Sellers
 
-Sellers of inventory can determine the types of creatives that are allowed to serve on their inventory, including whether or not the creative is audited by the Xandr team.
+Sellers of inventory can determine the types of creatives that are allowed to serve on their inventory, including whether or not the creative is audited by the Microsoft Advertising team.
 
-- All aggregators, including Microsoft, require creatives to be audited by the Xandr team prior to serving on their inventory.
+- All aggregators, including Microsoft, require creatives to be audited by the Microsoft Advertising team prior to serving on their inventory.
 - Some ad networks allow unaudited creatives to serve on their inventory or a portion of it.
 - We also allow sellers to apply trust levels to individual buyers. For example, a seller can apply maximum trust to a buyer. The seller will then accept all creatives from those buyers, regardless of audit status.
 - We allow sellers to approve or ban creatives on an individual basis.

@@ -7,10 +7,10 @@ ms.date: 10/28/2023
 
 # Automatic archiving of Buy-Side objects
 
-Xandr automatically archives campaigns that have
+Microsoft Advertising automatically archives campaigns that have
 been identified as "stale" or unused. Archiving reduces the overhead of
 managing older campaigns and makes it easier to stay below
-[your object limits](viewing-your-object-limits.md). It also releases system resources that Xandr can use to drive better results for your active campaigns.
+[your object limits](viewing-your-object-limits.md). It also releases system resources that Microsoft Advertising can use to drive better results for your active campaigns.
 
 > [!NOTE]
 > This feature is only enabled for campaigns using the standard line item.

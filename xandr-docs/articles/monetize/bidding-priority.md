@@ -7,14 +7,14 @@ ms.date: 10/28/2023
 
 # Bidding priority
 
-When managing inventory on the Xandr platform,
+When managing inventory on the Microsoft Advertising platform,
 you have several methods of controlling bidding priority.
 
 This page contains descriptions of those methods, as well as links to
 further information.
 
 > [!NOTE]
-> **Xandr Adserver clients**, see [Open Dynamic Allocation and Flexible Priorities](open-dynamic-allocation-and-flexible-priorities.md) for information on how bidding priorities work with guaranteed delivery.
+> **Microsoft Advertising Adserver clients**, see [Open Dynamic Allocation and Flexible Priorities](open-dynamic-allocation-and-flexible-priorities.md) for information on how bidding priorities work with guaranteed delivery.
 
 ## Managed priority at a Campaign-Specific level
 
@@ -47,7 +47,7 @@ at the Network level for **Reselling Priority** you can set on the
 **Network Tools** screen
 (**Network \> Tools \> General**). Reselling Priority
 is the threshold at which third-party bids (from other networks on the
-Xandr platform and from external buyers) become
+Microsoft Advertising platform and from external buyers) become
 eligible to serve on your inventory. For example, if you set your
 Reselling Priority to 8, managed campaigns at Priority 10, 9, and 8 will
 serve before bids from third parties (RTB bids), even if third-party

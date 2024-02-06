@@ -25,7 +25,7 @@ In order to prevent serving blanks or [Default PSAs](default-psas.md), you can s
 > [!TIP]
 > **Network-Level Default Creatives**
 >
-> If you want to use the same default creatives for all your placements, you can work with your Xandr representative to add them at the network-level. If you also add default creatives to a particular placement, the placement-level creatives will be used instead of the network-level creatives.
+> If you want to use the same default creatives for all your placements, you can work with your Microsoft Advertising representative to add them at the network-level. If you also add default creatives to a particular placement, the placement-level creatives will be used instead of the network-level creatives.
 > [!IMPORTANT]
 > **About Flagged Impressions**
 >
@@ -84,7 +84,7 @@ Configure the third-party default creative by providing the following informatio
   > [!WARNING]
   > **AdSense Tags**
   >
-  > When adding an AdSense HTML tag, be sure to uncheck the **Serve in iFrame** box. If this box is checked, AdSense may have difficulty determining the content and location of the tag due to the iFrame, which may result in discrepancies between Xandr and AdSense. Xandr should automatically populate the domain with the full path. However, if you need to manually add it, include the `${REFERER_URL}` [creative macro](creative-macros.md).
+  > When adding an AdSense HTML tag, be sure to uncheck the **Serve in iFrame** box. If this box is checked, AdSense may have difficulty determining the content and location of the tag due to the iFrame, which may result in discrepancies between Microsoft Advertising and AdSense. Microsoft Advertising should automatically populate the domain with the full path. However, if you need to manually add it, include the `${REFERER_URL}` [creative macro](creative-macros.md).
 
 - **URL** and **Output Type** - For a third-party URL, enter the URL pointing to the third-party creative, and select the resource type of the third-party creative.
 - **Landing Page** - For a third-party URL, if you selected "Image" or "Flash" as the output type, set a landing page for the creative. If you plan to associate the creative to more than one campaign or line item with different landing pages, select to set the landing page at the line item or campaign level. For more details, see [Dynamic Landing Pages](dynamic-landing-pages.md).
@@ -110,7 +110,7 @@ If you have a default creative in place but are still seeing [Default PSAs](defa
 - The placement is seeing secure traffic but the default has not been trafficked as secure
 
 > [!NOTE]
-> If you receive a message that the default creative is prohibited from serving, the most likely cause is that the creative has been marked as malicious, most likely by Sherlock. The contacts identified as Sherlock notification recipients can review the notifications to determine the reason the creative has been flagged. If you need further assistance, contact Xandr support.
+> If you receive a message that the default creative is prohibited from serving, the most likely cause is that the creative has been marked as malicious, most likely by Sherlock. The contacts identified as Sherlock notification recipients can review the notifications to determine the reason the creative has been flagged. If you need further assistance, contact Microsoft Advertising support.
 
 See [Serve Default Creatives Instead of PSAs](serve-default-creatives-instead-of-psas.md) for step-by-step instructions on how to remedy several of these issues.
 

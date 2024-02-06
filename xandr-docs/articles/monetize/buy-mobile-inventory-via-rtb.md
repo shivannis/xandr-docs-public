@@ -12,10 +12,10 @@ ms.date: 10/28/2023
 
 This document describes how to set up a campaign to run on third-party
 mobile inventory (also known as "RTB" inventory). RTB inventory is made
-available for sale by other members of the Xandr
+available for sale by other members of the Microsoft Advertising
 platform; this includes ad networks and major publishers as well as
 external partners and exchanges that are integrated with
-Xandr.
+Microsoft Advertising.
 
 For more information on how to buy directly from mobile
 publishers, see [Buy Mobile Inventory Directly from a Publisher](buy-mobile-inventory-directly-from-a-publisher.md).
@@ -32,7 +32,7 @@ Creating a mobile campaign involves defining:
 
 - **Buying Strategies** - Buying via RTB means you want to run on in-app
   and/or device-optimized web inventory from other networks on the
-  Xandr platform as well as external supply
+  Microsoft Advertising platform as well as external supply
   sources. For RTB buys, you define exactly how you want to value
   impressions and submit bids.
 
@@ -105,7 +105,7 @@ basic details and flight dates for the campaign.
   search for and report on the campaign using this name.
 - **External Code** - If you want to report on the campaign using an
   external code (rather than the internal ID that
-  Xandr assigns automatically), enter the code
+  Microsoft Advertising assigns automatically), enter the code
   here.
 - **State** - The state is set to "Inactive" by default to prevent the
   campaign from spending before all necessary settings and creatives are
@@ -126,7 +126,7 @@ you can define exactly how much you are willing to spend on buying
 inventory for the campaign. The budget can be in impressions or in media
 cost (dollars). Note that media cost is in USD rather than the
 advertiser's currency because USD is the currency in which
-Xandr transacts.
+Microsoft Advertising transacts.
 
 You can set budgets at the insertion order and line item levels as well.
 Budgets at these levels take precedence over a child campaign's budget;
@@ -175,7 +175,7 @@ about budgeting, see [Budgeting and Pacing](budgeting-and-pacing.md).
     undefined.
 
     > [!NOTE]
-    > If you have enabled the unlimited budget warning feature, you will not be able to set the budget for your campaign to **unlimited** if the line item and (if applicable) insertion order budgets are also set to unlimited. This feature prevents mistaken overspend that can result when budgets are set to unlimited at all levels. When the feature is enabled, to set your campaign budget to unlimited, you must first limit the budget for either the insertion order or line item associated with the campaign. To enable this feature, speak to your Xandr representative.
+    > If you have enabled the unlimited budget warning feature, you will not be able to set the budget for your campaign to **unlimited** if the line item and (if applicable) insertion order budgets are also set to unlimited. This feature prevents mistaken overspend that can result when budgets are set to unlimited at all levels. When the feature is enabled, to set your campaign budget to unlimited, you must first limit the budget for either the insertion order or line item associated with the campaign. To enable this feature, speak to your Microsoft Advertising representative.
 
 
 ## Step 6. Define the buying strategies
@@ -183,7 +183,7 @@ about budgeting, see [Budgeting and Pacing](budgeting-and-pacing.md).
 ### Buy third-party inventory
 
 To run the campaign on inventory from other members of the
-Xandr platform and from external partners and
+Microsoft Advertising platform and from external partners and
 exchanges (also known as **RTB** inventory), check the **Buy Third-Party
 Inventory** box. Then decide how you want to pay for third-party
 inventory (per impression, per click, and/or per conversion) and define
@@ -216,7 +216,7 @@ learn about setting up **Performance Goals** on the line item, see Step
 ### Pay on a Per-impression (CPM) basis
 
 Select this option to pay publishers for every impression. This payment
-type is accepted by all sellers (Xandr sellers
+type is accepted by all sellers (Microsoft Advertising sellers
 and external sellers).
 
 - **Optimize to a % margin of booked revenue**
@@ -240,7 +240,7 @@ and external sellers).
 
   Use this strategy to vary bids based on the likelihood of an
   attributed conversion for each piece of inventory. This strategy uses
-  the Xandr optimization engine.
+  the Microsoft Advertising optimization engine.
 
   - **Bid $_ _ post-click/post-view CPA** - Select the conversion
     pixel to which you want to optimize and enter the dollar amount per
@@ -273,7 +273,7 @@ and external sellers).
 
   Use this strategy to vary bids based on the likelihood of a click for
   each piece of inventory. This strategy uses the
-  Xandr optimization engine. {expand:Expand to
+  Microsoft Advertising optimization engine. {expand:Expand to
   see more options}
 
   - **Optimize to $ _ _ per click** - Enter the dollar amount per click
@@ -327,14 +327,14 @@ inventory.
 
 - **Auto-bid to win most platform impressions (ECP)** - Select this
   option to bid an estimate of the price that is likely to win most
-  impressions from Xandr platform sellers based
+  impressions from Microsoft Advertising platform sellers based
   on historical bids and their success or failure. Since off-platform
   sellers (e.g., Google Ad Manager, Rubicon, etc.) conduct a secondary
   auction, bidding ECP does not necessarily ensure winning off-platform
   impressions.
 - **Auto-bid to win ~50% of platform impressions (EAP)** - Select this
   option to bid an estimate of the price that is likely to win about
-  half of the impressions from Xandr platform
+  half of the impressions from Microsoft Advertising platform
   sellers based on historical bids and their success or failure. Since
   off-platform sellers (e.g., Google Ad Manager, Rubicon, etc.) conduct
   a secondary auction, bidding EAP does not necessarily ensure winning
@@ -348,14 +348,14 @@ inventory.
   or hasn't seen it many times or seen it recently.
 - **Pay on a Per-click (CPC) basis** - Select this option to pay
   publishers only when users click on your ads. This payment type is
-  accepted only by participating Xandr sellers,
+  accepted only by participating Microsoft Advertising sellers,
   not by external sellers; using it exclusively may therefore decrease
   your campaign's reach.
 - **Pay $ _ per click** - Enter the dollar amount to pay a publisher
   when a user clicks on one of your ads.
 - **Pay on a Per-conversion (CPA) basis** - Select this option to pay
   publishers only when users convert. This payment type is accepted only
-  by participating Xandr sellers, not by
+  by participating Microsoft Advertising sellers, not by
   external sellers; using it exclusively may therefore decrease your
   campaign's reach.
 - **Pay $ _** **post-click/post-view CPA** - For each selected
@@ -392,7 +392,7 @@ disables third-party (advertising) cookies by default.
 
 ## Step 8. Set optimization levers
 
-If your buying strategy uses the Xandr
+If your buying strategy uses the Microsoft Advertising
 optimization engine, you can adjust **Optimization Levers** to influence
 how optimization works for your campaign, for example, how much you bid
 during the Learn phase, how many success events (clicks or conversions)
@@ -409,7 +409,7 @@ each lever, see [Optimization Levers](optimization-levers.md).
 
 If you do not have access to optimization levers and are interested in
 learning more about about them, please contact your
-Xandr account representative.
+Microsoft Advertising account representative.
 
 ## Step 9. Add targeting
 
@@ -527,7 +527,7 @@ To add a new serving fee:
 
 Confirm that the campaign details are correct and then click the
 **Save** button to finish adding the
-campaign to Xandr. The campaign
+campaign to Microsoft Advertising. The campaign
 is then added to the list of campaigns on the [Explore Campaigns](explore-campaigns.md) screen.
 
 ## Step 14. Complete peer approval

@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 The first time a user without one of our cookie visits a website where
 we serve ads, we set a cookie. We also add that user to the
-"Xandr Birthday Cookie" segment. This segment
+"Microsoft Advertising Birthday Cookie" segment. This segment
 appears in Monetize as "cookie_birthday
 (shared)" and its segment ID is 1.
 

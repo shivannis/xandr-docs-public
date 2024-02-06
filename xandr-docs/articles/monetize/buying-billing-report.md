@@ -11,7 +11,7 @@ The Buying Billing Report allows you to manage internal invoicing for
 your advertisers across both managed and third-party buying.
 
 If you would like to use this report to analyze your
-Xandr invoice, see [Understanding Your Invoice](understanding-your-invoice.md). (Login required.)
+Microsoft Advertising invoice, see [Understanding Your Invoice](understanding-your-invoice.md). (Login required.)
 
 ## Time frame
 
@@ -80,7 +80,7 @@ for reports. However, all intervals are not available for every report.
 | Impression Type | Yes | See [Impression Types](#impression-types) below for definitions of the different types of impressions. |  |  |  |  |  |  |
 | Insertion Order | Yes | The Insertion Order under which this impression was purchased. |  |  |  |  |  |  |
 | IO Code | No | The external ID of the insertion order. |  |  |  |  |  |  |
-| Is Cross Seat Activity | Yes | Only relevant if you have more than one member/seat on the Xandr platform. If you do, this field allows you to know whether the activity was associated with transactions between members you manage and therefore simplify the reconciling of their invoices. |  |  |  |  |  |  |
+| Is Cross Seat Activity | Yes | Only relevant if you have more than one member/seat on the Microsoft Advertising platform. If you do, this field allows you to know whether the activity was associated with transactions between members you manage and therefore simplify the reconciling of their invoices. |  |  |  |  |  |  |
 | Is Deal | Yes | Is there any deal associated with the impression. Different from 'Deal' which is the actual deal id |  |  |  |  |  |  |
 | LI Code | No | The external ID of the line item. |  |  |  |  |  |  |
 | Line Item | Yes | The line item under which this impression was purchased. |  |  |  |  |  |  |
@@ -92,8 +92,8 @@ for reports. However, all intervals are not available for every report.
 ### Direct Cleared Table
 |Value   |Description  |  |
 |---|---|---|
-| 0 | Xandr acts as the clearing house, collecting the cost of media from the buyer and paying the seller |  |
-| 1 | Xandr does not clear cash; the buyer pays the seller directly for the cost of media |  |
+| 0 | Microsoft Advertising acts as the clearing house, collecting the cost of media from the buyer and paying the seller |  |
+| 1 | Microsoft Advertising does not clear cash; the buyer pays the seller directly for the cost of media |  |
 | -1 | Dummy value for un-billed activity |  |
 
 ## Metrics
@@ -108,7 +108,7 @@ for reports. However, all intervals are not available for every report.
 | Auction Service Fees | Total fees charged for impressions bought from third parties. These fees are charged in addition to the buyer's media cost. |
 | Billable Imps | The total number of impressions billed to the client. |
 | Booked Revenue | The revenue booked through managed advertisers. |
-| Buyer Media Cost | The total amount to be paid for media purchases. When buying impressions, this payment is made to Xandr or an external exchange. When selling impressions, this payment is made to the publisher. |
+| Buyer Media Cost | The total amount to be paid for media purchases. When buying impressions, this payment is made to Microsoft Advertising or an external exchange. When selling impressions, this payment is made to the publisher. |
 | Clearing Event Booked Revenue eCPM | The total revenue per 1000 events (for the associated clearing event). |
 | Clearing Event Booked Revenue Per Event | The total booked revenue per clearing event. |
 | Clearing Event Buyer Media Cost eCPM | The total media cost per 1000 events (for the associated clearing event). |
@@ -118,11 +118,11 @@ for reports. However, all intervals are not available for every report.
 | Conversions | The total number of post-view and post-click conversions. |
 | Creative Hosting Fees (Video) | Fees incurred as a result of hosting your video creatives on our platform. |
 | Creative Overage Fees | The total fees charged for hosted creatives that exceed the creative size limit. |
-| eCPM Conversion Deduction | The amount that Xandr takes out of a guaranteed outcomes bid/payment to cover eCPM conversion and post-auction outcome prediction services. If you aren't using a line item with a guaranteed outcomes payment model, this field's value equals 0. |
+| eCPM Conversion Deduction | The amount that Microsoft Advertising takes out of a guaranteed outcomes bid/payment to cover eCPM conversion and post-auction outcome prediction services. If you aren't using a line item with a guaranteed outcomes payment model, this field's value equals 0. |
 | Exchange Cost | The amount taken out of the exchange to give to the seller. If you aren't using a line item with a guaranteed outcomes payment model, this metric's value equals **Net Media Cost**. |
 | FX Margin Deductions | Fx Margin deduction for buying members transacting in non-USD currencies |
 | FX Margin Fees | Fx Margin fee for buying members transacting in non-USD currencies |
-| GO Market Making Fee | The percentage-based fee (risk premium) that Xandr takes out of a guaranteed outcomes bid/payment to cover the risk incurred when providing guaranteed outcomes. If you aren't using a line item with a guaranteed outcomes payment model, this field's value equals 0. The target for this fee is 10%, but the actual percentage used varies based on continuously shifting prediction accuracy.<br> - GO Market Making Fee Percentage = Fixed Percentage (10%) ± Prediction Variability (a positive or negative percentage that changes based on shifting prediction accuracy) |
+| GO Market Making Fee | The percentage-based fee (risk premium) that Microsoft Advertising takes out of a guaranteed outcomes bid/payment to cover the risk incurred when providing guaranteed outcomes. If you aren't using a line item with a guaranteed outcomes payment model, this field's value equals 0. The target for this fee is 10%, but the actual percentage used varies based on continuously shifting prediction accuracy.<br> - GO Market Making Fee Percentage = Fixed Percentage (10%) ± Prediction Variability (a positive or negative percentage that changes based on shifting prediction accuracy) |
 | Net Media Cost | The total amount to be paid for media purchases, less the Auction Service Deduction. |
 | Service Deductions | DSP Service deduction for buying members |
 | Service Fees | DSP Service fee for buying members |

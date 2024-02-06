@@ -20,7 +20,7 @@ agreements with sellers, see [Buying Deals](buying-deals.md).
 
 ## In this guide
 
-- [Ad Buying with Xandr](ad-buying-with-xandr.md): The combination of market positioning and single-point
+- [Ad Buying with Microsoft Advertising](ad-buying-with-xandr.md): The combination of market positioning and single-point
   access to programmatic buying features through
   Monetize add up to unparalleled advantages for
   ad buying.
@@ -66,13 +66,13 @@ agreements with sellers, see [Buying Deals](buying-deals.md).
   earn or spend, while Pacing allows you to control the frequency with
   which the system attempts to win impressions in order to spend a
   budget as evenly as possible across a defined time period.
-- [Working with Creatives](working-with-creatives.md): The Xandr platform enables
+- [Working with Creatives](working-with-creatives.md): The Microsoft Advertising platform enables
   you to traffic a wide range of creative types in your campaigns, from
   banners to pops to increasingly pervasive rich media types like
   interstitials, expandables, and videos. By hosting your creatives with
   us, you can take full advantage of the platform's full-service ad
   server capabilities built specifically for the real-time advertising
-  business. Xandr makes it easy for you to
+  business. Microsoft Advertising makes it easy for you to
   traffic creatives that are served by third-party ad servers as well.
 - [Working with Segments](working-with-segments.md): Segment pixels use information about a user, such as
   webpages they visit, actions they take, or qualities such as gender,
@@ -81,17 +81,17 @@ agreements with sellers, see [Buying Deals](buying-deals.md).
 - [Working with Conversion Pixels](working-with-conversion-pixels.md): Conversion pixels are used to track user
   actions in response to advertisers' creatives, such as registering at
   a site or making a purchase. When a conversion pixel fires,
-  Xandr determines if the conversion (the
+  Microsoft Advertising determines if the conversion (the
   registration, the purchase, etc.) can be "attributed", or tied to the
   user clicking on or viewing one of the advertiser's creatives
   previously.
 - [Working with Impression and Click Trackers](working-with-impression-and-click-trackers.md):
   Impression and click trackers are used to track impressions and clicks
   associated with creatives that are hosted by off-platform
-  (non-Xandr) ad servers. This is done by
+  (non-Microsoft Advertising) ad servers. This is done by
   attaching the tracker as a "piggyback pixel" on the externally hosted
   creative. This lets you report on impressions and clicks on these
-  creatives as if they were hosted by Xandr.
+  creatives as if they were hosted by Microsoft Advertising.
 - [Create a User](create-a-user.md): You can
   create advertiser users for advertisers that want to run reports for
   themselves. An advertiser user does not see data about any other
@@ -103,7 +103,7 @@ agreements with sellers, see [Buying Deals](buying-deals.md).
   advertising (and where it differs, we'll explain those differences).
   This section is designed to provide you with a solid understanding of
   how advertising works on mobile devices.
-- [Introduction to Viewability](introduction-to-viewability.md): Understand how Xandr measures
+- [Introduction to Viewability](introduction-to-viewability.md): Understand how Microsoft Advertising measures
   ad views, and optimize the chances of your audience viewing your
   creatives.
 - [Buying Video Inventory](buying-video-inventory.md): This guide provides advanced video reference
@@ -127,6 +127,6 @@ agreements with sellers, see [Buying Deals](buying-deals.md).
   from a buyer with a committed impression volume, the most important
   performance indicator is that the line item delivers its budget in
   full and evenly across its flight dates.
-- [Data Marketplace Overview](data-marketplace-overview.md): Xandr supports automatic clearing of third-party segment data you can
+- [Data Marketplace Overview](data-marketplace-overview.md): Microsoft Advertising supports automatic clearing of third-party segment data you can
   purchase and use to target audience segments.
 

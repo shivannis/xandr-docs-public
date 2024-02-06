@@ -15,7 +15,7 @@ For general questions about mobile buying, please visit the [Mobile Buying FAQ](
 As described on the [Technical Limitations of Mobile Buying](technical-limitations-of-mobile-buying.md), mobile apps cannot be platform-reviewed. However, you might still want to serve on platform-reviewed mobile web inventory. In this case, you should separate campaigns targeting apps from those targeting mobile web inventory.
 
 > [!NOTE]
-> It is up to the sellers to declare the supply type for their placements. In other words, this is not a part of the Xandr platform review process. Some sellers may not describe their placements' supply type accurately. For this reason, it's best practice to set mobile web campaigns to include both mobile web and web supply.
+> It is up to the sellers to declare the supply type for their placements. In other words, this is not a part of the Microsoft Advertising platform review process. Some sellers may not describe their placements' supply type accurately. For this reason, it's best practice to set mobile web campaigns to include both mobile web and web supply.
 
 To target a range of mobile inventory, select multiple inventory types - for example, phones and tablets - for your supply type.
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Augmented Line Items (ALI)
-description: Learn how Augmented line items (ALI) streamline a trader's workflow on the Xandr platform and advantages of using it.  
+description: Learn how Augmented line items (ALI) streamline a trader's workflow on the Microsoft Advertising platform and advantages of using it.  
 ms.date: 10/28/2023
 ---
 
@@ -10,7 +10,7 @@ ms.date: 10/28/2023
 ## Overview
 
 The purpose of the Augmented Line Item (ALI) is to streamline a trader's
-workflow on the Xandr platform. It does this by
+workflow on the Microsoft Advertising platform. It does this by
 enhancing already familiar features while providing new options and
 settings to support more sophisticated users. In addition, the ALI
 performs various functions in an automated fashion that previously had

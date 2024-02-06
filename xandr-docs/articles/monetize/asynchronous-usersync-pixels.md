@@ -22,7 +22,7 @@ The important takeaways are:
 
 ## How it works
 
-We attach a bit of JavaScript code to the publisher's page that will only run after the rest of the page's content has been loaded by the browser. Once a web page (or iFrame) has finished loading, this code calls our server asking for a usersync pixel. When that pixel returns and is loaded, the Javascript calls back to Xandr again, asking for another usersync pixel. For any given tag this loop repeats a maximum of ten times, and usersyncing will stop once there are no more usersync pixels available or the queue of available pixels is exhausted. After the loop finishes, the user should be fully synced across Xandr and all of our external partners.
+We attach a bit of JavaScript code to the publisher's page that will only run after the rest of the page's content has been loaded by the browser. Once a web page (or iFrame) has finished loading, this code calls our server asking for a usersync pixel. When that pixel returns and is loaded, the Javascript calls back to Microsoft Advertising again, asking for another usersync pixel. For any given tag this loop repeats a maximum of ten times, and usersyncing will stop once there are no more usersync pixels available or the queue of available pixels is exhausted. After the loop finishes, the user should be fully synced across Microsoft Advertising and all of our external partners.
 
 For those interested in more technical details, we are appending a JavaScript callback to the browser's `window.onload` event. For more information about how the `onload` event works, see [Mozilla's DOM Reference](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event).
 
@@ -31,8 +31,8 @@ The steps shown below provide a simplified description of this process:
 1. Parse the HTML page.
 1. Build a DOM Tree (Browser's internal representation of the page).
 1. `window.onload` event occurs (DOM has finished loading all page elements)
-1. Our JavaScript code asks Xandr for usersync pixels to load.
-1. Xandr returns the usersync pixel to the page.
+1. Our JavaScript code asks Microsoft Advertising for usersync pixels to load.
+1. Microsoft Advertising returns the usersync pixel to the page.
 1. The usersync pixel loads and the user ID is now synced.
 1. Steps 4-6 are repeated until the user is fully synced or 10 pixels load, whatever comes sooner.
 
@@ -40,10 +40,10 @@ For more detailed information about how browsers load web pages, see [How Browse
 
 ## European ad inventory and providing notice, transparency, and choice
 
-In order for our clients to meet their transparency, notice and choice/consent requirements under the GDPR and the existing ePrivacy Directive, Xandr supports the [IAB Europe Transparency & Consent Framework](https://iabeurope.eu/transparency-consent-framework/) (the "Framework"). This is a reference for publishers using the macros to surface notice, transparency and choice to end users located in the EEA and signal approved vendors and, where necessary, pass consent, to Xandr and demand sources and their vendors through the Xandr platform. This resource should not be construed as legal advice and Xandr makes no guarantees about compliance with any law or regulation. Please note that because every company and its collection, use, and storage of personal data is different, you should also seek independent legal advice relating to obligations under European regulations, including the GDPR and the existing ePrivacy Directive. Only a lawyer can provide you with legal advice specifically tailored to your situation. Nothing in this guide is intended to provide you with, or should be used as a substitute for, legal advice tailored to your business.
+In order for our clients to meet their transparency, notice and choice/consent requirements under the GDPR and the existing ePrivacy Directive, Microsoft Advertising supports the [IAB Europe Transparency & Consent Framework](https://iabeurope.eu/transparency-consent-framework/) (the "Framework"). This is a reference for publishers using the macros to surface notice, transparency and choice to end users located in the EEA and signal approved vendors and, where necessary, pass consent, to Microsoft Advertising and demand sources and their vendors through the Microsoft Advertising platform. This resource should not be construed as legal advice and Microsoft Advertising makes no guarantees about compliance with any law or regulation. Please note that because every company and its collection, use, and storage of personal data is different, you should also seek independent legal advice relating to obligations under European regulations, including the GDPR and the existing ePrivacy Directive. Only a lawyer can provide you with legal advice specifically tailored to your situation. Nothing in this guide is intended to provide you with, or should be used as a substitute for, legal advice tailored to your business.
 
 > [!NOTE]
-> Our [Service Policies](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies) (login required) (for Buying, Selling, and Data Providers) include privacy-specific obligations of which you should be aware.
+> Our [Service Policies](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies) (login required) (for Buying, Selling, and Data Providers) include privacy-specific obligations of which you should be aware.
 
 ### `${GDPR_APPLIES}`
 

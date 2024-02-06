@@ -29,7 +29,7 @@ creative hosting fees. They can either be a percentage of costs or a
 flat CPM. Think of this as the Network having
 other costs associated with acquiring the inventory.
 
-Xandr does not physically handle broker fees: we
+Microsoft Advertising does not physically handle broker fees: we
 don't collect money from Networks and pay out to
 third parties. But we want you to be able to run the business side of
 things as easily as possible on the platform.

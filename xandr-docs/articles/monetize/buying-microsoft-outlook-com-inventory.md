@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Buying Microsoft Outlook.com Inventory
-description: Learn how to buy Microsoft Outlook.com inventory on the Xandr platform and adding Outlook.com creatives.    
+description: Learn how to buy Microsoft Outlook.com inventory on the Microsoft Advertising platform and adding Outlook.com creatives.    
 ms.date: 10/28/2023
 ---
 
@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Microsoft Monetize - Buying Microsoft Outlook.com inventory
 
 You can buy Microsoft Outlook.com inventory on the
-Xandr platform.
+Microsoft Advertising platform.
 
 ## Inventory overview
 
@@ -29,7 +29,7 @@ Outlook.com ad experiences are designed with both advertisers and
 consumers in mind. Located on the right side of users' email, the
 Skyscraper unit is fully integrated into the user experience. For more
 information about adding Outlook.com creatives, see [Add a Microsoft Outlook Skyscraper Creative](../industry-reference/add-a-microsoft-outlook-versatile-creative.md). Review the specifications for Outlook skyscraper creatives
-and add them to Xandr.
+and add them to Microsoft Advertising.
 
 > [!NOTE]
 > Packages bundled with Microsoft user data are available through the packages marketplace. For more information, see [Buying Microsoft Deals](../Monetize/buying-microsoft-deals.md).
@@ -70,5 +70,5 @@ For instructions on how to target the Outlook app, see [Buying Microsoft Windows
 ## More questions?
 
 If you have any further questions about buying Outlook.com inventory,
-please contact your Xandr account
+please contact your Microsoft Advertising account
 representative.

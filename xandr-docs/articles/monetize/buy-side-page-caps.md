@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # Buy-side page caps
 
-When you run multi-tag auctions via [Xandr's seller tag](../seller-tag/seller-tag.md), you get the ability to set page caps. Page caps can be used to
+When you run multi-tag auctions via [Microsoft Advertising's seller tag](../seller-tag/seller-tag.md), you get the ability to set page caps. Page caps can be used to
 restrict advertisers, line items, campaigns, or brands from winning more
 than one ad slot per AST ad call.
 
@@ -17,7 +17,7 @@ don't cover the use case where you only want one impression per brand to
 show on an AST ad call, no matter the buyer. That use case is covered by [Sell-Side Page Caps](sell-side-page-caps.md).
 
 > [!IMPORTANT]
-> This feature is not available to clients by default. If you would like to enable this feature, please speak with your Xandr representative.
+> This feature is not available to clients by default. If you would like to enable this feature, please speak with your Microsoft Advertising representative.
 > 
 > Buy-side page caps are also enforced on OpenRTB calls.
 

@@ -37,7 +37,7 @@ because it doesn't match your network or publisher's requirements.
     brands to block.
 
     If a brand you wish to block does not appear in the search results,
-    submit a support ticket at [Customer Support Portal](https://help.xandr.com) requesting to add the brand to Xandr's database.
+    submit a support ticket at [Customer Support Portal](https://help.xandr.com) requesting to add the brand to Microsoft Advertising's database.
 
 1. Select the checkbox for each brand you want to
     block.
