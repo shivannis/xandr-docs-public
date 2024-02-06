@@ -50,6 +50,9 @@ To target Outlook.com inventory,
 
 For instructions on how to target the Outlook app, see [Buying Microsoft Windows App Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md).
 
+> [!IMPORTANT]
+> For more information on how to add a Microsoft Outlook versatile creative, see [adding a Microsoft Outlook versatile creative](../industry-reference/add-a-microsoft-outlook-versatile-creative.md).
+
 ## More questions?
 
 If you have any further questions about buying Outlook.com inventory, please contact your Microsoft Advertising account representative.
