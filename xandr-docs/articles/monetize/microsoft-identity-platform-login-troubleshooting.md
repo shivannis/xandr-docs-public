@@ -21,7 +21,7 @@ If you company sets up Federated Sign-in for your corporate email
 domain, visit the following pages for more information:
 
 - [Azure Active Directory](https://www.microsoft.com/security/business/identity-access/microsoft-entra-id)
-- [Single Sign On](../../../../../../entra-docs/main/docs/identity/enterprise-apps/what-is-single-sign-on.md)
+- [Single Sign On](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/what-is-single-sign-on)
 
 ## After logging into a Microsoft Advertising product, I receive an error saying my email does not match any accounts and I don't have access.
 
