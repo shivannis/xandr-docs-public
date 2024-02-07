@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft Advertising # < 60 chars
-summary: Official product, developer, and other documentation for Microsoft Advertising. # < 160 chars
+summary: Official product, developer, and other documentation for Microsoft Advertising # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
@@ -132,30 +132,30 @@ conceptualContent:
     # Card
     - title: Xandr Platform
       links:
-        - url: /xandr/industry-reference
+        - url: /xandr/articles/industry-reference
           itemType: concept
           text: Ad Tech and Online Advertsing Concepts
-        - url: /xandr/invest
+        - url: /xandr/articles/invest
           itemType: reference
           text: Microsoft Invest
-        - url: /xandr/monetize
+        - url: /xandr/articles/monetize
           itemType: reference
           text: Microsoft Monetize
-        - url: /xandr/curate
+        - url: /xandr/articles/curate
           itemType: reference
           text: Microsoft Curate
-        - url: /xandr/digital-platform-api
+        - url: /xandr/articles/digital-platform-api
           itemType: reference
           text: Digital Platform API
-        - url: /xandr/mobile-sdk
+        - url: /xandr/articles/mobile-sdk
           itemType: reference
           text: Mobile SDK
-        - url: /xandr/log-level-data
+        - url: /xandr/articles/log-level-data
           itemType: reference
           text: Log Level Data
-        - url: /xandr/bidders
+        - url: /xandr/articles/bidders
           itemType: reference
           text: Bidders
-        - url: /xandr/supply-partners
+        - url: /xandr/articles/supply-partners
           itemType: reference
           text: Supply Partners
