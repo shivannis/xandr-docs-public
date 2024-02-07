@@ -133,29 +133,29 @@ conceptualContent:
     - title: Xandr Platform
       links:
         - url: /xandr/industry-reference
-        itemType: concept
-        text: Ad Tech and Online Advertsing Concepts
+          itemType: concept
+          text: Ad Tech and Online Advertsing Concepts
         - url: /xandr/invest
-        itemType: reference
-        text: Microsoft Invest
+          itemType: reference
+          text: Microsoft Invest
         - url: /xandr/monetize
-        itemType: reference
-        text: Microsoft Monetize
+          itemType: reference
+          text: Microsoft Monetize
         - url: /xandr/curate
-        itemType: reference
-        text: Microsoft Curate
+          itemType: reference
+          text: Microsoft Curate
         - url: /xandr/digital-platform-api
-        itemType: reference
-        text: Digital Platform API
+          itemType: reference
+          text: Digital Platform API
         - url: /xandr/mobile-sdk
-        itemType: reference
-        text: Mobile SDK
+          itemType: reference
+          text: Mobile SDK
         - url: /xandr/log-level-data
-        itemType: reference
-        text: Log Level Data
+          itemType: reference
+          text: Log Level Data
         - url: /xandr/bidders
-        itemType: reference
-        text: Bidders
+          itemType: reference
+          text: Bidders
         - url: /xandr/supply-partners
-        itemType: reference
-        text: Supply Partners
+          itemType: reference
+          text: Supply Partners
