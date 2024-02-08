@@ -50,7 +50,6 @@
     "fileMetadata": {
       "ms.service": {
         "invest/*.md": "microsoft-invest",
-        "ja-jp/*.md": "microsoft-invest",
         "seller-tag/*.md": "microsoft-monetize",
         "ott-ctv/*.md": "microsoft-monetize",
         "data-science-toolkit/*.md": "microsoft-monetize",
@@ -72,7 +71,6 @@
       },
       "author": {
         "invest/*.md": "rupambaruah-xandr",
-        "ja-jp/*.md": "rupambaruah-xandr",
         "seller-tag/*.md": "rupambaruah-xandr",
         "ott-ctv/*.md": "rupambaruah-xandr",
         "data-science-toolkit/*.md": "rupambaruah-xandr",
@@ -93,7 +91,6 @@
       },
       "ms.author": {
         "invest/*.md": "rupambaruah",
-        "ja-jp/*.md": "rupambaruah",
         "seller-tag/*.md": "rupambaruah",
         "ott-ctv/*.md": "rupambaruah",
         "data-science-toolkit/*.md": "rupambaruah",
@@ -114,7 +111,6 @@
       },
     "ms.topic": {
         "invest/*.md": "concept-article",
-        "ja-jp/*.md": "reference",
         "seller-tag/*.md": "reference",
         "ott-ctv/*.md": "reference",
         "data-science-toolkit/*.md": "tutorial",
