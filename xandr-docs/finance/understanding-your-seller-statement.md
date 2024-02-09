@@ -28,7 +28,7 @@ Microsoft Advertising Client Finance: [billing@xandr.com](mailto:billing@xandr.c
 
 Here's an example of what a what a typical seller statement looks like:
 
-:::image type="content" source="./media/seller-activity-statement" alt-text="Screenshot of Seller Activity Statement.":::
+:::image type="content" source="../monetize/media/seller-activity-statement.png" alt-text="Screenshot of Seller Activity Statement.":::
 
 
 1. **Seller** - The name and address of the seller.
