@@ -250,7 +250,7 @@ credit memo once the credit is processed.
     receiving your approval to do so).
 1. **Balance/Credit** - The amount that has been credited to your account.
 
-:::image type="content" source="media/credit-memo-annotated.png" alt-text="Screenshot of Credit Memo Annotated.":::
+:::image type="content" source="../monetize/media/credit-memo-annotated.png" alt-text="Screenshot of Credit Memo Annotated.":::
 
 ## Related topics
 
