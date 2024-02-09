@@ -1,11 +1,11 @@
 ---
-title: Microsoft Monetize - Audio Creatives
+title: Microsoft Monetize - Audio Creatives (JP)
 description: Learn about Audio Creatives in this page. 
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Audio creatives
+# Microsoft Monetize - Audio creatives (JP)
 
 You can host audio creatives with Microsoft Advertising or
 traffic them through third-party ad servers, which may be created for
