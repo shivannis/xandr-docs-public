@@ -1,10 +1,10 @@
 ---
-title: Create a Guaranteed Delivery Line Item (GDALI)
+title: Create a Guaranteed Delivery Line Item (GDALI) (JP)
 description: In this article, find information on how to create and set up a guaranteed delivery line item to meet delivery goals and serve budgets evenly and in full.
 ms.date: 10/28/2023
 ---
 
-# Create a Guaranteed Delivery Line Item (GDALI)
+# Create a Guaranteed Delivery Line Item (GDALI) (JP)
 
 This page explains how to create a guaranteed delivery line item to meet delivery goals and serve budgets evenly and in full.
 
