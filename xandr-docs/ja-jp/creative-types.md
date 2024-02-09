@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Invest - creative types 
+# Microsoft Invest - creative types (JP)
 
 You can host a variety of creative types with
 Microsoft Advertising or traffic them through third-party ad
