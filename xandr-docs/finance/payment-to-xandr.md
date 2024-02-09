@@ -2,6 +2,7 @@
 title: Microsoft Invest - Payment
 description: Learn about invoices, payment instructions and billing reports in UI.
 ms.date: 10/28/2023
+ms.custom: finance
 ---
 
 

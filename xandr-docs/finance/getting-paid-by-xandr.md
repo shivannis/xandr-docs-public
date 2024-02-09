@@ -2,6 +2,7 @@
 title: Microsoft Invest - Getting Paid
 description: This article explains about the process for receiving prompt payment from Microsoft Advertising. The payment is done within a fixed period of time.
 ms.date: 10/28/2023
+ms.custom: finance
 ---
 
 # Microsoft Invest - Getting paid

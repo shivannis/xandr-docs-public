@@ -2,6 +2,7 @@
 title: Microsoft Invest - Understanding Your Pricing Terms
 description: Learn about charges and fees for common activity on Microsoft Advertising's platform that can be found in the Billing section of the UI. 
 ms.date: 10/28/2023
+ms.custom: finance
 ---
 
 

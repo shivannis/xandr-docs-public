@@ -2,6 +2,7 @@
 title: Microsoft Invest - Charges for Buyers
 description: This article explains about the buyer auction service charge. The charge for purchases of third-party inventory can be either a fee or a deduction. 
 ms.date: 10/28/2023
+ms.custom: finance
 ---
 
 # Microsoft Invest - Charges for Buyers

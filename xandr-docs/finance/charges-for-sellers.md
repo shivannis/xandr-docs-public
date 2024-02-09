@@ -2,6 +2,7 @@
 title: Microsoft Invest - Charges for Sellers
 description: This article explains about the seller auction service charge which is a charge for selling inventory to third-party buyers.
 ms.date: 10/28/2023
+ms.custom: finance
 ---
 
 # Microsoft Invest - Charges for sellers

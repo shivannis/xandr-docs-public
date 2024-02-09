@@ -2,6 +2,7 @@
 title: Microsoft Invest - Digital Selling
 description: In this article, learn about digital selling, explore the processes, and learn the details of the documents that a digital seller is set to receive.
 ms.date: 10/28/2023
+ms.custom: finance
 ---
 
 # Microsoft Invest - Digital selling

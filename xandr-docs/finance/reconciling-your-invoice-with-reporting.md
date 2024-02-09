@@ -2,6 +2,7 @@
 title: Microsoft Invest - Reconciling Your Invoice with Reporting
 description: In this article, learn how to confirm charges on your invoice using reports, and understand what the cost of media, buyer auction service fee, creative overage fee and other charges are.
 ms.date: 10/28/2023
+ms.custom: finance
 ---
 
 # Microsoft Invest - Reconciling your invoice with reporting

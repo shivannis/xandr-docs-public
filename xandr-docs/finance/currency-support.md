@@ -2,6 +2,7 @@
 title: Microsoft Invest - Currency Support
 description: In this article, learn about the currencies supported, covering all essential concepts, intricate processes, and various settings associated with it.
 ms.date: 10/28/2023
+ms.custom: finance
 ---
 
 # Microsoft Invest - Currency support

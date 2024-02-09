@@ -2,6 +2,7 @@
 title: Microsoft Invest - Understanding Invalid Traffic
 description: In this article, learn the process of submitting claims and simplifying refunds for buyers (excluding bidders) who have purchased invalid traffic.
 ms.date: 10/28/2023
+ms.custom: finance
 ---
 
 # Microsoft Invest - Understanding invalid traffic
