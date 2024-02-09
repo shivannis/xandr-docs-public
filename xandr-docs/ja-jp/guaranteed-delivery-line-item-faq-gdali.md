@@ -30,7 +30,7 @@ There will be a number of improvements to the GDALI experience, including:
 - Underspend Catch-Up: Choose delivery catch-up following mid-flight changes.
 - Projected Spend: View Microsoft Advertising’s budget breakdown by displaying the expected allocation per day within a flight.
 - Updated Interface: A streamlined interface for faster navigation; inline forecasting updates in real-time as you create or edit your line item.
-- Monitoring: The new Monitoring workflow tracks delivery and pacing of GDALIs and Deal Line Items, all in one place (for more information, see [Monitoring](monitoring.md)).
+- Monitoring: The new Monitoring workflow tracks delivery and pacing of GDALIs and Deal Line Items, all in one place (for more information, see [Monitoring](../monetize/monitoring.md)).
 
 ## Are GDALIs going to be able to manage Programmatic buys as well?
 
