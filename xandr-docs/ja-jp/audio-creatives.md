@@ -1,11 +1,11 @@
 ---
-title: Microsoft Monetize - Audio Creatives (JP)
+title: Audio Creatives (JP)
 description: Learn about Audio Creatives in this page. 
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Audio creatives (JP)
+# Audio creatives (JP)
 
 You can host audio creatives with Microsoft Advertising or
 traffic them through third-party ad servers, which may be created for
@@ -26,9 +26,9 @@ Audio creatives can provide:
 For more information about audio inventory, targeting, reporting, and
 metrics, see the following:
 
-- [Buying Audio Inventory](buying-audio-inventory.md)
-- [Listen-Through Targeting](listen-through-targeting.md)
-- [Reporting Guide](reporting-guide.md)<a href="" class="xref"></a>
+- [Buying Audio Inventory](../moentize/buying-audio-inventory.md)
+- [Listen-Through Targeting](../moentize/listen-through-targeting.md)
+- [Reporting Guide](../moentize/reporting-guide.md)</a>
 
 ## Related topics
 
