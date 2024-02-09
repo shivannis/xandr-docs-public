@@ -1,6 +1,6 @@
 ---
 title: Finance - Understanding Your Seller Statement
-description: As a member who sells inventory on Microsoft Advertising's platform, you receive a monthly statement indicating the amount of revenue you have earned. learn about the three types of seller statements.
+description: As a member who sells inventory on Microsoft Advertising's platform, you receive a monthly statement indicating the amount of revenue you have earned.
 ms.date: 10/28/2023
 ms.custom: finance
 ---
@@ -28,7 +28,7 @@ Microsoft Advertising Client Finance: [billing@xandr.com](mailto:billing@xandr.c
 
 Here's an example of what a what a typical seller statement looks like:
 
-:::image type="content" source="./media/seller-activity-statement.png" alt-text="Screenshot of Seller Activity Statement.":::
+:::image type="content" source="./media/seller-activity-statement" alt-text="Screenshot of Seller Activity Statement.":::
 
 
 1. **Seller** - The name and address of the seller.
@@ -84,7 +84,7 @@ This document lists the amount of revenue due to be paid, along with any adjustm
     Microsoft Advertising less any bank fees incurred from the
     Seller’s bank (which Microsoft Advertising can't know in
     advance).
-:::image type="content" source="./media/seller-remittance-statement-sanitized.png" alt-text="Screenshot of Seller Remittance Statement Sanitized.":::
+:::image type="content" source="../monetize/media/seller-remittance-statement-sanitized.png" alt-text="Screenshot of Seller Remittance Statement Sanitized.":::
 
 
 ## Netting statment
@@ -140,7 +140,7 @@ Client Finance: [billing@xandr.com](mailto:billing@xandr.com).
     1. **Total Amount Due** - If the total seller revenue is less than
         the total invoice amounts, this field lists the amount you must
         pay Microsoft Advertising.
-:::image type="content" source="./media/netting-statement-annotated.png" alt-text="Screenshot of Netting Statement annotated.":::
+:::image type="content" source="../monetize/media/netting-statement-annotated.png" alt-text="Screenshot of Netting Statement annotated.":::
 
 ## Invoices
 
