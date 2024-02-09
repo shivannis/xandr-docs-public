@@ -1,11 +1,11 @@
 ---
-title: Microsoft Invest - Currency Support
-description: In this article, learn about the currencies supported, covering all essential concepts, intricate processes, and various settings associated with it.
+title: Finance - Currency Support
+description: In this article, learn about the currencies supported, covering all essential concepts, and intricate processes.
 ms.date: 10/28/2023
 ms.custom: finance
 ---
 
-# Microsoft Invest - Currency support
+# Finance - Currency support
 
 Support for multiple currencies allows buyers and sellers to transact with one another globally on the Microsoft Advertising platform. However, it is important for all parties to understand how spending and payment in different currencies flows from buyers to sellers and partners on the platform. This page provides an explanation of all relevant concepts, processes and settings. In addition, Microsoft Advertising is expanding its support for non-USD currencies (as part of a larger multi-year platform-wide localization effort). As a result, this page will be updated periodically to explain how these changes affect the currencies supported on the platform, reporting, and invoicing and what customization options you have. If you have questions about currency support please contact your Account Manager.
 

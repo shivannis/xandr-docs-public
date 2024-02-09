@@ -1,11 +1,11 @@
 ---
-title: Microsoft Invest - Billing
-description: This article provides resources for accessing and understanding your billing information like pricing terms, credit status, and so on.
+title: Finance - Billing
+description: This article provides resources for accessing and understanding your billing information.
 ms.date: 10/28/2023
 ms.custom: finance
 ---
 
-# Microsoft Invest - Billing
+# Finance - Billing
 
 For real-time inventory, Microsoft Advertising serves as the clearinghouse by paying inventory sellers and then billing buyers. Networks and direct marketers pay their managed publishers directly. This section provides resources for accessing and understanding your billing information.
 
@@ -34,7 +34,7 @@ For more details about pricing terms, review your contract or see [Understanding
 ## Giving users access to billing information
 
 Only Member-level users can be given access to billing information. To do so:
-Assign the user the **Financial Observer** role. Note that this grants the user the ability to install apps as well as view billing information. For more details, see [Create a User](create-a-user.md).
+Assign the user the **Financial Observer** role. Note that this grants the user the ability to install apps as well as view billing information. For more details, see [Create a User](../invest/create-a-user.md).
 
 ## Checking your credit status
 

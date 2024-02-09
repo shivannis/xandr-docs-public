@@ -1,12 +1,12 @@
 ---
-title: Microsoft Invest - Credit Limit Overview
-description: Learn how to offer credit management to support an enhanced level of service while ensuring that all our partners are treated fairly.
+title: Finance - Credit Limit Overview
+description: Learn how to offer credit management to support enhanced level of service.
 ms.date: 10/28/2023
 ms.custom: finance
 ---
 
 
-# Microsoft Invest - credit limit overview 
+# Finance - credit limit overview 
 
 Microsoft Advertising offers credit management to support an
 enhanced level of service while ensuring that all our partners are

@@ -1,12 +1,12 @@
 ---
-title: Microsoft Invest - Understanding Your Seller Statement
+title: Finance - Understanding Your Seller Statement
 description: As a member who sells inventory on Microsoft Advertising's platform, you receive a monthly statement indicating the amount of revenue you have earned. learn about the three types of seller statements.
 ms.date: 10/28/2023
 ms.custom: finance
 ---
 
 
-# Microsoft Invest - Understanding your seller statement
+# Finance - Understanding your seller statement
 
 As a member who sells inventory on Microsoft Advertising's
 platform, you receive a monthly statement indicating the amount of revenue you have earned. This page explains the three types of seller statements. Your contract terms define the type of statement you will receive.

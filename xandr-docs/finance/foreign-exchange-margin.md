@@ -1,11 +1,11 @@
 ---
-title: Microsoft Invest - Foreign Exchange Margin
+title: Finance - Foreign Exchange Margin
 description: Foreign exchange margin charges clear media costs in non-USD currencies. This offsets the risk of currency fluctuations during buying or selling activity.
 ms.date: 10/28/2023
 ms.custom: finance
 ---
 
-# Microsoft Invest - Foreign exchange margin
+# Finance - Foreign exchange margin
 
 Microsoft Advertising charges an **FX Margin** (Foreign Exchange Margin) for clearing media cost in non-USD currencies. This charge is applied to offset the risk that Microsoft Advertising assumes due to the natural fluctuations of currency exchange rates during the course of a month of buying/selling activity. If you have any questions about this charge, contact your Account Manager.
 

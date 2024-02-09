@@ -1,11 +1,11 @@
 ---
-title: Microsoft Invest - Understanding Invalid Traffic
+title: Finance - Understanding Invalid Traffic
 description: In this article, learn the process of submitting claims and simplifying refunds for buyers (excluding bidders) who have purchased invalid traffic.
 ms.date: 10/28/2023
 ms.custom: finance
 ---
 
-# Microsoft Invest - Understanding invalid traffic
+# Finance - Understanding invalid traffic
 
 Invalid traffic, while low on the platform due to proactive monitoring, is a legitimate concern for buyers and sellers of digital advertising. As part of the effort to combat this, in March of 2018 we implemented policies that streamline the refund process for buyers (excluding bidders) who have purchased invalid traffic.
 

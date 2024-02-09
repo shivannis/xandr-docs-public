@@ -1,11 +1,11 @@
 ---
-title: Microsoft Invest - Billing and Settlement FAQ
-description: In this article, find answers for some frequently asked questions regarding Billing like charges, credits, invoices, reporting, and so on.
+title: Finance - Billing and Settlement FAQ
+description: In this article, find answers for some frequently asked questions regarding Billing.
 ms.date: 10/28/2023
 ms.custom: finance
 ---
 
-# Microsoft Invest - Billing and Settlement FAQ
+# Finance - Billing and Settlement FAQ
 
 ## Finance charges
 
@@ -117,7 +117,7 @@ Depending on which product you use, you can locate historical billing documents 
 ### Why am I getting an invoice for data from both the data provider and Microsoft Advertising?
 
 You can purchase data through Microsoft Advertising or directly from your data provider. If you purchased data through Microsoft Advertising, you will see that activity in our **Data Usage Report** in the UI. Otherwise, you will be billed by the Data Provider. For more information on Data Clearing, see
-[Data Marketplace Overview](data-marketplace-overview.md).
+[Data Marketplace Overview](../invest/data-marketplace-overview.md).
 
 ### How can I set up netting if we buy and sell through Microsoft Advertising?
 

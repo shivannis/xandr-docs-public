@@ -1,11 +1,11 @@
 ---
-title: Microsoft Invest - Buyer Auction Service Charge Mechanics
-description: In this article, understand what Buyer Auction Service Charge (BASC) is, how it is calculated, and how it is charged by Microsoft Advertising.
+title: Finance - Buyer Auction Service Charge Mechanics
+description: In this article, understand how Buyer Auction Service Charge (BASC) is calculated.
 ms.date: 10/28/2023
 ms.custom: finance
 ---
 
-# Microsoft Invest - Buyer auction service charge mechanics
+# Finance - Buyer auction service charge mechanics
 
 When purchasing inventory with Microsoft Advertising, the buyer may be charged the Buyer Auction Service Charge (BASC) specified in its contract. BASC is quoted as a percentage of Media Cost. Microsoft Advertising can apply this charge in one of two ways, either as a fee or a deduction. Which of the two is being used will be specified in the contract.
 
