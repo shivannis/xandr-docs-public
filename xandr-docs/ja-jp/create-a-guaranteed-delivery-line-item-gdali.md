@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 This page explains how to create a guaranteed delivery line item to meet delivery goals and serve budgets evenly and in full.
 
-You can create a new guaranteed delivery augmented line item (GDALI) from the **Line Items** screen (for more information, see [Monitor Line Items](monitor-line-items.md)):
+You can create a new guaranteed delivery augmented line item (GDALI) from the **Line Items** screen (for more information, see [Monitor Line Items](../monetize/monitor-line-items.md)):
 
 1. On the **Line Items** screen, click the **+New** drop-down and select **Line Item** menu.
 1. On the **Create New Line Item** screen, select **Guaranteed Delivery Line Item**.
@@ -61,7 +61,7 @@ You can set the name, state, and ad type of the GDALI from the **Basic Setting
     > - **Impressions** delivery types have a default priority of 14.
     > - **Exclusive** delivery types have a default priority of 19.
 
-1. **Allow RTB Competition**: If you have assigned the **Impressions** delivery type to the line item, the **Allow RTB Competition** feature is enabled by default. When enabled with a priority below reselling priority, a guaranteed line item will compete with Open Market (or RTB) demand to maximize yield while ensuring full delivery of the budget (for more information, see [Open Dynamic Allocation and Flexible Priorities](open-dynamic-allocation-and-flexible-priorities.md)). Although not recommended, disabling **Allow RTB Competition** will restrict competition in the auction to only direct line items.
+1. **Allow RTB Competition**: If you have assigned the **Impressions** delivery type to the line item, the **Allow RTB Competition** feature is enabled by default. When enabled with a priority below reselling priority, a guaranteed line item will compete with Open Market (or RTB) demand to maximize yield while ensuring full delivery of the budget (for more information, see [Open Dynamic Allocation and Flexible Priorities](../monetize/open-dynamic-allocation-and-flexible-priorities.md)). Although not recommended, disabling **Allow RTB Competition** will restrict competition in the auction to only direct line items.
 
     > [!NOTE]
     > Disabling **Allow RTB Competition** can negatively affect your overall yield. **Allow RTB Competition** is not available for line items with **Exclusive** delivery type. Line items with **Exclusive** delivery type take precedence over Open Market (or RTB) demand.
@@ -70,7 +70,7 @@ You can set the name, state, and ad type of the GDALI from the **Basic Setting
 
     One creative for each size must be eligible to serve on the page. All creatives will serve if ad slots are available. If more than one creative per size exists, creatives will rotate through a single slot.
 
-    Delivery of the **Master Creative** is used for pacing and budgeting. Defining **Master Creative** and **Companion Creative** sizes is used for forecasting and reservation purposes. Roadblock delivery is based on the creatives associated with the line item. For more information, see [Target Your Inventory with Roadblocking](target-your-inventory-with-roadblocking.md).
+    Delivery of the **Master Creative** is used for pacing and budgeting. Defining **Master Creative** and **Companion Creative** sizes is used for forecasting and reservation purposes. Roadblock delivery is based on the creatives associated with the line item. For more information, see [Target Your Inventory with Roadblocking](../monetize/target-your-inventory-with-roadblocking.md).
 
     To enable **Roadblocking**:
 
@@ -139,13 +139,13 @@ To set up line item budgeting and scheduling:
 
     **Budget Overview**: Once a flight is configured, the **Budget Overview** chart provides a visualization of how the pacing percent is expected to impact delivery.
 
-    For more information on flight pacing, see [Guaranteed Delivery Pacing](guaranteed-delivery-pacing.md).
+    For more information on flight pacing, see [Guaranteed Delivery Pacing](../monetize/guaranteed-delivery-pacing.md).
 
 1. **Underspend Catch-Up**: Select an option:
     - **Evenly**: Unspent daily budget will be distributed evenly throughout the remainder of the flight.
     - **ASAP** (default): Unspent daily budget will be spent as quickly as possible based on your line item settings to ensure the highest probability of delivering your budget in its entirety.
 
-1. **Daypart**: Add any necessary settings to target users based on the day and time when they see impressions. For more information, see [Daypart Targeting](daypart-targeting.md).
+1. **Daypart**: Add any necessary settings to target users based on the day and time when they see impressions. For more information, see [Daypart Targeting](../monetize/daypart-targeting.md).
 
 ## Inventory and environment targeting
 
@@ -169,7 +169,7 @@ To set up line item budgeting and scheduling:
       > [!NOTE]
       > When targeting more than one universal category, the categories have an OR relationship. For example, if you target the "News" and "Finance" categories, you will bid on inventory that is in either category. The inventory does not need to be in both categories.
 
-    - **Custom Categories**: These are defined by sellers. Sellers create these and apply them to slices of their inventory to package their inventory for specific buyers to target. Manage your member’s custom categories in the **Network** tab (for more information, see [Manage Custom Content Categories](manage-custom-content-categories.md)).
+    - **Custom Categories**: These are defined by sellers. Sellers create these and apply them to slices of their inventory to package their inventory for specific buyers to target. Manage your member’s custom categories in the **Network** tab (for more information, see [Manage Custom Content Categories](../monetize/manage-custom-content-categories.md)).
 
       > [!NOTE]
       > When targeting more than one custom category, the categories have an OR relationship. For example, if you target two custom categories, you will bid on inventory that is in either category. The inventory does not need to be in both categories.
@@ -178,13 +178,13 @@ To set up line item budgeting and scheduling:
 
 1. **Key/Value**: You can configure your own keys and their corresponding values to make full use of publisher data and help advertisers reach their intended audience. Microsoft Advertising allows you to create custom key/value sets that can be used in advertising campaigns to target specific types of customers.
 
-    To edit key/value sets, click the pencil icon next to **Key/Value** to open the **Key/Value Targeting** screen. For more information, see [Key/Value Targeting](key-value-targeting.md).
+    To edit key/value sets, click the pencil icon next to **Key/Value** to open the **Key/Value Targeting** screen. For more information, see [Key/Value Targeting](../monetize/key-value-targeting.md).
 
-1. **Video**: When the **Ad Type** (in the **Basic Settings** section) is **Video**, the **Video** option will be available to configure **Video Targeting**. The default setting for Video Targeting is **Any position; any playback method; any player width; any ad pod position**. To edit Video Targeting settings, click the icon next to **Video** to open the **Video Targeting** screen. For more information on configuring Video Targeting, see [Video Targeting](video-targeting.md).
+1. **Video**: When the **Ad Type** (in the **Basic Settings** section) is **Video**, the **Video** option will be available to configure **Video Targeting**. The default setting for Video Targeting is **Any position; any playback method; any player width; any ad pod position**. To edit Video Targeting settings, click the icon next to **Video** to open the **Video Targeting** screen. For more information on configuring Video Targeting, see [Video Targeting](../monetize/video-targeting.md).
 
-1. **System**: You can target users based on their operating systems, browsers, language, device model, or carrier. To edit system targets, click the pencil icon next to **System** to open the **System Targeting** screen. For more information, see [System Targeting](system-targeting.md).
+1. **System**: You can target users based on their operating systems, browsers, language, device model, or carrier. To edit system targets, click the pencil icon next to **System** to open the **System Targeting** screen. For more information, see [System Targeting](../monetize/system-targeting.md).
 
-1. **Page Properties**: You can target impressions based on the position of the creative tag on the page or based on values passed in the query string of the ad call. To edit page properties, click the pencil icon next to **Page Properties** to open the **Page Properties Targeting** screen. For more information, see [Page Properties Targeting](page-properties-targeting.md).
+1. **Page Properties**: You can target impressions based on the position of the creative tag on the page or based on values passed in the query string of the ad call. To edit page properties, click the pencil icon next to **Page Properties** to open the **Page Properties Targeting** screen. For more information, see [Page Properties Targeting](../monetize/page-properties-targeting.md).
 
 ## Audience targeting
 
@@ -193,26 +193,26 @@ To set up line item budgeting and scheduling:
     To set up geography targeting:
 
     1. Click in the **Geography** field and select any applicable checkboxes for country-level targeting.
-    1. (Optional) Click **+ Additional Geo Restrictions** to set up or import additional geographical restrictions if necessary (for more information, see [Additional Geo Restrictions](additional-geo-restrictions-ali.md)).
+    1. (Optional) Click **+ Additional Geo Restrictions** to set up or import additional geographical restrictions if necessary (for more information, see [Additional Geo Restrictions](../monetize/additional-geo-restrictions-ali.md)).
 
 1. **Audience & Location Segments**: You can set up a line item to target segments from third-party data providers or segments you've created. To set up audience and location segments:
-    - **My Audience Segments**: Click the arrow to open the **My Segments** tab of the **Add Segments** screen (for more information, see [Set Up Segment Targeting on a Line Item](set-up-segment-targeting-on-a-line-item.md)).
-    - **Third Party Segments**: Click the arrow to open the **Third Party Segments** tab in the **Add Segment** screen (for more information, see [Set Up Segment Targeting on a Line Item](set-up-segment-targeting-on-a-line-item.md)).
+    - **My Audience Segments**: Click the arrow to open the **My Segments** tab of the **Add Segments** screen (for more information, see [Set Up Segment Targeting on a Line Item](../monetize/set-up-segment-targeting-on-a-line-item.md)).
+    - **Third Party Segments**: Click the arrow to open the **Third Party Segments** tab in the **Add Segment** screen (for more information, see [Set Up Segment Targeting on a Line Item](../monetize/set-up-segment-targeting-on-a-line-item.md)).
 
-1. **Frequency and Recency**: To set frequency and recency caps, set **Caps** to the **on** position (for more information, see [Frequency and Recency Caps](frequency-and-recency-caps.md)):
+1. **Frequency and Recency**: To set frequency and recency caps, set **Caps** to the **on** position (for more information, see [Frequency and Recency Caps](../monetize/frequency-and-recency-caps.md)):
     - To set **Frequency** (how many):
 
       1. Enter a number for imps per (impressions per interval) and select an appropriate interval in the drop-down.
       1. (Optional) Click **+ Add another cap** to add additional frequency caps.
 
-      For more information, see [Set a Frequency Cap](set-a-frequency-cap.md).
+      For more information, see [Set a Frequency Cap](../monetize/set-a-frequency-cap.md).
 
     - To set **Recency** (how often):
 
       1. Click **+ Add another cap**.
       1. Enter a whole number after **1 imp per** and select an appropriate interval in the drop-down.
 
-      For more information, see [Set a Recency Cap](set-a-recency-cap.md).
+      For more information, see [Set a Recency Cap](../monetize/set-a-recency-cap.md).
 
     - **Serve only 1 imp per page**: Set this to the on position if you want to limit the number of impressions that an individual advertiser can serve on a page in multi-tag auctions.
 
@@ -223,7 +223,7 @@ To set up line item budgeting and scheduling:
 
 1. **Demographics**: Publishers may optionally pass the age or gender of users in the query string of their ad calls. In these cases, you can target users based on this information. To set up demographic targeting:
     1. Click on the pencil icon under **Demographics** to open the **Demographics Targeting** screen (the default setting is **any age; any gender**).
-    1. Select appropriate **Age** and **Gender** settings (for more information, see [Demography Targeting](demography-targeting.md)).
+    1. Select appropriate **Age** and **Gender** settings (for more information, see [Demography Targeting](../monetize/demography-targeting.md)).
 
 ## Creatives
 
@@ -233,17 +233,17 @@ To set up line item budgeting and scheduling:
     - **Evenly weight creatives** (default) - Our system will evenly serve creatives of the same size.
     - **Manually weight creatives** - Rotation is based on a user-supplied weight.
 
-    For more information, see [Associate Creatives with a Line Item](associate-creatives-with-a-line-item.md).
+    For more information, see [Associate Creatives with a Line Item](../monetize/associate-creatives-with-a-line-item.md).
 
-1. **Associated Creatives**: You can associate appropriate creatives to the GDALI. For more information, see [Associate Creatives with a Line Item](associate-creatives-with-a-line-item.md).
+1. **Associated Creatives**: You can associate appropriate creatives to the GDALI. For more information, see [Associate Creatives with a Line Item](../monetize/associate-creatives-with-a-line-item.md).
 
 1. **Landing Page URL**: Enter a URL for a landing page that the user will be redirected to upon clicking each creative.
 
 ## Programmable splits
 
-You can use programmable splits to manage creative allocation across a subset of the line item’s targeted inventory. Splits are recommended if you have sophisticated targeting requirements. For more information, see [Working with Programmable Splits](working-with-programmable-splits.md).
+You can use programmable splits to manage creative allocation across a subset of the line item’s targeted inventory. Splits are recommended if you have sophisticated targeting requirements. For more information, see [Working with Programmable Splits](../monetize/working-with-programmable-splits.md).
 
-To set up programmable splits for a line item, see [Configure a Programmable Split](configure-a-programmable-split.md).
+To set up programmable splits for a line item, see [Configure a Programmable Split](../monetize/configure-a-programmable-split.md).
 
 ## Reporting labels & comments
 
@@ -278,5 +278,5 @@ To save the GDALI, click one of the following options in the **Save and Reserve*
 
 ## Related topics
 
-- [Guaranteed Delivery (GDALI)](guaranteed-delivery-gdali.md)
-- [Guaranteed Delivery Line Item FAQ (GDALI)](guaranteed-delivery-line-item-faq-gdali.md) (login required)
+- [Guaranteed Delivery (GDALI)](../monetize/guaranteed-delivery-gdali.md)
+- [Guaranteed Delivery Line Item FAQ (GDALI)](../monetize/guaranteed-delivery-line-item-faq-gdali.md) (login required)
