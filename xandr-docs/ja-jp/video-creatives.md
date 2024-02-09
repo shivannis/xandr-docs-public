@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Video Creatives (JP)
+title: Video Creatives (JP)
 description: You can host or traffic video creatives through third-party ad servers. Video creatives have higher conversion rates and can be configured in various ways. 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Video creatives (JP)
+# Video creatives (JP)
 
 You can host video creatives with Microsoft Advertising or traffic them through third-party ad servers. Non-linear creatives, such as a non-video overlay creative that is served on top of the player, are not supported.
 
@@ -32,7 +32,7 @@ Microsoft Advertising supports Video Ad Serving Template (VAST) and Video Player
 
 ## Related topics
 
-- [Video Creative Guidelines and Specifications](./video-creative-guidelines-and-specifications.md)
-- [Add Creatives in Bulk](./add-creatives-in-bulk.md)
-- [Add a Creative](./add-a-creative.md)
-- [Supported VAST Features](./supported-vast-features.md)
+- [Video Creative Guidelines and Specifications](../invest/video-creative-guidelines-and-specifications.md)
+- [Add Creatives in Bulk](../invest/add-creatives-in-bulk.md)
+- [Add a Creative](../invest/add-a-creative.md)
+- [Supported VAST Features](../invest/upported-vast-features.md)
