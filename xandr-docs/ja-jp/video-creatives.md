@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Video Creatives
+title: Microsoft Invest - Video Creatives (JP)
 description: You can host or traffic video creatives through third-party ad servers. Video creatives have higher conversion rates and can be configured in various ways. 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Video creatives
+# Microsoft Invest - Video creatives (JP)
 
 You can host video creatives with Microsoft Advertising or traffic them through third-party ad servers. Non-linear creatives, such as a non-video overlay creative that is served on top of the player, are not supported.
 
