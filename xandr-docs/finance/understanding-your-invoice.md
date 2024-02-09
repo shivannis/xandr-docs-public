@@ -1,6 +1,6 @@
 ---
 title: Finance - Understanding Your Invoice
-description: Learn Annotated descriptions of the contents of your Microsoft Advertising invoices.
+description: Learn Annotated descriptions of the contents of your Microsoft Advertising invoice.
 ms.date: 10/28/2023
 ms.custom: finance
 ---
