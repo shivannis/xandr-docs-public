@@ -35,4 +35,4 @@ Microsoft Advertising supports Video Ad Serving Template (VAST) and Video Player
 - [Video Creative Guidelines and Specifications](../invest/video-creative-guidelines-and-specifications.md)
 - [Add Creatives in Bulk](../invest/add-creatives-in-bulk.md)
 - [Add a Creative](../invest/add-a-creative.md)
-- [Supported VAST Features](../invest/upported-vast-features.md)
+- [Supported VAST Features](../invest/supported-vast-features.md)
