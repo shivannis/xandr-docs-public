@@ -21,9 +21,9 @@ Setting up a GDALI typically involves making requests to the following API servi
 
 | API Endpoint | API Object | Detailed Reference |
 |:---|:---|:---|
-| [https://api.appnexus.com/insertion-order](https://api.appnexus.com/insertion-order) | insertion-order | [Insertion Order Service](../monetize/insertion-order-service.md) |
+| [https://api.appnexus.com/insertion-order](https://api.appnexus.com/insertion-order) | insertion-order | [Insertion Order Service](../digital-platform-api/insertion-order-service.md) |
 | [https://api.appnexus.com/profile](https://api.appnexus.com/profile) | profile | [Profile Service](../digital-platform-api/profile-service.md) |
-| [https://api.appnexus.com/line-item](https://api.appnexus.com/line-item) | line-item (ALI) | [Line Item - ALI Service](../monetize/line-item-service---gdali.md) |
+| [https://api.appnexus.com/line-item](https://api.appnexus.com/line-item) | line-item (ALI) | [Line Item - ALI Service](../digital-platform-api/line-item-service---gdali.md) |
 
 This guide uses `cURL` examples for all requests. You can use other API request tools (e.g., [Postman](https://www.getpostman.com/)), but you’ll then need to adjust the examples accordingly.
 
