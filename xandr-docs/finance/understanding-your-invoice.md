@@ -27,7 +27,7 @@ calculating fees and charges on invoices.
 Here's an example of what a typical invoice will look like (see
 descriptions of annotations below):
 
-:::image type="content" source="./media/invoice-annotated.png" alt-text="Screenshot of Invoice Annotated.":::
+:::image type="content" source="../monetize/media/invoice-annotated.png" alt-text="Screenshot of Invoice Annotated.":::
 
 Your invoice lists the amount you have spent on
 Microsoft Advertising's platform; this is the amount you must
