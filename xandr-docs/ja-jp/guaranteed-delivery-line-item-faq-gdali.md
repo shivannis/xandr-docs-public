@@ -1,10 +1,10 @@
 ---
-title: Guaranteed Delivery Line Item FAQ (GDALI)
+title: Guaranteed Delivery Line Item FAQ (GDALI) (JP)
 description: In this article, find answers to frequently asked questions regarding guaranteed delivery augmented line items (GDALI).
 ms.date: 10/28/2023
 ---
 
-# Guaranteed Delivery Line Item FAQ (GDALI)
+# Guaranteed Delivery Line Item FAQ (GDALI) (JP)
 
 Answers to common questions about Guaranteed Delivery Line Items (GDALI).
 
