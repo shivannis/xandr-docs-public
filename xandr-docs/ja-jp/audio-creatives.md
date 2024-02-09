@@ -26,16 +26,15 @@ Audio creatives can provide:
 For more information about audio inventory, targeting, reporting, and
 metrics, see the following:
 
-- [Buying Audio Inventory](../moentize/buying-audio-inventory.md)
-- [Listen-Through Targeting](../moentize/listen-through-targeting.md)
-- [Reporting Guide](../moentize/reporting-guide.md)</a>
+- [Buying Audio Inventory](../monetize/buying-audio-inventory.md)
+- [Listen-Through Targeting](../monetize/listen-through-targeting.md)
+- [Reporting Guide](../monetize/reporting-guide.md)</a>
 
 ## Related topics
 
-- [Audio Creative Guidelines and Specifications](audio-creative-guidelines-and-specifications.md)
-- [Video Creatives](video-creatives.md)<a href="" class="xref"
-  title="You can host video creatives with Microsoft Advertising or traffic them through third-party ad servers. Non-linear creatives, such as a non-video overlay creative that is served on top of the player, are not supported."></a>
+- [Audio Creative Guidelines and Specifications](../monetize/audio-creative-guidelines-and-specifications.md)
+- [Video Creatives](video-creatives.md)
 - [Native Creatives](native-creatives.md)
 - [Banner and HTML5 Creatives](banner-and-html5-creatives.md)
-- [Add Creatives in Bulk](add-creatives-in-bulk.md)
-- [Add a Creative](add-a-creative.md)
+- [Add Creatives in Bulk](../monetize/add-creatives-in-bulk.md)
+- [Add a Creative](../monetize/add-a-creative.md)
