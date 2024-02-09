@@ -2,7 +2,6 @@
 title: Microsoft Invest - Billing and Settlement FAQ
 description: In this article, find answers for some frequently asked questions regarding Billing like charges, credits, invoices, reporting, and so on.
 ms.date: 10/28/2023
-ms.custom: finance
 ---
 
 # Microsoft Invest - Billing and Settlement FAQ
