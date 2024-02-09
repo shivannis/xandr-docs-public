@@ -1,11 +1,11 @@
 ---
-title: Microsoft Monetize - Banner and HTML5 Creatives
+title: Microsoft Monetize - Banner and HTML5 Creatives (JP)
 description: Learn what are Banner Creatives and HTML5 Creatives and how you can host them.
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Banner and HTML5 creatives
+# Microsoft Monetize - Banner and HTML5 creatives (JP)
 
 You can host common display creatives such as banner and HTML5 with
 Microsoft Advertising or traffic them through third-party ad
