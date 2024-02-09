@@ -1,10 +1,10 @@
 ---
-title: Guaranteed Delivery (GDALI)
+title: Guaranteed Delivery (GDALI) (JP)
 description: In this article, learn about Guaranteed delivery augmented line items and the different delivery types that they have.
 ms.date: 10/28/2023
 ---
 
-# Guaranteed delivery (GDALI)
+# Guaranteed delivery (GDALI) (JP)
 
 Guaranteed delivery line items help you meet delivery goals and serve budgets evenly and in full.
 
