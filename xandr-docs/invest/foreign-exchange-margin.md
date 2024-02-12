@@ -72,6 +72,6 @@ Buyers can view either FX Margin Fees or Deductions in the Buying Billing Report
 
 To protect contract terms privacy, Microsoft Advertising does not expose sell-side revenue sharing in reporting.
 
-## Related topics
+## Related topic
 
 - [Currency Support](./currency-support.md)
