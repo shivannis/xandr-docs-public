@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: ja-jp
 ---
 
-# Publisher GDALI API setup guide
+# Publisher GDALI API setup guide (JP)
 
 Setting up an API implementation of a Guaranteed Delivery Augmented Line Item (GDALI) can seem complicated because it requires configuring a number of different properties on different API objects. This guide will explain the process of creating and configuring a typical GDALI using our API.
 
@@ -21,20 +21,20 @@ Setting up a GDALI typically involves making requests to the following API servi
 
 | API Endpoint | API Object | Detailed Reference |
 |:---|:---|:---|
-| [https://api.appnexus.com/insertion-order](https://api.appnexus.com/insertion-order) | insertion-order | [Insertion Order Service](insertion-order-service.md) |
-| [https://api.appnexus.com/profile](https://api.appnexus.com/profile) | profile | [Profile Service](profile-service.md) |
-| [https://api.appnexus.com/line-item](https://api.appnexus.com/line-item) | line-item (ALI) | [Line Item - ALI Service](line-item-service---gdali.md) |
+| [https://api.appnexus.com/insertion-order](https://api.appnexus.com/insertion-order) | insertion-order | [Insertion Order Service](../digital-platform-api/insertion-order-service.md) |
+| [https://api.appnexus.com/profile](https://api.appnexus.com/profile) | profile | [Profile Service](../digital-platform-api/profile-service.md) |
+| [https://api.appnexus.com/line-item](https://api.appnexus.com/line-item) | line-item (ALI) | [Line Item - ALI Service](../digital-platform-api/line-item-service---gdali.md) |
 
 This guide uses `cURL` examples for all requests. You can use other API request tools (e.g., [Postman](https://www.getpostman.com/)), but you’ll then need to adjust the examples accordingly.
 
 ## Prerequisites
 
-Before beginning this setup, be sure to read [API Getting Started](api-getting-started.md). It provides information on testing environments, usage constraints, API semantics (running commands, filtering, sorting, etc.), and best practices.
+Before beginning this setup, be sure to read [API Getting Started](../digital-platform-api/api-getting-started.md). It provides information on testing environments, usage constraints, API semantics (running commands, filtering, sorting, etc.), and best practices.
 
 This guide assumes you have created or can access the following API objects required to create any GDALI:
 
-- `advertiser`: For more information, see [Advertiser Service](advertiser-service.md).
-- `insertion-order`: (Instructions for creating a seamless insertion order included below for convenience) For more information, see [Insertion Order Service](insertion-order-service.md).
+- `advertiser`: For more information, see [Advertiser Service](../digital-platform-api/advertiser-service.md).
+- `insertion-order`: (Instructions for creating a seamless insertion order included below for convenience) For more information, see [Insertion Order Service](../digital-platform-api/insertion-order-service.md).
 
     > [!NOTE]
     > GDALIs can only be associated with seamless insertion orders; legacy/non-seamless insertion orders are not supported.
@@ -45,7 +45,7 @@ Xandr API objects often have dependencies on other objects and there is an orde
 
 ## Best practices
 
-For a general list of best practices to follow when working with the API, see [API Best Practices](api-best-practices.md). The following are some best practices that are specific to a GDALI setup:
+For a general list of best practices to follow when working with the API, see [API Best Practices](../digital-platform-api/api-best-practices.md). The following are some best practices that are specific to a GDALI setup:
 
 - **Set the `state` field of the GDALI to** `"inactive"` until the line item is fully configured and ready for testing.
 - **Note the ID of any objects you create**. The IDs of objects you create are returned in the response body of requests. You'll often need these IDs later so copying them when they're returned can reduce the number of additional GET requests you have to make to obtain them.
@@ -65,7 +65,7 @@ GDALI with typical configurations:
 ### Step 1: Obtain an authorization token
 
 First, you’ll need to obtain an authorization token. You must then include this authorization token in all subsequent requests. For more
-information, see [Authentication Service](authentication-service.md). To obtain an authorization token, do the following:
+information, see [Authentication Service](../digital-platform-api/authentication-service.md). To obtain an authorization token, do the following:
 
 1. Create a JSON file containing your username and password.
 
@@ -79,7 +79,7 @@ information, see [Authentication Service](authentication-service.md). To obtain
     ```
 
 1. Make a `POST` request to the `/auth` endpoint with this JSON file in the request body. For more
-information, see [Authentication Service](authentication-service.md). In the `cURL` request below, the authorization token returned is stored in the “`cookies`” file.
+information, see [Authentication Service](../digital-platform-api/authentication-service.md). In the `cURL` request below, the authorization token returned is stored in the “`cookies`” file.
 
     ```
     curl -c cookies -X POST -d @authentication.json 'https://api.appnexus.com/auth'
@@ -103,12 +103,12 @@ information, see [Authentication Service](authentication-service.md). In the `c
 ### Step 2: Create a seamless insertion order
 
 Next, create a seamless insertion order. Be sure to note the ID for this insertion order for later use. For more
-information, see [Insertion Order Service](insertion-order-service.md).
+information, see [Insertion Order Service](../digital-platform-api/insertion-order-service.md).
 
 > [!NOTE]
 > For an insertion order to be associated with a guaranteed delivery augmented line item (GDALI), the insertion order must:
 >
-> - Be a [Seamless Insertion Order](insertion-order-service.md) (legacy insertion orders are not compatible).  
+> - Be a [Seamless Insertion Order](../digital-platform-api/insertion-order-service.md) (legacy insertion orders are not compatible).  
 > - Have `budget_type` set to `"flexible"` or `"impression"`.
 > - Not contain more than one `budget_intervals` array.
 > - Have unlimited budget (set via the `budget_intervals` array).
@@ -124,12 +124,12 @@ information, see [Insertion Order Service](insertion-order-service.md).
 |:---|:---|:---|
 | `name` | string | The name of the insertion order. (Maximum of 255 characters.) |
 | `state` | enum | The state of the insertion order. Possible values: `"active"` or `"inactive"`. |
-| `currency` | string | The currency assigned to the insertion order. For a full list of available currencies, use the read-only [Currency Service](currency-service.md). <br><br>**Note:** Once the insertion order has been created, the currency cannot be changed. |
+| `currency` | string | The currency assigned to the insertion order. For a full list of available currencies, use the read-only [Currency Service](../digital-platform-api/currency-service.md). <br><br>**Note:** Once the insertion order has been created, the currency cannot be changed. |
 | `budget_type` | enum | The budget type of the insertion order. For GDALI, the value must be set to `"flexible"` or `"impression"`. |
 | `budget_intervals` | array | Budget intervals enable date intervals to be attached to an insertion order.<br><br>**Note:**<br>- The insertion order must not contain more than one `budget_intervals` array.<br>- The insertion order must have unlimited budget (all budget fields in the `budget_intervals` array must be omitted or set to `null`). |
 | `budget_intervals.start_date` | timestamp<br>(obj in array) | The start date of the budget interval. Format must be `YYYY-MM-DD hh:mm:ss` <br>**Note:** `hh:mm:ss` must be set to `00`. Typically this would be the current date. |
 | `budget_intervals.end_date` | timestamp<br>(obj in array) | The end date of the budget interval. This value is optional. |
-| `budget_intervals.timezone` | string<br>(obj in array) | The timezone by which budget and spend are counted. For a list of acceptable timezone values, see [API Timezones](api-timezones.md). The default value is `"EST5EDT"` or the advertiser's timezone. |
+| `budget_intervals.timezone` | string<br>(obj in array) | The timezone by which budget and spend are counted. For a list of acceptable timezone values, see [API Timezones](../digital-platform-api/api-timezones.md). The default value is `"EST5EDT"` or the advertiser's timezone. |
 | `profile_id` | int | A profile is a generic set of rules for targeting inventory.<br><br>**Warning:** Associating a profile_id (e.g., frequency capping or setting additional targeting) on the insertion order object may result in unexpected forecasting or delivery for programmatic guaranteed (PGLI) and guaranteed delivery (GDALI) line items. It is recommended not to use profile_id for insertion orders intended for use with GDALIs. |
 
 1. Create a publisher insertion order JSON:
@@ -245,7 +245,7 @@ targeting, which could have implications on forecasting and reservations. Be sur
 
 #### JSON fields for GDALI profile
 
-For a full list of fields and more information, see [Profile Service](profile-service.md).  
+For a full list of fields and more information, see [Profile Service](../digital-platform-api/profile-service.md).  
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -468,23 +468,23 @@ Finally, you'll need to create the GDALI. In the example below, we will be defin
   
 #### JSON fields for GDALI line item
 
-For more information, see [Line Item Service - GDALI](line-item-service---gdali.md).
+For more information, see [Line Item Service - GDALI](../digital-platform-api/line-item-service---gdali.md).
 
 | Field | Type | Description |
 |:---|:---|:---|
 | `name` | string | Name of the GDALI. |
 | `state` | enum | State of the line item. Possible values: `"active"` or `"inactive"`. |
-| `line_item_subtype` | enum | The line item subtype. For GDALIs, the value for this field must be one of the following:<br>- `"gd_buying_imp"`: Guaranteed delivery line item with impression delivery goal. Eligible only for transacting on managed supply.<br>- `"gd_buying_exclusive"`: Guaranteed delivery line item with exclusive delivery goal (also referred to as "share of voice" or "SOV"). Eligible only for transacting on managed supply.<br>For more information, see [Line Item Service - GDALI](line-item-service---gdali.md).<br><br>**Note:** The `line_item_subtype` field (and associated fields/arrays) cannot be changed after the line item is created. |
+| `line_item_subtype` | enum | The line item subtype. For GDALIs, the value for this field must be one of the following:<br>- `"gd_buying_imp"`: Guaranteed delivery line item with impression delivery goal. Eligible only for transacting on managed supply.<br>- `"gd_buying_exclusive"`: Guaranteed delivery line item with exclusive delivery goal (also referred to as "share of voice" or "SOV"). Eligible only for transacting on managed supply.<br>For more information, see [Line Item Service - GDALI](../digital-platform-api/line-item-service---gdali.md).<br><br>**Note:** The `line_item_subtype` field (and associated fields/arrays) cannot be changed after the line item is created. |
 | `budget_scheduling_settings.underspend_catchup_type` | enum<br>(prop in obj) | The `underspend_catchup_type` field dictates how Xandr's system deals with an underdelivered daily budget. Use the `"evenly"` value if you'd like the unspent portions of your budget to be spent evenly throughout the rest of flight, or `"ASAP"` if you'd like the unspent budget to be spent as soon as possible.<br>Possible values: `"evenly"` or `"ASAP"` (default). |
 | `priority` | int | The line item's priority is used to weight the line item against other direct line items within your account.<br><br>**Note:** The Microsoft Monetize UI sets the default value for guaranteed delivery line item with impression delivery goal to 14, and 19 for `exclusive`. The default value for all line items created via the API is 5. |
 | `ad_types` | array of strings | The type of creative used for this line item. <br>Possible values: <br>- `"banner"`<br>- `"video"`  (includes audio types as well)<br>- `"native"`<br><br>One or more values are supported. This value determines how auction items are tracked for the line item's buying strategy, paying strategy, forecasting, creative association, and targeting options.<br><br>**Note:** All creatives associated to a line item must have the same ad type, which should match the `ad_types` selected here. |
-| `timezone` | enum | The timezone by which budget and spend are counted. For details and accepted values, see [API Timezones](api-timezones.md). |
-| `currency` | string (3) | The currency used for this line item. For a list of supported currencies, see the [Currency Service](currency-service.md).<br><br>**Note:** Once the line item has been created, the currency cannot be changed. |
+| `timezone` | enum | The timezone by which budget and spend are counted. For details and accepted values, see [API Timezones](../digital-platform-api/api-timezones.md). |
+| `currency` | string (3) | The currency used for this line item. For a list of supported currencies, see the [Currency Service](../digital-platform-api/currency-service.md).<br><br>**Note:** Once the line item has been created, the currency cannot be changed. |
 | `revenue_type` | enum | The way the advertiser has agreed to pay you (also called Booked Revenue). Possible values are:<br>- `"cpm"`: Select this value if you are being paid flat payment for 1000 impressions (CPM).<br>&nbsp; - For Viewable CPM, set `revenue_type` to `"cpm"`, the `revenue_value` field to the Viewable CPM value, the `revenue_auction_event_type` field to `"view"`  the `revenue_auction_event_type_code` field to `"view_display_50pv1s_an"` and `"revenue_auction_type_id"` to `2`. Only measured viewable impressions will be counted, according to the Xandr viewability measurement, using the IAB definition.<br>- `"flat_fee"`: A flat payment that the advertiser will pay you on a specified allocation date. That date can be daily or at the end of the flight. If you pay managed publishers a percentage of your revenue, their share will be paid out on the allocation date, after which the line item will no longer be editable.<br><br>**Note:** The flat fee will not be booked on the allocation date unless the line item has served at least one impression. If you define a `revenue_type` of `flat_fee` you must specify a value for `flat_fee_type`. |
 | `flat_fee_type` | array | Flat fees can be paid out daily or on the flight end date. Available values are:<br>- `one_time`: The fee will be paid on the final allocation date. The associated `revenue_value` is the value to be paid on that date. The flight cannot be longer than one month.<br>- `daily`: The fee will be paid daily. The associated `revenue_value` is the daily fee, not the fee for the entire flight. |
 | `revenue_value` | double | The amount paid to the network by the advertiser.<br><br>**Note:** Depending on what you set the `revenue_type` field to, this field must be set to the actual value of that revenue type (e.g. `flat_fee` or `cpm`). |
 | `budget_intervals` | array | Budget intervals enable date intervals and budgets to be attached to a line items.<br><br>**Note:** The GDALI must not contain more than one `budget_intervals` array. |
-| `budget_intervals.timezone` | string<br>(obj in array) | The timezone by which budget and spend are counted. For a list of acceptable timezone values, see [API Timezones](api-timezones.md). The default value is `"EST5EDT"` or the advertiser's timezone. |
+| `budget_intervals.timezone` | string<br>(obj in array) | The timezone by which budget and spend are counted. For a list of acceptable timezone values, see [API Timezones](../digital-platform-api/api-timezones.md). The default value is `"EST5EDT"` or the advertiser's timezone. |
 | `budget_intervals.start_date` | timestamp<br>(obj in array) | The start date of the budget interval. Format must be `YYYY-MM-DD hh:mm:ss` <br>**Note:** `hh:mm:ss` must be set to `00`. Typically, this would be the current date. |
 | `budget_intervals.end_date` | timestamp<br>(obj in array) | The end date of the budget interval. Format must be `YYYY-MM-DD hh:mm:ss` (`hh:mm:ss` should be set to `hh:59:59`). Must not be `null` for GDALIs. For delivery to work best, your budget intervals should have a duration of at least 4 hours. |
 | `budget_intervals.lifetime_budget_imps` | double (obj in array) | The lifetime budget in impressions for the budget interval.<br><br>**Note:** When a line item is enabled for roadblocks, only master creative imps will count against `lifetime_budget_imps`. |
@@ -499,7 +499,7 @@ For more information, see [Line Item Service - GDALI](line-item-service---gdali.
 | `roadblock.type` | enum | The type of roadblock. For GDALIs, this value must be either:<br>- `null`: (default) There is no roadblocking set at the line item level.<br>- `partial_roadblock`: Enables roadblocking on the line item. The line item serves when at least one creative of each size fits an eligible ad slot. |
 | `roadblock.master_width` | int | The width of the master creative. This value is required when roadblock type equals `partial_roadblock`. |
 | `roadblock.master_height` | int | The height of the master creative. This value is required when roadblock type equals `partial_roadblock`. |
-| `profile_id` | int | You may associate an optional `profile_id` with this line item. A profile is a generic set of rules for targeting inventory. For details, see the [Profile Service](profile-service.md). |
+| `profile_id` | int | You may associate an optional `profile_id` with this line item. A profile is a generic set of rules for targeting inventory. For details, see the [Profile Service](../digital-platform-api/profile-service.md). |
 
 1. Create a GDALI JSON (you'll need an existing advertiser ID and insertion order ID from [Step 2 - Create a seamless insertion order](#step-2-create-a-seamless-insertion-order)).
 
@@ -716,6 +716,6 @@ For more information, see [Line Item Service - GDALI](line-item-service---gdali.
 
 ## Related topics
 
-- [API Getting Started](api-getting-started.md)
-- [API Best Practices](api-best-practices.md)
-- [API Semantics](api-semantics.md)
+- [API Getting Started](../digital-platform-api/api-getting-started.md)
+- [API Best Practices](../digital-platform-api/api-best-practices.md)
+- [API Semantics](../digital-platform-api/api-semantics.md)

@@ -28,7 +28,7 @@ Second, inventory available on our platform may be tagged with content categorie
 - **Sellers**: Auditing may also be done by the network, aggregator, or exchange that represents the publisher.
   
   > [!NOTE]
-  > While we believe that our audited domains are of a high quality, the nature of the internet is such that we cannot provide any guarantee regarding the nature or content of any inventory sold on the platform. For questions about this, or to report miscategorized inventory or inventory that should be banned under our blocklist criteria, contact us via [Customer Support](https://help.xandr.com/) and select "Inventory Quality" as the request type. (Client login required.)
+  > While we believe that our audited domains are of a high quality, the nature of the internet is such that we cannot provide any guarantee regarding the nature or content of any inventory sold on the platform. For questions about this, or to report miscategorized inventory or inventory that should be banned under our blocklist criteria, contact us via [Customer Support](https://help.xandr.com/) and select "Inventory Quality" as the request type.
 
 ## Standards
 
@@ -37,14 +37,14 @@ Second, inventory available on our platform may be tagged with content categorie
 > [!NOTE]
 > In the past, filtered impressions on inventory flagged as violating platform standards would serve blanks. Now, these impressions follow seller preferences for impressions with no demand. As with all impressions that follow this workflow, sellers will be charged the applicable fee.
 > [!IMPORTANT]
-> See the [Policies for Selling](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Selling.aspx) (login required) for policies that apply globally on our platform.
+> See the [Part of Service Policies](../policies-regulations/index.yml) for policies that apply globally on our platform.
 
 Microsoft Advertising works hard to create a safe and trusted ad marketplace. We use various methods to continuously monitor traffic that passes through our impression bus, whether it comes from Microsoft Advertising tags, white-labeled tags, or third-party ad tags. This includes, but is not limited to, direct publisher relationships and media buys placed with other ad servers, networks, platforms and supply sources.
 
 In applying content policies, we do not differentiate between inventory that is monetized by the owning member or that is resold via the
 platform.
 
-Except for creatives banned by our [Service Policies](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies) (login required), networks may run any creatives on their own inventory regardless of audit status (for more information, see [Creative Standards](creative-standards.md)). To allow this, under the Ad Quality manager for each publisher, leave **"Ban unaudited creatives for direct advertisers"** unchecked.
+Except for creatives banned by our [Part of Service Policies](../policies-regulations/index.yml), networks may run any creatives on their own inventory regardless of audit status (for more information, see [Creative Standards](creative-standards.md)). To allow this, under the Ad Quality manager for each publisher, leave **"Ban unaudited creatives for direct advertisers"** unchecked.
 
 ### Restricted content
 
@@ -62,7 +62,7 @@ Domains listed as "unauditable" will be available for managed line items, any bu
 
 - **Website has no ads on page**: Sites that contain no visible ad units.
 
-  To contest the audit status of a site, contact us via [Customer Support](https://help.xandr.com/) and select "**Inventory Quality**" as the request type. In the request, please detail your relationship with the publisher and add a brief description of why you believe the site has not been audited correctly. (Client login required.)
+  To contest the audit status of a site, contact us via [Customer Support](https://help.xandr.com/) and select "**Inventory Quality**" as the request type. In the request, please detail your relationship with the publisher and add a brief description of why you believe the site has not been audited correctly. 
 
 ## Inventory categorization standards
 
@@ -79,14 +79,14 @@ These are qualities of a site or page that advertisers may wish to exclude. We e
 - **Non-English languages**: Sites where a significant portion of the text appears in a language other than English, and the site appears targeted to a non-English-speaking audience.
 - **Streaming media**: Sites or parts of sites containing streaming music or embedded videos or flash games.
 - **Toolbars, plug-ins or extensions**: Ad-supported browser plug-in inventory installed with user consent. More information on compliant
-  toolbars can be found in our [Policies for Selling](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Selling.aspx) (login required).
+  toolbars can be found in our [Part of Service Policies](../policies-regulations/index.yml).
 - **Contextual nudity**: Non-sexual, non-vulgar nudity that appears as an incidental aspect of the site without being the focus of it.
 
 ### Intended audience
 
 This category is used to indicate the age range of the target audience for the content on the site. A site falls into "General audiences" unless it contains content that is specifically targeted toward children, young adults, or the 18+ category. (18+, also called "mature", does not include so-called "adult content", i.e. pornography.)
 
-- **Children**: A site or part of a site whose content is specifically targeted toward children. For special rules that apply to child-directed sites, see the Child-Directed Inventory Policy section of our [Policies for Selling](https://microsoftapc.sharepoint.com/teams/Microsoft AdvertisingServicePolicies/SitePages/Policies-for-Selling.aspx) (login required).
+- **Children**: A site or part of a site whose content is specifically targeted toward children. For special rules that apply to child-directed sites, see the Child-Directed Inventory Policy section of our [Part of Service Policies](../policies-regulations/index.yml).
 - **Young Adults**: A site or part of a site whose content is specifically targeted toward young adults.
 - **General Audiences**: A site or part of a site which has no particular intended audience and whose content is appropriate for all ages.
 - **Mature (18+)**: A site or part of a site whose content is not appropriate for children or young adults under 18.

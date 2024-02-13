@@ -1,11 +1,11 @@
 ---
-title: JP - Guaranteed Delivery Line Item FAQ (GDALI)
+title: Guaranteed Delivery Line Item FAQ (GDALI) (JP)
 description: In this article, find answers to frequently asked questions regarding guaranteed delivery augmented line items (GDALI).
 ms.date: 10/28/2023
 ms.custom: ja-jp
 ---
 
-# Guaranteed Delivery Line Item FAQ (GDALI)
+# Guaranteed Delivery Line Item FAQ (GDALI) (JP)
 
 Answers to common questions about Guaranteed Delivery Line Items (GDALI).
 
@@ -31,7 +31,7 @@ There will be a number of improvements to the GDALI experience, including:
 - Underspend Catch-Up: Choose delivery catch-up following mid-flight changes.
 - Projected Spend: View Microsoft Advertising’s budget breakdown by displaying the expected allocation per day within a flight.
 - Updated Interface: A streamlined interface for faster navigation; inline forecasting updates in real-time as you create or edit your line item.
-- Monitoring: The new Monitoring workflow tracks delivery and pacing of GDALIs and Deal Line Items, all in one place (for more information, see [Monitoring](monitoring.md)).
+- Monitoring: The new Monitoring workflow tracks delivery and pacing of GDALIs and Deal Line Items, all in one place (for more information, see [Monitoring](../monetize/monitoring.md)).
 
 ## Are GDALIs going to be able to manage Programmatic buys as well?
 

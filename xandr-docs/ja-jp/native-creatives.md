@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: ja-jp
 ---
 
-# Microsoft Monetize - Native creatives
+# ative creatives (JP)
 
 You can host video, audio, banner, carousel, and app install native creatives with Microsoft Advertising.
 
@@ -32,5 +32,5 @@ Native creatives can also provide:
 - [Video Creatives](video-creatives.md)
 - [Audio Creatives](audio-creatives.md)
 - [Banner and HTML5 Creatives](banner-and-html5-creatives.md)
-- [Add Creatives in Bulk](add-creatives-in-bulk.md)
-- [Add a Creative](add-a-creative.md)
+- [Add Creatives in Bulk](../monetize/add-creatives-in-bulk.md)
+- [Add a Creative](../monetize/add-a-creative.md)
