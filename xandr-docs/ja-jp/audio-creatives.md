@@ -1,7 +1,8 @@
 ---
-title: Microsoft Monetize - Audio Creatives
+title: Microsoft Monetize - Audio Creatives (JP)
 description: Learn about Audio Creatives in this page. 
 ms.date: 10/28/2023
+ms.custom: ja-jp
 ---
 
 
