@@ -128,11 +128,11 @@ happens offline before bids are submitted. This means that not all of the test u
 
 The test group can now be thought of as being split into two subsets, exposed and not exposed to an ad. The table below provides a means of categorizing the three groups.
 
-| User Group | Description |  |  |
-|---|---|---|---|
-| Control Group (Not Exposed) | Users you see in the Incrementality Feed with `is_control = 1` (you would never see these users in the Standard Feed, as we pull our bids and never actually want to transact those impressions). |  |  |
-| Test Group (Exposed) | Users you see in the Incrementality Feed with `is_control = 0`, who are also in the Standard Feed. |  |  |
-| Test Group (Not Exposed) | Users you see in the Incrementality Feed with `is_control = 0`, who do not appear in the Standard Feed. They are not in the Standard Feed because we have not transacted any imps with them.  We did not end up winning the bid somewhere down the line in an auction. This could be for a variety of reasons such as a buyer using a different DSP won it. |  |  |
+| User Group | Description |
+|---|---|
+| Control Group (Not Exposed) | Users you see in the Incrementality Feed with `is_control = 1` (you would never see these users in the Standard Feed, as we pull our bids and never actually want to transact those impressions). |
+| Test Group (Exposed) | Users you see in the Incrementality Feed with `is_control = 0`, who are also in the Standard Feed. |
+| Test Group (Not Exposed) | Users you see in the Incrementality Feed with `is_control = 0`, who do not appear in the Standard Feed. They are not in the Standard Feed because we have not transacted any imps with them.  We did not end up winning the bid somewhere down the line in an auction. This could be for a variety of reasons such as a buyer using a different DSP won it. |
 
 > [!NOTE]
 > Because they likely are not statistically similar you cannot just compare:

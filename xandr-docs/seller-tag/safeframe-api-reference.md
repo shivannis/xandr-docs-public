@@ -1,6 +1,6 @@
 ---
 title: SafeFrame API Reference
-description: Explore SafeFrame—an API-enabled iframe for secure communication between publisher page and external content ensuring data safety and efficient interaction with Xandr's sf-ext.js on a secondary domain.
+description: Explore SafeFrame—API-enabled iframe ensures secure communication, data safety, and efficient interaction with Xandr's sf-ext.js on a secondary domain.
 ms.custom: seller-tag
 ms.date: 10/28/2023
 ---
@@ -15,7 +15,7 @@ SafeFrame feature has many benefits. This includes consumer protection, publishe
 
 ## SafeFrame and video
 
-For video customers, SafeFrame is currently only supported for Outstream video placements. If you decide to use this functionality, make sure that you follow the guidelines for setting up on-page tags for outstream video in the [Microsoft Advertising Help center](https://review.learn.microsoft.com/en-us/xandr/?branch=main).
+For video customers, SafeFrame is currently only supported for Outstream video placements. If you decide to use this functionality, make sure that you follow the guidelines for setting up on-page tags for outstream video in the [Microsoft Advertising Help center](../index.yml).
 
 ## Implementation and functions
 
