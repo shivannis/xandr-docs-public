@@ -22,6 +22,13 @@ This opens the **Create New Advertiser** screen, where you define all relevant d
 In the **Basic Setup** section, enter the basic details for the advertiser.
 
 - **Name** - Enter the advertiser's name.
+  
+- **External Code** - If you want to report on the advertiser using an
+  external code (rather than the internal ID that
+  Microsoft Advertising assigns automatically), enter the code
+  here.
+  > [!NOTE]
+  > The Deal Line Items linked to this Advertiser are unaffected by this field. Only managed campaigns and campaigns serving on external inventory are eligible to access this information, and publishers must use it in accordance with the Digital Services Act.
 
 - **External Code** - If you want to report on the advertiser using an external code (rather than the internal ID that Microsoft Advertising assigns automatically), enter the code here.
 
