@@ -84,7 +84,7 @@ The following macros can be used in creative third-party tags and landing page U
 | `${USER_ID}` | The Microsoft Advertising 64-bit character string representing the user for the impression. |
 | `${USER_IP}` | The IP address of the user, which is truncated. |
 | `${USER_LOCALE}` | The language and dialect (aa-DD) reported by the user's device. For example, en-ZA represents English (en) used in South Africa (ZA). |
-| `${USER_STATE}` | The character string of the user's state or region. <br> **In the USA**: 2 letter abbreviation <br> **Outside of USA**: An encoded URL with the user's country followed by the user's region ID (FIPS 10-4 or Microsoft Advertising-generated). <br> For example, the region surrounding Riva, Latvia is LV%3A25 (encoding for LV:A25). |
+| `${USER_STATE}` | The character string of the user's state or region. <br> - **In the USA**: 2 letter abbreviation <br> - **Outside of USA**: An encoded URL with the user's country followed by the user's region ID (FIPS 10-4 or Microsoft Advertising-generated). <br> For example, the region surrounding Riva, Latvia is LV%3A25 (encoding for LV:A25). |
 
 ## Creative macros for video impressions
 
