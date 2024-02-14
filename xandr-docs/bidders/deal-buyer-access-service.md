@@ -1,6 +1,6 @@
 ---
 title: Bidders - Deal Buyer Access Service
-description: The article explains deal buyer access service, REST API, and the JSON fields.
+description: Access deals via REST API, utilize JSON. Xandr's platform discloses exclusive offers, granting buyers priority pricing, inventory, and opportunities.
 ms.date: 10/28/2023
 ---
 
