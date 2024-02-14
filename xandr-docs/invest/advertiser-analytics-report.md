@@ -175,7 +175,8 @@ allow for a fuller reconciliation with conversions, impressions and other metric
 
 ### Bid types
 
-The term "give up" is appended to the bid types below if the valuation for that impression falls below the venue's "give up price".
+> [!NOTE]
+> The term "give up" is appended to the bid types below if the valuation for that impression falls below the venue's "give up price".
 
 | Name | Definition |
 |:-----|:-----------|
