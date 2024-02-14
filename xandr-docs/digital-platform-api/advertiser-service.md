@@ -145,6 +145,7 @@ $ cat advertiser.json
    "advertiser":
    {
       "name":"Advertiser B",
+      "legal_entity_name":"Toyota UK",
       "state":"active"
    }
 }
@@ -168,6 +169,7 @@ $ cat advertiser_update
    "advertiser":
    {
       "name":"Advertiser B",
+      "legal_entity_name":"Toyota UK",
       "state":"active",
       "code":"PSS"
    }
@@ -196,6 +198,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/advertiser'
         "id": 51,
         "code": null,
         "name": "Advertiser B",
+        "legal_entity_name":"Toyota France",
         "state": "active",
         "default_brand_id": 0,
         "remarketing_segment_id": null,
@@ -242,6 +245,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/advertiser'
         "id": 493,
         "code": null,
         "name": "Cheese Club",
+        "legal_entity_name":"Toyota Germany",
         "state": "active",
         "default_brand_id": 0,
         "remarketing_segment_id": 11111,
@@ -297,6 +301,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/advertiser?id=51'
             "id":51,
             "code":null,
             "name":"Advertiser A",
+            "legal_entity_name":"Toyota UK",
             "state":"active",
             "default_brand_id":0,
             "remarketing_segment_id":null,
