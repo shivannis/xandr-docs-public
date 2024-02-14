@@ -45,7 +45,7 @@ The following macros can be used in creative third-party tags and landing page U
 | `${CREATIVE_WIDTH}` | The width of the creative served. |
 | `${WIDTH}` | This macro is an alias for `${CREATIVE_WIDTH}`, and behaves in the same manner. |
 | `${CUSTOM_MODEL_ID}` | The `id` of the custom model used in the auction. When no custom model is used, this macro will return `0`.<br><br>**Note**: This custom macro will only work for APB Alpha Test clients. |
-| `${CUSTOM_MODEL_LAST_MODIFIED}` | The date and time (in Unix Epoch time) since the custom model that was used in the auction was last modified. If no model was used, this macro will return 0.<br><br>**Note**: This custom macro will only work for APB Alpha Test clients. |
+| `${CUSTOM_MODEL_LAST_MODIFIED}` | The date and time (in Unix Epoch time) since the custom model that was used in the auction was last modified. If no model was used, this macro will return `0`.<br><br>**Note**: This custom macro will only work for APB Alpha Test clients. |
 | `${CUSTOM_MODEL_LEAF_NAME}` | The `leaf_name` specified in the leaf that determined the winning bid. If no name is specified or if a model was not used, this macro will return `---`. This aligns with the `leaf_name` field in the Standard Feed in Log Level Data. For more information, see [Standard Feed](../log-level-data/standard-feed.md).<br><br>**Note**: This custom macro will only work for APB Alpha Test clients. |
 | `${DATACENTER}` | The data center ID (1 = NYM, 2 = LAX, 3 = AMS, 4 = FRA, 5 = SIN). |
 | `${DEAL_ID}` | The Microsoft Advertising Deal ID associated with the winning bid if applicable. If there is no deal, this macro will return `0`. |
@@ -84,7 +84,7 @@ The following macros can be used in creative third-party tags and landing page U
 | `${USER_ID}` | The Microsoft Advertising 64-bit character string representing the user for the impression. |
 | `${USER_IP}` | The IP address of the user, which is truncated. |
 | `${USER_LOCALE}` | The language and dialect (aa-DD) reported by the user's device. For example, en-ZA represents English (en) used in South Africa (ZA). |
-| `${USER_STATE}` | The character string of the user's state or region.<br> - **In the USA**: 2 letter abbreviation<br> - **Outside of USA**: An encoded URL with the user's country followed by the user's region ID (FIPS 10-4 or Microsoft Advertising-generated)For example, the region surrounding Riva, Latvia is LV%3A25 (encoding for LV:A25). |
+| `${USER_STATE}` | The character string of the user's state or region.<br> - **In the USA**: 2 letter abbreviation<br> - **Outside of USA**: An encoded URL with the user's country followed by the user's region ID (FIPS 10-4 or Microsoft Advertising-generated).<br>For example, the region surrounding Riva, Latvia is LV%3A25 (encoding for LV:A25). |
 
 ## Creative macros for video impressions
 
@@ -133,7 +133,7 @@ In order for our clients to meet their transparency, notice, and choice/consent 
 | `${GDPR_CONSENT}` | This macro is an alias for `${GDPR_CONSENT_STRING}`, and behaves in the same manner. |
 | `${XANDR_DOMAIN}` | Dynamically retrieves the appropriate Microsoft Advertising domain based on the cookie consent settings included in the TCF string. If the user has cookies enabled from their browser settings but has:<br> - not given consent for their cookies to be included in the TCF string, the [adnxs-simple.com](https://adnxs-simple.com/) domain will be used to prevent the browser from attaching cookies to subsequent ad calls.<br> - given consent for their cookies to be included in the TCF string, the [adnxs.com](https://adnxs.com/) domain will be used to pass cookies in the header of each ad call.<br>**Note**: This macro should only be used if you plan on serving impressions in countries that require consent for cookies. |
 | `${GPP_SID}` | Designates whether a section (i.e. regulatory framework) of the [Global Privacy Platform](https://iabtechlab.com/gpp) should be applied. Specifically, it indicates whether the user is located in a country affected by legislation covered by the GPP. |
-| `${GPP_STRING_XXXXX*}` | This is the IAB [Global Privacy Platform](https://iabtechlab.com/gpp) (GPP) string. If a section of the GPP applies, then this will contain framework-dependent information reflecting the consent elections of the user.<br>**Note**: * `XXXXX` can represent any numerical id |
+| `${GPP_STRING_XXXXX*}` | This is the IAB [Global Privacy Platform](https://iabtechlab.com/gpp) (GPP) string. If a section of the GPP applies, then this will contain framework-dependent information reflecting the consent elections of the user.<br>**Note**: * `XXXXX` can represent any numerical ID. |
 
 ## Function macros
 
@@ -159,7 +159,7 @@ To determine whether you will need to use single, double, or triple encoding, yo
 
 | Encoding Example | Format |
 |---|---|
-| Encoding click URLs once | Use the following format:<br>`${URL_ENC(${CLICK_URL},1)}`<br>**Note**: If [https://xandr.com](https://xandr.com) is passed as the click URL, using `${URL_ENC(${CLICK_URL},1)}` to single encode the URL would result in `https%3A%2F%2Fxandr.com` populating the creative. |
+| Encoding click URLs once | Use the following format:<br>`${URL_ENC(${CLICK_URL},1)}`<br><br>**Note**: If [https://xandr.com](https://xandr.com) is passed as the click URL, using `${URL_ENC(${CLICK_URL},1)}` to single encode the URL would result in `https%3A%2F%2Fxandr.com` populating the creative. |
 | Encoding media URL once | Use the following format:<br> `${URL_ENC(${MEDIA_URL},1)}` |
 | Encoding media URL twice | Use the following format:<br> `${URL_ENC(${MEDIA_URL},2)}` |
 | Encoding a custom macro called ADFORMAT once | Use the following format:<br>`${URL_ENC(#{ADFORMAT},1)}` |
