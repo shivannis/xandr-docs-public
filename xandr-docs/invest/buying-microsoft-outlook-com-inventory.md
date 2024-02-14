@@ -55,5 +55,4 @@ For instructions on how to target the Outlook app, see [Buying Microsoft Windows
 
 ## More questions?
 
-If you have any further questions about buying Outlook.com inventory, please contact your Microsoft Advertising account representative.
-
+If you have any further questions about buying Outlook.com inventory, contact your Microsoft Advertising account representative.
