@@ -17,8 +17,8 @@ The following macros can be used for all impressions:
 
 | Macro | Description |
 |---|---|
-| `${CLICK_URL}` | The click tracking URL. For Example: `https://xandr.com` |
-| `${CLICK_URL_ENC}` | The encoded click tracking URL (only necessary for some third-party ad servers). For Example: `https%3A%2F%2Fxandr.com` |
+| `${CLICK_URL}` | The click tracking URL. For example: `https://xandr.com` |
+| `${CLICK_URL_ENC}` | The encoded click tracking URL (only necessary for some third-party ad servers). For example: `https%3A%2F%2Fxandr.com` |
 
 The following macros can be used in creative third-party tags and landing page URLs:
 
@@ -92,8 +92,8 @@ The following macros can be used specifically for video impressions:
 
 | Macro | Description |
 |---|---|
-| `${VIDEO_CONTEXT}` | The context of the video ad. Allowed values include:<br> - 0: In-stream unknown<br> - 1: In-stream pre-roll<br> - 2: In-stream mid-roll<br> - 3: In-stream post-roll<br> - 4: Out-stream |
-| `${VIDEO_PLAYBACK_METHOD}` | Specifies how the video was played. Allowed values include:<br> - 0: Unknown<br> - 1: Auto-play, sound-on<br> - 2: Auto-play, sound-off<br> - 3: Click-to-play<br> - 4: Mouse-over<br> - 5: Auto-play, sound unknown |
+| `${VIDEO_CONTEXT}` | The context of the video ad. Allowed values include:<br> - `0`: In-stream unknown<br> - `1`: In-stream pre-roll<br> - `2`: In-stream mid-roll<br> - `3`: In-stream post-roll<br> - `4`: Out-stream |
+| `${VIDEO_PLAYBACK_METHOD}` | Specifies how the video was played. Allowed values include:<br> - `0`: Unknown<br> - `1`: Auto-play, sound-on<br> - `2`: Auto-play, sound-off<br> - `3`: Click-to-play<br> - `4`: Mouse-over<br> - `5`: Auto-play, sound unknown |
 | `${VIDEO_PLAYER_HEIGHT}` | The height of the video player, expressed in pixels. |
 | `${VIDEO_PLAYER_WIDTH}` | The width of the video player, expressed in pixels. |
 
@@ -119,7 +119,7 @@ The following macros can be used specifically for mobile impressions:
 | `${GEO_LAT}` | The latitude of the user's location when GPS data is available from a mobile device, expressed using the `snn.ddd,snn.ddd` format such as `+12.345` or `-45.123`. South is represented as a negative in this example. To comply with privacy standards, the maximum is five decimal places of precision. |
 | `${GEO_LON}` | The longitude of the user's location when GPS data is available from a mobile device. expressed using the format `snn.ddd,snn.ddd`. For example: `+12.345` or `-45.123`. West is represented as a negative in this example. To comply with privacy standards, the maximum is five decimal places of precision. |
 | `${IS_PREVIEW}` | A flag can be passed to the third-party server so that production impressions don't get counted in the total number of impressions when previewing creatives. Possible values include:<br> - `0` for no<br> - `1` for yes |
-| `${SUPPLY_TYPE}` | This macro will be populated with a numeric value that denotes the supply type of the impression. Allowed values include:<br> - 0: web<br> - 1: mobile web<br> - 2: mobile app<br> - 4: toolbar |
+| `${SUPPLY_TYPE}` | This macro will be populated with a numeric value that denotes the supply type of the impression. Allowed values include:<br> - `0`: web<br> - `1`: mobile web<br> - `2`: mobile app<br> - `4`: toolbar |
 
 ## Privacy macros
 
@@ -164,6 +164,22 @@ To determine whether you will need to use single, double, or triple encoding, yo
 | Encoding media URL twice | Use the following format:<br> `${URL_ENC(${MEDIA_URL},2)}` |
 | Encoding a custom macro called ADFORMAT once | Use the following format:<br>`${URL_ENC(#{ADFORMAT},1)}` |
 
+## Digital Services Act (DSA) macros
+
+According to Article 26 of the DSA, online platforms, including Microsoft Advertising's publisher clients must provide clear, concise, and unambiguous information about advertisements by February 17th, 2024. These requirements include:
+
+1. Clearly identifying that the information is an advertisement.
+1. Disclosing the identity of an individual or legal person on whose behalf the advertisement is presented.
+1. Indicating the identity of an individual or legal person who made payment for the advertisement, if different from the advertiser.
+1. Providing information about the primary parameters used to determine the ad recipient and, where applicable, instructions on how to modify those parameters.
+
+| Macro | Description |
+|:---|:---|
+| `${DSA_REQUIRED}` | Indicates if DSA information should be made available.<br>Possible values include:<br> - `0`: Not required.<br> - `1`: Required. Bid responses with or without DSA object will be accepted.<br>- `2`: Required. Bid responses without DSA object will not be accepted.<br>- `3`: Required. Bid responses without DSA object will not be accepted. Here, the publisher is an Online Platform. |
+| `${DSA_BEHALF}` | The free UNICODE text string with a name on whose behalf the ad is being displayed. This macro is populated from the DSA bid response.<br>For example, `Advertiser`. |
+| `${DSA_PAID}` | The free UNICODE text string of who paid for the ad. This macro is populated from the DSA bid response.<br>For example, `Advertiser`. |
+| `${DSA_PARAMS}` | The combination of integer values representing user parameters, separated by an underscore “_”.<br>For example, `1_2_3`.<br>Possible values include:<br>- `1`: Information on your online activity indicating your similarity to groups targeted by the advertiser. For example, age group, gender, education level, or interests.<br>- `2`: Information on the setting in which you view a specific advertisement. For example, website content, device type, IP address, location (country or city).<br>- `3`: Information on your precise geographic location, with an accuracy of approximately 500 meters. |
+
 ## Related topic
 
- [Creative Macros](creative-macros.md)
+[Creative Macros](creative-macros.md)
