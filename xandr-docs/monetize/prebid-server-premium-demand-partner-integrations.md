@@ -192,7 +192,7 @@ Additional resources on demand partners:
 | Somo Audience | somoaudience | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Sonobi | sonobi | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | Sovrn | sovrn | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
-| SovrnXSP | sovrnxsp | Yes | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No | No | **App**: No <br>**Site**: Yes |
+| SovrnXSP | sovrnxsp | Yes | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No | No | **App**: Yes <br>**Site**: No |
 | SSP Copper 6 | copper6 | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | sspBC Bid Adapter | sspBC | Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: No | No | **App**: No <br>**Site**: No |
 | StreamKey | streamkey | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
