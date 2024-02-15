@@ -26,6 +26,6 @@ Customers have the option to sign in as a guest or sign up to Plastiq, if they w
 1. The total member balance update is displayed along with the payment ID which can be noted for future reference.
 1. An email is sent to the users once the payment is completed.
 
-## Related topics
+## Related topic
 
 [Credit Limit Overview](credit-limit-overview.md)
