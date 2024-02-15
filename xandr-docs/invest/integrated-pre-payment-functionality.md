@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Integrated Pre-payment Functionality
-description: In this article, learn about the Pre-payment Functionality and the process to initiate pre-payment.
+description: In this article, learn about the pre-payment functionality and the process to initiate pre-payment.
 ms.date: 10/28/2023
 ---
 
