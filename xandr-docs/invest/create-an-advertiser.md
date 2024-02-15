@@ -85,7 +85,7 @@ In the **Advanced Settings** section, enter any optional advanced settings that 
 - **Reporting Labels** - Associate a Salesperson, Account Manager, or Advertiser Type to the advertiser. This enables you to report on performance by these labels in Member reporting. For example, you might associate an Account Manager with each advertiser and then run a report grouped by Account Manager to find out which managers are responsible for which advertisers or compare advertiser performance across managers.
 - **Billing Information** - Change the information that appears in advertiser and/or insertion order-specific invoices. By default, your member billing information will appear in the "Bill To" section of those invoices.
   - To show your advertiser's name and address in the "Bill To" section instead, complete the fields in the **Billing Information** section. The **Billing Name** field may contain a maximum of 50 characters.
-  - To show just the advertiser's name with the member's address, enter the name but leave the rest of the fields blank. For more about receiving advertiser- and/or insertion order-specific invoices, see [Understanding Your Invoice](https://review.learn.microsoft.com/en-us/xandr/invest/understanding-your-invoice?branch=live).
+  - To show just the advertiser's name with the member's address, enter the name but leave the rest of the fields blank. For more about receiving advertiser- and/or insertion order-specific invoices, see [Understanding Your Invoice](understanding-your-invoice.md).
 
     > [!TIP]
     > You may also choose to include a billing code on your insertion order-specific invoices. For more details, see [Create an Insertion Order](create-an-insertion-order.md).
