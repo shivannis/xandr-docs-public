@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Ad Viewability - Description of Methodology (DOM)
-description: In this module, understand the Microsoft Advertising viewability measurement process and methodology. It is designed for Microsoft Advertising clients, prospects, and partners only.
+description: In this module, understand the Microsoft Advertising viewability measurement process and methodology designed for Microsoft Advertising clients, prospects, and partners.
 ms.date: 10/28/2023
 ---
 
