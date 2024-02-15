@@ -13,7 +13,7 @@ Custom roles control the actions a user is allowed to take, such as the ability 
 
 **Getting There**
 
-- Select **Network \> User Management \> Roles** from the navigation menu. 
+- Select **Network \> User Management \> Roles** from the navigation menu.
 - Select **Roles** from the top right corner under the member (Click on member name to get the dialog).
   
 **Create Role**
@@ -25,7 +25,7 @@ Custom roles control the actions a user is allowed to take, such as the ability 
 
 - In **Role Name** field, enter a name that will help you to identify this role.The name must be unique within your Member.
 - In **Role Description** field, enter a detailed description of the purpose of this role. This field is optional.
-- In **Feature Roles** field, click **Edit Role Links** 
+- In **Feature Roles** field, click **Edit Role Links**.
 
     A new dialog **Feature Roles** opens to specify feature roles to associate with this custom role.
 
@@ -44,4 +44,4 @@ Custom roles control the actions a user is allowed to take, such as the ability 
 
 **Landing Page**
 
-- Select a landing page from the dropdown list for the custom role. The capabilities for this role will determine where a user can begin their session in the application when they first log on. All users assigned to this custom role will log in directly to the selected landing page. This field is mandatory. 
+- Select a landing page from the dropdown list for the custom role. The capabilities for this role will determine where a user can begin their session in the application when they first log on. All users assigned to this custom role will log in directly to the selected landing page. This field is mandatory.

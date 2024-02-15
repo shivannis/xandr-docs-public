@@ -71,16 +71,16 @@ You can use conversion tracking on PG line items, see [Create a Conversion Pixel
 
 ## Conversion tracking
 
-Click the edit icon to associate conversion tracking pixels to this PG line item. Note that these pixels are not used by optimization, but can be used to track the line item's performance.
+Click the **edit** icon to associate conversion tracking pixels to this PG line item. Note that these pixels are not used by optimization, but can be used to track the line item's performance.
 
-## Associated creatives 
+## Associated creatives
 
 **Creative requirements for this PG deal**
 
 The creative requirements for the PG deal this PG line item is associated to display here.
 
 > [!IMPORTANT]
->  The PG line item must be associated to a PG deal for the **Creative Requirements for this PG Deal** to display (see [Basic Setup](#basic-setup) to assign a PG deal to the PG line item).The seller of the PG deal configures these creative requirements, and settings in the PG line item can not change them. You must have at least one associated creative for each media type and ad size listed for the PG deal.
+> The PG line item must be associated to a PG deal for the **Creative Requirements for this PG Deal** to display (see [Basic Setup](#basic-setup) to assign a PG deal to the PG line item). The seller of the PG deal configures these creative requirements, and settings in the PG line item can not change them. You must have at least one associated creative for each media type and ad size listed for the PG deal.
 
 - **Media Type** - creative media type for the PG deal
 - **Ad Sizes** - ad size for the PG Deal
@@ -96,9 +96,9 @@ Select the creative rotation strategy you want to use:
 - **Evenly weight creatives**: even rotation is handled automatically by our system
 - **Manually weight creatives**: rotation is based on a user-supplied weight
 
-## Associated creatives
+## Select Creatives
 
-1. Click the edit icon to open the **Associated Creatives** dialog.
+1. Click the **edit** icon to open the **Associated Creatives** dialog.
 1. Select the creatives you want to associate to your PG line item from the **Available Creatives** list by clicking on the green check next to the name. Selected creatives will appear in the **Selected Creatives** list. Ensure that you have at least one associated creative for each media type and ad size listed in **Creative Requirements for this PG Deal**.
 1. When you finish making your selections, click **Save**.
 

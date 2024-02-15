@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Create a Programmable Split
-description: learn to create a programmable split, also identify the context under which you're creating it. 
+description: learn steps to create a programmable split by identifying the context under which you're creating it.  
 ms.date: 10/28/2023
 ---
 

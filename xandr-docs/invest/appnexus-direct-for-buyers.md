@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Microsoft Advertising Direct for Buyers
-description: Learn how Microsoft Advertising Direct is beneficial to buyers who want to purchase inventory.
+description: In this page, learn how Microsoft Advertising Direct is beneficial to buyers who want to purchase inventory, and how we can access it.
 ms.date: 10/28/2023
 ---
 

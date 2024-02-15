@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Create a Partner Fee
-description: This page is a step by step guide to create a partner fee from the Fees screen.
+description: This page is a step-by-step guide to create a partner fee from the Fees screen.
 ms.date: 10/28/2023
 ---
 

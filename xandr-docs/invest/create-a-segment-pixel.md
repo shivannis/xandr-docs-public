@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Create a Segment Pixel
-description: This page provides a step by step guide to create a segment pixel which is used to group an audience besed on different criterias.  
+description: This page provides a step-by-step guide to create a segment pixel which is used to group an audience based on different criterias.  
 ms.date: 10/28/2023
 ---
 
@@ -11,7 +11,7 @@ A segment pixel marks a user as belonging to a certain target audience based on 
 
 ## Step 1: Get started
 
-Navigate to the **Segments** screen (**Audiences** \>  **Segments**).
+Navigate to the **Segments** screen (**Audiences** \> **Segments**).
 
 > [!IMPORTANT]
 > Segment pixels can be created at the advertiser level (that is, they're only viewable and targetable by the specific advertiser), or the member level (available for targeting to all advertisers). You can move a segment from advertiser level to member level by changing the `advertiser_id` to `"null"` via the [segment service](../digital-platform-api/segment-service.md).
@@ -35,7 +35,7 @@ Click the **+ New** button. This opens the **Create New Segment** window.
 Piggybacking allows you to chain one or more pixels to the new segment pixel. Whenever this pixel fires, the call will be propagated to any piggybacked pixels.
 
 > [!IMPORTANT]
-> Add piggyback pixels with the following in mind: 
+> Add piggyback pixels with the following in mind:
 > 1. If you are using the feature that adds users to segments when they view or click on a creative ("On click, add user to the following segments"), piggyback pixels for these segments will NOT fire.
 > 1. Image pixels can only piggyback off other image pixels and JavaScript pixels can only piggyback off other JavaScript pixels.
 > 1. Image pixels can have only one piggyback pixel. If you need to piggyback multiple pixels, be sure to use a JavaScript pixel.

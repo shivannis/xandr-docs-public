@@ -38,13 +38,13 @@ There are three types of conversion pixels: **View**, **Click**, and **Hybrid**.
 
 When using **View** conversion pixels, conversions are attributed to the last impression that occurs before the conversion. In the diagram below, as time flows from left to right, the last impression inside the **View Lookback Window** before the conversion happens is credited, and is marked in green.
 
-:::image type="content" source="media/imps-only.png" alt-text="Screenshot of View conversion pixel.":::
+:::image type="content" source="media/imps-only.png" alt-text="Screenshot of the last impression inside the View Lookback Window marked in green.":::
 
 ## Click conversion pixel
 
 When using **Click** conversion pixels, conversions are attributed to the last click that occurs before the conversion. In the diagram below, the last click inside the **Click Lookback Window** is before the conversion happens is credited, and is marked in green.
 
-:::image type="content" source="media/clicks-only.png" alt-text="Screenshot of Click conversion pixels.":::
+:::image type="content" source="media/clicks-only.png" alt-text="Screenshot of the the last click inside the Click Lookback Window before the conversion happens is credited.":::
 
 ## Hybrid conversion pixel, single lookback window
 
@@ -56,7 +56,7 @@ When using **Hybrid** conversion pixels, either views or clicks can be credited 
 
 In the example diagrammed below, both impressions and clicks have been configured with the same lookback window. (This is highly unlikely.) Since clicks receive preference over views that occur within the same lookback window, the most recent click has been credited with the conversion, and is marked in green.
 
-:::image type="content" source="media/imps-and-clicks-same-lookback.png" alt-text="Screenshot of Hybrid conversion pixel with same Single Lookback Window.":::
+:::image type="content" source="media/imps-and-clicks-same-lookback.png" alt-text="Screenshot of both impressions and clicks configured with the same lookback window.":::
 
 ## Hybrid conversion pixel, separate lookback windows
 

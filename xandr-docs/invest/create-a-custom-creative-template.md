@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 You can create a new custom creative template from scratch at any time.
 
-You can also duplicate an existing template and then modify it. For more information, see [Duplicate an Existing Custom Creative Template](duplicate-an-existing-custom-creative-template.md)
+You can also duplicate an existing template and then modify it. For more information, see [Duplicate an Existing Custom Creative Template](duplicate-an-existing-custom-creative-template.md).
 
 1. Navigate to the **Creative Templates** screen by clicking **Creative \> Templates**.
 1. Click **New**.
@@ -26,7 +26,7 @@ You can also duplicate an existing template and then modify it. For more informa
     1. **Template Code**: Specifies how the creative should be rendered.
   
        > [!NOTE]
-       > If you include custom macros in the template code, the >must begin with the `#` symbol. If you include standard macros in the template code, they must begin with the `$` symbol. Be sure to replace any hard-coded `adnxs.com` references within the **Template Code** field with the `${XANDR_DOMAIN}` macro to ensure that the appropriate domain `adnxs.com` or `adnxs-simple.com` will be used when the auction takes place.
+       > If you include custom macros in the template code, the >must begin with the `#` symbol. If you include standard macros in the template code, they must begin with the `$` symbol. Be sure to replace any hard-coded `adnxs.com` references within the **Template Code** field with the `${XANDR_DOMAIN}` macro to ensure that the appropriate domain (`adnxs.com` or `adnxs-simple.com`) will be used when the auction takes place.
 
 1. To add custom macros, expand the **Custom macros** section if necessary, click **Add Macros**, and do the following.
 

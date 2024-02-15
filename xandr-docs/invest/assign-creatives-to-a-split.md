@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Assign Creatives to a Split
-description: Learn to Assign specific creatives to a split in this page.
+description: Learn to assign specific creatives to a split in this page.
 ms.date: 10/28/2023
 ---
 
