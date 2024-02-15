@@ -1,14 +1,12 @@
 ---
 title: Bidders - Domain List Service
-description: The article discusses a domain list service, highlighting its functionality in creating either an allowlist or a blocklist of domains. This service enables users to specify which domains should be targeted (allowlist) or excluded (blocklist) in their activities.
+description: Customize domain preferences, create allowlist or blocklist with a domain list service, specifying targeted or excluded domains for user activities.
 ms.date: 10/28/2023
 ---
 
 # Bidders - Domain list service
 
-Domain lists can be used to create an allowlist or a blocklist of domains that should be included or excluded, respectively, from
-targeting. The domain list IDs are used with the [Enhanced Bidder Profiles](enhanced-bidder-profiles.md) to specify
-which domains should be included or excluded from targeting. Please be advised that specifying whether a domain list is an "allowlist" or a "blocklist" does not determine whether that list will be included or excluded. Rather, the domain_list_action must be specified in the [Enhanced Bidder Profiles](enhanced-bidder-profiles.md) as "include" for allowlists and "exclude" for blocklists.
+Domain lists can be used to create an allowlist or a blocklist of domains that should be included or excluded, respectively, from targeting. The domain list IDs are used with the [Enhanced Bidder Profiles](enhanced-bidder-profiles.md) to specify which domains should be included or excluded from targeting. Please be advised that specifying whether a domain list is an "allowlist" or a "blocklist" does not determine whether that list will be included or excluded. Rather, the domain_list_action must be specified in the [Enhanced Bidder Profiles](enhanced-bidder-profiles.md) as "include" for allowlists and "exclude" for blocklists.
 
 ## REST API
 

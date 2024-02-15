@@ -4,7 +4,7 @@ description: The article delves into the UTF-8 encoding of reporting data on Dec
 ms.date: 10/28/2023
 ---
 
-# December 21, 2015 - UTF-8 Encoding of reporting data
+# December 21, 2015 - UTF-8 encoding of reporting data
 
 Starting on January 15th, 2016, we will now be including all UTF-8 characters for all data returned via reporting (including Log-Level Data, if applicable). Historically, we were either stripping or replacing some select special characters from string fields, and now we will be returning all UTF-8 characters.
 
