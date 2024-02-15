@@ -72,7 +72,7 @@ Programmatic Guaranteed Deals cannot be multi-media type. One media type must be
 If a Trade Desk buyer manually creates the deal in the Trade Desk UI before a deal is uploaded via their proposal API, this will cause
 issues. Once a deal has been created in the manual workflow, it will not be able to sync properly via the deal sync process. As such, it is important to ensure that buyers do not create this deal manually and should wait for the deal to upload via the API integration.
 
-## When I create a PG deal, do the Ask Price and Impression Budget numbers have to be accurate?
+## When I create a PG deal, do the Ask Price and impression budget numbers have to be accurate?
 
 Yes, the "Spend" and "Impression Target" must be the same as the contracted numbers agreed with the buyer. These two numbers will be
 pushed into Trade Desk systems and buyers won't be able to update them. Any changes to these two values will trigger re-acceptance of the deal.
