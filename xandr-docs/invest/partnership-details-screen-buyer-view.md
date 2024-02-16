@@ -11,7 +11,7 @@ On the Partnership details screen you can review and manage your relationship wi
 
 ## Getting to the partnership details screen
 
-To reach this screen, select **Inventory \>  Partners**.
+To reach this screen, select **Inventory \> Partners**.
 
 ## Viewing seller contact info and description
 

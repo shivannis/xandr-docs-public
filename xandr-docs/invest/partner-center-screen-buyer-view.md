@@ -21,7 +21,7 @@ Click the **My Profile** button to edit the information that sellers will see on
 
 The **Sellers** tab lists all sellers, both Invest DSP members and external suppliers. Their member name and ID will display along with statistics for each seller. The **Platform-wide Avails.** columns will display statistics on all of the seller's transactions across the platform. The **Transactions with Seller** columns will display statistics on your transactions with the seller. See [Searching for Sellers](#searching-for-sellers) to find a specific type of seller and then review the statistics to determine if you'd like to partner with the seller.
 
-## Platform-wide Avails
+## Platform-Wide avails
 
 - **Avg. Daily Imps** - The average of the number of impressions the seller has sold across the entire platform for the past 7 days.
 - **Avg. Daily Uniques** - The average of the number of impressions shown to unique user IDs that the seller has sold across the entire platform for the past 7 days.

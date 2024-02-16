@@ -9,8 +9,7 @@ ms.date: 10/28/2023
 
 Microsoft Advertising maintains and monitors a brand list, ensuring duplicate brands and URLs are deleted or reassigned in order to maintain consistency.
 
-A brand is a proprietary classification assigned to creatives. Within the Microsoft Advertising system, each brand has an ID and is assigned an associated URL and relevant brand content categories that describe the offerings and services provided by the company. Accurate branding is essential to maintaining the integrity of the
-Microsoft Advertising platform. The consistency and quality of our offering is incredibly important to us, and we invest significant resources to its maintenance.
+A brand is a proprietary classification assigned to creatives. Within the Microsoft Advertising system, each brand has an ID and is assigned an associated URL and relevant brand content categories that describe the offerings and services provided by the company. Accurate branding is essential to maintaining the integrity of the Microsoft Advertising platform. The consistency and quality of our offering is incredibly important to us, and we invest significant resources to its maintenance.
 
 During the creative audit process, a brand name/URL are associated with every creative. If the appropriate brand exists within the Microsoft Advertising system, the creative will be assigned a URL associated with the existing brand. If the appropriate brand does not exist within the Microsoft Advertising system, the creative will be assigned to a comparable existing brand based on the creative content and the creative's associated landing page.
 
