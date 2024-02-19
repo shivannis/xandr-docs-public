@@ -33,7 +33,7 @@ You can improve your augmented line item (ALI) delivery and impression count, wh
 1. Click any one of the bid performance categories to gain insight into how your settings are affecting your bid performance.
 
     A yellow triangle will display if there are corresponding bid performance messages.
-1. Click the information icons that display next to the bid performance message to obtain additional information about what's happening  (reason) and suggested recommendations for improving your bid performance.
+1. Click the information icons that display next to the bid performance message to obtain additional information about what's happening (reason) and suggested recommendations for improving your bid performance.
 1. Click any one of buttons that display below to make the necessary adjustments if desired.
 
     You'll be automatically taken to the appropriate screen to make the necessary adjustments in most cases.
