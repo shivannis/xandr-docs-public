@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Creative Branding
-description: In this page, Learn what is creative branding and which are the existing brand content categories available. 
+description: In this page, Learn what is Creative Branding and which are the existing brand content categories available. 
 ms.date: 10/28/2023
 ---
 

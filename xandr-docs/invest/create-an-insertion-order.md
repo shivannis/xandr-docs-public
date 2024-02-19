@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Create an Insertion Order
-description: Learn steps to create an insertion order and description of different fields that need to be updated in the process.
+description: This page is a step-by-step guide to create a new insertion order and it also covers advantages of using it.   
 ms.date: 10/28/2023
 ---
 
@@ -74,7 +74,7 @@ The name for the insertion order. You will later be able to search for and repor
 
 ### External code (optional)
 
-An external code used for reporting. (Microsoft Advertising also assigns an internal code automatically.) The code may only contain alphanumeric characters, periods, underscores or dashes. It is not case-sensitive (upper- and lower-case characters are treated the same).
+An external code used for reporting. (Microsoft Advertising also assigns an internal code automatically.) The code may only contain alphanumeric characters, periods underscores or dashes. It is not case-sensitive (upper- and lower-case characters are treated the same).
 
 ## Billing code (optional)
 
@@ -176,7 +176,7 @@ We reserve the right to implement additional screening at any time.
 | **U.S. FEC ID** | Optional. ID number assigned by the [U.S. Federal Election Committee](https://www.fec.gov/). |
 | **ZIP or Postal Code** | ZIP or postal code of the person, group, organization, or business that is advertising. |
 
-You must check **I certify that all information provided herein is accurate and up to date, and acknowledge and agree that** Microsoft Advertising is **relying on the accuracy of this information**. before you can save the insertion order.
+You must check **I certify that all information provided herein is accurate and up to date, and acknowledge and agree that** Microsoft Advertising **is relying on the accuracy of this information**. before you can save the insertion order.
 
 ## Related topics
 

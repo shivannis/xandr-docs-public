@@ -19,7 +19,7 @@ You can create third-party creative pixels at the advertiser level and then appl
 1. Select the appropriate format from the **Type** menu and enter the necessary information in the corresponding text boxes. If you decided to serve your pixel on secure inventory, you will be prompted to provide a secure link as well as a standard link. For a list of the creative macros that you may want to append to your pixel, see [Creative Macros](creative-macros.md). For example, if you wanted to append the `CACHEBUSTER` macro to a URL format pixel, you would add the macro to the URL as follows in the **image** field: `https://www.myurl.com`**`?key=${CACHEBUSTER}`**
 
 1. Select whether you want the pixel to also serve on Google Ad Manager inventory by doing the following:
-    1. Click the **AdX** toggle. 
+    1. Click the **AdX** toggle.
 
         To render the pixel on Google Ad Manager inventory, it must be in full compliance with Google Ad Manager creative policies. For more information, see [Creative Standards](creative-standards.md).
 
