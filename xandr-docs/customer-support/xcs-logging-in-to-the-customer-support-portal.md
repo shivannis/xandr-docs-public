@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # Logging in to the customer support portal
 
-If you do not already have a portal account, please visit the [Login](../index.yml) page, click Proceed as a Guest, and in the next page, click **Contact Support**. Once your account is created, you will be sent a welcome email with your user ID and temporary password to log in. You can set your own password following the link in the welcome mail.
+If you do not already have a portal account, please visit the [Login](https://help.xandr.com/s/login/) page, click Proceed as a Guest, and in the next page, click **Contact Support**. Once your account is created, you will be sent a welcome email with your user ID and temporary password to log in. You can set your own password following the link in the welcome mail.
 
 > [!NOTE]
 > Continuing as a guest without logging in, gives you limited access to knowledge base articles. If you

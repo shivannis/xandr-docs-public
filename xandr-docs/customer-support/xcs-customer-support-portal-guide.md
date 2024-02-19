@@ -1,6 +1,6 @@
 ---
 title: Customer Support Portal Guide
-description: Explore support resources, search knowledge base, manage cases, access articles for common issues, troubleshooting, and tasks in the Customer Support Portal.
+description: Navigate Customer Support Portal, explore resources, search knowledge base, manage cases, access articles for troubleshooting and tasks.
 ms.date: 10/28/2023
 ---
 
