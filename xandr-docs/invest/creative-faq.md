@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Creative FAQ
-description: In this page, Learn FAQs on creatives.
+description: In this page, Learn FAQs on creatives. 
 ms.date: 10/28/2023
 ---
 

@@ -135,8 +135,7 @@ Pacing determines how quickly budget is spent over the lifetime of the insertion
 
 Options are:
 
-- **Base daily allocation on average of remaining billing period budget**- Automatically divide your remaining budget evenly across the
-  remaining days in the billing period. Use the slider to adjust the percentage of the daily average allocation as necessary. This option is only available if the insertion order has both a billing period end date and a budget.
+- **Base daily allocation on average of remaining billing period budget**- Automatically divide your remaining budget evenly across the remaining days in the billing period. Use the slider to adjust the percentage of the daily average allocation as necessary. This option is only available if the insertion order has both a billing period end date and a budget.
 
 - **Set pacing on the line item**
 

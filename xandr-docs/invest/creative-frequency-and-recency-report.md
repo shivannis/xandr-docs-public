@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Creative Frequency and Recency Report
-description: Learn how the Creative Frequency and Recency report lets you view the frequecy of users viewing a specific advertiser's creatives.
+description: Learn how the Creative Frequency and Recency report lets you view how often and how frequently users are viewing a specific advertiser's creatives. The page lists and explains the different parameters of this report.  
 ms.date: 10/28/2023
 ---
 
@@ -54,7 +54,7 @@ Intervals determine how your data is grouped together into rows in the report re
 ## Currency 2.0
 
 > [!NOTE]
-> By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, click the **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency menu**, the report will show all monetary data in JPY, including data associated with child objects such as line items.
+> By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, click the **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency** menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
 
 ## Dimensions
 
@@ -143,11 +143,7 @@ Intervals determine how your data is grouped together into rows in the report re
 
 ## Creative frequency definitions
 
-Please note that the below buckets refer to the lifetime of the user and
-the lifetime of the creative. For example, if a user falls into the
-21-40 bucket, that means they have seen this creative between 21 and 40
-times since the user's cookie was first created and the creative first
-served.
+Please note that the below buckets refer to the lifetime of the user and the lifetime of the creative. For example, if a user falls into the 21-40 bucket, that means they have seen this creative between 21 and 40 times since the user's cookie was first created and the creative first served.
 
 | Value | Name | Definition |
 |--|--|--|
@@ -170,8 +166,9 @@ served.
 
 Follow these steps to run your report.
 
-1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    1. Or, from the Publishers top menu, click on **Prebid Server Premium \> Analytics \> Prebid Server Analytics**.
+1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured)
+
+    Or, from the Publishers top menu, click on **Prebid Server Premium \> Analytics \> Prebid Server Analytics**.
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
   
    > [!IMPORTANT]

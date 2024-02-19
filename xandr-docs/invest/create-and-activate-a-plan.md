@@ -26,7 +26,9 @@ This page provides instructions on creating and activating a plan for your ad ca
 
 1. Select the **Targeting** tab and experiment with settings to see how applying targeting changes the affected availability and delivery for your plan. Click **Generate Plan** to create the initial projections.
 
-    Click **Update Plan** after making changes to see how they affect your results. You can use the graphs to identify where inventory is available, so you can target a specific audience without risking non-delivery of your ads.
+    Click **Update Plan** after making changes to see how they affect your results.
+
+    You can use the graphs to identify where inventory is available, so you can target a specific audience without risking non-delivery of your ads.
 
 1. Click **Save** to save your plan or **Cancel** to cancel your selections.
 1. To activate a plan by creating a new line item, click **Create Line Item**.

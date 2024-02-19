@@ -10,7 +10,9 @@ ms.date: 10/28/2023
 You can create third-party creative pixels at the advertiser level and then apply these pixels to some or all display creatives under that Member.
 
 1. Navigate to **Member Settings** under your member's name in the top navigation menu and click **Go to Member Third-Party Pixels** under the **Third-Pary Pixels** section.
-1. Click **New** to create a new third-party pixel. The **Create New Third-Party Pixel** dialog displays.
+1. Click **New** to create a new third-party pixel.
+
+    The **Create New Third-Party Pixel** dialog displays.
 1. Enter a name for your pixel.
 1. Click the **All Advertiser Creatives** button to apply the pixel to all creatives at the advertiser level, or click the **Individual Creatives** button to apply the pixel to individual creatives.
 1. Click the **Serve on Secure Inventory** toggle if you want the pixel to serve on secure inventory.

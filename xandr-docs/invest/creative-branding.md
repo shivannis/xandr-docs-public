@@ -1,11 +1,11 @@
 ---
 title: Microsoft Invest - Creative Branding
-description: In this page, Learn what is creative branding and which are the existing brand content categories. 
+description: In this page, Learn what is creative branding and which are the existing brand content categories available. 
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Invest - creative branding 
+# Microsoft Invest - Creative branding 
 
 Microsoft Advertising maintains and monitors a brand list, ensuring duplicate brands and URLs are deleted or reassigned in order to maintain consistency.
 

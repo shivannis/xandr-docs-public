@@ -10,10 +10,10 @@ There are character specifications that you should keep in mind when uploading c
 
 For creatives, ensure that there is no invalid or unsupported character present in the VAST url as well as in the 3rd party segments attached to the creative. For example,
 
-- This is the set of valid VAST characters: 
+- This is the set of valid VAST characters:
 
     `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~:/?#[]@!$&'()*+,;=.`
-- This is a set of common invalid characters: 
+- This is a set of common invalid characters:
 
     `|, <, >, ^, {,}.`
 
