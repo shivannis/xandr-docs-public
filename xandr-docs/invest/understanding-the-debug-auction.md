@@ -18,19 +18,19 @@ A debug auction can be run using the following calls:
 > [!NOTE]
 > All debug auction and browser cookie override calls must use secure https protocols. Requests made using http will not generate valid results.
 
-**Production/Beta Environment:**
+**Production/Beta environment:**
 
 ``` 
 https://ib.adnxs.com/tt?id=[TAG_ID]&size=[WIDTH]x[HEIGHT]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASSWORD] 
 ```
 
-**Client-Testing Environment:**
+**Client-Testing environment:**
 
 ``` 
 https://ib-test.adnxs.com/tt?id=[TAG_ID]&size=[WIDTH]x[HEIGHT]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASSWORD] 
 ```
 
-**Video Creatives:**
+**Video creatives:**
 
 Make sure to use a **ptv** tag instead of a **tt** tag while running a debug auction for video creatives.
 
@@ -106,13 +106,13 @@ When debugging a particular ad campaign, it may help that your browser's cookie 
 - This particular debug log was run in a deprecated sandbox environment, so URLs are slightly different than they would be in the production server.
 - All IDs have been changed to random numbers.
 
-:::image type="content" source="./media/debug-auction-geo.png" alt-text="Screenshot of Debug Auction Geo.":::
+:::image type="content" source="./media/debug-auction-geo.png" alt-text="Screenshot of Debug Auction Log.":::
 
 :::image type="content" source="./media/debug-auction-payment-rules.png" alt-text="Screenshot of Debug Auction Payment Rules.":::
 
 Microsoft's bidder gives more detailed debug text, beginning with "Debug text from bidder 2" (live). This output includes information such as the bidder version, the region info., and user info. Excerpts from a live debug auction are below:
 
-:::image type="content" source="./media/debug-auction-geo-a.png" alt-text="Screenshot of Debug Auction Geo Parb B.":::
+:::image type="content" source="./media/debug-auction-geo-a.png" alt-text="Screenshot of live debug auction which includes information such as bidder version, the region info., and user info.":::
 
 This debug info. continues, including information such as the segments that the user is in and other relevant objects.
 

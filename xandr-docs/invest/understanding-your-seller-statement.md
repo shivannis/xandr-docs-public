@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Understanding Your Seller Statement
-description: In this page, learn about the three types of seller statements and the different fields present in these statements.  
+description: In this page, learn about the three types of seller statements and a description of the different fields present in these statements.  
 ms.date: 10/28/2023
 ---
 
@@ -12,11 +12,11 @@ As a member who sells inventory on Microsoft Advertising's platform, you receive
 > [!NOTE]
 > Your statement is delivered in your default currency. Although all transactions are recorded in US dollars, those dollar amounts are converted to your default currency (at the end of the the activity period reflected in the statement). Microsoft Advertising uses the Reuters conversion rate at the end of the activity period to prepare your statement. We also account for hedging cost as per your contract. The amounts on your statement are converted by multiplying the US dollar amount by the conversion rate less the hedging cost.
 >
-> If you selling activity incurs ad serving charges and/or your contracted terms with Microsoft Advertising has the Seller Auction Service Charge set as a Fee instead of a Deduction, you will also receive an invoice from Microsoft Advertising. For details on seller-specific charges that can appear on an invoice, see [Understanding Your Invoice](understanding-your-invoice.md).
+> If your selling activity incurs ad serving charges and/or your contracted terms with Microsoft Advertising has the Seller Auction Service Charge set as a Fee instead of a Deduction, you will also receive an invoice from Microsoft Advertising. For details on seller-specific charges that can appear on an invoice, see [Understanding Your Invoice](understanding-your-invoice.md).
 
 ## Seller activity statement
 
-This document provides you with seller revenue earned during the prior month. You can view the supporting data by running the Selling Billing Report in the UI. Your Seller Activity Statement will be automatically emailed to the individual within your organization who is responsible for seller activity. If you have any questions, contact Microsoft Advertising Client Finance: [billing](mailto:billing@xandr.com).
+This document provides you with seller revenue earned during the prior month. You can view the supporting data by running the Selling Billing Report in the UI. Your Seller Activity Statement will be automatically emailed to the individual within your organization who is responsible for seller activity. If you have any questions, contact Microsoft Advertising Client Finance: [Billing](mailto:billing@xandr.com).
 
 Here's an example of what a what a typical seller statement looks like:
 

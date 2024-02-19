@@ -39,7 +39,7 @@ Your invoice lists the amount you have spent on Microsoft Advertising's platform
 1. **Payment Terms** - The number of days after the end of the relevant activity billing period when payment is due, as specified in the Payment Terms section of your Microsoft Advertising Service Exhibit.
 
      > [!NOTE]
-     > To avoid being charged finance fees on overdue balances, be sure to make payments on time. To review how Microsoft Advertising calculates finance fees, see [Billing FAQ](billing-faq.md)>. Your finance fee amount is specified in the Payments; Payment Obligations section of your Microsoft Advertising Master Services Agreement.
+     > To avoid being charged finance fees on overdue balances, be sure to make payments on time. To review how Microsoft Advertising calculates finance fees, see [Billing FAQ](billing-faq.md). Your finance fee amount is specified in the Payments; Payment Obligations section of your Microsoft Advertising Master Services Agreement.
 
 1. **Billing Start / Billing End Date** - The start and end date of the activity period covered in this invoice (including time zone). The time zone reflects what you use to tie out to reporting.
 
@@ -69,7 +69,7 @@ Your invoice lists the amount you have spent on Microsoft Advertising's platform
 
     1. Finance Fees – The incremental fee for any past due payments. Finance fees are never generated on outstanding finance fees (just the original amount due that has not been paid).
 
-1. Tax - The charge for any applicable local taxes.
+1. **Tax** - The charge for any applicable local taxes.
 
 1. **Total** - The total amount due to Microsoft Advertising (e.g., all charges plus taxes).
 

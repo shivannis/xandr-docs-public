@@ -5,19 +5,19 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Invest - Update insertion orders
+# Microsoft Invest - Update Insertion Orders
 
 There are several actions you can take on existing insertion orders to update them.
 
-## Edit an insertion order
+## Edit an Insertion Order
 
 You can edit an insertion order directly from the **Insertion Orders** screen. You can also edit insertion orders from the **Insertion Order Details** screen. Click either the **Edit** icon at the top of the screen or the **Edit** link in the **Details** section. (See [View Insertion Order Details](view-insertion-order-details.md) for more information on the **Details** screen.)
 
-## Activate/Deactivate an insertion order
+## Activate/Deactivate an Insertion order
 
 Check the box next to each insertion order that you want to **activate** or **deactivate** and click Activate or Deactivate.
 
-## Delete an insertion order
+## Delete an Insertion Order
 
 You can delete insertion orders from the system. This is particularly useful when you want to get rid of unnecessary or accidentally created insertion orders.
 

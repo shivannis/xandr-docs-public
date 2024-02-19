@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Universal Pixel Reporting
-description: This page lists a number of reports giving information on universal pixel activity.   
+description: This page provides links of a number of reports giving information on universal pixel activity.   
 ms.date: 10/28/2023
 ---
 

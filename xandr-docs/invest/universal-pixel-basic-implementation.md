@@ -15,9 +15,11 @@ Configure your pixel code using the UI.
 
 1. From the top menu bar, click **Audiences \> Universal Pixel**.
 1. Click **New**.
-1. Select an advertiser from the list. 
+1. Select an advertiser from the list.
 1. Click **Track Your Website Activity** or **Track Your App Activity**.
-1. Type a **name** for your pixel in the Name field and **Save** to continue. The next screen displays the universal script code that you’ll deploy in the `<head>` tag on the advertiser website.
+1. Type a **name** for your pixel in the Name field and **Save** to continue. 
+
+    The next screen displays the universal script code that you’ll deploy in the `<head>` tag on the advertiser website.
 
 1. Decide what to do with your pixel code:
     - If you plan to deploy the universal script code on the website yourself, follow the instructions on-screen to copy and paste the code.
