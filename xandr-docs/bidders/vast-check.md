@@ -1,6 +1,6 @@
 ---
 title: Bidders - VAST Check
-description: The article outlines the process of conducting checks on XML when incorporating a third-party VAST or VPAID video creative. It also provides information on potential outcomes and suggests corrective actions based on the results.
+description: Verify XML integrity, integrate third-party video creatives, learn potential issues, and take corrective actions for a seamless process.
 ms.date: 10/28/2023
 ---
 
@@ -18,7 +18,7 @@ When adding a third-party VAST or VPAID video creative, a series of checks are p
 - **Secure**: All URLs inside the VAST document must be prefixed with `https://` to serve on secure inventory.
 - **Click Tracking:** Xandr automatically wraps third-party creatives to provide impression, click, and playback
   tracking.
-  - To view the Xandr wrapper of your creative: [ib.adnxs.com/cr?id=[INSERT_ID]&amp;format=vast](http://ib.adnxs.com/cr?id=ID&amp;format=vast)
+  - To view the Xandr wrapper of your creative: `ib.adnxs.com/cr?id=[INSERT_ID]&amp;format=vast`
 - **\<Wrapper\> tags**  
 
   > [!NOTE]
