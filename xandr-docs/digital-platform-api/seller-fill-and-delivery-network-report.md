@@ -80,7 +80,7 @@ The `time_granularity` of the data is `hourly`. For instructions on retrieving a
 | `supply_type` | string | Yes | `mobile_web` | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are <br> - `'web'` <br> - `'mobile_app'` <br> - `'mobile_web'`. |
 | `call_type` | string | Yes | `"/ttj"` | The type of handler that was used to send the impression to Xandr (e.g., `ttj`, `ut`, `mob`, `ptv`, `openrtb`) |
 | `allowed_media_types` | string | No | `Banner`, `Expandable`, `Native` | The media types that are allowed to participate in the auction. The permitted media types is a combination that is enabled through the ad call and placement settings. |
-| `openrtb2_request_subdomain` | string | No | `wrapper-emea` | The subdomain of the URL that the `OpenRTB2` ad request was sent to. **Note**: This value will be blank for non-OpenRTB2 call types. If the the value for OpenRTB2 is blank this means no subdomain was used. |
+| `openrtb2_request_subdomain` | string | No | `wrapper-emea` | The subdomain of the URL that the `OpenRTB2` ad request was sent to. **Note**: This value will be blank for non-OpenRTB2 call types. If the the value for `OpenRTB2` is blank this means no subdomain was used. |
 
 
 ## Metrics

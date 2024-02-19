@@ -97,7 +97,7 @@ data is hourly.
 | PSAs or Blanks | The number of blanks or PSAs served. It can also include ad requests where no bids were submitted by Microsoft Advertising, such as unfilled header bidding requests. |
 | Response Rate | The rate of total number of ad responses counted within Microsoft Advertising to the number of ad requests that are not filtered pre-bid by Microsoft Advertising. [Total Ad Responses / (Total Ad Requests - Filtered Requests)] |
 | RPM | For definition of rpm, see the [Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). In this report, RPM is seller revenue earned per 1000 ad requests sent to Microsoft Advertising for auction. (1000 * Seller Revenue / Total Ad Requests) |
-|OpenRTB2 Request Subdomain|  The subdomain of the URL that the OpenRTB2 ad request was sent to. <br>**Note**: The value  will be blank for non-OpenRTB2 call types. If the the value for OpenRTB2 is blank this means no subdomain was used.|
+|`OpenRTB2` Request Subdomain|  The subdomain of the URL that the `OpenRTB2` ad request was sent to. <br>**Note**: The value  will be blank for non-OpenRTB2 call types. If the the value for `OpenRTB2` is blank this means no subdomain was used.|
 | Seller Revenue | Revenue earned by the Seller. |
 | Total Ad Requests | The total number of ad requests sent to Microsoft Advertising. (Filtered Requests + Imps (kept) + Imps (resold) + Defaults + Video Player Errors + Video Default Errors + Bid Sent No Responses + Default No Responses + PSAs or Blanks) |
 | Total Ad Responses | The total number of ad responses counted within Microsoft Advertising. (Imps (kept) + Imps (resold) + Video Player Errors + Bid Sent No Responses) |
@@ -105,9 +105,7 @@ data is hourly.
 | Video Player Errors | Errors reported from the video player after the VAST XML has been delivered. |
 | Win Rate | The rate of total number of managed and kept impressions to the total number of ad responses counted within Microsoft Advertising. [Imps (kept + resold) / Total Ad Responses] |
 
-
-You also have the option to display monetary values in USD and the
-Advertiser/Buying Currency.
+You also have the option to display monetary values in USD and the Advertiser/Buying Currency.
 
 ## Filters
 
