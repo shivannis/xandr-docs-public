@@ -76,9 +76,7 @@ However, all time ranges are not available for every report.
 
 **Intervals**
 
-Intervals determine how your data is grouped together into rows in the
-report response. The following is a complete list of intervals available
-for reports. However, all intervals are not available for every report.
+Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
 - Hourly: Data is grouped into rows by the hour.
 - Daily: Data is grouped into rows by the day.
@@ -129,6 +127,7 @@ data in a particular order.
 | Country | The country in which the impression occured. |
 | Deal | The deal associated with the transaction for the impression. |
 | Mobile Application | For mobile app impressions, the Apple App Store or Google Play name and ID of the mobile application where the impression occurred, for example, `"Angry Birds (343200656)"` or `"Angry Birds (com.rovio.angrybirds)"`.<br>"---": This means that we didn't receive a valid mobile app name as the referrer or the app has received too few impressions to be included in reporting. |
+|OpenRTB2 Request Subdomain|  The subdomain of the URL that the OpenRTB2 ad request was sent to. <br>**Note**: The value  will be blank for non-OpenRTB2 call types. If the the value for OpenRTB2 is blank this means no subdomain was used.|
 | Placement | The name and ID of the placement on which the impression occurred.<br>Note that a placement ID of `0` may appear for 3rd-party impression trackers. For more information about impression trackers, see [Working with Impression and Click Trackers](working-with-impression-and-click-trackers.md). |
 | Placement Group | The name and ID of the placement group where the impression occurred. |
 | Site Domain | For web or mobile web impressions, the domain where the impression occurred. There is one additional value that may appear in place of a domain, specically: `"---"` This means that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed. |
