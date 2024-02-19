@@ -1,6 +1,6 @@
 ---
 title: Bidders - Deal Sync with DV360 - Publisher Guide 
-description: The article describes the integration with DV360 Seller API syncs deals created in Microsoft Monetize with Google DV360, streamlining transactions for publishers and buyers.
+description: Integrate Microsoft Monetize deals with Google DV360 via DV360 Seller API, simplifying transactions for seamless publisher and buyer interaction.
 ms.date: 10/28/2023
 ---
 

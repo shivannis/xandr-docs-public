@@ -38,8 +38,7 @@ No, deals created prior to the enablement of Trade Desk deal sync on your accoun
 
 ## If I created a deal with Trade Desk post enablement of deal sync and then updated the deal details, will they automatically update in Trade Desk systems?
 
-Yes, deals created post Trade Desk deal sync enablement will have automatic deal updates. Changes you make to updatable fields (for
-example, start date, end date, price) will be automatically uploaded to Trade Desk systems. Once the changes are uploaded, this will trigger a change to the buyer status to "pending". You will need to ask the Trade Desk buyer to re-accept the deal in the Trade Desk UI.
+Yes, deals created post Trade Desk deal sync enablement will have automatic deal updates. Changes you make to updatable fields (for example, start date, end date, price) will be automatically uploaded to Trade Desk systems. Once the changes are uploaded, this will trigger a change to the buyer status to "pending". You will need to ask the Trade Desk buyer to re-accept the deal in the Trade Desk UI.
 
 ## What are things I cannot change with Trade Desk deals once they are created?
 
