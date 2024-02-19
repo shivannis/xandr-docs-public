@@ -107,6 +107,7 @@ Data retention period for the report is 428 days.
 | `adjustment_id` | int | yes | `890` | The ID of the adjustment used to make changes to the media cost and/or impressions, clicks, and conversions you see in reporting for a publisher. |
 | `venue` | string | yes | `"Venue Name"` | The name of the cluster of domain, site, tag, and user country that Xandr' optimization system uses to determine bid valuations. A campaign cannot targeted a venue explicitly. |
 | `predict_rev_type` | int | yes | `2` | The optimization phase of a campaign that served on the publisher's inventory. Possible values:<br>`-2` = No predict phase<br>`-1` = Base predict phase<br>`0` = Learn giveup<br>`1` = Learn<br>`2` = Throttled<br>`3` = Optimized<br>`4` = Biased<br>`5` = Optimized 1<br>`8` = Optimized giveup<br>`9` = Base bid below giveup |
+| `openrtb2_request_subdomain` | string | no | `wrapper-emea` | The subdomain of the URL that the `OpenRTB2` ad request was sent to. **Note**: This value will be blank for non-`OpenRTB2` call types. If the the value for `OpenRTB2` is blank this means no subdomain was used. |
 
 ## Metrics
 
