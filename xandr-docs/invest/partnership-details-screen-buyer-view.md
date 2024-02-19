@@ -61,7 +61,7 @@ The seller eligibility and inventory trust settings display in the **My Settings
 The **eligibility (My Eligibility), Allowed Payment Types**, and **Targeting Access** settings the seller has set for you display in the **{Seller Name} Settings for Me** section. The **Targeting Access** settings show you what the seller has exposed or hidden and include the following:
 
 - **URLs** - If domains are exposed, you can more easily target the seller's inventory using allowlists.
-- **Categories (Universal) or Categories (Custom)** - If Universal or Custom Categories are exposed, you can more easily target via categories.
+- **Categories (Universal)** or **Categories (Custom)** - If Universal or Custom Categories are exposed, you can more easily target via categories.
 - **Age or Gender** - If age or gender information is exposed, you can target via those demographics.
 - **Placements or Publishers** - If placements or publishers are exposed, you can more easily directly target a placement or publisher. For more information on targeting specific placements or publishers, see [Direct Inventory Targeting (ALI)](direct-inventory-targeting-ali.md).
 

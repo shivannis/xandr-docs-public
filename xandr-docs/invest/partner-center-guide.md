@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Partner Center Guide
-description: This page helps you understand and use the Partner Center Guide. 
+description: This page helps you understand and use the Partner Center Guide. Also, go through links for diiferent articles mentioned in this page. 
 ms.date: 10/28/2023
 ---
 

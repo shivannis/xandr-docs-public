@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Payment
-description: In this page, learn about invoices, payment instructions and billing reports in UI.
+description: In this page, learn about invoices, payment instructions and billing reports in the UI.
 ms.date: 10/28/2023
 ---
 

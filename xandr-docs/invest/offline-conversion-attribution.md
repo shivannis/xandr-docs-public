@@ -16,7 +16,7 @@ Offline attribution provides:
 - **Flexibility**: This architecture provides us with more flexibility in how we implement conversion attribution models. As such, this change prepares our system to handle additional attribution models beyond "last-view/last-click."
 
 > [!IMPORTANT]
->The below text and diagrams describe lower-level infrastructural details; for a higher-level overview of how we do conversion attribution, see [conversion attribution](conversion-attribution.md).
+> The below text and diagrams describe lower-level infrastructural details; for a higher-level overview of how we do conversion attribution, see [conversion attribution](conversion-attribution.md).
 
 ## Conversion attribution, "Online" vs. "Offline"
 

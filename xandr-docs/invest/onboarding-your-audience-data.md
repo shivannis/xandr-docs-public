@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Onboarding Your Audience Data
-description: Learn the three ways to onboard your audience data in this page.
+description: In this page, learn the three ways, Client-Side Segmentation, Batch Server-Side Segmentation and Streaming Server-Side Segmentation, to onboard your audience data.
 ms.date: 10/28/2023
 ---
 

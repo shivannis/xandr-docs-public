@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Object Hierarchy
-description: Learn about the objects that you work with to buy media.
+description: This page speaks about objects like Member, Advertiser, Insertion order, Line item and few others that you work with to buy media.     
 ms.date: 10/28/2023
 ---
 

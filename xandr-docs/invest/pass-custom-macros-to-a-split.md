@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Pass Custom Macros to a Split
-description: This page provides steps to pass custom macros to a split. 
+description: This page provides steps to pass custom macros to a split.  
 ms.date: 10/28/2023
 ---
 

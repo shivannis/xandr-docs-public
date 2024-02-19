@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Peer Approval
-description: Learn what is a Peer Approval and how it can be enabled for different users.
+description: Using Peer Approval you can review augmented line items and make sure there are no errors before the line item starts spending. In this page, learn what is a Peer Approval and how it can be enabled for different users.
 ms.date: 10/28/2023
 ---
 
