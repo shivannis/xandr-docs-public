@@ -9,5 +9,5 @@ ms.topic: release-notes
 
 Check out the launch of two new Microsoft Advertising Data Marketplace resources for Microsoft Invest buyers:
 
-- [Seasonal Data Segments Discovery Page](https://view.ceros.com/xandr/q4-data-providers-for-holiday-campaigns/p/1) for Q4 2022.
-- [Contextual Data Provider Lookbook](https://view.ceros.com/xandr/data-marketplace-lookbook/p/1) with an in-depth overview on contextual advertising and individual data provider page.
+- Seasonal Data Segments Discovery Page for Q4 2022.
+- Contextual Data Provider Lookbook with an in-depth overview on contextual advertising and individual data provider page.
