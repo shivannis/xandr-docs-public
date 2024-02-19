@@ -1,6 +1,6 @@
 ---
 title: Under the Hood of your Browser
-description: The article explores online ad transactions, stressing the importance of understanding browser background operations. It provides tools and information for easier access and comprehension.
+description: Explore optimizing online ad transactions, emphasizing browser operations understanding. Maximize revenue with Xandr's best practices.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
@@ -11,11 +11,9 @@ If you want to understand what's going on behind the scenes when ad space is bou
 
 ## Ghostery
 
-Let's say you visit the website `swap-bot.com`, which organizes swaps of crafts and other items among users of the site. (Full disclosure: [swap-bot.com](http://swap-bot.com) is a side project of a former Xandr engineer and his wife.) You type `swap-bot.com` into your browser's address bar, and your browser starts downloading content from a `swap-bot.com` server somewhere. But, as your page is loading, your browser also starts passing information and requests to other sites and servers, such as DoubleClick, Quantcast, Google Analytics, and others. (To those in the ad tech industry, when a browser sends information and makes requests, it's known as
-"making calls" or "calling" servers.) How would you know this? And what are those calls for?
+Let's say you visit the website `swap-bot.com`, which organizes swaps of crafts and other items among users of the site. (Full disclosure: [swap-bot.com](http://swap-bot.com) is a side project of a former Xandr engineer and his wife.) You type `swap-bot.com` into your browser's address bar, and your browser starts downloading content from a `swap-bot.com` server somewhere. But, as your page is loading, your browser also starts passing information and requests to other sites and servers, such as DoubleClick, Quantcast, Google Analytics, and others. (To those in the ad tech industry, when a browser sends information and makes requests, it's known as "making calls" or "calling" servers.) How would you know this? And what are those calls for?
 
-There are several great (and free!) tools that can teach you more about what's going on behind the scenes of your Internet activity, such as [Ghostery](http://www.ghostery.com) a plugin that you can easily add to any
-major browser. When you visit a webpage, Ghostery tells you via a little box in the right hand corner of the page what calls are being made in conjunction with this page.
+There are several great (and free!) tools that can teach you more about what's going on behind the scenes of your Internet activity, such as [Ghostery](http://www.ghostery.com) a plugin that you can easily add to any major browser. When you visit a webpage, Ghostery tells you via a little box in the right hand corner of the page what calls are being made in conjunction with this page.
 
 :::image type="content" source="media/ghostery.png" alt-text="Screenshot that explains Ghostery, in a corner box, shows a webpage's calls when visited.":::
 
