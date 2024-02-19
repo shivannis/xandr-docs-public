@@ -27,7 +27,7 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
     1. Optionally, set a currency. If not set, the insertion order will inherit the advertiser's currency. You cannot change the currency after saving the insertion order.
 
        > [!TIP]
-       > As a best practice, align currency to the billing    currency in order to achieve the best possible local currency experience. See [Currency Support](currency-support.md).
+       > As a best practice, align currency to the billing currency in order to achieve the best possible local currency experience. See [Currency Support](currency-support.md).
 
     1. Select a viewability standard.
     1. Select a budget type.

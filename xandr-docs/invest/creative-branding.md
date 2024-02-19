@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Creative Branding
-description: Learn what is a brand and why accurate branding is necessary in Microsoft Advertising platform.
+description: In this page, Learn what is Creative Branding and which are the existing brand content categories available. 
 ms.date: 10/28/2023
 ---
 
