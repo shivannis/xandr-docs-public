@@ -4,7 +4,7 @@ description: The Seller Site Domain report provides sellers with information on 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Seller site domain report
+# Microsoft Invest - Seller Site Domain report
 
 The **Seller Site Domain** report is designed to give sellers information about what kind of web and mobile app inventory is coming through a publisher. For example, as a seller, you might distribute placement tags to your publishers and then want to verify that those tags are running on the inventory you intended. In addition, this report allows you to:
 
