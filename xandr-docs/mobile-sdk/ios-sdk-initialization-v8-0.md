@@ -13,7 +13,7 @@ Publishers with iOS SDK v8.0, are required to initialize Mobile SDK before maki
 
 The API signature for initializing the SDK is exposed using Xandr Ad. For example:
 
-``` 
+```
 /**
  * Initialize Xandr Ads SDK
  * @param memberId for initializing the Xandr SDK
@@ -29,7 +29,7 @@ The API signature for initializing the SDK is exposed using Xandr Ad. For exampl
 
 ### Objective-C
 
-``` 
+```
 @implementation AppDelegate
  
  
@@ -47,7 +47,7 @@ The API signature for initializing the SDK is exposed using Xandr Ad. For exampl
 
 ### Swift
 
-``` 
+```
 class AppDelegate: UIResponder, UIApplicationDelegate {
  
     var window: UIWindow?

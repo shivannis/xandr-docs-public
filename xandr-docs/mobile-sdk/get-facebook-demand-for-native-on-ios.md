@@ -69,7 +69,7 @@ Early in the lifecycle of your app, initialize Facebook's Audience Network SDK 
      }];
 ```
 
-On successful initialization of `FBAudienceNetworkAds`, `setFBAudienceNetworkInitialize` is set to YES, otherwise it is set as NO. If the value is set as YES i.e. Audience Network SDK is initialized, `getBidderToken` method of Audience Network SDK would return the Facebook Bidder Token to proceed further. For values set as NO, `getBidderToken` method will return nil.
+On successful initialization of `FBAudienceNetworkAds`, `setFBAudienceNetworkInitialize` is set to `YES`, otherwise it is set as `NO`. If the value is set as `YES` i.e. Audience Network SDK is initialized, `getBidderToken` method of Audience Network SDK would return the Facebook Bidder Token to proceed further. For values set as `NO`, `getBidderToken` method will return nil.
 
 Starting with iOS 14, Publisher App need to set a new API **setAdvertiserTrackingEnabled**  to fulfil the iOS policy obligations for using the Audience Network SDK. A new API **setAdvertiserTrackingEnabled** was added to **FBAdSettings** that is functional on only iOS 14 (and later) with FacebookAd SDK 6.0.0.
 
