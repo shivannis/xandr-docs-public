@@ -1,7 +1,7 @@
 ---
-title : Data Science Toolkit - Custom Model Parser Service
-description : The Custom Model Parser service lets you check the validity of decision trees written in Bonsai Language. This page walks you through the validation process.  
-ms.custom : data-science
+title: Data Science Toolkit - Custom Model Parser Service
+description: The Custom Model Parser service lets you check the validity of decision trees written in Bonsai Language. This page walks you through the validation process.  
+ms.custom: data-science
 ms.date: 10/28/2023
 ---
 

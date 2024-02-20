@@ -1,6 +1,6 @@
 ---
 title: Publisher Page-Level Options for Outstream
-description: This page describes different settings available for configuring outstream video in page code. Some of the settings described in this page are Disable collapse settings, End card settings, Player skinning settings, Sidestream settings and few others.   
+description: This page describes different settings available for configuring outstream video in page code. Some of the settings described in this page are Disable Collapse settings, End Card settings, Player Skinning settings, Sidestream settings to name a few.   
 ms.custom: seller-tag
 ms.date: 10/28/2023
 ---
@@ -19,26 +19,26 @@ The following outstream options are set at the publisher level, within the `rend
 
 | Option | Type | Default | Description |
 |--|--|--|--|
-| `alignment` | string | center | Alignment of the player if its size is smaller than the container. Accepted values are:<br>- center<br> - left<br> - right |  
+| `alignment` | string | center | Alignment of the player if its size is smaller than the container. Accepted values are:<br>- center<br> - left<br> - right |  |
 | `aspectRatio` | string | If not defined, and fixedSizePlayer is false, 16:9 | The aspect ratio of the video portion of the player. Does not take into account any control bars which do not overlay the video. The "auto" setting uses the aspect ratio defined in the video metadata. Accepted values are:<br>- "auto"<br>- "16:9"<br>- "4:3" |
 | `audioOnMouseover (deprecated)` | - true<br>- false<br>- integer | true | This setting is no longer supported or tested because of current browser limitations on sounds.<br>Play audio when the user's mouse is over the video, pause/unmute audio when the mouse is not over the video.<br>If an integer is specified, the audio will not start until that many milliseconds of continuous mouse hovering over the video. |
 | `autoInitialSize` | boolean | false | If true, the player width will match the page container. If false, the player width set on the placement will be used. |
 | `cbNotification` |  |  | Callback function to be called on specific ad unit. Function footprint is:<br>```adCallback(eventType, eventName, adId, eventData)```<br>where eventType is one of VPAID, VAST, AdUnit and eventName will be in one of the following eventType categories: See [Table 1. Event Type Categories](#event-type-categories)<br><br>The `adId` value will be the id for the ad which is defined by AST (target element ID) and passed to the renderer upon `renderAd()` call.<br>The `eventData` value will be additional data passed in with the event.<br>For a waterfall event, this will be an object containing the following fields:<br>```status (stepStart, stepFail, stepSuccess, timeout), step, totalAvailableSteps, stepLimit, maxTime, timeRemaining, failureReason (if status = stepFail)``` |
-| `disableCollapse` | object | n/a | Enables the user to control what actions will occur when the video playback has completed. See the Disable Collapse Settings table below for more details. |  
-| `endCard` | object | n/a | Configurations to determine whether an end card is displayed when the player remains open after video play is complete. See the End Card settings table below for detailed information. |  
-| `fixedSizePlayer` | boolean | false | If true, final rendered player height will be the height of the entire player, including any top or bottom control bars.<br>If false, final rendered player height will be the height of the video area, and any extra control bars (top bar, bottom control bar) will increase the total height of the player. |  
-| `learnMore` | object | n/a | If enabled a learnMore button is enabled  and clicking the video causes an ad-click and click-thru. See the Learn More Settings table below for more details. |  
-| `maxHeight` | true/false/height in pixels | false | Optionally, enable and set a maximum height for the player as shown in the following example. The player will adjust to maintain the aspect ratio.<br>`"maxHeight": { "enabled": true, "height": 480 }`<br>This setting was designed to optimize vertical video presentations and should only be used with a vertical aspect ratio. For more information, including recommended values, see  [Vertical Video Formats](../monetize/vertical-video-formats.md). |  
-| `parentIframeGeometryCb` | function callback | n/a | For non-friendly iFrame implementation cases only. |  
-| `parentIframeGeometryEvent` | string | n/a | For non-friendly iFrame implementation cases only. |  
-| `playerSkin` | object | n/a | Configurations to determine the look and feel of the outstream player. See the Player Skinning Settings table below for detailed information. |  
-| `playOnMouseover` | boolean | false | When this setting is true, while the user's mouse is over the video it will play. If the mouse leaves the video it will pause and resume playing when the mouse returns over the video.<br>When this setting is false, the video plays regardless of the user's mouse. |  
-| `playVideoVisibleThreshold` | integer | 50 | The video will not start playing until the video container's visibility is above this threshold. If the video container's visibility drops below this threshold the video follows the behavior specified in  nonViewableBehavior . Accepted range is 1-100. |  
-| `sidestream` | object | n/a | Configurations to determine whether and how videos are played in sidestream mode. See the Sidestream Settings table below for detailed information. |  
-| `skippable` | object | n/a | Configurations to determine if the video can be skipped and the skipping behavior. See the Skippable Settings table below for more details. |  
-| `vpaidEnvironmentVars` | JSON object | n/a | Sends JSON object containing vpaidEnvironmentVars to VPAID creative as "envinronmentVars" parameter of VPAID initAd() call. |  
-| `waterfallSteps` | integer | -1 | Maximum number of waterfall attempts that are allowed to try and display the ad. See the Waterfall Handling Settings with Mediation section below for more details. |  
-| `waterfallTimeout` | integer | 15000 | Maximum amount of time in milliseconds that waterfall processing of mediated ad sources is allowed to run before it stops attempting to deliver a viable ad. See the Waterfall Handling Settings with Mediation section below for more details. |  
+| `disableCollapse` | object | n/a | Enables the user to control what actions will occur when the video playback has completed. See the Disable Collapse Settings table below for more details. |  |
+| `endCard` | object | n/a | Configurations to determine whether an end card is displayed when the player remains open after video play is complete. See the End Card settings table below for detailed information. |  |
+| `fixedSizePlayer` | boolean | false | If true, final rendered player height will be the height of the entire player, including any top or bottom control bars.<br>If false, final rendered player height will be the height of the video area, and any extra control bars (top bar, bottom control bar) will increase the total height of the player. |  |
+| `learnMore` | object | n/a | If enabled a learnMore button is enabled  and clicking the video causes an ad-click and click-thru. See the Learn More Settings table below for more details. |  |
+| `maxHeight` | true/false/height in pixels | false | Optionally, enable and set a maximum height for the player as shown in the following example. The player will adjust to maintain the aspect ratio.<br>`"maxHeight": { "enabled": true, "height": 480 }`<br>This setting was designed to optimize vertical video presentations and should only be used with a vertical aspect ratio. For more information, including recommended values, see  [Vertical Video Formats](../monetize/vertical-video-formats.md). |  |
+| `parentIframeGeometryCb` | function callback | n/a | For non-friendly iFrame implementation cases only. |  |
+| `parentIframeGeometryEvent` | string | n/a | For non-friendly iFrame implementation cases only. |  |
+| `playerSkin` | object | n/a | Configurations to determine the look and feel of the outstream player. See the Player Skinning Settings table below for detailed information. |  |
+| `playOnMouseover` | boolean | false | When this setting is true, while the user's mouse is over the video it will play. If the mouse leaves the video it will pause and resume playing when the mouse returns over the video.<br>When this setting is false, the video plays regardless of the user's mouse. |  |
+| `playVideoVisibleThreshold` | integer | 50 | The video will not start playing until the video container's visibility is above this threshold. If the video container's visibility drops below this threshold the video follows the behavior specified in  nonViewableBehavior . Accepted range is 1-100. |  |
+| `sidestream` | object | n/a | Configurations to determine whether and how videos are played in sidestream mode. See the Sidestream Settings table below for detailed information. |  |
+| `skippable` | object | n/a | Configurations to determine if the video can be skipped and the skipping behavior. See the Skippable Settings table below for more details. |  |
+| `vpaidEnvironmentVars` | JSON object | n/a | Sends JSON object containing vpaidEnvironmentVars to VPAID creative as "envinronmentVars" parameter of VPAID initAd() call. |  |
+| `waterfallSteps` | integer | -1 | Maximum number of waterfall attempts that are allowed to try and display the ad. See the Waterfall Handling Settings with Mediation section below for more details. |  |
+| `waterfallTimeout` | integer | 15000 | Maximum amount of time in milliseconds that waterfall processing of mediated ad sources is allowed to run before it stops attempting to deliver a viable ad. See the Waterfall Handling Settings with Mediation section below for more details. |  | 
 
 ### Event Type Categories
 
@@ -130,7 +130,7 @@ These settings determine if the user can skip the content playing in the video p
 | `skipLocation` | string | "top-left" | Location of the `skipText` and `skipButtonText`. Options are `top-left` and `top-right`.<br>If set to top-left, the `skipText`, and subsequently `skipButtonText`, will be displayed on the top left corner of the player while the adText will be displayed on the top right corner.<br>If set to top-right, the `skipText`, and subsequently `skipButtonText`, will be displayed on the top right corner of the player while the adText will be displayed on the top left corner. |
 | `skipText` | string | "Video can be skipped in %%TIME%% seconds" | Text displayed to notify the user of when skippability will be available. Use %%TIME%% to insert the remaining time. |
 | `videoOffset` | integer | 5 | Time, in seconds, after which the video will be skippable, if enabled and the video's duration is greater than `videoThreshold`. |
-| `videoThreshold` | integer |  | Video must be longer than this length (in seconds) for the `skippable` option to be enabled.<br>**Note**: that video length is rounded to the closest second. For example: video lengths of 14.97 and 15.23 seconds will be treated as 15 second videos. |
+| `videoThreshold` | integer |  | Video must be longer than this length (in seconds) for the `skippable` option to be enabled.<br>**Note**: that video length is rounded to the closest second. For example: video lengths of 14.97 and 15.23 seconds will be treated as 15 second videos. |as 15 second videos. |
 
 ## Waterfall handling settings with mediation
 
@@ -163,7 +163,7 @@ The possible values for this option are interpreted as follows:
 | `disableTopBar` | boolean | false | If set to  true , the top player chrome bar (with adText and skipText/skipButtonText) will not display. If set to  false  the top player chrome bar will display except in the following case - If empty text fields are specified, a chrome bar will still be displayed, but will be empty. |
 | `showMute` | boolean | true | Show or hide the mute button in the control bar.<br>If `audioOnMouseOver` is set to false, a user activates sound by disabling the audio mute button. If `showMute` is also false and the audio mute button is hidden, a user activates sound by dragging the volume slider. |
 | `showProgressBar` | boolean | false | Show or hide the progress bar on the control bar. |
-| `showVolume` | boolean | false | Show or hide the volume slider on the control bar. |  
+| `showVolume` | boolean | false | Show or hide the volume slider on the control bar. |  | 
 
 ### VPAID handler settings
 

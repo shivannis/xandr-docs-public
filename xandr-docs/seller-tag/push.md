@@ -20,7 +20,7 @@ The parameter listed below can be sent as an argument in the function.
 |--|--|--|
 | `function` | function | The function to execute when the event is triggered. |
 
-## Examplel
+## Example
 
 ``` 
 apntag.anq.push(function() {
