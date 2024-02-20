@@ -1,6 +1,6 @@
 ---
 title: SafeFrame API Reference
-description: Explore SafeFrame—API-enabled iframe ensures secure communication, data safety, and efficient interaction with Xandr's sf-ext.js on a secondary domain.
+description: SafeFrame—API-enabled iframe ensures secure communication, data safety, and efficient interaction with Microsoft's sf-ext.js on a secondary domain.
 ms.custom: seller-tag
 ms.date: 10/28/2023
 ---
@@ -31,18 +31,18 @@ For video customers, SafeFrame is currently only supported for Outstream video p
 | `$sf.ext.supports` | The supports function returns an object with keys representing what features have been turned on or off for a specific: Expansion, Push mode, Read cookie, Write cookie container. |
 | `$sf.ext.winHasFocus` | Returns whether or not the browser window or tab that contains the SafeFrame has focus, or is currently active. |
   
-**apntag.defineTag({param})**
+## apntag.defineTag({param})
 
 Param '`enableSafeFrame`' is added to `defineTag` which delivers the creative in SafeFrame container.
 
-**Parameters**
+### Parameters
 
 | Name | Type | Description |
 |--|--|--|
 | `enableSafeFrame` | boolean | Delivers the creative in SafeFrame container. |
 | `setSafeFrameConfig` | boolean | Allows configuration of SafeFrame, a managed iframe that provides additional consumer protection and publisher control beyond that provided by a standard iframe. |
 
-**Example**
+### Example
 
 ``` 
  
@@ -60,18 +60,18 @@ var tag = apntag.defineTag({
         });
 ```
 
-**apntag.setSafeFrameConfig({param})**
+## apntag.setSafeFrameConfig({param})
 
 This function can be used to configure SafeFrame. We have given two options, `allowExpansionByPush` and  `allowExpansionByOverlay` for SafeFrame expand API. Configuration by this function will change the return values of `$sf.ext.supports` function. Publisher can revoke expand permissions from here.
 
-**Parameters**
+### Parameters
 
 | Name | Type | Description |
 |--|--|--|
 | `allowExpansionByPush` | boolean | Host can toggle expansion by push using this param. |
 | `allowExpansionByOverlay` | boolean | Host can toggle expansion by overlay using this param. |
 
-**Example**
+### Example
 
 ``` 
 apntag.setSafeFrameConfig({
@@ -80,17 +80,17 @@ apntag.setSafeFrameConfig({
 });
 ```
 
-**apntag.setPageOpts({param})**
+## apntag.setPageOpts({param})
 
 Parameter `enableSafeFrame` is added to `setPageOpts` function. This parameter enables SafeFrame and serves all the all ads in SafeFrame container.
 
-**Parameter**
+### Parameter
 
 | Name | Type | Description |
 |--|--|--|
 | `enableSafeFrame` | boolean | Deliver all creative in safeframe container. |
 
-**Example**
+### Example
 
 ``` 
 apntag.setPageOpts({
@@ -102,15 +102,15 @@ apntag.setPageOpts({
 > [!NOTE]
 > Page level functions: All AST functions will be page-level. Creative functions: all $sf.ext functions will be called by creative.
 
-**Safeframe API function examples**
+## Safeframe API function examples
 
 The following examples show how to use the API functions for SafeFrame.
 
-**$sf.ext.register(width, height, callbackFn)**
+## $sf.ext.register(width, height, callbackFn)
 
 The SafeFrame External API register function registers the function to accept SafeFrame external party API calls. External party creative declares the initial (collapsed) width and height and callback function, which informs the external content about various status details.
 
-**Parameters**
+### Parameters
 
 | Name | Type | Description |
 |--|--|--|
@@ -118,7 +118,7 @@ The SafeFrame External API register function registers the function to accept Sa
 | `height` | number | Initial height of the creative |
 | `width` | number | Initial width of the creative |
 
-**Example**
+### Example
 
 ``` 
 var statusUpdate = function(status) {
@@ -131,11 +131,11 @@ var statusUpdate = function(status) {
 $sf.ext.register('300','250',statusUpdate);
 ```
 
-**$sf.ext.supports()**
+## $sf.ext.supports()
 
 This function returns an object with keys representing which features have been turned on or off for this particular container.
 
-**Example**
+### Example
 
 ``` 
 var supports = $sf.ext.supports();
@@ -147,11 +147,11 @@ if(supports['exp-push']) {
 }
 ```
 
-**$sf.ext.geom()**
+## $sf.ext.geom()
 
 This function gets the space available around the `targetDiv` to expand the SafeFrame container. It returns the following object:
 
-**Example**
+### Example
 
 ``` 
  var g = $sf.ext.geom();
@@ -160,7 +160,7 @@ This function gets the space available around the `targetDiv` to expand the Safe
  }
 ```
 
-**Scroll Position Example**
+### Scroll Position Example
 
 ``` 
  var geom = $sf.ext.geom();
@@ -173,11 +173,11 @@ This takes into account the eventual scroll position of intermediary same-domain
 > [!NOTE]
 > `geom.anx` is a proprietary extension to the safeframe specification.
 
-**$sf.ext.expand({params})**
+## $sf.ext.expand({params})
 
 This function expands the SafeFrame container to the specified geometric position. All the params are compulsory, so if you are not going to expand left than keep 'left' : 0
 
-**Parameters**
+### Parameters
 
 | Name | Type | Description |
 |--|--|--|
@@ -187,7 +187,7 @@ This function expands the SafeFrame container to the specified geometric positio
 | `r` | number | The new right coordinate (x+width) relative to the current right coordinate(x+width). |
 | `t` | number | The new top coordinate (y) relative to the current top coordinate. |
 
-**Example**
+### Example
 
 ``` 
 $sf.ext.expand({
@@ -199,21 +199,21 @@ $sf.ext.expand({
 });
 ```
 
-**$sf.ext.collapse()**
+## $sf.ext.collapse()
 
 This function collapses the SafeFrame container to the original geometric position.
 
-**Example**
+### Example
 
 ```
 $sf.ext.collapse();
 ```
 
-**$sf.ext.status()**
+## $sf.ext.status()
 
 This function returns the current state of the SafeFrame container. Possible States are `expanded`, `collapsed`, `ready`.
 
-**Example**
+### Example
 
 ``` 
 $sf.ext.status();

@@ -28,7 +28,7 @@ The following outstream options are set at the publisher level, within the `rend
 | `endCard` | object | n/a | Configurations to determine whether an end card is displayed when the player remains open after video play is complete. See the End Card settings table below for detailed information. |  
 | `fixedSizePlayer` | boolean | false | If true, final rendered player height will be the height of the entire player, including any top or bottom control bars.<br>If false, final rendered player height will be the height of the video area, and any extra control bars (top bar, bottom control bar) will increase the total height of the player. |  
 | `learnMore` | object | n/a | If enabled a learnMore button is enabled  and clicking the video causes an ad-click and click-thru. See the Learn More Settings table below for more details. |  
-| `maxHeight` | true/false/height in pixels | false | Optionally, enable and set a maximum height for the player as shown in the following example. The player will adjust to maintain the aspect ratio.<br>`"maxHeight": { "enabled": true, "height": 480 }`<br>This setting was designed to optimize vertical video presentations and should only be used with a vertical aspect ratio. For more information, including recommended values, see  [Vertical Video Formats](../monetize/vertical-video-formats.md). |  
+| `maxHeight` | true/false/height in pixels | false | Optionally, enable and set a maximum height for the player as shown in the following example. The player will adjust to maintain the aspect ratio.<br>`"maxHeight": { "enabled": true, "height": 480 }`<br>This setting was designed to optimize vertical video presentations and should only be used with a vertical aspect ratio. For more information, including recommended values, see  [Vertical Video Formats](https://review.learn.microsoft.com/en-us/xandr/monetize/vertical-video-formats?branch=pr-en-us-383). |  
 | `parentIframeGeometryCb` | function callback | n/a | For non-friendly iFrame implementation cases only. |  
 | `parentIframeGeometryEvent` | string | n/a | For non-friendly iFrame implementation cases only. |  
 | `playerSkin` | object | n/a | Configurations to determine the look and feel of the outstream player. See the Player Skinning Settings table below for detailed information. |  
@@ -145,16 +145,12 @@ Setting waterfallSteps (defineTag.rendererOptions.waterfallsteps) enables the me
 
 The possible values for this option are interpreted as follows:
 
-- -1 = all the ad sources in the waterfall list will be processed until a viable ad is found or the waterfallTimeout has expired
-- 0 = only one ad sources will be used to produce an ad - use the first ad on the list
-- positive integer = the maximum number of non-rtb ad sources to try until a viable ad is found
+- -1 = all the ad sources in the waterfall list will be processed until a viable ad is found or the waterfallTimeout has expired.
+- 0 = only one ad sources will be used to produce an ad - use the first ad on the list.
+- positive integer = the maximum number of non-rtb ad sources to try until a viable ad is found.
   - If the number of ad sources is less than the value of this property then all of the ad sources will be attempted
-
   - If none of the non-rtb ad sources yields a viable ad source and the waterfall timeout has not expired, then the rtb ad should be attempted.
-
-  - If you anticipate that the number of attempts to render an ad will exceed 6, then it is recommended that you do set this value to some number greater than 6.
-
-    The default value is -1.
+  - If you anticipate that the number of attempts to render an ad will exceed 6, then it is recommended that you do set this value to some number greater than 6. The default value is -1.
 
 ## Player's chrome setting
 
