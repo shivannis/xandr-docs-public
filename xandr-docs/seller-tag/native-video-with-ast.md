@@ -93,8 +93,7 @@ The bid response will include the VAST XML string for the video. For example:
       }
 ```
 
-Notice the **content** field in the response. This field contains the VAST XML string for the full video
-content. The complete XML is not shown in this example. For full XML examples of what would be returned in a response, see the [IAB VAST Test Examples](https://www.iab.com/insights/vast-2-0-xml-samples-for-testing/).
+Notice the **content** field in the response. This field contains the VAST XML string for the full video content. The complete XML is not shown in this example. For full XML examples of what would be returned in a response, see the [IAB VAST Test Examples](https://www.iab.com/insights/vast-2-0-xml-samples-for-testing/).
 
 ## Video players
 

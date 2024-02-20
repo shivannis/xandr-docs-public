@@ -1,6 +1,6 @@
 ---
 title: Supply Partners - Bid Response
-description: In this article, learn about bid responses and their JSON fields, supply templates, types of errors, and examples to help you understand better.
+description: Learn about bid responses, their JSON fields, supply templates, types of errors, and examples to help you understand better.
 ms.custom: supply-partners
 ms.date: 10/28/2023
 ---

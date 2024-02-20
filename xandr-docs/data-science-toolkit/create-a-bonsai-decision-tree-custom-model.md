@@ -116,7 +116,7 @@ $ cat check_tree.json
 }
 ```
 
-#### Example: `POST` to the custom-model-parser service
+#### Example: `POST` to the `custom-model-parser` service
 
 ```
 $ curl -b cookies -c cookies -X POST -d @check_tree.json 'https://api.appnexus.com/custom-model-parser'

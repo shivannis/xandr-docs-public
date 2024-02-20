@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # Data Science Toolkit - Creative selection custom model
 
-By default, Xandr randomly distributes the creatives associated with a line item. You can also assign creatives using a custom model. Any [Bonsai Language](the-bonsai-language.md) feature or logic can be used to determine which creative should be served.
+By default, Xandr randomly distributes the creatives associated with a line item. You can also assign creatives using a custom model. Any [Bonsai Language](the-bonsai-language.md) feature or logic can be used to determine which creative should be served.
 
 > [!NOTE]
 > This functionality is only available for the [Augmented Line Item](../digital-platform-api/line-item-service---ali.md).

@@ -1371,7 +1371,7 @@ else:
 
 ## Compound features
 
-The simple features above let you evaluate a single aspect of the impression (country, cookie age, mobile app, etc.). The compound [Segment](#segment) and [Frequency/Recency](#frequencyrecency) features are more nuanced; they let you evaluate multiple attributes of these features, such as the age of a segment or the segment value.
+The simple features above let you evaluate a single aspect of the impression (country, cookie age, mobile app, etc.). The compound [Segment](#segment) and [Frequency/Recency](#frequencyrecency) features are more nuanced; they let you evaluate multiple attributes of these features, such as the age of a segment or the segment value.
 
 ### Segment
 

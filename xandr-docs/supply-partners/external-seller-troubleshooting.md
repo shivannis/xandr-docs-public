@@ -15,11 +15,8 @@ information see the [Integration Process FAQ](faq-integration-process.md).
 If you're experiencing non-delivery of specific deals, here are some steps to take:
 
 1. **Ensure the deal exists in the Xandr system**. Use the [Deal Service](../digital-platform-api/deal-service.md) to confirm that the deal exists, is active, and is offered to the correct Xandr buyer member. For full instructions on creating deals, see [Selling Deals on Xandr](selling-deals-on-xandr.md).
-
 1. **Check that requests are being sent for this deal**. The code field in the Xandr deal object must match the deal ID that is sent in the OpenRTB request (`pmp.deals.id`). For examples, see [Selling Deals on Xandr](selling-deals-on-xandr.md).
-
 1. **Requests for this deal must meet our general specifications and point to valid, active objects in our system.** See [General Delivery Troubleshooting](#general-delivery-troubleshooting) below.
-
 1. **Ensure the buyer is targeting the deal.**
 
       If you've confirmed steps 1 - 3, the next course of action is to reach out to the buyer and ensure that they are actively targeting the deal. If so, the buyer should then submit a support ticket via the [Customer Portal](https://help.xandr.com/s/login/) in order for our buyside support team to troubleshoot.

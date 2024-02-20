@@ -1,6 +1,6 @@
 ---
 title: Supply Partners - Bid Request
-description: In this article, learn about a bid request and their JSON fields, the placement mapping sequence, and examples to help you understand better.
+description: Learn about a bid request, their JSON fields, the placement mapping sequence, and examples to help you understand better.
 ms.custom: supply-partners
 ms.date: 10/28/2023
 ---
@@ -99,7 +99,7 @@ If none of the above are available, Xandr will not submit a bid. Note that each 
                    }
     ```
 
-1. PO`ST the JSON-formatted file. Be sure to include your member ID in the querystring.
+1. `POST` the JSON-formatted file. Be sure to include your member ID in the querystring.
 
     ``` 
     curl -X POST -d @bid_request 'https://ib.adnxs.com/asi?member_id=123'
