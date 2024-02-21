@@ -13,7 +13,7 @@ The following article explais about evaluation and other processes to measure th
 
 Use the **Orders** tab and Evaluate Orders to see how a proposal is expected to deliver and be consumed.
 
-1. On the **Orders** tab, in the Order Tasks panel, click **Evaluate Orders**.
+1. On the **Orders** tab, in the **Order Tasks** panel, click **Evaluate Orders**.
 1. Use the **Filters** panel to find the proposal to evaluate:
     - The Time Period filter searches the order's start date.
     - The Order, Order Status, Advertiser, Agency, Industry, and Salesperson filters search parameters imported from your order management system.

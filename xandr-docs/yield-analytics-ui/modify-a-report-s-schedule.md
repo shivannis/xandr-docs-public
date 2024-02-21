@@ -9,7 +9,7 @@ ms.custom: yield-analytics-ui
 
 If you have administrative access, you can select **Admin Tools \> View Reports** to view and edit scheduled reports.
 
-1. In the list of Saved Reports, select the report you wish modify. Reports that are already scheduled are noted in the **Is Scheduled** column to the right.  
+1. In the list of **Saved Reports**, select the report you wish modify. Reports that are already scheduled are noted in the **Is Scheduled** column to the right.  
 1. On the **Edit Saved Analysis** screen that appears, scroll to the bottom of the page to the Schedules for Analysis module. Here you can see all the different schedules and distribution lists for a specific report.  
 1. Select the schedule you wish to modify by selecting **Edit**. The **Send Analysis** dialog appears.  
 1. You can change the **Recurrence**, **Send To email addresses**, **Message**, whether to include a **URL Link**, **Attachment**, or **Data Snapshot**, as well as the **Report Status**.  
