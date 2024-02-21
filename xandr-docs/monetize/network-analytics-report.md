@@ -182,7 +182,6 @@ If you are frequently requesting Network analytics reports which include dates l
 | Code 1 | No | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
 | Code 2 | No | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
 | Code 3 | No | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
-|`OpenRTB2` Request Subdomain| No |The subdomain of the URL that the `OpenRTB2` ad request was sent to. <br>**Note**: The value  will be blank for non-`OpenRTB2` call types. If the the value for `OpenRTB2` is blank this means no subdomain was used.|
 
 > [!NOTE]
 > You can also filter on a particular number of impressions using the **Minimum Impressions** filter.
