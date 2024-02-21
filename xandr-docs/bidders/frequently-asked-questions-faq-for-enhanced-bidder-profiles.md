@@ -10,11 +10,11 @@ ms.date: 10/28/2023
 
 Your account manager and services partner should have already discussed this with you.
 
-## Can I use legacy bidder profiles and Enhanced Bidder Profiles at the same time?
+## Can I use legacy bidder profiles and enhanced bidder Profiles at the same time?
 
 No, a bidder can only be on one version of the bidder profile. This prevents conflicting logic and confusion.<br><br>If you are a bidder on legacy bidder profiles, the profiles listed in `bidder.child_profiles` and `bidder.parent_profile_id` will be used on your bidder object.<br><br>If you are a bidder on Enhanced Bidder Profiles, your profiles with active set to `true` in the `/bidder-profile` API service are in effect.
 
-## What changes happened between the legacy and enhanced Bidder Profiles?
+## What changes happened between the legacy and enhanced bidder Profiles?
 
 All changes have been documented here: [Changelog for Enhanced Bidder Profiles](changelog-for-enhanced-bidder-profiles.md).
 
@@ -22,7 +22,7 @@ All changes have been documented here: [Changelog for Enhanced Bidder Profiles](
 
 All changes have been documented here: [Changelog for Enhanced Bidder Profiles](changelog-for-enhanced-bidder-profiles.md).
 
-## Where can I contribute feedback about enhanced Bidder Profiles?
+## Where can I contribute feedback about enhanced bidder Profiles?
 
 Reach out to your account manager or services partner with any feedback.
 

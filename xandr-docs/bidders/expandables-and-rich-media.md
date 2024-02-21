@@ -1,7 +1,7 @@
 ---
 title: Expandables and Rich Media
 description: Enhance rich media support for supply platforms, integrating with exchanges like the Microsoft Advertising Exchange for adaptibility.
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # Expandables and rich media
