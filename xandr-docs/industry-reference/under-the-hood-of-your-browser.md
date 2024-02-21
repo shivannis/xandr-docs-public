@@ -66,5 +66,4 @@ Explorer, Chrome, Safari) and the Internet. You can install it on your computer,
 
 ## Summary
 
-When you have an understanding of the available tools and background processes that browsers incorporate to monitor, track, and report on ad serving activity – it allows you to better select the appropriate tools
-and methods for your specific need. This ultimately equates to improved ad targeting and increased revenue.
+When you have an understanding of the available tools and background processes that browsers incorporate to monitor, track, and report on ad serving activity – it allows you to better select the appropriate tools and methods for your specific need. This ultimately equates to improved ad targeting and increased revenue.
