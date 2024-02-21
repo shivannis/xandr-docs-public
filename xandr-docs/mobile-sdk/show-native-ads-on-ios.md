@@ -84,8 +84,8 @@ The following is a comprehensive list of native assets supported in the SDKs.
 
 | Asset | Supported Pre 5.0? | Supported Post 5.0? | v5.0+ API-Usage Example |
 |--|--|--|--|
-| Image, Width, Height | Yes, Yes, Yes | Yes, Yes, Yes | `response.mainImage; response.mainImageSize; response.mainImageURL;` |
-| Icon+Width+Height | Yes, No, No | Yes, Yes, Yes | `response.iconImage; response.iconImageURL; response.iconImageSize;` |
+| Image, Width, Height | Yes, Yes, Yes | Yes, Yes, Yes | `response.mainImage;` <br> `response.mainImageSize;` <br> `response.mainImageURL;` |
+| Icon+Width+Height | Yes, No, No | Yes, Yes, Yes | `response.iconImage;`<br> `response.iconImageURL;` <br> `response.iconImageSize;` |
 | Title | Yes | Yes | `response.title;` |
 | Sponsored by | Yes | Yes | `response.sponsoredBy;` |
 | Body text | Yes | Yes | `response.body;` |

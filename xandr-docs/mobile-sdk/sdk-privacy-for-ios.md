@@ -102,8 +102,7 @@ Publishers/Consent Management Platforms (CMPs) are free to store these values i
 
 ## Global Privacy Platform (GPP)
 
-[Global Privacy Platform](https://github.com/InteractiveAdvertisingBureau/Global-Privacy-Platform/blob/main/Core/CMP%20API%20Specification.md#in-app-details) is a single
-protocol designed to streamline transmitting privacy, consent, and consumer choice signals from websites and apps to ad tech providers. These signals are packaged in a standardized, easily communicated payload called a GPP String. The pre-parsed GPP data as well as the GPP string shall be stored under [NSUserDefaults](https://developer.apple.com/documentation/foundation/nsuserdefaults#1664798?language=objc) (iOS). This will allow the following:
+[Global Privacy Platform](https://github.com/InteractiveAdvertisingBureau/Global-Privacy-Platform/blob/main/Core/CMP%20API%20Specification.md#in-app-details) is a single protocol designed to streamline transmitting privacy, consent, and consumer choice signals from websites and apps to ad tech providers. These signals are packaged in a standardized, easily communicated payload called a GPP String. The pre-parsed GPP data as well as the GPP string shall be stored under [NSUserDefaults](https:/ developer.apple.com/documentation/foundation/nsuserdefaults#1664798?language=objc) (iOS). This will allow the following:
 
 - Vendors to easily access GPP data.
 - GPP data to persist across app sessions.
@@ -113,12 +112,12 @@ protocol designed to streamline transmitting privacy, consent, and consumer choi
   > [!NOTE]
   > If a Publisher chooses to remove a CMP SDK from their app they are responsible for clearing all IABGPP\_\* vestigial values for users so that vendors do not continue to use the GPP data therein.
 
-Xandr SDK will then read the values from NSUserDefault which is then passed to the ad call. Following are the strings SDK will query from :
+  Xandr SDK will then read the values from NSUserDefault which is then passed to the ad call. Following are the strings SDK will query from :
 
-| Key Name | Data type | Description |
-|--|--|--|
-| `IABGPP_HDR_GppString` | string | Full consent string in its encoded form. e.g "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN" |
-| `IABGPP_GppSID` | string | Section ID(s) considered to be in force. Multiple IDs are separated by underscore, e.g. “2_3” |  
+  | Key Name | Data type | Description |
+  |--|--|--|
+  | `IABGPP_HDR_GppString` | string | Full consent string in its encoded form. e.g "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN" |
+  | `IABGPP_GppSID` | string | Section ID(s) considered to be in force. Multiple IDs are separated by underscore, e.g. “2_3” |  |
 
 ## Digital Services Act (DSA)
 
@@ -194,7 +193,7 @@ transparencyList.append(info2)
 ANDSASettings.sharedInstance().transparencyList = transparencyList
 ```
 
-**Retrieve the DSA values set in SDK**
+### Retrieve the DSA values set in SDK
 
 ```
 // Objective C

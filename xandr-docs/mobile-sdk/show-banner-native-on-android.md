@@ -29,7 +29,7 @@ The AdListener defines a method, `onAdLoaded `(NativeAdResponse response), w
 Please follow below steps to understand how the multi-format `BannerAdView` is used:
 
 - Enable Native demand for your `BannerAdView` using `enableNativeRendering(boolean enabled)` and `setAllowNativeDemand(boolean enabled)` methods. For enabling
-  Video demand, use `setAllowVideoDemand(boolean enabled)` method. By default these values are false, in which case your `BannerAdView` will deliver only traditional HTML banner ads. You must explicitly enable native and video in the app.
+ Video demand, use `setAllowVideoDemand(boolean enabled)` method. By default these values are false, in which case your `BannerAdView` will deliver only traditional HTML banner ads. You must explicitly enable native and video in the app.
 
   ```
   /**

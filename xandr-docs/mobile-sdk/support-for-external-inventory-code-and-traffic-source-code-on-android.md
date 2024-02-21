@@ -12,7 +12,7 @@ ms.date: 10/28/2023
 
 An external inventory code provides publishers the ability to break out data on their inventory more granularly than the placement level. The value can be passed via the `ext_inv_code` field of the request body using the `extInvCode` property, but must be entered into the system before it is logged and available as a dimension in relevant reporting. For more information, see [External Inventory Code Service](../digital-platform-api/external-inventory-code-service.md). In short, this property allows you to pass the predefined external inventory codes on ad calls and then report on them.
 
-## Scope of extInvCode
+### Scope of extInvCode
 
 You need to set the External Inventory Code using the `extInvCode` property of `BannerAdView`, `InterstitialAdView`, `NativeAdRequest` and `VideoAd`. However, the scope of use of this property depends on your reporting requirement. You can omit the call to this property if you don't want to use this feature.
 
@@ -52,7 +52,7 @@ nativeAdRequest.getExtInvCode();
 
 A traffic source code provides the ability to check the third-party traffic source of a particular impression. If the traffic source code is pre-registered with Xandr, and is passed via the query string using the `trafficSourceCode` property, then it would let you know the sources for the third party traffic occurred for an impression.
 
-**Scope of trafficSourceCode**
+### Scope of trafficSourceCode
 
 You need to set the Traffic Source Code using the `trafficSourceCode` property of `ANBannerAdView`, `InterstitialAdView`, `ANNativeAdRequest` and `ANInstreamVideoAd`.  
 
