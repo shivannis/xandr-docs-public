@@ -30,7 +30,7 @@ The following steps outline the long-form video request and response process:
 1. Key-value targeting pairs are generated for each bid for `hb_pb`, `hb_pb_cat_dur,` and `hb_cache_id`.
 1. ImpBus returns a JSON response with Prebid targeting key-value pairs and the cache id.
 
-:::image type="content" source="media/long-form-video-service-fig-a.png" alt-text="Diagram that illustrates the request and response process.":::
+:::image type="content" source="media/long-form-video-service-fig-a-edited.png" alt-text="Diagram that illustrates the request and response process.":::
 
 ## REST API
 
