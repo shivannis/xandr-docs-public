@@ -51,8 +51,7 @@ Technical attributes:
 - Video
 
 > [!TIP]
-> We have mapped the top 1000 app
-> names for targeting on both the Windows AppNetwork and Windows Phone AppNetwork. If you want to target an app name outside of the top 1000, reach out to your account manager. There is reporting capability for App targeting.
+> We have mapped the top 1000 app names for targeting on both the Windows AppNetwork and Windows Phone AppNetwork. If you want to target an app name outside of the top 1000, reach out to your account manager. There is reporting capability for App targeting.
 
 Ad Quality:
 
