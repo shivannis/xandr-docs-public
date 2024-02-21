@@ -22,7 +22,7 @@ To open a new case, log in to the [Customer Support Portal](https://help.xandr.c
 
 Select the category that best describes the case:
 
-<!--->
+<!---
 - **Anti-Malvertising** - Questions about banned ads or advertisers.
 - **Business Support** - Questions about invoices, contracts, credits, finance access control, and your account with.
 - **Creative Audit** - Questions about  creative auditing standards, or pending or failed creative audits.
@@ -42,10 +42,7 @@ Select the category that best describes the case:
 
 ## Step 2: Select an issue
 
-> [!NOTE]
-> This step is only applicable if you selected the Product Support, Business Support or Client Finance categories. If you selected a category other than Product Support, Business Support or Client Finance, go to [Step 4](#step-4-add-a-subject-and-description).
-
-Select an issue from the **What Can We Help With** drop down menu.
+Select an issue from the **Topics** drop down menu which best suits your case.
 
 ## Step 3: Set the severity
 
@@ -60,12 +57,9 @@ Selecting **This is an outage, wake everyone up!** will page the on-call support
 
 An outage occurs when an essential production feature is broken with no viable workaround. Examples include:
 
-- Loss of ad serving or severe ad serving latency.
-- Is not accessible.
-- Persistent API time-outs.
+- Severe loss of ad serving or severe ad serving latency.
+- UI is not accessible or consistent API timeouts.
 - Reporting is not accessible or reports are delayed for over six hours.
-
-For more information, see [Client Services](xcs-xandr-client-services.md).
 
 ## Step 4: Add a subject and description
 
@@ -84,7 +78,7 @@ In the description, try to include all the information necessary to reproduce th
 
 ## Step 5: Add cc addresses (optional)
 
-You can add up to ten email addresses to be cc'd on case updates. These users will be emailed the case details and any new comments added to the case. Please be sure that the email addresses are correct, separated by "," and that everyone you've cc'd would like to receive updates. You can update the cc addresses after the case is opened or request that an agent do so.
+You can add up to ten email addresses to be cc'd on case updates. These users will be emailed the case details and any new comments added to the case. Ensure that the email addresses are correct, separated by "," and that everyone you've cc'd would like to receive updates. You can update the cc addresses after the case is opened or request that an agent do so.
 
 If anyone you've cc'd on a case would like a portal account, they can visit the [Login](https://help.xandr.com) page, proceed as a Guest, and click **Contact Support**.
 
