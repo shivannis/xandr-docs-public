@@ -98,7 +98,7 @@ Update version to match Android SDK. No changes from 8.3.0.
 ### Improvement/Bug fixes (8.2.0)
 
 - MS-5172: Support for Global Privacy Platform (GPP) ([SDK Privacy for iOS](sdk-privacy-for-ios.md)).
-- MS-5112: Update PPID API to indicate if it is first party id ([User ID(s) Mapping on iOS](user-id-s-mapping-on-ios.md)).
+- MS-5112: Update PPID API to indicate if it is first party ID ([User ID(s) Mapping on iOS](user-id-s-mapping-on-ios.md)).
 - MS-5183: Fixed Completion handler callback issues in XandrAd.init().
 
 ### Mediation/CSR partner updates (8.2.0)
@@ -303,7 +303,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 ### New feature (7.10)
 
-- MS-4659, MS-4674: Added support for User Id from external sources(Criteo, NetID, LiverRamp, The Trade Desk) ([User ID(s) Mapping on iOS](user-id-s-mapping-on-ios.md)).
+- MS-4659, MS-4674: Added support for User ID from external sources(Criteo, NetID, LiverRamp, The Trade Desk) ([User ID(s) Mapping on iOS](user-id-s-mapping-on-ios.md)).
 - MS-4657: Changes to support AppTrackingTransparency ([iOS 14.0 FAQ](ios-14-0-faq.md)).
 
 ### Improvements/Bug fixes (7.10)
@@ -398,7 +398,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 - MS-4433: Support for iOS 14 ([iOS 14.0 FAQ](ios-14-0-faq.md)).
 - MS-4268: Support for Open Measurement SDK Open RTB Signals.
-- MS-4473: Added support for forcing the creative Id in Ad request for test/debug purposes.
+- MS-4473: Added support for forcing the creative ID in Ad request for test/debug purposes.
 - MS-4361: Added onAdImpression callback for the Native Ads ([Listen to Native Ad Events on iOS](listen-to-native-ad-events-on-ios.md)).
 
 ### Mediation partner upgrade
@@ -796,7 +796,7 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 ### New features (4.8)
 
 - MS-3083: Native for Banner Ad View.
-- MS-3115: Function to set external user id in the SDK for user syncing.
+- MS-3115: Function to set external user ID in the SDK for user syncing.
 - MS-3279: Expose click through URL for banner, native, interstitial & video.
 
 ### Bug fixes (4.8)
