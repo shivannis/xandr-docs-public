@@ -32,13 +32,11 @@ or how much traffic comes through RSS feeds. `Swap-bot.com` also has pixels for 
 Ghostery may not show a 100% complete picture of the activity that happens when you visit a page. A site could be contacting another system server-side without going through the browser. But it's a strong start
 and a nice way to see what companies are out there.
 
-A note on privacy: These calls don't happen without the cooperation of the website you are visiting. The webmaster had to place the pixel on the page. Read [our privacy policy](https://www.xandr.com/privacy/platform-privacy-policy/) for a full explanation of what information websites use
-Xandr's technology to collect, and how it's protected.
+A note on privacy: These calls don't happen without the cooperation of the website you are visiting. The webmaster had to place the pixel on the page. Read [our privacy policy](https://www.xandr.com/privacy/platform-privacy-policy/) for a full explanation of what information websites use Xandr's technology to collect, and how it's protected.
 
 ## Digging deeper: debuggers
 
-If you want to get even more information about browser calls, you can use one of several debugging tools that show and analyze your browser traffic. Debuggers will help you if you're tracking down something
-specific, like why a pixel isn't firing properly.
+If you want to get even more information about browser calls, you can use one of several debugging tools that show and analyze your browser traffic. Debuggers will help you if you're tracking down something specific, like why a pixel isn't firing properly.
 
 <!--Below is a screenshot of a Firefox add-on called [Tamper Data](https://addons.mozilla.org/en-US/firefox/addon/tamper-data/) recording the activity on the `swap-bot.com` page. You can see the Quantcast, Google, and
 Xandr ad calls, and in the last line you can see the page retrieving its favicon (a file containing one or more small icons) from some folder in the website's content management system.
@@ -53,16 +51,13 @@ Here are a few debuggers:
 
 ## View a webpage's source code
 
-For any website you visit, it's possible to see the HTML and JavaScript code that your browser executes, causing content to show up in your screen, and causing the first round of calls described above. For
-example, if you go to `swap-bot.com` using Firefox, and right-click on the page, you'll see an option called "page source." This option shows the below (truncated) code. You'll notice the Quantcast pixel that Ghostery
-alerted us to above.
+For any website you visit, it's possible to see the HTML and JavaScript code that your browser executes, causing content to show up in your screen, and causing the first round of calls described above. For example, if you go to `swap-bot.com` using Firefox, and right-click on the page, you'll see an option called "page source." This option shows the below (truncated) code. You'll notice the Quantcast pixel that Ghostery alerted us to above.
 
 :::image type="content" source="media/webpage-source-code.png" alt-text="Screenshot that illustrates how you can view a webpage's source Code":::
 
 ## Charles web debugging proxy
 
-It's not always easy in web and Internet development to know where exactly something went wrong. Tools such as **Charles Web Debugging Proxyacts** as an intermediary between your web browser (such as Internet
-Explorer, Chrome, Safari) and the Internet. You can install it on your computer, and your web browser can then be configured to access theInternet through the [Charles Web Debugging Proxy](http://www.charlesproxy.com). This is useful because it records all of the data that is sent and received, making it easier to know exactly what is happening, especially when trying to diagnose and troubleshoot an issue.
+It's not always easy in web and Internet development to know where exactly something went wrong. Tools such as **Charles Web Debugging Proxyacts** as an intermediary between your web browser (such as Internet Explorer, Chrome, Safari) and the Internet. You can install it on your computer, and your web browser can then be configured to access theInternet through the [Charles Web Debugging Proxy](http://www.charlesproxy.com). This is useful because it records all of the data that is sent and received, making it easier to know exactly what is happening, especially when trying to diagnose and  troubleshoot an issue.
 
 ## Summary
 
