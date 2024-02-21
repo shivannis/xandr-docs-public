@@ -38,7 +38,7 @@ AudienceNetworkAds.buildInitSettings(this).withInitListener(new AudienceNetworkA
 
 ## Create a native banner ad layout
 
-In the activity layout's `activity_main.xml` of your app, add a container for your native ad. This container should be of type `com.facebook.ads.NativeAdLayout,` which is a wrapper on top of a `FrameLayout`. This wrapper provides extra functionality that enables Mobile SDK to render a native `Ad Reporting Flow` on top of the ad.
+In the activity layout's `activity_main.xml` of your app, add a container for your native ad. This container should be of type `com.facebook.ads.NativeAdLayout`, which is a wrapper on top of a `FrameLayout`. This wrapper provides extra functionality that enables Mobile SDK to render a native `Ad Reporting Flow` on top of the ad.
 
 ``` 
 <?xml version="1.0" encoding="utf-8"?>
@@ -55,7 +55,7 @@ In the activity layout's `activity_main.xml` of your app, add a container for yo
 </RelativeLayout>
 ```
 
-[Click here to a view sample code](https://developers.facebook.com/docs/audience-network/guides/ad-formats/native-banner/android#layout) provided by Facebook for setting up native banner ad custom layouts.
+[Click here to view a sample code](https://developers.facebook.com/docs/audience-network/guides/ad-formats/native-banner/android#layout) provided by Facebook for setting up native banner ad custom layouts.
 
 ## Create a native ad request and load the ad
 

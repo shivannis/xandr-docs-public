@@ -14,104 +14,104 @@ ms.date: 10/28/2023
 
 ### New feature
 
-- 6029394 Added support for setting content language in Ad Request. New API introduced in SDKSettings setContentLanguage(String contentLanguage)
+- 6029394 Added support for setting content language in Ad Request. New API introduced in SDKSettings setContentLanguage(String contentLanguage).
 
 ### Improvement/Bug fixes
 
-- 6015112 Upgraded OMSDK from 1.4.8 to 1.4.9 (Microsoft namespace)
-- 5766029 Resolve the issue with the OutStream iPad video of size 400x980 not rendering properly
-- 5992098 Optimise user agent synchronisation to minimise delays Mediation partner updates MS-5392 Upgrade of the Facebook Audience Network to version 6.14.0
+- 6015112 Upgraded OMSDK from 1.4.8 to 1.4.9 (Microsoft namespace).
+- 5766029 Resolve the issue with the OutStream iPad video of size 400x980 not rendering properly.
+- 5992098 Optimise user agent synchronisation to minimise delays Mediation partner updates MS-5392 Upgrade of the Facebook Audience Network to version 6.14.0.
 
 ## 8.9.0
 
 ### Improvement/Bug fixes (8.9.0)
 
-- 5663106: Upgraded OMSDK from 1.4.2 to 1.4.8
-- 5732707: Addressed issue with Video Orientation Sizes getting applied to HTML Banner creatives
+- 5663106: Upgraded OMSDK from 1.4.2 to 1.4.8.
+- 5732707: Addressed issue with Video Orientation Sizes getting applied to HTML Banner creatives.
 
 ### Mediation partner updates
 
-- 5622329: Upgraded Google AdMob SDK from 10.3.0 to 10.10.0
-- 5622334: Upgraded Smart Ad Server SDK from 7.17.1 to 7.22.0
+- 5622329: Upgraded Google AdMob SDK from 10.3.0 to 10.10.0.
+- 5622334: Upgraded Smart Ad Server SDK from 7.17.1 to 7.22.0.
 
 ## 8.8.1
 
 ### Improvement/Bug fixes (8.8.1)
 
-- MS-5384: Addressed issue while installing SDK via Swift Package Manager
-- MS-5385: Addressed issue while installing SDK via Cocoapods
+- MS-5384: Addressed issue while installing SDK via Swift Package Manager.
+- MS-5385: Addressed issue while installing SDK via Cocoapods.
 
 ## 8.8.0
 
 ### New features
 
-- MS-5345: Enabled lazy loading for banner native rendering
-- MS-5351: Support both static and dynamic AppNexus SDK framework/library
+- MS-5345: Enabled lazy loading for banner native rendering.
+- MS-5351: Support both static and dynamic AppNexus SDK framework/library.
 
 ### Improvement/Bug fixes (8.8.0)
 
-- MS-5348: Addressed issue where creative failed to render when scrolled in a collection view
-- MS-5266: Addressed issue where impression tracker did not fire when creative is scrolled in a collection view
+- MS-5348: Addressed issue where creative failed to render when scrolled in a collection view.
+- MS-5266: Addressed issue where impression tracker did not fire when creative is scrolled in a collection view.
 
 ## 8.7.0
 
 ### Improvement/Bug fixes (8.7.0)
 
-- MS-5346: Fixed issue where only last ad is rendered in a multi ad request for Banner Native Rendering
-- MS-5206: Added support for setting player size and getting video creative width and height for BannerVideo. New API introduced in ANBannerAdView landscapeBannerVideoPlayerSize, portraitBannerVideoPlayerSize, squareBannerVideoPlayerSize, getVideoWidth, getVideoHeight and In ANVideoAdPlayer getVideoWidth and getVideoHeight
-- MS-5344: Gracefully handle error to avoid crash during fetch User agent String
-- MS-5340: Fixed ModuleMap XCFramework Warning
+- MS-5346: Fixed issue where only last ad is rendered in a multi ad request for Banner Native Rendering.
+- MS-5206: Added support for setting player size and getting video creative width and height for BannerVideo. New API introduced in ANBannerAdView landscapeBannerVideoPlayerSize, portraitBannerVideoPlayerSize, squareBannerVideoPlayerSize, getVideoWidth, getVideoHeight and In ANVideoAdPlayer getVideoWidth and getVideoHeight.
+- MS-5344: Gracefully handle error to avoid crash during fetch User agent String.
+- MS-5340: Fixed ModuleMap XCFramework Warning.
 
 ## 8.6.0
 
 ### Improvement/Bug fixes (8.6.0)
 
-- MS-5281: Added Swift Package Manager support for Google Mediation Adapter
+- MS-5281: Added Swift Package Manager support for Google Mediation Adapter.
 
 ### Mediation / CSR partner updates
 
-- Upgraded Google AdMob SDK from 9.14.0 to 10.3.0
+- Upgraded Google AdMob SDK from 9.14.0 to 10.3.0.
 
 ## 8.5.0
 
 ### Improvement/Bug fixes (8.5.0)
 
-- MS-5227: Fixed issue with loading multiple outstream video ads simultaneously
+- MS-5227: Fixed issue with loading multiple outstream video ads simultaneously.
 
 ## 8.4.0
 
-Update version to match Android SDK. No changes from 8.3.0
+Update version to match Android SDK. No changes from 8.3.0.
 
 ## 8.3.0
 
 ### Improvement/Bug fixes (8.3.0)
 
-- MS-5208, MS-5214: Upgraded OMSDK from 1.3.31 to 1.4.2
-- MS-5197: Added iPad multiwindow support for Google AdMob mediation. Refer to [Mediate with iOS](mediate-with-ios.md) for more information.
+- MS-5208, MS-5214: Upgraded OMSDK from 1.3.31 to 1.4.2.
+- MS-5197: Added iPad multiwindow support for Google AdMob mediation. For more information, see [Mediate with iOS](mediate-with-ios.md).
 
 ### Mediation/CSR partner updates
 
-- MS-5210, MS-5213: Upgraded Google AdMob SDK from 9.4.0 to 9.14.0
+- MS-5210, MS-5213: Upgraded Google AdMob SDK from 9.4.0 to 9.14.0.
 
 ## 8.2.0
 
 ### Improvement/Bug fixes (8.2.0)
 
-- MS-5172: Support for Global Privacy Platform (GPP) ([SDK Privacy for iOS](sdk-privacy-for-ios.md))
-- MS-5112: Update PPID API to indicate if it is first party id ([User ID(s) Mapping on iOS](user-id-s-mapping-on-ios.md))
-- MS-5183: Fixed Completion handler callback issues in XandrAd.init()
+- MS-5172: Support for Global Privacy Platform (GPP) ([SDK Privacy for iOS](sdk-privacy-for-ios.md)).
+- MS-5112: Update PPID API to indicate if it is first party id ([User ID(s) Mapping on iOS](user-id-s-mapping-on-ios.md)).
+- MS-5183: Fixed Completion handler callback issues in XandrAd.init().
 
 ### Mediation/CSR partner updates (8.2.0)
 
-- MS-5195: Upgraded Facebook Audience Network SDK from 6.5.0 to 6.12.0
+- MS-5195: Upgraded Facebook Audience Network SDK from 6.5.0 to 6.12.0.
 
 ## 8.1.1
 
 ### Improvement/Bug fixes for macOS SDK (8.1.1)
 
-- MS-5127: Added Impression tracking API for NSView registerViewTracking
-- MS-5128: Code optimizations
-- MS-5149: Fixed Impression tracking issue when app is on secondary displays
+- MS-5127: Added Impression tracking API for NSView registerViewTracking.
+- MS-5128: Code optimizations.
+- MS-5149: Fixed Impression tracking issue when app is on secondary displays.
 
 ## 8.1.0
 
@@ -121,21 +121,21 @@ Update version to match Android SDK. No changes from 8.3.0
 
 ### Improvement/Bug fixes (8.1.0)
 
-- MS-5080: Enable support for high impact media type creatives in BannerAdView
-- MS-5108: Added localization configuration option for SDK browser dismiss button "OK" (Github PR #80)
+- MS-5080: Enable support for high impact media type creatives in BannerAdView.
+- MS-5108: Added localization configuration option for SDK browser dismiss button "OK" (Github PR #80).
 
 ## 8.0.0
 
 ### Announcements
 
-We have completed the removal of the APIs referenced in the 7.21.0 release. Please note there are breaking changes to some of our APIs, particularly for our init methods which is required for ad calls to be successful-[[XandrAd sharedInstance] initWithMemberID:1 preCacheRequestObjects:true completionHandler:nil];. See our [8.0 integration guide](ios-sdk-integration-instructions.md), as well as our [SDK initialization guide](ios-sdk-initialization-v8-0.md) for further details.
+We have completed the removal of the APIs referenced in the 7.21.0 release. Note that there are breaking changes to some of our APIs, particularly for our init methods which is required for ad calls to be successful-[[XandrAd sharedInstance] initWithMemberID:1 preCacheRequestObjects:true completionHandler:nil];. For further details, see our [8.0 integration guide](ios-sdk-integration-instructions.md), as well as our [SDK initialization guide](ios-sdk-initialization-v8-0.md).
 
 ### Improvement/Bug fixes (8.0.0)
 
-- MS-5011: Updated impression counting methodology. Please see our new [Impression Counting Methodology Guide](updated-impression-counting-mechanism-mobile-sdk-v8-0-and-above.md).
-- MS-4978: Fixed custom adapter issues in Swift. (Github Issue #71)
-- MS-5007: Removed all discontinued mediation adapters
-- MS-5013: Upgraded to OMSDK v1.3.31
+- MS-5011: Updated impression counting methodology. See our new [Impression Counting Methodology Guide](updated-impression-counting-mechanism-mobile-sdk-v8-0-and-above.md).
+- MS-4978: Fixed custom adapter issues in Swift. (Github Issue #71).
+- MS-5007: Removed all discontinued mediation adapters.
+- MS-5013: Upgraded to OMSDK v1.3.31.
 
 ## 7.22.0
 
@@ -145,20 +145,20 @@ This will be the last major release in SDK v7.x.x series.
 
 The next major release will be SDK v8.0.0 which will include some breaking changes as proposed in Intent to Implement's listed below along with other changes.
 
-1. Xandr SDK v8.0.0 Removal Notice for Deprecated APIs ([Github Issue #77](https://github.com/appnexus/mobile-sdk-ios/issues/77))
-1. Xandr will be moving toward counting "Viewable Impressions - for Direct-Sold Inventory" ([Github Issue #79](https://github.com/appnexus/mobile-sdk-ios/issues/79))
+1. Xandr SDK v8.0.0 Removal Notice for Deprecated APIs ([Github Issue #77](https://github.com/appnexus/mobile-sdk-ios/issues/77)).
+1. Xandr will be moving toward counting "Viewable Impressions - for Direct-Sold Inventory" ([Github Issue #79](https://github.com/appnexus/mobile-sdk-ios/issues/79)).
 
 ### Improvement/Bug fixes (7.22.0)
 
-- MS-4389: Fixed ads render after expiry time reset issue
-- MS-4999: Remove the RendererID deprecation notice
-- MS-5005: Added onAdImpression callback for the Banner and Interstitial Ads ([iOS SDK Ad Units](ios-sdk-ad-units.md))
+- MS-4389: Fixed ads render after expiry time reset issue.
+- MS-4999: Remove the RendererID deprecation notice.
+- MS-5005: Added onAdImpression callback for the Banner and Interstitial Ads ([iOS SDK Ad Units](ios-sdk-ad-units.md)).
 
 ### Mediation partner updates (7.22.0)
 
-- MS-4874: Upgraded Google Play Services Ads SDK from 8.5.0 to 9.4.1
-- MS-4873: Upgraded Smart Ad Server SDK from 7.10.1 to 7.17.1
-- Discontinued support for Facebook SDK mediation Adapter
+- MS-4874: Upgraded Google Play Services Ads SDK from 8.5.0 to 9.4.1.
+- MS-4873: Upgraded Smart Ad Server SDK from 7.10.1 to 7.17.1.
+- Discontinued support for Facebook SDK mediation Adapter.
 
 ## 7.21.0
 
@@ -180,7 +180,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 ### Improvement/Bug fixes (7.21.0)
 
-- MS-4954: Added support for passing Publisher/Extended User Id(s) via ANSDKSettings.userIdArray. ([User ID(s) Mapping on iOS](user-id-s-mapping-on-ios.md))
+- MS-4954: Added support for passing Publisher/Extended User Id(s) via ANSDKSettings.userIdArray. ([User ID(s) Mapping on iOS](user-id-s-mapping-on-ios.md)).
 
 ### Deprecated APIs
 
@@ -190,34 +190,33 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 ### Improvement/Bug fixes (7.20.0)
 
-- MS-4952: Check navigationType when opening a URL (Github PR #73)
-
-- MS-4851: Improved OMSDK performance
+- MS-4952: Check navigationType when opening a URL (Github PR #73).
+- MS-4851: Improved OMSDK performance.
 
 ## 7.19.0
 
 ### Improvement/Bug fixes 7.19.0
 
-- MS-4884: Improved impression tracking methodology for Native Ads, trackers to be fired on render
+- MS-4884: Improved impression tracking methodology for Native Ads, trackers to be fired on render.
 
 ## 7.18.0
 
 ### New features (7.18.0)
 
-- MS-4710: Make bid price available as part of AdResponseInfo ([Ad Response Info Class for iOS](ad-response-info-class-for-ios.md))
-- MS-4759: Automatically pass Identifier for Vendors (IDFV) in Ad request. ([Set IDFA usage for iOS](set-idfa-usage-for-ios.md))
+- MS-4710: Make bid price available as part of AdResponseInfo ([Ad Response Info Class for iOS](ad-response-info-class-for-ios.md)).
+- MS-4759: Automatically pass Identifier for Vendors (IDFV) in Ad request. ([Set IDFA usage for iOS](set-idfa-usage-for-ios.md)).
 
 ## 7.17.0
 
 ### New features (7.17.0)
 
-- MS-4839: TTL SDK expiry listener logic for Index Exchange
-- MS-4841: TTL SDK expiry listener logic for InMobi
+- MS-4839: TTL SDK expiry listener logic for Index Exchange.
+- MS-4841: TTL SDK expiry listener logic for InMobi.
 
 ### Bug fixes (7.17.0)
 
-- MS-4849: Use retain instead of assign (Github #69)
-- MS-4828: Memory leak related to 1 pixel tracking
+- MS-4849: Use retain instead of assign (Github #69).
+- MS-4828: Memory leak related to 1 pixel tracking.
 
 ## 7.16.0
 
@@ -225,68 +224,68 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 #### Fixed
 
-- MS-4820: SDK version warning for Swift Package Manager (Github #68)
+- MS-4820: SDK version warning for Swift Package Manager (Github #68).
 
 #### Changed
 
-- MS-4802: ANSDKSettings.optionalSDKInitialization API ([Initialize SDK Settings in iOS](initialize-sdk-settings-in-ios.md))
+- MS-4802: ANSDKSettings.optionalSDKInitialization API ([Initialize SDK Settings in iOS](initialize-sdk-settings-in-ios.md)).
 
 ## 7.15.1
 
 ### Improvements/Bug fixes (7.15.1)
 
-- MS-4818: Fixed Swift package manager installation error (Github issue #67)
+- MS-4818: Fixed Swift package manager installation error (Github issue #67).
 
 ## 7.15
 
 ### New feature (7.15)
 
-- MS-4749: Added support for Unified ID 2.0 (UID2) ([User ID(s) Mapping on iOS](user-id-s-mapping-on-ios.md))
-- MS-4760: Added support for Google Additional Consent field
-- MS-4772: Added a new API in ANMultiAdRequest to stop the Ad Request ([Multi Ad Request for iOS](multi-ad-request-for-ios.md))
-- MS-4558: Added support for Swift Package Manager for SDK integration ([iOS SDK Integration Instructions](ios-sdk-integration-instructions.md))
-- MS-4784: Added XCFramework support for SDK integration ([iOS SDK Integration Instructions](ios-sdk-integration-instructions.md))
+- MS-4749: Added support for Unified ID 2.0 (UID2) ([User ID(s) Mapping on iOS](user-id-s-mapping-on-ios.md)).
+- MS-4760: Added support for Google Additional Consent field.
+- MS-4772: Added a new API in ANMultiAdRequest to stop the Ad Request ([Multi Ad Request for iOS](multi-ad-request-for-ios.md)).
+- MS-4558: Added support for Swift Package Manager for SDK integration ([iOS SDK Integration Instructions](ios-sdk-integration-instructions.md)).
+- MS-4784: Added XCFramework support for SDK integration ([iOS SDK Integration Instructions](ios-sdk-integration-instructions.md)).
 
 ### Mediation partner updates (7.15)
 
-- MS-4778: Upgraded Google Play Services Ads SDK from 8.0.0 to 8.5.0
-- MS-4780: Upgraded Facebook SDK from 6.2.1 to 6.5.0
-- MS-4782: Upgraded Smart Ad Server SDK from 7.8.0 to 7.10.1
+- MS-4778: Upgraded Google Play Services Ads SDK from 8.0.0 to 8.5.0.
+- MS-4780: Upgraded Facebook SDK from 6.2.1 to 6.5.0.
+- MS-4782: Upgraded Smart Ad Server SDK from 7.8.0 to 7.10.1.
 
 ### Improvements/Bug fixes (7.15)
 
-- MS-4766: Updated Open Measurement SDK to v1.3.20
-- MS-4777: Added initialization check before fetching Bidder Token from Facebook SDK ([Get Facebook Demand for Native on iOS](get-facebook-demand-for-native-on-ios.md))
+- MS-4766: Updated Open Measurement SDK to v1.3.20.
+- MS-4777: Added initialization check before fetching Bidder Token from Facebook SDK ([Get Facebook Demand for Native on iOS](get-facebook-demand-for-native-on-ios.md)).
 
 ## 7.14
 
 ### New feature (7.14)
 
-- MS-4761: Added a new API to enable subscription to SDK logs for debugging/troubleshooting purposes. ([Configure SDK Logging on iOS](configure-sdk-logging-on-ios.md))
-- MS-4711: Exposed API in Custom element to support clickUrl and clickFallbackUrl for Native Ad. ([Show Native Ads on iOS](show-native-ads-on-ios.md))
+- MS-4761: Added a new API to enable subscription to SDK logs for debugging/troubleshooting purposes. ([Configure SDK Logging on iOS](configure-sdk-logging-on-ios.md)).
+- MS-4711: Exposed API in Custom element to support clickUrl and clickFallbackUrl for Native Ad. ([Show Native Ads on iOS](show-native-ads-on-ios.md)).
 
 ### Improvements/Bug fixes (7.14)
 
-- MS-4753: Resolved a stability issue in Interstitial Ad due to `UIApplication.windows` being nil during Application launch
-- MS-4769: Removed duplicate calls to dispatch_async function from a couple of places
+- MS-4753: Resolved a stability issue in Interstitial Ad due to `UIApplication.windows` being nil during Application launch.
+- MS-4769: Removed duplicate calls to dispatch_async function from a couple of places.
 
 ## 7.13
 
 ### New feature (7.13)
 
-- MS-4693: Added support for Cookieless domain requests
-- MS-4618: Fixed issue where the OMID SDK was causing high CPU usage for certain Ad formats - Github issue #57
+- MS-4693: Added support for Cookieless domain requests.
+- MS-4618: Fixed issue where the OMID SDK was causing high CPU usage for certain Ad formats - Github issue #57.
 
 ## 7.12
 
 ### Improvements/Bug fixes (7.12)
 
-- MS-4719: Disabled autoplay for HTML5 Banner Video Ads
-- MS-4731: Fixed issue with OutStream Video that was preventing videos from playing
-- MS-4730: Fixed issue with OMID Tracker not firing for BannerAds in some cases
-- MS-4704: Added support for OMID containerGeometry and onScreenContainerGeometry for Instream & OutStream Video Ads
-- MS-4727: Added support for custom assets in Native Assembly Renderer
-- MS-4729: Removed strong reference on views to avoid cyclic reference for NativeAds
+- MS-4719: Disabled autoplay for HTML5 Banner Video Ads.
+- MS-4731: Fixed issue with OutStream Video that was preventing videos from playing.
+- MS-4730: Fixed issue with OMID Tracker not firing for BannerAds in some cases.
+- MS-4704: Added support for OMID containerGeometry and onScreenContainerGeometry for Instream & OutStream Video Ads.
+- MS-4727: Added support for custom assets in Native Assembly Renderer.
+- MS-4729: Removed strong reference on views to avoid cyclic reference for NativeAds.
 
 ## 7.11
 
@@ -298,146 +297,146 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 ### Mediation partner updates (7.11)
 
-- MS-4656: Upgraded Google AdMob SDK from v7.69.0 to v8.0.0
+- MS-4656: Upgraded Google AdMob SDK from v7.69.0 to v8.0.0.
 
 ## 7.10
 
 ### New feature (7.10)
 
-- MS-4659, MS-4674: Added support for User Id from external sources(Criteo, NetID, LiverRamp, The Trade Desk) ([User ID(s) Mapping on iOS](user-id-s-mapping-on-ios.md))
-- MS-4657: Changes to support AppTrackingTransparency ([iOS 14.0 FAQ](ios-14-0-faq.md))
+- MS-4659, MS-4674: Added support for User Id from external sources(Criteo, NetID, LiverRamp, The Trade Desk) ([User ID(s) Mapping on iOS](user-id-s-mapping-on-ios.md)).
+- MS-4657: Changes to support AppTrackingTransparency ([iOS 14.0 FAQ](ios-14-0-faq.md)).
 
 ### Improvements/Bug fixes (7.10)
 
-- MS-4671: Added minimum threshold of 100ms for callSetMraidRefreshFrequency
+- MS-4671: Added minimum threshold of 100ms for callSetMraidRefreshFrequency.
 
 ### Deprecated API
 
-- externalUid property in ANAdProtocol has been deprecated, use publisherUserId in ANSDKSettings instead ([Publisher ID for iOS](publisher-id-for-ios.md))
+- externalUid property in ANAdProtocol has been deprecated, use publisherUserId in ANSDKSettings instead ([Publisher ID for iOS](publisher-id-for-ios.md)).
 
 ## 7.9
 
 ### New feature (7.9)
 
-- MS-4388: Support to disable passing device IDs in bid requests
+- MS-4388: Support to disable passing device IDs in bid requests.
 
 ### Mediation partner updates (7.9)
 
-- MS-4663: Upgraded Google AdMob SDK from v7.67.0 to v7.69.0
-- MS-4664: Upgraded Facebook SDK from v6.2.0 to v6.2.1
+- MS-4663: Upgraded Google AdMob SDK from v7.67.0 to v7.69.0.
+- MS-4664: Upgraded Facebook SDK from v6.2.0 to v6.2.1.
 
 ### Improvements/Bug fixes (7.9)
 
-- MS-3911: Fetch SDK Version Dynamically in ad request
-- MS-4633: Moved User-Agent/WebView caching from load() to ANSDKSettings.optionalSDKInitialization()
+- MS-3911: Fetch SDK Version Dynamically in ad request.
+- MS-4633: Moved User-Agent/WebView caching from load() to ANSDKSettings.optionalSDKInitialization().
 
 ## 7.8
 
 ### New feature (7.8)
 
-- MS-4387: Added support to pass traffic source and external inventory codes in Ad Request ([Support to Pass Traffic Source and External Inventory Codes in Ad Request for iOS](support-to-pass-traffic-source-and-external-inventory-codes-in-ad-request-for-ios.md))
-- MS-4517: Added support for overriding Country and Zip Codes ([Support for Overriding Country and Zip Codes for iOS](support-for-overriding-country-and-zip-codes-for-ios.md))
+- MS-4387: Added support to pass traffic source and external inventory codes in Ad Request ([Support to Pass Traffic Source and External Inventory Codes in Ad Request for iOS](support-to-pass-traffic-source-and-external-inventory-codes-in-ad-request-for-ios.md)).
+- MS-4517: Added support for overriding Country and Zip Codes ([Support for Overriding Country and Zip Codes for iOS](support-for-overriding-country-and-zip-codes-for-ios.md)).
 
 ### Mediation partner updates (7.8)
 
-- MS-4426: Upgraded Facebook SDK to v6.2.0
-- MS-4499: Upgraded SmartAd Server SDK to v7.8.0
-- MS-4498: Upgraded Google AdMob SDK to v7.67.0
+- MS-4426: Upgraded Facebook SDK to v6.2.0.
+- MS-4499: Upgraded SmartAd Server SDK to v7.8.0.
+- MS-4498: Upgraded Google AdMob SDK to v7.67.0.
 
 ### Improvements/Bug fixes
 
-- MS-4557: Resolved issue with BannerAd not rendering on the first load
-- MS-4587: Fixed issue with OMID sessionFinish event not being returned for Native ads
+- MS-4557: Resolved issue with BannerAd not rendering on the first load.
+- MS-4587: Fixed issue with OMID sessionFinish event not being returned for Native ads.
 
 ## 7.7.1
 
 ### Improvements/Bug fixes (7.7.1)
 
-- MS-4573: Fixed banner refresh on Lazyload
-- MS-4574: Add support for Cocoapods version 1.10.0
+- MS-4573: Fixed banner refresh on Lazyload.
+- MS-4574: Add support for Cocoapods version 1.10.0.
 
 ## 7.7
 
 ### New feature (7.7)
 
-- MS-4412: Added support for listening to Ad Expiry events for Native Ads ([Listener for AdAboutToExpire on iOS](listener-for-adabouttoexpire-on-ios.md))
-- MS-4449: Added support for setting test flags to bypass request filtering (for testing purposes only) ([Set Test Mode for iOS](set-test-mode-for-ios.md))
-- MS-4459: AuctionId information is now available through AdResponseInfo class
+- MS-4412: Added support for listening to Ad Expiry events for Native Ads ([Listener for AdAboutToExpire on iOS](listener-for-adabouttoexpire-on-ios.md)).
+- MS-4449: Added support for setting test flags to bypass request filtering (for testing purposes only) ([Set Test Mode for iOS](set-test-mode-for-ios.md)).
+- MS-4459: AuctionId information is now available through AdResponseInfo class.
 
 ### Mediation partner updates (7.7)
 
-- MS-4426: Upgraded Facebook SDK to v6.0.0
-- MS-4499: Upgraded SmartAd Server SDK to v7.6.2
-- MS-4498: Upgraded Google AdMob SDK to v7.66.0
-- MS-4418: Discontinued support for Amazon, inMobi, Millennial Media and Mopub adapters. (Github Intent to Implement #53)
+- MS-4426: Upgraded Facebook SDK to v6.0.0.
+- MS-4499: Upgraded SmartAd Server SDK to v7.6.2.
+- MS-4498: Upgraded Google AdMob SDK to v7.66.0.
+- MS-4418: Discontinued support for Amazon, inMobi, Millennial Media and Mopub adapters. (Github Intent to Implement #53).
 
 ### Improvements/Bug fixes (7.7)
 
-- MS-4550: Updated GDPR logic. Now priority will be given to IAB TCF2.0 strings
-- MS-4543: Fixed scrolling for Native Assembly WebView
+- MS-4550: Updated GDPR logic. Now priority will be given to IAB TCF2.0 strings.
+- MS-4543: Fixed scrolling for Native Assembly WebView.
 - MS-4522: Fixed caching issues with ANAdvertisingIdentifier. Now it will be fetched for every single request.
 
 ## 7.6.2
 
 ### New feature (7.6.2)
 
-- MS-4433: Support for determining app-tracking permission status based on trackingAuthorizationStatus enum values (authorized, denied) ([iOS 14.0 FAQ](ios-14-0-faq.md))
+- MS-4433: Support for determining app-tracking permission status based on trackingAuthorizationStatus enum values (authorized, denied) ([iOS 14.0 FAQ](ios-14-0-faq.md)).
 
 ### Improvements/Bug fixes (7.6.2)
 
-- MS-4523: Changed sizesThatShouldConstrainToSuperview to a block (Github #54)
+- MS-4523: Changed sizesThatShouldConstrainToSuperview to a block (Github #54).
 
 ## 7.6.1
 
-### Improvements/Bug fixes (7.6.2)
+### Improvements/Bug fixes (7.6.1)
 
-- MS-4520: Rollback iOS 14 AppTrackingTransparency changes (Please refer to [iOS 14.0 FAQ](ios-14-0-faq.md) for the latest updates on Xandr Mobile SDK's support for iOS 14)
+- MS-4520: Rollback iOS 14 AppTrackingTransparency changes. For the latest updates on Xandr Mobile SDK's support for iOS 14, see [iOS 14.0 FAQ](ios-14-0-faq.md).
 
 ## 7.6
 
 ### New features (7.6)
 
-- MS-4433: Support for iOS 14 ([iOS 14.0 FAQ](ios-14-0-faq.md))
-- MS-4268: Support for Open Measurement SDK Open RTB Signals
-- MS-4473: Added support for forcing the creative Id in Ad request for test/debug purposes
-- MS-4361: Added onAdImpression callback for the Native Ads ([Listen to Native Ad Events on iOS](listen-to-native-ad-events-on-ios.md))
+- MS-4433: Support for iOS 14 ([iOS 14.0 FAQ](ios-14-0-faq.md)).
+- MS-4268: Support for Open Measurement SDK Open RTB Signals.
+- MS-4473: Added support for forcing the creative Id in Ad request for test/debug purposes.
+- MS-4361: Added onAdImpression callback for the Native Ads ([Listen to Native Ad Events on iOS](listen-to-native-ad-events-on-ios.md)).
 
 ### Mediation partner upgrade
 
-- MS-4497: Upgraded Google AdMob SDK to v7.64.0
+- MS-4497: Upgraded Google AdMob SDK to v7.64.0.
 
 ### Improvements/Bug fixes (7.6)
 
-- MS-4362: Ad ResultCode is now a class instead of enum - this fixes issue with result codes getting overridden for concurrent Ad requests
+- MS-4362: Ad ResultCode is now a class instead of enum - this fixes issue with result codes getting overridden for concurrent Ad requests.
 
 ## 7.5
 
 ### New feature (7.5)
 
-- MS-4384: Added support for Auction timeout ([Set the Auction Timeout for iOS](set-the-auction-timeout-for-ios.md))
+- MS-4384: Added support for Auction timeout ([Set the Auction Timeout for iOS](set-the-auction-timeout-for-ios.md)).
 
 ### Mediation partner upgrade (7.5)
 
-- MS-4450 : Updated FacebookAd SDK to v5.10.1
+- MS-4450 : Updated FacebookAd SDK to v5.10.1.
 
 ### Improvements/Bug fixes (7.5)
 
-- MS-4233: Updated Open Measurement SDK to v1.3.7
-- MS-4301: Minor performance tweaks to Banner Ad rendering
-- MS-4405: Fixed issue with NSHTTPCookieStorage being set based on purposeConsent value
+- MS-4233: Updated Open Measurement SDK to v1.3.7.
+- MS-4301: Minor performance tweaks to Banner Ad rendering.
+- MS-4405: Fixed issue with NSHTTPCookieStorage being set based on purposeConsent value.
 
 ## 7.4.1
 
 ### Improvements/Bug fixes (7.4.1)
 
-- MS-4435: Fixed crash when using TCF 2.0 purpose consent strings
-- MS-4437: Fixed cocoapods build for Facebook CSR Adapter
+- MS-4435: Fixed crash when using TCF 2.0 purpose consent strings.
+- MS-4437: Fixed cocoapods build for Facebook CSR Adapter.
 
 ## 7.4
 
 ### New feature (7.4)
 
-- MS-4214: Added support for loading the Ad lazily ([Lazy Load for iOS](lazy-load-for-ios.md))
+- MS-4214: Added support for loading the Ad lazily ([Lazy Load for iOS](lazy-load-for-ios.md)).
 
 ### Mediation partner upgrade (7.4)
 
@@ -445,47 +444,47 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 ### Improvements/Bug fixes (7.4)
 
-- MS-4231: Added support to respect timeout set in Console
-- MS-4284: Implemented support for MRAID v3.0 audioVolumeChange event
-- MS-4290: Added support to get Custom Keywords in the JavaScript layer via ANJAM
-- MS-4319: Added support to disable Banner demand for BannerAdView
-- MS-4335: Improved Banner Ad performance
+- MS-4231: Added support to respect timeout set in Console.
+- MS-4284: Implemented support for MRAID v3.0 audioVolumeChange event.
+- MS-4290: Added support to get Custom Keywords in the JavaScript layer via ANJAM.
+- MS-4319: Added support to disable Banner demand for BannerAdView.
+- MS-4335: Improved Banner Ad performance.
 
 ## 7.3.2
 
 ### Improvements/Bug fixes (7.3.2)
 
-- MS-4352: Fixed NSHTTPCookieStorage setting
+- MS-4352: Fixed NSHTTPCookieStorage setting.
 
 ## 7.3.1
 
 ### Improvements/Bug fixes (7.3.1)
 
-- MS-4326: Fix for ANMultiAdRequest crashes when UT Response is not received due to Internet connectivity issues/device being offline
+- MS-4326: Fix for ANMultiAdRequest crashes when UT Response is not received due to Internet connectivity issues/device being offline.
 
 ## 7.3
 
 ### New feature (7.3)
 
-- MS-4266: Added API to support Friendly Obstruction for Open Measurement
+- MS-4266: Added API to support Friendly Obstruction for Open Measurement.
 - MS-4223: Added Client Side Rendering for FB mediated Ads.
 
 ### Improvements/Bug fixes (7.3)
 
-- MS-4275: Fixed BannerAd OMID session tracker firing
+- MS-4275: Fixed BannerAd OMID session tracker firing.
 
 ## 7.2
 
 ### Improvements/Bug fixes (7.2)
 
-- MS-4200: Support IAB Europe Transparency & Consent Framework v2.0
-- MS-4267: All network calls will be made only using secure endpoint
+- MS-4200: Support IAB Europe Transparency & Consent Framework v2.0.
+- MS-4267: All network calls will be made only using secure endpoint.
 
 ## 7.1
 
 ### New feature (7.1)
 
-- MS-3956: Added ANAdResponseInfo to return associated data with Ad response
+- MS-3956: Added ANAdResponseInfo to return associated data with Ad response.
 
 ### Mediation partner upgrade (7.1)
 
@@ -493,15 +492,15 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 ### Improvements/Bug fixes (7.1)
 
-- MS-3882: Added option to include "publisher_id" in Ad request
-- MS-3896: Fixed bug on Interstitial Video Ad close feature
-- MS-4166: Fixed VideoAd OMID session tracker firing bug
+- MS-3882: Added option to include "publisher_id" in Ad request.
+- MS-3896: Fixed bug on Interstitial Video Ad close feature.
+- MS-4166: Fixed VideoAd OMID session tracker firing bug.
 
 ## 7.0
 
 ### New feature (7.0)
 
-- MS-3885: Added support for Multi Ad Request (MAR) ([Multi Ad Request for iOS](multi-ad-request-for-ios.md))
+- MS-3885: Added support for Multi Ad Request (MAR) ([Multi Ad Request for iOS](multi-ad-request-for-ios.md)).
 
 ### Mediation partner upgrade (7.0)
 
@@ -509,60 +508,60 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 ### Improvements/Bug fixes (7.0)
 
-- MS-4122: Fixed potential memory leak issue caused by improper deallocation of InstreamVideoAd object
-- MS-4094: Code clean up to fix issue with OMID SDK video implementation
+- MS-4122: Fixed potential memory leak issue caused by improper deallocation of InstreamVideoAd object.
+- MS-4094: Code clean up to fix issue with OMID SDK video implementation.
 
 ## 6.2
 
 ### New features (6.2)
 
-- MS-4097: California Consumer Privacy Act (CCPA) Support ([SDK Privacy for iOS](sdk-privacy-for-ios.md))
+- MS-4097: California Consumer Privacy Act (CCPA) Support ([SDK Privacy for iOS](sdk-privacy-for-ios.md)).
 
 ### Bug fixes (6.2)
 
-- MS-4124: Special characters not rendering over native assembly
-- MS-4084: VideoAd Object not getting deallocated
-- MS-4095: Updated OMID partner name
+- MS-4124: Special characters not rendering over native assembly.
+- MS-4084: VideoAd Object not getting deallocated.
+- MS-4095: Updated OMID partner name.
 
 ## 6.1.2
 
 ### Improvements/Bug fixes (6.1.2)
 
-- MS-4092: fix for SKStoreProductViewController crash on iOS 13
+- MS-4092: Fix for SKStoreProductViewController crash on iOS 13.
 
 ## 6.1.1
 
 ### New features (6.1.1)
 
-- MS-3923: Added new API to get SDK version
+- MS-3923: Added new API to get SDK version.
 
 ### Improvements/Bug fixes (6.1.1)
 
-- MS-4091: Improved DFP second price option
+- MS-4091: Improved DFP second price option.
 
 ## 6.1
 
 ### New features (6.1)
 
-- MS-3983: Added new API to Pause/Resume VideoAd ([Show Instream Video Ads on iOS](show-instream-video-ads-on-ios.md))
-- MS-4057: Official release for iOS 13 support
+- MS-3983: Added new API to Pause/Resume VideoAd ([Show Instream Video Ads on iOS](show-instream-video-ads-on-ios.md)).
+- MS-4057: Official release for iOS 13 support.
 
 ### Mediation partner upgrades (6.1)
 
-- Smart Server SDK v7.2
-- FacebookAd SDK v5.5.1 (has breaking changes, please look at [iOS Mediation](ios-mediation.md) for updated integration instruction)
-- Google AdMob SDK v7.50
+- Smart Server SDK v7.2.
+- FacebookAd SDK v5.5.1 (has breaking changes, look at [iOS Mediation](ios-mediation.md) for updated integration instruction).
+- Google AdMob SDK v7.50.
 
 ### Improvements/Bug fixes (6.1)
 
-- MS-3915,MS-3916: Improved Banner Ad performance
-- MS-3948: Removed AppNexusSDKResources.Bundle
-- MS-3951: Fixed open measurement geometry change events for VideoAd
-- MS-3976: Fixed escape character breaking VideoAd load
-- MS-3987: Upgraded to OMSDK v1.2.19
-- MS-4004: Fixed VideoAd's pause issue when application state changes
-- MS-4023: Removed usage of UIWebView
-- MS-4036: Fixed interstitial crash on orientation change if orientation not supported by host application (Github #47)
+- MS-3915, MS-3916: Improved Banner Ad performance.
+- MS-3948: Removed AppNexusSDKResources.Bundle.
+- MS-3951: Fixed open measurement geometry change events for VideoAd.
+- MS-3976: Fixed escape character breaking VideoAd load.
+- MS-3987: Upgraded to OMSDK v1.2.19.
+- MS-4004: Fixed VideoAd's pause issue when application state changes.
+- MS-4023: Removed usage of UIWebView.
+- MS-4036: Fixed interstitial crash on orientation change if orientation not supported by host application (Github #47).
 
 ## 6.0
 
@@ -584,7 +583,7 @@ Notable changes include:
 
 #### Mediation adapters are now available only via our source or CocoaPods
 
-This will enable publishers to select the mediation networks they need for their inventory strategies
+This will enable publishers to select the mediation networks they need for their inventory strategies.
 
 #### Third party mediation network libraries have been removed from code
 
@@ -602,29 +601,29 @@ A list of supported versions of [third-party mediation networks](mediate-with-io
 - Smart Server SDK v7.1.1
 
 > [!WARNING]
-> If you are currently using a static library version of AppNexus SDK(libANSDK.a) or a mediation adapter please follow our [migration guide](ios-mediation.md).
+> If you are currently using a static library version of AppNexus SDK(libANSDK.a) or a mediation adapter follow our [migration guide](ios-mediation.md).
 
 ## 6.0-Beta
 
 > [!NOTE]
-> This is a beta release of the AppNexus SDK, and will be open for feedback/comments for at least the next 14 days
+> This is a beta release of the AppNexus SDK, and will be open for feedback/comments for at least the next 14 days.
 
 ### New features (6.0-Beta)
 
 - SDK-Lite(6.0-Beta) bring in changes to directory structure. Some notable changes include:
-  - BinaryProjects/ANSDK.xcodeproject has been renamed and moved to sdk/AppNexusSDK.xcodeproject
-  - Mediation Adapter targets have been removed from AppNexusSDK.xcodeproject
-  - ANSDK target has been removed from AppNexusSDK.xcodeproject
+  - BinaryProjects/ANSDK.xcodeproject has been renamed and moved to sdk/AppNexusSDK.xcodeproject.
+  - Mediation Adapter targets have been removed from AppNexusSDK.xcodeproject.
+  - ANSDK target has been removed from AppNexusSDK.xcodeproject.
 
 - Mediation adapters are now available only via source or CocoaPods.
 
-This will enable publishers to select the mediation networks they need for their inventory strategies
+This will enable publishers to select the mediation networks they need for their inventory strategies.
 
-- Third Party Mediation Network Libraries have been removed from code. Publishers integrating mediation via source need to include the libraries themself
+- Third Party Mediation Network Libraries have been removed from code. Publishers integrating mediation via source need to include the libraries themself.
 
 A list of supported versions of [third-party mediation networks](mediate-with-ios.md) is available in the public documentation.
 
-- If you are currently using Static Library version of AppNexus SDK(libANSDK.a) / Mediation adapter please follow Migration Steps found [here](ios-mediation.md).
+- If you are currently using Static Library version of AppNexus SDK(libANSDK.a) / Mediation adapter follow Migration Steps found [here](ios-mediation.md).
 
 > [!NOTE]
 > Cocoapods integration remains the same from v5.x:> 6.X so it has not been included as a part of Beta release. But will be available as a part of final release.
@@ -633,11 +632,11 @@ A list of supported versions of [third-party mediation networks](mediate-with-io
 
 ### New features (5.5.1)
 
-- MS-3778: Added new API to get Video Orientation for BannerVideo and Video Ads
+- MS-3778: Added new API to get Video Orientation for BannerVideo and Video Ads.
 
 ### Mediation partner upgrades/changes
 
-- Removed support for following mediation Adapter
+- Removed support for the following mediation Adapter:
 
   - AdColony SDK
   - AdMarvel SDK
@@ -648,47 +647,47 @@ A list of supported versions of [third-party mediation networks](mediate-with-io
 
 ### Improvements/Bug fixes (5.5.1)
 
-- MS-3902: Removed deprecated APIs
+- MS-3902: Removed deprecated APIs.
 - MS-3311: Improved Objective-C API Declarations for Swift compatibility.
 
 ## 5.4
 
 ### New features (5.4)
 
-- MS-3730: Support Rendering for Banner Native ads
+- MS-3730: Support Rendering for Banner Native ads.
 
 ### Mediation partner upgrades/changes (5.4)
 
-- MS-3495: Upgraded Mopub framework to v5.6.0
+- MS-3495: Upgraded Mopub framework to v5.6.0.
 
 ### Improvements/Bug fixes (5.4)
 
-- MS-3873: Improved ExposureChange on scroll
-- MS-3194: Removed UIWebView support
-- MS-3798: Added new API to enable publishers to configure skip options for video player
-- Improved Open Measurement Event(Session Finish) for RTB ads
+- MS-3873: Improved ExposureChange on scroll.
+- MS-3194: Removed UIWebView support.
+- MS-3798: Added new API to enable publishers to configure skip options for video player.
+- Improved Open Measurement Event(Session Finish) for RTB ads.
 
 ## 5.3
 
 ### New features (5.3)
 
-- MS-3789: Ability to customize Video Player Options
+- MS-3789: Ability to customize Video Player Options.
 
 ### Mediation partner upgrades/changes (5.3)
 
-- MS-3803: Upgraded Google AdMob adapter SDK v7.43.0
+- MS-3803: Upgraded Google AdMob adapter SDK v7.43.0.
 
 ### Improvement/Bug fixes (5.3)
 
-- MS-3774: Improved Open Measurement Event (Session Finish) for BannerAds
-- MS-3712: Resize BannerAd API for Mediation ads
-- MS-3808: Removed videoAdDidClose method to prevent Video Player removal (Github #22)
+- MS-3774: Improved Open Measurement Event (Session Finish) for BannerAds.
+- MS-3712: Resize BannerAd API for Mediation ads.
+- MS-3808: Removed videoAdDidClose method to prevent Video Player removal (Github #22).
 
 ## 5.2
 
 ### New features (5.2)
 
-- MS-3720: Open Measurement SDK support for Native Ads
+- MS-3720: Open Measurement SDK support for Native Ads.
 
 ## 5.1.2
 
@@ -700,8 +699,8 @@ A list of supported versions of [third-party mediation networks](mediate-with-io
 
 ### Mediation partner SDK upgrades/changes
 
-- Upgraded Smart Server SDK v7.0.2
-- Made SmartAdAdapter Podspec to be dependent on Smart-Display-SDK Pods
+- Upgraded Smart Server SDK v7.0.2.
+- Made SmartAdAdapter Podspec to be dependent on Smart-Display-SDK Pods.
 
 Known issue: Apps integrating Smart Adapter from Code/Binary need to remove i386 and x86_64 architectures in order to be able to push to appstore. Cocoapods integration will work as-is.
 
@@ -709,12 +708,12 @@ Known issue: Apps integrating Smart Adapter from Code/Binary need to remove i386
 
 ### New features (5.1)
 
-- Support for Carthage using script : carthageAppNexusSDK.sh
+- Support for Carthage using script : carthageAppNexusSDK.sh.
 
 ### Mediation partner SDK upgrades/changes (5.1)
 
-- Updated Google AdMob adapter to support GADUnifiedNativeAd and GADMediaView requirements
-- Upgraded Smart Server SDK v7.0
+- Updated Google AdMob adapter to support GADUnifiedNativeAd and GADMediaView requirements.
+- Upgraded Smart Server SDK v7.0.
 
 ### Bug fixes
 
@@ -726,16 +725,16 @@ Known issue: Apps integrating Smart Adapter from Code/Binary need to remove i386
 
 ### Bug fix (5.0.1)
 
-- Allow ANNativeAdRequest to download image assets in background (MS-3714)
+- Allow ANNativeAdRequest to download image assets in background (MS-3714).
 
 ## 5.0
 
 ### New features (5.0)
 
-- Universal Tags version 3, including support for Native ad objects
-- Support for Native Video
-- Open Measurement SDK support for video ads (MS-3388)
-- New delegate method allowing ANBannerAdView object to be paired with ANNativeAdResponse object upon successful load of native ad (MS-3596)
+- Universal Tags version 3, including support for Native ad objects.
+- Support for Native Video.
+- Open Measurement SDK support for video ads (MS-3388).
+- New delegate method allowing ANBannerAdView object to be paired with ANNativeAdResponse object upon successful load of native ad (MS-3596).
 
 ### Mediation partner upgrades/changes (5.0)
 
@@ -744,16 +743,16 @@ Known issue: Apps integrating Smart Adapter from Code/Binary need to remove i386
 
 ### Bug fixes (5.0)
 
-- Prevent crashes by preventing ANBannerAdView from loading when width or height are improperly configured (MS-3685)
+- Prevent crashes by preventing ANBannerAdView from loading when width or height are improperly configured (MS-3685).
 
 ## 4.12
 
 ### New features and bug fixes (4.12)
 
-- MS-3606: Updated Smart Adapter to v6.10
-- MS-3495: Updated Google Play Ad Adapter (AdMob & DFP) to v7.35.1
-- MS-3633: Added new APIs that expose additional description (`desc2`) and main image size for Native Ads
-- MS-3439: Added the option to send content_url string in Google Mediation requests, use key: `content_url`
+- MS-3606: Updated Smart Adapter to v6.10.
+- MS-3495: Updated Google Play Ad Adapter (AdMob & DFP) to v7.35.1.
+- MS-3633: Added new APIs that expose additional description (`desc2`) and main image size for Native Ads.
+- MS-3439: Added the option to send content_url string in Google Mediation requests, use key: `content_url`.
 - MS-3583: Ability to pass second_price value to Google DFP Banner Ads. Beta release - contact your Account Manager for more information about this feature.
 
 Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to be fixed in a future release.
@@ -783,31 +782,31 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - MS-3409: Repair SDK build errors highlighted by Xcode 10beta4.
 - MS-3324: Allow designation of arbitrary sizes to trigger full view constraints on banner ad instances.
 - MS-3427: Update Banner Native such that mainImage and iconImage are never downloaded automatically.
-- MS-3199: Add impression count API for Mediated Native creatives
-- MS-3444: Add API to restrict allowed media types for Banner Ad
+- MS-3199: Add impression count API for Mediated Native creatives.
+- MS-3444: Add API to restrict allowed media types for Banner Ad.
 
 ## 4.9
 
 ### New features (4.9)
 
-- MS-3234: Open Measurement SDK Support for HTML Banner Ads
+- MS-3234: Open Measurement SDK Support for HTML Banner Ads.
 
 ## 4.8
 
 ### New features (4.8)
 
-- MS-3083: Native for Banner Ad View
-- MS-3115: Function to set external user id in the SDK for user syncing
-- MS-3279: Expose click through url for banner, native, interstitial & video
+- MS-3083: Native for Banner Ad View.
+- MS-3115: Function to set external user id in the SDK for user syncing.
+- MS-3279: Expose click through URL for banner, native, interstitial & video.
 
 ### Bug fixes (4.8)
 
-- MS-3186: Incorrect logic in AdMob mediation code - iOS - native
+- MS-3186: Incorrect logic in AdMob mediation code - iOS - native.
 
 ### Mediation partner updates (4.8)
 
-- MS-3257: Update Facebook Audience Network SDK to latest version
-- MS-3075: Update inMobi client side adapter to support latest inMobi SDK
+- MS-3257: Update Facebook Audience Network SDK to latest version.
+- MS-3075: Update inMobi client side adapter to support latest inMobi SDK.
 
 ### Versions of updated Mediation SDK
 
@@ -825,8 +824,8 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 
 ### New features (4.6)
 
-- MS-2113: Support autocollapse of interstitials
-- MS-3178: Implement exposureChange event
+- MS-2113: Support autocollapse of interstitials.
+- MS-3178: Implement exposureChange event.
 
 ## 4.5
 
@@ -838,50 +837,50 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 
 ### Bug fixes (4.4.2)
 
-- MS-3200: Fixed ANLocalizations overriding parent app localizations
+- MS-3200: Fixed ANLocalizations overriding parent app localizations.
 
 ## 4.4.1
 
 ### Bug fixes (4.4.1)
 
-- MS-3197: Fixed a crash in Creative Id changeset
+- MS-3197: Fixed a crash in Creative Id changeset.
 
 ## 4.4
 
 ### Updates (4.4)
 
-- MS-2132: The in-app browser localisations added for different localisations (French, German, Spanish, Swedish, and Danish)
-- MS-3096: Ability to get Creative ID in the SDK from response
-- MS-3187: iPhone X : WKWebView scrollView gets undesired insets fixed
+- MS-2132: The in-app browser localisations added for different localisations (French, German, Spanish, Swedish, and Danish).
+- MS-3096: Ability to get Creative ID in the SDK from response.
+- MS-3187: iPhone X : WKWebView scrollView gets undesired insets fixed.
 
 ## 4.3
 
 ### Updates (4.3)
 
-- MS-3142: App crashing on iOS 9 when tapping on Native Ad
-- MS-3060: Mobile SDK: Close Interstitial when it is clicked
-- MS-3087: iOS Pre-Roll Placement Video Completion Tracker Not Firing Consistently
-- VID-3227: Pre-roll video serving mid-roll
-- MS-3101: Update Rechability Code
-- MS-3170: SDK Crash
+- MS-3142: App crashing on iOS 9 when tapping on Native Ad.
+- MS-3060: Mobile SDK: Close Interstitial when it is clicked.
+- MS-3087: iOS Pre-Roll Placement Video Completion Tracker Not Firing Consistently.
+- VID-3227: Pre-roll video serving mid-roll.
+- MS-3101: Update Rechability Code.
+- MS-3170: SDK Crash.
 
 ## 4.2
 
 ### Updates (4.2)
 
-- MS-3097: Instream Video new API's to provide info on the video creatives loaded & playing
+- MS-3097: Instream Video new API's to provide info on the video creatives loaded & playing.
 
 ## 4.1
 
 ### Updates (4.1)
 
-- AppNexusSDK will now support iOS 9.0 & above only
+- AppNexusSDK will now support iOS 9.0 & above only.
 
 ### Bug fixes (4.1)
 
-- MS-3085: Update SDK to respect safe area on iPhone X/iOS 11
-- MS-2985: `NSURLConnection` has deprecated methods that are currently in use by the AppNexus SDK
-- MS-2983: `MPMoviePlayerViewController` has been deprecated as per iOS 9 but is being used in ANMRAIDUtil
+- MS-3085: Update SDK to respect safe area on iPhone X/iOS 11.
+- MS-2985: `NSURLConnection` has deprecated methods that are currently in use by the AppNexus SDK.
+- MS-2983: `MPMoviePlayerViewController` has been deprecated as per iOS 9 but is being used in ANMRAIDUtil.
 
 ## 4.0.1
 
@@ -893,23 +892,23 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 
 ### New features (4.0)
 
-- MS-2964: Replace usage of /mob with /ut in SDK
+- MS-2964: Replace usage of /mob with /ut in SDK.
 
 ### Bug fixes (4.0)
 
-- MS-1891: Address Facebook SDK star rating deprecation
-- MS-2862: Support newly added standard fields on the native creative object
-- MS-2915: Send SDK version on /ut requests
-- MS-2931: Product Request: Allow device permissions on iOS to be disabled
-- MS-3077: Add better support for rotation on iOS
-- MS-3078: Add support for loading 1x1 creatives in a banner
-- (Github Issue #13): Stop using EKEventStore
+- MS-1891: Address Facebook SDK star rating deprecation.
+- MS-2862: Support newly added standard fields on the native creative object.
+- MS-2915: Send SDK version on /ut requests.
+- MS-2931: Product Request: Allow device permissions on iOS to be disabled.
+- MS-3077: Add better support for rotation on iOS.
+- MS-3078: Add support for loading 1x1 creatives in a banner.
+- (Github Issue #13): Stop using EKEventStore.
 
 ## 3.6
 
 ### Mediated SDKs
 
-- Updated the following mediation adapters which were updated to support iOS 11
+- Updated the following mediation adapters which were updated to support iOS 11:
 
   - AdMobSDK v7.24.1
   - MillenialMediaSDK v6.6.0
@@ -927,8 +926,8 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 
 ### Bug fixes and updates (3.5)
 
-- Instream video is only supported in iOS 9 and above
-- MS-3041: Allow to configure app access rights in SDK
+- Instream video is only supported in iOS 9 and above.
+- MS-3041: Allow to configure app access rights in SDK.
 
 ### Mediated SDKs (3.5)
 
@@ -954,13 +953,13 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 
 ### Bug fixes and updates (3.2.1)
 
-- MS-3016: Fixed podspec configuration and fake framework import issue in Rubicon mediation adapter..
+- MS-3016: Fixed podspec configuration and fake framework import issue in Rubicon mediation adapter.
 
 ## 3.2
 
 ### Bug fixes and updates (3.2)
 
-- Fixed AdMarvel banner ad misalignment
+- Fixed AdMarvel banner ad misalignment.
 
 ### Mediated SDKs (3.2)
 
@@ -970,21 +969,21 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 
 ### Bug fixes (3.1.2)
 
-- MS-2984: Video Rendering issue on iOS 10.3
+- MS-2984: Video Rendering issue on iOS 10.3.
 
 ## 3.1
 
 ### Bug fixes and updates (3.1)
 
-- MS-2630: Support for new sizes when mediating Facebook banners
-- MS-2853: Engineer ANJAM so that getCurrentPosition() get the position on-the-fly
-- MS-2954: Add Google adapter subspec to Cocoapods
-- PR-12: Integrate third party PR: Fix reachability leak
+- MS-2630: Support for new sizes when mediating Facebook banners.
+- MS-2853: Engineer ANJAM so that getCurrentPosition() get the position on-the-fly.
+- MS-2954: Add Google adapter subspec to Cocoapods.
+- PR-12: Integrate third party PR: Fix reachability leak.
 
 #### Instream video ads
 
-- Modify the parent controller that is being set to load the click thru url.
-- Update the custom targeting params format
+- Modify the parent controller that is being set to load the click through URL.
+- Update the custom targeting params format.
 
 ## 3.0
 
@@ -995,7 +994,7 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 ### Bug fixes and updates (3.0)
 
 - Remove iAd.
-- Minimum supported iOS version is now v8.0
+- Minimum supported iOS version is now v8.0.
 
 ## 2.14
 
@@ -1009,9 +1008,9 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 
 ### Bug fixes (2.14)
 
-- MS-2839: Fix Anjam and Sdk communication for creative served in iframe
-- MS-2856: Error building with Carthage
-- MS-2841: Add a "ping" feature to the SDK without anjam.js injection
+- MS-2839: Fix Anjam and Sdk communication for creative served in iframe.
+- MS-2856: Error building with Carthage.
+- MS-2841: Add a "ping" feature to the SDK without anjam.js injection.
 
 ## RC 2.13.2
 
@@ -1023,24 +1022,23 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 
 ## RC 2.13.1
 
-- Expose ANAdAdapterMillennialMediaBase.h In ANSDKMillennialMediaAdapter Binary Target
-- Expose ANSDKSettings.h In ANSDK Binary Target
+- Expose ANAdAdapterMillennialMediaBase.h In ANSDKMillennialMediaAdapter Binary Target.
+- Expose ANSDKSettings.h In ANSDK Binary Target.
 
 ## RC 2.13
 
 ### New features (RC 2.13)
 
-- MS-2580: Added switch to enable HTTPS in SDK for calls made by the AppNexus SDK
+- MS-2580: Added switch to enable HTTPS in SDK for calls made by the AppNexus SDK.
 
   - Currently, ad calls may not always be ATS compliant. The AppNexus ad server will be fully ATS compliant by the end of 2016 without the need for an SDK change.
-
   - Because the AppNexus SDK does not control ad calls made by mediated SDKs, ATS compliance for mediated SDKs is the responsibility of each respective vendor. As mediated SDKs become ATS compliant the AppNexus SDK will be upgraded to support them.
-- MS-2584: Added static method to pass Nexage Site ID into Millennial SDK mediated adapter
+- MS-2584: Added static method to pass Nexage Site ID into Millennial SDK mediated adapter.
 
 ### Bug fixes (RC 2.13)
 
-- MS-2664: Fixed click-through issue affecting some ads loading in WKWebView
-- MS-2227: Multiple values for a single key now supported for AppNexus ad serving
+- MS-2664: Fixed click-through issue affecting some ads loading in WKWebView.
+- MS-2227: Multiple values for a single key now supported for AppNexus ad serving.
 
 ### Mediated SDKs (RC 2.13)
 
@@ -1064,11 +1062,11 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 
 ### Bug fixes (RC 2.12)
 
-- MS-2382: Allow numbers passed as strings in mraid.js resizeProperties & expandProperties
-- MS-2332: Load interstitial full-screen ads in a web view the size of the screen
-- Updated client testing endpoints to ib-test.adnxs.com
-- Load MRAID/ANJAM scripts only in main frame
-- Open default browser only for a new window navigation
+- MS-2382: Allow numbers passed as strings in mraid.js resizeProperties & expandProperties.
+- MS-2332: Load interstitial full-screen ads in a web view the size of the screen.
+- Updated client testing endpoints to ib-test.adnxs.com.
+- Load MRAID/ANJAM scripts only in main frame.
+- Open default browser only for a new window navigation.
 
 ### Mediated SDKs (RC 2.12)
 
@@ -1078,15 +1076,15 @@ No change
 
 ### New features (RC 2.11)
 
-- MS-2211: Use WKWebView for the in-app browser on iOS 8+
-- MS-2214: Suppress user selection of ads
+- MS-2211: Use WKWebView for the in-app browser on iOS 8+.
+- MS-2214: Suppress user selection of ads.
 
 ### Bug fixes (RC 2.11)
 
-- MS-2163: Schedule NSURLConnection of ANAdFetcher in the current run loop for mode NSRunLoopCommonModes
-- MS-2163: Fully load WKWebView in the background before sending the `[ANAdDelegate adDidReceiveAd]` callback
-- MS-2214: Allow the app user to dismiss the in-app App Store window even if the ad view which presented it has been deallocated
-- MS-2214: Disable video autoplay on iPhones running iOS 9 and below
+- MS-2163: Schedule NSURLConnection of ANAdFetcher in the current run loop for mode NSRunLoopCommonModes.
+- MS-2163: Fully load WKWebView in the background before sending the `[ANAdDelegate adDidReceiveAd]` callback.
+- MS-2214: Allow the app user to dismiss the in-app App Store window even if the ad view which presented it has been deallocated.
+- MS-2214: Disable video autoplay on iPhones running iOS 9 and below.
 
 ### Mediated SDKs (RC 2.11)
 
@@ -1096,8 +1094,8 @@ No change
 
 ### New features (RC 2.10)
 
-- MS-2251: Banner ads are rendered in a WKWebView instead of UIWebView in iOS 8+
-- MS-2307: Ability to traffic full-screen interstitial creatives
+- MS-2251: Banner ads are rendered in a WKWebView instead of UIWebView in iOS 8+.
+- MS-2307: Ability to traffic full-screen interstitial creatives.
 
 MS-2316 contains the following mediated SDKs:
 
@@ -1117,11 +1115,11 @@ MS-2316 contains the following mediated SDKs:
 
 ### New features (RC 2.9)
 
-- MS-2031: AdMob Native Mediation
+- MS-2031: AdMob Native Mediation.
 
 ### Bug fixes (RC 2.9)
 
-- Improved behavior for ANJAM window listener
+- Improved behavior for ANJAM window listener.
 
 MS-1913 contains the following mediated SDKs:
 
@@ -1141,7 +1139,7 @@ MS-1913 contains the following mediated SDKs:
 
 ### New features (RC 2.8)
 
-- MS-1701: Added public API to support passing inventory code and member ID in lieu of placement ID
+- MS-1701: Added public API to support passing inventory code and member ID in lieu of placement ID.
 
 MS-1712 contains the following mediated SDKs:
 
@@ -1167,12 +1165,12 @@ MS-1712 contains the following mediated SDKs:
 
 ### Bug fixes (RC 2.6)
 
-- MS-1573: Improve how location is passed on a native ad request url
+- MS-1573: Improve how location is passed on a native ad request URL.
 
 ### Other changes (RC 2.6)
 
-- MS-1389: Updated test project & sample app for Xcode 7 / iOS 9
-- MS-1389: Bitcode ANSDK binary can be built by running "./buildANSDK.sh -b"
+- MS-1389: Updated test project & sample app for Xcode 7 / iOS 9.
+- MS-1389: Bitcode ANSDK binary can be built by running "./buildANSDK.sh -b".
 
 MS-1654 contains the following mediated SDKs:
 
@@ -1192,12 +1190,12 @@ MS-1654 contains the following mediated SDKs:
 
 ### Bug fixes (RC 2.5)
 
-- MS-1503: Fixed customEventInterstitialWillPresent call in ANGADCustomInterstitialAd.m
+- MS-1503: Fixed customEventInterstitialWillPresent call in ANGADCustomInterstitialAd.m.
 
 ### Other changes (RC 2.5)
 
-- MS-1511: Xcode 7 / iOS 9 updates
-- MS-1371: Increase interstitial timeout to 4.5 minutes
+- MS-1511: Xcode 7 / iOS 9 updates.
+- MS-1371: Increase interstitial timeout to 4.5 minutes.
 
 MS-1519 contains the following mediated SDKs:
 
@@ -1217,20 +1215,20 @@ MS-1519 contains the following mediated SDKs:
 
 ### Bug fixes (RC 2.4)
 
-- MS-1365: Fix handling of custom keywords on ANNativeAdRequest
-- MS-1306: Improved handling of clickable elements for native ad views
-- MS-1331: Expose ANAdAdapterNativeInMobi header in binary output
+- MS-1365: Fix handling of custom keywords on ANNativeAdRequest.
+- MS-1306: Improved handling of clickable elements for native ad views.
+- MS-1331: Expose ANAdAdapterNativeInMobi header in binary output.
 
 ### Other changes/additions (RC 2.4)
 
-- MS-1238: Added request, response notification broadcasts
-- MS-1366: Removed old ANGender enum values & banner resize callbacks
-- MS-1333: Improved Binary Build Script
+- MS-1238: Added request, response notification broadcasts.
+- MS-1366: Removed old ANGender enum values & banner resize callbacks.
+- MS-1333: Improved Binary Build Script.
 
 ### New mediation adapters (RC 2.4)
 
-- MS-1321: Yahoo Flurry Banner, Interstitial, Native
-- MS-1413: Millennial Banner, Interstitial (rewritten for MMAdSDK 6.0.1)
+- MS-1321: Yahoo Flurry Banner, Interstitial, Native.
+- MS-1413: Millennial Banner, Interstitial (rewritten for MMAdSDK 6.0.1).
 
 MS-1413 contains the following mediated SDKs:
 
@@ -1250,15 +1248,15 @@ MS-1413 contains the following mediated SDKs:
 
 ### Bug fixes (RC 2.3.1)
 
-- MS-1317: Addressed iPad in-app browser compile issue
+- MS-1317: Addressed iPad in-app browser compile issue.
 
 ## RC 2.3
 
 ### Bug fixes (RC 2.3)
 
-- MS-1219: Removed OpenUDID dependency
-- MS-1265: Move location of kANAdFetcherDidReceiveResponseNotification
-- MS-1267: Testing improvements
+- MS-1219: Removed OpenUDID dependency.
+- MS-1265: Move location of kANAdFetcherDidReceiveResponseNotification.
+- MS-1267: Testing improvements.
 
 ### New mediation adapters (RC 2.3)
 
@@ -1281,33 +1279,33 @@ Contains the following mediated SDKs:
 
 ### Feature additions (RC 2.2)
 
-- MS-910: Interstitials with transparent backgrounds now supported on iOS 8
-- MS-941: Enhanced user interaction detection on ad views
-- MS-982: Auto-detect a banner root view controller if one isn't provided
+- MS-910: Interstitials with transparent backgrounds now supported on iOS 8.
+- MS-941: Enhanced user interaction detection on ad views.
+- MS-982: Auto-detect a banner root view controller if one isn't provided.
 
 ### Bug fixes (RC 2.2)
 
-- MS-882: Handle banner, interstitial, native invalid network detection separately
-- MS-970, MS-1038: Binary build scripts now work in directories where the file path contains one or more spaces
-- MS-971: Fixed native ad click fallback behavior
-- MS-1000: Fire adWillClose and adDidClose on ANInterstitialAd
+- MS-882: Handle banner, interstitial, native invalid network detection separately.
+- MS-970, MS-1038: Binary build scripts now work in directories where the file path contains one or more spaces.
+- MS-971: Fixed native ad click fallback behavior.
+- MS-1000: Fire adWillClose and adDidClose on ANInterstitialAd.
 
 ### Internal improvements (RC 2.2)
 
-- MS-540: Add ANLogging support in ANMoPubMediationBanner & ANMoPubMediationInterstitial
-- MS-962: Simplify IDFA retrieval based on 6.0 deployment target
-- MS-976, MS-1042, MS-1055: Break apart ANAdResponse into ANAdServerResponse & ANAdFetcherResponse
-- MS-975: Improved AdFetcher error handling
-- MS-1022, MS-1054: Added AN namespace to all category methods
-- MS-1024: Removed ANBasicConfig
+- MS-540: Add ANLogging support in ANMoPubMediationBanner & ANMoPubMediationInterstitial.
+- MS-962: Simplify IDFA retrieval based on 6.0 deployment target.
+- MS-976, MS-1042, MS-1055: Break apart ANAdResponse into ANAdServerResponse & ANAdFetcherResponse.
+- MS-975: Improved AdFetcher error handling.
+- MS-1022, MS-1054: Added AN namespace to all category methods.
+- MS-1024: Removed ANBasicConfig.
 
 ### Mediation adapter bug fixes (RC 2.2)
 
-- MS-963: Fix for isReady in Amazon interstitial adapter
-- MS-1113: Silence warning in Millennial adapters when compiling for iOS 8.3
-- MS-1186: Address deprecated methods in ANGADCustomBannerAd & ANGADCustomInterstitialAd from Google AdMob SDK 7.2.1
-- MS-1188: Simplify iAd adapters based on 6.0 deployment target
-- MS-1193: Improved error code handling for MoPub & Millennial adapters
+- MS-963: Fix for isReady in Amazon interstitial adapter.
+- MS-1113: Silence warning in Millennial adapters when compiling for iOS 8.3.
+- MS-1186: Address deprecated methods in ANGADCustomBannerAd & ANGADCustomInterstitialAd from Google AdMob SDK 7.2.1.
+- MS-1188: Simplify iAd adapters based on 6.0 deployment target.
+- MS-1193: Improved error code handling for MoPub & Millennial adapters.
 
 ### New mediation adapters (RC 2.2)
 
@@ -1334,19 +1332,19 @@ Contains the following mediated SDKs:
 
 - MS-856, MS-868, MS-875, MS-916, MS-918, MS-925: Implemented AppNexus Native Ad Console Support.
 - MS-932: Introduced namespaced `ANGender` enum values (e.g. `ANGenderMale`). Deprecated existing values (e.g. `MALE`).
-- Updated to meet MRAID 2.0 compliance standards
+- Updated to meet MRAID 2.0 compliance standards.
 
 ### Other feature additions (RC 2.1)
 
 - MS-868: Added dependency on StoreKit framework, App Store URLs will open directly in the app instead of opening in the AppStore app when `opensInNativeBrowser` is set to `NO` on the ad view.
-- MS-900: Added dependency on EventKitUI framework, user will be presented with a calendar event edit screen if an ad calls `mraid.createCalendarEvent`
-- UIWebView performance enhancements
+- MS-900: Added dependency on EventKitUI framework, user will be presented with a calendar event edit screen if an ad calls `mraid.createCalendarEvent`.
+- UIWebView performance enhancements.
 
 ### Bug fixes (RC 2.1)
 
-- MS-888: Clear AmazonAdView delegate on dealloc
-- MS-902: Fixed malformed URL issue caused by mediated networks not present in app
-- MS-934: Allow background color for banner to be set from .nib file or storyboard
+- MS-888: Clear AmazonAdView delegate on dealloc.
+- MS-902: Fixed malformed URL issue caused by mediated networks not present in app.
+- MS-934: Allow background color for banner to be set from .nib file or storyboard.
 
 Includes the following mediated network SDKs:
 
@@ -1365,8 +1363,8 @@ Includes the following mediated network SDKs:
 
 ### Other bug fixes (RC 1.21 (2.0))
 
-- ANLocation formatting on the ad call
-- KVO removeObserver exceptions
+- ANLocation formatting on the ad call.
+- KVO removeObserver exceptions.
 - MRAID ad with custom close in expanded state did not correctly collapse back to default state.
 - Improved importing of SDK bundle resources.
 
