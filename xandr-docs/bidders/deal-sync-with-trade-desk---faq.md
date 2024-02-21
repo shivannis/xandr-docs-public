@@ -21,12 +21,11 @@ Ask the Trade Desk buyer to confirm they have accepted the deal in the Trade Des
 
 The following details are shared with Trade Desk APIs:
 
-|  |  |  |
+| - Deal Name | - Deal Type |- Currency  |
 |---|---|---|
-| - Deal Name | - Deal Type | - Currency |
-| - Buyer Seat ID | - Deal Auction Type | - Floor Price/Ask Price |
-| - Seller Name | - Start Date | - Allowed Media Types |
-| - Deal ID | - End Date | - Allowed Creative Sizes |
+| **- Buyer Seat ID** | **- Deal Auction Type** | **- Floor Price/Ask Price** |
+| **- Seller Name** | **- Start Date** | **- Allowed Media Types** |
+| **- Deal ID**| **- End Date** | **- Allowed Creative Sizes** |
 
 ## What will happen to existing Trade Desk deals that were created before enablement of deal sync?
 
