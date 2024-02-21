@@ -40,16 +40,16 @@ Xandr's technology to collect, and how it's protected.
 If you want to get even more information about browser calls, you can use one of several debugging tools that show and analyze your browser traffic. Debuggers will help you if you're tracking down something
 specific, like why a pixel isn't firing properly.
 
-Below is a screenshot of a Firefox add-on called [Tamper Data](https://addons.mozilla.org/en-US/firefox/addon/tamper-data/) recording the activity on the `swap-bot.com` page. You can see the Quantcast, Google, and
+<!--Below is a screenshot of a Firefox add-on called [Tamper Data](https://addons.mozilla.org/en-US/firefox/addon/tamper-data/) recording the activity on the `swap-bot.com` page. You can see the Quantcast, Google, and
 Xandr ad calls, and in the last line you can see the page retrieving its favicon (a file containing one or more small icons) from some folder in the website's content management system.
 
-:::image type="content" source="media/debuggers.png" alt-text="Screenshot that illustrates Tamper Data, a Firefox add-on, and a recording activity on `swap-bot.com`. It reveals Quantcast, Google, and Xandr ad calls, along with the retrieval of the page's favicon from a folder in the website's content management system.":::
+:::image type="content" source="media/debuggers.png" alt-text="Screenshot that illustrates Tamper Data, a Firefox add-on, and a recording activity on `swap-bot.com`. It reveals Quantcast, Google, and Xandr ad calls, along with the retrieval of the page's favicon from a folder in the website's content management system."::: -->
 
-Here are a few other debuggers:
+Here are a few debuggers:
 
 | Firefox | Chrome | Windows only; all browsers |
 |--|--|--|
-| [Firebug](https://getfirebug.com/), mainly for Firefox, is not only a debugger, it also provides enriched "inspect element" functions that show you source html, css, etc, and does a few other things, too.<br><br>[Firefox add-on Live HTTP Headers](https://addons.mozilla.org/en-US/firefox/addon/live-http-headers/). Not as holistic, but interesting. | Built-in [Developer Tools](http://code.google.com/chrome/devtools/docs/overview.html) | [Fiddler](https://www.telerik.com/download/fiddler) |
+| [Firebug](https://getfirebug.com/), mainly for Firefox, is not only a debugger, it also provides enriched "inspect element" functions that show you source html, css, etc, and does a few other things, too.| Built-in [Developer Tools](http://code.google.com/chrome/devtools/docs/overview.html) | [Fiddler](https://www.telerik.com/download/fiddler) |
 
 ## View a webpage's source code
 
