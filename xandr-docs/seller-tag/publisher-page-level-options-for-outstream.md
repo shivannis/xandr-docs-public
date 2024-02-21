@@ -130,7 +130,7 @@ These settings determine if the user can skip the content playing in the video p
 | `skipLocation` | string | "top-left" | Location of the `skipText` and `skipButtonText`. Options are `top-left` and `top-right`.<br>If set to top-left, the `skipText`, and subsequently `skipButtonText`, will be displayed on the top left corner of the player while the adText will be displayed on the top right corner.<br>If set to top-right, the `skipText`, and subsequently `skipButtonText`, will be displayed on the top right corner of the player while the adText will be displayed on the top left corner. |
 | `skipText` | string | "Video can be skipped in %%TIME%% seconds" | Text displayed to notify the user of when skippability will be available. Use %%TIME%% to insert the remaining time. |
 | `videoOffset` | integer | 5 | Time, in seconds, after which the video will be skippable, if enabled and the video's duration is greater than `videoThreshold`. |
-| `videoThreshold` | integer |  | Video must be longer than this length (in seconds) for the `skippable` option to be enabled.<br>**Note**: that video length is rounded to the closest second. For example: video lengths of 14.97 and 15.23 seconds will be treated as 15 second videos. |as 15 second videos. |
+| `videoThreshold` | integer |  | Video must be longer than this length (in seconds) for the `skippable` option to be enabled.<br>**Note**: that video length is rounded to the closest second. For example: video lengths of 14.97 and 15.23 seconds will be treated as 15 second videos. |
 
 ## Waterfall handling settings with mediation
 

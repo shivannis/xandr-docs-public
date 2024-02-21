@@ -1,6 +1,6 @@
 ---
 title: Data Science Toolkit - Incrementality and Xandr
-description: In this page, Learn what is incrementality and how Xandr offers clients with data science capabilities the ability to measure incrementality. 
+description: In this page, Learn what is incrementality and how Xandr offers clients with data science capabilities, like the ability to measure incrementality. 
 ms.custom: data-science
 ms.date: 10/28/2023
 ---
@@ -41,7 +41,7 @@ This is the default method. Xandr splits the target audience into test and cont
 
 ### How to set up a line item for incrementality?
 
-1. In, go to  **Line Item \> Basic Setup \> Incrementality** and select **“Use control group”**.
+1. Go to  **Line Item \> Basic Setup \> Incrementality** and select **“Use control group”**.
 1. Assign a key and a percentage of users to assign to the control group.
     - A key can be any string of characters and creates unique User Segmentation between Test & Control Groups. You can set the same key across multiple line items to ensure that they all have use the same user segmentation - this will help ensure no cross-contamination across line items. See more below.
     - Control Group Percentage will determine the percentage of users that you target that fall in the Control Group.

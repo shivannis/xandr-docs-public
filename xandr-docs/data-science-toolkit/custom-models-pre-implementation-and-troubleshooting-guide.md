@@ -12,11 +12,11 @@ This page describes best practices to prepare for custom model implementation as
 
 ## Pre-Implementation best practices
 
-**The purpose of custom models**
+### The purpose of custom models
 
 Custom Models are designed for determining how to price impressions, not how to target them. For targeting impressions, you should continue to use the [Targeting](../invest/buy-side-targeting.md) section of the line item set up in  or the [Profile Service](../digital-platform-api/profile-service.md) for targeting via the API. However, the targeting on the line item needs to match the features in the custom model​. A discrepancy between the two can result in limited delivery on a line.
 
-**Syntax and permissions guidance**
+### Syntax and permissions guidance
 
 - In order to create and update custom models, you will need to make API calls from an Invest user with the role APB Bonsai User Role or APB Genie User Role. Open a product support ticket if you do not already see these roles available for users in your seats. Many clients will create a new user and use it exclusively for updating custom models.
 - [Base64 encode](https://developer.mozilla.org/en-US/docs/Glossary/Base64) your tree before uploading it to Xandr and make sure your Base64-Encoded tree is no larger than 3 MB.​
@@ -24,12 +24,12 @@ Custom Models are designed for determining how to price impressions, not how to 
 - Label leaves to report on [Log-level data](../log-level-data/log-level-data-feeds.md). This will help you accurately work out how you have bid.
 - If you want to not bid in certain situations, use a bid value or multiplier of "no_bid" not "0".
 
-**Dealing with capacity**
+### Dealing with capacity
 
 - Update your old model instead of creating a new model every few minutes.​
 - Have a script that periodically deletes unused models
 
-**Using log-level data**
+### Using log-level data
 
 In order to use custom models successfully, you must update the models based on performance. This can be done with two log-level data feeds:
 
@@ -42,7 +42,7 @@ You can also collect data from the log-level data feeds listed [here](../log-le
 
 Follow these troubleshooting steps if a line item is not delivering the expected results and has a custom model attached:
 
-**Step 1: Determine if the custom model is the issue**
+### Step 1: Determine if the custom model is the issue
 
 If a line item is not delivering as expected it is possible the attached custom model is causing the issue. We recommend that prior to troubleshooting the custom model that uses confirm that the line item set up is not causing the delivery issue. Some general items to check on the line item and its parent objects are:
 
@@ -54,7 +54,7 @@ For additional information on troubleshooting your augmented line item please se
 
 If troubleshooting the line item does not resolve the performance issues continue with the steps below to troubleshoot the custom model.
 
-**Step 2. Check if the line item is eligible to bid**
+### Step 2. Check if the line item is eligible to bid
 
 Custom models can prevent a line item from spending if the features used to determine how much to bid are excluded by the line item's targeting. Some examples of this occurrence are:
 
@@ -151,10 +151,11 @@ If the user does NOT belong to segment ID 11584384,
 
 Then calculate a dynamic value by either multiplying the segment value by the multiplier
 
-Note that the value: *compute(segment\[19154661\].value*, *0.030000000000000002*, *0*, *10.0*, *10000.0*) syntax is value: compute(*input_field*, *multiplier*, *offset*, *min_value*, *max_value*). This is evaluated as *max*(*min_value*, *min*(*max_value*, *input_field \* multiplier + offset*)). In other words, the user segment value would have to be higher than 336, otherwise a minimum value of 10.0 will be returned.
+> [!NOTE]
+> The value: *compute(segment\[19154661\].value*, *0.030000000000000002*, *0*, *10.0*, *10000.0*) syntax is value: compute(*input_field*, *multiplier*, *offset*, *min_value*, *max_value*). This is evaluated as *max*(*min_value*, *min*(*max_value*, *input_field \* multiplier + offset*)). In other words, the user segment value would have to be higher than 336, otherwise a minimum value of 10.0 will be returned.
 
 If all/any of the conditions above are not met, return a value of 0.01 for the ev_click model.
 
-**Step 3. Check if your line has a bid price that can win**
+### Step 3. Check if your line has a bid price that can win
 
 The bid value equation will vary depending on what type of custom model is attached to the line item. To understand how the custom model makes the given bid value, check what type of custom model you are using.
