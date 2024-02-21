@@ -7,8 +7,7 @@ ms.date: 10/28/2023
 # Microsoft Monetize - Content category targeting
 
 > [!NOTE]
-> This form of targeting is only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see
-> [Buy-Side Targeting](buy-side-targeting.md).
+> This form of targeting is only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting](buy-side-targeting.md).
 
 There are two types of content categories:
 
@@ -30,7 +29,7 @@ By default, your campaign will target all universal categories. However, you can
       >  When targeting more than one universal category, the categories have an OR relationship. For example, if you target the "News" and "Finance"
       > categories, you will bid on inventory that is in either category. The inventory does not need to be in both categories.
 
-3. Click **Add**.
+1. Click **Add**.
 
 ## Target custom categories
 

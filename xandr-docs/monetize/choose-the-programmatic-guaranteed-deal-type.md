@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 To create a Programmatic Guaranteed Deal, select this deal type in the **Create New Deal Line Item** screen.
 
-## Choose the Programmatic Guaranteed deal type:
+## Choose the programmatic guaranteed deal type
 
 | Type | Description |
 |--|--|

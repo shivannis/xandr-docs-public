@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Buying Native Inventory
-description: The article discusses the concept of buying native inventory, which involves seamlessly integrating advertising into a placement's context.
+description: Examine Carrier Analytics Report; explore seamlessly integrating native ads into context for effective advertising.
 ms.date: 10/28/2023
 ---
 
@@ -13,8 +13,7 @@ From the Microsoft Advertising platform you have access to a number of native su
 For specific information on individual sellers, see [Native Inventory Seller Specifications](native-inventory-seller-specifications.md).
 
 > [!IMPORTANT]
-> **Third-party pixel support** - For HTML based banner creatives, tracking pixels are always fired. With native, creative assets are typically rendered outside of an
-> iframe, therefore publishers are selective about the javascript they allow to run on their pages. Some publishers may not fire all javascript pixels attached to a creative. However, IAS javascript based pixels are now supported by Outbrain, Sharethrough, Triplelift, and AdYouLike. Note that AdYouLike only supports javascript pixels on deal ID buying.
+> **Third-party pixel support** - For HTML based banner creatives, tracking pixels are always fired. With native, creative assets are typically rendered outside of an iframe, therefore publishers are selective about the javascript they allow to run on their pages. Some publishers may not fire all javascript pixels attached to a creative. However, IAS javascript based pixels are now supported by Outbrain, Sharethrough, Triplelift, and AdYouLike. Note that AdYouLike only supports javascript pixels on deal ID buying.
 
 ## Step 1. Ensure you are in native sellers' allowlists
 

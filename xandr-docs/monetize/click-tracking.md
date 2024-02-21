@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Click Tracking
-description: The article defines click tracking that serves many useful purposes within the ad serving.
+description: Explore click tracking's key role in optimizing Microsoft Advertising for CPC and CPA goals, bidding, and gauging campaign success.
 ms.date: 10/28/2023
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Buying OTT Video Inventory
-description: The article describes buying OTT video inventory where Microsoft Monetize allows you to buy or sell ad inventory on OTT ("over-the-top") video properties.
+description: Learn how to purchase or sell OTT video inventory through Microsoft Monetize for ad transactions on OTT video properties.
 ms.date: 10/28/2023
 ---
 
@@ -27,8 +27,7 @@ manager for help with initial outreach to key publishers and deal setup.
 
 Most of the same targeting strategies used for desktop video targeting are also applicable to OTT content and CTV devices, with the exception of viewability targeting and user-based targeting.
 
-As a workaround for user-based targeting on CTV devices, Microsoft Advertising supports household-level targeting via IP-based demographics and audience segments across all CTV supply. For
-more information, see [CTV Video Buying Best Practices](ctv-video-buying-best-practices.md).
+As a workaround for user-based targeting on CTV devices, Microsoft Advertising supports household-level targeting via IP-based demographics and audience segments across all CTV supply. For more information, see [CTV Video Buying Best Practices](ctv-video-buying-best-practices.md).
 
 ## Next steps
 
