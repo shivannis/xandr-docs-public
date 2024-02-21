@@ -12,12 +12,12 @@ Domain lists can be used to create an allowlist or a blocklist of domains that s
 
 | HTTP Method | Endpoint | Description |
 |--|--|--|
-| GET | https://api.adnxs.com/domain-list | View all domain lists. |
-| GET | https://api.adnxs.com/domain-list?id=DOMAIN_LIST_ID | View a specific domain list.<br>**Note**: The api use must have the field, "is_admin" set to true. |
-| GET | https://api.adnxs.com/domain-list/search=SEARCH_TERM | Search for domain lists with names or descriptions containing certain characters. |
-| POST | https://api.adnxs.com/domain-list | Add a new domain list. |
-| PUT | https://api.adnxs.com/domain-list/DOMAIN_LIST_ID | Modify an existing domain list. |
-| DELETE | https://api.adnxs.com/domain-list/DOMAIN_LIST_ID | Delete an existing domain list. |
+| GET | `https://api.adnxs.com/domain-list` | View all domain lists. |
+| GET | `https://api.adnxs.com/domain-list?id=DOMAIN_LIST_ID` | View a specific domain list.<br>**Note**: The api use must have the field, "is_admin" set to true. |
+| GET | `https://api.adnxs.com/domain-list/search=SEARCH_TERM` | Search for domain lists with names or descriptions containing certain characters. |
+| POST | `https://api.adnxs.com/domain-list` | Add a new domain list. |
+| PUT | `https://api.adnxs.com/domain-list/DOMAIN_LIST_ID` | Modify an existing domain list. |
+| DELETE | `https://api.adnxs.com/domain-list/DOMAIN_LIST_ID` | Delete an existing domain list. |
 
 ## JSON fields
 

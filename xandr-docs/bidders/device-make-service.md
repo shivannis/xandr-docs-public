@@ -343,4 +343,3 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/device-make/6'
     }
 } 
 ```
-

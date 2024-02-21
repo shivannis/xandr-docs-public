@@ -28,13 +28,13 @@ The key benefits of using an automatic synchronization process are:
 
 New seat ID deals created in the Monetize UI automatically get uploaded to Trade Desk systems for buyer acceptance, as shown here:
 
-:::image type="content" source="media/deal-sync-with-trade-desk-publisher-guide-fig-a.png" alt-text="Screenshot that illustrates the newly created seat ID deals in the Monetize UI is automatically uploaded to Trade Desk systems for buyer approval:":::
+:::image type="content" source="media/deal-sync-with-trade-desk-publisher-guide-fig-a.png" alt-text="Screenshot that illustrates automated upload of Monetize UI seat ID deals to Trade Desk for buyer approval.":::
 
 ### Deal update
 
 Updates to newly created deals (post deal sync enablement) automatically get uploaded to Trade Desk systems for buyer acceptance:
 
-:::image type="content" source="media/deal-sync-with-trade-desk-publisher-guide-fig-b.png" alt-text="Screenshot that demonstrates the synchronization of deals with the Trade Desk Publisher Guide:":::
+:::image type="content" source="media/deal-sync-with-trade-desk-publisher-guide-fig-b.png" alt-text="Screenshot that demonstrates the synchronization of deals with the Trade Desk Publisher Guide.":::
 
 ### Frequency of deal sync
 

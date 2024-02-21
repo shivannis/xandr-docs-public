@@ -80,8 +80,7 @@ pushed into Trade Desk systems and buyers won't be able to update them. Any chan
 Publishers should guide the buyers through the following steps:
 
 1. Select **Inventory** from the **Libraries** drop-down in the header, and then select the **Proposals** tab.
-1. Once on that page they can sort by **Pending Approval** if they need to filter to only those proposals (It should automatically sort
-   based on importance so that shouldn’t be necessary).
+1. Once on that page they can sort by **Pending Approval** if they need to filter to only those proposals (It should automatically sort based on importance so that shouldn’t be necessary).
 1. In that screen, the buyer should be able to see the deal and accept it.
 
 ## What are some ways for Trade Desk buyers to find the deal in the Trade Desk UI so they can accept it?

@@ -37,7 +37,7 @@ To set up Xandr Exchange targeting in DV360, the buyer needs to target **AppNexu
 
 To buy using **Open Auction**, buyers can use the following steps to target Xandr as an exchange. The process starts from the Inventory Source UI with nothing defined, as shown in the following graphic:
 
-:::image type="content" source="media/dv360-buying-guide-b.png" alt-text="Screenshot that illustrates the process initiates from the Inventory Source UI without any predefined settings. ":::
+:::image type="content" source="media/dv360-buying-guide-b.png" alt-text="Screenshot that illustrates the process initiates from the Inventory Source UI without any predefined settings.":::
 
 In **Partner Settings**, the buyer should select **AppNexus (Xandr)** as the exchange as shown in the following graphic. If the buyer only wants to buy Xandr inventory, they should make sure the Target new exchanges checkbox is de-selected.
 
@@ -145,13 +145,13 @@ DV360 only bids with creatives that have passed Xandr audit.
 - To start the Xandr creative audit, the buyer should make sure the line item their creatives are assigned to is active and targets Xandr inventory.
 - DV360 users can request a re-sync if a creative's audit status seems to get stuck or if DV360 and Xandr are showing different audit statuses. This can be done at the creative level. The buyer should save the creative to restart the creative review process in **Display & Video 360**. For more detail, see the following:
 
-:::image type="content" source="media/dv360-buying-guide-h.png" alt-text="The screenshot that displays the creative status in Display & Video 360.":::
+:::image type="content" source="media/dv360-buying-guide-h.png" alt-text="Screenshot that displays the creative status in Display & Video 360.":::
 
 ### Identify the creative ID and audit status
 
 The following graphic shows how to identify the creative ID and audit status for each creative.
 
-:::image type="content" source="media/dv360-buying-guide-i.png" alt-text=" The screenshot demonstrates the process of identifying the creative ID and audit status for each creative.":::
+:::image type="content" source="media/dv360-buying-guide-i.png" alt-text="Screenshot that demonstrates the process of identifying the creative ID and audit status for each creative.":::
 
 ## Buyer identification using buyer seat IDs
 
@@ -161,7 +161,7 @@ Buyers can find their DV360 Partner ID in two ways, as shown in the following gr
 
 In the DV360 UI, go to **Partner Settings >  Basic Details**. The Partner ID is at the bottom of the screen.
 
-:::image type="content" source="media/dv360-buying-guide-j.png" alt-text="The screenshot that displays the Partner ID at the bottom of the screen.":::
+:::image type="content" source="media/dv360-buying-guide-j.png" alt-text="Screenshot that displays the Partner ID at the bottom of the screen.":::
 
 ### Troubleshooting
 

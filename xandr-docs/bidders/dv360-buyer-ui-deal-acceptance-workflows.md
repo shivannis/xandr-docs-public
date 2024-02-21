@@ -29,17 +29,17 @@ Once a seller's deal is successfully uploaded to the Display & Video 360 (DV360)
 **To assign non-guaranteed inventory to existing line items:**
 
 1. Locate the deal in the **Action Required** section and select **Action** >  **Assign to existing line item**.
-2. In the menu that appears on the right select the following:
+1. In the menu that appears on the right select the following:
     - Advertiser
     - Campaign
     - Insertion order
     - Line item(s)
-3. Click **Assign** when you are done.
+1. Click **Assign** when you are done.
 
 **To assign non-guaranteed inventory to new line items:**
 
 1. Locate the deal in the **Action Required** section and select **Action** >  **Assign to new line item**.
-2. In the following page, enter the below information for your line item:
+1. In the following page, enter the below information for your line item:
     - Name for your line item. Additionally, you can create your line item as a **Draft**, if you don't want it to be immediately eligible to serve once you've saved it here. If you do want it to serve as soon as its start date has occurred, create the line item as **Active**.
     - Your line item's [targeting](https://support.google.com/displayvideo/answer/2949929).
     - Your line item's flight dates. For display and video line items, you can [real-time triggers](https://support.google.com/displayvideo/answer/9265340) use to control  your line item's flight.  
@@ -48,7 +48,7 @@ Once a seller's deal is successfully uploaded to the Display & Video 360 (DV360)
     - The line item's frequency cap.  
     - The creatives you want to use with this line item. A line item won't be able to serve until one or more creatives assigned to the line item is approved.  
     - Your method for conversion tracking.  
-3. Click **Assign** when you are done.
+1. Click **Assign** when you are done.
 
 > [!NOTE]
 > Learn more about how to manage your non-PG deals in the [DV360 help page](https://support.google.com/displayvideo/answer/6224774?hl=en&amp;ref_topic=6224744).
