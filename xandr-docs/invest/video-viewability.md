@@ -15,7 +15,7 @@ This page explains the technology behind our video viewability measurement.
 
 The Microsoft Advertising video viewability measurement is based on the IAB guidelines, which state that 50% of the surface of a video ad must be in-view for a minimum of 2 seconds.
 
-**Microsoft Advertising Video Viewability Measurement**
+**Microsoft Advertising Video Viewability measurement**
 
 To enable viewability measurement, Microsoft Advertising wraps video ads with a VPAID component which is responsible for loading and playing the ad. In addition, the VPAID wrapper manages, tracks and measures viewability by dropping the viewability measurement script on the page. The VPAID component then notifies the measurement script of any ad related events such as starts, pauses, resumes, etc.
 
@@ -36,7 +36,7 @@ When viewability is enabled, the VPAID wrapper is served by default. If the play
 
 The Microsoft Advertising VPAID wrapper will always serve when the player is able to play VPAID creatives. At present, only desktop web and mobile web are supported. Viewability measurement on both instream and outstream positions is supported.
 
-**AdServing Lifecycle**
+**AdServing lifecycle**
 
 1. A **video tag** is embedded within a video player on a publisher's website.
 1. Consumer loads the website and the video ad tag makes a **bid request** to Microsoft Advertising servers.
@@ -52,7 +52,7 @@ The Microsoft Advertising VPAID wrapper will always serve when the player is abl
 
 :::image type="content" source="media/viewability.png" alt-text="Screenshot of Viewability":::
 
-**VPAID Wrapper Functions**
+**VPAID Wrapper functions**
 
 In addition to viewability measurement, the VPAID wrapper is responsible for loading and parsing the VAST document by identifying creatives and collecting tracking pixels. While the video ad is being played, the wrapper calls tracking events that are specified in the VAST document, such as pause, resume, pause on click etc. The VPAID wrapper is also responsible for managing click-through URLs and adjusting the volume of the video ad according to the volume set on the player.
 
