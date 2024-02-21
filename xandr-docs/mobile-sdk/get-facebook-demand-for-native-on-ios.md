@@ -23,31 +23,31 @@ Once you have CocoaPods installed.
 
 1. Use Terminal or your command line editor of choice and navigate to the project directory and create a podfile.
 
-  ``` 
-  pod init
-  ```
+    ``` 
+    pod init
+    ```
 
 1. Using a text editor, open the newly created podfile. Set the platform to 10.0 (AppNexus always supports two iOS releases back from the current release) and add pod 'AppNexusSDX' to the target.
 
-  ``` 
-  # iOS: Podfile config to include our SDK
-  platform :ios, '10.0'
-     
-  project 'SampleApp'
-     
-  target 'SampleApp' do
-    
-    pod 'AppNexusSDK'
-    pod 'AppNexusSDK/FacebookCSRAdapter'
-    
-  end 
-  ```
+    ``` 
+    # iOS: Podfile config to include our SDK
+    platform :ios, '10.0'
+         
+    project 'SampleApp'
+         
+    target 'SampleApp' do
+        
+      pod 'AppNexusSDK'
+      pod 'AppNexusSDK/FacebookCSRAdapter'
+        
+    end 
+    ```
 
 1. Save your changes and return to Terminal and enter:
 
-  ``` 
-  pod install
-  ```
+    ``` 
+    pod install
+    ```
 
 1. Cocoapods will download both the AppNexus SDK and FacebookCRSAdapter and also create a workspace in the project directory. If your project is currently open, close it and open the workspace.
 
