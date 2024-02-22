@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Working with Insertion Orders
-description: Learn what is an Insertion Order in this page and how you can easily manage collections of line items, time span, and business terms with the help of Insertion Orders.
+description: In this page, learn what is an Insertion Order, and how you can easily manage collections of line items, time span, and business terms with the help of Insertion Orders.
 ms.date: 11/15/2023
 
 ---

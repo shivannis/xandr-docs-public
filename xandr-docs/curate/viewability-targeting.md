@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Viewability Targeting
-description: Learn how you can buy only impressions that have a certain percentage predicted viewability in this page. 
+description: In this page, learn how you can buy only impressions that have a certain percentage predicted viewability. 
 ms.date: 11/15/2023
 
 ---
@@ -16,4 +16,4 @@ Predicted viewability is supported for both display (banners) and video inventor
 
 ## Related topics
 
-- [Measurement of Video Viewability using VPAID Wrapper](video-viewability.md)
+[Measurement of Video Viewability using VPAID Wrapper](video-viewability.md)

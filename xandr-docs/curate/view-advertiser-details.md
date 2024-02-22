@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - View Advertiser Details
-description: Learn how Advertiser Details screen helps you view settings for a specific advertiser, child object details and advertiser's performance.   
+description: Learn how Advertiser Details screen helps you view settings for a specific advertiser, child object and advertiser's performance.   
 ms.date: 11/15/2023
 
 ---
