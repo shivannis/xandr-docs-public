@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Create a Custom Role
-description: The article shows how to create a custom role.
+description: Create a custom role to control user access in Microsoft Monetize. Specify views and permissions, like limited access for external sales.
 ms.date: 10/28/2023
 ---
 

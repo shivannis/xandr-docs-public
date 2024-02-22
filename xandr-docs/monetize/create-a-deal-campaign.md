@@ -1,6 +1,6 @@
 ---
 title: Create a Deal Campaign
-description: The article shows how to create a deal campaign.
+description: Create deal campaigns targeting Monetize sellers and external partners for effective promotion, mirroring standard setups.
 ms.date: 10/28/2023
 ---
 
@@ -43,8 +43,7 @@ In the **Campaign Type** section, select **Buy using Deal ID**. This will reveal
 In the **Deals Selection** section, click the **Edit** button and then include the deals that you want to target.
 
 > [!TIP]
-> **Finding Deals** Click the column headers to sort by name, ID, ask price, or seller, or use the search field to find deals by ID, code, or name. Also, all active and inactive
-> deals are listed by default, but you can use the filter to the right of the search field to show just active or inactive deals.
+> **Finding Deals** Click the column headers to sort by name, ID, ask price, or seller, or use the search field to find deals by ID, code, or name. Also, all active and inactive deals are listed by default, but you can use the filter to the right of the search field to show just active or inactive deals.
 >
 > **Viewing Deal Details**
 >
@@ -54,7 +53,8 @@ In the **Deals Selection** section, click the **Edit** button and then include t
 >
 > - **Ext. Deal ID**
 >
->   The custom code for the deal. For deals with external supply partners, this is generally the ID that you use to identify the deal. If a custom code hasn't been defined for the deal, this field will not be shown.
+>   The custom code for the deal. For deals with external supply partners, this is generally the ID that you use to 
+> identify the deal. If a custom code hasn't been defined for the deal, this field will not be shown.
 >
 > - **Status**
 >
@@ -62,32 +62,33 @@ In the **Deals Selection** section, click the **Edit** button and then include t
 >
 > - **Ask Price**
 >
->   The minimum CPM that the seller will accept for the deal. Note that when you set your buying strategy, you will need to bid higher than the ask price to account for pre-bid fees and other factors. For more details, see **Step 5. Set the buying strategy**.
+>   The minimum CPM that the seller will accept for the deal. Note that when you set your buying strategy, you will need
+>   to bid higher than the ask price to account for pre-bid fees and other factors. For more details, see **Step 5. Set the buying strategy**.
 >
 > - **Currency**
 >
 >   The currency for the ask price.
 >
-> - **Type** The type of auction that will be held for the deal. For more details and examples showing how the different types of auctions work, see [Deal Auction
->   Mechanics](deal-auction-mechanics.md).
+> - **Type** The type of auction that will be held for the deal. For more details and examples showing how the different types of auctions work, see [Deal Auction Mechanics](deal-auction-mechanics.md).
+>       - **Open Auction**: Buyers targeting the deals and buyers targeting the inventory via other means compete for the impression.
+>       - **Private Auction**: Buyers targeting the private deals compete for the impression first. Then, if none of the deal buyers win, the auction is opened to  buyers targeting the inventory via other means.
+>       - **First Look** Deals considered "First Look" are offered only by external supply partners and have extremely varied auction logic depending on both the supply partner and the seller. You must contact the supply partner for details >      about how the deal works. Microsoft Advertising as a buying platform can make no guarantee that first look deals
+>      actually give you the first look at an impression.
 >
->   - **Open Auction**
->     Buyers targeting the deals and buyers targeting the inventory via other means compete for the impression.
->   - **Private Auction**
->     Buyers targeting the private deals compete for the impression first. Then, if none of the deal buyers win, the auction is opened to  buyers targeting the inventory via other means.
->   - **First Look** Deals considered "First Look" are offered only by external supply partners and have extremely varied auction logic depending on both the supply partner and the seller. You must contact the supply partner for details about how the deal works. Microsoft Advertising as a buying platform can make no guarantee that first look deals actually give you the first look at an impression.
-> 
-> - **Start Date** The day and time when the deal starts being available to you. Note that this is distinct from your campaign start date.
-> 
-> - **End Date** The day and time when the deal stops being available to you. Note that this is distinct from your campaign end date.
-> 
+> - **Start Date** The day and time when the deal starts being available to you. Note that this is distinct from your
+>   campaign start date.
+>
+> - **End Date** The day and time when the deal stops being available to you. Note that this is distinct from your
+>    campaign end date.
+>
 > - **Last Updated** The date and time when the deal was last modified by the seller.
-> 
+>
 > - **Sizes** The creative sizes to which the deal applies.
-> 
+>
 > - **Brands** The brands to which the deal applies.
-> 
-> - **Description** The description of the deal. The seller may use the description to provide additional insight or details about the deal.
+>
+> - **Description** The description of the deal. The seller may use the description to provide additional insight or
+>    details about the deal.
 
 ## Step 4. Enter campaign details
 
