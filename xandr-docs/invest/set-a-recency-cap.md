@@ -26,4 +26,4 @@ You can set recency caps from the **Audience & Location Targeting** section with
 
 ## Related topic
 
-- [Frequency and Recency Examples](./frequency-and-recency-examples.md)
+[Frequency and Recency Examples](./frequency-and-recency-examples.md)

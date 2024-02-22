@@ -14,4 +14,4 @@ See [Frequency and Recency Caps](./frequency-and-recency-caps.md) for more infor
 
 ## Related topic
 
-- [Create an Augmented Line Item](./create-an-augmented-line-item-ali.md)
+[Create an Augmented Line Item](./create-an-augmented-line-item-ali.md)

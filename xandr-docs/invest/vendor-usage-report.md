@@ -117,4 +117,4 @@ Follow these steps to run your report.
 
 ## Related topic
 
-- [Member Reporting](./network-reporting.md)
+[Member Reporting](./network-reporting.md)
