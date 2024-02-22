@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Introduction to Viewability
-description: Learn what is Viewability and how it is useful to Buy-Side and Sell-Side. This page also covers how viewability measurement works and what are the technical challenges that you need to overcome.
+description: Learn what is Viewability and how it is useful to the Buy-Side and Sell-Side. This page also covers how viewability measurement works and what are the technical challenges that you need to overcome.
 ms.date: 11/14/2023
 
 ---

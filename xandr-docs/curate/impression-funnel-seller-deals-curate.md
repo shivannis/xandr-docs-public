@@ -1,6 +1,6 @@
 ---
 title: Impression Funnel (Seller Deals)
-description: Learn how the Impression Funnel panel on the Troubleshooting tab enables you to view the metrics of a curated deal and assess its overall performance. This page covers different fields, like columns and values, present in the Impression Funnel (Seller Deals) table.
+description: Learn how the Impression Funnel panel on the Troubleshooting tab enables you to view the metrics of a curated deal and assess its overall performance. This page covers fields like time, columns, and values present in the Impression Funnel (Seller Deals) table.
 ms.date: 11/14/2023
 
 ---
@@ -38,8 +38,7 @@ The **Impression Funnel: Seller Deals** table includes the following columns:
 - **Bids**: The number of bids received by this curated deal for a bid request that was generated as a result of the specific seller deal.
 - **Wins**: The number of bids submitted against this curated deal that have won an auction for the specific seller deal.
 - **Renders**: The number of times a creative has appeared after winning an auction for the specific seller deal.
-- **Ineligible Bids**: The number of ineligible bids received by this curated deal for a bid request that was generated as a result of the
-  specific seller deal.
+- **Ineligible Bids**: The number of ineligible bids received by this curated deal for a bid request that was generated as a result of the specific seller deal.
 
 ### Values
 
@@ -49,7 +48,7 @@ You can hover over a column header and click the **ellipsies** button. From the 
 
 | Type of value | Description | Example |
 |--|--|--|
-| Amount | This is the middle value in the cell and explains the amount for this metric. | In the **Bid Requests** column, this value describes the number of bid requests. Click the **ellipsies > Bid Request** button to sort the column by this value. |
+| Amount | This is the middle value in the cell and explains the amount for this metric. | In the **Bid Requests** column, this value describes the number of bid requests. <br> Click the **ellipsies > Bid Request** button to sort the column by this value. |
 | Impression funnel change | This is the top value in the cell and explains how this metric has changed compared to the previous step in the funnel. This value is available for the metrics: <br>- Bid Requests <br>- Bids <br> - Wins <br> - Renders | In the **Bid Requests** column, this value describes bid requests as a proportion of imps matched. <br> Click the **ellipsies > Bid Request Rate** button to sort the column by this value. |
 | Relative change as a percentage | This is the bottom value in the cell and explains how this metric has changed over time. <br> This value updates according to the selected time period. <br> The value appears in **red**, if the percentage chnage is less than **3%** and **green**, if it is greater than **+3%**. | In the **Bid Requests** column when **Last Hour** is selected, this value describes the percentage change in the number of bid requests that occurred in the last hour versus the preceding hour. <br> Click the **ellipsies > Relative Change** button to sort the column by this value. |
 | Relative change as an amount | This is the bottom value in the cell and explains how this metrics has changed over time. <br> This value updates according to the selected time period. | In the **Bid Requests** column when **Last Hour** is selected, this value describes change in the number of bid requests which occurred in the last hour versus the preceding hour. <br> Click the **ellipsies > Total Change** button to sort the column by this value. |
@@ -63,4 +62,4 @@ You can hover over a column header and click the **ellipsies** button. From the 
 
 ## Related topics
 
-- [Impression Funnel](curate-impression-funnel.md)
+[Impression Funnel](curate-impression-funnel.md)

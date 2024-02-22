@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Universal Pixel Reporting
-description: Information on Universal Pixel Reporting is available from the Universal Pixels page. This module also contains link to a report that contains information on universal pixel activity.  
+description: Information on Universal Pixel Reporting is available from the Universal Pixels page. This module= also contains link to a report that contains information on universal pixel activity.  
 ms.date: 11/15/2023
 
 ---

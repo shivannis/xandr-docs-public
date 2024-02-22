@@ -180,7 +180,7 @@ The list(s) you selected will be downloaded to your local drive. If you exported
     - Update the name and description.
     - Change whether this inventory list will be available for selection on the line items of **Any Advertiser** or only on those of a **Specific Advertiser**.
 
-      If you select Specific Advertiser, you must select an advertiser in the drop-down.
+      If you select **Specific Advertiser**, you must select an advertiser in the drop-down.
 
     - Select or clear the **Require for all Line Items** checkbox.
 

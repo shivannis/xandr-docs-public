@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - User ID Mapping with getUID and mapUID
-description: To insert internal offline data about users into Microsoft Advertising, we talk about two pixel calls mapUID and getUID in this page.
+description: In this page, to insert internal offline data about users into Microsoft Advertising, we talk about two pixel calls, mapUID and getUID.
 ms.date: 11/16/2023
 
 ---

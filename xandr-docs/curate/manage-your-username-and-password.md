@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Manage Your Username and Password
-description: This page walks you through steps to retrieving your username if you cannot sign in to Microsoft Curate, and steps to reset your password. 
+description: This page walks you through steps to retrieve your username if you cannot sign in to Microsoft Curate, and steps to reset your password. 
 ms.date: 11/14/2023
 
 ---

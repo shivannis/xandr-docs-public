@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - General Reporting Concepts
-description: This page explains concepts around reporting system like how system handles data, creates report requests, types of data and operation performed by them, and delivery mechanisms.
+description: This page explains concepts around reporting system like how the system handles data, creates report requests, types of data, and delivery mechanisms.
 ms.date: 11/14/2023
 ---
 

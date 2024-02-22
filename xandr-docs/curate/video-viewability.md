@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Measurement of Video Viewability using VPAID Wrapper
-description: In this page, learn what is Video viewability and how you can measure it. This page also covefrs FAQs on regarding video viewability.  
+description: In this page, learn what is Video viewability and how you can measure it. This page also covers FAQs on video viewability.  
 ms.date: 11/16/2023
 
 ---

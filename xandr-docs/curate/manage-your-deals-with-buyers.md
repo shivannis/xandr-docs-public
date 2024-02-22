@@ -29,8 +29,7 @@ The following details display for each deal. Columns that show an arrow in the h
   > [!NOTE]
   > For deals with an on-platform buyer, **Bid Requests** will equal **Imps Matched**. For deals with an external bidder, filtering due to the bidder's profile may reduce the number of Bid Requests.
 
-- **Bid Rate** - The buyer's participation rate in the deal, which is the percentage of auctions in which the
-  buyer bid.
+- **Bid Rate** - The buyer's participation rate in the deal, which is the percentage of auctions in which the buyer bid.
 
   > [!NOTE]
   >  When the Microsoft Advertising Impbus is doing the bidding for on-platform deals, all deals will be eligible for participation because they will have already passed quality and other eligibility checks on the platform. When third-party deals are active, the total number of bids may be greater than the number of bids marked eligible.
@@ -113,4 +112,4 @@ If you are a network that also represents **sellers**, click the Sellers button 
 
 ## Related topics
 
-- [Partnership Details Screen - Seller View](partnership-details-screen-seller-view.md)
+[Partnership Details Screen - Seller View](partnership-details-screen-seller-view.md)

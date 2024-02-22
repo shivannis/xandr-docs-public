@@ -34,7 +34,7 @@ Fill in the following fields:
 
 Click **Next**.
 
-## Step 3. Choose the method to add Geo Radius Segment features
+### Step 3. Choose the method to add Geo Radius Segment features
 
 **Copy and paste**
 
@@ -62,9 +62,7 @@ Click **Next**.
 
 **Import from file**
 
-1. Browse your computer and select the .csv file to upload. Ensure that
-    the first row of the .csv file includes the following headers with
-    corresponding values listed in rows underneath:
+1. Browse your computer and select the .csv file to upload. Ensure that the first row of the .csv file includes the following headers with corresponding values listed in rows underneath:
 
     ``` 
     lat | long | radius_meters | name 

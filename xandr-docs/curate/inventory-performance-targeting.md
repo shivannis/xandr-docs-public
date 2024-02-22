@@ -20,8 +20,8 @@ To target inventory based on performance your options are:
 - **Audio Completion Rate** - Target audio inventory with a projected percentage of audio completions. The percentage is based on historical listen-through rate and is defined as the number of audio completions / number of ad impressions for a particular line item.
 - **Viewability Rate** - Target inventory based on a projected percentage of viewed impressions. Viewability rate is defined as the percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps). For more information regarding viewability measurements, see [Reporting on Viewability](reporting-on-viewability.md).
 
-  > [!NOTE]
-  >  Viewability rate targeting is available only to some members at present. We are working hard to make it available to everyone!
+> [!NOTE]
+> Viewability rate targeting is available only to some members at present. We are working hard to make it available to everyone!
 
 ## Video performance best practices
 
@@ -36,9 +36,9 @@ For example, suppose you have a business requirement to purchase only inventory 
 - Under **Optimization**, set a 1% CTR optimization goal.
 - Under **Goal Priority**, select **Margin** and specify `25%`. (However, if you have set your **Revenue Type** to **Cost Plus** under **Budgeting and Scheduling**, you can ignore this step.)
 
-  > [!NOTE]
-  > Using Video Completion Rate targeting on deals could lead to under-delivery. We suggest that you don't use Video Completion Rate targeting until your deal-targeted line item has enough experience learning about the predicted completion rate.
+> [!NOTE]
+> Using Video Completion Rate targeting on deals could lead to under-delivery. We suggest that you don't use Video Completion Rate targeting until your deal-targeted line item has enough experience learning about the predicted completion rate.
 
 ## Related topics
 
-- [Buy-Side Targeting](buy-side-targeting.md)
+[Buy-Side Targeting](buy-side-targeting.md)
