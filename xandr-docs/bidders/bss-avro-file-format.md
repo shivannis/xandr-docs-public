@@ -64,7 +64,7 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 ```
 
-##### **`Device ID`
+##### `Device ID`
 
 ```
 
