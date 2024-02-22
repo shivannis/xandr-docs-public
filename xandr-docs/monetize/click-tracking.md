@@ -57,7 +57,7 @@ When an image is clicked, the "href" page loads. A click is tracked on Microsoft
 <a href="https://nym1-ib.adnxs.com/click2?AAAAAAAAAAAAAAAAAAAA./clickenc=https://www.cnn.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ad-MediumRectangle-300x250.jpg" width="300" height="250"></a>
 ```
 
-After the user is redirected to the href, such as [https://www.cnn.com], the following takes place:
+After the user is redirected to the href, such as https://www.cnn.com, the following takes place:
 
 1. The Microsoft Advertising impression bus generates a click tracker by populating the `${CLICK_URL_ENC}` macro.
 1. The click tracker is passed to the third-party ad server in the tag.

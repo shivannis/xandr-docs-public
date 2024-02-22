@@ -26,8 +26,7 @@ By default, your campaign will target all universal categories. However, you can
     - The **Sub-Categories** list shows all child universal categories in the context of their parent categories. You can either include or exclude sub-categories. Note that when you exclude a top-level category, its sub-categories are not available for further inclusion or exclusion.
 
       > [!IMPORTANT]
-      >  When targeting more than one universal category, the categories have an OR relationship. For example, if you target the "News" and "Finance"
-      > categories, you will bid on inventory that is in either category. The inventory does not need to be in both categories.
+      >  When targeting more than one universal category, the categories have an OR relationship. For example, if you target the "News" and "Finance" categories, you will bid on inventory that is in either category. The inventory does not need to be in both categories.
 
 1. Click **Add**.
 

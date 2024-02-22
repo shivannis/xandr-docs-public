@@ -15,8 +15,7 @@ OTT premium digital video:
 - is typically consumed in a full-screen setting, with engaged viewers watching premium video content
 - can be delivered on desktop, mobile, gaming consoles, and streaming devices as well as to Smart TVs and set-top boxes
 
-Microsoft Advertising offers a programmatic platform that allowsfor buying OTT video inventory at scale. Based on our access to Microsoft Advertising Media's extensive premium video supply
-sources and their audiences, we are currently developing advanced first-party/third-party programmatic audience targeting, measurement, and attribution capabilities, allowing household-level demographic and audience targeting across CTV supply.
+Microsoft Advertising offers a programmatic platform that allowsfor buying OTT video inventory at scale. Based on our access to Microsoft Advertising Media's extensive premium video supply sources and their audiences, we are currently developing advanced first-party/third-party programmatic audience targeting, measurement, and attribution capabilities, allowing household-level demographic and audience targeting across CTV supply.
 
 ## Getting started
 

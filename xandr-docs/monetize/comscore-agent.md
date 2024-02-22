@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - comScore Agent
-description: Optimize Microsoft Advertising segments using comScore Agent app. Employ keywords, content categorization, and brand protection for premium, brand-safe inventory.
+description: Explore optimizing Microsoft Ads via comScore Agent app, employing keywords, categorization, and brand protection for premium, brand-safe inventory.
 ms.date: 10/28/2023
 ---
 
@@ -14,7 +14,7 @@ comScore's Agents 2.0 is a powerful set of functionality to help you navigate th
 
 Every time you make a selection, we provide instant feedback on available inventory so you can plan your campaign better. Set up multiple Agents for different campaigns and modify them in real-time, along with other campaign criteria, to optimize your campaign's performance.
 
-:::image type="content" source="media/amp-a.png" alt-text="The screenshot illustrates customizing comScore's Microsoft Advertising Agents for powerful navigation, assigning names and categories.":::
+:::image type="content" source="media/amp-a.png" alt-text="Screenshot that illustrates customizing comScore's Microsoft Advertising Agents for powerful navigation, assigning names and categories.":::
 
 ## Contact info
 
