@@ -97,7 +97,6 @@ data is hourly.
 | PSAs or Blanks | The number of blanks or PSAs served. It can also include ad requests where no bids were submitted by Microsoft Advertising, such as unfilled header bidding requests. |
 | Response Rate | The rate of total number of ad responses counted within Microsoft Advertising to the number of ad requests that are not filtered pre-bid by Microsoft Advertising. [Total Ad Responses / (Total Ad Requests - Filtered Requests)] |
 | RPM | For definition of rpm, see the [Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). In this report, RPM is seller revenue earned per 1000 ad requests sent to Microsoft Advertising for auction. (1000 * Seller Revenue / Total Ad Requests) |
-|`OpenRTB2` Request Subdomain|  The subdomain of the URL that the `OpenRTB2` ad request was sent to. <br>**Note**: The value  will be blank for non-OpenRTB2 call types. If the the value for `OpenRTB2` is blank this means no subdomain was used.|
 | Seller Revenue | Revenue earned by the Seller. |
 | Total Ad Requests | The total number of ad requests sent to Microsoft Advertising. (Filtered Requests + Imps (kept) + Imps (resold) + Defaults + Video Player Errors + Video Default Errors + Bid Sent No Responses + Default No Responses + PSAs or Blanks) |
 | Total Ad Responses | The total number of ad responses counted within Microsoft Advertising. (Imps (kept) + Imps (resold) + Video Player Errors + Bid Sent No Responses) |
@@ -130,12 +129,13 @@ data in a particular order.
 | Country | The country in which the impression occurred. |
 | Deal | The deal associated with the transaction for the impression. |
 | Mobile Application | For mobile app impressions, the Apple App Store or Google Play name and ID of the mobile application where the impression occurred, for example, `"Angry Birds (343200656)"` or `"Angry Birds (com.rovio.angrybirds)"`.<br> - `"---"`: This means that we didn't receive a valid mobile app name as the referrer or the app has received too few impressions to be included in reporting. |
+|`OpenRTB2` Request Subdomain|  The subdomain of the URL that the OpenRTB2 ad request was sent to. <br>**Note**: The value will be blank for non-OpenRTB2 call types. If the value for OpenRTB2 is blank, it indicates no subdomain was used.|
 | Placement | The name and ID of the placement on which the impression occurred.<br>Note that a placement ID of `0` may appear for 3rd-party impression trackers. For more information about impression trackers, see [Working with Impression and Click Trackers](working-with-impression-and-click-trackers.md). |
 | Placement Group | The name and ID of the placement group where the impression occurred. |
 | Publisher | The name and ID of the publisher on whose site the impression occurred. |
 | Seller Currency | The seller currency associated with the impressions and/or activity. |
 | Site Domain | For web or mobile web impressions, the domain where the impression occurred. There is one additional value that may appear in place of a domain:<br> - `"---"`: This means that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed. |
-| Supply Type | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are: <br>- `"web"` <br> - `"mobile_app"` <br> -`"mobile_web"`. |
+| Supply Type | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are: <br>- `"web"` <br> - `"mobile_app"` <br> -`"mobile_web"`. |\
 
 ## To run your report
 
