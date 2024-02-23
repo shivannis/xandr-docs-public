@@ -16,8 +16,8 @@ Content categories are arranged in a two-level hierarchy. There are top-level ca
 
 | HTTP Method | Endpoint | Description |
 |--|--|--|
-| GET | [Content Category](https://api.adnxs.com/content-category) | To view all the content categories in the Xandr system. |
-| GET | [CONTENT CATEGORY ID](https://api.adnxs.com/content-category/CONTENT_CATEGORY_ID) | To view information about a particular content category. |
+| GET | [https://api.adnxs.com/content-category](https://api.adnxs.com/content-category) | To view all the content categories in the Xandr system. |
+| GET | [https://api.adnxs.com/content-category/CONTENT_CATEGORY_ID](https://api.adnxs.com/content-category/CONTENT_CATEGORY_ID) | To view information about a particular content category. |
 
 ## JSON fields
 
@@ -28,7 +28,7 @@ Content categories are arranged in a two-level hierarchy. There are top-level ca
 | `is_system` | bool | If true, the content category is defined by Xandr. |
 | `last_modified` | timestamp | The date and time that this content category was last modified. |
 | `name` | string | The name of the content category. |
-| `parent_category` | object | If the category is the child of a parent category, the ID and name of the parent is listed here in the following format: `"parent_category": { "id":10, "name": "Games" }` |
+| `parent_category` | object | If the category is the child of a parent category, the ID and name of the parent is listed here in the following format: <br>`"parent_category": { "id":10, "name": "Games" }` |
 
 ## Example
 

@@ -35,7 +35,7 @@ ms.date: 11/20/2023
   - By placement id
   - By tag id
   - By domain
-  - By [ creative.id](https://www.creative.id/) (the creative id of the Xandr creative object)
+  - By [creative.id](https://www.creative.id/) (the creative id of the Xandr creative object)
   - By creative.code (if used, should be the creative id from your side)
   - By Geo
   - By hours, on last 7 days

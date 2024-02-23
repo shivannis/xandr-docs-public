@@ -16,8 +16,8 @@ This read-only service allows you to view all of the supported creative formats.
 
 | HTTP method | End point | Description |
 |--|--|--|
-| GET | [Creative Format](https://api.adnxs.com/creative-format) | View all creative formats |
-| GET | [CREATIVE FORMAT ID](https://api.appnexus.com/creative-format?id=CREATIVE_FORMAT_ID) | View a specific creative format |
+| GET | [https://api.adnxs.com/creative-format](https://api.adnxs.com/creative-format) | View all creative formats |
+| GET | [https://api.appnexus.com/creative-format?id=CREATIVE_FORMAT_ID](https://api.appnexus.com/creative-format?id=CREATIVE_FORMAT_ID) | View a specific creative format |
 
 ## JSON fields
 
