@@ -38,7 +38,6 @@ Select the category that best describes the case:
 - **Audit** - Questions about auditing standards, or pending or failed audits. Questions about banned domains.
 - **Product Support** - Technical support queries, or questions about how to use features.
 - **Client Finance** - General Billing requests, or questions around Credit, or Collections.
-- **Other** - Questions that don't fit the other categories.
 
 ## Step 2: Select an issue
 
