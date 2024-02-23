@@ -129,7 +129,7 @@ data in a particular order.
 | Country | The country in which the impression occurred. |
 | Deal | The deal associated with the transaction for the impression. |
 | Mobile Application | For mobile app impressions, the Apple App Store or Google Play name and ID of the mobile application where the impression occurred, for example, `"Angry Birds (343200656)"` or `"Angry Birds (com.rovio.angrybirds)"`.<br> - `"---"`: This means that we didn't receive a valid mobile app name as the referrer or the app has received too few impressions to be included in reporting. |
-|`OpenRTB2` Request Subdomain|  The subdomain of the URL that the OpenRTB2 ad request was sent to. <br>**Note**: The value will be blank for non-OpenRTB2 call types. If the value for OpenRTB2 is blank, it indicates no subdomain was used.|
+|`OpenRTB2` Request Subdomain|  The subdomain of the URL that the OpenRTB2 ad request was sent to. <br>**Note**: This value is blank for non-OpenRTB2 call types. A blank value in OpenRTB2 indicates no subdomain was used.|
 | Placement | The name and ID of the placement on which the impression occurred.<br>Note that a placement ID of `0` may appear for 3rd-party impression trackers. For more information about impression trackers, see [Working with Impression and Click Trackers](working-with-impression-and-click-trackers.md). |
 | Placement Group | The name and ID of the placement group where the impression occurred. |
 | Publisher | The name and ID of the publisher on whose site the impression occurred. |
