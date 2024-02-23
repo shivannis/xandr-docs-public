@@ -137,7 +137,7 @@ A client is adding user `12345678900987654321` to segments with codes `"auto_int
 
 | Field | Value |
 |:---|---|
-| `UID` | Xandr user Id. |
+| `UID` | Xandr user ID. |
 | `SEPARATOR1` | "," |
 | `SEPARATOR2` | ";" |
 | `SEPARATOR4` | "\t"   |

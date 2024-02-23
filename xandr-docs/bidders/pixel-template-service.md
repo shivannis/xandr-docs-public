@@ -30,8 +30,8 @@ Here's how it works:
 | `format` | enum | The format of the Xandr-approved creative pixel. Possible values: `"raw-js"`, `"url-html"`, `"url-js"`, or `"url-image"`. |
 | `content` | string | The HTML or JavaScript content of the creative pixel. This field is included if format is `"raw-js"`. |
 | `secure_content` | string | The secure HTML or JavaScript content of the creative pixel. This field is included if format is `"raw-js"`. |
-| `url` | string | The URL of the html, JavaScript, or image creative pixel. This field is included if format is `"url-html"`, `"url-js"` or `"url-image"`. |
-| `secure_url` | string | The secure URL of the html, JavaScript, or image creative pixel. This field is included if format is `"url-html"`, `"url-js"` or `"url-image"`. |
+| `url` | string | The URL of the html, JavaScript, or image creative pixel. This field is included if format is `"url-html"`, `"url-js"`, or `"url-image"`. |
+| `secure_url` | string | The secure URL of the html, JavaScript, or image creative pixel. This field is included if format is `"url-html"`, `"url-js"`, or `"url-image"`. |
 | `num_required_params` | int | The number of parameters that must be defined when adding the pixel to a creative. |
 | `require_reaudit` | boolean | If true, adding the pixel to a creative causes the creative to be resubmitted for audit. |
 
