@@ -60,7 +60,7 @@ Currently, only Network inventory is available on a CPA/C basis, so if you choos
 
 We are very excited about the ability to report on payment types for Buyers and Sellers. In order to do this, select "Payment types" as a dimension in Network, Advertiser, and Publisher Analytics.
 
-**Buyers**: Payment types can be CPM, CPC, or CPA
+**Buyers**: Payment types can be CPM, CPC, or CPA.
 
 **Sellers**:
 
@@ -70,5 +70,4 @@ We are very excited about the ability to report on payment types for Buyers and 
 
    > [!IMPORTANT]
    >
-   > Please note that if you have reserve prices set at the placement level, and you enable CPA / CPC payment types at the publisher level, your net CPM for the publisher may
-   > fall below your reserve price (depending on the number of clicks /conversions your placement is generating).
+   > Please note that if you have reserve prices set at the placement level, and you enable CPA / CPC payment types at the publisher level, your net CPM for the publisher may fall below your reserve price (depending on the number of clicks /conversions your placement is generating).

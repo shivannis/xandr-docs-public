@@ -58,15 +58,14 @@ Click the name of the advertiser under which you want to create a new campaign. 
 
 ### Step 2. Start a new campaign
 
-On the **Advertiser Details** screen, click **Create New \> Campaign**. The **Create New \> Campaign** option can also be accessed from the insertion order, line item, and campaign screens under the advertiser. This opens the initial **Create New Campaign** screen.
+On the **Advertiser Details** screen, click **Create New** \> **Campaign**. The **Create New** \> **Campaign** option can also be accessed from the insertion order, line item, and campaign screens under the advertiser. This opens the initial **Create New Campaign** screen.
 
 ### Step 3. Select the parent line item
 
 In the **Select a Line** Item section, select the line item under which you want to create your campaign and then click **Continue**. If you are creating your campaign directly from a line item or there is only one line item associated with the advertiser, the line item is selected by default.
 
 > [!NOTE]
-> You can use the search field to find a particular line item by name or ID. Also, all active and inactive line items are listed by default, but you can use the filter to the
-> right of the search field to show just active or inactive line items.
+> You can use the search field to find a particular line item by name or ID. Also, all active and inactive line items are listed by default, but you can use the filter to the right of the search field to show just active or inactive line items.
 
 ### Step 4. Select the campaign type
 
@@ -120,8 +119,7 @@ By default, your campaign media Budget is unlimited. If you prefer, you can defi
 
 ### Step 7. Define the buying strategies
 
-In the **Buying Strategies** section, choose whether you want to buy direct inventory, third-party inventory, or both. Direct inventory includes only inventory managed by your
-network, whereas third-party inventory includes all inventory not managed by your network that has been enabled for reselling (including external supply partners such as Microsoft Advertising Exchange and Google Ad Manager).
+In the **Buying Strategies** section, choose whether you want to buy direct inventory, third-party inventory, or both. Direct inventory includes only inventory managed by your network, whereas third-party inventory includes all inventory not managed by your network that has been enabled for reselling (including external supply partners such as Microsoft Advertising Exchange and Google Ad Manager).
 
 - [Buy Direct Inventory](create-a-campaign.md#buy-direct-inventory)
 - [Buy Third-Party Inventory](create-a-campaign.md#buy-third-party-inventory)
@@ -134,8 +132,7 @@ To run the campaign on your own managed publishers or direct buys, check the **B
   information about managing priority, see [Bidding Priority](bidding-priority.md).
   
   > [!TIP]
-  > By default, campaign priority is 5. If you leave this default for all of your direct campaigns, no campaign will be given precedence over any other. As soon as you
-  > change the priority in one of your direct campaigns, however, ALL of your eligible campaigns are potentially impacted.
+  > By default, campaign priority is 5. If you leave this default for all of your direct campaigns, no campaign will be given precedence over any other. As soon as you change the priority in one of your direct campaigns, however, ALL of your eligible campaigns are potentially impacted.
 
 - **Enable Roadblocking** - In cases where your managed publishers are using Microsoft Advertising's Seller Tag (AST) to conduct a single auction for multiple ad slots on a page, you can serve multiple linked creatives in response, also known as roadblocking. If a roadblock campaign is eligible, the campaign priority is effectively 11. There are three possible types of roadblocks:
   - **Normal Roadblock** - The number of creatives is greater than or equal to the number of ad slots.
@@ -152,9 +149,7 @@ To run the campaign on your own managed publishers or direct buys, check the **B
 
 #### Buy Third-Party Inventory
 
-To run the campaign on inventory from other members of the Microsoft Advertising platform and from external partners and exchanges, check the **Buy Third-Party Inventory** box. Then decide how
-you want to pay for third-party inventory (per impression, per click, and/or per conversion) and define exactly how you want to calculate your bids. Note that the revenue type of the parent line item determines which buying strategy options are available and, of those available, which are recommended. For a detailed explanation of your options, see
-[Buying Strategies](buying-strategies.md).
+To run the campaign on inventory from other members of the Microsoft Advertising platform and from external partners and exchanges, check the **Buy Third-Party Inventory** box. Then decide how you want to pay for third-party inventory (per impression, per click, and/or per conversion) and define exactly how you want to calculate your bids. Note that the revenue type of the parent line item determines which buying strategy options are available and, of those available, which are recommended. For a detailed explanation of your options, see [Buying Strategies](buying-strategies.md).
 
 > [!WARNING]
 > Mobile Conversion Tracking
@@ -209,8 +204,7 @@ you want to pay for third-party inventory (per impression, per click, and/or per
     - **Auto-bid to win ~50% of platform impressions (EAP)** - Select this option to bid an estimate of the price that is likely to win about half of the impressions from Microsoft Advertising
       platform sellers based on historical bids and their success or failure. Since off-platform sellers (e.g., Google Ad Manager, Rubicon, etc.) conduct a secondary auction, bidding EAP does not necessarily ensure winning half of off-platform impressions.
     - **Bid CPM: max $\_ CPM min $\_ CPM** - Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
-    - **Enable Cadence Modifier** - Under OTHER OPTIONS, check this box to vary your bid based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user hasn't seen it before or hasn't seen it many times or seen it recently. For
-      more details, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
+    - **Enable Cadence Modifier** - Under OTHER OPTIONS, check this box to vary your bid based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user hasn't seen it before or hasn't seen it many times or seen it recently. For more details, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
 
      > [!NOTE]
      > If minimum margin is set on the line item, this will ensure campaigns will bid at or below the minimum margin %. This setting effectively sets a bid cap on your third-party campaigns.
@@ -256,8 +250,7 @@ In the **Targeting** section, you can [Apply a Targeting Template](apply-a-targe
 > [!NOTE]
 > **Boolean Logic**
 >
-> When you apply multiple types of targeting (e.g., inventory, segment, geography, etc.), keep in mind that your campaign will buy only impressions that match all targeting. In other words, there is an AND relationship between the main types of targeting. For example, if you target seller 123, segment ABC, and the United States, your campaign
-> will bid only on impressions from that seller being viewed by users in that segment and in the United States.
+> When you apply multiple types of targeting (e.g., inventory, segment, geography, etc.), keep in mind that your campaign will buy only impressions that match all targeting. In other words, there is an AND relationship between the main types of targeting. For example, if you target seller 123, segment ABC, and the United States, your campaign will bid only on impressions from that seller being viewed by users in that segment and in the United States.
 
 **Target inventory**
 

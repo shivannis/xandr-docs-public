@@ -23,8 +23,7 @@ Whichever type of pixel you use, an important concept to understand is the pixel
 ### Step 2. Our system checks for a cookie stored by the browser, and attributes the conversion if possible
 
 - If there is no Microsoft Advertising cookie stored by the user's browser, the pixel is recorded as having loaded, but the conversion is UNATTRIBUTED.
-- If there is one of our cookies stored by the user's browser, the pixel is recorded as having loaded, and we check the cookie data for the most recent view or click associated with the advertiser's creative.
-  If the cookie data does not include a record of a view or click event within the user-specified lookback window, the conversion is UNATTRIBUTED.
+- If there is one of our cookies stored by the user's browser, the pixel is recorded as having loaded, and we check the cookie data for the most recent view or click associated with the advertiser's creative. If the cookie data does not include a record of a view or click event within the user-specified lookback window, the conversion is UNATTRIBUTED.
 - If our cookie is stored by the user's browser, the pixel is recorded as having loaded, and we check the cookie data for the most recent view or click associated with the advertiser's creative. If the cookie data includes a record of a view or click event within the user-specified lookback window, the conversion is ATTRIBUTED.
 
 ## Attribution examples
