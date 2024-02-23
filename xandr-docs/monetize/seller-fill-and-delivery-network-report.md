@@ -119,8 +119,7 @@ You also have the option to display monetary values in USD and the Advertiser/Bu
 
 ## Dimensions
 
-Grouping by dimension allows you to display certain fields of reporting
-data in a particular order.
+Grouping by dimension allows you to display certain fields of reporting data in a particular order.
 
 | Name | Description |
 |---|---|
@@ -135,7 +134,7 @@ data in a particular order.
 | Publisher | The name and ID of the publisher on whose site the impression occurred. |
 | Seller Currency | The seller currency associated with the impressions and/or activity. |
 | Site Domain | For web or mobile web impressions, the domain where the impression occurred. There is one additional value that may appear in place of a domain:<br> - `"---"`: This means that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed. |
-| Supply Type | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are: <br>- `"web"` <br> - `"mobile_app"` <br> -`"mobile_web"`. |\
+| Supply Type | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are: <br>- `"web"` <br> - `"mobile_app"` <br> -`"mobile_web"`. |
 
 ## To run your report
 
