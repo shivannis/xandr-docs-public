@@ -94,9 +94,8 @@ You will receive your user ID as part of the bid request's "buyeruid" field, as 
 **setUID example**
 
 
-``` 
-https://ib.adnxs.com/setuid?entity=123&code=HeVQkH6inotalk0Livh8Vw&gdpr=1&gdpr_consent=CPaPwEAPaPwEAACAKAFRBWCgAP_AAH_AAAqIHttf_X__b3_j-_59__t0eY1f9_7_v-0zjhfdt
-```
+`https://ib.adnxs.com/setuid?entity=123&code=HeVQkH6inotalk0Livh8Vw&gdpr=1&gdpr_consent=CPaPwEAPaPwEAACAKAFRBWCgAP_AAH_AAAqIHttf_X__b3_j-_59__t0eY1f9_7_v-0zjhfdt
+`
 
 ## Bidder/Data provider stored mapping
 
@@ -128,7 +127,7 @@ https://ib.adnxs.com/getuid?https://ad.adserver.com/pixel?adnxs_uid=$UID&gdpr=[G
 
 
 ``` 
-`https://ib.adnxs.com/getuid?https://ad.adserver.com/pixel?adnxs_uid=$UID&gdpr=1&gdpr_consent=CPaPwEAPaPwEAACAKAFRBWCgAP_AAH_AAAqIHttf_X__b3_j-_59__t0eY1f9_7_v-0zjhfdt`
+https://ib.adnxs.com/getuid?https://ad.adserver.com/pixel?adnxs_uid=$UID&gdpr=1&gdpr_consent=CPaPwEAPaPwEAACAKAFRBWCgAP_AAH_AAAqIHttf_X__b3_j-_59__t0eY1f9_7_v-0zjhfdt
 ```
 
 Next step: [Receiving a Notify Request](receive-a-notify-request.md)
