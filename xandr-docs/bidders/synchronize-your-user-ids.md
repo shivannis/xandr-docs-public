@@ -1,6 +1,6 @@
 ---
 title: Synchronize Your User IDs
-description: Learn Synchronizing your user IDs.
+description: This page covers steps for Storing the mapping with Xandr.
 ms.date: 11/27/2023
 
 ---
@@ -30,7 +30,7 @@ To store the mapping with Xandr,
 
 1. Add the following function to your bidder's "userdata_javascript" field on the [Bidder Service](bidder-service.md):
 
-      ``` 
+  ``` 
       function setuid(code){ ud.uid = code; }
       ```
 
@@ -59,8 +59,7 @@ To store the mapping with Xandr,
 >
 > You will receive your user ID as part of the bid request's `"userdata_json"` field, as in the example below:
 
-You will receive your user ID as part of the bid request's
-`"userdata_json"` field, as in the example below:
+You will receive your user ID as part of the bid request's `"userdata_json"` field, as in the example below:
 
 ``` 
 {
@@ -76,8 +75,7 @@ You will receive your user ID as part of the bid request's
 }
 ```
 
-You will receive your user ID as part of the bid request's "buyeruid"
-field, as in the example below:
+You will receive your user ID as part of the bid request's "buyeruid" field, as in the example below:
 
 ``` 
 {
@@ -102,12 +100,7 @@ https://ib.adnxs.com/setuid?entity=123&code=HeVQkH6inotalk0Livh8Vw&gdpr=1&gdpr_c
 
 ## Bidder/Data provider stored mapping
 
-To extract the Xandr user ID for any given user,
-you will direct the user to our getUID service through a pixel call. The
-impression bus will redirect the user to the URL specified in the getUID
-call, replacing a user ID macro with the ID we have stored for that
-user. This process gives us access to our cookie in that user's browser
-and allows us to read the ID.
+To extract the Xandr user ID for any given user, you will direct the user to our getUID service through a pixel call. The impression bus will redirect the user to the URL specified in the getUID call, replacing a user ID macro with the ID we have stored for that user. This process gives us access to our cookie in that user's browser and allows us to read the ID.
 
 The format of the getUID service is:
 
@@ -118,17 +111,13 @@ https://ib.adnxs.com/getuid?[REDIRECT_URL]
 
 
 
-The redirect must contain the user ID macro, in the format $UID, with
-the ID we have for that user. The example call below will result in the
-following:
+The redirect must contain the user ID macro, in the format $UID, with the ID we have for that user. The example call below will result in the following:
 
 1. Direct the user to [ https://ib.adnxs.com/getuid?https://ad.adserver.com/pixel?adnxs_uid=$UID](https://www.epsilon.com/us?redirect=cnvr-home)
 1. Replace the $UID macro with a9f4072b-ec2d-42cb-8930-e3388a7d47c2
 1. Redirect the user to [https://ad.adserver.com/pixel?adnxs_uid=a9f4072b-ec2d-42cb-8930-e3388a7d47c2](https://www.epsilon.com/us?redirect=cnvr-home)
 
-In case TCF signals are available on the page, "gdpr" and
-"gdpr_consent", GET parameters must be included at the end of the
-/getuid url:
+In case TCF signals are available on the page, "gdpr" and "gdpr_consent", GET parameters must be included at the end of the /getuid url:
 
 
 ``` 
@@ -139,7 +128,7 @@ https://ib.adnxs.com/getuid?https://ad.adserver.com/pixel?adnxs_uid=$UID&gdpr=[G
 
 
 ``` 
-https://ib.adnxs.com/getuid?https://ad.adserver.com/pixel?adnxs_uid=$UID&gdpr=1&gdpr_consent=CPaPwEAPaPwEAACAKAFRBWCgAP_AAH_AAAqIHttf_X__b3_j-_59__t0eY1f9_7_v-0zjhfdt
+`https://ib.adnxs.com/getuid?https://ad.adserver.com/pixel?adnxs_uid=$UID&gdpr=1&gdpr_consent=CPaPwEAPaPwEAACAKAFRBWCgAP_AAH_AAAqIHttf_X__b3_j-_59__t0eY1f9_7_v-0zjhfdt`
 ```
 
 Next step: [Receiving a Notify Request](receive-a-notify-request.md)
