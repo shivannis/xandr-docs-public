@@ -45,7 +45,7 @@ Yes. As it is a prerequisite for our standard process, request your `MEMBER_ALIA
 
 The seat ID is also known as the member ID and gets assigned to each partner on Xandr's platform once the commercial contract is finalized. The seat/member ID remains the same throughout the lifetime of the partner object and can be referenced by other partners to adjust for example their Ad Quality settings, to target their campaigns specifically to the member ID, or to allowlist/blocklist certain seller/buyer members.
 
-### wseat is supported, but how can I use it? What are possible values and where to find the mapping?
+### `wseat` is supported, but how can I use it? What are possible values and where to find the mapping?
 
 `wseat` field in the OpenRTB bid request contains an array of buyer seat IDs placed in allowlists (e.g., advertisers, agencies) that are allowed to bid on this impression. In the Xandr naming convention, seat IDs and member IDs are the same. Therefore, the `wseat` array has to be populated with valid member IDs that can be retrieved via the [Platform Member Service](../digital-platform-api/platform-member-service.md).
 
@@ -224,7 +224,7 @@ By default, Xandr defines for SSP usersync pixel fires the internal parameters `
 
 Currently the approximate Time To Live (TTL) for user data (Xandr user IDs) is 60 days.
 
-### What is the difference between the /getuid and /getuidnb service?
+### What is the difference between the `/getuid` and `/getuidnb` service?
 
 In case the user does NOT have the Xandr ID stored in the Xandr cookie space and does NOT have sticky cookies:
 
@@ -235,7 +235,7 @@ In case the user does NOT have the Xandr ID stored in the Xandr cookie space and
 
 ## Bid requests
 
-### OpenRTB bid requests have the `imp.tagid` field. Does Xandr expect that field to hold the corresponding `placement.id` accessible from the Placement Service? Or is it expected to be the placement.code value (also managed through the API Placement Service)?
+### OpenRTB bid requests have the `imp.tagid` field. Does Xandr expect that field to hold the corresponding `placement.id` accessible from the Placement Service? Or is it expected to be the `placement.cod`e value (also managed through the API Placement Service)?
 
 `imp.tagid` would be the `placement.code` value in the [Placement Service](../digital-platform-api/placement-service.md). This should be the same value as the one you’ll be passing in `site.id` or `app.id` on the bid request.
 
@@ -365,7 +365,7 @@ Video: https://{DATACENTER}-ib.adnxs.com/cr?id={APN_CREATIVE_ID}&format=vast
 Native: https://{DATACENTER}-ib.adnxs.com/cr?id={APN_CREATIVE_ID}&format=json
 ```
 
-### Do you want us (the SSP) to do something with the *iurl*? Is it relevant for video bid responses ? Does this URL have some expiry policy ? I've tried to login to one of the examples and it seems that that URL is invalid?
+### Do you want us (the SSP) to do something with the *iurl*? Is it relevant for video bid responses ? Does this URL have some expiry policy ? I've tried to login to one of the examples and it seems that the URL is invalid?
 
 The *iurl* represents the creative preview on our platform, and is a static url (see syntax above), i.e. does not expire. You may use it for pre-auditing purposes, creative caching, etc. The `id` parameter represents the Xandr creative ID and is unique on our platform. For video creative preview, attach the 'vast' format parameter to the *iurl* to view the xml, e.g. `https://fra1-ib.adnxs.com/cr?id=48265354&format=vast`
 

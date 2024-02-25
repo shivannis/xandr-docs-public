@@ -64,7 +64,7 @@ This document includes the necessary information for supply partners to review, 
    > - In order to create or edit publishers in  or the [API](../digital-platform-api/api-getting-started.md), you have to declare the [Inventory Relationship](./inventory-relationship-faq.md). The requested information is basic business information about how the inventory is accessed and will be used to support Xandr's inventory quality efforts. For a complete list of fields and their usage requirements, refer to the [Publisher Service](../digital-platform-api/publisher-service.md) documentation.
 
 1. User Sync Setup
-   - Store the user mapping table between Xandr's and yours by using the GETUID service. (Learn details from [User ID Mapping](./user-id-mapping.md))
+   <br>Store the user mapping table between Xandr's and yours by using the getUID service. Learn details from [User ID Mapping](./user-id-mapping.md).
 
 ## Step 2: OpenRTB bid request endpoint testing (estimated time: 3 - 4 days)
 

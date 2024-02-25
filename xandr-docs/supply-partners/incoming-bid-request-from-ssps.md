@@ -247,12 +247,11 @@ Xandr currently supports the following native versions:
 - `1.2`
 
 > [!NOTE]
-> Required if using `1.1` or `1.2`. If no version is submitted, then we will default to `1.0`.
-
-> [!NOTE]
-> For more information on different OpenRTB Native Ad specifications, go to [OpenRTB Dynamic Native Ads](https://iabtechlab.com/standards/openrtb-native/) and refer to specs for v1.0, v1.1 and v1.2.
+> - Required if using `1.1` or `1.2`. If no version is submitted, then we will default to `1.0`.
 >
-> Follow the above specifications and pass the necessary **required** fields in the mentioned objects such as asset ID (`id`) in the [Asset Object](#asset-object) described below.
+> - For more information on different OpenRTB Native Ad specifications, go to [OpenRTB Dynamic Native Ads](https://iabtechlab.com/standards/openrtb-native/) and refer to specs for v1.0, v1.1 and v1.2.
+>
+> - Follow the above specifications and pass the necessary **required** fields in the mentioned objects such as asset ID (`id`) in the [Asset Object](#asset-object) described below.
 
 ### Request object
 
@@ -415,7 +414,7 @@ Xandr supports the following fields in the Content object:
 
 ### Content extension object
 
-Xandr supports the following fields in the ext object:
+Xandr supports the following fields in the `ext` object:
 
 | Field | Type | Description |
 |:---|:---|:---|
