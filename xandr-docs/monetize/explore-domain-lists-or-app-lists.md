@@ -1,6 +1,6 @@
 ---
 title: Explore Domain Lists or App Lists
-description: The article describes the process of managing domains and apps, including adding them to lists, exporting lists to text files for safekeeping or offline use, creating new lists by copying existing ones, and deleting lists.
+description: Manage domains and apps, add to lists, export for safekeeping/offline use, copy to create new lists, delete existing lists.
 ms.date: 10/28/2023
 ---
 
@@ -67,8 +67,7 @@ To duplicate a domain list or app list:
 You can delete domain lists and app lists from the Microsoft Advertising system. Be sure to read the warnings below before you delete a domain list or app list:
 
 > [!WARNING]
-> Deleting a domain or app list while it's in use by an active campaign will change the targeting of that campaign. If the list you delete is the only one in use by the
-> campaign, and that campaign does not have individual targeting settings, the result will be a campaign with no targeting, also known as "Targeting the internet." **This is likely to result in massive overspend.**
+> Deleting a domain or app list while it's in use by an active campaign will change the targeting of that campaign. If the list you delete is the only one in use by the campaign, and that campaign does not have individual targeting settings, the result will be a campaign with no targeting, also known as "Targeting the internet." **This is likely to result in massive overspend.**
 >
 > Deleting a domain or app list is permanent, and deleted lists cannot be restored.
 

@@ -1,6 +1,6 @@
 ---
 title: Explore Global Line Items
-description: The article presents the Global Line Item Management screen, offering key metrics for network advertisers' line items. It notifies users of serving conditions, allows swift access to details and child campaigns, and supports bulk editing and reporting options.
+description: Explore Global Line Item Management, uncover metrics, get alerts on serving, swiftly access details, manage child campaigns, and perform bulk editing/reporting.
 ms.date: 10/28/2023
 ---
 
@@ -39,10 +39,8 @@ On the Global Line Item Management screen, you will see all of the line items yo
 
 The available filters are:
 
-- **Advertiser Filter**: Show only the line items associated with the advertisers you select. Up to ten advertisers are displayed at a time. If you have more than ten advertisers, use the arrows or the page box to page through the list of advertisers. Click **Select All** to filter on all advertisers currently displayed in the filter box. This will not select all advertisers; if you have 200 advertisers and 10 are displayed in the **Advertiser Filter** box, clicking **Select All** will select only the 10 advertisers currently displayed in the filter box. If all advertisers on a filter page are selected, you can click
-  **Deselect All** to remove all those advertisers from your filtering.
-- **Insertion Order Filter**: Show only the line items that are associated with certain IOs. The **Insertion Order Filter** box contains a Select All button. This
-  button works the same as the **Select All** button for the **Advertiser Filter**.
+- **Advertiser Filter**: Show only the line items associated with the advertisers you select. Up to ten advertisers are displayed at a time. If you have more than ten advertisers, use the arrows or the page box to page through the list of advertisers. Click **Select All** to filter on all advertisers currently displayed in the filter box. This will not select all advertisers; if you have 200 advertisers and 10 are displayed in the **Advertiser Filter** box, clicking **Select All** will select only the 10 advertisers currently displayed in the filter box. If all advertisers on a filter page are selected, you can click **Deselect All** to remove all those advertisers from your filtering.
+- **Insertion Order Filter**: Show only the line items that are associated with certain IOs. The **Insertion Order Filter** box contains a Select All button. This button works the same as the **Select All** button for the **Advertiser Filter**.
 - **Delivery Filter**: Drag the scrollbar buttons from either end to show only line items with delivery percentages in a given range. The Delivery filter uses pacing percentages from both impressions and revenue when calculating delivery percentage. The percentages are calculated like this:
   - Impression Pacing Percentage = impressions/(expectedPacing \* 100)
   - Revenue Pacing Percentage = revenue/(expectedPacing \* 100)  
@@ -102,8 +100,7 @@ When you select filters (as described in the previous section), the **Filters** 
   Apply the selected filters to the current display and save the view with a new name. The name can have a maximum of 99 characters, including spaces.
 
 - **Save As**  
-  Save the selected filters and assign a name to that view. The name can have a maximum of 99 characters, including spaces. This option saves
-  all filters currently selected, even if they haven't been applied.
+  Save the selected filters and assign a name to that view. The name can have a maximum of 99 characters, including spaces. This option saves all filters currently selected, even if they haven't been applied.
 
   When you save a view, the name will be displayed in the **Filters** sidebar under the **All Line Items** option (or **All Orders** if you're viewing Insertion Orders). Views are user-specific, so the views you create will be available only to you. This allows each user to create the set of views that is most useful to them.
 

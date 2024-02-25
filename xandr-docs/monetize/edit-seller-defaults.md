@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Edit Seller Defaults
-description: The article helps you to set the eligibility and inventory trust for sellers.
+description: Set seller eligibility and trust in Partner Center or My Settings for Seller Name to manage inventory effectively.
 ms.date: 10/28/2023
 ---
 
@@ -45,7 +45,7 @@ To apply seller defaults [Set Seller Defaults](set-seller-defaults.md):
 1. Set custom settings:
     - For a single seller in the **My Settings for {Seller Name}** section, select **Custom** from the drop-down.
     - For multiple sellers, the settings are available in the **Edit Partner Controls** section.
-2. Select the custom settings:
+1. Select the custom settings:
     - **Seller Eligibility** - the transaction eligibility between buyer and seller. A buyer may block a seller, a seller may block a buyer, or both buyer and seller may be blocked by each other, see [Partner Center Screen - Buyer View](partner-center-screen-buyer-view.md).
     - **Inventory Trust Level** - indicates whether you trust inventory reviewed only by the Microsoft Advertising platform (**Platform-reviewed**), by the Microsoft Advertising platform and the seller (**Seller-reviewed**), or all inventory (**All**). For more information on the different inventory trust levels, see the **Setting default inventory trust** section in [Partner Center Screen - Buyer View](partner-center-screen-buyer-view.md).
 

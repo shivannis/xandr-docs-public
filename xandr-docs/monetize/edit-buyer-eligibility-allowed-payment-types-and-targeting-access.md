@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Edit Default Buyer Settings
-description: The article helps you to set the eligibility, allowed payment types, and targeting access.
+description: Explore Partner Center settings, update buyer options. Defaults apply if custom unset. Buyer views Partner Controls.
 ms.date: 10/28/2023
 ---
 
@@ -36,17 +36,13 @@ Select the payment types you are willing to accept from the buyer. Choose **Defa
 
 ### Step 4. Update targeting access
 
-Select the information that should be exposed to the buyer when they are targeting your inventory. Choose **Default** in the dropdown if you want
-your default settings to continue to apply to the buyer. When **Default** is selected, the current default setting displays for reference. Otherwise, choose **Custom** in
-the dropdown and then check the checkbox near the desired settings to allow access to URL, category, age, gender, placement, or publisher
-targeting information. The more information you give the buyer, the more #easily they can target your inventory.
+Select the information that should be exposed to the buyer when they are targeting your inventory. Choose **Default** in the dropdown if you want your default settings to continue to apply to the buyer. When **Default** is selected, the current default setting displays for reference. Otherwise, choose **Custom** in the dropdown and then check the checkbox near the desired settings to allow access to URL, category, age, gender, placement, or publisher targeting information. The more information you give the buyer, the more #easily they can target your inventory.
 
 You will have the option to expose domains or full URLs to external buyers.
 
 Age and gender targeting information can only be shared if you include the Microsoft Advertising age and gender macro when exporting your placement tag. For more information, see [Export Placement Tags](export-placement-tags.md).
 
-For **Categories (Custom),** there is the additional option to expose specific categories. To select specific custom categories, choose **Expose Custom** and then click
-**Edit** to display the list of custom categories. Click on a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the
+For **Categories (Custom),** there is the additional option to expose specific categories. To select specific custom categories, choose **Expose Custom** and then click **Edit** to display the list of custom categories. Click on a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the
 Selected Items area, click on the X next to the category name. When you have finished selecting custom categories, click **Add** to save your changes.
 
 ### Step 5. Save your changes

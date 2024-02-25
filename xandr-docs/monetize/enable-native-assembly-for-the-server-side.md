@@ -1,6 +1,6 @@
 ---
 title: Enable Native Assembly for the Server Side
-description: The article helps you to enable native assembly for the server side.
+description: Enable server-side Native Assembly, create native assemblies in Monetize, then, for each associated placement
 ms.date: 10/28/2023
 ---
 

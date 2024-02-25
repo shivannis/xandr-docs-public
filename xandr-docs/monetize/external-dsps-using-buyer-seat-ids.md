@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - External DSPs Using Buyer Seat IDs
-description: The article describes external DSPs using Buyer Seat IDs.
+description: Verify buyer seat IDs for external DSP deals on Microsoft Advertising. Check eligibility using Seat ID Deal Status. Communicate with buyers for correct IDs.
 ms.date: 10/28/2023
 ---
 

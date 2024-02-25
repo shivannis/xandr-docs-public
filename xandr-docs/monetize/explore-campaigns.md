@@ -1,13 +1,12 @@
 ---
 title: Explore Campaigns
-description: The article outlines the Campaigns screen, emphasizing its features like displaying key metrics for all campaigns, identifying serving issues, quick access to individual campaign details, and enabling bulk editing and reporting.
+description: Explore the Campaigns screen, highlight key metrics, detect issues, access campaigns swiftly, and enable bulk editing/reporting.
 ms.date: 10/28/2023
 ---
 
 # Explore campaigns
 
-The **Campaigns** screen shows you essential metrics about all campaigns under an advertiser or under a specific line item, informs you of conditions preventing campaigns from
-serving, provides quick access to each campaign's details, and offers bulk editing and reporting options.
+The **Campaigns** screen shows you essential metrics about all campaigns under an advertiser or under a specific line item, informs you of conditions preventing campaigns from serving, provides quick access to each campaign's details, and offers bulk editing and reporting options.
 
 **Automatic archiving of objects:** Campaigns that have not served or been edited in more than 180 days and that are not scheduled to serve in the future are automatically archived. If a campaign is in the "archived" state, it cannot spend or be edited. However, it can still be copied, deleted or used in reports (or exported for use in an external
 reporting tool). In addition, once an object is archived, any child objects it may own (e.g., **Insertion Order >  Line Item** **> Campaign**) will also be archived and no additional child objects may be created beneath the archived parent object. For details, see [Automatic Archiving of Buy-Side Objects](automatic-archiving-of-buy-side-objects.md).
@@ -17,8 +16,7 @@ reporting tool). In addition, once an object is archived, any child objects it m
 > [!TIP]
 > **Lost?**
 >
-> Did you know that you can verify where you are in Monetize and navigate easily among Monetize pages by using the breadcrumb at the top of all **Advertiser**, **Insertion Order**, **Line Item**, and **Campaign screens**? The rightmost section of the breadcrumb is the page you are on, and all the sections to the left of it are parent object
-> screens. You can click directly on any section to navigate there in one easy step.
+> Did you know that you can verify where you are in Monetize and navigate easily among Monetize pages by using the breadcrumb at the top of all **Advertiser**, **Insertion Order**, **Line Item**, and **Campaign screens**? The rightmost section of the breadcrumb is the page you are on, and all the sections to the left of it are parent object screens. You can click directly on any section to navigate there in one easy step.
 >
 > The breadcrumb may not function if you are not using the latest version of your browser.
 
