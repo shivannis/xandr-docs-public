@@ -24,13 +24,13 @@ When an invalid placement code is called:
 
 The [AdUnit](./android-sdk-ad-units.md) class has two methods for setting and retrieving `publisherId`.
 
-### 1. Setter Method
+### Setter Method
 
 ```
 public void setPublisherId(int publisherId)
 ```
 
-### 2. Getter Method
+### Getter Method
 
 ```
 public int getPublisherId() 

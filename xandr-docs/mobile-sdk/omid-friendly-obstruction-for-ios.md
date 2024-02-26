@@ -37,7 +37,7 @@ visible, viewability tracking stops. By default this property is set as `"NO"` a
 @property (nonatomic, readwrite) BOOL enableOMIDOptimization;
 ```
 
-## Example
+## Examples
 
 ### Objective C
 
@@ -63,8 +63,7 @@ To add a friendly obstruction for Banner, Interstitial and Video AdUnits, you ne
 (void)addOpenMeasurementFriendlyObstruction:(nonable UIView *)obstructionView;
 ```
 
-For Native AdUnits, you need to pass a friendly obstruction views list
-to add views as friendly obstruction with register view tracking.
+For Native AdUnits, you need to pass a friendly obstruction views list to add views as friendly obstruction with register view tracking.
 
 ### API for adding friendly obstruction
 
@@ -99,8 +98,7 @@ to add views as friendly obstruction with register view tracking.
 (void)removeOpenMeasurementFriendlyObstruction:(nonable UIView*)obstructionView;
 ```
 
-**Examples for Removing a friendly obstruction for AdUnits (Banner,
-Interstitial and Video)**
+### Example for Removing a friendly obstruction for AdUnits (Banner, Interstitial and Video)
 
 ```
 [adObject removeOpenMeasurementFriendlyObstruction:friendlyObstructionView];

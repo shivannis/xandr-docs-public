@@ -9,9 +9,9 @@ ms.date: 10/28/2023
 
 Custom keywords are used to attach arbitrary key-value pairs to the request body of the ad call. These can be used for several purposes, including:
 
-- Custom campaign targeting options. See [Key-Value Targeting](../digital-platform-api/custom-key-value-targeting.md) for more
- information.
-- Reporting. See [Key Value Analytics Report](../digital-platform-api/key-value-analytics-report.md) for more information.
+- Custom campaign targeting options (see [Key-Value Targeting](../digital-platform-api/custom-key-value-targeting.md) for more
+ information)
+- Reporting (see [Key Value Analytics Report](../digital-platform-api/key-value-analytics-report.md) for more information)
 
 The following line of code adds a single key-value pair to the JSON body of ad the call:
 
