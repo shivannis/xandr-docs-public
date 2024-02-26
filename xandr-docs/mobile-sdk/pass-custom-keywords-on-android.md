@@ -2,15 +2,15 @@
 title: Pass Custom Keywords on Android
 description: This article provides information on passing custom keywords on Android. Custom keywords are used to attach arbitrary key-value pairs to the request body of the ad call.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # Pass custom keywords on Android
 
 Custom keywords are used to attach arbitrary key-value pairs to the request body of the ad call. These can be used for several purposes, including:
 
-- Custom campaign targeting options (see [Key-Value Targeting](../digital-platform-api/custom-key-value-targeting.md) for more information)
-- Reporting (see [Key Value Analytics Report](../digital-platform-api/key-value-analytics-report.md))
+- Custom campaign targeting options. See [Key-Value Targeting](../digital-platform-api/custom-key-value-targeting.md) for more information.
+- Reporting. See [Key Value Analytics Report](../digital-platform-api/key-value-analytics-report.md)).
 
 The following line of code adds a single key-value pair to the JSON body of the ad call:
 
