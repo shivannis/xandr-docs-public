@@ -42,7 +42,7 @@ The `digitsAfterDecimal` argument will cause all location information to be in
 
 Creatives rendered in a WebView can access a user's location through HTML5 location API's. By default, when a creative asks for location, a popup is displayed to the users asking for explicit consent/permission to use the location. App developers can control this behavior and disable location access for creatives using the APIs describe below. When location access is disabled, popups won't be shown to the users and the creative will receive a PERMISSION_DENIED error for HTML5 location API calls.
 
-Use the SDKSettings.setLocationEnabledForCreative(boolean enabled) method to control the location access for creatives. Default is *true*. The following code disables the location pop-up from the creative:
+Use the SDKSettings.setLocationEnabledForCreative(boolean enabled) method to control the location access for creatives. Default is `true`. The following code disables the location pop-up from the creative:
 
 ```
 SDKSettings.setLocationEnabledForCreative(false);
