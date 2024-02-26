@@ -1,6 +1,6 @@
 ---
 title: Member Data Sharing Service (Contextual Only)
-description: Learn steps on how Member Data Sharing Service allows you to share your segments with other platform members along with some examples. 
+description: In this page, learn steps on how Member Data Sharing Service allows you to share your segments with other platform members, along with some examples. 
 ms.custom: data-providers
 ms.date: 11/30/2023
 ---

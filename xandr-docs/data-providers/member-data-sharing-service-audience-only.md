@@ -1,6 +1,6 @@
 ---
 title: Member Data Sharing Service (Audience Only)
-description: This page covers steps where Member Data Sharing Service allows you to share your segments with other platform members along with examples.  
+description: This page covers steps where Member Data Sharing Service allows you to share your segments with other platform members, along with examples.  
 ms.custom: data-providers
 ms.date: 11/30/2023
 ---

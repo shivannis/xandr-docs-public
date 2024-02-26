@@ -1,6 +1,6 @@
 ---
 title: Introduction to Integrating with the Xandr Impression Bus
-description: Learn the various points to consider while integrating with the Xandr impression bus. 
+description: In this page, learn about the various pointers to consider while integrating with the Xandr impression bus. 
 ms.custom: data-providers
 ms.date: 11/30/2023
 ---

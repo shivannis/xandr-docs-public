@@ -1,6 +1,6 @@
 ---
 title: Managing Public and Private (Custom) Segments
-description: The purpose of this page is to provide best practices depending on the types of data you provide through the marketplace.
+description: The Data Marketplace supports both public and private segments. This page covers creating a new segment object, a new private segment, changing a public segment to private and a private segment to public segment.   
 ms.custom: data-providers
 ms.date: 11/30/2023
 ---

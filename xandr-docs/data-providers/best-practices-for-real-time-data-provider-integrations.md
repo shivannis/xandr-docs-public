@@ -35,7 +35,5 @@ Properly managing connections will be extremely important in helping your data p
 
 Good performance is indicated by mostly ESTABLISHED sockets whereas mostly TIME_WAIT sockets indicate timeouts and a cascading failure of thrashing.
 
-<!-- -->
-
 - **Connection metrics:** The best metric for monitoring connections is queries/connections as opposed to connections/second.
 - **Keep-Alive protocol:** You should be supporting Keep-Alive protocol and trying to keep connections open as long as possible. Typically we see 300 queries per connection, meaning that if you are closing the connection, you will see 300x more opens/closes. You should be returning "Connection: keep-alive" in your response headers.
