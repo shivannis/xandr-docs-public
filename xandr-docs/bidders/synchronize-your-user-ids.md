@@ -30,9 +30,9 @@ To store the mapping with Xandr,
 
 1. Add the following function to your bidder's "userdata_javascript" field on the [Bidder Service](bidder-service.md):
 
-  ``` 
+   ``` 
       function setuid(code){ ud.uid = code; }
-  ```
+   ```
 
 1. Next, set the "setuid_function" field on the [Bidder Service](bidder-service.md) as follows:
 
@@ -56,12 +56,12 @@ To store the mapping with Xandr,
     
     ```
 
-> [!WARNING]
-> As of April 22, 2019, Xandr no longer supports the `"userdata_json"` field in the bid request. You can receive your unique user id through the "`buyeruid"` field.
+   > [!WARNING]
+   > As of April 22, 2019, Xandr no longer supports the `"userdata_json"` field in the bid request. You can receive your unique user id through the "`buyeruid"` field.
 
-You will receive your user ID as part of the bid request's `"userdata_json"` field, as in the example below:
+   You will receive your user ID as part of the bid request's `"userdata_json"` field, as in the example below:
 
-``` 
+  ``` 
 {
     "bid_request": {
         ...
