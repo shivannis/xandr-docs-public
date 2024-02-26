@@ -15,21 +15,21 @@ There's no single right way to set up your bidder profile ([Legacy Bidder Profil
   - The `member_targets` array should be populated depending on how you'd like to buy.
     - Buying only a select set of sellers:
 
-      `"member_targets": \[{"id": "100","action": "include"},{"id": "101","action": "include"},{"id": "102","action": "include"}\]`
+      `"member_targets": [{"id": "100","action": "include"},{"id": "101","action": "include"},{"id": "102","action": "include"}]`
 
     - Excluding a select group of sellers:
 
-      `"member_targets": \[{"id": "100","action": "exclude"},{"id": "101","action": "exclude"}\]`
+      `"member_targets": [{"id": "100","action": "exclude"},{"id": "101","action": "exclude"}]`
 - **Filtering by country**
   - Set up a global `"include"` or `"exclude"` using the `"country_action"` parameter.
   - Add the countries that you would like to include or exclude to the `"country_targets"` array as objects.
-    - `"country_targets": \[{"country": "GB"},{"country": "US"},{"country": "DE"}\]`
+    - `"country_targets": [{"country": "GB"},{"country": "US"},{"country": "DE"}]`
 - **Filtering by size**
   - Include the list of creative sizes for which your bidder has creatives. This list should be exhaustive if you choose to filter by creative size.
-    - `"size_targets":\[{"width": "100","height": "200"},{"width": "100","height": "200"}\]`
+    - `"size_targets":[{"width": "100","height": "200"},{"width": "100","height": "200"}]`
 - **Filtering by domain list**
   - Include or exclude lists of domains. These are created using the [Domain List Service](../bidders/domain-list-service.md).
-    - `"domain_list_target":\[{"id":1}, {"id":2}\]`
+    - `"domain_list_target":[{"id":1}, {"id":2}]`
     - `"domain_list_action":"include"`
 - **Filtering by seller classified inventory attributes**
   - This option allows you to opt-in to inventory that has been classified with a sensitive attribute. When `"use_inventory_attribute_targets"` is set to `true`, your bidder will receive traffic from inventory classified with the inventory attributes listed in the `inventory_attribute_targets` array and all unclassified inventory.

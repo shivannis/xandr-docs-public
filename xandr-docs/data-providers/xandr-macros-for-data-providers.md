@@ -29,7 +29,7 @@ Xandr can populate the following information.
 | `${TIME_ZONE}` | The time zone for the impression's user. |
 | `${TAG_ID}` | Provides the placement ID of the tag in this impression. The permission to view tags is part of the seller's visibility profile. Tag IDs will not be visible unless explicitly allowed by the seller. |
 | `${EXTERNAL_UID}` | The character string the inventory seller has assigned to the user for the impression. |
-| `${EXTENDED_IDS}` | The identifiers (industry IDs and publisher provided IDs) represents the user of the impression. These would be passed as received in the request, with multiple identifiers supported following the format :<br><br>`…&extended_ids=<source_1>,<id_1>\|<source_2>,<id_2>\|…`<br><br>The separators proposed being `,` between the source and the value, and `\|` between the different IDs type and value pairs. |
+| `${EXTENDED_IDS}` | The identifiers (industry IDs and publisher provided IDs) represents the user of the impression. These would be passed as received in the request, with multiple identifiers supported following the format :<br><br>`…&extended_ids=<source_1>,<id_1>\|<source_2>,<id_2>\|…`<br><br>The separators proposed being `,` between the source and the value, and \| between the different IDs type and value pairs. |
 
 ## European ad inventory and providing notice, transparency and choice
 

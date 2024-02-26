@@ -11,7 +11,7 @@ While you may have heard that browser cookies track your actions on the Internet
 
 ## Cookies overview
 
-When you log in to Facebook, there are many HTTP requests and responses set in the short time it takes for you to navigate to your home page. The example below uses Tamper Data, another Firefox Add-On, to view the HTTP `GET` and `POST` calls sent when signed into Facebook. (HTTP GET calls requests data from a specified source, whereas `POST` calls submits data to be processed to a specified source). This is the first `POST` request received by the browser.
+When you log in to Facebook, there are many HTTP requests and responses set in the short time it takes for you to navigate to your home page. The example below uses Tamper Data, another Firefox Add-On, to view the HTTP `GET` and `POST` calls sent when signed into Facebook. (HTTP `GET` calls requests data from a specified source, whereas `POST` calls submits data to be processed to a specified source). This is the first `POST` request received by the browser.
 
 :::image type="content" source="media/cookies-set.png" alt-text="Screenshot of the POST request received by the browser.":::
 
