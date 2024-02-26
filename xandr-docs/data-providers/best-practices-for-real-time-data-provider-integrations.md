@@ -1,6 +1,6 @@
 ---
 title: Real Time Data Integrations Best Practices
-description: Learn best practices in real time data provider integrations. 
+description: Learn what are the best practices in real time data provider integrations, data provider bidder performance and Connection management. 
 ms.custom: data-providers
 ms.date: 11/29/2023
 ---
@@ -9,11 +9,10 @@ ms.date: 11/29/2023
 
 ## Software stack best practices
 
-Depending on the software stack that you decide to employ for your Data Provider, you will see a wide range of QPS performance. Having an
-optimal stack translates into better performing servers, which ultimately means you will need less servers to achieve the same performance.
+Depending on the software stack that you decide to employ for your Data Provider, you will see a wide range of QPS performance. Having an optimal stack translates into better performing servers, which ultimately means you will need less servers to achieve the same performance.
 
 - **Listener and application:** The listener should be used to listen to requests and the application should be processing the information in the requests; listener and application should be decoupled.
-- **Recommended tech stacks:** The best performance we have seen is with LuaJIT, C, and C++ (with careful deterministic garbage collection) running on Nginx servers. Many have seen reduced timeout rates by switching to Nginx servers.
+- **Recommended tech stacks:** The best performance we have seen is with LuaJIT, C, and C++ (with careful deterministic garbage collection) running on Nginx servers.Many have seen reduced timeout rates by switching to Nginx servers.
 - **Non-recommended tech stacks:** We don't recommend using interpreted languages such as PHP or Python. We also don't recommend using Java (tomcat, jetty, custom) or other languages where there is non-deterministic garbage collection timing.
 - **I/O:** Your solution should avoid any kind of disk I/O as it is slow and response times are random, which can easily saturate the disk, so try to have all logging done to RAM. If you must write to disk, we suggest you write to /dev/shm/filename and roll the file over every couple of minutes with a cronscript that compresses the file and moves it to disk. Run the compress at lower priority, for example,10 gzip, to help avoid CPU contention.
 - **Cross CPU scheduling:** To avoid cross CPU scheduling issues, we have seen good results when using CPU affinity to keep the worker process (and it's threads) on a single CPU. We have seen this significantly increase performance when implemented while running one worker per CPU.
