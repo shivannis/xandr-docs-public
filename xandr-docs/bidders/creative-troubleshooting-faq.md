@@ -78,7 +78,7 @@ There are a few things you can look for before sending a ticket into Xandr Suppo
 
 If your tag code is correct, load a creative preview using our server URL:
 
-[https://creative-preview-an.com/cached/creative/insert creative id here](https://creative-preview-an.com/cached/creative/insert)
+`https://creative-preview-an.com/cached/creative/insert creative id here`
 
 After refreshing a few times, if the page is blank, you should inspect the creative's tag content. Check to see if there are any glaring format errors in spacing, etc. Please note that we do not support javascript comments at this time. If the tag has comments, remove the comment wrappers:
 
@@ -128,7 +128,7 @@ Another reason why the creative may not be displaying is the creative contains g
   - `http://adnxs.net/`
   - `http://adnxs.com/`
   - [creative-preview-an.com](https://about.ads.microsoft.com/en-us/solutions/xandr/xandr-premium-programmatic-advertising)
-  - `audit.adnxs.net`
+  - [audit.adnxs.net](https://cq-auditor.adnxs.net/login?next=%2F)
   - `cq-preview.adnxs.net`
 
 **Why did I receive an email saying my creative was deactivated?**

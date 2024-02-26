@@ -260,8 +260,8 @@ When you request the status of your processing job, the system returns a `batch_
 | `num_valid` | int | The number of valid lines in the uploaded file. Each user/segment combination is considered 1 line. |
 | `num_valid_user` | int | A count of unique input lines that have a valid user ID. |
 | `percent_complete` | int | The percentage of the processing that has been completed, given the current `phase` at the time of the request. |
-| `phase` | enum | The current processing status. Returns one of the following values: <br> - error <br> - starting <br> - uploading <br> - validating <br> - processing <br> - completed |
-| `segment_log_lines` | string | A string containing newline-separated lines consisting of the segment ID and the number of users successfully added or removed. This field defaults to 200 lines. The format is `added: SEG_ID:COUNT SEG_ID:COUNT ... removed:` `SEG_ID:COUNT` ... where `SEG_ID` is the segment ID and `COUNT` is the number of users successfully added or removed. `SEG_ID:COUNT` pairs are sorted by `COUNT` (descending). <br>  Example:<br> ``added: 15889133:386221 15547290:186227 removed: 15889278:369734 15889206:255307 15889179:232831`` |
+| `phase` | enum | The current processing status. Returns one of the following values: <br> - `error` <br> - `starting` <br> - `uploading` <br> - `validating` <br> - `processing` <br> - `completed` |
+| `segment_log_lines` | string | A string containing newline-separated lines consisting of the segment ID and the number of users successfully added or removed. This field defaults to 200 lines. <br> The format is `added: SEG_ID:COUNT SEG_ID:COUNT ... removed:` `SEG_ID:COUNT` ... where `SEG_ID` is the segment ID and `COUNT` is the number of users successfully added or removed. `SEG_ID:COUNT` pairs are sorted by `COUNT` (descending). <br>  Example:<br> ``added: 15889133:386221 15547290:186227 removed: 15889278:369734 15889206:255307 15889179:232831`` |
 | `start_time` | date | The time at which file upload began. |
 | `time_to_process` | decimal | The time it took to process the segment file, in minutes. |
 | `upload_url` | string | The URL where you'll upload your segment data file. |

@@ -10,7 +10,7 @@ The TinyTag Service enables you to create TinyTag IDs as well as modify and view
 
 The IDs are associated with information about the ad space such as size, reserve price, and what brands or creatives are allowed to run in that space. This information is stored server side with Xandr and is easy to modify.
 
-TinyTag IDs can be used in TinyTags, which are placed directly on publisher pages and take the basic form `https://ib.``adnxs``.com/tt?id=1`. Further information can be passed in a TinyTag using [Dynamic TinyTag Parameters.](dynamic-tinytag-parameters.md).
+TinyTag IDs can be used in TinyTags, which are placed directly on publisher pages and take the basic form `https://ib.``adnxs``.com/tt?id=1`. Further information can be passed in a TinyTag using [Dynamic TinyTag Parameters](dynamic-tinytag-parameters.md).
 
 Note that the member associated with the TinyTag ID has rights of first refusal on the inventory, and receives credit (or cash) if another member purchases it.
 
@@ -98,8 +98,7 @@ Creatives are categorized by media type and media subtype. Media type defines th
 
 ### Default Creatives
 
-You use this array to assign default creatives to the placement. Please
-note the following requirements:
+You use this array to assign default creatives to the placement. Please note the following requirements:
 
 - A default creative must not be expired. See the is_expired field in the Creative Service for more information.
 - A default creative must be assigned to a creative template that matches the supported_media_types and supported_media_subtypes of the placement. For example, if the placement allows creatives of the "Banner" media type, you would not be able to associate default creatives that use a creative template for the "Interstitial" media type. See the template field in the [Creative Service](creative-service.md) for more information.
