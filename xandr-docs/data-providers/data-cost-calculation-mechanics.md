@@ -116,7 +116,7 @@ Pricing of segments is determined by the following pricing methodologies. We off
 
 |  |  |
 |--|--|
-| Diagram | :::image type="content" source="media/pricing-methodology-a.png" alt-text="Screenshot of Pricing Methodology."::: |
+| Diagram | :::image type="content" source="media/pricing-methodology-a.png" alt-text="Screenshot of Pricing Methodology 2."::: |
 
 |  |  |
 |--|--|
@@ -130,11 +130,11 @@ Pricing of segments is determined by the following pricing methodologies. We off
 
 |  |  |
 |--|--|
-| Diagram | :::image type="content" source="media/pricing-methodology-c.png" alt-text="Screenshot of Pricing Methodology C."::: |
+| Diagram | :::image type="content" source="media/pricing-methodology-c.png" alt-text="Screenshot of Pricing Methodology 3."::: |
 
 |  |  |
 |--|--|
-| Example | Final Price: $1.25 CPM <br>:::image type="content" source="media/pricing-methodology-d.png" alt-text="Screenshot of Pricing Methodology D."::: <br> - Seven segments were used to win the impression and the buyer will be charged for the usage of all segments <br> - The bundled price will be determined by adding the price of each that category is used <br> - The bundled price is $1.25 CPM = $0.10 + $0.20 + $0.25 + $0.30 + $0.40 |
+| Example | Final Price: $1.25 CPM <br>:::image type="content" source="media/pricing-methodology-d.png" alt-text="Screenshot of Pricing Methodology when the bundled price is $1.25 CPM."::: <br> - Seven segments were used to win the impression and the buyer will be charged for the usage of all segments <br> - The bundled price will be determined by adding the price of each that category is used <br> - The bundled price is $1.25 CPM = $0.10 + $0.20 + $0.25 + $0.30 + $0.40 |
 
 ### Pricing methodology 4
 
@@ -144,11 +144,11 @@ Pricing of segments is determined by the following pricing methodologies. We off
 
 |  |  |
 |--|--|
-| Diagram | :::image type="content" source="media/pricing-methodology-e.png" alt-text="Screenshot of Pricing Methodology with Example Data Provider."::: |
+| Diagram | :::image type="content" source="media/pricing-methodology-e.png" alt-text="Screenshot of Pricing Methodology 4."::: |
 
 |  |  |
 |--|--|
-| Example | Final Price: $0.40 CPM <br>:::image type="content" source="media/pricing-methodology-f.png" alt-text="Screenshot of Pricing Methodology F."::: <br> - Seven segments were used to win the impression and the buyer will be charged for the usage of all segments <br> - The bundled price will be determined by the highest CPM price of the categories used <br> - The bundled price is $0.40 CPM |
+| Example | Final Price: $0.40 CPM <br>:::image type="content" source="media/pricing-methodology-f.png" alt-text="Screenshot of Pricing Methodology when the bundled price is $0.40 CPM."::: <br> - Seven segments were used to win the impression and the buyer will be charged for the usage of all segments <br> - The bundled price will be determined by the highest CPM price of the categories used <br> - The bundled price is $0.40 CPM |
 
 ## Glossary
 
