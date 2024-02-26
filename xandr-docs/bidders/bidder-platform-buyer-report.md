@@ -162,7 +162,7 @@ To download the report data to a file, make another `GET` call with the Report I
 > [!NOTE]
 > If an error occurs during download, the response header will include an HTTP error code and message. Use {{-i}} or {{-v}} in your call to expose the response header.
 
-```=
+```
 curl -b cookies -c cookies 'https://api.adnxs.com/report-download?id=bfe2ba2ea54a51115db942d591a7b5d9' > report.csv
 ```
 
