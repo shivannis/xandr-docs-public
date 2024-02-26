@@ -82,7 +82,7 @@ There's no single right way to set up your bidder profile ([Legacy Bidder Profil
 
 - **General notes**
   - Once you have included any item in any array, you don't need to exclude items you don't want to see, as only those that are explicitly included will be sent.
-  - Do not set the action to be "include" if you haven't set any targets to include. For example, country_action should not be include if `country_targets` has no elements.
+  - Do not set the action to be "include" if you haven't set any targets to include. For example, `country_action` should not be include if `country_targets` has no elements.
 
 ## Parent and child profiles
 
