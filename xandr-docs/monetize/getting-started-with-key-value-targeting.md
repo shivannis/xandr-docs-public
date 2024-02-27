@@ -92,4 +92,4 @@ A maximum of 100 key/value pairs can be defined per tag.
 
 ## Video overview
 
-For an overview of working with key/value targeting, view this training video: [Key Value Targeting Training](https://player.vimeo.com/video/212810941).
+For an overview of working with key/value targeting, see [Key/value targeting](key-value-targeting.md).
