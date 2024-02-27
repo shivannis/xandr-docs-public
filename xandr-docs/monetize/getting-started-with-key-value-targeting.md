@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Key/Value Targeting
-description: Explore diverse user targeting. Use Buy-Side Targeting for options such as geography, domain, and inventory. Customize with defined keys for precise targeting.
+description: Explore diverse user targeting with Buy-Side options, geography, domain, and inventory. Customize using defined keys for precise targeting.
 ms.date: 10/28/2023
 ---
 
