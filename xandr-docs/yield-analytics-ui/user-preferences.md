@@ -21,5 +21,5 @@ You can change the password you use to log in to Yield Analytics:
 You can change the page that loads by default when you log in to Yield Analytics:
 
 1. In the top right corner of any page, click your name, and then click **Preferences**. The Preferences page loads.
-1. In the Set Defaults panel, in the **Home Page** field, click the link for the current setting (e.g., Availability). Select a  different page from the drop-down list that appears.
+1. In the **Set Defaults** panel, in the **Home Page** field, click the link for the current setting (e.g., Availability). Select a  different page from the dropdown list that appears.
 1. Click **Save Defaults**. The page you chose is displayed, and loads by default the next time you log in to the system.
