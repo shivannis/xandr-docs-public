@@ -93,9 +93,9 @@ If none of the above steps work, you can test to see if the problem is on our en
 Another reason why the creative may not be displaying is the creative contains geotargeting elements that control where the creative is allowed to render. If this is the case, you will have to allow our Audit IPs and Domains:
 
 - LA servers:
-  - Input 68.67.139.192 /26 (netblock) at [https://www.magic-cookie.co.uk/iplist.md](https://www.magic-cookie.co.uk/iplist.html) for a list of IPs
+  - Input 68.67.139.192 /26 (netblock) at [https://www.magic-cookie.co.uk/iplist.md](http://magic-cookie.co.uk/iplist.html) for a list of IPs
 - NY office:
-  - Input 207.237.150.0 /24 (netblock) at [https://www.magic-cookie.co.uk/iplist.md](https://www.magic-cookie.co.uk/iplist.html) for a list of IPs
+  - Input 207.237.150.0 /24 (netblock) at [https://www.magic-cookie.co.uk/iplist.md](http://magic-cookie.co.uk/iplist.html) for a list of IPs
   - 68.67.164.193
   - 68.67.164.194
   - 68.67.164.195
