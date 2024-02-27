@@ -11,7 +11,7 @@ Xandr uses Digital Envoy for its Country and Region data. The Digital Envoy code
 ## Country
 
 - ISO 3166
-- (United States and Canada are US, CA)
+- United States and Canada are US, CA
 
   `{"country":"AS","name":"American Samoa"}`
 
@@ -31,4 +31,4 @@ Non-US/CA traffic will use the FIPS 10-4 codes.
 
 U.S. DMA codes are based on the Digital Envoy US metro codes.
 
-  `{"dma":"635","name":"Austin TX"}`
+`{"dma":"635","name":"Austin TX"}`
