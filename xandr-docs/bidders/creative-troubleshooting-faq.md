@@ -67,7 +67,7 @@ Flash files control their own click throughs, which means that the landing page 
 > [!TIP]
 >
 > - The clickTAG macro is case sensitive. The variant of clickTAG used by the developer needs to be the same as that of the ad server in order to work. Many ad servers get around this by passing in multiple variants (ClickTag,clickTag,clicktag) with the same click URL value, hoping that one of them works. You can find the variant of clickTAG that your Flash Developer used by decompiling the Flash file.
-> - Using [Tamper Data](https://addons.mozilla.org/en-US/firefox/addon/tamper-data/), If you click on a creative and the first URL you see is the Advertiser landing page, then you know the Flash file has a hardcoded URL. Decompile the Flash file to confirm.
+> - Using [Tamper Data](https://addons.mozilla.org/en-US/firefox/addon/tamper-data-for-ff-quantum/), If you click on a creative and the first URL you see is the Advertiser landing page, then you know the Flash file has a hardcoded URL. Decompile the Flash file to confirm.
 > - The clickTAG variants, as well as the clickTAG value, can be found by using the Developer tools for Chrome or Firefox. Right click on the creative and choose Inspect Element.Look for: “flashvars&clickTAG=\[URL1\]&clickTag=\[URL2\]"
 
 ## Creative doesn't display
@@ -331,12 +331,12 @@ Important fields in the template :
 > If Your Creative Contains An \<a\> HTML Tag Without A target=“\_blank” Parameter, And It Clicks Through In The Same Window, you need to add the \_blank element.
 
 - On “tt” (iFrame) call:
-  - If the creative template has a “content_html”, then that will be returned
-  - If Creative Template does not have a “content_html”, but does have a “content_js”, then return the “content_js” wrapped in \<script\> (making it HTML)
+  - If the creative template has a “content_html”, then that will be returned.
+  - If Creative Template does not have a “content_html”, but does have a “content_js”, then return the “content_js” wrapped in \<script\> (making it HTML).
   - The API validates against having neither, but if this were allowed, the creative would blank.
 - On “ttj” (JavaScript) call:
-  - If the creative template has a “content_js”, then that will be returned
-  - If creative template does not have a “content_js”, then blank, even if the template has a “content_html”
+  - If the creative template has a “content_js”, then that will be returned.
+  - If creative template does not have a “content_js”, then blank, even if the template has a “content_html.4”
 
 > [!TIP]
 > If you don’t define content_js In your template, then the creative will not display properly to users with no javascript. The creative will still preview correctly in the audit UI.

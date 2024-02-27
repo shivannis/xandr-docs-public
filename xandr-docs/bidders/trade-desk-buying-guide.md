@@ -1,6 +1,6 @@
 ---
 title: Trade Desk Buying Guide
-description: This page is an overview about Trade Desk Buying Guide to help Xandr publishers communicate with their buyers. This page provides a step-by-step guide to create Deal workflow and Programmatic guaranteed (PG) workflow. Additionally, go through Deal troubleshooting tips & FAQs.   
+description: This page is an overview about Trade Desk Buying Guide to help Xandr publishers communicate with their buyers. This page provides a step-by-step guide to create Deal workflow and Programmatic guaranteed (PG) workflow. Additionally, information on Deal troubleshooting tips & FAQs is given.  
 ms.date: 11/28/2023
 ---
 
@@ -26,7 +26,7 @@ Xandr, in partnership with Trade Desk, has created this buying guide to help Xa
 
 ## Easy proposal activation - For GAM, Magnite, Freewheel, Bidswitch
 
-:::image type="content" source="media/trade-desk-buying-guide-fig-b.png" alt-text="Screenshot of easy proposal activation.":::
+:::image type="content" source="media/trade-desk-buying-guide-fig-b.png" alt-text="Screenshot of easy proposal activation for GAM, Magnite, Freewheel and Bidswitch.":::
 
 ## Deal workflow
 
@@ -55,7 +55,7 @@ Initiate the setting up of a campaign by clicking **+CAMPAIGN** button and enter
 
 1. Next, in **Flight Dates** page, enter the start and end date of the creative flight along with the Time Zone.
 
-   :::image type="content" source="media/trade-desk-buying-guide-fig-g.png" alt-text="Screenshot of Flight Dates page to enter the the start and end date of the creative flight along with the Time Zone.":::
+   :::image type="content" source="media/trade-desk-buying-guide-fig-g.png" alt-text="Screenshot of Flight Dates page entering start and end date of the creative flight along with the Time Zone.":::
   
 1. Next, in the Summary page, review the information entered and confirm the details.
 
@@ -85,7 +85,7 @@ Initiate the setting up of a campaign by clicking **+CAMPAIGN** button and enter
 
 1. Click the **+Ad Group** button and enter a name to your Ad Group. It is recommended to choose a unique name which differs from your other Ad Groups. Select the **Media Types**, **Device Types**, **Ad Environments** and specify the **Goal** and **Target** in the page. Click **Next**.
 
-   :::image type="content" source="media/trade-desk-buying-guide-fig-m.png" alt-text="Screenshot of click the +Ad Group button and entering a name to your Ad Group.":::
+   :::image type="content" source="media/trade-desk-buying-guide-fig-m.png" alt-text="Screenshot of clicking the +Ad Group button and entering a name to your Ad Group.":::
 
 1. Select your **Pacing** and **Flight Dates** and specify your budget for the flights. Enter the amount for your **Base bid** and **Max bid** and click **Next**.
 
