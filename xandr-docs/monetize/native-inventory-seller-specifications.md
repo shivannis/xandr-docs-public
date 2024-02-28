@@ -340,8 +340,8 @@ You can serve native creatives on Schibsted Norway's desktop, mobile web and mob
 | Website | Category | Desktop? | Tablet? | Smartphone? | Smartphone? | Smartphone?  | Preview URL |
 |---|---|---|---|---|---|---|---|
 |  |  |  | **Web** | **App** | **Web** | **App** |  |
-| [e24.no](https://e24.no/) | News | Y | Y | Y | Y | Y | **Desktop** - https://e24.no/?ast_override_div=ad-smartboard_1:Microsoft Advertising_creative_id <br> **Mobile web** -  https://e24.no/?ast_override_div=ad-board_3:APPNEXUS_CREATIVE_ID |
-| [vg.no](https://www.vg.no/) | News | Y | Y | Y | Y | Y | **Desktop** -  https://www.vg.no/?ast_override_div=ad-front-smartboard_1:Microsoft Advertising_creative_id<br>**Mobile web** - https://www.vg.no/?ast_override_div=ad-front-board_1:Microsoft Advertising_creative_id |
+| [e24.no](https://e24.no/) | News | Y | Y | Y | Y | Y | **Desktop** - `https://e24.no/?ast_override_div=ad-smartboard_1:Microsoft Advertising_creative_id` <br> **Mobile web** -  `https://e24.no/?ast_override_div=ad-board_3:APPNEXUS_CREATIVE_ID` |
+| [vg.no](https://www.vg.no/) | News | Y | Y | Y | Y | Y | **Desktop** -  `https://www.vg.no/?ast_override_div=ad-front-smartboard_1:Microsoft Advertising_creative_id`<br>**Mobile web** - `https://www.vg.no/?ast_override_div=ad-front-board_1:Microsoft Advertising_creative_id` |
 
 When you set up your targeting, you'll need to target **Schibsted Media
 Group (3296)** and the **domains** listed in the available inventory
@@ -432,8 +432,7 @@ Refer to Taboola's [Help Center](https://help.taboola.com/hc/en-us/categories/11
 
 **Contact Taboola**
 
-Reach out to your Taboola representative if you have any questions. If you do not have a Taboola rep, or would like to request more information - please send an email to
-[programmatic@taboola.com](mailto:programmatic@taboola.com).
+Reach out to your Taboola representative if you have any questions. If you do not have a Taboola rep, or would like to request more information - please send an email to [programmatic@taboola.com](mailto:programmatic@taboola.com).
 
 ### Tamedia
 
@@ -472,7 +471,7 @@ Reach out to your Taboola representative if you have any questions. If you do no
 | Attribute | Value |
 |---|---|
 | Member ID | 1578 |
-| Landing Page | www.web.de/www.gmx.de/www.1und1.de |
+| Landing Page | [www.web.de/www.gmx.de/www.1und1.de](www.web.de/www.gmx.de/www.1und1.de) |
 | Title | 25 character maximum (including spaces) |
 | Description | 45 character maximum (including spaces) |
 | Icon (sizes in pixels) | Not supported |
