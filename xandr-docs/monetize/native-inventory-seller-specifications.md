@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Native Inventory Seller Specifications
-description: The article explains how to use Native Inventory Seller Specifications, offering instructions for a global approach that allows you to reach all sellers at once with just one campaign.
+description: Explore using Native Inventory Seller Specs for a global approach. Reach all sellers at once with a single campaign for efficient advertising.
 ms.date: 10/28/2023
 ---
 
@@ -24,8 +24,7 @@ When you set up your line item or campaign you need to target your inventory to 
 
 Shown below are seller-specific guidelines and requirements that you must follow to serve on that seller's inventory. All sellers listed here use a **Type** of **Native**.
 
-If a parameter is not mentioned in the tables below, enter whatever values make sense for your line item or campaign. Any value entered in a field listed as "Not supported"
-will be ignored. For detailed information on additional fields and uploading a native creative see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md). You can also review our [Native Sell-Side Best Practices](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28%20Dec%202023/Sell-Side-Native-Best-Practices.pdf).
+If a parameter is not mentioned in the tables below, enter whatever values make sense for your line item or campaign. Any value entered in a field listed as "Not supported" will be ignored. For detailed information on additional fields and uploading a native creative see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md). You can also review our [Native Sell-Side Best Practices](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28%20Dec%202023/Sell-Side-Native-Best-Practices.pdf).
 
 > [!WARNING]
 > Do not use JavaScript piggyback pixels on native creatives. Only image pixels can be used on native creatives.
@@ -46,8 +45,7 @@ will be ignored. For detailed information on additional fields and uploading a n
 
 **Creative best practices**
 
-- **Evoke Emotion**: Associate your product or service with an emotion, i.e, Try to make the user recall memories or familiar and well-liked
-  situations.
+- **Evoke Emotion**: Associate your product or service with an emotion, i.e, Try to make the user recall memories or familiar and well-liked situations.
 - **Help users project themselves**: Show your product or service in action by giving priority to close-up pictures. Use visuals that are clear and visible. (no brand logo, no text)
 - **Tell a story**: Use context words with time, motion or insight. Make the user want to find out more; the more words, the more interactions.
 - **Create an independent headline**: Users must understand your headline regardless of the description.
@@ -98,11 +96,7 @@ will be ignored. For detailed information on additional fields and uploading a n
 | Call to Action Text | Not supported |
 | Sponsored By | Not supported |
 
-L'Agora native adspaces or widgets are displayed alongside page content,
-which provide superior interaction and engagement to traditional display
-advertising. As a buyer, when you set up a line item or
-campaign to buy L'Agora, you will be bidding on a slot within the
-widget.
+L'Agora native adspaces or widgets are displayed alongside page content, which provide superior interaction and engagement to traditional display advertising. As a buyer, when you set up a line item or campaign to buy L'Agora, you will be bidding on a slot within the widget.
 
 **Creative guidelines and best practices**
 
@@ -234,11 +228,9 @@ Mopub native ads match the look and feel of an app's user interface. Here are a 
 
 Nativo reserves the right (but has no obligation to) to decline to run or link to any advertiser-provided content, assets, products, services or campaign (or any component thereof) (collectively, the “Content”), without notice, in our sole discretion. This may include Content that does not follow federal or state law, FTC guidance, Nativo’s own brand guidelines (including these Content Guidelines), or publisher guidelines. These Content Guidelines are subject to change at any time.
 
-Nativo is not responsible for securing or enforcing the copyright, trademark or other intellectual property rights in any Content a client provides for distribution through a Nativo campaign. Further, all Content must reflect best practices in truth-in-advertising and consumer protection standards, as more specifically outlined in [Nativo Native Advertising Guidelines](https://www.nativo.com/native-advertising-guidelines-advertisers).
-For example, content must not be false, misleading, or deceptive, and an advertiser must have a reasonable basis to support all advertising claims in the Content.
+Nativo is not responsible for securing or enforcing the copyright, trademark or other intellectual property rights in any Content a client provides for distribution through a Nativo campaign. Further, all Content must reflect best practices in truth-in-advertising and consumer protection standards, as more specifically outlined in [Nativo Native Advertising Guidelines](https://www.nativo.com/native-advertising-guidelines-advertisers). For example, content must not be false, misleading, or deceptive, and an advertiser must have a reasonable basis to support all advertising claims in the Content.
 
-This is not an exhaustive list of prohibited or restricted content on the Nativo platform. This list does not constitute, and should not be used as a replacement for, legal advice. Each brand is solely responsible for determining the legality of its ad content. If you have any questions about legal issues related to your Content, including with
-respect to clearance obligations or Nativo truth-in-advertising requirements, you must consult your own legal counsel.
+This is not an exhaustive list of prohibited or restricted content on the Nativo platform. This list does not constitute, and should not be used as a replacement for, legal advice. Each brand is solely responsible for determining the legality of its ad content. If you have any questions about legal issues related to your Content, including with respect to clearance obligations or Nativo truth-in-advertising requirements, you must consult your own legal counsel.
 
 **Prohibited and restricted content**
 
@@ -367,12 +359,11 @@ table.
 | Sponsored By | - 40 character maximum<br> - Required: Must be the brand name |
 | Platform Audit (Creative Attributes tab) | Required |
 
-You can buy native inventory and promote sponsored content on premium websites using [Sharethrough](https://www.sharethrough.com/). The look and feel of Sharethrough's
-inventory, known as "widgets," are tailored to each partner on the Sharethrough network for a native experience. When you set up a line item or campaign to buy Sharethrough, you
+You can buy native inventory and promote sponsored content on premium websites using [Sharethrough](https://www.sharethrough.com/). The look and feel of Sharethrough's inventory, known as "widgets," are tailored to each partner on the Sharethrough network for a native experience. When you set up a line item or campaign to buy Sharethrough, you
 will be bidding on the in-feed space where your native ad will display.
 
 > [!NOTE]
-> Buyers can only buy on a CPM basis. 
+> Buyers can only buy on a CPM basis.
 
 You can preview your creative in the [Sharethrough Native Ad Generator](https://generator.sharethrough.com/dsp).
 
@@ -391,8 +382,7 @@ You can preview your creative in the [Sharethrough Native Ad Generator](https://
 | Platform Audit (Creative Attributes tab) | Required |
 | Video | - Media Type: MP4, MOV<br> - 3rd Party Tag Specifications: VAST 2.0, VAST 2.0 with VPAID 2.0 JS, VAST 3.0<br> - Video Size Limit: 150 MB<br> - Bit Rate: >=2500 kbps<br> - Video length: 6-30 seconds (preferred), 90 seconds maximum |
 
-[Taboola](https://taboola.com/) helps people discover what's interesting and new on the open web, by recommending products and services to consumers while they are in that
-discovery mind set. The look and feel of Taboola's Infeed Placements are customized to each partner on the Taboola network, to provide a seamless user experience.
+[Taboola](https://taboola.com/) helps people discover what's interesting and new on the open web, by recommending products and services to consumers while they are in that discovery mind set. The look and feel of Taboola's Infeed Placements are customized to each partner on the Taboola network, to provide a seamless user experience.
 
 **Benefits of buying programmatically from Taboola**
 
@@ -423,8 +413,7 @@ Taboola's inventory is exclusive via hard-coded placements through multi-year pu
 **Brand safety**
 
 - Control the placement and the content that surrounds your ad with a high impact unit available for both native display and video.
-- Ad Adjacency - Create a buffer between your ad placement and any other sponsored placement, surrounding your brand message by high, organic
-  content.
+- Ad Adjacency - Create a buffer between your ad placement and any other sponsored placement, surrounding your brand message by high, organic content.
 - Taboola maintains partnerships and integration with IAS, supporting MOAT and DoubleVerify.
 
 **Native creative best practices**
