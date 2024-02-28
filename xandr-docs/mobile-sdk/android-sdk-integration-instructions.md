@@ -59,7 +59,7 @@ There are several ways to get our SDK:
 > ```
 >
 
-- Check out the source code from [Github](https://github.com/appnexus/mobile-sdk-android) and follow the instructions in [Build the Android SDK From Source](build-the-android-sdk-from-source.md).
+<!-- - Check out the source code from [Github](https://github.com/appnexus/mobile-sdk-android) and follow the instructions in [Build the Android SDK From Source](build-the-android-sdk-from-source.md). -->
 
 ### Step 2. Edit app permissions (optional)
 

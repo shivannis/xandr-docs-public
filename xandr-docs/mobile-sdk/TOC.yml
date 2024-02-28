@@ -145,8 +145,8 @@
       #- name: Overview
         #href: android-sdk-integration.md
       
-      - name: Build the Android SDK From Source
-        href: build-the-android-sdk-from-source.md
+      #- name: Build the Android SDK From Source
+        #href: build-the-android-sdk-from-source.md
       - name: Android SDK Initialization v8.0
         href: android-sdk-initialization-v8-0.md
       - name: Android SDK Integrate Instructions
