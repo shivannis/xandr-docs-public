@@ -34,7 +34,7 @@ If a parameter is not mentioned in the tables below, enter whatever values make 
 | Attribute | Value |
 |---|---|
 | Member ID | 7664 |
-| Landing Page | [https://support.adyoulike.com/](https://support.adyoulike.com/) |
+| Landing Page | [https://www.adyoulike.com/](https://www.adyoulike.com/) |
 | Title | 60 character maximum |
 | Description | 200 character maximum |
 | Icon (sizes in pixels) | 300 pixels |
@@ -239,7 +239,7 @@ This is not an exhaustive list of prohibited or restricted content on the Nativo
 | **Prohibited Content** | The following types of Content are NOT permitted on the Nativo platform:<br> - Adult Content, Products, or Services<br> - Children under 13<br> - Dangerous Items<br> - Defamation and Libel<br> - “False News”<br> - Fear or Scare Tactics<br> - Free Streaming Sites<br> - “Get Rich Quick” Pyramid Schemes<br> - Hateful Content<br> - Herbal or Homeopathic Remedies<br> - Illegal Activity<br> - Illicit Drugs<br> - Illicit Drug Paraphernalia<br> - Name or Likeness of an Individual<br> - Online Poker/Gambling<br> - Pay Per Call (900 numbers)<br> - Politics & Religion<br> - Pregnancy and Fertility Related Products<br> - Psychics<br> - Replicas<br> - Sensitive Health Topics<br> - Spam and Mail Fraud<br> - Surveillance Equipment<br> - Tobacco<br> - Third-Party Rights Violation |
 | **Restricted Content** | The following types of Content will be flagged for further review by Nativo:<br> - Alcohol<br> - Brick and Mortar Gambling & Gaming<br> - Claim Substantiation<br> - Contraceptives<br> - Cryptocurrencies<br> - Dating Services<br> - Diamonds and Jewelry<br> - Endorsement and Testimonials<br> - Financial Services<br> - Green Products<br> - Loan companies<br> - Made in USA Products<br> - Online Pharmacies<br> - Pharmaceutical and Medical Procedures<br> - Political<br> - Profanity<br> - Rehab Providers<br> - State Lotteries<br> - Supplements<br> - Weight Loss Claims |
 
-Find more information on Nativo’s content guidelines, visit [Nativo Content Guidelines](https://www.nativo1.app.box.com/s/5nwqmw8tcwg86b8dc95c2yf1ssm59g5g).
+Find more information on Nativo’s content guidelines, visit [Nativo Content Guidelines](https://www.nativo.com/native-advertising-guidelines-advertisers).
 
 ### Outbrain
 
@@ -471,7 +471,7 @@ Reach out to your Taboola representative if you have any questions. If you do no
 | Attribute | Value |
 |---|---|
 | Member ID | 1578 |
-| Landing Page | [www.web.de/www.gmx.de/www.1und1.de](www.web.de/www.gmx.de/www.1und1.de) |
+| Landing Page | [https://web.de/](https://web.de/) |
 | Title | 25 character maximum (including spaces) |
 | Description | 45 character maximum (including spaces) |
 | Icon (sizes in pixels) | Not supported |
