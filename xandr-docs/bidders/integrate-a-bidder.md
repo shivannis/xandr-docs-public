@@ -652,7 +652,7 @@ $ curl -b cookies -X POST -d @create-bidder-instance.json $IB/bidder-instance/12
 
 - If you require an example of a bid request to use, your Xandr representative should be able to provide you with one. The supported bid request fields with examples can be found [here](./outgoing-bid-request-to-bidders.md).
 
-**User Sync**
+### User sync
 
 - In order to inform your bidding activity, we have methods for syncing your internal user IDs with Xandr's.
 - For our bidder partners, the norm is to use `/getuid`. More information on this service can be found here: [Synchronize Your User IDs](./synchronize-your-user-ids.md).
