@@ -18,7 +18,7 @@ Xandr uses Digital Envoy for its Country and Region data. The Digital Envoy code
 ## Region: US and Canada
 
 - ISO 3166-2
-- Note that for U.S. traffic, the region is equivalent to the U.S. postal state abbreviation codes (e.g. "AL", "AK", "AZ").
+- Note that for U.S. traffic, the region is equivalent to the U.S. postal state abbreviation codes (e.g. `"AL"`, `"AK"`, `"AZ"`).
 - At present, the designated market areas (such as NYC) are not being passed via the Region codes.
 
   `{"region":"US:TX","name":"Texas"}`
