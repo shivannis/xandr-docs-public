@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Offline Conversion Attribution
-description: The artcile helps you to know Offline Conversion Attribution that shifts all data processing for conversion tracking to their warehouse. 
+description: Explore Offline Conversion Attribution, shifting data processing for tracking to a centralized warehouse, streamlining insights.
 ms.date: 10/28/2023
 ---
 
