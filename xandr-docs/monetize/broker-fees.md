@@ -14,8 +14,7 @@ If you use standard line items, broker fees provide a way for Networks to calcul
 
 **Commissions:** Commissions are used on Line Items and Insertion Orders, and they are taken out of booked revenue (the amount that the advertiser pays to the Network.) They can either be a percentage of revenue or a flat CPM. Think of this as the Network paying out a portion of its cut from the advertiser.
 
-**Serving Fees:** Serving Fees are fees that a Network must pay in addition to media costs when serving an ad. These can be data costs or additional ad serving or
-creative hosting fees. They can either be a percentage of costs or a flat CPM. Think of this as the Network having other costs associated with acquiring the inventory.
+**Serving Fees:** Serving Fees are fees that a Network must pay in addition to media costs when serving an ad. These can be data costs or additional ad serving or creative hosting fees. They can either be a percentage of costs or a flat CPM. Think of this as the Network having other costs associated with acquiring the inventory.
 
 Microsoft Advertising does not physically handle broker fees: we don't collect money from Networks and pay out to third parties. But we want you to be able to run the business side of things as easily as possible on the platform.
 
