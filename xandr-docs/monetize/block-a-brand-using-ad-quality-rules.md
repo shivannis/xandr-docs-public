@@ -15,11 +15,11 @@ You may want to prevent certain brands from serving on your ad placements, wheth
 
 1. Decide whether to block brands for a member, publisher, or certain ad placements:
 
-  | Option | Steps |
-  |--|--|
-  | **Network-Level Block (blocks brands for all publishers)** | a. Select **Publishers > Ad Quality**.<br> b. Edit your **Network Template**. |
-  | **Publisher-Level Block (blocks brands for a single publisher)** | a. Select **Publishers > Ad Quality**.<br> b. Choose the publisher for which you want a brand blocked. Then, create or edit a base rule. |
-  | **Placement-Level Block (blocks brands for certain ad placements)** | a. Select **Publishers > Ad Quality**.<br> b. Choose the publisher for which you want a brand blocked. Then create or edit a conditional rule.<br> c. Navigate to the **Inventory Targeting** tab and select the desired placements or placement groups in the **Inventory Targeting** menu under **Profile Targeting Information**. <br> For more information on conditional rule targeting, see [Base and Conditional Rules](base-and-conditional-rules.md). |
+   | Option | Steps |
+   |--|--|
+   | **Network-Level Block (blocks brands for all publishers)** | a. Select **Publishers > Ad Quality**.<br> b. Edit your **Network Template**. |
+   | **Publisher-Level Block (blocks brands for a single publisher)** | a. Select **Publishers > Ad Quality**.<br> b. Choose the publisher for which you want a brand blocked. Then, create or edit a base rule. |
+   | **Placement-Level Block (blocks brands for certain ad placements)** | a. Select **Publishers > Ad Quality**.<br> b. Choose the publisher for which you want a brand blocked. Then create or edit a conditional rule.<br> c. Navigate to the **Inventory Targeting** tab and select the desired placements or placement groups in the **Inventory Targeting** menu under **Profile Targeting Information**. <br> For more information on conditional rule targeting, see [Base and Conditional Rules](base-and-conditional-rules.md). |
 
 1. Navigate to the **Settings** tab and select **Brands**.
 1. In the **Brands** section, search for brands to block.
