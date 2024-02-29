@@ -9,8 +9,7 @@ ms.custom: digital-platform-api
 
 A network may want to create "ad approval profiles" to define what kinds of brands and creatives can and cannot run on their publishers' pages. The Ad Profile Service lets you create your ad approval profiles at the member level or the publisher level. To create them at the publisher level, include a publisher ID. If no publisher ID is included, it will be a network-level profile available for use with all publishers.
 
-Ad profiles consist of several elements: members, brands, creatives, language, technical attributes, categories, and ad servers. When
-creating an ad profile, you can approve or ban each creative in the system individually, but you may prefer to save time by approving or
+Ad profiles consist of several elements: members, brands, creatives, language, technical attributes, categories, and ad servers. When creating an ad profile, you can approve or ban each creative in the system individually, but you may prefer to save time by approving or
 banning entire brands or members.
 
 - **A member should be trusted:** If you believe their ads will always be acceptable. For instance, you may "trust" Network A to run quality ads, so you can mitigate the need to audit each of their creatives.
@@ -19,7 +18,7 @@ banning entire brands or members.
 - The default profile (blank or ID set to 0) will ban unaudited ads from other members (i.e. where the `member_id` of the creative is different than the `member_id` of the TinyTag).
 
 > [!NOTE]
-> A brand can have a Parent Brand, as a way of gathering brands by parent company/ child company. If a seller blocks/approves a parent brand, all child brands without an \*explicit \*approve/block setting will match the parent brand setting.
+> A brand can have a Parent Brand, as a way of gathering brands by parent company/ child company. If a seller blocks/approves a parent brand, all child brands without an \*explicit\* approve/block setting will match the parent brand setting.
 
 ## REST API
 
@@ -154,7 +153,7 @@ banning entire brands or members.
 ## Examples
 
 > [!WARNING]
-> **Append on PUT**
+> **Append on `PUT`**
 >
 > You will overwrite existing data with the contents of your `PUT` request unless you add the query string parameters `append=true` to the request. For more information, see [API Semantics](api-semantics.md) and the example **Update an existing ad profile** below.
 
@@ -223,8 +222,7 @@ $ cat ad_profile
 
 Given the ad profile JSON in the first example, let's say you want to update the `categories` array to include another item. In a real-world use case there might be 47 categories in the array. The semantics of `PUT` mean that in order to add another category to the array, you'll need to pass in all 47 of the existing categories plus the new one.
 
-You can avoid this extra work by adding the query string parameters `append=true` to your request as shown in the example below. (For
-backwards compatibility reasons the parameters `append_only=true` will also work.)
+You can avoid this extra work by adding the query string parameters `append=true` to your request as shown in the example below. For backwards compatibility reasons the parameters `append_only=true` will also work.
 
 ```
 $ cat ad-profile-update.json
@@ -412,7 +410,7 @@ $ curl -b cookies -c cookies -X PUT --data-binary @add_freq_cap_rule.json "https
 }
 ```
 
-#### The ad profile will now have the frequency cap rule
+#### Ad profile will now have the frequency cap rule
 
 ```
 $ curl -b cookies -c cookies -X GET "https://sand.api.appnexus.com/ad-profile?id=199943"
