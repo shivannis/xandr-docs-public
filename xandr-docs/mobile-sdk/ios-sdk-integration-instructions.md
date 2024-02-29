@@ -95,11 +95,11 @@ If you are unfamiliar with Carthage review their [installation and user guides]
 1. Download and unzip or clone the latest release of our SDK from our [Github Release](https://github.com/appnexus/mobile-sdk-ios/releases/latest) page.
 1. Once the source from Github is downloaded, link the **AppNexusSDK.Xcodeproj** in your **Xcode project**.
 1. Open the app’s Xcode project or workspace. Right click on Project and click on **Add Files to "Project Name**".
-   <!--:::image type="content" source="media/ios-sdk-integration-instructions-a.png" alt-text="Screenshot of Add files to Project screen.":::-->
-<!-- 1. Go to AppNexusSDK project folder and select the **AppNexusSDK.Xcodeproj**. Make sure to select **Copy items if needed** and select **Add**.
-   <!--:::image type="content" source="media/ios-sdk-integration-instructions-b.png" alt-text="Screenshot of the project folder.":::-->
-<!-- 1. Click **Link Binary With Libraries** (Target-&gt;General-&gt;Link Binary With Libraries) and select **AppNexusSDK.framework**.-->
-   <!--:::image type="content" source="media/ios-sdk-integration-instructions-c.png" alt-text="Screenshot of Link Binary with Libraries screen.":::
+  :::image type="content" source="media/ios-sdk-integration-instructions-a.png" alt-text="Screenshot of Add files to Project screen.":::
+1. Go to AppNexusSDK project folder and select the **AppNexusSDK.Xcodeproj**. Make sure to select **Copy items if needed** and select **Add**.
+   :::image type="content" source="media/ios-sdk-integration-instructions-b.png" alt-text="Screenshot of the project folder.":::
+1. Click **Link Binary With Libraries** (Target-&gt;General-&gt;Link Binary With Libraries) and select **AppNexusSDK.framework**.
+   :::image type="content" source="media/ios-sdk-integration-instructions-c.png" alt-text="Screenshot of Link Binary with Libraries screen.":::
 
    :::image type="content" source="media/ios-sdk-integration-instructions-d.png" alt-text="Screenshot of the library selected from the drop-down menu."::: -->
 
