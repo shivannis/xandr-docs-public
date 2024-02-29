@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Non-prebid integrations with PSP
 
-Prebid Server Premium (PSP) primarily supports integrations via `Prebid.js` for web/mobile web and Prebid Mobile SDK for in-app inventory.
+Prebid Server Premium (PSP) primarily supports integrations via [Prebid.js for web/mobile web](./integrate-web-mobile-web-with-psp.md) and [Prebid Mobile SDK for in-app inventory](./integrate-apps-with-psp.md).
 
 If those integration methods are not feasible, and **Prebid key values are not needed** for PSP demand to compete in the ad server's auction, then you can use the SSP customer's existing integration into Microsoft Advertising instead:
 
