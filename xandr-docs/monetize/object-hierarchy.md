@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Object Hierarchy
-description: The article helps you to explore key media transaction elements, simplifying buying and selling processes.
+description: Explore vital media transaction elements, streamlining buying/selling with key objects for efficient transactions.
 ms.date: 10/28/2023
 ---
 
@@ -31,6 +31,7 @@ The following image illustrates the augmented line item.
 ## Network
 
 The [Network](network-guide.md) represents your account as a whole. At this level:
+
 - You decide who's eligible to sell to you and what level of inventory audit you require [seller settings](set-seller-defaults.md).
 - You create lists of domains and apps for efficient allowlist or blocklist targeting in campaigns [targeting lists](working-with-targeting-lists.md).
 - You put in place a cap on how much you are willing to spend per day on third-party inventory [safety budget](capping-daily-spend-on-third-party-inventory-safety-budget.md) and more.

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - OTT Video Creative Specifications
-description: The article delves into the technical specifications of Over-the-Top (OTT) videos, focusing on the requirements for premium digital content.
+description: Explore technical specifications of Over-the-Top (OTT) videos, focusing on the requirements for premium digital content.
 ms.date: 10/28/2023
 ---
 
@@ -20,8 +20,7 @@ VPAID is not supported for OTT placements, and FLV, WebM and VPAID media types w
 
 ## OTT video creative limitations
 
-- Viewability reporting is not supported for OTT creatives. However, impression, quartile, and completion tracking are available. For more information, see
-  [Measurement of Video Viewability using VPAID Wrapper](video-viewability.md).
+- Viewability reporting is not supported for OTT creatives. However, impression, quartile, and completion tracking are available. For more information, see [Measurement of Video Viewability using VPAID Wrapper](video-viewability.md).
 - Do not include segment pixels in your inline VAST code, because they will not load in the SDK.
 - To use creatives of a different duration than 15 or 30 seconds, reach out to the publisher.
 
