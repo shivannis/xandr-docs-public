@@ -1,6 +1,6 @@
 ---
 title: Explore Trader Home
-description: The articles helps you to explore trader home which is available to a limited set of clients.
+description: Explore limited-access Trader Home, showcasing insertion order metrics and facilitating quick access to details and child line items.
 ms.date: 10/28/2023
 ---
 

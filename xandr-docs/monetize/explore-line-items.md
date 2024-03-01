@@ -1,6 +1,6 @@
 ---
 title: Explore Line Items
-description: Show metrics, alerts, quick details access, and enable bulk editing on Line Items screen for advertisers and campaigns. 
+description: Explore streamlined management for advertisers and publishers on the Line Items screen. Access metrics, alerts, and bulk editing options effortlessly.
 ms.date: 10/28/2023
 ---
 
@@ -20,7 +20,7 @@ Things you can do on this page include:
 
 To get to the line items screen:
 
-- Select **Advertisers >  Line Items** from the navigation menu at the top of the screen.
+- Select **Advertisers** >  **Line Items** from the navigation menu at the top of the screen.
 
   or
 
@@ -28,7 +28,7 @@ To get to the line items screen:
 
 Publisher users can:
 
-- Select **Orders >  Line Items** from the navigation menu at the top of the screen.
+- Select **Orders** >  **Line Items** from the navigation menu at the top of the screen.
 
   or
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Engagement Metrics Report
-description: Explore Microsoft Advertising Publisher Adserver's Engagement Metrics report, revealing ad viewability details and addressing measurement challenges.
+description: Explore Microsoft Advertising Publisher Adserver's Engagement Metrics; unveil ad viewability insights, addressing measurement challenges.
 ms.date: 10/28/2023
 ---
 

@@ -10,7 +10,7 @@ The Advertisers screen is a management screen that shows you essential metrics a
 
 ## Managing advertisers
 
-- To reach the **Advertisers** screen, select **Advertisers >  Advertisers** in the menu bar.
+- To reach the **Advertisers** screen, select **Advertisers** >  **Advertisers** in the menu bar.
 - To edit an advertiser, hover over the row for the advertiser you want to edit and then click the pencil icon.
 - To activate or deactivate an advertiser, check the box for each advertiser you want to activate or deactivate and click **Activate** or **Deactivate**.
 - To delete an advertiser, check the box next to each advertiser you want to delete and click **Delete**.

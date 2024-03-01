@@ -30,8 +30,7 @@ To get to the insertion orders screen, so one of the following:
 
 ### Filtering by status
 
-The selector dropdown at the top of the screen lets you filter for insertion orders based on status. You can choose to view only **Active** advertisers or **Inactive** advertisers,
-or to view **All** advertisers.
+The selector dropdown at the top of the screen lets you filter for insertion orders based on status. You can choose to view only **Active** advertisers or **Inactive** advertisers, or to view **All** advertisers.
 
 ### Filter Sidebar
 

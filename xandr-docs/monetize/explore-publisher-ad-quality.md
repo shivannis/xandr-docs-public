@@ -1,6 +1,6 @@
 ---
 title: Explore Publisher Ad Quality
-description: The article details the Publisher Ad Quality screen, showcasing network-level ad settings including Network Profile, Publisher Templates and so on.
+description: Explore Publisher Ad Quality screen, highlighting network ad settings like Network Profile, Publisher Templates, and so on.
 ms.date: 10/28/2023
 
 ---

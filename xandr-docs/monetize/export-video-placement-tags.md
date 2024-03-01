@@ -1,6 +1,6 @@
 ---
 title: Export Video Placement Tags
-description: The article outlines the video placement tags. You can modify the tag options or can generate the tags. 
+description: Explore video placement tags, modify the tag options, generate tags for effective content placement.
 ms.date: 10/28/2023
 ---
 

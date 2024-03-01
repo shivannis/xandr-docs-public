@@ -18,7 +18,7 @@ Things you can do on this page include: - Use filters to quickly identify line i
 
 To get to the line items screen:
 
-- Select **Advertisers >  Line Items** from the navigation menu at the top of the screen,
+- Select **Advertisers** >  **Line Items** from the navigation menu at the top of the screen,
 
   or
 
@@ -27,7 +27,7 @@ To get to the line items screen:
 
   Publisher users can:
 
-- Select **Orders >  Line Items** from the navigation menu at the top of the screen
+- Select **Orders** >  **Line Items** from the navigation menu at the top of the screen
 
   or
 
@@ -304,7 +304,7 @@ For instructions on creating a guaranteed delivery line item, see [Create a Guar
 
 ## Activate/deactivate line items
 
-You can activate or deactivate one or more line items directly from the **Line Items** screen. Check the box next to each line item that you want to activate or deactivate and click **Actions >  Activate** or **Actions >  Deactivate**.
+You can activate or deactivate one or more line items directly from the **Line Items** screen. Check the box next to each line item that you want to activate or deactivate and click **Actions** >  **Activate** or **Actions** >  **Deactivate**.
 
 When you deactivate a line item, the line item will typically stop serving within 10 - 15 seconds, with a maximum wait time of approximately 60 seconds.
 
