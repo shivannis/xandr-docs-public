@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Buying Microsoft Casual Games (Windows O&O Apps)
-description: This page lists Microsoft Casual Games that you can buy. Get an overview on the Home screen, Sub screens, Game play and game completion screens and the Menu screens of these games.
+description: This page lists Microsoft Casual Games that you can buy. Get an overview on the Home screen, Sub screens, Game play and game completion screens and the Menu screens of these games in this page.
 ms.date: 10/28/2023
 ---
 
@@ -98,8 +98,7 @@ Classic puzzle gaming with exciting new features, Microsoft Treasure Hunt builds
 
 :::image type="content" source="media/treasuremain.png" alt-text="Screenshot of Main menu screen in Microsoft Treasure Hunt.":::
 
-**Game play and game completion sacreens** - Above the fold, right side
-of screen
+**Game play and game completion sacreens** - Above the fold, right side of screen
 
 :::image type="content" source="media/treasuregame.png" alt-text="Screenshot of Game play and game completion sacreens in Microsoft Treasure Hunt.":::
 

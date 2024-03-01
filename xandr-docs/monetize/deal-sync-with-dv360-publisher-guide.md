@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize -  Publisher Guide for Deal Sync with DV360 
-description: Learn all about Microsoft Advertising's integration with the Display Video 360 (DV360) Seller API in this page. This page also lists best practices to be followed during deal set up.
+description: Learn all about Microsoft Advertising's integration with the Display Video 360 (DV360) Seller API in this page. This page also covers steps in deal creation and best practices to be followed during deal set up.
 ms.date: 10/28/2023
 ---
 
@@ -29,7 +29,7 @@ The key benefits of using an automatic synchronization process are:
 
 New seat ID deals created in the Microsoft Monetize UI automatically get uploaded to DV360 systems for buyer acceptance, as shown here:
 
-:::image type="content" source="media/publisher-a.png" alt-text="Screenshot of New seat ID deals created in the Microsoft Monetize UI.":::
+:::image type="content" source="media/publisher-a.png" alt-text="Screenshot of New Seat ID deals created in the Microsoft Monetize UI.":::
   
 **Deal update**
 

@@ -1,6 +1,6 @@
 ---
 title: Default PSAs
-description: Learn how Microsoft Advertising serves Default public service announcement creatives (PSAs or PSA creatives) to prevent serving blanks. Go through some example PSAs in this page. 
+description: Learn how Microsoft Advertising serves Default public service announcement creatives (PSAs or PSA creatives) to prevent serving blanks. Also, this page covers some example PSAs. 
 ms.date: 10/28/2023
 ---
 
@@ -14,7 +14,7 @@ Default public service announcement creatives (PSAs or PSA creatives) are actual
 > [!NOTE]
 > **About Flagged Impressions**
 >
->In the past, filtered impressions on inventory flagged as violating platform standards would serve blanks. Now, these impressions follow seller preferences for impressions with no demand. As with all impressions that follow this workflow, sellers will be charged the applicable fee.
+> In the past, filtered impressions on inventory flagged as violating platform standards would serve blanks. Now, these impressions follow seller preferences for impressions with no demand. As with all impressions that follow this workflow, sellers will be charged the applicable fee.
 
 Default PSAs are ads intended for general audiences that Microsoft Advertising serves for various causes and nonprofit organizations at no cost in order to prevent serving a blank when there is no other creative to serve.
 

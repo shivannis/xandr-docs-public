@@ -253,8 +253,8 @@ To add a new serving fee:
 1. Select the **Fee Type** (CPM or Cost Share) and enter the relevant **Fee Value** (dollar amount for CPM, percentage for Revenue Share).
 1. Click **Add**.
 
-> [!IMPORTANT]
-> Per broker, you can add no more than one CPM serving fee and one Cost Share serving fee.
+   > [!IMPORTANT]
+   > Per broker, you can add no more than one CPM serving fee and one Cost Share serving fee.
 
 ## Step 13. Review and save your campaign
 

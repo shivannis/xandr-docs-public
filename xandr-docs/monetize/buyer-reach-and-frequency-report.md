@@ -82,7 +82,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Estimated People (**currently available in the US only**) | The estimated number of people reached, deduplicated across the user-specified dimensions.<br>**Note**: Microsoft Advertising has built a probabilistic data science model to estimate people reach, which is a new metric available in this report. This model considers the unique devices reached at the zip code level, and utilizes publicly available US census data for the total population of each zip code, in order to estimate the number of people reached for that zip code. This zip code level data is then aggregated when a report is pulled in Microsoft Advertising Monetize so that the buyer can view it at any level of granularity that is provided by the existing dimensions in the report. |
 | Identified Imps | The total number of impressions that included a cookie, device id, or other identifier as part of the ad request. |
 | Imps | The total number of impressions. |
-| Unidentified Imps | The total number of impressions (i.e. those impressions that did not include a cookie, device id, or other identifier as part of the ad request. |
+| Unidentified Imps | The total number of impressions i.e. those impressions that did not include a cookie, device id, or other identifier as part of the ad request. |
 | Unique Devices | The total number of unique cookies, mobile or other devices reached by the impressions |
 
 > [!NOTE]
@@ -92,8 +92,7 @@ Intervals determine how your data is grouped together into rows in the report re
 
 Follow these steps to run your report.
 
-1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    1. Or, from the Publishers top menu, click on **Prebid Server Premium**\> **Analytics** \> **Prebid Server Analytics**
+1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured), or, from the Publishers top menu, click on **Prebid Server Premium**\> **Analytics** \> **Prebid Server Analytics**.
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
     > [!IMPORTANT]

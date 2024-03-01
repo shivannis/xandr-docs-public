@@ -60,7 +60,7 @@ Intervals determine how your data is grouped together into rows in the report re
 
 ## Dimensions
 
-| Column | Filter? | Description |  
+| Column | Filter? | Description |  |
 |--|--|--|
 | Advertiser | Yes | The advertiser that purchased the impression. |
 | Advertiser Code | No | The external ID of the advertiser. |
