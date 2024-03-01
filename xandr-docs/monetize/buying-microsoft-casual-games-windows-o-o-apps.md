@@ -98,9 +98,9 @@ Classic puzzle gaming with exciting new features, Microsoft Treasure Hunt builds
 
 :::image type="content" source="media/treasuremain.png" alt-text="Screenshot of Main menu screen in Microsoft Treasure Hunt.":::
 
-**Game play and game completion sacreens** - Above the fold, right side of screen
+**Game play and game completion screens** - Above the fold, right side of screen
 
-:::image type="content" source="media/treasuregame.png" alt-text="Screenshot of Game play and game completion sacreens in Microsoft Treasure Hunt.":::
+:::image type="content" source="media/treasuregame.png" alt-text="Screenshot of Game play and game completion screens in Microsoft Treasure Hunt.":::
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
@@ -123,27 +123,27 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 > [!NOTE]
 > 728x90 only available on Windows 10.
 
-| Microsoft Minesweeper |  |  |  |  |  |
+| Microsoft Minesweeper | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |--|--|--|--|--|--|
 | Windows Desktop PCs & Tablets | X |  |  |  |  |
 
-| Microsoft Jigsaw |  |  |  |  |  |
+| Microsoft Jigsaw |300x250  | 728x90 | 300x600 | 480x80 | 320x50 |
 |--|--|--|--|--|--|
 | Windows Desktop PCs & Tablets | X |  |  |  |  |
 
-| Microsoft Sudoku |  |  |  |  |  |
+| Microsoft Sudoku | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |--|--|--|--|--|--|
 | Windows Desktop PCs & Tablets | X |  |  |  |  |
 
-| Microsoft Mahjong |  |  |  |  |  |
+| Microsoft Mahjong | 300x250 | 728x90 | 300x600 |  480x80 | 320x50 |
 |--|--|--|--|--|--|
 | Windows Desktop PCs & Tablets | X | X |  |  |  |
 
-| Microsoft Treasure Hunt |  |  |  |  |  |
+| Microsoft Treasure Hunt | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |--|--|--|--|--|--|
 | Windows Desktop PCs & Tablets | X |  | X |  |  |
 
-| Microsoft Ultimate Word Game |  |  |  |  |  |
+| Microsoft Ultimate Word Game | 300x250 | 728x90 | 300x600  | 480x80 | 320x50 |
 |--|--|--|--|--|--|
 | Windows Desktop PCs & Tablets | X | X |  |  |  |
 
