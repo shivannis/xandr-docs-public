@@ -13,12 +13,12 @@ Once the advertiser is properly configured, we can begin building out the sell-s
 
 In order to start the hierarchy, an insertion order must be created first. For any insertion order, you should supply the following details:
 
-- Advertiser ID ("advertiser_id").
-- Name ("name").
-- Flight dates ("start_date" and "end_date") - **Optional**.
-- Budget ("lifetime_budget", "lifetime_budget_imps", "daily_budget", "daily_budget_imps") - **Optional**.
-- Pacing ("enable_pacing") - **Optional**.
-- Currency ("currency") - **Optional (default set at advertiser level)**.
+- Advertiser ID (`"advertiser_id"`).
+- Name (`"name"`).
+- Flight dates (`"start_date"` and `"end_date"`) - **Optional**.
+- Budget (`"lifetime_budget"`, `"lifetime_budget_imps"`, `"daily_budget"`, `"daily_budget_imps"`) - **Optional**.
+- Pacing (`"enable_pacing"`) - **Optional**.
+- Currency (`"currency"`) - **Optional (default set at advertiser level)**.
 
 ### Insertion order example
 
@@ -92,14 +92,14 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/insertion-order?id=53&adv
 
 The next level of the hierarchy is to set up the line item. The line item must be associated with an insertion order or it will not serve. For any line item, you should supply the following details:
 
-- Advertiser ID ("advertiser_id").
-- Name ("name").
-- Flight dates ("start_date" and "end_date") - **Optional**.
-- Budget ("lifetime_budget", "lifetime_budget_imps", "daily_budget", "daily_budget_imps") - **Optional**.
-- Pacing ("enable_pacing") - **Optional**.
-- Currency ("currency") - **Optional (default set at advertiser or insertion order level)**.
-- Revenue ("revenue_type", "revenue_value" and "pixels").
-- Insertion order ID ("insertion_orders\[{id}\]").
+- Advertiser ID (`"advertiser_id"`).
+- Name (`"name"`).
+- Flight dates (`"start_date"` and `"end_date"`) - **Optional**.
+- Budget (`"lifetime_budget"`, `"lifetime_budget_imps"`, `"daily_budget"`, `"daily_budget_imps"`) - **Optional**.
+- Pacing (`"enable_pacing"`) - **Optional**.
+- Currency (`"currency"`) - **Optional (default set at advertiser or insertion order level)**.
+- Revenue (`"revenue_type"`, `"revenue_value"`, and `"pixels"`).
+- Insertion order ID (`"insertion_orders[{id}]"`).
 
 ## Line item example
 

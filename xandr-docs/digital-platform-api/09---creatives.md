@@ -20,9 +20,9 @@ For any campaign to serve, it must have valid creatives associated with it. All 
 
 ## HTML and JavaScript returned by a URL
 
-HTML or JavaScript returned by a URL ("format" values of "url-html" and "url-js", respectively) are relatively straight-forward formats to use for creatives. Generally, URLs do not contain characters that would normally conflict the JSON syntax. Registering creatives of this format is relatively straightforward. Refer to the example below for the "url-html" format. The "url-js" format is very similar, so a single example is presented.
+HTML or JavaScript returned by a URL (`"format"` values of `"url-html"` and `"url-js"`, respectively) are relatively straight-forward formats to use for creatives. Generally, URLs do not contain characters that would normally conflict the JSON syntax. Registering creatives of this format is relatively straightforward. Refer to the example below for the `"url-html"` format. The `"url-js"` format is very similar, so a single example is presented.
 
-### Example for the "url-html" format
+### Example for the `"url-html"` format
 
 Make a file containing JSON and add the correct values. Necessary fields include format, width, height, audit status, and media URL.
 
@@ -171,7 +171,7 @@ $ curl -b cookies -c cookies -X POST --data-binary @creative 'https://api.appnex
 
 ## Raw HTML and JavaScript
 
-Raw HTML and JavaScript  (`"format"` values of `"raw-html"` and `"raw-js"`, respectively) can be complicated by certain characters within the HTML or JavaScript which will conflict with the JSON syntax. All special characters, double-quotes in particular, should be `"escaped"` with a backslash ("\\). The example below shows how to upload a simple HTML creative.
+Raw HTML and JavaScript  (`"format"` values of `"raw-html"` and `"raw-js"`, respectively) can be complicated by certain characters within the HTML or JavaScript which will conflict with the JSON syntax. All special characters, double-quotes in particular, should be `"escaped"` with a backslash ("\\"). The example below shows how to upload a simple HTML creative.
 
 > [!NOTE]
 > Any line returns must be encoded as "\r\n" since including actual line returns results in invalid JSON syntax.
@@ -278,8 +278,7 @@ $ cat campaign
 
 ### Creative service
 
-To associate a creative to multiple campaigns, `PUT` a request to the creative service, updating `"campaigns"` field. The example below
-illustrates the syntax.
+To associate a creative to multiple campaigns, `PUT` a request to the creative service, updating `"campaigns"` field. The example below illustrates the syntax.
 
 > [!NOTE]
 > The API call has been abbreviated for readability.

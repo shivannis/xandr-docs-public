@@ -48,7 +48,7 @@ The next (and last) level of the hierarchy is to set up the placement. For any p
 
 - Publisher ID (`"publisher_id"`).
 - Site ID (`"site_id"`).
-- Size (`"width"` and `"height"`) - **Optional (leaving these parameters out will create a "sizeless" tag)**.
+- Size (`"width"` and `"height"`) - **Optional (leaving these parameters out will create a `"sizeless"` tag)**.
 - Ad Profile ID (`"ad_profile_id"`).
 - Allow Reselling (`"exclusive"`) - **Optional (setting this to true will disable reselling)**.
 
