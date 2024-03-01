@@ -40,13 +40,12 @@ The following buying strategies work for buying third party inventory that utili
 
   - **CPA/CPC booked revenue** With this method, the system applies the desired margin, then applies optimization to achieve that predicted goal. **Example:** If you select a 60% margin of booked revenue and the line item booked revenue is $10 CPA, the system optimizes to achieve a $4 CPA goal.
 
-    This strategy requires the line item booked revenue to be a known value. It is not possible to optimize to a % margin of booked revenue if it is set as Cost Plus, or if booked revenue is not being tracked.
+     This strategy requires the line item booked revenue to be a known value. It is not possible to optimize to a % margin of booked revenue if it is set as Cost Plus, or if booked revenue is not being tracked.
 
 - **Pay on a Per-click (CPC) basis or Pay on a Per-conversion (CPA) basis** When choosing a Cross Net CPC/CPA bidding strategy, the user must specify what they are willing to pay per conversion (CPA) and/or per click (CPC). The optimization algorithm then uses this value to calculate a **CPM** bid. This payment type is only accepted by Microsoft Advertising sellers who choose to enable this payment method, so selecting this buying strategy exclusively limits the inventory available for a campaign.
   
    > [!NOTE]
-   > The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategy is being deprecated soon. Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, use the Performance Goals section on your line item (**Create New Line Item**  \>  **Basic Settings** \>  **Performance Goals**
-   >  or **Edit Line Item**  \>  **Basic Settings**  \>  **Performance Goals**) to set a CPC or CPA performance goal. Then use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
+   > The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategy is being deprecated soon. Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, use the Performance Goals section on your line item (**Create New Line Item**  \>  **Basic Settings** \>  **Performance Goals** or **Edit Line Item**  \>  **Basic Settings**  \>  **Performance Goals**) to set a CPC or CPA performance goal. Then use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
    >
    > For more information, see [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md).
    >

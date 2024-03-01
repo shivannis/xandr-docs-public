@@ -1,6 +1,6 @@
 ---
 title: Onboarding Mobile Supply
-description: The article defines mobile supply integration via ad calls, detailing supported integrations, including supply type and query parameters.
+description: Explore mobile supply integration via ad calls, detailing supported integrations, including supply type and query parameters.
 ms.date: 10/28/2023
 ---
 

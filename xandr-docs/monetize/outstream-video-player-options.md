@@ -60,8 +60,7 @@ the video playback has completed.
 These settings determine how the video player handles video documents that use VPAID.
 
 > [!NOTE]
-> When a VPAID ad reaches its final frame, the Outstream player hides the control bar, and does not display a replay button. This behavior prevents any potential conflicts with
-> interactive end screen elements supplied by VPAID. The player handles all VPAID ads this way, regardless of the configuration specified in Monetize or in page-level Outstream settings.
+> When a VPAID ad reaches its final frame, the Outstream player hides the control bar, and does not display a replay button. This behavior prevents any potential conflicts with interactive end screen elements supplied by VPAID. The player handles all VPAID ads this way, regardless of the configuration specified in Monetize or in page-level Outstream settings.
 
 | Option | Values | Default | Description |
 |---|---|---|---|
