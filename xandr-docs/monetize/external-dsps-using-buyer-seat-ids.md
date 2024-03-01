@@ -1,9 +1,6 @@
 ---
 title: Microsoft Monetize - External DSPs Using Buyer Seat IDs
-<<<<<<< HEAD
 description: Explore the DSP eligibility, verify Buyer Seat IDs, confirm migration status, and ensure correct Microsoft Ads member IDs for ineligible seats.
-=======
->>>>>>> 7e02a5822df23c13799ecaf78cca873d8ce7e2a3
 ms.date: 10/28/2023
 ---
 
