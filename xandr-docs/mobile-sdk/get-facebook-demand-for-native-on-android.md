@@ -156,7 +156,7 @@ NativeAdSDK.registerTracking(response, adView, clickableViews, new NativeAdEvent
 });
 ```
 
-## Access the original native object
+### Access the original native object
 
 Publishers can access the original native object through the `getNativeElements` method:
 

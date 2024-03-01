@@ -45,7 +45,7 @@ adview.setInventoryCodeAndMemberID(int memberID, String inventoryCode)
 ```
 
 > [!NOTE]
-> As best practices :
+> As best practices:
 >
 > - All SDK methods must be called on the main thread.
 > - `activityOnDestroy()` must be called for the Interstitial that is expected to be destroyed.
@@ -139,7 +139,7 @@ test_array_list.add(test_size2);
 iav.setAllowedSizes(test_array_list);
 ```
 
-## Auto-Close an interstitial
+## Auto-close an interstitial
 
 If you want to auto-close an interstitial ad after a specific timeout period, do not call `show()` as described in the above sections. Instead call `showWithAutoDismissDelay(delayinseconds)`, where `delayinseconds` is the number of seconds the ad will be displayed before it closes.
 

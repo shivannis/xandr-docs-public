@@ -31,7 +31,7 @@ The interstitial code samples below show how to request ads using the placement 
 > Beginning with version RC2.8, you can initialize interstitials using a combination of member ID and inventory code instead of placement ID though it is still supported. Here is the method that shows the initialization using inventory code and member ID:
 
 ```
-> // iOS: ObjC code that uses inventory code and member ID instead of placement ID (optional)
+// iOS: ObjC code that uses inventory code and member ID instead of placement ID (optional)
 -(instancetype)initWithMemberId:(NSInteger)memberId inventoryCode:(NSString *)inventoryCode;
  
 ```
@@ -107,7 +107,7 @@ By default, if you don't specify an ad size, the SDK will fetch ads in any of th
 
 If you want to show interstitial ads in sizes other than the defaults, set the `allowedAdSizes` property on the `ANInterstitialAd`. Note that the detected size of the screen will still be passed as the main size. The sizes set using the `allowedAdSizes` property will be passed in as `promo_sizes` on the placement and will replace the defaults of 300x250 and 320x480.
 
-## Auto-Close an interstitial
+## Auto-close an interstitial
 
 If you want to auto-close an interstitial ad after a specific timeout period, do not call `displayAdFromViewController` as described in the above sections. Instead,call `displayAdFromViewController:(UIViewController *)controller autoDismissDelay:(NSTimeInterval)delay`. The following examples sets the number of seconds the interstitial is displayed before it is closed to 10 seconds.
 

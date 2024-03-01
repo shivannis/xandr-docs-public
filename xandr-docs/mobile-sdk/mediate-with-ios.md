@@ -85,7 +85,7 @@ To handle AdMob native ads, you need to:
     >  <true/>
     > ```
 
-1. Set up the custom keyword
+1. Set up the custom keyword.
 
     For passing the content URL to the Google SDK, the content URL needs to be passed as a custom keyword with the requester ad object (`BannerAdView`, `InterstitialAdView`, `NativeAdRequest`). The key to be used is `content_url`. Here is an example:
 
@@ -101,9 +101,8 @@ To handle AdMob native ads, you need to:
 
 To handle AdMob banner ads for the apps that support multi-window capability in iPads, Xandr Mobile SDK provides a public class `ANGoogleMediationSettings`. This class contains:
 
-- Boolean method `setIPadMultiSceneSupport` that needs to be set as `YES`, if the app supports multi-screen in iPads
-
-- Getter method `getIPadMultiSceneSupport` to fetch the value set for the apps
+- Boolean method `setIPadMultiSceneSupport` that needs to be set as `YES`, if the app supports multi-screen in iPads.
+- Getter method `getIPadMultiSceneSupport` to fetch the value set for the apps.
 
   **Code Sample (Objective C)**
 
