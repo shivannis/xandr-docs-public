@@ -16,9 +16,9 @@ Config Platform is an admin-only service to update very specific multi-bid setti
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | [https://api.appnexus.com/config-platform](https://api.appnexus.com/config-platform)<br>(config JSON) | Add a new config-platform setting. |
-| `PUT` | [https://api.appnexus.com/config-platform?id=CONFIG_PLATFORM_ID](https://api.appnexus.com/config-platform?id=CONFIG_PLATFORM_ID)<br>(config_update JSON)<br><br>**Note:** `CONFIG_PLATFORM_ID` is a uniquely generated ID for the config platform setting and can be retrieved via `GET`. | Modify a config-platform setting. |
-| `GET` | [https://api.appnexus.com/config-platform](https://api.appnexus.com/config-platform) | View all config-platform settings. |
+| `POST` | `https://api.appnexus.com/config-platform`<br>(config JSON) | Add a new config-platform setting. |
+| `PUT` | `https://api.appnexus.com/config-platform?id=CONFIG_PLATFORM_ID`<br>(config_update JSON)<br><br>**Note:** `CONFIG_PLATFORM_ID` is a uniquely generated ID for the config platform setting and can be retrieved via `GET`. | Modify a config-platform setting. |
+| `GET` | `https://api.appnexus.com/config-platform` | View all config-platform settings. |
 
 ## JSON fields
 

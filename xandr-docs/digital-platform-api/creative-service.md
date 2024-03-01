@@ -679,7 +679,7 @@ Xandr has predefined some macros that can be used within the creative's `media_u
 
 When uploading a standard banner image creative for hosting with Xandr:
 
-Once the creative has been registered, the content will be stored on the CDN, and the creative will be given a `media_url` such as [https://cdn.adnxs.com/p/29/23/21/a0/292321a0bea05427598914c8bb626032.jpg](https://cdn.adnxs.com/p/29/23/21/a0/292321a0bea05427598914c8bb626032.png).
+Once the creative has been registered, the content will be stored on the CDN, and the creative will be given a `media_url` such as `https://cdn.adnxs.com/p/29/23/21/a0/292321a0bea05427598914c8bb626032.jpg`.
 
 Auditing: By default, the creative will be submitted for auditing by Xandr. If you don't want the creative to be audited, you must include `allow_audit` and set it to `false`. Alternately, if you want to audit the creative yourself, you must include `is_self_audited` and set it to `true`.
 
@@ -873,7 +873,7 @@ $ curl -b cookies -c cookies -X POST -d @creative 'https://api.appnexus.com/crea
 
 When uploading a standard banner flash creative for hosting with Xandr:
 
-Once the creative has been registered, the content will be stored on the CDN, and the creative will be given a `media_url` such as [https://cdn.adnxs.com/p/29/23/21/a0/292321a0bea05427598914c8bb626032.jpg](https://cdn.adnxs.com/p/29/23/21/a0/292321a0bea05427598914c8bb626032.png).
+Once the creative has been registered, the content will be stored on the CDN, and the creative will be given a `media_url` such as `https://cdn.adnxs.com/p/29/23/21/a0/292321a0bea05427598914c8bb626032.jpg`.
 
 Auditing: By default, the creative will be submitted for auditing by Xandr. If you don't want the creative to be audited, you must include `allow_audit` and set it to `false`. Alternately, if you want to audit the creative yourself, you must include `is_self_audited` and set it to `true`.
 
