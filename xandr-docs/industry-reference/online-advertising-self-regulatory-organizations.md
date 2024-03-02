@@ -36,7 +36,7 @@ The cross-industry self-regulatory initiative was developed by leading European 
 
 The Interactive Advertising Bureau (IAB) is a member organization for media and marketing industries active in the digital economy. Its members are responsible buying, selling, optimizing, and analyzing digital advertising and marketing campaigns.
 
-Together with its member companies, the IAB develops technical standards, best practices, and research, with an emphasis on education and awareness raising among brands, agencies, and general business community regarding the value of digital advertising. The IAB promotes professional development and improved knowledge, skills, and expertise across the digital advertising and marketing industries. 
+Together with its member companies, the IAB develops technical standards, best practices, and research, with an emphasis on education and awareness raising among brands, agencies, and general business community regarding the value of digital advertising. The IAB promotes professional development and improved knowledge, skills, and expertise across the digital advertising and marketing industries.
 
 More information on member organizations, councils, committees, and working groups, as well as their projects, publications, and initiatives is available on the [IAB website](https://www.iab.com/).
   

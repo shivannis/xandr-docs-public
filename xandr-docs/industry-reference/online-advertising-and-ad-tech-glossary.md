@@ -22,7 +22,7 @@ A company that provides services such as planning, creating, buying, and trackin
 
 ### ad call
 
-When an open slot of ad space is available on the Internet, a user's browser sends requests to ad exchanges or ad servers to send an ad. This request is known as an ad call. Ad calls include information from browser cookies and ad tag information such as publisher ID, size, location, referring URL, and other specifications and data needed for the ad to serve. See also [ad tag](online-advertising-and-ad-tech-glossary.md#ad-tag). 
+When an open slot of ad space is available on the Internet, a user's browser sends requests to ad exchanges or ad servers to send an ad. This request is known as an ad call. Ad calls include information from browser cookies and ad tag information such as publisher ID, size, location, referring URL, and other specifications and data needed for the ad to serve. See also [ad tag](online-advertising-and-ad-tech-glossary.md#ad-tag).
 
 ### ad pod
 
@@ -361,7 +361,7 @@ Customer profiles are a collection of demo, intent and behavioral data assigned 
 
 ### DAA
 
-The Digital Advertising Alliance. An online advertising industry association, made up of many other organizations, and dedicated to self-regulation. Possibly best known for the. Read more on the [DAA's website](https://youradchoices.com/).
+The Digital Advertising Alliance. An online advertising industry association, made up of many other organizations, and dedicated to self-regulation. Possibly best known for the Advertising Option Icon. Read more on the [DAA's website](https://youradchoices.com/).
 
 ### daisy chain
 
@@ -474,7 +474,7 @@ Technology that allows advertisers to swap out ad creatives in video on live and
 
 ### dynamic creative
 
-Many advertisers wish to show different ads to different customers; for example, an advertiser might wish to show rain gear to people who live in rainy climates and sunblock to those who live in sunny climates. Dynamic creatives refers to having a few different creatives and choosing the most appropriate one for the user through some automated means such as audience segmentation or based on frequency and recency. Many platforms have rules about how much creatives can vary within the same [placement](#placement) – for example, there may be limitations on [rotating](#rotating-creative) brands.
+Many advertisers wish to show different ads to different customers; for example, an advertiser might wish to show rain gear to people who live in rainy climates and sunblock to those who live in sunny climates. Dynamic creatives refers to having a few different creatives and choosing the most appropriate one for the user through some automated means such as [audience segmentation](online-advertising-and-ad-tech-glossary.md#segment) or based on frequency and recency. Many platforms have rules about how much creatives can vary within the same [placement](#placement) – for example, there may be limitations on [rotating](#rotating-creative) brands.
 
 ### dynamic pricing
 
@@ -506,7 +506,7 @@ Rich media [creatives](#creative) that can be enlarged beyond the initial dimens
 
 ### first-party cookies
 
-[Cookies](#cookie) that use the domain of the website a user is currently on. For example, if you visit www.mysite.com and the domain of the cookie is www.mysite.com, then this is a first-party cookie. First-party cookies are usually used for login, user experience, and [retargeting](#retargeting) purposes. See also [third-party cookies](#third-party-cookies).
+[Cookies](#cookie) that use the domain of the website a user is currently on. For example, if you visit `www.mysite.com` and the domain of the cookie is `www.mysite.com`, then this is a first-party cookie. First-party cookies are usually used for login, user experience, and [retargeting](#retargeting) purposes. See also [third-party cookies](#third-party-cookies).
 
 ### first-party data
 
@@ -651,7 +651,7 @@ A type of [attribution](#attribution) model that pays out on the last impression
 
 ### last view
 
-A type of [attribution](#attribution) model that pays out on the last impression that was viewed by the [user](#user). This may be used as an alternative to the  [first touch](#first-touch) model, which  gives credit for the first impression a user saw.
+A type of [attribution](#attribution) model that pays out on the last impression that was viewed by the [user](#user). This may be used as an alternative to the [first touch](#first-touch) model, which gives credit for the first impression a user saw.
 
 ### lift
 
@@ -893,7 +893,7 @@ A source of inventory. Publishers are generally either managed or owned and oper
 
 ### publisher click-tracking
 
-When a publisher keeps track of clicks on their ads. If a publisher is being paid on a  [CPC](#cpc) basis and wants to track clicks, they can provide [click-tracking URL](#click-url) where it is possible to ping them each time a user clicks on an ad.
+When a publisher keeps track of clicks on their ads. If a publisher is being paid on a [CPC](#cpc) basis and wants to track clicks, they can provide [click-tracking URL](#click-url) where it is possible to ping them each time a user clicks on an ad.
 
 ### query string
 
@@ -1123,7 +1123,7 @@ See [user-generated content](#user-generated-content-ugc).
 
 ### uniques
 
-Individual users, as represented by a [unique user ID](#unique-user-id). A unique user ID is not associated in any way with [personally identifiable information](#personally-identifiable-information-pii) (PII), so it cannot identify a specific unique individual. Also, an individual may be associated with multiple user IDs due to clearing browser cookies or using multiple browsers and multiple devices. Additionally, for mobile devices, a unique user ID may be associated with multiple device IDs (for example,  Apple IDFA, OpenUDID, and others). See [reach](#reach)to learn more about individual users/user IDs.
+Individual users, as represented by a [unique user ID](#unique-user-id). A unique user ID is not associated in any way with [personally identifiable information](#personally-identifiable-information-pii) (PII), so it cannot identify a specific unique individual. Also, an individual may be associated with multiple user IDs due to clearing browser cookies or using multiple browsers and multiple devices. Additionally, for mobile devices, a unique user ID may be associated with multiple device IDs (for example,  Apple IDFA, OpenUDID, and others). See [reach](#reach) to learn more about individual users/user IDs.
 
 ### unique app identifier
 

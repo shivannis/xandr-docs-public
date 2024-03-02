@@ -62,7 +62,7 @@ In this case, the creative and the container it's running in (the app) cannot sp
 
 The diagram below illustrates the relationship between the creative that is using HTML5/JS, MRAID, and the app that is running in native code.
 
-:::image type="content" source="media/mraid.png" alt-text="Screenshot of creative that is using HTML5/JS, MRAID, and the app that is running in native code. ":::
+:::image type="content" source="media/mraid.png" alt-text="Screenshot of creative that is using HTML5/JS, MRAID, and the app that is running in native code.":::
 
 The main thing to remember is that HTML5/JS and MRAID are **not mutually exclusive** technologies. MRAID was designed so that creatives can use HTML5/JS to communicate with native mobile apps.
 
