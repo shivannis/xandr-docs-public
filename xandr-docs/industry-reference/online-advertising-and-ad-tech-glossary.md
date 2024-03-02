@@ -18,7 +18,7 @@ When a [user](#user) signs up, makes a purchase, or performs some other desired 
 
 ### ad agency
 
-A company that provides services such as planning, creating, buying, and tracking advertisements and ad campaigns on behalf of a client. Often, people confuse media agencies, which are allocators of marketers' spending across channels – with creative agencies, which are responsible for the creation of actual ads and campaign content. 
+A company that provides services such as planning, creating, buying, and tracking advertisements and ad campaigns on behalf of a client. Often, people confuse media agencies, which are allocators of marketers' spending across channels – with creative agencies, which are responsible for the creation of actual ads and campaign content.
 
 ### ad call
 
@@ -100,7 +100,7 @@ A list of television networks, site domains, or apps that a buyer explicitly wan
 
 ### API
 
-An API, or application programming interface, is a programming method used to interact with software, applications, or tools. APIs provide a simplified querying language that allows consumers or developers to access underlying databases and hardware without disrupting stability or reliability, and without knowledge of underlying programming languages. They may be based on a variety of programming languages and models, but the types of APIs used by consumers to interact with Web-based software or apps are often known as SOAP or [REST](#rest) services, which consist of a set of specifications for remote calls that enable consumers to interact with data and systems without the risk of disrupting their function. For example, Xandr uses a RESTful API to facilitate interaction with its Web-based software. 
+An API, or application programming interface, is a programming method used to interact with software, applications, or tools. APIs provide a simplified querying language that allows consumers or developers to access underlying databases and hardware without disrupting stability or reliability, and without knowledge of underlying programming languages. They may be based on a variety of programming languages and models, but the types of APIs used by consumers to interact with Web-based software or apps are often known as SOAP or [REST](#rest) services, which consist of a set of specifications for remote calls that enable consumers to interact with data and systems without the risk of disrupting their function. For example, Xandr uses a RESTful API to facilitate interaction with its Web-based software.
 
 ### attribution
 
@@ -124,7 +124,7 @@ The percentage of measurable impressions that were played, and were audible and 
 
 ### automated content recognition (ACR)
 
-ACR is an opt-in identification technology embedded in a device that allows content to be recognized by video, audio or watermark cues and matched back to a data base for verification. This technology can recognize content regardless of its distribution source (i.e. OTT, linear, etc.). Marketers use this information to understand when a consumer has seen their ads. 
+ACR is an opt-in identification technology embedded in a device that allows content to be recognized by video, audio or watermark cues and matched back to a data base for verification. This technology can recognize content regardless of its distribution source (i.e. OTT, linear, etc.). Marketers use this information to understand when a consumer has seen their ads.
 
 ### average audience (AA)
 
@@ -217,7 +217,7 @@ See [CTR](#ctr).
 
 ### click URL
 
-If a publisher is being paid on a [CPC](#cpc) basis and wants to track clicks, they can provide click-tracking URL where it is possible to ping them each time a user clicks on an ad. Click URLs can also be used by to record clicks en route to a [landing page](#landing-page). See also [publisher click-tracking](#publisher-click-tracking). 
+If a publisher is being paid on a [CPC](#cpc) basis and wants to track clicks, they can provide click-tracking URL where it is possible to ping them each time a user clicks on an ad. Click URLs can also be used by to record clicks en route to a [landing page](#landing-page). See also [publisher click-tracking](#publisher-click-tracking).
 
 ### competitive separation
 
@@ -253,7 +253,7 @@ When a user signs up, makes a purchase, or performs some other desired action in
 
 ### conversion attribution
 
-See [attribution](#attribution). 
+See [attribution](#attribution).
 
 ### conversion funnel
 
@@ -319,7 +319,7 @@ Cost per view. A pricing model where the advertiser only pays for a video start
 
 ### CPVM
 
-Renamed. See [vCPM](#vcpm). 
+Renamed. See [vCPM](#vcpm).
 
 ### creative
 
@@ -811,7 +811,7 @@ The redirecting of an impression back to an ad server  when no acceptable bid
 
 Information included in any data set that allows users of the data to resolve the real-world identity of the data subject. 
 
-### Premium entertainment satellite 
+### Premium entertainment satellite
 
 PESAT is the delivery of premium channels (HBO, STARZ, etc.) over satellites.
 
@@ -1058,8 +1058,7 @@ Digital video ads that are anchored to the bottom or top of the screen and follo
 1. Ad height MUST be less than 25% of the screen height.
 1. The ad MUST have a clear boundary to separate it from the content.
 1. The ad MUST cover the full width of the screen edge to edge.
-1. The ad MUST have a ‘close button’ above top right corner of the ad
-    as defined in LEAN User Experience and Ad Content.
+1. The ad MUST have a ‘close button’ above top right corner of the ad as defined in LEAN User Experience and Ad Content.
 
 ### streaming
 
