@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Exclude Competitive Brands for a Creative
-description: The article emphasizes using competitive exclusions when adding creatives to prevent the display of competitive brands together. 
+description: Explore preventing the display of competitive brands together by using competitive exclusions when adding creatives.
 ms.date: 10/28/2023
 ---
 
