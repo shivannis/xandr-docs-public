@@ -27,10 +27,10 @@ To set up line item budgeting and scheduling:
 
    The following payment model types are available for selection:
 
-   | Option | Description |
-   |---|---|
-   | **Standard** | Select this payment model type to pay media cost on a per impression basis. Enter the amount that the advertiser will pay you per thousand impressions in the **Revenue Value** field. |
-   | **Outcomes** | Select this payment model type to use Guaranteed Outcomes, so you pay only for impressions that achieve a desired outcome. Available outcome depend on the line item ad type. For more detailed information and configuration instructions, see [Guaranteed Outcomes](guaranteed-outcomes.md). |
+   |  | Option | Description |
+   |--|--|--|
+   |  | **Standard** | Select this payment model type to pay media cost on a per impression basis. Enter the amount that the advertiser will pay you per thousand impressions in the **Revenue Value** field. |
+   |  | **Outcomes** | Select this payment model type to use Guaranteed Outcomes, so you pay only for impressions that achieve a desired outcome. Available outcome depend on the line item ad type. For more detailed information and configuration instructions, see [Guaranteed Outcomes](guaranteed-outcomes.md). |
 
 1. Select a **Revenue Type** to define how the advertiser has agreed to pay you. Available revenue types will depend on the previously selected ad type and payment model.
 

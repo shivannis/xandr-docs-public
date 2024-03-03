@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Up Line Item Inventory and Brand Safety
-description: The article simplifies line item setup with supply source, content categories, inventory preferences, block/allowlists, brand safety, and ads.txt.
+description: Explore line item setup with supply source, content categories, inventory preferences, block/allowlists, brand safety, and ads.txt.
 ms.date: 10/28/2023
 ---
 
@@ -12,11 +12,11 @@ You can use the **Inventory & Brand Safety Targeting** section to specify the ty
 
     The **Supply Source** that you select will affect the available inventory targeting options in the **Inventory & Brand Safety Targeting** section. In addition, certain buying strategy options cannot be combined or must be selected together.
 
-   | Supply Source | Description |
-   |---|---|
-   | **Open Exchange** | Real-time bidding in our open exchange (also known as RTB). If you select **Open Exchange**, you can opt to pay per impression or per view. We also recommend that you apply an allowlist or a brand safety segment as well. The **Advanced Targeting** subsection displays within the **Inventory & Brand Safety Targeting** section after selecting the **Open Exchange** checkbox so that you can select specific open exchanges. |
-   | **Managed** | Select this option if you have a managed relationship. If you select this option, you must select a **Line Item Priority** from the pull-down menu to rank the line item in the auction.<br>**Note**: The default line item priority is 5. When the line item's priority is ranked above the network's reselling priority, the line item will take precedence over line items with lower priorities, as well as open exchange demand. When the line item's priority is ranked below the network's reselling priority, the line item will compete with open exchange bids.<br>The network's reselling priority gives preference to its own advertisers' campaigns over campaigns run by external buyers. |
-   | **Deals** | Select this option if you want to buy deals that publishers have exposed to you. You can choose to target all deals or only specific deals. If you select **Specific Deals**, you can include/exclude deals or deal lists. |
+  |  | Supply Source | Description |
+  |--|--|--|
+  |  | **Open Exchange** | Real-time bidding in our open exchange (also known as RTB). If you select **Open Exchange**, you can opt to pay per impression or per view. We also recommend that you apply an allowlist or a brand safety segment as well. The **Advanced Targeting** subsection displays within the **Inventory & Brand Safety Targeting** section after selecting the **Open Exchange** checkbox so that you can select specific open exchanges. |
+  |  | **Managed** | Select this option if you have a managed relationship. If you select this option, you must select a **Line Item Priority** from the pull-down menu to rank the line item in the auction.<br>**Note**: The default line item priority is 5. When the line item's priority is ranked above the network's reselling priority, the line item will take precedence over line items with lower priorities, as well as open exchange demand. When the line item's priority is ranked below the network's reselling priority, the line item will compete with open exchange bids.<br>The network's reselling priority gives preference to its own advertisers' campaigns over campaigns run by external buyers. |
+  |  | **Deals** | Select this option if you want to buy deals that publishers have exposed to you. You can choose to target all deals or only specific deals. If you select **Specific Deals**, you can include/exclude deals or deal lists. |
 
 1. Set your **Managed Inventory**.
 
