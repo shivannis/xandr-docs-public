@@ -1,6 +1,6 @@
 ---
 title: Deal Best Practices for Sellers
-description: This page gives an overview on some basic best practices for sellers using deals.
+description: This page gives an overview on some basic best practices for sellers using deals. This page covers when you should create a deal, when you should avoid creating a deal and setting up a deal.
 ms.date: 10/28/2023
 ---
 

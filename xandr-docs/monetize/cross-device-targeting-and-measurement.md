@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Targeting and Measurement (Cross-Device)
-description: Learn how Cross-device targeting and measurement can be used to tie together events or actions for a unique individual that occur on different devices. 
+description: Learn how Cross-device capability enhances targeting and attribution using information from an identity graph and a database of customer information. 
 ms.date: 10/28/2023
 ---
 

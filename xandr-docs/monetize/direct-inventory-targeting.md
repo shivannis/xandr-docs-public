@@ -1,6 +1,6 @@
 ---
 title: Direct Inventory Targeting
-description: In this page learn what is Direct Inventory Targeting and steps you need to perform to include or exclude specific managed publishers, sites, or placements. 
+description: In this page learn what is Direct Inventory Targeting and steps that you need to perform to include or exclude specific managed publishers, sites, or placements. 
 ms.date: 10/28/2023
 ---
 

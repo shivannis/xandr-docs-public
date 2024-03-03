@@ -86,7 +86,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Curator Auction Fees | The amount Microsoft Advertising charged to the curator as a fee at auction time |
 | Curator Auction Service Deductions | The amount Microsoft Advertising charged to the curator as a deduction at auction time |
 | Curator Margin Deduction | The profit a curator makes on a transaction. |
-| Net Seller Revenue | The amount of net revenue a seller earns, exclusive of seller auction service fees (SASC) they owe to Microsoft Advertising. <br>**Note**: this field is only filled for sellers for which the curator has a direct clear relationship. |
+| Net Seller Revenue | The amount of net revenue a seller earns, exclusive of seller auction service fees (SASC) they owe to Microsoft Advertising. <br> **Note**: this field is only filled for sellers for which the curator has a direct clear relationship. |
 
 ## To run your report
 

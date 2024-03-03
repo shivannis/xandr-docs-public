@@ -46,8 +46,7 @@ No, your Credit Limit does not affect your account’s contractual rates and fee
 
 ## How are Microsoft Advertising credit limits calculated?
 
-Credit Limits are calculated based on a variety of factors including but not limited to financial health, payment history, and third party credit
-reports.
+Credit Limits are calculated based on a variety of factors including but not limited to financial health, payment history, and third party credit reports.
 
 ## Can my credit limit change?
 
