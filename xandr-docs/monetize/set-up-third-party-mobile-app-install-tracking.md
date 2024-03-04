@@ -23,7 +23,7 @@ These are examples of partners that have integrated with Microsoft Advertising f
 - TapSense
 - [Tune (formerly HasOffers)](https://www.tune.com/)
 - [Adjust](https://www.adjust.com/)
-  - Adjust Network Integrations Page
+  - [Adjust Network Integrations Page](https://help.adjust.com/en/article/integrated-partners)
   - [Adjust Partner Page (Click URL Builder)](https://partners.adjust.com/index.md)
 
 ## Set up third-party mobile app install tracking
