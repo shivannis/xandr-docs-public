@@ -9,9 +9,9 @@ ms.custom: digital-platform-api
 
 The content of this page is intended to supplement the [Deal Service](./deal-service.md) and [Deal Buyer Access Service](./deal-buyer-access-service.md) documentation.
 
-Multi-buyer deals use a combination of three new objects
+Multi-buyer deals use a combination of three new objects:
 
-- `buyer_seats` - Array of seat name/IDs of buyers who can target this deal (see [Buyer Seats](#buyer_seats-object) below)
+- `buyer_seats` - Array of seat name/IDs of buyers who can target this deal (see [Buyer Seats](buyer_seats-object) below)
 - `buyer_bidders` - Array of bidder name/IDs of buyers who can target this deal (see [Buyer Bidders](#buyer_bidders-object) below)
 - `buyer_members` - Array of Xandr member name/IDs of buyers who can target this deal (see [Buyer Members](#buyer_members-object) below)
 
