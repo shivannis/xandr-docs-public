@@ -11,9 +11,9 @@ The content of this page is intended to supplement the [Deal Service](./deal-ser
 
 Multi-buyer deals use a combination of three new objects:
 
-- `buyer_seats` - Array of seat name/IDs of buyers who can target this deal (see [Buyer Seats](buyer_seats-object) below)
-- `buyer_bidders` - Array of bidder name/IDs of buyers who can target this deal (see [Buyer Bidders](#buyer_bidders-object) below)
-- `buyer_members` - Array of Xandr member name/IDs of buyers who can target this deal (see [Buyer Members](#buyer_members-object) below)
+- `buyer_seats` - Array of seat name/IDs of buyers who can target this deal (see [Buyer Seats](buyer-seats) below)
+- `buyer_bidders` - Array of bidder name/IDs of buyers who can target this deal (see [Buyer Bidders](#buyer-bidders) below)
+- `buyer_members` - Array of Xandr member name/IDs of buyers who can target this deal (see [Buyer Members](#buyer-members) below)
 
 Multi-buyer deals must be implemented using deal line items (Deals v2). The `buyer_bidders` object is only supported using Deals v2 (even if only one buyer is used). If the `buyer_seats` object is used for multiple buyers (whether in `buyer_seats` or across other buyer objects), it must be implemented with Deals v2.
 
@@ -28,12 +28,12 @@ For multi-buyer deals, you are required to include at least one of the following
 
 | Field | Type (Length) | Description |
 |:---|:---|:---|
-| `buyer` | object | The buying bidder and member who can target this deal. For single-buyer deals, a deal will only ever use the `buyer` field or the `buyer_seats` field, not both. The `buyer` field is not used in multi-buyer deals. For more details, see [Buyer](#buyer-object) below. <br>**Required On**: `POST` |
-| `buyer _bidders` | object | The buying bidder who can target this deal. For more details, see [Buyer Bidders](#buyer_bidders-object) below. |
-| `buyer _members` | object | The Xandr member ID of the buyer who can target this deal. For more details, see [Buyer Members](#buyer_members-object) below. |
-| `buyer _seats` | object | The seat ID (the unique advertiser ID from their DSP) of the buyer who can target this deal. A deal will only ever use the `buyer` field or the `buyer_seats` field, not both. For more details, see [Buyer Seats](#buyer_seats-object) below. |
+| `buyer` | object | The buying bidder and member who can target this deal. For single-buyer deals, a deal will only ever use the `buyer` field or the `buyer_seats` field, not both. The `buyer` field is not used in multi-buyer deals. For more details, see [Buyer](#buyer) below. <br>**Required On**: `POST` |
+| `buyer _bidders` | object | The buying bidder who can target this deal. For more details, see [Buyer Bidders](#buyer-bidders) below. |
+| `buyer _members` | object | The Xandr member ID of the buyer who can target this deal. For more details, see [Buyer Members](#buyer-members) below. |
+| `buyer _seats` | object | The seat ID (the unique advertiser ID from their DSP) of the buyer who can target this deal. A deal will only ever use the `buyer` field or the `buyer_seats` field, not both. For more details, see [Buyer Seats](#buyer-seats) below. |
 
-### `buyer` object
+### Buyer
 
 The `buyer` object is not used in multi-buyer deals. The `buyer` object can be set on a `POST`, but cannot be updated with a `PUT`. If you want to change the buyer, you need to create a new deal.
 
@@ -57,7 +57,7 @@ The `buyer` object contains the following fields:
 "buyer_seats": null
 ```
 
-### `buyer_bidders` object
+### Buyer bidders
 
 The `buyer_bidders` object is used in multi-buyer deals. The `buyer_bidders` object can be set on a `POST`, and can be updated with a `PUT`. When a seller is enabled for multi-buyer deals, the `buyer_bidders` object can be set in combination with `buyer_seats` and `buyer_members`.
 
@@ -77,7 +77,7 @@ The `buyer_bidders` object contains the following fields:
 }],
 ```
 
-### `buyer_members` object
+### Buyer members
 
 The `buyer_members` object is used in multi-buyer deals. The `buyer_members` object can be set on a `POST`, and can be updated with a `PUT`. When a seller is enabled for multi-buyer deals, the `buyer_members` object can be set in combination with `buyer_seats` and `buyer_bidders`.
 
@@ -101,7 +101,7 @@ The `buyer_members` object contains the following fields:
 }],
 ```
 
-### `buyer_seats` object
+### Buyer seats
 
 The `buyer_seats` object is used in multi-buyer deals. Deals with seats can be set up using the `buyer_seats` object via the API. When setting up a new deal via the API, use the `buyer_seats` object, and the API will be populated with this object.
 
