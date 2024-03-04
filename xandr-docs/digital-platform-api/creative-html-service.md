@@ -242,7 +242,7 @@ curl -b cookies -c cookies 'https://api.appnexus.com/creative-html?advertiser_id
 ```
 
 > [!NOTE]
-> You can use `never_run=true`in combination with other filters, but note that it will always be an OR relationship. For example, if you pass both `never_run=true` and `min_first_run=2012-01-01 00:00:00`in the query string, you will be looking for creatives that have never served OR line items that first served on or after 2012-01-01.
+> You can use `never_run=true` in combination with other filters, but note that it will always be an OR relationship. For example, if you pass both `never_run=true` and `min_first_run=2012-01-01 00:00:00` in the query string, you will be looking for creatives that have never served OR line items that first served on or after 2012-01-01.
 
 ### Retrieve only creatives that first served on or after a specific date
 

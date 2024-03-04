@@ -572,7 +572,7 @@ curl -b cookies -c cookies 'https://api.appnexus.com/creative?advertiser_id=100&
 ```
 
 > [!NOTE]
-> You can use `never_run=true`in combination with other filters, but note that it will always be an OR relationship. For example, if you pass both `never_run=true`and `min_first_run=2012-01-01 00:00:00` in the query string, you will be looking for creatives that have never served OR line items that first served on or after 2012-01-01.
+> You can use `never_run=true` in combination with other filters, but note that it will always be an OR relationship. For example, if you pass both `never_run=true`and `min_first_run=2012-01-01 00:00:00` in the query string, you will be looking for creatives that have never served OR line items that first served on or after 2012-01-01.
 
 ### Retrieve only creatives that first served on or after a specific date
 
@@ -673,7 +673,7 @@ Xandr has predefined some macros that can be used within the creative's `media_u
 ## Examples
 
 > [!CAUTION]
-> Exclude `audit_status` and `no_audit`in **`PUT`** calls to avoid errors.
+> Exclude `audit_status` and `no_audit` in **`PUT`** calls to avoid errors.
 
 ### Add a banner image creative (hosted)
 
@@ -1945,7 +1945,7 @@ $ curl -b cookies -c cookies -X PUT -d @creative_update 'https://api.appnexus.co
 }
 ```
 
-### Adding a creative (third-party HTML tag)
+### Add a creative (third-party HTML tag)
 
 When the format field is set to `"raw-html"`, content from the `content` field must be wrapped in `document.write()` and also `escaped`.
 

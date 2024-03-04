@@ -18,7 +18,7 @@ For each format, media type, and media subtype combination, Xandr provides a sta
 If you want to customize the way certain types of creatives render, you can build your own templates. With custom templates, you have complete control of the JavaScript, HTML, or XML rendering code, and you can define macros to prompt your traffickers to enter information and make decisions about the behavior of creatives when they are uploaded.
 
 > [!NOTE]
-> You can have up to 100 custom templates. Please note, however, that Xandr does not provide support for creatives that do not render correctly as a result of errors in custom template code.
+> You can have up to 100 custom templates. However, Xandr does not provide support for creatives that do not render correctly as a result of errors in custom template code.
 
 ## REST API
 

@@ -356,7 +356,7 @@ curl -b cookies -c cookies 'https://api.appnexus.com/campaign?advertiser_id=100&
 
 #### Retrieve only campaigns that first served on or before a specific date
 
-Pass `max_first_run=YYYY-MM-DD HH:MM:SS`
+Pass `max_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
 ```
 curl -b cookies -c cookies 'https://api.appnexus.com/campaign?advertiser_id=100&flight_info=true&max_first_run=2012-08-01+00:00:00'

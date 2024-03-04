@@ -11,7 +11,7 @@ The Click Tracker Service gives you a way to track user clicks on creatives serv
 
 1. You use the Click Tracker Service to create a click tracker. The click tracker specifies the line item and publisher to which the click tracker is associated. Generally, it also specifies the target landing page URL for the creative (see the `redir` parameter below for the alternate case). Optionally, it can include the specific placement or payment rule to which it is associated.
 1. You create the URL to the click tracker and ask the ad server to use it as the creative's landing page URL. The click tracker URL must be formatted as `https://ib.adnxs.com/clktr?id=12345`, where 12345 is the click tracker ID.
-1. When the ad server serves the creative and someone clicks on it, the call first goes to [ib.adnxs.com](https://ib.adnxs.com/), where Xandr records the click, and is then redirected to the target landing page.
+1. When the ad server serves the creative and someone clicks on it, the call first goes to `ib.adnxs.com`, where Xandr records the click, and is then redirected to the target landing page.
 
 For specific usage examples, see [Examples](#examples).
 

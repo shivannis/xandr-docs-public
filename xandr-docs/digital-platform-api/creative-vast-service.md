@@ -256,7 +256,7 @@ Each object in the `campaigns` array includes the following fields. To obtain in
 
 ### Video Attribute
 
-`video_attribute` is required for both audio and video creatives on the `creative-vast` endpoint. Template ids are:
+`video_attribute` is required for both audio and video creatives on the `creative-vast` endpoint. Template IDs are:
 
 - 6439 - Video: Standard VAST
 - 38745 - Audio: Standard VAST

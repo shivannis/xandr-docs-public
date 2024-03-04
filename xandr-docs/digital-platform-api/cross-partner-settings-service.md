@@ -18,7 +18,7 @@ The Cross-Partner Settings Service allows for the retrieval and editing of the t
 | `PUT` | [https://api.appnexus.com/prebid/cross-partner-settings](https://api.appnexus.com/prebid/cross-partner-settings) | Update an existing cross-partner setting. Pass the updated cross-partner settings as JSON in the body of the request. |
 | `PATCH` | [https://api.appnexus.com/prebid/cross-partner-settings](https://api.appnexus.com/prebid/cross-partner-settings) | Update a portion of an existing cross-partner setting. Pass the updated cross-partner settings as JSON in the body of the request. |
 
-## GET
+## `GET`
 
 Get all the cross-partner settings. In order for the request to be valid user session data must be included.
 
@@ -146,11 +146,11 @@ Price granularity defines the CPM price buckets into which demand partner bids w
             
 ```
 
-## POST
+## `POST`
 
 Create a new cross-partner setting.
 
-### POST: Example call using curl
+### `POST`: Example call using curl
 
 ```
 {
@@ -180,7 +180,7 @@ Create a new cross-partner setting.
             
 ```
 
-### POST: Parameters
+### `POST`: Parameters
 
 | Name | Type | Scope | Description |
 |:---|:---|:---|:---|
@@ -188,7 +188,7 @@ Create a new cross-partner setting.
 | `member_id` | integer | Required | The member id the cross-partner settings will be associated with. |
 | `price_granularity` | object | Required | The price granularity settings. For more details on this object, see the [price granularity table](#post-price-granularity) below. |
 
-### POST: Price granularity
+### `POST`: Price granularity
 
 Price granularity defines the CPM price buckets into which demand partner bids will be grouped. For more information, see [Prebid documentation](https://docs.prebid.org/adops/price-granularity.html).
 
@@ -200,7 +200,7 @@ Price granularity defines the CPM price buckets into which demand partner bids w
 | `precision` | integer | Required | The number of decimal places to round the price. Two is the default, so a price of 2.1234 would be rounded to two decimal places, 2.12. |
 | `currency_code` | string | Required | String containing desired currency code for price bucket calculations. Must be a part of the [Xandr-approved list of currencies](../monetize/currency-support.md). |
 
-### POST: Example
+### `POST`: Example
 
 ```
 {
