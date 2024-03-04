@@ -13,7 +13,7 @@ ms.custom: digital-platform-api
 It updates the data stored in `bidder.rpt_report_member_access`.
 
 > [!NOTE]
-> Only `GET`, `POST` and `DELETE` is supported for this service.
+> Only `GET`, `POST`, and `DELETE` is supported for this service.
 
 ## REST API
 
