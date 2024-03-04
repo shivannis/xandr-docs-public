@@ -388,7 +388,7 @@ You define the Boolean logic between segments with `segment_boolean_operator` fi
 | `other_in_list` | array | The list of segment values to target.If you use `other_equals`, you cannot use this field.<br>**Default:** `null` |
 
 > [!NOTE]
-> For `other_equals`, `other_less`, `other_greater`, and `other_in_list`, the segment value can be an "other" value passed by the segment pixel or can be related to segment query string values (see the "querystring_mapped" field in the [Segment Service](segment-service.md)). For examples of how to target query string values in a segment, see other examples below.
+> For `other_equals`, `other_less`, `other_greater`, and `other_in_list`, the segment value can be an "other" value passed by the segment pixel or can be related to segment query string values (see the `"querystring_mapped"` field in the [Segment Service](segment-service.md)). For examples of how to target query string values in a segment, see other examples below.
 
 In segment targeting, you need to keep the settings for the Boolean logic consistent, otherwise you would not be able to edit the segments in Microsoft Invest UI. For consistent Boolean logic settings, you need to ensure that:
 

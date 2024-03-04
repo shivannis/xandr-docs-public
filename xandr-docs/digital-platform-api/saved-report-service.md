@@ -59,7 +59,7 @@ A few facts to keep in mind about saved reports:
 
 1. Construct a report JSON (as described in [Report Service - Step 1](./report-service.md#step-1-create-a-json-formatted-report-request)).
 1. `POST` the JSON to the saved-report service.
-1. Store the id that is returned.
+1. Store the ID that is returned.
 
 ```
 $ cat saved-report

@@ -97,7 +97,7 @@ The following segment fields are common to the services listed on this page, and
 
 ## Geo administrative targeting
 
-### REST API (Country-Regions)
+### REST API (country-regions)
 
 | Method | Endpoint | Description |
 |:---|:---|:---|
@@ -105,7 +105,7 @@ The following segment fields are common to the services listed on this page, and
 | `POST` | `/members/{:member_id}/countries/{:country}/regions/{:region}` | Add or replace segment/value pair associated with a region of country. |
 | `DELETE` | `/members/{:member_id}/countries/{:country}/regions/{:region}` | Removes specified segments for a region of a country. |
 
-### Parameters (Country-Regions)
+### Parameters (country-regions)
 
 | Name | Data Type | Description | Parameter Type | Required On | Example |
 |:---|:---|:---|:---|:---|:---|
@@ -115,7 +115,7 @@ The following segment fields are common to the services listed on this page, and
 | `segval_list` | array of objects | A list of segments with associated values | JSON body | `POST` | `[ { "seg_id": 123, "seg_ttl": "25s", "seg_val": 345 } ]` |
 | `segment_list` | Array of Segment IDs | List of segment IDs | JSON Body | `DELETE` | `[123, 456]` |
 
-### Response (Country-Regions)
+### Response (country-regions)
 
 | Name | Data Type | Description | Returned On | Example |
 |:---|:---|:---|:---|:---|
@@ -139,7 +139,7 @@ The following segment fields are common to the services listed on this page, and
 }
 ```
 
-### HTTP status codes (Country-Regions)
+### HTTP status codes (country-regions)
 
 | Status Code | Returned On | Reason | Headers | Header Description |
 |:---|:---|:---|:---|:---|
