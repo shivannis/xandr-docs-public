@@ -30,7 +30,7 @@ A campaign is a way to organize a set of targeting parameters within our platfor
 |:---|:---|:---|
 | `id` | int | The ID of the campaign.<br>**Required On:** `PUT`, in query string. |
 | `State` | enum | The state of the campaign. Possible values: `"active"` or `"inactive"`.<br>**Default:** `"active"` |
-| `parent_inactive` | boolean | If `true`, the campaign is inactive due to the parent line item being inactive, and the campaign's `state` is overridden (i.e., if `"parent_inactive": "true"` and `"state": "active"`, then the campaign is inactive).<br><br>**Note:**<br>To return this field, the `advertiser_id` must be included in the querystring.<br>**Default:** `false`<br>**Read Only.** |
+| `parent_inactive` | boolean | If `true`, the campaign is inactive due to the parent line item being inactive, and the campaign's `state` is overridden (i.e., if `"parent_inactive": "true"` and `"state": "active"`, then the campaign is inactive).<br><br>**Note:**<br>To return this field, the `advertiser_id` must be included in the query string.<br>**Default:** `false`<br>**Read Only.** |
 | `code` | string (100) | A custom code for the campaign. The code may only contain alphanumeric characters, periods, underscores or dashes. The code you enter is not case-sensitive (upper- and lower-case characters are treated the same). No 2 objects at the same level (e.g., line items or campaigns) can use the same code per advertiser. For example, 2 lines items cannot both use code "XYZ", but a single line item and its child campaign can. |
 | `name` | string (255) | The name of the campaign.<br>**Required On:** `POST` |
 | `short_name` | string (50) | The name used by the Imp Bus. |
