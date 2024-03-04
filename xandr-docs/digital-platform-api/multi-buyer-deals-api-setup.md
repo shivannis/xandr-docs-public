@@ -11,7 +11,7 @@ The content of this page is intended to supplement the [Deal Service](./deal-ser
 
 Multi-buyer deals use a combination of three new objects:
 
-- `buyer_seats` - Array of seat name/IDs of buyers who can target this deal (see [Buyer Seats](buyer-seats) below)
+- `buyer_seats` - Array of seat name/IDs of buyers who can target this deal (see [Buyer Seats](#buyer-seats) below)
 - `buyer_bidders` - Array of bidder name/IDs of buyers who can target this deal (see [Buyer Bidders](#buyer-bidders) below)
 - `buyer_members` - Array of Xandr member name/IDs of buyers who can target this deal (see [Buyer Members](#buyer-members) below)
 
