@@ -17,7 +17,7 @@ This page describes how to integrate Mobile SDK with your project. Follow the i
 
 ## Installation
 
-There are five ways to get our SDK:
+There are four ways to get our SDK:
 
 - [CocoaPods](#cocoapods)
 - [Carthage](#carthage)
@@ -56,7 +56,7 @@ If you are unfamiliar with CocoaPods review their [installation and user guides
 
 ### Carthage
 
-If you are unfamiliar with Carthage review their [installation and user guides](https://github.com/Carthage/Carthage/blob/master/README.md). Once you installed Carthage:
+If you are unfamiliar with Carthage review their [installation and user guides](https://github.com/Carthage/Carthage/blob/master/README.md). Once you've installed Carthage:
 
 1. Open the Terminal app and navigate to the root directory of your project. Create a Cartfile.
 
@@ -86,8 +86,8 @@ If you are unfamiliar with Carthage review their [installation and user guides]
    carthage update --use-xcframeworks
    ```
 
-1. To use **AppNexusSDK** SDK, add the **AppNexusSDK.xcframework** and **OMSDK\_AppNexus.xcframework** to the **Embedded Binaries (Target- \> General- \> Embedded Binaries)** section by clicking the **+ icon**.
-1. Drag the built `.xcframework` bundles from `Carthage/Build` into **Embedded Binaries (Target- \> General- \> Embedded Binaries)** section by clicking the **+ icon**.
+1. To use **AppNexusSDK** SDK, add the **AppNexusSDK.xcframework** and **OMSDK\_AppNexus.xcframework** to the **Embedded Binaries (Target → General → Embedded Binaries)** section by clicking the **+ icon**.
+1. Drag the built `.xcframework` bundles from `Carthage/Build` into **Embedded Binaries (Target → General → Embedded Binaries)** section by clicking the **+ icon**.
 1. If you are using Carthage for an application, select **Embed & Sign**, otherwise **Do Not Embed**.
 
 <!-- ### Download from source
@@ -108,10 +108,9 @@ If you are unfamiliar with Carthage review their [installation and user guides]
 1. Download and unzip the latest version of **AppNexusSDK.xcframework.zip** of our SDK from [Github Releases page](https://github.com/appnexus/mobile-sdk-ios/releases). **AppNexusSDK.xcframework.zip** contains **AppNexusSDK.xcframework**, **AppNexusNativeSDK.xcframework**, and **OMSDK\_AppNexus.xcframework**.
 1. Open the app’s Xcode project or workspace.
 1. Go to the app target’s **General** configuration page.
-1. To use **AppNexusSDK SDK**, add the **AppNexusSDK.xcframework** and **OMSDK\_AppNexus.xcframework** to the **Embedded Binaries (Target- \> General- \> Embedded Binaries)** section by clicking the **+ icon**.
-Or to use **AppNexusNativeSDK SDK**, add the **AppNexusNativeSDK.xcframework** and **OMSDK\_.xcframework** to the **Embedded Binaries (Target- \> General- \> Embedded Binaries)** section by clicking the **+ icon**.
+1. To use **AppNexusSDK SDK**, add the **AppNexusSDK.xcframework** and **OMSDK\_AppNexus.xcframework** to the **Embedded Binaries (Target → General → Embedded Binaries)** section by clicking the **+ icon** or to use **AppNexusNativeSDK SDK**, add the **AppNexusNativeSDK.xcframework** and **OMSDK\_.xcframework** to the **Embedded Binaries (Target → General → Embedded Binaries)** section by clicking the **+ icon**.
    :::image type="content" source="media/ios-sdk-integration-instructions-e.png" alt-text="Screenshot of the General configuration screen.":::
-1. Select **Add Files** from the drop-down and navigate to location where you have the unzipped **AppNexusSDK.xcframework** and **OMSDK_AppNexus.xcframework** folders.
+1. Select **Add Files** from the drop-down and navigate to the location where you have the unzipped **AppNexusSDK.xcframework** and **OMSDK_AppNexus.xcframework** folders.
    :::image type="content" source="media/ios-sdk-integration-instructions-f.png" alt-text="Screenshot of the Add Files screen.":::
 1. Select the unzipped folders and click **Open**.
    :::image type="content" source="media/ios-sdk-integration-instructions-g.png" alt-text="Screenshot shows that the unzipped folder has been selected and opened.":::
