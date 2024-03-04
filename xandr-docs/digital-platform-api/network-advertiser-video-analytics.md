@@ -1,11 +1,11 @@
 ---
 title: Network Advertiser Video Analytics
-description: Use the network advertiser video analytics report to get detailed video event metrics for specific advertisers. It is only available to network users.
+description: Use the Network Advertiser Video Analytics report to get detailed video event metrics for specific advertisers. It is only available to network users.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Network advertiser video analytics
+# Network Advertiser Video Analytics
 
 The **Network Advertiser Video Analytics** report can be used to view video event metrics for a specific advertiser that is more detailed than the data provided in the [Network Video Analytics](./network-video-analytics.md) report. This report is available to network users only.
 
@@ -39,7 +39,7 @@ The `report_interval` field can be set to one of the following:
 - last_month
 - last_365_days
 
-**Data retention period**
+### Data retention period
 
 Data in this report is retained for 420 days.
 
@@ -235,7 +235,7 @@ Data in this report is retained for 420 days.
 
 ## Example
 
-### Create the JSON report request
+### Create a JSON report request
 
 The JSON file should include the `report_type` of `"video_analytics_network_advertiser"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 
