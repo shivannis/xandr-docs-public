@@ -1,6 +1,6 @@
 ---
 title: Publisher GDALI API Setup Guide
-description: Explore the API setup guide to understand the process of creating and configuring a Guaranteed Delivery Augmented Line Item (GDALI) using our API.
+description: Learn the process of creating and configuring a Guaranteed Delivery Augmented Line Item (GDALI) using our API setup guide.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
