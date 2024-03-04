@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Optimization FAQ
+title: Optimization FAQ
 description: In this article, find answers to frequently asked question (FAQ) regarding Optimization.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Optimization FAQ
+# Optimization FAQ
 
 This page provides answers to the most common question on optimization.
 
