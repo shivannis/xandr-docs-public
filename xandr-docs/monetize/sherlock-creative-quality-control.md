@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Sherlock - Creative Quality Control
-description: Sherlock, an automated scanning system, combats advertising malware, ensuring ad quality by detecting and addressing malicious content.
+description: Explore how Sherlock, an automated scanning system, combats advertising malware, ensuring ad quality by detecting and addressing malicious content.
 ms.date: 10/28/2023
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Target Inventory on the Yahoo Ad Exchange
-description: The article explains Yahoo Ad Exchange's target inventory and provides guidance on setting up campaigns to run on YAX inventory.
+description: Explore optimizing Yahoo Ad Exchange campaigns, understand target inventory, set up effective campaigns for YAX inventory.
 ms.date: 10/28/2023
 ---
 
