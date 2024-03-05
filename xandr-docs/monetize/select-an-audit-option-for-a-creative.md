@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Select an Audit Option for a Creative
+# Microsoft Monetize - Select an audit option for a creative
 
 When adding creatives, you can specify if you want to audit your own creatives or have Microsoft Advertising audit them. An unaudited creative can only run on your managed publishers. Unaudited creatives aren't eligible to run on third-party inventory unless the seller specifically allows it.
 
@@ -19,10 +19,10 @@ Select one of the following audit options from the **Creative Quality** section:
 
     Microsoft Advertising charges a fee for each audited creative. Creatives are audited in the order that they are received with a target completion time of one business day from the submission time. Priority audits, which are available for an additional fee, are completed within two business hours. The **priority table** below lists the fee charged for audits conducted for different time durations.
 
-  | Priority | Fee | Description |
-  |--|--|--|
-  | Regular one day audit | $1 USD | Fee charged for 1 Day Audit |
-  | Priority audit | $25 USD | Fee charged for 2 Hour Audit |
+    | Priority | Fee | Description |
+    |--|--|--|
+    | Regular one day audit | $1 USD | Fee charged for 1 Day Audit |
+    | Priority audit | $25 USD | Fee charged for 2 Hour Audit |
 
   - Enter a desktop compatible URL in the **Brand URL** text field.
 
@@ -47,8 +47,8 @@ Select one of the following audit options from the **Creative Quality** section:
   - **Technical Attributes**: It describes the features associated with the creative, such as whether it is a video.
   - **Sensitive Attributes**: These are often banned by publishers.
 
-> [!NOTE]
-> The Compliance must be confirmed for self audited creatives.
+  > [!NOTE]
+  > The Compliance must be confirmed for self audited creatives.
 
 - **No Audit**: Select this option if you do not want the creative to be audited.
   
