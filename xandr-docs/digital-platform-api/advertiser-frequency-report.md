@@ -31,7 +31,7 @@ The `report_interval` field in the JSON request can be set to one of the follo
 | Column | Type | Description |
 |:---|:---|:---|
 | `hour` | time | The hour of the auction.<br>Example: `"2010-02-01 06:00:00"`<br><br>**Group**: Yes<br>**Filter**: Yes |
-| day | time | The day of the auction.<br>Example: `"2010-02-01"`<br><br>**Group**: Yes<br>**Filter**: Yes |
+| `day` | time | The day of the auction.<br>Example: `"2010-02-01"`<br><br>**Group**: Yes<br>**Filter**: Yes |
 | `month` | time | The month of the auction.<br>Example: `"2010-02"`<br><br>**Group**: Yes<br>**Filter**: Yes |
 | `buyer_member_id` | int | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: <br>`229` = PSA <br>`0` = Blank <br>`319` = Default.<br>Example: `123`<br><br>**Group**: Yes<br>**Filter**: Yes |
 | `insertion_order_id` | int | The ID of the insertion order.<br><br>**Group**: Yes<br>**Filter**: Yes |
@@ -84,7 +84,7 @@ The `report_interval` field in the JSON request can be set to one of the follo
 | `cpm` | money | The cost per 1000 impressions | `1.6605` | (cost / imps) x 1000 |
 | `total_convs` | int | The total number of post-view and post-click conversions. | `9` | post_click_convs + post_view_convs |
 | `convs_rate` | double | The rate of conversions to impressions. | `0.0002218770` | total_convs / imps |
-| ctr | double | The rate of clicks to impressions. | `0.0002218777` | clicks / imps |
+| `ctr` | double | The rate of clicks to impressions. | `0.0002218777` | clicks / imps |
 | `post_view_convs` | int | The total number of recorded post-view converstions. | `5` | post_view_convs |
 | `post_click_convs` | int | The total number of recorded post-click conversions. | `4` | post_click_convs |
 | `post_click_convs_rate` | double | The rate of post-click conversion to impressions. | `0.0002` | post_click_convs / imps |

@@ -10,7 +10,7 @@ ms.custom: digital-platform-api
 Customers who plan to integrate with Xandr APIs need to complete the following steps in our API onboarding process.
 
 > [!NOTE]
-> The Xandr API endpoints are accessible only to current customers. If you're not currently a Xandr customer but are interested in becoming one, [request a consultation](https://www.xandr.com/contact-us/).
+> The Xandr API endpoints are accessible only to current customers. If you're not currently a Xandr customer but are interested in becoming one, [request a consultation](https://about.ads.microsoft.com/en-us/solutions/xandr/contact-xandr).
 
 To know more about Xandr's API, go to [Reference](./reference.md) page.
 
