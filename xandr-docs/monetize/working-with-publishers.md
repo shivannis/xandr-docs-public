@@ -1,6 +1,6 @@
 ---
 title : Working with Publishers
-description: Explore sell-side hierarchy, Placement Groups, Placements, financial terms, selling methods, payments, and ad quality in managing publishers' ad space.
+description: Explore sell-side structure, Placements, financial terms, selling methods, payments, and ad quality for managing ad space.
 ms.date: 10/28/2023
 ---
 

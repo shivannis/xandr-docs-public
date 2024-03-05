@@ -1,7 +1,6 @@
 ---
 title: Working with Payment Rules
-description: Explore Payment Rules in financial pacts, single/base rules, with specific impression conditions (geography, frequency) between networks and publishers.
-
+description: Explore financial pact payment rules, considering geography and frequency, for a nuanced understanding between networks and publishers.
 ms.date: 10/28/2023
 ---
 

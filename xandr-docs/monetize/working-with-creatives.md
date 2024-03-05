@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Working with Creatives
-description: Explore optimization of ad operations, collaborate with creatives, use advanced reporting, cut fees, ensure top ad quality, and maintain consistency.
+description: Explore ad ops optimization, collaborate with creatives, employ advanced reporting, reduce fees, ensure top ad quality, maintain consistency.
 ms.date: 10/28/2023 
 ---
 
