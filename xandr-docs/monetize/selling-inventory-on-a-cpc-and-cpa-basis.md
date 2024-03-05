@@ -1,6 +1,6 @@
 ---
 title: Selling Inventory on a CPC and CPA Basis
-description: The article discusses the concept of selling inventory using both Cost Per Click (CPC) and Cost Per Acquisition (CPA) models.
+description: Maximize Microsoft Ad ecosystem by reselling inventory on CPC/CPA, ensuring higher payouts through Microsoft Monetize for risk management.
 ms.date: 10/28/2023
 ---
 
