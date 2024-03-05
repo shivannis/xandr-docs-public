@@ -1,6 +1,6 @@
 ---
 title: Working with Third-Party Buying Filters
-description: Explore third-party buying filters to manage finite budgets, strategically select sites. Essential for buyers navigating limited resources.
+description: Explore third-party filters, manage budgets, strategically select sites—essential for buyers with limited resources.
 ms.date: 10/28/2023
 ---
 
