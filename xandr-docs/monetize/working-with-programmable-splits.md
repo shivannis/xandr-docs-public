@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Working with Programmable Splits
-description: The article explains programmable splits for targeting that is offered by Augmented Line Items (ALIs), budget, and optimization.
+description: Explore programmable splits for targeting that is offered by Augmented Line Items (ALIs), budget, and optimization for precise ad delivery. 
 ms.date: 10/28/2023
 ---
 
