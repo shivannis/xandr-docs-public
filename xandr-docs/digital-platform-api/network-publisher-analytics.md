@@ -33,7 +33,7 @@ The `report_interval` field can be set to one of the following:
 - last_month
 - lifetime
 
-**Data retention period**
+### Data retention period
 
 Data retention period for the report is 428 days.
 
