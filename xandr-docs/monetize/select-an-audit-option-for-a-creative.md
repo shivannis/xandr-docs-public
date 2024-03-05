@@ -47,8 +47,8 @@ Select one of the following audit options from the **Creative Quality** section:
   - **Technical Attributes**: It describes the features associated with the creative, such as whether it is a video.
   - **Sensitive Attributes**: These are often banned by publishers.
 
-  > [!NOTE]
-  > The Compliance must be confirmed for self audited creatives.
+> [!NOTE]
+> The Compliance must be confirmed for self audited creatives.
 
 - **No Audit**: Select this option if you do not want the creative to be audited.
   
