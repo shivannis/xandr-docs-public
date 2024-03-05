@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Network Audio Analytics
+# Network audio analytics
 
 The **Network Audio Analytics** report can be used to view audio event metrics for a network member.
 

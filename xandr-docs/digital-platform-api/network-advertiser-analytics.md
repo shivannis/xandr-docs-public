@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Network Advertiser Analytics
+# Network advertiser analytics
 
 The **Network Advertiser Analytics** report is used to view performance data for a specific advertiser that is more detailed than the data provided in the [Network Analytics](./network-analytics.md) report. This report is available to network users only. Advertiser users can use the [Advertiser Analytics](./advertiser-analytics.md) report.
 

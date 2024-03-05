@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Network Advertiser Video Analytics
+# Network advertiser video analytics
 
 The **Network Advertiser Video Analytics** report can be used to view video event metrics for a specific advertiser that is more detailed than the data provided in the [Network Video Analytics](./network-video-analytics.md) report. This report is available to network users only.
 

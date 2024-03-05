@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Network Creative Frequency and Recency
+# Network creative frequency and recency
 
 The **Network Creative Frequency & Recency** report can be used to view creative data for a specific advertiser based on the frequency and recency of user views. This report is more granular than the [Advertiser Creative Frequency and Recency](./advertiser-creative-frequency-and-recency.md) report and is available to network users only.
 

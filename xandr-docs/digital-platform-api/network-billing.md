@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Network Billing
+# Network billing
 
 > [!WARNING]
 > This report has been deprecated. As a result, it should only be used for billing activity **prior** to October 1, 2015. For reports after October 1, 2015, consult the [Buying Billing Report](buying-billing-report.md) and the [Selling Billing Report](./selling-billing-report.md).

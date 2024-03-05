@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Network Carrier Analytics
+# Network carrier analytics
 
 The **Network Carrier Analytics** report enables you to retrieve buy-side and sell-side performance data based on carriers for devices. This is especially helpful for analyzing how carriers affect campaign performance and advertiser payment. Also, in cases where advertisers set up specific landing pages for each carrier, this report helps you identify the carriers that campaigns ran on.
 

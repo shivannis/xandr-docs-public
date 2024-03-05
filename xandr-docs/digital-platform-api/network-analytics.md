@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Network Analytics
+# Network analytics
 
 The Network Analytics report can be used to view both buy and sell-side data for a network member:
 
